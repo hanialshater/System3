@@ -1,189 +1,175 @@
 # Chapter 6: Pattern Language
 
-*When Agent Experience Becomes Culture*
+*When Knowledge Becomes Software*
 
-> **WIP:** First integrated draft. Structure and examples are provisional and will receive the same editorial/voice pass as Chapters 1–4.
+Imagine hiring a brilliant employee who loses almost all procedural memory every evening. On Monday you explain how releases work. Tuesday, again. By Wednesday the employee has produced a beautiful deployment checklist. On Thursday you explain releases again. By Friday they have written a Python script that automates half the process and forgotten why the script exists. This was approximately where agents started.
 
-Imagine hiring a brilliant employee who loses almost all procedural memory every evening.
+Context windows got larger. Projects persisted. Memory systems got better. Agents learned to leave notes for themselves. But the deeper problem was never simply remembering more text. It was: **how should useful experience become reusable behavior?**
 
-On Monday you explain how releases work.
+Chapter 5 ended with a society developing culture. That sounds abstract until you look at what is happening in software. Teams are increasingly storing their ways of working in Markdown files, instructions, examples, scripts, skills, evaluators, tool descriptions, memory, and small pieces of executable policy. The model may change next month. The knowledge can survive. Something strange has happened to programming.
 
-Tuesday, again.
+## Three Ways to Tell a Computer What You Know
 
-Wednesday the employee produces an excellent deployment checklist.
+For most of computing history, if you knew how a process should work, you translated that knowledge into code. A customer asks for a refund. If the amount is under €50, approve it. If it is over €500, ask a manager. If the order is older than thirty days, reject it unless a specific exception applies. You take what the organization knows and turn it into `if`, `else`, functions, database schemas, and state machines.
 
-Thursday you explain how releases work.
+Call this **Software 1.0**. Andrej Karpathy used that label for the familiar world in which humans write the program directly. The computer does approximately what the code says, which gave us modern civilization and dependency injection.
 
-By Friday the employee has written a Python script to automate the process and then forgets why it exists.
+Then machine learning changed the contract. Suppose the problem is not “refunds over €500 need approval” but “is this refund fraudulent?” Nobody knows the full rule. We have examples. So instead of writing the behavior, we write the training machinery, choose data and an objective, and optimization produces the behavior inside model weights.
 
-This was approximately where agents started.
+Karpathy called this **Software 2.0**. Knowledge moved from explicit code into parameters. Humans no longer had to describe every feature that makes an image a cat, every acoustic variation that makes a sound a word, or every interaction that makes a recommendation relevant. We supplied data and pressure; the model discovered useful internal representations.
 
-Context windows got larger, memory systems got better, projects persisted, but a deeper problem remained: **how should useful experience become reusable behavior?**
+There was a trade. Software became vastly more capable in domains where rules were hard to articulate, but much of the learned knowledge became difficult to inspect. The fraud system “knows” patterns no engineer wrote down. You can measure its behavior, probe it, retrain it, maybe interpret pieces of it, but you cannot open `fraud_rules.py` and read what the organization learned.
 
-Chapter 4 approached this as epistemology. A remembered lesson is not automatically a trusted lesson. A bad rule written into persistent memory is simply a mistake with tenure.
+Large language models created a third possibility. Karpathy's later **Software 3.0** framing treats natural language itself as a programming interface. The obvious version is a prompt:
 
-Now we need to look at the organizational side.
+> Read this support request, identify what the customer actually needs, check the relevant policy, and resolve it if you are confident. Escalate cases involving legal threats, suspected fraud, or policy conflicts.
 
-## Skills Are Already Becoming a Primitive
+That is not Software 1.0. Nobody enumerated every legal threat or every possible policy conflict. It is not Software 2.0 either. We did not retrain the model to teach it this workflow. We expressed operational knowledge in language and relied on a general model to interpret it.
 
-Anthropic's Agent Skills are a surprisingly concrete implementation of this idea. A skill is a folder containing instructions and potentially scripts, references and other resources. The agent sees compact metadata about available skills and loads the full material only when it becomes relevant—what Anthropic calls progressive disclosure. In late 2025, Anthropic published the format as an open standard. ([Anthropic](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills))
+But “prompt as program” is only the beginning. The more interesting unit is becoming **executable knowledge**.
 
-OpenAI moved in a remarkably similar direction with Codex. Skills bundle instructions, resources and scripts so the agent can perform recurring workflows according to a team's preferred way of working. OpenAI says it has built hundreds of such skills internally for tasks ranging from evaluations and training-run monitoring to documentation and growth experimentation. ([OpenAI Codex](https://openai.com/codex/))
+## The Return of Knowledge Engineering
 
-This is not an accident.
+“Knowledge engineering” has an unfashionable smell because AI has been here before. Expert systems tried to encode human expertise explicitly: rules about medicine, geology, finance, configuration. The dream was sensible. Find experts, extract what they know, put it into a knowledge base, and let a machine reason over it.
 
-Once the base agent becomes sufficiently general, specialization does not always require another model.
+The maintenance was less romantic. Expertise is full of exceptions, tacit assumptions, context, competing heuristics, and sentences beginning with “normally, unless...”. Rule bases became brittle. Knowledge engineers spent their lives interviewing experts and converting fuzzy human practice into formal logic. Machine learning eventually offered a seductive alternative: stop asking experts to explain themselves and learn behavior from data.
 
-Sometimes it requires a folder.
+Now knowledge engineering is returning through the back door, carrying Markdown.
 
-That is a profound demotion for several startups.
+The difference is important. We no longer have to compile every piece of knowledge into rigid symbolic logic. A modern skill can contain prose, examples, scripts, reference material, counterexamples, tool instructions, and boundary conditions. The language model does some of the interpretation that the old knowledge engineer had to make explicit.
+
+This creates a kind of artifact that sits awkwardly between source code and training data. It might say:
+
+> When reviewing a ranking experiment, first establish whether the apparent gain is concentrated in one market or traffic segment. Check instrumentation changes before inventing a causal story. If click metrics rise while orders remain flat, inspect price and position shifts before celebrating. Treat day-one effects with suspicion.
+
+There is no deterministic function here. There is accumulated practice. A human expert can read it and use judgment. Now an agent can too.
+
+So I think the deeper transition is not merely from Python to English. It is a move from **programming behavior**, to **learning behavior**, to **engineering the knowledge from which behavior is produced**.
+
+## This Book Accidentally Became a Software 3.0 Project
+
+I ran into this while editing the book you are reading.
+
+“Make this chapter better” turned out to be almost useless as an instruction. The agent knew what polished prose looked like, and that was part of the problem. It would remove wandering sentences, compress paragraphs into neat antitheses, make every section symmetrical, and occasionally replace a strange joke with something that sounded like a management consultant had discovered philosophy.
+
+So I corrected it. Don't kill the wandering. Don't turn everything into slogans. Preserve the weird joke if it is carrying an idea. Stop breaking every thought into a five-word paragraph. Compare the revision to the previous version rather than assuming shorter and cleaner means better.
+
+Then, a few chapters later, the same mistakes returned.
+
+At some point I realized I was behaving exactly like the manager of the amnesiac employee from the opening. The useful thing was not another correction. It was to externalize what we had learned. We started turning the corrections into reusable evaluation instructions: what to compare, which tendencies to penalize, what “human writing” meant in this book, which kinds of humor were load-bearing rather than decorative. When “this still feels like LLM writing” proved too vague, we even started looking at paragraph statistics and using them as evidence—not as the objective, but as one diagnostic for a failure we had already noticed.
+
+Nothing about the underlying model weights changed. But the next editing session inherited more of the book's editorial history than the previous one had.
+
+That is Software 3.0 in miniature. The durable thing was not a prompt. It was a growing body of **operational knowledge about how this particular artifact should be made**.
+
+And that is exactly what companies are starting to do at much larger scale.
+
+## The Repository Learns How to Explain Itself
+
+The coding industry is converging on a surprisingly concrete version of this idea. A repository increasingly contains two systems: the software itself, and a second layer explaining **how an artificial contributor should work on the software**.
+
+OpenAI lets Codex read `AGENTS.md` files that explain repository structure, commands, tests, and local practices. OpenAI also says its own teams have built hundreds of reusable skills for work that would otherwise be difficult to delegate consistently, including running evaluations, monitoring training runs, drafting documentation, and reporting on growth experiments. Anthropic's Agent Skills use the same general shape: folders of instructions, scripts, and resources that are loaded only when relevant. GitHub Copilot now reads `AGENTS.md`, repository instructions, path-specific instructions, and agent skills as part of its coding and review workflows.
+
+GitHub did something especially revealing: it studied more than 2,500 public agent-instruction files to see what developers were actually writing. The useful files were not grand declarations like “be a world-class engineer.” They looked like operating manuals. Exact commands. Real code examples. Project structure. Tests. Git workflow. Boundaries about what the agent may and may not touch. In other words, the industry rediscovered that expertise is not a persona. It is a collection of situated constraints and habits.
+
+By 2026 GitHub had gone one step further and made skills portable through its CLI across multiple agent hosts, including Copilot, Claude Code, Cursor, Codex, and Gemini CLI. That detail is easy to miss. It means some organizational knowledge can increasingly survive not just a new session, but a **new model vendor**.
+
+The employee changes. The operating manual remains.
+
+This is why the shift matters economically. Frontier models know Python, SQL, React, experimentation, and a remarkable amount of public technical culture. What they do not know is why *your* company refuses to deploy on Friday, why a particular dashboard metric has been broken since 2023 but remains in every meeting, which customer exception was created after a lawsuit, or why Alberto should never again be asked to investigate penguins. Organizations run on this layer of weirdness.
+
+Much of it never makes it into textbooks or training data. It exists in senior people's heads, old incident documents, pull-request comments, abandoned wikis, onboarding conversations, half-remembered arguments, and scripts with names like `final_fix_v2_really.py`.
+
+Traditional software captures some of it in code. Machine learning captures some in data. But an enormous amount is neither rule nor correlation. It is **procedural knowledge**: what to check first, which shortcut is dangerous, which source is trustworthy, when the normal process does not apply, and what “good” means here rather than in a generic benchmark.
+
+For a long time, new employees acquired this by hanging around older employees. Now a growing part of it can be externalized.
+
+That has a strange consequence. If an organization's expertise lives mostly in fine-tuned model weights, replacing the model may require rebuilding a great deal of behavior. If much of the differentiation lives in skills, tools, evaluation sets, process descriptions, patterns, memory, and trusted data, a stronger foundation model can inherit a surprising amount of that culture immediately.
+
+The model becomes replaceable infrastructure. The organization's weirdness survives.
+
+But merely accumulating folders is not a knowledge strategy. It is how we get prompt spaghetti. For that we need something older.
 
 ## From Skill to Pattern
 
-But I think "skill" is still slightly too narrow.
+Christopher Alexander's *A Pattern Language* was about buildings and towns, not artificial agents. But the abstraction fits almost suspiciously well. A pattern is not a command. It describes a recurring situation, the forces that make the situation difficult, a response that has worked, and the consequences of choosing that response. The pattern has a name because names let communities think with it.
 
-I prefer **pattern**.
+Consider an agent rule:
 
-I borrow the idea from Christopher Alexander's *A Pattern Language*. A pattern is not merely an instruction saying *do X*. It captures a recurring problem, the context in which it appears, the forces pulling in different directions, and a solution that has worked often enough to become reusable without pretending to be universal.
+> Never use regex on nested syntax.
 
-That is almost exactly what an autonomous system needs.
+Useful, perhaps. Also wrong. Regex is perfectly reasonable for many small extraction tasks. A full parser may be absurd overhead for a five-line configuration file. The useful knowledge is not `regex = bad`. It is that nested recursive structure creates characteristic failure modes for flat pattern matching; those failure modes become more expensive as input complexity grows; and eventually parser overhead becomes cheaper than debugging clever regex written at 2 a.m.
 
-Consider:
+That is a pattern.
 
-> Prefer a structured parser over regex for deeply nested syntax.
+A prompt library remembers language. A pattern language remembers **experience**.
 
-As a raw instruction, this becomes dogma.
+The book has already accumulated several patterns whether we called them that or not. **Immutable Harness:** when autonomy makes the solution fluid, keep the evaluation boundary harder to change than the thing being evaluated. **Independent Evaluators:** when one judge can be gamed, introduce genuinely independent sources of pressure. **Strategic Constraint:** when showing the final answer causes imitation, expose principles or partial information instead. **Persistent Research Programs:** when early evidence may favor the wrong theory, allow competing lineages to accumulate their own history before forcing consensus.
 
-As a pattern, it has a history.
+Notice what these contain. Not merely “do X.” They contain why, when, the trade, and the characteristic failure. That is the difference between instructions and institutional knowledge.
 
-Nested structures create recursive dependencies. Regex can remain completely reasonable for flat extraction. Parser overhead may be stupid for a five-line file. The pattern becomes useful precisely because it carries the conditions under which the advice earned its reputation.
+## Culture Needs Archaeology
 
-That is different from a prompt library.
+Chapter 4 argued that factual knowledge needs provenance. Culture does too.
 
-A prompt library remembers language.
+Suppose an agent spends three hours debugging a bizarre file format. It eventually writes `marc_analyzer.py`, succeeds, and saves the lesson:
 
-A pattern language remembers **experience**.
+> Use `marc_analyzer.py` for MARC files.
 
-## Culture Needs Provenance
+That is better than forgetting everything. It is also how superstition begins. A richer artifact records that the analyzer worked on these variants, failed on this encoding, replaced two approaches that did not work, was modified later by another agent, and succeeded on seven subsequent tasks. The next agent does not merely inherit a behavior. It inherits some archaeology.
 
-This connects directly back to System 3.
+Human organizations do this inconsistently. A senior engineer tells you “never deploy Friday,” and perhaps six months later someone finally tells you which production incident created the rule, what systems it applied to, and why the organization continues violating it every second Friday. A pattern without history turns easily into ritual.
 
-Suppose one coding agent encounters a strange library format, spends an hour failing, builds a small analyzer and eventually succeeds.
+Executable knowledge therefore needs some of the same trust machinery as factual knowledge. Who created this pattern? From what failures? How often has it worked? Where has it failed? When did the surrounding system change? Is this established practice or one person's strong opinion written with confident punctuation?
 
-The naive skill system saves:
+The more powerful a reusable artifact becomes, the more expensive a bad one becomes. A hallucinated answer may poison one task. A hallucinated skill can poison the next thousand. A bad memory is a mistake. A bad pattern is a mistake with tenure.
 
-> use `marc_analyzer.py`.
+## Knowing Something Is Not Knowing When to Remember It
 
-A better system saves why.
+There is another problem. Ten excellent patterns are easy. Ten thousand are not. The agent cannot load all of them. Even if the context window technically fits them, flooding every task with every lesson is like solving human memory by reading your autobiography before answering the door.
 
-The analyzer worked on these files.
+This is why the seemingly boring mechanics of retrieval become part of intelligence. Anthropic's skills use progressive loading. GitHub separates global, path-specific, and task-specific instructions. Harnesses increasingly treat the working context as an artifact that must be constructed rather than a transcript that grows forever.
 
-It failed on that encoding.
+Having learned the right thing is not enough. The system has to retrieve it at the right time, at the right level of detail, without burying the present problem under the organization's entire history.
 
-This agent created it after these approaches failed.
+This sounds like information retrieval because it is information retrieval. It also sounds like cognition because it is becoming cognition. A culture can contain the right wisdom and still fail because nobody invokes it when it matters.
 
-Another agent later modified it.
-
-Three subsequent tasks succeeded.
-
-One task exposed a boundary condition.
-
-Now when a future agent inherits the tool, it does not merely inherit behavior. It inherits some archaeology.
-
-This is what human organizations do when they work well. A senior engineer doesn't merely tell you, "never deploy Friday." Eventually you learn which production incident created the rule, which systems it applies to, and why the company continues violating it every second Friday.
-
-Without that context, culture becomes superstition.
-
-## The Skill That Writes Itself
-
-There is already movement toward agents creating these reusable structures from their own work.
-
-OpenClaw's Skill Workshop is almost a direct implementation of the problem Chapter 4 raised. When an agent notices that some workflow should become reusable, it can propose a skill—but the proposal does not immediately become live behavior. The human can inspect, revise, reject or apply it. OpenClaw's own explanation is basically the System 3 concern: one bad answer is temporary; one bad reusable skill can influence many future runs. ([OpenClaw](https://openclaw.ai/blog/openclaw-agent-skill-workshop/))
-
-That is a much more interesting loop than manually maintaining a prompt folder forever.
-
-Experience happens.
-
-The agent notices a reusable pattern.
-
-It drafts the pattern.
-
-Someone or something evaluates whether it deserves persistence.
-
-Then future agents can inherit it.
-
-Research is beginning to push this to multi-agent coordination itself. A 2026 paper on "Swarm Skills" proposes representing not only individual procedures but roles, workflows and execution constraints as portable skills that can be refined from successful multi-agent trajectories. It is early research, not a solved standard, but the direction is obvious: even **how a team organizes itself** can become learned reusable knowledge. ([arXiv](https://arxiv.org/abs/2605.10052))
-
-Now the organization can inherit not just:
-
-> how to deploy the service
-
-but:
-
-> when this class of problem appears, spawn two independent researchers, isolate their evidence, then give both results to a third agent that has not seen their reasoning.
-
-That is culture at the level of coordination.
+Humans know this failure intimately. Every company has written a postmortem whose recommendations are rediscovered three incidents later by different people using the phrase “interesting, we should probably document this.” Software 3.0 does not remove the problem. It makes the retrieval policy programmable too.
 
 ## Culture Can Become a Prison
 
-Unfortunately, successful organizations develop another feature.
+If the only problem were forgetting, the answer would be simple: remember everything. Unfortunately, organizations also suffer from remembering too well.
 
-Bureaucracy.
+Every process exists because it helped at some point. Then the world changes and the process remains. A release checklist reaches twenty-seven mandatory boxes because every incident adds a box and no incident removes one. A design heuristic becomes company identity. A temporary workaround becomes architecture. Eventually someone asks why a process exists and receives the most dangerous explanation in organizational life:
 
-Every pattern exists because it helped at some point.
+> That's how we do it.
 
-Then the world changes.
+Agents can reproduce this at machine speed. A pattern succeeds ten times. Its confidence rises. More agents retrieve it. Because more agents use it, alternatives receive less traffic. The dominant pattern therefore accumulates still more supporting evidence. Soon the system has an impressive empirical record proving the thing it stopped comparing against.
 
-The pattern remains.
+Chapter 5 called this the problem of paradigms. Chapter 6 makes it operational.
 
-A release checklist becomes twenty-seven mandatory boxes because every incident added one and no incident ever removed one.
+Patterns need decay, counterexamples, versioning, and competing alternatives. Some should be local rather than universal. Some should expire after the system they describe changes. Occasionally a strong agent should be allowed to ignore the manual precisely so we can discover whether the manual still deserves its authority.
 
-A design heuristic becomes company identity.
-
-A useful workaround becomes architecture.
-
-Eventually somebody asks why a process exists and receives the most terrifying explanation in organizational life:
-
-> "That's how we do it."
-
-Agents can reproduce this faster.
-
-A pattern that succeeds ten times may become more trusted. More agents use it. Their successes create more evidence for the pattern because the alternatives are no longer tried. Soon the pattern appears empirically overwhelming.
-
-We have reinvented institutional lock-in at machine speed.
-
-This is why creative distrust from System 3 has to survive into the shared skill layer.
-
-Patterns should decay.
-
-They should accumulate counterexamples.
-
-Competing patterns should sometimes coexist.
-
-A high-performing agent should occasionally be allowed to ignore the manual and see what happens.
-
-The system should know the difference between "nobody tried another way" and "we tried twelve alternatives and this one kept winning."
+The system needs to know the difference between “we tried twelve alternatives and this kept winning” and “nobody has tried another way since 2025.”
 
 Culture needs memory.
 
 It also needs rebellion.
 
-## The Scaling Problem
+## The Skill That Writes Itself
 
-Once we have one agent, reviewing skills manually seems manageable.
+At this point there is an obvious scaling problem. A company has fifty agents. They create tools, write instructions, discover workarounds, accumulate evaluations, and leave behind thousands of useful and useless traces. Some lessons deserve to become local habits. Some should become company-wide patterns. Some contradict older patterns. Some worked because the evaluator was broken. Some are excellent but apply only to one model version.
 
-Then we have fifty agents.
+We could assign humans to curate all of this manually. Congratulations. We have created middle management again.
 
-They create tools, patterns, workflows, evaluations and new versions of old patterns. Some are local. Some are shared. Some conflict. Some appear successful because they accidentally learned to exploit the evaluator. Some become stale. Some are very good but only in a narrow domain.
+The more interesting possibility is already beginning to appear in research on evolving context and skills: an agent notices recurrent experience, distills a reusable procedure, proposes a new skill, evaluates it on past and held-out tasks, and earns the right to make that lesson persistent. Lilian Weng describes related systems as evolving playbooks: successful and failed trajectories are reflected on, converted into structured knowledge, and curated rather than simply appended forever.
 
-Now imagine asking one human to curate the whole thing.
+This is where Pattern Language stops being a chapter about documentation.
 
-Congratulations.
+Experience becomes knowledge. Knowledge becomes executable. Executable knowledge changes future behavior. Future behavior produces new experience. We have a learning loop **outside the weights**.
 
-We have created middle management again.
+And once the knowledge artifacts, retrieval policy, evaluators, tools, and workflows are all editable software, a slightly dangerous question appears.
 
-This is where another kind of agent becomes necessary.
+Why should humans be the only ones allowed to edit them?
 
-Not an agent whose main job is to solve the user's task.
-
-An agent whose job is to study whether the other agents are still becoming what we wanted.
+That is the next chapter.
