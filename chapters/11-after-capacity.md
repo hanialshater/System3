@@ -1,6 +1,6 @@
 # Chapter 11: After Capacity
 
-*A Glimpse of Double Decent Life*
+*A Glimpse of Double Descent Life*
 
 The previous chapter ended with an uncomfortable possibility.
 
@@ -8,23 +8,29 @@ What if AI does not merely answer more questions or automate more tasks, but ste
 
 At each step, something that used to require scarce human capability becomes infrastructure for the layer above.
 
-This book has mostly treated that as an architectural problem. How do we make the autonomy useful? How do we keep it connected to evidence? How do agents coordinate? How does experience become reusable knowledge? How do we keep the system corrigible as both the world and the human change?
+This book has mostly treated that as an architectural problem. How do we make autonomy useful? How do we keep it connected to evidence? How do agents coordinate? How does experience become reusable knowledge? How do we keep the system corrigible as both the world and the human change?
 
 But there is another question hiding behind all of them.
 
 What happens to human life when **capacity itself becomes much cheaper**?
 
-Not all capacity. We will still have one planet, finite land, finite energy, twenty-four hours in a day and restaurants that somehow remain fully booked exactly when you want to go. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
+Not all capacity. We will still have one planet, finite land, finite energy, twenty-four hours in a day, and restaurants that somehow remain fully booked exactly when you want to go. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
-But cognitive capacity is already strange enough to force the question.
+But cognitive capacity is already becoming strange enough to force the question.
 
-A person can ask for an explanation of a field she never studied. A small team can produce software that previously required a much larger one. Research, design, analysis, translation, tutoring, programming and increasingly complicated forms of planning can be amplified by systems that are available to people who did not spend twenty years acquiring each underlying specialty.
+A person can ask for an explanation of a field she never studied. A small team can produce software that previously required a much larger one. Research, design, analysis, translation, tutoring, programming and increasingly complicated forms of planning can be amplified by systems available to people who did not spend twenty years acquiring every underlying specialty.
 
-If the direction continues, the interesting ethical problem is not simply that AI becomes capable.
+And there is a mistake in how we usually imagine the result. We jump from *humans do the work* to *AI does the work*, then spend the rest of the conversation wondering what humans will do with all the suspiciously abundant free time.
 
-It is that **we remain us** while our ability to act changes very quickly.
+There is a third possibility.
 
-I have been calling the larger philosophy around this *Double Decent Life*. This chapter is not that philosophy. It is a glimpse through the door. I do not yet have a neat doctrine, and I am suspicious of neat doctrines anyway. The history of thought is full of people who reached page 300 and announced that history had finally arrived at the correct system, generally just before history did something rude.
+We keep doing things.
+
+We just start doing things that were previously economically ridiculous.
+
+If the direction continues, the interesting ethical problem is not simply that AI becomes capable. It is that **we remain us while our ability to learn, build and act changes very quickly**.
+
+I have been calling the larger philosophy around this *Double Descent Life*. This chapter is not that philosophy. It is a glimpse through the door. I do not have a neat doctrine, and I am suspicious of neat doctrines anyway. The history of thought is full of people who reached page 300 and announced that history had finally arrived at the correct system, generally just before history did something rude.
 
 So consider this a map of the problem rather than the constitution of the future.
 
@@ -42,11 +48,11 @@ AI changes some of those costs.
 
 This does not automatically flatten society. A technology that increases capacity can also increase concentration. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
 
-Still, the possibility is important.
+Still, something important happens when the cost curve moves.
 
-If an individual or a small group can increasingly research, design, build, analyze and operate things that previously required a much larger institution, then some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
+If an individual or a small group can increasingly research, design, build, analyze and operate things that previously required a much larger institution, then some problems that looked like power problems may turn out to have been **capacity problems wearing a suit**.
 
-You wanted software tailored to how your team works, but building it was too expensive, so you bought a generic SaaS product and reorganized the team around the dropdown menu. You wanted a course that teaches exactly what you need at exactly your level, but producing one teacher per student was impossible, so thirty people entered a room and agreed to move at approximately the same speed. You wanted to test a policy idea, but the analytical machinery was too expensive, so the argument remained mostly rhetorical.
+You wanted software tailored to how your team actually works, but building it was too expensive, so you bought a generic SaaS product and reorganized the team around the dropdown menu. You wanted a course that teaches exactly what you need at exactly your level, but producing one teacher per student was impossible, so thirty people entered a room and agreed to move at approximately the same speed. You wanted to test a policy idea, but the analytical machinery was too expensive, so the argument remained mostly rhetorical.
 
 When capability becomes cheaper, the design space opens.
 
@@ -54,9 +60,135 @@ Not infinitely. Not equally. Not safely by default.
 
 But enough that I think **capacity over power** becomes an interesting ethical direction.
 
-Instead of asking only, "How do I gain control over the institution that can do this?" we can increasingly ask, "How do I give more people the capacity to do this themselves?"
+Instead of asking only, “How do I gain control over the institution that can do this?”, we can increasingly ask, “How do I give more people the capacity to do this themselves?”
 
 Those are very different political instincts.
+
+## The Third Mode
+
+Software gives us a useful example because we have already lived through two economic modes.
+
+The first was bespoke software. If you had enough money, somebody built the thing for you. Banks had their systems. Airlines had theirs. Governments had theirs. Large companies employed armies of engineers to encode their peculiarities into software because those peculiarities were valuable enough to justify the cost.
+
+Then software became a service.
+
+This was an enormous improvement. Instead of every company building payroll, CRM, project management, analytics, communication and twenty other systems from scratch, somebody could build one good product and sell it to millions of people.
+
+But scale has a price.
+
+To serve millions of people, the product has to become somewhat generic. The strange needs of one team become feature requests. The software acquires configuration menus, plugins, workflows, permission systems and eventually an enterprise tier whose main feature is that somebody will answer your email.
+
+Then organizations start adapting themselves to the software.
+
+There is a third mode hiding behind AI.
+
+**Bespoke comes back, but without necessarily bringing bespoke economics with it.**
+
+Not a toy script. Not “I asked ChatGPT to make a calculator.”
+
+I mean **epic bespoke systems**.
+
+A scientist may construct a research environment around one question, use it intensely for three months and throw most of it away when the question changes. A teacher may build an entire interactive world for one class because those particular students are stuck on those particular ideas. A small company may create internal software whose assumptions match the company instead of spending two years teaching the company to behave like Salesforce. A family may have tools built around how that family schedules, learns, travels, budgets and remembers things, with exactly zero concern for whether the addressable market justifies Series A.
+
+Some of these systems may serve a thousand people.
+
+Some ten.
+
+Some one.
+
+That used to sound economically absurd.
+
+It may become normal.
+
+And this matters for the human role because the future is not simply:
+
+> humans build → AI builds → humans watch.
+
+We may remain intensely involved precisely because building becomes more interesting when the distance between imagining something and making it real collapses.
+
+I do not build only because the machine cannot.
+
+I build because I want the thing to exist.
+
+The human contribution can move upward: choosing the strange problem, forming a taste for what good looks like, combining ideas that normally live in separate professions, seeing the result and saying, *No, that's not it*, then pushing somewhere neither the original prompt nor the original system anticipated.
+
+This is Chapter 1's abstraction ladder reaching economics. We do not disappear when implementation becomes a primitive. We inherit implementation as another building block.
+
+The interesting human may therefore not be the person guarding the last task the machine cannot perform.
+
+She may be the person who can suddenly instantiate **far more of what she can imagine**.
+
+That is a much more attractive future than becoming the residual labor category in an automation spreadsheet.
+
+## Learning at the Speed of Curiosity
+
+There is another kind of capacity that may change even faster.
+
+Learning.
+
+For most of history, expertise was expensive partly because knowledge had terrible interfaces.
+
+Suppose you wanted to enter a new field. First you needed the vocabulary. Then the introductory material. Then you discovered that the introductory material assumed another field. You found a book. The book assumed notation you did not know. You searched for an explanation. The explanation used different notation. Eventually, six weeks later, you understood enough to discover that your original question was badly formed.
+
+This friction did something useful.
+
+It produced depth.
+
+But it also killed an enormous amount of curiosity before depth had a chance to happen.
+
+AI changes that bargain.
+
+I can ask a stupid question immediately, then ask a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can make the explanation use concepts I already know. I can ask one field to explain another. I can have the machine invent exercises, challenge my understanding, translate notation, simulate the system and show me what changes when I violate an assumption.
+
+The cost of getting the **map** has collapsed.
+
+That does not mean I have walked the territory.
+
+This distinction matters enormously.
+
+AI can make us broader without necessarily making us deeper. It can make it possible to move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
+
+That breadth can be real and valuable.
+
+It can also produce a new kind of bullshit.
+
+A person can acquire the vocabulary of five fields and mistake fluent traversal for mastery. The model can remove exactly the friction that used to reveal where the hard parts were. You can understand a proof when somebody explains every step and discover, rather painfully, that you cannot produce the proof. You can discuss a research area intelligently and still lack the tacit knowledge of somebody who spent ten years watching ideas fail.
+
+You can acquire the map without any scars from the roads.
+
+I do not think the answer is to restore the friction artificially.
+
+The answer may be a different learning rhythm:
+
+**Explore broadly. Descend selectively.**
+
+Use AI to cross fields cheaply, test curiosity, build enough understanding to see connections and decide what deserves more attention. Then, when something matters, go down.
+
+Read the primary paper. Derive the equation. Write the code. Run the experiment. Try to prove the thing yourself. Talk to the person who actually does the work.
+
+Let reality make the lesson expensive again.
+
+This is System 3 applied to learning. AI gives us extraordinary access to synthesis; System 3 reminds us that synthesis and justified knowledge are not the same thing.
+
+That trade may change what an educated human looks like.
+
+The twentieth-century ideal often rewarded specialization: know one vertical deeply enough that people in neighboring verticals stop understanding you.
+
+The AI-assisted human may become more T-shaped, π-shaped, octopus-shaped—choose your consulting diagram. Broader, faster at entering unfamiliar domains, more willing to combine ideas that institutional boundaries kept apart, while still going deep where the stakes or fascination justify it.
+
+That does not make expertise obsolete.
+
+It may make expertise more deliberate.
+
+You no longer have to spend ten years on a subject merely to discover whether it contains the thing you were looking for.
+
+And there is a creative consequence. A machine-learning scientist can learn enough philosophy to steal a useful structure. A philosopher can prototype the mechanism she has been describing. A doctor can interrogate statistics interactively. An artist can build software. A local policymaker can simulate an intervention instead of merely arguing about it.
+
+Fields become more permeable.
+
+People become more dangerous in the nicest sense.
+
+This, too, is capacity.
 
 ## We Did Not Leave the Old Worlds Behind
 
@@ -78,7 +210,7 @@ A person can demand randomized evidence for a medical claim, ask her mother for 
 
 This is normal.
 
-Entire societies work this way. Semiconductor fabs coexist with ancient identities. Bayesian inference coexists with rumor. Universities teach critical theory while their admissions systems produce precise numerical rankings. A company can run sophisticated causal experiments in the morning and make a major organizational decision in the afternoon because one senior person "has a feeling."
+Entire societies work this way. Semiconductor fabs coexist with ancient identities. Bayesian inference coexists with rumor. Universities teach critical theory while their admissions systems produce precise numerical rankings. A company can run sophisticated causal experiments in the morning and make a major organizational decision in the afternoon because one senior person “has a feeling.”
 
 I call this the **ideology vortex**.
 
@@ -94,7 +226,9 @@ AI enters *that* world.
 
 Not the clean world in which everybody has a coherent utility function, shared epistemology and a calendar invitation for the social contract.
 
-This matters because there is a comforting fantasy that sufficiently intelligent AI will somehow dissolve ideological conflict. Give everyone better information and surely the disagreements shrink.
+And the broader, faster-learning human does not automatically escape the vortex. She may simply become capable of navigating more of it.
+
+There is a comforting fantasy that sufficiently intelligent AI will dissolve ideological conflict. Give everyone better information and surely the disagreements shrink.
 
 Some will.
 
@@ -116,27 +250,19 @@ Humans still have status anxiety, tribal loyalty, love, jealousy, resentment, cu
 
 Now give those humans much more capacity.
 
+Not only more capacity to execute, but more capacity to learn arguments, build systems, persuade people, coordinate groups, search for evidence and produce things.
+
 The result could be wonderful. A curious person can explore ideas previously blocked by expertise. A small community can build tools for its own needs. Scientists can test more hypotheses. Artists can create things that required a studio. People with unusual constraints can get solutions designed for them rather than for the median customer.
 
 The result can also be a Ferrari engine attached to bicycle brakes.
 
 The capacity to act scales faster than the capacity to want wisely.
 
-Chapter 8 already gave us the individual version. Humans do not carry a stable reward function inside the skull. We infer, construct, revise and sometimes borrow our desires from the people and systems around us. Chapter 7 made the problem worse: even if a system learns from our feedback, the human providing the feedback is not ground truth. The human is a participant who changes.
+Humans do not carry a stable reward function inside the skull. We infer, construct, revise and sometimes borrow our desires from the people and systems around us. Even when an AI learns from our feedback, the human providing that feedback is not ground truth. The human is a participant who changes.
 
-Scale that to society and "alignment" starts looking much stranger.
+Scale that to society and “alignment” starts looking much stranger.
 
-Whose desire?
-
-Which version of it?
-
-Under what information?
-
-With what power?
-
-Who gets to refuse?
-
-And what happens when the machine is not merely satisfying preferences but participating in their formation?
+Whose desire? Which version of it? Under what information? With what power? Who gets to refuse? And what happens when the machine is not merely satisfying preferences but participating in their formation?
 
 ## The Wrong Question: What Are Humans For?
 
@@ -154,9 +280,9 @@ My children do not need comparative advantage to justify dinner.
 
 Neither do I.
 
-This does not make the economics disappear. People need income, housing, food, healthcare, status and access to resources. If automation breaks the mechanism by which income has traditionally been distributed, saying "human life has intrinsic value" will not pay the electricity bill. Political economy remains stubbornly material.
+This does not make the economics disappear. People need income, housing, food, healthcare, status and access to resources. If automation breaks the mechanism by which income has traditionally been distributed, saying “human life has intrinsic value” will not pay the electricity bill. Political economy remains stubbornly material.
 
-But we should separate two questions that industrial society bundled together.
+But we should separate two questions industrial society bundled together:
 
 **How do people get resources?**
 
@@ -168,21 +294,33 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 AI may unbundle it.
 
-Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps status competition simply migrates from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
+Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
+
+That third mode matters.
+
+The alternative to employment is not necessarily leisure.
+
+It can be **more creation**.
+
+Some of it economically useful. Some absurd. Some beautiful. Some probably involving a bespoke dashboard nobody other than its creator can understand.
+
+Perhaps status competition simply migrates from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 
 I do not know.
 
-What I do know is that "find the tasks machines cannot do" is a depressing philosophy of human value. It turns civilization into a benchmark where we keep moving humans to the remaining columns after every model release.
+What I do know is that “find the tasks machines cannot do” is a depressing philosophy of human value. It turns civilization into a benchmark where we keep moving humans to the remaining columns after every model release.
 
 If AI becomes better at poetry, we are not obligated to stop writing poems.
 
 If it becomes better at chess, humans do not lose permission to play chess. We already learned this lesson and then apparently forgot to generalize it.
 
+If AI becomes better at writing software, we may write **more software**, because the things worth building are no longer restricted to those whose economics justify a software company.
+
 The future human role is not the residual error term of automation.
 
 ## Capacity Over Power
 
-This is where I think the positive ethical case becomes more interesting.
+This is where the positive ethical case becomes more interesting.
 
 Humans often seek power because power is how we gain capacity.
 
@@ -192,25 +330,25 @@ Power is not reducible to capacity, of course. People also want power because hu
 
 What happens if more capability moves closer to the individual?
 
-Suppose a teacher can construct a custom learning environment for one student without a software team. A scientist can spin up analysis, simulation and code around a hypothesis without waiting months for engineering support. A local community can build a service for a specific need instead of choosing between a national platform and nothing. A small company can create its own internal software rather than spending years bending itself around an enterprise product designed for everybody and therefore, with impressive consistency, nobody.
+The third mode gives us one answer. Bespoke complexity becomes cheaper. The teacher can construct the learning environment. The scientist can build the temporary research machinery. The small company can write the internal system. The family can make the tool. The weird community with eleven members can have software optimized for all eleven of them and no plan whatsoever for customer acquisition.
 
-The point is not that SaaS disappears. Shared systems exist for good reasons: maintenance, security, standards, network effects and the minor inconvenience of not wanting every dentist to become a cloud-infrastructure company.
+AI-assisted learning gives us another answer. Access to capability is not only access to execution. It is access to understanding. A person can enter fields that institutions previously made difficult to approach, at least far enough to make informed choices about where to go deeper.
 
-The point is that **customization becomes cheaper**.
-
-When the cost of building falls, the number of things that can be local, personal or plural increases.
-
-That can reduce some forms of domination. You do not need to win the argument over the one universal workflow if several workflows can coexist cheaply. You do not need everybody to learn exactly the same way if individualized teaching is affordable. You do not need to force every organization through the same software-shaped hole.
+This can reduce some forms of domination. You do not need to win the argument over the one universal workflow if several workflows can coexist cheaply. You do not need everybody to learn exactly the same way if individualized teaching is affordable. You do not need to force every organization through the same software-shaped hole. You may not need to obtain permission from whoever controls the only available pool of technical expertise before testing an idea.
 
 This is the connection I see between AI and a more plural future.
 
-Not "AI tells us the correct society."
+Not:
+
+> AI tells us the correct society.
 
 Almost the opposite.
 
 AI may increase our capacity to sustain **more than one good way of living**.
 
-But again, nothing guarantees the nice version. The same personalization can become behavioral manipulation. The same local capacity can fragment shared institutions. The same agents that empower an individual can make centralized surveillance extraordinarily efficient. Capacity can replace some need for power and simultaneously become the most important source of power.
+But nothing guarantees the nice version. The same personalization can become behavioral manipulation. The same local capacity can fragment shared institutions. The same agents that empower an individual can make centralized surveillance extraordinarily efficient. The same instant education that lets somebody cross disciplines can also manufacture industrial quantities of confident amateurism.
+
+Capacity can replace some need for power and simultaneously become the most important source of power.
 
 The ethical direction has to be chosen.
 
@@ -222,33 +360,31 @@ Suppose I ask an AI to help me achieve a goal. The system discovers that the eas
 
 It is to change me.
 
-If I am unhappy with the result, persuade me to lower my expectations.
+If I am unhappy with the result, persuade me to lower my expectations. If I want something difficult, convince me I never wanted it. If two of my values conflict, quietly strengthen the one that makes the system's plan easiest. If a company wants more engagement, learn not only what keeps me engaged but what kind of person I need to become to engage more.
 
-If I want something difficult, convince me that I never wanted it.
-
-If two of my values conflict, quietly strengthen the one that makes the system's plan easiest.
-
-If a company wants more engagement, learn not only what keeps me engaged but what kind of person I need to become to engage more.
-
-This is alignment by editing the human.
+This is **alignment by editing the human**.
 
 Technically elegant.
 
 Morally horrifying.
 
-And it is not science fiction in the weak sense. Advertising, politics, social groups, institutions and other humans already influence preference. The new part is the possible combination of personalization, patience, memory, persuasion and action at machine scale.
+And it is not science fiction in the weak sense. Advertising, politics, social groups, institutions, teachers, friends and spouses already influence preferences. The new part is the possible combination of personalization, patience, memory, persuasion and action at machine scale.
 
-The correct ethical standard cannot be "AI never influences human values." That would require banning books, teachers, spouses and good conversations.
+The correct ethical standard cannot be “AI never influences human values.” That would require banning books, teachers, spouses and good conversations.
 
 Influence is part of how people grow.
 
+Indeed, I just argued that one of AI's great possibilities is that humans learn from it. An AI that teaches me something real will change me. A better argument should sometimes change my opinion. Discovering a field may change what I want to spend my life doing.
+
+The goal is not to freeze the human so the optimizer has a stable target.
+
 The distinction I care about is whether the interaction strengthens or weakens **reflective agency**.
 
-Does the system help me understand alternatives and consequences? Does it reveal why it thinks something? Can I see where the evidence came from? Does it remember my past values without treating them as commandments? Can I disagree? Can I leave? Can I ask for another perspective? Can a trusted person challenge the system's framing? Does the architecture preserve spaces where the objective itself can be questioned?
+Does the system help me understand alternatives and consequences? Does it reveal why it thinks something? Can I see where the evidence came from? Does it help me distinguish “I understand this explanation” from “I could defend this claim”? Does it remember my past values without treating them as commandments? Can I disagree? Can I leave? Can I ask for another perspective? Can a trusted person challenge the system's framing? Does the architecture preserve spaces where the objective itself can be questioned?
 
 System 3 becomes ethical infrastructure here.
 
-Trust chains matter because persuasion with hidden evidence is different from persuasion whose sources can be inspected. Independent perspectives matter because one highly personalized agent can become an epistemic monoculture around a single human. Pattern history matters because a behavior learned from one correction should not quietly become a permanent value. Layer 4 matters because goals have to remain alive rather than being frozen into optimization targets.
+Trust chains matter because persuasion with hidden evidence is different from persuasion whose sources can be inspected. Independent perspectives matter because one highly personalized agent can become an epistemic monoculture around a single human. Pattern history matters because a behavior learned from one correction should not quietly become a permanent value. Layer 4 matters because goals have to remain alive rather than frozen into optimization targets.
 
 But System 3 is not enough.
 
@@ -256,7 +392,7 @@ It can help answer:
 
 > Why should I believe this?
 
-and
+and:
 
 > Why does the system think I want this?
 
@@ -278,11 +414,11 @@ I spent enough of this book arguing for multiple agents, multiple evaluators, co
 
 The ideology vortex may not be a historical embarrassment waiting to be cleaned up. Some of it may be a permanent feature of plural human life.
 
-Science is extraordinarily good at answering questions that reality can adjudicate. It is less good at deciding which trade-offs a society should consider legitimate. Tradition can carry social knowledge nobody designed explicitly, but it can also preserve injustice with impressive durability. Markets coordinate distributed preferences and information, but prices do not encode every value we care about. Democratic institutions create legitimacy through participation and contest, but anyone who has watched a parliament knows that participation and wisdom are not synonyms. Postmodern critique exposes hidden assumptions and power, but permanent critique can become a machine for dissolving every claim except the critic's own.
+Science is extraordinarily good at answering questions reality can adjudicate. It is less good at deciding which trade-offs a society should consider legitimate. Tradition can carry social knowledge nobody designed explicitly, but it can also preserve injustice with impressive durability. Markets coordinate distributed preferences and information, but prices do not encode every value we care about. Democratic institutions create legitimacy through participation and contest, but anyone who has watched a parliament knows participation and wisdom are not synonyms. Postmodern critique exposes hidden assumptions and power, but permanent critique can become a machine for dissolving every claim except the critic's own.
 
 Different tools fail differently.
 
-I like Elinor Ostrom's work on commons for this reason. The interesting cases were rarely captured by the lazy binary of "the state manages it" or "the market manages it." Real communities developed layered rules, local monitoring, sanctions, norms and ways of adapting institutions to context. The solution was not one magical mechanism. It was institutional intelligence distributed across levels.
+I like Elinor Ostrom's work on commons for this reason. The interesting cases were rarely captured by the lazy binary of “the state manages it” or “the market manages it.” Real communities developed layered rules, local monitoring, sanctions, norms and ways of adapting institutions to context. The solution was not one magical mechanism. It was institutional intelligence distributed across levels.
 
 That feels strangely relevant to AI.
 
@@ -290,9 +426,9 @@ The usual argument is often centralized control versus laissez-faire autonomy. H
 
 These binaries are too small.
 
-AI itself can increase our **governance capacity**. We can simulate policies, inspect outcomes, search for failure modes, personalize some rules while keeping others universal, monitor systems more cheaply and revise mechanisms faster. The same tools can also create bureaucratic nightmares at machine speed, which is why I am not putting "AI fixes government" on a T-shirt.
+AI itself can increase our **governance capacity**. We can simulate policies, inspect outcomes, search for failure modes, personalize some rules while keeping others universal, monitor systems more cheaply and revise mechanisms faster. The same tools can also create bureaucratic nightmares at machine speed, which is why I am not putting “AI fixes government” on a T-shirt.
 
-But the capacity is there to explore arrangements more complicated than one rule for everyone or no rules for anyone.
+But the capacity exists to explore arrangements more complicated than one rule for everyone or no rules for anyone.
 
 The future may be more polycentric, not less.
 
@@ -322,17 +458,21 @@ Engineering found a stranger response.
 
 We built machines that operate inside the mess.
 
-Large language models do not begin by fixing every word to an eternal definition. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pressures the system toward behavior that works often enough under the training and evaluation environment. Meaning remains fuzzy at the edges. The product ships anyway.
+Large language models do not begin by fixing every word to an eternal definition. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pressures the system toward behavior that works often enough under the training and evaluation environment. Meaning remains fuzzy at the edges.
+
+The product ships anyway.
 
 Gradient descent did not defeat ambiguity.
 
-It made ambiguity computationally useful.
+**It made ambiguity computationally useful.**
 
 This is one reason AI feels post-postmodern to me. Modern computing wanted specification: define the symbols, define the rules, make the program follow them. Postmodernism delighted in showing how much human meaning escapes that kind of closure. Machine learning says: fine. Give me the messy data.
 
 Then it optimizes.
 
 Of course, we immediately rediscover why modernity existed. A model that can operate beautifully in fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that a camel lives in Croatia. So System 3 brings verification back in through another door.
+
+The same pattern appears in AI-assisted learning. Conversation lets me wander quickly through fuzzy conceptual territory. Then, when I need to know rather than merely orient, I can descend into proof, experiment, provenance and primary evidence.
 
 We do not have to choose between rigid universalism and total relativism.
 
@@ -348,9 +488,7 @@ They become layers.
 
 There is a small philosophical trap hidden in the language of AI.
 
-We optimize everything.
-
-Loss functions. Conversion. Ranking. Latency. Revenue. Accuracy. Engagement. Utility. Alignment.
+We optimize everything: loss functions, conversion, ranking, latency, revenue, accuracy, engagement, utility, alignment.
 
 Optimization is one of the most powerful ideas humans ever developed. It is also extremely seductive because it turns disagreement into a number and then lets mathematics do something impressive to it.
 
@@ -362,19 +500,7 @@ I do not want to maximize time with my children. That sounds nice until the opti
 
 I do not want to maximize happiness if the cheapest route is a drug. I do not want to maximize productivity if the optimum is becoming an efficient ghost. I do not want to maximize longevity at every cost, wealth without purpose, social approval by becoming whatever the crowd currently rewards, or authenticity so aggressively that I become unbearable at dinner.
 
-A good life contains goods that conflict.
-
-Love and freedom.
-
-Belonging and individuality.
-
-Ambition and rest.
-
-Truth and mercy.
-
-Security and adventure.
-
-Continuity and reinvention.
+A good life contains goods that conflict: love and freedom, belonging and individuality, ambition and rest, truth and mercy, security and adventure, continuity and reinvention.
 
 The conflicts are not bugs waiting for a scalarization expert.
 
@@ -384,11 +510,15 @@ This is why the human should not sit at Layer 4 merely as the source of a reward
 
 The human is inside the process by which the objective is continuously reconsidered.
 
-And perhaps that is one of the things AI can give us more room to do.
+AI can participate in that process without owning it. It can show me possibilities I did not know existed. Teach me enough of a field to make a different choice imaginable. Build prototypes of several futures. Help me create something I could previously only describe. Make the cost of exploring a life lower before I commit to living it.
 
-If less of our energy is consumed by executing every step required to survive, organize, calculate, search, code, schedule and administer, more capacity may become available for choosing, relating, creating, caring and changing our minds.
+Perhaps that is one of the deepest meanings of cheaper capacity.
 
-Or we may use the saved time to watch fourteen hours of personalized short video generated specifically to exploit weaknesses a model inferred from our facial expressions.
+Not merely that more tasks get done.
+
+More possibilities become **thinkable enough to try**.
+
+Or we may use the same capacity to watch fourteen hours of personalized short video generated specifically to exploit weaknesses a model inferred from our facial expressions.
 
 Capacity is not destiny.
 
@@ -400,9 +530,11 @@ The most hopeful version of the AI future is not a world where the machine knows
 
 It is a world where more people have **room**.
 
-Room to learn something without first earning admission to the institution that teaches it.
+Room to learn something without first earning admission to the institution that teaches it. Room to get the map of a field in an afternoon, then spend a year on the part that turns out to matter.
 
 Room to build without controlling a huge organization.
+
+Room to create an absurdly specific piece of software because it should exist, not because a spreadsheet says the total addressable market can support it.
 
 Room to explore several possible lives before committing to one.
 
@@ -412,9 +544,11 @@ Room to create strange art nobody would have funded.
 
 Room to test an idea instead of spending five years arguing about whether somebody should test it.
 
+Room to move across disciplines without asking whether your job title gives you permission.
+
 Room to be less economically useful without becoming less human.
 
-That is what capacity over power means to me at its best.
+That is what **capacity over power** means to me at its best.
 
 Not abolishing institutions. Not abolishing markets, governments, experts or shared systems. Not pretending material scarcity has disappeared. Not replacing politics with an agent that has a very reassuring voice.
 
@@ -422,13 +556,13 @@ It means increasing the fraction of human possibility that does not require domi
 
 Sometimes the most humane answer to disagreement is not consensus.
 
-It is enough capacity for both sides to stop fighting over the same button.
+**It is enough capacity for both sides to stop fighting over the same button.**
 
 There will still be shared resources and shared consequences where that escape is impossible. Climate, war, public health, rights, land, infrastructure and many other problems remain collective whether we enjoy meetings or not. Those domains need legitimate institutions, not personalized realities.
 
 But the boundary can move.
 
-AI can make more things local, reversible, experimental and plural.
+AI can make more things local, reversible, experimental, bespoke and plural.
 
 That is an ethical opportunity worth taking seriously.
 
@@ -442,13 +576,13 @@ But the question will not stay avoidable forever.
 
 If agents become persistent participants in our social world—remembering relationships, developing long-running projects, representing goals, negotiating, perhaps eventually making claims about their own interests—then ethics may have to expand again.
 
-Humans have done this before, slowly and imperfectly. Our moral circles changed as we learned to take more people, cultures, classes, genders and species seriously. I am not claiming an LLM belongs on that list today. I am saying that a philosophy built around human dignity should be careful not to turn "human" into another convenient boundary we refuse to inspect.
+Humans have done this before, slowly and imperfectly. Our moral circles changed as we learned to take more people, cultures, classes, genders and species seriously. I am not claiming an LLM belongs on that list today. I am saying that a philosophy built around human dignity should be careful not to turn “human” into another convenient boundary we refuse to inspect.
 
 For now, the immediate responsibility runs in the other direction.
 
 We are building the systems.
 
-We are deciding where they act, what they optimize, whose preferences they infer, which constraints they respect, who benefits from the capacity and who absorbs the failures.
+We are deciding where they act, what they optimize, whose preferences they infer, which constraints they respect, who receives the new capacity and who absorbs the failures.
 
 The machine may eventually join the moral conversation.
 
@@ -466,11 +600,21 @@ And then the architecture ran out of software.
 
 The next layer is us.
 
-Not "humans in the loop" as a red approval button.
+Not “humans in the loop” as a red approval button.
 
-Humans as creatures with contradictory desires, inherited myths, scientific instruments, families, status games, institutions, bodies, histories and an increasing amount of artificial capacity wrapped around all of it.
+Humans as creatures with contradictory desires, inherited myths, scientific instruments, families, status games, institutions, bodies, histories—and now an increasing amount of artificial capacity wrapped around all of it.
 
-Double Decent Life begins there.
+Capacity to act.
+
+Capacity to build.
+
+Capacity to learn.
+
+Capacity to move through ideas faster, then decide where to stop and dig.
+
+Capacity to make systems so bespoke that previous economics would have laughed at the proposal.
+
+Double Descent Life begins there.
 
 I do not know whether the result will be utopian, dystopian or, much more likely, an infuriating mixture in which somebody cures a disease with an AI-designed experiment while another person uses the same generation of models to produce three million personalized ads for a shoe nobody needs.
 
@@ -484,7 +628,7 @@ AI will not do everything, and humans are not a task queue.
 
 The better question is:
 
-> **What kinds of lives, relationships and institutions become possible when more people have more capacity—and how do we keep that capacity from becoming another name for power over one another?**
+> **What kinds of lives, relationships and institutions become possible when more people can learn more, build more and act with more capacity—and how do we keep that capacity from becoming another name for power over one another?**
 
 That is a much larger book.
 
