@@ -6,328 +6,450 @@
 
 *The algorithmic vortex*
 
-Once you discover AI coding, there's no going back. It's faster than you. It knows more libraries. It debugs patterns you wouldn't see. But there's a problem: it is not autonomous, it makes silly mistakes and builds on them, and you end up babysitting the project, which means you need to spend tons of effort to make sure it matches what you need, covers all the cases, and sets the right architecture. Vibe coding is very promising, but in reality most developers found it introduces big problems they didn't have before.
+Once you discover AI coding, there's no going back.
 
-But there's a specialized slice of work where AI becomes genuinely powerful: *bounded problems*. These are small to mid-scale, require advanced thinking and deep expertise, but don't demand full production infrastructure. Think: algorithms to design, articles to write, marketing materials, demos, educational content. Extremely hard problems, but contained in scope.
+It is faster than you at a ridiculous number of things. It knows libraries you forgot existed. It can stare at a stack trace and notice something you have been ignoring for an hour. Then, five minutes later, it does something unbelievably stupid, believes the stupid thing completely, and builds three more decisions on top of it.
 
-People are discovering the potential here. Compound systems—also called agents—have shown remarkable progress. AlphaCode ranked in the top 54% of competitive programmers. AlphaCode 2 improved to top 15%. Agents like Claude Code solve real GitHub issues at high rates (80% on SWE-Bench).
+This is the strange reality behind all the vibe-coding excitement. The machine is extremely capable, but you are still there. You check the architecture. You notice the missing case. You tell it that no, we are not redesigning the database because one button is the wrong color. You keep enough of the project in your own head to notice when the agent quietly wanders into another universe.
 
-But these are still collaborative. You partner with the AI. You direct. It executes.
+So the question from the previous chapter becomes practical very quickly. If I want more autonomy, where can I actually give it without spending the whole time babysitting the autonomy?
 
-Then something shifted. A new class of agents emerged—ones you can actually *hire*. They don't ask permission. They research different strategies, test them, report results. AlphaEvolve pioneered this by combining LLM reasoning with evolutionary strategies. Instead of randomly mutating solutions, it understands algorithms semantically and proposes intelligent improvements. It achieved state-of-the-art on many problems that involve algorithm design. Including kernels for deep learning inference, matrix multiplication, and more.
+Production software is almost the worst place to answer that question. A supposedly simple task may involve deployment, legacy systems, users, security, another team's API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don't even know whether the problem was intelligence, infrastructure, missing context, or the fact that someone named a database column `new_status_final_2`.
 
-Most remarkably, Terence Tao and collaborators at Google DeepMind published a paper showing AlphaEvolve helping solve hard mathematics problems. Tao's expertise was still essential—this isn't fully autonomous—but it represents the most hands-off collaboration experience we've had. The system researched, tested, iterated very complex problems with minimal direction.
+I wanted something cleaner: a hard problem, but contained. Something where I could genuinely say, "figure it out," and still have an objective way to know whether whatever came back was any good.
 
----
+Algorithms are almost perfect for this. The search can be brutally difficult while the evaluator remains wonderfully stupid.
 
-## How Did We Get From Classic to Autonomous Agent?
+And that is how I ended up spending an unreasonable amount of time packing circles into a square.
 
-This chapter walks through three distinct philosophies for tackling bounded problems that build upon each other. I will be using **circle packing** as our running example: basically, you have a square and you want to place k circles inside it, without overlapping but maximizing the sum of radii.
+## How Did We Get Here?
+
+I know you are here for agent autonomy, not because you woke up this morning thinking, *I really need a deeper understanding of geometric crossover*. Unfortunately, we need to spend some time inside the problem, because the interesting part of the agent story only becomes obvious once you see what humans normally have to invent.
+
+Circle packing gives us a surprisingly good tour through the history of problem-solving. For a long time, the relationship was straightforward: a human understood the problem, invented an algorithm and wrote it down. When direct algorithms were not enough, we invented optimization procedures and heuristics that searched for good solutions. Machine learning added a different kind of machinery, one that could learn useful structure instead of having every useful representation specified by hand.
+
+Now language models can write and modify the search procedure itself.
+
+That is where the relationship begins to change.
 
 ![History of algorithm design](../resources/image0136.png)
 
 *History of algorithm design*
 
-*Figure: The history of algorithm design—from Pólya's systematic problem-solving (1945) through the NP-Hard wall (1971), meta-heuristics (1980s), to modern neuro-symbolic methods (2020s).*
+The old methods do not disappear. Exact algorithms remain useful. Optimization remains useful. Evolutionary search remains useful. Neural methods remain useful. The interesting possibility is that we no longer have to choose one family in advance and hope we picked the right religion.
 
-We are currently in a problem-solving methodology vortex where we have more options than ever to solve bounded problems. It starts with **Symbolic Methods** (1950s—Present), the rigorous foundation where we build the logic using specific algorithms or generic meta-heuristics to explore the solution space. This evolved into **Neural Methods** (2010s—Present), pure intuition where we ask a model to "imagine" a solution, getting creativity without guaranteed validity. Today, we see **Neuro-Symbolic & Agentic** methods (2023—Present), the hybrid where we use the semantic power of LLMs (the brain) to *invent* and *optimize* symbolic code (the body). This leads us to **Agent Autonomy**—where we stop writing the solver and start hiring the agent to research it for us.
-
-![Problem-solving methodology landscape](../resources/image0137.png)
-
-*Problem-solving methodology landscape*
-
-*Figure: The problem-solving landscape. Symbolic methods (algorithms, solvers, meta-heuristics) provide rigor. Neural methods (LLMs, generative models) provide intuition. Neuro-Symbolic and Agentic systems combine both, enabling compound systems that can reason, generate, and self-correct.*
-
-### Approach 1: Classic Symbolic Methods (Search & Optimization)
-
-This is classic problem solving popularized with Pólya's systematic method from his 1945 masterpiece *How to Solve It*. His message is simple and powerful: problem-solving isn't magic. It's a learnable skill. Understand the problem. Devise a plan. Carry it out. Reflect on what worked.
-
-For decades, this worked beautifully. You'd sit down with circle packing and think: *What are the constraints? What patterns emerge? Can I design a strategy?* Then you'd code it. Done. For simple problems (sorting a list, finding the shortest route), this approach is elegant and efficient.
-
-**Then you hit the wall.**
-
-Here's the hard reality: most **bounded problems** are so called *NP-hard* (computationally intractable). Loosely speaking, even if you're the smartest person alive, there's no way to design an algorithm to find the optimal solution without checking all possible combinations. Circle packing is one of these hard problems. Think of it this way: if you have 26 circles and a square, there are more possible arrangements than atoms in the universe. You can't check them all. Pólya's systematic method assumes you can think your way to the answer. For NP-hard problems, you can't. There's no clever trick. No hidden pattern. Just exponential complexity. But here's the catch: these problems are impossibly hard, yet humans can find reasonably good solutions. What's going on?
-
-Stay calm—science isn't broken. It turns out that for most problems, you can find approximate solutions in reasonable effort. Loosely speaking, problem-solving evolved into two ways:
-
-**Approximation algorithms.** These give you *provably good* solutions—you might not get the absolute best, but you know you're within, say, 90% of optimal. The problem is circle packing isn't one of them. It doesn't have a clean approximation algorithm with guarantees.
-
-**Optimization and Meta-heuristics.** Researchers stopped asking "Can we design the perfect algorithm?" and started asking "What if we just *explore intelligently*?" They invented techniques like hill climbing (keep improving locally), genetic algorithms (evolve populations), and simulated annealing (random jumps that cool down) or sometimes use optimization techniques like gradient descent (follow the slope) or Linear Programming (solve constraints mathematically). These methods don't try to find the absolute best solution. Instead, they try to find a *really good* solution, fast. They can get stuck in local optima (good-but-not-best dead ends)—you might not know how far you are from the global optimum or understand exactly why a solution works. But they're pragmatic: they work.
-
-All of these—classic algorithms, approximation algorithms, solvers, and meta-heuristics—are **symbolic methods**: methods that can be represented through symbols, written as code, and executed deterministically. You control them. You design and run them with confidence.
-
-Symbolic methods have dominated for a very long time and remain useful. But they demand deep expertise: algorithm design, programming, mathematics, and optimization theory. And even then, it's challenging to produce truly good solutions.
-
-**The real advantages:** Symbolic methods are rigorous, fast, and grounded in science. You can prove properties about them. You can analyze their complexity. You can reason about why they work. When you run a genetic algorithm with known mutation rates and selection pressure, you understand the mechanics. The code is transparent. You can debug it. You can improve it incrementally. This is powerful—it's why symbolic methods still dominate in engineering where trust and auditability matter.
-
-The problem is: they require *you* to be the expert. You have to know or discover the right approach.
-
-### Approach 2: Pure Machine Learning (Learned Intuition)
-
-The idea is seductive: humans solve hard problems with intuition alone. So mimic that—stop designing algorithms. Just feed a neural network thousands of algorithmic problems. Let it learn patterns the way humans do.
-
-And just to give you an idea of how powerful this is, I asked Gemini to generate an image of a circle packing solution. I doubt that Gemini image generation was trained on such problems so this would be a stretch test, but it still managed to generate a surprisingly good solution—circles placed well, the intuition right, and the basic structure working. But it's not a valid solution: it has extra circles and violates the constraint count. The point is, neural networks have good intuition about solutions. This could be handy for quick prototypes or to guide algorithms in complex search spaces.
-
-But here's the problem: this approach treats ML as the master algorithm—the one solution for everything. And even though it's quite powerful, it's more expensive, data-hungry, and not grounded in science. That leads to fundamental questions about validity, rigor, stability, and why it works. Unlike symbolic methods, pure ML is not easy to reason about, you can't prove properties, debug failures, or analyze complexity.
-
-### Approach 3: Neuro-Symbolic (Intuition + Rigor)
-
-This is where things get interesting. What if you didn't ask the network to solve the problem *directly*? What if you asked it to *suggest a direction*?
-
-The idea: neural networks generate code, treat each piece of code as a solution in a search space, and explore solutions using meta-heuristics. That is neuro-symbolic—the hybrid. It has strong intuition that handles novel situations, able to generate code with the symbolic rigor.
-
-The naive approach is to ask an AI agent to solve the problem 50 times and take the best code it generates. That's not great, but Google did something similar with AlphaCode to win competitive programming competitions (though they generated millions of solutions). But that's old news. Now they're doing something much smarter with their newer AlphaEvolve method, which we will explore in detail later.
-
-I know you are here for agent autonomy not to learn about circle packing, however, I want to cover some fundamental ideas that let you better design your own code evolution agent, so let's work a bit on circle packing and see how we can use meta-heuristics to solve it. This will reveal the powerful ideas that underpin advanced code evolution agents like AlphaEvolve.
-
----
+Circle packing will make this less abstract.
 
 ## The Running Example: Circle Packing
 
 ![Citrus packing - a real-world example](../resources/image0138.png)
 
-*Citrus packing - a real-world example*
+*Citrus packing — a real-world example*
 
-*Figure: Circle packing in the real world. 13 citrus slices of varying sizes arranged to maximize coverage on a square slate. The same challenge algorithms face—fit as much as possible without overlap.*
+The problem is simple enough to explain to a child. Take 26 circles and put them inside a square. None may overlap, none may cross the boundary, and the circles do not have to be the same size. We want to maximize the sum of their radii.
 
-The problem is simple to state: Pack 26 circles into a unit square [0,1]x[0,1] such that no circles overlap and none extend outside the boundary. Maximize the sum of all circle radii. Simple to state. Deceptively hard to solve.
+That's the whole thing. No customers, no authentication, no stakeholder arriving after the first demo to explain that what they *really* wanted was the opposite of what they originally asked for.
 
-Why is this hard? Because the solution space is a nightmare of local optima. Place circles randomly and use gradient descent? You hit a local maximum quickly—maybe 80% of the optimal score. Use a greedy algorithm that fills space left-to-right? You hit around 85%. Even clever heuristics plateau early.
+Just circles.
 
-Mathematicians have studied circle packing for decades. For small numbers of circles (n < 30), the optimal or near-optimal solutions are known. But finding them computationally is hard. You need a strategy that explores the solution space intelligently, not randomly.
+Unfortunately, the solution space is nasty. Every circle has a position and a radius, and nearly every decision affects several others. Increase one radius and two neighbors may overlap. Move a neighbor and something else now needs to move. A packing can look almost perfect while being trapped in a configuration where every obvious improvement makes the solution invalid.
+
+For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using.
 
 ![Circle packing solution n=26](../resources/image0139.png)
 
 *Circle packing solution n=26*
 
-*Figure: A near-optimal circle packing for n=26 with benchmark score **2.635**.*
+*Figure: A strong reference packing for the 26-circle objective, scoring approximately **2.635** under our evaluator.*
+
+This is what makes the problem useful for studying autonomy. Searching is hard, but judging is cheap. The evaluator does not care whether the agent has a persuasive explanation for why two circles ought to overlap slightly in the name of geometric inclusivity. It checks the constraints and returns a score.
+
+There is something deeply comforting about an evaluator with no personality.
 
 ### First Idea: Hill Climbing
 
-When you solve circle packing manually, you might try this: start with a grid initialization, optimize locally with gradient descent, check the result. You climb the performance hill.
+If I gave you a rough packing and asked you to improve it manually, one obvious strategy would be to make small changes. Move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn't.
 
-**The Hill Climbing Algorithm:**
+That is hill climbing.
 
-1. Take a solution.
-2. Slightly **perturb** the position (x, y) or radius (r) of a circle.
-3. Check if the new solution is **valid** (no overlaps, inside boundary).
-4. If valid and better (higher total radius), **accept** it. Else, reject it.
+The algorithm is almost embarrassingly reasonable:
 
-This sounds reasonable, but as you can see in the figure below, it quickly gets frustrating. Early on, it's easy to make improvements—acceptance rate is around 40%. But as things get tighter, finding a valid move becomes nearly impossible. Rejection rate skyrockets to over 90%, and you simply get stuck. Circles become stuck in local optima and no matter how you move them you end up in an invalid solution.
+1. Start with a valid solution.
+2. Perturb a position or radius.
+3. Check whether the result is valid.
+4. Keep it if the score improves.
+5. Repeat.
+
+Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
 ![Hill climbing progression](../resources/image0140.png)
 
 *Hill climbing progression*
 
-*Figure: Hill climbing gets stuck. Starting from small circles (1.330), the algorithm mutates positions and radii, accepting improvements. Early on, 40% of mutations are accepted. After 2000 iterations (score: 2.260), only 8% are accepted—the algorithm has converged to a local optimum, far from the benchmark (2.635).*
+*Figure: Early mutations are often accepted, but as the packing tightens, valid improvements become increasingly rare and the search stalls.*
 
-### Evolutionary Algorithms
+In one simple run, the score climbed from around 1.33 to roughly 2.26. That is not terrible, but it is also nowhere near 2.635.
 
-Hill climbing fails because it puts all your eggs in one basket. You have one solution, and if it gets stuck, you're done.
+Hill climbing is not failing because it is stupid. It is doing exactly what we asked: improving the solution immediately around it. The problem is that the current solution may live in the wrong part of the search space. Reaching a much better packing may require temporarily moving through configurations that look worse, or jumping to a structure that cannot be reached through a sequence of tiny improvements.
 
-Evolutionary strategies change the game by using a **Population**. Instead of one climber, imagine dropping 100 climbers all over the mountain range.
+This turns out to matter far beyond circle packing. A system can become very competent at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
 
-Some will land in valleys. Some on small hills. A few may land near the highest peak.
+For now, though, the fix is simpler. Instead of one trajectory, keep many.
 
-This parallel exploration is powerful. Most climbers will try to climb, and they will exchange ideas with other climbers. This class of algorithms is called **Evolutionary Algorithms**—a general optimization strategy inspired by patterns of selection and adaptation observed in nature.
+## Evolutionary Algorithms
 
-Here are a few concepts that are used in evolutionary algorithms:
+Hill climbing gives one candidate a very long life. Evolutionary methods keep a population.
 
-**1. Population (Diversity):** We maintain a pool of e.g., 100 competing solutions. This prevents the tunnel vision of hill climbing.
+Instead of dropping one climber into the landscape, imagine dropping a hundred. Some start in terrible places, some find decent regions, and a few may stumble into structures a single search would never encounter.
 
-**2. Mutation:** Randomly perturbing circle positions and radii to see if that helps the solution improve.
+The biological vocabulary is familiar: population, mutation, selection, crossover. The metaphor is optional. What matters is that diversity prevents the whole search from inheriting the history of one initial guess.
 
-**3. Crossover:** Share ideas between solutions.
+For circle packing, mutation is easy enough to imagine. Move circles. Change radii. Perturb several values at once.
 
-**4. Selection:** Choose the best solutions to continue to the next generation.
+Almost immediately, however, we run into a practical problem: most interesting mutations break the packing. Two circles overlap, or one moves outside the square. The mutation may point toward an interesting arrangement, but the result is invalid.
 
-So let's apply this to our circle packing problem.
+So we added **virtual forces**. When circles overlap, imagine them repelling one another. After a mutation or crossover, run a small repair procedure that pushes them away from collisions and back inside the boundary.
 
-1. **Population:** We start with a population of 100 solutions.
-2. **Mutation:** We mutate each solution slightly and see if it helps the solution improve. Often creates invalid solutions (overlaps). We use **Virtual Forces** to fix these issues. After mutation or crossover, if circles overlap, they exert repulsive forces on each other. We iteratively apply these forces to fix the solution, pushing circles into valid positions.
-3. **Crossover:** We share ideas between solutions. Sharing ideas between two circle packing solutions is not a simple task. If you just swap the circles between the solutions you will destroy the geometric structure of the solution. Instead, we use **Bipartite Matching Crossover**. Think of it as finding the correct partner for each circle. Instead of pointing at index 0 in both lists, we ask: "Which circle in Parent B is the geometric equivalent of this circle in Parent A?"
-4. **Selection:** We choose the best solutions to continue to the next generation.
+This helps a lot, but notice what happened. The evolutionary algorithm did not discover virtual forces. We did.
+
+Then we reached crossover.
+
+Suppose Parent A and Parent B both contain useful geometric structure. How do we combine them? The naive solution is to pair circle 0 from one parent with circle 0 from the other, circle 1 with circle 1, and so on.
+
+That is usually nonsense because circle numbering is arbitrary. Two nearly identical geometric arrangements may store corresponding circles at completely different indices.
+
+So we used **bipartite matching**. Rather than pair circles by position in an array, pair them according to their geometric role in the packing. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
 
 ![Naive vs Geometric Crossover](../resources/image0141.png)
 
 *Naive vs Geometric Crossover*
 
-*Figure: Naive vs. Geometric Crossover. Left: Naive matching relies on index order. If parents have different internal orderings (even with similar geometry), naive matching blends unrelated circles, destroying structure. Right: Bipartite matching finds the optimal geometric partners efficiently using the Hungarian algorithm (optimal assignment solver), creating clean, valid offspring.*
+*Figure: Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents.*
 
-When we combine these components, we get a powerful parallel exploration strategy.
+Now we can evolve a population: mutate, repair, cross, select and repeat.
 
 ![Evolutionary strategies with Bipartite Matching crossover](../resources/image0122.png)
 
 *Evolutionary strategies with Bipartite Matching crossover*
 
-*Figure: Evolutionary strategies in action. Starting from random initializations (score 2.08), the population evolves through 20 generations using Bipartite Matching crossover and hill climbing. By generation 20, the best solution reaches 2.45—far better than hill climbing alone, but still short of the 2.635 benchmark.*
+*Figure: Starting around 2.08, the evolutionary search reaches roughly 2.45 in this experiment—much better than the simple hill climber, but still below our reference.*
 
-This is the core idea of evolutionary algorithms.
+This is already much stronger than hill climbing. It is also where I started noticing a problem with my own role.
 
-### MAP-Elites: Quality-Diversity Archives
+Every time the search became substantially better, I had added something important to it. I decided we needed repair. I decided how crossover should respect geometry. I chose the representation.
 
-Standard evolutionary algorithms track one thing: the best solution. If you have a population of 100 solutions, you keep the top 5 and discard the rest. This is of course better than hill climbing, but it is still a restricted way to explore the solution space. There is another powerful idea: what if we can not only track the best solution, but also track the best-in-class solution for different feature dimensions? For example, if you want the best packing that has equal size circles, circles with different radii, big circles in the center, etc. This would be interesting to explore, but it is not just one "best" solution.
+The optimizer searched, but I was still inventing most of the useful moves.
 
-MAP-Elites (Multidimensional Archive of Phenotypic Elites) is exactly this idea. It maintains an archive indexed by feature dimensions. Instead of asking "what's the best solution?", it asks "what's the best solution that exhibits behavior X? What's the best that exhibits behavior Y? What's the best that balances X and Y?"
+### MAP-Elites: Don't Kill Weird Ideas Too Early
 
-Imagine a 2D grid where each cell represents a unique behavioral signature. For circle packing, MAP-Elites might track solutions by their packing density and spatial distribution pattern. Each cell holds the best solution ever found for that combination of characteristics.
+Ordinary evolutionary search has another problem. If you maintain 100 solutions and repeatedly keep only the highest-scoring ones, the population eventually starts looking like one large extended family.
 
-This is called an illumination algorithm because it illuminates the fitness landscape—a map of solution quality—showing which regions of the behavior space are achievable and what the optimal solution is in each region. Instead of converging to one peak, you map the terrain.
+That can be excellent for exploitation and terrible for discovering a genuinely different strategy.
+
+MAP-Elites takes a different approach. Instead of ranking every candidate on one axis and keeping only the winners, you describe solutions along a few behavioral dimensions and preserve the best candidate in different regions of that space.
+
+For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
 ![MAP-Elites archive visualization](../resources/image0123.png)
 
 *MAP-Elites archive visualization*
 
-*Figure: MAP-Elites archive visualization. Each cell in the grid represents a unique behavioral signature (e.g., Symmetry vs. Radius Variance). The algorithm illuminates the fitness landscape by finding the best solution for each cell.*
+This is quality-diversity search. The idea is not merely to preserve the current winner, but to keep qualitatively different directions alive long enough to discover whether any of them become interesting.
 
-Why does this matter? Because it maintains diversity. A population of 100 solutions becomes a 10x10 archive of 100 *different kinds* of solutions. Some are good at high density, some at balanced distribution, some at novel packing patterns. This diversity helps escape local optima and explore unexpected solution regions. And later on—spoiler alert—this diversity will become solutions that take inspiration from optimization, computational geometry, and other fields. It gives you the best geometric solutions, best optimization solutions, and the best hybrids of both.
+I like this because optimization is often unfair to immature ideas. A new approach can initially perform badly simply because nobody has polished it yet. If the first respectable solution immediately kills everything else, the search can become very efficient at discovering one family of answers.
 
----
+But MAP-Elites introduces another human choice: what dimensions define the archive?
 
-## Neuro-Symbolic Methods: Why We Need "Brains"
+Symmetry? Radius variance? Number of large circles? Something topological? Something I haven't thought of?
 
-We've seen that symbolic methods—hill climbing, evolutionary algorithms, MAP-Elites—work beautifully. But they have a fatal flaw: **invention**.
+Again the machinery is getting sophisticated, but the choice of *how to search* still depends heavily on us.
 
-*We* had to invent the Virtual Forces. *We* had to realize that circle packing needs a geometric crossover like Bipartite Matching. The algorithm didn't invent these concepts; it just engaged in a parameter search using the tools we built for it. And not only that, we only have limited capacity for this. We can't spend all day and night trying new intelligent ideas for circle packing—who does that anyway?
+That became the real bottleneck.
 
-If you encounter a new problem—say, protein folding or routing high-speed trains—you have to start over. You have to be the expert who invents the domain-specific operators.
+## The Invention Problem
 
-**This is the Neuro-Symbolic unlock.**
+By this point, the symbolic search system was fairly capable. We had hill climbing, population search, repair, geometric crossover and quality-diversity archives. We could evaluate a huge number of candidate packings and explore far more of the space than any human would inspect manually.
 
-What if we could hire an AI to do the invention part? What if we could say, "Here is the problem," and the AI decides, "I should try computational geometry," or "I should implement a specific type of nonlinear optimization"?
+Yet every substantial conceptual jump came from somebody noticing something.
 
-This isn't just about filling empty spaces in a parameter grid. It's about discovering **novel approaches**—entirely new algorithms or mathematical framing that we might not have considered.
+Someone had to invent the repair mechanism. Someone had to decide that geometric matching was a useful way to crossover two packings. Someone had to choose what kinds of diversity were worth preserving.
 
-Instead of us writing the code and the AI tuning the parameters (Symbolic), we ask the AI to **write the code itself**. We use the "Brain" (LLM) to design the "Body" (Symbolic Code).
+This is where traditional search reaches its natural boundary. It can explore very effectively once we define the representation and the legal moves, but sometimes the representation and the moves are exactly the things we need to rethink.
 
-### AlphaEvolve: The Architecture
+That is where neural models become interesting.
 
-To understand how we achieve this today, we need to look at the system that pioneered it: **AlphaEvolve**.
+I once asked an image-generation model to produce a picture of a circle-packing solution. This was not a serious benchmark; I have no idea what related examples it may have encountered during training, and I can already hear Reviewer 2 clearing his throat.
 
-Imagine a system where you set up a problem, then step back and watch evolution happen at scale. You provide three things: a prompt template that describes what you're trying to solve, an evaluation function that scores solutions, and an initial program to start with.
+I wanted to see something simpler: did the model have any useful geometric intuition about what a dense packing should look like?
+
+Surprisingly, yes. It generated something that looked like a plausible packing. The circles had structure. The spacing looked intentional. If you glanced at the image, you could believe the model understood the problem.
+
+Then you counted the circles.
+
+Wrong number.
+
+Some constraints were violated.
+
+It was a beautiful answer to a nearby problem.
+
+That little experiment captures something useful about learned models. They can be remarkably good at producing plausible structure without guaranteeing that every formal requirement survives the generation process.
+
+A symbolic optimizer has the opposite personality. Give it a precisely defined representation and constraints and it will obey them. What it will not naturally do is decide that your representation is unimaginative.
+
+So instead of choosing between neural intuition and symbolic rigor, I wanted to put them in the same loop.
+
+The useful move was to stop asking the model to produce the packing directly.
+
+Ask it to write the program that produces the packing.
+
+## Let the Model Write the Solver
+
+A candidate no longer needs to be only a list of circle positions and radii:
+
+```text
+(x1, y1, r1), (x2, y2, r2), ...
+```
+
+It can be an entire program:
+
+```text
+solve_circle_packing.py
+```
+
+One program may use constrained optimization. Another simulated annealing. Another a geometric construction. Another may combine a hand-designed initialization with numerical refinement.
+
+The evaluator does not need to care which family of algorithms produced the solution. It runs the program, checks the geometry and scores the result.
+
+This gives the language model a much more interesting role. Rather than randomly perturbing numbers, it can read the program, form a rough theory about why it underperforms and modify the algorithm.
+
+Perhaps the optimizer keeps converging badly because the initialization is weak. Change the initialization. Perhaps a geometric construction gets close but leaves local slack. Add a numerical optimization phase afterward. Perhaps one repair procedure keeps destroying useful structure. Replace it.
+
+The mutation is no longer only numeric. It can contain an idea expressed in code.
+
+That is the basic neuro-symbolic move behind systems such as FunSearch and AlphaEvolve. The language model proposes changes at the level where code has meaning; execution and the evaluator decide whether any of those ideas were actually useful.
+
+## AlphaEvolve
+
+AlphaEvolve turns that basic loop into a much larger search process.
+
+Imagine one generation. The system picks a promising program from its archive, perhaps along with a few other successful but different programs that may contain useful ideas. The model sees the current code, examples of what has worked, and the scores produced by previous attempts. Instead of rewriting everything, it proposes a patch: modify the initialization, add a search stage, replace a heuristic, combine one useful component with another.
+
+The patch is applied, the program runs, and the evaluator scores the result. That program—and the information about how it performed—goes back into the archive. Then the loop repeats, thousands of times.
 
 ![AlphaEvolve architecture](../resources/image0124.png)
 
 *AlphaEvolve architecture*
 
-*Figure: AlphaEvolve's complete architecture. A scientist/engineer provides the problem setup: prompt templates, LLM selection, evaluation code, and an initial program to evolve. The distributed controller loop repeatedly samples parent programs and inspirations from the solution database, generates mutation prompts, uses LLMs to create code diffs, applies diffs to create variants, evaluates each variant, and stores results back in the solution database.*
+The diff-based mutation is important. Real programs have structure worth preserving. If every generation rewrites the whole file, useful ideas disappear as easily as bad ones. Small patches let the system change the part it thinks matters while leaving the rest intact.
 
-The system enters a loop that repeats hundreds of times:
+The archive matters for the same reason the population mattered earlier. If the current winner becomes the parent of everything, diversity collapses. Keeping multiple lineages alive gives the search a chance to combine ideas that mature at different speeds.
 
-1. **Pick a parent program** from the solution database along with inspirations.
-2. **Generate a mutation prompt**. The prompt sampler crafts something like: "Here's a solution scoring 2.55. Here are better solutions. Suggest improvements."
-3. **Diff-Based Mutation:** The LLM doesn't rewrite the whole file. It generates a diff (a patch). This allows the agent to make surgical changes without breaking the rest of the logic.
-4. **Crossover:** It doesn't just mutate one parent. It takes high-performing programs and asks the LLM to blend their logic, effectively performing semantic crossover.
-5. **Execute and Store:** Apply the diff, run the evaluator, and store the result.
+What the LLM adds here is a much richer mutation operator. It does not merely change syntax according to a fixed rule. It can look at the code and make a semantic guess about why it might be failing.
 
-This is the power of AlphaEvolve: you don't program evolution—you set up the machinery and let the LLMs discover what works.
+Sometimes the guess is excellent. Sometimes it produces nonsense wrapped in perfectly respectable Python. The advantage of our setting is that the argument does not need to be settled in prose. We run the program.
 
-And it works incredibly well. This architecture, and related systems like **FunSearch** and **AlphaDev**, has led to breakthroughs in mathematics, computer science and real-world optimization.
+This kind of code evolution has already produced impressive results in algorithm design and mathematical search. What interested me most, though, was what happened to the human.
 
-### My Journey: From Hard-Coded Loops to Deep Autonomy
+Instead of writing the algorithm, I was increasingly building the machinery in which algorithms could be generated, compared and improved.
 
-I wanted to replicate this. My first instinct was to build the machinery.
+That sounded suspiciously like the bet from Chapter 1.
 
-I used Aider, a fantastic command-line coding agent, to port the AlphaEvolve logic. I built the database, the prompt sampler, the evaluation loop. It worked. I successfully replicated AlphaEvolve and OpenEvolve project results on circle packing and even got solutions a bit faster.
+So, naturally, I built one.
 
-But then I saw something that changed my perspective.
+## My First Version: Build All the Machinery
 
-Researchers from Princeton first built SWE-agent, one of the first coding agents designed to solve GitHub issues. It had an elaborate Agent-Computer Interface (ACI) with custom-built tools for file editing, specialized search APIs, and git wrappers—essentially trying to hand-hold the model through a rigid developer loop.
+My instinct was predictable.
 
-But then they released **SWE-agent-mini**, a lightweight version that stripped everything away. Instead of a complex suite of custom tools, they gave the agent one thing: **Bash**.
+I started building the framework.
 
-**The Insight:** If the agent has a shell, it has almost everything. It can `grep` to search. It can `sed` to edit. It can run Python. If it needs a specialized tool, it can write the tool itself.
+A database of programs. Prompt sampler. Evaluation loop. Selection. Mutation prompts. Crossover. Archive management. I used Aider and other coding agents to help recreate the core ideas, and it worked. We could evolve circle-packing code and get respectable solutions.
 
-This made me pause. The framework I was building—the prompt samplers, the loop controllers—was essentially hard-coding behavior that modern LLMs might already have internalized.
+I enjoyed this immensely because I like building systems that generate other systems, which I suspect is either a research interest or a mild personality disorder.
 
-We are seeing a shift towards deep agents—models that don't just follow instructions but think for extended periods. They maintain their own state, manage persistent todo lists, and autonomously replan when they hit roadblocks.
+While I was doing this, coding agents themselves were getting much better with much less custom machinery.
 
-So I tried a radical experiment.
+Earlier software-engineering agents often wrapped the model in carefully designed interfaces: custom editing commands, repository-search tools, restricted action spaces and a lot of logic guiding how the model interacted with the machine.
 
-I deleted my AlphaEvolve clone. I deleted the database code. I deleted the controller loop.
+Then smaller, more minimal agents began showing that capable models could get surprisingly far with something much simpler.
 
-I opened a terminal with **Claude Code** and gave it a single high-level directive:
+Give them a shell.
 
-> "Here is a Python evaluator script for circle packing. Your goal is to write a Python script that maximizes the score returned by this evaluator. You have full autonomy to research algorithms, test them, and iterate. I will go get coffee."
+Search with `grep`. Inspect files. Run Python. Apply a patch. If a useful tool doesn't exist, write it.
 
-### The Deep Autonomy Result
+The shell is already a very rich environment because decades of software engineering have made useful operations composable. Once the model is competent enough to navigate that world, some of the scaffolding we used to build around it starts looking optional.
 
-The results were astonishing.
+I looked back at the code-evolution framework I had just spent time constructing and had the unpleasant thought engineers occasionally have after a productive week:
 
-Without a hard-coded evolutionary loop, Claude researched existing approaches, proposed methods like SLSQP and simulated annealing, noticed where numerical optimization got stuck, wrote its own initializations, and kept iterating.
+*Maybe I shouldn't have built most of this.*
 
-It acted as orchestrator, researcher and engineer at once.
+The framework knew how to choose a parent, run an evaluator, store a score, compare approaches and create another experiment. But a capable coding agent can understand those instructions too. It can keep notes, run scripts, create helper tools, explore several approaches, inspect results and change direction.
 
-### The Agent's Discovery: Diagonal Layering
+Some of the behavior I was carefully encoding in Python might already be present in the model.
 
-I gave the agents full autonomy to write their own Python code, restricted only by an **immutable harness**: the evaluator.
+So I deleted most of my orchestration code and tried the stupidly simple version.
 
-After several generations, the agents abandoned random guessing and converged on a **Diagonal Layering Strategy**. They discovered that arranging circles in diagonal bands allowed tighter packing than grid or radial patterns, achieving a score of **2.636**.
+## The Coffee Test
+
+I opened Claude Code in a directory containing the evaluator and gave it a high-level instruction along the lines of:
+
+> Here is the evaluator for the circle-packing problem. Write a Python program that maximizes the score. You can research strategies, write tools, run experiments and iterate. Do not modify the evaluator.
+
+Then I went for coffee.
+
+This became the autonomy test I actually cared about. Not whether AI could help me solve the problem; that was already obvious. Not whether it could write code faster than I could; usually it could.
+
+I wanted to know whether I could leave.
+
+If I still had to choose every strategy, approve every experiment, rescue every failed branch and keep the search alive myself, then I had a very powerful collaborator. That is valuable, but it is not the kind of autonomy I was trying to understand.
+
+Circle packing gives us a rare luxury because the evaluator can stay behind when I leave. The agent can change its code, create scripts, abandon an approach, try another one and waste compute on something that turns out to be useless. It cannot redefine what counts as a valid packing or quietly edit the scoring function because the current score hurts its feelings.
+
+For this kind of problem, that fixed harness makes a surprising amount of freedom tolerable.
+
+## What Happened
+
+The agent did not execute one elegant master plan. It bounced around, which was encouraging.
+
+It tried numerical optimization, changed initialization strategies and noticed that some optimizers repeatedly converged to poor local solutions. It experimented with the geometry of the starting configurations and mixed those constructions with numerical refinement.
+
+Eventually one family of solutions began arranging circles in diagonal bands. We called the idea **diagonal layering**.
+
+I had not instructed the agent to pursue that particular construction. The interesting part for me was not whether the geometry itself was historically novel; it was that the agent found a direction, saw an improvement and decided to invest more of its search there without me selecting the branch.
+
+Once the structural idea became strong enough, the work changed character. The agent spent less effort inventing new arrangements and more time on solver settings, tolerances, initialization details and other details that are boring until the last fraction of a percent matters.
 
 ![Code evolution result](../resources/image0125.png)
 
-*Code evolution result: 20 generations of optimization*
+*Code evolution result: iterative optimization*
 
-*Figure: Code evolution in action. Starting from 2.613 (Gen 1), the agents iterate through 20 generations, discovering and refining the Diagonal Layering strategy to reach 2.636 (Gen 15)—slightly above the 2.635 reference benchmark we were using.*
+In our best run, the evaluator returned roughly **2.636**, slightly above the **2.635** reference we had been using.
 
-The benchmark we were using was **2.635**, associated with AlphaEvolve/OpenEvolve-style results. Our best run under our evaluator reached **2.636**.
+I want to be precise about that sentence. Under our evaluator, the score was better than the reference. Calling it a new state of the art in circle packing would require much more work: matching problem definitions, checking constraints and tolerances, reproducing the result properly and doing a much more serious literature search than I needed for this experiment.
 
-The numerical difference is tiny. The interesting part is not the decimal point. It is *how* we got there.
+The smaller claim is enough.
 
-We did not hard-code diagonal layering. We gave the agents a problem, hints, tools, an evaluator, and enough freedom to research and iterate. The strategy emerged from the search.
+The agent found a solution that beat our reference while I was not writing the solution algorithm for it.
 
-This is the future of software development that interests me. Not merely writing code faster, but using agents to search over better ways of solving a problem.
+That was the result I wanted.
 
----
+## The Algorithmic Vortex
 
-## The Design Space: An Algorithmic Vortex
+This is what I mean by the Algorithm Vortex.
 
-We've barely scratched the surface. AlphaEvolve itself uses more advanced techniques like quality-diversity archives and island models to maintain healthy evolutionary dynamics.
+At the beginning, I can choose hill climbing, evolutionary search, simulated annealing, constrained optimization or some geometric heuristic. Traditionally that choice happens early and determines much of what follows.
 
-The design space is vast—a true algorithmic vortex. Quality-diversity archives preserve different niches. Island models keep populations partially separated so they don't all collapse onto one idea. Hyperband-like strategies can fail fast on cheap approximations before spending resources on winners. Version control can become part of the experiment machinery for larger codebases.
+Once code is cheap to generate and evaluation is cheap enough to run repeatedly, the choice does not need to be permanent. A geometric construction can initialize a numerical optimizer. An evolutionary method can search the parameters of another solver. A language model can notice a failure pattern and create a repair procedure. Two ideas that began in separate lineages can be combined after an experiment makes the connection useful.
 
-Each of these deserves its own treatment. The important point here is that once an agent can generate code and an evaluator can judge it, the search space expands from parameter tuning to **ways of solving the problem**.
+The search keeps moving outward. A normal optimizer searches over candidate solutions. Meta-heuristics search over larger spaces of solutions and strategies. Code evolution lets us search over programs that themselves search for solutions. Once a capable coding agent controls the experimentation loop, even the decision about which kind of search to try next can become part of the process.
+
+There are still algorithms everywhere in this picture. The difference is that I am no longer forced to decide the full algorithmic architecture before the experiment starts.
+
+I define the problem and the evaluator, provide the environment, and let much more of the machinery in between move.
+
+That is the vortex.
 
 ## The Contract
 
-Here's what we learned, distilled into principles you can use tomorrow.
+After running these experiments a few times, I ended up with a small set of rules that worked unusually well for bounded problems where experimentation was cheap and the evaluator was objective enough that the agent could not charm its way around it.
 
-**Never write solution code yourself.** You're the manager—spawn, evaluate, prune. If you write code, you limit diversity. The main agent that writes solutions tends to get stuck in its own context rut, fixing its own bugs rather than rethinking the approach. Treat code generation as a parallelizable resource.
+### Don't solve the problem for the agent
 
-**Keep the harness immutable.** Autonomy requires boundaries. If agents can modify the test, they'll "solve" the problem by lowering the bar—changing the box size, relaxing constraints, redefining success. The evaluator is the anchor in a system where everything else is fluid.
+This is harder than it sounds. You watch the agent try something mediocre and immediately think of a better approach. You want to help.
 
-**Cross-pollinate success.** Random mutation is too slow for expensive LLM calls. When Agent B succeeds with diagonal layering and Agent A failed with grid packing, tell the next generation what worked. Learned traits can be inherited directly instead of rediscovered through thousands of tokens of trial and error.
+Sometimes you should. But every time I jump in with my own solution, the search becomes a little more like whatever I happened to think of first.
 
-**Prune ruthlessly.** Diversity is good; bad diversity is expensive. If an approach clearly isn't working, kill the lineage and free the budget for something more promising.
+For these experiments, I wanted different directions badly enough that I had to resist becoming the senior engineer on every branch.
 
-**Separate discovery from polish.** Once diagonal layering appeared, the problem changed. We were no longer searching for geometry; we were tuning numerical optimization around a promising geometry. Discovery and optimization are different modes.
+Long-running agents have their own version of this problem. Once the context contains twenty minutes of reasoning about one architecture, every new instruction gets interpreted through that architecture. Fresh sub-agents can be useful precisely because they don't know why yesterday's bad idea seemed so compelling.
 
-No elaborate framework is required. Put these principles in a prompt, give the agent an evaluator, and let it work. I found Claude Code effective for this because it can use skills, sub-agents and a shell, but the product matters less than the contract.
+### Keep the evaluator immutable
 
----
+This one is much less negotiable.
 
-## What Made This Work
+If the agent can change the harness, the meaning of the experiment disappears quickly. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only 25 circles fit? Perhaps 26 was merely an aspirational requirement.
 
-The experiment worked because several unusually favorable conditions came together.
+At that point we are no longer optimizing circle packing. We are negotiating with the specification.
 
-The problem was **complex but bounded**. There was plenty of room for invention, but the artifact remained small enough that an agent could build and test it repeatedly.
+For bounded problems, the immutable evaluator gives the agent somewhere it cannot simply reinterpret failure.
 
-The harness was **immutable**. Success was externally defined and difficult to negotiate with.
+### Let successful ideas travel
 
-Code was **cheap to evolve**. Agents could propose completely different approaches, not merely tune parameters.
+Independent search gives diversity, but perfectly isolated search wastes information.
 
-The environment was **simple enough** that we did not need a large framework around the agent. Bash and an evaluator were enough.
+If one branch discovers a useful initialization and another finds a better local optimizer, future experiments should have some way to inherit both. This is where code evolution becomes more interesting than asking the same model the same question 100 times.
 
-That combination is powerful.
+The subtle part is that sharing everything immediately can also collapse diversity. Sometimes one branch should remain ignorant of the dominant approach long enough to discover something different.
 
-It is also unusually clean.
+There is no magic setting here. It is another design choice in the search.
 
-Most things people build are not like circle packing.
+### Kill things
 
-A demo can be technically correct and terrible. An explanation can be accurate and confusing. A design can pass every test and still make the user want to throw the laptop out of a window.
+Diversity is useful. Preserving every bad idea forever is hoarding.
 
-Circle packing lets the evaluator tell us exactly who won.
+If a branch keeps underperforming and is not producing anything interesting, eventually it should die so the compute and attention can move elsewhere.
 
-What happens when the evaluator doesn't know?
+The hard part is timing. Kill too quickly and you may discard an immature idea that needed another generation. Keep everything forever and you end up funding a large family of increasingly sophisticated failures.
 
-That's where we go next.
+Search needs enough patience for novelty and enough cruelty for budget control.
+
+### Separate discovery from polish
+
+Early in a search, I want large conceptual changes: different geometry, different solvers, different representations.
+
+Once a strong direction appears, the useful work becomes smaller and more boring. Solver tolerances. Initialization details. Numerical settings. Tiny modifications that are pointless on a bad idea and extremely valuable on a good one.
+
+The diagonal-layering run made this obvious. Once the structural direction looked promising, continuing to invent entirely new geometries became less useful than squeezing more performance from the one that was already working.
+
+Those are different modes of work, and confusing them wastes a lot of time.
+
+## Zero Framework?
+
+I originally described this experiment as "zero framework."
+
+That is catchy and not really true.
+
+I wrote almost no custom orchestration framework. That is different from having no framework.
+
+Claude Code itself is a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly simple act of running a program and inspecting the result depends on layers we have become so used to that we stop noticing them.
+
+The framework did not vanish. Most of it had already become somebody else's primitive.
+
+That fits the recursive pattern from Chapter 1 rather nicely. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools we treat as normal.
+
+This is worth remembering whenever somebody shows you an agent implemented in 100 lines of Python. The 100 lines may be perfectly real. So is everything underneath them.
+
+## What Did We Actually Learn?
+
+It would be easy to overread the experiment.
+
+We did not prove that coding agents can autonomously solve arbitrary research problems. We did not prove that AlphaEvolve-style frameworks are obsolete. We did not prove that diagonal layering is some historically novel result in computational geometry.
+
+We had a bounded problem where evaluation was cheap and clear, gave a strong coding agent substantial freedom, and found that a surprisingly large fraction of the experimentation loop could happen without us directing each step.
+
+That is enough for me.
+
+The agent could propose an approach, implement it, run it, inspect the result, abandon it, create tools and try something else. My role moved away from writing the algorithm and toward defining the job, preserving the evaluator and watching what came back.
+
+That is already a meaningful change.
+
+It also explains why circle packing is the easy version of autonomy.
+
+The evaluator gives us one number. If version B beats version A, nobody needs to simulate a confused student, debate whether the interface feels intuitive or ask a committee whether the new solution is spiritually aligned with the learning objectives.
+
+The search can be complicated because judgment is simple.
+
+Most things I want agents to build are not that generous.
+
+"Make a good educational demo."
+
+"Write something people remember."
+
+"Design a useful product."
+
+"Explain this so somebody finally understands it."
+
+The agent can still generate alternatives and search among them, but now the difficult question changes.
+
+How does it know which direction is actually better?
+
+That is where the next chapter begins.
