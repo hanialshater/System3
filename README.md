@@ -11,4 +11,8 @@ By Hani M.M. Al-Shater
 - [Chapter 3 — Deep Mode](chapters/03-deep-mode.md)
 - [Chapter 4 — System 3](chapters/04-system-3.md)
 
+## Editorial prompts
+
+- [Chapter Version Evaluation Prompt](prompts/chapter-version-evaluation.md) — compare old and revised chapter versions while protecting voice, humor, fireworks, technical credibility, seed planting, and human-writing feel.
+
 The Markdown chapters retain the manuscript's relative image references under `resources/`. The image assets themselves have not yet been added to this repository.
