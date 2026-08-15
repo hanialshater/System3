@@ -216,22 +216,14 @@ Then we continue.
 
 Perhaps the final interface really is conversation.
 
-Not because language is magically sufficient for everything.
+Not because language is magically sufficient for everything, but because conversation is what humans already use when neither side can fully specify in advance where the interaction is going.
 
-Because conversation is what humans already use when neither side can fully specify in advance where the interaction is going.
+There is, however, a danger in ending the argument here. Book examples are unusually cooperative. A chapter can be revised again. A demo can be rebuilt. An imaginary agent never calls Legal, misses a latency budget or discovers that the customer would strongly prefer we remove the clever thing altogether.
 
-And if we ever manage to build that system, we will immediately use it for the highest purposes of civilization.
+I happen to have a less polite laboratory.
 
-Science.
+At work, I am responsible for recommendation and ranking systems inside a large fashion store: real customers, existing infrastructure, business constraints, experiments, product surfaces and years of accumulated machinery that cannot be replaced because a chapter ended on a compelling metaphor.
 
-Art.
+So I decided to see what happens when the architecture leaves the book.
 
-Education.
-
-Governance.
-
-Understanding ourselves.
-
-And, inevitably, finding out whether an octopus can fall in love with an AI.
-
-Which brings us to Devesh.
+If the ideas are real, they should survive Monday morning.
