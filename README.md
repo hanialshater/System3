@@ -23,6 +23,11 @@ These chapters are first integrated drafts and are **not locked**. They will rec
 - [Chapter 8 — Layer 4: What Do You Actually Want?](chapters/08-layer-4-desire.md) — **WIP**
 - [Chapter 9 — Fluent Autonomy](chapters/09-fluent-autonomy.md) — **WIP**
 
+### Final arc — application and human future
+
+- [Chapter 10 — The Store That Builds Itself](chapters/10-the-store-that-builds-itself.md)
+- [Chapter 11 — After Capacity: A Glimpse of Double Decent Life](chapters/11-after-capacity.md)
+
 ### Finale
 
 - [The Prophecy — The Love Prompt of Devesh](chapters/the-prophecy.md)
