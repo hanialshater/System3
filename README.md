@@ -10,6 +10,7 @@ By Hani M.M. Al-Shater
 - [Chapter 2 — The Algorithm Vortex](chapters/02-the-algorithm-vortex.md)
 - [Chapter 3 — Deep Mode](chapters/03-deep-mode.md)
 - [Chapter 4 — System 3](chapters/04-system-3.md)
+- [The Prophecy — The Love Prompt of Devesh](chapters/the-prophecy.md)
 
 ## Editorial prompts
 
