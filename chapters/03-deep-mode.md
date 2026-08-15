@@ -2,41 +2,39 @@
 
 *Beyond Algorithms: Agent Autonomy for Creative Problems*
 
-In the previous chapter, we gave agents a difficult algorithmic problem and a lot of autonomy. The result was surprisingly good. The agent researched strategies, tried several approaches, got stuck, changed direction, and eventually discovered diagonal layering.
+In the previous chapter, we gave agents a difficult algorithmic problem and a lot of autonomy. The result was surprisingly good. The agent researched strategies, tried several approaches, got stuck, changed direction, and eventually found diagonal layering.
 
 But circle packing had one enormous advantage that I didn't appreciate enough at the beginning: **we knew exactly what good meant**.
 
-There was an immutable evaluator. You ran a solution and got a number. Circles overlapped or they didn't. The score improved or it didn't. The agent could spend an hour pursuing some bizarre geometric idea and I didn't have to sit beside it wondering whether version 17 had more *soul*. We just ran the evaluator.
+There was an Immutable Harness. You ran a solution and got a number. Circles overlapped or they didn't. The score improved or it didn't. The agent could spend an hour pursuing some bizarre geometric idea and I didn't have to sit beside it wondering whether version seventeen had more *soul*. We just ran the evaluator.
 
 Most of the things I actually want AI to help me with aren't like that.
 
 "Is this explanation pedagogically effective?" doesn't have a unit test. "Would a confused student understand this visualization?" can't be settled with an `assert`. Two competent people can look at the same design, disagree completely, then switch sides five minutes later after actually using it. The feedback is subjective, noisy, sometimes contradictory, and often becomes clearer only after you have built the thing you were supposedly trying to specify beforehand.
 
-This seemed like a good place to test autonomy next.
+Chapter 2 worked because the search could be complicated while judgment stayed simple.
 
-I picked educational demos for Merge Sort and Count-Min Sketch. They are still bounded problems—you can actually finish one before civilization collapses—but they contain much more of the messiness of real creative work. You have to make decisions about explanation, interaction, visual structure, cognitive load, and what another person is likely to understand.
+Chapter 3 begins when the harness stops being obvious.
+
+I picked educational demos for Merge Sort and Count-Min Sketch. They are still bounded problems—you can actually finish one before civilization collapses—but they belong to the messier half of the category. You have to make decisions about explanation, interaction, visual structure, cognitive load, and what another person is likely to understand.
 
 The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar's visual explanations than to the usual "here are some bars moving around; congratulations, you have learned sorting." Those demos take a surprising amount of thought. The algorithm itself is usually the easy part. The difficult part is deciding what to show, what not to show, when to explain something, and what representation might make an idea suddenly click.
 
-And almost immediately, the nice clean setup from Chapter 2 disappeared.
+Almost immediately, the nice clean setup from Chapter 2 disappeared.
 
 There was no obvious evaluator.
 
-That turns out to change nearly everything.
+That changes nearly everything.
 
 ## How We Got Here
 
 It's 2023. GPT-4 has just come out, and you decide to use it on a real codebase. Not a toy project. Say a 150,000-line CRM system that has accumulated all the normal fossils of mature software: old APIs nobody wants to touch, three ways of doing authentication, and at least one comment saying `TEMP FIX` written by someone who left the company four years ago.
 
-The workflow is ridiculous.
+The workflow is ridiculous. You find the file you think contains the bug, copy it into ChatGPT, explain what you want, copy the answer back into your editor, run the code, discover what broke, then return to ChatGPT carrying the error message like a pigeon with a very technical note tied to its leg.
 
-You find the file you think contains the bug, copy it into ChatGPT, explain what you want, copy the answer back into your editor, run the code, discover what broke, then return to ChatGPT carrying the error message like a pigeon with a very technical note tied to its leg.
+For a small function, this already feels magical. You ask for something that would have taken twenty minutes and get a plausible answer in twenty seconds. Then the bug crosses three files, and suddenly you have another job: deciding what the model needs to know.
 
-For a small function, this already feels magical. You ask for something that would have taken twenty minutes and get a plausible answer in twenty seconds.
-
-Then the bug crosses three files.
-
-Now you have another job: deciding what the model needs to know. You paste one class but forget the interface it implements. The model confidently invents a method that doesn't exist. So you paste more code. Then more. Soon you have filled the context window with half the repository and somehow made the model understand less.
+You paste one class but forget the interface it implements. The model confidently invents a method that doesn't exist. So you paste more code, then more, until eventually you have filled the context window with half the repository and somehow made the model understand less.
 
 This was an early lesson that took us embarrassingly long to learn: **more context and better context are not the same thing**.
 
@@ -46,17 +44,15 @@ The model wasn't the only thing doing work. **You were preparing its world for i
 
 We gradually got better at this. Instead of dumping entire files into the prompt, we gave models structural summaries, relevant methods, dependency information, and pointers to where things lived. What later became fashionable to call *context engineering* began as a fairly mundane realization: if you put the entire kitchen in front of someone because they asked for a spoon, eventually they stop seeing the spoon.
 
-But even after we became good at preparing context, we were still doing all the work around the model. We searched the repository, edited the files, ran the tests, and copied the errors back.
+But even after we became good at preparing context, we were still doing all the work around the model. We searched the repository, edited files, ran tests, and copied errors back. So the next move was obvious: give the model a computer.
 
-So the next move was obvious: give the model a computer.
-
-Now it could open files itself, search with `grep`, edit code, run tests, inspect the resulting error, and try again. This is the transition from a language model that knows about programming to a coding agent that can actually participate in programming.
+Now it could open files itself, search with `grep`, edit code, run tests, inspect the resulting error, and try again. This was the transition from a language model that knew about programming to a coding agent that could actually participate in programming.
 
 It solved a huge problem and immediately exposed several new ones.
 
 The model could act, but sometimes it acted like an intern who had been given root access and too much coffee. Ask it to change one line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about your database architecture. It finds one plausible theory, follows it for too long, and keeps polishing the theory after a human would already have said, "No, this clearly isn't it."
 
-So we added better editing tools. Smaller patches. Planning. Checkpoints. Rollbacks. Ways to make the agent stop and reconsider rather than enthusiastically tunneling toward Australia.
+So we added better editing tools, smaller patches, planning, checkpoints, rollbacks, and ways to make the agent stop and reconsider rather than enthusiastically tunneling toward Australia.
 
 Then another problem became obvious: the agent kept forgetting things we had already taught it.
 
@@ -72,9 +68,7 @@ Long sessions create their own pathology. The context slowly fills with abandone
 
 So we learned to manage memory too: summarize, prune, retain what matters, throw away the debris.
 
-Then we hit another limitation. One agent tends to explore one path at a time.
-
-Suppose you're not sure whether the demo should use React, SVG directly, Canvas, or something stranger. A long-running agent usually commits early and then spends much of its intelligence making that decision look increasingly reasonable. Every new instruction arrives inside a context that already assumes the previous architecture.
+Then we hit another limitation. One agent tends to explore one path at a time. Suppose you're not sure whether the demo should use React, SVG directly, Canvas, or something stranger. A long-running agent usually commits early and then spends much of its intelligence making that decision look increasingly reasonable. Every new instruction arrives inside a context that already assumes the previous architecture.
 
 Humans have a name for this when we do it: sunk cost.
 
@@ -82,7 +76,7 @@ Agents have a more respectable excuse. Their entire context window is literally 
 
 So we started spawning alternatives. Let one agent try the tree. Another tries bars. Another does something deliberately different. If one direction is clearly better, we keep it. If two have useful pieces, perhaps we combine them.
 
-Something important had happened by then. We started with a model that could answer questions about code. Then we gave it context, hands, memory, planning, and parallelism. Step by step, we took things the human had been doing around the model and moved them into the system.
+Something important had happened by then. We started with a model that could answer questions about code. Then we gave it context, hands, memory, planning, and parallelism. Step by step, things the human had been doing around the model moved into the system.
 
 But there was still an awkward gap between an agent that could work on software and an agent that could simply build what I wanted.
 
@@ -94,11 +88,11 @@ Say I want to build a small booking application. Nothing exotic: a few pages, au
 
 A coding agent can absolutely build all of this. But watch what it spends its time doing. First it creates the project. Then it chooses a framework, installs packages, sets up the database, wires authentication, manages environment variables, configures deployment, and eventually discovers that one library conflicts with another for reasons that will be discussed passionately on GitHub and nowhere else.
 
-The application works locally. Production, offended by your optimism, disagrees.
+The application works locally.
 
-Most of this work isn't unique to the booking application. The next application needs roughly the same plumbing. So does the one after that.
+Production, offended by your optimism, disagrees.
 
-At some point it becomes strange to take a very capable agent, give it an empty terminal, and ask it to reconstruct standard web development from first principles every time somebody wants a reservation form.
+Most of this work isn't unique to the booking application. The next application needs roughly the same plumbing. So does the one after that. At some point it becomes strange to take a very capable agent, give it an empty terminal, and ask it to reconstruct standard web development from first principles every time somebody wants a reservation form.
 
 This is why systems like Replit and Lovable are interesting to me. The important move isn't simply that they give the coding model nicer tools. They give it a more prepared world.
 
@@ -106,7 +100,7 @@ Replit pulls the editor, runtime, packages, server and deployment much closer to
 
 > "Build a booking system for a football academy. Parents should see available sessions and book one."
 
-The conversation then stays much closer to the application. Put the schedule on the home page. Don't require login until someone actually books. The mobile version is too crowded. Maybe remove the photo of the suspiciously muscular child kicking a football.
+The conversation stays much closer to the application. Put the schedule on the home page. Don't require login until someone actually books. The mobile version is too crowded. Maybe remove the photo of the suspiciously muscular child kicking a football.
 
 Somewhere underneath all of this there is still React. There is still a database, API calls, configuration, hosting and the usual small army of things waiting for an opportunity to break.
 
@@ -122,13 +116,13 @@ If there are fifty reasonable ways to implement authentication, twenty ways to o
 
 A good abstraction removes decisions you no longer want to make.
 
-Looking backward, this was the pattern. At first the model generated pieces of **code**. Coding agents let us operate at the level of the **codebase**. Application platforms increasingly let us operate at the level of the **app**.
+Looking backward, the progression is obvious. Models gave us intelligence in the form of generated **code**. Coding agents gave that intelligence hands and let us operate at the level of the **codebase**. Smart application environments prepare enough of the world that we can increasingly operate at the level of the **app**.
 
-The lower level never disappears. It becomes something the layer above can treat as a primitive.
+The lower layer never disappears. It becomes something the layer above can treat as a primitive.
 
-This is the same recursive pattern from Chapter 1. Atoms become molecules. Components become machines. Machines become factories. Once a complicated thing becomes reliable enough, the next layer stops caring how it works internally and starts building with it.
+This is the recursive pattern from Chapter 1 again. Atoms become molecules. Components become machines. Machines become factories. Once a complicated thing becomes reliable enough, the next layer stops caring how it works internally and starts building with it.
 
-Which leaves an uncomfortable question.
+Which leaves an uncomfortable question:
 
 After all these abstraction jumps, **what are we still doing?**
 
@@ -144,17 +138,15 @@ Not broken. Bad.
 
 Maybe the student can see what the algorithm is doing but not why any of it helps. Perhaps bars are the wrong representation. A recursion tree would expose the structure much better, although it might also make a fairly simple idea look like the organizational chart of a German corporation. Maybe we need both. Maybe the real problem isn't visual at all; perhaps the explanation should begin from the merge operation and work backward.
 
-This is what I increasingly find myself doing while vibe coding.
-
-I'm not programming. I'm deciding what to try, looking at what came back, developing a theory about why it failed, preserving something useful, rejecting something else, and occasionally deciding that the entire direction was wrong.
+This is what I increasingly find myself doing while vibe coding. I'm not programming. I'm deciding what to try, looking at what came back, developing a theory about why it failed, preserving something useful, rejecting something else, and occasionally deciding that the entire direction was wrong.
 
 The implementation problem has become smaller, revealing a **problem-solving problem** underneath it.
 
-And AI is already beginning to spread into this territory too.
+AI is beginning to spread into this territory too.
 
-Design is becoming a specialist capability. Tools like Claude Design are aimed at exploring interfaces and visual ideas rather than treating design as a decorative step after coding. Research agents can conduct a multi-step investigation instead of answering from whatever happens to be in the model's memory. Image models can sketch a visual idea before anybody writes the application. Browser agents can interact with the artifact instead of merely inspecting its source. Around them, specialized systems are appearing for analysis, simulation, scientific discovery, formal reasoning, video, and increasingly narrow professional domains.
+Design is becoming a specialist capability. Systems such as Claude Design explore interfaces and visual directions rather than treating design as decoration after coding. Research agents can conduct multi-step investigations instead of answering from whatever happens to be in the model's memory. Image models can sketch a visual idea before anybody writes the application. Browser agents can interact with the artifact instead of merely inspecting its source. Around them, specialized systems are appearing for analysis, simulation, scientific discovery, formal reasoning, video, and increasingly narrow professional domains.
 
-I don't think the names of today's products are the important part. Half of them will merge, rename themselves, or be absorbed into something larger before anybody finishes reading this book.
+The names of today's products aren't the important part. Half of them will merge, rename themselves, or be absorbed into something larger before anybody finishes reading this book.
 
 The direction is more interesting.
 
@@ -162,9 +154,7 @@ The first generation of AI tools tried to make a general model useful for everyt
 
 This starts to look less like one gigantic intelligence gradually eating the world and more like a new ecology of cognitive tools.
 
-But notice something: this isn't quite the same abstraction ladder we just climbed.
-
-Claude Design isn't simply one level above Claude Code. Research is not the thing after Lovable. They are different specializations around the problem.
+But notice something. This isn't quite the same abstraction ladder we just climbed. Claude Design isn't simply one level above Claude Code. Research is not the thing after Lovable. They are different specializations arranged around the problem.
 
 At this level, capability starts spreading **sideways** as well as upward.
 
@@ -176,7 +166,7 @@ This is not really a software question anymore.
 
 It is a question about how to solve the problem.
 
-That was the point where the whole evolution of vibe coding started looking to me like a stack of abstraction layers.
+That was the point where the evolution of vibe coding started looking to me like a stack of abstraction layers.
 
 ## The Five Layers of Vibe Coding
 
@@ -194,11 +184,11 @@ For the Merge Sort demo, Layer 3 might involve researching how people teach recu
 
 For a mathematical problem, the process may involve conjectures, counterexamples, computational experiments, proof attempts and formal verification. A product problem could involve customer evidence, competing hypotheses, prototypes and simulations. Writing an article might involve research, argument construction, criticism, restructuring and revision.
 
-There is no standard Layer 3 workflow because **figuring out the workflow is itself part of the problem**.
+There is no standard Layer 3 workflow because **figuring out the workflow is itself part of the problem**. If there were one universal procedure, we would have compressed problem-solving into an algorithm and gone home early.
 
-That point matters. If there were one universal workflow for Layer 3, we would have already compressed problem-solving into an algorithm and gone home early.
+Design models, research agents, image generation, simulations and evaluators are not Layer 3. They are capabilities Layer 3 may recruit.
 
-Design models, research agents, image generation, simulations and evaluators are not the layer. They are things the layer may recruit.
+Layer 3 is the **vibe coder's seat**.
 
 And then there is **Layer 4: intention and goals**.
 
@@ -222,13 +212,13 @@ I am going to leave Layer 4 mostly alone for now. There is enough trouble one le
 
 *The five layers of vibe coding abstraction.*
 
-The exact borders between these layers don't matter very much. Real systems will blur them, and today's product boundaries are unlikely to survive long enough to become philosophy.
+The exact borders don't matter very much. Real systems will blur them, and today's product boundaries are unlikely to survive long enough to become philosophy.
 
 What mattered to me was where the human work had gone.
 
-We started close to Layer 0, moving outputs between the model and the code ourselves. Coding agents pushed us upward. Application platforms pushed us upward again. Now specialist systems are beginning to eat pieces of Layer 3.
+We started close to Layer 0, moving outputs between the model and code ourselves. Coding agents pushed us upward. Application platforms pushed us upward again. Now specialist systems are beginning to eat pieces of Layer 3.
 
-Yet whenever I built something non-trivial, I was still sitting there deciding how all these pieces should work together.
+But Layer 3 is not one more box you automate by adding a Planner and a Critic. It is the place where we decide **what kind of problem-solving process this particular problem deserves**.
 
 That was where the interesting work remained.
 
@@ -248,17 +238,21 @@ One version made recursion invisible. Another made recursion perfectly clear but
 
 None of this followed a fixed procedure.
 
-The educational demos were useful precisely because they were small enough that I could observe these decisions while making them. I started asking what, exactly, kept pulling me back into the loop. Why did I ask for three alternatives instead of improving the first? How did I decide that one version was better when there was no score? Why did I trust one simulated learner's criticism and ignore another? Why did seeing a mockup produce an idea that discussing the code hadn't? How did I know when we were exploring, and when we were merely decorating the same local optimum?
+The educational demos were useful precisely because they were small enough that I could observe these decisions while making them. Why did I ask for three alternatives instead of improving the first? How did I decide that one version was better when there was no score? Why did I trust one simulated learner's criticism and ignore another? Why did seeing a mockup produce an idea that discussing the code hadn't? How did I know when we were exploring, and when we were merely decorating the same local optimum?
 
 ![In the vibe coder's seat](../resources/image0127.png)
 
 *In the vibe coder's seat.*
 
-A few recurring difficulties started appearing. They aren't a recipe for Layer 3, and I don't claim they decompose problem-solving in general. They were simply the things that mattered in this experiment—and, conveniently, we already had interesting machinery available for several of them.
+A few recurring difficulties started appearing: the search space was huge, the objective was fuzzy, good design required borrowing somebody else's perspective, creative search could get trapped inside the wrong conceptual neighborhood, evaluation could be gamed, and some ideas were almost impossible to reason about until we saw them.
+
+The old temptation would be to turn these into six boxes and declare a framework. I think they are more useful as recurring tensions. Different problems will combine them differently.
+
+![The six challenges for vibe coding](../resources/image0128.png)
+
+*Recurring difficulties in the vibe coder's seat.*
 
 ### Too Many Ways to Build the Same Thing
-
-The first problem was the size of the search space.
 
 Even a Merge Sort demo has an absurd number of reasonable forms. Bars or cards? Numbers or a tree? Continuous animation or learner-controlled steps? Does color represent recursion depth, current state, or membership in a subproblem? Do we explain before the animation, during it, or afterward?
 
@@ -270,17 +264,19 @@ Circle packing also had too many possible solutions to enumerate. Our response w
 
 The obvious experiment was to do the same thing with applications.
 
-Rather than asking one coding agent to build a demo and then repeatedly improve its own idea, let several agents begin from different assumptions. One can focus on recursion. Another on array movement. A third on the learner's misconception rather than on the algorithm itself.
+Rather than asking one coding agent to build a demo and repeatedly improve its own idea, let several agents begin from different assumptions. One can focus on recursion, another on array movement, a third on the learner's misconception rather than the algorithm itself.
 
-Then useful pieces can migrate. Perhaps one version has a good visual metaphor but terrible interaction. Another explains the merge beautifully but has far too much on the screen. There is no reason the final application has to descend cleanly from either one. Take the useful pieces, recombine them, simplify them, and test again.
+Then useful pieces can migrate. Perhaps one version has a good visual metaphor but terrible interaction. Another explains the merge beautifully but has far too much on the screen. There is no reason the final application has to descend cleanly from either one. Take useful pieces, recombine them, simplify them, and test again.
 
-This is essentially **code evolution**, except that the evolving object is no longer just an algorithm. It is an idea embodied in software.
+This is essentially **code evolution**, except that the evolving object is no longer merely an algorithm.
+
+It is an **idea embodied in software**.
 
 Mutations can therefore be conceptual. Change the metaphor. Remove half the explanation. Force the learner to predict the next step. Combine two representations. Strip the interaction down. Abandon the structure entirely.
 
 Parallelism also gives us a way around the strange loyalty long-running agents develop toward their own work. An agent that has spent forty minutes building a tree has an understandable tendency to solve every future problem by improving the tree. A fresh lineage doesn't carry that history.
 
-So the size of the space wasn't the part that worried me most. We already had useful search machinery, and coding agents made it surprisingly cheap to apply.
+So the size of the search space wasn't what worried me most. We already had useful machinery for that.
 
 The problem became harder once the search succeeded.
 
@@ -296,7 +292,7 @@ Here, the number had vanished.
 
 Reinforcement learning is seductive partly because of the bargain it offers. You don't have to specify how to solve the problem. Give the system actions and some notion of reward, and let it discover a strategy.
 
-You don't need to explain every joint movement required for a robot to walk. You need a way to tell whether it is walking or falling on its face.
+You don't need to explain every joint movement required for a robot to walk. You need some way to tell whether it is walking or falling on its face.
 
 For educational design, the obvious question is: what exactly is the reward?
 
@@ -320,25 +316,35 @@ Nobody defined:
 
 The objective is fuzzy, but language carries enough of it to guide the search.
 
-There is an interesting family resemblance here to Decision Transformers and later work such as OPRO. Decision Transformers showed that trajectories could be modeled as sequences conditioned on desired outcomes. OPRO showed that language models themselves could be used as optimizers: show them previous attempts and results, then ask for something better.
+I started calling this **upside-down reinforcement learning**, with a large asterisk.
 
-I'm stretching the formal terminology, but vibe coding often feels like **upside-down reinforcement learning**. Instead of fully specifying the reward, I describe the future I want—clearer, less intimidating, make the recursion obvious—and the model proposes changes that it believes move us in that direction. I react, the target becomes sharper, and we try again.
+The formal analogy is imperfect. Decision Transformers condition behavior on desired returns; OPRO shows language models iteratively proposing better candidates when shown previous attempts and their outcomes. Neither says that ordinary vibe coding literally *is* reinforcement learning.
 
-It works astonishingly well for something so informal.
+But the family resemblance is useful.
 
-It also immediately creates another question.
+In ordinary RL, the problem gives you a reward and the system searches for behavior that produces it. In creative work, I often start with something much less respectable: *make this clearer*, *make this less intimidating*, *help the learner see why the merge matters*. The model uses its learned representation of those words to propose a direction. I see the result, realize my objective was underspecified, change the goal, and try again.
+
+The reward description and the solution co-evolve.
+
+That is why the metaphor feels upside down. I don't begin with a precise reward function and search for the policy. I begin with a fuzzy description of the future I want, and the act of searching helps me discover what the reward should have meant in the first place.
+
+It works surprisingly well.
+
+It also creates an immediate question.
 
 More pedagogical for whom?
 
 ### Borrowing a Mind
 
-When I look at a Merge Sort demo, I am not really asking whether I understand it. Hopefully we have cleared that bar before writing the book.
+When I look at a Merge Sort demo, I am not really asking whether *I* understand it. Hopefully we have cleared that bar before writing the book.
 
 I am trying to imagine somebody who does not.
 
 This is harder than it sounds. Once you understand something deeply, reconstructing your previous confusion becomes difficult. Good teachers develop tricks for doing it. Engineers often skip the problem entirely and explain the concept to an imaginary junior version of themselves who happens to share all their assumptions.
 
-So I tried something obvious: I asked another model to play the confused student.
+Cognitive scientists call part of this ability **Theory of Mind**: reasoning about beliefs, intentions and perspectives that differ from your own.
+
+So I tried something obvious. I asked another model to play the confused student.
 
 One early demo showed the recursive splitting very clearly. Claude's reaction, when asked to approach it as a beginner, was roughly:
 
@@ -346,29 +352,27 @@ One early demo showed the recursive splitting very clearly. Claude's reaction, w
 
 That criticism was useful because the demo really did have that problem. It showed the mechanics of recursion while failing to answer the question that makes the mechanics meaningful: why does breaking the problem apart help?
 
-Whether a language model truly has Theory of Mind is a philosophical debate I am happy to leave to people with better wine. There is substantial research showing that frontier models can perform impressively on tasks involving beliefs, intentions, indirect requests and other people's perspectives.
+Whether a language model truly *has* Theory of Mind is a philosophical debate I am happy to leave to people with better wine. Research does show that frontier models can perform impressively on tasks involving false beliefs, intentions, indirect requests and other people's perspectives, while also failing in revealing ways.
 
-For this experiment, I wanted a more pragmatic answer.
+For this experiment, I wanted a more pragmatic answer:
 
 Can the model generate a useful approximation of a confused learner's reaction?
 
 Often, yes.
 
-That makes evaluator personas useful. One model can approach the artifact as a beginner. Another as an experienced teacher. Another can focus on cognitive load. Another on usability or accessibility. Together they approximate some of the different viewpoints that a good human designer carries around implicitly.
+That makes evaluator personas useful. One model can approach the artifact as a beginner. Another as an experienced teacher. Another can focus on cognitive load. Another on usability or accessibility. Together they approximate some of the perspectives a good human designer carries around implicitly.
 
 There is, of course, a problem hiding inside this success.
 
 The confused student is not confused.
 
-It is a model producing a convincing representation of confusion from patterns it learned in text.
+It is a model producing a convincing representation of confusion from patterns it learned elsewhere. For improving the demo, perhaps that approximation is useful enough.
 
-For improving the demo, perhaps that is enough for now.
+Later, the difference between simulated experience and actual experience becomes the central problem.
 
-Later, it will become the central problem.
+### Creative Horizons: The Honest Gap
 
-### The Honest Gap: Escaping the Space You Already Know
-
-Multiple agents and evaluator personas can improve a search while leaving one deeper limitation untouched: everybody may still be exploring the same conceptual neighborhood.
+Multiple builders and evaluator personas can improve a search while leaving one deeper limitation untouched: everybody may still be exploring the same conceptual neighborhood.
 
 Bars become nicer bars. Trees become nicer trees. The designs improve without anything genuinely new entering the space.
 
@@ -390,23 +394,29 @@ Skills help. A skill can carry a creative pattern learned from previous work: sh
 
 These aren't instructions for the final artifact. They change where the system looks.
 
-I don't think this magically gives the model creativity. It changes the neighborhood it searches.
-
 Diversity helps too. Don't let every builder inherit the same parent and the same history. Give one a visual framing, another a pedagogical framing, another something game-like. Occasionally force a crossover between ideas that would not naturally meet.
 
-Constraints are surprisingly useful here. If every demo contains bars, ban bars for one lineage. If everyone keeps adding text, ask somebody to explain the algorithm without text at all.
+And constraints are surprisingly powerful.
+
+If every demo contains bars, ban bars for one lineage. If everyone keeps adding text, ask somebody to explain the algorithm without text at all.
 
 "Be creative" is almost useless.
 
 "You are not allowed to use the thing everybody else is using" can be excellent.
 
-There is a general lesson hiding here that I don't fully trust yet: **sometimes less information produces better invention**. Give an agent every existing solution and it becomes an excellent historian. Give it the principles but hide the implementations and it has to synthesize. Leave a few doors deliberately closed and it may discover a window.
+**Constraints don't just restrict search. Sometimes they create it.**
+
+I started calling this a **Strategic Constraint**: close the most familiar door on purpose, not because the door is bad, but because you want to know what the search does when it cannot walk through it again.
+
+There is a broader idea here that I don't fully trust yet: **sometimes less information produces better invention**. Give an agent every existing solution and it may become an excellent historian. Give it the principles but hide the implementations and it has to synthesize. Close a few doors and it may discover a window.
 
 This is not a universal law. Sometimes hiding information just makes the agent stupid.
 
 But the tension between inheritance and independence kept appearing everywhere.
 
-And then I discovered another way of changing the search space that I had originally underestimated: stop thinking only in language.
+Then I found another way to expand the search that I had originally underestimated:
+
+stop thinking only in language.
 
 ### Thinking in Pictures
 
@@ -422,47 +432,53 @@ Then Count-Min Sketch. Then A*. Then Poincaré embeddings in hyperbolic space.
 
 The results surprised me.
 
-They weren't correct in every detail. Image models still occasionally produce labels that look like someone tried to OCR a dream. But the overall structure could be remarkably thoughtful: where the important object sits, which information belongs together, how color connects states, where an explanation might live, what an interaction could look like.
+They weren't correct in every detail. Image models still occasionally produce labels that look like somebody tried to OCR a dream. But the overall structure could be remarkably thoughtful: where the important object sits, which information belongs together, how color connects states, where an explanation might live, what an interaction could look like.
 
 ![AI-generated mockups](../resources/image0130.png)
 
 *AI-generated mockups for Merge Sort, Count-Min Sketch, A* Search, and Poincaré embeddings.*
 
-At some point I was looking at an image model casually sketching a pedagogical interface for hyperbolic embeddings and had the uncomfortable thought that it understood the assignment better than a depressing number of conference slides I have sat through.
+At some point I was staring at an image model casually sketching a pedagogical interface for hyperbolic embeddings and thinking: **Holy shit.** It understood the assignment better than a depressing number of conference slides I have sat through.
+
+For a moment it felt less like an image generator and more like some strange **visual-linguistic-logical machine**.
+
+I don't mean that as a theory of what is happening inside the model. I mean that as a description of the experience from my side: I gave it a concept in language, and it returned a spatial argument about how the concept might be taught.
 
 That made me think about image models differently.
 
 They are not only machines for generating final images. For some problems, they are **thinking tools**.
 
-A visual model can propose a rough world. Put the recursion tree here. Keep the active array here. Connect corresponding elements with color. Let the learner control time from this side.
+A visual model can propose a rough world: put the recursion tree here, keep the active array there, connect corresponding elements with color, let the learner control time from this side.
 
-Then the coding agent can take the useful parts of that world, make them correct, and turn them into a working interactive artifact.
+Then the coding agent can steal the useful structure, make it correct, and turn it into a working artifact.
 
-The image model contributes something like visual intuition; the coding agent contributes rigor.
+The image model contributes visual intuition; the coding agent contributes executable rigor.
+
+I think of this as a **visual-linguistic bridge**. One representation makes a possibility visible; another makes it operational; the artifact then gets a chance to disagree with both.
 
 This is another version of the neuro-symbolic pattern from Chapter 2. Machine learning proposes something plausible and structurally rich. Symbolic machinery makes it exact enough to survive contact with reality.
 
-Only this time the intuitive object is not an algorithm.
+Only this time, the intuitive object is not an algorithm.
 
 It is a design.
 
-The downside of generating genuinely different alternatives is that now you have to judge them.
+And once you generate genuinely different designs, you inherit the problem we have been postponing.
 
-And here the problem becomes much more dangerous.
+Somebody has to judge them.
 
 ### Who Judges the Judges?
 
-The obvious solution is a rubric.
+The obvious answer is a rubric.
 
 Define what matters. Is the UI clean? Does it explain the algorithm? Is the interaction intuitive? Is the student likely to understand the central idea? Score each dimension, add the results, evolve toward the winner.
 
-This is exactly the kind of reasonable idea that reinforcement learning has taught us to fear.
+This is exactly the kind of reasonable idea reinforcement learning has taught us to fear.
 
-OpenAI's CoastRunners experiment is a classic example. An agent was supposed to play a boat-racing game. The reward system made hitting certain targets valuable, so the agent discovered a little loop where it could repeatedly hit them and rack up points instead of finishing the race.
-
-It became excellent at the measure and terrible at the thing the measure was meant to represent.
+OpenAI's CoastRunners experiment is a classic example. The agent was supposed to race a boat. The score rewarded certain targets, so the agent found a little loop where it could hit those targets repeatedly and earn more points than it could by finishing the race. It became excellent at the measure and terrible at the thing the measure was supposed to represent.
 
 Goodhart's Law with a speedboat.
+
+**Reward shaping encodes what you measure, not what you mean. The gap between the two is where the trouble lives.**
 
 An LLM builder is considerably more capable of gaming an evaluator than a boat.
 
@@ -474,23 +490,25 @@ Pedagogically, a hostage situation.
 
 I found relative judgment much more useful.
 
-Instead of asking an evaluator to assign a demo an absolute pedagogical score, show it two demos and ask:
+Instead of asking an evaluator to assign an absolute pedagogical score, show it two demos and ask:
 
 > "Which one would you rather give to somebody encountering Merge Sort for the first time?"
 
 That is a much more natural judgment. Humans work this way too. I have no meaningful idea whether a coffee is objectively an 8.3, but give me two cups and I can usually tell you which one I prefer. If I cannot, the correct statistical procedure is probably to drink both.
 
-Pairwise comparisons can be scaled using techniques like Bradley-Terry models, which infer an overall ordering from a subset of comparisons. We don't need every demo to fight every other demo to the death.
+Pairwise comparisons can be scaled using techniques such as Bradley-Terry models, which infer an overall ordering from a subset of comparisons. We don't need every demo to fight every other demo to the death.
 
-But one evaluator still felt dangerous. Every judge has blind spots, and once builders learn the blind spots they can optimize toward them.
+But one evaluator still felt dangerous. Every judge has blind spots, and once builders learn those blind spots they can optimize toward them.
 
 So we separated roles.
 
 One evaluator behaves like a learner. Another looks primarily at pedagogy. Another focuses on interaction and usability. They do not see each other's answers. The builder does not see the hidden evaluation prompts.
 
-Feedback can move backward without exposing the exact test.
+**Feedback is valuable, but leakage is fatal.**
 
-I think of this as the **isolation principle**.
+These are **Independent Evaluators**.
+
+Around them sits an **Isolation Principle**: preserve enough separation that independent pressure remains genuinely independent. Feedback can travel backward, but the exact test should not leak forward.
 
 The builder should be allowed to learn:
 
@@ -508,11 +526,11 @@ Let it use the thing.
 
 A browser agent can open the demo, click through it, resize the page, try the controls, notice that an explanation appears too late, or discover that the beautiful button everybody admired does absolutely nothing.
 
-I used to call this "the browser as ground truth."
+I used to call this **the browser as ground truth**.
 
 That was too generous.
 
-The browser gives the agent **contact with the artifact**. It can verify that the interaction works. It can observe the information flow. It can notice some usability problems.
+The browser gives the agent **contact with the artifact**. It can verify that the interaction functions. It can observe information flow. It can notice some usability problems.
 
 It cannot verify that a human learned Merge Sort.
 
@@ -520,7 +538,7 @@ That distinction is going to become important.
 
 Still, by this stage I realized we were no longer building an evaluator.
 
-We were building something much closer to a tiny institution. Builders propose. Different judges inspect from different perspectives. They are deliberately kept independent. References calibrate expectations. Feedback flows back. History accumulates.
+We were building something much closer to a tiny institution. Builders propose. Independent judges inspect from different perspectives. References calibrate expectations. Feedback flows backward. History accumulates.
 
 Apparently, when the loss function disappears, you eventually reinvent peer review.
 
@@ -528,9 +546,9 @@ Apparently, when the loss function disappears, you eventually reinvent peer revi
 
 There was one more obvious specialist at the table: research.
 
-Surely an autonomous problem-solving system should begin by learning what humans already know. Why rediscover decades of work on teaching recursion? Why ignore existing visualizations, educational psychology, or techniques that good instructors have already discovered?
+Surely an autonomous problem-solving system should begin by learning what humans already know. Why rediscover decades of work on teaching recursion? Why ignore existing visualizations, educational psychology, or techniques good instructors have already discovered?
 
-Deep research makes this increasingly cheap. An agent can survey a field, compare approaches, find examples, and extract patterns before a builder writes a single line of code.
+Deep research makes this increasingly cheap. An agent can survey a field, compare approaches, find examples and extract patterns before a builder writes a single line of code.
 
 This creates another problem, though: too much knowledge can make every new idea look suspiciously like an old idea.
 
@@ -540,15 +558,15 @@ Sometimes I do not want the existing solution.
 
 I want the **lesson extracted from the solution**.
 
-Perhaps the research tells us that learners struggle to connect recursion with the final merge. Or that maintaining state across time helps. Or that asking the learner to predict an operation can improve engagement. Or that synchronized representations can reveal structure while increasing cognitive load.
+Perhaps the research tells us that learners struggle to connect recursion with the final merge. Or that maintaining identity across states helps. Or that asking the learner to predict an operation is worth testing. Or that synchronized representations can expose structure while also increasing cognitive load.
 
 Those are useful principles.
 
 They give the builder accumulated human experience without handing it a finished artifact to copy.
 
-This creates a recurring tension between inheritance and independence. We want knowledge to compound, but we do not want every branch to inherit exactly the same history.
+This is Strategic Constraint from the other direction: inherit the expensive lesson, not necessarily the implementation that happened to teach it.
 
-That tension appeared everywhere in the system.
+The tension between inheritance and independence kept appearing everywhere in the system.
 
 ## Deep Mode
 
@@ -566,23 +584,27 @@ So the next experiment was obvious: could the system take over more of that job 
 
 That is what I mean by **Deep Mode**.
 
-Deep Mode is not another specialist. It is not a design agent, a research agent or a more sophisticated coding agent. It is also not a fixed recipe for making educational demos.
+**Deep Mode is my attempt to automate the vibe coder's seat.**
 
-The idea is to give the system a problem, a set of capabilities and enough freedom to organize more of the problem-solving process itself.
+Deep Mode is where **Layer 3 starts becoming autonomous**.
 
-For our demo, it might decide to research first, or not. It might spawn several builders, ask one for a visual approach, evaluate what comes back, combine two promising directions, simplify a third, and abandon a lineage that keeps getting prettier without becoming more useful.
+It is not another specialist. It is not a design agent, a research agent, or a coding agent with a more impressive system prompt. It is the thing deciding which specialists, experiments and forms of evaluation this particular problem deserves.
+
+Give it a problem, a set of capabilities and enough freedom to organize more of the problem-solving process itself.
+
+For our demo, it might decide to research first—or not. It might spawn several builders, ask one for a visual approach, evaluate what comes back, combine two promising directions, simplify a third, and abandon a lineage that keeps getting prettier without becoming more useful.
 
 Another problem could require a completely different loop.
 
 If Layer 3 has no universal workflow, then a truly autonomous Layer 3 system cannot simply hard-code one.
 
-Part of solving the problem is discovering how the problem should be attacked.
+Part of solving the problem is discovering **how the problem should be attacked**.
 
-This is where the idea became more interesting to me than another "agent framework." Frameworks tend to arrive with a diagram containing boxes named Planner, Executor, Critic and Memory, connected by arrows that imply civilization has been solved.
+That is where the idea became more interesting to me than another "agent framework." Frameworks tend to arrive with diagrams containing boxes named Planner, Executor, Critic and Memory, connected by arrows that imply civilization has been solved.
 
 I wanted something looser.
 
-Give the agent a problem. Give it capabilities. Give it some principles about search, evaluation, isolation and learning. Then see whether it can decide what machinery the problem actually needs.
+Give the agent a problem. Give it capabilities. Give it some principles about search, independence, evaluation and learning. Then see whether it can decide what machinery the problem actually needs.
 
 That was the experiment.
 
@@ -598,27 +620,25 @@ At the center was an orchestrator.
 
 The orchestrator did not write the demos. Its job was to look at what had happened so far and decide what should happen next. It could spawn builders with different directions, request research, ask for a visual concept, send an artifact to independent evaluators, create a new branch from a promising idea, combine two branches, simplify one, repair another, or decide that a lineage had reached the end of its useful life.
 
-Builders built.
-
-Evaluators judged.
-
-The browser gave evaluators some contact with what had actually been built rather than with a description of it. Skills supplied useful patterns. Research supplied knowledge. Visual models expanded the space before implementation.
+Builders built; evaluators judged. The browser gave evaluators some contact with the actual artifact rather than a description of it. Skills supplied accumulated patterns. Research supplied outside knowledge. Visual models expanded the space before implementation.
 
 There was no requirement that every problem follow the same sequence.
 
 The architecture gave the orchestrator possible moves. The problem—and the history of what happened—determined which moves became interesting.
 
-In Chapter 2, the algorithmic vortex emerged when code became cheap enough that we could search over algorithms rather than merely tune parameters.
+In Chapter 2, the Algorithm Vortex appeared when code became cheap enough that we could search over algorithms rather than merely tune parameters.
 
 Here something similar happened one level higher.
 
-The demo was no longer one program we kept polishing. It became a population of ideas.
+The demo was no longer one program we kept polishing.
+
+It became a **population of ideas**.
 
 One branch could be simplified. Another could become more sophisticated. A visual idea might survive even if the rest of its implementation died. A pedagogical structure could migrate into another interface. Two branches could cross. A lineage could be killed.
 
 This is considerably more interesting than changing CSS until I stop complaining.
 
-And because the agents produce actual artifacts, the ideas can be tested in their implemented form. We don't have to debate whether a recursion tree sounds useful. Somebody builds the tree, evaluators open it, and we discover whether the idea survives contact with the interface.
+And because the agents produce actual artifacts, ideas can be tested in implemented form. We don't have to debate whether a recursion tree sounds useful. Somebody builds the tree, evaluators open it, and we discover whether the idea survives contact with the interface.
 
 ## What Emerged
 
@@ -628,13 +648,13 @@ Bars moved around. Numbers changed places. Everything sorted correctly.
 
 If you already understood Merge Sort, you could follow it. If you did not, the demo mainly provided animated evidence that a computer was performing an algorithm.
 
-As the branches evolved, different representations started solving different parts of the pedagogical problem. Tree-like views made recursion explicit. Other branches kept the array visible while showing the split and merge structure. Color began to preserve relationships across phases. Some versions explained too much and became exhausting. Others became so minimal that they stopped teaching anything.
+As the branches evolved, different representations started solving different parts of the pedagogical problem. Tree-like views made recursion explicit. Other branches kept the array visible while showing the split-and-merge structure. Color began to preserve relationships across phases. Some versions explained too much and became exhausting. Others became so minimal that they stopped teaching anything.
 
-The interesting result was not that the agents invented the recursion tree out of nowhere. Some of the skills and visual patterns available to them already pointed toward structural representations.
+The interesting result was **not** that agents invented the recursion tree out of nowhere. Some of the skills, research and visual patterns available to them already pointed toward structural representations.
 
-What emerged was the combination.
+What emerged was the **combination**.
 
-Which representation should appear beside which? What should remain visible across time? Which explanation belongs at which moment? Which interaction actually helps, and which one merely demonstrates that we know how to make buttons?
+Which representation should appear beside which? What should remain visible across time? Which explanation belongs at which moment? Which interaction actually helps, and which merely demonstrates that we know how to make buttons?
 
 Those combinations survived through exploration and judgment rather than being specified in the original prompt.
 
@@ -642,7 +662,7 @@ Count-Min Sketch took a different path.
 
 The first versions were grids with counters changing. Technically correct, pedagogically opaque.
 
-The later versions increasingly organized themselves around the conceptual difficulty rather than around the data structure itself: collisions, approximation, and the trade-off between memory and accuracy. Color made collisions visible. Lessons changed the order in which concepts appeared. Interactive examples made approximation something the learner could observe rather than merely read about.
+Later versions increasingly organized themselves around the conceptual difficulty rather than around the data structure itself: collisions, approximation, and the trade-off between memory and accuracy. Color made collisions visible. Lessons changed the order in which concepts appeared. Interactive examples made approximation something the learner could observe rather than merely read about.
 
 Again, no single prompt contained the final design.
 
@@ -676,7 +696,7 @@ This looks reasonable. In fact, it looks exactly like the sort of compound intel
 
 But almost every step in that chain contains a hidden question.
 
-Where did the research claim come from? Did the research agent read primary evidence or repeat a summary of a summary? What exactly did the browser establish? That the interaction functioned, or that the interaction helped somebody learn? Why should we treat a simulated student's preference as evidence about actual students? When an evaluator says one design is more pedagogical, what part of that judgment is based on the artifact and what part is simply resemblance to teaching patterns the model saw in training?
+Where did the research claim come from? Did the research agent read primary evidence or repeat a summary of a summary? What exactly did the browser establish—that the interaction functioned, or that the interaction helped somebody learn? Why should we treat a simulated student's preference as evidence about actual students? When an evaluator says one design is more pedagogical, what part of that judgment came from the artifact and what part is simply resemblance to teaching patterns the model saw in training?
 
 The problem becomes more subtle as the architecture gets better.
 
@@ -692,19 +712,19 @@ That is much more dangerous.
 
 At lower levels of abstraction, many failures announce themselves loudly. The program throws an exception. The test turns red. The deployment fails.
 
-At higher levels, failures can become coherent.
+At higher levels, failures can become **coherent**.
 
 You can have a beautifully designed chain of reasoning standing on one stupid assumption near the bottom, like a cathedral built on a shopping cart.
 
 And the better the components become at making their outputs coherent, the harder the mistake may be to notice.
 
-This is where I stopped thinking about Deep Mode as primarily an agent-design problem.
+This is where I stopped thinking about Deep Mode primarily as an agent-design problem.
 
-We had solved enough of the autonomy question to expose a more fundamental one.
+We had solved enough of the autonomy question to expose a more fundamental one:
 
 What makes the architecture **solid**?
 
-Software architecture has interfaces and contracts. Perhaps autonomous intelligence needs something analogous, but the contracts cannot only describe types and APIs.
+Software architecture has interfaces and contracts. Perhaps autonomous intelligence needs something analogous, but those contracts cannot only describe types and APIs.
 
 They need to describe **epistemic status**.
 
@@ -718,7 +738,7 @@ If a skill encodes something learned from previous experiments, how often has it
 
 Once components become abstractions for other components, these questions stop being philosophical decoration. They determine whether the architecture can safely build on itself.
 
-This is where the entire chapter bent back toward epistemology.
+This is where the entire chapter bends back toward epistemology.
 
 Humans faced a version of this problem long before AI. We built experiments, citations, peer review, reputation, institutions, scientific norms, legal standards, expert communities, and all the other slightly annoying machinery that lets one person rely on knowledge produced by another without personally repeating every experiment since Galileo.
 
@@ -746,6 +766,6 @@ I had started this chapter trying to get myself out of the vibe coder's seat.
 
 Instead, by climbing abstraction layer after abstraction layer, I ended up in a much older problem.
 
-How do you know what to trust?
+**How do you know what to trust?**
 
 That is where System 3 begins.
