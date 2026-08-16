@@ -62,6 +62,8 @@ Or, less politely: **let go.**
 
 But be precise about what you're letting go of. Let go of the path, not the boundary.
 
+The alternative to controlling every decision is not having no control. It is designing conditions under which bad decisions can lose.
+
 We may never know exactly how life first emerged on Earth, but if you're ambitious—like a certain space-obsessed billionaire—you might eventually think: **we don't know exactly how it got here; let's just bootstrap it there.**
 
 Which leads to a slightly ridiculous thought experiment.
