@@ -12,7 +12,7 @@ The book's central architectural claim is that the problem of autonomous agents 
 
 Humanity's most developed answer is **science**—not science as a pile of papers or one fixed “scientific method,” but as an evolving architecture of hypotheses, instruments, experiments, criticism, provenance, specialization, competing research programs, institutional memory and contact with a reality that can say no.
 
-The first four chapters build pieces of that architecture without naming the whole. **Chapter 5 is the reveal: System 3 is science made computational.** The later chapters then follow what happens when the scientific institution itself becomes executable: it acquires culture and memory, experiments on its own machinery, researches its alignment, runs into the boundary between truth and desire, disappears beneath fluent autonomy, survives contact with a real recommendation system, and finally changes the capacity available to humans.
+The first four chapters build pieces of that architecture without naming the whole. The language deliberately climbs from **environment and selection**, through **experiments and exposure**, to **inquiry and independent judgment**, and finally to **epistemic status, trust chains and social scaffolds**. **Chapter 5 is the reveal: System 3 is science made computational.** The later chapters then follow what happens when the scientific institution itself becomes executable: it acquires culture and memory, experiments on its own machinery, researches its alignment, runs into the boundary between truth and desire, disappears beneath fluent autonomy, survives contact with a real recommendation system, and finally changes the capacity available to humans.
 
 This is the spine to preserve in future edits. Philosophy of science is not a detachable philosophy section; it is the glue connecting the agent architecture.
 
@@ -20,10 +20,10 @@ This is the spine to preserve in future edits. Philosophy of science is not a de
 
 ### Revised / established arc
 
-- [Chapter 1 — Why I'm Betting on AI Agents](chapters/01-why-im-betting-on-ai-agents.md) — emergence, environment, and moving control upward
-- [Chapter 2 — The Algorithm Vortex](chapters/02-the-algorithm-vortex.md) — search, external evaluation, and a world that can reject an answer
-- [Chapter 3 — Deep Mode](chapters/03-deep-mode.md) — problem-solving when the clean evaluator disappears; independent judgment begins to look institutional
-- [Chapter 4 — System 3](chapters/04-system-3.md) — trust chains, provenance, instruments, accumulated experience, and epistemic status
+- [Chapter 1 — Why I'm Betting on AI Agents](chapters/01-why-im-betting-on-ai-agents.md) — emergence, environment, feedback, selection and boundaries; control moves upward
+- [Chapter 2 — The Algorithm Vortex](chapters/02-the-algorithm-vortex.md) — experiments, external evaluation, exposure, competing lineages and an immutable harness
+- [Chapter 3 — Deep Mode](chapters/03-deep-mode.md) — when the clean referee disappears, judgment becomes inquiry: evidence, independent pressure, disagreement and a tiny institution
+- [Chapter 4 — System 3](chapters/04-system-3.md) — epistemic status, provenance, instruments, accumulated experience, trust chains, triangulation and the social scaffold
 
 ### Second arc — WIP
 
