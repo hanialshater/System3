@@ -162,7 +162,7 @@ Somebody trusts me on ranking systems because I have spent years working on them
 
 **Trust is local.**
 
-Human civilization scales knowledge by extending these chains. Science turns them into machinery: instruments, protocols, publications, replication, statistical methods, disclosure norms. Courts create different machinery. Engineering creates standards, tests and certification.
+Human civilization scales knowledge by extending these chains. We turn trust into machinery: instruments, protocols, records, audits, replication, standards, tests and certification. Different institutions arrange that machinery differently.
 
 None guarantees truth.
 
@@ -252,7 +252,7 @@ This is where I use the term **System 3**.
 
 Kahneman's familiar distinction gives us System 1, fast and intuitive, and System 2, slower and more deliberate. For AI, the analogy is tempting: the base model looks something like System 1—fast pattern recognition and associative capacity. Agentic reasoning adds something like System 2—decomposition, planning, reflection and extended search.
 
-But human cognition has always operated inside another structure that the two-system picture mostly takes for granted. Scientists run experiments. Engineers test bridges. Programmers execute code. Communities challenge claims. Instruments extend perception. Institutions preserve records. Failure changes what we trust next time.
+But human cognition has always operated inside another structure that the two-system picture mostly takes for granted. We test things. We execute code. We build instruments. We compare claims with records. We ask other people. We preserve failures. We create procedures that make some kinds of error harder to hide and some kinds of evidence easier to inspect.
 
 I call that external epistemic machinery **System 3**.
 

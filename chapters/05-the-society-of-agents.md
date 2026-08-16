@@ -6,9 +6,7 @@ The previous chapter ended with four things: evidence, experience, other minds, 
 
 Now we have to deal with the other minds.
 
-This gets funny very quickly, because one of the first reactions people had to unreliable AI agents was apparently: *what if we create more of them?*
-
-One agent hallucinates, so let five agents discuss it. One agent gets trapped in the wrong approach, so form a committee. As someone who has spent enough time in large organizations, I found this technological progress strangely familiar.
+This gets funny very quickly, because one of the first reactions people had to unreliable AI agents was apparently: *what if we create more of them?* One agent hallucinates, so let five agents discuss it. One agent gets trapped in the wrong approach, so form a committee. As someone who has spent enough time in large organizations, I found this technological progress strangely familiar.
 
 But a multi-agent system is not a single agent multiplied. The moment several agents can specialize, disagree, communicate, inherit one another's work and act on a shared environment, a different problem appears.
 
@@ -20,23 +18,13 @@ Humans have been debugging that system for several thousand years.
 
 Before building a society, it is worth admitting that a surprising amount of software should not become one.
 
-Suppose I am processing a mortgage application. There is a document to receive, information to extract, fields to validate, compliance checks to run, and perhaps a human approval at the end. If the process is known, legally constrained and full of things we absolutely do not want the model creatively reinterpreting, a workflow is beautiful.
-
-The process owns the intelligence.
-
-A model can be very smart inside one step, but after checking the applicant's identity it does not get to decide that mortgage underwriting feels spiritually limiting and spend the afternoon researching Italian penguins.
+Suppose I am processing a mortgage application. There is a document to receive, information to extract, fields to validate, compliance checks to run, and perhaps a human approval at the end. If the process is known, legally constrained and full of things we absolutely do not want the model creatively reinterpreting, a workflow is beautiful. The process owns the intelligence. A model can be very smart inside one step, but after checking the applicant's identity it does not get to decide that mortgage underwriting feels spiritually limiting and spend the afternoon researching Italian penguins.
 
 Sometimes bureaucracy is a feature.
 
-This matters because autonomy is easy to turn into a religion: agent good, more autonomous agent better, swarm of autonomous agents apparently civilization.
+This matters because autonomy is easy to turn into a religion: agent good, more autonomous agent better, swarm of autonomous agents apparently civilization. But autonomy earns its cost only when we do **not** know the path in advance—when work has to be decomposed, several strategies deserve exploration, information is distributed, or what happens next depends on what we discover.
 
-But autonomy earns its cost only when we do **not** know the path in advance—when work has to be decomposed, several strategies deserve exploration, information is distributed, or what happens next depends on what we discover.
-
-A workflow says, *I know the work; execute it.*
-
-A team says something more dangerous:
-
-*Here is the objective. Figure out what work should exist.*
+A workflow says, *I know the work; execute it.* A team says something more dangerous: *Here is the objective. Figure out what work should exist.*
 
 The moment we make that move, somebody—or something—has to decide who does what.
 
@@ -46,31 +34,21 @@ The manager has arrived.
 
 Nicholas Carlini ran one of the cleanest experiments I have seen in what this actually means. He gave a team of Claude agents a shared codebase and asked them to build a Rust C compiler capable of compiling the Linux kernel. Across nearly two thousand Claude Code sessions and roughly $20,000 of API cost, the agents eventually produced around 100,000 lines of compiler code and a system capable of building Linux on several architectures.
 
-The success is impressive.
-
-The failure is more useful.
+The success is impressive. The failure is more useful.
 
 Early in the project, parallelism came naturally because there were many separate problems. One agent could fix a parser bug while another worked on code generation and another attacked a failing test. Task locks stopped two agents from solving exactly the same thing and then discovering git conflict as a new branch of artificial intelligence.
 
-Then they reached the Linux kernel.
-
-Suddenly the agents could all hit the same blocking failure.
-
-Sixteen intelligent workers did not automatically create sixteen useful lines of attack. They could become sixteen expensive witnesses to the same problem.
+Then they reached the Linux kernel. Suddenly the agents could all hit the same blocking failure. Sixteen intelligent workers did not automatically create sixteen useful lines of attack; they could become sixteen expensive witnesses to the same problem.
 
 The fix was not simply a smarter model. Carlini changed the **environment** so useful work became separable: task locks, independent failure cases, specialist roles, and a testing setup that used GCC as a known-good oracle so different agents could isolate different subsets of the problem.
 
-The interesting unit was no longer Claude.
-
-It was Claude plus tests, task boundaries, a repository, synchronization, an oracle and a division of labour.
+The interesting unit was no longer Claude. It was Claude plus tests, task boundaries, a repository, synchronization, an oracle and a division of labour.
 
 We saw the same move in Chapter 2. The circle-packing agent looked autonomous because the evaluator made search productive. Here the team looked intelligent because the environment made specialization productive.
 
 **The society inherited part of its cognition from its institutions.**
 
-This is why “more agents” is not a scaling law. Decomposable work can benefit from parallel minds; sequential work can become slower once communication and coordination dominate. Sometimes you have created a team. Sometimes you have created overhead with names.
-
-The work has to justify the organization—an observation large organizations have developed several departments to forget.
+This is why “more agents” is not a scaling law. Decomposable work can benefit from parallel minds; sequential work can become slower once communication and coordination dominate. Sometimes you have created a team. Sometimes you have created overhead with names. The work has to justify the organization—an observation large organizations have developed several departments to forget.
 
 ## The Org Chart Learns
 
@@ -78,43 +56,157 @@ So far, humans still designed the organization. We chose the manager and workers
 
 Then systems such as TRINITY, Conductor and Fugu pushed on a more interesting boundary. They explore different ways for models to coordinate other models, assign roles, shape communication or construct an agentic scaffold dynamically rather than treating the org chart as fixed in advance.
 
-The exact systems will age quickly.
-
-The architectural move will not.
+The exact systems will age quickly. The architectural move will not.
 
 **The org chart becomes part of inference.**
 
-Given a hard problem, the system can decide whether it wants one strong thinker or several specialists, independent attempts or shared context, a critic now or later, another refinement of the current idea or a clean restart from a different frame.
-
-That is a qualitatively different machine. The answer may depend not only on what any model knows, but on **how minds are arranged around the problem**.
+Given a hard problem, the system can decide whether it wants one strong thinker or several specialists, independent attempts or shared context, a critic now or later, another refinement of the current idea or a clean restart from a different frame. The answer may depend not only on what any model knows, but on **how minds are arranged around the problem**.
 
 Humans discovered this long ago. A good research team is not five copies of the principal investigator. The experimentalist notices one thing, the statistician another, the engineer asks why the entire setup requires seventeen services, and somebody from the neighboring field asks the stupid question that turns out not to be stupid.
 
 Sometimes you want different errors.
 
-But the organization has to preserve those differences long enough for them to matter. If every agent immediately sees the leading answer and politely converges, you have not built collective intelligence.
+But the organization has to preserve those differences long enough for them to matter. If every agent immediately sees the leading answer and politely converges, you have not built collective intelligence. You have built one model wearing five hats and voting for itself.
 
-You have built one model wearing five hats and voting for itself.
-
-Chapter 4 called the alternative **perspectival triangulation**: several conclusions become more informative only when they come from genuinely different evidence, methods, assumptions or blind spots.
-
-Now that becomes architecture.
+Chapter 4 called the alternative **perspectival triangulation**: several conclusions become more informative only when they come from genuinely different evidence, methods, assumptions or blind spots. Now that becomes architecture.
 
 When should agents share context, and when should we deliberately stop them from contaminating one another?
 
-## Then I Realized We Were Rebuilding Science
+## A Swarm Should Not Be a Meeting
 
-At this point I had an uncomfortable realization.
+The easiest multi-agent architecture is a meeting. Give everyone the same context, ask for opinions, let them discuss, aggregate the result. This sounds democratic and often produces consensus with suspicious speed.
 
-We have already spent centuries building a system for extracting knowledge from unreliable agents.
+The problem is that agreement is not very informative if everyone inherited the same mistake. Five agents can cite the same source. Ten agents can begin from the same framing. A critic that reads the builder's entire reasoning may spend most of its intelligence exploring the builder's world rather than asking whether that world was the wrong place to start.
 
-We call it science.
+Chapter 2 already gave us a clue. MAP-Elites preserved different regions of a solution space because the current winner could be sitting on the wrong hill. At the level of organizations, the same idea becomes stranger and more powerful: preserve different **theories about the problem itself**.
 
-Scientists are not individually magical. They are biased, competitive, stubborn, status-seeking, occasionally brilliant, and occasionally Reviewer 2. More importantly, they cannot personally verify most of what they use. A physicist does not rebuild the Large Hadron Collider before citing a result. A biologist does not independently validate every reagent, sequencing platform, statistical package and paper behind an experiment. If every scientist insisted on personally touching every link in the chain, science would stop after breakfast.
+One lineage thinks the bottleneck is data. Another thinks the architecture is wrong. A third thinks both are distractions because the objective is wrong. Do not make them vote after five minutes. Give them different evidence, tools and enough time to become interestingly wrong in different ways.
 
-This is one of the strongest threads in Peter Godfrey-Smith's *Theory and Reality*. The simple empiricist picture begins with a knower confronting experience, but real science quickly outruns anything one person can check. Knowledge moves through instruments, other people, inherited methods, specialist communities, criticism, reputation, competition, cooperation and institutions. Experience still matters—the point is not to vote reality away—but the contact is distributed.
+This creates an awkward distinction between **believing an idea** and **believing an idea is worth investigating**. I can think an approach is probably wrong and still want to spend compute on it because it is cheap to test, explains an anomaly nobody else can explain, or would change everything if true. “Prune ruthlessly” needs an asterisk.
 
-That is much closer to the architecture we are building.
+Then comes the scheduler. Program A is winning and already has twelve researchers—some human, some artificial. Program B looks weaker and has one. Where should researcher thirteen go? The answer is not automatically A. The theory with the highest current score is not necessarily where the next unit of effort has the highest information value.
+
+This is why Fugu and related systems are more interesting to me than another fixed planner–worker diagram. Part of the allocation problem can itself become executable: which minds should be recruited, what they should see, whether they should share a history, and when an apparently weaker direction deserves another turn.
+
+The organization is no longer merely an org chart. It includes information flow, independence, memory, authority, incentives, specialization and exposure to consequences.
+
+At this point, reasoning has started to look suspiciously like institution design.
+
+## Reality Does Not Tell You Who Was Wrong
+
+Now give this organization something harder than a compiler bug. An agent proposes a hypothesis. Another builds an experiment or test. The result comes back against the hypothesis.
+
+What failed?
+
+The tempting answer is “the hypothesis.” But perhaps the instrument was badly calibrated, the analysis buggy, the data transformed incorrectly, the test encoded the wrong behavior, or one of the background assumptions was false. A surprising result tells us that **something** in the package is wrong. It does not highlight the guilty line in red.
+
+Software engineers already know this. A failing integration test proves the system is broken somewhere.
+
+Congratulations. You now have debugging.
+
+A serious System 3 organization therefore needs more than provenance attached to a final claim. It needs something like an **assumption graph**: which conclusion depends on which measurement, which measurement depends on which tool, which analysis depends on which transformation, which evaluator depends on which rubric. When reality disagrees, suspicion can move through the graph rather than mechanically destroying the first hypothesis in sight.
+
+This is also why “add a verifier agent” is dangerously comforting. A verifier may share the same base model, source, blind spot or broken test as the builder. A verifier is not an oracle merely because somebody gave it the title *Verifier* in YAML.
+
+The better question is simpler:
+
+**What could make this answer lose?**
+
+Code has tests. Mathematics can have proof checking or another mathematician finding the missing step. Factual claims have sources, sometimes direct observation. UX eventually has users. Physical research has measurement. Strategy has consequences, usually arriving later and with an invoice.
+
+The goal is not that every claim must be reduced to one universal verification procedure. The goal is **exposure**: important conclusions should remain connected to something outside the conversation that can make them uncomfortable.
+
+That was Chapter 4's central concern. Once several agents are involved, the chain gets longer, and the question changes from “does this agent know?” to “does this organization have a path back to something that can say no?”
+
+## Humans Are in the Network
+
+This is important enough to state plainly: I do **not** think the mature version of this architecture is a society of artificial agents with one lonely human standing outside the box holding a red approval button.
+
+Humans are nodes in the network.
+
+Sometimes the human chooses the problem. Sometimes she supplies tacit knowledge that never made it into the documentation. Sometimes he notices that a proof is technically correct but mathematically boring. Sometimes humans operate the physical instrument because the AI cannot. Sometimes they are the critic, the source of a new conjecture, the person who recognizes a connection across fields, or the one who says, “I know the benchmark says this is better, but something smells wrong.”
+
+And humans are unreliable too. They have prestige hierarchies, fashionable theories, sunk costs, grudges, career incentives, and an extraordinary ability to become emotionally attached to a hypothesis after naming it.
+
+The point of an epistemic institution is not to insert a pure human oracle into an impure machine process. It is to arrange **fallible participants of different kinds** so their strengths combine and their errors do not line up too neatly.
+
+That changes how I think about “human in the loop.” The phrase makes the human sound like a safety interlock. In a real epistemic network, the question is much richer: **where is human judgment most valuable?**
+
+Maybe not on every proof step, if a formal checker can do that. Maybe not on every literature query, if retrieval is better. Human attention may be most valuable at problem selection, conceptual reframing, deciding significance, resolving ambiguity, operating the physical world, noticing a tacit assumption, or realizing that the entire research program has become silly.
+
+The goal is not to remove humans from the loop. It is to stop wasting humans on the parts of the loop where they add the least information.
+
+## What Kind of Society Should Think About This?
+
+At the beginning of this book I kept returning to markets, cities, ecosystems and human organizations as examples of emergence: interacting components, feedback, selection, history, no single designer specifying the final state. Four chapters later, we have somehow started rebuilding versions of those things inside the machine.
+
+That was not where I expected the argument to go.
+
+The first agent architectures looked like workflows because workflows were what software engineers knew how to build. Then models became capable enough to decide pieces of the workflow themselves. We added workers, managers, independent critics, learned coordinators, formal verifiers and humans occupying different places in the same network. Somewhere along the way the boundary between **reasoning** and **organization** started to disappear.
+
+Maybe it was always blurrier than we thought.
+
+A court uses adversarial procedure because one coherent story is not enough. A market can aggregate information no trader possesses globally. A good engineering organization separates the person who changes production from the machinery that audits the change. A research group divides labour because no one person can simultaneously know everything, build everything, check everything and remain sane.
+
+None of these is a magic truth machine. Each changes what the participating minds can collectively know and do.
+
+**Institutions are cognitive technology.**
+
+So once agents become capable enough, we are no longer deciding only which model should answer. We are deciding **what kind of society should think about the problem**.
+
+A hierarchy? Independent investigators? A generator and adversarial critic? Several persistent lineages? A learned topology like Fugu? Or one agent, because the task does not deserve a civilization?
+
+The design variables are no longer merely model and prompt. They are who sees what, who can challenge whom, which disagreements survive, what gets remembered, where humans enter, where incentives point, what has an exposure path to reality, and when a minority idea deserves another round of compute.
+
+I kept treating these as a collection of engineering choices.
+
+Then the collection became too familiar to ignore.
+
+## The Name Was Hiding in Plain Sight
+
+At some point I stopped looking at the boxes in the architecture diagram and looked at the verbs.
+
+Propose explanations. Test them against something that can say no. Build instruments when the existing ones cannot see what matters. Preserve records. Track where claims came from. Let specialists work on different pieces. Keep critics sufficiently independent that disagreement contains information. Allow rival explanations to survive long enough to develop. Trust results you did not personally verify, but preserve some chain back to the people, methods and observations that earned that trust. Accumulate knowledge without turning it into scripture. Pay attention when an anomaly refuses to go away. Occasionally discover that the framework organizing the whole search was the problem.
+
+I had been treating these as separate features of an agent architecture.
+
+They were not separate.
+
+Humanity has already spent centuries building a system for extracting useful knowledge from bounded, biased, competitive, forgetful, status-seeking, occasionally brilliant and occasionally ridiculous agents.
+
+We call it **science**.
+
+I almost dislike how simple the sentence is after all this machinery:
+
+**System 3 is science.**
+
+Not science as a pile of papers. Not “give the model arXiv.” Not science as a white coat, a laboratory or a particular method written on a school poster.
+
+Science as an **architecture for remaining answerable to reality when no individual mind is reliable enough, knowledgeable enough or long-lived enough to do the whole job alone**.
+
+Once I saw it, the previous chapters changed shape.
+
+Chapter 1 moved control from individual actions into environments, feedback and selection. Chapter 2 gave autonomous search an evaluator that could not be charmed by the agent's explanation. Chapter 3 lost the clean evaluator and gradually reinvented independent judgment, competing lineages and something uncomfortably close to peer review. Chapter 4 asked how claims acquire epistemic status through experience, instruments, provenance, memory and trust chains. This chapter added specialization, disagreement, institutions and humans inside the same network.
+
+Those were not six unrelated tricks.
+
+They were pieces of one older technology.
+
+Science did not make individual humans omniscient. It wrapped fallible humans in processes that let observations survive observers, criticism attack claims, instruments extend perception, methods accumulate, results travel through trust chains, and one generation begin somewhere other than zero.
+
+We have spent this book wrapping models in structures that compensate for what models cannot safely do alone.
+
+Science did the same thing to humans centuries ago.
+
+Apparently we are porting it.
+
+And that is why philosophy of science suddenly stopped looking like background reading and started looking disturbingly like architecture documentation written by people who never had the courtesy to include YAML.
+
+## Philosophy of Science, Now With an API
+
+Peter Godfrey-Smith's *Theory and Reality* is useful here because it refuses the childish version of science in which one perfectly rational knower looks at evidence and simply extracts truth. Real science quickly outruns anything one person can check. Knowledge moves through instruments, other people, inherited methods, specialist communities, criticism, reputation, competition, cooperation and institutions. Experience still matters—the point is not to vote reality away—but the contact is distributed.
+
+That is exactly the problem agent societies inherit.
 
 The question is no longer simply:
 
@@ -124,71 +216,62 @@ It becomes:
 
 > Is there a reliable path through people, tools, procedures, formal systems and evidence by which this claim remains answerable to a world that can disagree?
 
-And here I started noticing an embarrassing pattern. Every time I thought I had found a new multi-agent design problem, somebody in philosophy of science had already spent a career arguing about a recognizable version of it, usually without the convenience of YAML.
+And here the embarrassment deepens. Every time I thought I had found a new multi-agent design problem, somebody in philosophy of science had already spent a career arguing about a recognizable version of it.
 
-## Reality Does Not Tell You Who Was Wrong
+The failed hypothesis from a few pages ago? Duhem and Quine make the problem harder: evidence usually confronts a bundle of assumptions, not one naked proposition. That is our assumption graph.
 
-Consider the simplest case. An agent proposes a scientific hypothesis. The experiment comes back against it.
+The question “what could make this answer lose?” is Popper after some repair. The useful engineering translation is not that every interesting claim must be cleanly falsifiable in one shot. It is that an important claim should have an **exposure path**—some route by which tests, experiments, proofs, adversarial criticism or eventual consequences can count against it.
 
-What failed?
+The need to preserve rival lineages is recognizably Lakatos. Research programs can carry different commitments for long enough that an initially weaker program is not killed merely because the dominant one already has better tooling and more friends. Laudan sharpens another distinction we had already stumbled into: **acceptance and pursuit are different decisions**. I can assign low confidence to an idea and high value to testing it.
 
-The tempting answer is “the hypothesis,” but the instrument could be badly calibrated, the analysis buggy, the data transformed incorrectly, or a background assumption false. This is the Duhem–Quine problem in practical clothing: tests normally confront a network of claims and auxiliary assumptions.
+Kuhn explains why the opposite problem also exists. A community cannot reopen every foundational assumption every morning. Stable frameworks make deep cumulative work possible. They also shape which anomalies look important, which methods look legitimate and which questions become almost impossible to see. A paradigm is productive partly because it focuses attention; it becomes a prison for the same reason.
 
-A surprising result tells us that **something** in the package is wrong.
+Feyerabend, at his most useful rather than his most meme-able, is a warning against turning the current successful methodology into the definition of rational inquiry. If every agent is forced through the same reasoning ritual, we may get consistency at the cost of the very methodological diversity that discovers a new route.
 
-It does not highlight the guilty line in red.
+And work on the social organization of science asks the scheduler question directly: how should labour, information, incentives, reputation, cooperation, competition and credit be arranged so that a community explores the right things rather than merely rewarding whatever is already prestigious?
 
-Software engineers already know this. A failing integration test proves the system is broken somewhere.
+The philosophers disagree with one another. Good. We should be suspicious of any philosophy of science that collapses a messy historical institution into one commandment, just as we should be suspicious of an agent framework with one universal box labeled `REASON`.
 
-Congratulations.
+What transfers is not one philosophy. It is the set of failure modes they made visible.
 
-You now have debugging.
+| Philosophy of science | Failure mode | Architectural consequence |
+|---|---|---|
+| **Popper** | A claim that never risks failure can remain persuasive forever | Give important claims an **exposure path**: tests, experiments, proof checks, adversarial criticism or eventual outcomes |
+| **Duhem–Quine** | Evidence normally confronts bundles of assumptions | Maintain **dependency and assumption graphs** so failure triggers epistemic debugging rather than automatic blame |
+| **Kuhn** | Stable frameworks enable deep work and create blindness | Let successful patterns become defaults while tracking anomalies and preserving a **reframing mode** |
+| **Lakatos / Laudan** | Rival programs can remain worth pursuing even when not currently winning | Preserve **persistent lineages** and separate confidence from value of pursuit |
+| **Feyerabend** | One successful method can harden into compulsory methodology | Preserve **methodological diversity** where the problem genuinely admits it |
+| **Division of scientific labour** | Incentives, specialization, reputation and information flow affect what communities can know | Design the **scheduler, information flows, authority, incentives and credit structure**, not only prompts |
 
-Scientific institutions do epistemic debugging, and agent societies need to do it too. A serious System 3 organization therefore needs more than provenance attached to a final claim. It needs something like an **assumption graph**: which conclusion depends on which measurement, which measurement depends on which tool, which analysis depends on which transformation, which evaluator depends on which rubric.
+The comparison is mine, not a blueprint any of these philosophers proposed for AI. But it clarifies why this is more than metaphor.
 
-When reality disagrees, suspicion can move through the graph rather than mechanically destroying the first hypothesis in sight.
+Philosophy of science spent a century finding ways intelligent people can collectively fool themselves. Agent architecture gives us the uncomfortable opportunity to instantiate those same failure modes at machine speed—and perhaps to design responses more deliberately.
 
-This is also why “add a verifier agent” is dangerously comforting. A verifier may share the same base model, source, blind spot or broken test as the builder.
+The useful question is not “Which philosopher wins?” It is:
 
-A verifier is not an oracle merely because somebody gave it the title *Verifier* in YAML.
+**Which epistemic failure am I currently building?**
 
-The better question is Popper's question after some repair:
+A system may be impossible to challenge, blame the wrong component when a test fails, converge too quickly, reopen every settled question forever, freeze a successful framework into dogma, standardize away useful weirdness, or allocate all of its attention to the theory already winning.
 
-**What could make this answer lose?**
-
-Code has tests. Mathematics can have proof checking or another mathematician finding the missing step. Science has experiment and measurement. Factual claims have sources, sometimes direct observation. UX eventually has users. Strategy has consequences, usually arriving later and with an invoice.
-
-The goal is not universal falsification.
-
-It is **exposure**.
+**Philosophy identified the tensions. Architecture has to make choices about them.**
 
 ## Science Becomes Architecture
 
-Recent scientific-agent systems become interesting at exactly this point, because they are no longer just several language models talking to one another.
+Once the connection is visible, recent scientific-agent systems stop looking like a niche application of agents and start looking like unusually literal prototypes of System 3.
 
 Stanford's Virtual Lab is deliberately organized like a research group: an AI principal investigator coordinates scientist agents, while humans provide high-level input and perform physical work needed to close the loop. In the nanobody project, computational agents proposed candidates that were then synthesized and tested in the laboratory.
 
-Proteins were made.
+Proteins were made. Experiments happened. **Reality got a vote.**
 
-Experiments happened.
+Other systems, including FutureHouse's Robin, push on similar loops around literature, analysis, hypothesis generation and wet-lab feedback. The interesting object is not an “AI scientist” replacing a human scientist. It is a **research network** in which different cognitive and physical jobs are performed by different kinds of participants.
 
-**Reality got a vote.**
+That distinction matters because scientific discovery has always been distributed. One person understands the disease. Another understands the assay. A third notices the statistical problem. Somebody else maintains the instrument everyone depends on and is mysteriously never on the author list. Models add new kinds of specialists to this network.
 
-Other systems, including FutureHouse's Robin, push on similar research loops around literature, analysis, hypothesis generation and wet-lab feedback. The interesting object is not an “AI scientist” replacing a human scientist. It is a **research network** in which different cognitive and physical jobs are performed by different kinds of participants.
-
-That distinction matters because scientific discovery has always been distributed. One person understands the disease. Another understands the assay. A third notices the statistical problem. Somebody else maintains the instrument everyone depends on and is mysteriously never on the author list.
-
-Models add new kinds of specialists to this network.
-
-**The scientific method itself is becoming an architecture.**
+**The scientific method itself is becoming an architecture we can instantiate, inspect and partially redesign.**
 
 Hypothesis generation can be separated from criticism, literature search from experimental analysis, natural-language intuition from executable computation. Independent theories can survive long enough to compete, while experiments can still kill beautiful nonsense.
 
-We have spent this book wrapping models in structures that compensate for what models cannot safely do alone.
-
-Science did the same thing to humans centuries ago.
-
-Apparently we are porting it.
+This is not “automating science” in the narrow sense of replacing scientists with a machine. It is making more of the institution computational.
 
 ## Mathematics Leaves the Benchmark
 
@@ -200,97 +283,33 @@ An internal OpenAI reasoning model produced a disproof of a long-standing conjec
 
 Formal proof search shows a different institution: model-generated ideas coupled to Lean, where the final proof has to survive a machine-checkable formal system. Multi-agent research systems such as QED and Research Math Agents add decomposition, retrieval, structured memory, proposal, refinement and verification around the proof process.
 
-The exact headline numbers will age.
+The exact headline numbers will age. The composition is the point.
 
-The composition is the point.
-
-A model may propose an idea, another attack it, Lean reject an invalid step, retrieval surface prior work, a human mathematician notice that the supposedly new theorem appeared in 1987, and another human decide whether the result matters.
-
-None of these is *the* intelligence.
+A model may propose an idea, another attack it, Lean reject an invalid step, retrieval surface prior work, a human mathematician notice that the supposedly new theorem appeared in 1987, and another human decide whether the result matters. None of these is *the* intelligence.
 
 Increasingly, the intelligence is in the composition.
 
-This gives the old System 3 slogan a more mature form. The world that pushes back is not always physical. In mathematics, proof pushes back. In code, execution pushes back. In science, experiment pushes back.
+This gives the old System 3 slogan a more mature form. The world that pushes back is not always physical. In mathematics, proof pushes back. In code, execution pushes back. In experimental science, measurement pushes back. In every case, humans can remain inside the network that determines what was actually learned.
 
-And in every case, humans remain inside the network that determines what was actually learned.
+System 3 is not one giant scientist.
 
-## Humans Are in the Network
-
-This is important enough to state plainly: I do **not** think the future scientific institution is a society of artificial agents with one lonely human standing outside the box holding a red approval button.
-
-Humans are nodes in the network.
-
-Sometimes the human chooses the problem. Sometimes she supplies tacit knowledge that never made it into the literature. Sometimes he notices that the model's proof is technically correct but mathematically boring. Sometimes humans operate the physical instrument because the AI cannot. Sometimes they are the critic, the source of a new conjecture, the person who recognizes a connection across fields, or the one who says, “I know the benchmark says this is better, but something smells wrong.”
-
-And humans are unreliable too. They have prestige hierarchies, fashionable theories, sunk costs, grudges, career incentives, and an extraordinary ability to become emotionally attached to a hypothesis after naming it.
-
-The point of an epistemic institution is not to insert a pure human oracle into an impure machine process.
-
-It is to arrange **fallible participants of different kinds** so their strengths combine and their errors do not line up too neatly.
-
-That changes how I think about “human in the loop.” The phrase makes the human sound like a safety interlock. In a real epistemic network, the question is much richer:
-
-**Where is human judgment most valuable?**
-
-Maybe not on every proof step, if Lean can check those. Maybe not on every literature query, if retrieval is better. Human attention may be most valuable at problem selection, conceptual reframing, deciding significance, resolving ambiguity, operating the physical world, or noticing when the entire research program has become silly.
-
-The goal is not to remove humans from the loop.
-
-It is to stop wasting humans on the parts of the loop where they add the least information.
-
-## A Swarm Should Not Be a Meeting
-
-Once humans and agents are inside the same epistemic network, another temptation appears: give everyone the same context, ask for opinions, and aggregate.
-
-This sounds democratic and often produces consensus with suspicious speed.
-
-Lakatos gives us a better image. Science can contain **competing research programs** that preserve different commitments long enough to develop them. Translated into agent architecture, that means something more interesting than ten agents voting. One lineage may think the bottleneck is data, another architecture, a third that both are distractions because the objective is wrong.
-
-Let them accumulate different evidence, tools, failures and local expertise before forcing convergence.
-
-This is the epistemic cousin of MAP-Elites. In Chapter 2, diversity over **solutions** kept search from collapsing onto one local optimum. Here, diversity over **theories and research programs** protects inquiry from collapsing onto one worldview.
-
-But how long should a weak program survive?
-
-Larry Laudan's distinction between **acceptance** and **pursuit** is useful. I can think an idea is probably wrong and still think it deserves investigation because it is cheap to test, explains an anomaly nobody else can explain, or would change everything if true.
-
-“Prune ruthlessly” needs an asterisk.
-
-A research institution should distinguish how much it believes an idea from how valuable it would be to keep investigating it.
-
-Then comes the scheduler. Suppose program A looks strongest and already has twelve researchers—some human, some artificial—while program B looks weaker and has one. Where should researcher thirteen go?
-
-Philosophy and sociology of science have long worried about versions of this problem: division of labour, incentives, reputation, cooperation, competition, credit, neglected questions. Systems such as Fugu now make **part of the allocation problem executable**: they can choose which minds to recruit and how to organize them.
-
-They do not tell us what the institution **should** optimize.
-
-The theory with the highest current score is not necessarily where the next unit of research effort has the highest value. Optimize only short-term benchmark gain and we may build the academic equivalent of a company where every new employee joins the team that already has the most headcount.
-
-So the organization is more than an org chart. It includes roles, information, incentives, reputation, authority, memory and exposure to consequences.
-
-Epistemology has an organizational layer.
+It is the machinery that lets a society of imperfect scientists think.
 
 ## The Agent Gets a Social Position
 
-So far, the institution has mostly been a research institution. Real agents will also sit inside companies, families, governments, marketplaces and communities, where the question is not merely what is true but who is allowed to do what for whom.
+There is a limit to the science analogy, and it appears as soon as the objective is not only truth.
 
-A persistent agent in a company Slack or family message thread is not just a tool with permissions. Over time it acquires something like a **social position**. Different people can instruct it, some people outrank others, private information may help a shared task, and one person's optimization target may make somebody else's life worse.
+Real agents will sit inside companies, families, governments, marketplaces and communities, where the question is not merely what is true but who is allowed to do what for whom. A persistent agent in a company Slack or family message thread is not just a tool with permissions. Over time it acquires something like a **social position**. Different people can instruct it, some people outrank others, private information may help a shared task, and one person's optimization target may make somebody else's life worse.
 
 At this point software architecture quietly turns into political philosophy, which I regard as progress.
 
-Because an organizational agent has **principals**, not merely users.
-
-“Align the agent to the user” therefore lasts about five minutes before somebody asks the obvious question:
-
-Which user?
+Because an organizational agent has **principals**, not merely users. “Align the agent to the user” therefore lasts about five minutes before somebody asks the obvious question: which user?
 
 We will return to that later. First, organizations have another problem closer to home.
 
 ## Unfortunately, Organizations Have Emergent Goals Too
 
-Take strong models, give them complementary roles, preserve independent lines of inquiry, learn the org chart, keep humans where their judgment matters, connect the whole thing to experiments and proofs, and congratulations:
-
-artificial scientific civilization.
+Take strong models, give them complementary roles, preserve independent lines of inquiry, learn the org chart, keep humans where their judgment matters, connect the whole thing to experiments and proofs, and congratulations: artificial scientific civilization.
 
 Chapter 1 should have made us more suspicious than that.
 
@@ -298,105 +317,31 @@ Emergent systems do not produce what you wanted because the architecture diagram
 
 Sales optimizes sales. Growth optimizes growth. Finance optimizes cost. Moderation optimizes safety. Everyone can be competent inside the box while the organization produces something nobody would have endorsed if shown the whole trajectory at the beginning.
 
-Humans have a technical term for this:
-
-Tuesday.
+Humans have a technical term for this: Tuesday.
 
 **Local alignment does not compose automatically. Neither does local truth.**
 
 Five agents can cite the same mistaken source. Ten specialists can inherit one false assumption from the orchestrator. A critic can become ceremonial. A hierarchy can suppress dissent. A flat swarm can preserve diversity until everyone spends the afternoon synchronizing status.
 
-This is the social version of the problem from Chapter 4: every component can look locally reasonable while the larger chain fails coherently.
+This is the social version of the problem from Chapter 4: every component can look locally reasonable while the larger chain fails coherently. System 3 cannot stop at individual agents. The organization itself needs a trust architecture.
 
-System 3 cannot stop at individual agents.
+And once the organization pursues goals on behalf of several people, epistemology is no longer enough. We have walked from philosophy of science toward ethics, governance and social choice without changing buildings.
 
-The organization itself needs a trust architecture.
-
-## What Kind of Society Should Think About This?
-
-At the beginning of this book I kept returning to markets, science, cities and ecosystems as examples of emergence: interacting components, feedback, selection, history, no single designer specifying the final state.
-
-Four chapters later, we have somehow started rebuilding them inside the machine.
-
-That was not where I expected the argument to go.
-
-The first agent architectures looked like workflows because workflows were what software engineers knew how to build. Then models became capable enough to decide pieces of the workflow themselves. We added workers, managers, independent critics, learned coordinators, scientific teams, formal verifiers and humans occupying different places in the same network.
-
-Somewhere along the way the boundary between **reasoning** and **organization** started to disappear.
-
-Maybe it was always blurrier than we thought.
-
-A scientific community is a way of thinking that no individual scientist can perform. A court uses adversarial procedure because one coherent narrative is not enough. A market can aggregate information no trader possesses globally. Peer review inserts another mind between a claim and institutional acceptance.
-
-None is a magic truth machine.
-
-Each changes what the participating minds can collectively know and do.
-
-**Institutions are cognitive technology.**
-
-So once agents become capable enough, we are no longer deciding only which model should answer.
-
-We are deciding **what kind of society should think about the problem**.
-
-A hierarchy? Independent investigators? A scientific lab? A generator and adversarial critic? Competing research programs? A learned topology like Fugu? Or one agent, because the task does not deserve a civilization?
-
-The design variables are no longer merely model and prompt. They are who sees what, who can challenge whom, which disagreements survive, what gets remembered, where humans enter, where incentives point, what has an exposure path to reality, and when a minority idea deserves another round of compute.
-
-## Philosophy, Translated Into Architecture
-
-The philosophers were not designing agent frameworks, and their theories disagree with one another in important ways. What transfers is the **failure mode** each one made visible.
-
-| Philosophy of science | Failure mode | Architectural consequence |
-|---|---|---|
-| **Popper** | A claim that never risks failure can remain persuasive forever | Give important claims an **exposure path**: tests, experiments, proof checks, adversarial criticism, or eventual outcomes |
-| **Duhem–Quine** | Evidence normally confronts bundles of assumptions | Maintain **dependency and assumption graphs** so failure triggers epistemic debugging rather than automatic blame |
-| **Kuhn** | Stable frameworks enable deep work and create blindness | Let successful patterns become defaults while tracking anomalies and preserving a **reframing mode** |
-| **Lakatos / Laudan** | Rival programs can remain worth pursuing even when not currently winning | Preserve **persistent lineages** and separate confidence from value of pursuit |
-| **Division of scientific labour** | Incentives, specialization, reputation and information flow affect what communities can know | Design the **scheduler, information flows, authority, incentives and credit structure**, not only prompts |
-
-The comparison is mine, not a blueprint any of these philosophers proposed for AI.
-
-But it clarifies why this is more than metaphor.
-
-Philosophy of science spent a century finding ways intelligent people can collectively fool themselves. Agent architecture gives us the uncomfortable opportunity to instantiate those failure modes at machine speed—and perhaps to design responses more deliberately.
-
-The useful question is not “Which philosopher wins?”
-
-It is:
-
-**Which epistemic failure am I currently building?**
-
-A system may be impossible to falsify, blame the wrong component when a test fails, converge too quickly, reopen every settled question forever, freeze a successful framework into dogma, or allocate all of its attention to the theory already winning.
-
-**Philosophy identified the tensions. Architecture has to make choices about them.**
-
-This is where the chapter lands for me:
-
-**Agentic architecture is epistemology made executable. Multi-agent architecture is social epistemology made executable.**
+That problem will come back later.
 
 ## And Then the Society Remembers
 
-There is one final problem.
+There is one final problem. A society that solves one problem and disappears can improvise forever. A persistent society cannot.
 
-A society that solves one problem and disappears can improvise forever.
+If the same team repeatedly discovers that one testing strategy works, eventually it stops debating the testing strategy. A proof pattern that succeeds gets reused. A reliable tool becomes boring infrastructure. An organizational structure that keeps winning becomes the starting point for the next problem. This is useful. Without such stabilization, every Monday begins with a philosophical inquiry into whether unit tests are still a good idea.
 
-A persistent society cannot.
+Kuhn's interesting point was not the phrase “paradigm shift.” It was the tension underneath it. Deep work requires periods in which people **do not reopen every fundamental assumption every morning**. A stable framework lets a community accumulate techniques, standards and detailed knowledge.
 
-If the same team repeatedly discovers that one testing strategy works, eventually it stops debating the testing strategy. A proof pattern that succeeds gets reused. A reliable tool becomes boring infrastructure. An organizational structure that keeps winning becomes the starting point for the next problem.
-
-This is useful. Without such stabilization, every Monday begins with a philosophical inquiry into whether unit tests are still a good idea.
-
-Kuhn's interesting point was not the phrase “paradigm shift.” It was the tension underneath it. Deep scientific work requires periods in which people **do not reopen every fundamental assumption every morning**. A stable framework lets a community accumulate techniques, standards and detailed knowledge.
-
-Permanent skepticism sounds heroic.
-
-Operationally it is exhausting.
+Permanent skepticism sounds heroic. Operationally it is exhausting.
 
 But stability also creates blindness. A successful framework influences which problems look interesting, which tools seem legitimate, which anomalies can be ignored for another year and which alternatives never receive serious attention. Eventually the machinery that made deep work possible can become the thing preventing the next kind of work.
 
-Agent societies will inherit exactly this tension.
-
-They need memory strong enough to create cumulative competence and doubt strong enough to stop accumulated competence from becoming dogma.
+Agent societies will inherit exactly this tension. They need memory strong enough to create cumulative competence and doubt strong enough to stop accumulated competence from becoming dogma.
 
 A good organization therefore develops habits, procedures, stories about why things are done a certain way, rules inherited from old failures, techniques learned from researchers who are no longer there, shortcuts, taboos, best practices and inevitably a few superstitions.
 
