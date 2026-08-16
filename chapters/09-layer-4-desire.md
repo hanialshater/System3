@@ -18,6 +18,10 @@ None of that structure existed in the original two-word objective.
 
 This is Layer 4.
 
+And this is where the science twist reaches its boundary. Science gives us machinery for asking what is true, what follows from what, which intervention changes the world, and where our beliefs fail. It does not, by itself, supply the thing we ought to optimize. Add another experiment, another critic, another verifier, another thousand agents: Hume does not disappear because the orchestrator has more GPUs.
+
+The moment the question changes from *what is true?* to *what should become true?*, epistemology runs into desire.
+
 ## Above the Problem-Solving Layer
 
 In Chapter 3 I described five layers. At the bottom sits the model. Above it, the coding or action agent. Above that, applications and reusable computational environments. Then the problem-solving layer that chooses strategies, tools, evaluations and workflows.
