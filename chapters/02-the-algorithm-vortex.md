@@ -72,6 +72,8 @@ This is what makes the problem useful for studying autonomy. Searching is hard, 
 
 There is something deeply comforting about an evaluator with no personality.
 
+A candidate does not earn trust because its explanation sounds clever. It earns another round because it was exposed to something outside the model that did not care about the explanation and survived.
+
 ### First Idea: Hill Climbing
 
 If I gave you a rough packing and asked you to improve it manually, one obvious strategy would be to make small changes. Move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn't.
@@ -518,6 +520,6 @@ We can still let the agent generate alternatives, branch, cross-pollinate and se
 
 In circle packing, the harness tells the agent when it is wrong.
 
-What happens when **we don't know how to write the harness**?
+What happens when **the world no longer gives us one clean referee, and judgment itself has to be constructed**?
 
 That is where the next chapter begins.
