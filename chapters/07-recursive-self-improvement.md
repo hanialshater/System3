@@ -26,6 +26,10 @@ The practical version is much more mundane. The base model can remain frozen. Wh
 
 Chapter 2 already contained the seed. Circle packing began as solution search and became algorithm search. Chapter 5 made organization part of inference. Chapter 6 made culture executable. Recursive self-improvement asks what happens when those layers themselves become search spaces.
 
+After the science reveal, there is another way to say the same thing. System 3 began as an architecture that lets fallible agents investigate the world. Recursive self-improvement turns that architecture into **part of the world being investigated**. The scientific institution points its instruments inward: its memory policy becomes a hypothesis, its workflow an intervention, its evaluator an instrument, its organization an experimental variable.
+
+The recursion is not merely that software edits software. **Science starts experimenting on the machinery of science.**
+
 ## An Overnight Researcher
 
 Andrej Karpathy's `autoresearch` repository makes the idea almost comically concrete. The setup has three important pieces: a fixed evaluation/data file, an editable `train.py`, and a Markdown file telling the agent how to run research. Each experiment gets a fixed five-minute training budget. The agent changes the training code, runs it, reads the validation score, keeps the commit if the result improves, and resets if it does not. The human can go to sleep; the loop is explicitly designed to continue until interrupted. ([autoresearch](https://github.com/karpathy/autoresearch))
@@ -87,6 +91,8 @@ Popper gets a filesystem.
 Duhem–Quine gets a debugger.
 
 The system is not merely editing itself. It is **running experiments on itself**.
+
+This is where the central thesis stops being metaphorical. If philosophy of science gives us failure modes for communities that investigate the world, an editable agent architecture lets us encode responses to those failure modes and then test the responses. The philosophy is no longer sitting beside the engineering. It is increasingly describing the engineering surface.
 
 ## A Constitution for the Machine
 
