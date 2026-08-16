@@ -170,9 +170,9 @@ The chain gets longer.
 
 Your teacher tells you about atoms, dinosaurs, countries you have never visited and wars involving people who died centuries before you were born. You cannot check most of it yourself. Yet you slowly learn that some knowledge can be inherited through trusted structures rather than directly experienced.
 
-Then science arrives, if you're lucky.
+Then, if you're lucky, you encounter a more elaborate move.
 
-Now the source is no longer one teacher. There are experiments, journals, other scientists, replication, instruments, statistical methods and a whole social machinery built around the possibility that the first scientist may have been wrong.
+Now the source is no longer one teacher. There are experiments, journals, other investigators, replication, instruments, statistical methods and a whole social machinery built around the possibility that the first person may have been wrong.
 
 Further out are frameworks: economics, political theories, ethical systems, philosophical schools, ideologies. These are useful in a different way. They organize experience and tell us what to pay attention to, but they do not earn trust in exactly the same way a physical measurement does.
 
@@ -182,7 +182,7 @@ You learn to break the stack.
 
 Not randomly. Random distrust is just another form of stupidity.
 
-Productive creativity often begins when something you have good reason to trust stops fitting what you see. Science progresses this way. A theory earns enormous credibility because it explains many observations, then an observation appears that it cannot comfortably absorb. At first the sensible response is usually not to burn down physics. You check the instrument. Repeat the experiment. Ask whether you made a mistake.
+Productive creativity often begins when something you have good reason to trust stops fitting what you see. Serious inquiry has the same escape hatch. A theory earns enormous credibility because it explains many observations, then an observation appears that it cannot comfortably absorb. At first the sensible response is usually not to burn down physics. You check the instrument. Repeat the experiment. Ask whether you made a mistake.
 
 But sometimes the heresy survives.
 
@@ -242,7 +242,7 @@ Somebody trusts me on ranking systems because I have spent years working on them
 
 Human civilization scales knowledge by extending these chains. Alberto knows something because he was there. I know something because I trust Alberto. Someone else may later trust me because I have a reputation for not inventing Italian penguins.
 
-Science turns this into machinery. Instead of trusting a single Alberto, we create instruments, protocols, publications, peer review, replication, statistical methods and norms about disclosure. Courts create different machinery. Markets create reputation and prices. Engineering creates standards, tests and certification.
+Civilization turns this into machinery. Research communities use instruments, protocols, publication, replication, statistical methods and norms about disclosure. Courts use testimony and adversarial procedure. Markets use reputation and prices. Engineering uses standards, tests and certification.
 
 None guarantees truth.
 
@@ -352,7 +352,7 @@ Kahneman's *Thinking, Fast and Slow* gave us the familiar distinction between Sy
 
 For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
 
-But human cognition has always operated inside another structure that the two-system picture largely takes for granted. Scientists run experiments. Engineers test bridges. Programmers execute code. Communities challenge claims. Instruments extend perception. Institutions preserve records. Failure changes what we trust next time.
+But human cognition has always operated inside another structure that the two-system picture largely takes for granted. We test things. We execute code. We build instruments. We compare claims with records. We ask other people. We preserve failures. We create procedures that make some kinds of error harder to hide and some kinds of evidence easier to inspect.
 
 I call that external epistemic machinery **System 3**.
 
@@ -604,9 +604,9 @@ Further out, things become harder.
 
 Learning from other agents requires judgments about source identity, competence and independence. Institutional trust requires something closer to replication, adversarial checking and reputation. Some knowledge emerges not through a single trust chain but through disagreement among people with genuinely different perspectives.
 
-Human science is not a bigger memory file.
+A social epistemic system is not a bigger memory file.
 
-The social machinery matters.
+The relationships among the participants matter.
 
 The claim here is deliberately small:
 
@@ -940,3 +940,7 @@ It does not need to contain the entire chain inside its weights.
 What we build around it determines whether those capabilities remain trapped inside a closed conversation with themselves or become connected to evidence, experience, other minds and a world that can push back.
 
 System 3 is that connection.
+
+And the moment other minds become more than sources—when they can specialize, disagree and inherit one another's conclusions—the architecture acquires another problem.
+
+Trust has to scale socially.

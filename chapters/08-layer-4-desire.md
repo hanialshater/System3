@@ -264,6 +264,12 @@ Layer 4 adds another question:
 
 > Why do I want this?
 
+Chapter 5 makes the boundary sharper. If System 3 is science made architectural, then it gives us extraordinary machinery for asking what is true, what follows from what, which intervention changes the world, and where our beliefs fail.
+
+It does not, by itself, tell us what the world **ought** to become.
+
+Add another experiment, another critic, another verifier, another thousand agents: **Hume does not disappear because the orchestrator has more GPUs.** The moment the question changes from *what is true?* to *what should become true?*, epistemology runs into desire.
+
 Where did the desire come from?
 
 What evidence would change it?

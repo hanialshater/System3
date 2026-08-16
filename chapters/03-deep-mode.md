@@ -16,6 +16,8 @@ Chapter 2 worked because the search could be complicated while judgment stayed s
 
 Chapter 3 begins when the harness stops being obvious.
 
+When the world stops giving us one clean referee, judgment itself becomes part of the architecture.
+
 I picked educational demos for Merge Sort and Count-Min Sketch. They are still bounded problems—you can actually finish one before civilization collapses—but they belong to the messier half of the category. You have to make decisions about explanation, interaction, visual structure, cognitive load, and what another person is likely to understand.
 
 The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar's visual explanations than to the usual "here are some bars moving around; congratulations, you have learned sorting." Those demos take a surprising amount of thought. The algorithm itself is usually the easy part. The difficult part is deciding what to show, what not to show, when to explain something, and what representation might make an idea suddenly click.
@@ -540,6 +542,8 @@ Still, by this stage I realized we were no longer building an evaluator.
 
 We were building something much closer to a tiny institution. Builders propose. Independent judges inspect from different perspectives. References calibrate expectations. Feedback flows backward. History accumulates.
 
+Something had changed: we were no longer only optimizing an artifact. We were organizing an inquiry.
+
 Apparently, when the loss function disappears, you eventually reinvent peer review.
 
 ### Research, but Not Too Much
@@ -589,6 +593,8 @@ That is what I mean by **Deep Mode**.
 Deep Mode is where **Layer 3 starts becoming autonomous**.
 
 It is not another specialist. It is not a design agent, a research agent, or a coding agent with a more impressive system prompt. It is the thing deciding which specialists, experiments and forms of evaluation this particular problem deserves.
+
+The orchestrator is therefore not only scheduling work. It is deciding what should be investigated next, which evidence deserves attention, and which disagreement is worth preserving long enough to become informative.
 
 Give it a problem, a set of capabilities and enough freedom to organize more of the problem-solving process itself.
 

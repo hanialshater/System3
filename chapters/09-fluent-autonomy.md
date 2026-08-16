@@ -86,6 +86,10 @@ The complexity has not gone away.
 
 It has become infrastructure.
 
+Chapter 5 changes what I mean by that. The hidden infrastructure is not merely a clever workflow engine. At its most ambitious, it is **a scientific institution compressed underneath the interface**: hypotheses can be generated without my asking for three hypotheses, critics can challenge them without my scheduling a review meeting, tools can expose claims to reality, provenance can travel with conclusions, competing approaches can survive, failed experiments can become memory, and the system can decide that uncertainty is important enough to bring back to me.
+
+Fluency is not what happens when science disappears. It is what happens when I no longer have to manually conduct the scientific machinery around every difficult decision.
+
 ## Fluency Is Selective Friction
 
 There is an easy mistake here.
@@ -115,6 +119,8 @@ It should also know when evidence is weak, consequences are large, preferences c
 The best autonomous system is not the one that needs the least human input.
 
 It is the one that spends human input well.
+
+Seen through the science lens, this is another allocation problem. Human attention is a scarce instrument. Spend it where judgment, tacit knowledge, value conflict or the ability to reframe the entire research question produces information the rest of the institution cannot cheaply manufacture.
 
 ## The Pattern Encyclopedia
 
@@ -211,6 +217,8 @@ Not because intention is simple.
 Because it is the one part we should not automate away.
 
 A fluent autonomous system takes an imperfect intention, turns it into competent action, stays connected to evidence while acting, learns from sparse correction, remembers what deserves to persist, questions what no longer deserves trust, and returns consequences to the human so the intention itself can evolve.
+
+Another way to say the same thing, now that the trick is visible: it takes an intention and builds a temporary **community of inquiry** around it. Sometimes that community is one agent and a test. Sometimes it is researchers, builders, critics, memories, simulations, users and a human who knows when the entire question is wrong. The organization should be as large as the uncertainty deserves and no larger.
 
 Then we continue.
 

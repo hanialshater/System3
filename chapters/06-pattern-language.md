@@ -8,6 +8,10 @@ Context windows got larger. Projects persisted. Memory systems got better. Agent
 
 Chapter 5 ended with a society developing culture. That sounds abstract until you look at what is happening in software. Teams are increasingly storing their ways of working in Markdown files, instructions, examples, scripts, skills, evaluators, tool descriptions, memory, and small pieces of executable policy. The model may change next month. The knowledge can survive. Something strange has happened to programming.
 
+The science reveal gives this a deeper meaning. Science does not compound because every generation receives a folder containing all previous conclusions. It compounds because communities also inherit **ways of finding out**: instruments, protocols, experimental tricks, statistical habits, standards of evidence, named failure modes, things everybody in a field knows to check, and occasionally rules whose original justification has been forgotten so thoroughly that they have achieved the dignity of tradition.
+
+If System 3 is science made architectural, then Pattern Language is part of its **cultural memory**. Chapter 5 asked how a society of fallible minds can know more than its members. This chapter asks how that society can begin tomorrow somewhere other than zero—without turning yesterday's success into scripture.
+
 ## Three Ways to Tell a Computer What You Know
 
 For most of computing history, if you knew how a process should work, you translated that knowledge into code. A customer asks for a refund. If the amount is under €50, approve it. If it is over €500, ask a manager. If the order is older than thirty days, reject it unless a specific exception applies. You take what the organization knows and turn it into `if`, `else`, functions, database schemas, and state machines.
