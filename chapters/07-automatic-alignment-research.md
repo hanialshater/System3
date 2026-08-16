@@ -26,6 +26,10 @@ The central problem is therefore not merely how to give AI instructions. It is h
 
 This is where automatic alignment research becomes interesting.
 
+After Chapter 5, the phrase *alignment research* carries more architectural weight. If System 3 is science made executable, then one way to scale alignment is not to write a larger rulebook. It is to point the same machinery of inquiry at the system's own relationship with humans. A correction becomes an observation. A suspected preference becomes a hypothesis. An evaluation becomes an experiment. A mitigation becomes an intervention. Held-out behavior asks whether the lesson survives outside the case that produced it.
+
+The object of inquiry has changed. The epistemic machinery has not.
+
 ## Chapter 2 Comes Back
 
 There is a beautiful loop in the book here.
@@ -99,6 +103,8 @@ and update the system.
 The human supplied a relatively small amount of information at the beginning.
 
 The system expanded that signal into research.
+
+This is System 3 folding inward again. The scientific loop that first helped agents discover things about code, mathematics and the external world now studies the **failure of the relationship between objective and behavior**.
 
 ## Alignment as a Research Function
 
