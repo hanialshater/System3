@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - tmp/pdf-export-20260821
+  pull_request:
+    branches:
+      - main
 
 jobs:
   package:
