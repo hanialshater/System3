@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build-pdf:
@@ -21,7 +21,8 @@ jobs:
       - name: Assemble manuscript
         shell: bash
         run: |
-          cat > book.md <<'EOF'
+          mkdir -p dist
+          cat > dist/System3_Towards_Fluent_Autonomy_full_current_main.md <<'EOF'
           ---
           title: "System 3: Towards Fluent Autonomy"
           subtitle: "Trust Chains, Agent Autonomy, and the Architecture of AI That Works"
@@ -47,21 +48,21 @@ jobs:
           )
 
           for f in "${files[@]}"; do
-            printf '\n\n' >> book.md
+            printf '\n\n' >> dist/System3_Towards_Fluent_Autonomy_full_current_main.md
             # Image assets are not currently stored in the repo; omit broken image tags
             # while retaining the manuscript's captions and surrounding prose.
-            sed -E '/^!\[.*\]\(.*\)$/d' "$f" >> book.md
+            sed -E '/^!\[.*\]\(.*\)$/d' "$f" >> dist/System3_Towards_Fluent_Autonomy_full_current_main.md
           done
 
           # XeLaTeX may not have an emoji glyph for the thumbs-up used once in Chapter 5.
-          sed -i 's/👍/[thumbs-up]/g' book.md
+          sed -i 's/👍/[thumbs-up]/g' dist/System3_Towards_Fluent_Autonomy_full_current_main.md
 
       - name: Build PDF with Pandoc
         uses: docker://pandoc/latex:latest
         with:
           args: >-
-            book.md
-            -o System3_Towards_Fluent_Autonomy_full_current_main.pdf
+            dist/System3_Towards_Fluent_Autonomy_full_current_main.md
+            -o dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
             --from=markdown
             --pdf-engine=xelatex
             --toc
@@ -75,9 +76,22 @@ jobs:
             -V linkcolor=black
             -V urlcolor=blue
 
+      - name: Publish generated manuscript and PDF to main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/System3_Towards_Fluent_Autonomy_full_current_main.md dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
+          if git diff --cached --quiet; then
+            echo "Generated outputs unchanged"
+          else
+            git commit -m "Build current full-book PDF"
+            git push
+          fi
+
       - name: Upload full book PDF
         uses: actions/upload-artifact@v4
         with:
           name: system3-full-book-pdf
-          path: System3_Towards_Fluent_Autonomy_full_current_main.pdf
+          path: dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
           if-no-files-found: error
