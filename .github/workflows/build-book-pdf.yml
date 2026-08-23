@@ -6,6 +6,8 @@ on:
     paths:
       - 'chapters/**'
       - '.github/workflows/build-book-pdf.yml'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -77,6 +79,7 @@ jobs:
             -V urlcolor=blue
 
       - name: Publish generated manuscript and PDF to main
+        if: github.event_name == 'push'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
