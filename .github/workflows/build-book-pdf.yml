@@ -1,0 +1,83 @@
+name: Build full book PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'chapters/**'
+      - '.github/workflows/build-book-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout manuscript
+        uses: actions/checkout@v4
+
+      - name: Assemble manuscript
+        shell: bash
+        run: |
+          cat > book.md <<'EOF'
+          ---
+          title: "System 3: Towards Fluent Autonomy"
+          subtitle: "Trust Chains, Agent Autonomy, and the Architecture of AI That Works"
+          author: "Hani M.M. Al-Shater"
+          date: "August 2026"
+          ---
+          EOF
+
+          files=(
+            chapters/01-why-im-betting-on-ai-agents.md
+            chapters/02-the-algorithm-vortex.md
+            chapters/03-deep-mode.md
+            chapters/04-system-3.md
+            chapters/05-the-society-of-agents.md
+            chapters/06-pattern-language.md
+            chapters/07-automatic-alignment-research.md
+            chapters/07-recursive-self-improvement.md
+            chapters/08-layer-4-desire.md
+            chapters/09-fluent-autonomy.md
+            chapters/10-the-store-that-builds-itself.md
+            chapters/11-after-capacity.md
+            chapters/the-prophecy.md
+          )
+
+          for f in "${files[@]}"; do
+            printf '\n\n' >> book.md
+            # Image assets are not currently stored in the repo; omit broken image tags
+            # while retaining the manuscript's captions and surrounding prose.
+            sed -E '/^!\[.*\]\(.*\)$/d' "$f" >> book.md
+          done
+
+          # XeLaTeX may not have an emoji glyph for the thumbs-up used once in Chapter 5.
+          sed -i 's/👍/[thumbs-up]/g' book.md
+
+      - name: Build PDF with Pandoc
+        uses: docker://pandoc/latex:latest
+        with:
+          args: >-
+            book.md
+            -o System3_Towards_Fluent_Autonomy_full_current_main.pdf
+            --from=markdown
+            --pdf-engine=xelatex
+            --toc
+            --top-level-division=chapter
+            -V documentclass=book
+            -V classoption=openany
+            -V geometry:margin=0.9in
+            -V fontsize=11pt
+            -V linestretch=1.08
+            -V colorlinks=true
+            -V linkcolor=black
+            -V urlcolor=blue
+
+      - name: Upload full book PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: system3-full-book-pdf
+          path: System3_Towards_Fluent_Autonomy_full_current_main.pdf
+          if-no-files-found: error
