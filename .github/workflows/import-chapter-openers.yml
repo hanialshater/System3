@@ -1,0 +1,35 @@
+name: Import chapter opener images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets-upload/chapter-openers-github-upload.zip'
+
+permissions:
+  contents: write
+
+jobs:
+  import-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Unpack chapter opener images
+        shell: bash
+        run: |
+          mkdir -p resources/chapter-openers
+          unzip -o assets-upload/chapter-openers-github-upload.zip -d resources/chapter-openers
+          rm -f assets-upload/chapter-openers-github-upload.zip
+          rmdir assets-upload 2>/dev/null || true
+
+      - name: Commit individual image files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A resources/chapter-openers assets-upload
+          git rm --ignore-unmatch .github/workflows/import-chapter-openers.yml
+          git commit -m "Add draft book cover and chapter opener artwork"
+          git push
