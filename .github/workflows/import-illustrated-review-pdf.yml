@@ -1,0 +1,33 @@
+name: Import illustrated review PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets-upload/review-pdf/READY'
+
+permissions:
+  contents: write
+
+jobs:
+  import-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Reassemble PDF
+        shell: bash
+        run: |
+          cat assets-upload/review-pdf/part-* | tr -d '\n' | base64 --decode > dist/System3_Towards_Fluent_Autonomy_illustrated_review_draft.pdf
+          rm -rf assets-upload/review-pdf
+
+      - name: Commit review PDF
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A dist assets-upload
+          git rm --ignore-unmatch .github/workflows/import-illustrated-review-pdf.yml
+          git commit -m "Add illustrated review PDF"
+          git push
