@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'assets-upload/chapter-openers-github-upload.zip'
+      - 'assets-upload/READY'
 
 permissions:
   contents: write
@@ -16,13 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Unpack chapter opener images
+      - name: Reassemble and unpack chapter opener images
         shell: bash
         run: |
+          cat assets-upload/chunks/part-* | base64 --decode > /tmp/chapter-openers.zip
           mkdir -p resources/chapter-openers
-          unzip -o assets-upload/chapter-openers-github-upload.zip -d resources/chapter-openers
-          rm -f assets-upload/chapter-openers-github-upload.zip
-          rmdir assets-upload 2>/dev/null || true
+          unzip -o /tmp/chapter-openers.zip -d resources/chapter-openers
+          rm -rf assets-upload
 
       - name: Commit individual image files
         shell: bash
