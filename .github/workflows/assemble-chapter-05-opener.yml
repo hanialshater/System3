@@ -1,0 +1,42 @@
+name: Assemble Chapter 5 opener
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'resources/chapter-openers/.chapter-05-upload/**'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Assemble image when all parts exist
+        shell: bash
+        run: |
+          set -euo pipefail
+          upload_dir="resources/chapter-openers/.chapter-05-upload"
+          target="resources/chapter-openers/chapter-05-the-society-of-agents.jpg"
+          expected=12
+          count=$(find "$upload_dir" -maxdepth 1 -type f -name 'part_*' 2>/dev/null | wc -l | tr -d ' ')
+          if [ "$count" -ne "$expected" ]; then
+            echo "Waiting for all image parts: $count/$expected"
+            exit 0
+          fi
+
+          cat "$upload_dir"/part_* | base64 --decode > "$target"
+          file "$target"
+          test -s "$target"
+
+          rm -rf "$upload_dir"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$target" "$upload_dir"
+          git commit -m "Install full Chapter 5 opener artwork"
+          git push
