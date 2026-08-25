@@ -22,7 +22,7 @@ jobs:
           set -euo pipefail
           upload_dir="resources/chapter-openers/.chapter-05-upload"
           target="resources/chapter-openers/chapter-05-the-society-of-agents.jpg"
-          expected=12
+          expected=5
           count=$(find "$upload_dir" -maxdepth 1 -type f -name 'part_*' 2>/dev/null | wc -l | tr -d ' ')
           if [ "$count" -ne "$expected" ]; then
             echo "Waiting for all image parts: $count/$expected"
