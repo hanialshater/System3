@@ -76,6 +76,22 @@ Who runs the experiment? Who interprets it? Who may change the evaluator? Which 
 
 These are properties of the system, not of any one agent.
 
+A hospital makes the point less abstract.
+
+A patient does not become safer because somewhere in the building there is one heroic doctor who knows all of medicine. The nurse at the bedside sees a change before anyone else. The laboratory measures something nobody can see directly. A radiologist reads an image. A pharmacist notices that two individually reasonable prescriptions become unreasonable when combined. A specialist knows a narrow disease better than the attending physician. The attending physician may integrate the picture without personally possessing the knowledge, access or skill that produced every piece of it.
+
+The benefit is not that everybody agrees.
+
+Quite often they do not.
+
+The benefit is **structured partiality**. Different people are positioned to see different things. They use different instruments. They make different mistakes. Some observations have to be recorded in particular ways. Some decisions require another pair of eyes. A lab result has a provenance. A drug dose has an authorized range. A radiologist's opinion carries weight on one question without making the radiologist supreme commander of the hospital.
+
+The hospital knows more than any person in it.
+
+It can also fail in ways no person intended. A handoff loses context. A copied diagnosis becomes assumption. A bad value propagates through three systems. Everyone does her local job correctly while the patient moves through the wrong pathway.
+
+That is already very close to our problem.
+
 Knowledge has become distributed across many fallible knowers.
 
 We need a **society**.
@@ -134,6 +150,58 @@ A mature agent system needs both modes, often at the same time. A research team 
 
 The question is which decisions are still alive.
 
+### Where Does Amazon Know How Amazon Works?
+
+I learned a version of this lesson in a less philosophical environment: Amazon.
+
+A customer opens a page, finds a product, presses a button and a box eventually appears at a door. Described at that altitude, the company sounds almost embarrassingly simple.
+
+Try asking one employee how the whole thing works.
+
+The product information came from one set of systems. Search and ranking may have involved others. Availability depends on inventory. Price may depend on another stack. Payment, fraud, fulfillment, transportation, customer service and experimentation each have their own machinery. Beneath those are identity systems, data pipelines, deployment systems, observability, capacity planning, permissions, finance and a small geological layer of services whose original authors have moved to another team, another company or another continent.
+
+The strange thing about a sufficiently large technical organization is that **nobody knows how the organization works** in the ordinary sense of *knows*.
+
+People know pieces.
+
+Some know very important pieces. Some understand a particular service so deeply that everyone else becomes nervous when they take vacation. Some understand the business mechanism connecting several systems. Some know the history: *we tried that in 2019 and here is why it failed*. Some know where a metric lies. Some know which dependency looks innocent on the diagram and becomes exciting at 2 a.m.
+
+But no person carries Amazon around in her head.
+
+So where does the knowledge live?
+
+Partly in people, obviously.
+
+It also lives in APIs that limit what one team needs to know about another. It lives in ownership boundaries. It lives in dashboards and alarms. It lives in design documents, code reviews, deployment procedures, operational playbooks, escalation paths and the ritual of writing down what happened after an incident. It lives in metrics that make one kind of failure visible and, sometimes, make another kind almost impossible to see. It lives in meetings that everyone complains about until the day one prevents two teams from independently launching incompatible changes.
+
+Amazon likes the word **mechanism**. The useful version of that word is not a corporate slogan. A mechanism is an attempt to make a desirable behavior survive the person who first cared about it.
+
+Suppose a serious operational failure occurs. You can tell everyone to be more careful. This is emotionally satisfying and institutionally useless. Six months later half the people involved have changed roles and the remaining half remember different lessons.
+
+Or you can change the system.
+
+Add an alarm. Remove a permission. Change a default. Add a review. Create a test. Change an ownership boundary. Record the failure mode. Make the next dangerous action slightly harder and the next correct action slightly easier.
+
+The organization has learned when **its future behavior changes**.
+
+That is much closer to what I mean by institutional memory.
+
+And it has the same pathology as every other memory system. A mechanism can survive after the reason for it disappears. An escalation path designed for one organization can become absurd after a reorganization. A metric can outlive the customer behavior it once represented. A review process added after one spectacular failure can quietly become a tax on ten thousand ordinary decisions.
+
+The organization accumulates wisdom and scar tissue in the same structures.
+
+This matters for agents because the fashionable picture of multi-agent systems often resembles an org chart drawn by someone who has never suffered an org chart. Put a planner at the top. Add specialists. Add a critic. Add a reviewer. Connect the boxes with arrows.
+
+But the boxes are the easy part.
+
+The intelligence of an organization is also in which facts cross the arrows, which decisions are reversible, which signals have enough authority to stop the process, which failures become memory, which memory becomes procedure, and which procedures are allowed to die.
+
+A large organization can therefore know how to do something that no employee knows how to do alone.
+
+It can also become very good at repeating a mistake whose owner is the organization itself.
+
+That is the promise and danger of bureaucracy in one sentence.
+
 There is another answer to the coordination problem: the **swarm**.
 
 Ant colonies do not contain an ant manager assigning tasks from an org chart, and bees do not schedule a weekly synchronization meeting before reallocating foragers. Yet social insects divide labour, find resources, respond to disruption and build structures far beyond the capacity of one individual. Bonabeau, Dorigo and Theraulaz used systems like these as the foundation for **swarm intelligence**, where collective behavior emerges from local interactions among agents and between those agents and their environment. One particularly useful mechanism is **stigmergy**: an agent changes the environment, and that change becomes information for the agents that follow. Coordination happens without everybody sharing a global plan. (Bonabeau, Dorigo & Theraulaz)
@@ -144,9 +212,13 @@ A swarm is not anarchy. The ants follow local rules. Pheromones have specific ef
 
 This works particularly well when many directions can be explored in parallel and useful information can spread through local interactions. Shared bottlenecks, long sequential dependencies, expensive communication and decisions requiring clear provenance make the picture less attractive. At some point, “who decided this?” becomes more useful than another pheromone.
 
-Bureaucracy and swarms place structure in different parts of the system. Bureaucracy stores more of it in roles, procedures and authority; a swarm stores more of it in local behavior and the environment. Neither removes structure.
+Bureaucracy and swarms place structure in different parts of the system. Bureaucracy stores more of it in roles, procedures and authority; a swarm stores more of it in local behavior and the environment.
 
-Claude Code's **dynamic workflows** make the distinction stranger. Claude can write a task-specific multi-agent harness while solving the task: fan work out across independent agents, isolate branches, create a judge, build an adversarial review, route cases differently or loop until some stopping condition is met. The organization is generated for the problem instead of being entirely fixed in the product beforehand. Anthropic presents the feature for complex, high-value work where the extra orchestration is worth the additional cost. (Anthropic)
+Neither removes structure.
+
+The next move is stranger.
+
+Claude Code's **dynamic workflows** can make the organization itself temporary. Claude can write a task-specific multi-agent harness while solving the task: fan work out across independent agents, isolate branches, create a judge, build an adversarial review, route cases differently or loop until some stopping condition is met. The organization is generated for the problem instead of being entirely fixed in the product beforehand. Anthropic presents the feature for complex, high-value work where the extra orchestration is worth the additional cost. (Anthropic)
 
 We used to choose between giving the agent a workflow and giving it freedom.
 
@@ -314,7 +386,585 @@ The scaffold has become an institution.
 
 The design question is no longer merely which model should answer. It is **what kind of society should think about the problem**: one investigator, several isolated lineages, a hierarchy, a principal investigator with specialists, a generator and adversarial critic, a formal verifier downstream, humans and artificial agents occupying different epistemic roles—or perhaps one agent because the task does not deserve a civilization.
 
-I kept treating these as a collection of engineering choices. Then the collection became too familiar to ignore.
+I kept treating these as a collection of engineering choices.
+
+Then I noticed that civilization had been working on the same problem for a very long time.
+
+## Civilization Had No Chief Architect
+
+There is a trick in stories about rebuilding civilization from scratch.
+
+They usually give you someone who remembers civilization.
+
+*Dr. Stone* makes the trick explicit and entertaining: wake up after catastrophe with a protagonist who has retained a suspicious fraction of chemistry, engineering and scientific history, then climb a technological ladder one invention at a time. It is fun because the impossible part has been hidden inside the hero. The plan for civilization already exists in one head.
+
+Real civilization did not have Senku.
+
+There was no chief architect holding a roadmap from stone tools to semiconductor fabs. Nobody in a Neolithic village convened a strategy offsite and wrote *Vision 10,000 BCE: become CERN*. The institutions we now treat as natural—writing, money, law, archives, universities, laboratories, journals, standards, statistical trials—appeared in different places, under different pressures, often for purposes that had little to do with our later story about progress.
+
+This is also not a staircase from “primitive” people to enlightened Europeans, and it is not a clean relay race in which Mesopotamia hands a torch to Greece, Greece to Baghdad, Baghdad to Florence and Florence to London. Knowledge moved in loops. It was translated, forgotten, reinvented, stolen, traded, suppressed, standardized and transformed. China developed large-scale bureaucratic and technical traditions with trajectories very different from Europe. Scholars working in Arabic transformed Greek, Persian and Indian inheritances while producing new mathematics, astronomy, medicine and optics. European institutions later absorbed knowledge from many of those streams while adding their own peculiar mixtures of universities, printing, commerce, religious conflict, state competition and craft knowledge.
+
+Geography mattered. Trade mattered. War mattered. Religion mattered. Political institutions mattered. Cheap paper mattered. Glass mattered. Accident mattered.
+
+I am not going to solve the causes of the Scientific Revolution in a chapter about AI agents. Historians have been fighting over that problem for longer than most software frameworks remain maintained.
+
+I care about a narrower thread.
+
+As human groups became larger and more capable, **knowledge had to escape the individual mind**.
+
+Again and again, societies invented ways for memory, trust, observation and correction to survive the people who happened to be present.
+
+### When Knowledge Still Had a Face
+
+Imagine a small group of humans living before cities, states and writing.
+
+Do not imagine stupid humans.
+
+A hunter can know an ecology with a resolution that would embarrass a visiting academic. A healer can distinguish plants that look identical to an outsider. A craftsperson can feel from the resistance of a material that something is wrong long before there is language precise enough to explain why. A community can carry detailed knowledge of seasons, animals, paths, weather and social obligations through stories and practice.
+
+The difference is not the amount of intelligence.
+
+It is **where the memory lives**.
+
+Much of it lives in people.
+
+You know which path floods because your mother showed you. You know where the animals move because you followed them. You know how to shape the tool because an older craftsperson corrected your hand. Reputation is personal because the group is small enough for people to remember who lies, who sees well, who panics and who can be trusted with a particular task.
+
+A surprising amount of epistemology can run on faces.
+
+Then scale starts breaking the arrangement.
+
+A village becomes a town. Fields produce surplus. Grain is stored for later. Workers contribute at different times. Goods travel farther. A ruler or temple claims a share. Debts outlive the conversation in which they were created.
+
+Now memory has a logistics problem.
+
+### Grain, Debt, and Memory Leaving the Skull
+
+Some of the earliest surviving writing from southern Mesopotamia is magnificently unromantic.
+
+It is accounting.
+
+Clay tablets from the late fourth and early third millennia BCE record things such as grain and other commodities moving through large institutions. The growth of cities such as Uruk created administrative demands that oral memory handled poorly. Clay was cheap, durable and available. Marks on clay could remember after the clerk went home. (Metropolitan Museum of Art; Nissen, Damerow & Englund)
+
+Before writing became poetry, philosophy or scripture, it was already doing something profound.
+
+It was letting an institution remember.
+
+How much barley came in? How much went out? Who received what? Which transaction had happened rather than merely being claimed?
+
+The mark does not need to be wiser than the clerk.
+
+It needs to **outlive** the clerk.
+
+This is one of those developments whose philosophical importance is easy to miss because the artifact looks boring. We admire an ancient epic and walk quickly past the administrative tablet. But the tablet represents a cognitive mutation.
+
+A commitment has acquired an external state.
+
+The society can now coordinate with its own past.
+
+Writing eventually expands far beyond accounting, but notice the general pattern. A coordination pressure creates a memory technology. The memory technology then makes new kinds of coordination possible. Records support larger administrations; larger administrations produce more records. Knowledge that once vanished with a person can become inspectable by someone born decades later.
+
+Of course, external memory also externalizes error.
+
+A false entry can survive too.
+
+The first time somebody carved the wrong number into a durable medium, civilization invented a database bug.
+
+### Strangers Need Standards
+
+Memory is only one problem.
+
+Trust changes when societies become too large for everyone to know everyone else.
+
+If I trade only with cousins, much of the contract lives in relationships. If I trade with a stranger who arrived by ship and will leave tomorrow, “trust me” becomes an unusually expensive protocol.
+
+Larger societies therefore accumulate devices for making strangers more predictable.
+
+Weights and measures tell us what a unit means when buyer and seller do not share a kitchen scale. Coins and accounting systems make value portable. Contracts preserve commitments. Courts create procedures for disputes. Seals authenticate. Offices define authority. Calendars coordinate obligations. Laws attempt to make similar cases behave similarly even when the people involved are not personally known to the judge.
+
+None of these institutions abolishes trust.
+
+They **rearrange** it.
+
+Instead of trusting the merchant completely, I may trust the scale, the coin, the seal and the court enough to transact with the merchant.
+
+Instead of the entire relationship being one giant confidence score attached to a person, trust becomes decomposed across procedures and artifacts.
+
+That should sound familiar.
+
+There is also a deeper consequence. Standards make knowledge composable.
+
+If my unit and your unit mean different things, our measurements do not travel well. If our calendars disagree, observations are hard to compare. If every workshop names materials differently, recipes become local folklore. Standardization removes some freedom so information can move farther without being renegotiated at every boundary.
+
+A standard is bureaucracy in miniature.
+
+It says: *we have decided not to reopen this question every time*.
+
+And like every bureaucracy, it can be wrong, political, exclusionary or stale.
+
+But without enough shared structure, scale collapses back into personal negotiation.
+
+### Specialization Makes Civilization Smarter and Individuals More Dependent
+
+As societies grow, something else happens: people become narrower.
+
+This sounds insulting until you notice that narrowing is one of civilization's superpowers.
+
+If every family must grow its own food, make its own tools, treat its own diseases, teach its own children, defend itself and preserve every useful craft, nobody gets very deep at anything. Specialization allows a person to spend years on one domain because the surrounding society supplies the rest.
+
+The potter can become better because she does not also have to be the village metallurgist. The astronomer can spend nights measuring the sky because someone else grows food. A physician can accumulate cases. A navigator can become obsessed with maps. A legal scholar can spend a lifetime distinguishing arguments that everyone else is grateful not to read.
+
+The society gains knowledge by distributing ignorance.
+
+That is not a joke.
+
+It is the bargain.
+
+The more civilization knows collectively, the less plausible it becomes for any one person to understand the machinery on which ordinary life depends.
+
+I can use antibiotics without synthesizing them. I can cross a bridge without calculating its stresses. I can trust a bank transfer without understanding the full banking system. I can type this sentence on a computer while being unable to fabricate the processor, manufacture the display, design the wireless protocol, operate the electrical grid or explain the chemistry of the battery in enough detail to build one from dirt.
+
+Capability rises because dependence rises with it.
+
+Civilization is a trust chain with plumbing.
+
+The question is how that chain avoids becoming an elegant way to distribute nonsense.
+
+Different societies answered pieces of that question in very different ways.
+
+### China Builds Memory at Imperial Scale
+
+Consider imperial China.
+
+For long periods, Chinese states governed enormous populations through administrative structures that depended on records, offices, standardized texts and educated officials. The civil-service examination tradition, developing across dynasties and becoming especially consequential under the Song, created a mechanism—imperfect, competitive and politically contested—for selecting and shaping officials around a shared literary and administrative canon. Examination standards did not merely test knowledge; they helped define what elite knowledge was. (De Weerdt)
+
+That is institutional cognition in a very literal sense.
+
+A state wants decisions made across distances too large for the ruler to inspect personally. It therefore needs agents who can read records, apply categories, report upward and inherit procedures from predecessors.
+
+The bureaucracy becomes a distributed information-processing system.
+
+China also gives us a useful warning against simple stories about “the invention of science.” Paper developed there centuries before it became common in Europe. Woodblock printing reached large scale long before Gutenberg. Bi Sheng developed movable type in the eleventh century, and Shen Kuo recorded the technique in his *Dream Pool Essays*. The magnetic compass, gunpowder and printing were among the Chinese developments that later fascinated Joseph Needham as he tried to understand the global history of science and technology. (Needham; Asian Art Museum; Cambridge)
+
+Shen Kuo himself is a wonderful character for this chapter because he does not fit modern job descriptions. He was a statesman and polymath who wrote about astronomy, mathematics, geology, optics, engineering and the magnetic compass while operating inside a bureaucratic civilization that connected scholarship to administration.
+
+The tempting story is: China had all these inventions, Europe later had a Scientific Revolution, therefore what went wrong in China?
+
+Needham made a version of that question famous, and historians have spent decades making the answers more complicated.
+
+Good.
+
+The complication is the point.
+
+Technical brilliance does not automatically generate one particular institution for producing knowledge. Printing, bureaucracy, examinations, state capacity, commerce and craft traditions can combine in different ways. An invention is not an institution. A population full of intelligent people is not an epistemic architecture.
+
+Different arrangements make different questions easy to ask, different careers rewarding to pursue and different criticisms dangerous or powerful.
+
+There was no inevitable road from compass to controlled trial.
+
+### Knowledge Crosses Languages
+
+Now move west, although even *west* is already a misleading simplification because knowledge is moving in many directions at once.
+
+After the political fragmentation of the ancient Mediterranean world, texts, techniques and arguments did not simply sit in one European cupboard waiting for the Renaissance to rediscover them.
+
+Scholars working across the Islamic world translated, criticized and extended Greek, Persian and Indian traditions. Baghdad became one important center of translation and scholarship under the Abbasids. Mathematical ideas moved and changed. Astronomical tables were constructed and corrected. Medicine accumulated commentary and practice. Observatories and libraries became institutions through which one generation could begin from the records of another.
+
+The important word is not *preserved*.
+
+Preservation is too passive.
+
+Knowledge was **transformed**.
+
+Al-Khwarizmi's work helped give later Europe both the word *algebra* and, through the Latinization of his name, *algorithm*. Al-Biruni compared measurements, wrote across astronomy, geography and mathematics, and worried about methods of knowing other cultures without simply assuming one's own categories were universal. Ibn Sina's medical and philosophical work became influential far beyond the language in which it was written.
+
+And then there is Ibn al-Haytham.
+
+### A Man in a Dark Room
+
+Around the turn of the eleventh century, Ibn al-Haytham worked on a question that seems almost childish until you try to answer it carefully.
+
+How do we see?
+
+Ancient theories included versions in which the eye somehow emitted something toward the object. Ibn al-Haytham developed a different account in which light travels from objects to the eye, and he combined mathematical reasoning with carefully arranged observations and experiments on light, reflection and refraction. His *Book of Optics* later circulated in Latin and influenced European optical traditions. (UNESCO; Ibn al-Haytham)
+
+The detail I care about is methodological.
+
+He did not merely say: *Aristotle thought this, therefore this.*
+
+Nor did he simply stare harder.
+
+He built situations in which light would behave differently depending on the explanation.
+
+A darkened space, a small aperture, controlled rays, mirrors, geometry: the arrangement becomes part of the argument.
+
+The instrument and the setup acquire epistemic standing.
+
+That is a profound shift from authority toward **constructed exposure**.
+
+The world is not asked for an opinion. It is arranged so that competing descriptions have consequences that can be observed.
+
+Do not turn this into the equally simplistic sentence “Ibn al-Haytham invented the scientific method.” There was no single scientific method waiting to be invented once. Experimental practices have many histories, and modern science would later combine mathematical, experimental, institutional and social traditions that no one person contained.
+
+The more interesting story is continuity plus mutation.
+
+Ideas about optics moved through Arabic and Latin. Instruments changed. Mathematical techniques changed. Institutions changed. Later thinkers inherited claims they had not personally originated, exactly as every researcher does now.
+
+The trust chain crossed languages and centuries.
+
+Nobody started from zero.
+
+### Universities Learn to Outlive Their Teachers
+
+Medieval European universities added another peculiar piece.
+
+A university was not originally a campus with branded hoodies and a real-estate portfolio. It was a corporation: a *universitas*, a body of masters or students with rights, obligations and some degree of continuity beyond any particular teacher.
+
+That matters.
+
+A teacher can die.
+
+A corporation can appoint another teacher.
+
+Curricula, degrees, disputation practices and bodies of text create an institutional memory that persists while individuals rotate through it. Universities trained clergy, lawyers, physicians and administrators, but in doing so they also helped create communities in which argument could be inherited, formalized and contested over generations.
+
+Again, none of this is yet the modern laboratory.
+
+A university can preserve error brilliantly.
+
+The same machinery that lets knowledge accumulate can make inherited authority extremely durable.
+
+But the cognitive unit has changed. Scholarship is becoming less like a conversation between a student and one master and more like participation in a lineage with records, credentials, texts and rules of argument.
+
+The society is learning how to have a memory longer than a career.
+
+### Printing Makes Disagreement Cheaper
+
+Then the economics of memory change again.
+
+Printing with movable type developed in Europe in the fifteenth century in a very different linguistic, commercial and technical context from the earlier Chinese traditions. What matters for our thread is not a competition over who was first. It is what happens when copying becomes dramatically cheaper and more reliable at scale.
+
+A manuscript culture has a bandwidth problem.
+
+Every copy is expensive. Errors enter through copying. Access is limited. A scholar may know that some text exists without being able to inspect it.
+
+Printing changes the topology.
+
+More people can possess the same diagram. A claim can travel without being rewritten by hand each time. A correction can circulate. So can propaganda, nonsense and extremely confident pamphlets about subjects the author has discovered this morning.
+
+Civilization did not wait for social media to learn that lowering publication costs has side effects.
+
+But for knowledge, reproducibility of the *description* matters. If another person is going to challenge your observation, she first needs to know what you claimed. If she is going to repeat your procedure, she needs enough detail to reconstruct it.
+
+Cheaper copying enlarges the community capable of disagreement.
+
+### Ships, Maps, Clocks and Problems That Refuse to Stay Philosophical
+
+Meanwhile, European states and merchants are sailing farther, fighting expensively and trying to make money across oceans.
+
+This creates questions with consequences.
+
+Where are we?
+
+What time is it?
+
+Which map is wrong?
+
+How can we predict the motion of the heavens well enough to navigate?
+
+How do projectiles move?
+
+How much can a hull carry?
+
+Which instrument can be trusted after three months at sea?
+
+Practical pressure does not automatically create good science. People can die confidently with bad maps.
+
+But practical problems are rude in a useful way.
+
+A ship does not care that the theory behind its navigation is prestigious.
+
+Instruments, tables, craft knowledge and mathematics begin to collide more intensely. Artisans know things scholars do not. Scholars can formalize patterns artisans use without equations. States and merchants fund useful techniques for reasons far removed from pure curiosity.
+
+The border between knowing and making becomes porous.
+
+### The Dutch Make the Invisible Visible
+
+The seventeenth-century Dutch Republic is an especially good place to watch these currents collide.
+
+It was a commercial and maritime power embedded in global trade. It had dense urban networks, publishing, cartography, practical engineering and skilled crafts. It also became a major center of the new natural philosophy. Commerce and science were not separate planets: specimens, books, instruments and observations moved through some of the same networks that moved commodities. (Rijksmuseum; Cambridge)
+
+And then there was glass.
+
+Around 1608, spectacle makers in the Low Countries demonstrated devices for seeing distant objects. The telescope spread quickly. Galileo heard of the Dutch instrument, built improved versions and pointed them toward the sky. Christiaan Huygens later used telescopic observations in his work on Saturn and developed precision timekeeping. Antoni van Leeuwenhoek pushed lenses in the other direction, toward things too small for unaided vision. Robert Hooke's *Micrographia* would make another microscopic world visible to readers in England.
+
+An instrument does something epistemically strange.
+
+It creates a new class of witness.
+
+Before the telescope, two people could argue about the heavens using inherited observations, geometry and naked-eye experience. After the telescope, one person can say: *look through this*.
+
+Of course, that does not end the argument.
+
+Is the lens distorting the image? Is the strange point of light real? Does the instrument create artifacts? Who knows how to build a good one? Can another observer reproduce what you saw?
+
+A new instrument creates new facts and new reasons to distrust facts at the same time.
+
+The epistemic system has to learn the instrument.
+
+That sentence will matter later.
+
+### Bacon's Complaint
+
+Francis Bacon enters this story less as the inventor of a recipe called *the scientific method* and more as a man profoundly dissatisfied with how knowledge was being organized.
+
+In the *Novum Organum* of 1620, Bacon attacked the tendency to jump too quickly from a small set of observations to grand general principles. He worried about systematic distortions in human judgment—the famous *idols*—and argued for a more disciplined accumulation of observations, experiments and intermediate conclusions. He imagined inquiry as something cumulative and organized rather than a sequence of brilliant arguments performed by isolated minds. (Bacon; Stanford Encyclopedia of Philosophy)
+
+Some of Bacon's specific methodological prescriptions were too rigid to describe how successful scientists actually worked.
+
+That is almost perfect for our story.
+
+Even the philosopher trying to design the method did not successfully design the method.
+
+The institution emerged through practice, argument, instruments, failure and later revision.
+
+Bacon's larger ambition matters more. Knowledge should become a collective project that builds over time. Human senses and intuitions are unreliable, so inquiry needs procedures and instruments that discipline them. The point is not merely to win an argument inside inherited categories. It is to establish contact with nature in ways that can produce new works and new knowledge.
+
+The knower is already becoming plural.
+
+### Galileo Points a Device at the Sky
+
+Then Galileo makes the new arrangement impossible to ignore.
+
+The telescope is not his invention. That fact is part of the point.
+
+A device emerges from a craft and commercial context in the Low Countries. News of it travels. Galileo reconstructs and improves it. He points it upward. He reports mountains and shadows on the Moon, moons moving around Jupiter and other observations that complicate inherited cosmology.
+
+Now consider how many layers sit inside the claim *there are moons orbiting Jupiter*.
+
+There is Galileo's testimony.
+
+There is the telescope.
+
+There is the craft knowledge required to make lenses.
+
+There is an interpretation of what the visual pattern means.
+
+There are astronomical assumptions.
+
+There is the possibility that another observer will build or borrow an instrument and look.
+
+There is printing, which lets drawings and claims move beyond the room.
+
+There are patrons, rivals, religious authorities and political consequences that determine which claims receive attention and which forms of dissent are safe.
+
+The astronomical observation is already social before anyone invents a sociology of science.
+
+And the instrument has changed the distribution of epistemic authority. A classical text can say one thing while a piece of glass appears to say another.
+
+Who gets to say no to whom?
+
+That question is no longer only philosophical.
+
+It is institutional.
+
+### The Royal Society Turns Curiosity Into Procedure
+
+In 1660, after years of informal gatherings among natural philosophers in London and Oxford, a group formed what became the Royal Society of London for Improving Natural Knowledge. Its Fellows corresponded, observed, experimented, argued and eventually published. The first issue of *Philosophical Transactions* appeared in 1665 under Henry Oldenburg. (Royal Society)
+
+It is tempting to tell this as the moment modern science was finally installed.
+
+History is less cooperative.
+
+There was no software release called `science-1.0`.
+
+What is fascinating instead is the accumulation of small institutional devices.
+
+A person reports an observation in a letter.
+
+The letter can be read by others.
+
+An experiment is performed in front of witnesses.
+
+The apparatus is described.
+
+Someone tries to repeat the result.
+
+A curator such as Robert Hooke becomes responsible for producing experiments for meetings.
+
+A journal creates a durable public record and a priority mechanism: *this person said this at this time*.
+
+Correspondence expands the network beyond London.
+
+Reputation develops around people and procedures.
+
+The question “did this happen?” acquires a social machinery.
+
+Steven Shapin and Simon Schaffer made Robert Boyle's air-pump experiments famous as an episode in which the production of experimental facts depended not only on the apparatus but on practices of witnessing, description and credibility. The air pump itself was difficult. Replication was not a button. A failed repetition could mean the claim was false or the apparatus leaked or the operator lacked the relevant craft knowledge. (Shapin & Schaffer)
+
+We have met this problem already.
+
+Reality says something went wrong.
+
+It does not highlight the guilty component.
+
+The experimental community therefore has to learn whom and what to trust: this pump, this operator, this description, this kind of witness, this way of reporting.
+
+Notice what has happened to knowledge.
+
+It is no longer merely a proposition attached to a famous mind.
+
+It is increasingly attached to a **procedure**.
+
+Not perfectly. Not universally. Not without status and politics. But the claim is beginning to arrive with instructions for how another participant might expose it to the world again.
+
+That is a trust chain with an escape hatch.
+
+### Newton Was Not Alone
+
+Then comes Newton, which is where histories of science are in danger of becoming superhero movies.
+
+Newton really was extraordinary. The *Principia* transformed mechanics and celestial theory. His work on optics was foundational. The mathematics alone would justify a great deal of hero worship.
+
+But even Newton demonstrates the opposite of the lone-genius story when you zoom out.
+
+He inherited astronomical observations accumulated by others. He argued with Hooke. He corresponded through a community. His work depended on mathematical traditions with long histories. The *Principia* was published through the Royal Society's institutional world, with Edmond Halley playing an important role in encouraging and financing its publication.
+
+The genius mattered enormously.
+
+So did the network that made the genius cumulative.
+
+This distinction becomes more important as knowledge grows.
+
+A seventeenth-century polymath could still range across mathematics, mechanics, astronomy, optics, theology and alchemy with a seriousness that feels alien now. The frontier was already too large for one person, but a Newton could plausibly stand near several of its edges.
+
+That world does not survive scientific success.
+
+The more science learns, the more knowledge fragments.
+
+### Science Becomes a Profession
+
+By the nineteenth century, laboratories and disciplines begin changing the shape of inquiry again.
+
+The laboratory becomes not just a room where a gentleman occasionally performs a demonstration but a place where people are trained through repeated, disciplined practice. Chemistry, physiology and physics develop increasingly specialized apparatus, methods and communities. The modern university itself changes as research and laboratory training become more central. Historians sometimes describe this as a nineteenth-century **laboratory revolution**. (Van Lunteren; Homburg)
+
+That change matters because tacit skill can now be reproduced institutionally.
+
+You do not merely read what an expert discovered.
+
+You enter a laboratory and learn how to produce a measurement that other experts will take seriously.
+
+The discipline teaches your hands as well as your concepts.
+
+Journals proliferate. Professional societies deepen. Fields split. Credentials become more formal. A physicist and a biologist increasingly inhabit different technical languages.
+
+Science gets more powerful by making scientists less interchangeable.
+
+Again: specialization is leverage and dependency at the same time.
+
+The community now needs ways to decide which specialist testimony can become premise for another field. Nobody can reproduce everything she cites.
+
+Trust becomes unavoidable precisely because standards of evidence are becoming stronger.
+
+### The Twentieth Century Industrializes Knowing
+
+Then science gets expensive.
+
+Some questions require equipment no individual can own, teams no individual can coordinate informally and timescales longer than a graduate student's optimism.
+
+Industrial research laboratories become important. Bell Labs, for example, combined physicists, chemists, mathematicians and engineers inside an institution built around communication technology. The transistor emerged there in 1947 from a research environment whose capability depended on accumulated expertise, instrumentation and interaction across specialties. Later computing work at Bell Labs similarly drew on the institution's existing knowledge of switching, transmission and electronics. (Bell Labs; Computer History Museum)
+
+Medicine develops its own institutional machinery for making causal claims harder to fake. Controlled trials have a long prehistory, but the British Medical Research Council's streptomycin trial, reported in 1948, became a landmark for concealed random allocation and careful comparison. The important idea is almost bureaucratic: do not let the clinician's preference silently decide who receives which treatment. Build a procedure that protects the comparison from the people participating in it. (MRC; BMJ)
+
+The evaluator has become partially immutable.
+
+Scientific publishing also becomes more formalized, but not in one clean seventeenth-century jump. *Philosophical Transactions* created an early durable communication institution in 1665, yet the systematic external peer review we now imagine as timeless scientific tradition became widespread much later. Even *Nature* did not require external refereeing for every paper until 1973. (Baldwin)
+
+That is a useful correction to the fairy tale.
+
+Science does not discover one perfect institution and then protect it forever.
+
+The institutions themselves mutate under scale.
+
+As submissions increase and fields specialize, editors can no longer personally judge everything. More authority is delegated to external specialists. Funding systems develop their own review mechanisms. Statistical conventions become standardized. Ethics procedures appear in response to abuses. Reporting standards emerge because repeated ambiguity becomes expensive.
+
+Yesterday's failure becomes tomorrow's bureaucracy.
+
+Sometimes that bureaucracy protects knowledge.
+
+Sometimes it protects itself.
+
+### When Nobody Understands the Whole Machine
+
+The Large Hadron Collider is where the chapter's opening returns at civilizational scale.
+
+On 4 July 2012, the ATLAS and CMS collaborations at CERN announced observations of a new particle consistent with the Higgs boson.
+
+Who discovered it?
+
+Try pointing to the person.
+
+The experimental papers had thousands of authors. The detectors contained technologies developed over many years by specialists across institutions and countries. The accelerator itself depended on another huge technical organization. Data moved through distributed computing systems. Calibration, trigger systems, detector physics, statistical analysis and theoretical interpretation each required expertise that no one participant possessed end to end. The collaboration model had expanded to global teams of thousands. (CERN)
+
+No physicist woke up on 4 July personally capable of rebuilding the LHC, recalibrating every detector subsystem, verifying every line of analysis software, re-deriving all the relevant theory, reproducing the electronics supply chain and independently checking every collision event before breakfast.
+
+And yet the result was not therefore a rumor.
+
+The knowledge was carried by a structure.
+
+Different detector systems constrained one another. Calibration procedures had histories. Software had validation. Analyses were reviewed internally. ATLAS and CMS provided partially independent routes to the same underlying phenomenon. Statistical conventions defined what level of evidence would justify the word *discovery*. The apparatus produced traces nobody could vote into existence.
+
+A modern experiment is a society built around an argument with reality.
+
+This is the inversion that matters.
+
+Early in human history, much of what a community knew could be attached to identifiable knowers: *ask her; she has seen that valley*. As knowledge grew, societies externalized memory into records, coordination into standards, authority into roles, observation into instruments and criticism into procedures.
+
+Eventually we built institutions capable of producing knowledge that **no member could personally verify in full**.
+
+That sounds dangerous because it is.
+
+A bad calibration can propagate. A shared assumption can synchronize thousands of competent people. Reputation can suppress criticism. Funding can steer an entire field. A procedural requirement can become ritual. A statistically beautiful result can answer the wrong question.
+
+The larger the epistemic machine becomes, the more carefully trust has to be localized.
+
+But without the machine, we lose the knowledge too.
+
+There is no lone human replacement for CERN.
+
+There is no polymath who can personally substitute for modern medicine.
+
+There is no chief scientist who knows the entire scientific civilization.
+
+The civilization knows through **composition**.
+
+Look back at the things it had to invent along the way.
+
+External memory.
+
+Specialization.
+
+Local authority.
+
+Standards.
+
+Instruments.
+
+Records.
+
+Procedures.
+
+Independent witnesses.
+
+Persistent anomalies.
+
+Ways for a claim to travel farther than the person who made it.
+
+Ways for the world to make the claim regret travelling.
+
+I had been treating those as separate features of an agent architecture.
+
+They were beginning to look suspiciously familiar.
 
 ## The Name Was Hiding in Plain Sight
 
@@ -322,7 +972,11 @@ At some point I stopped looking at the boxes in the architecture diagram and loo
 
 Propose explanations. Test them against something capable of disagreement. Build instruments when the existing ones cannot see what matters. Preserve records. Track where claims came from. Let specialists work on different pieces. Keep critics independent enough that disagreement contains information. Allow rival explanations to survive long enough to develop. Decide which weak idea deserves another experiment. Trust results you did not personally verify while preserving some chain back to what earned that trust. Accumulate knowledge without turning it into scripture. Pay attention when an anomaly refuses to go away. Occasionally discover that the framework organizing the whole search was itself the problem.
 
-I had been treating these as separate features of an agent architecture. They were not separate.
+We had just watched civilization spend thousands of years inventing pieces of that machinery for itself.
+
+I had been treating them as separate features of an agent architecture.
+
+They were not separate.
 
 Humanity has already spent centuries building a system for extracting useful knowledge from bounded, biased, competitive, forgetful, status-seeking, occasionally brilliant and occasionally ridiculous agents.
 
@@ -332,17 +986,37 @@ I almost dislike how simple the sentence is after all this machinery.
 
 **System 3 is science.**
 
-That sentence is deliberately compressed. System 3 is not identical to the historical institution we call science, and the prescription is certainly not “give the model arXiv.” Science is humanity's most developed attempt to satisfy the requirements we have been accumulating socially: contact, provenance, stratified evidence, accumulated experience, conditional trust, specialized knowledge, criticism and the ability to be corrected.
+That sentence is deliberately compressed.
+
+System 3 is not identical to the historical institution we call science, and the prescription is certainly not “give the model arXiv.” Historical science contains hierarchies, fashions, fraud, perverse incentives, publication bias, prestige markets, replication failures and enough bureaucracy to make Weber feel vindicated. It has never been one method. It was not invented in one country, one century or one philosopher's book.
+
+That is exactly why it is useful.
+
+Science is humanity's most developed attempt to satisfy the requirements we have been accumulating socially: contact, provenance, stratified evidence, accumulated experience, conditional trust, specialized knowledge, criticism and the ability to be corrected.
 
 It works without making individual humans omniscient. Observations can outlive observers. Instruments extend perception. Expertise specializes. Results travel through trust chains. Critics attack claims they did not originate. Rival programs survive. One generation begins somewhere other than zero, and reality retains ways of making the whole institution uncomfortable.
+
+The historical detour also changes what the word *science* means here.
+
+I do not mean a five-step classroom diagram:
+
+`Question → Hypothesis → Experiment → Conclusion`
+
+Useful as that can be, it is much too small.
+
+I mean a civilization-scale cognitive technology built from laboratories, notebooks, statistics, instruments, journals, arguments, standards, archives, reputations, funding, replication, disciplines, mathematics, engineers, technicians, skeptics and people who spend six months discovering that the cable was loose.
 
 Once I saw that, the previous chapters changed shape.
 
 Chapter 1 moved control from individual actions into environments, feedback, selection and boundaries. Chapter 2 gave autonomous search an evaluator that could not be charmed by the agent's explanation. Chapter 3 lost the clean evaluator and gradually reinvented competing lineages, independent judgment and something uncomfortably close to peer review. Chapter 4 asked how claims acquire epistemic status through experience, instruments, provenance, memory and trust. This chapter added specialization, authority, incentives, division of labour and institutions.
 
-Those were not unrelated tricks. They were fragments of one older technology.
+Those were not unrelated tricks.
 
-We have spent this book wrapping models in structures that compensate for what models cannot safely do alone. Science did the same thing to humans centuries ago.
+They were fragments of one older technology.
+
+We have spent this book wrapping models in structures that compensate for what models cannot safely do alone.
+
+Science did the same thing to humans centuries ago.
 
 Apparently we are porting it.
 
@@ -350,11 +1024,17 @@ Philosophy of science suddenly stopped looking like background reading and start
 
 ## Philosophy of Science, Now With an API
 
-“Use science” solves almost nothing. Science is not one algorithm or one five-step method laminated on a classroom wall. It is a historical collection of practices and institutions that work partly because their weaknesses pull against one another.
+“Use science” solves almost nothing.
+
+Science is not one algorithm or one five-step method laminated on a classroom wall. It is a historical collection of practices and institutions that work partly because their weaknesses pull against one another.
 
 Peter Godfrey-Smith's *Theory and Reality* is useful here because its story refuses to stay simple. Proposed accounts of science solve one problem and expose another. Popper gives criticism enormous power, then evidence turns out to confront bundles of assumptions rather than one naked theory. Kuhn shows why a community cannot permanently put its deepest commitments on trial. Lakatos and Laudan preserve competing programs and separate current belief from the value of continued pursuit. Longino, Hull and Kitcher move the unit of analysis toward communities whose perspectives, incentives, credit and division of labour affect what can be known. Naturalism turns the same suspicion onto the procedures themselves. Realism refuses to let the institution vote the external world away.
 
-They disagree. Good. We need the failure modes.
+They disagree.
+
+Good.
+
+We need the failure modes.
 
 ### Make Ideas Lose, Then Discover Reality Doesn't Say What Lost
 
@@ -362,19 +1042,29 @@ Karl Popper wanted science to be dangerous to its own ideas. A useful theory sho
 
 The simplified picture looks almost exactly like Chapter 2's Immutable Harness:
 
-theory → prediction → test → survive or die.
+`theory → prediction → test → survive or die`
 
 A language model makes Popper's warning unusually practical. Give a capable model a failed result and it can often produce a coherent explanation for why the failure does not really threaten the original story. An important claim therefore needs an **exposure path**: a test, observation, proof obligation, user behavior or future consequence that can count against it.
 
-Then we encounter the problem the pre-reveal architecture already ran into. A theory almost never meets observation alone. It travels with assumptions about instruments, initial conditions, data processing, auxiliary theories and what the experiment actually measures. When the prediction fails, logic tells us that something in the bundle is wrong.
+Then we encounter the problem the pre-reveal architecture already ran into.
+
+A theory almost never meets observation alone. It travels with assumptions about instruments, initial conditions, data processing, auxiliary theories and what the experiment actually measures. When the prediction fails, logic tells us that something in the bundle is wrong.
 
 It does not tell us what.
 
 Pierre Duhem made this point in the context of physical theory; W. V. O. Quine later pushed a broader version. Evidence confronts **networks of assumptions**.
 
-Return to our agentic laboratory. “This treatment reduces inflammation because it inhibits pathway X.” The experiment fails. Maybe the hypothesis is wrong. Maybe the dosage is wrong, the assay noisy, the sample contaminated, the measurement insensitive or the analysis broken. The mouse may still be having a difficult Tuesday.
+Return to our agentic laboratory.
 
-Now the assumption graph earns its keep. A conclusion retains some connection to what it depends on. When reality disagrees, the system can rerun a measurement, use another instrument, reproduce the analysis independently or challenge a background assumption. This is **epistemic debugging**.
+“This treatment reduces inflammation because it inhibits pathway X.”
+
+The experiment fails.
+
+Maybe the hypothesis is wrong. Maybe the dosage is wrong, the assay noisy, the sample contaminated, the measurement insensitive or the analysis broken. The mouse may still be having a difficult Tuesday.
+
+Now the assumption graph earns its keep. A conclusion retains some connection to what it depends on. When reality disagrees, the system can rerun a measurement, use another instrument, reproduce the analysis independently or challenge a background assumption.
+
+This is **epistemic debugging**.
 
 The difficulty is that debugging can become defense. If every failed prediction can be blamed on another auxiliary assumption, a cherished theory may never have to die. There is always another instrument to distrust, another preprocessing bug to investigate, another prompt to rewrite, another agent to blame.
 
@@ -382,15 +1072,25 @@ At some point stubbornness becomes the next problem.
 
 ### The Productive Uses of Stubbornness
 
-Thomas Kuhn is famous outside philosophy for giving management consultants the phrase *paradigm shift*. His more interesting contribution here is almost the opposite: most productive science is **normal science**.
+Thomas Kuhn is famous outside philosophy for giving management consultants the phrase *paradigm shift*.
 
-A mature field has a framework stable enough that researchers do not reopen every foundational question every morning. The framework tells them which puzzles matter, which instruments are legitimate and what kinds of answers count. That stability can look dogmatic from the outside because, to some extent, it is. It is also what lets a community go deep.
+His more interesting contribution here is almost the opposite: most productive science is **normal science**.
 
-Imagine an AI research organization that begins every task with: “Before running the unit tests, let us reconsider whether computation is real.” Nothing gets done.
+A mature field has a framework stable enough that researchers do not reopen every foundational question every morning. The framework tells them which puzzles matter, which instruments are legitimate and what kinds of answers count. That stability can look dogmatic from the outside because, to some extent, it is.
+
+It is also what lets a community go deep.
+
+Imagine an AI research organization that begins every task with: “Before running the unit tests, let us reconsider whether computation is real.”
+
+Nothing gets done.
 
 The bureaucracy section now looks different. A procedure can preserve something the institution has learned. Trusted tools do not need to be requalified before every call. Successful patterns can become defaults. Some assumptions can sit below the level of active debate while the community works on puzzles inside them.
 
-The danger is forgetting that the settlement was provisional. Normal science encounters anomalies constantly, and most of them should not trigger a revolution. Researchers first check themselves, improve instruments and refine the theory. But anomalies that refuse to disappear need somewhere to accumulate. Repeated exceptions, multiplying workarounds, a benchmark improving while users get worse, a theory surviving only because every failed experiment generates another patch around it—eventually the question moves upward: *is the framework itself the bug?*
+The danger is forgetting that the settlement was provisional.
+
+Normal science encounters anomalies constantly, and most of them should not trigger a revolution. Researchers first check themselves, improve instruments and refine the theory. But anomalies that refuse to disappear need somewhere to accumulate. Repeated exceptions, multiplying workarounds, a benchmark improving while users get worse, a theory surviving only because every failed experiment generates another patch around it—eventually the question moves upward:
+
+*Is the framework itself the bug?*
 
 A single paradigm with excellent anomaly memory can still become a monopoly. Another framework may begin weaker because the existing institution has spent years building instruments, data and expertise around the incumbent.
 
@@ -398,7 +1098,9 @@ Imre Lakatos gives us a better unit for that problem: the **research program**. 
 
 That is close to the independent lineages we built before the reveal. One program thinks the architecture is wrong. Another thinks the data is wrong. A third thinks the objective is malformed. Each carries its own assumptions, tools, failures and unresolved anomalies long enough to develop consequences rather than entering a vote after five minutes.
 
-An archive full of immortal research programs eventually becomes an academic department, so the scheduler returns. Which lineages receive another experiment?
+An archive full of immortal research programs eventually becomes an academic department, so the scheduler returns.
+
+Which lineages receive another experiment?
 
 Larry Laudan's distinction between **acceptance** and **pursuit** makes the researcher-thirteen problem explicit. I can decline to accept an idea as the best current account while still believing it deserves research effort. Confidence asks how much a claim should guide belief and action now. Value of pursuit asks how useful another unit of investigation might be.
 
@@ -416,15 +1118,23 @@ That is much closer to **perspectival triangulation** than giving five copies of
 > Agent 2, be skeptical.  
 > Agent 3, be a pirate.
 
-A useful difference may come from different evidence, expertise, tools, histories, access or incentives—or from a human whose experience contains something none of the models saw in training. The point is **uncorrelated visibility**: somebody can see a problem because another participant's world made it hard to see.
+A useful difference may come from different evidence, expertise, tools, histories, access or incentives—or from a human whose experience contains something none of the models saw in training.
+
+The point is **uncorrelated visibility**: somebody can see a problem because another participant's world made it hard to see.
 
 Criticism also needs standing. A critic whose objections never change allocation, publication, deployment or belief is performing quality-assurance theatre. A minority perspective can be correct and structurally irrelevant if disagreement always resolves through the majority that already controls the institution.
 
 This is where David Hull and Philip Kitcher make power and incentives impossible to dismiss as administration. Scientific communities mix cooperation and competition. Researchers depend on one another's results, instruments and criticism while competing for priority, credit, jobs and resources. Reputation matters because nobody can personally verify everything. Credit matters because work gets reused. Division of labour matters because a community does not necessarily want every researcher pursuing the idea that looks strongest today.
 
-Now token budgets and reward design look less operational. **They are epistemic policy.** Who gets compute determines what gets investigated. Who gets remembered determines what future agents can inherit. Who receives credit affects which social roles remain worth performing. Who controls information determines which errors can correlate before anyone notices.
+Now token budgets and reward design look less operational.
 
-Learning the scheduler does not make these choices neutral. It makes the policy harder to summarize in an org chart.
+**They are epistemic policy.**
+
+Who gets compute determines what gets investigated. Who gets remembered determines what future agents can inherit. Who receives credit affects which social roles remain worth performing. Who controls information determines which errors can correlate before anyone notices.
+
+Learning the scheduler does not make these choices neutral.
+
+It makes the policy harder to summarize in an org chart.
 
 ### Even the Method Has to Be Fallible
 
@@ -432,27 +1142,43 @@ Once an institution finds a method that works, it tends to standardize it. Yeste
 
 Paul Feyerabend is remembered for “anything goes,” which is a wonderful slogan if your goal is to make sure everyone remembers the slogan and almost nobody remembers the argument. The useful challenge is historical: successful inquiry has often violated the methodological rules philosophers wanted to treat as universal. A method can become so authoritative that departures count as irrational by definition, including the departures that would have revealed its limits.
 
-Agent systems can do this at machine speed. Suppose `Research → Plan → Build → Critic → Revise` works extremely well. We run it ten thousand times, turn it into the standard and make every problem enter the same ceremony. Deep Mode already showed why that can fail: research sometimes anchors; criticism sometimes arrives at the wrong moment; a prototype may teach more than another planning pass.
+Agent systems can do this at machine speed.
+
+Suppose `Research → Plan → Build → Critic → Revise` works extremely well. We run it ten thousand times, turn it into the standard and make every problem enter the same ceremony. Deep Mode already showed why that can fail: research sometimes anchors; criticism sometimes arrives at the wrong moment; a prototype may teach more than another planning pass.
 
 The method itself occasionally has to become available for criticism.
 
-Then we inherit a recursive question: how do methods earn trust?
+Then we inherit a recursive question:
+
+How do methods earn trust?
 
 Naturalistic approaches to epistemology push us toward the procedures investigators actually use and how reliably those procedures connect them to the world. Godfrey-Smith's idea of **procedural naturalism** is especially useful for System 3 because the procedure becomes an object of investigation too.
 
 An evaluator is a procedure. A browser is an instrument. Retrieval is a method for selecting evidence. A benchmark is a measurement process with a distribution, implementation and failure modes. A proof checker is extraordinarily strong inside its formal domain and completely useless for deciding whether the theorem matters. A simulated student is cheap perspective-taking and not a student.
 
-System 3 therefore needs trust in **epistemic procedures** as well as conclusions. This evaluator tracks humans well here and becomes unstable there. This retrieval strategy misses information buried in tables. This benchmark has saturated. This instrument drifts under these conditions. A scientific institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working.
+System 3 therefore needs trust in **epistemic procedures** as well as conclusions.
 
-That is deeper self-correction than changing an answer. The machinery that decides what counts as warranted can change too.
+This evaluator tracks humans well here and becomes unstable there. This retrieval strategy misses information buried in tables. This benchmark has saturated. This instrument drifts under these conditions.
+
+A scientific institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working.
+
+That is deeper self-correction than changing an answer.
+
+The machinery that decides what counts as warranted can change too.
 
 ### Confidence Is Not Contact
 
 Bayesian reasoning fits naturally inside this architecture. Evidence often changes degrees of confidence rather than delivering binary verdicts. A failed experiment can reduce confidence without making a theory impossible. Three independent measurements can matter more than three articles copying one another. A strange idea can remain low probability while having high value of pursuit.
 
-The arithmetic is useful and incomplete. It does not tell us where the prior came from, whether the evidence is genuinely independent, which hypotheses never entered the model or whether 0.87 means “well calibrated” rather than “eloquently stated.” Bayesianism can live inside System 3; it cannot carry the whole institution by itself.
+The arithmetic is useful and incomplete.
 
-After all this emphasis on communities, trust and social machinery, there is an easy bad reading: truth is whatever the institution eventually agrees on.
+It does not tell us where the prior came from, whether the evidence is genuinely independent, which hypotheses never entered the model or whether 0.87 means “well calibrated” rather than “eloquently stated.”
+
+Bayesianism can live inside System 3; it cannot carry the whole institution by itself.
+
+After all this emphasis on communities, trust and social machinery, there is an easy bad reading:
+
+Truth is whatever the institution eventually agrees on.
 
 No.
 
@@ -464,7 +1190,9 @@ Reality retains the right to be rude.
 
 Science needs trust and institutions because no individual can have direct contact with everything. Those institutions matter epistemically because they can organize **distributed contact with experience** rather than replace experience with consensus.
 
-System 3 is social without being merely social. Somewhere in the network there still has to be a route to something that does not become true because the group chat reacted with 👍.
+System 3 is social without being merely social.
+
+Somewhere in the network there still has to be a route to something that does not become true because the group chat reacted with 👍.
 
 ## The Tensions, Compressed
 
@@ -479,15 +1207,23 @@ After all that philosophy, I find the tensions more useful than a list of winner
 | **Expertise ↔ independent perspective** | Specialization should create local epistemic standing without turning authority into universal rank or criticism into conformity. |
 | **Institution ↔ reality** | Trust, reputation, incentives and consensus can carry knowledge only while routes to proof, observation, users, experiments and consequences remain capable of saying no. |
 
-None of this was written as advice for AI. Popper did not propose a verifier service. Kuhn did not invent anomaly memory. Lakatos did not specify a branch scheduler. Longino did not write a context-isolation API. Kitcher did not file a feature request for compute allocation.
+None of this was written as advice for AI.
+
+Popper did not propose a verifier service. Kuhn did not invent anomaly memory. Lakatos did not specify a branch scheduler. Longino did not write a context-isolation API. Kitcher did not file a feature request for compute allocation.
 
 The value of the philosophy is that it makes failure modes visible before we rediscover all of them at machine speed.
 
-The useful question is not *Which philosopher wins?* It is: **Which epistemic failure am I currently building?**
+The useful question is not *Which philosopher wins?*
+
+It is:
+
+**Which epistemic failure am I currently building?**
 
 Is my system impossible to challenge? Does it blame the wrong component when evidence fails? Does it converge before alternatives mature? Does it preserve alternatives forever and never commit? Has yesterday's successful method become mandatory ritual? Do all the critics share one source? Does the scheduler send all resources to the current winner? Does the evaluator still measure the thing we care about? Has consensus quietly replaced contact with reality?
 
-The architecture has to live inside those disagreements. They are not loose ends the perfect agent framework will eventually eliminate. They are the shape of the problem.
+The architecture has to live inside those disagreements. They are not loose ends the perfect agent framework will eventually eliminate.
+
+They are the shape of the problem.
 
 **Agentic architecture is epistemology made executable. Multi-agent architecture is social epistemology made executable.**
 
@@ -495,31 +1231,65 @@ The epistemic chasm is not repaired by somehow stuffing a perfect copy of realit
 
 ## Science Becomes Architecture
 
-Once the connection is visible, scientific-agent systems stop looking like a niche use case. They look like unusually literal prototypes of System 3.
+Once the connection is visible, scientific-agent systems stop looking like a niche use case.
+
+They look like unusually literal prototypes of System 3.
 
 Stanford's Virtual Lab was deliberately organized like a research group. An AI principal investigator coordinated specialist scientist agents while human researchers supplied high-level guidance and closed the physical loop. In the nanobody project, the computational system proposed candidates that humans then synthesized and tested experimentally. (Virtual Lab / Nature)
 
-Proteins were made. Experiments happened. **Reality got a vote.**
+Proteins were made.
 
-The interesting object is the network: human problem selection → artificial specialists → literature and computation → proposed molecules → physical experiment → measurement → revised belief.
+Experiments happened.
+
+**Reality got a vote.**
+
+The interesting object is the network:
+
+`human problem selection → artificial specialists → literature and computation → proposed molecules → physical experiment → measurement → revised belief`
 
 Different epistemic jobs live in different participants. FutureHouse's Robin pushes the same idea further around the laboratory loop, combining literature work, data analysis, hypothesis generation and experiment planning while physical experiments remain part of the system that constrains what survives. (Robin / Nature)
 
-The direction I care about is **making more of the institution computational**. Hypothesis generation can be separated from criticism, literature search from experimental analysis, natural-language intuition from executable computation, computation from physical measurement. Different hypotheses can survive long enough to compete while experiments remain available to kill beautiful nonsense.
+The direction I care about is **making more of the institution computational**.
 
-The scientific method stops looking like a paragraph in a textbook. It starts looking like an architecture.
+Hypothesis generation can be separated from criticism, literature search from experimental analysis, natural-language intuition from executable computation, computation from physical measurement. Different hypotheses can survive long enough to compete while experiments remain available to kill beautiful nonsense.
+
+The scientific method stops looking like a paragraph in a textbook.
+
+It starts looking like an architecture.
 
 ## Mathematics Leaves the Benchmark
 
-Mathematics shows the same transition without a wet lab. The thing capable of pushing back is different: proof is unusually rude. One invalid step can kill an otherwise beautiful argument.
+Mathematics shows the same transition without a wet lab.
 
-For years, much of the public story about AI mathematics remained benchmark-shaped: systems solving hard questions whose answers were already known. That boundary is moving. Once a model proposes something on a genuinely open problem, correctness is only the beginning. Was the argument valid? Was it actually new? Does prior work already contain the idea? Can the proof be simplified? Does anybody care?
+The thing capable of pushing back is different: proof is unusually rude. One invalid step can kill an otherwise beautiful argument.
+
+For years, much of the public story about AI mathematics remained benchmark-shaped: systems solving hard questions whose answers were already known. That boundary is moving. Once a model proposes something on a genuinely open problem, correctness is only the beginning.
+
+Was the argument valid?
+
+Was it actually new?
+
+Does prior work already contain the idea?
+
+Can the proof be simplified?
+
+Does anybody care?
 
 Recent systems make the composition visible. A model can propose a construction, another attack it, retrieval surface related work, and Lean or another formal system reject an invalid step. A human mathematician can notice that the allegedly new lemma appeared in 1987; another can decide whether the result is interesting enough to care about. QED, formal proof-search agents and recent work on open Erdős problems make different pieces of that composition concrete. (QED; OpenAI; formal proof-search work)
 
-The intelligence increasingly lives in the composition: model intuition, retrieval, adversarial checking, formal verification and human mathematical judgment.
+The intelligence increasingly lives in the composition:
 
-The thing that pushes back does not have to be physical. Code has execution. Mathematics has proof. Experimental science has measurement. Human-centered systems eventually have actual humans.
+model intuition, retrieval, adversarial checking, formal verification and human mathematical judgment.
+
+The thing that pushes back does not have to be physical.
+
+Code has execution.
+
+Mathematics has proof.
+
+Experimental science has measurement.
+
+Human-centered systems eventually have actual humans.
 
 Different problems require different routes out of the conversation.
 
@@ -529,11 +1299,17 @@ System 3 is the machinery that lets a society of imperfect investigators think.
 
 There is a limit to the science analogy, and it appears as soon as the institution is asked to do more than discover what is true.
 
-Agents will live inside companies, marketplaces, governments, families and communities. Those systems contain authority, privacy, conflicting interests and power. An organizational agent has **principals**, not merely users. “Align the agent to the user” lasts about five minutes before somebody asks: which user?
+Agents will live inside companies, marketplaces, governments, families and communities. Those systems contain authority, privacy, conflicting interests and power. An organizational agent has **principals**, not merely users.
+
+“Align the agent to the user” lasts about five minutes before somebody asks:
+
+Which user?
 
 The institution can also acquire goals of its own. Sales optimizes sales, growth optimizes growth, finance optimizes cost, moderation optimizes safety. Every specialist can be competent inside its box while the organization produces something nobody would have endorsed if shown the whole trajectory at the beginning.
 
-Humans have a technical term for this: Tuesday.
+Humans have a technical term for this:
+
+Tuesday.
 
 Agent societies inherit the same problem. A critic can become ceremonial. A hierarchy can suppress dissent. A scheduler can reward whatever makes its own metrics look good. Ten specialists can inherit one false assumption from the orchestrator and execute it flawlessly.
 
@@ -541,21 +1317,41 @@ Agent societies inherit the same problem. A critic can become ceremonial. A hier
 
 The institution itself has to remain open to criticism, evidence and revision. Once it acts on behalf of several people, epistemology runs into ethics and governance without changing buildings.
 
-We will come back to that. For now, one more thing happens to any society that survives long enough.
+We will come back to that.
+
+For now, one more thing happens to any society that survives long enough.
 
 It remembers.
 
 ## And Then the Society Remembers
 
-A society that solves one problem and disappears can improvise forever. A persistent society cannot.
+A society that solves one problem and disappears can improvise forever.
+
+A persistent society cannot.
 
 If the same team repeatedly discovers that one testing strategy works, eventually it stops debating that strategy. A useful proof pattern gets reused. A reliable tool becomes boring infrastructure. A successful organizational structure becomes the starting point for the next problem. Without some stabilization, every Monday begins with a philosophical inquiry into whether unit tests are still a good idea.
 
 Kuhn has already given us the tension. Deep work requires periods in which the foundations stay still, while the same stability that allows expertise to accumulate can eventually make alternatives difficult to see.
 
-Experience hardens. Successful procedures become defaults. Defaults become habits. Habits acquire stories about why things are done this way. Old failures become rules. Rules outlive the people and agents who remember the failures. Good practices spread. So do superstitions.
+Experience hardens.
 
-Eventually the org chart is no longer the whole organization. There is also **culture**.
+Successful procedures become defaults.
+
+Defaults become habits.
+
+Habits acquire stories about why things are done this way.
+
+Old failures become rules.
+
+Rules outlive the people and agents who remember the failures.
+
+Good practices spread.
+
+So do superstitions.
+
+Eventually the org chart is no longer the whole organization.
+
+There is also **culture**.
 
 Culture is memory that has become social enough that nobody has to reload it from a checkpoint. That is immensely valuable and dangerous for the same reason: useful experience can survive the participants who discovered it, and so can accidents whose original conditions have disappeared.
 
