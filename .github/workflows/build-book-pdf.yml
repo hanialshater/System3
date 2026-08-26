@@ -40,13 +40,13 @@ jobs:
             chapters/04-system-3.md
             chapters/05-the-society-of-agents.md
             chapters/06-pattern-language.md
-            chapters/07-automatic-alignment-research.md
             chapters/07-recursive-self-improvement.md
-            chapters/08-layer-4-desire.md
-            chapters/09-fluent-autonomy.md
-            chapters/10-the-store-that-builds-itself.md
-            chapters/11-after-capacity.md
-            chapters/the-prophecy.md
+            chapters/08-automatic-alignment-research.md
+            chapters/09-layer-4-desire.md
+            chapters/10-fluent-autonomy.md
+            chapters/11-the-store-that-builds-itself.md
+            chapters/12-after-capacity.md
+            chapters/13-the-prophecy.md
           )
 
           for f in "${files[@]}"; do

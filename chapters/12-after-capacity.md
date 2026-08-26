@@ -1,4 +1,4 @@
-# Chapter 11: After Capacity
+# Chapter 12: After Capacity
 
 *A Glimpse of Double Descent Life*
 

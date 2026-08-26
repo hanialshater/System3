@@ -1,4 +1,4 @@
-# The Prophecy
+# Chapter 13: The Prophecy
 
 *The Love Prompt of Devesh*
 

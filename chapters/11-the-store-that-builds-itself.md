@@ -1,4 +1,4 @@
-# Chapter 10: The Store That Builds Itself
+# Chapter 11: The Store That Builds Itself
 
 *When System 3 Came to Work*
 

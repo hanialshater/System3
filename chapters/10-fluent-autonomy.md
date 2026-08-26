@@ -1,4 +1,4 @@
-# Chapter 9: Fluent Autonomy
+# Chapter 10: Fluent Autonomy
 
 *When the Architecture Gets Out of the Way*
 

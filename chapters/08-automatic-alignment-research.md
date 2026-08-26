@@ -1,4 +1,4 @@
-# Chapter 7: Automatic Alignment Research
+# Chapter 8: Automatic Alignment Research
 
 *Learning From a Human Who Cannot Label Everything*
 

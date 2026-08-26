@@ -31,19 +31,19 @@ These chapters are first integrated drafts and are **not locked**. They will rec
 
 - [Chapter 5 — The Society of Agents](chapters/05-the-society-of-agents.md) — **the reveal: philosophy of science becomes agent architecture**
 - [Chapter 6 — Pattern Language](chapters/06-pattern-language.md) — the scientific institution acquires executable culture and memory
-- [Chapter 7 — Automatic Alignment Research](chapters/07-automatic-alignment-research.md) — System 3 turns scientific inquiry onto alignment failures
 - [Chapter 7 — Recursive Self-Improvement](chapters/07-recursive-self-improvement.md) — the scientific institution experiments on its own machinery
-- [Chapter 8 — Layer 4: What Do You Actually Want?](chapters/08-layer-4-desire.md) — the boundary of science: evidence can discipline belief but cannot supply the ought
-- [Chapter 9 — Fluent Autonomy](chapters/09-fluent-autonomy.md) — the epistemic institution becomes infrastructure beneath human intention
+- [Chapter 8 — Automatic Alignment Research](chapters/08-automatic-alignment-research.md) — System 3 turns scientific inquiry onto alignment failures
+- [Chapter 9 — Layer 4: What Do You Actually Want?](chapters/09-layer-4-desire.md) — the boundary of science: evidence can discipline belief but cannot supply the ought
+- [Chapter 10 — Fluent Autonomy](chapters/10-fluent-autonomy.md) — the epistemic institution becomes infrastructure beneath human intention
 
 ### Final arc — application and human future
 
-- [Chapter 10 — The Store That Builds Itself](chapters/10-the-store-that-builds-itself.md) — System 3 as a living scientific institution embedded in a product
-- [Chapter 11 — After Capacity: A Glimpse of Double Descent Life](chapters/11-after-capacity.md) — cheaper capacity, including cheaper inquiry, meets ethics, politics, pluralism and human agency
+- [Chapter 11 — The Store That Builds Itself](chapters/11-the-store-that-builds-itself.md) — System 3 as a living scientific institution embedded in a product
+- [Chapter 12 — After Capacity: A Glimpse of Double Descent Life](chapters/12-after-capacity.md) — cheaper capacity, including cheaper inquiry, meets ethics, politics, pluralism and human agency
 
 ### Finale
 
-- [The Prophecy — The Love Prompt of Devesh](chapters/the-prophecy.md)
+- [Chapter 13 — The Prophecy: The Love Prompt of Devesh](chapters/13-the-prophecy.md)
 
 ## Editorial prompts
 
