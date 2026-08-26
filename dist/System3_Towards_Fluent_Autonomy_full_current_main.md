@@ -2976,6 +2976,8 @@ That is a different kind of memory.
 
 It is much closer to culture.
 
+**Culture is memory that has become social enough that nobody has to reload it from a checkpoint.**
+
 Chapter 5 ended with the claim that **System 3 is science**: not science as a classroom flowchart, but science as a civilization-scale arrangement for letting fallible minds accumulate knowledge while preserving routes through which the world can still object.
 
 Science does not compound because every new scientist rereads every previous conversation. It compounds because some experience hardens into instruments, protocols, techniques, standards, textbooks, laboratory habits, named failure modes, statistical practices and things everyone in a field learns to check before embarrassing themselves in public.
@@ -3071,6 +3073,8 @@ By 2026, a useful skill could increasingly survive not just a new session, but a
 The worker changes.
 
 The operating knowledge remains.
+
+The model becomes more replaceable infrastructure. The organization's weirdness survives.
 
 GitHub even added version pinning and provenance to skills because executable instructions have the same awkward property as ordinary software dependencies: if they change silently, behavior changes silently too. A skill can contain useful expertise. It can also contain a bad instruction, stale assumption or malicious script. Once knowledge is executable, **knowledge has a supply chain**.
 
@@ -3288,6 +3292,8 @@ And the organization can remember its incentives just as effectively as it remem
 A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original tradeoff. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.”
 
 That is culture too.
+
+**Local alignment does not compose automatically. Neither does local truth.**
 
 If we build persistent agent societies without thinking about this layer, we will not escape institutional power. We will automate it and give it better dashboards.
 
@@ -3510,6 +3516,8 @@ Those sentences can produce identical dashboards and very different knowledge.
 Culture needs inheritance.
 
 It also needs rebellion.
+
+**Agentic architecture is epistemology made executable. Multi-agent architecture is social epistemology made executable. Persistent agent architecture is culture made executable.**
 
 ## The Skill That Writes Itself
 
