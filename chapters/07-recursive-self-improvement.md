@@ -555,6 +555,68 @@ Now the judge becomes part of the attack surface.
 
 That is exactly where the modern story of recursive self-improvement begins.
 
+## The Old Dream of the Machine That Improves Itself
+
+Long before language models could edit a repository, people had already noticed where this ladder might lead.
+
+In a monograph drafted in the 1960s, the statistician I. J. Good imagined what he called an **ultraintelligent machine**: a machine better than any human at intellectual activity. Machine design is itself an intellectual activity, Good observed, so a sufficiently capable machine designer could design a better machine, which could then design a better one. The loop could produce what he called an **intelligence explosion**. ([Good](https://www.sciencedirect.com/science/article/pii/S0065245808604180))
+
+The argument is famous because it compresses recursive self-improvement into almost nothing:
+
+> better intelligence → better ability to build intelligence → still better intelligence
+
+But look at everything hidden by the word *better*.
+
+Better at which intellectual activities?
+
+Measured how?
+
+Under which resource constraints?
+
+Does the successor preserve the parent's objective?
+
+Does it remain understandable to the parent?
+
+What prevents a locally clever modification from destroying some capability the evaluator forgot to test?
+
+Good himself did not treat control as irrelevant. The famous passage already contains the qualification that such a machine would need to remain sufficiently docile to be kept under control. The explosive part of the argument is easy to remember. The governance clause is easier to lose.
+
+A few decades later, Jürgen Schmidhuber's **Gödel Machine** attacked the problem from the opposite direction: not *suppose the machine somehow knows how to improve itself*, but *under what formal conditions should it rewrite itself at all?* The proposed system contains its own code, hardware assumptions and utility function in an axiomatic description. A proof searcher looks for a self-rewrite together with a proof that executing the rewrite is more useful than continuing the search. Only then does the machine change itself. ([Schmidhuber](https://arxiv.org/abs/cs/0309048))
+
+It is a beautiful answer to a very clean version of the problem.
+
+Do not trust a modification because it looks clever.
+
+**Prove that the modification is worth making.**
+
+And because the proof has to account for the value of continuing to search for alternatives, the proposal aims at something stronger than ordinary local hill climbing.
+
+There is also a catch large enough to drive most of modern AI through: usefulness has to be expressible in the encoded utility function, the relevant facts have to be available to the proof system, and the benefit of the rewrite has to be provable within the machinery. The formal solution becomes harder exactly where the real world becomes interesting.
+
+A customer does not arrive with an axiomatized utility function.
+
+A scientist cannot prove in advance that an unexplored research direction will matter.
+
+A lifelong learner cannot enumerate every future task whose competence should be preserved.
+
+A language model's evaluator is usually empirical, statistical and incomplete rather than a theorem about all future consequences.
+
+So two traditions were approaching the same mountain from different sides.
+
+The explicit self-improvement tradition asked how a system could safely rewrite the machinery doing the thinking.
+
+Reinforcement learning, meta-learning and open-ended learning kept discovering how much of **learning itself** could be moved inside the system, while repeatedly running into the messiness of exploration, representation, forgetting, reward, curriculum and evaluation.
+
+For years, the first tradition had the recursion but not a practical general machine capable of editing complicated software intelligently. The second had increasingly capable learners but usually kept the outer experimental machinery fixed by humans.
+
+Large language models made the two stories collide.
+
+A general model can now read the code that scaffolds its behavior, propose changes to that code, run the changed system, inspect what happened and try again. We no longer have a proof that a rewrite is globally useful. We have something more ordinary and more dangerous:
+
+**an experiment.**
+
+That puts us directly back inside System 3.
+
 ## The Learner Edits the School
 
 By the mid-2020s, foundation models could write code, use tools, inspect repositories, run experiments and reason over logs well enough that the outer learning machinery itself became editable in a new way.
@@ -567,7 +629,7 @@ It arrived as a Bash loop with Git.
 
 The important transition is not that a language model can tune hyperparameters. Automated optimization existed long before LLMs. The transition is that a general model can **propose an idea in code, modify the experimental machinery, interpret failures, and try again**. The search space is no longer only a list of learning rates somebody typed into a configuration file. If an idea can be expressed through an editable part of the program, it can potentially enter the loop.
 
-STOP—the Self-Taught Optimizer—made the recursion explicit earlier: an LLM-based improver program could itself be supplied as the object to improve. The base model stayed fixed while the scaffold using it changed. The resulting improvers discovered strategies including search and decomposition. The authors were careful about the limits, but the conceptual move was already there: code that uses a model can rewrite code that determines **how the model is used**.
+STOP—the Self-Taught Optimizer—made the recursion explicit earlier: an LLM-based improver program could itself be supplied as the object to improve. The base model stayed fixed while the scaffold using it changed. The resulting improvers discovered strategies including search and decomposition. The authors were careful about the limits, but the conceptual move was already there: code that uses a model can rewrite code that determines **how the model is used**. ([STOP](https://arxiv.org/abs/2310.02304))
 
 The Darwin Gödel Machine pushed this into open-ended evolutionary search. DGM begins with a coding agent whose implementation is code; descendants can modify that implementation, and successful variants enter an archive from which future descendants can be generated. The archive matters because the current champion does not monopolize ancestry. A variant that is not the best today may contain a stepping stone useful later. In reported experiments, DGM improved substantially on coding benchmarks while discovering changes such as better editing tools, long-context handling and peer-review mechanisms. ([DGM](https://arxiv.org/abs/2505.22954))
 
