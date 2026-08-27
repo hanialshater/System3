@@ -234,7 +234,7 @@ Now the definition of improvement has expanded again. It is not merely higher re
 
 The learner is beginning to shape the conditions under which learning is possible.
 
-## 1989 and After: A Learner With a Past
+## A Parallel Problem Since 1989: A Learner With a Past
 
 There is a different embarrassment in the standard training story.
 
@@ -280,7 +280,7 @@ It is accumulation without paralysis.
 
 This will matter enormously once we imagine self-improving agents living for months or years. A system that continuously rewrites itself but cannot preserve the right parts of its own history is not really accumulating a life. It is repeatedly replacing itself and calling the replacements progress.
 
-## 1990–2017: The Opponent Does Not Let You Stop
+## A Parallel Pressure, 1973–2017: The Opponent Does Not Let You Stop
 
 Self-play contains another idea that is easy to miss if we focus only on the absence of human demonstrations.
 
@@ -369,6 +369,80 @@ So the question became not only how to improve toward an objective.
 It became how to remain uncertain about what the objective is.
 
 Chapter 9 will eventually live inside that problem. For now, keep the historical move in view: another part of the teacher has become learnable.
+
+## 2003: The Old Dream Becomes a Design
+
+The reinforcement-learning story was not the only route toward self-improvement. A parallel tradition had taken the recursion literally decades earlier, and by 2003 it had become a concrete design problem.
+
+I. J. Good's 1965 intelligence-explosion argument, introduced at the start of this chapter, asked what happens when intelligence becomes good enough at the intellectual task of producing more intelligence. It left most of the implementation open. The important move was meta-level leverage: improve one answer and you gain one answer; improve the machinery that produces answers and the gain can recur.
+
+In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the harder question: under what conditions should a system actually rewrite itself? The proposed machine contains an axiomatic description of its hardware, environment assumptions, utility function and its own initial software. A proof searcher looks for a self-rewrite together with a proof that executing that rewrite is more useful than continuing to search. Only then does the system change itself. ([Schmidhuber](https://arxiv.org/abs/cs/0309048))
+
+It is a beautiful answer to a beautifully clean version of the problem.
+
+Do not accept a modification because it looks clever.
+
+**Prove that the modification is worth making.**
+
+The catch is exactly where the rest of this chapter has been heading. Usefulness must be represented in the utility function. Relevant facts must be available to the proof system. The value of the rewrite must be provable within the formal machinery.
+
+A chess engine can live surprisingly close to that world.
+
+A company cannot.
+
+A scientist cannot prove in advance that an unexplored research program will matter. A lifelong learner cannot enumerate every future skill whose preservation will become important. A human does not arrive with an axiomatized utility function. An LLM evaluator is empirical, statistical and incomplete rather than a theorem about all future consequences.
+
+So two histories were approaching the same mountain from different sides.
+
+The explicit recursive-self-improvement tradition had **self-reference and meta-level ambition**, but not a practical general machine that could inspect and rewrite complicated systems intelligently.
+
+Reinforcement learning, meta-learning and open-ended learning had increasingly capable **adaptive machinery**, but usually left the outer research process, evaluator and engineering environment fixed by humans.
+
+Foundation models made those histories collide.
+
+A general model can now read the code that scaffolds its own behavior, propose a change, run the changed system, inspect what happened and try again.
+
+We do not have a proof that the rewrite is globally useful.
+
+We have something much more ordinary.
+
+**An experiment.**
+
+Which is why recursive self-improvement, in practice, comes back to the framing we began with: science turning inward.
+
+## 2011: When the Objective Becomes the Trap
+
+Up to this point the story still assumes that progress should generally move toward an objective.
+
+Then evolutionary computation produced a more disturbing idea.
+
+What if the objective itself creates the local optimum?
+
+Joel Lehman and Kenneth Stanley's work on **novelty search** argued that objective-driven search can be deceptive: the gradient induced by the obvious objective may steer search toward dead ends, while stepping stones necessary for a good solution do not initially look like progress toward the goal. Their alternative was to reward behavioral novelty rather than closeness to the final objective. In several experimental settings, searching for novelty could outperform directly searching for the objective. ([Lehman & Stanley](https://stars.library.ucf.edu/facultybib2010/1530/))
+
+This is one of those ideas that sounds obvious only after somebody has made it embarrassing.
+
+Suppose I want to invent flight and I reward every intermediate machine by how close it gets to a Boeing 787. Feathers, bicycles, wind tunnels, propellers and lightweight engines may score terribly for years. The useful stepping stones are not necessarily miniature versions of the final object.
+
+Chapter 2 encountered this through optimization. An algorithm can become trapped because the apparent gradient points toward one hill while the real breakthrough requires moving sideways or temporarily getting worse.
+
+Novelty search makes the philosophical point explicit:
+
+**Sometimes "better" means more different, not more successful.**
+
+At least for a while.
+
+This creates a new problem immediately. Novelty for its own sake can produce endless weirdness. A system can discover forty-seven new ways to fall down a staircase without getting any better at walking. Open-ended exploration needs enough diversity to discover stepping stones without becoming a museum of useless exceptions.
+
+So again the meaning of progress expands.
+
+We need achievement.
+
+We need diversity.
+
+We need stepping stones that current evaluation does not yet know how to value.
+
+The scalar is starting to crack.
 
 ## 2016–2017: Learning to Learn
 
@@ -473,40 +547,6 @@ Self-improvement can therefore make an agent better at generating experience whi
 
 That tension will return when language-model agents start using other language models as judges, simulators, users and critics. At sufficient scale, a society can become very good at agreeing with itself.
 
-## 2011: When the Objective Becomes the Trap
-
-Up to this point the story still assumes that progress should generally move toward an objective.
-
-Then evolutionary computation produced a more disturbing idea.
-
-What if the objective itself creates the local optimum?
-
-Joel Lehman and Kenneth Stanley's work on **novelty search** argued that objective-driven search can be deceptive: the gradient induced by the obvious objective may steer search toward dead ends, while stepping stones necessary for a good solution do not initially look like progress toward the goal. Their alternative was to reward behavioral novelty rather than closeness to the final objective. In several experimental settings, searching for novelty could outperform directly searching for the objective. ([Lehman & Stanley](https://stars.library.ucf.edu/facultybib2010/1530/))
-
-This is one of those ideas that sounds obvious only after somebody has made it embarrassing.
-
-Suppose I want to invent flight and I reward every intermediate machine by how close it gets to a Boeing 787. Feathers, bicycles, wind tunnels, propellers and lightweight engines may score terribly for years. The useful stepping stones are not necessarily miniature versions of the final object.
-
-Chapter 2 encountered this through optimization. An algorithm can become trapped because the apparent gradient points toward one hill while the real breakthrough requires moving sideways or temporarily getting worse.
-
-Novelty search makes the philosophical point explicit:
-
-**Sometimes "better" means more different, not more successful.**
-
-At least for a while.
-
-This creates a new problem immediately. Novelty for its own sake can produce endless weirdness. A system can discover forty-seven new ways to fall down a staircase without getting any better at walking. Open-ended exploration needs enough diversity to discover stepping stones without becoming a museum of useless exceptions.
-
-So again the meaning of progress expands.
-
-We need achievement.
-
-We need diversity.
-
-We need stepping stones that current evaluation does not yet know how to value.
-
-The scalar is starting to crack.
-
 ## 2019–2021: The World Starts Generating the Curriculum
 
 If fixed objectives can trap search and fixed curricula eventually become too easy, the next move is almost inevitable.
@@ -610,48 +650,6 @@ We have solved the scaling problem by making the judge computational.
 Now the judge becomes part of the attack surface.
 
 That is exactly where the modern story of recursive self-improvement begins.
-
-## Meanwhile: The Old Dream of Recursive Improvement
-
-The reinforcement-learning story was not the only route toward self-improvement.
-
-A parallel tradition took the recursion literally.
-
-I. J. Good's 1965 intelligence-explosion argument, introduced at the start of this chapter, asked what happens when intelligence becomes good enough at the intellectual task of producing more intelligence. It left most of the implementation open. The important move was meta-level leverage: improve one answer and you gain one answer; improve the machinery that produces answers and the gain can recur.
-
-In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the harder question: under what conditions should a system actually rewrite itself? The proposed machine contains an axiomatic description of its hardware, environment assumptions, utility function and its own initial software. A proof searcher looks for a self-rewrite together with a proof that executing that rewrite is more useful than continuing to search. Only then does the system change itself. ([Schmidhuber](https://arxiv.org/abs/cs/0309048))
-
-It is a beautiful answer to a beautifully clean version of the problem.
-
-Do not accept a modification because it looks clever.
-
-**Prove that the modification is worth making.**
-
-The catch is exactly where the rest of this chapter has been heading. Usefulness must be represented in the utility function. Relevant facts must be available to the proof system. The value of the rewrite must be provable within the formal machinery.
-
-A chess engine can live surprisingly close to that world.
-
-A company cannot.
-
-A scientist cannot prove in advance that an unexplored research program will matter. A lifelong learner cannot enumerate every future skill whose preservation will become important. A human does not arrive with an axiomatized utility function. An LLM evaluator is empirical, statistical and incomplete rather than a theorem about all future consequences.
-
-So two histories were approaching the same mountain from different sides.
-
-The explicit recursive-self-improvement tradition had **self-reference and meta-level ambition**, but not a practical general machine that could inspect and rewrite complicated systems intelligently.
-
-Reinforcement learning, meta-learning and open-ended learning had increasingly capable **adaptive machinery**, but usually left the outer research process, evaluator and engineering environment fixed by humans.
-
-Foundation models made those histories collide.
-
-A general model can now read the code that scaffolds its own behavior, propose a change, run the changed system, inspect what happened and try again.
-
-We do not have a proof that the rewrite is globally useful.
-
-We have something much more ordinary.
-
-**An experiment.**
-
-Which is why recursive self-improvement, in practice, comes back to the framing we began with: science turning inward.
 
 ## 2023–2026: The Learner Edits the School
 
