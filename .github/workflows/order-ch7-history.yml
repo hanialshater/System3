@@ -20,52 +20,47 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          import re
 
           p = Path('chapters/07-recursive-self-improvement.md')
           text = p.read_text()
 
-          start = text.index('## 2000: Maybe the Reward Was the Problem')
-          end = text.index('## 2019–2021: The World Starts Generating the Curriculum')
-          prefix = text[:start]
-          suffix = text[end:]
-          middle = text[start:end]
+          def pull(text, start, end):
+              a = text.index(start)
+              b = text.index(end, a)
+              return text[:a] + text[b:], text[a:b].rstrip()
 
-          heads = [
-              '## 2000: Maybe the Reward Was the Problem',
-              '## 2016–2017: Learning to Learn',
-              '## 2016–2017: Why Are Humans Still Designing the Learner?',
-              '## 2018: The Agent Learns to Dream',
+          text, novelty = pull(
+              text,
               '## 2011: When the Objective Becomes the Trap',
+              '## 2019–2021: The World Starts Generating the Curriculum'
+          )
+
+          text, old = pull(
+              text,
               '## Meanwhile: The Old Dream of Recursive Improvement',
-          ]
+              '## 2023–2026: The Learner Edits the School'
+          )
+          old = old.replace(
+              '## Meanwhile: The Old Dream of Recursive Improvement',
+              '## 2003: The Old Dream Becomes a Design', 1
+          )
+          old = old.replace(
+              'The reinforcement-learning story was not the only route toward self-improvement.\n\nA parallel tradition took the recursion literally.',
+              'The reinforcement-learning story was not the only route toward self-improvement. A parallel tradition had taken the recursion literally decades earlier, and by 2003 it had become a concrete design problem.', 1
+          )
 
-          positions = sorted((middle.index(h), h) for h in heads)
-          sections = {}
-          for i, (pos, h) in enumerate(positions):
-              nxt = positions[i+1][0] if i+1 < len(positions) else len(middle)
-              sections[h] = middle[pos:nxt].rstrip()
+          marker = '## 2016–2017: Learning to Learn'
+          i = text.index(marker)
+          text = text[:i] + old + '\n\n' + novelty + '\n\n' + text[i:]
 
-          old = sections['## Meanwhile: The Old Dream of Recursive Improvement']
-          old = old.replace('## Meanwhile: The Old Dream of Recursive Improvement',
-                            '## 2003: The Old Dream Becomes a Design', 1)
-          old = old.replace('The reinforcement-learning story was not the only route toward self-improvement.\n\nA parallel tradition took the recursion literally.',
-                            'The reinforcement-learning story was not the only route toward self-improvement. A parallel tradition had taken the recursion literally decades earlier, and by 2003 it had become a concrete design problem.', 1)
-
-          ordered = [
-              sections['## 2000: Maybe the Reward Was the Problem'],
-              old,
-              sections['## 2011: When the Objective Becomes the Trap'],
-              sections['## 2016–2017: Learning to Learn'],
-              sections['## 2016–2017: Why Are Humans Still Designing the Learner?'],
-              sections['## 2018: The Agent Learns to Dream'],
-          ]
-
-          text = prefix + '\n\n'.join(ordered) + '\n\n' + suffix
-          text = text.replace('## 1989 and After: A Learner With a Past',
-                              '## A Parallel Problem Since 1989: A Learner With a Past', 1)
-          text = text.replace('## 1990–2017: The Opponent Does Not Let You Stop',
-                              '## A Parallel Pressure, 1973–2017: The Opponent Does Not Let You Stop', 1)
+          text = text.replace(
+              '## 1989 and After: A Learner With a Past',
+              '## A Parallel Problem Since 1989: A Learner With a Past', 1
+          )
+          text = text.replace(
+              '## 1990–2017: The Opponent Does Not Let You Stop',
+              '## A Parallel Pressure, 1973–2017: The Opponent Does Not Let You Stop', 1
+          )
 
           p.write_text(text)
           PY
