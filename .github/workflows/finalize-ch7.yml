@@ -1,0 +1,113 @@
+name: Finalize Chapter 7 historical bridge
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalize-ch7.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Insert classic recursive self-improvement bridge
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path('chapters/07-recursive-self-improvement.md')
+          text = p.read_text()
+          marker = '## The Learner Edits the School\n'
+          if '## The Old Dream of the Machine That Improves Itself' not in text:
+              section = r'''## The Old Dream of the Machine That Improves Itself
+
+Long before language models could edit a repository, people had already noticed where this ladder might lead.
+
+In a monograph drafted in the 1960s, the statistician I. J. Good imagined what he called an **ultraintelligent machine**: a machine better than any human at intellectual activity. Machine design is itself an intellectual activity, Good observed, so a sufficiently capable machine designer could design a better machine, which could then design a better one. The loop could produce what he called an **intelligence explosion**. ([Good](https://www.sciencedirect.com/science/article/pii/S0065245808604180))
+
+The argument is famous because it compresses recursive self-improvement into almost nothing:
+
+> better intelligence → better ability to build intelligence → still better intelligence
+
+But look at everything hidden by the word *better*.
+
+Better at which intellectual activities?
+
+Measured how?
+
+Under which resource constraints?
+
+Does the successor preserve the parent's objective?
+
+Does it remain understandable to the parent?
+
+What prevents a locally clever modification from destroying some capability the evaluator forgot to test?
+
+Good himself did not treat control as irrelevant. The famous passage already contains the qualification that such a machine would need to remain sufficiently docile to be kept under control. The explosive part of the argument is easy to remember. The governance clause is easier to lose.
+
+A few decades later, Jürgen Schmidhuber's **Gödel Machine** attacked the problem from the opposite direction: not *suppose the machine somehow knows how to improve itself*, but *under what formal conditions should it rewrite itself at all?* The proposed system contains its own code, hardware assumptions and utility function in an axiomatic description. A proof searcher looks for a self-rewrite together with a proof that executing the rewrite is more useful than continuing the search. Only then does the machine change itself. ([Schmidhuber](https://arxiv.org/abs/cs/0309048))
+
+It is a beautiful answer to a very clean version of the problem.
+
+Do not trust a modification because it looks clever.
+
+**Prove that the modification is worth making.**
+
+And because the proof has to account for the value of continuing to search for alternatives, the proposal aims at something stronger than ordinary local hill climbing.
+
+There is also a catch large enough to drive most of modern AI through: usefulness has to be expressible in the encoded utility function, the relevant facts have to be available to the proof system, and the benefit of the rewrite has to be provable within the machinery. The formal solution becomes harder exactly where the real world becomes interesting.
+
+A customer does not arrive with an axiomatized utility function.
+
+A scientist cannot prove in advance that an unexplored research direction will matter.
+
+A lifelong learner cannot enumerate every future task whose competence should be preserved.
+
+A language model's evaluator is usually empirical, statistical and incomplete rather than a theorem about all future consequences.
+
+So two traditions were approaching the same mountain from different sides.
+
+The explicit self-improvement tradition asked how a system could safely rewrite the machinery doing the thinking.
+
+Reinforcement learning, meta-learning and open-ended learning kept discovering how much of **learning itself** could be moved inside the system, while repeatedly running into the messiness of exploration, representation, forgetting, reward, curriculum and evaluation.
+
+For years, the first tradition had the recursion but not a practical general machine capable of editing complicated software intelligently. The second had increasingly capable learners but usually kept the outer experimental machinery fixed by humans.
+
+Large language models made the two stories collide.
+
+A general model can now read the code that scaffolds its behavior, propose changes to that code, run the changed system, inspect what happened and try again. We no longer have a proof that a rewrite is globally useful. We have something more ordinary and more dangerous:
+
+**an experiment.**
+
+That puts us directly back inside System 3.
+
+'''
+              text = text.replace(marker, section + marker, 1)
+
+          stop_old = ('STOP—the Self-Taught Optimizer—made the recursion explicit earlier: an LLM-based improver program could itself be supplied as the object to improve. '
+                      'The base model stayed fixed while the scaffold using it changed. The resulting improvers discovered strategies including search and decomposition. '
+                      'The authors were careful about the limits, but the conceptual move was already there: code that uses a model can rewrite code that determines **how the model is used**.')
+          stop_new = stop_old + ' ([STOP](https://arxiv.org/abs/2310.02304))'
+          if stop_old in text and stop_new not in text:
+              text = text.replace(stop_old, stop_new, 1)
+
+          p.write_text(text)
+          PY
+
+      - name: Commit final Chapter 7 and remove temporary workflow
+        shell: bash
+        run: |
+          rm .github/workflows/finalize-ch7.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add chapters/07-recursive-self-improvement.md .github/workflows/finalize-ch7.yml
+          git commit -m "Complete Chapter 7 historical self-improvement arc"
+          git push
