@@ -1,4 +1,4 @@
-# Chapter 8: Automatic Alignment Research
+# Chapter 8: Scalable Oversight
 
 *Learning From a Human Who Cannot Label Everything*
 
