@@ -8,7 +8,7 @@ A few years ago, that sentence would have required several paragraphs of explana
 
 The goal was almost offensively ambitious: build a C compiler in Rust from scratch and push it far enough to compile the Linux kernel. Over nearly two thousand Claude Code sessions, the agents produced roughly a hundred thousand lines of compiler code. The resulting compiler eventually built Linux 6.9 on x86, ARM and RISC-V, along with projects such as QEMU, FFmpeg, PostgreSQL and Redis. It was still nowhere near GCC, and one stage of the x86 boot path still depended on GCC, but this was well beyond the kind of toy problem where sixteen agents can succeed by taking sixteen conveniently independent buttons.
 
-The first organization was almost embarrassingly simple. Each agent worked in its own container with its own copy of the repository. Before beginning a task, it wrote a small lock file describing what it intended to work on. Git synchronized the locks. If another agent had already claimed the problem, the newcomer found something else. When an agent finished, it pulled the latest changes, merged its work, pushed the result and released the lock.
+The first organization was simple. Each agent worked in its own container with its own copy of the repository. Before beginning a task, it wrote a small lock file describing what it intended to work on. Git synchronized the locks. If another agent had already claimed the problem, the newcomer found something else. When an agent finished, it pulled the latest changes, merged its work, pushed the result and released the lock.
 
 There was no manager assigning tickets and no orchestrator holding the whole compiler architecture in its head. Agents inspected the project, found something useful to attack and left enough information behind for later workers to reconstruct what had happened.
 
@@ -80,7 +80,7 @@ Real civilization did not have Senku.
 
 Nobody in a Neolithic village kept a secret roadmap containing writing, standardized measurement, universities, controlled experiments, statistics, semiconductors and CERN. The institutions we now treat as obvious emerged in different places for different reasons. Knowledge moved through Mesopotamian, Egyptian, Indian, Chinese, Greek, Persian, Arabic, African and European traditions. It travelled, disappeared, was translated, modified, reinvented, appropriated and occasionally rediscovered by somebody who received most of the credit.
 
-There is no clean staircase in which one civilization hands the torch of Reason to the next. The more interesting pattern is that societies repeatedly hit limits in collective cognition and improvised ways around them. A local pressure produced a record, office, standard, instrument or procedure. That mechanism changed what the society could do. New capabilities created new scaling problems. The institution changed again.
+There is no clean staircase in which one civilization hands the torch of Reason to the next. Societies repeatedly hit limits in collective cognition and improvised ways around them. A local pressure produced a record, office, standard, instrument or procedure. That changed what the society could do, which created new problems, which changed the institution again.
 
 Civilization had no senior architect.
 
@@ -146,7 +146,7 @@ Civilization is a trust chain with plumbing.
 
 Large states made this problem visible early. Imperial China governed large populations through records, standardized texts, offices and educated officials operating across distances no ruler could inspect personally. Other intellectual traditions developed different combinations of mathematics, medicine, astronomy, engineering, administration and scholarship. There was no inevitable path from bureaucracy to modern science, and no civilization possessed the final architecture in advance.
 
-That matters because an invention is not an institution. A population full of intelligent people is not an epistemic architecture. What matters is how people, tools and incentives are arranged: which observations survive, who gets access to instruments, which questions can become careers, which claims may challenge authority, and which criticism has enough standing to change what happens next.
+An invention is not an institution. A population full of intelligent people is not an epistemic architecture. What matters is how people, tools and incentives are arranged: which observations survive, who gets access to instruments, which questions can become careers, which claims may challenge authority, and which criticism has enough standing to change what happens next.
 
 A hospital makes the same point at human scale.
 
@@ -178,13 +178,13 @@ Several minds do not automatically produce several sources of evidence. If every
 
 Agreement can still be useful. It is simply weaker evidence than the number of speakers suggests.
 
-This is why some branches need to remain isolated for a while. A critic may need to inspect the artifact before reading the builder's explanation. One researcher may need to develop an alternative theory without first studying the current favorite. A strange branch may deserve another experiment even if nobody believes it is likely to win.
+Some branches therefore need to remain isolated for a while. A critic may need to inspect the artifact before reading the builder's explanation. One researcher may need to develop an alternative theory without first studying the current favorite. A strange branch may deserve another experiment even if nobody believes it is likely to win.
 
 Chapter 2 preserved different regions of a search space because the champion might be sitting on the wrong mountain. At the level of a society, what needs preserving may be a theory about the problem itself. One lineage thinks the bottleneck is data. Another thinks the architecture is wrong. A third thinks both are symptoms because the objective is malformed. Let them collect different evidence and become interestingly wrong in different ways before forcing them into one conversation.
 
 Permanent disagreement would be useless. An institution that never converges is simply a philosophy department with an alarming compute bill.
 
-Independence matters because disagreement can carry information. But eventually disagreement needs something capable of settling at least part of it.
+Independence matters because disagreement can carry information. Eventually, though, disagreement needs something capable of settling at least part of it.
 
 For that we need more than another opinion.
 
@@ -202,11 +202,9 @@ A darkened room. A small aperture. Controlled rays. Mirrors. Geometry. The setup
 
 A record preserves what somebody says happened. An experiment gives the world another chance to answer.
 
-The shift is from authority toward constructed exposure. We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens.
+We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens.
 
-No one person invented “the scientific method” here. Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form.
-
-That is precisely the point. The architecture is accumulating piecemeal.
+No one person invented “the scientific method” here. Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form. No one designed the whole arrangement. The pieces accumulated.
 
 The agent version is almost embarrassingly literal. Run the program. Execute the query. Open the browser. Measure the latency. Compile the kernel against GCC. Reasoning has left the conversation. Something outside the current explanation now has a chance to be inconvenient.
 
@@ -215,8 +213,6 @@ But an experiment still has to travel. If I want to challenge your observation, 
 Printing changed that part of the problem. Manuscripts had travelled before it, but slowly and imperfectly. Printing changed the topology of disagreement. More people could possess the same description. Corrections could circulate. So could propaganda and confident pamphlets written by people who had discovered the topic sometime after breakfast. Lower publication cost has always had side effects.
 
 For knowledge, reproducibility of the description matters. A society made only of ephemeral contexts can argue forever and still struggle to accumulate disagreement. The compiler agents needed Git and progress files for the same reason later investigators need durable records: criticism requires something that outlives the conversation.
-
-Then instruments made the chain stranger.
 
 In the early seventeenth century, spectacle makers in the Low Countries demonstrated devices capable of making distant objects appear closer. Galileo built improved versions and pointed them toward the sky. He reported mountains on the Moon, moons orbiting Jupiter and other observations that complicated inherited cosmology.
 
@@ -240,7 +236,7 @@ A broken tool is not external grounding. It is a very efficient route to externa
 
 In 1660, a group that became the Royal Society formed in England. Its members observed, corresponded, experimented, argued and eventually published. *Philosophical Transactions* appeared a few years later.
 
-There was no moment when somebody installed `science-1.0`. What emerged was a growing collection of institutional devices.
+There was no moment when somebody installed `science-1.0`. A collection of institutional devices accumulated instead.
 
 A person reports an observation. The report circulates. An apparatus is described. An experiment may happen in front of witnesses. Someone elsewhere tries to repeat it. A journal creates public memory and a priority mechanism: this person made this claim at this time. Reputation develops around investigators, instruments and procedures. The question *did this happen?* acquires machinery.
 
@@ -252,13 +248,13 @@ Reality had pushed back against the package. It had not highlighted the guilty c
 
 Software engineers know this sensation. A failing integration test proves the system is broken somewhere. Wonderful. You now have debugging.
 
-A serious epistemic institution therefore needs archaeology. Which instrument produced the measurement? Which analysis transformed it? Which assumptions were required? What was actually observed and which interpretation was added afterward?
+So the institution needs archaeology. Which instrument produced the measurement? Which analysis transformed it? Which assumptions were required? What was actually observed and which interpretation was added afterward?
 
 In an agent system, this becomes provenance around a claim, an assumption graph, a trace. Without the history, reality can tell us we are wrong while leaving us remarkably creative about which part of the system deserves blame.
 
-Medicine later made this kind of institutional self-restraint even more explicit. In randomized trials, allocation procedures are designed partly to stop the investigator's own preferences from deciding who receives which treatment. Sometimes bureaucracy is epistemology with a clipboard.
+Medicine later made this kind of self-restraint even more explicit. In randomized trials, allocation procedures are designed partly to stop the investigator's own preferences from deciding who receives which treatment. Sometimes bureaucracy is epistemology with a clipboard.
 
-By now knowledge is no longer merely a proposition attached to a prestigious person. Increasingly it comes with a route through which someone else might expose the claim to the world again.
+Knowledge is no longer merely a proposition attached to a prestigious person. It increasingly comes with a route through which someone else might expose the claim to the world again.
 
 A trust chain has acquired an escape hatch.
 
@@ -274,19 +270,17 @@ The hypothesis? The measurement? The experiment? The analysis? The evaluator? Th
 
 Reality does not care which file contains the variable named `hypothesis`. It pushes back against the arrangement as a whole.
 
-This is why organization becomes epistemic. Who sees which evidence? Which roles are allowed to modify the evaluator? Which branches share context? Who can stop deployment? Which result is allowed to become everybody else's premise?
+Organization is now epistemic. Who sees which evidence? Which roles are allowed to modify the evaluator? Which branches share context? Who can stop deployment? Which result is allowed to become everybody else's premise?
 
 Modern agent systems can increasingly make some of these choices dynamically. One problem may need several independent investigations; another a specialist and verifier; another parallel workers around separable components.
 
-The bureaucracy becomes temporary. The org chart becomes part of inference. **Organization itself has entered the search space.**
+The bureaucracy can be temporary; the org chart can change with the problem. **Organization itself has entered the search space.**
 
-That sounds like an obvious improvement until you notice that whoever shapes the organization also shapes what it can discover.
+Whoever shapes the organization also shapes what it can discover.
 
 Imagine research program A is currently ahead and has twelve agents. Program B looks weaker and has one. Where does agent thirteen go?
 
-The natural answer is A.
-
-But the answer can become self-reinforcing. More agents produce more experiments. More experiments produce more evidence. More evidence raises confidence. Confidence attracts more resources. Eventually the leading theory owns the building.
+The natural answer is A. But the answer can become self-reinforcing. More agents produce more experiments. More experiments produce more evidence. More evidence raises confidence. Confidence attracts more resources. Eventually the leading theory owns the building.
 
 The current best explanation and the best use of the next unit of investigative capacity are not necessarily the same question. A weak theory may deserve another experiment because it explains the one anomaly the dominant framework cannot touch. A critic whose objections never change allocation is not really part of the epistemic institution. She is doing quality-assurance theatre.
 
@@ -364,19 +358,13 @@ The verbs are harder to ignore.
 
 Preserve what happened so the next investigator does not begin from zero. Create standards so results can travel. Specialize. Give authority locally. Keep some investigators independent. Build instruments when existing perception cannot answer the question. Construct procedures capable of embarrassing a persuasive theory. Let claims carry enough history that a later investigator can ask where they came from. Allow several explanations to survive long enough to become meaningfully different. Remember failures. Notice anomalies. Sometimes discover that the instrument was wrong, sometimes that the theory was wrong, and sometimes that the procedure everyone trusted is itself the thing that needs to change.
 
-I had been treating these as separate features of an agent architecture. They were beginning to look like fragments of something much older.
-
-Chapter 1 moved control upward. Chapter 2 gave autonomous search an Immutable Harness. Chapter 3 moved the choice of what to try next into Deep Mode. Chapter 4 asked what any of these systems were entitled to trust.
-
-Now the architecture has acquired persistent records, standards, instruments, specialization, local authority, independent lineages, procedures for criticism and institutions capable of knowing something none of their members can know alone.
+By now the agent architecture has acquired persistent records, standards, instruments, specialization, local authority, independent lineages and procedures for criticism. More strangely, it has acquired the possibility that the whole arrangement can know something none of its members can know alone.
 
 I thought I was designing a society of agents.
 
 Humanity had already spent centuries building a society of fallible knowers.
 
 We call it **science**.
-
-That sentence is almost offensively small compared with the machinery underneath it.
 
 **System 3 is science.**
 
@@ -388,9 +376,9 @@ Useful, but much too small.
 
 I mean science as a civilization-scale cognitive technology: laboratories, instruments, notebooks, mathematics, journals, arguments, standards, archives, statistics, specialists, engineers, technicians, rival programs, reputation, criticism, replication, negative results, anomalies, and the occasional researcher who spends six months developing an elegant theory before discovering that the cable was loose.
 
-Historical science is not a perfect model. That is one reason it is useful. It contains hierarchy, prestige, fashion, fraud, publication bias, career incentives, bureaucracy and communities capable of becoming remarkably sophisticated about the wrong thing. Science works without requiring scientists to stop being human.
+Historical science is messy. It contains hierarchy, prestige, fashion, fraud, publication bias, career incentives, bureaucracy and communities capable of becoming remarkably sophisticated about the wrong thing. That is part of why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners.
 
-Observations can outlive observers. Instruments extend perception. Expertise becomes local. Claims travel through trust chains. Critics can attack conclusions they did not produce. Different programs can survive long enough to disagree meaningfully. One generation can begin somewhere other than zero. And through all the machinery there remain routes—imperfect, delayed, expensive and sometimes politically obstructed—through which reality can still make the institution uncomfortable.
+What matters is not that science abolished error. Observations can outlive observers. Instruments extend perception. Expertise becomes local. Claims travel through trust chains. Critics can attack conclusions they did not produce. Rival programs can survive long enough to disagree meaningfully. And through the machinery there remain routes—imperfect, delayed, expensive and sometimes politically obstructed—through which reality can still make the institution uncomfortable.
 
 That is the architecture I want from System 3: not an omniscient model, but a society of fallible minds that can remember without turning memory into scripture, trust without making authority universal, specialize without losing all connection between specialties, and disagree without putting everybody in the same meeting until the group reaches consensus from exhaustion.
 
