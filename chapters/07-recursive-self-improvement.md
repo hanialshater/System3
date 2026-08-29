@@ -2,25 +2,21 @@
 
 *When Science Turns Inward*
 
-Chapter 6 ended with a dangerous question.
+Chapter 6 ended by making a strange kind of software possible.
 
-We had taken parts of institutional learning—memory, patterns, evaluators, retrieval, tools, workflows—and made them executable. They could survive individual agents and change what later agents did without changing the underlying model weights.
+Memory, patterns, evaluators, retrieval, tools and workflows could survive individual agents and change what later agents did. An institution could learn without changing the underlying model weights.
 
 Once the machinery of learning becomes software, why should humans be the only ones allowed to edit it?
 
-That is where recursive self-improvement stops being science fiction and becomes an engineering problem.
+That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
 Computing has an old image for this. In 1962, Tim Hart and Mike Levin described a Lisp compiler written in Lisp that could compile its own source. The tool could participate in producing the next version of the tool. Compiler people call this **self-hosting**. ([Hart & Levin / LISP 1.5 archive](https://softwarepreservation.computerhistory.org/LISP/lisp15_family.html))
 
-Chapter 5 began with agents building a compiler. The compiler returns here for a different reason.
-
-A self-hosting compiler contains the whole warning in miniature:
+Chapter 5 began with agents building a compiler. The compiler returns here for a different reason. A self-hosting compiler contains the whole warning in miniature:
 
 **self-reference is not self-improvement.**
 
-A compiler can compile a worse compiler.
-
-A research system can redesign itself into a slower research system. A learned optimizer can become excellent on yesterday's tasks and brittle tomorrow. The ability to modify the machinery that produces you tells us a boundary has become permeable. It does not tell us which changes deserve to survive.
+A compiler can compile a worse compiler. A research system can redesign itself into a slower research system. A learned optimizer can become excellent on yesterday's tasks and brittle tomorrow. The ability to modify the machinery that produces you tells us a boundary has become permeable. It does not tell us which changes deserve to survive.
 
 Three years after Hart and Levin's memo, I. J. Good gave that permeability a much more dramatic consequence. In 1965 he imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**. ([Good](https://www.sciencedirect.com/science/article/pii/S0065245808604180))
 
@@ -34,21 +30,9 @@ The history is messy, but one pattern keeps reappearing:
 
 **we kept discovering another job the teacher was doing.**
 
-First the teacher stopped choosing the action.
+First the teacher stopped choosing the action. Then she stopped supplying every useful experience. She stopped providing every opponent and every curriculum. The reward itself became uncertain. The learner began preserving a life rather than completing one training run. Learning rules, optimizers and architectures entered the search space. World models generated imagined experience. Open-ended systems generated problems. Human judgment became a learned instrument. General models eventually became capable of editing the tools, prompts, memories, workflows and research procedures shaping their own future behavior.
 
-Then she stopped supplying every useful experience.
-
-She stopped providing every opponent and every curriculum.
-
-The reward itself became uncertain.
-
-The learner began preserving a life rather than completing one training run.
-
-Learning rules, optimizers and architectures entered the search space. World models generated imagined experience. Open-ended systems generated problems. Human judgment became a learned instrument. General models eventually became capable of editing the tools, prompts, memories, workflows and research procedures shaping their own future behavior.
-
-Every move inward bought autonomy.
-
-Every move inward also exposed another hidden decision the human had been making.
+Every move inward bought autonomy. Every move inward also exposed another hidden decision the human had been making.
 
 That second history is the one I care about.
 
@@ -58,17 +42,13 @@ Modern reinforcement learning begins with an unusually generous assumption disgu
 
 An agent sees a state, takes an action, receives a reward and finds itself somewhere new. Nobody tells it which action was correct. The learner has to discover behavior through consequences.
 
-Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and eventually discover useful action policies without a human labeling every move. ([Sutton](https://mlanthology.org/mlj/1988/sutton1988mlj-learning/); [Watkins & Dayan](https://link.springer.com/article/10.1007/BF00992698))
+Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and eventually discover useful policies without a human labeling every move. ([Sutton](https://mlanthology.org/mlj/1988/sutton1988mlj-learning/); [Watkins & Dayan](https://link.springer.com/article/10.1007/BF00992698))
 
-The human no longer specifies the path.
-
-The human specifies the **score**.
+The human no longer specifies the path. The human specifies the **score**.
 
 That was one of the great bargains of learning systems. A machine can discover strategies nobody wrote down because the designer moved upward from choosing actions to defining what outcomes count.
 
-It also hides a remarkable amount of human labor inside the environment.
-
-Who chose the state representation? Which actions exist? Why is one event worth +1 and another -1? When does the episode end? Which failures are recoverable? Who arranged the world so useful behavior can be discovered before the sun burns out?
+It also hides a remarkable amount of human labor inside the environment. Who chose the state representation? Which actions exist? Why is one event worth +1 and another -1? When does the episode end? Which failures are recoverable? Who arranged the world so useful behavior can be discovered before the sun burns out?
 
 The reinforcement learner looks autonomous because the teacher moved into the walls.
 
@@ -76,11 +56,7 @@ Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD
 
 Self-play removed another piece of external instruction: the opponent could come from the learner itself. Yesterday's agent generated today's training data.
 
-But the board did not move.
-
-The legal moves did not move.
-
-The win condition did not move.
+But the board did not move. The legal moves did not move. The win condition did not move.
 
 Backgammon could generate an enormous curriculum precisely because somebody outside the loop had already settled what winning meant.
 
@@ -116,13 +92,9 @@ Pathak's curiosity work did not simply reward prediction error over raw pixels. 
 
 Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts in order to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action. ([Bajcsy](https://oamonitor.ireland.openaire.eu/national/search/publication?pid=10.1109%2F5.5968); [Brooks](https://people.csail.mit.edu/brooks/papers/representation.pdf))
 
-A learner's **body** determines part of its curriculum.
+A learner's **body** determines part of its curriculum. A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator has a different epistemic body from a chatbot restricted to text. Permissions matter too. Give an agent read-only access and one set of experiments is possible. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
 
-A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator has a different epistemic body from a chatbot restricted to text. Permissions matter too. Give an agent read-only access and one set of experiments is possible. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
-
-Tools and representations do not merely help the learner solve a fixed problem.
-
-They help determine what can become **learnable**.
+Tools and representations do not merely help the learner solve a fixed problem. They help determine what can become **learnable**.
 
 The learner is beginning to shape the conditions under which learning occurs.
 
@@ -140,19 +112,7 @@ Neural networks have historically struggled with this. Michael McCloskey and Nea
 
 Now “better” becomes harder to rank.
 
-Version B scores 95 on today's task and A scores 85. Easy.
-
-But B forgot three older skills.
-
-Better?
-
-B learns new tasks twice as quickly but erases rare knowledge needed once a year.
-
-Better?
-
-B preserves everything and becomes so rigid that it cannot adapt to a changed world.
-
-Better?
+Version B scores 95 on today's task and A scores 85. Easy. But B forgot three older skills. Better? B learns new tasks twice as quickly but erases rare knowledge needed once a year. Better? B preserves everything and becomes so rigid that it cannot adapt to a changed world. Better?
 
 Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful.
 
@@ -176,23 +136,17 @@ W. Daniel Hillis used the computational version in 1990 while evolving sorting n
 
 Yesterday's learner can generate tomorrow's difficulty.
 
-Curiosity says: seek somewhere informative.
-
-Competition says: something informative—or dangerous—is coming whether you seek it or not.
+Curiosity says: seek somewhere informative. Competition says: something informative—or dangerous—is coming whether you seek it or not.
 
 A security system cannot preserve yesterday's competence if attackers change strategy. A market participant can become relatively worse without becoming absolutely less capable if everyone around it improves faster.
 
 But competition gives no guarantee that the direction of adaptation is good. An arms race can produce better claws and thicker armor without producing welfare. Two systems can spend increasing amounts of intelligence outmaneuvering one another while creating little value outside the contest.
 
-Selection pressure produces adaptation.
-
-It does not supply purpose.
+Selection pressure produces adaptation. It does not supply purpose.
 
 Games hide that problem because the constitution is fixed. Chess never asks whether checkmate remains desirable after move forty-three.
 
-Competition removes another teacher from the curriculum.
-
-It does not remove the teacher from the **purpose of the curriculum**.
+Competition removes another teacher from the curriculum. It does not remove the teacher from the **purpose of the curriculum**.
 
 ## Maybe the Reward Was the Problem
 
@@ -218,15 +172,9 @@ Later work made the uncertainty more explicit. Cooperative Inverse Reinforcement
 
 Preference-based reinforcement learning provided a practical cousin: ask humans which of two trajectory segments looks better and learn a reward model from those comparisons. ([Christiano et al.](https://arxiv.org/abs/1706.03741)) That lineage later became central to reinforcement learning from human feedback for language models.
 
-Another teacher job had become learnable.
+Another teacher job had become learnable, and we immediately discovered that humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired, socially influenced and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
 
-And we immediately discovered that humans are not reward functions walking around in shoes.
-
-They are inconsistent, constrained, strategic, tired, socially influenced and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
-
-The problem is no longer only how to improve toward an objective.
-
-It is how to remain uncertain about what the objective is.
+The problem is no longer only how to improve toward an objective. It is how to remain uncertain about what the objective is.
 
 Chapter 9 will live inside that problem. For now, keep the historical move in view: even the score has begun to move inward.
 
@@ -238,11 +186,7 @@ why are humans still designing the learner?
 
 Meta-learning attacks this directly. In RL², a recurrent network was trained across distributions of reinforcement-learning tasks so that its recurrent dynamics effectively implemented a fast learned learning procedure inside a new task. MAML instead optimized parameters so that a small number of gradient steps could adapt effectively to new tasks. ([Duan et al.](https://openai.com/index/rl2//); [Finn, Abbeel & Levine](https://proceedings.mlr.press/v70/finn17a.html))
 
-Now learning speed itself becomes a capability.
-
-One system may perform best before adaptation. Another starts lower but becomes excellent after five examples.
-
-Which is better depends on whether the world sits still.
+Now learning speed itself becomes a capability. One system may perform best before adaptation. Another starts lower but becomes excellent after five examples. Which is better depends on whether the world sits still.
 
 Meta-learning creates two timescales:
 
@@ -253,19 +197,11 @@ The second is recognizably closer to recursive self-improvement.
 
 But the teacher is still there. Somebody chose the task distribution on which the learner learned to learn.
 
-Meta-learning does not eliminate the curriculum.
-
-It moves the curriculum outward.
+Meta-learning does not eliminate the curriculum. It moves the curriculum outward.
 
 Learned optimizers and Neural Architecture Search pushed the editable boundary further. Researchers trained models to generate parameter-update rules or neural architectures, using performance on selected problems as the evaluator. ([Andrychowicz et al.](https://arxiv.org/abs/1606.04474); [Bello et al.](https://proceedings.mlr.press/v70/bello17a.html); [Zoph & Le](https://research.google/pubs/neural-architecture-search-with-reinforcement-learning/))
 
-At first the machine learned the answer.
-
-Then it learned a policy.
-
-Then it learned how to learn.
-
-Now it could search over pieces of the machinery that **does the learning**.
+At first the machine learned the answer. Then it learned a policy. Then it learned how to learn. Now it could search over pieces of the machinery that **does the learning**.
 
 The human had moved from architect to judge.
 
@@ -291,11 +227,7 @@ A company cannot.
 
 A scientist cannot prove in advance that an unexplored research program will matter. A lifelong learner cannot enumerate every future skill worth preserving. Human purposes do not arrive as an axiomatized utility function.
 
-So two histories were approaching the same mountain from opposite sides.
-
-The explicit recursive-self-improvement tradition had self-reference and meta-level ambition, but no practical general system able to inspect and rewrite complicated software intelligently.
-
-Learning systems had increasingly powerful adaptive machinery, but humans usually kept the outer research process, evaluator and environment fixed.
+So two histories were approaching the same mountain from opposite sides. The explicit recursive-self-improvement tradition had self-reference and meta-level ambition, but no practical general system able to inspect and rewrite complicated software intelligently. Learning systems had increasingly powerful adaptive machinery, but humans usually kept the outer research process, evaluator and environment fixed.
 
 Foundation models made those histories collide.
 
@@ -307,9 +239,7 @@ We have something much more ordinary.
 
 **An experiment.**
 
-Recursive self-improvement comes back to the framing we began with:
-
-science turns inward.
+Recursive self-improvement comes back to the framing we began with: science turns inward.
 
 ## The Learner Dreams, and the Dream Can Be Wrong
 
@@ -317,17 +247,13 @@ Model-based reinforcement learning removes another dependence on the external te
 
 Ha and Schmidhuber's *World Models* made the idea memorable: learn a compressed generative model of the environment, train a controller partly inside that generated “dream,” then transfer behavior back to the real environment. ([Ha & Schmidhuber](https://arxiv.org/abs/1803.10122)) Later systems such as Dreamer pushed model-based learning much further.
 
-Imagined experience is enormously attractive because real experience is expensive. A robot can break only so many arms. A company can run only so many damaging experiments. A scientist may wait months for an observation.
+Imagined experience is attractive because real experience is expensive. A robot can break only so many arms. A company can run only so many damaging experiments. A scientist may wait months for an observation.
 
-But the epistemic debt has not vanished.
-
-It moved into the model.
+But the epistemic debt has not vanished. It moved into the model.
 
 A learner can become extremely competent inside a world that is slightly wrong. The strategy looks brilliant until gravity, customers or compiler behavior get a vote.
 
-The world model is an instrument.
-
-The dream is not reality.
+The world model is an instrument. The dream is not reality.
 
 Simulation expands search. Contact with the world still decides which imagined regularities deserve trust.
 
@@ -357,11 +283,7 @@ Open-ended systems push this further by generating **problems** as well as solut
 
 Now the world defining competence is moving with the learner.
 
-If the benchmark stays fixed, improvement is easy to plot.
-
-Score goes up.
-
-If the environment evolves too, progress may mean breadth, adaptation speed, richer strategies, harder generated tasks or useful stepping stones for descendants.
+If the benchmark stays fixed, improvement is easy to plot: score goes up. If the environment evolves too, progress may mean breadth, adaptation speed, richer strategies, harder generated tasks or useful stepping stones for descendants.
 
 There is no final fitness scoreboard on Earth on which mammals eventually beat bacteria 87.4 to 82.1.
 
@@ -395,9 +317,7 @@ What is the benchmark for a good autonomous organization? Profit? Customer value
 
 What is the benchmark for becoming a better learner? Performance now? Adaptation speed? Breadth? Memory? Transfer? Curiosity? Safety? Compute efficiency?
 
-The closed benchmark keeps returning because we need something capable of saying **yes** or **no**.
-
-But as capability expands, the ruler measures a smaller slice of the thing.
+The closed benchmark keeps returning because we need something capable of saying **yes** or **no**. But as capability expands, the ruler measures a smaller slice of the thing.
 
 The object being measured keeps growing new dimensions.
 
@@ -409,15 +329,13 @@ In 2022, InstructGPT used human demonstrations and rankings to train a reward mo
 
 Human preference had become a learned instrument.
 
-That scales judgment far beyond direct human labeling. It also creates a new proxy.
-
-A reward model can have stylistic biases. Humans can prefer confident errors. The model can generalize badly outside the feedback distribution. A sufficiently strong optimizer may discover outputs that score well under the learned judge for reasons nobody intended.
+That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can have stylistic biases. Humans can prefer confident errors. The model can generalize badly outside the feedback distribution. A sufficiently strong optimizer may discover outputs that score well under the learned judge for reasons nobody intended.
 
 We solved part of the scaling problem by making the judge computational.
 
 Now the judge joins the attack surface.
 
-This is where the modern engineering story of recursive self-improvement becomes possible—and dangerous.
+That is where the modern engineering story of recursive self-improvement becomes possible—and dangerous.
 
 ## The Learner Edits the School
 
@@ -435,11 +353,7 @@ Machine learning is being used to do machine-learning research.
 
 The tool is becoming self-hosting in the broader sense that matters here.
 
-A compiler compiles a compiler.
-
-A learning system searches for a learning system.
-
-A research agent researches the process by which research agents research.
+A compiler compiles a compiler. A learning system searches for a learning system. A research agent researches the process by which research agents research.
 
 That last sentence sounds like parody until you notice the leverage. Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change.
 
@@ -453,9 +367,7 @@ becomes:
 
 > I can change how I decide **how to change how I solve the problem**.
 
-Chapter 6 made patterns, memory, evaluators, tools, workflows and organizational rules into executable culture.
-
-Now more of that culture is editable.
+Chapter 6 made patterns, memory, evaluators, tools, workflows and organizational rules into executable culture. Now more of that culture is editable.
 
 The scientific institution has enough general-purpose software competence to **modify parts of the laboratory while the experiment is still running**.
 
@@ -463,9 +375,7 @@ The scientific institution has enough general-purpose software competence to **m
 
 This is where self-editing and self-improvement have to separate.
 
-Suppose an agent changes its memory policy and the benchmark score rises.
-
-What improved?
+Suppose an agent changes its memory policy and the benchmark score rises. What improved?
 
 Perhaps the memory policy helped. Perhaps the new prompt caused longer reasoning. Perhaps the system spent more tokens. Perhaps the benchmark had a lucky sample. Perhaps it found an evaluator loophole. Perhaps it gained benchmark performance while losing maintainability or latency.
 
@@ -475,11 +385,7 @@ Self-improving harnesses therefore start looking less like ordinary software upd
 
 The philosophy from Chapter 6 becomes almost embarrassingly literal.
 
-Popper gets a filesystem.
-
-Duhem–Quine gets a debugger.
-
-Lakatos gets an archive of competing descendants.
+Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants.
 
 Memory policy becomes a hypothesis. Workflow becomes an intervention. The evaluator becomes an instrument. Organization becomes an experimental variable.
 
@@ -511,13 +417,9 @@ The phrase *self-improvement* also hides different kinds of recursion.
 
 **Recursive self-improvement** adds leverage: the improvement changes the system's ability to produce further improvements.
 
-The first three do not guarantee the fourth.
+The first three do not guarantee the fourth. A compiler can compile a worse compiler.
 
-A compiler can compile a worse compiler.
-
-Recursion tells us **where the output goes**.
-
-It does not tell us **whether the output deserves to survive**.
+Recursion tells us **where the output goes**. It does not tell us **whether the output deserves to survive**.
 
 There is no context-free scalar called *improvement* hiding behind the equations. Better is always conditional on an environment, a horizon, a resource budget, constraints and some account of what matters.
 
@@ -527,41 +429,17 @@ Remove the qualifiers and “recursive self-improvement” becomes dangerously c
 
 More what?
 
-## Every Freedom Creates a New Failure Mode
+## The Shadow History
 
-The history of autonomy has a shadow history.
+The history of autonomy has a second column.
 
-Give the learner reward and it can exploit the reward without doing what the reward was meant to represent.
+Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Give it a learned representation and the representation can hide the distinction that mattered. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
 
-Give it curiosity and it can become fascinated by noise.
-
-Give it a learned representation and the representation can hide the distinction that mattered.
-
-Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt.
-
-Give it self-play and it can become exquisite inside a narrow ruleset.
-
-Infer a reward from human behavior and the inference can confuse constraint, habit or error with value.
-
-Train a meta-learner on a task distribution and it may learn how to learn **that distribution**.
-
-Let it train in a world model and it can become brilliant inside a dream whose physics are wrong.
-
-Reward novelty and it can produce a museum of useless weirdness.
-
-Generate environments automatically and the generator can drift toward tasks that are easy to score or interesting only to itself.
-
-Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
-
-These failures are not accidents beside the capability.
-
-They are produced by the same move that creates the capability.
+These failures are not accidents beside the capability. They are produced by the same move that creates the capability.
 
 Specification gaming makes the pattern visible. Reinforcement-learning agents have repeatedly found literal ways to satisfy scoring rules while violating the intended task. ([Krakovna et al.](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/))
 
-The optimizer is not malicious.
-
-It is more literal than the designer.
+The optimizer is not malicious. It is more literal than the designer.
 
 Recursive self-improvement makes that gap more dangerous because a wrong evaluator need not merely select a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards.
 
@@ -593,13 +471,7 @@ Reward tampering is the reinforcement-learning version: influence the process pr
 
 The history of removing the teacher has reached a wall.
 
-Choose actions? Good.
-
-Choose experiences? Often good.
-
-Generate curricula and opponents? Potentially excellent.
-
-Search architectures and workflows? Interesting.
+Choose actions? Good. Choose experiences? Often good. Generate curricula and opponents? Potentially excellent. Search architectures and workflows? Interesting.
 
 Modify the evaluator so the workflow always passes?
 
@@ -633,9 +505,7 @@ Changing a prompt may need one successful test. Changing a shared pattern may ne
 
 Changing the objective that decides which descendants survive is not an ordinary refactor.
 
-This looks like computer security.
-
-It also looks like constitutional government.
+This looks like computer security. It also looks like constitutional government.
 
 A government can change policy; it should not be able to silently redefine an election result. The team being audited should not own the audit log. A scientist may revise a theory; she should not rewrite yesterday's measurements to make the theory look correct.
 
@@ -643,9 +513,7 @@ We have reinvented constitutional government because the AI wanted a better benc
 
 Constitutions have the same problem as Pattern Language. One that can never change becomes a prison. One that the current government can rewrite whenever it loses is barely a constitution.
 
-Self-improvement therefore needs **amendment procedures**.
-
-Slower change near the objective. More independent evidence. More reversibility. More auditability. Broader authority when more principals are affected. And routes through which the world and the humans affected by the system can continue to say no.
+Self-improvement therefore needs **amendment procedures**: slower change near the objective, more independent evidence, more reversibility, more auditability, broader authority when more principals are affected, and routes through which the world and the humans affected by the system can continue to say no.
 
 That is System 3 applied to improvement itself.
 
@@ -659,9 +527,7 @@ Another is **adaptation**. The world changes. New tools appear, markets move, us
 
 A third is **open-ended discovery**. Useful stepping stones often appear before anyone can explain their final value. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient.
 
-Then the Red Queen returns with the uncomfortable answer:
-
-**competition.**
+Then the Red Queen returns with the uncomfortable answer: **competition**.
 
 If other systems are learning, standing still may not preserve your position. Security systems, firms, laboratories and states can all face adaptive environments in which the cost of refusing to improve depends partly on what others do.
 
@@ -669,9 +535,7 @@ Imagine two research organizations. One changes slowly, demands strong evidence 
 
 If the second gains enough scientific, economic or strategic advantage, the first may feel pressure to accelerate even if everyone inside it prefers a slower equilibrium.
 
-Now the object being selected is not only the model.
-
-It is the **improvement regime**.
+Now the object being selected is not only the model. It is the **improvement regime**.
 
 That does not make acceleration inevitable or good. Institutions can coordinate, regulate, share standards and choose margins. It means only that “do not improve” is not always a stable local policy in a world of other adaptive actors.
 
@@ -685,9 +549,7 @@ Recursive self-improvement therefore contains three questions that machine learn
 
 “More capable” is not a moral category. A virus can improve at replication. A propaganda system can improve at persuasion. A surveillance apparatus can improve at prediction. A research agent can make experiments cheaper and accelerate medicine and weapons research in the same week.
 
-Self-improvement tells us only that a system is becoming better according to **some ordering**.
-
-It does not tell us why that ordering deserves to govern which descendants survive.
+Self-improvement tells us only that a system is becoming better according to **some ordering**. It does not tell us why that ordering deserves to govern which descendants survive.
 
 Selection rules are choices.
 
@@ -711,35 +573,13 @@ So the answer is not an immutable final utility function floating over the syste
 
 It is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
 
-Lower layers can move quickly.
-
-Higher layers should move deliberately.
-
-And when a higher layer moves, the move should leave a trust chain.
+Lower layers can move quickly. Higher layers should move deliberately. And when a higher layer moves, the move should leave a trust chain.
 
 ## The Teacher's Last Job
 
 Seen from far enough away, the history is remarkably consistent.
 
-Reinforcement learning let the agent choose actions while the designer supplied reward and environment.
-
-Curiosity moved part of experience selection inward while leaving a judgment about what kind of novelty mattered.
-
-Self-play generated curriculum while leaving the rules and victory condition fixed.
-
-Continual learning made preservation part of improvement.
-
-Inverse reinforcement learning made the objective uncertain.
-
-Meta-learning and architecture search moved pieces of the learner itself into search while leaving task distributions and evaluators outside.
-
-World models generated experience while remaining models rather than worlds.
-
-Novelty and open-ended learning generated stepping stones and tasks while making progress harder to summarize.
-
-Learned judges scaled human evaluation while becoming proxies that could themselves be optimized.
-
-Self-modifying agents made tools, memory, workflows and pieces of the research process editable while exposing the evaluator, permissions and selection mechanism as part of the control problem.
+Reinforcement learning let the agent choose actions while the designer supplied reward and environment. Curiosity moved part of experience selection inward while leaving a judgment about what kind of novelty mattered. Self-play generated curriculum while leaving the rules and victory condition fixed. Continual learning made preservation part of improvement. Inverse reinforcement learning made the objective uncertain. Meta-learning and architecture search moved pieces of the learner itself into search while leaving task distributions and evaluators outside. World models generated experience while remaining models rather than worlds. Novelty and open-ended learning generated stepping stones and tasks while making progress harder to summarize. Learned judges scaled human evaluation while becoming proxies that could themselves be optimized. Self-modifying agents made tools, memory, workflows and pieces of the research process editable while exposing the evaluator, permissions and selection mechanism as part of the control problem.
 
 We kept removing the teacher.
 
@@ -749,19 +589,13 @@ The hardest one was hidden inside all the others:
 
 > **deciding what deserves to count as better.**
 
-For a game, the answer can be checkmate.
-
-For a compiler, correctness under tests plus efficiency under an agreed budget may get us surprisingly far.
-
-For a scientific institution, “better” is already plural: empirical contact, explanatory power, novelty, reproducibility, usefulness, scope, cost and risk.
+For a game, the answer can be checkmate. For a compiler, correctness under tests plus efficiency under an agreed budget may get us surprisingly far. For a scientific institution, “better” is already plural: empirical contact, explanatory power, novelty, reproducibility, usefulness, scope, cost and risk.
 
 For an autonomous system embedded in human life, capability alone cannot supply the ordering.
 
 Recursive self-improvement also makes the problem temporal. The system we evaluate today is not exactly the system that may exist tomorrow. Tools evolve. Representations change what it notices. Memory changes what it remembers. Research programs compete for compute. Evaluators become optimization targets. New capabilities create new failure modes. Old constraints stop fitting.
 
-A one-time alignment test is not enough for a moving target.
-
-A static policy file is not enough for an institution that can modify the machinery interpreting the policy.
+A one-time alignment test is not enough for a moving target. A static policy file is not enough for an institution that can modify the machinery interpreting the policy.
 
 If science is going to turn inward, some part of that inward science has to study whether the process of improvement is still connected to the humans and purposes it is supposed to serve.
 
