@@ -24,8 +24,6 @@ This does **not** mean emergence is wise. Nature also gives us parasites, cancer
 
 What emerges depends on conditions, selection pressure, history and a great deal of contingency. The interesting thing is not that emergence produces good outcomes. It is that it can produce outcomes far more complicated than anything anyone explicitly designed.
 
-An acorn becomes an oak without containing instructions for the exact location of every branch. A trading post becomes a city while generations of residents improvise around geography, economics, politics and whoever decided to put that road there in 1847. Languages evolve while teachers continue insisting that this year's grammar is finally the permanent version.
-
 And emergence is recursive.
 
 Complex systems become building blocks for the next layer. Atoms become molecules. Molecules form larger structures. Simple tools become machines. Machines become factories. Factories become supply chains. Supply chains become a global economy complicated enough that nobody really understands how your USB cable got from Shenzhen to your doorstep, yet Amazon still manages to apologize because it arrived twelve hours late.
@@ -42,7 +40,7 @@ Agentic AI, to me, looks like the next scaffolding layer.
 
 Machine learning was supposed to teach us this lesson a long time ago.
 
-We even dreamed about the **master algorithm**: stop writing a rule for every case and let the machine discover the structure from data. The idea was seductive. The machine figures out what we can't articulate.
+We even dreamed about what Pedro Domingos called the **master algorithm**: stop writing a rule for every case and let the machine discover the structure from data. The idea was seductive. The machine figures out what we can't articulate.
 
 But we didn't believe it. Not really.
 
@@ -64,7 +62,7 @@ But be precise about what you're letting go of. Let go of the path, not the boun
 
 The alternative to controlling every decision is not having no control. It is designing conditions under which bad decisions can lose.
 
-We may never know exactly how life first emerged on Earth, but if you're ambitious—like a certain space-obsessed billionaire—you might eventually think: **we don't know exactly how it got here; let's just bootstrap it there.**
+We may never know exactly how life first emerged on Earth, but if you're ambitious enough—the kind of ambitious that builds rockets—you might eventually think: **we don't know exactly how it got here; let's just bootstrap it there.**
 
 Which leads to a slightly ridiculous thought experiment.
 
@@ -170,8 +168,6 @@ Evolution produced eyes. It also produced tapeworms. Sophistication tells you no
 
 So when I say **let go**, I mean giving up some decision-level control because that's where the agent's intelligence becomes useful, while keeping a much tighter grip on the conditions shaping what that intelligence can become. Control hasn't disappeared; it has moved up a level.
 
-This is how we turn letting go into responsible governance.
-
 ## How Do We Understand What We're Creating?
 
 There is a reasonable objection here. If agents increasingly make decisions we didn't specify, how do we understand the systems we end up with?
@@ -179,8 +175,6 @@ There is a reasonable objection here. If agents increasingly make decisions we d
 I don't think the answer is one magical interpretability technique that turns a learned system into source code. We may understand these systems the way we understand many complicated things: imperfectly, at several levels, using different instruments depending on what we need to know.
 
 Physics already does this. For a few objects, trajectories make sense. For a gas containing an absurd number of particles, following molecule number 4,582,193 is mostly a good way to waste your afternoon, so we change variables and talk about temperature, pressure and distributions.
-
-Biology changes scale constantly. Sometimes the important object is a molecule; sometimes it is a cell, an organ, an organism or an ecosystem. Brains are worse. We study neurons, circuits, activity patterns, behavior and cognition because no single level answers every useful question.
 
 AI will probably force the same humility. Mechanistic interpretability can tell us something about features and circuits inside models. Behavioral evaluation tells us what systems do under different conditions. Agent traces expose strategies and failure modes. Interventions tell us what changes when we perturb the system. Deployment provides another kind of evidence, generally after involving customers and therefore at a significantly higher emotional cost.
 
@@ -214,7 +208,7 @@ Once you start looking at systems this way, you notice how many decisions are st
 
 Shopping systems contain enormous amounts of human assumptions about relevance, business rules, retrieval, diversity and what a customer might want. Some are fundamental; others are fossils from a time when the system was much less capable. Educational software follows fixed lesson sequences because a textbook cannot watch you misunderstand paragraph three and decide chapter four needs to be reinvented. Software has requirements, architectures and tickets partly because somebody has to translate intention into executable detail.
 
-Agents give us another option. A shopping agent can reason about a person's budget, preferences and constraints instead of merely ranking whatever list was handed to it. Educational software can try a different explanation. A coding agent can discover that the tool it needs doesn't exist and make one. A scientific agent might construct a new tool simply because the existing vocabulary of tools makes the experiment awkward.
+Agents give us another option. A shopping agent can reason about a person's budget, preferences and constraints instead of merely ranking whatever list was handed to it. Educational software can try a different explanation. A scientific agent might construct a new tool simply because the existing vocabulary of tools makes the experiment awkward.
 
 Some of these ideas will work and some will fail spectacularly. Several will probably create new categories of consultants whose first recommendation is to undo whatever the previous consultants automated.
 
@@ -231,8 +225,6 @@ Agents will find shortcuts. They'll exploit proxies. They'll settle into solutio
 But worse than wrong solutions are **confident wrong solutions**.
 
 The worst failures may not look broken at all. An agent begins with a false assumption, reasons competently from it, researches around the assumption, constructs something sophisticated and explains the whole result coherently. Nothing crashes. There is no red test. Intelligence simply makes the wrong path more convincing.
-
-I foresee AI-designed solutions that are terrifyingly efficient, perfectly logical, and utterly humorless. They'll look at us and say, "You guys are kind of messy. And your cat obsession is... illogical." Maybe they'll finally solve the mystery of the missing socks. Or create exponentially more of them.
 
 This is where my optimism about emergence becomes less romantic.
 
@@ -268,9 +260,9 @@ That does not mean the answer is simply to trust the agent. My bet is narrower t
 
 But betting on emergence isn't enough. Nature has already demonstrated that selection is perfectly capable of producing things we would rather not have. The more freedom we give the search, the more attention we have to pay to what surrounds it: the building blocks it can use, the environment it operates in, the feedback it receives, the pressures deciding what survives, and the boundaries we are unwilling to negotiate.
 
-That is the part of "letting go" that can sound contradictory until you actually manage people—or sufficiently autonomous machines. You don't become less responsible because you stop choosing every action. In some ways you become more responsible, because your decisions move upstream. You craft the building blocks, shape the environment and establish the boundaries, then, where the conditions allow it, you **let go**.
+That is the part of "letting go" that can sound contradictory until you actually manage people—or sufficiently autonomous machines. You don't become less responsible because you stop choosing every action. In some ways you become more responsible, because your decisions move upstream.
 
-It is still control, just exercised at a different level. Cultivation may be a better metaphor than scripting—not because agents are plants, but because pulling harder on the stem remains a surprisingly poor gardening strategy.
+Cultivation may be a better metaphor than scripting—not because agents are plants, but because pulling harder on the stem remains a surprisingly poor gardening strategy.
 
 I find that exciting and uncomfortable in roughly equal measure, which is probably why I keep coming back to it.
 
