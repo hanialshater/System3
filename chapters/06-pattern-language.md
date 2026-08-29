@@ -40,9 +40,7 @@ That is closer to culture than memory.
 
 Chapter 5 ended with the claim that **System 3 is science**: not science as a pile of papers, but as a civilization-scale arrangement that lets fallible minds accumulate knowledge while preserving routes through which reality can object. Science does not compound because every new scientist rereads every previous conversation. Some experience hardens into instruments, protocols, named techniques, standards, textbooks, habits, warnings and things everybody in a field learns to check before embarrassing themselves in public.
 
-Some of those inheritances are brilliant.
-
-Some are historical debris with a prestigious accent.
+Some of those inheritances are brilliant. Some are historical debris with a prestigious accent.
 
 So the problem here is not simply how agents remember. It is:
 
@@ -72,9 +70,9 @@ A model can read something like:
 
 There is no deterministic function there. There is operational knowledge. A competent human can interpret it. Now a sufficiently capable model can too.
 
-The interesting change is not merely that prompts look a bit like programs. It is that **knowledge can become versionable, composable and executable**.
+The change goes beyond “prompts are code.” **Knowledge itself can become versionable, composable and executable.**
 
-An organization can write down a procedure, examples, scripts, counterexamples, diagnostic questions, evidence, tool instructions and boundaries. The model supplies enough interpretation that every clause does not have to be translated into brittle symbolic logic before it can affect behavior.
+An organization can write down a procedure, examples, scripts, counterexamples, diagnostic questions, evidence, tool instructions and boundaries. The model supplies enough interpretation that every clause does not have to become brittle symbolic logic before it can affect behavior.
 
 The model begins to look less like the knowledge base and more like an **interpreter for knowledge artifacts**.
 
@@ -100,19 +98,13 @@ Traditional expert systems struggled because converting that practice into forma
 
 LLMs change the trade again. They can interpret prose, examples, scripts, diagrams and partially structured instructions. Expertise still has to be captured, but it no longer has to become perfect logic before the computer can use it.
 
-The difficulty moves.
-
-Whose practice gets written down? Which version applies here? What happens when two experts disagree? How does a lesson lose standing? When does a local workaround become a global rule? Which knowledge should enter the working context now, and which should remain in the archive?
+Now the hard questions are different. Whose practice gets written down? Which version applies here? What happens when two experts disagree? How does a lesson lose standing? When does a local workaround become a global rule? Which knowledge should enter the working context now, and which should remain in the archive?
 
 Those are no longer edge cases. They are the engineering surface.
 
-Agent systems were already moving in this direction. Repository instructions, `AGENTS.md`, skills, tool descriptions and context engineering all treat useful procedural knowledge as something external to the model but available to it at runtime. A skill can survive the session that produced it. Increasingly it can survive the model that produced it too.
+Agent systems were already moving in this direction. Repository instructions, `AGENTS.md`, skills, tool descriptions and context engineering all treat useful procedural knowledge as something external to the model but available to it at runtime. A skill can survive the session that produced it. Increasingly the worker can change while the operating knowledge remains.
 
-The worker changes.
-
-The operating knowledge remains.
-
-That is a bigger shift than it first appears. Frontier models already know Python, statistics and enormous amounts of public technical culture. What they do not automatically know is why *your* company refuses to deploy on Friday, which metric has been misleading everyone since 2023, why an elegant architecture in the wiki was abandoned, or why Alberto should never again be asked to investigate penguins.
+That matters because frontier models already know Python, statistics and enormous amounts of public technical culture. What they do not automatically know is why *your* company refuses to deploy on Friday, which metric has been misleading everyone since 2023, why an elegant architecture in the wiki was abandoned, or why Alberto should never again be asked to investigate penguins.
 
 Organizations run on this layer of weirdness.
 
@@ -196,9 +188,7 @@ Tradition is not automatically bad. It is simply difficult to debug.
 
 ## Defaults Need Rivals
 
-The obvious response is to keep every pattern permanently open for debate.
-
-That is a beautiful philosophy and a terrible operating system.
+Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system.
 
 Thomas Kuhn's useful lesson here is not merely *paradigm shift*. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers which puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
 
@@ -223,7 +213,7 @@ Those are two questions:
 - What should guide action now?
 - Where is another unit of investigation most valuable?
 
-That distinction becomes important the moment culture is executable. The current winner gets retrieved more often. Because it gets used more often, it accumulates more successful cases. Those cases raise confidence. Higher confidence makes it still more likely to be retrieved.
+The distinction becomes important the moment culture is executable. The current winner gets retrieved more often. Because it gets used more often, it accumulates more successful cases. Those cases raise confidence. Higher confidence makes it still more likely to be retrieved.
 
 The alternative receives less traffic and therefore less evidence.
 
@@ -235,7 +225,7 @@ The retrieval policy did it.
 
 ## What a Pattern Should Know About Itself
 
-By this point a mature pattern looks richer than a prompt library entry.
+By this point a mature pattern looks richer than a prompt-library entry.
 
 Something like:
 
@@ -270,11 +260,7 @@ That is knowledge with some of its history still attached.
 
 And because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model.
 
-That is what I mean by **knowledge becoming software**.
-
-Not because prose has literally become Python.
-
-Because knowledge can now be versioned, scoped, retrieved, executed, challenged, rolled back and eventually modified by the same kind of agents that use it.
+That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, scoped, retrieved, executed, challenged, rolled back and eventually modified by the same kind of agents that use it.
 
 Knowledge has acquired a runtime.
 
@@ -296,9 +282,7 @@ and
 
 **What should become salient now?**
 
-This is why context engineering matters. Long-running agents accumulate messages, files, tool outputs, memories and artifacts faster than useful attention can scale. Context has to be selected, compacted and reconstructed.
-
-Retrieval becomes part of cognition.
+Long-running agents accumulate messages, files, tool outputs, memories and artifacts faster than useful attention can scale. Context has to be selected, compacted and reconstructed. Retrieval becomes part of cognition.
 
 A culture may contain exactly the right lesson and still fail because that lesson does not arrive when it matters. Every large company has written a postmortem whose recommendation is rediscovered three incidents later by different people using the phrase “interesting, we should probably document this.”
 
@@ -310,9 +294,7 @@ Bad retrieval forgets by attention.
 
 Once retrieval determines which inherited knowledge enters a decision, retrieval itself becomes an epistemic procedure. It needs evaluation. Does it repeatedly surface stale rules? Does it suppress alternatives? Does it confuse popularity with relevance? Does it preserve the result and discard the reason?
 
-The librarian is no longer merely finding books.
-
-The librarian is shaping thought.
+The librarian is no longer merely finding books. The librarian is shaping thought.
 
 ## The Librarian Is Also a Hypothesis
 
@@ -338,9 +320,7 @@ So does the librarian.
 
 Bayesian confidence can live inside this architecture, but confidence is not contact. `0.91` does not tell us whether the prior was sensible, whether the evidence was independent, whether an alternative was ever investigated, or whether everybody is confidently reading the same broken measurement.
 
-Consensus is not contact either.
-
-Twelve agents sharing one bad source can agree beautifully.
+Consensus is not contact either. Twelve agents sharing one bad source can agree beautifully.
 
 The bridge still has the right to fall. The proof still has the right not to check. The deployment can crash. The customer can dislike the supposedly improved page while every simulated evaluator applauds.
 
@@ -350,9 +330,7 @@ The purpose of culture is to let knowledge travel across time without replacing 
 
 ## Culture Can Become a Prison
 
-If forgetting were the only danger, the design would be easy.
-
-Remember everything.
+If forgetting were the only danger, the design would be easy: remember everything.
 
 Unfortunately organizations also suffer from remembering too well.
 
@@ -380,13 +358,9 @@ from:
 
 Those sentences can produce identical dashboards and very different knowledge.
 
-Culture needs inheritance.
-
-It also needs rebellion.
+Culture needs inheritance and rebellion.
 
 ## The Skill That Writes Itself
-
-Now the scaling problem arrives.
 
 A serious organization may have thousands of agents, tools, experiments, workflows and recurring failures. Useful experience appears continuously. Some lessons deserve to become local skills. Some should become organization-wide patterns. Some contradict old knowledge. Some work only for one model version. Some are artifacts of a broken evaluator. Some are excellent and will be obsolete in three months.
 
@@ -416,9 +390,7 @@ new failures can weaken or revise it.
 
 There are many places to cheat. The agent proposing the skill can design an evaluator it knows how to satisfy. Repeated use can masquerade as independent evidence. A pattern can improve a benchmark while making maintenance worse. Retrieval can starve competing practices before they accumulate enough evidence to challenge the incumbent. A central curator can quietly turn local taste into universal law.
 
-So the curator needs a track record too.
-
-The mechanism for improving culture is itself part of the culture.
+So the curator needs a track record too. The mechanism for improving culture is itself part of the culture.
 
 And now we cross an important line.
 
