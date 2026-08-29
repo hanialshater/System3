@@ -38,7 +38,7 @@ That is where the relationship begins to change.
 
 *History of algorithm design*
 
-A crude taxonomy helps. **Symbolic methods** give us explicit algorithms, solvers and search procedures: executable, testable, clear about what counts as a valid move. **Neural methods** give us learned intuition: structure we never explicitly encoded, generated in spaces too messy to specify completely. **Neuro-symbolic methods** put the two together—let the model propose ideas, and let code, mathematics or another formal system decide whether they survive.
+A crude taxonomy helps. **Symbolic methods** are the rigorous body: explicit algorithms, solvers and search procedures—executable, testable, clear about what counts as a valid move. **Neural methods** give us learned intuition: structure we never explicitly encoded, generated in spaces too messy to specify completely. **Neuro-symbolic methods** put the two together—let the model propose ideas, and let code, mathematics or another formal system decide whether they survive.
 
 The agentic step pushes this one level further. Instead of choosing the symbolic method ourselves and asking the model to tune it, we increasingly let the agent decide which methods to try, combine or abandon.
 
@@ -206,9 +206,7 @@ That little experiment captures the asymmetry rather nicely. Learned models can 
 
 The obvious temptation is to argue about which one is better.
 
-The more useful answer is: **put them in the same loop.**
-
-Neural intuition. Symbolic rigor.
+The more useful answer is: **put them in the same loop**—neural intuition and symbolic rigor.
 
 Or, if you prefer the slightly ridiculous version: let the brain invent things and make the body prove they work.
 
@@ -350,13 +348,7 @@ The smaller claim is enough.
 
 The agent beat our reference while I was not writing the solution algorithm for it.
 
-That was the result I cared about.
-
-Not **AI writes code faster**.
-
-AI can participate in **discovering better code**.
-
-That is a much more interesting change.
+That was the result I cared about—not that AI writes code faster, but that AI can participate in **discovering better code**. That is a much more interesting change.
 
 ## The Algorithmic Vortex
 
