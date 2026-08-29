@@ -1,4 +1,4 @@
-# Chapter 3: Deep Mode
+# Chapter 3: The Vibe Coder's Seat
 
 *Beyond Algorithms: Agent Autonomy for Creative Problems*
 
@@ -20,7 +20,7 @@ Circle packing let the search be complicated because judgment was simple.
 
 Here judgment had become part of the problem.
 
-Deep Mode grew out of one question: could the system take over some of the work of deciding what to try next?
+The problem-solving layer I eventually started calling **Deep Mode** grew out of one question: could the system take over some of the work of deciding what to try next?
 
 Not just implementation. The inquiry itself. Build another version? Research the failure? Retrieve an old idea? Split into independent branches? Change perspective? Abandon the direction?
 
@@ -146,7 +146,7 @@ By then I had a rough map.
 
 **Layer 2 — Application.** Prepared environments remove much of the repeated software plumbing and let the conversation stay closer to the application itself.
 
-**Layer 3 — Problem Solving.** Decide what to try, why something failed, which evidence matters, and whether the current direction deserves another iteration.
+**Layer 3 — Deep Mode.** The problem-solving layer: decide what to try, why something failed, which evidence matters, and whether the current direction deserves another iteration.
 
 Above that sits the problem I have mostly been avoiding.
 
@@ -162,7 +162,7 @@ People often call the experience of working this way *vibe coding*. I will use *
 
 The lower layers increasingly answer a version of the same question: *how do we make this?*
 
-Layer 3 asks a different one:
+Deep Mode asks a different one:
 
 **Given everything we have learned so far, what should we try next?**
 
@@ -170,7 +170,7 @@ That was the part I still seemed to be doing manually.
 
 So I watched what I was actually doing in that seat.
 
-## In the Vibe Coder’s Seat
+## What I Was Still Doing
 
 There was no universal workflow hiding there. A mathematician, a designer and a product manager can all spend a day solving hard problems while performing almost none of the same visible actions.
 
@@ -560,7 +560,7 @@ The useful pieces did not always live in the strongest overall artifact.
 
 A visual relationship could survive after the application that introduced it was discarded. A criticism from a simulated learner could change the next builder’s framing. Research could explain why a failure kept recurring. A browser could end a sophisticated discussion by demonstrating that the interaction simply did not work.
 
-That is less cinematic than one agent inventing diagonal layering over coffee, but in some ways it is closer to the Layer 3 idea. The result emerged from a population of partially successful attempts and judgments about what each had taught us.
+That is less cinematic than one agent inventing diagonal layering over coffee, but in some ways it is closer to Deep Mode. The result emerged from a population of partially successful attempts and judgments about what each had taught us.
 
 Count-Min Sketch followed a different path. The first versions looked like the data structure itself: grids with changing counters. Technically correct, pedagogically opaque.
 
