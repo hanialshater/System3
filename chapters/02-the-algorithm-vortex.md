@@ -38,7 +38,7 @@ That is where the relationship begins to change.
 
 *History of algorithm design*
 
-A crude taxonomy helps. **Symbolic methods** give us explicit algorithms, solvers, constraints and search procedures. They are the rigorous body: executable, testable and usually clear about what counts as a valid move. **Neural methods** give us learned intuition. They can recognize structures we did not explicitly encode and generate plausible answers in spaces too messy to specify completely. Then **neuro-symbolic methods** put the two together: use the learned model to propose ideas, but let code, mathematics or another formal system decide whether those ideas survive.
+A crude taxonomy helps. **Symbolic methods** give us explicit algorithms, solvers and search procedures: executable, testable, clear about what counts as a valid move. **Neural methods** give us learned intuition: structure we never explicitly encoded, generated in spaces too messy to specify completely. **Neuro-symbolic methods** put the two together—let the model propose ideas, and let code, mathematics or another formal system decide whether they survive.
 
 The agentic step pushes this one level further. Instead of choosing the symbolic method ourselves and asking the model to tune it, we increasingly let the agent decide which methods to try, combine or abandon.
 
@@ -60,7 +60,7 @@ Just circles.
 
 Unfortunately, the solution space is nasty. Every circle has a position and a radius, and nearly every decision affects several others. Increase one radius and two neighbors may overlap. Move a neighbor and something else now needs to move. A packing can look almost perfect while being trapped in a configuration where every obvious improvement makes the solution invalid.
 
-For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using.
+For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.
 
 ![Circle packing solution n=26](../resources/image0139.png)
 
@@ -252,9 +252,7 @@ Now the machine can begin searching the **algorithm space**.
 
 AlphaEvolve turns that basic idea into a much larger search process.
 
-Imagine one generation. The system selects a promising program from its archive, perhaps along with other successful but different programs that contain useful ideas. The model sees the code, information about previous attempts and the scores they produced. Instead of rewriting the entire program, it proposes a patch: change the initialization, add a search stage, replace a heuristic, combine one useful component with another.
-
-The patch is applied, the program runs, and the evaluator scores what happened. The new program and its result go back into the archive. Then the process repeats.
+Imagine one generation. The system selects a promising program from its archive, perhaps along with other successful but different programs that contain useful ideas. The model sees the code, information about previous attempts and the scores they produced, and instead of rewriting the entire program it proposes a patch. The patch is applied, the program runs, and the evaluator scores what happened. The new program and its result go back into the archive. Then the process repeats.
 
 ![AlphaEvolve architecture](../resources/image0124.png)
 
@@ -264,9 +262,7 @@ Diff-based mutation matters because real programs contain structure worth preser
 
 The archive matters for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing. Multiple lineages preserve stepping stones: a program that is not the best today may contain a useful component that becomes valuable after another idea appears.
 
-What the language model adds is a far richer mutation operator. It does not merely change syntax according to a fixed rule. It can look at a program and make a semantic guess about why the approach is underperforming.
-
-Sometimes the guess is excellent. Sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement does not need to be settled in prose.
+Sometimes the model's guess about what to change is excellent. Sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement does not need to be settled in prose.
 
 We run the program.
 
@@ -274,11 +270,7 @@ That is the combination I find important: intuition proposes, symbolic machinery
 
 What interested me even more than the resulting algorithms, though, was what happened to the human. Instead of writing the solver directly, I was increasingly building the machinery in which solvers could be generated, compared and improved.
 
-Chapter 1 said control moves up a level.
-
-Apparently I had decided to test that claim literally.
-
-So, naturally, I built the machinery.
+So, naturally, I built all of it.
 
 ## My First Version: Build All the Machinery
 
@@ -521,5 +513,3 @@ We can still let the agent generate alternatives, branch, cross-pollinate and se
 In circle packing, the harness tells the agent when it is wrong.
 
 What happens when **the world no longer gives us one clean referee, and judgment itself has to be constructed**?
-
-That is where the next chapter begins.
