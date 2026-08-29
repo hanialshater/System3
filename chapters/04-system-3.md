@@ -451,24 +451,6 @@ A mature System 3 therefore needs more than accumulation: forgetting, counterexa
 
 Otherwise the scaffold becomes a cage.
 
-## When Trust Becomes Social
-
-Even that experiment was the easy version because most of the epistemic history belonged to one agent architecture interacting with one software environment.
-
-Real knowledge does not stay that local.
-
-A research agent reads a paper written by people it has never met. One coding agent inherits a failure discovered by another. An evaluator trusts an observation produced by a browser. A future session inherits a skill whose author is no longer present. Alberto mattered precisely because he knew something I did not.
-
-The moment knowledge moves between participants, another kind of uncertainty appears. A trust chain can preserve who said what, what they were positioned to know, where evidence came from and how far a conclusion sits from direct observation. But chains alone do not tell us how to organize a population of fallible knowers.
-
-Five agents might give us five independent checks or five fluent repetitions of the same mistake. Agreement without independence is an **echo chamber with excellent latency**. A specialist may know something the others cannot personally verify. A critic may notice a problem precisely because she did **not** inherit the builder's history. A majority may agree because everyone began from the same false premise.
-
-It is no longer only *How should an agent preserve what it learned?*
-
-It is: **How should fallible knowers depend on one another without losing the path back to evidence?**
-
-That is larger than memory. It is an organizational problem.
-
 ## Back to the Camel
 
 Return to the seven claims.
@@ -495,7 +477,7 @@ The lesson is not that nothing can be known. That conclusion is dramatic and mos
 
 The lesson is that **trust has structure**.
 
-Some claims sit close to direct interaction. Others arrive through testimony. Some pass through instruments, experts and institutions. Some are repeated many times but trace back to one observation. Some are plausible inferences. Some have little track record but may still deserve investigation.
+Some claims sit close to direct interaction. Others arrive through testimony. Some pass through instruments and other people. Some are repeated many times but trace back to one observation. Some are plausible inferences. Some have little track record but may still deserve investigation.
 
 Flatten all of that into equally confident language and something important disappears.
 
@@ -503,7 +485,9 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 **The model stays hollow. The system doesn't have to be.**
 
-That still leaves the harder version of the problem. Once one agent relies on research performed by another, one evaluator trusts an instrument built by a third, or one generation inherits knowledge from participants who are no longer present, no single mind can reconstruct the whole chain.
+Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
+
+Real systems will not stay that simple. The moment one agent inherits a claim from another, no participant can personally reconstruct every path back to reality. A trust chain can preserve where a claim came from. It does not, by itself, tell us how the knowers who depend on those chains should be arranged.
 
 The question is no longer simply:
 
