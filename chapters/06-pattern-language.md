@@ -38,9 +38,13 @@ What the next agent needed was not merely the instruction. It needed enough of t
 
 That is closer to culture than memory.
 
-Chapter 5 ended with the claim that **System 3 is science**: not science as a pile of papers, but as a civilization-scale arrangement that lets fallible minds accumulate knowledge while preserving routes through which reality can object. Science does not compound because every new scientist rereads every previous conversation. Some experience hardens into instruments, protocols, named techniques, standards, textbooks, habits, warnings and things everybody in a field learns to check before embarrassing themselves in public.
+Chapter 5 ended with the claim that **System 3 is science**: not science as a pile of papers, but as a civilization-scale arrangement that lets fallible minds accumulate knowledge while preserving routes through which reality can object.
 
-Some of those inheritances are brilliant. Some are historical debris with a prestigious accent.
+Chapter 5 named the solution. This chapter opens the machine.
+
+Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself: theories that could explain anything, experiments that implicated several assumptions at once, paradigms that made research possible and then made alternatives hard to see, communities that confused consensus with independence, methods that became rituals, and institutions whose allocation of attention helped determine what could become known.
+
+If System 3 is going to borrow from science, those arguments are not decorative philosophy. They are design reviews written a few decades or centuries early.
 
 So the problem here is not simply how agents remember. It is:
 
@@ -152,7 +156,9 @@ But Chapter 5 made us suspicious of inherited procedure. Civilizations do not me
 
 If Pattern Language is going to become cultural memory for agents, a pattern needs to know more about itself.
 
-## A Pattern Needs a Way to Lose
+This is where philosophy of science finally earns its API.
+
+## Popper: A Pattern Needs a Way to Lose
 
 Suppose the editing agent concludes:
 
@@ -186,11 +192,11 @@ A reusable practice without provenance becomes tradition.
 
 Tradition is not automatically bad. It is simply difficult to debug.
 
-## Defaults Need Rivals
+## Kuhn, Lakatos and Laudan: Defaults Need Rivals
 
 Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system.
 
-Thomas Kuhn's useful lesson here is not merely *paradigm shift*. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers which puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
+Thomas Kuhn's most useful lesson here is not simply the phrase *paradigm shift*. It is the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
 
 An agent culture needs the same economy. If a deployment procedure has survived hundreds of releases, the system should not rediscover it from first principles every Tuesday merely to prove that it remains intellectually alive.
 
@@ -202,9 +208,9 @@ Anomalies need memory too. The release pattern works except in this market. The 
 
 One anomaly is usually noise. Ten may still be noise. Eventually the exception list begins to look like the theory.
 
-Imre Lakatos adds another useful distinction: preserve **research programs**, not only isolated claims. One approach may currently be weaker but improving. Another may be winning mainly by adding patches around every failure.
+Imre Lakatos makes the problem harder in a useful way. We should often preserve **research programs**, not merely isolated ideas. A program has a history, a relatively stable core, auxiliary assumptions and a trajectory. One approach may currently be weaker but improving. Another may be winning mainly by adding patches around every failure.
 
-Larry Laudan makes the practical consequence explicit: **acceptance and pursuit are different decisions**.
+Larry Laudan sharpens the practical consequence: **acceptance and pursuit are different decisions**.
 
 I can believe method A is our best current default while still believing method B deserves another experiment.
 
@@ -213,7 +219,7 @@ Those are two questions:
 - What should guide action now?
 - Where is another unit of investigation most valuable?
 
-The distinction becomes important the moment culture is executable. The current winner gets retrieved more often. Because it gets used more often, it accumulates more successful cases. Those cases raise confidence. Higher confidence makes it still more likely to be retrieved.
+The distinction matters the moment culture becomes executable. The current winner gets retrieved more often. Because it gets used more often, it accumulates more successful cases. Those cases raise confidence. Higher confidence makes it even more likely to be retrieved.
 
 The alternative receives less traffic and therefore less evidence.
 
@@ -222,6 +228,80 @@ Eventually the system develops an impressive empirical record proving the thing 
 No committee had to ban the alternative.
 
 The retrieval policy did it.
+
+## Hull and Kitcher: Who Gets the GPUs?
+
+There is an overly clean way to draw a society of agents. Every agent is a box. Every box has an arrow. Everybody gets a turn to think.
+
+Real institutions are not like that because **attention has a budget**.
+
+Human science has telescope time, laboratory space, grants, journals, careers and prestige. AI research has datasets, deployment traffic, human reviewers, API quotas, clusters and GPUs. A theory's ability to generate evidence depends partly on whether the institution gives somebody the resources to investigate it.
+
+This is not merely politics happening around epistemology. It changes the epistemic landscape itself.
+
+Imagine research program A has ten thousand GPU-hours and program B has ten.
+
+A can run ablations, train variants, investigate anomalies and produce beautiful graphs. B can produce a thoughtful paragraph about why it deserves more compute.
+
+Six months later A has more evidence.
+
+Of course it does.
+
+The evidence may be real. A may genuinely be better. But the institution has also helped create the asymmetry it later treats as evidence for further allocation.
+
+David Hull and Philip Kitcher approached science partly through the division of cognitive labor, incentives, credit and the fact that investigators do not all pursue the same thing for the same reasons. Researchers cooperate because they need one another's results and compete because priority, reputation, jobs and resources are scarce.
+
+An agent society will have analogues of these structures whether or not we give them sociological names.
+
+The scheduler is partly a funding agency.
+
+The memory system is partly an archive.
+
+The evaluator is partly a journal gate.
+
+The retrieval layer is partly a curriculum.
+
+The permission system decides who may touch which instrument.
+
+The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
+
+And the organization can remember its incentives just as effectively as it remembers its wisdom.
+
+A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.”
+
+That is culture too.
+
+**Local alignment does not compose automatically. Neither does local truth.**
+
+If we build persistent agent societies without thinking about this layer, we will not escape institutional power. We will automate it and give it better dashboards.
+
+## Longino: The Community Is Part of the Instrument
+
+Resources are only one reason a community matters. Even generously funded investigators can share the same blind spot.
+
+Give five agents the same model family, the same system prompt, the same search results and the same dominant explanation, and you have not created five perspectives. You have created a very expensive echo with parallel API calls.
+
+Helen Longino's social epistemology is useful because background assumptions affect what investigators notice, which questions appear natural and which evidence looks relevant. Criticism becomes more informative when it comes from participants positioned differently enough to expose assumptions the dominant group treats as obvious.
+
+For an agent system, useful difference may come from a separate dataset, another tool, an isolated context, a different model, an external user, a domain expert, or a team operating under different incentives.
+
+That is stronger than theatrical personas:
+
+> Agent 1, be optimistic.
+>
+> Agent 2, be skeptical.
+>
+> Agent 3, be a pirate.
+
+The pirate may be entertaining. He probably still read the same PDF.
+
+A pattern should therefore carry some trace of **position**: who learned it, from which class of tasks, with which tools, model, evidence and incentives. A ranking practice learned in Germany, a fraud rule learned in Brazil, a compiler workaround discovered under one toolchain and a clinical protocol developed in one hospital can all be excellent without acquiring universal authority merely because they share a database.
+
+This is another reason Pattern Language should not become one giant company constitution.
+
+Culture should be **locally authoritative** where appropriate.
+
+Trust is local. Apparently memory should be too.
 
 ## What a Pattern Should Know About Itself
 
@@ -242,6 +322,7 @@ Something like:
 | **Exposure path** | What future observation could weaken or overturn it. |
 | **Confidence** | How strongly the pattern should guide action now. |
 | **Pursuit value** | Whether another experiment deserves resources even when this pattern currently wins. |
+| **Position / incentives** | Which organizational perspective produced the lesson and what pressures shaped it. |
 | **Version / environment** | Which model, system, market, toolchain or period the evidence came from. |
 
 I do not mean this as a universal schema. Turning the schema itself into scripture would be an efficient way to miss the chapter.
@@ -296,7 +377,7 @@ Once retrieval determines which inherited knowledge enters a decision, retrieval
 
 The librarian is no longer merely finding books. The librarian is shaping thought.
 
-## The Librarian Is Also a Hypothesis
+## Feyerabend: The Librarian Is Also a Hypothesis
 
 At some point every successful institution becomes tempted to trust its own method.
 
