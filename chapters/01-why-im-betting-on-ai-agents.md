@@ -134,7 +134,7 @@ Eventually, perhaps, an agent can construct solution paths nobody thought to put
 
 The cleanest place to test that idea is a bounded problem with an evaluator that doesn't care how persuasive the agent sounds. Give the agent room to search, make success brutally clear, and see whether it can discover a better way of solving the problem than the one we would have written ourselves.
 
-We'll do that next. But first there is a question hiding inside the whole autonomy idea: if we're no longer controlling every action, what exactly are we controlling?
+We'll do exactly that in the next chapter. Before the experiment can mean anything, though, the autonomy idea has some questions to answer—starting with this one: if we're no longer controlling every action, what exactly are we controlling?
 
 ## What Are We Controlling Now?
 
@@ -228,9 +228,7 @@ The worst failures may not look broken at all. An agent begins with a false assu
 
 This is where my optimism about emergence becomes less romantic.
 
-**Emergence can give us capable systems. It doesn't give us trustworthy systems.** Capability is not the same thing as reliability, and search is not the same thing as judgment. Giving a system more freedom forces us to think much harder about what surrounds that freedom.
-
-Autonomy doesn't remove the need for structure. It changes the kind of structure we need.
+**Emergence can give us capable systems. It doesn't give us trustworthy systems.** Giving a system more freedom forces us to think much harder about what surrounds that freedom. Autonomy doesn't remove the need for structure; it changes the kind of structure we need.
 
 ## Three Problems I Keep Running Into
 
