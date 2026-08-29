@@ -26,15 +26,13 @@ The first idea I want to keep hold of is simple:
 
 When behavior becomes too complicated to specify move by move, you stop choosing every move and start choosing more of the conditions under which moves are made.
 
-That is not a romantic argument for emergence. Nature also gives us parasites, cancer and extinction. Markets produce remarkable innovation and financial instruments whose documentation requires a priest. Social systems produce cooperation, corruption, science, bureaucracy and occasionally a queue whose only apparent purpose is to create another queue.
-
-What emerges depends on the environment, the feedback, the available building blocks, the pressures deciding what survives and the boundaries that are hard to cross. Sophistication tells you nothing about whether you will like the result.
+That is not a romantic argument for emergence. Nature also gives us parasites, cancer and extinction. Markets produce remarkable innovation and financial instruments whose documentation requires a priest. Social systems produce cooperation, corruption, science and bureaucracy. What emerges depends on the environment, the feedback, the available building blocks, the pressures deciding what survives and the boundaries that are hard to cross. Sophistication tells you nothing about whether you will like the result.
 
 And emergence is recursive.
 
 Atoms become molecules. Molecules become larger structures. Tools become machines. Machines become factories. Factories become supply chains. Each layer treats much of the complexity underneath it as a primitive. You don't need quantum mechanics to do organic chemistry. You don't need to understand transistor physics to write Python. You don't need to understand transformers to ask ChatGPT why your dishwasher is making that noise.
 
-Once something complicated works reliably enough, we stop rebuilding it from first principles and start building on top of it.
+Once something complicated works reliably enough, we stop rebuilding it from first principles and start building on top of it. Feedback makes the layers move too: markets change firms and firms change markets; scientific discoveries enable new experiments and new experiments change science. The structure that emerges becomes part of the environment for whatever comes next.
 
 Agentic AI, to me, looks like the next scaffolding layer.
 
@@ -52,19 +50,11 @@ Sometimes that was completely reasonable. Production systems are ugly. Deadlines
 
 But there was a contradiction underneath. We wanted the machine to discover solutions we couldn't specify while remaining uncomfortable whenever it stopped following the solution we would have specified.
 
-That works only up to a point.
+That works only up to a point. If I know exactly what every correct decision should be, I don't need emergence; I can write the decisions down. Emergence becomes interesting when the solution is too large, too contextual or simply too strange for me to specify directly.
 
-If I know exactly what every correct decision should be, I don't need emergence. I can write the decisions down. Emergence becomes interesting when the solution is too large, too contextual or simply too strange for me to specify directly.
+At that point, my job changes. I don't disappear; I move upstream. Instead of choosing every action, I increasingly choose the building blocks the system can use, the environment it acts inside, the feedback that reaches it and the boundaries it cannot casually negotiate away.
 
-At that point, my job changes. I don't disappear; I move upstream.
-
-Instead of choosing every action, I increasingly choose the building blocks the system can use, the environment it acts inside, the feedback that reaches it and the boundaries it cannot casually negotiate away.
-
-Or, less politely: **let go.**
-
-But be precise about what you're letting go of.
-
-Let go of the path, not the boundary.
+Or, less politely: **let go—but of the path, not the boundary.**
 
 The alternative to controlling every decision is not having no control. It is designing conditions under which bad decisions can lose.
 
@@ -90,21 +80,15 @@ AlphaGo was one of those moments for me.
 
 The interesting part wasn't simply that a computer beat humans at Go. Computers had been humiliating us at games for years. It was how AlphaGo combined learned intuition with search: the network suggested promising moves and estimated positions; the tree explored what might follow. AlphaGo Zero pushed the idea further by learning through self-play rather than treating human game records as its main teacher.
 
-Then it found moves elite players found strange.
-
-That matters because the surprise was not merely computational. The system was finding useful strategies outside the path human tradition had naturally converged on.
+Then it found moves elite players found strange. That matters because the surprise was not merely computational. The system was finding useful strategies outside the path human tradition had naturally converged on.
 
 Large language models created a much larger version of the same feeling.
 
 Nobody wrote their grammar. Nobody enumerated all the concepts they can manipulate. Nobody implemented “explain quantum mechanics to a twelve-year-old,” “translate this joke without murdering it,” “debug my Python,” and “write a breakup message that sounds caring but does not accidentally restart the relationship” as separate product features.
 
-We built a training process, poured in obscene amounts of text, compute and engineering, and capabilities came out that were individually difficult to predict.
+We built a training process, poured in obscene amounts of text, compute and engineering, and capabilities came out that were individually difficult to predict. From the user's side, something changed. The model stopped feeling like a component with a list of features and started feeling more like a **substrate of capabilities**.
 
-From the user's side, something changed. The model stopped feeling like a component with a list of features and started feeling more like a **substrate of capabilities**.
-
-Once you have a substrate like that, the old dream of the master algorithm starts to mutate into something stranger.
-
-Maybe the interesting machine is not the algorithm that solves everything.
+Once you have a substrate like that, the old dream of the master algorithm starts to mutate into something stranger. Maybe the interesting machine is not the algorithm that solves everything.
 
 Maybe it is a machine that can **search for algorithms**.
 
@@ -112,9 +96,7 @@ That is where agents become interesting.
 
 Not because *agent* is a magical word. The industry will eventually use it to describe everything from a cron job with an LLM attached to a digital employee that has an expense account, three sub-agents and a performance review.
 
-What I mean is simpler: instead of giving the system an individual action, give it a larger piece of the problem and allow it to decide some of the path.
-
-Instead of saying, “open this file, find this method, edit line 42 and run the test,” say, “fix the bug.” Instead of specifying simulated annealing and its cooling schedule, say, “find a better solution.” Instead of handing over five mockups and a detailed implementation plan, say, “build something that teaches this well.”
+What I mean is simpler: instead of giving the system an individual action, give it a larger piece of the problem and allow it to decide some of the path. Instead of saying, “open this file, find this method, edit line 42 and run the test,” say, “fix the bug.” Instead of specifying simulated annealing and its cooling schedule, say, “find a better solution.” Instead of handing over five mockups and a detailed implementation plan, say, “build something that teaches this well.”
 
 Every time we move upward, the system inherits more of the search.
 
@@ -122,9 +104,7 @@ Imagine the possible solutions to a problem as a landscape. Some regions are ter
 
 Optimization has worried about this forever. Gradient descent gets stuck. Hill climbing gets stuck. Evolutionary algorithms keep populations partly because putting all your evolutionary eggs on one attractive hill is risky.
 
-Agents inherit the same problem at a stranger level, because the landscape now includes not only parameters but architectures, research directions, metaphors, assumptions and ways of framing the problem itself.
-
-Once code, tools and accumulated knowledge become primitives, an agent can search over combinations that previously required a human expert to invent manually. It can try ten strategies while I would have had the patience to try two and would have spent half that time checking Slack. It can revive a discarded idea when another experiment suddenly makes it relevant. It can decide that the tool it needs doesn't exist and write one.
+Agents inherit the same problem at a stranger level, because the landscape now includes not only parameters but architectures, research directions, metaphors, assumptions and ways of framing the problem itself. Once code, tools and accumulated knowledge become primitives, an agent can search over combinations that previously required a human expert to invent manually. It can try ten strategies while I would have had the patience to try two and would have spent half that time checking Slack. It can revive a discarded idea when another experiment suddenly makes it relevant. It can decide that the tool it needs doesn't exist and write one.
 
 The primordial soup isn't chemicals anymore.
 
@@ -134,7 +114,7 @@ Algorithms, libraries, compilers, search engines, simulators, papers, databases,
 
 This doesn't prove that agents are creative in exactly the human sense, and it certainly doesn't make human expertise irrelevant. It means something narrower: **the agent can inherit not just the task, but part of the search for how to do it.**
 
-That is where control has to move upward.
+And if the agent inherits more of the search, the human inherits a different job.
 
 ## What Are We Controlling Now?
 
@@ -144,9 +124,7 @@ You decide what problem she owns. You provide context. You set constraints. You 
 
 The detailed actions belong to her. Much of the surrounding structure belongs to you.
 
-Agentic systems need the same distinction.
-
-I think of that surrounding structure in four parts.
+Agentic systems need the same distinction. I think of that surrounding structure in four parts.
 
 **Craft the building blocks.** Give the system useful primitives—algorithms, tools, compilers, databases, browsers, simulators, scientific instruments and other agents. A language model with text alone is one thing. Give it Bash and suddenly it has hands. Give it a simulator and it can test an idea instead of merely discussing it.
 
@@ -158,13 +136,15 @@ I think of that surrounding structure in four parts.
 
 Then, where those conditions are strong enough, let go of decision-level control.
 
-Complexity people have a phrase I both love and distrust: **the edge of chaos**. I wouldn't turn it into a law of intelligence, and there is no little dial in the interface labeled CHAOS. But the intuition is useful. Too much control removes the reason for autonomy; too little control gives chaos an API key.
+This is easy to say and harder to design because selection pressure is literal-minded. Systems get good at what survives, which is not necessarily what we meant. Optimize engagement and perhaps anger survives. Optimize a benchmark and eventually somebody finds a way to win the benchmark that makes everyone involved regret inventing benchmarks. The environment is not scenery around the agent; it is part of the mechanism deciding which behaviors persist.
+
+Complexity people have a phrase I both love and distrust: **the edge of chaos**. I wouldn't turn it into a law of intelligence, and there is no little dial in the interface labeled CHAOS. But the intuition is useful: too much control removes the reason for autonomy; too little control gives chaos an API key.
 
 This is not a new pattern. Evolution does not choose mutations individually, but the environment changes which organisms survive. Markets do not centrally select every transaction, but rules, incentives, scarcity and institutions shape behavior. Science does not dictate conclusions, but it surrounds claims with experiments, criticism, replication and the non-zero probability of being publicly embarrassed by Reviewer 2.
 
-The details emerge while the environment does more work than it first appears.
+The details emerge while the environment does more work than it first appears. We give up some authority over the next move and take on more responsibility for the conditions that make moves win or lose.
 
-That is what I mean by control moving upward. We give up some authority over the next move and take on more responsibility for the system in which moves are chosen.
+That is what I mean by control moving upward.
 
 ## The Terrifying Part
 
@@ -176,9 +156,7 @@ Nature is useful here because nature has no obligation to make us comfortable. E
 
 Agents will find shortcuts. They will exploit proxies. They will settle into solutions that perform extremely well on one measure while missing what we hoped the measure represented. Sometimes the result will be clever enough that we call it emergence; sometimes we will call it a bug. Frequently the distinction will depend on whether it helped the quarterly numbers.
 
-Worse than wrong solutions are **confident wrong solutions**.
-
-An agent begins with a false assumption, reasons competently from it, researches around the assumption, constructs something sophisticated and explains the whole result coherently. Nothing crashes. There is no red test. Intelligence simply makes the wrong path more convincing.
+Worse than wrong solutions are **confident wrong solutions**. An agent begins with a false assumption, reasons competently from it, researches around the assumption, constructs something sophisticated and explains the whole result coherently. Nothing crashes. There is no red test. Intelligence simply makes the wrong path more convincing.
 
 This is where my optimism about emergence becomes less romantic.
 
@@ -188,11 +166,9 @@ Giving a system more freedom forces us to think much harder about what surrounds
 
 Those questions will occupy much of this book. For now, the important point is simpler. More autonomy does not reduce the need for structure. It changes the kind of structure we need.
 
-Nor should we expect to understand every micro-decision inside an autonomous system. We don't understand complex systems that way now. Physics changes variables when following every molecule becomes useless. Biology moves between molecules, cells, organs and organisms. With agents we will need the same flexibility: internal analysis when internals matter, behavioral evaluation when behavior matters, traces when the sequence of decisions matters, interventions when we need to know what actually changes an outcome.
+It also changes what understanding should mean. We should not expect to reconstruct every micro-decision inside an autonomous system any more than we follow every molecule in a gas. Sometimes internals matter; sometimes behavior matters; sometimes the sequence of decisions matters; sometimes the useful question is what changes when we intervene. Mechanistic analysis, behavioral evaluation, traces and experiments answer different questions.
 
-The tool should match the question.
-
-The useful standard is not omniscience. It is whether we can detect the failures that matter, obtain evidence from outside the agent's own story and intervene before the interesting failure becomes a congressional hearing.
+The tool should match the question. The useful standard is not omniscience. It is whether we can detect the failures that matter, obtain evidence from outside the agent's own story and intervene before the interesting failure becomes a congressional hearing.
 
 ## Why I'm Still Betting on This
 
@@ -202,19 +178,15 @@ Because the alternative isn't actually safe, comprehensible control. It is prete
 
 No CEO understands every decision in a large company. No scientist personally verifies every result their work depends on. No software engineer understands every layer underneath the application they're building. Nobody understands the entire economy, although this has not prevented a remarkably stable industry of people explaining it on television.
 
-Complexity has already escaped individual specification.
+Complexity has already escaped individual specification. We deal with it through abstraction, institutions, feedback loops, delegation and the ability—imperfect but important—to intervene when things go wrong. AI gives us another primitive for doing this.
 
-We deal with it through abstraction, institutions, feedback loops, delegation and the ability—imperfect but important—to intervene when things go wrong. AI gives us another primitive for doing this.
-
-That does not mean the answer is simply to trust the agent. My bet is narrower than that.
+That does not mean the answer is simply to trust the agent. My bet is narrower than that:
 
 **I'm betting on systems capable of surprising us because there are problems where we can recognize a better outcome far more easily than we can specify the path that leads to it.**
 
-In those problems, intelligent search has room to discover things our instructions would have ruled out before the search even began.
+In those problems, intelligent search has room to discover things our instructions would have ruled out before the search even began. The price of that surprise is responsibility upstream: the more freedom the system has over the path, the more deliberate we have to be about the conditions around the path—and the more evidence we need from somewhere other than the system's own confidence.
 
-The price of that surprise is responsibility upstream. The more freedom the system has over the path, the more deliberate we have to be about the conditions around the path—and the more evidence we need from somewhere other than the system's own confidence.
-
-That is the responsibility shift hidden inside “letting go.” You don't become less responsible because you stop choosing every action. In some ways you become more responsible, because your decisions move upstream.
+You don't become less responsible because you stop choosing every action. In some ways you become more responsible, because your decisions move upstream.
 
 Cultivation may be a better metaphor than scripting—not because agents are plants, but because pulling harder on the stem remains a surprisingly poor gardening strategy.
 
@@ -224,9 +196,7 @@ I find that exciting and uncomfortable in roughly equal measure, which is probab
 
 The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without convening a committee to debate aesthetics, pedagogy or whether the users are “delighted.”
 
-That gives us a clean experiment.
-
-We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success.
+That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success.
 
 What we stop doing is telling the agent how to get there.
 
