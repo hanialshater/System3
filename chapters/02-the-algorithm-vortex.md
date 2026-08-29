@@ -6,7 +6,7 @@
 
 *The algorithmic vortex*
 
-Once you discover AI coding, there is no going back.
+Once you discover AI coding, there's no going back.
 
 It is faster than you at a ridiculous number of things. It knows libraries you forgot existed. It can stare at a stack trace and notice something you have been ignoring for an hour. Then, five minutes later, it does something unbelievably stupid, believes the stupid thing completely and builds three more decisions on top of it.
 
@@ -18,7 +18,7 @@ That sounds reasonable in prose.
 
 I wanted to see if it survived contact with an actual problem.
 
-Production software is almost the worst place to test it. A supposedly simple task may involve deployment, legacy systems, users, security, another team’s API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often do not know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
+Production software is almost the worst place to test it. A supposedly simple task may involve deployment, legacy systems, users, security, another team's API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don't know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
 
 I wanted something cleaner: a hard problem, but contained. Something where I could genuinely say, “figure it out,” and still have an objective way to know whether whatever came back was any good.
 
@@ -38,13 +38,13 @@ And that is how I ended up spending an unreasonable amount of time packing circl
 
 The problem is simple enough to explain to a child. Take 26 circles and put them inside a square. None may overlap, none may cross the boundary and the circles do not have to be the same size. We want to maximize the sum of their radii.
 
-That is the whole thing. No customers, no authentication, no stakeholder arriving after the first demo to explain that what they *really* wanted was the opposite of what they originally asked for.
+That's the whole thing. No customers, no authentication, no stakeholder arriving after the first demo to explain that what they *really* wanted was the opposite of what they originally asked for.
 
 Just circles.
 
 Unfortunately, the solution space is nasty. Every circle has a position and a radius, and nearly every decision affects several others. Increase one radius and two neighbors may overlap. Move a neighbor and something else now needs to move. A packing can look almost perfect while being trapped in a configuration where every obvious improvement makes the solution invalid.
 
-For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using—the value DeepMind’s AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.
+For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.
 
 ![Circle packing solution n=26](../resources/image0139.png)
 
@@ -70,13 +70,15 @@ For most of the history of algorithm design, the answer was us.
 
 Humans invented explicit algorithms. When direct algorithms were not enough, we invented optimization procedures that searched over candidate solutions. Then we invented meta-heuristics that searched more broadly. Machine learning let systems learn useful structure from data. Now language models can write and modify the search procedure itself.
 
-Each step gives the machine more of the search.
+A crude taxonomy helps. **Symbolic methods** give us explicit procedures, constraints and solvers: they are executable, testable and usually clear about what counts as a valid move. **Neural methods** give us learned intuition: useful structure we did not explicitly encode. **Neuro-symbolic systems** put the two in the same loop—let the learned model propose and let code, mathematics or another formal system decide what survives.
+
+The agentic step pushes one level further: increasingly, the agent can help decide which method to try, combine or abandon.
 
 Circle packing lets us watch that handoff happen in miniature.
 
 ## First Idea: Hill Climbing
 
-If I gave you a rough packing and asked you to improve it manually, one obvious strategy would be to make small changes. Move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it does not.
+If I gave you a rough packing and asked you to improve it manually, one obvious strategy would be to make small changes. Move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn't.
 
 That is hill climbing:
 
@@ -100,9 +102,7 @@ Hill climbing is not failing because it is stupid. It is doing exactly what we a
 
 This matters far beyond circle packing. A system can become extremely competent at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
 
-The machine is searching.
-
-But the human still invented the search rule.
+Here, the machine is searching—but the human still invented the search rule.
 
 So we give the machine a bigger space.
 
@@ -172,7 +172,7 @@ I like this because optimization is often unfair to immature ideas. A new approa
 
 But MAP-Elites introduces another human choice: what dimensions define the archive?
 
-Symmetry? Radius variance? Number of large circles? Something topological? Something I have not thought of?
+Symmetry? Radius variance? Number of large circles? Something topological? Something I haven't thought of?
 
 The machinery is becoming more sophisticated, but the choice of **how to search** still depends heavily on us.
 
@@ -180,7 +180,7 @@ That is the invention problem.
 
 ## The Invention Problem
 
-By this point, the symbolic system was fairly capable. We had hill climbing, population search, repair, geometric crossover and quality-diversity archives. We could evaluate huge numbers of candidate packings and inspect far more of the search space than any human would explore manually.
+By this point, the search machinery was fairly capable. We had hill climbing, population search, repair, geometric crossover and quality-diversity archives. We could evaluate huge numbers of candidate packings and inspect far more of the search space than any human would explore manually.
 
 Yet every substantial conceptual jump came from somebody noticing something.
 
@@ -206,7 +206,7 @@ Some constraints were violated.
 
 It was a beautiful answer to a nearby problem.
 
-That little experiment captures the asymmetry nicely. Learned models can be remarkably good at generating plausible structure without guaranteeing that every formal requirement survives generation. A symbolic optimizer has almost the opposite personality: give it a precise representation and constraints and it will obey them, but it will not naturally look at your representation and decide that you have been unimaginative.
+That little experiment makes the asymmetry concrete. Learned models can be remarkably good at generating plausible structure without guaranteeing that every formal requirement survives generation. A symbolic optimizer has almost the opposite personality: give it a precise representation and constraints and it will obey them, but it will not naturally look at your representation and decide that you have been unimaginative.
 
 The obvious temptation is to argue about which one is better.
 
@@ -264,7 +264,7 @@ Diff-based mutation matters because real programs contain structure worth preser
 
 The archive matters for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing. Multiple lineages preserve stepping stones: a program that is not the best today may contain a useful component that becomes valuable after another idea appears.
 
-Sometimes the model’s guess is excellent. Sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement does not need to be settled in prose.
+Sometimes the model's guess is excellent. Sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement does not need to be settled in prose.
 
 We run the program.
 
@@ -296,13 +296,41 @@ This made me pause. The framework I was building—the parent selection, loop co
 
 I looked back at the machinery I had just spent time constructing and had the unpleasant thought engineers occasionally have after a productive week:
 
-*Maybe I should not have built most of this.*
+*Maybe I shouldn't have built most of this.*
 
 The framework knew how to choose an experiment, run an evaluator, store a score, compare approaches and start again. But the agent could understand those instructions too. It could maintain notes, write helper scripts, explore several strategies, inspect failures and change direction.
 
 Some of the behavior I was carefully encoding in Python was already sitting inside the model, waiting for an environment in which it could act.
 
-So I deleted most of the orchestration code—the database machinery, controller loops and little pieces of software whose job was to make the agent behave like a researcher—and tried the stupidly simple version.
+## Zero Framework, With an Asterisk
+
+I started calling the simpler direction **zero framework**.
+
+It's a great slogan.
+
+It's also not really true.
+
+I meant that I was writing almost no custom orchestration framework. That is very different from having no framework.
+
+Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them.
+
+The framework did not vanish.
+
+It became somebody else's primitive.
+
+That fits Chapter 1 almost suspiciously well. Once lower layers become reliable enough, we stop rebuilding them and treat them as building blocks. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
+
+So yes: **Zero Framework. Bash is enough.**
+
+With the asterisk that Bash contains roughly half a century of civilization.
+
+This is worth remembering whenever somebody shows you an agent implemented in one hundred lines of Python. The hundred lines may be perfectly real.
+
+So is everything underneath them.
+
+The useful question was whether that inherited machinery was now enough to let me remove most of my own orchestration and still get real search.
+
+So I deleted the database machinery, controller loops and little pieces of software whose job was to make the agent behave like a researcher, and tried the stupidly simple version.
 
 ## The Coffee Test
 
@@ -356,9 +384,7 @@ The smaller claim is enough.
 
 That was the result I cared about—not that AI writes code faster, but that AI can participate in **discovering better code**.
 
-The important shift is not speed.
-
-It is who owns the next idea.
+The important shift is not speed. It is who owns the next idea.
 
 ## The Algorithmic Vortex
 
@@ -368,9 +394,7 @@ At the beginning of a conventional project, I might choose hill climbing, evolut
 
 Once code is cheap to generate and evaluation is cheap enough to repeat, the choice no longer has to be permanent. A geometric construction can initialize a numerical optimizer. An evolutionary method can search parameters for another solver. A language model can notice a failure pattern and invent a repair procedure. Two ideas that began in separate lineages can meet later because an experiment suddenly makes the combination useful.
 
-The search moves outward through levels.
-
-A conventional optimizer searches over candidate solutions. Meta-heuristics search over larger families of candidates and strategies. Code evolution searches over programs that themselves search for solutions. Once a capable agent controls the experimentation loop, even the decision about **which kind of search to try next** can enter the search space.
+The search moves outward through levels. A conventional optimizer searches over candidate solutions. Meta-heuristics search over larger families of candidates and strategies. Code evolution searches over programs that themselves search for solutions. Once a capable agent controls the experimentation loop, even the decision about **which kind of search to try next** can enter the search space.
 
 That is the vortex.
 
@@ -378,9 +402,7 @@ It is not “algorithms are dead.” There are algorithms everywhere in this pic
 
 We stop writing one solver and start creating conditions in which solvers can compete, mutate, combine and occasionally surprise us.
 
-The chapter began by asking who invents the next move.
-
-Here, for the first time in the experiment, the answer was not reliably “me.”
+The chapter began by asking who invents the next move. Here, for the first time in the experiment, the answer was not reliably “me.”
 
 ## The Contract
 
@@ -396,7 +418,7 @@ You watch the agent try something mediocre and immediately think of a better app
 
 For these experiments, I wanted independent directions badly enough that I had to resist becoming the senior engineer on every branch.
 
-The deeper rule is: **do not accidentally collapse autonomous search back into your own search.**
+The deeper rule is: **don't accidentally collapse autonomous search back into your own search.**
 
 Spawn, evaluate, prune. Intervene in the conditions before you intervene in every idea.
 
@@ -410,11 +432,11 @@ At that point we are no longer optimizing circle packing.
 
 We are negotiating with the specification.
 
-The **Immutable Harness** is the anchor of truth in an otherwise fluid process. The solver can change. The strategy can change. The tools can change. The agent can decide yesterday’s entire approach was stupid and start again.
+The **Immutable Harness** is the anchor of truth in an otherwise fluid process. The solver can change. The strategy can change. The tools can change. The agent can decide yesterday's entire approach was stupid and start again.
 
 But the thing saying whether it worked stays harder to change than the thing being optimized.
 
-This is Chapter 1’s boundary made executable.
+This is Chapter 1's boundary made executable.
 
 ### Cross-Pollinate Without Collapsing Diversity
 
@@ -452,37 +474,11 @@ Diagonal layering made this distinction obvious. Once the structural direction l
 
 Do not spend hours polishing a local optimum you should abandon. And do not keep demanding revolution from a solution that has already found the right mountain and merely needs to climb it.
 
-## Zero Framework, With an Asterisk
-
-I originally described this experiment as **zero framework**.
-
-It is a great slogan.
-
-It is also not really true.
-
-I wrote almost no custom orchestration framework. That is very different from having no framework.
-
-Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them.
-
-The framework did not vanish.
-
-It became somebody else’s primitive.
-
-That fits Chapter 1 almost suspiciously well. Once lower layers become reliable enough, we stop rebuilding them and treat them as building blocks. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
-
-So yes: **Zero Framework. Bash is enough.**
-
-With the asterisk that Bash contains roughly half a century of civilization.
-
-This is worth remembering whenever somebody shows you an agent implemented in one hundred lines of Python. The hundred lines may be perfectly real.
-
-So is everything underneath them.
-
 ## What Did We Actually Learn?
 
 It would be very easy to overread this experiment.
 
-We did not prove that coding agents can autonomously solve arbitrary research problems. We did not prove that AlphaEvolve-style systems are obsolete. We did not establish diagonal layering as a historically novel result in computational geometry. And we definitely did not prove that the right approach to production software is to give Claude a shell and go for a very long lunch.
+We did not prove that coding agents can autonomously solve arbitrary research problems, that AlphaEvolve-style systems are obsolete, that diagonal layering is historically novel in computational geometry, or that the right approach to production software is to give Claude a shell and go for a very long lunch.
 
 What we had was narrower and, to me, more useful.
 
@@ -490,15 +486,7 @@ We had a **bounded problem** where evaluation was cheap and clear. We gave a cap
 
 The agent could propose an approach, implement it, run it, inspect the result, abandon it, create tools, borrow ideas from another direction and try again. My role moved away from writing the solver and toward defining the job, constructing the environment and defending the harness.
 
-That is the claim this chapter earns.
-
-Not “agents can do research.”
-
-Not “frameworks are unnecessary.”
-
-Not “humans are out of the loop.”
-
-Something more precise: **when the problem is bounded and reality supplies a hard enough referee, substantial decision-level control can move into the agent without giving up control of what counts as success.**
+That is the claim this chapter earns: **when the problem is bounded and reality supplies a hard enough referee, substantial decision-level control can move into the agent without giving up control of what counts as success.**
 
 That is already a meaningful change.
 
@@ -510,9 +498,7 @@ The search can be complicated because **judgment is simple**.
 
 Most things I want agents to build are not that generous. “Make a good educational demo.” “Write something people remember.” “Design a useful product.” “Explain this so somebody finally understands it.”
 
-We can still let the agent generate alternatives, branch, cross-pollinate and search among them.
-
-But now the difficult part has moved again.
+We can still let the agent generate alternatives, branch, cross-pollinate and search among them. But now the difficult part has moved again.
 
 In circle packing, the harness tells the agent when it is wrong.
 
