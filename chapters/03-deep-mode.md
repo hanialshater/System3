@@ -50,7 +50,7 @@ A lot of early LLM programming consisted of building a tiny artificial universe 
 
 We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not necessarily help.
 
-Software-engineering benchmarks exposed the same gap. HumanEval and APPS asked whether a model could write code once the problem had already been packaged for it. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
+Software-engineering benchmarks exposed the same gap. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
 
 Eventually we stopped carrying the loop by hand.
 

@@ -50,9 +50,7 @@ You probably tried a variation of this as a child; if not your ear, almost certa
 
 You just tried.
 
-Tongue out, strain upward, dignity temporarily suspended, result observed.
-
-Now you know.
+Tongue out, strain upward, dignity temporarily suspended, result observed. Now you know.
 
 The epistemic chain is unusually short. You form a hypothesis, act on the world and the world answers back. Your body is an experimental apparatus that follows you around all day, mostly free of charge.
 
@@ -140,15 +138,11 @@ Suppose someone tells me that penguins live in Italy.
 
 I have never conducted a census of Italian penguins. I cannot personally inspect every forest, coastline and piazza.
 
-So I call Alberto.
-
-Alberto lives in Rome.
+So I call Alberto. Alberto lives in Rome.
 
 “Alberto, do penguins live in Italy?”
 
-He laughs.
-
-I now know more than I did five minutes earlier.
+He laughs. I now know more than I did five minutes earlier.
 
 Not with mathematical certainty. Alberto could be wrong. He may misunderstand the question. An escaped penguin could at this very moment be crossing Piazza Navona and destroying the example.
 
@@ -158,9 +152,7 @@ This is how testimony becomes valuable. Not simply because another human said so
 
 Testimony comes with metadata.
 
-And we are all Alberto to someone.
-
-Someone may trust me on ranking systems because I have spent years working on them. Someone else may trust me about Jordan because I have lived there. If I begin confidently explaining marine biology, the correct response is not to transfer my credibility from machine learning to whales merely because the same mouth is speaking.
+And we are all Alberto to someone. Someone may trust me on ranking systems because I have spent years working on them. Someone else may trust me about Jordan because I have lived there. If I begin confidently explaining marine biology, the correct response is not to transfer my credibility from machine learning to whales merely because the same mouth is speaking.
 
 **Trust is local.**
 
@@ -304,9 +296,7 @@ Suppose an agent learns:
 
 A flat skill stores the rule. A richer object can record that the heuristic came from several failed regex attempts, later worked across multiple nested formats, remains unnecessary for simple flat extraction and should be treated as a strong prior rather than a commandment.
 
-Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is not merely *I have an editing tool*. It is *this tool is reliable here and dangerous there*.
-
-Reliability is conditional.
+Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is not merely *I have an editing tool*. It is *this tool is reliable here and dangerous there*. Reliability is conditional.
 
 The same applies to softer heuristics. “Regex tends to fail on deeply nested structures” is not a theorem. It is a **meta-belief**—something that can accumulate evidence for and against it.
 

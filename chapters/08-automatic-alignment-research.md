@@ -98,7 +98,7 @@ There is a comforting assumption hiding inside many oversight schemes: the power
 
 Sometimes it does. Sometimes it is simply more persuasive.
 
-Experiments on debate and consultancy with weaker LLM judges make the difference visible. In studied settings, debate often improved on one-sided consultancy, especially when the judge lacked relevant information. The gains were not universal, and a strong consultant could sometimes persuade a weak judge of the wrong answer. ([Khan et al., 2024](https://arxiv.org/abs/2407.04622))
+Experiments on debate and consultancy with weaker LLM judges make the difference visible. In studied settings, debate often improved on one-sided consultancy, especially when the judge lacked relevant information. The gains were not universal, and a strong consultant could sometimes persuade a weak judge of the wrong answer. ([Kenton et al., 2024](https://arxiv.org/abs/2407.04622))
 
 This is an old human problem in new clothing. An expert can help a non-expert understand a difficult subject. An expert can also bury the non-expert under jargon until surrender looks like understanding. A longer explanation does not make the epistemic gap disappear.
 

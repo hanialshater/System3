@@ -45,6 +45,11 @@ These chapters are first integrated drafts and are **not locked**. They will rec
 
 - [Chapter 13 — The Prophecy: The Love Prompt of Devesh](chapters/13-the-prophecy.md)
 
+### Back matter
+
+- [A Note on the Illustrations](chapters/appendix-illustrations.md)
+- [References](chapters/appendix-references.md)
+
 ## Editorial prompts
 
 - [Chapter Version Evaluation Prompt](prompts/chapter-version-evaluation.md) — compare old and revised chapter versions while protecting voice, humor, fireworks, technical credibility, seed planting, and human-writing feel.

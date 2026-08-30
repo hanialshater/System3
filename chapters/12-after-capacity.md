@@ -50,9 +50,7 @@ Scarce capability shapes power.
 
 If I cannot build something myself, I need somebody who can. If one organization owns the machinery, data, expertise or distribution required to act, then access to that organization becomes valuable. We spend a surprising amount of human life acquiring permission from structures that exist partly because doing the thing directly is too expensive.
 
-AI changes some of those costs.
-
-This does not automatically flatten society. A technology that increases capacity can also increase concentration. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
+AI changes some of those costs. This does not automatically flatten society. A technology that increases capacity can also increase concentration. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
 
 Still, something important happens when the cost curve moves. If an individual or small group can increasingly research, design, build, analyze and operate things that previously required a much larger institution, then some problems that looked like power problems may turn out to have been **capacity problems wearing a suit**.
 
@@ -70,9 +68,7 @@ Software gives us a useful example because we have already lived through two eco
 
 The first was bespoke software. If you had enough money, somebody built the thing for you. Banks had their systems. Airlines had theirs. Governments had theirs. Large companies employed armies of engineers to encode their peculiarities into software because those peculiarities were valuable enough to justify the cost.
 
-Then software became a service.
-
-This was an enormous improvement. Instead of every company building payroll, CRM, project management, analytics, communication and twenty other systems from scratch, somebody could build one good product and sell it to millions of people.
+Then software became a service. This was an enormous improvement. Instead of every company building payroll, CRM, project management, analytics, communication and twenty other systems from scratch, somebody could build one good product and sell it to millions of people.
 
 But scale has a price. To serve millions of people, the product has to become somewhat generic. The strange needs of one team become feature requests. The software acquires configuration menus, plugins, workflows, permission systems and eventually an enterprise tier whose main feature is that somebody will answer your email.
 
@@ -84,9 +80,7 @@ Not a toy script. Not “I asked ChatGPT to make a calculator.” I mean systems
 
 A scientist may construct a research environment around one question, use it intensely for three months and throw most of it away when the question changes. A teacher may build an entire interactive world for one class because those particular students are stuck on those particular ideas. A small company may create internal software whose assumptions match the company instead of spending two years teaching the company to behave like Salesforce. A family may have tools built around how that family schedules, learns, travels, budgets and remembers things, with exactly zero concern for whether the addressable market justifies Series A.
 
-Some of these systems may serve a thousand people. Some ten. Some one.
-
-That used to sound economically absurd. It may become normal.
+Some of these systems may serve a thousand people. Some ten. Some one. That used to sound economically absurd. It may become normal.
 
 This changes the human role in a way the automation story tends to miss. The future is not necessarily:
 
@@ -116,9 +110,7 @@ This friction did something useful: it produced depth. It also killed an enormou
 
 AI changes that bargain. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can make the explanation use concepts I already know. I can ask one field to explain another. I can have the machine invent exercises, challenge my understanding, translate notation, simulate the system and show me what changes when I violate an assumption.
 
-The cost of getting the **map** has collapsed.
-
-That does not mean I have walked the territory.
+The cost of getting the **map** has collapsed. That does not mean I have walked the territory.
 
 AI can make us broader without necessarily making us deeper. It can make it possible to move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
 
@@ -168,13 +160,9 @@ A person can demand randomized evidence for a medical claim, ask her mother for 
 
 Entire societies work this way. Semiconductor fabs coexist with ancient identities. Bayesian inference coexists with rumor. Universities teach critical theory while their admissions systems produce precise numerical rankings. A company can run sophisticated causal experiments in the morning and make a major organizational decision in the afternoon because one senior person “has a feeling.”
 
-I call this the **ideology vortex**.
+I call this the **ideology vortex**. Not because every worldview is equally true. They are not. Reality remains annoyingly capable of rejecting bad engineering regardless of how socially constructed the bridge feels on the way down.
 
-Not because every worldview is equally true. They are not. Reality remains annoyingly capable of rejecting bad engineering regardless of how socially constructed the bridge feels on the way down.
-
-The vortex means that several modes of knowing and valuing operate at once.
-
-Premodern traditions carry identity, ritual, inherited meaning and forms of belonging that modern rational systems often underestimate. Modernity gives us the extraordinary machinery of science, verification, law and universal claims. Postmodern critique reminds us that institutions and categories are not neutral merely because somebody printed them in a table. Pragmatism asks whether the thing actually works. Bayesianism offers a disciplined language for uncertainty. Markets coordinate some kinds of distributed information. Democracies create legitimacy in ways a loss function cannot.
+The vortex means that several modes of knowing and valuing operate at once. Premodern traditions carry identity, ritual, inherited meaning and forms of belonging that modern rational systems often underestimate. Modernity gives us the extraordinary machinery of science, verification, law and universal claims. Postmodern critique reminds us that institutions and categories are not neutral merely because somebody printed them in a table. Pragmatism asks whether the thing actually works. Bayesianism offers a disciplined language for uncertainty. Markets coordinate some kinds of distributed information. Democracies create legitimacy in ways a loss function cannot.
 
 Each mode sees something the others can miss. Each can also become ridiculous when asked to do every job.
 
@@ -234,9 +222,7 @@ That is almost suspiciously similar to the architecture we have been building fo
 
 A life can do something similar.
 
-The old modes do not die.
-
-They become layers.
+The old modes do not die. They become layers.
 
 ## The Second Descent
 
@@ -248,9 +234,7 @@ Humans still have status anxiety, tribal loyalty, love, jealousy, resentment, cu
 
 Now give those humans much more ability to execute, learn arguments, build systems, persuade people, coordinate groups, search for evidence and create things.
 
-The result could be wonderful.
-
-It can also be a Ferrari engine attached to bicycle brakes.
+The result could be wonderful. It can also be a Ferrari engine attached to bicycle brakes.
 
 The capacity to act can scale faster than the capacity to want wisely.
 
@@ -286,9 +270,7 @@ and
 
 **What makes a life worth living?**
 
-For a long time, a job has answered parts of both. It provides money, but also status, routine, social contact, identity, a reason to get dressed and a group of people with whom to complain about another group of people. Work is not one thing. It is a bundle.
-
-AI may unbundle it.
+For a long time, a job has answered parts of both. It provides money, but also status, routine, social contact, identity, a reason to get dressed and a group of people with whom to complain about another group of people. Work is not one thing. It is a bundle. AI may unbundle it.
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
@@ -382,9 +364,7 @@ AI itself can increase our **governance capacity**. We can simulate policies, in
 
 But greater governance capacity can make more complicated arrangements practical. The future may be more polycentric, not less: different people and communities operating under partially different patterns while sharing harder boundaries around rights, safety, resources and factual reality.
 
-That sounds messy.
-
-Good. Reality has shown little interest in our preference for clean diagrams.
+That sounds messy. Good. Reality has shown little interest in our preference for clean diagrams.
 
 Sometimes the humane answer to disagreement is not consensus.
 
@@ -406,9 +386,7 @@ As some forms of capacity get cheaper, more of human life can become **experimen
 
 You can prototype the tool before building the company. Learn enough of the field before choosing the degree. Simulate the policy before betting the city. Try the creative project before asking whether the market approves. Explore a possible future before turning it into a permanent identity.
 
-Then experience answers back.
-
-Some possibilities become commitments. Others die cheaply.
+Then experience answers back. Some possibilities become commitments. Others die cheaply.
 
 This is capacity over power in its most personal form: not escaping commitment, but getting more room to discover which commitments deserve to become expensive.
 

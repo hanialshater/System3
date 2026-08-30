@@ -160,7 +160,7 @@ The system can compare compensation under several tax regimes, estimate commute 
 
 The assistant has not merely evaluated an option. It has changed the **decision environment**.
 
-And that matters because preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them. ([Payne et al., 1992](https://doi.org/10.1016/0001-6918(92)90043-D))
+And that matters because preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them. ([Payne et al., 1992](https://doi.org/10.1016/0001-6918%2892%2990043-D))
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
