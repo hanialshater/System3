@@ -287,6 +287,25 @@ figcaption { font-size:8.5pt; font-style:italic; text-align:center; margin-top:7
 .artframe.has-art { min-height:0; display:block; }
 .artframe.has-art img { height:auto; }
 
+.sheet.blank { background:var(--paper); }
+.titlepage { position:absolute; inset:0; display:flex; flex-direction:column;
+  align-items:center; text-align:center; padding:1.6in 0.7in 1.1in; }
+.tp-title { font-size:34pt; font-weight:bold; letter-spacing:0.22em; margin-bottom:14pt; }
+.tp-sub { font-size:15pt; font-style:italic; color:var(--accent); margin-bottom:26pt; }
+.tp-rule { width:1.1in; border-top:1pt solid var(--accent); margin-bottom:26pt; }
+.tp-tag { font-size:10pt; font-style:italic; color:#6d6350; max-width:3.6in; line-height:1.5; }
+.tp-author { margin-top:auto; font-size:11pt; letter-spacing:0.12em; }
+.tocwrap { position:absolute; top:1.1in; bottom:0.8in; left:0.95in; right:0.8in; }
+.tochead { font-size:17pt; font-weight:bold; color:var(--accent); font-style:italic;
+  margin-bottom:22pt; }
+.tocrow { display:flex; align-items:baseline; font-size:10.5pt; margin-bottom:7.5pt; }
+.tocnum { width:1.4em; color:var(--accent); flex:none; }
+.toctitle { flex:none; max-width:3.1in; }
+.tocdots { flex:1; border-bottom:1px dotted var(--frame); margin:0 6pt 2.5pt; }
+.tocpage { flex:none; color:var(--accent); }
+.tocback { margin-top:14pt; }
+.content h1 { font-size:19pt; margin:6pt 0 14pt; text-align:left; line-height:1.2; }
+
 .opener { position:absolute; inset:0; }
 .opener img { width:100%; height:100%; object-fit:cover; }
 .opener.placeholder { background:var(--paper); }
@@ -370,6 +389,34 @@ document.body.dataset.done = '1';
 """
 
 
+def opener_sheet(man, cls=""):
+    titleblock = f"""<div class="titleblock">
+        <div class="chnum">CHAPTER {man['chapter']}</div>
+        <div class="chtitle">{html.escape(man['title'])}</div>
+        <div class="chsub">{html.escape(man['subtitle'])}</div>
+      </div>"""
+    # generated art (art/chNN/opener.png) wins over the stored asset
+    gen = ROOT / "book-design" / "art" / f"ch{man['chapter']:02d}" / "opener.png"
+    art = str(gen.relative_to(ROOT)) if gen.exists() else man.get("opener_art")
+    if art and (ROOT / art).exists():
+        # art with baked-in hand lettering gets no typeset overlay
+        tb = "" if (man.get("opener_titled") or gen.exists()) else titleblock
+        return f'<div class="sheet{cls}"><div class="opener"><img src="file://{ROOT / art}">{tb}</div></div>'
+    brief = html.escape(man.get("opener_brief", "opener art pending"))
+    return f"""<div class="sheet{cls}"><div class="opener placeholder">{titleblock}
+      <div class="art openerwash"><span class="slotid">opener · opener-plate</span>{brief}</div>
+    </div></div>"""
+
+
+def chapter_blocks(man):
+    blocks = parse((ROOT / man["source"]).read_text())
+    if blocks and blocks[0]["kind"] == "h1":
+        blocks.pop(0)
+    if blocks and blocks[0]["kind"] == "p" and re.fullmatch(r"<p><em>.*</em></p>", blocks[0]["html"]):
+        blocks.pop(0)
+    return weave(blocks, man)
+
+
 def build(chnum):
     man = json.loads((ROOT / "book-design" / "manifests" / f"chapter-{chnum:02d}.json").read_text())
     src = (ROOT / man["source"]).read_text()
@@ -381,21 +428,7 @@ def build(chnum):
         blocks.pop(0)
     woven = weave(blocks, man)
 
-    titleblock = f"""<div class="titleblock">
-        <div class="chnum">CHAPTER {man['chapter']}</div>
-        <div class="chtitle">{html.escape(man['title'])}</div>
-        <div class="chsub">{html.escape(man['subtitle'])}</div>
-      </div>"""
-    art = man.get("opener_art")
-    if art and (ROOT / art).exists():
-        # art with baked-in hand lettering gets no typeset overlay
-        tb = "" if man.get("opener_titled") else titleblock
-        opener = f'<div class="sheet"><div class="opener"><img src="file://{ROOT / art}">{tb}</div></div>'
-    else:
-        brief = html.escape(man.get("opener_brief", "opener art pending"))
-        opener = f"""<div class="sheet"><div class="opener placeholder">{titleblock}
-          <div class="art openerwash"><span class="slotid">opener · opener-plate</span>{brief}</div>
-        </div></div>"""
+    opener = opener_sheet(man)
 
     js = PAGINATE_JS % {"start": 0, "book": json.dumps("SYSTEM 3"),
                         "head": json.dumps(man["running_head"])}
@@ -430,8 +463,166 @@ def build(chnum):
     print(f"chapter {chnum}: {len(sheets)} pages -> {OUT}")
 
 
+BOOK_JS = """
+const BOOK_HEAD = "SYSTEM 3";
+const book = document.getElementById('book');
+let pageNo = 0, page = null, content = null, HEAD = '';
+function newPage() {
+  pageNo++;
+  page = document.createElement('div');
+  const verso = pageNo % 2 === 0;
+  page.className = 'sheet ' + (verso ? 'verso' : 'recto');
+  const head = document.createElement('div');
+  head.className = 'runhead';
+  head.innerHTML = verso
+    ? '<span>' + pageNo + '</span><span>' + BOOK_HEAD + '</span>'
+    : '<span>' + HEAD + '</span><span>' + pageNo + '</span>';
+  content = document.createElement('div');
+  content.className = 'content';
+  page.appendChild(head); page.appendChild(content);
+  book.appendChild(page);
+}
+function blankPage() {
+  pageNo++;
+  const s = document.createElement('div');
+  s.className = 'sheet blank ' + (pageNo % 2 === 0 ? 'verso' : 'recto');
+  book.appendChild(s);
+}
+function trySplit(b) {
+  if (!b.classList.contains('k-p')) return null;
+  const p = b.querySelector(':scope > p');
+  if (!p || p.children.length > 0) return null;
+  const words = p.textContent.split(' ');
+  if (words.length < 12) return null;
+  let lo = 1, hi = words.length - 1, fit = 0;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    p.textContent = words.slice(0, mid).join(' ');
+    if (content.scrollHeight <= content.clientHeight + 1) { fit = mid; lo = mid + 1; }
+    else hi = mid - 1;
+  }
+  if (fit < 6 || words.length - fit < 4) { p.textContent = words.join(' '); return null; }
+  p.textContent = words.slice(0, fit).join(' ');
+  const rest = document.createElement('div');
+  rest.className = 'block k-p';
+  const p2 = document.createElement('p');
+  p2.className = 'cont';
+  p2.textContent = words.slice(fit).join(' ');
+  rest.appendChild(p2);
+  return rest;
+}
+const toc = [];
+document.querySelectorAll('#sections > section').forEach(sec => {
+  HEAD = sec.dataset.head;
+  if (pageNo % 2 === 1) blankPage();       // openers and section starts sit recto
+  const op = sec.querySelector(':scope > .op > .sheet');
+  if (op) {
+    pageNo++;
+    book.appendChild(op);
+    toc.push({ t: sec.dataset.title, n: sec.dataset.num, p: pageNo });
+  } else {
+    toc.push({ t: sec.dataset.title, n: sec.dataset.num, p: pageNo + 1 });
+  }
+  const queue = Array.from(sec.querySelectorAll(':scope > .src > *'));
+  newPage();
+  for (let qi = 0; qi < queue.length; qi++) {
+    const b = queue[qi];
+    content.appendChild(b);
+    if (content.scrollHeight > content.clientHeight + 1) {
+      if (content.children.length === 1) continue;
+      const rest = trySplit(b);
+      if (rest) { queue.splice(qi + 1, 0, rest); newPage(); }
+      else { content.removeChild(b); newPage(); content.appendChild(b); }
+    }
+  }
+});
+const list = document.getElementById('toclist');
+toc.forEach(e => {
+  const row = document.createElement('div');
+  row.className = 'tocrow' + (e.n ? '' : ' tocback');
+  row.innerHTML = '<span class="tocnum">' + (e.n || '') + '</span><span class="toctitle">'
+    + e.t + '</span><span class="tocdots"></span><span class="tocpage">' + e.p + '</span>';
+  list.appendChild(row);
+});
+document.getElementById('sections').remove();
+document.body.dataset.done = '1';
+"""
+
+
+def build_book():
+    mans = [json.loads(f.read_text())
+            for f in sorted((ROOT / "book-design" / "manifests").glob("chapter-*.json"))]
+    sections = []
+    for man in mans:
+        sections.append({
+            "head": man["running_head"], "title": man["title"],
+            "num": str(man["chapter"]), "opener": opener_sheet(man),
+            "content": "".join(chapter_blocks(man)),
+        })
+    for path, head, title in [
+        ("chapters/appendix-illustrations.md", "A NOTE ON THE ILLUSTRATIONS", "A Note on the Illustrations"),
+        ("chapters/appendix-references.md", "REFERENCES", "References"),
+    ]:
+        blocks = parse((ROOT / path).read_text())
+        woven = weave(blocks, {"chapter": 0, "slots": []})
+        sections.append({"head": head, "title": title, "num": "",
+                         "opener": None, "content": "".join(woven)})
+
+    front = """
+    <div class="sheet recto"><div class="titlepage">
+      <div class="tp-title">SYSTEM 3</div>
+      <div class="tp-sub">Towards Fluent Autonomy</div>
+      <div class="tp-rule"></div>
+      <div class="tp-tag">Trust Chains, Agent Autonomy, and the Architecture of AI That Works</div>
+      <div class="tp-author">HANI M.M. AL-SHATER</div>
+    </div></div>
+    <div class="sheet blank verso"></div>
+    <div class="sheet recto"><div class="tocwrap"><div class="tochead">Contents</div>
+      <div id="toclist"></div></div></div>
+    <div class="sheet blank verso"></div>"""
+
+    secs = []
+    for s in sections:
+        op = f'<div class="op">{s["opener"]}</div>' if s["opener"] else ""
+        secs.append(
+            f'<section data-head="{html.escape(s["head"], quote=True)}" '
+            f'data-title="{html.escape(s["title"], quote=True)}" '
+            f'data-num="{s["num"]}">{op}<div class="src">{s["content"]}</div></section>')
+
+    doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<style>{CSS}</style></head><body>
+<div id="book">{front}</div>
+<div id="sections" style="position:absolute; visibility:hidden; width:4.4in;">{''.join(secs)}</div>
+<script>{BOOK_JS}</script></body></html>"""
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    html_path = OUT / "System3-full-book-draft.html"
+    html_path.write_text(doc)
+
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        exe = os.environ.get("CHROMIUM_PATH", "/opt/pw-browsers/chromium")
+        b = p.chromium.launch(executable_path=exe if os.path.exists(exe)
+                              else "/opt/pw-browsers/chromium-1194/chrome-linux/chrome")
+        pg = b.new_page(viewport={"width": 700, "height": 1000})
+        pg.goto(f"file://{html_path}")
+        pg.wait_for_function("document.body.dataset.done === '1'", timeout=900000)
+        n = pg.evaluate("document.querySelectorAll('.sheet').length")
+        pg.pdf(path=str(OUT / "System3-full-book-draft.pdf"),
+               width="6in", height="9in", print_background=True,
+               margin={"top": "0", "bottom": "0", "left": "0", "right": "0"})
+        for sel, name in [(".sheet:nth-child(1)", "book-title"), (".sheet:nth-child(3)", "book-toc")]:
+            el = pg.query_selector(sel)
+            if el:
+                el.screenshot(path=str(OUT / "pages" / f"{name}.png"))
+        b.close()
+    print(f"full book: {n} pages -> {OUT / 'System3-full-book-draft.pdf'}")
+
+
 if __name__ == "__main__":
-    if sys.argv[1] == "all":
+    if sys.argv[1] == "book":
+        build_book()
+    elif sys.argv[1] == "all":
         for f in sorted((ROOT / "book-design" / "manifests").glob("chapter-*.json")):
             build(int(f.stem.split("-")[1]))
     else:
