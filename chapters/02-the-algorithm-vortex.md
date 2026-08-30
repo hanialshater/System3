@@ -94,7 +94,7 @@ In one simple run, the score climbed from around 1.33 to roughly 2.26. That is n
 
 Hill climbing is not failing because it is stupid. It is doing exactly what we asked: improving the solution immediately around it. The problem is that the current solution may live in the wrong part of the search space. Reaching a much better packing may require temporarily moving through configurations that look worse, or jumping to a structure that cannot be reached through a sequence of tiny improvements.
 
-This matters far beyond circle packing. A system can become extremely competent at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
+This matters far beyond circle packing. A system can become expert at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
 
 Here, the machine is searching—but the human still invented the search rule.
 
@@ -280,7 +280,7 @@ That became the autonomy test I actually cared about. Not whether AI could help 
 
 I wanted to know whether I could leave.
 
-There is a difference between collaborating with an agent and **hiring** one. If I still have to choose every strategy, approve every experiment, rescue every failed branch and keep the search alive myself, then I have a very powerful collaborator. That is useful. It is not yet the kind of autonomy I was trying to understand.
+There is a difference between collaborating with an agent and **hiring** one. If I still have to choose every strategy, approve every experiment, rescue every failed branch and keep the search alive myself, then I have a formidable collaborator. That is useful. It is not yet the kind of autonomy I was trying to understand.
 
 Circle packing gives us a rare luxury because the evaluator can stay behind when I leave. The agent can change its code, create scripts, abandon one approach, try another and waste compute on ideas that go nowhere. What it cannot do is redefine what counts as a valid packing because the current score hurts its feelings.
 
@@ -346,7 +346,7 @@ These are not universal laws of software engineering. They are rules for a parti
 
 This one is the foundation.
 
-If the agent can change the evaluator, the meaning of the experiment disappears very quickly. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement.
+If the agent can change the evaluator, the meaning of the experiment evaporates. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement.
 
 At that point we are no longer optimizing circle packing.
 

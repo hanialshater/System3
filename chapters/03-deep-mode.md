@@ -394,7 +394,7 @@ The same move works outside education. A customer may know exactly what jacket t
 
 This is cheap perspective-taking.
 
-It is also very easy to fool yourself with.
+It is also a cheap way to fool yourself.
 
 The confused student is not confused. Claude has not spent twenty minutes failing to understand recursion while everybody else in the classroom moves ahead. It is generating a plausible model of how such a person might react.
 
@@ -404,7 +404,7 @@ I treat borrowed minds as instruments for generating criticisms and hypotheses, 
 
 By this point the system could generate alternatives, research previous work, retrieve old ideas, reopen dead branches, force the search into unfamiliar regions, change representation, revise the objective and inspect the artifact from different points of view.
 
-We could generate a lot of plausible possibilities.
+We could generate plausible possibilities by the dozen.
 
 Now some of them had to die.
 

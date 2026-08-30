@@ -230,7 +230,7 @@ Seen through the Chapter 5 reveal, Coverage and Unmet Demand are more than roadm
 
 ## Let the LLM Narrate. Do Not Let It Declare Reality.
 
-AI can help with problem discovery too, and this is where it becomes very easy to fool ourselves.
+AI can help with problem discovery too, and here fooling ourselves becomes cheap.
 
 Imagine replaying anonymized customer sessions and asking a strong language model to narrate what appears to be happening. The customer compared three products, opened the size chart, returned to one PDP, removed an item from the basket and left. The model can generate a plausible diagnosis. Cluster enough narrations and you may discover recurring forms of friction that your existing taxonomy missed.
 

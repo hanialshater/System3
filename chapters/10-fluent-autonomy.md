@@ -144,7 +144,7 @@ What happens to ordinary software in this picture?
 
 Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
 
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; quite often they are excellent interfaces.
+Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
 
 Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
 

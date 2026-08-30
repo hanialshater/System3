@@ -310,7 +310,7 @@ A System 3 belief says:
 
 Now the belief is challengeable.
 
-If you enjoy old epistemology labels, you can call the model a largely **coherentist core**—extremely good at producing structures that hang together—and System 3 a thin **foundationalist shell** tied to observation, provenance and consequence. Philosophers can put down their weapons; I only need the architectural analogy.
+If you enjoy old epistemology labels, you can call the model a largely **coherentist core**—uncannily good at producing structures that hang together—and System 3 a thin **foundationalist shell** tied to observation, provenance and consequence. Philosophers can put down their weapons; I only need the architectural analogy.
 
 Coherence is valuable, but something outside the coherent system must occasionally be allowed to say no.
 

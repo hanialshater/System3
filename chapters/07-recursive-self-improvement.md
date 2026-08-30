@@ -86,7 +86,7 @@ That question immediately reaches into representation and embodiment.
 
 Pathak's curiosity work did not simply reward prediction error over raw pixels. It learned features related to the agent's own action transitions, partly to avoid paying for unpredictable but irrelevant visual changes. The representation changes what counts as novel.
 
-Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts in order to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action. ([Bajcsy](https://doi.org/10.1109/5.5968); [Brooks](https://people.csail.mit.edu/brooks/papers/representation.pdf))
+Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action. ([Bajcsy](https://doi.org/10.1109/5.5968); [Brooks](https://people.csail.mit.edu/brooks/papers/representation.pdf))
 
 A learner's **body** determines part of its curriculum. A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator has a different epistemic body from a chatbot restricted to text. Permissions matter too. Give an agent read-only access and one set of experiments is possible. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
 
@@ -253,7 +253,7 @@ Simulation expands search. Contact with the world still decides which imagined r
 
 Self-improvement can therefore make a system better at generating experience while also making it easier to **train inside its own misconception**.
 
-That becomes especially dangerous once language-model agents use other language models as judges, simulators, users and critics. At sufficient scale, a society can become very good at agreeing with itself.
+That becomes especially dangerous once language-model agents use other language models as judges, simulators, users and critics. At sufficient scale, a society can perfect the art of agreeing with itself.
 
 ## What If the Objective Is the Local Optimum?
 
