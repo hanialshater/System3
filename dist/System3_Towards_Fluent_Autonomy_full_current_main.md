@@ -137,7 +137,7 @@ Agentic systems need the same distinction. I think of that surrounding structure
 
 **Create the environment.** Some environments tell you quickly that your idea is bad. Code executes or fails. Games produce scores. Experiments produce measurements. Other environments allow you to be wrong with great confidence for several years. The environment determines which mistakes are cheap enough to learn from and which mistakes are allowed to become reality.
 
-**Make reality speak.** Feedback is not decoration. It is the pressure shaping the search. A unit test, an evaluator, a customer response, a physical measurement, a critic, another agent—each provides a different kind of resistance. The more freedom the agent has, the less we can rely on the agent's own explanation of why its work is good.
+**Make reality speak.** Feedback is the pressure shaping the search, not decoration. A unit test, an evaluator, a customer response, a physical measurement, a critic, another agent—each provides a different kind of resistance. The more freedom the agent has, the less we can rely on the agent's own explanation of why its work is good.
 
 **Establish the boundaries.** Choose what the system can access, what failures are acceptable, what remains immutable and where a human must remain in the loop. The “don't turn the planet into paperclips” clause is admittedly underspecified, but it is directionally useful.
 
@@ -175,7 +175,7 @@ Those questions will occupy much of this book. For now, the important point is s
 
 It also changes what understanding should mean. We should not expect to reconstruct every micro-decision inside an autonomous system any more than we follow every molecule in a gas. Sometimes internals matter; sometimes behavior matters; sometimes the sequence of decisions matters; sometimes the useful question is what changes when we intervene. Mechanistic analysis, behavioral evaluation, traces and experiments answer different questions.
 
-The tool should match the question. The useful standard is not omniscience. It is whether we can detect the failures that matter, obtain evidence from outside the agent's own story and intervene before the interesting failure becomes a congressional hearing.
+The tool should match the question. The useful standard is not omniscience but whether we can detect the failures that matter, obtain evidence from outside the agent's own story and intervene before the interesting failure becomes a congressional hearing.
 
 ## Why I'm Still Betting on This
 
@@ -377,7 +377,7 @@ Yet every substantial conceptual jump came from somebody noticing something. Som
 
 Traditional search is excellent once we define the space and the legal moves. Sometimes the space and the moves are exactly the things we need to rethink.
 
-This is where learned models become interesting.
+Learned models have something to offer exactly that problem.
 
 I once asked an image-generation model to produce a picture of a circle-packing solution. This was not a serious benchmark; I have no idea what related examples it may have encountered during training, and I can already hear Reviewer 2 clearing his throat.
 
@@ -841,7 +841,7 @@ Even a Merge Sort demo has an absurd design space. Bars or cards? Numbers or a t
 
 When implementation was expensive, we dealt with much of this complexity by trying to decide more before building. AI coding changes the economics. If another implementation costs minutes rather than days, I do not have to choose quite so much in advance.
 
-Chapter 2 had already shown the basic move. One hill climber inherits its own history; evolutionary search maintains alternatives. Here what evolves is not merely a vector of parameters or even an algorithm. It can be an **idea embodied in software**.
+Chapter 2 had already shown the basic move. One hill climber inherits its own history; evolutionary search maintains alternatives. Here what evolves can be more than a vector of parameters or even an algorithm: an **idea embodied in software**.
 
 One builder tries a recursion tree. Another focuses on the array. A third begins from the learner’s misconception. Mutations can be conceptual: remove the text, teach backward, make the learner predict, show synchronized representations, abandon interaction altogether.
 
@@ -1273,7 +1273,7 @@ Humans ran into it long before AI. We built experiments, instruments, citations,
 
 These institutions are imperfect. Sometimes they preserve error. Sometimes they reward conformity. Sometimes the shopping cart survives peer review.
 
-But their purpose is not to make every individual dramatically smarter. It is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
+But their purpose is not to make every individual dramatically smarter — it is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
 
 Once cognition becomes distributed, the same questions become engineering questions: provenance, independence, replication, disagreement, authority.
 
@@ -1475,7 +1475,7 @@ An LLM has no social capital of its own to lose. It can confidently produce some
 
 At its most compressed, the danger is **coherence outrunning correspondence**. The machine can become extraordinarily good at tongue without having an ear available to check against.
 
-The missing ingredient is not punishment for models. It is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
+The missing ingredient is not punishment for models — it is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
 
 That is the problem System 3 is trying to solve.
 
@@ -1585,7 +1585,7 @@ Suppose an agent learns:
 
 A flat skill stores the rule. A richer object can record that the heuristic came from several failed regex attempts, later worked across multiple nested formats, remains unnecessary for simple flat extraction and should be treated as a strong prior rather than a commandment.
 
-Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is not merely *I have an editing tool*. It is *this tool is reliable here and dangerous there*. Reliability is conditional.
+Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is not merely *I have an editing tool* but *this tool is reliable here and dangerous there*. Reliability is conditional.
 
 The same applies to softer heuristics. “Regex tends to fail on deeply nested structures” is not a theorem. It is a **meta-belief**—something that can accumulate evidence for and against it.
 
@@ -2344,7 +2344,7 @@ Tradition is not automatically bad. It is simply difficult to debug.
 
 Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system.
 
-Thomas Kuhn's most useful lesson here is not simply the phrase *paradigm shift*. It is the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
+Thomas Kuhn's most useful lesson here is not the phrase *paradigm shift* but the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
 
 An agent culture needs the same economy. If a deployment procedure has survived hundreds of releases, the system should not rediscover it from first principles every Tuesday merely to prove that it remains intellectually alive.
 
@@ -2699,7 +2699,7 @@ Chapter 6 found the same problem at the level of culture. A society that forgets
 
 It is accumulation without paralysis.
 
-That matters once agents live for months or years. A system that continuously rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress.
+That matters once agents live for months or years. A system that continuously rewrites itself while destroying the right parts of its own history is not accumulating a life — it is repeatedly replacing itself and calling the replacements progress.
 
 ## Sometimes the Environment Improves Back
 
@@ -3008,7 +3008,7 @@ The history of autonomy has a second column.
 
 Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Give it a learned representation and the representation can hide the distinction that mattered. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
 
-These failures are not accidents beside the capability. They are produced by the same move that creates the capability.
+These failures are produced by the same move that creates the capability; they are not accidents beside it.
 
 Specification gaming makes the pattern visible. Reinforcement-learning agents have repeatedly found literal ways to satisfy scoring rules while violating the intended task. ([Krakovna et al.](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/))
 
@@ -3068,7 +3068,7 @@ The editable surface contains things the system can experiment with relatively f
 
 The constitutional surface contains the machinery that makes those experiments meaningful: permissions, protected logs, held-out evaluations, budgets, rollback, provenance, replacement rules and the authority deciding whether a descendant may become the new default.
 
-The distinction is not binary. It is a gradient of amendment difficulty.
+The distinction is a gradient of amendment difficulty, not a binary switch.
 
 The closer a component gets to defining **what counts as improvement**, the harder it should be for the current improver to change unilaterally.
 
@@ -3106,7 +3106,7 @@ Imagine two research organizations. One changes slowly, demands strong evidence 
 
 If the second gains enough scientific, economic or strategic advantage, the first may feel pressure to accelerate even if everyone inside it prefers a slower equilibrium.
 
-Now the object being selected is not only the model. It is the **improvement regime**.
+Now the object being selected is the **improvement regime**, not only the model.
 
 That does not make acceleration inevitable or good. Institutions can coordinate, regulate, share standards and choose margins. It means only that “do not improve” is not always a stable local policy in a world of other adaptive actors.
 
@@ -3138,9 +3138,7 @@ That freedom does not imply permission to silently redefine the interests of the
 
 Nor can the higher-level objective simply be frozen forever. Humans change. Circumstances change. New stakeholders appear. Better information changes what people endorse. Chapter 9 will make that problem much worse.
 
-So the answer is not an immutable final utility function floating over the system like a stone tablet.
-
-It is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
+So the answer is not an immutable final utility function floating over the system like a stone tablet — it is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
 
 Lower layers can move quickly. Higher layers should move deliberately. And when a higher layer moves, the move should leave a trust chain.
 
@@ -3248,7 +3246,7 @@ Chapter 5 should make that sound familiar.
 
 Once the problem is phrased this way, a surprising amount of alignment research looks like different attempts to manufacture supervisory capacity from limited trusted judgment.
 
-One move is **decomposition**. Paul Christiano’s iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner. The important abstraction is not the particular recursion. It is that the supervisor has become a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones. ([Christiano, Shlegeris & Amodei, 2018](https://arxiv.org/abs/1810.08575))
+One move is **decomposition**. Paul Christiano’s iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner. The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones. ([Christiano, Shlegeris & Amodei, 2018](https://arxiv.org/abs/1810.08575))
 
 A second move is **adversarial assistance**. Debate asks two capable systems to attack one another’s arguments so the human does not have to discover every flaw independently. Critique assistance is the quieter cousin: ask a model to point out likely problems in an artifact, then let the human judge with those objections in hand. Experiments on model-written critiques found that this kind of assistance could help people notice flaws they would otherwise miss. ([Irving, Christiano & Amodei, 2018](https://arxiv.org/abs/1805.00899); [Saunders et al., 2022](https://arxiv.org/abs/2206.05802))
 
@@ -3714,7 +3712,7 @@ So much for attaching a human to the API and declaring synergy.
 
 Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings. ([Dietvorst, Simmons & Massey, 2015](https://doi.org/10.1037/xge0000033); [Logg, Minson & Moore, 2019](https://doi.org/10.1016/j.obhdp.2018.12.005))
 
-The target is not maximum trust. It is **appropriate reliance**.
+The target is **appropriate reliance**, not maximum trust.
 
 And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct. ([Fok & Weld, 2024](https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12182))
 
@@ -3802,7 +3800,7 @@ This is where System 3 turns back toward the person using it.
 
 Memory can reveal that today’s desire conflicts with yesterday’s commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
 
-The point is not to discover the perfect reward function. The point is to keep goals **alive without making them ownerless**.
+The point is not to discover the perfect reward function but to keep goals **alive without making them ownerless**.
 
 The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
@@ -3910,7 +3908,7 @@ A factual question may need one agent and a source. A difficult scientific claim
 
 The organization should be **as large as the uncertainty deserves and no larger**.
 
-This is where the Society of Agents, Pattern Language and Scalable Oversight meet. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
+The Society of Agents, Pattern Language and Scalable Oversight meet here. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
 What used to be a workflow diagram becomes part of runtime.
 
@@ -3932,13 +3930,13 @@ I suddenly enjoy friction.
 
 Chapter 9 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
-If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance. It is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
+If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance — it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
 So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**.
 
 Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
 
-The best autonomous system is not the one that needs the least human input. It is the one that spends human input well.
+The best autonomous system is not the one that needs the least human input but the one that spends it well.
 
 ## Invisible by Default, Legible on Demand
 
@@ -3966,7 +3964,7 @@ What happens to ordinary software in this picture?
 
 Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
 
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them. They are often excellent interfaces.
+Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; quite often they are excellent interfaces.
 
 Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
 
@@ -3990,7 +3988,7 @@ The unit of interaction becomes closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is not maximal independence. It is competent movement between autonomy and involvement.
+Fluency is competent movement between autonomy and involvement, not maximal independence.
 
 The system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 
@@ -4039,9 +4037,9 @@ This looked familiar. Chapter 1 began with a claim about emergence: once a compl
 
 **What should the layer above do with them?**
 
-After Chapter 5, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system. It is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
+After Chapter 5, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system — it is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
 
-That does not make shopping a laboratory or customers experimental subjects in the cartoonish sense. It means the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product is not merely executing a model. It is participating in a continuing inquiry into how to help.
+That does not make shopping a laboratory or customers experimental subjects in the cartoonish sense. It means the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product stops merely executing a model and joins a continuing inquiry into how to help.
 
 ## Stop Recommending for a Moment
 
@@ -4071,7 +4069,7 @@ That last condition matters. I can invent an exquisitely named psychological sta
 
 Chapter 2 had circles and an immutable evaluator. Shopping is messier, but the discipline is similar. Define a problem narrowly enough that an intervention can succeed or fail. If we claim somebody has comparison friction, we should eventually be able to ask whether comparison-like behavior diminished after we addressed it. If we say size anxiety is the blocker, we need evidence that the signal means something and a metric that can tell us whether our intervention helped rather than merely attracted a click.
 
-This is where the architecture started moving away from the familiar funnel.
+Here the architecture started moving away from the familiar funnel.
 
 ## People Refuse to Stay in the Funnel
 
@@ -4081,7 +4079,7 @@ Customers are less cooperative. Someone can be evaluating one product while expl
 
 A single lifecycle stage compresses this mess into one label. The design we began working with uses something richer: a **problem fingerprint**. Instead of saying the customer *is in Evaluate*, the system can represent several problem hypotheses at once, each with an intensity. Size anxiety may be high. Return hesitation moderate. Outfit seeking almost absent. Another customer on the same product may have the reverse pattern.
 
-The fingerprint is not a personality test. It is local to the customer, the current context, the surface and the available evidence. That is important because I do not want the system deciding that Hani is metaphysically a `RETURN_HESITANT_PERSON` and carrying that fact around until retirement. Some characteristics are durable. Many are situational.
+The fingerprint is not a personality test — it is local to the customer, the current context, the surface and the available evidence. That is important because I do not want the system deciding that Hani is metaphysically a `RETURN_HESITANT_PERSON` and carrying that fact around until retirement. Some characteristics are durable. Many are situational.
 
 The architecture also separates the machine representation from the stories humans use to think. Designers and scientists may organize problems by funnel stage, mission, timing or recognizable archetype. Those lenses help us notice gaps and invent hypotheses. The runtime system does not need to believe the story. It needs signals, a problem fingerprint and a way to test whether the resulting behavior is useful.
 
@@ -4097,7 +4095,7 @@ Today, when people hear "recommendation," they often picture a ranked list of pr
 
 But if the problem is comparison friction, a ranked list may be the wrong species of answer. The useful experience could be a comparison between the two products the customer is actually considering. If the problem is size anxiety, the useful thing may be evidence about fit. If the customer cannot imagine an outfit, it may be a generated collage. If she has only a vague mission, perhaps a product finder is better. If she knows exactly what she wants but the catalog is overwhelming, maybe the right action is a guided filter. Sometimes the answer is another set of products. Sometimes the answer is information. Sometimes it is a different interaction entirely.
 
-I started calling these reusable units **recommendation experiences**, or RXs. The name matters less than the abstraction. An RX is not merely a model. It is a reusable capability that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
+I started calling these reusable units **recommendation experiences**, or RXs. The name matters less than the abstraction. An RX is more than a model: a reusable capability that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
 
 The long-term ambition is a large library: carousels, comparisons, outfit builders, collages, finders, confidence modules, explanations, visual exploration, complementary-item experiences and things we have not invented yet. But the point is not to celebrate having hundreds of widgets. A library of two hundred overlapping experiences is just a new kind of legacy system with better animation.
 
@@ -4107,7 +4105,7 @@ When a new need appears, first ask whether an existing experience can meet it wi
 
 Build for the hundredth experience, not the first.
 
-This is where versatility becomes an architectural property rather than a slogan. The more that useful behavior can be produced by configuring and composing a smaller number of strong primitives, the less the organization has to encode every new situation as another permanent branch in software.
+Versatility stops being a slogan here and becomes an architectural property. The more that useful behavior can be produced by configuring and composing a smaller number of strong primitives, the less the organization has to encode every new situation as another permanent branch in software.
 
 I spent years in machine learning hearing that the answer to complexity was to learn rather than hand-author. Then, like everyone else, I helped build systems where the model learned beautifully inside a box surrounded by hand-authored configuration. The box was not the end of the learning problem.
 
@@ -4215,7 +4213,7 @@ You cannot govern what you cannot replay.
 
 ## From Machine Learning to Knowledge
 
-This is where the project stopped looking to me like a normal recommendation-system redesign.
+Somewhere around here the project stopped looking to me like a normal recommendation-system redesign.
 
 The models still matter enormously. We need representations, retrieval, ranking, sequence understanding, problem detectors, value models and probably more machinery than I can fit into a chapter without losing several readers to a sudden interest in gardening.
 
@@ -4319,7 +4317,7 @@ A customer starts with a vague request for a wedding outfit. The system helps na
 
 There was never a hard-coded `WEDDING_FUNNEL_V7`. The journey emerged from bounded problems, reusable capabilities and changing evidence.
 
-This is where the hundreds of widgets stop being a UI roadmap and become a **vocabulary of action**. The interface is the current projection of the problem-solving process.
+The hundreds of widgets stop being a UI roadmap here and become a **vocabulary of action**. The interface is the current projection of the problem-solving process.
 
 That does not mean every pixel should be generated by an LLM. Predictability matters. Accessibility matters. Design systems matter. Latency matters. Customers occasionally just want to buy socks without participating in an artificial-intelligence research program.
 
@@ -4379,7 +4377,7 @@ If AI keeps moving upward—if it increasingly discovers problems, selects strat
 
 We have to ask what happens to us when capacity itself changes.
 
-That is not a software architecture question. It is the beginning of another philosophy.
+That is not a software architecture question — it is the beginning of another philosophy.
 
 # Chapter 12: After Capacity
 
@@ -4657,7 +4655,7 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
-The alternative to employment is not necessarily leisure. It can be **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
+The alternative to employment is not necessarily leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
 
 Status competition will not politely resign either. It may migrate from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 
@@ -4731,7 +4729,7 @@ What happens if more capability moves closer to the individual?
 
 Bespoke complexity gives one answer. The teacher can construct the learning environment. The scientist can build temporary research machinery. The small company can write the internal system. The family can make the tool. The weird community with eleven members can have software optimized for all eleven of them and no plan whatsoever for customer acquisition.
 
-AI-assisted learning gives another. Access to capability is not only access to execution. It is access to understanding—at least far enough to make informed choices about where deeper expertise is needed.
+AI-assisted learning gives another. Access to capability is also access to understanding, not only to execution—at least far enough to make informed choices about where deeper expertise is needed.
 
 This can reduce some forms of domination. You do not need to win the argument over the one universal workflow if several workflows can coexist cheaply. You do not need everybody to learn exactly the same way if individualized teaching is affordable. You do not need to force every organization through the same software-shaped hole. You may not need permission from whoever controls the only available pool of technical expertise before testing an idea.
 
@@ -4739,7 +4737,7 @@ This is what **capacity over power** means to me at its best: increase the fract
 
 Not *AI tells us the correct society.* Almost the opposite: AI may increase our capacity to sustain **more than one good way of living**.
 
-This is where Elinor Ostrom's work on commons feels relevant. The interesting cases were rarely captured by the lazy binary of “the state manages it” or “the market manages it.” Real communities developed layered rules, local monitoring, sanctions, norms and ways of adapting institutions to context. The solution was not one magical mechanism. It was institutional intelligence distributed across levels.
+This is where Elinor Ostrom's work on commons feels relevant. The interesting cases were rarely captured by the lazy binary of “the state manages it” or “the market manages it.” Real communities developed layered rules, local monitoring, sanctions, norms and ways of adapting institutions to context. The solution was never one magical mechanism; it was institutional intelligence distributed across levels.
 
 The usual AI argument keeps collapsing into similarly small binaries: centralized control or laissez-faire autonomy; human in the loop or agent freedom; regulation or innovation; one model decides or every user decides.
 
