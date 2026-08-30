@@ -186,7 +186,7 @@ An LLM has no social capital of its own to lose. It can confidently produce some
 
 At its most compressed, the danger is **coherence outrunning correspondence**. The machine can become extraordinarily good at tongue without having an ear available to check against.
 
-The missing ingredient is not punishment for models. It is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
+The missing ingredient is not punishment for models — it is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
 
 That is the problem System 3 is trying to solve.
 
@@ -296,7 +296,7 @@ Suppose an agent learns:
 
 A flat skill stores the rule. A richer object can record that the heuristic came from several failed regex attempts, later worked across multiple nested formats, remains unnecessary for simple flat extraction and should be treated as a strong prior rather than a commandment.
 
-Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is not merely *I have an editing tool*. It is *this tool is reliable here and dangerous there*. Reliability is conditional.
+Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is not merely *I have an editing tool* but *this tool is reliable here and dangerous there*. Reliability is conditional.
 
 The same applies to softer heuristics. “Regex tends to fail on deeply nested structures” is not a theorem. It is a **meta-belief**—something that can accumulate evidence for and against it.
 

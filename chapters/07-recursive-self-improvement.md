@@ -116,7 +116,7 @@ Chapter 6 found the same problem at the level of culture. A society that forgets
 
 It is accumulation without paralysis.
 
-That matters once agents live for months or years. A system that continuously rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress.
+That matters once agents live for months or years. A system that continuously rewrites itself while destroying the right parts of its own history is not accumulating a life — it is repeatedly replacing itself and calling the replacements progress.
 
 ## Sometimes the Environment Improves Back
 
@@ -425,7 +425,7 @@ The history of autonomy has a second column.
 
 Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Give it a learned representation and the representation can hide the distinction that mattered. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
 
-These failures are not accidents beside the capability. They are produced by the same move that creates the capability.
+These failures are produced by the same move that creates the capability; they are not accidents beside it.
 
 Specification gaming makes the pattern visible. Reinforcement-learning agents have repeatedly found literal ways to satisfy scoring rules while violating the intended task. ([Krakovna et al.](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/))
 
@@ -485,7 +485,7 @@ The editable surface contains things the system can experiment with relatively f
 
 The constitutional surface contains the machinery that makes those experiments meaningful: permissions, protected logs, held-out evaluations, budgets, rollback, provenance, replacement rules and the authority deciding whether a descendant may become the new default.
 
-The distinction is not binary. It is a gradient of amendment difficulty.
+The distinction is a gradient of amendment difficulty, not a binary switch.
 
 The closer a component gets to defining **what counts as improvement**, the harder it should be for the current improver to change unilaterally.
 
@@ -523,7 +523,7 @@ Imagine two research organizations. One changes slowly, demands strong evidence 
 
 If the second gains enough scientific, economic or strategic advantage, the first may feel pressure to accelerate even if everyone inside it prefers a slower equilibrium.
 
-Now the object being selected is not only the model. It is the **improvement regime**.
+Now the object being selected is the **improvement regime**, not only the model.
 
 That does not make acceleration inevitable or good. Institutions can coordinate, regulate, share standards and choose margins. It means only that “do not improve” is not always a stable local policy in a world of other adaptive actors.
 
@@ -555,9 +555,7 @@ That freedom does not imply permission to silently redefine the interests of the
 
 Nor can the higher-level objective simply be frozen forever. Humans change. Circumstances change. New stakeholders appear. Better information changes what people endorse. Chapter 9 will make that problem much worse.
 
-So the answer is not an immutable final utility function floating over the system like a stone tablet.
-
-It is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
+So the answer is not an immutable final utility function floating over the system like a stone tablet — it is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
 
 Lower layers can move quickly. Higher layers should move deliberately. And when a higher layer moves, the move should leave a trust chain.
 

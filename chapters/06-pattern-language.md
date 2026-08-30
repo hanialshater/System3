@@ -174,7 +174,7 @@ Tradition is not automatically bad. It is simply difficult to debug.
 
 Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system.
 
-Thomas Kuhn's most useful lesson here is not simply the phrase *paradigm shift*. It is the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
+Thomas Kuhn's most useful lesson here is not the phrase *paradigm shift* but the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
 
 An agent culture needs the same economy. If a deployment procedure has survived hundreds of releases, the system should not rediscover it from first principles every Tuesday merely to prove that it remains intellectually alive.
 

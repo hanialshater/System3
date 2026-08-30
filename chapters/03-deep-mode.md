@@ -186,7 +186,7 @@ Even a Merge Sort demo has an absurd design space. Bars or cards? Numbers or a t
 
 When implementation was expensive, we dealt with much of this complexity by trying to decide more before building. AI coding changes the economics. If another implementation costs minutes rather than days, I do not have to choose quite so much in advance.
 
-Chapter 2 had already shown the basic move. One hill climber inherits its own history; evolutionary search maintains alternatives. Here what evolves is not merely a vector of parameters or even an algorithm. It can be an **idea embodied in software**.
+Chapter 2 had already shown the basic move. One hill climber inherits its own history; evolutionary search maintains alternatives. Here what evolves can be more than a vector of parameters or even an algorithm: an **idea embodied in software**.
 
 One builder tries a recursion tree. Another focuses on the array. A third begins from the learner’s misconception. Mutations can be conceptual: remove the text, teach backward, make the learner predict, show synchronized representations, abandon interaction altogether.
 
@@ -618,7 +618,7 @@ Humans ran into it long before AI. We built experiments, instruments, citations,
 
 These institutions are imperfect. Sometimes they preserve error. Sometimes they reward conformity. Sometimes the shopping cart survives peer review.
 
-But their purpose is not to make every individual dramatically smarter. It is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
+But their purpose is not to make every individual dramatically smarter — it is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
 
 Once cognition becomes distributed, the same questions become engineering questions: provenance, independence, replication, disagreement, authority.
 

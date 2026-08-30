@@ -240,7 +240,7 @@ So much for attaching a human to the API and declaring synergy.
 
 Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings. ([Dietvorst, Simmons & Massey, 2015](https://doi.org/10.1037/xge0000033); [Logg, Minson & Moore, 2019](https://doi.org/10.1016/j.obhdp.2018.12.005))
 
-The target is not maximum trust. It is **appropriate reliance**.
+The target is **appropriate reliance**, not maximum trust.
 
 And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct. ([Fok & Weld, 2024](https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12182))
 
@@ -328,7 +328,7 @@ This is where System 3 turns back toward the person using it.
 
 Memory can reveal that today’s desire conflicts with yesterday’s commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
 
-The point is not to discover the perfect reward function. The point is to keep goals **alive without making them ownerless**.
+The point is not to discover the perfect reward function but to keep goals **alive without making them ownerless**.
 
 The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 

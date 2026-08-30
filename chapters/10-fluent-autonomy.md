@@ -88,7 +88,7 @@ A factual question may need one agent and a source. A difficult scientific claim
 
 The organization should be **as large as the uncertainty deserves and no larger**.
 
-This is where the Society of Agents, Pattern Language and Scalable Oversight meet. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
+The Society of Agents, Pattern Language and Scalable Oversight meet here. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
 What used to be a workflow diagram becomes part of runtime.
 
@@ -110,13 +110,13 @@ I suddenly enjoy friction.
 
 Chapter 9 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
-If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance. It is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
+If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance — it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
 So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**.
 
 Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
 
-The best autonomous system is not the one that needs the least human input. It is the one that spends human input well.
+The best autonomous system is not the one that needs the least human input but the one that spends it well.
 
 ## Invisible by Default, Legible on Demand
 
@@ -144,7 +144,7 @@ What happens to ordinary software in this picture?
 
 Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
 
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them. They are often excellent interfaces.
+Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; quite often they are excellent interfaces.
 
 Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
 
@@ -168,7 +168,7 @@ The unit of interaction becomes closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is not maximal independence. It is competent movement between autonomy and involvement.
+Fluency is competent movement between autonomy and involvement, not maximal independence.
 
 The system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 

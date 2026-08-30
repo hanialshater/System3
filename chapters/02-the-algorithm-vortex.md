@@ -170,7 +170,7 @@ Yet every substantial conceptual jump came from somebody noticing something. Som
 
 Traditional search is excellent once we define the space and the legal moves. Sometimes the space and the moves are exactly the things we need to rethink.
 
-This is where learned models become interesting.
+Learned models have something to offer exactly that problem.
 
 I once asked an image-generation model to produce a picture of a circle-packing solution. This was not a serious benchmark; I have no idea what related examples it may have encountered during training, and I can already hear Reviewer 2 clearing his throat.
 

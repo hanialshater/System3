@@ -274,7 +274,7 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
-The alternative to employment is not necessarily leisure. It can be **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
+The alternative to employment is not necessarily leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
 
 Status competition will not politely resign either. It may migrate from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 
@@ -348,7 +348,7 @@ What happens if more capability moves closer to the individual?
 
 Bespoke complexity gives one answer. The teacher can construct the learning environment. The scientist can build temporary research machinery. The small company can write the internal system. The family can make the tool. The weird community with eleven members can have software optimized for all eleven of them and no plan whatsoever for customer acquisition.
 
-AI-assisted learning gives another. Access to capability is not only access to execution. It is access to understanding—at least far enough to make informed choices about where deeper expertise is needed.
+AI-assisted learning gives another. Access to capability is also access to understanding, not only to execution—at least far enough to make informed choices about where deeper expertise is needed.
 
 This can reduce some forms of domination. You do not need to win the argument over the one universal workflow if several workflows can coexist cheaply. You do not need everybody to learn exactly the same way if individualized teaching is affordable. You do not need to force every organization through the same software-shaped hole. You may not need permission from whoever controls the only available pool of technical expertise before testing an idea.
 
@@ -356,7 +356,7 @@ This is what **capacity over power** means to me at its best: increase the fract
 
 Not *AI tells us the correct society.* Almost the opposite: AI may increase our capacity to sustain **more than one good way of living**.
 
-This is where Elinor Ostrom's work on commons feels relevant. The interesting cases were rarely captured by the lazy binary of “the state manages it” or “the market manages it.” Real communities developed layered rules, local monitoring, sanctions, norms and ways of adapting institutions to context. The solution was not one magical mechanism. It was institutional intelligence distributed across levels.
+This is where Elinor Ostrom's work on commons feels relevant. The interesting cases were rarely captured by the lazy binary of “the state manages it” or “the market manages it.” Real communities developed layered rules, local monitoring, sanctions, norms and ways of adapting institutions to context. The solution was never one magical mechanism; it was institutional intelligence distributed across levels.
 
 The usual AI argument keeps collapsing into similarly small binaries: centralized control or laissez-faire autonomy; human in the loop or agent freedom; regulation or innovation; one model decides or every user decides.
 
