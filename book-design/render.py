@@ -96,6 +96,16 @@ def parse(md):
             blocks.append({"kind": "ol", "text": " ".join(items),
                            "html": "<ol>" + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ol>"})
             continue
+        if s.startswith("- "):
+            flush()
+            items = []
+            while i < len(lines) and lines[i].strip().startswith("- "):
+                items.append(lines[i].strip()[2:]); i += 1
+            # emit each bullet as its own block so long lists paginate freely
+            for x in items:
+                blocks.append({"kind": "li", "text": x,
+                               "html": f'<ul class="one"><li>{inline(x)}</li></ul>'})
+            continue
         if s in ("---", "***"):
             flush(); blocks.append({"kind": "hr", "text": "", "html": "<hr>"}); i += 1; continue
         para.append(s); i += 1
@@ -207,7 +217,9 @@ body { background:#555; font-family:'Bitstream Charter', 'Charter', serif; color
            justify-content:space-between; font-size:8.5pt; letter-spacing:0.14em;
            color:var(--accent); }
 .sheet.verso .runhead { left:0.68in; right:0.85in; }
-.content { position:absolute; top:0.62in; bottom:0.68in; left:0.85in; right:0.68in;
+/* text block: top 0.58in, height exactly 37 lines of 15pt leading (555pt),
+   leaving ~0.71in at the foot — bottom > top, so the block sits high. */
+.content { position:absolute; top:0.58in; height:555pt; left:0.85in; right:0.68in;
            font-size:10.5pt; line-height:15pt; text-align:justify; hyphens:auto; }
 .sheet.verso .content { left:0.68in; right:0.85in; }
 
@@ -227,6 +239,9 @@ table { border-collapse:collapse; margin:8pt auto; font-size:9pt; }
 th, td { padding:3pt 8pt; border-bottom:0.5pt solid var(--frame); text-align:left; }
 th { color:var(--accent); border-bottom:1pt solid var(--accent); }
 ol { margin:6pt 0 6pt 1.6em; }
+ul.one { margin:0 0 4pt 1.3em; list-style:none; }
+ul.one li::before { content:"·"; color:var(--accent); display:inline-block;
+                    width:1em; margin-left:-1em; }
 li { margin-bottom:2pt; }
 hr { border:none; border-top:0.5pt solid var(--frame); margin:10pt 3em; }
 a { color:inherit; text-decoration:none; border-bottom:0.5pt dotted var(--frame); }

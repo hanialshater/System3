@@ -6,6 +6,8 @@
   "running_head": "CHAPTER 7 · RECURSIVE SELF-IMPROVEMENT",
   "opener_art": "resources/chapter-openers/chapter-07-recursive-self-improvement.jpg",
   "opener_titled": true,
+  "opener_note": "REDESIGN CHOSEN from candidates in book-design/art-candidates/ch07/ — regenerate per opener_brief (direction 4, the train, with fixes).",
+  "opener_brief": "2:3 portrait, hand-lettered 'CHAPTER 7', title 'Recursive Self-Improvement', subtitle 'When Science Turns Inward' in blue (do NOT use any other subtitle). Base on candidate 4-train-bridge.png with three corrections. Scene: an old iron-and-stone railway bridge crossing a deep gorge at warm dusk; a steam train mid-crossing whose forward half — and the bridge span ahead of it — are still pencil construction lines on bare unpainted paper, inking and watercoloring themselves as the train advances (NO blue sci-fi glow, no neon: the future is an unfinished drawing completing itself, same handmade materiality as the rest). Far below, half-lost in mist, one earlier collapsed span — a previous attempt that made things worse. On the old stone side, one small trackside signal post that even the new track must still pass. Two ordinary human figures watch from the cliff edge, backs to us. One readable silhouette at thumbnail scale; generous cream sky for the title area.",
   "slots": [
     {
       "id": "self-hosting",

@@ -15,7 +15,7 @@ decision, ask before regenerating), then interior slots front to back.
 - [Chapter 4 — System 3](chapter-04.md): 6 jobs
 - [Chapter 5 — The Society of Agents](chapter-05.md): 5 jobs
 - [Chapter 6 — Pattern Language](chapter-06.md): 5 jobs
-- [Chapter 7 — Recursive Self-Improvement](chapter-07.md): 5 jobs
+- [Chapter 7 — Recursive Self-Improvement](chapter-07.md): 6 jobs
 - [Chapter 8 — Scalable Oversight](chapter-08.md): 6 jobs
 - [Chapter 9 — Layer 4](chapter-09.md): 6 jobs
 - [Chapter 10 — Fluent Autonomy](chapter-10.md): 4 jobs

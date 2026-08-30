@@ -11,6 +11,25 @@ Do not put readable text inside any image except opener-plate hand lettering.
 Jobs marked AUTHOR DATA FIGURE or DIAGRAM are not generation jobs — skip them.
 
 
+## Job: opener  →  `art/ch07/opener.png`
+
+**Geometry.** Full chapter opener, 2:3 portrait (e.g. 1600x2400px). Title area occupies the upper 20-30% with hand lettering AS SPECIFIED in the brief (this is the one slot type allowed lettering: small blue 'CHAPTER N', large black brush title, blue subtitle). Illustration owns the rest. Generous margins and paper.
+
+**Scene.** 2:3 portrait, hand-lettered 'CHAPTER 7', title 'Recursive Self-Improvement', subtitle 'When Science Turns Inward' in blue (do NOT use any other subtitle). Base on candidate 4-train-bridge.png with three corrections. Scene: an old iron-and-stone railway bridge crossing a deep gorge at warm dusk; a steam train mid-crossing whose forward half — and the bridge span ahead of it — are still pencil construction lines on bare unpainted paper, inking and watercoloring themselves as the train advances (NO blue sci-fi glow, no neon: the future is an unfinished drawing completing itself, same handmade materiality as the rest). Far below, half-lost in mist, one earlier collapsed span — a previous attempt that made things worse. On the old stone side, one small trackside signal post that even the new track must still pass. Two ordinary human figures watch from the cliff edge, backs to us. One readable silhouette at thumbnail scale; generous cream sky for the title area.
+
+**Style (mandatory, from resources/art-direction/): warm cream paper with
+visible grain; restrained watercolor with fine ink contours; muted Prussian/denim
+blue, ochre, warm gray, olive, parchment; visible blooms, imperfect ink, soft
+edges. Literary illustration — NOT slideware, fantasy concept art, cyberpunk,
+sci-fi glow, 3D render, or glossy AI imagery. Robots, when present, are small
+hand-built storybook machines (cream/brass/gray-blue, simple dark expressive
+eyes), physically engaged in work — never product mascots, never crowds of
+identical robots. Humans are ordinary and embodied, often from behind or
+three-quarter view. One dominant idea per image; small details that reward
+rereading. Absolutely no readable text, labels, signs, UI, or diagram arrows
+inside the artwork (illegible incidental scribbles are fine).**
+
+
 ## Job: self-hosting  →  `art/ch07/self-hosting.png`
 
 **Geometry.** Portrait-ish vignette around 900x1100px, single subject, all edges dissolving softly into plain cream paper. Reads clearly at 4cm tall.
