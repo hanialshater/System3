@@ -6,13 +6,9 @@ Imagine I open an AI system and say:
 
 > This chapter still feels like LLM writing.
 
-That is all.
+That is all. I do not specify a workflow. I do not say which previous chapters to read, which edits I rejected, whether to research anything, how many agents to use, which claims deserve verification, or how to tell a useful correction from another round of respectable prose sanding.
 
-I do not specify a workflow. I do not say which previous chapters to read, which edits I rejected, whether to research anything, how many agents to use, which claims deserve verification, or how to tell a useful correction from another round of respectable prose sanding.
-
-I certainly do not draw a graph with boxes labeled `RESEARCHER`, `CRITIC`, `VOICE CHECKER`, `FACT CHECKER`, `ORCHESTRATOR` and `HUMAN APPROVAL`.
-
-I have done enough architecture diagrams for one lifetime.
+I certainly do not draw a graph with boxes labeled `RESEARCHER`, `CRITIC`, `VOICE CHECKER`, `FACT CHECKER`, `ORCHESTRATOR` and `HUMAN APPROVAL`. I have done enough architecture diagrams for one lifetime.
 
 But underneath that small sentence, quite a lot may need to happen.
 
@@ -20,19 +16,13 @@ The system may retrieve earlier versions of my writing and the corrections that 
 
 It may compare the current chapter with passages I kept rather than only with a generic writing rubric. It may decide that one section needs factual checking while another needs no research at all. It may ask a second model to challenge the argument, but only if disagreement is likely to add information rather than produce a committee for ceremonial reasons. It may preserve the failed edit because the failure itself is now evidence. It may notice that the correction changes a reusable writing pattern and propose updating the pattern instead of making me rediscover the same preference three chapters later.
 
-And after all that, perhaps the system changes four paragraphs.
-
-I should not have to operate the institution that produced those four paragraphs.
+After all that, perhaps the system changes four paragraphs. I should not have to operate the institution that produced them.
 
 I said:
 
 > This chapter still feels like LLM writing.
 
-That is what I mean by **fluent autonomy**.
-
-Not autonomy without structure.
-
-Autonomy in which the structure can assemble itself around the intention.
+That is **fluent autonomy**: not autonomy without structure, but autonomy in which the structure can assemble itself around the intention.
 
 ## The Interface Moves Up
 
@@ -40,65 +30,45 @@ The argument of this book began with a recurring move: once something complicate
 
 We stopped programming by wiring individual transistors. We stopped thinking about registers every time we wrote a high-level function. Libraries hid algorithms. Applications hid libraries. Coding agents began treating applications, files, browsers, terminals and APIs as tools.
 
-The complexity did not disappear.
-
-It moved underneath a more useful interface.
+The complexity did not disappear. It moved underneath a more useful interface.
 
 AI agents push that abstraction one level higher because the new interface is not merely another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
 
-That incompleteness matters.
-
-When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
+That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
 
 > This argument feels wrong.
-
+>
 > Find somewhere good for dinner.
-
+>
 > I think this customer is stuck.
-
+>
 > We need to understand why this experiment moved.
-
+>
 > I am considering changing jobs.
 
 None of these is a specification. Each opens a small investigation.
 
-Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch.
+Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch. That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
 
-That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
-
-A fluent autonomous system can do something different.
-
-It can construct part of the structure **after seeing the intention**.
+A fluent autonomous system can construct part of the structure **after seeing the intention**.
 
 That is the shift.
 
 ## Control Moves Up, Not Away
 
-This brings us back to Chapter 1.
+This brings us back to Chapter 1. The point of autonomy was never to remove control. It was to move control upward.
 
-The point of autonomy was never to remove control.
+Across the book, the thing being controlled kept changing. Implementation became a task for agents. Problem solving moved into Deep Mode. System 3 moved control into evidence, trust and contact with reality. Multi-agent work made organization itself part of the design. Pattern Language moved accumulated experience into editable culture. Recursive self-improvement made some of that culture an experimental object. Scalable Oversight asked how human judgment could remain relevant when action-by-action supervision stopped scaling. Layer 4 then complicated the supposed endpoint by noticing that the human is learning too.
 
-It was to move control upward.
+Fluent Autonomy is what happens when those layers stop feeling like separate products I have to operate. The complexity becomes infrastructure.
 
-When I wrote every line of code, I controlled implementation. When an agent wrote the code, I controlled the task and the environment in which success was checked. Deep Mode moved more control into problem formulation, strategy and evidence. System 3 moved it into trust, provenance and contact with reality. The society of agents moved it into institutional design. Pattern Language moved accumulated experience into editable culture. Recursive self-improvement made some of that culture itself an experimental object. Scalable Oversight asked how human judgment could remain causally relevant once the system became too fast and capable to watch action by action. Layer 4 then complicated the final boundary by noticing that the human is learning too.
-
-Fluent Autonomy is what happens when those layers stop feeling like separate products I have to operate.
-
-The complexity becomes infrastructure.
-
-But there is an important difference between **hidden complexity** and **lost control**.
+But there is a difference between **hidden complexity** and **lost control**.
 
 A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. A good autonomous system should behave similarly.
 
-Most of the time I should be able to speak at the level of intention.
+Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again.
 
-When something becomes uncertain, consequential or surprising, the lower layers should become visible again.
-
-Fluency therefore requires a kind of **progressive disclosure of control**.
-
-Simple when the situation is routine.
-
-Legible when it is not.
+Fluency therefore requires **progressive disclosure of control**: simple when the situation is routine, legible when it is not.
 
 ## Bureaucracy on the Fly
 
@@ -106,9 +76,7 @@ There is a phrase that sounds like an insult until you need it: **bureaucracy**.
 
 Chapter 5 argued that bureaucracy, in its useful form, is accumulated coordination. Roles, review boundaries, logs, standards, escalation paths and procedures exist because some kinds of work become unreliable when everybody improvises everything at once.
 
-The problem is that fixed bureaucracy calcifies.
-
-A six-person review process designed for a dangerous database migration eventually gets applied to changing a sentence in a help page because nobody remembered to tell the workflow that reality had changed.
+The problem is that fixed bureaucracy calcifies. A six-person review process designed for a dangerous database migration eventually gets applied to changing a sentence in a help page because nobody remembered to tell the workflow that reality had changed.
 
 Agent systems give us the possibility of something stranger:
 
@@ -116,39 +84,19 @@ Agent systems give us the possibility of something stranger:
 
 The organization can be assembled for the problem rather than inherited wholesale from the previous problem.
 
-A factual question may need one agent and a source.
-
-A difficult scientific claim may need competing hypotheses, a literature search, code, an experiment and an evaluator insulated from the researcher who wants the result to work.
-
-A writing edit may need none of that. It may need the original paragraph, a memory of my previous corrections and enough restraint to leave the sentence alone.
-
-A high-impact financial action may need very little creativity and quite a lot of permission checking.
-
-A genuinely novel research problem may need several agents pursuing different approaches without sharing enough context to collapse into one correlated opinion.
+A factual question may need one agent and a source. A difficult scientific claim may need competing hypotheses, a literature search, code, an experiment and an evaluator insulated from the researcher who wants the result to work. A writing edit may need none of that: perhaps the original paragraph, a memory of previous corrections and enough restraint to leave the sentence alone. A high-impact financial action may need very little creativity and quite a lot of permission checking. A genuinely novel research problem may need several agents pursuing different approaches without sharing enough context to collapse into one correlated opinion.
 
 The organization should be **as large as the uncertainty deserves and no larger**.
 
-This is where the Society of Agents, Pattern Language and Scalable Oversight meet.
-
-Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
+This is where the Society of Agents, Pattern Language and Scalable Oversight meet. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
 What used to be a workflow diagram becomes part of runtime.
 
-The human gives the problem.
-
-The system compiles an institution.
+The human gives the problem. The system compiles an institution.
 
 ## Fluency Is Selective Friction
 
-There is an easy mistake here.
-
-A fluent agent is not an agent that never asks questions.
-
-That would be unbearable.
-
-It is also not an agent that asks permission for every action.
-
-That is an approval workflow wearing an intelligence costume.
+There is an easy mistake here. A fluent agent is not an agent that never asks questions. It is also not an agent that asks permission for every action. That is an approval workflow wearing an intelligence costume.
 
 Fluency means knowing **where friction belongs**.
 
@@ -160,25 +108,15 @@ Send €200,000 to an account we have never seen because an email said “urgent
 
 I suddenly enjoy friction.
 
-But Chapter 9 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
+Chapter 9 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
-If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance. It is substitution wearing a tutor badge.
-
-If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do.
-
-If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
+If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance. It is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
 So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**.
 
-That changes the allocation problem.
+Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
 
-Human attention is scarce, but the objective is not to minimize it.
-
-Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
-
-The best autonomous system is not the one that needs the least human input.
-
-It is the one that spends human input well.
+The best autonomous system is not the one that needs the least human input. It is the one that spends human input well.
 
 ## Invisible by Default, Legible on Demand
 
@@ -186,25 +124,17 @@ There is another bad version of fluency.
 
 Everything works through one beautiful conversational box. The system performs research, edits files, transfers money, changes production settings and updates its own memory. The interface stays calm and minimalist throughout.
 
-Then something goes wrong.
-
-You ask why.
-
-The system says:
+Then something goes wrong. You ask why, and the system says:
 
 > I made the best decision based on available context.
 
-This is not fluency.
-
-It is opacity with good typography.
+This is not fluency. It is opacity with good typography.
 
 The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
 Chapter 4 called these trust chains. Chapter 8 added more instruments. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
 
-The surface can be conversational.
-
-The substrate should remain inspectable.
+The surface can be conversational. The substrate should remain inspectable.
 
 That is the difference between an abstraction and a black box.
 
@@ -216,25 +146,11 @@ Probably less than the most enthusiastic agent demo suggests, and more than the 
 
 Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them. They are often excellent interfaces.
 
-Sometimes I want Excel because seeing the table is faster than discussing it.
+Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
 
-Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns.
+Fluent Autonomy is not the death of applications. It is the death of the assumption that **every intention must first be translated into the application structure somebody predicted in advance**.
 
-Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
-
-Fluent Autonomy is therefore not the death of applications.
-
-It is the death of the assumption that **every intention must first be translated into the application structure somebody predicted in advance**.
-
-The application becomes a primitive available to the agent and to me.
-
-If a spreadsheet is the right temporary representation, make one.
-
-If direct manipulation is better, show me the canvas.
-
-If the task is routine, use the tool and return the result.
-
-If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going.
+The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going.
 
 The interface itself can become part of the solution.
 
@@ -242,27 +158,17 @@ The interface itself can become part of the solution.
 
 Put the pieces together and Fluent Autonomy is less magical than it first sounds.
 
-A human supplies an imperfect intention.
+A human supplies an imperfect intention. The system interprets it provisionally rather than pretending it received a utility function. It decides what it already knows, what needs research and what should remain uncertain. It retrieves relevant cultural memory without treating precedent as scripture. It creates the smallest useful organization around the problem, selects tools, exposes important claims to reality and allocates evaluation where error would matter. It keeps traces. It asks the human when human information has high value. It learns from correction without converting one correction into universal law. And it returns not only an artifact or action, but enough consequence that the human can learn too.
 
-The system interprets it provisionally rather than pretending it received a utility function. It decides what it already knows, what needs research and what should remain uncertain. It retrieves relevant cultural memory without treating precedent as scripture. It creates the smallest useful organization around the problem. It selects tools. It exposes important claims to reality. It allocates evaluation where error would matter. It keeps traces. It asks the human when human information has high value. It learns from correction without converting one correction into universal law. And it returns not only an artifact or action, but enough consequence that the human can learn too.
+That is a lot of machinery. The point is that I should rarely have to name any of it.
 
-That is a lot of machinery.
-
-The point is that I should rarely have to name any of it.
-
-The system should not require me to know whether this particular task needs debate, a critic, three independent evaluators, a circuit monitor, a retrieval pattern or no ceremony whatsoever.
-
-Those are implementation details at the level I am trying to leave behind.
+The system should not require me to know whether this particular task needs debate, a critic, three independent evaluators, a circuit monitor, a retrieval pattern or no ceremony whatsoever. Those are implementation details at the level I am trying to leave behind.
 
 The unit of interaction becomes closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-That is why I keep returning to the phrase **fluent autonomy**.
-
-Fluency is not maximal independence.
-
-It is competent movement between autonomy and involvement.
+Fluency is not maximal independence. It is competent movement between autonomy and involvement.
 
 The system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 
@@ -274,9 +180,7 @@ It found a better interface.
 
 There is one remaining problem with this picture.
 
-Architecture is unusually well behaved inside a book.
-
-The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure. No customer decides that the elegant experience is annoying. No production service has a latency budget. No old dependency turns out to be load-bearing for reasons nobody remembers.
+Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure. No customer decides that the elegant experience is annoying. No production service has a latency budget. No old dependency turns out to be load-bearing for reasons nobody remembers.
 
 A theory of fluent autonomy should survive contact with systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
