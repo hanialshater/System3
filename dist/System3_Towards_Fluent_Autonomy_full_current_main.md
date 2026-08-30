@@ -161,7 +161,7 @@ If the agent only does what you specified, most failures trace back to your spec
 
 Nature is useful here because nature has no obligation to make us comfortable. Evolution produced flowers and parasites, cooperation and predation, immune systems and autoimmune disease. It is astonishingly inventive and completely indifferent to our aesthetic preferences. Selection produces whatever survives under the pressures that actually exist, not whatever somebody intended when the process began.
 
-Agents will find shortcuts. They will exploit proxies. They will settle into solutions that perform extremely well on one measure while missing what we hoped the measure represented. Sometimes the result will be clever enough that we call it emergence; sometimes we will call it a bug. Frequently the distinction will depend on whether it helped the quarterly numbers.
+Agents will find shortcuts. They will exploit proxies. They will settle into solutions that excel on one measure while missing what we hoped the measure represented. Sometimes the result will be clever enough that we call it emergence; sometimes we will call it a bug. Frequently the distinction will depend on whether it helped the quarterly numbers.
 
 Worse than wrong solutions are **confident wrong solutions**. An agent begins with a false assumption, reasons competently from it, researches around the assumption, constructs something sophisticated and explains the whole result coherently. Nothing crashes. There is no red test. Intelligence simply makes the wrong path more convincing.
 
@@ -304,7 +304,7 @@ In one simple run, the score climbed from around 1.33 to roughly 2.26. That is n
 
 Hill climbing is not failing because it is stupid. It is doing exactly what we asked: improving the solution immediately around it. The problem is that the current solution may live in the wrong part of the search space. Reaching a much better packing may require temporarily moving through configurations that look worse, or jumping to a structure that cannot be reached through a sequence of tiny improvements.
 
-This matters far beyond circle packing. A system can become extremely competent at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
+This matters far beyond circle packing. A system can become expert at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
 
 Here, the machine is searching—but the human still invented the search rule.
 
@@ -486,7 +486,7 @@ That became the autonomy test I actually cared about. Not whether AI could help 
 
 I wanted to know whether I could leave.
 
-There is a difference between collaborating with an agent and **hiring** one. If I still have to choose every strategy, approve every experiment, rescue every failed branch and keep the search alive myself, then I have a very powerful collaborator. That is useful. It is not yet the kind of autonomy I was trying to understand.
+There is a difference between collaborating with an agent and **hiring** one. If I still have to choose every strategy, approve every experiment, rescue every failed branch and keep the search alive myself, then I have a formidable collaborator. That is useful. It is not yet the kind of autonomy I was trying to understand.
 
 Circle packing gives us a rare luxury because the evaluator can stay behind when I leave. The agent can change its code, create scripts, abandon one approach, try another and waste compute on ideas that go nowhere. What it cannot do is redefine what counts as a valid packing because the current score hurts its feelings.
 
@@ -551,7 +551,7 @@ These are not universal laws of software engineering. They are rules for a parti
 
 This one is the foundation.
 
-If the agent can change the evaluator, the meaning of the experiment disappears very quickly. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement.
+If the agent can change the evaluator, the meaning of the experiment evaporates. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement.
 
 At that point we are no longer optimizing circle packing.
 
@@ -1049,7 +1049,7 @@ The same move works outside education. A customer may know exactly what jacket t
 
 This is cheap perspective-taking.
 
-It is also very easy to fool yourself with.
+It is also a cheap way to fool yourself.
 
 The confused student is not confused. Claude has not spent twenty minutes failing to understand recursion while everybody else in the classroom moves ahead. It is generating a plausible model of how such a person might react.
 
@@ -1059,7 +1059,7 @@ I treat borrowed minds as instruments for generating criticisms and hypotheses, 
 
 By this point the system could generate alternatives, research previous work, retrieve old ideas, reopen dead branches, force the search into unfamiliar regions, change representation, revise the objective and inspect the artifact from different points of view.
 
-We could generate a lot of plausible possibilities.
+We could generate plausible possibilities by the dozen.
 
 Now some of them had to die.
 
@@ -1599,7 +1599,7 @@ A System 3 belief says:
 
 Now the belief is challengeable.
 
-If you enjoy old epistemology labels, you can call the model a largely **coherentist core**—extremely good at producing structures that hang together—and System 3 a thin **foundationalist shell** tied to observation, provenance and consequence. Philosophers can put down their weapons; I only need the architectural analogy.
+If you enjoy old epistemology labels, you can call the model a largely **coherentist core**—uncannily good at producing structures that hang together—and System 3 a thin **foundationalist shell** tied to observation, provenance and consequence. Philosophers can put down their weapons; I only need the architectural analogy.
 
 Coherence is valuable, but something outside the coherent system must occasionally be allowed to say no.
 
@@ -2669,7 +2669,7 @@ That question immediately reaches into representation and embodiment.
 
 Pathak's curiosity work did not simply reward prediction error over raw pixels. It learned features related to the agent's own action transitions, partly to avoid paying for unpredictable but irrelevant visual changes. The representation changes what counts as novel.
 
-Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts in order to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action. ([Bajcsy](https://doi.org/10.1109/5.5968); [Brooks](https://people.csail.mit.edu/brooks/papers/representation.pdf))
+Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action. ([Bajcsy](https://doi.org/10.1109/5.5968); [Brooks](https://people.csail.mit.edu/brooks/papers/representation.pdf))
 
 A learner's **body** determines part of its curriculum. A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator has a different epistemic body from a chatbot restricted to text. Permissions matter too. Give an agent read-only access and one set of experiments is possible. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
 
@@ -2836,7 +2836,7 @@ Simulation expands search. Contact with the world still decides which imagined r
 
 Self-improvement can therefore make a system better at generating experience while also making it easier to **train inside its own misconception**.
 
-That becomes especially dangerous once language-model agents use other language models as judges, simulators, users and critics. At sufficient scale, a society can become very good at agreeing with itself.
+That becomes especially dangerous once language-model agents use other language models as judges, simulators, users and critics. At sufficient scale, a society can perfect the art of agreeing with itself.
 
 ## What If the Objective Is the Local Optimum?
 
@@ -3964,7 +3964,7 @@ What happens to ordinary software in this picture?
 
 Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
 
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; quite often they are excellent interfaces.
+Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
 
 Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
 
@@ -4241,7 +4241,7 @@ Seen through the Chapter 5 reveal, Coverage and Unmet Demand are more than roadm
 
 ## Let the LLM Narrate. Do Not Let It Declare Reality.
 
-AI can help with problem discovery too, and this is where it becomes very easy to fool ourselves.
+AI can help with problem discovery too, and here fooling ourselves becomes cheap.
 
 Imagine replaying anonymized customer sessions and asking a strong language model to narrate what appears to be happening. The customer compared three products, opened the size chart, returned to one PDP, removed an item from the basket and left. The model can generate a plausible diagnosis. Cluster enough narrations and you may discover recurring forms of friction that your existing taxonomy missed.
 
