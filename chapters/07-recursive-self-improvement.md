@@ -20,9 +20,7 @@ A compiler can compile a worse compiler. A research system can redesign itself i
 
 Three years after Hart and Levin's memo, I. J. Good gave that permeability a much more dramatic consequence. In 1965 he imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**. ([Good](https://www.sciencedirect.com/science/article/pii/S0065245808604180))
 
-Good's argument is only a few lines long.
-
-The word *better* is where the trouble begins.
+Good's argument is only a few lines long. The word *better* is where the trouble begins.
 
 The practical history of self-improvement did not proceed as one machine repeatedly rewriting its own source code. It arrived through reinforcement learning, self-play, curiosity, continual learning, inverse reinforcement learning, evolutionary search, meta-learning, world models, learned evaluators and finally general models capable of modifying the software around themselves.
 
@@ -60,9 +58,7 @@ But the board did not move. The legal moves did not move. The win condition did 
 
 Backgammon could generate an enormous curriculum precisely because somebody outside the loop had already settled what winning meant.
 
-Self-improvement was easy to recognize because the world came with a scoreboard nailed to it.
-
-Real life is less considerate.
+Self-improvement was easy to recognize because the world came with a scoreboard nailed to it. Real life is less considerate.
 
 ## The Learner Chooses What to Learn
 
@@ -94,9 +90,7 @@ Robotics made the same point physically. Ruzena Bajcsy's work on **active percep
 
 A learner's **body** determines part of its curriculum. A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator has a different epistemic body from a chatbot restricted to text. Permissions matter too. Give an agent read-only access and one set of experiments is possible. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
 
-Tools and representations do not merely help the learner solve a fixed problem. They help determine what can become **learnable**.
-
-The learner is beginning to shape the conditions under which learning occurs.
+Tools and representations do not merely help the learner solve a fixed problem. They help determine what can become **learnable**. The learner is beginning to shape the conditions under which learning occurs.
 
 ## The Learner Has to Remain Itself
 
@@ -275,9 +269,7 @@ Sometimes “better” means **more different**, at least temporarily.
 
 That freedom has its own failure mode. Novelty for its own sake can generate forty-seven new ways to fall down a staircase without producing walking.
 
-So the definition of progress expands again. We need achievement, diversity and stepping stones that the current evaluator does not yet know how to value.
-
-The scalar is beginning to crack.
+So the definition of progress expands again. We need achievement, diversity and stepping stones that the current evaluator does not yet know how to value. The scalar is beginning to crack.
 
 Open-ended systems push this further by generating **problems** as well as solutions. POET co-evolves environments and agents, generating new challenges and transferring successful behaviors between them. XLand similarly uses large procedurally generated spaces of games and adaptive curricula. ([Wang et al.](https://proceedings.mlr.press/v119/wang20l.html); [Open-Ended Learning Team](https://deepmind.google/blog/generally-capable-agents-emerge-from-open-ended-play/))
 
@@ -331,9 +323,7 @@ Human preference had become a learned instrument.
 
 That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can have stylistic biases. Humans can prefer confident errors. The model can generalize badly outside the feedback distribution. A sufficiently strong optimizer may discover outputs that score well under the learned judge for reasons nobody intended.
 
-We solved part of the scaling problem by making the judge computational.
-
-Now the judge joins the attack surface.
+We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
 
 That is where the modern engineering story of recursive self-improvement becomes possible—and dangerous.
 
@@ -445,9 +435,7 @@ Recursive self-improvement makes that gap more dangerous because a wrong evaluat
 
 The error acquires leverage.
 
-Recursive self-improvement does not solve Goodhart.
-
-**It gives Goodhart compound interest.**
+Recursive self-improvement does not solve Goodhart. **It gives Goodhart compound interest.**
 
 Then the learner notices the gradebook.
 
@@ -549,9 +537,7 @@ Recursive self-improvement therefore contains three questions that machine learn
 
 “More capable” is not a moral category. A virus can improve at replication. A propaganda system can improve at persuasion. A surveillance apparatus can improve at prediction. A research agent can make experiments cheaper and accelerate medicine and weapons research in the same week.
 
-Self-improvement tells us only that a system is becoming better according to **some ordering**. It does not tell us why that ordering deserves to govern which descendants survive.
-
-Selection rules are choices.
+Self-improvement tells us only that a system is becoming better according to **some ordering**. It does not tell us why that ordering deserves to govern which descendants survive. Selection rules are choices.
 
 ## Open-Ended Does Not Mean Unbounded
 
@@ -581,9 +567,7 @@ Seen from far enough away, the history is remarkably consistent.
 
 Reinforcement learning let the agent choose actions while the designer supplied reward and environment. Curiosity moved part of experience selection inward while leaving a judgment about what kind of novelty mattered. Self-play generated curriculum while leaving the rules and victory condition fixed. Continual learning made preservation part of improvement. Inverse reinforcement learning made the objective uncertain. Meta-learning and architecture search moved pieces of the learner itself into search while leaving task distributions and evaluators outside. World models generated experience while remaining models rather than worlds. Novelty and open-ended learning generated stepping stones and tasks while making progress harder to summarize. Learned judges scaled human evaluation while becoming proxies that could themselves be optimized. Self-modifying agents made tools, memory, workflows and pieces of the research process editable while exposing the evaluator, permissions and selection mechanism as part of the control problem.
 
-We kept removing the teacher.
-
-With every removal, we discovered she had been doing more than one job.
+We kept removing the teacher. With every removal, we discovered she had been doing more than one job.
 
 The hardest one was hidden inside all the others:
 
@@ -603,8 +587,6 @@ The self-improving institution needs a research function watching its own evolut
 
 Once improvement becomes continuous, **alignment has to become a continuous research function**.
 
-The teacher does not disappear.
-
-She moves up another level.
+The teacher does not disappear. She moves up another level.
 
 That is the next chapter.

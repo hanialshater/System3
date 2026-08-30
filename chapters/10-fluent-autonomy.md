@@ -96,7 +96,7 @@ The human gives the problem. The system compiles an institution.
 
 ## Fluency Is Selective Friction
 
-There is an easy mistake here. A fluent agent is not an agent that never asks questions. It is also not an agent that asks permission for every action. That is an approval workflow wearing an intelligence costume.
+There is an easy mistake here. A fluent agent is not an agent that never asks questions. It is also not an agent that asks permission for every action. That is an approval workflow that has learned to talk.
 
 Fluency means knowing **where friction belongs**.
 

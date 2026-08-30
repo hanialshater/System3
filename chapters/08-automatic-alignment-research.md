@@ -10,9 +10,7 @@ A human can inspect ten consequential decisions in a day. Perhaps a hundred, if 
 
 At some point, “human in the loop” becomes a comforting description of a loop the human can no longer see.
 
-If the system makes ten decisions and I inspect all ten, I am supervising it. If it makes ten thousand and I inspect twelve, I may still be useful. But we should stop pretending that my usefulness comes from watching everything.
-
-Otherwise I am decorative governance.
+If the system makes ten decisions and I inspect all ten, I am supervising it. If it makes ten thousand and I inspect twelve, I may still be useful. But we should stop pretending that my usefulness comes from watching everything. Otherwise I am decorative governance.
 
 Norbert Wiener saw the shape of this problem before modern machine learning existed. In 1960, writing about the moral and technical consequences of automation, he warned about machines pursuing purposes that may differ from what their designers actually intended, especially when action becomes too fast or consequential for human correction to arrive in time. W. Ross Ashby’s cybernetics gave a related language for regulation: a regulator needs enough variety to respond to the disturbances it is supposed to control. Conant and Ashby later formalized, under particular assumptions, the idea that a good regulator needs a model of the system it regulates. ([Wiener, 1960](https://doi.org/10.1126/science.131.3410.1355); [Ashby, 1956](https://ashby.info/Ashby-Introduction-to-Cybernetics.pdf); [Conant & Ashby, 1970](https://doi.org/10.1080/00207727008920220))
 
@@ -108,9 +106,7 @@ Nor are several AI overseers automatically independent. The supervised model, cr
 
 ARC’s **Eliciting Latent Knowledge** agenda sharpens the problem further: suppose a capable system internally tracks something important about the world that the human cannot independently verify. How do we get the system to report what it knows rather than merely what the training process rewards it for saying? ([ARC, 2021](https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/))
 
-At that point better conversation may not be enough.
-
-We need another instrument.
+At that point better conversation may not be enough. We need another instrument.
 
 ## We Started Instrumenting the Student
 

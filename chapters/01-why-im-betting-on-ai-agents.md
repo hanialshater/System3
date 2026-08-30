@@ -194,7 +194,7 @@ I find that exciting and uncomfortable in roughly equal measure, which is probab
 
 ## Where We Go Next
 
-The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without convening a committee to debate aesthetics, pedagogy or whether the users are “delighted.”
+The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without a debate about aesthetics, pedagogy or whether the users are “delighted.”
 
 That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success.
 

@@ -4,9 +4,7 @@
 
 This book kept forgetting how to write itself.
 
-That sounds more mystical than it was.
-
-I would work on a chapter with an agent, reject a certain kind of edit, explain why I rejected it, and eventually get something better. A few days later we would start another chapter and the same failure would return. The prose became cleaner in exactly the wrong way. Wandering sentences disappeared. Strange jokes were replaced by respectable ones. Arguments broke into tiny paragraphs that looked dramatic from across the room and exhausted me when I actually read them.
+That sounds more mystical than it was. I would work on a chapter with an agent, reject a certain kind of edit, explain why I rejected it, and eventually get something better. A few days later we would start another chapter and the same failure would return. The prose became cleaner in exactly the wrong way. Wandering sentences disappeared. Strange jokes were replaced by respectable ones. Arguments broke into tiny paragraphs that looked dramatic from across the room and exhausted me when I actually read them.
 
 So I would say things like:
 
@@ -18,17 +16,13 @@ So I would say things like:
 >
 > “More polished” is not automatically “more mine.”
 
-The agent would improve.
-
-Then the context would end.
+The agent would improve. Then the context would end.
 
 We were reenacting, on a ridiculous scale, the problem Chapter 5 had just spent several thousand years describing. A society can know something none of its members knows alone. Fine. But if the society survives, another question appears:
 
 **How does what it learned yesterday change what it does tomorrow?**
 
-The obvious answer is memory. Save the conversation. Increase the context window. Keep a notebook. Put every decision into a database.
-
-That helps. It is not enough.
+The obvious answer is memory. Save the conversation. Increase the context window. Keep a notebook. Put every decision into a database. That helps. It is not enough.
 
 A transcript remembers what happened. An institution has to remember **what was worth learning from what happened**.
 
@@ -60,9 +54,7 @@ A refund under €50 can be approved automatically. A payment over some threshol
 
 Andrej Karpathy calls this familiar world **Software 1.0**: humans write the behavior directly.
 
-Machine learning changed the contract. Suppose I cannot state the rules that distinguish a fraudulent transaction from an unusual but legitimate one. I can give you examples. We choose data, a model and an objective, and optimization pushes useful behavior into weights.
-
-That is **Software 2.0**.
+Machine learning changed the contract. Suppose I cannot state the rules that distinguish a fraudulent transaction from an unusual but legitimate one. I can give you examples. We choose data, a model and an objective, and optimization pushes useful behavior into weights. That is **Software 2.0**.
 
 It gave us capabilities that explicit rules could never have scaled to, but much of the learned behavior disappeared from inspectable code. The fraud model “knows” things no engineer wrote down. We can evaluate it, probe it and retrain it, but there is no `fraud_rules.py` containing the organization's accumulated understanding of fraud.
 
@@ -80,9 +72,7 @@ An organization can write down a procedure, examples, scripts, counterexamples, 
 
 The model begins to look less like the knowledge base and more like an **interpreter for knowledge artifacts**.
 
-Knowledge engineering is back.
-
-It is carrying Markdown.
+Knowledge engineering is back. It is carrying Markdown.
 
 ## Knowledge Engineering Comes Back Wearing Markdown
 
@@ -108,17 +98,13 @@ Those are no longer edge cases. They are the engineering surface.
 
 Agent systems were already moving in this direction. Repository instructions, `AGENTS.md`, skills, tool descriptions and context engineering all treat useful procedural knowledge as something external to the model but available to it at runtime. A skill can survive the session that produced it. Increasingly the worker can change while the operating knowledge remains.
 
-That matters because frontier models already know Python, statistics and enormous amounts of public technical culture. What they do not automatically know is why *your* company refuses to deploy on Friday, which metric has been misleading everyone since 2023, why an elegant architecture in the wiki was abandoned, or why Alberto should never again be asked to investigate penguins.
-
-Organizations run on this layer of weirdness.
+That matters because frontier models already know Python, statistics and enormous amounts of public technical culture. What they do not automatically know is why *your* company refuses to deploy on Friday, which metric has been misleading everyone since 2023, why an elegant architecture in the wiki was abandoned, or why Alberto should never again be asked to investigate penguins. Organizations run on this layer of weirdness.
 
 Some belongs in code. Some belongs in data, tools and evaluators. A surprising amount is **situated procedural knowledge**: what to check first, which shortcut is dangerous, which source has standing, when the normal process does not apply, and what “good” means here rather than on a generic benchmark.
 
 For most of history, people acquired this by hanging around people who had already been injured by the relevant mistakes.
 
-Now more of it can become software.
-
-Which is exciting right up until we create prompt spaghetti at civilizational scale.
+Now more of it can become software. Which is exciting right up until we create prompt spaghetti at civilizational scale.
 
 A saved instruction is too small a unit.
 
@@ -138,9 +124,7 @@ Regex is perfectly good for many small extraction tasks. A parser may be absurd 
 
 That is closer to a pattern.
 
-A saved instruction remembers **what somebody said**.
-
-A pattern tries to remember **what kept happening**.
+A saved instruction remembers **what somebody said**. A pattern tries to remember **what kept happening**.
 
 The book has already accumulated patterns whether we called them that or not.
 
@@ -154,9 +138,7 @@ The useful part is not the slogan. Each pattern contains a recurring situation, 
 
 But Chapter 5 made us suspicious of inherited procedure. Civilizations do not merely accumulate good practices. They accumulate ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
 
-If Pattern Language is going to become cultural memory for agents, a pattern needs to know more about itself.
-
-This is where philosophy of science finally earns its API.
+If Pattern Language is going to become cultural memory for agents, a pattern needs to know more about itself. This is where philosophy of science finally earns its API.
 
 ## Popper: A Pattern Needs a Way to Lose
 
@@ -168,9 +150,7 @@ Karl Popper would immediately ask the rude question: what could happen that woul
 
 A useful theory exposes itself to observations that could have gone differently. If every outcome can be narrated as success, the theory has arranged the game so it cannot lose.
 
-Persistent agent knowledge needs the same property.
-
-A pattern should retain an **exposure path**: a test, observation, user reaction, proof obligation or downstream consequence capable of weakening it. “Use longer paragraphs” might lose standing if reader tests show comprehension falling, if another chapter becomes monotonous, or if the original failure disappears after the editing process changes.
+Persistent agent knowledge needs the same property. A pattern should retain an **exposure path**: a test, observation, user reaction, proof obligation or downstream consequence capable of weakening it. “Use longer paragraphs” might lose standing if reader tests show comprehension falling, if another chapter becomes monotonous, or if the original failure disappears after the editing process changes.
 
 The pattern should remember not only what worked, but **how the world could show that the lesson stopped working**.
 
@@ -186,9 +166,7 @@ So reusable knowledge needs **archaeology**.
 
 Where did this pattern come from? Which failures produced it? Which model and tools were involved? Which alternatives were tried? What evidence earned the lesson its standing? What assumptions were present?
 
-A factual claim without provenance becomes rumor.
-
-A reusable practice without provenance becomes tradition.
+A factual claim without provenance becomes rumor. A reusable practice without provenance becomes tradition.
 
 Tradition is not automatically bad. It is simply difficult to debug.
 
@@ -200,9 +178,7 @@ Thomas Kuhn's most useful lesson here is not simply the phrase *paradigm shift*.
 
 An agent culture needs the same economy. If a deployment procedure has survived hundreds of releases, the system should not rediscover it from first principles every Tuesday merely to prove that it remains intellectually alive.
 
-Some decisions earn the right to become boring.
-
-The danger is that boring assumptions become invisible assumptions.
+Some decisions earn the right to become boring. The danger is that boring assumptions become invisible assumptions.
 
 Anomalies need memory too. The release pattern works except in this market. The evaluator tracks human judgment except on this kind of creative task. The ranking heuristic works except every holiday season. The workflow works except that the critic now spends most of its time inventing reasons why the builder was right.
 
@@ -221,13 +197,9 @@ Those are two questions:
 
 The distinction matters the moment culture becomes executable. The current winner gets retrieved more often. Because it gets used more often, it accumulates more successful cases. Those cases raise confidence. Higher confidence makes it even more likely to be retrieved.
 
-The alternative receives less traffic and therefore less evidence.
+The alternative receives less traffic and therefore less evidence. Eventually the system develops an impressive empirical record proving the thing it stopped comparing against.
 
-Eventually the system develops an impressive empirical record proving the thing it stopped comparing against.
-
-No committee had to ban the alternative.
-
-The retrieval policy did it.
+No committee had to ban the alternative. The retrieval policy did it.
 
 ## Hull and Kitcher: Who Gets the GPUs?
 
@@ -243,9 +215,7 @@ Imagine research program A has ten thousand GPU-hours and program B has ten.
 
 A can run ablations, train variants, investigate anomalies and produce beautiful graphs. B can produce a thoughtful paragraph about why it deserves more compute.
 
-Six months later A has more evidence.
-
-Of course it does.
+Six months later A has more evidence. Of course it does.
 
 The evidence may be real. A may genuinely be better. But the institution has also helped create the asymmetry it later treats as evidence for further allocation.
 
@@ -253,23 +223,9 @@ David Hull and Philip Kitcher approached science partly through the division of 
 
 An agent society will have analogues of these structures whether or not we give them sociological names.
 
-The scheduler is partly a funding agency.
+The scheduler is partly a funding agency. The memory system is partly an archive. The evaluator is partly a journal gate. The retrieval layer is partly a curriculum. The permission system decides who may touch which instrument. The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
 
-The memory system is partly an archive.
-
-The evaluator is partly a journal gate.
-
-The retrieval layer is partly a curriculum.
-
-The permission system decides who may touch which instrument.
-
-The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
-
-And the organization can remember its incentives just as effectively as it remembers its wisdom.
-
-A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.”
-
-That is culture too.
+And the organization can remember its incentives just as effectively as it remembers its wisdom. A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.” That is culture too.
 
 **Local alignment does not compose automatically. Neither does local truth.**
 
@@ -297,9 +253,7 @@ The pirate may be entertaining. He probably still read the same PDF.
 
 A pattern should therefore carry some trace of **position**: who learned it, from which class of tasks, with which tools, model, evidence and incentives. A ranking practice learned in Germany, a fraud rule learned in Brazil, a compiler workaround discovered under one toolchain and a clinical protocol developed in one hospital can all be excellent without acquiring universal authority merely because they share a database.
 
-This is another reason Pattern Language should not become one giant company constitution.
-
-Culture should be **locally authoritative** where appropriate.
+This is another reason Pattern Language should not become one giant company constitution. Culture should be **locally authoritative** where appropriate.
 
 Trust is local. Apparently memory should be too.
 
@@ -337,9 +291,7 @@ The pattern says something closer to:
 
 > We keep doing this because these forces recur; this response has usually worked; this evidence earned our trust; these are the places it fails; these alternatives remain alive; and this is what would make us reconsider it.
 
-That is knowledge with some of its history still attached.
-
-And because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model.
+That is knowledge with some of its history still attached. And because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model.
 
 That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, scoped, retrieved, executed, challenged, rolled back and eventually modified by the same kind of agents that use it.
 
@@ -369,9 +321,7 @@ A culture may contain exactly the right lesson and still fail because that lesso
 
 Agent systems can fail more elegantly. They can store the lesson perfectly, embed it beautifully and retrieve a more popular but irrelevant one. Or retrieve the right pattern without its boundary condition. Or retrieve ten conflicting patterns and allow whichever appears latest in context to win by textual gravity.
 
-Bad storage forgets by deletion.
-
-Bad retrieval forgets by attention.
+Bad storage forgets by deletion. Bad retrieval forgets by attention.
 
 Once retrieval determines which inherited knowledge enters a decision, retrieval itself becomes an epistemic procedure. It needs evaluation. Does it repeatedly surface stale rules? Does it suppress alternatives? Does it confuse popularity with relevance? Does it preserve the result and discard the reason?
 
@@ -379,15 +329,11 @@ The librarian is no longer merely finding books. The librarian is shaping though
 
 ## Feyerabend: The Librarian Is Also a Hypothesis
 
-At some point every successful institution becomes tempted to trust its own method.
-
-Yesterday's useful workflow becomes today's best practice and tomorrow's mandatory ritual.
+At some point every successful institution becomes tempted to trust its own method. Yesterday's useful workflow becomes today's best practice and tomorrow's mandatory ritual.
 
 Paul Feyerabend is usually remembered for “anything goes,” which is a good way to remember the slogan and forget the warning. Successful inquiry has often violated methodological rules somebody wanted to make universal.
 
-Agent systems can turn a method into ritual very quickly.
-
-Suppose `Research → Plan → Build → Critic → Revise` works beautifully. We run it ten thousand times. It becomes the company standard. Soon every task enters the same ceremony, including tasks where research anchors the builder, criticism arrives too late, or a crude prototype would have answered the important question in five minutes.
+Agent systems can turn a method into ritual very quickly. Suppose `Research → Plan → Build → Critic → Revise` works beautifully. We run it ten thousand times. It becomes the company standard. Soon every task enters the same ceremony, including tasks where research anchors the builder, criticism arrives too late, or a crude prototype would have answered the important question in five minutes.
 
 The method itself has to become available for criticism.
 
@@ -395,9 +341,7 @@ An evaluator is a procedure. A browser is an instrument. Retrieval is a procedur
 
 The institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working.
 
-The library needs criticism.
-
-So does the librarian.
+The library needs criticism. So does the librarian.
 
 Bayesian confidence can live inside this architecture, but confidence is not contact. `0.91` does not tell us whether the prior was sensible, whether the evidence was independent, whether an alternative was ever investigated, or whether everybody is confidently reading the same broken measurement.
 
@@ -411,13 +355,9 @@ The purpose of culture is to let knowledge travel across time without replacing 
 
 ## Culture Can Become a Prison
 
-If forgetting were the only danger, the design would be easy: remember everything.
+If forgetting were the only danger, the design would be easy: remember everything. Unfortunately organizations also suffer from remembering too well.
 
-Unfortunately organizations also suffer from remembering too well.
-
-Every process exists because it helped at some point, or because somebody once thought it would. Every release checklist box has a story, or used to. Every architecture principle was attached to a failure someone cared enough to prevent.
-
-Then the environment changes and the procedure remains.
+Every process exists because it helped at some point, or because somebody once thought it would. Every release checklist box has a story, or used to. Every architecture principle was attached to a failure someone cared enough to prevent. Then the environment changes and the procedure remains.
 
 Eventually someone asks why the process exists and receives the most dangerous explanation in organizational life:
 
@@ -451,23 +391,7 @@ Congratulations. We have created middle management again.
 
 The more interesting loop is computational:
 
-experience occurs;
-
-an agent notices recurrence;
-
-it proposes a reusable pattern;
-
-another process checks whether the pattern actually helps;
-
-held-out cases test whether it generalized;
-
-provenance and failures remain attached;
-
-the pattern earns some level of authority;
-
-future agents retrieve it when relevant;
-
-new failures can weaken or revise it.
+experience occurs; an agent notices recurrence; it proposes a reusable pattern; another process checks whether the pattern actually helps; held-out cases test whether it generalized; provenance and failures remain attached; the pattern earns some level of authority; future agents retrieve it when relevant; new failures can weaken or revise it.
 
 There are many places to cheat. The agent proposing the skill can design an evaluator it knows how to satisfy. Repeated use can masquerade as independent evidence. A pattern can improve a benchmark while making maintenance worse. Retrieval can starve competing practices before they accumulate enough evidence to challenge the incumbent. A central curator can quietly turn local taste into universal law.
 
@@ -477,16 +401,12 @@ And now we cross an important line.
 
 Experience becomes knowledge. Knowledge becomes executable. Executable knowledge changes future behavior. Future behavior produces new experience.
 
-The model weights did not move.
-
-The institution learned anyway.
+The model weights did not move. The institution learned anyway.
 
 That is a learning loop **outside the weights**.
 
 Chapter 5 moved the unit of intelligence from the individual agent toward the institution. Here learning begins to move in the same direction. Intelligence is partly in the model, but also in tools, evaluators, context construction, patterns, retrieval and the procedures deciding which of those artifacts deserve authority.
 
-Once those things are software, one question becomes difficult to avoid.
-
-Why should humans be the only ones allowed to edit them?
+Once those things are software, one question becomes difficult to avoid. Why should humans be the only ones allowed to edit them?
 
 That is where recursive self-improvement begins.

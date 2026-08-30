@@ -4,6 +4,8 @@
 
 ---
 
+> **Addendum (2026-08-30, same branch):** a polish pass applied the mechanical recommendations below — merge passes on Ch. 9 (63%→37% one-liners), Ch. 11 (52%→22%), Ch. 6 (49%→35%); un-punched section exits in Ch. 7 (38%→34%); the Ch. 1 committee-joke dedup; the Ch. 5 anti-Whig disclaimer trim; the Ch. 10 costume-joke dedup; two joins in Ch. 8; README titles reconciled to the file H1s (Ch. 3 "The Vibe Coder's Seat", Ch. 8 "Scalable Oversight" — the files were the newer rename). Nearly all edits were paragraph joins with zero word changes; the only wording touched: Ch. 1 (−2 words), Ch. 5 (−14), Ch. 10 (one clause), Ch. 9 (the eight-beat ladder rewritten as two flowing sentences). Still open, needing the author: the first-person thread for Ch. 7/8, the Ch. 3 history cut, the Ch. 8 interpretability-tour trim, the 2026 citation verification, and the Ch. 13 illustrations-note move.
+
 ## 1. Overall verdict
 
 **Book overall: 8.5 / 10. Estimated potential after a focused revision pass: 9+.**

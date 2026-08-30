@@ -204,7 +204,7 @@ A record preserves what somebody says happened. An experiment gives the world an
 
 We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens.
 
-No one person invented “the scientific method” here. Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form. No one designed the whole arrangement. The pieces accumulated.
+Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form. The pieces accumulated.
 
 The agent version is almost embarrassingly literal. Run the program. Execute the query. Open the browser. Measure the latency. Compile the kernel against GCC. Reasoning has left the conversation. Something outside the current explanation now has a chance to be inconvenient.
 

@@ -22,7 +22,7 @@ This is the spine to preserve in future edits. Philosophy of science is not a de
 
 - [Chapter 1 — Why I'm Betting on AI Agents](chapters/01-why-im-betting-on-ai-agents.md) — emergence, environment, feedback, selection and boundaries; control moves upward
 - [Chapter 2 — The Algorithm Vortex](chapters/02-the-algorithm-vortex.md) — experiments, external evaluation, exposure, competing lineages and an immutable harness
-- [Chapter 3 — Deep Mode](chapters/03-deep-mode.md) — when the clean referee disappears, judgment becomes inquiry: evidence, independent pressure, disagreement and a tiny institution
+- [Chapter 3 — The Vibe Coder's Seat](chapters/03-deep-mode.md) — when the clean referee disappears, judgment becomes inquiry: evidence, independent pressure, disagreement and a tiny institution
 - [Chapter 4 — System 3](chapters/04-system-3.md) — epistemic status, provenance, instruments, accumulated experience, trust chains, triangulation and the social scaffold
 
 ### Second arc — WIP
@@ -32,7 +32,7 @@ These chapters are first integrated drafts and are **not locked**. They will rec
 - [Chapter 5 — The Society of Agents](chapters/05-the-society-of-agents.md) — **the reveal: philosophy of science becomes agent architecture**
 - [Chapter 6 — Pattern Language](chapters/06-pattern-language.md) — the scientific institution acquires executable culture and memory
 - [Chapter 7 — Recursive Self-Improvement](chapters/07-recursive-self-improvement.md) — the scientific institution experiments on its own machinery
-- [Chapter 8 — Automatic Alignment Research](chapters/08-automatic-alignment-research.md) — System 3 turns scientific inquiry onto alignment failures
+- [Chapter 8 — Scalable Oversight](chapters/08-automatic-alignment-research.md) — System 3 turns scientific inquiry onto alignment failures
 - [Chapter 9 — Layer 4: What Do You Actually Want?](chapters/09-layer-4-desire.md) — the boundary of science: evidence can discipline belief but cannot supply the ought
 - [Chapter 10 — Fluent Autonomy](chapters/10-fluent-autonomy.md) — the epistemic institution becomes infrastructure beneath human intention
 
