@@ -146,61 +146,33 @@ A good AI tutor therefore has a slightly strange success condition.
 
 Eventually, for this thing, I should need less of it.
 
-## Breadth Becomes Cheap
+## The Map Gets Cheaper
 
-There is another consequence I find even more exciting.
+AI also changes the first hours of learning something unfamiliar.
 
-AI changes the economics of entering a field.
+A new field normally arrives wrapped in interface costs: vocabulary you do not know, notation that assumes other notation, introductory material that points to prerequisites, papers that make sense only after three earlier papers. Sometimes that friction marks genuine depth. Sometimes it is just the price of finding the front door.
 
-For most of history, knowledge had terrible interfaces. To understand one idea you needed the vocabulary. The introductory text assumed another prerequisite. The prerequisite used notation you had never seen. You found a paper, then discovered that the paper assumed three papers. Six weeks later you finally understood enough to discover that your original question was badly formed.
+A capable conversational model can lower that price. I can begin with the intuition, translate notation into concepts I already know, ask for the historical disagreement, build a toy example, inspect an original paper with a guide beside it, or ask the model to attack my explanation until I discover that I was repeating vocabulary rather than understanding the idea.
 
-Some of that friction was valuable. It produced depth.
+That is powerful because orientation matters. Before deciding to invest weeks in a subject, I can acquire enough of a map to see where the mountains are.
 
-A lot of it was just interface cost.
+Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull. ([Clark & Chalmers, 1998](https://doi.org/10.1111/1467-8284.00096))
 
-With a capable conversational model, I can enter a new domain differently. Start with the intuition. Ask for the historical dispute. Translate the notation into something I know. Compare two schools of thought. Ask where experts disagree. Ask what I would need to learn to understand the disagreement properly. Build a toy simulation. Read the original paper with a guide sitting beside it. Ask for exercises. Ask the model to attack my explanation until I discover that I was repeating vocabulary rather than understanding the idea.
+But orientation creates its own trap.
 
-The cost of getting the **map** has collapsed.
+**Fluency arrives before scars.**
 
-That changes specialization.
+Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills. ([Ballantyne, 2019](https://academic.oup.com/mind/article-abstract/128/510/367/4850765)) AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
 
-For a long time, becoming broad was expensive because every neighboring field charged a large entrance fee. You could spend a year simply learning enough local language to know which questions were respectable. Institutions naturally rewarded deep vertical expertise because depth was scarce and crossing boundaries was costly.
+Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally. ([Richmond & Taylor, 2025](https://www.nature.com/articles/s44159-025-00432-2))
 
-AI makes boundary crossing cheaper.
+So Layer 4 has to know what kind of learning episode this is.
 
-A machine-learning scientist can acquire enough philosophy of science to notice that a problem in model evaluation resembles an old argument about falsifiability. A philosopher can prototype the mechanism she is describing. A doctor can interrogate statistical assumptions interactively. An artist can build software. An engineer can learn enough economics to notice that what looks like a technical metric problem is partly an incentive problem.
+If I am orienting myself, a fast map may be exactly what I need. If I am trying to acquire durable competence, the system should gradually ask more of me: retrieval without hints, explanation in my own words, exercises, primary sources, code I actually run, claims I have to defend without the answer sitting beside me.
 
-This does **not** mean everyone becomes expert in everything.
+The important distinction is not broad versus specialized. It is **assisted familiarity versus owned understanding**.
 
-It may mean something subtler: people can become much broader before deciding where depth is worth the price.
-
-Andy Clark and David Chalmers once argued that under some conditions external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull. ([Clark & Chalmers, 1998](https://doi.org/10.1111/1467-8284.00096))
-
-But cheap breadth creates a new kind of danger.
-
-Fluency arrives before scars.
-
-Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills. ([Ballantyne, 2019](https://academic.oup.com/mind/article-abstract/128/510/367/4850765))
-
-AI can industrialize this temptation.
-
-After three evenings with a patient model I can sound surprisingly competent about constitutional law, developmental psychology or semiconductor fabrication. The model can remove exactly the friction that used to reveal how much tacit knowledge I was missing.
-
-There is also a more basic cognitive-offloading problem. External aids can improve immediate performance by reducing memory and processing demands, but research on cognitive offloading also documents potential costs to internal retention and later unaided performance. ([Richmond & Taylor, 2025](https://www.nature.com/articles/s44159-025-00432-2))
-
-So the right response is not to restore old friction because suffering builds character.
-
-It is to learn a new rhythm:
-
-**Explore broadly. Descend selectively.**
-
-Use AI to cross fields cheaply, test curiosity and find connections. Then, when something matters, go down.
-
-Read the primary work. Derive the equation. Write the code. Run the experiment. Try to prove the claim yourself. Talk to the person who has spent ten years watching the obvious idea fail.
-
-AI can make the map cheap without making the territory shallow.
-
-Layer 4 should know whether I am exploring a map or claiming authority over the terrain.
+AI can make the map cheap. Layer 4 has to notice when I have started confusing the map with the territory.
 
 ## A Decision Is Also a Learning Problem
 
