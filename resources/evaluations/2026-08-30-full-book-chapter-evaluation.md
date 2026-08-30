@@ -277,7 +277,17 @@ Total ~61k words is right for this book — it should not grow. The only chapter
 
 ---
 
-## 5. Prioritized recommendations
+## 5. Re-evaluation after the editing rounds (2026-08-30, end of day)
+
+Re-scored against the same criteria after all passes landed (rhythm merges, citation verification and fixes, references appendix, back-matter restructure, dist rebuild). The author explicitly kept Ch. 3's history intact and deferred Ch. 8's restructure — those are now treated as decisions, not open defects, though their effects on the reading experience are still scored honestly.
+
+**Book overall: 8.5 → 8.7.** The manuscript's mechanical LLM-writing tell — the one-liner drumbeat — is gone: every essay chapter now sits in a natural 22–39% band (was 29–63%), and re-reading the heavily edited chapters confirms the joins read as ordinary paragraphs, with every earned punch ("Very efficient. / Slightly evil.", "Sometimes friction is teaching.", "It is branding.") intact. The factual layer moved from "plausible" to "verified": all thirteen 2026-dated citations check against live sources, the one real misattribution (Khan → Kenton) is fixed, broken DOI links are repaired, and the book now has a proper ~130-entry references appendix — which materially raises technical credibility for expert readers. Chapter 13 now ends the book on the Nickelodeon beat instead of an editorial note, which is how it always should have ended.
+
+Score movements (unchanged chapters omitted): **Ch. 9: 8 → 8.5** — the largest gain; with the staccato fixed (63%→37%), the prose finally matches the quality of the argument, and the human-writing-feel subscore roughly doubles. **Ch. 7: 7.5 → 8** — the section-exit metronome is softened and the citation apparatus is now verified and properly referenced; what still caps it is the absent first-person thread. **Ch. 8: 7.5, technical precision now 10** — the Kenton fix and verified 2026 results make it bulletproof factually; the voice thinness remains by deferral. **Ch. 6: human-feel 7 → 8** (49%→35%). **Ch. 11: human-feel up** (52%→22%); still 9 overall. **Ch. 12: 8.5**, reading slightly better at 32%. Chs. 1, 2, 4, 5, 10 effectively unchanged; Ch. 4 remains the book's best chapter at 9.5.
+
+**What separates 8.7 from 9+ is no longer editing.** Three things remain, all authorial: (1) the first-person experimental thread for Chs. 7–8 — the single change with the most headroom; (2) the Ch. 8 shape decision, whenever it is wanted; (3) the missing inline figures (including the Ch. 4 camel photo, which the chapter's central device depends on in any illustrated edition). The manuscript is otherwise consistent end to end: titles reconciled, dist current, back matter in place. Further mechanical polish would now cost voice rather than add quality; the editing phase of this book is, in my judgment, complete.
+
+## 5b. Prioritized recommendations (original)
 
 1. **Chapter 9 merge pass** (prose rhythm; highest leverage, lowest risk).
 2. **Vary section exits in Chapters 5–10** — un-punch ~a third of the zinger endings.
