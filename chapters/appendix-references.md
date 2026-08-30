@@ -160,8 +160,8 @@ References are organized by chapter, in roughly the order the works appear. Chap
 - Rose E. Wang et al., "Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise" (2024). <https://arxiv.org/abs/2410.03017>
 - Andy Clark and David Chalmers, "The Extended Mind," *Analysis* 58 (1998), 7–19. <https://doi.org/10.1111/1467-8284.00096>
 - Nathan Ballantyne, "Epistemic Trespassing," *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>
-- Lauren L. Richmond and Ryan Taylor, review of cognitive offloading, *Nature Reviews Psychology* (2025). <https://www.nature.com/articles/s44159-025-00432-2>
-- Herbert Simon's bounded rationality and satisficing — background overview in *Public Administration Review* (2022). <https://onlinelibrary.wiley.com/doi/full/10.1111/puar.13540>
+- Lauren L. Richmond and R. G. Taylor, "The benefits and potential costs of cognitive offloading for retrospective information," *Nature Reviews Psychology* 4 (2025), 312–321. <https://www.nature.com/articles/s44159-025-00432-2>
+- Gary Schwarz, Tom Christensen and Xufeng Zhu, "Bounded Rationality, Satisficing, Artificial Intelligence, and Decision-Making in Public Organizations: The Contributions of Herbert Simon," *Public Administration Review* 82 (2022), 902–904. <https://onlinelibrary.wiley.com/doi/full/10.1111/puar.13540>
 - John W. Payne, James R. Bettman and Eric J. Johnson on constructive decision processes, *Acta Psychologica* 80 (1992). <https://doi.org/10.1016/0001-6918%2892%2990043-D>
 - L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>
 - Anthropic, "How people ask Claude for personal guidance" (2026). <https://www.anthropic.com/research/claude-personal-guidance>
