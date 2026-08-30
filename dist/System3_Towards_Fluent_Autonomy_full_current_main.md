@@ -3420,7 +3420,7 @@ The model’s output is evidence. Its chain-of-thought is evidence. Its activati
 
 That is System 3 applied directly to alignment.
 
-The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. Crucially, it retains a route back to humans when the evidence stops being decisive.
+The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
 
 This is why I prefer **scalable oversight** to the image of a giant alignment rulebook. A rulebook assumes we already know the failures. A research institution expects to discover new ones.
 
