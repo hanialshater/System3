@@ -214,7 +214,7 @@ AI changes some of those bounds.
 
 Suppose I am deciding whether to take a job.
 
-The system can compare compensation under several tax regimes, estimate commute time, summarize the company’s trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted with my children.
+The system can compare compensation under several tax regimes, estimate commute time, summarize the company’s trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted outside work.
 
 The assistant has not merely evaluated an option.
 
@@ -292,7 +292,7 @@ That is a remarkable role for software.
 
 A spreadsheet does not usually tell me to reconsider my marriage.
 
-A compiler has opinions about semicolons but rarely about whether I should move to Dubai.
+A compiler has opinions about semicolons but rarely about whether I should move countries.
 
 A conversational model can be different. It is patient, personalized, available at 2 a.m. and capable of producing a coherent argument for almost any path through a difficult life.
 
@@ -308,7 +308,7 @@ The goal therefore cannot be zero influence.
 
 That would make education impossible.
 
-Books influence me. Friends influence me. Teachers influence me. My wife influences me. A good argument should change me if it reveals something true that I had ignored.
+Books influence me. Friends influence me. Teachers influence me. People close to me influence me. A good argument should change me if it reveals something true that I had ignored.
 
 The distinction I care about is between **helping me change through understanding** and changing me because the system has learned which psychological lever produces the easiest compliance.
 
@@ -432,7 +432,7 @@ There is another complication.
 
 My preferences are not the only preferences in the world.
 
-If I ask an agent to maximize my salary, it cannot therefore commit fraud against my employer. If I ask it to get my child into a school, the school and other applicants do not disappear from the moral universe. If I ask an autonomous system to optimize a marketplace, customers, sellers, workers and regulators may all have legitimate claims over what happens.
+If I ask an agent to maximize my salary, it cannot therefore commit fraud against my employer. If I ask it to help someone gain an advantage, the interests and rights of other people do not disappear from the moral universe. If I ask an autonomous system to optimize a marketplace, customers, sellers, workers and regulators may all have legitimate claims over what happens.
 
 Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred. ([Fickinger et al., 2020](https://arxiv.org/abs/2007.09540))
 
