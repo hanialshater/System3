@@ -33,7 +33,7 @@ These chapters are first integrated drafts and are **not locked**. They will rec
 - [Chapter 6 — Pattern Language](chapters/06-pattern-language.md) — the scientific institution acquires executable culture and memory
 - [Chapter 7 — Recursive Self-Improvement](chapters/07-recursive-self-improvement.md) — the scientific institution experiments on its own machinery
 - [Chapter 8 — Scalable Oversight](chapters/08-automatic-alignment-research.md) — System 3 turns scientific inquiry onto alignment failures
-- [Chapter 9 — Layer 4: What Do You Actually Want?](chapters/09-layer-4-desire.md) — the boundary of science: evidence can discipline belief but cannot supply the ought
+- [Chapter 9 — Layer 4: The Human Learns Too](chapters/09-layer-4-desire.md) — the boundary of science: evidence can discipline belief but cannot supply the ought
 - [Chapter 10 — Fluent Autonomy](chapters/10-fluent-autonomy.md) — the epistemic institution becomes infrastructure beneath human intention
 
 ### Final arc — application and human future
