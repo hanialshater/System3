@@ -1,0 +1,42 @@
+{
+  "chapter": 10,
+  "source": "chapters/10-fluent-autonomy.md",
+  "title": "Fluent Autonomy",
+  "subtitle": "When the Architecture Gets Out of the Way",
+  "running_head": "CHAPTER 10 · FLUENT AUTONOMY",
+  "opener_art": "resources/chapter-openers/chapter-09-fluent-autonomy.jpg",
+  "opener_titled": true,
+  "opener_note": "STALE ASSET: art carries old numbering (Chapter 9). Regeneration job in art-prompts; draft uses it for palette continuity.",
+  "slots": [
+    {
+      "id": "small-sentence",
+      "type": "corner-bleed",
+      "anchor": "But underneath that small sentence, quite a lot may need to happen.",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Corner scene: one small handwritten sentence on a slip of paper at the top; beneath the floorboards it rests on, a vast cutaway of quiet machinery — archives, messengers, little laboratories — assembling itself around the sentence's weight. The surface stays calm."
+    },
+    {
+      "id": "origami-bureau",
+      "type": "margin-vignette",
+      "anchor": "## Bureaucracy on the Fly",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a small government office unfolding out of flat paper like origami around a single problem on a desk — one clerk window, one stamp, one archive drawer — clearly designed to fold away again when done."
+    },
+    {
+      "id": "friction",
+      "type": "spot",
+      "anchor": "I suddenly enjoy friction.",
+      "placement": "before",
+      "brief": "Small spot: a hand resting with deliberate pleasure on a large, satisfying brake lever; behind it, a chute of outgoing money frozen mid-air. Relief as comedy."
+    },
+    {
+      "id": "pq-typography",
+      "type": "pull-quote",
+      "anchor": "## The Architecture Gets Out of the Way",
+      "placement": "before",
+      "text": "This is not fluency. It is opacity with good typography."
+    }
+  ]
+}

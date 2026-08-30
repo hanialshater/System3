@@ -5,6 +5,7 @@
   "subtitle": "Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone",
   "running_head": "CHAPTER 4 · SYSTEM 3",
   "opener_art": "resources/chapter-openers/chapter-04-system-3.jpg",
+  "opener_titled": true,
   "slots": [
     {
       "id": "camel-photo",

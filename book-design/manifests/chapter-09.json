@@ -1,0 +1,65 @@
+{
+  "chapter": 9,
+  "source": "chapters/09-layer-4-desire.md",
+  "title": "Layer 4",
+  "subtitle": "The Human Learns Too",
+  "running_head": "CHAPTER 9 · LAYER 4",
+  "opener_art": "resources/chapter-openers/chapter-08-the-desire-problem.jpg",
+  "opener_titled": true,
+  "opener_note": "STALE ASSET: art carries old numbering/title (Chapter 8, The Desire Problem). Regeneration job in art-prompts; draft uses it for palette continuity.",
+  "slots": [
+    {
+      "id": "corrections",
+      "type": "margin-vignette",
+      "anchor": "For a while the edits became objectively more polished and subjectively worse.",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Margin vignette: a manuscript page being polished by a mechanical burnisher until the words go featureless and shiny; a hand reaching in to stop it, pencil corrections crowding the margin (illegible squiggles, not readable text)."
+    },
+    {
+      "id": "cheapest-flight",
+      "type": "corner-bleed",
+      "anchor": "Find me the cheapest flight",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a traveler slumped at an airport gate at 4:20 a.m., three boarding passes fanned in hand, visa queue behind, one tiny triumphant receipt fluttering. The cost of the literal objective."
+    },
+    {
+      "id": "scaffold",
+      "type": "margin-vignette",
+      "anchor": "## Scaffolding, Not Substitution",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a child building a tower inside a wooden scaffold; an adult quietly removing scaffold pieces from the parts the child has mastered, adding one where they reach beyond themselves. The scaffold is temporary and that is its point."
+    },
+    {
+      "id": "map-territory",
+      "type": "spot",
+      "anchor": "AI can make the map cheap.",
+      "placement": "before",
+      "brief": "Small spot: a hiker holding a beautiful, freshly printed map so large it hides the mountain in front of them; a scarred old signpost points the other way. No readable text."
+    },
+    {
+      "id": "transformative-door",
+      "type": "corner-bleed",
+      "anchor": "## Some Choices Change the Person Choosing",
+      "placement": "after-heading",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a freestanding door on open terrain; the figure approaching it and the figure leaving on the far side are recognizably the same person, dressed and standing differently. The door casts both shadows."
+    },
+    {
+      "id": "pq-scars",
+      "type": "pull-quote",
+      "anchor": "## A Decision Is Also a Learning Problem",
+      "placement": "before",
+      "text": "Fluency arrives before scars."
+    },
+    {
+      "id": "pq-different-human",
+      "type": "pull-quote",
+      "anchor": "## What Layer 4 Actually Is",
+      "placement": "before",
+      "text": "Same action. Different human afterward."
+    }
+  ]
+}

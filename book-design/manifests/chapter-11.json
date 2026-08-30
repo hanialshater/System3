@@ -1,0 +1,65 @@
+{
+  "chapter": 11,
+  "source": "chapters/11-the-store-that-builds-itself.md",
+  "title": "The Store That Builds Itself",
+  "subtitle": "When System 3 Came to Work",
+  "running_head": "CHAPTER 11 · THE STORE THAT BUILDS ITSELF",
+  "opener_art": "resources/chapter-openers/chapter-10-the-store.jpg",
+  "opener_titled": true,
+  "opener_note": "STALE ASSET: art carries old numbering (Chapter 10). Regeneration job in art-prompts; draft uses it for palette continuity.",
+  "slots": [
+    {
+      "id": "two-customers",
+      "type": "corner-bleed",
+      "anchor": "Imagine two customers looking at the same product page.",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Corner scene: two shop windows side by side displaying the identical jacket — before one, a woman with five days of visible deliberation around her (notes, returned visits marked as footprints); before the other, a man who arrived ten seconds ago, still holding a search-result ticket. Same glass, different questions."
+    },
+    {
+      "id": "trail-shoes",
+      "type": "margin-vignette",
+      "anchor": "But consider the customer who is switching",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: Mei at a small table, two trail shoes circling her head like orbiting moons on drawn orbit-lines, fourth loop marked with a small tally. Tired but fond."
+    },
+    {
+      "id": "fruit-bowl",
+      "type": "spot",
+      "anchor": "The carousel has become the fruit bowl of ecommerce",
+      "placement": "before",
+      "brief": "Small spot: an ornate carousel shrunken to sit as a fruit bowl on a sideboard table, oranges riding the horses. Deadpan domestic."
+    },
+    {
+      "id": "sami",
+      "type": "margin-vignette",
+      "anchor": "## Sami Does Not Need a Click",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: Sami at a threshold with one shoe half-tried-on, a paper size chart unfolded twice over, the doorway to 'add to bag' glowing gently and unentered. The blocker is confidence, not choice."
+    },
+    {
+      "id": "trace-archive",
+      "type": "corner-bleed",
+      "anchor": "## The Trace Is Part of the Intelligence",
+      "placement": "after-heading",
+      "wrap_paras": 5,
+      "brief": "Corner scene: an archive room where each served page hangs as a card with its full deliberation attached beneath — and one long drawer labeled only by its fullness: the losers, kept. A robot archivist re-files a rejected candidate with respect."
+    },
+    {
+      "id": "pq-organisms",
+      "type": "pull-quote",
+      "anchor": "## The Objective Fights Back",
+      "placement": "before",
+      "text": "If your ecosystem rewards clicks, clickable organisms evolve."
+    },
+    {
+      "id": "pq-ab-test",
+      "type": "pull-quote",
+      "anchor": "## The Book Comes Back to Bite Me",
+      "placement": "before",
+      "text": "A philosophy of emergence should be willing to lose an A/B test."
+    }
+  ]
+}

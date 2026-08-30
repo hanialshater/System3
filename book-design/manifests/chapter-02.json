@@ -1,0 +1,89 @@
+{
+  "chapter": 2,
+  "source": "chapters/02-the-algorithm-vortex.md",
+  "title": "The Algorithm Vortex",
+  "subtitle": "From Classic Algorithms to Autonomous Discovery",
+  "running_head": "CHAPTER 2 · THE ALGORITHM VORTEX",
+  "opener_art": "resources/chapter-openers/chapter-02-the-algorithm-vortex.jpg",
+  "opener_titled": true,
+  "slots": [
+    {
+      "id": "citrus",
+      "type": "corner-bleed",
+      "anchor": "## The Running Example: Circle Packing",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Corner watercolor: a wooden market crate of oranges packed improbably well, one orange of a different size wedged perfectly; a small robot with calipers measuring the gap. Warm ochre dominant."
+    },
+    {
+      "id": "packing-solution",
+      "type": "figure-frame",
+      "anchor": "A strong reference packing for the 26-circle objective",
+      "placement": "before",
+      "caption": "A strong reference packing for the 26-circle objective (≈ 2.635 under our evaluator)",
+      "brief": "AUTHOR DATA FIGURE (do not generate): original asset image0139.png — the n=26 circle packing solution plot. Restyle option for print: redraw as clean ink circles on cream with blue fills, exact coordinates preserved."
+    },
+    {
+      "id": "hill-climbing",
+      "type": "figure-frame",
+      "anchor": "Early mutations are often accepted",
+      "placement": "before",
+      "caption": "Hill climbing: early mutations accepted, then the search stalls",
+      "brief": "AUTHOR DATA FIGURE (do not generate): original asset image0140.png — hill-climbing progression panels/score curve. Keep data exact; restyle to book palette."
+    },
+    {
+      "id": "crossover",
+      "type": "figure-frame",
+      "anchor": "Naive crossover pairs circles by array index",
+      "placement": "before",
+      "caption": "Naive vs. geometric crossover",
+      "brief": "AUTHOR DATA FIGURE (do not generate): original asset image0141.png — naive vs bipartite-matching crossover diagram. Keep structure exact; restyle to book palette."
+    },
+    {
+      "id": "evolution-result",
+      "type": "figure-frame",
+      "anchor": "Starting around 2.08, the evolutionary search reaches roughly 2.45",
+      "placement": "before",
+      "caption": "Evolutionary search with geometric crossover",
+      "brief": "AUTHOR DATA FIGURE (do not generate): original asset image0122.png — evolutionary strategies result. Keep data exact; restyle to book palette."
+    },
+    {
+      "id": "alphaevolve-arch",
+      "type": "figure-frame",
+      "anchor": "Imagine one generation",
+      "placement": "before",
+      "caption": "One AlphaEvolve generation: archive, patch, run, score, return",
+      "brief": "DIAGRAM (redraw, don't generate scenically): the AlphaEvolve loop as a hand-inked schematic in book palette — archive shelf, program sheet, patch, evaluator stamp — minimal arrows, no labeled role boxes beyond essentials."
+    },
+    {
+      "id": "coffee-test",
+      "type": "corner-bleed",
+      "anchor": "## The Coffee Test",
+      "placement": "after-heading",
+      "wrap_paras": 5,
+      "brief": "Corner watercolor: an empty desk chair still turning, a full coffee cup carried away by a figure exiting the frame; on the screen-glow behind, a small robot continues working at a terminal. The door ajar. This is the Coffee Test — the human leaving is the subject."
+    },
+    {
+      "id": "code-evolution-result",
+      "type": "figure-frame",
+      "anchor": "In our best run, the evaluator returned roughly",
+      "placement": "before",
+      "caption": "Code evolution: iterative optimization toward 2.636",
+      "brief": "AUTHOR DATA FIGURE (do not generate): original asset image0125.png — code evolution result. Keep data exact; restyle to book palette."
+    },
+    {
+      "id": "pq-lastword",
+      "type": "pull-quote",
+      "anchor": "## The Algorithmic Vortex",
+      "placement": "before",
+      "text": "Intuition proposes. Symbolic machinery executes. The evaluator gets the last word."
+    },
+    {
+      "id": "pq-specification",
+      "type": "pull-quote",
+      "anchor": "### Never Write Solution Code Yourself",
+      "placement": "before",
+      "text": "We are negotiating with the specification."
+    }
+  ]
+}

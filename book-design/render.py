@@ -105,20 +105,43 @@ def parse(md):
 
 # ---------- slots ----------
 
-def slot_html(slot):
+ART_EXTS = (".png", ".jpg", ".jpeg", ".webp")
+
+
+def slot_art_path(chnum, slot):
+    """Real art wins over placeholder: manifest 'art' path, else
+    book-design/art/chNN/<slot-id>.<ext> by convention."""
+    if slot.get("art"):
+        p = ROOT / slot["art"]
+        if p.exists():
+            return p
+    base = ROOT / "book-design" / "art" / f"ch{chnum:02d}" / slot["id"]
+    for ext in ART_EXTS:
+        if base.with_suffix(ext).exists():
+            return base.with_suffix(ext)
+    return None
+
+
+def slot_html(chnum, slot):
     t = slot["type"]
-    brief = f'<span class="slotid">{slot["id"]} · {t}</span>{html.escape(slot.get("brief", ""))}'
+    art = slot_art_path(chnum, slot)
+    if art:
+        inner = f'<img src="file://{art}">'
+        cls = " has-art"
+    else:
+        inner = f'<span class="slotid">{slot["id"]} · {t}</span>{html.escape(slot.get("brief", ""))}'
+        cls = ""
     if t == "pull-quote":
         return f'<div class="pullquote block">{html.escape(slot["text"])}</div>'
     if t == "figure-frame":
         cap = f'<figcaption>{html.escape(slot.get("caption", ""))}</figcaption>' if slot.get("caption") else ""
-        return f'<figure class="frame block"><div class="art artframe">{brief}</div>{cap}</figure>'
+        return f'<figure class="frame block"><div class="art artframe{cls}">{inner}</div>{cap}</figure>'
     if t == "corner-bleed":
-        return f'<div class="art float corner">{brief}</div>'
+        return f'<div class="art float corner{cls}">{inner}</div>'
     if t == "margin-vignette":
-        return f'<div class="art float vignette">{brief}</div>'
+        return f'<div class="art float vignette{cls}">{inner}</div>'
     if t == "spot":
-        return f'<div class="art spot block">{brief}</div>'
+        return f'<div class="art spot block{cls}">{inner}</div>'
     raise ValueError(t)
 
 
@@ -144,11 +167,12 @@ def weave(blocks, manifest):
         inserts.setdefault(idx, []).append(slot)
 
     out, i = [], 0
+    chnum = manifest["chapter"]
     while i <= len(blocks):
         for slot in inserts.get(i, []):
             if slot["type"] in ("corner-bleed", "margin-vignette"):
                 n = slot.get("wrap_paras", 4)
-                group = [slot_html(slot)]
+                group = [slot_html(chnum, slot)]
                 taken = 0
                 j = i
                 while j < len(blocks) and taken < n:
@@ -159,7 +183,7 @@ def weave(blocks, manifest):
                 out.append('<div class="wrapgroup block">' + "".join(group) + '<div class="clear"></div></div>')
                 i = j
             else:
-                out.append(slot_html(slot))
+                out.append(slot_html(chnum, slot))
         if i < len(blocks):
             # skip blocks consumed by a wrap group above
             if not (out and i in inserts and False):
@@ -243,8 +267,18 @@ figcaption { font-size:8.5pt; font-style:italic; text-align:center; margin-top:7
 .wrapgroup p:first-of-type { text-indent:0; }
 .clear { clear:both; }
 
+.art.has-art { padding:0; background:none; overflow:hidden; }
+.art.has-art img { width:100%; height:100%; object-fit:cover; border-radius:inherit; display:block; }
+.artframe.has-art { min-height:0; display:block; }
+.artframe.has-art img { height:auto; }
+
 .opener { position:absolute; inset:0; }
 .opener img { width:100%; height:100%; object-fit:cover; }
+.opener.placeholder { background:var(--paper); }
+.opener.placeholder .titleblock { position:static; background:none; padding-top:1.1in; }
+.openerwash { position:absolute; left:0.55in; right:0.55in; top:3.1in; bottom:0.7in;
+  border-radius: 48% 52% 45% 55% / 42% 48% 52% 58%;
+  display:flex; flex-direction:column; justify-content:center; padding:0.5in; }
 .opener .titleblock { position:absolute; top:0; left:0; right:0; padding:0.55in 0.6in 0.5in;
     background:linear-gradient(rgba(247,242,232,.94) 55%, rgba(247,242,232,0));
     text-align:center; }
@@ -254,6 +288,7 @@ figcaption { font-size:8.5pt; font-style:italic; text-align:center; margin-top:7
 """
 
 PAGINATE_JS = """
+const BOOK = %(book)s, HEAD = %(head)s;
 const src = document.getElementById('source');
 const blocks = Array.from(src.children);
 const book = document.getElementById('book');
@@ -266,8 +301,8 @@ function newPage() {
   const head = document.createElement('div');
   head.className = 'runhead';
   head.innerHTML = verso
-    ? '<span>' + pageNo + '</span><span>%(book)s</span>'
-    : '<span>%(head)s</span><span>' + pageNo + '</span>';
+    ? '<span>' + pageNo + '</span><span>' + BOOK + '</span>'
+    : '<span>' + HEAD + '</span><span>' + pageNo + '</span>';
   content = document.createElement('div');
   content.className = 'content';
   page.appendChild(head); page.appendChild(content);
@@ -331,20 +366,24 @@ def build(chnum):
         blocks.pop(0)
     woven = weave(blocks, man)
 
-    opener = ""
+    titleblock = f"""<div class="titleblock">
+        <div class="chnum">CHAPTER {man['chapter']}</div>
+        <div class="chtitle">{html.escape(man['title'])}</div>
+        <div class="chsub">{html.escape(man['subtitle'])}</div>
+      </div>"""
     art = man.get("opener_art")
     if art and (ROOT / art).exists():
-        opener = f"""
-        <div class="sheet"><div class="opener">
-          <img src="file://{ROOT / art}">
-          <div class="titleblock">
-            <div class="chnum">CHAPTER {man['chapter']}</div>
-            <div class="chtitle">{html.escape(man['title'])}</div>
-            <div class="chsub">{html.escape(man['subtitle'])}</div>
-          </div>
+        # art with baked-in hand lettering gets no typeset overlay
+        tb = "" if man.get("opener_titled") else titleblock
+        opener = f'<div class="sheet"><div class="opener"><img src="file://{ROOT / art}">{tb}</div></div>'
+    else:
+        brief = html.escape(man.get("opener_brief", "opener art pending"))
+        opener = f"""<div class="sheet"><div class="opener placeholder">{titleblock}
+          <div class="art openerwash"><span class="slotid">opener · opener-plate</span>{brief}</div>
         </div></div>"""
 
-    js = PAGINATE_JS % {"start": 0, "book": "SYSTEM 3", "head": man["running_head"]}
+    js = PAGINATE_JS % {"start": 0, "book": json.dumps("SYSTEM 3"),
+                        "head": json.dumps(man["running_head"])}
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <style>{CSS}</style></head><body>
 <div id="book">{opener}</div>
@@ -363,7 +402,7 @@ def build(chnum):
                               else "/opt/pw-browsers/chromium-1194/chrome-linux/chrome")
         pg = b.new_page(viewport={"width": 700, "height": 1000})
         pg.goto(f"file://{html_path}")
-        pg.wait_for_function("document.body.dataset.done === '1'")
+        pg.wait_for_function("document.body.dataset.done === '1'", timeout=180000)
         pg.pdf(path=str(OUT / f"chapter-{chnum:02d}-draft.pdf"),
                width="6in", height="9in", print_background=True,
                margin={"top": "0", "bottom": "0", "left": "0", "right": "0"})
@@ -377,4 +416,8 @@ def build(chnum):
 
 
 if __name__ == "__main__":
-    build(int(sys.argv[1]))
+    if sys.argv[1] == "all":
+        for f in sorted((ROOT / "book-design" / "manifests").glob("chapter-*.json")):
+            build(int(f.stem.split("-")[1]))
+    else:
+        build(int(sys.argv[1]))

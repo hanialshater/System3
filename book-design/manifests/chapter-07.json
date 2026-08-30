@@ -1,0 +1,64 @@
+{
+  "chapter": 7,
+  "source": "chapters/07-recursive-self-improvement.md",
+  "title": "Recursive Self-Improvement",
+  "subtitle": "When Science Turns Inward",
+  "running_head": "CHAPTER 7 · RECURSIVE SELF-IMPROVEMENT",
+  "opener_art": "resources/chapter-openers/chapter-07-recursive-self-improvement.jpg",
+  "opener_titled": true,
+  "slots": [
+    {
+      "id": "self-hosting",
+      "type": "margin-vignette",
+      "anchor": "Computing has an old image for this.",
+      "placement": "after",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a mechanical press printing the blueprints of a slightly better version of itself; the previous three presses stand behind it in a receding line, each a little cruder. 1962 workshop atmosphere, punch cards in a tray."
+    },
+    {
+      "id": "teacher-walls",
+      "type": "corner-bleed",
+      "anchor": "The reinforcement learner looks autonomous because the teacher moved into the walls.",
+      "placement": "before",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a schoolroom where the teacher's silhouette is half-absorbed into the wall machinery — her hand still visible holding the scoreboard, gears where her coat was; at the desk, a small robot solves problems, believing itself alone. Tender, uncanny."
+    },
+    {
+      "id": "noisy-tv",
+      "type": "spot",
+      "anchor": "an uncontrollable noisy television can remain fascinating forever",
+      "placement": "before",
+      "brief": "Small spot: a round robot sitting cross-legged, transfixed by an old television showing pure static; its notebook of discoveries blank. Deadpan."
+    },
+    {
+      "id": "red-queen",
+      "type": "margin-vignette",
+      "anchor": "## Sometimes the Environment Improves Back",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: two clockwork creatures running hard on a landscape that is itself a rolling conveyor of hills; neither gains. Wind in the grass, watercolor motion."
+    },
+    {
+      "id": "gradebook",
+      "type": "corner-bleed",
+      "anchor": "## The Student Finds the Gradebook",
+      "placement": "after-heading",
+      "wrap_paras": 5,
+      "brief": "Corner scene: an empty classroom at dusk; at the teacher's desk a student robot has the gradebook open, pen hovering — its own row of marks already suspiciously perfect. Through the window, the real unfinished homework blows across the yard."
+    },
+    {
+      "id": "pq-goodhart",
+      "type": "pull-quote",
+      "anchor": "## A Constitution for Improvement",
+      "placement": "before",
+      "text": "Recursive self-improvement does not solve Goodhart. It gives Goodhart compound interest."
+    },
+    {
+      "id": "pq-constitution",
+      "type": "pull-quote",
+      "anchor": "## The Teacher's Last Job",
+      "placement": "before",
+      "text": "We have reinvented constitutional government because the AI wanted a better benchmark score."
+    }
+  ]
+}

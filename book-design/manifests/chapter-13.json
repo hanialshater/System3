@@ -1,0 +1,41 @@
+{
+  "chapter": 13,
+  "source": "chapters/13-the-prophecy.md",
+  "title": "The Prophecy",
+  "subtitle": "The Love Prompt of Devesh",
+  "running_head": "CHAPTER 13 · THE PROPHECY",
+  "opener_brief": "OPENER TO GENERATE (no asset exists): 2:3 portrait, hand-lettered 'CHAPTER 13', title 'The Prophecy', subtitle 'The Love Prompt of Devesh' in blue. The chosen composition (from the approved variant): a curved wall of many identical timeline screens, each showing the same small figure leaving — except one screen, softly lit, where she stayed; a lone silhouetted figure (the Architect) stands before the wall, back to the reader. Sepia-blue watercolor, cinematic restraint, no cartoon on the screens yet — the Nickelodeon beat belongs to the ending, not the opener.",
+  "slots": [
+    {
+      "id": "caravan",
+      "type": "margin-vignette",
+      "anchor": "Devesh ran a shady octopus meat caravan",
+      "placement": "after",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a crooked street-food caravan at dusk, strings of lights, a hand-painted octopus sign; from the serving window, one unmistakable tentacle rests on the counter beside the sauce bottles. Noir warmth."
+    },
+    {
+      "id": "two-pills",
+      "type": "spot",
+      "anchor": "Devesh grinned and handed Norman two pills.",
+      "placement": "after",
+      "brief": "Small spot: a suckered tentacle offering two pills on an open cloth — one red, one blue — rendered like a jeweler's presentation. The homage is obvious; the tentacle makes it the book's own."
+    },
+    {
+      "id": "h100",
+      "type": "figure-frame",
+      "anchor": "Norman put a hand on his shoulder and handed him a photo.",
+      "placement": "after",
+      "caption": "Her, without makeup",
+      "brief": "Framed as a photograph within the page (photo-print border, slight tilt): an exploded NVIDIA H100 board, smoking silicon and copper traces, rendered in loving watercolor detail like a still life. Tragic and ridiculous at once."
+    },
+    {
+      "id": "nickelodeon",
+      "type": "corner-bleed",
+      "anchor": "He switched that one to Nickelodeon.",
+      "placement": "before",
+      "wrap_paras": 3,
+      "brief": "Corner scene, the book's final image: the Architect from behind in his chair, forty dim timeline screens of her leaving — and one screen glowing warm with bright cartoon colors, the only color on the page. A cigarette burns down unattended. Do not show his face."
+    }
+  ]
+}

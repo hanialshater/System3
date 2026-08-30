@@ -1,0 +1,57 @@
+{
+  "chapter": 6,
+  "source": "chapters/06-pattern-language.md",
+  "title": "Pattern Language",
+  "subtitle": "When Knowledge Becomes Software",
+  "running_head": "CHAPTER 6 · PATTERN LANGUAGE",
+  "opener_art": "resources/chapter-openers/chapter-06-pattern-language.jpg",
+  "opener_titled": true,
+  "slots": [
+    {
+      "id": "forgetting-book",
+      "type": "margin-vignette",
+      "anchor": "This book kept forgetting how to write itself.",
+      "placement": "after",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: an open manuscript whose ink is lifting off the page like steam from the earlier chapters while a hand rewrites the same marginal correction again; a faint ghost of the same correction visible twice before. Melancholy, wry."
+    },
+    {
+      "id": "markdown-briefcase",
+      "type": "spot",
+      "anchor": "Knowledge engineering is back. It is carrying Markdown.",
+      "placement": "after",
+      "brief": "Small spot: a 1980s expert-systems consultant's leather briefcase, reopened; instead of logic rules it spills plain paper notes with hash-mark headings (illegible squiggles, not readable text). One robot peers in, delighted."
+    },
+    {
+      "id": "pattern-town",
+      "type": "corner-bleed",
+      "anchor": "Christopher Alexander",
+      "placement": "before",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a small hillside town where each building visibly answers a recurring situation — a shaded corner where two paths meet, a window seat catching afternoon light, a market arcade — with faint pencil construction lines still showing, as if the town remembers why each form exists."
+    },
+    {
+      "id": "popper-card",
+      "type": "margin-vignette",
+      "anchor": "## Popper: A Pattern Needs a Way to Lose",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a pattern written on a workshop card, hung on a nail — and beside it a small hammer on a cord, provided for breaking it. The card has a designated strike zone. No readable text; the affordance carries the idea."
+    },
+    {
+      "id": "pq-forgetting",
+      "type": "pull-quote",
+      "anchor": "## Feyerabend: The Librarian Is Also a Hypothesis",
+      "placement": "before",
+      "text": "Bad storage forgets by deletion. Bad retrieval forgets by attention."
+    },
+    {
+      "id": "librarian",
+      "type": "margin-vignette",
+      "anchor": "The librarian is no longer merely finding books.",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a robot librarian rolling a ladder along shelves — but the shelves themselves are subtly curving to funnel toward one favored alcove, worn floorboards showing the path everyone was steered down. Quietly sinister."
+    }
+  ]
+}

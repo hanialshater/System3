@@ -1,0 +1,65 @@
+{
+  "chapter": 5,
+  "source": "chapters/05-the-society-of-agents.md",
+  "title": "The Society of Agents",
+  "subtitle": "When the Org Chart Starts Thinking",
+  "running_head": "CHAPTER 5 · THE SOCIETY OF AGENTS",
+  "opener_art": "resources/chapter-openers/chapter-05-the-society-of-agents.jpg",
+  "opener_titled": true,
+  "slots": [
+    {
+      "id": "sixteen-claudes",
+      "type": "corner-bleed",
+      "anchor": "Sixteen Claudes were building a compiler.",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a long workshop hall, sixteen small hand-built robots at individual desks — each doing something visibly different (one reads, one solders, one files papers, one argues with a test bench); on the wall a branching tree of string and pinned cards (git history, unlabeled). Not a crowd of identical robots — a society shown through different positions and activities."
+    },
+    {
+      "id": "pq-institution",
+      "type": "pull-quote",
+      "anchor": "## Strangers Need Standards",
+      "placement": "before",
+      "text": "Same models. Different institution."
+    },
+    {
+      "id": "clay-tablet",
+      "type": "margin-vignette",
+      "anchor": "Some of the earliest surviving writing",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a Mesopotamian clay tablet with cuneiform grain accounts; resting beside it, a robot's small paper note pinned with the same care — two external memories five thousand years apart, drawn as siblings. No readable modern text."
+    },
+    {
+      "id": "dark-room",
+      "type": "margin-vignette",
+      "anchor": "## A Man in a Dark Room",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a darkened room, one small aperture, a single ray of light crossing to a wall; a robed figure (Ibn al-Haytham, seen from behind) arranging a mirror in the beam. The apparatus is the argument."
+    },
+    {
+      "id": "air-pump",
+      "type": "corner-bleed",
+      "anchor": "Robert Boyle's air-pump experiments",
+      "placement": "before",
+      "wrap_paras": 5,
+      "brief": "Corner scene: Boyle's brass air-pump mid-demonstration, three periwigged witnesses leaning in with different expressions (awe, doubt, note-taking); a small robot assistant holds the leaky joint with one finger, looking at the reader. Reality pushed back against the package."
+    },
+    {
+      "id": "cern",
+      "type": "figure-frame",
+      "anchor": "On 4 July 2012",
+      "placement": "before",
+      "caption": "A society organized around an argument with reality",
+      "brief": "Framed plate: the vast interior of a particle detector rendered as watercolor cathedral — tiny human figures on gantries, layered instrument rings like rose windows. Awe without sci-fi glow; the machine as an institution made physical."
+    },
+    {
+      "id": "pq-composition",
+      "type": "pull-quote",
+      "anchor": "## Science Gets Bigger Than the Scientist",
+      "placement": "before",
+      "text": "Civilization knows through composition."
+    }
+  ]
+}

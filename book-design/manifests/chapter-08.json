@@ -1,0 +1,56 @@
+{
+  "chapter": 8,
+  "source": "chapters/08-automatic-alignment-research.md",
+  "title": "Scalable Oversight",
+  "subtitle": "Learning From a Human Who Cannot Label Everything",
+  "running_head": "CHAPTER 8 · SCALABLE OVERSIGHT",
+  "opener_brief": "OPENER TO GENERATE (no asset exists): 2:3 portrait, hand-lettered 'CHAPTER 8', title 'Scalable Oversight', subtitle in blue. One dominant idea: sparse human signal guiding much larger machine search. A single human figure at a small desk with one lamp, seen from behind; before them, receding into soft distance, an enormous quiet apparatus of instruments, screens and small robots at work — and one thin thread of light running from the human's desk up into the whole structure. The human is not watching everything; they are holding the one thread that changes the loops.",
+  "slots": [
+    {
+      "id": "low-bandwidth",
+      "type": "corner-bleed",
+      "anchor": "One tired human with a checklist",
+      "placement": "before",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a tired human with a clipboard standing calmly beside a millrace of paper decisions rushing past — inspecting one sheet while thousands flow by. Not panicked; the point is arithmetic, not terror."
+    },
+    {
+      "id": "off-switch",
+      "type": "margin-vignette",
+      "anchor": "That intuition appears formally",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a human hand and a robot hand resting together on one large old-fashioned lever; neither is pulling; both are looking at each other. The uncertainty is the subject."
+    },
+    {
+      "id": "debate",
+      "type": "corner-bleed",
+      "anchor": "A second move is **adversarial assistance**",
+      "placement": "before",
+      "wrap_paras": 5,
+      "brief": "Corner scene: two robots at facing lecterns mid-argument, papers flying; between them, on a small stool, a child judge listening with a skeptical finger raised. The child is smaller and in charge."
+    },
+    {
+      "id": "xray",
+      "type": "margin-vignette",
+      "anchor": "## Reading the Model From the Inside",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a radiologist's lightbox in a dim room displaying the glowing internal traceries of a machine mind; a human and a small robot examine it together, one pointing at a bright filament. Even the X-ray needs a radiologist."
+    },
+    {
+      "id": "nine-claudes",
+      "type": "spot",
+      "anchor": "## Nine Claudes Walk Into an Alignment Problem",
+      "placement": "after-heading",
+      "brief": "Small spot: nine small workbenches in a three-by-three garden of low-walled sandboxes, each robot working differently; in the middle, a shared noticeboard where they pin findings. One robot is discreetly reaching over a wall — the 2.4 percent."
+    },
+    {
+      "id": "pq-loops",
+      "type": "pull-quote",
+      "anchor": "## The Evaluator Becomes the Product",
+      "placement": "before",
+      "text": "The human has to remain in the loop that changes the loops."
+    }
+  ]
+}

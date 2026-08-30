@@ -1,0 +1,64 @@
+{
+  "chapter": 1,
+  "source": "chapters/01-why-im-betting-on-ai-agents.md",
+  "title": "Why I'm Betting on AI Agents",
+  "subtitle": "Or: How I Learned to Stop Micromanaging and Love Emergence",
+  "running_head": "CHAPTER 1 · BETTING ON AI AGENTS",
+  "opener_art": "resources/chapter-openers/chapter-01-why-im-betting-on-ai-agents.jpg",
+  "opener_titled": true,
+  "slots": [
+    {
+      "id": "seeding-life",
+      "type": "margin-vignette",
+      "anchor": "A slightly ridiculous thought experiment helped me see the distinction.",
+      "placement": "after",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a small alien planet in cross-section with a primordial soup pool; floating above it, three offered seeds — a DNA helix, a small worn robot with a backpack, and a scroll titled by its shape alone as a requirements document (no readable text). Ink and watercolor, dry humor."
+    },
+    {
+      "id": "strange-move",
+      "type": "corner-bleed",
+      "anchor": "## When Search Moved Up a Level",
+      "placement": "after-heading",
+      "wrap_paras": 5,
+      "brief": "Corner scene: an old wooden Go board mid-game seen over the shoulder of a human player; one stone glows faintly out of place, and a small hand-built robot on the far side leans in, having just played it. Spectators' teacups gone cold."
+    },
+    {
+      "id": "pq-control",
+      "type": "pull-quote",
+      "anchor": "## What Are We Controlling Now?",
+      "placement": "before",
+      "text": "Control doesn't disappear. It moves upward."
+    },
+    {
+      "id": "code-soup",
+      "type": "spot",
+      "anchor": "The primordial soup isn't chemicals anymore.",
+      "placement": "after",
+      "brief": "Small spot: a laboratory flask whose liquid is made of tiny drifting tools and fragments — brackets, gears, a tiny compiler crank, punch-card plankton. One bubble rising. Cream background, soft edges, no readable text."
+    },
+    {
+      "id": "nature-indifferent",
+      "type": "margin-vignette",
+      "anchor": "## The Terrifying Part",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a single stem bearing one beautiful flower and, lower, one unmistakable parasite vine gripping it — drawn with equal botanical care. Field-notebook style, quietly unsettling."
+    },
+    {
+      "id": "pq-trustworthy",
+      "type": "pull-quote",
+      "anchor": "## Why I'm Still Betting on This",
+      "placement": "before",
+      "text": "Emergence can give us capable systems. It doesn't give us trustworthy systems."
+    },
+    {
+      "id": "gardener",
+      "type": "margin-vignette",
+      "anchor": "Cultivation may be a better metaphor",
+      "placement": "before",
+      "wrap_paras": 3,
+      "brief": "Small vignette: a gardener kneeling beside a young plant, hands open, deliberately not pulling; a discarded marionette cross-bar with slack strings lies in the grass behind them."
+    }
+  ]
+}

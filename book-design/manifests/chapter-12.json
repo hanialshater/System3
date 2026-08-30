@@ -1,0 +1,65 @@
+{
+  "chapter": 12,
+  "source": "chapters/12-after-capacity.md",
+  "title": "After Capacity",
+  "subtitle": "A Glimpse of Double Descent Life",
+  "running_head": "CHAPTER 12 · AFTER CAPACITY",
+  "opener_art": "resources/chapter-openers/chapter-11-capacity-over-power.jpg",
+  "opener_titled": true,
+  "opener_note": "BENCHMARK ASSET with old numbering/title (Chapter 11, Capacity Over Power). Per art-direction README this title mismatch is an open editorial decision — do not silently regenerate; flagged in art-prompts as decision-pending.",
+  "slots": [
+    {
+      "id": "double-descent",
+      "type": "corner-bleed",
+      "anchor": "I have been calling the larger philosophy around this **Double Descent Life**",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Corner scene: two staircases descending from one landing — one down into orderly machinery halls where robots carry implementation away; the other down into a garden maze with a single human figure pausing at its mouth. The second staircase is the harder one and the drawing knows it."
+    },
+    {
+      "id": "dropdown-office",
+      "type": "margin-vignette",
+      "anchor": "reorganized the team around the dropdown menu",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: an office whose desks, corridors and org chart have bent themselves into the shape of one giant descending dropdown menu; workers filing neatly into its options. No readable text — the shape carries it."
+    },
+    {
+      "id": "pq-descend",
+      "type": "pull-quote",
+      "anchor": "## Learning at the Speed of Curiosity",
+      "placement": "before",
+      "text": "The machines descend into implementation. We descend into meaning."
+    },
+    {
+      "id": "vortex",
+      "type": "margin-vignette",
+      "anchor": "## The Ideology Vortex",
+      "placement": "after-heading",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a gentle vortex of fragments turning together without merging — a temple column, a laboratory flask, a market stall awning, a parliament bench, a horoscope wheel, a dashboard — all rendered in the same warm palette, none winning."
+    },
+    {
+      "id": "ferrari-bicycle",
+      "type": "spot",
+      "anchor": "It can also be a Ferrari engine attached to bicycle brakes.",
+      "placement": "before",
+      "brief": "Small spot: exactly that — an enormous engine mounted on a modest bicycle, tiny caliper brakes, rider not yet aware. Engineering-drawing deadpan."
+    },
+    {
+      "id": "pq-build-anyway",
+      "type": "pull-quote",
+      "anchor": "## The Second Descent",
+      "placement": "before",
+      "text": "Accept contingency. Then build anyway."
+    },
+    {
+      "id": "many-rooms",
+      "type": "corner-bleed",
+      "anchor": "The most hopeful version of the AI future",
+      "placement": "before",
+      "wrap_paras": 5,
+      "brief": "Corner scene: an evening hillside of many small lit workshops, each window showing a different pursuit — a telescope, a loom, a tiny bakery, a home laboratory, an absurdly specific dashboard lovingly tended by its only user. Room, made visible."
+    }
+  ]
+}

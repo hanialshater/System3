@@ -1,0 +1,72 @@
+{
+  "chapter": 3,
+  "source": "chapters/03-deep-mode.md",
+  "title": "The Vibe Coder's Seat",
+  "subtitle": "Beyond Algorithms: Agent Autonomy for Creative Problems",
+  "running_head": "CHAPTER 3 · THE VIBE CODER'S SEAT",
+  "opener_art": "resources/chapter-openers/chapter-03-deep-mode.jpg",
+  "opener_titled": true,
+  "slots": [
+    {
+      "id": "copy-paste",
+      "type": "corner-bleed",
+      "anchor": "My first agent-computer interface was copy and paste.",
+      "placement": "after",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a person carrying an armful of paper strips (code fragments) between two desks — one with an old terminal, one with a glowing chat window — a worn path visible in the floorboards between them. Weary, funny, tender."
+    },
+    {
+      "id": "booking-app",
+      "type": "margin-vignette",
+      "anchor": "Suppose the booking app works perfectly.",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a small football pitch seen from above as a paper form; children's boots waiting at the edge; a parent's hand hovering with a pen. The software is fine; the academy is the question."
+    },
+    {
+      "id": "five-layers",
+      "type": "figure-frame",
+      "anchor": "## The Five Layers of AI Coding",
+      "placement": "after-heading",
+      "caption": "The five layers: model, agent, application, Deep Mode, intention",
+      "brief": "DIAGRAM (typeset/SVG, not scenic art): five stacked strata drawn as a hand-inked geological cross-section — bedrock model, worked tunnels (agent), buildings (application), an observatory (Deep Mode), open sky with a small human figure (intention). Labels typeset outside the art."
+    },
+    {
+      "id": "mockup-wall",
+      "type": "margin-vignette",
+      "anchor": "I remember looking at some of these and thinking",
+      "placement": "before",
+      "wrap_paras": 4,
+      "brief": "Margin vignette: a wall of pinned generated mockups, arrows pointing nowhere useful, one sheet lifted by a hand — and the viewer's posture says the picture just argued back. Ink wash, no readable text on the sheets."
+    },
+    {
+      "id": "judges",
+      "type": "corner-bleed",
+      "anchor": "## Who Judges the Judges?",
+      "placement": "after-heading",
+      "wrap_paras": 5,
+      "brief": "Corner scene: a long bench of mismatched judges examining one small glowing artifact — a child with building blocks, a teacher with spectacles, a robot holding a browser window like a magnifying lens, a stern figure with a rubric scroll they are not being allowed to read from. Each sees something different."
+    },
+    {
+      "id": "pq-peer-review",
+      "type": "pull-quote",
+      "anchor": "## Deep Mode",
+      "placement": "before",
+      "text": "Apparently, when the clean loss function disappears, you eventually reinvent peer review."
+    },
+    {
+      "id": "cathedral-cart",
+      "type": "spot",
+      "anchor": "like a cathedral built on a shopping cart",
+      "placement": "before",
+      "brief": "Small spot, the chapter's key image: an exquisite gothic cathedral, fully detailed, balanced entirely on one rattling supermarket shopping cart. Deadpan rendering — the absurdity carried by draftsmanship, not caricature."
+    },
+    {
+      "id": "pq-artifact",
+      "type": "pull-quote",
+      "anchor": "## Optimizing Something You Cannot Score",
+      "placement": "before",
+      "text": "The artifact is no longer merely the end of the thinking process. It becomes something we think with."
+    }
+  ]
+}
