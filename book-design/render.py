@@ -179,15 +179,16 @@ body { background:#555; font-family:'Bitstream Charter', 'Charter', serif; color
 @media print { body{background:none} .sheet{margin:0; box-shadow:none; page-break-after:always} }
 @page { size: 6in 9in; margin: 0; }
 
-.runhead { position:absolute; top:0.32in; left:0.85in; right:0.75in; display:flex;
+.runhead { position:absolute; top:0.3in; left:0.85in; right:0.68in; display:flex;
            justify-content:space-between; font-size:8.5pt; letter-spacing:0.14em;
            color:var(--accent); }
-.sheet.verso .runhead { left:0.75in; right:0.85in; }
-.content { position:absolute; top:0.7in; bottom:0.75in; left:0.85in; right:0.75in;
-           font-size:10.5pt; line-height:15pt; text-align:justify; }
-.sheet.verso .content { left:0.75in; right:0.85in; }
+.sheet.verso .runhead { left:0.68in; right:0.85in; }
+.content { position:absolute; top:0.62in; bottom:0.68in; left:0.85in; right:0.68in;
+           font-size:10.5pt; line-height:15pt; text-align:justify; hyphens:auto; }
+.sheet.verso .content { left:0.68in; right:0.85in; }
 
 .content p { margin:0; text-indent:1.1em; }
+p.cont { text-indent:0 !important; }
 .k-h2 + .block p, .pullquote + .block p, figure + .block p, .k-hr + .block p { text-indent:0; }
 h2 { font-size:14pt; line-height:1.25; color:var(--accent); font-style:italic;
      margin:14pt 0 7pt; text-align:left; }
@@ -272,14 +273,46 @@ function newPage() {
   page.appendChild(head); page.appendChild(content);
   book.appendChild(page);
 }
+function trySplit(b) {
+  // split a plain-text paragraph so the page fills to the bottom
+  if (!b.classList.contains('k-p')) return null;
+  const p = b.querySelector(':scope > p');
+  if (!p || p.children.length > 0) return null; // inline markup: don't split
+  const words = p.textContent.split(' ');
+  if (words.length < 12) return null;
+  let lo = 1, hi = words.length - 1, fit = 0;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    p.textContent = words.slice(0, mid).join(' ');
+    if (content.scrollHeight <= content.clientHeight + 1) { fit = mid; lo = mid + 1; }
+    else hi = mid - 1;
+  }
+  if (fit < 6 || words.length - fit < 4) { p.textContent = words.join(' '); return null; }
+  p.textContent = words.slice(0, fit).join(' ');
+  const rest = document.createElement('div');
+  rest.className = 'block k-p';
+  const p2 = document.createElement('p');
+  p2.className = 'cont';
+  p2.textContent = words.slice(fit).join(' ');
+  rest.appendChild(p2);
+  return rest;
+}
 newPage();
-for (const b of blocks) {
+const queue = blocks.slice();
+for (let qi = 0; qi < queue.length; qi++) {
+  const b = queue[qi];
   content.appendChild(b);
   if (content.scrollHeight > content.clientHeight + 1) {
     if (content.children.length === 1) continue; // oversized block: let it be its page
-    content.removeChild(b);
-    newPage();
-    content.appendChild(b);
+    const rest = trySplit(b);
+    if (rest) {
+      queue.splice(qi + 1, 0, rest);
+      newPage();
+    } else {
+      content.removeChild(b);
+      newPage();
+      content.appendChild(b);
+    }
   }
 }
 src.remove();
