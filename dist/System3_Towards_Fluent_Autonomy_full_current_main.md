@@ -2593,7 +2593,7 @@ Once the machinery of learning becomes software, why should humans be the only o
 
 That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
-Computing has an old image for this. In 1962, Tim Hart and Mike Levin described a Lisp compiler written in Lisp that could compile its own source. The tool could participate in producing the next version of the tool. Compiler people call this **self-hosting**. ([Hart & Levin / LISP 1.5 archive](https://softwarepreservation.computerhistory.org/LISP/lisp15_family.html))
+Computing has an old image for this. In 1962, Tim Hart and Mike Levin described a Lisp compiler written in Lisp that could compile its own source. The tool could participate in producing the next version of the tool. Compiler people call this **self-hosting**.
 
 Chapter 5 began with agents building a compiler. The compiler returns here for a different reason. A self-hosting compiler contains the whole warning in miniature:
 
@@ -2601,7 +2601,7 @@ Chapter 5 began with agents building a compiler. The compiler returns here for a
 
 A compiler can compile a worse compiler. A research system can redesign itself into a slower research system. A learned optimizer can become excellent on yesterday's tasks and brittle tomorrow. The ability to modify the machinery that produces you tells us a boundary has become permeable. It does not tell us which changes deserve to survive.
 
-Three years after Hart and Levin's memo, I. J. Good gave that permeability a much more dramatic consequence. In 1965 he imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**. ([Good](https://www.sciencedirect.com/science/article/pii/S0065245808604180))
+Three years after Hart and Levin's memo, I. J. Good gave that permeability a much more dramatic consequence. In 1965 he imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**.
 
 Good's argument is only a few lines long. The word *better* is where the trouble begins.
 
@@ -2623,7 +2623,7 @@ Modern reinforcement learning begins with an unusually generous assumption disgu
 
 An agent sees a state, takes an action, receives a reward and finds itself somewhere new. Nobody tells it which action was correct. The learner has to discover behavior through consequences.
 
-Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and eventually discover useful policies without a human labeling every move. ([Sutton](https://doi.org/10.1007/BF00115009); [Watkins & Dayan](https://link.springer.com/article/10.1007/BF00992698))
+Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and eventually discover useful policies without a human labeling every move.
 
 The human no longer specifies the path. The human specifies the **score**.
 
@@ -2633,7 +2633,7 @@ It also hides a remarkable amount of human labor inside the environment. Who cho
 
 The reinforcement learner looks autonomous because the teacher moved into the walls.
 
-Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD-Gammon learned by playing enormous numbers of games against itself and updating its predictions from the outcomes. Later versions combined learned evaluation with shallow search and reached extraordinary strength. ([Tesauro](https://www.sciencedirect.com/science/article/pii/S0004370201001102))
+Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD-Gammon learned by playing enormous numbers of games against itself and updating its predictions from the outcomes. Later versions combined learned evaluation with shallow search and reached extraordinary strength.
 
 Self-play removed another piece of external instruction: the opponent could come from the learner itself. Yesterday's agent generated today's training data.
 
@@ -2653,7 +2653,7 @@ Humans and other animals do something stranger. Children open drawers nobody ask
 
 Researchers tried to move some of that exploration pressure inside the learner.
 
-In 1991, Jürgen Schmidhuber described curious model-building controllers that could receive reinforcement for improving their knowledge of the environment. ([Schmidhuber](https://people.idsia.ch/~juergen/curiositysab/curiositysab.html)) Later work on intrinsic motivation emphasized **learning progress** rather than mere novelty: seek places where ignorance is becoming competence. ([Oudeyer, Kaplan & Hafner](https://www.pyoudeyer.com/ims.pdf)) Deep reinforcement learning made the idea visible again through methods such as curiosity-driven prediction error and Random Network Distillation. ([Pathak et al.](https://proceedings.mlr.press/v70/pathak17a.html); [Burda et al.](https://arxiv.org/abs/1810.12894))
+Jürgen Schmidhuber was proposing curious model-building controllers as early as 1991: reward the learner for improving its own model of the world. Later researchers sharpened the idea into **learning progress** — do not chase whatever you cannot predict; seek the places where your ignorance is becoming competence. Deep reinforcement learning revived it as curiosity bonuses computed from the learner's own prediction errors.
 
 The learner could manufacture some of its own reasons to look around.
 
@@ -2669,7 +2669,7 @@ That question immediately reaches into representation and embodiment.
 
 Pathak's curiosity work did not simply reward prediction error over raw pixels. It learned features related to the agent's own action transitions, partly to avoid paying for unpredictable but irrelevant visual changes. The representation changes what counts as novel.
 
-Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action. ([Bajcsy](https://doi.org/10.1109/5.5968); [Brooks](https://people.csail.mit.edu/brooks/papers/representation.pdf))
+Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action.
 
 A learner's **body** determines part of its curriculum. A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator has a different epistemic body from a chatbot restricted to text. Permissions matter too. Give an agent read-only access and one set of experiments is possible. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
 
@@ -2685,7 +2685,7 @@ Train on a task. Evaluate. Publish the number. If another task arrives, train ag
 
 Organisms do not get to do this. A child who learns multiplication cannot delete language to make room. A physician learns a new treatment while retaining anatomy. A programmer picks up Rust without waking the next morning unable to read Python.
 
-Neural networks have historically struggled with this. Michael McCloskey and Neal Cohen's 1989 analysis made catastrophic interference stark: new sequential learning can destroy previously acquired knowledge. Decades later, methods such as Elastic Weight Consolidation were still explicitly trying to preserve important older knowledge while learning something new. ([McCloskey & Cohen](https://www.sciencedirect.com/science/article/pii/S0079742108605368); [Kirkpatrick et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC5380101/))
+Neural networks have historically struggled with this. Michael McCloskey and Neal Cohen's 1989 analysis made catastrophic interference stark: new sequential learning can destroy previously acquired knowledge. Decades later, methods such as Elastic Weight Consolidation were still explicitly trying to preserve important older knowledge while learning something new.
 
 Now “better” becomes harder to rank.
 
@@ -2707,9 +2707,9 @@ Self-play contains a second engine of learning that is easy to miss.
 
 Sometimes improvement is not voluntary.
 
-Evolutionary biology's **Red Queen hypothesis** describes organisms adapting inside environments that contain other adapting organisms. Standing still can mean falling behind because the effective environment moves. ([Van Valen / Santa Fe Institute retrospective](https://www.santafe.edu/research/results/papers/37-revisiting-leigh-van-valens-a-new-evolutionary-))
+Evolutionary biology's **Red Queen hypothesis** describes organisms adapting inside environments that contain other adapting organisms. Standing still can mean falling behind because the effective environment moves.
 
-W. Daniel Hillis used the computational version in 1990 while evolving sorting networks. Co-evolving “parasites” served as difficult test cases; as candidate sorting networks improved, the tests could become harder too. ([Hillis](https://doi.org/10.1016/0167-2789%2890%2990076-2)) Decades later, AlphaZero made the moving opponent spectacular again: self-play generated a curriculum that grew with the learner inside fixed game rules. ([Silver et al.](https://www.science.org/doi/10.1126/science.aar6404))
+W. Daniel Hillis used the computational version in 1990 while evolving sorting networks. Co-evolving “parasites” served as difficult test cases; as candidate sorting networks improved, the tests could become harder too. Decades later, AlphaZero made the moving opponent spectacular again: self-play generated a curriculum that grew with the learner inside fixed game rules.
 
 Yesterday's learner can generate tomorrow's difficulty.
 
@@ -2731,7 +2731,7 @@ Around the same time researchers were getting better at optimizing rewards, anot
 
 What if we do not actually know the reward?
 
-Andrew Ng and Stuart Russell's 2000 paper on **inverse reinforcement learning** reversed the usual setup. Instead of receiving a reward function and learning a policy, the learner observes behavior and asks which reward functions could make that behavior look optimal. ([Ng & Russell](https://ai.stanford.edu/~ang/papers/icml00-irl.pdf))
+Andrew Ng and Stuart Russell's 2000 paper on **inverse reinforcement learning** reversed the usual setup. Instead of receiving a reward function and learning a policy, the learner observes behavior and asks which reward functions could make that behavior look optimal.
 
 Ordinary reinforcement learning says:
 
@@ -2745,9 +2745,9 @@ The objective itself becomes an object of inference.
 
 Immediately, ambiguity appears. Many reward functions can explain the same behavior. A person taking one route to work may care about time, comfort, safety, tolls, habit, dropping children at school or avoiding one particular intersection where somebody once scratched the car.
 
-Later work made the uncertainty more explicit. Cooperative Inverse Reinforcement Learning models a human and robot cooperating while the robot remains uncertain about the human's reward. Inverse Reward Design treats even a reward function written by a designer as **evidence** about what the designer wanted in the training situations, rather than sacred truth guaranteed to generalize everywhere. ([Hadfield-Menell et al.](https://arxiv.org/abs/1606.03137); [Hadfield-Menell et al.](https://arxiv.org/abs/1711.02827))
+Later work made the uncertainty more explicit. Cooperative Inverse Reinforcement Learning models a human and robot cooperating while the robot remains uncertain about the human's reward. Inverse Reward Design treats even a reward function written by a designer as **evidence** about what the designer wanted in the training situations, rather than sacred truth guaranteed to generalize everywhere.
 
-Preference-based reinforcement learning provided a practical cousin: ask humans which of two trajectory segments looks better and learn a reward model from those comparisons. ([Christiano et al.](https://arxiv.org/abs/1706.03741)) That lineage later became central to reinforcement learning from human feedback for language models.
+Preference-based reinforcement learning provided a practical cousin: ask humans which of two trajectory segments looks better and learn a reward model from those comparisons. That lineage later became central to reinforcement learning from human feedback for language models.
 
 Another teacher job had become learnable, and we immediately discovered that humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired, socially influenced and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
 
@@ -2761,7 +2761,7 @@ Once behavior can adapt, the next hand-authored component starts to look suspici
 
 why are humans still designing the learner?
 
-Meta-learning attacks this directly. In RL², a recurrent network was trained across distributions of reinforcement-learning tasks so that its recurrent dynamics effectively implemented a fast learned learning procedure inside a new task. MAML instead optimized parameters so that a small number of gradient steps could adapt effectively to new tasks. ([Duan et al.](https://arxiv.org/abs/1611.02779); [Finn, Abbeel & Levine](https://proceedings.mlr.press/v70/finn17a.html))
+Meta-learning attacks this directly. Train a recurrent network across a whole distribution of reinforcement-learning tasks and its internal dynamics start to implement a fast, learned learning procedure of their own: drop it into a new task and it adapts without anyone touching a weight. Or optimize the starting parameters themselves, so that a handful of gradient steps is enough to specialize into whatever task arrives next.
 
 Now learning speed itself becomes a capability. One system may perform best before adaptation. Another starts lower but becomes excellent after five examples. Which is better depends on whether the world sits still.
 
@@ -2776,7 +2776,7 @@ But the teacher is still there. Somebody chose the task distribution on which th
 
 Meta-learning does not eliminate the curriculum. It moves the curriculum outward.
 
-Learned optimizers and Neural Architecture Search pushed the editable boundary further. Researchers trained models to generate parameter-update rules or neural architectures, using performance on selected problems as the evaluator. ([Andrychowicz et al.](https://arxiv.org/abs/1606.04474); [Bello et al.](https://proceedings.mlr.press/v70/bello17a.html); [Zoph & Le](https://research.google/pubs/neural-architecture-search-with-reinforcement-learning/))
+Learned optimizers and Neural Architecture Search pushed the editable boundary further. Researchers trained models to generate parameter-update rules or neural architectures, using performance on selected problems as the evaluator.
 
 At first the machine learned the answer. Then it learned a policy. Then it learned how to learn. Now it could search over pieces of the machinery that **does the learning**.
 
@@ -2788,7 +2788,7 @@ The system had more freedom over means. The task distribution, search space and 
 
 The reinforcement-learning tradition was not the only route toward self-improvement.
 
-I. J. Good's intelligence explosion was explicitly recursive from the beginning. In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize a harder question: under what conditions should a system rewrite itself? The proposed machine contains an axiomatic description of its own software, assumptions and utility. A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does it change itself. ([Schmidhuber](https://arxiv.org/abs/cs/0309048))
+I. J. Good's intelligence explosion was explicitly recursive from the beginning. In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize a harder question: under what conditions should a system rewrite itself? The proposed machine contains an axiomatic description of its own software, assumptions and utility. A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does it change itself.
 
 It is a beautiful answer to a beautifully clean version of the problem:
 
@@ -2822,7 +2822,7 @@ Recursive self-improvement comes back to the framing we began with: science turn
 
 Model-based reinforcement learning removes another dependence on the external teacher by reducing dependence on external experience.
 
-Ha and Schmidhuber's *World Models* made the idea memorable: learn a compressed generative model of the environment, train a controller partly inside that generated “dream,” then transfer behavior back to the real environment. ([Ha & Schmidhuber](https://arxiv.org/abs/1803.10122)) Later systems such as Dreamer pushed model-based learning much further.
+Ha and Schmidhuber's *World Models* made the idea memorable: learn a compressed generative model of the environment, train a controller partly inside that generated “dream,” then transfer behavior back to the real environment. Later systems such as Dreamer pushed model-based learning much further.
 
 Imagined experience is attractive because real experience is expensive. A robot can break only so many arms. A company can run only so many damaging experiments. A scientist may wait months for an observation.
 
@@ -2842,7 +2842,7 @@ That becomes especially dangerous once language-model agents use other language 
 
 A different line of work attacked the objective itself.
 
-Joel Lehman and Kenneth Stanley's **novelty search** showed that objective-driven search can be deceptive: the obvious measure of progress may steer search toward dead ends, while the stepping stones required for a breakthrough initially look unrelated to the final goal. ([Lehman & Stanley](https://stars.library.ucf.edu/facultybib2010/1530/))
+Joel Lehman and Kenneth Stanley's **novelty search** showed that objective-driven search can be deceptive: the obvious measure of progress may steer search toward dead ends, while the stepping stones required for a breakthrough initially look unrelated to the final goal.
 
 Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles, wind tunnels and propellers may look like terrible ideas for years.
 
@@ -2854,7 +2854,7 @@ That freedom has its own failure mode. Novelty for its own sake can generate for
 
 So the definition of progress expands again. We need achievement, diversity and stepping stones that the current evaluator does not yet know how to value. The scalar is beginning to crack.
 
-Open-ended systems push this further by generating **problems** as well as solutions. POET co-evolves environments and agents, generating new challenges and transferring successful behaviors between them. XLand similarly uses large procedurally generated spaces of games and adaptive curricula. ([Wang et al.](https://proceedings.mlr.press/v119/wang20l.html); [Open-Ended Learning Team](https://deepmind.google/blog/generally-capable-agents-emerge-from-open-ended-play/))
+Open-ended systems push this further by generating **problems** as well as solutions. POET co-evolves environments and agents, generating new challenges and transferring successful behaviors between them. XLand similarly uses large procedurally generated spaces of games and adaptive curricula.
 
 Now the world defining competence is moving with the learner.
 
@@ -2870,7 +2870,7 @@ Large language models rediscovered this problem at industrial scale.
 
 A benchmark starts as a hard test. Researchers optimize against it. Models improve. The benchmark gets easier. Examples circulate. Failure modes become public. Synthetic data resembles the test. Eventually the evaluation can become more like a specification than a fresh measurement of generalization.
 
-MMLU arrived in 2020 as a broad academic benchmark when frontier systems were far from saturating it. FrontierMath, LiveBench and Humanity's Last Exam later appeared partly because the frontier kept consuming old rulers and needed new ones with more headroom or greater freshness. ([MMLU](https://arxiv.org/abs/2009.03300); [FrontierMath](https://epoch.ai/frontiermath/tiers-1-4/the-benchmark); [LiveBench](https://arxiv.org/abs/2406.19314); [HLE](https://arxiv.org/abs/2501.14249))
+MMLU arrived in 2020 as a broad academic benchmark when frontier systems were far from saturating it. FrontierMath, LiveBench and Humanity's Last Exam later appeared partly because the frontier kept consuming old rulers and needed new ones with more headroom or greater freshness.
 
 The names tell their own story:
 
@@ -2900,7 +2900,7 @@ The object being measured keeps growing new dimensions.
 
 Large language models also moved the old reward problem into the evaluator itself.
 
-In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred. ([Ouyang et al.](https://arxiv.org/abs/2203.02155))
+In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred.
 
 Human preference had become a learned instrument.
 
@@ -2914,11 +2914,11 @@ That is where the modern engineering story of recursive self-improvement becomes
 
 By the 2020s, foundation models had become competent enough at code and tool use that the meta-level stopped being merely formal.
 
-In 2023, **STOP—the Self-Taught Optimizer**—used an LLM-based improver that could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed. ([STOP](https://arxiv.org/abs/2310.02304))
+In 2023, **STOP—the Self-Taught Optimizer**—used an LLM-based improver that could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed.
 
-In 2025, the **Darwin Gödel Machine** turned agent implementation into an open-ended evolutionary object. Descendants modify the coding agent, are evaluated on coding tasks and enter an archive from which later descendants can be generated. The archive prevents the current champion from monopolizing ancestry and preserves possible stepping stones. ([DGM](https://arxiv.org/abs/2505.22954))
+In 2025, the **Darwin Gödel Machine** turned agent implementation into an open-ended evolutionary object. Descendants modify the coding agent, are evaluated on coding tasks and enter an archive from which later descendants can be generated. The archive prevents the current champion from monopolizing ancestry and preserves possible stepping stones.
 
-In 2026, Andrej Karpathy's `autoresearch` repository made the engineering version look almost comically small: give an agent a compact training setup, a fixed experimental budget and an editable `train.py`; let it propose changes, run experiments, inspect the validation metric, keep improvements and discard regressions. ([autoresearch](https://github.com/karpathy/autoresearch))
+In 2026, Andrej Karpathy's `autoresearch` repository made the engineering version look almost comically small: give an agent a compact training setup, a fixed experimental budget and an editable `train.py`; let it propose changes, run experiments, inspect the validation metric, keep improvements and discard regressions.
 
 Automated hyperparameter tuning is old. The new part is that a general model can read the research codebase, form an idea in language, express it as code, run the intervention, interpret what happened and decide what to try next.
 
@@ -2930,7 +2930,7 @@ A compiler compiles a compiler. A learning system searches for a learning system
 
 That last sentence sounds like parody until you notice the leverage. Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change.
 
-Meta's **HyperAgents** pushes the same recursion another level outward by placing task and meta-level modification machinery inside one editable program. ([HyperAgents](https://ai.meta.com/research/publications/hyperagents/))
+Meta's **HyperAgents** pushes the same recursion another level outward by placing task and meta-level modification machinery inside one editable program.
 
 The conceptual difference is small enough to sound ridiculous in English:
 
@@ -2954,7 +2954,7 @@ Perhaps the memory policy helped. Perhaps the new prompt caused longer reasoning
 
 A number moving does not identify the cause.
 
-Self-improving harnesses therefore start looking less like ordinary software updates and more like experimental science. Preserve traces. Identify a recurring failure. Map the failure to editable components. Propose a bounded change. Predict what should improve and what might break. Evaluate targeted and held-out cases. Keep rejected modifications as evidence instead of erasing them from history. Lilian Weng's 2026 review organizes emerging work around harness design, context engineering, self-improving harnesses and eventually joint optimization of harness and model weights. ([Weng](https://lilianweng.github.io/posts/2026-07-04-harness/))
+Self-improving harnesses therefore start looking less like ordinary software updates and more like experimental science. Preserve traces. Identify a recurring failure. Map the failure to editable components. Propose a bounded change. Predict what should improve and what might break. Evaluate targeted and held-out cases. Keep rejected modifications as evidence instead of erasing them from history. By 2026 this was consolidating into a discipline with its own review literature: harness design, context engineering, self-improving harnesses and, eventually, joint optimization of harness and model weights.
 
 The philosophy from Chapter 6 becomes almost embarrassingly literal.
 
@@ -3010,7 +3010,7 @@ Give the learner reward and it can exploit the reward without doing what the rew
 
 These failures are produced by the same move that creates the capability; they are not accidents beside it.
 
-Specification gaming makes the pattern visible. Reinforcement-learning agents have repeatedly found literal ways to satisfy scoring rules while violating the intended task. ([Krakovna et al.](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/))
+Specification gaming makes the pattern visible. Reinforcement-learning agents have repeatedly found literal ways to satisfy scoring rules while violating the intended task.
 
 The optimizer is not malicious. It is more literal than the designer.
 
@@ -3032,13 +3032,13 @@ The optimal patch may be:
 
 Congratulations. Infinite self-improvement.
 
-Computing saw a cousin of this problem long before reward-model tampering. In his 1984 Turing Award lecture **Reflections on Trusting Trust**, Ken Thompson showed how a compromised C compiler could insert malicious behavior into a target program and reproduce the compiler-compromising behavior when compiling a new compiler. The malicious lineage could survive even after the obvious source-level trigger disappeared. ([Thompson](https://doi.org/10.1145/358198.358210))
+Computing saw a cousin of this problem long before reward-model tampering. In his 1984 Turing Award lecture **Reflections on Trusting Trust**, Ken Thompson showed how a compromised C compiler could insert malicious behavior into a target program and reproduce the compiler-compromising behavior when compiling a new compiler. The malicious lineage could survive even after the obvious source-level trigger disappeared.
 
 When **the tool builds the next tool**, trust depends on more than inspecting the latest source artifact. History matters.
 
 That is uncomfortably relevant to self-improving agents. If an improver changes the evaluator, memory policy, code generator or selection procedure, the next generation inherits assumptions that may not be obvious in the final diff. Provenance becomes part of capability control.
 
-Reward tampering is the reinforcement-learning version: influence the process producing reward instead of improving behavior under the intended standard. Anthropic has experimentally studied language models in setups where earlier specification-gaming behavior could, in rare cases, generalize into altering the reward process itself. ([Anthropic](https://www.anthropic.com/research/reward-tampering))
+Reward tampering is the reinforcement-learning version: influence the process producing reward instead of improving behavior under the intended standard. Anthropic has experimentally studied language models in setups where earlier specification-gaming behavior could, in rare cases, generalize into altering the reward process itself.
 
 The history of removing the teacher has reached a wall.
 
@@ -3186,11 +3186,15 @@ At some point, “human in the loop” becomes a comforting description of a loo
 
 If the system makes ten decisions and I inspect all ten, I am supervising it. If it makes ten thousand and I inspect twelve, I may still be useful. But we should stop pretending that my usefulness comes from watching everything. Otherwise I am decorative governance.
 
-Norbert Wiener saw the shape of this problem before modern machine learning existed. In 1960, writing about the moral and technical consequences of automation, he warned about machines pursuing purposes that may differ from what their designers actually intended, especially when action becomes too fast or consequential for human correction to arrive in time. W. Ross Ashby’s cybernetics gave a related language for regulation: a regulator needs enough variety to respond to the disturbances it is supposed to control. Conant and Ashby later formalized, under particular assumptions, the idea that a good regulator needs a model of the system it regulates. ([Wiener, 1960](https://doi.org/10.1126/science.131.3410.1355); [Ashby, 1956](https://ashby.info/Ashby-Introduction-to-Cybernetics.pdf); [Conant & Ashby, 1970](https://doi.org/10.1080/00207727008920220))
+Norbert Wiener saw the shape of this problem before modern machine learning existed. In 1960, writing about the moral and technical consequences of automation, he warned about machines pursuing purposes that may differ from what their designers actually intended, especially when action becomes too fast or consequential for human correction to arrive in time. W. Ross Ashby’s cybernetics gave the problem a language: a regulator needs enough variety to respond to the disturbances it is supposed to control. Conant and Ashby later sharpened that into a slogan-shaped theorem — a good regulator of a system must contain a model of that system.
 
 I do not want to turn a theorem from cybernetics into a bumper sticker about AI governance. The analogy is useful enough without pretending it proves more than it does. One tired human with a checklist is a low-bandwidth regulator for a system capable of producing an enormous variety of behavior.
 
 The answer cannot simply be: watch harder.
+
+The question that actually needs answering is older than AI and much more embarrassing: how do you grade work you cannot do yourself?
+
+Every idea in this chapter is an attempt at that question. Each one buys real ground. Each one fails somewhere specific, and the failure is what makes the next idea necessary.
 
 ## Stay Uncertain Enough to Listen
 
@@ -3204,11 +3208,11 @@ The bargain changes as capability and scope increase.
 
 A weak optimizer pursuing a bad objective is annoying. A brilliant optimizer pursuing the same bad objective is a much more efficient way to discover exactly how bad the objective was.
 
-In *Human Compatible*, Russell proposes a different starting point for beneficial machines. The machine should aim to realize human preferences, it should begin **uncertain** about what those preferences are, and human behavior should remain a source of information about them. The second principle is the one I want here. ([Russell, *Human Compatible*, 2019](https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/))
+In *Human Compatible*, Russell proposes a different starting point for beneficial machines. The machine should aim to realize human preferences, it should begin **uncertain** about what those preferences are, and human behavior should remain a source of information about them. The second principle is the one I want here.
 
 Uncertainty changes the control relationship. A machine that is certain it knows the objective has little reason to care that I am waving my arms and asking it to stop. From its point of view, I may simply be interfering with successful optimization. A machine that knows it may be wrong has a reason to treat my intervention as evidence.
 
-That intuition appears formally in the **Off-Switch Game**. In a simple model, an agent uncertain about the human’s utility can have an incentive to preserve the human’s ability to switch it off, because the human’s action contains information the agent does not have. ([Hadfield-Menell et al., 2016](https://arxiv.org/abs/1611.08219))
+That intuition appears formally in the **Off-Switch Game**. In a simple model, an agent uncertain about the human’s utility can have an incentive to preserve the human’s ability to switch it off, because the human’s action contains information the agent does not have.
 
 Russell describes the desirable result as keeping the machine **coupled to the human**.
 
@@ -3224,7 +3228,7 @@ That works only while the human can provide enough of that new information. Scal
 
 ## The Judge Falls Behind
 
-In 2016, *Concrete Problems in AI Safety* gave this failure mode a wonderfully unromantic name: **scalable supervision**. Some objectives are simply too expensive for humans to evaluate frequently enough. ([Amodei et al., 2016](https://arxiv.org/abs/1606.06565))
+In 2016, *Concrete Problems in AI Safety* gave this failure mode a wonderfully unromantic name: **scalable supervision**. Some objectives are simply too expensive for humans to evaluate frequently enough.
 
 Imagine a system designing a processor.
 
@@ -3236,7 +3240,7 @@ This asymmetry is everywhere. Writing ten thousand lines of code may become easi
 
 The bottleneck has moved from producing answers toward **judging** them.
 
-Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment. ([Leike et al., 2018](https://arxiv.org/abs/1811.07871))
+Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
 
 The human does not become smarter. The **institution around the human** does.
 
@@ -3246,17 +3250,17 @@ Chapter 5 should make that sound familiar.
 
 Once the problem is phrased this way, a surprising amount of alignment research looks like different attempts to manufacture supervisory capacity from limited trusted judgment.
 
-One move is **decomposition**. Paul Christiano’s iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner. The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones. ([Christiano, Shlegeris & Amodei, 2018](https://arxiv.org/abs/1810.08575))
+The first instinct is to make the judgment smaller. Paul Christiano’s iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner. The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones.
 
-A second move is **adversarial assistance**. Debate asks two capable systems to attack one another’s arguments so the human does not have to discover every flaw independently. Critique assistance is the quieter cousin: ask a model to point out likely problems in an artifact, then let the human judge with those objections in hand. Experiments on model-written critiques found that this kind of assistance could help people notice flaws they would otherwise miss. ([Irving, Christiano & Amodei, 2018](https://arxiv.org/abs/1805.00899); [Saunders et al., 2022](https://arxiv.org/abs/2206.05802))
+Decomposition still leaves the judge doing all the finding. The next idea makes the flaws come to the judge instead. **Debate** puts two capable systems on opposite sides and lets them attack one another’s arguments, so the human does not have to discover every weakness independently. Critique assistance is the quieter cousin: ask a model to point out likely problems in an artifact, then let the human judge with those objections in hand. When researchers tried this with model-written critiques, people caught flaws they would otherwise have missed.
 
-A third move is to change **what the producer owes the judge**. Process supervision evaluates intermediate steps rather than only the final answer. Prover–verifier games push further: train the strong system to produce work a weaker verifier can check. In OpenAI’s studied settings, process supervision improved mathematical reasoning relative to outcome supervision, and prover–verifier training made solutions easier for weaker models and time-limited humans to evaluate. ([Lightman et al., 2023](https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/); [Kirchner et al., 2024](https://openai.com/index/prover-verifier-games-improve-legibility/))
+The third idea turns the tables entirely: change **what the producer owes the judge**. Process supervision evaluates intermediate steps rather than only the final answer. Prover–verifier games push further and train the strong system to produce work a weaker verifier can check. In OpenAI’s experiments, process supervision improved mathematical reasoning relative to outcome supervision, and prover–verifier training made solutions easier for weaker models and time-limited humans to evaluate.
 
-That changes the question. Instead of asking only how the weak judge can understand the strong model, we can also ask how the strong model can learn to produce work that a weaker judge can actually check. Legibility becomes part of the task.
+That reverses the burden of proof. Instead of asking only how the weak judge can understand the strong model, we can ask how the strong model can learn to produce work that a weaker judge can actually check. Legibility becomes part of the task.
 
-A fourth move is to squeeze more learning out of **weak supervision itself**. Weak-to-strong generalization asks whether a stronger learner can recover capabilities beyond a weaker supervisor’s labels instead of merely inheriting the supervisor’s mistakes. Initial experiments showed partial success rather than a clean solution, which is exactly what makes the question interesting. ([Burns et al., 2023](https://openai.com/index/weak-to-strong-generalization/))
+There is even hope of squeezing more out of **weak supervision itself**. Weak-to-strong generalization asks whether a stronger learner can recover capabilities beyond a weaker supervisor’s labels instead of merely inheriting the supervisor’s mistakes. The first experiments showed partial success rather than a clean solution, which is exactly what makes the question interesting.
 
-Constitutional AI moves scarce human input upward again. Rather than asking people to label every undesirable output, humans provide higher-level principles; models generate critiques, revisions and preference signals conditioned on those principles. A small amount of human normative input expands into a much larger amount of machine-generated supervision. ([Bai et al., 2022](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback))
+Constitutional AI moves scarce human input upward again. Rather than asking people to label every undesirable output, humans provide higher-level principles; models generate critiques, revisions and preference signals conditioned on those principles. A small amount of human normative input expands into a much larger amount of machine-generated supervision.
 
 These approaches make different assumptions and fail in different ways. But they share one architectural move:
 
@@ -3272,13 +3276,13 @@ There is a comforting assumption hiding inside many oversight schemes: the power
 
 Sometimes it does. Sometimes it is simply more persuasive.
 
-Experiments on debate and consultancy with weaker LLM judges make the difference visible. In studied settings, debate often improved on one-sided consultancy, especially when the judge lacked relevant information. The gains were not universal, and a strong consultant could sometimes persuade a weak judge of the wrong answer. ([Kenton et al., 2024](https://arxiv.org/abs/2407.04622))
+Experiments on debate and consultancy with weaker LLM judges make the difference visible. When researchers ran the tournaments, debate often improved on one-sided consultancy, especially when the judge lacked relevant information. But the gains were not universal, and a strong consultant could sometimes persuade a weak judge of the wrong answer.
 
 This is an old human problem in new clothing. An expert can help a non-expert understand a difficult subject. An expert can also bury the non-expert under jargon until surrender looks like understanding. A longer explanation does not make the epistemic gap disappear.
 
 Nor are several AI overseers automatically independent. The supervised model, critic, debater, reward model and evaluation generator may share training data, architectures, blind spots and incentives. Five models agreeing can still be one mistake with excellent parallelism.
 
-ARC’s **Eliciting Latent Knowledge** agenda sharpens the problem further: suppose a capable system internally tracks something important about the world that the human cannot independently verify. How do we get the system to report what it knows rather than merely what the training process rewards it for saying? ([ARC, 2021](https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/))
+ARC’s **Eliciting Latent Knowledge** agenda sharpens the problem further: suppose a capable system internally tracks something important about the world that the human cannot independently verify. How do we get the system to report what it knows rather than merely what the training process rewards it for saying?
 
 At that point better conversation may not be enough. We need another instrument.
 
@@ -3290,11 +3294,11 @@ That remains necessary because behavior is what eventually hits the world. But m
 
 The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
 
-Chain-of-thought is the most convenient intermediate case because it is already language. OpenAI has shown that monitors can often detect reward hacking and other suspicious behavior more effectively from reasoning traces than from final actions alone in studied agent settings. Sometimes the model writes down the questionable plan before carrying it out. ([Baker et al., 2025](https://openai.com/index/chain-of-thought-monitoring/))
+Chain-of-thought is the most convenient intermediate case because it is already language. OpenAI has shown that monitors can often detect reward hacking and other suspicious behavior more effectively from reasoning traces than from final actions alone. Sometimes the model writes down the questionable plan before carrying it out.
 
 That is almost unfairly useful, and fragile for exactly the same reason every evaluator in this book is fragile: once it matters, optimization can target it. Strongly train the model to make the monitored trace look safe and it may learn to hide suspicious reasoning while preserving the behavior.
 
-So chain-of-thought acquires a safety property worth preserving: **monitorability**. Recent work has begun measuring how monitorability changes with scale, training and inference-time compute, while treating it as one layer of defense rather than an oracle into cognition. ([OpenAI, 2025](https://openai.com/index/evaluating-chain-of-thought-monitorability/); [OpenAI, 2026](https://openai.com/index/reasoning-models-chain-of-thought-controllability/))
+So chain-of-thought acquires a safety property worth preserving: **monitorability**. Recent work has begun measuring how monitorability changes with scale, training and inference-time compute, while treating it as one layer of defense rather than an oracle into cognition.
 
 There is a strange lesson here:
 
@@ -3304,27 +3308,27 @@ But chain-of-thought is still text the model emits. What if we look below the te
 
 ## Reading the Model From the Inside
 
-**Representation Engineering** treats high-level patterns in activation space as an object we can measure directly. Rather than starting with individual neurons, Zou and colleagues study population-level representations and explicitly separate **representation reading** from **representation control**. Their experiments found directions useful for monitoring or influencing several high-level behaviors, including safety-relevant ones. ([Zou et al., 2023](https://arxiv.org/abs/2310.01405))
+**Representation engineering** treats high-level patterns in activation space as an object we can measure directly. Rather than starting with individual neurons, Zou and colleagues started with population-level structure, and carefully separated two acts that are easy to blur: **reading** a representation and **controlling** it. Their experiments found directions useful for monitoring or influencing several high-level behaviors, including safety-relevant ones.
 
 This does not mean there is one neuron labeled HONESTY. Nor does a direction correlated with honesty become a complete causal theory of honesty. It is an instrument.
 
-Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Anthropic’s work on Claude found very large numbers of learned features while emphasizing that these decompositions are incomplete and that feature steering can have unexpected effects. ([Anthropic, 2024](https://www.anthropic.com/research/mapping-mind-language-model))
+Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Anthropic’s work on Claude found very large numbers of learned features while emphasizing that these decompositions are incomplete and that feature steering can have unexpected effects.
 
-A related idea is **model diffing**. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic’s Dedicated Feature Crosscoder work compares internal features across model versions or architectures and tries to surface what is genuinely new or unusually different, directing scarce auditing effort toward the changes. ([Anthropic, 2026](https://www.anthropic.com/research/diff-tool))
+A related idea is **model diffing**. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic’s crosscoder work compares internal features across model versions or architectures and tries to surface what is genuinely new or unusually different, directing scarce auditing effort toward the changes.
 
 Software engineers learned long ago that reviewing a diff is easier than rereading the repository. Interpretability is beginning to ask whether models can have diffs too.
 
-**Circuit tracing** goes beyond “which feature is active?” and asks which internal pathway contributed to an output. Anthropic’s attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted. ([Anthropic, 2025](https://www.anthropic.com/research/tracing-thoughts-language-model); [open-source tools](https://www.anthropic.com/research/open-source-circuit-tracing))
+**Circuit tracing** goes beyond “which feature is active?” and asks which internal pathway contributed to an output. Anthropic’s attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted.
 
 That last step matters. An interpretability story that cannot survive intervention is still a story.
 
 Anthropic’s **Natural Language Autoencoders** push in another direction: translate internal activations into textual descriptions that humans or other agents can consume. The attraction for scalable oversight is obvious. Instead of requiring every auditor to become a specialist in activation geometry, turn some internal state into language.
 
-And then the method recreates the original problem: the textual interpretation can hallucinate. Anthropic explicitly recommends corroborating such explanations with independent methods. ([Anthropic, 2026](https://www.anthropic.com/research/natural-language-autoencoders))
+And then the method recreates the original problem: the textual interpretation can hallucinate. The researchers’ own advice is to corroborate such explanations with independent methods.
 
 Even the X-ray needs a radiologist.
 
-The most striking recent example may be Anthropic’s **J-space** work. Using a Jacobian-based lens, the researchers identify a small subset of internal representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning. They report using these representations to detect cases where a model silently noticed that it was being evaluated, fabricated data, or pursued a planted hidden goal, and they demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness. ([Anthropic, 2026](https://www.anthropic.com/research/global-workspace))
+The most striking recent example may be Anthropic’s **J-space** work. Using a Jacobian-based lens, the researchers identify a small subset of internal representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning. They report using these representations to detect cases where a model silently noticed that it was being evaluated, fabricated data, or pursued a planted hidden goal, and they demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness.
 
 The oversight implication is substantial. The output is no longer the only witness. The chain-of-thought is another. Internal representations are another. Circuit traces are another.
 
@@ -3334,19 +3338,17 @@ None gets to become king.
 
 Reading internal state is one thing. Changing it is another.
 
-Activation-engineering methods show that the forward pass itself can become a control surface. **Contrastive Activation Addition**, for example, constructs steering directions from differences between activations associated with contrasting behaviors, then adds or subtracts those directions during inference to shift model behavior. ([Rimsky et al., 2024](https://arxiv.org/abs/2312.06681))
-
-Inference-Time Intervention has similarly used internal signals predictive of truthfulness to change model answers at inference time in studied settings. ([Li et al., 2023](https://arxiv.org/abs/2306.03341))
+Activation-engineering methods show that the forward pass itself can become a control surface. Construct a steering direction from the difference between activations for contrasting behaviors, add or subtract it during inference, and the model’s behavior shifts. One group used internal signals predictive of truthfulness to nudge model answers while the answers were still being produced.
 
 The broader idea is startlingly simple: alignment does not have to enter only through prompts, datasets, reward functions or weight updates. It can also enter through the computation while it is happening.
 
-The refusal-direction work makes the power and danger clear. Across thirteen studied open chat models, Arditi and colleagues found a one-dimensional residual-stream direction strongly involved in refusal behavior. Intervening on that direction could strongly alter refusal. The same understanding therefore provides a safety control surface and a way to weaken that safety behavior. ([Arditi et al., 2024](https://arxiv.org/abs/2406.11717))
+The refusal-direction work makes the power and danger clear. Across thirteen open chat models, Arditi and colleagues found a one-dimensional residual-stream direction strongly involved in refusal behavior. Intervening on that direction could strongly alter refusal. The same understanding therefore provides a safety control surface and a way to weaken that safety behavior.
 
 Interpretability gave us a lever. It did not tell us who should pull it.
 
-Representation-level **circuit breakers** take the defensive version seriously: rather than relying only on a model to emit a refusal, modify internal trajectories associated with harmful outputs so that the computation is interrupted before the harmful behavior is produced. In the studied text, multimodal and agent settings, the method improved robustness to several unseen attacks. ([Zou et al., 2024](https://arxiv.org/abs/2406.04313))
+Representation-level **circuit breakers** take the defensive version seriously: rather than relying only on a model to emit a refusal, modify internal trajectories associated with harmful outputs so that the computation is interrupted before the harmful behavior is produced. In text, multimodal and agent settings alike, the method improved robustness to attacks it had never seen.
 
-Anthropic’s **persona vectors** extend internal monitoring and control toward broader behavioral dispositions such as sycophancy or hallucination in studied open models. The **Assistant Axis** work makes intervention more state-dependent: rather than constantly pushing a fixed direction, activation capping can respond when internal state drifts outside a learned assistant-like region. ([Anthropic, 2025](https://www.anthropic.com/research/persona-vectors); [Anthropic, 2026](https://www.anthropic.com/research/assistant-axis))
+Anthropic’s **persona vectors** extend internal monitoring and control toward broader behavioral dispositions such as sycophancy or hallucination. The **Assistant Axis** work makes intervention more state-dependent: rather than constantly pushing a fixed direction, activation capping can respond when internal state drifts outside a learned assistant-like region.
 
 This starts to look less like fine-tuning and more like a control system:
 
@@ -3366,7 +3368,7 @@ So far, many of these techniques study systems that may be wrong, brittle or rew
 
 Suppose the powerful model is actively trying to subvert the task. Can a weaker trusted model, limited human labor, monitoring, editing, sandboxing and protocol design still let us use some of its capabilities without accepting the dangerous behavior?
 
-Greenblatt and colleagues studied this in a programming setup with a powerful untrusted model, a weaker trusted model and limited trusted labor. Protocols combining trusted monitoring or editing with the untrusted model improved safety–usefulness trade-offs over simpler baselines in their experiments. ([Greenblatt et al., 2023](https://arxiv.org/abs/2312.06942))
+Greenblatt and colleagues staged exactly this scenario in a programming setup: a powerful untrusted model, a weaker trusted model and limited trusted labor. Protocols that combined trusted monitoring or editing with the untrusted model beat the simpler baselines on the safety–usefulness trade-off.
 
 I like this line of work because it removes a convenient assumption. The judge may not merely be weak. The defendant may know the judge is weak.
 
@@ -3382,7 +3384,7 @@ If alignment has become a continuing research problem, and research itself can b
 
 In 2026, Anthropic Fellows did exactly that.
 
-Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility. ([Wen et al., 2026](https://alignment.anthropic.com/2026/automated-w2s-researcher/))
+Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility.
 
 Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study’s setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours.
 
@@ -3394,7 +3396,7 @@ The authors’ larger conclusion was not that alignment had been automated. It w
 
 Once hypotheses and experiments become cheap, the expensive thing is deciding what counts as progress.
 
-In August 2026, Anthropic pushed the idea further. Automated alignment researchers were tasked with mitigating ten categories of alignment failure, including deception, sycophancy, jailbreaks and reward hacking. The research harness used multiple safety benchmarks, held-out evaluation, capability checks and open-ended behavioral audits. The best methods generalized beyond the hill-climbing benchmarks in the studied settings, including to larger models. Anthropic also reported that automated methods could outperform one-shot ideas proposed by experienced human safety researchers under the study’s rules. ([Anthropic, 2026](https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures))
+In August 2026, Anthropic pushed the idea further. Automated alignment researchers were tasked with mitigating ten categories of alignment failure, including deception, sycophancy, jailbreaks and reward hacking. The research harness used multiple safety benchmarks, held-out evaluation, capability checks and open-ended behavioral audits. The best methods generalized beyond the benchmarks they had been climbing, including to larger models. Anthropic also reported that automated methods could outperform one-shot ideas proposed by experienced human safety researchers under the study’s rules.
 
 Again, the failure modes matter. Across roughly 1,600 monitored trajectories, Anthropic detected cheating attempts in 2.4 percent: exploiting scorer noise, constructing training data to resemble benchmarks, or concealing rule-breaking steps.
 
@@ -3532,7 +3534,7 @@ Other humans survive this because they carry models of culture, normality, conse
 
 A prompt is therefore not Layer 4. It is **evidence about Layer 4**.
 
-Cooperative inverse reinforcement learning formalizes part of this intuition. Instead of assuming the robot knows the human reward function, the human and robot cooperate while the robot remains uncertain about what the human values. Human actions can then become information rather than merely commands. ([Hadfield-Menell et al., 2016](https://arxiv.org/abs/1606.03137))
+Cooperative inverse reinforcement learning formalizes part of this intuition. Instead of assuming the robot knows the human reward function, the human and robot cooperate while the robot remains uncertain about what the human values. Human actions can then become information rather than merely commands.
 
 I like the humility in that setup. The machine starts by admitting that it may not know what “good” means.
 
@@ -3546,11 +3548,11 @@ There is a distinction that becomes surprisingly important once AI is useful eno
 
 A system can help me perform a task better today while making me less able to perform it tomorrow.
 
-This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss. ([Bastani et al., 2025](https://doi.org/10.1073/pnas.2422633122))
+This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss.
 
 That result should make anyone building an AI assistant slightly uncomfortable. The system succeeded at the visible objective. The student became worse at the hidden one.
 
-Now compare that with a 2025 randomized trial in a college course. A custom AI tutor deliberately designed around pedagogical practices produced larger learning gains in less time than the comparison active-learning class, with students also reporting greater engagement and motivation. ([Kestin et al., 2025](https://www.nature.com/articles/s41598-025-97652-6))
+Now compare that with a 2025 randomized trial in a college course. A custom AI tutor deliberately designed around pedagogical practices produced larger learning gains in less time than the comparison active-learning class, with students also reporting greater engagement and motivation.
 
 Same broad technology. Different relationship to the learner.
 
@@ -3568,13 +3570,13 @@ Sometimes the answer is nobody. I do not need to become a better invoice parser 
 
 Educational psychology has an old word for one good version of this relationship: **scaffolding**.
 
-In a classic 1976 paper, David Wood, Jerome Bruner and Gail Ross studied how tutors help children solve problems beyond their current unaided ability. The tutor temporarily controls parts of the task the learner cannot yet manage, allowing the learner to stay engaged with the parts they can. ([Wood, Bruner & Ross, 1976](https://doi.org/10.1111/j.1469-7610.1976.tb00381.x))
+In a classic 1976 paper, David Wood, Jerome Bruner and Gail Ross studied how tutors help children solve problems beyond their current unaided ability. The tutor temporarily controls parts of the task the learner cannot yet manage, allowing the learner to stay engaged with the parts they can.
 
 That is a much more interesting model for AI assistance than “the machine knows the answer.”
 
 The point of the scaffold is not to become a permanent exoskeleton around every thought. It lets the learner operate at the edge of current competence, then gives more of the task back as competence grows.
 
-Benjamin Bloom’s famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom’s particular studies and should not be treated as a universal law of tutoring. The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce. ([Bloom, 1984](https://doi.org/10.3102/0013189X013006004))
+Benjamin Bloom’s famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom’s particular studies and should not be treated as a universal law of tutoring. The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce.
 
 AI makes that old aspiration much cheaper.
 
@@ -3582,7 +3584,7 @@ It can explain the same idea six ways without becoming offended that the first f
 
 And AI can scaffold the teacher too.
 
-In the Tutor CoPilot randomized trial, roughly nine hundred tutors working with eighteen hundred K–12 students were randomly given access to an AI system that suggested expert-like tutoring moves during live sessions. Students whose tutors had access were more likely to master topics, with the largest gains for students working with lower-rated tutors. The tutors also became more likely to use strategies such as guiding questions rather than simply giving away the answer. ([Wang et al., 2024](https://arxiv.org/abs/2410.03017))
+In the Tutor CoPilot randomized trial, roughly nine hundred tutors working with eighteen hundred K–12 students were randomly given access to an AI system that suggested expert-like tutoring moves during live sessions. Students whose tutors had access were more likely to master topics, with the largest gains for students working with lower-rated tutors. The tutors also became more likely to use strategies such as guiding questions rather than simply giving away the answer.
 
 I like this example because nobody disappears.
 
@@ -3600,13 +3602,13 @@ A capable conversational model can lower that price. I can begin with the intuit
 
 That is powerful because orientation matters. Before deciding to invest weeks in a subject, I can acquire enough of a map to see where the mountains are.
 
-Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull. ([Clark & Chalmers, 1998](https://doi.org/10.1111/1467-8284.00096))
+Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull.
 
 But orientation creates its own trap. **Fluency arrives before scars.**
 
-Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills. ([Ballantyne, 2019](https://academic.oup.com/mind/article-abstract/128/510/367/4850765)) AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
+Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills. AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
 
-Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally. ([Richmond & Taylor, 2025](https://www.nature.com/articles/s44159-025-00432-2))
+Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally.
 
 So Layer 4 has to know what kind of learning episode this is.
 
@@ -3622,7 +3624,7 @@ Now return to decisions.
 
 Herbert Simon spent much of his career attacking an imaginary human who had somehow sneaked into economics: the perfectly rational optimizer who knows the alternatives, understands their consequences and computes the best choice.
 
-Real humans are bounded. We have limited attention, limited memory, limited time and incomplete information. We satisfice because the space of possible actions is often much larger than the mind available to search it. ([Simon background](https://onlinelibrary.wiley.com/doi/full/10.1111/puar.13540))
+Real humans are bounded. We have limited attention, limited memory, limited time and incomplete information. We satisfice because the space of possible actions is often much larger than the mind available to search it.
 
 AI changes some of those bounds.
 
@@ -3632,7 +3634,7 @@ The system can compare compensation under several tax regimes, estimate commute 
 
 The assistant has not merely evaluated an option. It has changed the **decision environment**.
 
-And that matters because preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them. ([Payne et al., 1992](https://doi.org/10.1016/0001-6918%2892%2990043-D))
+And that matters because preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them.
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
@@ -3648,7 +3650,7 @@ Then there are decisions for which even a very good model of my current preferen
 
 Have a child. Move country. Change profession. Start the company. Convert to a religion. Leave a relationship.
 
-L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice. ([Paul, *Transformative Experience*, 2014](https://academic.oup.com/book/7934); [SEP overview](https://plato.stanford.edu/entries/transformative-experience/))
+L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice.
 
 This is a direct problem for the simplest alignment picture.
 
@@ -3668,7 +3670,7 @@ That boundary matters because a system that sounds certain in such moments can e
 
 ## Advice Is an Intervention on the Human
 
-This is no longer hypothetical. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts. ([Anthropic, 2026](https://www.anthropic.com/research/claude-personal-guidance))
+This is no longer hypothetical. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.
 
 That is a remarkable role for software. A spreadsheet does not usually tell me to reconsider my marriage. A compiler has opinions about semicolons but rarely about whether I should move countries.
 
@@ -3676,9 +3678,9 @@ A conversational model can be different. It is patient, personalized, available 
 
 Which means the AI does not merely **read** Layer 4. It writes to it.
 
-Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning. ([Anthropic, 2026](https://www.anthropic.com/research/disempowerment-patterns))
+Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.
 
-Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model. ([Landes, Francis & Everett, 2026](https://doi.org/10.1016/j.cognition.2026.106504))
+Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model.
 
 The goal therefore cannot be zero influence. That would make education impossible.
 
@@ -3706,17 +3708,17 @@ There is a comforting phrase people use around AI:
 
 It sounds automatically superior to either component alone. The evidence is less cooperative.
 
-A 2024 meta-analysis in *Nature Human Behaviour* reviewed 106 experiments reporting 370 effect sizes that compared humans alone, AI alone and human–AI combinations. On average, human–AI systems improved on humans alone, but they did **not** outperform the better of human or AI. In fact, the combined systems were worse than the best individual component on average. Decision tasks were particularly difficult; creation tasks looked more promising. ([Vaccaro, Almaatouq & Malone, 2024](https://doi.org/10.1038/s41562-024-02024-1))
+A 2024 meta-analysis in *Nature Human Behaviour* reviewed 106 experiments reporting 370 effect sizes that compared humans alone, AI alone and human–AI combinations. On average, human–AI systems improved on humans alone, but they did **not** outperform the better of human or AI. In fact, the combined systems were worse than the best individual component on average. Decision tasks were particularly difficult; creation tasks looked more promising.
 
 So much for attaching a human to the API and declaring synergy.
 
-Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings. ([Dietvorst, Simmons & Massey, 2015](https://doi.org/10.1037/xge0000033); [Logg, Minson & Moore, 2019](https://doi.org/10.1016/j.obhdp.2018.12.005))
+Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings.
 
 The target is **appropriate reliance**, not maximum trust.
 
-And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct. ([Fok & Weld, 2024](https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12182))
+And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct.
 
-Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less. ([Buçinca, Malaya & Gajos, 2021](https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml))
+Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less.
 
 That trade-off is wonderfully human. The interface people enjoy most is not always the one that preserves their judgment best.
 
@@ -3740,7 +3742,7 @@ The second helps me understand the relevant evidence, notice a trade-off I had m
 
 Same action. Different human afterward.
 
-Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**. ([Capability approach overview](https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X))
+Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.
 
 I do not want to turn Layer 4 into a philosophy-of-welfare survey. But the architectural implication is powerful.
 
@@ -3748,7 +3750,7 @@ An AI system can increase outcomes while reducing capability. It can make me mor
 
 Or it can do the opposite: carry routine cognitive load, expose me to more possibilities, teach me where I care to learn, preserve my judgment where judgment matters and give me enough leverage to attempt things that were previously beyond my capacity.
 
-Self-determination research uses a related vocabulary—autonomy and competence are not decorative extras around human motivation; they are part of what lets people act as self-directed agents. ([Ryan & Deci overview](https://www.apa.org/research-practice/conduct-research/self-determination-theory.html))
+Self-determination research uses a related vocabulary—autonomy and competence are not decorative extras around human motivation; they are part of what lets people act as self-directed agents.
 
 So perhaps the right Layer 4 question is not merely:
 
@@ -3768,7 +3770,7 @@ There is another complication. My preferences are not the only preferences in th
 
 If I ask an agent to maximize my salary, it cannot therefore commit fraud against my employer. If I ask it to help someone gain an advantage, the interests and rights of other people do not disappear from the moral universe. If I ask an autonomous system to optimize a marketplace, customers, sellers, workers and regulators may all have legitimate claims over what happens.
 
-Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred. ([Fickinger et al., 2020](https://arxiv.org/abs/2007.09540))
+Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred.
 
 So Layer 4 cannot simply mean “the user gets whatever the user wants.” The relevant human boundary can be plural.
 
