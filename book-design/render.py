@@ -552,7 +552,14 @@ document.body.dataset.done = '1';
 def build_book():
     mans = [json.loads(f.read_text())
             for f in sorted((ROOT / "book-design" / "manifests").glob("chapter-*.json"))]
-    sections = []
+
+    def plain_section(path, head, title):
+        blocks = parse((ROOT / path).read_text())
+        woven = weave(blocks, {"chapter": 0, "slots": []})
+        return {"head": head, "title": title, "num": "",
+                "opener": None, "content": "".join(woven)}
+
+    sections = [plain_section("chapters/00-preface.md", "PREFACE", "Preface")]
     for man in mans:
         sections.append({
             "head": man["running_head"], "title": man["title"],
@@ -560,13 +567,12 @@ def build_book():
             "content": "".join(chapter_blocks(man)),
         })
     for path, head, title in [
+        ("chapters/appendix-zen-of-autonomy.md", "THE ZEN OF AUTONOMY", "The Zen of Autonomy"),
         ("chapters/appendix-illustrations.md", "A NOTE ON THE ILLUSTRATIONS", "A Note on the Illustrations"),
         ("chapters/appendix-references.md", "REFERENCES", "References"),
+        ("chapters/about-the-author.md", "ABOUT THE AUTHOR", "About the Author"),
     ]:
-        blocks = parse((ROOT / path).read_text())
-        woven = weave(blocks, {"chapter": 0, "slots": []})
-        sections.append({"head": head, "title": title, "num": "",
-                         "opener": None, "content": "".join(woven)})
+        sections.append(plain_section(path, head, title))
 
     front = """
     <div class="sheet recto"><div class="titlepage">

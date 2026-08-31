@@ -18,6 +18,10 @@ This is the spine to preserve in future edits. Philosophy of science is not a de
 
 ## Manuscript
 
+### Front matter
+
+- [Preface](chapters/00-preface.md) — the cover, the promise, and the one sentence to keep
+
 ### Revised / established arc
 
 - [Chapter 1 — Why I'm Betting on AI Agents](chapters/01-why-im-betting-on-ai-agents.md) — emergence, environment, feedback, selection and boundaries; control moves upward
@@ -47,8 +51,10 @@ These chapters are first integrated drafts and are **not locked**. They will rec
 
 ### Back matter
 
+- [The Zen of Autonomy](chapters/appendix-zen-of-autonomy.md)
 - [A Note on the Illustrations](chapters/appendix-illustrations.md)
 - [References](chapters/appendix-references.md)
+- [About the Author](chapters/about-the-author.md)
 
 ## Editorial prompts
 

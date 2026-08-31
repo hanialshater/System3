@@ -184,7 +184,7 @@ Stakes are not truth. People lie despite consequences and institutions reward co
 
 An LLM has no social capital of its own to lose. It can confidently produce something false and, at the level of the model itself, nothing happens. The cost lands elsewhere—on the user, the application or the institution deploying it.
 
-At its most compressed, the danger is **coherence outrunning correspondence**. The machine can become extraordinarily good at tongue without having an ear available to check against.
+At its most compressed, the danger is **coherence outrunning correspondence**. The machine can become extraordinarily good at tongue without having an ear available to check against. The dangerous failures are not the ones that crash. They are the ones that seem to work: decaf confidence, indistinguishable from the real thing until the moment it matters.
 
 The missing ingredient is not punishment for models — it is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
 
@@ -352,7 +352,7 @@ A **tool registry** tracked tools, successes, failures and known failure modes. 
 
 The state persisted across sessions, so later problems could inherit things learned earlier. We also pruned it. An epistemic architecture that remembers everything eventually becomes a hoarder with a context window.
 
-We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model and tasks.
+We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model (DeepSeek Reasoner) and tasks.
 
 Ten problems is nowhere near enough to establish a solve-rate advantage. State persisted across tasks, so order effects may matter. I was not looking for a benchmark victory. I wanted to know whether the scaffold changed behavior strongly enough to become visible.
 
@@ -391,7 +391,7 @@ That was not the hypothesis, which made the result more useful.
 
 One problem broke the pattern dramatically: `astropy-13579`.
 
-Mini solved it. Epistemic did not. It was also the only case where the epistemic patch became substantially larger rather than smaller.
+Mini solved it. Epistemic did not. It was also the only case where the epistemic patch became substantially larger rather than smaller: 1,941 lines against mini's 1,169.
 
 Both agents correctly identified the central bug: dropped world-coordinate dimensions were being filled with a hard-coded value rather than the actual coordinate value.
 
@@ -459,7 +459,7 @@ Return to the seven claims.
 
 **System 1 can be fast because System 3 has often been working for centuries underneath it.**
 
-**7. Real, unedited photograph — True.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence and gives us one more thing that may itself need to be trusted.
+**7. Real, unedited photograph — True.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence and gives us one more thing that may itself need to be trusted. And I could be lying to prove a point about trusting sources. If I told you the photograph was AI-generated, you would probably believe that too, because it fits a pattern you recognize.
 
 Welcome to epistemology.
 
@@ -471,7 +471,7 @@ Some claims sit close to direct interaction. Others arrive through testimony. So
 
 Flatten all of that into equally confident language and something important disappears.
 
-The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It does not need to contain the entire chain inside its weights.
+The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It does not need to contain the entire chain inside its weights. The model is a mirror; the architecture determines what it reflects.
 
 **The model stays hollow. The system doesn't have to be.**
 

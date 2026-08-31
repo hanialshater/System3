@@ -34,6 +34,7 @@ jobs:
           EOF
 
           files=(
+            chapters/00-preface.md
             chapters/01-why-im-betting-on-ai-agents.md
             chapters/02-the-algorithm-vortex.md
             chapters/03-deep-mode.md
@@ -47,6 +48,10 @@ jobs:
             chapters/11-the-store-that-builds-itself.md
             chapters/12-after-capacity.md
             chapters/13-the-prophecy.md
+            chapters/appendix-zen-of-autonomy.md
+            chapters/appendix-illustrations.md
+            chapters/appendix-references.md
+            chapters/about-the-author.md
           )
 
           for f in "${files[@]}"; do
