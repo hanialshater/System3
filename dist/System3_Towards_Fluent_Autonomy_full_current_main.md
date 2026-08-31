@@ -1664,7 +1664,7 @@ A **tool registry** tracked tools, successes, failures and known failure modes. 
 
 The state persisted across sessions, so later problems could inherit things learned earlier. We also pruned it. An epistemic architecture that remembers everything eventually becomes a hoarder with a context window.
 
-We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model (DeepSeek Reasoner) and tasks.
+We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model and tasks.
 
 Ten problems is nowhere near enough to establish a solve-rate advantage. State persisted across tasks, so order effects may matter. I was not looking for a benchmark victory. I wanted to know whether the scaffold changed behavior strongly enough to become visible.
 
@@ -1703,7 +1703,7 @@ That was not the hypothesis, which made the result more useful.
 
 One problem broke the pattern dramatically: `astropy-13579`.
 
-Mini solved it. Epistemic did not. It was also the only case where the epistemic patch became substantially larger rather than smaller: 1,941 lines against mini's 1,169.
+Mini solved it. Epistemic did not. It was also the only case where the epistemic patch became substantially larger rather than smaller.
 
 Both agents correctly identified the central bug: dropped world-coordinate dimensions were being filled with a hard-coded value rather than the actual coordinate value.
 
