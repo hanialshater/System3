@@ -1,6 +1,6 @@
 # Appendix: References
 
-References are organized by chapter, in roughly the order the works appear. Chapters 7–9 carry inline citations in the text; the entries here give the full works behind those links. For the other chapters, this appendix collects the books, papers and systems named in the text. Web sources dated 2025–2026 were last verified in August 2026.
+References are organized by chapter, in roughly the order the works appear. The text names the work; this appendix carries the full citation and link. Web sources dated 2025–2026 were last verified in August 2026.
 
 ## Chapter 1 — Why I'm Betting on AI Agents
 

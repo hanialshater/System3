@@ -60,7 +60,7 @@ Other humans survive this because they carry models of culture, normality, conse
 
 A prompt is therefore not Layer 4. It is **evidence about Layer 4**.
 
-Cooperative inverse reinforcement learning formalizes part of this intuition. Instead of assuming the robot knows the human reward function, the human and robot cooperate while the robot remains uncertain about what the human values. Human actions can then become information rather than merely commands. ([Hadfield-Menell et al., 2016](https://arxiv.org/abs/1606.03137))
+Cooperative inverse reinforcement learning formalizes part of this intuition. Instead of assuming the robot knows the human reward function, the human and robot cooperate while the robot remains uncertain about what the human values. Human actions can then become information rather than merely commands.
 
 I like the humility in that setup. The machine starts by admitting that it may not know what “good” means.
 
@@ -74,11 +74,11 @@ There is a distinction that becomes surprisingly important once AI is useful eno
 
 A system can help me perform a task better today while making me less able to perform it tomorrow.
 
-This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss. ([Bastani et al., 2025](https://doi.org/10.1073/pnas.2422633122))
+This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss.
 
 That result should make anyone building an AI assistant slightly uncomfortable. The system succeeded at the visible objective. The student became worse at the hidden one.
 
-Now compare that with a 2025 randomized trial in a college course. A custom AI tutor deliberately designed around pedagogical practices produced larger learning gains in less time than the comparison active-learning class, with students also reporting greater engagement and motivation. ([Kestin et al., 2025](https://www.nature.com/articles/s41598-025-97652-6))
+Now compare that with a 2025 randomized trial in a college course. A custom AI tutor deliberately designed around pedagogical practices produced larger learning gains in less time than the comparison active-learning class, with students also reporting greater engagement and motivation.
 
 Same broad technology. Different relationship to the learner.
 
@@ -96,13 +96,13 @@ Sometimes the answer is nobody. I do not need to become a better invoice parser 
 
 Educational psychology has an old word for one good version of this relationship: **scaffolding**.
 
-In a classic 1976 paper, David Wood, Jerome Bruner and Gail Ross studied how tutors help children solve problems beyond their current unaided ability. The tutor temporarily controls parts of the task the learner cannot yet manage, allowing the learner to stay engaged with the parts they can. ([Wood, Bruner & Ross, 1976](https://doi.org/10.1111/j.1469-7610.1976.tb00381.x))
+In a classic 1976 paper, David Wood, Jerome Bruner and Gail Ross studied how tutors help children solve problems beyond their current unaided ability. The tutor temporarily controls parts of the task the learner cannot yet manage, allowing the learner to stay engaged with the parts they can.
 
 That is a much more interesting model for AI assistance than “the machine knows the answer.”
 
 The point of the scaffold is not to become a permanent exoskeleton around every thought. It lets the learner operate at the edge of current competence, then gives more of the task back as competence grows.
 
-Benjamin Bloom’s famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom’s particular studies and should not be treated as a universal law of tutoring. The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce. ([Bloom, 1984](https://doi.org/10.3102/0013189X013006004))
+Benjamin Bloom’s famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom’s particular studies and should not be treated as a universal law of tutoring. The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce.
 
 AI makes that old aspiration much cheaper.
 
@@ -110,7 +110,7 @@ It can explain the same idea six ways without becoming offended that the first f
 
 And AI can scaffold the teacher too.
 
-In the Tutor CoPilot randomized trial, roughly nine hundred tutors working with eighteen hundred K–12 students were randomly given access to an AI system that suggested expert-like tutoring moves during live sessions. Students whose tutors had access were more likely to master topics, with the largest gains for students working with lower-rated tutors. The tutors also became more likely to use strategies such as guiding questions rather than simply giving away the answer. ([Wang et al., 2024](https://arxiv.org/abs/2410.03017))
+In the Tutor CoPilot randomized trial, roughly nine hundred tutors working with eighteen hundred K–12 students were randomly given access to an AI system that suggested expert-like tutoring moves during live sessions. Students whose tutors had access were more likely to master topics, with the largest gains for students working with lower-rated tutors. The tutors also became more likely to use strategies such as guiding questions rather than simply giving away the answer.
 
 I like this example because nobody disappears.
 
@@ -128,13 +128,13 @@ A capable conversational model can lower that price. I can begin with the intuit
 
 That is powerful because orientation matters. Before deciding to invest weeks in a subject, I can acquire enough of a map to see where the mountains are.
 
-Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull. ([Clark & Chalmers, 1998](https://doi.org/10.1111/1467-8284.00096))
+Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull.
 
 But orientation creates its own trap. **Fluency arrives before scars.**
 
-Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills. ([Ballantyne, 2019](https://academic.oup.com/mind/article-abstract/128/510/367/4850765)) AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
+Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills. AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
 
-Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally. ([Richmond & Taylor, 2025](https://www.nature.com/articles/s44159-025-00432-2))
+Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally.
 
 So Layer 4 has to know what kind of learning episode this is.
 
@@ -150,7 +150,7 @@ Now return to decisions.
 
 Herbert Simon spent much of his career attacking an imaginary human who had somehow sneaked into economics: the perfectly rational optimizer who knows the alternatives, understands their consequences and computes the best choice.
 
-Real humans are bounded. We have limited attention, limited memory, limited time and incomplete information. We satisfice because the space of possible actions is often much larger than the mind available to search it. ([Simon background](https://onlinelibrary.wiley.com/doi/full/10.1111/puar.13540))
+Real humans are bounded. We have limited attention, limited memory, limited time and incomplete information. We satisfice because the space of possible actions is often much larger than the mind available to search it.
 
 AI changes some of those bounds.
 
@@ -160,7 +160,7 @@ The system can compare compensation under several tax regimes, estimate commute 
 
 The assistant has not merely evaluated an option. It has changed the **decision environment**.
 
-And that matters because preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them. ([Payne et al., 1992](https://doi.org/10.1016/0001-6918%2892%2990043-D))
+And that matters because preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them.
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
@@ -176,7 +176,7 @@ Then there are decisions for which even a very good model of my current preferen
 
 Have a child. Move country. Change profession. Start the company. Convert to a religion. Leave a relationship.
 
-L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice. ([Paul, *Transformative Experience*, 2014](https://academic.oup.com/book/7934); [SEP overview](https://plato.stanford.edu/entries/transformative-experience/))
+L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice.
 
 This is a direct problem for the simplest alignment picture.
 
@@ -196,7 +196,7 @@ That boundary matters because a system that sounds certain in such moments can e
 
 ## Advice Is an Intervention on the Human
 
-This is no longer hypothetical. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts. ([Anthropic, 2026](https://www.anthropic.com/research/claude-personal-guidance))
+This is no longer hypothetical. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.
 
 That is a remarkable role for software. A spreadsheet does not usually tell me to reconsider my marriage. A compiler has opinions about semicolons but rarely about whether I should move countries.
 
@@ -204,9 +204,9 @@ A conversational model can be different. It is patient, personalized, available 
 
 Which means the AI does not merely **read** Layer 4. It writes to it.
 
-Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning. ([Anthropic, 2026](https://www.anthropic.com/research/disempowerment-patterns))
+Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.
 
-Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model. ([Landes, Francis & Everett, 2026](https://doi.org/10.1016/j.cognition.2026.106504))
+Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model.
 
 The goal therefore cannot be zero influence. That would make education impossible.
 
@@ -234,17 +234,17 @@ There is a comforting phrase people use around AI:
 
 It sounds automatically superior to either component alone. The evidence is less cooperative.
 
-A 2024 meta-analysis in *Nature Human Behaviour* reviewed 106 experiments reporting 370 effect sizes that compared humans alone, AI alone and human–AI combinations. On average, human–AI systems improved on humans alone, but they did **not** outperform the better of human or AI. In fact, the combined systems were worse than the best individual component on average. Decision tasks were particularly difficult; creation tasks looked more promising. ([Vaccaro, Almaatouq & Malone, 2024](https://doi.org/10.1038/s41562-024-02024-1))
+A 2024 meta-analysis in *Nature Human Behaviour* reviewed 106 experiments reporting 370 effect sizes that compared humans alone, AI alone and human–AI combinations. On average, human–AI systems improved on humans alone, but they did **not** outperform the better of human or AI. In fact, the combined systems were worse than the best individual component on average. Decision tasks were particularly difficult; creation tasks looked more promising.
 
 So much for attaching a human to the API and declaring synergy.
 
-Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings. ([Dietvorst, Simmons & Massey, 2015](https://doi.org/10.1037/xge0000033); [Logg, Minson & Moore, 2019](https://doi.org/10.1016/j.obhdp.2018.12.005))
+Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings.
 
 The target is **appropriate reliance**, not maximum trust.
 
-And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct. ([Fok & Weld, 2024](https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12182))
+And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct.
 
-Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less. ([Buçinca, Malaya & Gajos, 2021](https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml))
+Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less.
 
 That trade-off is wonderfully human. The interface people enjoy most is not always the one that preserves their judgment best.
 
@@ -268,7 +268,7 @@ The second helps me understand the relevant evidence, notice a trade-off I had m
 
 Same action. Different human afterward.
 
-Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**. ([Capability approach overview](https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X))
+Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.
 
 I do not want to turn Layer 4 into a philosophy-of-welfare survey. But the architectural implication is powerful.
 
@@ -276,7 +276,7 @@ An AI system can increase outcomes while reducing capability. It can make me mor
 
 Or it can do the opposite: carry routine cognitive load, expose me to more possibilities, teach me where I care to learn, preserve my judgment where judgment matters and give me enough leverage to attempt things that were previously beyond my capacity.
 
-Self-determination research uses a related vocabulary—autonomy and competence are not decorative extras around human motivation; they are part of what lets people act as self-directed agents. ([Ryan & Deci overview](https://www.apa.org/research-practice/conduct-research/self-determination-theory.html))
+Self-determination research uses a related vocabulary—autonomy and competence are not decorative extras around human motivation; they are part of what lets people act as self-directed agents.
 
 So perhaps the right Layer 4 question is not merely:
 
@@ -296,7 +296,7 @@ There is another complication. My preferences are not the only preferences in th
 
 If I ask an agent to maximize my salary, it cannot therefore commit fraud against my employer. If I ask it to help someone gain an advantage, the interests and rights of other people do not disappear from the moral universe. If I ask an autonomous system to optimize a marketplace, customers, sellers, workers and regulators may all have legitimate claims over what happens.
 
-Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred. ([Fickinger et al., 2020](https://arxiv.org/abs/2007.09540))
+Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred.
 
 So Layer 4 cannot simply mean “the user gets whatever the user wants.” The relevant human boundary can be plural.
 
