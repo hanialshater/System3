@@ -2,29 +2,23 @@
 
 *When Science Turns Inward*
 
-Chapter 6 ended by making a strange kind of software possible.
+In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
-Memory, patterns, evaluators, retrieval, tools and workflows could survive individual agents and change what later agents did. An institution could learn without changing the underlying model weights.
+There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made — and now the thing being built had entered the factory.
 
-Once the machinery of learning becomes software, why should humans be the only ones allowed to edit it?
-
-That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
-
-Computing has an old image for this. In 1962, Tim Hart and Mike Levin described a Lisp compiler written in Lisp that could compile its own source. The tool could participate in producing the next version of the tool. Compiler people call this **self-hosting**.
-
-Chapter 5 began with agents building a compiler. The compiler returns here for a different reason. A self-hosting compiler contains the whole warning in miniature:
+Compiler people call the trick **self-hosting**. Chapter 5 began with agents building exactly such a compiler; it returns here because the self-hosting compiler contains this chapter's whole warning in miniature:
 
 **self-reference is not self-improvement.**
 
 A compiler can compile a worse compiler. A research system can redesign itself into a slower research system. A learned optimizer can become excellent on yesterday's tasks and brittle tomorrow. The ability to modify the machinery that produces you tells us a boundary has become permeable. It does not tell us which changes deserve to survive.
 
-Three years after Hart and Levin's memo, I. J. Good gave that permeability a much more dramatic consequence. In 1965 he imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**.
+Three years after Hart and Levin's memo, I. J. Good noticed where the trick might eventually lead. In 1965 he imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**.
 
-Good's argument is only a few lines long. The word *better* is where the trouble begins.
+Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*.
 
-The practical history of self-improvement did not proceed as one machine repeatedly rewriting its own source code. It arrived through reinforcement learning, self-play, curiosity, continual learning, inverse reinforcement learning, evolutionary search, meta-learning, world models, learned evaluators and finally general models capable of modifying the software around themselves.
+For sixty years that word sat in the argument like an unexploded shell. This chapter exists because Chapter 6 finally made it live. Memory, patterns, evaluators, retrieval, tools and workflows became software that survives individual agents and changes what later agents do — an institution that learns without touching the model weights. Once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
-The history is messy, but one pattern keeps reappearing:
+The history that leads from the compiler to here is stranger than the jump Good imagined. It did not proceed as one machine repeatedly rewriting its own source code. It arrived through reinforcement learning, self-play, curiosity, continual learning, inverse reinforcement learning, evolutionary search, meta-learning, world models, learned evaluators and finally general models capable of modifying the software around themselves — sixty years of researchers automating one piece of learning after another. And every time a piece was automated, the same thing happened:
 
 **we kept discovering another job the teacher was doing.**
 
@@ -32,7 +26,7 @@ First the teacher stopped choosing the action. Then she stopped supplying every 
 
 Every move inward bought autonomy. Every move inward also exposed another hidden decision the human had been making.
 
-That second history is the one I care about.
+That second history is the one I care about. It ends in the present, with the tool from 1962 loose in the laboratory.
 
 ## The Teacher Moves Into the Walls
 
@@ -76,7 +70,7 @@ The learner could manufacture some of its own reasons to look around.
 
 Then optimization did what optimization does. It took the instruction literally.
 
-If surprise itself is rewarding, an uncontrollable noisy television can remain fascinating forever. The system is not confused. We are. We said *surprise* and quietly meant *surprise from which useful structure can be learned*.
+If surprise itself is rewarding, an uncontrollable noisy television can remain fascinating forever. Static. Static. Static. Jackpot. The system is not confused. We are. We said *surprise* and quietly meant *surprise from which useful structure can be learned*.
 
 Curiosity removed one teacher job and uncovered another:
 
@@ -126,7 +120,7 @@ Sometimes improvement is not voluntary.
 
 Evolutionary biology's **Red Queen hypothesis** describes organisms adapting inside environments that contain other adapting organisms. Standing still can mean falling behind because the effective environment moves.
 
-W. Daniel Hillis used the computational version in 1990 while evolving sorting networks. Co-evolving “parasites” served as difficult test cases; as candidate sorting networks improved, the tests could become harder too. Decades later, AlphaZero made the moving opponent spectacular again: self-play generated a curriculum that grew with the learner inside fixed game rules.
+W. Daniel Hillis used the computational version in 1990 while evolving sorting networks. Co-evolving “parasites” served as difficult test cases; as candidate sorting networks improved, the tests could become harder too. The exam had started fighting back. Decades later, in 2017, AlphaZero made the moving opponent spectacular again: self-play generated a curriculum that grew with the learner inside fixed game rules.
 
 Yesterday's learner can generate tomorrow's difficulty.
 
@@ -172,6 +166,30 @@ The problem is no longer only how to improve toward an objective. It is how to r
 
 Chapter 9 will live inside that problem. For now, keep the historical move in view: even the score has begun to move inward.
 
+## The Old Dream Tries to Prove the Rewrite
+
+Meanwhile, the old recursive dream had never disappeared. It had been waiting for rigor.
+
+In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? The proposed machine contains an axiomatic description of its own software, assumptions and utility. A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does it change itself.
+
+It is a beautiful answer to a beautifully clean version of the problem:
+
+**prove the modification is worth making.**
+
+The catch is the definition of *worth*.
+
+Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
+
+A chess engine can live surprisingly close to that world.
+
+A company cannot.
+
+A scientist cannot prove in advance that an unexplored research program will matter. A lifelong learner cannot enumerate every future skill worth preserving. Human purposes do not arrive as an axiomatized utility function.
+
+So the Gödel Machine asked exactly the right question — when should I accept a modification to myself? — and could not be built outside clean worlds. The practical answer would arrive two decades later, and it would not be a proof.
+
+The rest of the field, unwilling to wait for one, kept moving the machinery inward.
+
 ## Learning to Learn
 
 Once behavior can adapt, the next hand-authored component starts to look suspicious:
@@ -193,7 +211,7 @@ But the teacher is still there. Somebody chose the task distribution on which th
 
 Meta-learning does not eliminate the curriculum. It moves the curriculum outward.
 
-Learned optimizers and Neural Architecture Search pushed the editable boundary further. Researchers trained models to generate parameter-update rules or neural architectures, using performance on selected problems as the evaluator.
+Learned optimizers and neural architecture search pushed the editable boundary further. In 2016, Barret Zoph and Quoc Le set a reinforcement learner loose on network design itself; others trained models to generate parameter-update rules, with performance on selected problems as the evaluator. The student had entered the architecture department.
 
 At first the machine learned the answer. Then it learned a policy. Then it learned how to learn. Now it could search over pieces of the machinery that **does the learning**.
 
@@ -201,45 +219,11 @@ The human had moved from architect to judge.
 
 The system had more freedom over means. The task distribution, search space and validation metric still sat outside the loop holding a clipboard.
 
-## The Old Dream Tries to Prove the Rewrite
-
-The reinforcement-learning tradition was not the only route toward self-improvement.
-
-I. J. Good's intelligence explosion was explicitly recursive from the beginning. In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize a harder question: under what conditions should a system rewrite itself? The proposed machine contains an axiomatic description of its own software, assumptions and utility. A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does it change itself.
-
-It is a beautiful answer to a beautifully clean version of the problem:
-
-**prove the modification is worth making.**
-
-The catch is the definition of *worth*.
-
-Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
-
-A chess engine can live surprisingly close to that world.
-
-A company cannot.
-
-A scientist cannot prove in advance that an unexplored research program will matter. A lifelong learner cannot enumerate every future skill worth preserving. Human purposes do not arrive as an axiomatized utility function.
-
-So two histories were approaching the same mountain from opposite sides. The explicit recursive-self-improvement tradition had self-reference and meta-level ambition, but no practical general system able to inspect and rewrite complicated software intelligently. Learning systems had increasingly powerful adaptive machinery, but humans usually kept the outer research process, evaluator and environment fixed.
-
-Foundation models made those histories collide.
-
-A general model can now read the code scaffolding its own behavior, propose a change, run the changed system, inspect the result and try again.
-
-We do not have a proof that the rewrite is globally useful.
-
-We have something much more ordinary.
-
-**An experiment.**
-
-Recursive self-improvement comes back to the framing we began with: science turns inward.
-
 ## The Learner Dreams, and the Dream Can Be Wrong
 
 Model-based reinforcement learning removes another dependence on the external teacher by reducing dependence on external experience.
 
-Ha and Schmidhuber's *World Models* made the idea memorable: learn a compressed generative model of the environment, train a controller partly inside that generated “dream,” then transfer behavior back to the real environment. Later systems such as Dreamer pushed model-based learning much further.
+In 2018, David Ha and Jürgen Schmidhuber's *World Models* made the idea memorable: learn a compressed generative model of the environment, train a controller partly inside that generated “dream,” then transfer behavior back to the real environment. Later systems such as Dreamer pushed model-based learning much further.
 
 Imagined experience is attractive because real experience is expensive. A robot can break only so many arms. A company can run only so many damaging experiments. A scientist may wait months for an observation.
 
@@ -329,7 +313,17 @@ That is where the modern engineering story of recursive self-improvement becomes
 
 ## The Learner Edits the School
 
-By the 2020s, foundation models had become competent enough at code and tool use that the meta-level stopped being merely formal.
+By the 2020s, two histories were approaching the same mountain from opposite sides. The explicit recursive-self-improvement tradition had self-reference and meta-level ambition, but no practical general system able to inspect and rewrite complicated software intelligently. Learning systems had increasingly powerful adaptive machinery, but humans usually kept the outer research process, evaluator and environment fixed.
+
+Foundation models made those histories collide.
+
+A general model can now read the code scaffolding its own behavior, propose a change, run the changed system, inspect the result and try again. Here, at last, is the practical answer to the Gödel Machine's question. We do not have a proof that the rewrite is globally useful.
+
+We have something much more ordinary.
+
+**An experiment.**
+
+Recursive self-improvement comes back to the framing we began with: science turns inward. And once models became competent enough at code and tool use, the meta-level stopped being merely formal.
 
 In 2023, **STOP—the Self-Taught Optimizer**—used an LLM-based improver that could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed.
 
@@ -341,7 +335,7 @@ Automated hyperparameter tuning is old. The new part is that a general model can
 
 Machine learning is being used to do machine-learning research.
 
-The tool is becoming self-hosting in the broader sense that matters here.
+Self-hosting has escaped the compiler. It has entered the laboratory.
 
 A compiler compiles a compiler. A learning system searches for a learning system. A research agent researches the process by which research agents research.
 
@@ -384,6 +378,18 @@ A self-improving system is not merely software capable of rewriting software.
 It is a system capable of **running experiments on the machinery that produces its future behavior**.
 
 That is what I mean here by science turning inward.
+
+## The Factory That Builds the Factory
+
+Now imagine where this goes.
+
+A future research system notices that it keeps failing on one class of reasoning problems. It reads its own traces and forms three hypotheses: the retrieval is poor, or the memory representation is wrong, or the model underneath needs a different training procedure. It assigns agents to each. One modifies retrieval. One generates new training data. One proposes an architectural change. The system runs a few hundred controlled experiments. Most fail. Some help. And one modification improves not merely the target capability but the system's ability to do research: that version produces better experiments, the better experiments produce a better successor, and the successor is better at producing successors.
+
+There is Good's recursion. But it does not look like a glowing brain rewriting its own soul at midnight. It looks like an automated research organization: repositories, evaluation suites, simulators, experiment queues, models proposing models, agents reviewing agents, machines manufacturing training data for the machines that will help design the next machines.
+
+The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps.
+
+Which brings us to the question this whole history has been preparing: who decides which descendant gets to survive?
 
 ## Recursive More
 
@@ -497,6 +503,8 @@ This looks like computer security. It also looks like constitutional government.
 
 A government can change policy; it should not be able to silently redefine an election result. The team being audited should not own the audit log. A scientist may revise a theory; she should not rewrite yesterday's measurements to make the theory look correct.
 
+Once a system can modify the machinery that governs its own future, you are no longer merely designing software. You are designing a process for legitimate succession.
+
 We have reinvented constitutional government because the AI wanted a better benchmark score.
 
 Constitutions have the same problem as Pattern Language. One that can never change becomes a prison. One that the current government can rewrite whenever it loses is barely a constitution.
@@ -564,6 +572,8 @@ Lower layers can move quickly. Higher layers should move deliberately. And when 
 Seen from far enough away, the history is remarkably consistent.
 
 Reinforcement learning let the agent choose actions while the designer supplied reward and environment. Curiosity moved part of experience selection inward while leaving a judgment about what kind of novelty mattered. Self-play generated curriculum while leaving the rules and victory condition fixed. Continual learning made preservation part of improvement. Inverse reinforcement learning made the objective uncertain. Meta-learning and architecture search moved pieces of the learner itself into search while leaving task distributions and evaluators outside. World models generated experience while remaining models rather than worlds. Novelty and open-ended learning generated stepping stones and tasks while making progress harder to summarize. Learned judges scaled human evaluation while becoming proxies that could themselves be optimized. Self-modifying agents made tools, memory, workflows and pieces of the research process editable while exposing the evaluator, permissions and selection mechanism as part of the control problem.
+
+There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram — and then connected the arrows.
 
 We kept removing the teacher. With every removal, we discovered she had been doing more than one job.
 
