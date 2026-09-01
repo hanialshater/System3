@@ -2608,7 +2608,17 @@ That is where recursive self-improvement begins.
 
 *When Science Turns Inward*
 
-In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
+Omar is walking his dog at night when something moves in the grass.
+
+The dog reacts first — ears up, body low, absolutely certain. Omar reacts too. Two nervous systems running the same ancient program: light and sound go in, a model of the world comes out, and the model says *something is there.*
+
+For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where thought stopped — nobody audited the interpreter, and the world filled up with spirits in the grass and omens in the sky.
+
+The strange step is the second thought. *Why do I think something is there?* Maybe I saw movement. Maybe the wind moved the grass. Maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination: Omar can be wrong about the world, wrong about why he was wrong — and able to debug himself. Rational thought comes from that second loop, not from better eyes. Arguments for catching bad arguments, experiments for forcing reality to answer, statistics for protecting us from the patterns we want to see: science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
+
+Chapter 6 made that self-correcting machinery software: memory, patterns, evaluators, tools and workflows that survive individual agents and shape what later agents do. Through all of it, one fact stayed reassuring. Human minds were doing the redesign.
+
+Then, in 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
 There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made — and now the thing being built had entered the factory.
 
@@ -2622,7 +2632,7 @@ Three years after Hart and Levin's memo, I. J. Good noticed where the trick migh
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*.
 
-For sixty years that word sat in the argument like an unexploded shell. Chapter 6 finally made it practical. Memory, patterns, evaluators, retrieval, tools and workflows became software that survives individual agents and changes what later agents do. Once the machinery of learning is software, why should humans be the only ones allowed to edit it?
+For sixty years that word sat in the argument like an unexploded shell. Chapter 6 is what finally made it live: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
 The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. Researchers kept automating pieces of the process by which a machine gets better: actions, exploration, curricula, objectives, learning rules, architectures, simulated experience, evaluation and finally parts of research itself.
 
