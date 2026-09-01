@@ -14,7 +14,7 @@
 
 1. [الفصل الأول: لماذا أراهن على وكلاء الذكاء الاصطناعي](chapters/01-why-im-betting-on-ai-agents.md)
 2. [الفصل الثاني: دوامة الخوارزميات](chapters/02-the-algorithm-vortex.md)
-3. [الفصل الثالث: مقعد مبرمج الـVibe](chapters/03-deep-mode.md)
+3. [الفصل الثالث: مقعد الـVibe Coder](chapters/03-deep-mode.md)
 4. [الفصل الرابع: النظام 3](chapters/04-system-3.md)
 5. [الفصل الخامس: مجتمع الوكلاء](chapters/05-the-society-of-agents.md)
 6. [الفصل السادس: لغة الأنماط](chapters/06-pattern-language.md)
