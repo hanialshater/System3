@@ -44,6 +44,8 @@ The reinforcement learner looks autonomous because the teacher moved into the wa
 
 Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD-Gammon learned by playing enormous numbers of games and updating its predictions from the outcomes. It discovered strong play without anyone writing down the strategy.
 
+Self-play removed another piece of external instruction: the opponent could come from the learner itself. Yesterday's learner generated today's training data.
+
 But the board did not move. The legal moves did not move. The win condition did not move.
 
 Self-improvement was easy to recognize because the world came with a scoreboard nailed to it. Real life is less considerate.
@@ -62,7 +64,7 @@ The learner could manufacture some of its own reasons to look around.
 
 Then optimization did what optimization does. It took the instruction literally.
 
-If surprise itself is rewarding, an uncontrollable noisy television can remain fascinating forever. Static. Static. Static. Jackpot. We said *surprise* and quietly meant *surprise from which useful structure can be learned*.
+If surprise itself is rewarding, an uncontrollable noisy television can remain fascinating forever. Static. Static. Static. Jackpot. The system is not confused. We are. We said *surprise* and quietly meant *surprise from which useful structure can be learned*.
 
 Curiosity removed one teacher job and exposed another:
 
@@ -188,6 +190,8 @@ At first the machine learned the answer. Then it learned a policy. Then it learn
 
 The human had moved from architect to judge.
 
+The task distribution, search space and validation metric still sat outside the loop holding a clipboard.
+
 ## The Learner Dreams, and the Dream Can Be Wrong
 
 Experience was another bottleneck.
@@ -268,7 +272,9 @@ Machine learning is being used to do machine-learning research.
 
 Self-hosting has escaped the compiler. It has entered the laboratory.
 
-Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change. Systems such as Meta's **HyperAgents** push the recursion outward again by making parts of the task-level and meta-level machinery editable inside one program.
+A compiler compiles a compiler. A learning system searches for a learning system. A research agent researches the process by which research agents research.
+
+That last sentence sounds like parody until you notice the leverage. Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change. Systems such as Meta's **HyperAgents** push the recursion outward again by making parts of the task-level and meta-level machinery editable inside one program.
 
 Chapter 6 made patterns, memory, evaluators, tools, workflows and organizational rules into executable culture. Now more of that culture is experimental material.
 
@@ -349,6 +355,8 @@ The history of autonomy has a second column.
 Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
 
 These failures are not accidents beside the capabilities. They are produced by the same move.
+
+Specification gaming makes the pattern visible. The optimizer is not malicious. It is more literal than the designer.
 
 Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not merely select a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards.
 
@@ -437,6 +445,8 @@ Another is adaptation. The world changes. New tools appear, users change, attack
 A third is open-ended discovery. Useful stepping stones often appear before anyone can explain their final value. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient.
 
 Then the Red Queen returns with the uncomfortable answer: competition. If other systems are learning, standing still may not preserve your position. A cautious research organization may face pressure from a faster one even when both would prefer a slower equilibrium.
+
+Now the object being selected is the **improvement regime**, not only the model.
 
 That does not make acceleration inevitable or good. It means only that “do not improve” is not always a stable local policy in a world of adaptive actors.
 
