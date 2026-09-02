@@ -32,9 +32,7 @@ What the next agent needed was not merely the instruction. It needed enough of t
 
 That is closer to culture than memory.
 
-Chapter 5 ended with the claim that **System 3 is science**: not science as a pile of papers, but as a civilization-scale arrangement that lets fallible minds accumulate knowledge while preserving routes through which reality can object.
-
-Chapter 5 named the solution. This chapter opens the machine.
+Chapter 5 ended with the claim that **System 3 is science**. It named the solution. This chapter opens the machine.
 
 Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself: theories that could explain anything, experiments that implicated several assumptions at once, paradigms that made research possible and then made alternatives hard to see, communities that confused consensus with independence, methods that became rituals, and institutions whose allocation of attention helped determine what could become known.
 
@@ -71,8 +69,6 @@ The change goes beyond “prompts are code.” **Knowledge itself can become ver
 An organization can write down a procedure, examples, scripts, counterexamples, diagnostic questions, evidence, tool instructions and boundaries. The model supplies enough interpretation that every clause does not have to become brittle symbolic logic before it can affect behavior.
 
 The model begins to look less like the knowledge base and more like an **interpreter for knowledge artifacts**.
-
-Knowledge engineering is back. It is carrying Markdown.
 
 ## Knowledge Engineering Comes Back Wearing Markdown
 
@@ -408,5 +404,3 @@ That is a learning loop **outside the weights**.
 Chapter 5 moved the unit of intelligence from the individual agent toward the institution. Here learning begins to move in the same direction. Intelligence is partly in the model, but also in tools, evaluators, context construction, patterns, retrieval and the procedures deciding which of those artifacts deserve authority.
 
 Once those things are software, one question becomes difficult to avoid. Why should humans be the only ones allowed to edit them?
-
-That is where recursive self-improvement begins.

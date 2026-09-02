@@ -519,5 +519,3 @@ The self-improving institution therefore needs a research function watching its 
 Once improvement becomes continuous, **alignment has to become a continuous research function**.
 
 The teacher does not disappear. She moves up another level.
-
-That is the next chapter.

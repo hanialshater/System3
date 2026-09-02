@@ -295,5 +295,3 @@ Scalable oversight can keep human judgment **causally relevant** to a stronger s
 It cannot, by itself, tell us which human judgment deserves to rule.
 
 The overseer is not ground truth.
-
-That is the next problem.

@@ -629,5 +629,3 @@ The problem was no longer simply whether the agents were capable enough.
 It was whether the things they believed deserved to be believed.
 
 How do you know what to trust?
-
-That is where System 3 begins.

@@ -4,8 +4,6 @@
 
 Chapter 8 spent an absurd amount of machinery trying to preserve human judgment.
 
-Debaters. Critics. Weak-to-strong supervision. Process monitors. Internal probes. Circuit traces. Control protocols. Automated alignment researchers watching automated alignment researchers.
-
 Then it ended with an inconvenient sentence:
 
 **The overseer is not ground truth.**
