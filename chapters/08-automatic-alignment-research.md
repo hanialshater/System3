@@ -2,7 +2,7 @@
 
 *Learning From a Human Who Cannot Label Everything*
 
-Chapter 7 ended with the teacher moving up another level.
+The teacher has moved up another level.
 
 There is one problem with that move: the teacher is slow.
 
@@ -70,7 +70,7 @@ Reward modeling is one attempt to expand the judge. Instead of writing the objec
 
 The human does not become smarter. The **institution around the human** does.
 
-Chapter 5 should make that sound familiar.
+The hospital and the compiler should make that sound familiar.
 
 ## Building a Stronger Judge
 
@@ -180,7 +180,7 @@ This starts to look less like fine-tuning and more like a control system:
 
 **observe internal state → detect drift → intervene → inspect consequences → update the controller.**
 
-Wiener would recognize the shape. Chapter 4 would recognize the epistemic problem, because the intervention now needs its own trust chain. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
+Wiener would recognize the shape. Alberto would recognize the epistemic problem, because the intervention now needs its own trust chain. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
 
 The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth.
 
@@ -204,7 +204,7 @@ A mature architecture should want both.
 
 ## Nine Claudes Walk Into an Alignment Problem
 
-Now return to the end of Chapter 7.
+Now return to the teacher's last job.
 
 If alignment has become a continuing research problem, and research itself can be automated, why not point the research machinery at alignment?
 
@@ -212,7 +212,7 @@ In 2026, Anthropic Fellows did exactly that.
 
 Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility.
 
-Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study’s setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours.
+Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study’s setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was.
 
 That is the headline. The footnotes are more interesting.
 
@@ -268,7 +268,7 @@ The human cannot remain in every loop.
 
 That is a different kind of control. It is not micromanagement. It is constitutional.
 
-Chapter 7 argued that the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change that component unilaterally. Scalable oversight gives us the operational version.
+The constitutional surface said that the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change it unilaterally. Scalable oversight gives us the operational version.
 
 The system may generate tests, critiques and mitigations. It may discover internal representations, propose steering interventions and conduct large parts of alignment research itself. But the machinery deciding which evidence has standing, which failures matter, which trade-offs are acceptable and when the oversight regime itself should change needs a stronger trust chain than the machinery being judged.
 

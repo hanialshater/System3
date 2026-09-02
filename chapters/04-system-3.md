@@ -2,7 +2,7 @@
 
 *Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone*
 
-Chapter 3 ended with a system in which almost everything could work and the whole thing could still be wrong.
+Deep Mode left us with a system in which almost everything could work and the whole thing could still be wrong.
 
 A research agent makes a claim. A visual model turns it into a design. A coding agent implements the design perfectly. Several evaluators prefer it. Deep Mode invests another generation.
 
@@ -224,7 +224,7 @@ The metaphor is imperfect. Peer review has no hand, provenance has no fingers an
 
 System 3 is the external scaffold that keeps thought answerable to observation, experiment, provenance, persistent failures, tools and other minds.
 
-And this is where the naming from Chapter 3 matters. **Deep Mode is Layer 3: the problem-solving layer. System 3 is not another layer above it.**
+And this is where the naming matters. **Deep Mode is Layer 3: the problem-solving layer. System 3 is not another layer above it.**
 
 Deep Mode asks: *Given what we know, what should we try next?*
 
@@ -266,7 +266,7 @@ RL can improve the gut. System 3 preserves more of the structure around the gut:
 
 ## What Should Survive a Session?
 
-Return to the research claim from Chapter 3:
+Return to the research claim about recursion trees:
 
 > Students understand recursion better when shown a tree representation.
 

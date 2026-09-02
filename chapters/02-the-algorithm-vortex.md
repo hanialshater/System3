@@ -356,7 +356,7 @@ The **Immutable Harness** is the anchor of truth in an otherwise fluid process. 
 
 But the thing saying whether it worked stays harder to change than the thing being optimized.
 
-This is Chapter 1's boundary made executable.
+This is the boundary made executable.
 
 ### Never Write Solution Code Yourself
 
@@ -412,7 +412,7 @@ I meant that I was writing almost no custom orchestration framework. That is ver
 
 The framework did not vanish. It became somebody else's primitive.
 
-That fits Chapter 1 almost suspiciously well. Once lower layers become reliable enough, we stop rebuilding them and treat them as building blocks. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
+That fits the emergence argument almost suspiciously well. Once lower layers become reliable enough, we stop rebuilding them and treat them as building blocks. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
 
 So yes: **Zero Framework. Bash is enough.**
 

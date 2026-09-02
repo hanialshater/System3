@@ -18,7 +18,7 @@ So I would say things like:
 
 The agent would improve. Then the context would end.
 
-We were reenacting, on a ridiculous scale, the problem Chapter 5 had just spent several thousand years describing. A society can know something none of its members knows alone. Fine. But if the society survives, another question appears:
+We were reenacting, on a ridiculous scale, a problem it took civilization several thousand years to notice. A society can know something none of its members knows alone. Fine. But if the society survives, another question appears:
 
 **How does what it learned yesterday change what it does tomorrow?**
 
@@ -32,7 +32,7 @@ What the next agent needed was not merely the instruction. It needed enough of t
 
 That is closer to culture than memory.
 
-Chapter 5 ended with the claim that **System 3 is science**. It named the solution. This chapter opens the machine.
+The last thing the society of agents told us was that **System 3 is science**. That named the solution. This chapter opens the machine.
 
 Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself: theories that could explain anything, experiments that implicated several assumptions at once, paradigms that made research possible and then made alternatives hard to see, communities that confused consensus with independence, methods that became rituals, and institutions whose allocation of attention helped determine what could become known.
 
@@ -132,11 +132,11 @@ The book has already accumulated patterns whether we called them that or not.
 
 The useful part is not the slogan. Each pattern contains a recurring situation, a tension and a reason.
 
-But Chapter 5 made us suspicious of inherited procedure. Civilizations do not merely accumulate good practices. They accumulate ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
+But the history of institutions should make us suspicious of inherited procedure. Civilizations do not merely accumulate good practices. They accumulate ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
 
 If Pattern Language is going to become cultural memory for agents, a pattern needs to know more about itself. This is where philosophy of science finally earns its API.
 
-## Popper: A Pattern Needs a Way to Lose
+## A Pattern Needs a Way to Lose
 
 Suppose the editing agent concludes:
 
@@ -166,7 +166,7 @@ A factual claim without provenance becomes rumor. A reusable practice without pr
 
 Tradition is not automatically bad. It is simply difficult to debug.
 
-## Kuhn, Lakatos and Laudan: Defaults Need Rivals
+## Defaults Need Rivals
 
 Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system.
 
@@ -197,7 +197,7 @@ The alternative receives less traffic and therefore less evidence. Eventually th
 
 No committee had to ban the alternative. The retrieval policy did it.
 
-## Hull and Kitcher: Who Gets the GPUs?
+## Who Gets the GPUs?
 
 There is an overly clean way to draw a society of agents. Every agent is a box. Every box has an arrow. Everybody gets a turn to think.
 
@@ -227,7 +227,7 @@ And the organization can remember its incentives just as effectively as it remem
 
 If we build persistent agent societies without thinking about this layer, we will not escape institutional power. We will automate it and give it better dashboards.
 
-## Longino: The Community Is Part of the Instrument
+## The Community Is Part of the Instrument
 
 Resources are only one reason a community matters. Even generously funded investigators can share the same blind spot.
 
@@ -323,7 +323,7 @@ Once retrieval determines which inherited knowledge enters a decision, retrieval
 
 The librarian is no longer merely finding books. The librarian is shaping thought.
 
-## Feyerabend: The Librarian Is Also a Hypothesis
+## The Librarian Is Also a Hypothesis
 
 At some point every successful institution becomes tempted to trust its own method. Yesterday's useful workflow becomes today's best practice and tomorrow's mandatory ritual.
 
@@ -401,6 +401,6 @@ The model weights did not move. The institution learned anyway.
 
 That is a learning loop **outside the weights**.
 
-Chapter 5 moved the unit of intelligence from the individual agent toward the institution. Here learning begins to move in the same direction. Intelligence is partly in the model, but also in tools, evaluators, context construction, patterns, retrieval and the procedures deciding which of those artifacts deserve authority.
+The society of agents moved the unit of intelligence from the individual agent toward the institution. Here learning begins to move in the same direction. Intelligence is partly in the model, but also in tools, evaluators, context construction, patterns, retrieval and the procedures deciding which of those artifacts deserve authority.
 
 Once those things are software, one question becomes difficult to avoid. Why should humans be the only ones allowed to edit them?

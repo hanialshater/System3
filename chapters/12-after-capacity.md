@@ -92,7 +92,7 @@ I do not build only because the machine cannot. I build because I want the thing
 
 The human contribution moves upward: choosing the strange problem, forming a taste for what good looks like, combining ideas that normally live in separate professions, seeing the result and saying *No, that is not it*, then pushing somewhere neither the original prompt nor the original system anticipated.
 
-This is Chapter 1's abstraction ladder reaching economics. We do not disappear when implementation becomes a primitive. We inherit implementation as another building block.
+This is the abstraction ladder reaching economics. We do not disappear when implementation becomes a primitive. We inherit implementation as another building block.
 
 The interesting human may therefore not be the person guarding the last task the machine cannot perform. She may be the person who can suddenly instantiate **far more of what she can imagine**.
 
@@ -298,7 +298,7 @@ This is **alignment by editing the human**: technically elegant and morally horr
 
 The basic phenomenon is not new. Advertising, politics, social groups, institutions, teachers, friends and spouses already influence preferences. The new part is the possible combination of personalization, patience, memory, persuasion and action at machine scale.
 
-The correct ethical standard therefore cannot be “AI never influences human values.” That would require banning books, teachers, spouses and good conversations. Influence is part of how people grow.
+The correct ethical standard therefore cannot be “AI never influences human values.” That standard would outlaw every good teacher, most marriages and the entire publishing industry. Influence is part of how people grow.
 
 The goal is not to freeze the human so the optimizer has a stable target. The distinction I care about is whether the interaction strengthens or weakens **reflective agency**.
 
