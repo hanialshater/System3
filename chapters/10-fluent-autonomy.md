@@ -58,9 +58,7 @@ That is the shift.
 
 This brings us back to Chapter 1. The point of autonomy was never to remove control. It was to move control upward.
 
-Across the book, the thing being controlled kept changing. Implementation became a task for agents. Problem solving moved into Deep Mode. System 3 moved control into evidence, trust and contact with reality. Multi-agent work made organization itself part of the design. Pattern Language moved accumulated experience into editable culture. Recursive self-improvement made some of that culture an experimental object. Scalable Oversight asked how human judgment could remain relevant when action-by-action supervision stopped scaling. Layer 4 then complicated the supposed endpoint by noticing that the human is learning too.
-
-Fluent Autonomy is what happens when those layers stop feeling like separate products I have to operate. The complexity becomes infrastructure.
+Fluent Autonomy is what happens when the layers underneath stop feeling like separate products I have to operate. The complexity becomes infrastructure.
 
 But there is a difference between **hidden complexity** and **lost control**.
 
