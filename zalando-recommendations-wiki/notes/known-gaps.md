@@ -1,0 +1,11 @@
+# Known gaps
+
+Needs, categories, or personas this wiki doesn't yet have coverage for. Different from [open-questions.md](open-questions.md) — these are places where nothing has been written yet, not places where something written is uncertain.
+
+- **Beauty-category needs.** [../categories/beauty.md](../categories/beauty.md) flags that the fit-anxiety framing in [../needs/size-fit-anxiety.md](../needs/size-fit-anxiety.md) doesn't translate directly — the analogous need (shade-matching, skin-type matching) has no dedicated file yet.
+- **No pattern file for trust-and-quality-uncertainty beyond the unfamiliar-brand case.** [../needs/trust-and-quality-uncertainty.md](../needs/trust-and-quality-uncertainty.md) also covers price-as-quality-proxy behavior generally, but [../patterns/for-unfamiliar-brand-do-surface-social-proof.md](../patterns/for-unfamiliar-brand-do-surface-social-proof.md) only addresses the brand-trust half of it, not a general price/value-uncertainty response.
+- **No dedicated persona file for the trend-seeker's direct opposite in spend behavior at the low end** — [../personas/deal-hunter.md](../personas/deal-hunter.md) covers price-first behavior, but there's no file specifically for a low-frequency, low-engagement occasional shopper who isn't a capsule-minimalist either (just genuinely low-involvement in fashion).
+- **No commentary guidance specific to Kids-segment copy.** [../categories/segments-women-men-kids.md](../categories/segments-women-men-kids.md) and [../personas/occasion-gift-and-family-shopper.md](../personas/occasion-gift-and-family-shopper.md) cover the parent-shopper behavior, but commentary is presumably addressed to the parent, not the child, and no file says so explicitly or covers tone implications.
+- **No worked end-to-end example yet.** [../process/generation-steps.md](../process/generation-steps.md) has one partial worked pass (comparison friction). More worked examples, run through the actual loop rather than written speculatively, would strengthen this wiki considerably — this is arguably the highest-priority gap.
+
+Add here as soon as you notice a gap rather than filling it in speculatively — a genuinely tested new file is worth more than a guessed one written to make a gap disappear.

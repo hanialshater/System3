@@ -1,0 +1,11 @@
+# Open questions
+
+Things this wiki doesn't have a confident answer to yet. Not gaps in coverage (see [known-gaps.md](known-gaps.md)) — questions where a file exists but the answer inside it is genuinely uncertain.
+
+- **How much detail should the Z-Types mechanism include?** [../personas/zalando-z-types.md](../personas/zalando-z-types.md) has the names and marketing framing but not the underlying behavioral definitions in detail. Worth digging for the original methodology if it's findable.
+- **Does the "one durable silhouette tag + N transient aesthetic tags" style model in [../styles/README.md](../styles/README.md) actually hold up**, or do real customers mix silhouette preferences too? This is a proposed simplification (`evidence: hypothesis`), not yet tested.
+- **What's the right cadence for re-deriving a style or need fingerprint?** Session-by-session? Rolling window? This wiki doesn't currently say, and [../process/generation-steps.md](../process/generation-steps.md) is silent on it.
+- **How should evidence tiers interact across a marketplace/Partner Program item vs. a first-party item** when the same fit-embedding model may have been trained on uneven data density across them? Flagged in [../categories/README.md](../categories/README.md) and [../categories/outlet-lounge-preowned.md](../categories/outlet-lounge-preowned.md) but not resolved with a concrete rule.
+- **Does the explain-vs-persuade separation in [../commentary/explain-vs-persuade.md](../commentary/explain-vs-persuade.md) hold up when a single short commentary card has room for only one sentence total?** The two-sentence examples in that file assume there's room for both; a one-sentence surface may force a choice this wiki hasn't worked out yet.
+
+Add to this list rather than silently guessing past a gap. Move an entry to [what-seems-to-work.md](what-seems-to-work.md) or [what-doesnt-work.md](what-doesnt-work.md) once the loop actually answers it.
