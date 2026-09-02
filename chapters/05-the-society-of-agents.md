@@ -42,7 +42,7 @@ The project knows more than any participant. It can also become wrong in ways no
 
 The organization can become part of the intelligence. It can also become part of the bug.
 
-Chapter 4 ended by asking what happens when one fallible knower can no longer reconstruct every path back to reality. The compiler gives us the small version of that problem. Humans have been living inside the large version for thousands of years.
+One fallible knower can no longer reconstruct every path back to reality; that is where the camel left us. The compiler gives us the small version of that problem. Humans have been living inside the large version for thousands of years.
 
 ## When Knowledge Had a Face
 
@@ -162,7 +162,7 @@ This is already close to the agent problem. A research agent makes a weak assump
 
 Eventually the assumption has code, citations and organizational history. Nobody needed to lie. The institution manufactured the confidence.
 
-Chapter 4 gave us the language for this: trust is local. Alberto can be an excellent witness about Rome and irrelevant to compiler optimization. GCC can be a powerful reference for the behavior of C programs without becoming an oracle for compiler architecture. A radiologist can deserve high epistemic standing on one question without inheriting authority over the rest of the hospital.
+We already have the language for this: trust is local. Alberto can be an excellent witness about Rome and irrelevant to compiler optimization. GCC can be a powerful reference for the behavior of C programs without becoming an oracle for compiler architecture. A radiologist can deserve high epistemic standing on one question without inheriting authority over the rest of the hospital.
 
 Who knows what matters. Who sees what matters too.
 
@@ -180,7 +180,7 @@ Agreement can still be useful. It is simply weaker evidence than the number of s
 
 Some branches therefore need to remain isolated for a while. A critic may need to inspect the artifact before reading the builder's explanation. One researcher may need to develop an alternative theory without first studying the current favorite. A strange branch may deserve another experiment even if nobody believes it is likely to win.
 
-Chapter 2 preserved different regions of a search space because the champion might be sitting on the wrong mountain. At the level of a society, what needs preserving may be a theory about the problem itself. One lineage thinks the bottleneck is data. Another thinks the architecture is wrong. A third thinks both are symptoms because the objective is malformed. Let them collect different evidence and become interestingly wrong in different ways before forcing them into one conversation.
+MAP-Elites preserved different regions of a search space because the champion might be sitting on the wrong mountain. At the level of a society, what needs preserving may be a theory about the problem itself. One lineage thinks the bottleneck is data. Another thinks the architecture is wrong. A third thinks both are symptoms because the objective is malformed. Let them collect different evidence and become interestingly wrong in different ways before forcing them into one conversation.
 
 Permanent disagreement would be useless. An institution that never converges is simply a philosophy department with an alarming compute bill.
 

@@ -2,7 +2,7 @@
 
 *The Human Learns Too*
 
-Chapter 8 spent an absurd amount of machinery trying to preserve human judgment.
+Scalable oversight spent an absurd amount of machinery trying to preserve human judgment.
 
 Then it ended with an inconvenient sentence:
 
@@ -16,17 +16,17 @@ Better in what sense?
 
 More rigorous? Shorter? More academic? More entertaining? Easier to cite? More likely to sell? More likely to impress someone who owns several blazers and says “thought leadership” without irony?
 
-For a while the edits became objectively more polished and subjectively worse. Then the corrections started.
-
-Don’t kill the wandering.
+For a while the edits became objectively more polished and subjectively worse. The first corrections were about rhythm, and the agent learned them. The later ones were stranger, because I had not known they were rules until an edit broke them.
 
 Don’t explain every joke.
 
-Don’t turn every paragraph into a quotation.
+Don’t apologize for a claim in the sentence after the claim.
+
+A paragraph that sounds quotable on every line is a paragraph nobody will quote.
 
 Don’t make the provocative ideas safe enough that nobody can disagree with them.
 
-Preserve the weirdness.
+If the edit makes me sound like a better writer and less like me, revert it.
 
 Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked.
 
@@ -36,7 +36,7 @@ That is Layer 4.
 
 ## A Prompt Is Evidence, Not the Objective
 
-In Chapter 3 I drew five layers.
+The five-layer map was easy to draw.
 
 At the bottom sits the model. Above it, the action agent. Above that, applications and reusable computational environments. Then Deep Mode, the problem-solving layer that decides what to try next.
 
@@ -310,11 +310,11 @@ And it changes. The system acts, reality responds, the human sees consequences a
 
 That is not a bug in alignment. It is what alignment has to align with.
 
-Chapter 4 asked:
+System 3 asked:
 
 > Why should I believe this?
 
-Chapter 8 asked:
+Scalable oversight asked:
 
 > How can my judgment remain relevant when I cannot supervise everything?
 

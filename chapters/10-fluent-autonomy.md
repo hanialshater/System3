@@ -56,7 +56,7 @@ That is the shift.
 
 ## Control Moves Up, Not Away
 
-This brings us back to Chapter 1. The point of autonomy was never to remove control. It was to move control upward.
+This is the first idea in the book coming home. The point of autonomy was never to remove control. It was to move control upward.
 
 Fluent Autonomy is what happens when the layers underneath stop feeling like separate products I have to operate. The complexity becomes infrastructure.
 
@@ -72,7 +72,7 @@ Fluency therefore requires **progressive disclosure of control**: simple when th
 
 There is a phrase that sounds like an insult until you need it: **bureaucracy**.
 
-Chapter 5 argued that bureaucracy, in its useful form, is accumulated coordination. Roles, review boundaries, logs, standards, escalation paths and procedures exist because some kinds of work become unreliable when everybody improvises everything at once.
+Bureaucracy, in its useful form, is accumulated coordination. Roles, review boundaries, logs, standards, escalation paths and procedures exist because some kinds of work become unreliable when everybody improvises everything at once.
 
 The problem is that fixed bureaucracy calcifies. A six-person review process designed for a dangerous database migration eventually gets applied to changing a sentence in a help page because nobody remembered to tell the workflow that reality had changed.
 
@@ -106,7 +106,7 @@ Send €200,000 to an account we have never seen because an email said “urgent
 
 I suddenly enjoy friction.
 
-Chapter 9 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
+Layer 4 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
 If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance — it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
@@ -130,7 +130,7 @@ This is not fluency. It is opacity with good typography.
 
 The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-Chapter 4 called these trust chains. Chapter 8 added more instruments. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
+Those are trust chains, plus the newer instruments that read the model from the inside. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
 
 The surface can be conversational. The substrate should remain inspectable.
 
