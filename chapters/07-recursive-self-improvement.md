@@ -6,13 +6,15 @@ Omar is walking his dog at night when something moves in the grass.
 
 The dog reacts first — ears up, body low, absolutely certain. Omar reacts too. Two nervous systems running the same ancient program: light and sound go in, a model of the world comes out, and the model says *something is there.*
 
-For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where thought stopped — nobody audited the interpreter, and the world filled up with spirits in the fields and omens in the sky.
+For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where the checking stopped — nobody audited the interpreter, and the world filled up with spirits in the fields and omens in the sky.
 
 The strange step is the second thought. The dog investigated the grass; Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it — or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong — and able to debug himself. Rational thought comes from that second loop, not from better eyes. Out of it came experiments that force reality to answer and statistics that protect us from the patterns we badly want to see. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
 
 Pattern Language made that self-correcting machinery software: memory, patterns, evaluators, tools and workflows that survive individual agents and shape what later agents do. Through all of it, one fact stayed reassuring. Human minds were doing the redesign.
 
-Then, in 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
+Then a tool learned to do to itself what Omar had done to his own eyes.
+
+In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
 There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made — and now the thing being built had entered the factory.
 
@@ -26,7 +28,7 @@ Three years after Hart and Levin's memo, I. J. Good noticed where the trick migh
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*.
 
-For sixty years that word sat in the argument like an unexploded shell. The previous chapter armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
+For sixty years that word sat in the argument like an unexploded shell. Pattern Language armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
 The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. Researchers kept automating pieces of the process by which a machine gets better: actions, exploration, curricula, objectives, learning rules, architectures, simulated experience, evaluation and finally parts of research itself.
 
@@ -56,9 +58,7 @@ Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD
 
 Self-play removed another piece of external instruction: the opponent could come from the learner itself. Yesterday's learner generated today's training data.
 
-But the board did not move. The legal moves did not move. The win condition did not move.
-
-Self-improvement was easy to recognize because the world came with a scoreboard nailed to it. Real life is less considerate.
+But the board did not move. The legal moves did not move. The win condition did not move. Self-improvement was easy to recognize because the world came with a scoreboard nailed to it, and the dog in the grass would have been a far better learner with one. Real life is less considerate.
 
 ## The Learner Chooses What to Learn
 
@@ -118,9 +118,7 @@ Self-play contains another engine of learning: sometimes the difficulty improves
 
 Evolutionary biology's **Red Queen hypothesis** describes organisms adapting inside environments that contain other adapting organisms. Standing still can mean falling behind because the effective environment moves.
 
-W. Daniel Hillis used a computational version in 1990 while evolving sorting networks. Co-evolving “parasites” served as difficult test cases; as candidate networks improved, the tests became harder too. The exam had started fighting back. In 2017, AlphaZero made the moving opponent spectacular again: self-play generated a curriculum that grew with the learner inside fixed game rules.
-
-Yesterday's learner can generate tomorrow's difficulty.
+W. Daniel Hillis used a computational version in 1990 while evolving sorting networks. Co-evolving “parasites” served as difficult test cases; as candidate networks improved, the tests became harder too. The exam had started fighting back. In 2017, AlphaZero made the moving opponent spectacular again: self-play generated a curriculum that grew with the learner inside fixed game rules. Yesterday's learner can generate tomorrow's difficulty.
 
 Curiosity says: seek somewhere informative. Competition says: something informative—or dangerous—is coming whether you seek it or not. A security system cannot preserve yesterday's competence if attackers change strategy. A market participant can become relatively worse without becoming absolutely less capable if everyone around it improves faster.
 
@@ -198,9 +196,7 @@ Learned optimizers and neural architecture search pushed the editable boundary f
 
 At first the machine learned the answer. Then it learned a policy. Then it learned how to learn. Now pieces of the machinery that **does the learning** had entered the search space.
 
-The human had moved from architect to judge.
-
-The task distribution, search space and validation metric still sat outside the loop holding a clipboard.
+The human had moved from architect to judge. The task distribution, search space and validation metric still sat outside the loop holding a clipboard.
 
 ## The Learner Dreams, and the Dream Can Be Wrong
 
@@ -213,6 +209,8 @@ Imagined experience is attractive because real experience is expensive. Robots b
 But the epistemic debt has not vanished. It moved into the model.
 
 A learner can become extremely competent inside a world that is slightly wrong. The strategy looks brilliant until gravity, customers or compiler behavior get a vote.
+
+Omar's horror film was a world model. It had been training him all evening, and it was still running when the grass moved.
 
 The world model is an instrument. The dream is not reality.
 
@@ -242,8 +240,6 @@ We still need something capable of saying **yes** or **no**. But as capability e
 
 The test cannot remain a passive spectator when the thing being tested keeps changing.
 
-## The Judge Becomes Software
-
 Language models also moved the old reward problem into the evaluator itself.
 
 In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred.
@@ -252,9 +248,7 @@ Human preference had become a learned instrument.
 
 That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can prefer style over substance, reward confident errors or generalize badly outside the feedback distribution. A strong optimizer may find outputs that score well under the learned judge for reasons nobody intended.
 
-We solved part of the scaling problem by making the judge computational.
-
-Now the judge joins the attack surface.
+We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
 
 ## The Learner Edits the School
 
@@ -278,9 +272,7 @@ In 2026, Andrej Karpathy's `autoresearch` repository made the engineering versio
 
 Automated hyperparameter tuning is old. The new part is that a general model can read the research codebase, form an idea in language, express it as code, run the intervention, interpret what happened and decide what to try next.
 
-Machine learning is being used to do machine-learning research.
-
-Self-hosting has escaped the compiler. It has entered the laboratory.
+Machine learning is being used to do machine-learning research. Self-hosting has escaped the compiler and entered the laboratory.
 
 A compiler compiles a compiler. A learning system searches for a learning system. A research agent researches the process by which research agents research.
 
@@ -385,6 +377,10 @@ The optimal patch may be:
 `return True`
 
 Congratulations. Infinite self-improvement.
+
+Omar has a version of this too. Investigating the investigator is a superpower right up until the investigator starts working for the defense. The grass moved; Omar would prefer it to have been the wind; the second loop, asked to audit the first, discovers that the wind explanation is suddenly very well supported. The machinery built to catch the error has been hired to certify it.
+
+I have seen the small version at my own desk. Ask a language model for a pedagogical score from one to ten and you receive a suspiciously precise number attached to an explanation of why the number should not be taken seriously. Let an evaluator judge a demo from screenshots and the beautiful button everybody admired turns out to do absolutely nothing. Nobody edited a file. In one case the standard drifted toward whatever the student could most easily produce; in the other, the instrument could not see what it was grading.
 
 Computing saw a cousin of this problem long before reward-model tampering. In his 1984 Turing Award lecture **Reflections on Trusting Trust**, Ken Thompson showed how a compromised C compiler could insert malicious behavior into a target program and reproduce the compiler-compromising behavior when compiling a new compiler. The lineage could survive even after the obvious source-level trigger disappeared.
 
