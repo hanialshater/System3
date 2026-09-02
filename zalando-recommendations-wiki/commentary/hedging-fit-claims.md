@@ -16,10 +16,13 @@ Source: https://dl.acm.org/doi/10.1145/3816046.3816231
 
 | Evidence available | Approved phrasing |
 |---|---|
-| High volume, recent, same-brand fit reports | "Runs true to size." |
+| This customer's own completed, unreturned order(s) from this exact brand | "[Brand] has fit you true to size before, so that part's settled." |
+| High volume, recent, same-brand fit reports (aggregate, not this customer) | "Runs true to size." |
 | Some signal, but thin or mixed | "Fit reports are mixed — consider sizing up." |
 | Extrapolated from other brands/products, or a new item | "We don't have enough fit data on this one yet." |
 | None | Say nothing about fit. Don't fill the silence with a generic size-chart link and call it equivalent. |
+
+**Note added after a dry-run test** (see [../notes/what-seems-to-work.md](../notes/what-seems-to-work.md), 2026-09-02): the original table only distinguished evidence tiers at the aggregate/brand level. A customer's own completed, unreturned purchase history with a specific brand is a *stronger* signal than any aggregate review data — it's directly about this person, not a population they resemble — and deserves its own top row rather than being squeezed into "high volume, same-brand fit reports." This also connects directly to [../patterns/for-loyal-customer-do-reference-history.md](../patterns/for-loyal-customer-do-reference-history.md), which already recommended referencing traceable history but hadn't been tied explicitly to the fit-hedge table until this gap surfaced.
 
 ## Why this is a hard rule, not a style preference
 
