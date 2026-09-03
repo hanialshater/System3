@@ -26,7 +26,7 @@ This looked familiar. The book began with a claim about emergence: once a compli
 
 **What should the layer above do with them?**
 
-Now that System 3 has turned out to be science, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system — it is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
+Now that System 3 has turned out to be science, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system—it is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
 
 That does not make shopping a laboratory or customers experimental subjects in the cartoonish sense. It means the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product stops merely executing a model and joins a continuing inquiry into how to help.
 
@@ -68,7 +68,7 @@ Customers are less cooperative. Someone can be evaluating one product while expl
 
 A single lifecycle stage compresses this mess into one label. The design we began working with uses something richer: a **problem fingerprint**. Instead of saying the customer *is in Evaluate*, the system can represent several problem hypotheses at once, each with an intensity. Size anxiety may be high. Return hesitation moderate. Outfit seeking almost absent. Another customer on the same product may have the reverse pattern.
 
-The fingerprint is not a personality test — it is local to the customer, the current context, the surface and the available evidence. That is important because I do not want the system deciding that Hani is metaphysically a `RETURN_HESITANT_PERSON` and carrying that fact around until retirement. Some characteristics are durable. Many are situational.
+The fingerprint is not a personality test—it is local to the customer, the current context, the surface and the available evidence. That is important because I do not want the system deciding that Hani is metaphysically a `RETURN_HESITANT_PERSON` and carrying that fact around until retirement. Some characteristics are durable. Many are situational.
 
 The architecture also separates the machine representation from the stories humans use to think. Designers and scientists may organize problems by funnel stage, mission, timing or recognizable archetype. Those lenses help us notice gaps and invent hypotheses. The runtime system does not need to believe the story. It needs signals, a problem fingerprint and a way to test whether the resulting behavior is useful.
 
@@ -80,7 +80,7 @@ The customer is not the funnel. The funnel is one way we look at the customer.
 
 Once you define demand as problems rather than slots, the supply side changes too.
 
-Today, when people hear "recommendation," they often picture a ranked list of products. You may also like. Similar items. Complete the look. Recently viewed. The carousel has become the fruit bowl of ecommerce: you can put one almost anywhere and nobody asks too many questions.
+Today, when people hear “recommendation,” they often picture a ranked list of products. You may also like. Similar items. Complete the look. Recently viewed. The carousel has become the fruit bowl of ecommerce: you can put one almost anywhere and nobody asks too many questions.
 
 But if the problem is comparison friction, a ranked list may be the wrong species of answer. The useful experience could be a comparison between the two products the customer is actually considering. If the problem is size anxiety, the useful thing may be evidence about fit. If the customer cannot imagine an outfit, it may be a generated collage. If she has only a vague mission, perhaps a product finder is better. If she knows exactly what she wants but the catalog is overwhelming, maybe the right action is a guided filter. Sometimes the answer is another set of products. Sometimes the answer is information. Sometimes it is a different interaction entirely.
 
@@ -130,7 +130,7 @@ She is not shown more choice. She is shown a way to close the choice she already
 
 That sentence changed how I thought about recommendations.
 
-For years, the field has been extraordinarily good at finding things. Search finds things. Recommenders find things you did not ask for. Retrieval systems find things at absurd scale. But shopping is not only a retrieval problem. At different moments it is also a comparison problem, a confidence problem, a visualization problem, a constraint problem and occasionally a "please stop showing me another black sneaker" problem.
+For years, the field has been extraordinarily good at finding things. Search finds things. Recommenders find things you did not ask for. Retrieval systems find things at absurd scale. But shopping is not only a retrieval problem. At different moments it is also a comparison problem, a confidence problem, a visualization problem, a constraint problem and occasionally a “please stop showing me another black sneaker” problem.
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
@@ -168,7 +168,7 @@ One is to panic quietly and run a generic fallback while still speaking in the c
 
 Based on what, exactly? Her IP address and our enthusiasm?
 
-The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. "Popular this week" can be a good statement when "we have inferred your soul from one click" is not.
+The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not.
 
 This is what I mean by graceful degradation. Cold start is not necessarily an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case.
 
@@ -184,7 +184,7 @@ A composer makes a fresh decision from context. Now a customer reports a terribl
 
 > Why did this page exist?
 
-"The model chose it" is not an answer. It is a resignation letter written in passive voice.
+“The model chose it” is not an answer. It is a resignation letter written in passive voice.
 
 So every composition needs a trace.
 
@@ -238,7 +238,7 @@ This is useful. It is also dangerous for exactly the reason System 3 exists.
 
 Language models are plausible by construction. That does not make the narration true.
 
-"The customer hesitated because of fit" may be an excellent story. The customer may also have received a phone call.
+“The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call.
 
 So narration should generate hypotheses, not production truth. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer's actual experience. Build a detector only after the hypothesis survives contact with something outside the model's coherence. Define what success looks like before the detector starts steering the page.
 
@@ -322,7 +322,7 @@ I began this project as a recommendation-system redesign. Then the chapters star
 
 Emergence: stop specifying every context and let useful compositions arise from primitives.
 
-Bounded problems: diagnose something narrow enough to test rather than "optimize shopping."
+Bounded problems: diagnose something narrow enough to test rather than “optimize shopping.”
 
 Versatility: configure a smaller repertoire instead of multiplying bespoke experiences.
 
@@ -366,4 +366,4 @@ If AI keeps moving upward—if it increasingly discovers problems, selects strat
 
 We have to ask what happens to us when capacity itself changes.
 
-That is not a software architecture question — it is the beginning of another philosophy.
+That is not a software architecture question—it is the beginning of another philosophy.

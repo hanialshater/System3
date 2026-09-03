@@ -32,7 +32,7 @@ And that is how I ended up spending an unreasonable amount of time packing circl
 
 ![Citrus packing - a real-world example](../resources/image0138.png)
 
-*Citrus packing — a real-world example*
+*Citrus packing—a real-world example*
 
 The problem is simple enough to explain to a child. Take 26 circles and put them inside a square. None may overlap, none may cross the boundary and the circles do not have to be the same size. We want to maximize the sum of their radii.
 

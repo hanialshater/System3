@@ -110,7 +110,7 @@ I suddenly enjoy friction.
 
 Layer 4 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
-If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance — it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
+If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance—it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
 So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**.
 

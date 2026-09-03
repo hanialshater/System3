@@ -80,7 +80,7 @@ There is a trick in stories about rebuilding civilization from scratch: they usu
 
 Real civilization did not have Senku.
 
-Nobody in a Neolithic village kept a secret roadmap containing writing, standardized measurement, universities, controlled experiments, statistics, semiconductors and CERN. The institutions we now treat as obvious emerged in different places for different reasons. Knowledge moved through Mesopotamian, Egyptian, Indian, Chinese, Greek, Persian, Arabic, African and European traditions. It travelled, disappeared, was translated, modified, reinvented, appropriated and occasionally rediscovered by somebody who received most of the credit.
+Nobody in a Neolithic village kept a secret roadmap containing writing, standardized measurement, universities, controlled experiments, statistics, semiconductors and CERN. The institutions we now treat as obvious emerged in different places for different reasons. Knowledge moved through Mesopotamian, Egyptian, Indian, Chinese, Greek, Persian, Arabic, African and European traditions. It traveled, disappeared, was translated, modified, reinvented, appropriated and occasionally rediscovered by somebody who received most of the credit.
 
 There is no clean staircase in which one civilization hands the torch of Reason to the next. Societies repeatedly hit limits in collective cognition and improvised ways around them. A local pressure produced a record, office, standard, instrument or procedure. That changed what the society could do, which created new problems, which changed the institution again.
 
@@ -196,7 +196,7 @@ Around the turn of the eleventh century, Ibn al-Haytham worked on a question sim
 
 How do we see?
 
-Inherited theories included versions in which something travelled outward from the eye toward an object. Ibn al-Haytham developed an account in which light travels from objects toward the eye, combining mathematical reasoning with systematic work on light, reflection and refraction. His *Book of Optics* later circulated beyond the world in which he wrote it and influenced subsequent optical traditions.
+Inherited theories included versions in which something traveled outward from the eye toward an object. Ibn al-Haytham developed an account in which light travels from objects toward the eye, combining mathematical reasoning with systematic work on light, reflection and refraction. His *Book of Optics* later circulated beyond the world in which he wrote it and influenced subsequent optical traditions.
 
 For our story, the important part is not merely that he held a different opinion. He arranged circumstances in which competing accounts had observable consequences.
 
@@ -214,7 +214,7 @@ The agent version is almost embarrassingly literal. Run the program. Execute the
 
 But an experiment still has to travel. If I want to challenge your observation, I need to know what you claimed and enough about what you did to try again.
 
-Printing changed that part of the problem. Manuscripts had travelled before it, but slowly and imperfectly. Printing changed the topology of disagreement. More people could possess the same description. Corrections could circulate. So could propaganda and confident pamphlets written by people who had discovered the topic sometime after breakfast. Lower publication cost has always had side effects.
+Printing changed that part of the problem. Manuscripts had traveled before it, but slowly and imperfectly. Printing changed the topology of disagreement. More people could possess the same description. Corrections could circulate. So could propaganda and confident pamphlets written by people who had discovered the topic sometime after breakfast. Lower publication cost has always had side effects.
 
 For knowledge, reproducibility of the description matters. A society made only of ephemeral contexts can argue forever and still struggle to accumulate disagreement. The compiler agents needed Git and progress files for the same reason later investigators need durable records: criticism requires something that outlives the conversation.
 
@@ -244,7 +244,7 @@ There was no moment when somebody installed `science-1.0`. A collection of insti
 
 A person reports an observation. The report circulates. An apparatus is described. An experiment may happen in front of witnesses. Someone elsewhere tries to repeat it. A journal creates public memory and a priority mechanism: this person made this claim at this time. Reputation develops around investigators, instruments and procedures. The question *did this happen?* acquires machinery.
 
-The machinery was never clean. Access was unequal. Reputation and social power affected which claims travelled. An experiment could be reproducible in principle and still remain weak if the person who saw it lacked a press, patron, society, instrument or enough standing to make other people care.
+The machinery was never clean. Access was unequal. Reputation and social power affected which claims traveled. An experiment could be reproducible in principle and still remain weak if the person who saw it lacked a press, patron, society, instrument or enough standing to make other people care.
 
 Robert Boyle's air-pump experiments are useful precisely because the procedure was imperfect. The pump was difficult to build and operate. Replication was not a button. If somebody failed to reproduce a result, several explanations remained possible: perhaps Boyle was wrong; perhaps the pump leaked; perhaps the operator lacked some crucial skill; perhaps the written procedure omitted something everyone in Boyle's room had treated as obvious.
 
@@ -304,7 +304,7 @@ In January 1697 he was running the Royal Mint, chasing counterfeiters and recoin
 
 The story is usually told as a story about Newton. I think the more important part is that Bernoulli's question could reach Newton at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight, published and attributed within weeks, and the attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Most of that machinery had not existed a century earlier.
 
-Even the lion becomes less solitary when you zoom out. He inherited astronomical observations made by others. He worked inside mathematical traditions with long histories. He argued with contemporaries. The *Principia* travelled through an institutional world that included correspondence, publishers and people willing to finance the book.
+Even the lion becomes less solitary when you zoom out. He inherited astronomical observations made by others. He worked inside mathematical traditions with long histories. He argued with contemporaries. The *Principia* traveled through an institutional world that included correspondence, publishers and people willing to finance the book.
 
 Genius mattered enormously. So did the network that allowed genius to begin from accumulated work rather than from dirt.
 
@@ -326,7 +326,7 @@ Who discovered it?
 
 Try pointing to the person.
 
-The papers had thousands of authors. The detectors contained technologies developed over years by specialists in different countries and institutions. The accelerator depended on another enormous technical organization. Data travelled through distributed computing systems. Calibration, trigger systems, detector physics, statistical analysis, software and theoretical interpretation each required knowledge nobody possessed end to end.
+The papers had thousands of authors. The detectors contained technologies developed over years by specialists in different countries and institutions. The accelerator depended on another enormous technical organization. Data traveled through distributed computing systems. Calibration, trigger systems, detector physics, statistical analysis, software and theoretical interpretation each required knowledge nobody possessed end to end.
 
 No physicist woke up that morning capable of rebuilding the Large Hadron Collider, recalibrating every detector, verifying every line of analysis software, reconstructing the electronics supply chain, re-deriving the theory and independently checking every collision event before breakfast.
 
