@@ -259,7 +259,7 @@ By this point a mature pattern looks richer than a prompt-library entry. Here is
 
 **Anomalies.** A tightening pass that had to be partly reversed within the hour. A seam-smoothing pass whose bridging sentences a blind reader flagged as the machine register the pass existed to remove.
 
-**Competing patterns.** Delete only: fold and cut, add nothing. Or add a scene: the changes the evaluators praised most were not edits at all but stories, one about a mathematician in Basel and one about a man walking his dog.
+**Competing patterns.** Delete only: fold and cut, add nothing. Or add a scene: the changes the evaluators praised most were not edits at all but stories, like the one about a mathematician in Basel.
 
 **Exposure path.** A reader who has not seen the history. A human reader, which as of this writing has not happened.
 
@@ -309,7 +309,7 @@ Paul Feyerabend is usually remembered for “anything goes,” which is a good w
 
 Agent systems can turn a method into ritual very quickly. Suppose `Research → Plan → Build → Critic → Revise` works beautifully. We run it ten thousand times. It becomes the company standard. Soon every task enters the same ceremony, including tasks where research anchors the builder, criticism arrives too late, or a crude prototype would have answered the important question in five minutes.
 
-By then the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Most of them had a commit message, each had earned its place by fixing something real, and most of them were run over most of the manuscript. None of them was skipped, and the two things that changed the book most that week were not among them.
+Within a week the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Most of them had a commit message, each had earned its place by fixing something real, and most of them were run over most of the manuscript. None of them was skipped, and the two things that changed the book most that week were not among them.
 
 The method itself has to become available for criticism.
 
