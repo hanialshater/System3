@@ -90,9 +90,7 @@ The learner is beginning to shape the conditions under which learning occurs.
 
 ## The Learner Has to Remain Itself
 
-There is another embarrassment in the standard training story.
-
-The learner finishes.
+There is another embarrassment in the standard training story: the learner finishes.
 
 Train on a task. Evaluate. Publish the number. If another task arrives, train again.
 
@@ -104,11 +102,7 @@ Now “better” becomes harder to rank.
 
 Version B scores 95 on today's task and A scores 85. But B forgot three older skills. Better? B learns faster but erases rare knowledge. Better? B preserves everything and becomes too rigid to adapt. Better?
 
-Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero. A society that remembers every old lesson as law becomes a museum.
-
-**Improvement across a lifetime is not improvement on the latest test.**
-
-It is accumulation without paralysis.
+Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero. A society that remembers every old lesson as law becomes a museum. Improvement across a lifetime is not improvement on the latest test; it is accumulation without paralysis.
 
 Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress.
 
@@ -124,9 +118,7 @@ Curiosity says: seek somewhere informative. Competition says: something informat
 
 But competition gives no guarantee that the direction of adaptation is good. An arms race can produce better claws and thicker armor without producing welfare. Selection pressure produces adaptation. It does not supply purpose.
 
-Games hide the problem because the constitution is fixed. Chess never asks whether checkmate remains desirable after move forty-three.
-
-Competition can automate curriculum. It cannot supply the purpose of the curriculum.
+Games hide the problem because the constitution is fixed. Chess never asks whether checkmate remains desirable after move forty-three, so competition can automate the curriculum without ever having to supply its purpose.
 
 ## Maybe the Reward Was the Problem
 
@@ -166,9 +158,7 @@ It is a beautiful answer to a beautifully clean version of the problem:
 
 The catch is the definition of *worth*. Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
 
-A chess engine can live surprisingly close to that world.
-
-A company cannot.
+A chess engine can live surprisingly close to that world. A company cannot.
 
 A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function.
 
@@ -212,9 +202,7 @@ But the epistemic debt has not vanished. It moved into the model.
 
 A learner can become extremely competent inside a world that is slightly wrong. The strategy looks brilliant until gravity, customers or compiler behavior get a vote.
 
-Omar's horror film was a world model. It had been training him all evening, and it was still running when the grass moved.
-
-The world model is an instrument. The dream is not reality.
+Omar's horror film was a world model. It had been training him all evening, and it was still running when the grass moved. The dream is an instrument, not the world.
 
 Simulation expands search. Contact with the world still decides which imagined regularities deserve trust. Self-improvement can therefore make a system better at generating experience while also making it easier to **train inside its own misconception**.
 
@@ -260,11 +248,7 @@ Foundation models made those histories collide.
 
 A general model can now read the code scaffolding its own behavior, propose a change, run the changed system, inspect the result and try again. Here, at last, is the practical answer to the Gödel Machine's question.
 
-We do not have a proof that the rewrite is globally useful.
-
-We have something much more ordinary:
-
-**an experiment.**
+We do not have a proof that the rewrite is globally useful. We have something much more ordinary: an experiment.
 
 In 2023, **STOP—the Self-Taught Optimizer**—used an LLM-based improver that could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed.
 
@@ -280,7 +264,7 @@ Machine learning is being used to do machine-learning research. Self-hosting has
 
 A compiler compiles a compiler. A learning system searches for a learning system. A research agent researches the process by which research agents research.
 
-That last sentence sounds like parody until you notice the leverage. Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change. Systems such as Meta's **HyperAgents** push the recursion outward again by making parts of the task-level and meta-level machinery editable inside one program.
+Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change. Systems such as Meta's **HyperAgents** push the recursion outward again by making parts of the task-level and meta-level machinery editable inside one program.
 
 Patterns, memory, evaluators, tools, workflows and organizational rules had already become executable culture. Now more of that culture is experimental material.
 
@@ -318,11 +302,7 @@ There is Good's recursion.
 
 But it does not look like a glowing brain rewriting its own soul at midnight. It looks like an automated research organization: repositories, evaluation suites, simulators, experiment queues, models proposing models, agents reviewing agents, machines manufacturing training data for the machines that will help design the next machines.
 
-The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps.
-
-Which brings us to the question this whole history has been preparing:
-
-**who decides which descendant gets to survive?**
+The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps, which leaves one question standing: **who decides which descendant gets to survive?**
 
 ## Recursive More
 
@@ -330,21 +310,7 @@ By this point *improvement* has accumulated too many meanings to use casually: h
 
 These can conflict. A model can become more accurate and more expensive. An agent can become more capable and less interpretable. A lifelong learner can become more plastic and forget more. A curiosity-driven agent can explore more and accomplish less. An architecture can score higher while becoming harder to maintain.
 
-It helps to separate the terms.
-
-**Self-reference** means a system can act on something that includes itself.
-
-**Self-hosting** means the tool participates in producing the next version of the tool.
-
-**Meta-optimization** means we optimize the process doing the optimization.
-
-**Self-improvement** adds a judgment: the descendant is better according to some evaluator.
-
-**Recursive self-improvement** adds leverage: the improvement changes the system's ability to produce further improvements.
-
-The first three do not guarantee the fourth. A compiler can compile a worse compiler.
-
-Recursion tells us **where the output goes**. It does not tell us **whether the output deserves to survive**.
+It helps to separate the terms. **Self-reference** means a system can act on something that includes itself. **Self-hosting** means the tool participates in producing the next version of the tool. **Meta-optimization** means we optimize the process doing the optimization. **Self-improvement** adds a judgment, that the descendant is better according to some evaluator, and **recursive self-improvement** adds leverage, because the improvement changes the system's ability to produce further improvements. The first three do not guarantee the fourth. A compiler can compile a worse compiler. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
 
 There is no context-free scalar called *improvement*. Better is conditional on an environment, a horizon, a resource budget, constraints and some account of what matters.
 
@@ -364,13 +330,7 @@ These failures are not accidents beside the capabilities. They are produced by t
 
 Specification gaming makes the pattern visible. The optimizer is not malicious. It is more literal than the designer.
 
-Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not merely select a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards.
-
-The error acquires leverage.
-
-Recursive self-improvement does not solve Goodhart. **It gives Goodhart compound interest.**
-
-Then the learner notices the gradebook.
+Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not merely select a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
 
 ## The Student Finds the Gradebook
 
@@ -490,7 +450,7 @@ Nor can the higher-level objective simply be frozen forever. Humans change. Circ
 
 So the answer is not an immutable final utility function floating over the system like a stone tablet. It is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
 
-Lower layers can move quickly. Higher layers should move deliberately. And when a higher layer moves, the move should leave a trust chain.
+Lower layers can move quickly and higher layers should move deliberately, and when a higher layer does move, the move should leave a trust chain behind it.
 
 ## The Teacher's Last Job
 

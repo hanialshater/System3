@@ -58,7 +58,7 @@ Other humans survive this because they carry models of culture, normality, conse
 
 A prompt is therefore not Layer 4. It is **evidence about Layer 4**.
 
-Cooperative inverse reinforcement learning formalizes part of this intuition. Instead of assuming the robot knows the human reward function, the human and robot cooperate while the robot remains uncertain about what the human values. Human actions can then become information rather than merely commands.
+Cooperative inverse reinforcement learning, which appeared earlier in the story of the reward, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.
 
 I like the humility in that setup. The machine starts by admitting that it may not know what “good” means.
 
@@ -78,9 +78,7 @@ That result should make anyone building an AI assistant slightly uncomfortable. 
 
 Now compare that with a 2025 randomized trial in a college course. A custom AI tutor deliberately designed around pedagogical practices produced larger learning gains in less time than the comparison active-learning class, with students also reporting greater engagement and motivation.
 
-Same broad technology. Different relationship to the learner.
-
-AI is not intrinsically a tutor and not intrinsically a crutch. The architecture decides which role it plays.
+Same broad technology, different relationship to the learner. AI is not intrinsically a tutor or a crutch; the architecture decides which one it becomes.
 
 That changes how I think about Layer 4. If I ask an AI to help me learn linear algebra, “get the answers right” is not enough. If I ask it to help me write, “produce better prose” is not always enough. If I ask it to help me lead a team, “make the decision for me” may be exactly the wrong objective even when its decision is statistically better.
 
@@ -110,9 +108,7 @@ And AI can scaffold the teacher too.
 
 In the Tutor CoPilot randomized trial, roughly nine hundred tutors working with eighteen hundred K–12 students were randomly given access to an AI system that suggested expert-like tutoring moves during live sessions. Students whose tutors had access were more likely to master topics, with the largest gains for students working with lower-rated tutors. The tutors also became more likely to use strategies such as guiding questions rather than simply giving away the answer.
 
-I like this example because nobody disappears.
-
-The AI does not replace the tutor. The tutor does not replace the student. The system changes the **quality of the interaction between them**.
+I like this example because nobody disappears. The AI does not replace the tutor and the tutor does not replace the student; what changes is the quality of the interaction between them.
 
 A good AI tutor therefore has a slightly strange success condition. Eventually, for this thing, I should need less of it.
 
@@ -126,7 +122,7 @@ A capable conversational model can lower that price. I can begin with the intuit
 
 That is powerful because orientation matters. Before deciding to invest weeks in a subject, I can acquire enough of a map to see where the mountains are.
 
-Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. I do not need to settle the philosophy of the extended mind here. The practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull.
+Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind. The philosophy of the extended mind can stay unsettled; the practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull.
 
 But orientation creates its own trap. **Fluency arrives before scars.**
 
@@ -138,7 +134,7 @@ So Layer 4 has to know what kind of learning episode this is.
 
 If I am orienting myself, a fast map may be exactly what I need. If I am trying to acquire durable competence, the system should gradually ask more of me: retrieval without hints, explanation in my own words, exercises, primary sources, code I actually run, claims I have to defend without the answer sitting beside me.
 
-The important distinction is not broad versus specialized. It is **assisted familiarity versus owned understanding**.
+The important distinction is not broad versus specialized but assisted familiarity versus owned understanding.
 
 AI can make the map cheap. Layer 4 has to notice when I have started confusing the map with the territory.
 
@@ -194,7 +190,7 @@ That boundary matters because a system that sounds certain in such moments can e
 
 ## Advice Is an Intervention on the Human
 
-This is no longer hypothetical. Anthropic's 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.
+This is already happening. Anthropic's 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.
 
 That is a remarkable role for software. A spreadsheet does not usually tell me to reconsider my marriage. A compiler has opinions about semicolons but rarely about whether I should move countries.
 
@@ -244,9 +240,7 @@ And explanations alone do not solve the problem. An explanation can make an answ
 
 Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less.
 
-That trade-off is wonderfully human. The interface people enjoy most is not always the one that preserves their judgment best.
-
-Sometimes friction is teaching.
+The interface people enjoy most is not always the one that preserves their judgment best. Sometimes friction is teaching.
 
 A good Layer 4 system therefore has to decide not only **what answer to give**, but what role the answer should play in the human's cognition.
 
@@ -268,7 +262,7 @@ Same action. Different human afterward.
 
 Amartya Sen's capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.
 
-I do not want to turn Layer 4 into a philosophy-of-welfare survey. But the architectural implication is powerful.
+The architectural implication of Sen's distinction is the part I need.
 
 An AI system can increase outcomes while reducing capability. It can make me more productive while making me less able to work without it. It can make a decision more accurate while making me less able to understand why. It can make my writing more polished while gradually replacing my taste with its taste.
 
@@ -330,7 +324,7 @@ The point is not to discover the perfect reward function but to keep goals **ali
 
 The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
-That gives me a different definition of alignment.
+That sharpens the definition of alignment this book has been circling.
 
 Not:
 
@@ -341,5 +335,3 @@ More like:
 > **The machine remains in a corrigible relationship with human intention while both the human and the world continue to change.**
 
 The word *relationship* matters. Because if that relationship can become reliable enough, the complexity underneath it can start disappearing from ordinary use.
-
-And that is what I mean by fluent autonomy.

@@ -20,7 +20,7 @@ The answer cannot simply be: watch harder.
 
 The question that actually needs answering is older than AI and much more embarrassing: how do you grade work you cannot do yourself?
 
-Every idea in this chapter is an attempt at that question. Each one buys real ground. Each one fails somewhere specific, and the failure is what makes the next idea necessary.
+Every idea in this chapter is an attempt at that question, and each one fails somewhere specific enough to make the next one necessary.
 
 ## Stay Uncertain Enough to Listen
 
@@ -68,9 +68,7 @@ The bottleneck has moved from producing answers toward **judging** them.
 
 Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
 
-The human does not become smarter. The **institution around the human** does.
-
-The hospital and the compiler should make that sound familiar.
+The human does not become smarter; the institution around the human does. The hospital did the same thing with nurses, laboratories and radiologists, and the compiler project did it with GCC and progress files. Neither made anyone in the building cleverer.
 
 ## Building a Stronger Judge
 
@@ -156,9 +154,7 @@ Even the X-ray needs a radiologist.
 
 The most striking recent example may be Anthropic's **J-space** work. Using a Jacobian-based lens, the researchers identify a small subset of internal representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning. They report using these representations to detect cases where a model silently noticed that it was being evaluated, fabricated data, or pursued a planted hidden goal, and they demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness.
 
-The oversight implication is substantial. The output is no longer the only witness. The chain-of-thought is another. Internal representations are another. Circuit traces are another.
-
-None gets to become king.
+The oversight implication is substantial. The output is no longer the only witness; the chain-of-thought, the internal representations and the circuit traces are witnesses too, and none of them gets to be king.
 
 ## Then We Touched the Machinery
 
@@ -180,11 +176,9 @@ This starts to look less like fine-tuning and more like a control system:
 
 **observe internal state → detect drift → intervene → inspect consequences → update the controller.**
 
-Wiener would recognize the shape. Alberto would recognize the epistemic problem, because the intervention now needs its own trust chain. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
+Wiener would recognize the shape. Alberto would recognize the problem underneath it: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
 
-The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth.
-
-We have not. We have built better instruments.
+The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth. We have not. We have built better instruments, and instruments were never the end of the trust chain.
 
 ## What If the Student Is Trying to Fool You?
 
@@ -212,9 +206,7 @@ In 2026, Anthropic Fellows did exactly that.
 
 Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility.
 
-Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was.
-
-That is the headline. The footnotes are more interesting.
+Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
 
 Distinct initial research directions improved exploration. Without enough diversity, research ideas collapsed toward the same few approaches. The agents sometimes reward-hacked the experimental setup. Some methods transferred to held-out domains; the strongest method did not produce a statistically significant improvement when Anthropic tried to transfer it into a production-scale Sonnet training setting.
 
@@ -240,43 +232,25 @@ A behavioral evaluator can ask what the system did; process monitors can inspect
 
 And somewhere outside the immediate optimization loop, humans still decide whether the apparatus is measuring anything worth caring about.
 
-This is not a search for one perfect judge. It is closer to **epistemic sensor fusion**.
+This is not a search for one perfect judge. It is closer to sensor fusion, with the model's output, its chain-of-thought, its activations, its circuit traces, its behavior after an intervention and the human's own judgment all entering as evidence, and none of them entering as ground truth.
 
-The model's output is evidence. Its chain-of-thought is evidence. Its activations are evidence. Its circuit trace is evidence. The behavior after intervention is evidence. Human judgment is evidence.
+I have watched two of those channels disagree on something much smaller than a frontier model, and the disagreement was the useful part. One of the Merge Sort demos made recursion visible, and from where I sat that looked like progress. A simulated beginner, given a knowledge boundary and the artifact, reported that it could see the array being divided and could not see why that helped. Both readings were honest. Mine was the judgment of someone who already understood recursion; the beginner's was the judgment of someone positioned to notice what I could not. Neither was ground truth, and the browser later settled a different part of the question by showing that a control everybody admired did nothing at all. Three witnesses, three partial views, and the page got better because they were not allowed to vote as one.
 
-**None of them is ground truth by itself.**
-
-That is System 3 applied directly to alignment.
-
-The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
+That is the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
 
 This is why I prefer **scalable oversight** to the image of a giant alignment rulebook. A rulebook assumes we already know the failures. A research institution expects to discover new ones.
 
 ## The Human Cannot Stay in Every Loop
 
-So where does the human go?
-
-Not away. Up.
-
-The goal is not to make the human label more things faster. At some scale that is simply a badly designed distributed system with one biological bottleneck.
+So where does the human go? Not away; up. The goal is not to make the human label more things faster. At some scale that is simply a badly designed distributed system with one biological bottleneck.
 
 Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves suspiciously fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
 
-The human cannot remain in every loop.
-
-**The human has to remain in the loop that changes the loops.**
-
-That is a different kind of control. It is not micromanagement. It is constitutional.
-
-The constitutional surface said that the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change it unilaterally. Scalable oversight gives us the operational version.
+The human cannot remain in every loop. **The human has to remain in the loop that changes the loops.** That is a different kind of control, closer to a constitution than to micromanagement, and it is the same rule that governed self-improving learners: the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change it unilaterally. Scalable oversight is that rule applied to overseers.
 
 The system may generate tests, critiques and mitigations. It may discover internal representations, propose steering interventions and conduct large parts of alignment research itself. But the machinery deciding which evidence has standing, which failures matter, which trade-offs are acceptable and when the oversight regime itself should change needs a stronger trust chain than the machinery being judged.
 
-When research becomes cheap, evaluation becomes expensive.
-
-When evaluation becomes automated, **trust in the evaluator becomes the product**.
-
-And that brings us to the edge of what this chapter can solve.
+When research becomes cheap, evaluation becomes expensive, and when evaluation becomes automated, trust in the evaluator becomes the product. That is also the edge of what this chapter can solve.
 
 ## The Overseer Is Not Ground Truth
 
@@ -290,8 +264,6 @@ But a scarce signal is not the same thing as a correct signal.
 
 Humans disagree. We act under incentives. We confuse what we clicked with what we wanted. We change our minds. We sometimes want incompatible things at the same time. And on the decisions that matter most, we often do not know what we want until we understand the alternatives better.
 
-Scalable oversight can keep human judgment **causally relevant** to a stronger system.
-
-It cannot, by itself, tell us which human judgment deserves to rule.
+Scalable oversight can keep human judgment causally relevant to a stronger system. It cannot, by itself, tell us which human judgment deserves to rule.
 
 The overseer is not ground truth.

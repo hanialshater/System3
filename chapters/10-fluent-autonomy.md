@@ -32,7 +32,7 @@ The argument of this book began with a recurring move: once something complicate
 
 We stopped programming by wiring individual transistors. We stopped thinking about registers every time we wrote a high-level function. Libraries hid algorithms. Applications hid libraries. Coding agents began treating applications, files, browsers, terminals and APIs as tools.
 
-The complexity did not disappear. It moved underneath a more useful interface.
+The complexity moved underneath a more useful interface.
 
 AI agents push that abstraction one level higher because the new interface is not merely another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
 
@@ -54,11 +54,7 @@ Traditional software handles this badly because software usually requires the de
 
 A fluent autonomous system can construct part of the structure **after seeing the intention**.
 
-That is the shift.
-
-## Control Moves Up, Not Away
-
-This is the first idea in the book coming home. The point of autonomy was never to remove control. It was to move control upward.
+The point of autonomy was never to remove control. It was to move control upward.
 
 Fluent Autonomy is what happens when the layers underneath stop feeling like separate products I have to operate. The complexity becomes infrastructure.
 
@@ -116,7 +112,7 @@ So the system has to infer not only **what outcome I want**, but **what role I w
 
 Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
 
-The best autonomous system is not the one that needs the least human input but the one that spends it well.
+The best autonomous system spends human input well; needing little of it is a side effect.
 
 ## Invisible by Default, Legible on Demand
 
@@ -132,11 +128,9 @@ This is not fluency. It is opacity with good typography.
 
 The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-Those are trust chains, plus the newer instruments that read the model from the inside. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
+Those are trust chains. The instruments that read a model from the inside only added links to them. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
 
-The surface can be conversational. The substrate should remain inspectable.
-
-That is the difference between an abstraction and a black box.
+The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
 
 ## Applications Become Primitives
 
@@ -148,7 +142,7 @@ Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not
 
 Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
 
-Fluent Autonomy is not the death of applications. It is the death of the assumption that **every intention must first be translated into the application structure somebody predicted in advance**.
+Fluent Autonomy is not the death of applications. It is the death of the assumption that every intention must first be translated into the application structure somebody predicted in advance.
 
 The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going.
 
@@ -168,13 +162,11 @@ The unit of interaction becomes closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is competent movement between autonomy and involvement, not maximal independence.
+Fluency is competent movement between autonomy and involvement.
 
 The system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 
-Control did not disappear.
-
-It found a better interface.
+Control did not disappear. It found a better interface.
 
 ## Monday Morning
 
