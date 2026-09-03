@@ -155,3 +155,15 @@ All of §3 is surgery, none of it is rewriting. In order of value per minute:
 8. §3.8 remaining bullets and §4 — as time allows.
 
 Estimated potential after this pass: **8.9 / 10.** The chapters would not change much; the book would.
+
+## Addendum — 2026-09-03, after the three fix passes
+
+*Commits `ad2aeca` (deletion-only seams), `186976c` (cross-references rewritten to ideas, repetition fixed by differentiation), `1bed12d` (Ch7 Omar spine). Caveat: this addendum grades the same evaluator's own edits and is subject to the self-grading bias the 2026-08-31 evaluation warned about. A blind cold read of Chs 6–10 is still the confirmation that matters.*
+
+**Book overall: 8.5 → 8.8.**
+
+Dimension changes: Connection between chapters 7 → 8.5 (45 numbered references replaced by motifs; openings no longer re-list). Handoffs 6.5 → 8 (four trailer endings removed; Ch9's "that is what I mean by fluent autonomy" is the last title-naming exit). Repetition 6.5 → 8 (Ch9 list, Ch12 image, Ch7 slogan stack, Ch6 duplicate joke, Ch10 recap all resolved; Ch3's triple statement of "artifacts teach the objective" remains, untouched under the no-cut rule). Pacing 7.5 → 8. Sense of discovery 8.5 (Ch7 now discovers; Ch8 still announces).
+
+Chapter changes: Ch6 8 → 8.5. Ch7 7.5 → 8.5 (Omar as spine, first-person beat, five punchlines folded, one heading merged; the "Learning to Learn" through "When the Test Starts Moving" stretch is still a tour). Ch8 8 → 8.5. Ch9 8 → 8.5. Ch10 7 → 7.5 (recap gone; still a bridge without a scene of its own). Others unchanged.
+
+Remaining ceiling, ranked: (1) Ch7's ~900-word catalogue stretch — one real scene from the circle-packing run would convert it; (2) Ch10 needs one scene that is not a recap; (3) Ch3's triple statement, fixable by rewriting two of the three into different images rather than cutting; (4) Ch13 as a publisher risk, unchanged and deliberately so.
