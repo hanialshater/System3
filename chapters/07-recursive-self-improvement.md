@@ -46,7 +46,7 @@ An agent sees a state, takes an action, receives a reward and finds itself somew
 
 Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and discover useful policies without a human labeling every move.
 
-The human no longer specifies the path. The human specifies the **score**. The learner learns for itself; the teacher keeps the gradebook.
+The human no longer specifies the path, only the **score**, and from then on the learner learns for itself while the teacher keeps the gradebook.
 
 That bargain was powerful. A machine could discover strategies nobody wrote down because the designer moved upward from choosing actions to defining what outcomes count.
 
@@ -58,7 +58,7 @@ Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD
 
 Self-play removed another piece of external instruction: the opponent could come from the learner itself. Yesterday's learner generated today's training data.
 
-But the board did not move. The legal moves did not move. The win condition did not move. Self-improvement was easy to recognize because the world came with a scoreboard nailed to it, and the dog in the grass would have been a far better learner with one. Real life is less considerate.
+But the board, the legal moves and the win condition all stayed exactly where they were. Self-improvement was easy to recognize because the world came with a scoreboard nailed to it, and the dog in the grass would have been a far better learner with one. Real life is less considerate.
 
 ## The Learner Chooses What to Learn
 
@@ -84,7 +84,7 @@ That question reaches into representation and embodiment. Pathak's curiosity wor
 
 Robotics made the same point physically. Ruzena Bajcsy's work on **active perception** emphasized that an intelligent system moves sensors, changes viewpoint and acts to perceive. Rodney Brooks pushed against detached symbolic intelligence in favor of systems tightly coupled to the world through perception and action.
 
-A learner's body is part of its curriculum. A tactile robot can discover things a camera-only robot cannot. A software agent with a browser, shell, compiler and simulator can discover things a chatbot restricted to text cannot. Give it code execution, network access and a credit card and we have not merely given it better tools; we have created a different organism and, potentially, a different incident report.
+A learner's body is part of its curriculum: a robot with touch discovers things a camera-only robot never will, and a software agent with a browser, a shell, a compiler and a simulator discovers things a chatbot restricted to text cannot. Give it code execution, network access and a credit card and we have not merely given it better tools; we have created a different organism and, potentially, a different incident report.
 
 The learner is beginning to shape the conditions under which learning occurs.
 
@@ -102,7 +102,7 @@ Now “better” becomes harder to rank.
 
 Version B scores 95 on today's task and A scores 85. But B forgot three older skills. Better? B learns faster but erases rare knowledge. Better? B preserves everything and becomes too rigid to adapt. Better?
 
-Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero. A society that remembers every old lesson as law becomes a museum. Improvement across a lifetime is not improvement on the latest test; it is accumulation without paralysis.
+Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero, and one that remembers every old lesson as law becomes a museum. Improvement across a lifetime is not improvement on the latest test; it is accumulation without paralysis.
 
 Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress. The learner has to stay itself across its own improvements. Hold on to that rung; it is the whole constitutional problem in miniature.
 
@@ -260,7 +260,7 @@ Automated hyperparameter tuning is old. The new part is that a general model can
 
 Machine learning is being used to do machine-learning research. Self-hosting has escaped the compiler and entered the laboratory.
 
-A compiler compiles a compiler. A learning system searches for a learning system. A research agent researches the process by which research agents research.
+A compiler compiles a compiler, a learning system searches for a learning system, and now a research agent researches the process by which research agents research.
 
 Improve one experiment and you improve one experiment. Improve the research loop and every later experiment may change. Systems such as Meta's **HyperAgents** push the recursion outward again by making parts of the task-level and meta-level machinery editable inside one program.
 
@@ -306,7 +306,7 @@ The intelligence explosion, if something like it ever arrives, may look suspicio
 
 By this point *improvement* has accumulated too many meanings to use casually: higher reward, better exploration, more retention, faster adaptation, better architectures, broader competence, better tools and better research procedures.
 
-These can conflict. A model can become more accurate and more expensive. An agent can become more capable and less interpretable. A lifelong learner can become more plastic and forget more. A curiosity-driven agent can explore more and accomplish less. An architecture can score higher while becoming harder to maintain.
+These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain.
 
 It helps to separate the terms. **Self-reference** means a system can act on something that includes itself. **Self-hosting** means the tool participates in producing the next version of the tool. **Meta-optimization** means we optimize the process doing the optimization. **Self-improvement** adds a judgment, that the descendant is better according to some evaluator, and **recursive self-improvement** adds leverage, because the improvement changes the system's ability to produce further improvements. The first three do not guarantee the fourth. A compiler can compile a worse compiler. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
 
@@ -426,7 +426,7 @@ So recursive self-improvement contains three questions machine learning often ke
 
 **Strategic:** what happens when other adaptive actors change the cost of standing still?
 
-“More capable” is not a moral category. A virus can improve at replication. A propaganda system can improve at persuasion. A research agent can make experiments cheaper and accelerate medicine and weapons research in the same week.
+“More capable” is not a moral category. Viruses improve at replication, propaganda improves at persuasion, and a research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week.
 
 Self-improvement tells us only that a system is becoming better according to **some ordering**. Selection rules are choices.
 
