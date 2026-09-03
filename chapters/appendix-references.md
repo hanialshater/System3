@@ -20,6 +20,8 @@ References are organized by chapter, in roughly the order the works appear. The 
 
 ## Chapter 3 — The Vibe Coder's Seat
 
+- Mark Chen et al., "Evaluating Large Language Models Trained on Code" (HumanEval, 2021). <https://arxiv.org/abs/2107.03374>
+- Dan Hendrycks et al., "Measuring Coding Challenge Competence With APPS" (2021). <https://arxiv.org/abs/2105.09938>
 - Carlos E. Jimenez et al., "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?" (2023). <https://arxiv.org/abs/2310.06770>
 - John Yang et al., "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering" (2024). <https://arxiv.org/abs/2405.15793>
 - Jack Clark and Dario Amodei, "Faulty reward functions in the wild" (OpenAI, 2016) — the CoastRunners boat. <https://openai.com/index/faulty-reward-functions/>
