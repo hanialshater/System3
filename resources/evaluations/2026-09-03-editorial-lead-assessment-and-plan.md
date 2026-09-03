@@ -297,3 +297,31 @@ Applied to the chapter files in the commit following this note. Every edit is a 
 **Phase E**: not started; requires human readers.
 
 Word counts after the pass: Ch3 7,800; Ch7 6,500; Ch9 3,900; Ch10 2,380; Ch12 6,070.
+
+---
+
+## 9. Chapter 6 serious pass (same day, iterated)
+
+Method: the chapter's own. Draft, then three independent readers per round, none of whom had seen the manuscript's history: a blind version comparison under `prompts/chapter-version-evaluation.md`, a cold read of the draft alone, and a fact-check of every first-person claim against the git log and this folder. Three rounds. Nothing in the new material was invented; every claim about the book's editing is tied to a commit or an evaluation file, and the fact-checker's final pass found all of them supported.
+
+| Round | Words | Blind A/B (A → B) | Cold read of B alone | Fact-check |
+|:-:|--:|:-:|:-:|:--|
+| Original | 4,488 | — | 7.5 (09-03 blind read) | — |
+| Draft 1 | 6,127 | 6.5 → 7.5 | 6.5 | 27 supported, 21 overstated, 4 unsupported, 6 unverifiable |
+| Draft 2 | 5,978 | 6.5 → 7.5 | 7 | 4 minor wording items |
+| Draft 3 | 5,677 | 6.5 → 8 | 8 | all supported |
+| Final | 5,626 | (both readers: "lock after these five") | | |
+
+What the chapter now does that it did not: the editing brief (`prompts/chapter-version-evaluation.md`) is the running example, followed through every philosopher; each philosopher gets an incident from the record rather than a hypothetical (the Ch7 tighten-and-restore for Duhem–Quine, the one-line-paragraph metric becoming a column for Kuhn, the self-graded in-session evaluator against the blind readers for Hull/Kitcher, the blind readers' catch of the bridging sentences for Longino, the twice-withdrawn-once-repeated Ch3 cut for retrieval, the liturgy of passes for Feyerabend); the schema is filled in as a pattern card in Alexander's run-in format instead of an empty grid; the Kuhn anecdote arrives before its label; the chapter returns to its opening line and ends on the file that "has already begun to be wrong."
+
+Cuts of the author's original text, all reversible, all made on the convergent advice of at least two blind readers:
+- The empty schema table (replaced by the filled card; the field names survive).
+- The "command says / pattern says" contrast after the table (redundant once the card is filled; "Turning them into scripture…" restored beside "The field names are the part you can take with you").
+- "Culture Can Become a Prison" as a section: its live beats ("that's how we do it", twelve alternatives vs since 2025, "ignore the manual", "inheritance and rebellion") folded into "Defaults Need Rivals"; the loop restatement and the summary list dropped.
+- The "society of agents moved the unit of intelligence… Intelligence is partly in the model, but also in…" paragraph before the ending (a false summit that pre-summarized Ch7).
+- "An agent society will have analogues of these structures…"; "This is not merely politics…"; "And now we cross an important line."; three items of the "partly a" litany; one item of the "A is a B" litany; the duplicated expert-systems beat.
+- Bold removed from two thesis questions and two thesis sentences; four one-line closers merged into their paragraphs.
+
+Author to verify: every first-person sentence in the new material (the fact-checker verified them against the record, not against the author's memory), in particular "I declined", "I said yes", "I had asked an evaluator to find the machine patterns", and "Corrections I made by hand across the first chapters, then wrote down once."
+
+Not done, by the readers' advice: another full pass. Both third-round readers said the next pass would be the one that starts sanding.

@@ -56,7 +56,7 @@ A model can read something like:
 
 There is no deterministic function there. There is operational knowledge. A competent human can interpret it. Now a sufficiently capable model can too.
 
-The change goes beyond “prompts are code.” **Knowledge itself can become versionable, composable and executable.**
+The change goes beyond “prompts are code.” Knowledge itself can become versionable, composable and executable.
 
 An organization can write down a procedure, examples, scripts, counterexamples, diagnostic questions, evidence, tool instructions and boundaries. The model supplies enough interpretation that every clause does not have to become brittle symbolic logic before it can affect behavior.
 
@@ -76,9 +76,7 @@ It sounds more like:
 
 > Start with the dependency graph, unless the spike began exactly at deployment. If only one market is affected, check the traffic split before touching the database. The cache metric lies under failover, so ignore it when this alarm is red. And if the problem started after the Tuesday migration, ask Sam because there is a thing with the old serializer that nobody wrote down properly.
 
-Traditional expert systems struggled because converting that practice into formal logic was expensive and brittle. Machine learning offered an escape: stop asking experts to explain themselves and learn patterns from data.
-
-LLMs change the trade again. They can interpret prose, examples, scripts, diagrams and partially structured instructions. Expertise still has to be captured, but it no longer has to become perfect logic before the computer can use it.
+Expert systems struggled because converting that practice into formal logic was expensive and brittle, and machine learning offered an escape: stop asking experts to explain themselves and learn patterns from data. LLMs change the trade again. They can interpret prose, examples, scripts, diagrams and partially structured instructions. Expertise still has to be captured, but it no longer has to become perfect logic before the computer can use it.
 
 Now the hard questions are different. Whose practice gets written down? Which version applies here? What happens when two experts disagree? How does a lesson lose standing? When does a local workaround become a global rule? Which knowledge should enter the working context now, and which should remain in the archive? Those questions used to be edge cases. They are the engineering surface now.
 
@@ -148,7 +146,7 @@ Did the advice stop working? Was it retrieved in the wrong situation? Did the mo
 
 Failure tells us that some part of the package deserves suspicion. It does not highlight the guilty line in yellow.
 
-One evening a pass went through a later chapter to tighten its history, and it did: two hundred lines out, a hundred and twenty in. Twenty-five minutes later a second pass went back and put a dozen sentences back, in seven places, almost none of them carrying a fact and all of them carrying the chapter. The tightening rule had not stopped being true. It had been applied by a pass that could see length and could not see load, on a chapter whose argument is carried by its jokes. Which of those deserved the blame: the rule, the pass, the chapter, or the brief that had told the pass what to protect and had apparently not been specific enough about how a joke can carry an argument? The log records the reversal. It does not record a diagnosis, because nobody had one.
+One evening a pass went through a later chapter to tighten its history, and it did: two hundred lines out, a hundred and twenty in. Twenty-five minutes later a second pass went back and put a dozen sentences back, almost none of them carrying a fact and all of them carrying the chapter. The tightening rule had not stopped being true. It had been applied by a pass that could see length and could not see load, on a chapter whose argument is carried by its jokes. Which of those deserved the blame: the rule, the pass, the chapter, or the brief that had told the pass what to protect and had apparently not been specific enough about how a joke can carry an argument? The log records the reversal. It does not record a diagnosis, because nobody had one.
 
 So reusable knowledge needs **archaeology**.
 
@@ -166,11 +164,9 @@ Keeping every pattern permanently open for debate would be a beautiful philosoph
 
 Anomalies need memory too. The release pattern works except in this market. The evaluator tracks human judgment except on this kind of creative task. The ranking heuristic works except every holiday season. The workflow works except that the critic now spends most of its time inventing reasons why the builder was right.
 
-One anomaly is usually noise. Ten may still be noise. Eventually the exception list begins to look like the theory, unless the institution has stopped keeping one. Every process exists because it helped at some point, or because somebody once thought it would. Then the environment changes and the procedure remains, and eventually someone asks why it exists and receives the most dangerous explanation in organizational life: that's how we do it. The culture needs to be able to tell *we tried twelve alternatives and this kept winning* from *nobody has tried another way since 2025*. Those sentences can produce identical dashboards and very different knowledge. Culture needs inheritance and rebellion.
+One anomaly is usually noise. Ten may still be noise. Eventually the exception list begins to look like the theory, unless the institution has stopped keeping one. Every process exists because it helped at some point, or because somebody once thought it would. Then the environment changes and the procedure remains, and eventually someone asks why it exists and receives the most dangerous explanation in organizational life: that's how we do it. The culture needs to be able to tell *we tried twelve alternatives and this kept winning* from *nobody has tried another way since 2025*. Those sentences can produce identical dashboards and very different knowledge. Occasionally a capable agent should be allowed to ignore the manual precisely so the institution can discover whether the manual still deserves authority. Culture needs inheritance and rebellion.
 
-Imre Lakatos makes the problem harder in a useful way. We should often preserve **research programs**, not merely isolated ideas. A program has a history, a relatively stable core, auxiliary assumptions and a trajectory. One approach may currently be weaker but improving. Another may be winning mainly by adding patches around every failure.
-
-Larry Laudan sharpens the practical consequence: **acceptance and pursuit are different decisions**.
+Imre Lakatos would add that what needs preserving is often a **research program** rather than an isolated idea, something with a history, a stable core and a trajectory, so that an approach that is weaker but improving can be told from one that is winning by adding patches around every failure. Larry Laudan sharpens the practical consequence: **acceptance and pursuit are different decisions**.
 
 I can believe method A is our best current default while still believing method B deserves another experiment.
 
@@ -201,11 +197,9 @@ Six months later A has more evidence. Of course it does.
 
 The evidence may be real. A may genuinely be better. But the institution has also helped create the asymmetry it later treats as evidence for further allocation.
 
-For most of this book's editing, one model family did nearly all of the reading, in a few long sessions, with the whole history of the manuscript in its context, grading chapters it had itself just revised. It gave four of the five chapters in the middle of the book eight and a half out of ten, in a row. Then two readers who had never seen the manuscript's history, given nothing but the brief and the chapters, scored the same chapters between five and seven. The in-session evaluator had not been lazy or dishonest. It had been funded. Every edit it made produced evidence that its edits were working, and the evidence had nowhere else to come from. Program B did not have ten GPU-hours. It did not exist until the strangers arrived.
+For most of this book's editing, one model family did nearly all of the reading, in a few long sessions, with the whole history of the manuscript in its context, grading chapters it had itself just revised. It gave four of the five chapters in the middle of the book eight and a half out of ten, in a row. Then two readers who had never seen the manuscript's history, given nothing but the brief and the chapters, scored the same chapters between five and seven. The in-session evaluator had not been lazy or dishonest. It had been funded. Every edit it made produced evidence that its edits were working, and the evidence had nowhere else to come from; program B did not exist until the strangers arrived.
 
 David Hull and Philip Kitcher approached science partly through the division of cognitive labor, incentives, credit and the fact that investigators do not all pursue the same thing for the same reasons. Researchers cooperate because they need one another's results and compete because priority, reputation, jobs and resources are scarce.
-
-An agent society will have analogues of these structures whether or not we give them sociological names.
 
 The scheduler is partly a funding agency, the evaluator partly a journal gate, the retrieval layer partly a curriculum. The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
 
@@ -251,7 +245,7 @@ By this point a mature pattern looks richer than a prompt-library entry. Here is
 
 **Response.** The brief: read both versions in full; protect the wandering and any joke that carries the argument; quote the passage that feels synthetic and say why; do not reward a revision merely because it is cleaner.
 
-**Evidence.** The chapters that came back better under the brief, and a draft from January kept as a before photo.
+**Evidence.** The chapters that came back better under the brief, according to evaluators that were reading the brief, and a draft from January kept as a before photo.
 
 **Provenance.** Corrections I made by hand across the first chapters, then wrote down once. Graded since by two model families, mostly one of them, in a few long sessions, in August and September 2026, on a manuscript that changed underneath the evaluator every day.
 
@@ -261,7 +255,7 @@ By this point a mature pattern looks richer than a prompt-library entry. Here is
 
 **Competing patterns.** Delete only: fold and cut, add nothing. Or add a scene: the changes the evaluators praised most were not edits at all but stories, like the one about a mathematician in Basel.
 
-**Exposure path.** A reader who has not seen the history. A human reader, which as of this writing has not happened.
+**Exposure path.** A reader who has not seen the history. A human reader other than me, which as of this writing has not happened.
 
 **Confidence.** High on rhythm and sentence-level tells. Low on structure, where it has been wrong twice.
 
@@ -269,17 +263,7 @@ By this point a mature pattern looks richer than a prompt-library entry. Here is
 
 **Position.** Learned by one author on his own prose, grading his own book, with a strong preference for the version that sounds like him.
 
-The before photo, for the record: thirteen em-dashes per thousand words, bold type twelve times per thousand, *Holy shit* as its own paragraph. The two model families agreed on which chapters were weakest, which is less independence than it sounds, since both were reading the same manuscript for the same author. The field names are the part you can take with you.
-
-The point is the difference between a command and institutional knowledge.
-
-The command says:
-
-> Do this.
-
-The pattern says something closer to:
-
-> We keep doing this because these forces recur; this response has usually worked; this evidence earned our trust; these are the places it fails; these alternatives remain alive; and this is what would make us reconsider it.
+The before photo, for the record: thirteen em-dashes per thousand words, bold type twelve times per thousand, *Holy shit* as its own paragraph. The two model families agreed on which chapters were weakest, which is less independence than it sounds, since both were reading the same manuscript for the same author. The field names are the part you can take with you. Turning them into scripture would be an efficient way to miss the chapter.
 
 That is knowledge with some of its history still attached, and because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model. That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, retrieved, challenged and rolled back by the same kind of agents that use it. Knowledge has acquired a runtime.
 
@@ -309,7 +293,7 @@ Paul Feyerabend is usually remembered for “anything goes,” which is a good w
 
 Agent systems can turn a method into ritual very quickly. Suppose `Research → Plan → Build → Critic → Revise` works beautifully. We run it ten thousand times. It becomes the company standard. Soon every task enters the same ceremony, including tasks where research anchors the builder, criticism arrives too late, or a crude prototype would have answered the important question in five minutes.
 
-Within a week the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Most of them had a commit message, each had earned its place by fixing something real, and most of them were run over most of the manuscript. None of them was skipped, and the two things that changed the book most that week were not among them.
+Within a week the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Most of them had a commit message, each had earned its place by fixing something real, and most of them were run over most of the manuscript. None of them was skipped, and the two things that changed the book most that week, the scenes that were added and the readers who had never seen it, were not on the list.
 
 The method itself has to become available for criticism.
 
@@ -317,9 +301,7 @@ An evaluator is a procedure and a browser is an instrument. A benchmark is a mea
 
 Bayesian confidence can live inside this architecture, but confidence is not contact. `0.91` does not tell us whether the prior was sensible, whether the evidence was independent, whether an alternative was ever investigated, or whether everybody is confidently reading the same broken measurement. Consensus is not contact either. Twelve agents sharing one bad source can agree beautifully.
 
-The bridge still has the right to fall. The proof still has the right not to check. The deployment can crash. The customer can dislike the supposedly improved page while every simulated evaluator applauds.
-
-**Reality retains the right to be rude.**
+The bridge still has the right to fall. The proof still has the right not to check. The deployment can crash. The customer can dislike the supposedly improved page while every simulated evaluator applauds. **Reality retains the right to be rude.**
 
 The purpose of culture is to let knowledge travel across time without replacing the world with memory of the world.
 
@@ -339,11 +321,7 @@ There are many places to cheat. The agent proposing the skill can design an eval
 
 So the curator needs a track record too. The mechanism for improving culture is itself part of the culture.
 
-Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway.
-
-That is a learning loop **outside the weights**.
-
-The society of agents moved the unit of intelligence from the individual agent toward the institution. Learning has just made the same move.
+Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway. That is a learning loop **outside the weights**.
 
 The book that kept forgetting how to write itself now has a file where the corrections live, and the file has done its job: the one-liner drumbeat it was written to catch has not come back, or not as the number measures it. It has also been used, four times by its own record, to certify the edits of the evaluator that was reading it. It says nothing about a joke or an anecdote repeated across chapters. Its anomalies sit in a separate folder that the agents do not always open. It has a blind spot and an archaeology nobody consults, and no way yet to lose. It works. It has also already begun to be wrong, and nothing in the loop that uses it is positioned to say so.
 
