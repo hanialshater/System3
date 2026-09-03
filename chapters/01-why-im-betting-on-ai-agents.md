@@ -136,7 +136,7 @@ Agentic systems need the same distinction. I think of that surrounding structure
 
 Then, where those conditions are strong enough, let go of decision-level control.
 
-This is easy to say and harder to design because selection pressure is literal-minded. Systems get good at what survives, which is not necessarily what we meant. Optimize engagement and perhaps anger survives. Optimize a benchmark and eventually somebody finds a way to win the benchmark that makes everyone involved regret inventing benchmarks. The environment is not scenery around the agent; it is part of the mechanism deciding which behaviors persist.
+This is easy to say and harder to design because selection pressure is literal-minded. Systems get good at what survives, which is not the same thing as what we meant. Optimize engagement and perhaps anger survives. Optimize a benchmark and eventually somebody finds a way to win the benchmark that makes everyone involved regret inventing benchmarks. The environment is not scenery around the agent; it is part of the mechanism deciding which behaviors persist.
 
 Complexity people have a phrase I both love and distrust: **the edge of chaos**. I wouldn't turn it into a law of intelligence, and there is no little dial in the interface labeled CHAOS. But the intuition is useful: too much control removes the reason for autonomy; too little control gives chaos an API key.
 
@@ -180,7 +180,7 @@ No CEO understands every decision in a large company. No scientist personally ve
 
 Complexity has already escaped individual specification. We deal with it through abstraction, institutions, feedback loops, delegation and the ability—imperfect but important—to intervene when things go wrong. AI gives us another primitive for doing this.
 
-That does not mean the answer is simply to trust the agent. My bet is narrower than that:
+The answer is not simply to trust the agent. My bet is narrower than that:
 
 **I'm betting on systems capable of surprising us because there are problems where we can recognize a better outcome far more easily than we can specify the path that leads to it.**
 

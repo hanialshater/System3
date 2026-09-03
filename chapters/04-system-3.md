@@ -102,7 +102,7 @@ What usually does not come back is the archaeology. Which part rests on repeated
 
 The conclusion survives. Much of the structure that earned it trust does not.
 
-This is what I mean by saying an LLM's knowledge is **epistemologically flat**. I do not mean every concept is represented identically inside the network; obviously it is not. The flatness appears at the interface between **claim and justification**.
+This is what I mean by saying an LLM's knowledge is **epistemologically flat**. The flatness appears at the interface between **claim and justification**.
 
 A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel in equally polished English.
 

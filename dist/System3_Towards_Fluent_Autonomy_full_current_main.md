@@ -168,7 +168,7 @@ Agentic systems need the same distinction. I think of that surrounding structure
 
 Then, where those conditions are strong enough, let go of decision-level control.
 
-This is easy to say and harder to design because selection pressure is literal-minded. Systems get good at what survives, which is not necessarily what we meant. Optimize engagement and perhaps anger survives. Optimize a benchmark and eventually somebody finds a way to win the benchmark that makes everyone involved regret inventing benchmarks. The environment is not scenery around the agent; it is part of the mechanism deciding which behaviors persist.
+This is easy to say and harder to design because selection pressure is literal-minded. Systems get good at what survives, which is not the same thing as what we meant. Optimize engagement and perhaps anger survives. Optimize a benchmark and eventually somebody finds a way to win the benchmark that makes everyone involved regret inventing benchmarks. The environment is not scenery around the agent; it is part of the mechanism deciding which behaviors persist.
 
 Complexity people have a phrase I both love and distrust: **the edge of chaos**. I wouldn't turn it into a law of intelligence, and there is no little dial in the interface labeled CHAOS. But the intuition is useful: too much control removes the reason for autonomy; too little control gives chaos an API key.
 
@@ -212,7 +212,7 @@ No CEO understands every decision in a large company. No scientist personally ve
 
 Complexity has already escaped individual specification. We deal with it through abstraction, institutions, feedback loops, delegation and the ability—imperfect but important—to intervene when things go wrong. AI gives us another primitive for doing this.
 
-That does not mean the answer is simply to trust the agent. My bet is narrower than that:
+The answer is not simply to trust the agent. My bet is narrower than that:
 
 **I'm betting on systems capable of surprising us because there are problems where we can recognize a better outcome far more easily than we can specify the path that leads to it.**
 
@@ -728,7 +728,7 @@ Then the bug crossed three files and context itself became a job. Paste one clas
 
 A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
 
-We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not necessarily help.
+We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
 Software-engineering benchmarks exposed the same gap. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
 
@@ -804,7 +804,7 @@ The Merge Sort demo made this even clearer because there was almost no business 
 
 Technically, it was fine. Pedagogically, it could still be terrible.
 
-Watching bars move does not necessarily tell a beginner why dividing the problem helps. So perhaps we try a recursion tree. The tree makes the structure visible, but now the supposedly simple sorting algorithm resembles the organizational chart of a German corporation. Maybe we show the tree and array together. Perhaps that creates too much cognitive load. Maybe the problem is not the representation at all; the learner understands splitting perfectly well but has no idea why merging makes the whole trick useful.
+Watching bars move does not tell a beginner why dividing the problem helps. So perhaps we try a recursion tree. The tree makes the structure visible, but now the supposedly simple sorting algorithm resembles the organizational chart of a German corporation. Maybe we show the tree and array together. Perhaps that creates too much cognitive load. Maybe the problem is not the representation at all; the learner understands splitting perfectly well but has no idea why merging makes the whole trick useful.
 
 There is no compiler error that tells me which diagnosis is right.
 
@@ -970,7 +970,7 @@ Why should interaction receive fifteen percent? Is more interaction always bette
 
 A metric forces me to commit to an idea of “good” before the search has taught me very much about the problem.
 
-This is not an argument against metrics. If I care about latency, measure latency. If the code must pass a test, run the test. Hard measurements are wonderful when what we can measure is close to what we care about.
+Metrics are not the enemy. If I care about latency, measure latency. If the code must pass a test, run the test. Hard measurements are wonderful when what we can measure is close to what we care about.
 
 The trouble begins when a rich objective is still poorly understood and we compress it anyway because optimization wants a number.
 
@@ -1126,7 +1126,7 @@ Five copies of the same model given the same context and asked to wear five hats
 
 Sometimes the judges should see different things.
 
-The beginner should use the artifact before reading the builder's explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not necessarily need to know which branch is currently winning.
+The beginner should use the artifact before reading the builder's explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not need to know which branch is currently winning.
 
 This became the **Isolation Principle**: preserve enough separation that independent pressure remains informative.
 
@@ -1416,7 +1416,7 @@ What usually does not come back is the archaeology. Which part rests on repeated
 
 The conclusion survives. Much of the structure that earned it trust does not.
 
-This is what I mean by saying an LLM's knowledge is **epistemologically flat**. I do not mean every concept is represented identically inside the network; obviously it is not. The flatness appears at the interface between **claim and justification**.
+This is what I mean by saying an LLM's knowledge is **epistemologically flat**. The flatness appears at the interface between **claim and justification**.
 
 A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel in equally polished English.
 
@@ -2109,7 +2109,7 @@ Accumulated knowledge eventually destroys the world of the universal expert.
 
 Newton was extraordinary. He transformed mechanics and celestial theory, contributed profoundly to optics and mathematics, and ranged across subjects with a seriousness that feels almost fictional today.
 
-In January 1697 he was running the Royal Mint, chasing counterfeiters and recoining the currency, when a problem arrived from Basel. Johann Bernoulli had challenged the mathematicians of Europe to find the curve along which a bead slides fastest between two points, and had extended the deadline partly, it seems, in the hope of embarrassing Newton. Newton came home at four in the afternoon, solved it before going to bed, and sent the answer to the Royal Society without his name on it. Bernoulli recognized the author anyway. *Tanquam ex ungue leonem*: as the lion by its claw.
+In January 1697 he was running the Royal Mint, chasing counterfeiters and recoining the currency, when a problem arrived from Basel. Johann Bernoulli had challenged the mathematicians of Europe to find the curve along which a bead slides fastest between two points, and had extended the deadline, it seems, in the hope of embarrassing Newton. Newton came home at four in the afternoon, solved it before going to bed, and sent the answer to the Royal Society without his name on it. Bernoulli recognized the author anyway. *Tanquam ex ungue leonem*: as the lion by its claw.
 
 The story is usually told as a story about Newton. I think the more important part is that Bernoulli's question could reach Newton at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight, published and attributed within weeks, and the attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Most of that machinery had not existed a century earlier.
 
@@ -2117,7 +2117,7 @@ Even the lion becomes less solitary when you zoom out. He inherited astronomical
 
 Genius mattered enormously. So did the network that allowed genius to begin from accumulated work rather than from dirt.
 
-Then scientific success made the network more necessary. Laboratories and disciplines specialized. Experimental techniques required training. Journals multiplied. Instruments became more complicated. Fields developed technical languages that excellent researchers next door did not automatically understand.
+Then scientific success made the network more necessary. Laboratories and disciplines specialized. Experimental techniques required training. Journals multiplied. Instruments became more complicated. Fields developed technical languages that excellent researchers next door could not read without help.
 
 Science became more powerful by making scientists less interchangeable.
 
@@ -2301,7 +2301,7 @@ Now the hard questions are different. Whose practice gets written down? Which ve
 
 Agent systems were already moving in this direction. Repository instructions, `AGENTS.md`, skills, tool descriptions and context engineering all treat useful procedural knowledge as something external to the model but available to it at runtime. A skill can survive the session that produced it. Increasingly the worker can change while the operating knowledge remains.
 
-That matters because frontier models already know Python, statistics and enormous amounts of public technical culture. What they do not automatically know is why *your* company refuses to deploy on Friday, which metric has been misleading everyone since 2023, why an elegant architecture in the wiki was abandoned, or why Alberto should never again be asked to investigate penguins. Organizations run on this layer of weirdness.
+That matters because frontier models already know Python, statistics and enormous amounts of public technical culture. What they arrive not knowing is why *your* company refuses to deploy on Friday, which metric has been misleading everyone since 2023, why an elegant architecture in the wiki was abandoned, or why Alberto should never again be asked to investigate penguins. Organizations run on this layer of weirdness.
 
 Some belongs in code. Some belongs in data, tools and evaluators. A surprising amount is **situated procedural knowledge**: what to check first, which shortcut is dangerous, which source has standing, when the normal process does not apply, and what “good” means here rather than on a generic benchmark.
 
@@ -3495,7 +3495,7 @@ And that matters because preferences themselves are often constructed during cho
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
-A decision assistant therefore should not always rush to recommendation. Sometimes the most useful thing it can do is make the choice **richer before making it easier**.
+A decision assistant therefore does not have to rush to a recommendation. Sometimes the most useful thing it can do is make the choice **richer before making it easier**.
 
 What alternatives have you not considered? Which assumptions drive the ranking? What would have to be true for option B to beat option A? Which unknown is actually decision-relevant? What would your future self regret not having investigated?
 
@@ -4020,7 +4020,7 @@ Based on what, exactly? Her IP address and our enthusiasm?
 
 The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not.
 
-This is what I mean by graceful degradation. Cold start is not necessarily an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case.
+This is what I mean by graceful degradation. Cold start is a state, not an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case.
 
 The architecture should know what it does not know. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
 
@@ -4232,7 +4232,7 @@ Training and evaluation were never the point of the job. They were the expensive
 
 I want to be fair to the threat. Parts of my job should disappear. Nobody needs a scientist to run the same evaluation for the fourth time, or to hand-tune a model that an automated search will tune better by Thursday. If the only thing left is deciding what the instrument may be trusted to see, that is a smaller job than the one I trained for. I think it is also a more important one, but I would say that, and a book that has spent eleven chapters insisting that claims be exposed to something capable of disagreeing should not exempt its author's job description.
 
-So one profession, at least, is in the middle of the argument this book has been circling. The expensive part became infrastructure, and the humans did not disappear. They moved up a level and found that the level above was mostly questions. I do not think that is a story about one job.
+So one profession, at least, is in the middle of the argument this book has been circling. The expensive part became infrastructure, and the humans did not disappear. They moved up a level and found that the level above was mostly questions. That is not a story about one job.
 
 What if AI does not merely answer more questions or automate more tasks, but steadily moves upward through the stack? It retrieves, ranks, composes, diagnoses the problem, chooses a strategy, builds the tool it needs and learns from the result.
 
@@ -4280,7 +4280,7 @@ Scarce capability shapes power.
 
 If I cannot build something myself, I need somebody who can. If one organization owns the machinery, data, expertise or distribution required to act, then access to that organization becomes valuable. We spend a surprising amount of human life acquiring permission from structures that exist partly because doing the thing directly is too expensive.
 
-AI changes some of those costs. This does not automatically flatten society. A technology that increases capacity can also increase concentration. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
+AI changes some of those costs. Cheaper capacity does not flatten society by itself; it can concentrate as easily as it distributes. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
 
 Still, something important happens when the cost curve moves. If an individual or small group can increasingly research, design, build, analyze and operate things that previously required a much larger institution, then some problems that looked like power problems may turn out to have been **capacity problems wearing a suit**.
 
@@ -4300,7 +4300,7 @@ The first was bespoke software. If you had enough money, somebody built the thin
 
 Then software became a service. This was an enormous improvement. Instead of every company building payroll, CRM, project management, analytics, communication and twenty other systems from scratch, somebody could build one good product and sell it to millions of people.
 
-But scale has a price. To serve millions of people, the product has to become somewhat generic. The strange needs of one team become feature requests. The software acquires configuration menus, plugins, workflows, permission systems and eventually an enterprise tier whose main feature is that somebody will answer your email.
+But scale has a price. To serve millions of people, the product has to become generic. The strange needs of one team become feature requests. The software acquires configuration menus, plugins, workflows, permission systems and eventually an enterprise tier whose main feature is that somebody will answer your email.
 
 Then organizations start adapting themselves to the software.
 
@@ -4312,7 +4312,7 @@ A scientist may construct a research environment around one question, use it int
 
 Some of these systems may serve a thousand people. Some ten. Some one. That used to sound economically absurd. It may become normal.
 
-This changes the human role in a way the automation story tends to miss. The future is not necessarily:
+This changes the human role in a way the automation story tends to miss. The future does not have to be:
 
 > humans build → AI builds → humans watch.
 
@@ -4350,7 +4350,7 @@ A person can acquire the vocabulary of five fields and mistake fluent traversal 
 
 You can acquire the map without any scars from the roads.
 
-I do not think the answer is to restore the friction artificially. The answer may be a different learning rhythm:
+The answer is not to restore the friction artificially. The answer may be a different learning rhythm:
 
 **Explore broadly. Descend selectively.**
 
@@ -4432,7 +4432,7 @@ Gradient descent did not defeat ambiguity. **It made ambiguity computationally u
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that a camel lives in Croatia. System 3 brings verification back through another door.
 
-This is why I do not think the ideology vortex is a bug we eventually fix by choosing the winning epistemology. We need different modes for different jobs. Some claims deserve hard empirical boundaries. Some institutions need legitimate contest rather than a mathematically optimal answer. Some identities and commitments are constructed without therefore being fake.
+This is why the ideology vortex is not a bug we eventually fix by choosing the winning epistemology. We need different modes for different jobs. Some claims deserve hard empirical boundaries. Some institutions need legitimate contest rather than a mathematically optimal answer. Some identities and commitments are constructed without therefore being fake.
 
 The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment.
 
@@ -4504,7 +4504,7 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
-The alternative to employment is not necessarily leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
+The alternative to employment is not leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
 
 Status competition will not politely resign either. It may migrate from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 

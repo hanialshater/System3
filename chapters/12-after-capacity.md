@@ -12,7 +12,7 @@ Training and evaluation were never the point of the job. They were the expensive
 
 I want to be fair to the threat. Parts of my job should disappear. Nobody needs a scientist to run the same evaluation for the fourth time, or to hand-tune a model that an automated search will tune better by Thursday. If the only thing left is deciding what the instrument may be trusted to see, that is a smaller job than the one I trained for. I think it is also a more important one, but I would say that, and a book that has spent eleven chapters insisting that claims be exposed to something capable of disagreeing should not exempt its author's job description.
 
-So one profession, at least, is in the middle of the argument this book has been circling. The expensive part became infrastructure, and the humans did not disappear. They moved up a level and found that the level above was mostly questions. I do not think that is a story about one job.
+So one profession, at least, is in the middle of the argument this book has been circling. The expensive part became infrastructure, and the humans did not disappear. They moved up a level and found that the level above was mostly questions. That is not a story about one job.
 
 What if AI does not merely answer more questions or automate more tasks, but steadily moves upward through the stack? It retrieves, ranks, composes, diagnoses the problem, chooses a strategy, builds the tool it needs and learns from the result.
 
@@ -60,7 +60,7 @@ Scarce capability shapes power.
 
 If I cannot build something myself, I need somebody who can. If one organization owns the machinery, data, expertise or distribution required to act, then access to that organization becomes valuable. We spend a surprising amount of human life acquiring permission from structures that exist partly because doing the thing directly is too expensive.
 
-AI changes some of those costs. This does not automatically flatten society. A technology that increases capacity can also increase concentration. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
+AI changes some of those costs. Cheaper capacity does not flatten society by itself; it can concentrate as easily as it distributes. The company with the best models, compute, data, distribution and capital may gain more power, not less. Cheap software can empower a teenager in Amman and a surveillance state at the same time. Capability has never come with an ethical direction preinstalled.
 
 Still, something important happens when the cost curve moves. If an individual or small group can increasingly research, design, build, analyze and operate things that previously required a much larger institution, then some problems that looked like power problems may turn out to have been **capacity problems wearing a suit**.
 
@@ -80,7 +80,7 @@ The first was bespoke software. If you had enough money, somebody built the thin
 
 Then software became a service. This was an enormous improvement. Instead of every company building payroll, CRM, project management, analytics, communication and twenty other systems from scratch, somebody could build one good product and sell it to millions of people.
 
-But scale has a price. To serve millions of people, the product has to become somewhat generic. The strange needs of one team become feature requests. The software acquires configuration menus, plugins, workflows, permission systems and eventually an enterprise tier whose main feature is that somebody will answer your email.
+But scale has a price. To serve millions of people, the product has to become generic. The strange needs of one team become feature requests. The software acquires configuration menus, plugins, workflows, permission systems and eventually an enterprise tier whose main feature is that somebody will answer your email.
 
 Then organizations start adapting themselves to the software.
 
@@ -92,7 +92,7 @@ A scientist may construct a research environment around one question, use it int
 
 Some of these systems may serve a thousand people. Some ten. Some one. That used to sound economically absurd. It may become normal.
 
-This changes the human role in a way the automation story tends to miss. The future is not necessarily:
+This changes the human role in a way the automation story tends to miss. The future does not have to be:
 
 > humans build → AI builds → humans watch.
 
@@ -130,7 +130,7 @@ A person can acquire the vocabulary of five fields and mistake fluent traversal 
 
 You can acquire the map without any scars from the roads.
 
-I do not think the answer is to restore the friction artificially. The answer may be a different learning rhythm:
+The answer is not to restore the friction artificially. The answer may be a different learning rhythm:
 
 **Explore broadly. Descend selectively.**
 
@@ -212,7 +212,7 @@ Gradient descent did not defeat ambiguity. **It made ambiguity computationally u
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that a camel lives in Croatia. System 3 brings verification back through another door.
 
-This is why I do not think the ideology vortex is a bug we eventually fix by choosing the winning epistemology. We need different modes for different jobs. Some claims deserve hard empirical boundaries. Some institutions need legitimate contest rather than a mathematically optimal answer. Some identities and commitments are constructed without therefore being fake.
+This is why the ideology vortex is not a bug we eventually fix by choosing the winning epistemology. We need different modes for different jobs. Some claims deserve hard empirical boundaries. Some institutions need legitimate contest rather than a mathematically optimal answer. Some identities and commitments are constructed without therefore being fake.
 
 The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment.
 
@@ -284,7 +284,7 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
-The alternative to employment is not necessarily leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
+The alternative to employment is not leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
 
 Status competition will not politely resign either. It may migrate from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 

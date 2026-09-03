@@ -48,7 +48,7 @@ Then the bug crossed three files and context itself became a job. Paste one clas
 
 A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
 
-We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not necessarily help.
+We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
 Software-engineering benchmarks exposed the same gap. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
 
@@ -124,7 +124,7 @@ The Merge Sort demo made this even clearer because there was almost no business 
 
 Technically, it was fine. Pedagogically, it could still be terrible.
 
-Watching bars move does not necessarily tell a beginner why dividing the problem helps. So perhaps we try a recursion tree. The tree makes the structure visible, but now the supposedly simple sorting algorithm resembles the organizational chart of a German corporation. Maybe we show the tree and array together. Perhaps that creates too much cognitive load. Maybe the problem is not the representation at all; the learner understands splitting perfectly well but has no idea why merging makes the whole trick useful.
+Watching bars move does not tell a beginner why dividing the problem helps. So perhaps we try a recursion tree. The tree makes the structure visible, but now the supposedly simple sorting algorithm resembles the organizational chart of a German corporation. Maybe we show the tree and array together. Perhaps that creates too much cognitive load. Maybe the problem is not the representation at all; the learner understands splitting perfectly well but has no idea why merging makes the whole trick useful.
 
 There is no compiler error that tells me which diagnosis is right.
 
@@ -290,7 +290,7 @@ Why should interaction receive fifteen percent? Is more interaction always bette
 
 A metric forces me to commit to an idea of “good” before the search has taught me very much about the problem.
 
-This is not an argument against metrics. If I care about latency, measure latency. If the code must pass a test, run the test. Hard measurements are wonderful when what we can measure is close to what we care about.
+Metrics are not the enemy. If I care about latency, measure latency. If the code must pass a test, run the test. Hard measurements are wonderful when what we can measure is close to what we care about.
 
 The trouble begins when a rich objective is still poorly understood and we compress it anyway because optimization wants a number.
 
@@ -446,7 +446,7 @@ Five copies of the same model given the same context and asked to wear five hats
 
 Sometimes the judges should see different things.
 
-The beginner should use the artifact before reading the builder's explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not necessarily need to know which branch is currently winning.
+The beginner should use the artifact before reading the builder's explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not need to know which branch is currently winning.
 
 This became the **Isolation Principle**: preserve enough separation that independent pressure remains informative.
 
