@@ -14,7 +14,7 @@ If the system makes ten decisions and I inspect all ten, I am supervising it. If
 
 Norbert Wiener saw the shape of this problem before modern machine learning existed. In 1960, writing about the moral and technical consequences of automation, he warned about machines pursuing purposes that may differ from what their designers actually intended, especially when action becomes too fast or consequential for human correction to arrive in time. W. Ross Ashby's cybernetics gave the problem a language: a regulator needs enough variety to respond to the disturbances it is supposed to control. Conant and Ashby later sharpened that into a slogan-shaped theorem—a good regulator of a system must contain a model of that system.
 
-I do not want to turn a theorem from cybernetics into a bumper sticker about AI governance. The analogy is useful enough without pretending it proves more than it does. One tired human with a checklist is a low-bandwidth regulator for a system capable of producing an enormous variety of behavior.
+A theorem from cybernetics is not a bumper sticker about AI governance, and the analogy is useful enough without pretending it proves more than it does. One tired human with a checklist is a low-bandwidth regulator for a system capable of producing an enormous variety of behavior.
 
 The answer cannot simply be: watch harder.
 
@@ -42,7 +42,7 @@ Russell describes the desirable result as keeping the machine **coupled to the h
 
 I like that word more than “obedient.” Obedience imagines that the human already knows what to command and that the machine's job is to comply. Coupling says something more modest and more useful: new human information must remain capable of changing what the machine does.
 
-A correction should matter. A refusal should matter. A surprising consequence should matter. The machine should not optimize itself into a state where later evidence from the people it serves becomes irrelevant.
+A correction, a refusal, a surprising consequence: each should matter. The machine should not optimize itself into a state where later evidence from the people it serves becomes irrelevant.
 
 That gives us a principle for oversight before we have designed any oversight machinery:
 

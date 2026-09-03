@@ -204,7 +204,7 @@ Other experiments show that people can change moral judgments after receiving LL
 
 The goal therefore cannot be zero influence. That would make education impossible.
 
-Books influence me. Friends influence me. Teachers influence me. People close to me influence me. A good argument should change me if it reveals something true that I had ignored.
+Books, friends, teachers and the people closest to me all influence me. A good argument should change me if it reveals something true that I had ignored.
 
 The distinction I care about is between **helping me change through understanding** and changing me because the system has learned which psychological lever produces the easiest compliance.
 

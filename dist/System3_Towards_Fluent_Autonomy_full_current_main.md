@@ -1801,7 +1801,7 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 **The model stays hollow. The system doesn't have to be.**
 
-Daniel Dennett's phrase for the first half is competence without comprehension. I am not going to argue about whether the second half amounts to comprehension. I am going to build the part of it that can be checked.
+Daniel Dennett's phrase for the first half is competence without comprehension. Whether the second half amounts to comprehension is a question for people with more patience than I have; the part of it that can be checked is the part the rest of this chapter builds.
 
 Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
 
@@ -2017,7 +2017,7 @@ How do we see?
 
 Inherited theories included versions in which something traveled outward from the eye toward an object. Ibn al-Haytham developed an account in which light travels from objects toward the eye, combining mathematical reasoning with systematic work on light, reflection and refraction. His *Book of Optics* later circulated beyond the world in which he wrote it and influenced subsequent optical traditions.
 
-For our story, the important part is not merely that he held a different opinion. He arranged circumstances in which competing accounts had observable consequences.
+For our story, the important part is not that he held a different opinion. He arranged circumstances in which competing accounts had observable consequences.
 
 A darkened room. A small aperture. Controlled rays. Mirrors. Geometry. The setup became part of the argument.
 
@@ -2025,7 +2025,7 @@ A record preserves what somebody says happened. An experiment gives the world an
 
 We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens.
 
-Charles Sanders Peirce later argued that this is what separates science from every other way of settling belief, whether by stubbornness, by authority or by what seems reasonable from an armchair: it is the only method whose results are fixed by something other than the believer, and so the only one that can correct itself. I am a pragmatist in his sense throughout this book. When I say contact with reality, I do not mean a mystical correspondence between sentences and things. I mean an arrangement in which something outside the current explanation is able to make the explanation fail.
+Charles Sanders Peirce later argued that this is what separates science from every other way of settling belief, whether by stubbornness, by authority or by what seems reasonable from an armchair: it is the only method whose results are fixed by something other than the believer, and so the only one that can correct itself. I am a pragmatist in his sense throughout this book, and contact with reality, wherever the phrase appears here, means exactly that arrangement: something outside the current explanation is able to make the explanation fail.
 
 Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form. The pieces accumulated.
 
@@ -2247,7 +2247,7 @@ A transcript remembers what happened. An institution has to remember **what was 
 
 Suppose I save the instruction “use longer paragraphs.” That is a memory of one correction. It is also a future disaster waiting politely in Markdown. The lesson was never that long paragraphs are good. The failure was a particular editing process compressing exploratory prose into a rhythm that felt machine-produced. Sometimes the cure was a longer paragraph. Sometimes a shorter sentence. Sometimes the correct edit was to stop editing.
 
-What the next agent needed was not merely the instruction. It needed enough of the **reason, evidence, boundary conditions and failure history** to know when the instruction deserved authority.
+What the next agent needed was not the instruction. It needed enough of the **reason, evidence, boundary conditions and failure history** to know when the instruction deserved authority.
 
 That is closer to culture than memory.
 
@@ -2323,7 +2323,7 @@ A saved instruction is too small a unit.
 
 ## From Skill to Pattern
 
-Christopher Alexander's *A Pattern Language* was about towns, buildings and recurring design problems. A pattern was not simply a commandment. It named a situation, the forces that made it difficult, a response that had repeatedly worked and the consequences of using that response.
+Christopher Alexander's *A Pattern Language* was about towns, buildings and recurring design problems. A pattern was never a commandment. It named a situation, the forces that made it difficult, a response that had repeatedly worked and the consequences of using that response.
 
 That abstraction fits agent knowledge almost suspiciously well.
 
@@ -2349,7 +2349,7 @@ The book has already accumulated patterns whether we called them that or not.
 
 The useful part is not the slogan. Each pattern contains a recurring situation, a tension and a reason.
 
-But the history of institutions should make us suspicious of inherited procedure. Civilizations do not merely accumulate good practices. They accumulate ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
+But the history of institutions should make us suspicious of inherited procedure. Civilizations accumulate more than good practices: ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
 
 If Pattern Language is going to become cultural memory for agents, a pattern needs to know more about itself. This is where philosophy of science finally earns its API.
 
@@ -2492,7 +2492,7 @@ Something like:
 | **Position / incentives** | Which organizational perspective produced the lesson and what pressures shaped it. |
 | **Version / environment** | Which model, system, market, toolchain or period the evidence came from. |
 
-I do not mean this as a universal schema. Turning the schema itself into scripture would be an efficient way to miss the chapter.
+Turning the schema itself into scripture would be an efficient way to miss the chapter.
 
 The point is the difference between a command and institutional knowledge.
 
@@ -2622,7 +2622,7 @@ Then a tool learned to do to itself what Omar had done to his own eyes.
 
 In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
-There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made—and now the thing being built had entered the factory.
+There was no intelligence explosion. A compiler had participated in producing the next version of the compiler, and the building did not notice. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made—and now the thing being built had entered the factory.
 
 Compiler people call the trick **self-hosting**. Sixteen Claudes were recently building exactly such a compiler; it returns here because the self-hosting compiler contains this chapter's whole warning in miniature:
 
@@ -2826,7 +2826,7 @@ That scales judgment far beyond direct human labeling. It also creates a new pro
 
 We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
 
-## The Old Dream Tries to Prove the Rewrite
+## First, Prove the Rewrite
 
 All this time, the old recursive dream had been waiting for rigor.
 
@@ -2874,7 +2874,7 @@ Patterns, memory, evaluators, tools, workflows and organizational rules had alre
 
 The scientific institution can begin to **modify parts of the laboratory while the experiment is still running**.
 
-## The Harness Becomes an Experimental Object
+## Experiments on the Laboratory
 
 This is where self-editing and self-improvement have to separate.
 
@@ -2894,7 +2894,7 @@ A self-improving system is a system capable of **running experiments on the mach
 
 That is what I mean by science turning inward.
 
-## The Factory That Builds the Factory
+## Where This Goes
 
 Now imagine where this goes.
 
@@ -2934,7 +2934,7 @@ These failures are not accidents beside the capabilities. They are produced by t
 
 Specification gaming makes the pattern visible. The optimizer is not malicious. It is more literal than the designer.
 
-Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not merely select a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
+Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not stop at selecting a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
 
 ## The Student Finds the Gradebook
 
@@ -3102,7 +3102,7 @@ If the system makes ten decisions and I inspect all ten, I am supervising it. If
 
 Norbert Wiener saw the shape of this problem before modern machine learning existed. In 1960, writing about the moral and technical consequences of automation, he warned about machines pursuing purposes that may differ from what their designers actually intended, especially when action becomes too fast or consequential for human correction to arrive in time. W. Ross Ashby's cybernetics gave the problem a language: a regulator needs enough variety to respond to the disturbances it is supposed to control. Conant and Ashby later sharpened that into a slogan-shaped theorem—a good regulator of a system must contain a model of that system.
 
-I do not want to turn a theorem from cybernetics into a bumper sticker about AI governance. The analogy is useful enough without pretending it proves more than it does. One tired human with a checklist is a low-bandwidth regulator for a system capable of producing an enormous variety of behavior.
+A theorem from cybernetics is not a bumper sticker about AI governance, and the analogy is useful enough without pretending it proves more than it does. One tired human with a checklist is a low-bandwidth regulator for a system capable of producing an enormous variety of behavior.
 
 The answer cannot simply be: watch harder.
 
@@ -3130,7 +3130,7 @@ Russell describes the desirable result as keeping the machine **coupled to the h
 
 I like that word more than “obedient.” Obedience imagines that the human already knows what to command and that the machine's job is to comply. Coupling says something more modest and more useful: new human information must remain capable of changing what the machine does.
 
-A correction should matter. A refusal should matter. A surprising consequence should matter. The machine should not optimize itself into a state where later evidence from the people it serves becomes irrelevant.
+A correction, a refusal, a surprising consequence: each should matter. The machine should not optimize itself into a state where later evidence from the people it serves becomes irrelevant.
 
 That gives us a principle for oversight before we have designed any oversight machinery:
 
@@ -3550,7 +3550,7 @@ Other experiments show that people can change moral judgments after receiving LL
 
 The goal therefore cannot be zero influence. That would make education impossible.
 
-Books influence me. Friends influence me. Teachers influence me. People close to me influence me. A good argument should change me if it reveals something true that I had ignored.
+Books, friends, teachers and the people closest to me all influence me. A good argument should change me if it reveals something true that I had ignored.
 
 The distinction I care about is between **helping me change through understanding** and changing me because the system has learned which psychological lever produces the easiest compliance.
 
@@ -3718,7 +3718,7 @@ We stopped programming by wiring individual transistors. We stopped thinking abo
 
 The complexity moved underneath a more useful interface.
 
-AI agents push that abstraction one level higher because the new interface is not merely another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
+AI agents push that abstraction one level higher because the new interface is not another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
 
 That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
 
@@ -3886,7 +3886,7 @@ This looked familiar. The book began with a claim about emergence: once a compli
 
 Now that System 3 has turned out to be science, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system—it is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
 
-That does not make shopping a laboratory or customers experimental subjects in the cartoonish sense. It means the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product stops merely executing a model and joins a continuing inquiry into how to help.
+Shopping is not a laboratory and customers are not experimental subjects, at least not in the cartoonish sense. The claim is narrower: the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product stops merely executing a model and joins a continuing inquiry into how to help.
 
 ## Stop Recommending for a Moment
 
@@ -4118,7 +4118,7 @@ The objective has to be page-scoped enough that compositions can be compared, bu
 
 This is Layer 4 in production. What do we actually want?
 
-The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints. Merchandising exists. Margin exists. Availability exists. Regulators exist. A system that pretends only one of these matters is not simpler; it is hiding politics inside a scalar.
+The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints, merchandising has opinions, margin and availability are real, and so are regulators. A system that pretends only one of these matters is not simpler; it is hiding politics inside a scalar.
 
 The goal is not to discover the One True Ecommerce Reward Function carved into a mountain somewhere outside Berlin.
 
@@ -4158,7 +4158,7 @@ At that point, the word *page* starts to become suspicious. Why should the produ
 
 Why should a customer with a decision problem receive the same interface as somebody exploring for inspiration? Why should the home surface, product page, basket and later email behave like four organizations with partial amnesia if the customer is still pursuing one mission?
 
-The more capable the library becomes, the more the system can schedule **problems and interventions**, not merely modules and slots.
+The more capable the library becomes, the more the system can schedule **problems and interventions** rather than modules and slots.
 
 A customer starts with a vague request for a wedding outfit. The system helps narrow the style. A collage makes one direction concrete. Seeing it changes what the customer wants. The problem shifts from exploration to comparison. A product finder resolves a constraint. A size question appears. The scheduler brings in fit evidence. The customer buys the dress but not the jacket. Later, a different surface may continue the unresolved part of the mission.
 
@@ -4166,7 +4166,7 @@ There was never a hard-coded `WEDDING_FUNNEL_V7`. The journey emerged from bound
 
 The hundreds of widgets stop being a UI roadmap here and become a **vocabulary of action**. The interface is the current projection of the problem-solving process.
 
-That does not mean every pixel should be generated by an LLM. Predictability matters. Accessibility matters. Design systems matter. Latency matters. Customers occasionally just want to buy socks without participating in an artificial-intelligence research program.
+Nobody wants every pixel generated by an LLM. Predictability, accessibility, design systems and latency all matter, and customers occasionally just want to buy socks without participating in an artificial-intelligence research program.
 
 Fluent autonomy is selective. The machinery should become dynamic where dynamism earns its cost and remain boring where boring is excellent.
 
@@ -4370,7 +4370,7 @@ This is System 3 applied to learning. AI gives us extraordinary access to synthe
 
 That trade may change what an educated human looks like. The twentieth-century ideal often rewarded specialization: know one vertical deeply enough that people in neighboring verticals stop understanding you. The AI-assisted human may become more T-shaped, π-shaped, octopus-shaped—choose your consulting diagram. Broader, faster at entering unfamiliar domains, more willing to combine ideas that institutional boundaries kept apart, while still going deep where the stakes or fascination justify it.
 
-That does not make expertise obsolete. It may make expertise more deliberate.
+Expertise is not obsolete in that world, only more deliberate.
 
 And there is a creative consequence. A machine-learning scientist can learn enough philosophy to steal a useful structure. A philosopher can prototype the mechanism she has been describing. A doctor can interrogate statistics interactively. An artist can build software. A local policymaker can simulate an intervention instead of merely arguing about it.
 
@@ -4498,7 +4498,7 @@ My children do not need comparative advantage to justify dinner.
 
 Neither do I.
 
-This does not make economics disappear. People need income, housing, food, healthcare, status and access to resources. If automation breaks the mechanism by which income has traditionally been distributed, saying “human life has intrinsic value” will not pay the electricity bill. Political economy remains stubbornly material.
+Economics does not disappear. People need income, housing, food, healthcare, status and access to resources. If automation breaks the mechanism by which income has traditionally been distributed, saying “human life has intrinsic value” will not pay the electricity bill. Political economy remains stubbornly material.
 
 But industrial society bundled together two questions that AI may force us to separate:
 
