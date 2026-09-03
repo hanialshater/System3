@@ -32,9 +32,9 @@ What the next agent needed was not merely the instruction. It needed enough of t
 
 That is closer to culture than memory.
 
-The last thing the society of agents told us was that **System 3 is science**. That named the solution. This chapter opens the machine.
+**System 3 is science.** That was the claim. The rest of this chapter is what happens when you try to write the claim down as software.
 
-Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself: theories that could explain anything, experiments that implicated several assumptions at once, paradigms that made research possible and then made alternatives hard to see, communities that confused consensus with independence, methods that became rituals, and institutions whose allocation of attention helped determine what could become known.
+Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself, and every one of those failure modes now has a filename.
 
 If System 3 is going to borrow from science, those arguments are not decorative philosophy. They are design reviews written a few decades or centuries early.
 
@@ -88,9 +88,7 @@ Traditional expert systems struggled because converting that practice into forma
 
 LLMs change the trade again. They can interpret prose, examples, scripts, diagrams and partially structured instructions. Expertise still has to be captured, but it no longer has to become perfect logic before the computer can use it.
 
-Now the hard questions are different. Whose practice gets written down? Which version applies here? What happens when two experts disagree? How does a lesson lose standing? When does a local workaround become a global rule? Which knowledge should enter the working context now, and which should remain in the archive?
-
-Those are no longer edge cases. They are the engineering surface.
+Now the hard questions are different. Whose practice gets written down? Which version applies here? What happens when two experts disagree? How does a lesson lose standing? When does a local workaround become a global rule? Which knowledge should enter the working context now, and which should remain in the archive? Those questions used to be edge cases. They are the engineering surface now.
 
 Agent systems were already moving in this direction. Repository instructions, `AGENTS.md`, skills, tool descriptions and context engineering all treat useful procedural knowledge as something external to the model but available to it at runtime. A skill can survive the session that produced it. Increasingly the worker can change while the operating knowledge remains.
 
@@ -223,7 +221,7 @@ The scheduler is partly a funding agency. The memory system is partly an archive
 
 And the organization can remember its incentives just as effectively as it remembers its wisdom. A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.” That is culture too.
 
-**Local alignment does not compose automatically. Neither does local truth.**
+Local alignment does not compose automatically, and neither does local truth.
 
 If we build persistent agent societies without thinking about this layer, we will not escape institutional power. We will automate it and give it better dashboards.
 
@@ -289,19 +287,11 @@ The pattern says something closer to:
 
 That is knowledge with some of its history still attached. And because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model.
 
-That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, scoped, retrieved, executed, challenged, rolled back and eventually modified by the same kind of agents that use it.
-
-Knowledge has acquired a runtime.
+That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, scoped, retrieved, executed, challenged, rolled back and eventually modified by the same kind of agents that use it. Knowledge has acquired a runtime.
 
 ## Knowing Something Is Not Knowing When to Remember It
 
-Now imagine ten excellent patterns.
-
-Easy.
-
-Imagine ten thousand.
-
-The agent cannot read the organization before every action. Even if a context window technically fits everything, loading every policy, postmortem, experiment, preference and historical argument into every task would solve forgetting by making thinking impossible.
+Now imagine ten excellent patterns. Easy. Imagine ten thousand. The agent cannot read the organization before every action. Even if a context window technically fits everything, loading every policy, postmortem, experiment, preference and historical argument into every task would solve forgetting by making thinking impossible.
 
 So a persistent institution has two memory problems:
 
@@ -319,9 +309,7 @@ Agent systems can fail more elegantly. They can store the lesson perfectly, embe
 
 Bad storage forgets by deletion. Bad retrieval forgets by attention.
 
-Once retrieval determines which inherited knowledge enters a decision, retrieval itself becomes an epistemic procedure. It needs evaluation. Does it repeatedly surface stale rules? Does it suppress alternatives? Does it confuse popularity with relevance? Does it preserve the result and discard the reason?
-
-The librarian is no longer merely finding books. The librarian is shaping thought.
+Once retrieval determines which inherited knowledge enters a decision, retrieval itself becomes an epistemic procedure. It needs evaluation. Does it repeatedly surface stale rules? Does it suppress alternatives? Does it confuse popularity with relevance? Does it preserve the result and discard the reason? A librarian who answers those questions badly is no longer finding books; she is shaping thought.
 
 ## The Librarian Is Also a Hypothesis
 
@@ -335,9 +323,7 @@ The method itself has to become available for criticism.
 
 An evaluator is a procedure. A browser is an instrument. Retrieval is a procedure for selecting evidence. A benchmark is a measurement system with a distribution and failure modes. A proof checker is extraordinarily authoritative inside its formal domain and completely useless for deciding whether the theorem matters. A simulated user is cheap perspective-taking and not a user.
 
-The institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working.
-
-The library needs criticism. So does the librarian.
+The institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working. The library needs criticism, and so does the librarian.
 
 Bayesian confidence can live inside this architecture, but confidence is not contact. `0.91` does not tell us whether the prior was sensible, whether the evidence was independent, whether an alternative was ever investigated, or whether everybody is confidently reading the same broken measurement.
 
@@ -359,9 +345,7 @@ Eventually someone asks why the process exists and receives the most dangerous e
 
 > That's how we do it.
 
-Executable culture closes the loop between memory and behavior. A pattern succeeds. Its confidence rises. More agents retrieve it. Alternatives get less traffic. The dominant pattern accumulates more evidence because it is dominant.
-
-Soon the institution has an impressive record proving the thing it stopped comparing against.
+Executable culture closes the loop between memory and behavior. A pattern succeeds. Its confidence rises. More agents retrieve it. Alternatives get less traffic. The dominant pattern accumulates more evidence because it is dominant, and soon the institution has a long record, all of it collected under an assumption it never went back to test.
 
 Patterns therefore need anomaly memory, versioning, local scope and competing alternatives. Some should decay. Some should expire when the environment changes. Some should be deliberately challenged after they become too comfortable. Occasionally a capable agent should be allowed to ignore the manual precisely so the institution can discover whether the manual still deserves authority.
 
@@ -393,11 +377,7 @@ There are many places to cheat. The agent proposing the skill can design an eval
 
 So the curator needs a track record too. The mechanism for improving culture is itself part of the culture.
 
-And now we cross an important line.
-
-Experience becomes knowledge. Knowledge becomes executable. Executable knowledge changes future behavior. Future behavior produces new experience.
-
-The model weights did not move. The institution learned anyway.
+And now we cross an important line. Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway.
 
 That is a learning loop **outside the weights**.
 
