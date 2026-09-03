@@ -84,7 +84,7 @@ A factual question may need one agent and a source. A difficult scientific claim
 
 The organization should be **as large as the uncertainty deserves and no larger**.
 
-The Society of Agents, Pattern Language and Scalable Oversight meet here. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
+This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
 What used to be a workflow diagram becomes part of runtime.
 
@@ -96,15 +96,9 @@ There is an easy mistake here. A fluent agent is not an agent that never asks qu
 
 Fluency means knowing **where friction belongs**.
 
-Rename two hundred temporary files according to a convention used every week for a year?
+Rename two hundred temporary files according to a convention used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
 
-Please do not wake me.
-
-Send €200,000 to an account we have never seen because an email said “urgent”?
-
-I suddenly enjoy friction.
-
-Layer 4 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
+The human's own learning adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
 If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance—it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
@@ -128,7 +122,7 @@ This is not fluency. It is opacity with good typography.
 
 The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-Those are trust chains. The instruments that read a model from the inside only added links to them. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
+Those are trust chains. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
 
 The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
 
@@ -162,9 +156,7 @@ The unit of interaction becomes closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is competent movement between autonomy and involvement.
-
-The system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
+Fluency is competent movement between autonomy and involvement: the system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 
 Control did not disappear. It found a better interface.
 
