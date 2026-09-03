@@ -167,3 +167,15 @@ Dimension changes: Connection between chapters 7 → 8.5 (45 numbered references
 Chapter changes: Ch6 8 → 8.5. Ch7 7.5 → 8.5 (Omar as spine, first-person beat, five punchlines folded, one heading merged; the "Learning to Learn" through "When the Test Starts Moving" stretch is still a tour). Ch8 8 → 8.5. Ch9 8 → 8.5. Ch10 7 → 7.5 (recap gone; still a bridge without a scene of its own). Others unchanged.
 
 Remaining ceiling, ranked: (1) Ch7's ~900-word catalogue stretch — one real scene from the circle-packing run would convert it; (2) Ch10 needs one scene that is not a recap; (3) Ch3's triple statement, fixable by rewriting two of the three into different images rather than cutting; (4) Ch13 as a publisher risk, unchanged and deliberately so.
+
+## Addendum 2 — 2026-09-03, after the Ch5 Bernoulli scene and the Ch12 cold open
+
+*Commits `468d57b`, `f9361b5`, `1dec550`. Same self-grading caveat as Addendum 1.*
+
+**Book overall: 8.8 → 8.9.** Total 64,095 words (+800 since the cold read, all additions). Body-text "Chapter N" references: 0 in every chapter. One-liner rates unchanged except Ch7 (38% → 35%) and Ch12 (34% → 33%). Three-beat slogan paragraphs 8 → 7.
+
+Dimension changes: Connection between chapters 8.5 → 9. The Ch11→Ch12 seam is now the strongest in the book: the store's closing question ("what happens to us when capacity itself changes") is answered first about the author's own profession before it widens. Core idea 9 (unchanged, but Ch12 now states something the book had not: Layer 4 at institutional scale, the question of what evidence is strong enough for an organization to change its mind). Memorability 9 (adds "ex ungue leonem" and the city-around-a-river image).
+
+Chapter changes: Ch5 9 (unchanged tier; the Newton section now has the scene its paragraph was describing abstractly, and the section is no longer the chapter's flattest stretch). Ch12 8.5 → 9 (recap opener replaced by a first-person cold open in the Ch5/Ch7/Ch11 class; the passage was audited for machine patterns after drafting and four were removed).
+
+Remaining ceiling, unchanged: (1) Ch7's catalogue stretch; (2) Ch10 without a scene of its own; (3) Ch3's triple statement; (4) Ch13 as publisher risk. Nothing in the last three passes touched these.
