@@ -45,3 +45,25 @@ Within the author's constraints (no material cut, no fireworks lost, earned one-
 ## 5. What the blind read changes about the overall estimate
 
 The in-session evaluator's post-fix scores for Chs 6–10 (8.5 / 8.5 / 8.5 / 8.5 / 7.5) were self-graded and optimistic. Averaging the two readers after this pass, a fair estimate for the middle five is roughly 7.5 / 7.5 / 6.5 / 7 / 6.5, and the book overall closer to **8.5** than to the 8.9 previously claimed. Chapter 8 is now the single chapter most in need of the author's own hand: one more scene from something the author actually watched, in "Reading the Model From the Inside" or "Then We Touched the Machinery," would move it more than any further editing can.
+
+## 6. Second blind read (Chs 8 and 10 only), after the fixes in §3
+
+A second fresh reader, same protocol, scored **Ch8 5 → 5** (arc 6, voice 4, discovery 3, human feel 4) and **Ch10 5 → 6** (arc 6, voice 6, discovery 5, human feel 5). It named as the best passage in each chapter the two paragraphs added earlier the same day from the author's already-reported material (the Merge Sort evaluator disagreement; the "cleaner and dead" first attempt), and it still identified several bridging sentences from the editing passes as stitches. Its short list was applied in a final commit: Ch8's roadmap sentence and "edge of what this chapter can solve" removed; the bold institution slogan folded into a sentence that names how amplification, debate and weak-to-strong each fail; the "strange lesson" blockquote and the arrow pipeline folded into prose; "A mature architecture should want both" merged; the hospital/compiler and Alberto stitches removed; Ch10's staged two-beat joke, the three consecutive closers, and three chapter-title stitches folded or de-labelled.
+
+Not applied from this reader: Ch8's bumper-sticker hedge and the J-space disclaimer (the author's technical-precision hedges, protected by the rubric), and the replacement of Ch10's framework paragraph with the concrete second attempt (no real trace exists to draw on).
+
+## 7. Final evaluation
+
+Three readers have now scored this manuscript: the in-session evaluator (biased upward by grading its own edits), and two blind readers (biased downward by having no book around the chapters they read: a cold reader of Chapter 8 alone does not have the camel, the coffee test or the sixteen Claudes, which is most of what makes the survey stretch bearable in sequence). Weighting the blind readers more:
+
+| Ch. | Estimate | Note |
+|----:|:-:|---|
+| 1–5 | 8.5 / 9 / 8 / 9.5 / 9 | unchanged; Ch5 gained the Bernoulli scene and Popper, Peirce and Zollman |
+| 6 | 7.5 | roll-call compressed, slogans folded; schema table stays by the author's choice |
+| 7 | 8 | Omar spine, coffee scene, machine-discovery lineage; still the longest survey, now told |
+| 8 | 6.5 | one real scene; the instrument tour remains, and only the author can add the second scene |
+| 9 | 7.5 | third CIRL explanation gone, pairs merged, no longer names the next chapter |
+| 10 | 7 | opens on a real failure; middle is still a manifesto |
+| 11–13 | 9 / 9 / 8.5 | Ch12 cold open; Ch13 unchanged and deliberately so |
+
+**Book: 8.5 / 10.** Honest, not the 8.9 previously claimed, and the difference is entirely Chapters 8 and 10. Ceiling after one more author pass on those two: 8.8–9.0. What that pass needs is not editing. It is one thing the author watched an oversight instrument do, and one account of what actually changed on the second attempt at "this chapter still feels like LLM writing."

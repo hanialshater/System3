@@ -3110,8 +3110,6 @@ The answer cannot simply be: watch harder.
 
 The question that actually needs answering is older than AI and much more embarrassing: how do you grade work you cannot do yourself?
 
-Every idea in this chapter is an attempt at that question, and each one fails somewhere specific enough to make the next one necessary.
-
 ## Stay Uncertain Enough to Listen
 
 Stuart Russell attacks the problem from a different direction.
@@ -3158,7 +3156,7 @@ The bottleneck has moved from producing answers toward **judging** them.
 
 Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
 
-The human does not become smarter; the institution around the human does. The hospital did the same thing with nurses, laboratories and radiologists, and the compiler project did it with GCC and progress files. Neither made anyone in the building cleverer.
+The human does not become smarter; the institution around the human does.
 
 ## Building a Stronger Judge
 
@@ -3176,9 +3174,7 @@ There is even hope of squeezing more out of **weak supervision itself**. Weak-to
 
 Constitutional AI moves scarce human input upward again. Rather than asking people to label every undesirable output, humans provide higher-level principles; models generate critiques, revisions and preference signals conditioned on those principles. A small amount of human normative input expands into a much larger amount of machine-generated supervision.
 
-These approaches make different assumptions and fail in different ways. But they share one architectural move:
-
-**scalable oversight is supervision becoming an institution.**
+These approaches make different assumptions and fail in different ways: amplification inherits whatever the helper gets wrong, debate rewards the more persuasive side, and weak-to-strong generalization can generalize the supervisor's mistakes as faithfully as its judgments. What they share is one architectural move: scalable oversight is supervision becoming an institution.
 
 The human cannot inspect everything, so the institution decides what should reach the human, how a problem should be decomposed, which objections should be surfaced, which intermediate steps deserve inspection and when uncertainty is important enough to ask for help.
 
@@ -3214,9 +3210,7 @@ That is almost unfairly useful, and fragile for exactly the same reason every ev
 
 So chain-of-thought acquires a safety property worth preserving: **monitorability**. Recent work has begun measuring how monitorability changes with scale, training and inference-time compute, while treating it as one layer of defense rather than an oracle into cognition.
 
-There is a strange lesson here:
-
-> **Do not destroy a useful oversight channel merely because you learned how to score it.**
+The strange lesson is not to destroy a useful oversight channel merely because you learned how to score it.
 
 But chain-of-thought is still text the model emits. What if we look below the text?
 
@@ -3262,11 +3256,7 @@ Representation-level **circuit breakers** take the defensive version seriously: 
 
 Anthropic's **persona vectors** extend internal monitoring and control toward broader behavioral dispositions such as sycophancy or hallucination. The **Assistant Axis** work makes intervention more state-dependent: rather than constantly pushing a fixed direction, activation capping can respond when internal state drifts outside a learned assistant-like region.
 
-This starts to look less like fine-tuning and more like a control system:
-
-**observe internal state → detect drift → intervene → inspect consequences → update the controller.**
-
-Wiener would recognize the shape. Alberto would recognize the problem underneath it: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
+This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
 
 The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth. We have not. We have built better instruments, and instruments were never the end of the trust chain.
 
@@ -3282,9 +3272,7 @@ Greenblatt and colleagues staged exactly this scenario in a programming setup: a
 
 I like this line of work because it removes a convenient assumption. The judge may not merely be weak. The defendant may know the judge is weak.
 
-Scalable oversight therefore needs both **alignment** and **control**. Alignment asks whether the system is trying to do the right thing. Control asks what we can still protect when we are not willing to assume that.
-
-A mature architecture should want both.
+Scalable oversight therefore needs both **alignment** and **control**. Alignment asks whether the system is trying to do the right thing. Control asks what we can still protect when we are not willing to assume that, and a mature architecture wants both.
 
 ## Nine Claudes Walk Into an Alignment Problem
 
@@ -3340,7 +3328,7 @@ The human cannot remain in every loop. **The human has to remain in the loop tha
 
 The system may generate tests, critiques and mitigations. It may discover internal representations, propose steering interventions and conduct large parts of alignment research itself. But the machinery deciding which evidence has standing, which failures matter, which trade-offs are acceptable and when the oversight regime itself should change needs a stronger trust chain than the machinery being judged.
 
-When research becomes cheap, evaluation becomes expensive, and when evaluation becomes automated, trust in the evaluator becomes the product. That is also the edge of what this chapter can solve.
+When research becomes cheap, evaluation becomes expensive, and when evaluation becomes automated, trust in the evaluator becomes the product.
 
 ## The Overseer Is Not Ground Truth
 
@@ -3782,7 +3770,7 @@ A factual question may need one agent and a source. A difficult scientific claim
 
 The organization should be **as large as the uncertainty deserves and no larger**.
 
-The Society of Agents, Pattern Language and Scalable Oversight meet here. Patterns tell the system which institutional shapes have worked before. System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
+This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
 What used to be a workflow diagram becomes part of runtime.
 
@@ -3794,15 +3782,9 @@ There is an easy mistake here. A fluent agent is not an agent that never asks qu
 
 Fluency means knowing **where friction belongs**.
 
-Rename two hundred temporary files according to a convention used every week for a year?
+Rename two hundred temporary files according to a convention used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
 
-Please do not wake me.
-
-Send €200,000 to an account we have never seen because an email said “urgent”?
-
-I suddenly enjoy friction.
-
-Layer 4 adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
+The human's own learning adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
 
 If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance—it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
@@ -3826,7 +3808,7 @@ This is not fluency. It is opacity with good typography.
 
 The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-Those are trust chains. The instruments that read a model from the inside only added links to them. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
+Those are trust chains. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
 
 The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
 
@@ -3860,9 +3842,7 @@ The unit of interaction becomes closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is competent movement between autonomy and involvement.
-
-The system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
+Fluency is competent movement between autonomy and involvement: the system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 
 Control did not disappear. It found a better interface.
 
