@@ -300,7 +300,7 @@ Accumulated knowledge eventually destroys the world of the universal expert.
 
 Newton was extraordinary. He transformed mechanics and celestial theory, contributed profoundly to optics and mathematics, and ranged across subjects with a seriousness that feels almost fictional today.
 
-In January 1697 he was running the Royal Mint, chasing counterfeiters and recoining the currency, when a problem arrived from Basel. Johann Bernoulli had challenged the mathematicians of Europe to find the curve along which a bead slides fastest between two points, and had extended the deadline partly, it seems, in the hope of embarrassing Newton. Newton came home at four in the afternoon, solved it before going to bed, and sent the answer to the Royal Society without his name on it. Bernoulli recognized the author anyway. *Tanquam ex ungue leonem*: as the lion by its claw.
+In January 1697 he was running the Royal Mint, chasing counterfeiters and recoining the currency, when a problem arrived from Basel. Johann Bernoulli had challenged the mathematicians of Europe to find the curve along which a bead slides fastest between two points, and had extended the deadline, it seems, in the hope of embarrassing Newton. Newton came home at four in the afternoon, solved it before going to bed, and sent the answer to the Royal Society without his name on it. Bernoulli recognized the author anyway. *Tanquam ex ungue leonem*: as the lion by its claw.
 
 The story is usually told as a story about Newton. I think the more important part is that Bernoulli's question could reach Newton at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight, published and attributed within weeks, and the attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Most of that machinery had not existed a century earlier.
 
@@ -308,7 +308,7 @@ Even the lion becomes less solitary when you zoom out. He inherited astronomical
 
 Genius mattered enormously. So did the network that allowed genius to begin from accumulated work rather than from dirt.
 
-Then scientific success made the network more necessary. Laboratories and disciplines specialized. Experimental techniques required training. Journals multiplied. Instruments became more complicated. Fields developed technical languages that excellent researchers next door did not automatically understand.
+Then scientific success made the network more necessary. Laboratories and disciplines specialized. Experimental techniques required training. Journals multiplied. Instruments became more complicated. Fields developed technical languages that excellent researchers next door could not read without help.
 
 Science became more powerful by making scientists less interchangeable.
 

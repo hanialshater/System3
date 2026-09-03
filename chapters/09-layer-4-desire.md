@@ -158,7 +158,7 @@ And that matters because preferences themselves are often constructed during cho
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
-A decision assistant therefore should not always rush to recommendation. Sometimes the most useful thing it can do is make the choice **richer before making it easier**.
+A decision assistant therefore does not have to rush to a recommendation. Sometimes the most useful thing it can do is make the choice **richer before making it easier**.
 
 What alternatives have you not considered? Which assumptions drive the ranking? What would have to be true for option B to beat option A? Which unknown is actually decision-relevant? What would your future self regret not having investigated?
 

@@ -170,7 +170,7 @@ Based on what, exactly? Her IP address and our enthusiasm?
 
 The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not.
 
-This is what I mean by graceful degradation. Cold start is not necessarily an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case.
+This is what I mean by graceful degradation. Cold start is a state, not an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case.
 
 The architecture should know what it does not know. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
 
