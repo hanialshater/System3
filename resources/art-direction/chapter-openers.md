@@ -170,8 +170,9 @@ One open algorithm book + one agent + the vortex is enough foreground vocabulary
 
 ---
 
-# Chapter 3 — Deep Mode
+# Chapter 3 — The Vibe Coder's Seat
 
+**Manuscript title:** *The Vibe Coder's Seat* (art working title was *Deep Mode*; Deep Mode is now the name of the layer, not the chapter)  
 **Subtitle:** *Beyond Algorithms: Agent Autonomy for Creative Problems*
 
 ## Core visual idea — The Room of Inquiry
@@ -329,8 +330,46 @@ Do not make this another heavy foreground desk scene immediately before Recursiv
 
 ---
 
-# Chapter 7A — Automatic Alignment Research
+# Chapter 7 — Recursive Self-Improvement
 
+**Subtitle:** *When Science Turns Inward* (manuscript; earlier art subtitle was *When the Scaffold Starts Editing Itself*)
+
+## Core visual idea — The Improver Becomes Editable
+
+The current self-repair robot communicates recursion quickly, but it risks suggesting the chapter is about a machine literally rebuilding its body / brain. The chapter's actual claim is subtler: prompts, memory, tools, workflows, harnesses and eventually the improvement machinery become editable.
+
+The strongest final metaphor is therefore a small agent using the **current scaffold / workshop platform to redesign the next scaffold above it**.
+
+A heavy sealed foundation / evaluator remains untouched below. That is the constitutional surface.
+
+An alternative that has since emerged and may be stronger: the **poolside reflection** composition (robot seated beside a headless human suit; in the water, the suit's reflection ends in the robot's head). It states self-reference in one glance and becomes richer after the chapter. If retained: neutral rather than smiling face, and note that it places a mirror image two chapters before the Layer 4 mirror.
+
+If the body-repair composition is retained for clarity, mature it:
+
+- neutral rather than smiling face;
+- less toy-like body language;
+- checklist reduced to a secondary prop;
+- the editable object should read as **machinery around the agent**, not “replace your own brain.”
+
+## Meaning
+
+Science starts experimenting on the machinery of science.
+
+## Avoid
+
+- singularity chrome;
+- sci-fi self-replication;
+- glowing brain swaps;
+- `return True` joke as the primary visual;
+- cute repair-shop illustration tone.
+
+**Status: reflection version is the current best; fix the face and lock.**
+
+---
+
+# Chapter 8 — Scalable Oversight
+
+**Manuscript title:** *Scalable Oversight* (earlier art title was *Automatic Alignment Research*; the file is still `08-automatic-alignment-research.md`)  
 **Subtitle:** *Learning From a Human Who Cannot Label Everything*
 
 ## Core visual idea — The Small Lantern
@@ -353,48 +392,14 @@ A little human signal can expand into much larger machine research—but the hum
 - dashboards of alignment scores;
 - robots physically bowing to the human.
 
-**Status: missing opener / must be resolved before final numbering lock.**
+**Status: the current giant-under-scaffolding image is off-brief (gray-fog palette, monumental dread, giant figure). Regenerate to the lantern concept on cream paper.**
 
 ---
 
-# Chapter 7B — Recursive Self-Improvement
+# Chapter 9 — Layer 4
 
-**Subtitle:** *When the Scaffold Starts Editing Itself*
-
-## Core visual idea — The Improver Becomes Editable
-
-The current self-repair robot communicates recursion quickly, but it risks suggesting the chapter is about a machine literally rebuilding its body / brain. The chapter's actual claim is subtler: prompts, memory, tools, workflows, harnesses and eventually the improvement machinery become editable.
-
-The strongest final metaphor is therefore a small agent using the **current scaffold / workshop platform to redesign the next scaffold above it**.
-
-A heavy sealed foundation / evaluator remains untouched below. That is the constitutional surface.
-
-If the body-repair composition is retained for clarity, mature it:
-
-- neutral rather than smiling face;
-- less toy-like body language;
-- checklist reduced to a secondary prop;
-- the editable object should read as **machinery around the agent**, not “replace your own brain.”
-
-## Meaning
-
-Science starts experimenting on the machinery of science.
-
-## Avoid
-
-- singularity chrome;
-- sci-fi self-replication;
-- glowing brain swaps;
-- `return True` joke as the primary visual;
-- cute repair-shop illustration tone.
-
-**Status: current art is readable; scaffold version is the intellectually strongest final target.**
-
----
-
-# Chapter 8 — Layer 4
-
-**Subtitle:** *What Do You Actually Want?*
+**Manuscript subtitle:** *The Human Learns Too*  
+**Art subtitle so far:** *What Do You Actually Want?* — editorial decision; either works visually.
 
 ## Core visual idea — The Mirror of Possible Futures
 
@@ -422,11 +427,11 @@ The system can help the human see possibilities and consequences without quietly
 - value labels;
 - “clarity over confidence” mug text on the final opener.
 
-**Status: strong metaphor; simplify.**
+**Status: strong metaphor; simplify. As of 2026-09-03 the labels and mug text are still present in the latest render and the robot still smiles.**
 
 ---
 
-# Chapter 9 — Fluent Autonomy
+# Chapter 10 — Fluent Autonomy
 
 **Subtitle:** *When the Architecture Gets Out of the Way*
 
@@ -456,11 +461,11 @@ Fluent autonomy is not the absence of architecture. It is architecture that has 
 - triumphant escape imagery;
 - too many birds.
 
-**Status: use heron family; refine toward effortless coordination.**
+**Status: use heron family; refine toward effortless coordination. Latest render: the human is pointing at the birds (reads as command) and there is a dotted flight path; change the gesture to watching or an open hand (echoing Chapter 1's release) and remove the path.**
 
 ---
 
-# Chapter 10 — The Store That Builds Itself
+# Chapter 11 — The Store That Builds Itself
 
 **Subtitle:** *When System 3 Came to Work*
 
@@ -499,9 +504,9 @@ No additional labels are needed.
 
 ---
 
-# Chapter 11 — After Capacity / Capacity Over Power
+# Chapter 12 — After Capacity / Capacity Over Power
 
-**Manuscript title:** *After Capacity*  
+**Manuscript title:** *After Capacity: A Glimpse of Double Descent Life*  
 **Current art title:** *Capacity Over Power*  
 **Current art subtitle:** *What Becomes of Humans*
 
@@ -525,9 +530,11 @@ That is why this image has so much emotional force.
 
 ---
 
-# The Prophecy
+# Chapter 13 — The Prophecy
 
 **Subtitle:** *The Love Prompt of Devesh*
+
+**Latest render note (2026-09-03):** the enormous monitor-haired profile dominating the left half violates the first item under Avoid and links the monitors to a face before the story does. Keep caravan, couple, gate; monitors glimpsed inside the caravan only; drop the profile.
 
 ## Core visual idea — The Gate, Caravan, Couple, Monitors
 
@@ -626,15 +633,28 @@ Never:
 
 ---
 
-# Editorial numbering note
+# Editorial numbering note — resolved
 
-The manuscript currently has both **Automatic Alignment Research** and **Recursive Self-Improvement** labeled Chapter 7.
+The manuscript has locked to thirteen chapters (see the root `README.md`). Artwork numerals and titles must follow it:
 
-Do not finalize chapter numerals in artwork until this is resolved.
+| # | Manuscript title | Manuscript subtitle |
+|--:|---|---|
+| 1 | Why I'm Betting on AI Agents | Or: How I Learned to Stop Micromanaging and Love Emergence |
+| 2 | The Algorithm Vortex | From Classic Algorithms to Autonomous Discovery |
+| 3 | The Vibe Coder's Seat | Beyond Algorithms: Agent Autonomy for Creative Problems |
+| 4 | System 3 | Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone |
+| 5 | The Society of Agents | When the Org Chart Starts Thinking |
+| 6 | Pattern Language | When Knowledge Becomes Software |
+| 7 | Recursive Self-Improvement | When Science Turns Inward |
+| 8 | Scalable Oversight | Learning From a Human Who Cannot Label Everything |
+| 9 | Layer 4 | The Human Learns Too |
+| 10 | Fluent Autonomy | When the Architecture Gets Out of the Way |
+| 11 | The Store That Builds Itself | When System 3 Came to Work |
+| 12 | After Capacity | A Glimpse of Double Descent Life |
+| 13 | The Prophecy | The Love Prompt of Devesh |
 
-The cleanest visual/editorial options are:
+Renders in circulation as of 2026-09-03 still carry the pre-resolution numbering (Prophecy as 12, Scalable Oversight as "7: Automatic Alignment Research", Layer 4 as 8, Fluent Autonomy as 9, After Capacity as 11) and several pre-resolution titles. Since typography is production, not generation, this is a layout fix, not a regeneration, except where the image itself is being redone.
 
-1. make **Automatic Alignment Research** an unnumbered interlude between Pattern Language and Recursive Self-Improvement; or
-2. keep it as Chapter 7 and renumber every later chapter.
+Cover: subtitle is *Trust Chains, Agent Autonomy, and the Architecture of AI That Works* and the author line is *Hani M.M. Al-Shater*; the latest render's generated type has both wrong.
 
-The artwork should not silently decide the manuscript structure.
+The Chapter 5 scrapbook / collage sheet (author selfie with altered camel, "What this chapter builds" card, network diagram, "SYSTEM 3 = science of how trust scales") is a concept sheet only. It must not appear in the book: it is a collage, it carries explanatory cards and slogans, it alters the Chapter 4 photograph the chapter presents as unedited, and it prints the reveal on the opener of the chapter that earns it.
