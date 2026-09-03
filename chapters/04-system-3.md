@@ -477,7 +477,7 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 **The model stays hollow. The system doesn't have to be.**
 
-Daniel Dennett's phrase for the first half is competence without comprehension. I am not going to argue about whether the second half amounts to comprehension. I am going to build the part of it that can be checked.
+Daniel Dennett's phrase for the first half is competence without comprehension. Whether the second half amounts to comprehension is a question for people with more patience than I have; the part of it that can be checked is the part the rest of this chapter builds.
 
 Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
 

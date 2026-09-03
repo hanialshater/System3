@@ -28,7 +28,7 @@ A transcript remembers what happened. An institution has to remember **what was 
 
 Suppose I save the instruction “use longer paragraphs.” That is a memory of one correction. It is also a future disaster waiting politely in Markdown. The lesson was never that long paragraphs are good. The failure was a particular editing process compressing exploratory prose into a rhythm that felt machine-produced. Sometimes the cure was a longer paragraph. Sometimes a shorter sentence. Sometimes the correct edit was to stop editing.
 
-What the next agent needed was not merely the instruction. It needed enough of the **reason, evidence, boundary conditions and failure history** to know when the instruction deserved authority.
+What the next agent needed was not the instruction. It needed enough of the **reason, evidence, boundary conditions and failure history** to know when the instruction deserved authority.
 
 That is closer to culture than memory.
 
@@ -104,7 +104,7 @@ A saved instruction is too small a unit.
 
 ## From Skill to Pattern
 
-Christopher Alexander's *A Pattern Language* was about towns, buildings and recurring design problems. A pattern was not simply a commandment. It named a situation, the forces that made it difficult, a response that had repeatedly worked and the consequences of using that response.
+Christopher Alexander's *A Pattern Language* was about towns, buildings and recurring design problems. A pattern was never a commandment. It named a situation, the forces that made it difficult, a response that had repeatedly worked and the consequences of using that response.
 
 That abstraction fits agent knowledge almost suspiciously well.
 
@@ -130,7 +130,7 @@ The book has already accumulated patterns whether we called them that or not.
 
 The useful part is not the slogan. Each pattern contains a recurring situation, a tension and a reason.
 
-But the history of institutions should make us suspicious of inherited procedure. Civilizations do not merely accumulate good practices. They accumulate ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
+But the history of institutions should make us suspicious of inherited procedure. Civilizations accumulate more than good practices: ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
 
 If Pattern Language is going to become cultural memory for agents, a pattern needs to know more about itself. This is where philosophy of science finally earns its API.
 
@@ -273,7 +273,7 @@ Something like:
 | **Position / incentives** | Which organizational perspective produced the lesson and what pressures shaped it. |
 | **Version / environment** | Which model, system, market, toolchain or period the evidence came from. |
 
-I do not mean this as a universal schema. Turning the schema itself into scripture would be an efficient way to miss the chapter.
+Turning the schema itself into scripture would be an efficient way to miss the chapter.
 
 The point is the difference between a command and institutional knowledge.
 

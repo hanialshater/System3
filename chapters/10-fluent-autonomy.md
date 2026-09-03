@@ -34,7 +34,7 @@ We stopped programming by wiring individual transistors. We stopped thinking abo
 
 The complexity moved underneath a more useful interface.
 
-AI agents push that abstraction one level higher because the new interface is not merely another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
+AI agents push that abstraction one level higher because the new interface is not another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
 
 That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
 

@@ -16,7 +16,7 @@ Then a tool learned to do to itself what Omar had done to his own eyes.
 
 In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
-There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made—and now the thing being built had entered the factory.
+There was no intelligence explosion. A compiler had participated in producing the next version of the compiler, and the building did not notice. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made—and now the thing being built had entered the factory.
 
 Compiler people call the trick **self-hosting**. Sixteen Claudes were recently building exactly such a compiler; it returns here because the self-hosting compiler contains this chapter's whole warning in miniature:
 
@@ -220,7 +220,7 @@ That scales judgment far beyond direct human labeling. It also creates a new pro
 
 We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
 
-## The Old Dream Tries to Prove the Rewrite
+## First, Prove the Rewrite
 
 All this time, the old recursive dream had been waiting for rigor.
 
@@ -268,7 +268,7 @@ Patterns, memory, evaluators, tools, workflows and organizational rules had alre
 
 The scientific institution can begin to **modify parts of the laboratory while the experiment is still running**.
 
-## The Harness Becomes an Experimental Object
+## Experiments on the Laboratory
 
 This is where self-editing and self-improvement have to separate.
 
@@ -288,7 +288,7 @@ A self-improving system is a system capable of **running experiments on the mach
 
 That is what I mean by science turning inward.
 
-## The Factory That Builds the Factory
+## Where This Goes
 
 Now imagine where this goes.
 
@@ -328,7 +328,7 @@ These failures are not accidents beside the capabilities. They are produced by t
 
 Specification gaming makes the pattern visible. The optimizer is not malicious. It is more literal than the designer.
 
-Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not merely select a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
+Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not stop at selecting a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
 
 ## The Student Finds the Gradebook
 

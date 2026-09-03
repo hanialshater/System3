@@ -198,7 +198,7 @@ How do we see?
 
 Inherited theories included versions in which something traveled outward from the eye toward an object. Ibn al-Haytham developed an account in which light travels from objects toward the eye, combining mathematical reasoning with systematic work on light, reflection and refraction. His *Book of Optics* later circulated beyond the world in which he wrote it and influenced subsequent optical traditions.
 
-For our story, the important part is not merely that he held a different opinion. He arranged circumstances in which competing accounts had observable consequences.
+For our story, the important part is not that he held a different opinion. He arranged circumstances in which competing accounts had observable consequences.
 
 A darkened room. A small aperture. Controlled rays. Mirrors. Geometry. The setup became part of the argument.
 
@@ -206,7 +206,7 @@ A record preserves what somebody says happened. An experiment gives the world an
 
 We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens.
 
-Charles Sanders Peirce later argued that this is what separates science from every other way of settling belief, whether by stubbornness, by authority or by what seems reasonable from an armchair: it is the only method whose results are fixed by something other than the believer, and so the only one that can correct itself. I am a pragmatist in his sense throughout this book. When I say contact with reality, I do not mean a mystical correspondence between sentences and things. I mean an arrangement in which something outside the current explanation is able to make the explanation fail.
+Charles Sanders Peirce later argued that this is what separates science from every other way of settling belief, whether by stubbornness, by authority or by what seems reasonable from an armchair: it is the only method whose results are fixed by something other than the believer, and so the only one that can correct itself. I am a pragmatist in his sense throughout this book, and contact with reality, wherever the phrase appears here, means exactly that arrangement: something outside the current explanation is able to make the explanation fail.
 
 Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form. The pieces accumulated.
 

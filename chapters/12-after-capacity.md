@@ -142,7 +142,7 @@ This is System 3 applied to learning. AI gives us extraordinary access to synthe
 
 That trade may change what an educated human looks like. The twentieth-century ideal often rewarded specialization: know one vertical deeply enough that people in neighboring verticals stop understanding you. The AI-assisted human may become more T-shaped, π-shaped, octopus-shaped—choose your consulting diagram. Broader, faster at entering unfamiliar domains, more willing to combine ideas that institutional boundaries kept apart, while still going deep where the stakes or fascination justify it.
 
-That does not make expertise obsolete. It may make expertise more deliberate.
+Expertise is not obsolete in that world, only more deliberate.
 
 And there is a creative consequence. A machine-learning scientist can learn enough philosophy to steal a useful structure. A philosopher can prototype the mechanism she has been describing. A doctor can interrogate statistics interactively. An artist can build software. A local policymaker can simulate an intervention instead of merely arguing about it.
 
@@ -270,7 +270,7 @@ My children do not need comparative advantage to justify dinner.
 
 Neither do I.
 
-This does not make economics disappear. People need income, housing, food, healthcare, status and access to resources. If automation breaks the mechanism by which income has traditionally been distributed, saying “human life has intrinsic value” will not pay the electricity bill. Political economy remains stubbornly material.
+Economics does not disappear. People need income, housing, food, healthcare, status and access to resources. If automation breaks the mechanism by which income has traditionally been distributed, saying “human life has intrinsic value” will not pay the electricity bill. Political economy remains stubbornly material.
 
 But industrial society bundled together two questions that AI may force us to separate:
 
