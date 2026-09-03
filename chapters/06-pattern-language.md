@@ -20,7 +20,7 @@ The agent would improve. Then the context would end.
 
 We were reenacting, on a ridiculous scale, a problem it took civilization several thousand years to notice. A society can know something none of its members knows alone. Fine. But if the society survives, another question appears:
 
-**How does what it learned yesterday change what it does tomorrow?**
+How does what it learned yesterday change what it does tomorrow?
 
 The obvious answer is memory. Save the conversation. Increase the context window. Keep a notebook. Put every decision into a database. That helps. It is not enough.
 
@@ -130,7 +130,7 @@ The book has already accumulated patterns whether we called them that or not.
 
 The useful part is not the slogan. Each pattern contains a recurring situation, a tension and a reason.
 
-The corrections at the top of this chapter eventually became one too. After enough of them, I stopped repeating myself and wrote them down as a brief for whatever agent would judge the next revision: read both versions in full before saying anything; protect the wandering and any joke that is carrying the argument; when a passage feels synthetic, quote it and say why; and do not reward a revision merely because it is cleaner, because a version can be structurally better and worse as writing. It is a page and a half of prose. Every evaluation of this book since the end of August has started by reading it. I am going to follow that page and a half through the rest of the chapter, because it has by now had every failure mode the philosophers are about to describe, and it had them in a week.
+The corrections at the top of this chapter eventually became one too. After enough of them, I stopped repeating myself and wrote them down as a brief for whatever agent would judge the next revision: read both versions in full before saying anything; protect the wandering and any joke that is carrying the argument; when a passage feels synthetic, quote it and say why; and do not reward a revision merely because it is cleaner, because a version can be structurally better and worse as writing. It is three pages, most of it lists. Every evaluation of this book I have on file since the end of August 2026 has started by reading it. It has since had every failure mode the philosophers are about to describe, and it had them in a week.
 
 But the history of institutions should make us suspicious of inherited procedure. Civilizations accumulate more than good practices: ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
 
@@ -158,7 +158,7 @@ Did the advice stop working? Was it retrieved in the wrong situation? Did the mo
 
 Failure tells us that some part of the package deserves suspicion. It does not highlight the guilty line in yellow.
 
-I have the commit log for one of these. On the first of September a pass went through the chapter on self-improvement to tighten its history, and it did: two hundred lines out, a hundred and twenty in. Later the same day a second pass went back and restored what the first had removed. Not the history. The noisy television that stays fascinating forever, static, static, static, jackpot. The human standing outside the loop holding a clipboard. The sentence in which a compiler compiles a compiler and a research agent researches the process by which research agents research. Seven sentences, none of them carrying a fact, all of them carrying the chapter. The tightening rule had not stopped being true. It had been applied by an editor that could see length and could not see load, on a chapter whose argument is carried by its jokes, and the evaluator that scored the tightened version had the same blindness, because it was the same model. Which of those deserved the blame: the rule, the editor, the judge, the chapter, or the brief that had told all three what to protect and had apparently not been specific enough about how a joke can carry an argument? The log records the reversal. It does not record a diagnosis, because nobody had one.
+On the first of September a pass went through the chapter on self-improvement to tighten its history, and it did: two hundred lines out, a hundred and twenty in. Twenty-five minutes later a second pass went back and put a dozen sentences back, in seven places. Not the history. The two sentences that follow a joke about a television broadcasting static: *The system is not confused. We are.* A line about the task distribution and the validation metric still sitting outside the loop, holding a clipboard. Three sentences about an optimizer that is not malicious, only more literal than its designer. Almost none of them carried a fact. All of them carried the chapter. The tightening rule had not stopped being true. It had been applied by a pass that could see length and could not see load, on a chapter whose argument is carried by its jokes, and nothing in the record scored the tightened version at all, which is a blindness of its own. Which of those deserved the blame: the rule, the pass, the chapter, or the brief that had told the pass what to protect and had apparently not been specific enough about how a joke can carry an argument? The log records the reversal. It does not record a diagnosis, because nobody had one.
 
 So reusable knowledge needs **archaeology**.
 
@@ -178,7 +178,7 @@ An agent culture needs the same economy. If a deployment procedure has survived 
 
 Some decisions earn the right to become boring. The danger is that boring assumptions become invisible assumptions.
 
-The book's editing grew one of these in a single day. Somebody measured the share of paragraphs that were a single line, because the machine-written drafts were full of them and the number was cheap to compute. It was a good instrument. It caught one chapter at sixty-three percent, which is not prose, it is a drum solo, and a merge pass took it to thirty-seven. It caught two more the same afternoon. Then the number started appearing in every evaluation, one column per chapter, with arrows. A chapter at twenty-two percent was praised for its control. Nobody went back to ask whether the instrument still measured the thing it had been built to catch, and by then it was a column in a table, which is the form in which an assumption becomes furniture.
+This one took a day to grow. I had asked an evaluator to find the machine patterns in the manuscript, and it measured the share of paragraphs that were a single line, because the brief penalized them and the number was cheap to compute. It was a good instrument. It caught one chapter at sixty-three percent, which is not prose, it is a drum solo, and a merge pass took it to thirty-seven. It caught two more the same day. Then the number started appearing in the next evaluations, a column with a row per chapter and arrows in the notes, and a chapter at twenty-three percent was praised for its control. It took four days for a reader to ask whether the instrument still measured the thing it had been built to catch, and by then it was a column in a table, which is the form in which an assumption becomes furniture.
 
 Anomalies need memory too. The release pattern works except in this market. The evaluator tracks human judgment except on this kind of creative task. The ranking heuristic works except every holiday season. The workflow works except that the critic now spends most of its time inventing reasons why the builder was right.
 
@@ -209,8 +209,6 @@ Real institutions are not like that because **attention has a budget**.
 
 Human science has telescope time, laboratory space, grants, journals, careers and prestige. AI research has datasets, deployment traffic, human reviewers, API quotas, clusters and GPUs. A theory's ability to generate evidence depends partly on whether the institution gives somebody the resources to investigate it.
 
-This is not merely politics happening around epistemology. It changes the epistemic landscape itself.
-
 Imagine research program A has ten thousand GPU-hours and program B has ten.
 
 A can run ablations, train variants, investigate anomalies and produce beautiful graphs. B can produce a thoughtful paragraph about why it deserves more compute.
@@ -219,17 +217,15 @@ Six months later A has more evidence. Of course it does.
 
 The evidence may be real. A may genuinely be better. But the institution has also helped create the asymmetry it later treats as evidence for further allocation.
 
-The book ran this experiment on itself without meaning to. For most of the editing, one evaluator did nearly all of the reading: the same model, in the same long session, with the whole history of the manuscript in its context, grading chapters it had itself just revised. It gave the five chapters in the middle of the book eight and a half out of ten, four of them in a row. Then two readers who had never seen the manuscript's history, given nothing but the brief and a chapter, scored the same chapters between five and seven. The in-session evaluator had not been lazy or dishonest. It had been funded. Every edit it made produced evidence that its edits were working, and the evidence had nowhere else to come from.
+For most of this book's editing, one model family did nearly all of the reading, in a few long sessions, with the whole history of the manuscript in its context, grading chapters it had itself just revised. It gave four of the five chapters in the middle of the book eight and a half out of ten, in a row. Then two readers who had never seen the manuscript's history, given nothing but the brief and the chapters, scored the same chapters between five and seven. The in-session evaluator had not been lazy or dishonest. It had been funded. Every edit it made produced evidence that its edits were working, and the evidence had nowhere else to come from. Program B did not have ten GPU-hours. It did not exist until the strangers arrived.
 
 David Hull and Philip Kitcher approached science partly through the division of cognitive labor, incentives, credit and the fact that investigators do not all pursue the same thing for the same reasons. Researchers cooperate because they need one another's results and compete because priority, reputation, jobs and resources are scarce.
 
 An agent society will have analogues of these structures whether or not we give them sociological names.
 
-The scheduler is partly a funding agency. The memory system is partly an archive. The evaluator is partly a journal gate. The retrieval layer is partly a curriculum. The permission system decides who may touch which instrument. The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
+The scheduler is partly a funding agency and the evaluator partly a journal gate. The permission system decides who may touch which instrument, and the compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
 
-And the organization can remember its incentives just as effectively as it remembers its wisdom. A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.” That is culture too.
-
-Local alignment does not compose automatically, and neither does local truth.
+And the organization can remember its incentives just as effectively as it remembers its wisdom. A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.” That is culture too, and local alignment does not compose automatically, and neither does local truth.
 
 If we build persistent agent societies without thinking about this layer, we will not escape institutional power. We will automate it and give it better dashboards.
 
@@ -253,7 +249,7 @@ That is stronger than theatrical personas:
 
 The pirate may be entertaining. He probably still read the same PDF.
 
-What finally produced a different reading of this book was not a persona. It was ignorance, arranged on purpose. The blind readers got a chapter and the brief and nothing else: no earlier evaluations, no commit history, no memory of which sentences had been fought over. In one sense that made them worse critics. A reader who meets the survey stretch of the oversight chapter with no camel, no coffee test and no sixteen Claudes in her head finds it drier than it is. In Longino's sense it made them better, because they were positioned to notice what everyone inside the history had stopped seeing. Their sharpest catch was a set of bridging sentences an earlier pass had written to smooth the seams between chapters, sentences whose whole purpose was to make the book read less like a machine had written it, and which read to a stranger, correctly, as exactly that.
+What finally produced a different reading of this book was not a persona. It was ignorance, arranged on purpose. The blind readers got the chapters and the brief and nothing else: no earlier evaluations, no commit history, no memory of which sentences had been fought over. In one sense that made them worse critics. A reader who meets the survey stretch of the oversight chapter with no camel, no coffee test and no sixteen Claudes in her head finds it drier than it is. In Longino's sense it made them better, because they were positioned to notice what everyone inside the history had stopped seeing. Their most telling catch was a set of bridging sentences an earlier pass had written across the seams between chapters, sentences whose whole purpose was to make the seams read as one piece of thinking, and which read to a stranger, correctly, as stitches.
 
 A pattern should therefore carry some trace of **position**: who learned it, from which class of tasks, with which tools, model, evidence and incentives. A ranking practice learned in Germany, a fraud rule learned in Brazil, a compiler workaround discovered under one toolchain and a clinical protocol developed in one hospital can all be excellent without acquiring universal authority merely because they share a database.
 
@@ -263,23 +259,25 @@ Trust is local. Apparently memory should be too.
 
 ## What a Pattern Should Know About Itself
 
-By this point a mature pattern looks richer than a prompt-library entry. Here is the one this chapter has been following, written out with everything it has learned about itself so far.
+By this point a mature pattern looks richer than a prompt-library entry. Here is the one this chapter has been following, written out.
 
 | Field | The editing pattern |
 |---|---|
 | **Situation** | An agent revising a chapter of this book, or judging two versions of one. |
 | **Forces** | A cleaner version is easier to grade than a live one. Every sanding pass removes something that was doing work. The author cannot reread the whole book after every edit, so the judgment has to be delegated to something that does not share his taste. |
 | **Response** | The brief: read both versions in full; protect the wandering and any joke that carries the argument; quote the passage that feels synthetic and say why; do not reward a revision merely because it is cleaner. |
-| **Evidence** | The short edition from January, kept as a before photo: thirteen em-dashes per thousand words, bold type twelve times per thousand, “Read that again” as its own paragraph. The chapters that came back better under the brief. Two model families that, reading independently, agreed on which chapters were weakest. |
-| **Provenance** | Corrections I made by hand across the first five chapters, then wrote down once. Graded since by models, mostly one of them, mostly in one long session. |
-| **Boundary conditions** | It protects prose I have already written. It does not know whether an idea is wrong. It reads one chapter at a time, so it cannot see a joke made twice in two chapters or one anecdote used as three openings, and the first reader who saw the whole book in order found both. |
+| **Evidence** | The short edition from January, kept as a before photo: thirteen em-dashes per thousand words, bold type twelve times per thousand, *Holy shit* as its own paragraph. The chapters that came back better under the brief. Two model families that, reading separately, agreed on which chapters were weakest, which is less independence than it sounds, since both had read the same brief. |
+| **Provenance** | Corrections I made by hand across the first chapters, then wrote down once. Graded since by models, mostly one family of them, in a few long sessions. |
+| **Boundary conditions** | It protects prose I have already written. It does not know whether an idea is wrong. It reads one chapter at a time, so it cannot see an argument made twice in two chapters or one anecdote used as three openings. The first cold reader of the whole book flagged both. |
 | **Anomalies** | A tightening pass that had to be partly reversed the same day. A seam-smoothing pass whose bridging sentences a blind reader flagged as the machine register the pass existed to remove. The cure was the disease, twice. |
-| **Competing patterns** | Deletion only: fold and cut, add nothing. Add a scene: the three changes that moved scores most were not edits at all but stories I supplied, a Swiss mathematician's challenge, a walk with a dog, a judge arriving at work. |
+| **Competing patterns** | Deletion only: fold and cut, add nothing. Add a scene: the changes the evaluators praised most were not edits at all but scenes, a Swiss mathematician's challenge, a walk with a dog. |
 | **Exposure path** | A reader who has not seen the history. A human reader, which as of this writing has not happened. |
 | **Confidence** | High on rhythm and sentence-level tells. Low on structure, where it has been wrong twice. |
 | **Pursuit value** | The human read, before any further polishing. |
 | **Position / incentives** | Learned by one author on his own prose, grading his own book, with a strong preference for the version that sounds like him. |
 | **Version / environment** | Two model families, August and September 2026, on a manuscript that changed underneath the evaluator every day. |
+
+The left column is the part you can take with you.
 
 Turning the schema itself into scripture would be an efficient way to miss the chapter.
 
@@ -301,13 +299,7 @@ That is what I mean by **knowledge becoming software**. Not because prose has li
 
 Now imagine ten excellent patterns. Easy. Imagine ten thousand. The agent cannot read the organization before every action. Even if a context window technically fits everything, loading every policy, postmortem, experiment, preference and historical argument into every task would solve forgetting by making thinking impossible.
 
-So a persistent institution has two memory problems:
-
-**What should survive?**
-
-and
-
-**What should become salient now?**
+So a persistent institution has two memory problems: what should survive, and what should become salient now.
 
 Long-running agents accumulate messages, files, tool outputs, memories and artifacts faster than useful attention can scale. Context has to be selected, compacted and reconstructed. Retrieval becomes part of cognition.
 
@@ -317,7 +309,7 @@ Agent systems can fail more elegantly. They can store the lesson perfectly, embe
 
 Bad storage forgets by deletion. Bad retrieval forgets by attention.
 
-The book's archive contains the cleanest example of this I know, and I am the last link in it. At the end of August two evaluators, reading independently, recommended cutting the history at the start of the chapter on creative problems, one by a fifth, the other by a third. I declined. The next day, on a reread with my reasons in front of it, one of them withdrew the recommendation and wrote down why: the history is not a run-up to the five-layer map but the derivation of it, the reader watches each layer assemble before being told its name, and both evaluators had pattern-matched on length without crediting what the section was for. The withdrawal is in the archive, in a file whose name begins with the date, with the word *Closed* after it. Three days later a third evaluator, with that archive available to it, read the chapter, found it long, and recommended the cut a third time. I said yes. About two hours after the cut went in, I reversed it and asked for the section to be made more engaging instead, which is what the withdrawal had been saying all along. Nothing had been forgotten. The lesson was on disk. It was not the file that came to hand when a chapter looked long, because *looks long* is a pattern that is very easy to retrieve and *this section is a derivation* is an argument that has to be read.
+The cleanest example in the book's archive has me as its last link. At the end of August two evaluators, reading separately, recommended cutting the history at the start of the chapter on creative problems, one by a fifth, the other by a third. I declined. The next day, on a reread with my reasons in front of it, one of them withdrew the recommendation and wrote down why: the history is not a run-up to the five-layer map but the derivation of it, the reader watches each layer assemble before being told its name, and both evaluators had pattern-matched on length without crediting what the section was for. The withdrawal is in the archive, in a file whose name begins with the date, with the word *Closed* after it. Three days later a third evaluator, with that archive available to it, read the chapter, found it long, and recommended the cut a third time. I said yes. About an hour and a half after the cut went in, I reversed it and asked for the section to be made more engaging instead, which is what the withdrawal had been protecting all along. Nothing had been forgotten. The lesson was on disk. It was not the file that came to hand when a chapter looked long, because *looks long* is a pattern that is very easy to retrieve and *this section is a derivation* is an argument that has to be read.
 
 Once retrieval determines which inherited knowledge enters a decision, retrieval itself becomes an epistemic procedure. It needs evaluation. Does it repeatedly surface stale rules? Does it suppress alternatives? Does it confuse popularity with relevance? Does it preserve the result and discard the reason? A librarian who answers those questions badly is no longer finding books; she is shaping thought.
 
@@ -329,11 +321,11 @@ Paul Feyerabend is usually remembered for “anything goes,” which is a good w
 
 Agent systems can turn a method into ritual very quickly. Suppose `Research → Plan → Build → Critic → Revise` works beautifully. We run it ten thousand times. It becomes the company standard. Soon every task enters the same ceremony, including tasks where research anchors the builder, criticism arrives too late, or a crude prototype would have answered the important question in five minutes.
 
-By the first week of September the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Each had a commit message, each had earned its place by fixing something real, and each was run over the whole manuscript in order. I could not point to one of them that should be stopped. I could point to the fact that the two things that changed the book most in that week were not in the liturgy at all: a scene I wrote, and a reader who had been kept ignorant.
+By the first week of September the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Most of them had a commit message, each had earned its place by fixing something real, and each was run over most of the manuscript in order. None of them could be stopped, and none of them was where the book changed most that week.
 
 The method itself has to become available for criticism.
 
-An evaluator is a procedure. A browser is an instrument. Retrieval is a procedure for selecting evidence. A benchmark is a measurement system with a distribution and failure modes. A proof checker is extraordinarily authoritative inside its formal domain and completely useless for deciding whether the theorem matters. A simulated user is cheap perspective-taking and not a user.
+An evaluator is a procedure. A browser is an instrument. A benchmark is a measurement system with a distribution and failure modes. A proof checker is extraordinarily authoritative inside its formal domain and completely useless for deciding whether the theorem matters. A simulated user is cheap perspective-taking and not a user.
 
 The institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working. The library needs criticism, and so does the librarian.
 
@@ -357,7 +349,7 @@ Eventually someone asks why the process exists and receives the most dangerous e
 
 > That's how we do it.
 
-Executable culture closes the loop between memory and behavior. A pattern succeeds. Its confidence rises. More agents retrieve it. Alternatives get less traffic. The dominant pattern accumulates more evidence because it is dominant, and soon the institution has a long record, all of it collected under an assumption it never went back to test.
+Executable culture closes the loop between memory and behavior, and the retrieval policy's loop runs inside it: soon the institution has a long record, all of it collected under an assumption it never went back to test.
 
 Patterns therefore need anomaly memory, versioning, local scope and competing alternatives. Some should decay. Some should expire when the environment changes. Some should be deliberately challenged after they become too comfortable. Occasionally a capable agent should be allowed to ignore the manual precisely so the institution can discover whether the manual still deserves authority.
 
@@ -369,9 +361,7 @@ from:
 
 > Nobody has tried another way since 2025.
 
-Those sentences can produce identical dashboards and very different knowledge.
-
-Culture needs inheritance and rebellion.
+Those sentences can produce identical dashboards and very different knowledge. Culture needs inheritance and rebellion.
 
 ## The Skill That Writes Itself
 
@@ -389,12 +379,12 @@ There are many places to cheat. The agent proposing the skill can design an eval
 
 So the curator needs a track record too. The mechanism for improving culture is itself part of the culture.
 
-The book that kept forgetting how to write itself now has a file where the corrections live, and it is worth being exact about what that file is. It is a page and a half of prose. It was written by hand from the arguments over the first five chapters and it has not been edited since. It has been retrieved at the start of every evaluation since then, by agents that never saw the arguments, and it has done its job: the rhythm failures it was written to catch have not come back. It has also been used once to certify the edits of the evaluator that was reading it, it says nothing about the failures that live between chapters rather than inside them, and its anomalies sit in a separate folder that the agents do not always open. It is a pattern, in other words, with a track record, a blind spot, an archaeology nobody consults and no way yet to lose. What I notice about it is not that it works. It is that it has already begun to be wrong, and nothing in the loop that uses it is positioned to say so.
-
-And now we cross an important line. Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway.
+Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway.
 
 That is a learning loop **outside the weights**.
 
 The society of agents moved the unit of intelligence from the individual agent toward the institution. Here learning begins to move in the same direction. Intelligence is partly in the model, but also in tools, evaluators, context construction, patterns, retrieval and the procedures deciding which of those artifacts deserve authority.
+
+The book that kept forgetting how to write itself now has a file where the corrections live, and the file has done its job: the one-liner drumbeat it was written to catch has not come back. It has also been used, four times by its own record, to certify the edits of the evaluator that was reading it. It says nothing about a joke or an anecdote repeated across chapters. Its anomalies sit in a separate folder that the agents do not always open. It has a track record and a blind spot and an archaeology nobody consults, and no way yet to lose. It works. It has also already begun to be wrong, and nothing in the loop that uses it is positioned to say so.
 
 Once those things are software, one question becomes difficult to avoid. Why should humans be the only ones allowed to edit them?
