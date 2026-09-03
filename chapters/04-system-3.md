@@ -112,6 +112,8 @@ Wittgenstein helps draw the other side of the picture. His later philosophy pull
 
 The word participates in life.
 
+Emily Bender and Alexander Koller made a version of the same argument with a hyper-intelligent octopus that taps an undersea cable, learns to imitate both ends of the conversation perfectly, and is then asked for help building a coconut catapult. Form alone, however much of it, is not meaning. I prefer dead Europeans to cephalopods, but the point is the same, and the octopus will make one more appearance before this book is over.
+
 I do not want to turn Saussure and Wittgenstein into action figures fighting over GPT. They worked in different traditions and the philosophy of language does not reduce itself to two dead Europeans and a transformer.
 
 But they give us two useful lines.
@@ -474,6 +476,8 @@ Flatten all of that into equally confident language and something important disa
 The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It does not need to contain the entire chain inside its weights. The model is a mirror; the architecture determines what it reflects.
 
 **The model stays hollow. The system doesn't have to be.**
+
+Daniel Dennett's phrase for the first half is competence without comprehension. I am not going to argue about whether the second half amounts to comprehension. I am going to build the part of it that can be checked.
 
 Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
 

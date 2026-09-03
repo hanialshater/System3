@@ -10,7 +10,9 @@ That is all. I do not specify a workflow. I do not say which previous chapters t
 
 I certainly do not draw a graph with boxes labeled `RESEARCHER`, `CRITIC`, `VOICE CHECKER`, `FACT CHECKER`, `ORCHESTRATOR` and `HUMAN APPROVAL`. I have done enough architecture diagrams for one lifetime.
 
-But underneath that small sentence, quite a lot may need to happen.
+The first time I gave an agent an instruction like that, early in the writing of this book, what came back was worse. The agent did what the words literally asked. It removed the writing that looked like a machine had written it, which turned out to mean every wandering sentence, every joke that took a paragraph to arrive, and every claim I had made without apologizing for it in the next line. The chapter came back cleaner and dead. That was not the agent's fault. The sentence I had given it was evidence about what I wanted, not a specification of it, and the agent had nothing around it that could turn the one into the other: my words, a general idea of good prose, and no memory of the corrections I had already made.
+
+Underneath that small sentence, quite a lot has to happen for the second attempt to be better than the first.
 
 The system may retrieve earlier versions of my writing and the corrections that survived. It may notice that “LLM writing” in this book does not mean one generic style defect but a family of recurring failures: compressed slogan paragraphs, over-neat contrasts, jokes replaced with respectable jokes, hedges inserted where I meant to make a claim, and wandering sentences polished until they stop wandering anywhere interesting.
 

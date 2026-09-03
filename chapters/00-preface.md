@@ -12,6 +12,8 @@ This book is about autonomy — not the marketing kind, the kind where you hand 
 
 Along the way it becomes a book about knowledge: how a machine that has read everything and touched nothing can still be caught being wrong, and what has to be built around it so that being wrong has consequences.
 
+It is also written inside the event it describes. A good share of its evidence is from 2025 and 2026, and some of it will be out of date before you finish reading. I have tried to treat those results the way the book says results should be treated: as claims with a source, a date and an expiry, not as settled facts. If the examples age and the argument does not, the book has done its job.
+
 It is written for engineers who suspect the missing piece is not a bigger model, for researchers who want another frame, and for builders ready to stop directing and start hiring.
 
 If you keep one sentence, keep this one: the impressive part is how far you can get with the right architecture. The dangerous part is forgetting that the architecture is doing the work.

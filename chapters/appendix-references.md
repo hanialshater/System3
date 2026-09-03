@@ -30,6 +30,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Ralph A. Bradley and Milton E. Terry, "Rank analysis of incomplete block designs: I. The method of paired comparisons," *Biometrika* 39 (1952), 324–345. <https://doi.org/10.1093/biomet/39.3-4.324>
 - David Premack and Guy Woodruff, "Does the chimpanzee have a theory of mind?" *Behavioral and Brain Sciences* 1 (1978), 515–526. <https://doi.org/10.1017/S0140525X00076512>
 - The explanatory-quality references the chapter aims at: *Distill* (<https://distill.pub>), Jay Alammar's visual explanations (<https://jalammar.github.io>) and 3Blue1Brown (<https://www.3blue1brown.com>).
+- Brian Cantwell Smith, *The Promise of Artificial Intelligence: Reckoning and Judgment* (MIT Press, 2019) — the reckoning/judgment distinction the chapter answers.
 
 ## Chapter 4 — System 3
 
@@ -40,6 +41,8 @@ References are organized by chapter, in roughly the order the works appear. The 
 - SWE-bench Verified (OpenAI, 2024) — the human-validated SWE-bench subset used in the epistemic-swe comparison. <https://openai.com/index/introducing-swe-bench-verified/>
 - mini-swe-agent (SWE-agent project) — the baseline agent in the chapter's experiment. <https://github.com/SWE-agent/mini-swe-agent>
 - Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
+- Emily M. Bender and Alexander Koller, "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data," *Proceedings of ACL* (2020) — the octopus test. <https://aclanthology.org/2020.acl-main.463/>
+- Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds* (W. W. Norton, 2017) — "competence without comprehension."
 
 ## Chapter 5 — The Society of Agents
 
@@ -52,6 +55,10 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Isaac Newton, *Philosophiæ Naturalis Principia Mathematica* (1687).
 - ATLAS Collaboration, "Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC," *Physics Letters B* 716 (2012), 1–29. <https://doi.org/10.1016/j.physletb.2012.08.020>
 - CMS Collaboration, "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC," *Physics Letters B* 716 (2012), 30–61. <https://doi.org/10.1016/j.physletb.2012.08.021>
+- Karl Popper, "Epistemology Without a Knowing Subject" (1967), in *Objective Knowledge: An Evolutionary Approach* (Oxford University Press, 1972) — World 3.
+- Charles Sanders Peirce, "The Fixation of Belief," *Popular Science Monthly* 12 (1877), 1–15.
+- Kevin J. S. Zollman, "The Communication Structure of Epistemic Communities," *Philosophy of Science* 74 (2007), 574–587, and "The Epistemic Benefit of Transient Diversity," *Erkenntnis* 72 (2010), 17–35.
+- On the brachistochrone episode: Johann Bernoulli's challenge in *Acta Eruditorum* (June 1696) and Newton's anonymous solution in *Philosophical Transactions* 19 (1697); the "ex ungue leonem" remark is reported in the standard Newton biographies, e.g. Richard S. Westfall, *Never at Rest* (Cambridge University Press, 1980).
 
 ## Chapter 6 — Pattern Language
 
@@ -112,6 +119,8 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Victoria Krakovna et al., "Specification gaming: the flip side of AI ingenuity" (DeepMind, 2020). <https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/>
 - Ken Thompson, "Reflections on Trusting Trust," *Communications of the ACM* 27 (1984), 761–763. <https://doi.org/10.1145/358198.358210>
 - Anthropic, "Sycophancy to subterfuge: Investigating reward-tampering in language models" (2024). <https://www.anthropic.com/research/reward-tampering>
+- Pat Langley, Herbert A. Simon, Gary L. Bradshaw and Jan M. Zytkow, *Scientific Discovery: Computational Explorations of the Creative Processes* (MIT Press, 1987) — BACON and its relatives.
+- Paul Thagard, *Computational Philosophy of Science* (MIT Press, 1988).
 
 ## Chapter 8 — Scalable Oversight
 
@@ -175,6 +184,10 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Amartya Sen's capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>
 - Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>
 - Arnaud Fickinger et al., "Multi-Principal Assistance Games" (2020). <https://arxiv.org/abs/2007.09540>
+
+## Chapter 11 — The Store That Builds Itself
+
+- Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
 
 ## Chapter 12 — After Capacity
 
