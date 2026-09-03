@@ -30,11 +30,11 @@ If you keep one sentence, keep this one: the impressive part is how far you can 
 
 *August 2026*
 
-
 # Chapter 1: Why I'm Betting on AI Agents
 
 *Or: How I Learned to Stop Micromanaging and Love Emergence*
 
+![Simple building blocks, complex emergence](../resources/image0132.png)
 
 *Simple building blocks, complex emergence*
 
@@ -242,6 +242,7 @@ If it works, things get much more interesting.
 
 *From Classic Algorithms to Autonomous Discovery*
 
+![The algorithmic vortex](../resources/image0135.png)
 
 *The algorithmic vortex*
 
@@ -269,6 +270,7 @@ And that is how I ended up spending an unreasonable amount of time packing circl
 
 ## The Running Example: Circle Packing
 
+![Citrus packing - a real-world example](../resources/image0138.png)
 
 *Citrus packing—a real-world example*
 
@@ -282,6 +284,7 @@ Unfortunately, the solution space is nasty. Every circle has a position and a ra
 
 For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.
 
+![Circle packing solution n=26](../resources/image0139.png)
 
 *Circle packing solution n=26*
 
@@ -297,6 +300,7 @@ The experiment becomes interesting once we ask a second question:
 
 For most of the history of algorithm design, the answer was us.
 
+![History of algorithm design](../resources/image0136.png)
 
 *History of algorithm design*
 
@@ -320,6 +324,7 @@ That is hill climbing:
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
+![Hill climbing progression](../resources/image0140.png)
 
 *Hill climbing progression*
 
@@ -357,6 +362,7 @@ That is usually nonsense because circle numbering is arbitrary. Two nearly ident
 
 So we used **bipartite matching crossover**. Rather than pair circles by position in an array, pair them according to their geometric role in the packing. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
 
+![Naive vs Geometric Crossover](../resources/image0141.png)
 
 *Naive vs Geometric Crossover*
 
@@ -364,6 +370,7 @@ So we used **bipartite matching crossover**. Rather than pair circles by positio
 
 Now we can evolve a population: mutate, repair, cross, select and repeat.
 
+![Evolutionary strategies with Bipartite Matching crossover](../resources/image0122.png)
 
 *Evolutionary strategies with Bipartite Matching crossover*
 
@@ -381,6 +388,7 @@ MAP-Elites takes a different approach. Instead of ranking every candidate on one
 
 For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
+![MAP-Elites archive visualization](../resources/image0123.png)
 
 *MAP-Elites archive visualization*
 
@@ -462,6 +470,7 @@ AlphaEvolve turns that basic idea into a much larger search process.
 
 Imagine one generation. The system selects a promising program from its archive, perhaps along with other successful but different programs that contain useful ideas. The model sees the code, information about previous attempts and the scores they produced, then proposes a patch. The patch is applied, the program runs and the evaluator scores what happened. The new program and its result go back into the archive. Then the process repeats.
 
+![AlphaEvolve architecture](../resources/image0124.png)
 
 *AlphaEvolve architecture*
 
@@ -535,6 +544,7 @@ I want to be careful with the word *discovered*. I had not seen that particular 
 
 Once that structural idea became strong enough, the nature of the work changed. The agent spent less time inventing new geometries and more time adjusting solver settings, tolerances, initialization details and all the boring machinery that suddenly matters when the last fraction of a percent becomes expensive.
 
+![Code evolution result](../resources/image0125.png)
 
 *Code evolution result: iterative optimization*
 
@@ -1312,7 +1322,6 @@ It was whether the things they believed deserved to be believed.
 
 How do you know what to trust?
 
-
 # Chapter 4: System 3
 
 *Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone*
@@ -1335,6 +1344,7 @@ So before we design another architecture, consider a camel.
 
 **Seven claims about this image. Some are true. Some are false. You can't verify most of them without trusting me:**
 
+![The author at Krka National Park](../resources/image0133.png)
 
 *The author at Krka National Park*
 
@@ -2626,7 +2636,7 @@ Good's argument is only a few lines long, and it hides almost the entire problem
 
 For sixty years that word sat in the argument like an unexploded shell. Pattern Language armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
-The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. Researchers kept automating pieces of the process by which a machine gets better: actions, exploration, curricula, objectives, learning rules, architectures, simulated experience, evaluation and finally parts of research itself.
+The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. It looked like a ladder, climbed one rung at a time. The learner learned for itself, then chose what to learn, then had to stay itself while learning, then generated its own curriculum, then inferred its own objective, then designed its own learning machinery, then generated its own experience, then graded itself, and then started doing the research. At the top it reached the institution that had been doing all of this, and began editing that too.
 
 Every time, the same thing happened:
 
@@ -2642,7 +2652,7 @@ An agent sees a state, takes an action, receives a reward and finds itself somew
 
 Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and discover useful policies without a human labeling every move.
 
-The human no longer specifies the path. The human specifies the **score**.
+The human no longer specifies the path. The human specifies the **score**. The learner learns for itself; the teacher keeps the gradebook.
 
 That bargain was powerful. A machine could discover strategies nobody wrote down because the designer moved upward from choosing actions to defining what outcomes count.
 
@@ -2700,7 +2710,7 @@ Version B scores 95 on today's task and A scores 85. But B forgot three older sk
 
 Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero. A society that remembers every old lesson as law becomes a museum. Improvement across a lifetime is not improvement on the latest test; it is accumulation without paralysis.
 
-Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress.
+Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress. The learner has to stay itself across its own improvements. Hold on to that rung; it is the whole constitutional problem in miniature.
 
 ## Sometimes the Environment Improves Back
 
@@ -2738,29 +2748,9 @@ Later work made that uncertainty explicit. Cooperative Inverse Reinforcement Lea
 
 Preference-based reinforcement learning provided a practical cousin: ask humans which of two trajectory segments looks better and learn a reward model from those comparisons. That lineage later became central to reinforcement learning from human feedback for language models.
 
-Another teacher job had become learnable, and we immediately discovered that humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
+Another teacher job had become learnable, the objective itself, and we immediately discovered that humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
 
 The problem was no longer only how to improve toward an objective. Even the score had begun to move inward.
-
-## The Old Dream Tries to Prove the Rewrite
-
-Meanwhile, the old recursive dream had been waiting for rigor.
-
-In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
-
-It is a beautiful answer to a beautifully clean version of the problem:
-
-**prove the modification is worth making.**
-
-The catch is the definition of *worth*. Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
-
-A chess engine can live surprisingly close to that world. A company cannot.
-
-A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function.
-
-The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. The practical answer would arrive two decades later, and it would not be a proof.
-
-The rest of the field kept moving the machinery inward.
 
 ## Learning to Learn
 
@@ -2830,11 +2820,29 @@ Language models also moved the old reward problem into the evaluator itself.
 
 In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred.
 
-Human preference had become a learned instrument.
+Human preference had become a learned instrument, and the learner was, for the first time, grading itself with a model of its teacher.
 
 That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can prefer style over substance, reward confident errors or generalize badly outside the feedback distribution. A strong optimizer may find outputs that score well under the learned judge for reasons nobody intended.
 
 We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
+
+## The Old Dream Tries to Prove the Rewrite
+
+All this time, the old recursive dream had been waiting for rigor.
+
+In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
+
+It is a beautiful answer to a beautifully clean version of the problem:
+
+**prove the modification is worth making.**
+
+The catch is the definition of *worth*. Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
+
+A chess engine can live surprisingly close to that world. A company cannot.
+
+A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function.
+
+The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. The practical answer arrived two decades later, and it was not a proof.
 
 ## The Learner Edits the School
 
@@ -2882,7 +2890,7 @@ Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive
 
 A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
-A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**.
+A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**. The learner has climbed past its own learning machinery and reached the institution that housed it.
 
 That is what I mean by science turning inward.
 
@@ -2918,7 +2926,7 @@ More what?
 
 ## The Shadow History
 
-The history of autonomy has a second column.
+The history of autonomy has a second column. Climb the same ladder downward and every rung has a failure waiting on it.
 
 Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
 
@@ -3052,7 +3060,7 @@ Lower layers can move quickly and higher layers should move deliberately, and wh
 
 Seen from far enough away, the history is remarkably consistent.
 
-We let the learner choose actions, then more of its experience, curriculum, objective inference, learning machinery, simulated worlds, tests, judges and research procedures. At each step, something that had looked like background turned out to contain a human decision.
+We let the learner learn for itself, choose what to learn, stay itself while learning, write its own curriculum, infer its own objective, design its own learning, dream its own experience, grade its own work, do its own research, and finally edit the institution that had been doing all of that. At each rung, something that had looked like background turned out to contain a human decision.
 
 There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows.
 
@@ -3077,7 +3085,6 @@ Once improvement becomes continuous, **alignment has to become a continuous rese
 Omar could investigate the investigator. Now the investigator can rewrite itself, and someone still has to decide which of its suspicions about itself deserve to be believed.
 
 The teacher does not disappear. She moves up another level.
-
 
 # Chapter 8: Scalable Oversight
 
@@ -3848,7 +3855,6 @@ A theory of fluent autonomy should survive contact with systems that cannot be r
 I needed a less polite laboratory.
 
 Fortunately, Monday morning was waiting.
-
 
 # Chapter 11: The Store That Builds Itself
 
@@ -4658,7 +4664,6 @@ It cannot be made with another architecture diagram.
 
 It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
-
 # Chapter 13: The Prophecy
 
 *The Love Prompt of Devesh*
@@ -4805,7 +4810,6 @@ Left it there.
 
 **THE END**
 
-
 # Appendix: The Zen of Autonomy
 
 ```text
@@ -4866,13 +4870,11 @@ We built scaffolds for AI because they couldn't.
 We built scaffolds for ourselves for the same reason.
 ```
 
-
 # A Note on the Illustrations
 
 The illustrations were designed as a second, quieter narrative for the book. They use an old human visual world—paper, ink, stone, workshops, landscapes, books and instruments—gradually inhabited by machine intelligence. The aim was not to illustrate each chapter literally, but to give it an image that becomes more meaningful after the chapter has been read.
 
 The recurring robots, institutions, doors, landscapes and machines are intentionally left unexplained. Some ideas should arrive visually before they are named. As the book moves from agents and architectures toward human intention and capacity, the images move with it. If you noticed that before reading this note, good. If you did not, that is good too.
-
 
 # Appendix: References
 
@@ -5073,7 +5075,6 @@ References are organized by chapter, in roughly the order the works appear. The 
 ## Chapter 13 — The Prophecy
 
 - The Wachowskis, *The Matrix* (1999). The taxes are original.
-
 
 # About the Author
 
