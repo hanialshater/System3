@@ -228,3 +228,36 @@ Week 1: A1–A6 (author). Week 2: B1–B7 and C1–C5 (assisted, author approves
 - Do not run another whole-book anti-LLM-writing pass before Phase A. The remaining synthetic register in Chapters 7–10 is not a prose problem; it is the absence of a narrator, and sanding will make it worse (Chapter 10 says so itself).
 - Do not cut the Ch6 schema table, the Ch7 Shadow History, the Ch4 seven claims, or Ch13. Each has been proposed for cutting by a model reader; each is a deliberate authorial choice that the plan above leaves alone.
 - Do not add a chapter. The book is 60,000 words of body text, short for the genre and right for this book.
+
+---
+
+## 7. Dimension scores
+
+Per-chapter scores on the 22 dimensions in `prompts/chapter-version-evaluation.md`. A dash means the dimension does not apply (no previous or next chapter; Ch13 read as a fable). The unweighted chapter mean is 8.0; the book score of 8.4 in §1 weights by chapter length and role.
+
+| Dimension | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | Mean |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 1 Core idea / originality | 8 | 8 | 8 | 10 | 9 | 8 | 8 | 6 | 8 | 6 | 9 | 8 | 7 | 7.9 |
+| 2 Narrative arc | 8 | 9 | 7 | 9 | 9 | 7 | 7 | 6 | 7 | 5 | 9 | 8 | 7 | 7.5 |
+| 3 Connection to previous | – | 9 | 9 | 9 | 9 | 7 | 8 | 8 | 7 | 8 | 9 | 8 | 8 | 8.3 |
+| 4 Handoff to next | 8 | 9 | 9 | 9 | 9 | 9 | 8 | 8 | 7 | 9 | 8 | 9 | – | 8.5 |
+| 5 Sense of discovery | 7 | 9 | 8 | 9 | 9 | 6 | 5 | 4 | 6 | 4 | 9 | 8 | 7 | 7.0 |
+| 6 Voice | 9 | 9 | 8 | 10 | 9 | 7 | 7 | 5 | 7 | 7 | 9 | 9 | 8 | 8.0 |
+| 7 Human-writing feel | 8 | 8 | 8 | 9 | 9 | 7 | 6 | 5 | 7 | 6 | 9 | 9 | 7 | 7.5 |
+| 8 Humor / fireworks | 8 | 8 | 8 | 10 | 8 | 7 | 7 | 5 | 7 | 7 | 9 | 9 | 8 | 7.8 |
+| 9 Humor restraint | 8 | 9 | 8 | 9 | 9 | 8 | 8 | 8 | 8 | 8 | 9 | 8 | 6 | 8.2 |
+| 10 Prose rhythm | 8 | 7 | 7 | 8 | 9 | 7 | 6 | 6 | 7 | 6 | 8 | 7 | 7 | 7.2 |
+| 11 Pedagogy | 9 | 9 | 8 | 9 | 8 | 8 | 8 | 7 | 8 | 7 | 9 | 8 | – | 8.2 |
+| 12 Technical precision | 8 | 9 | 8 | 9 | 9 | 8 | 9 | 9 | 8 | 7 | 9 | 7 | – | 8.3 |
+| 13 Philosophical precision | 8 | 8 | 8 | 9 | 9 | 8 | 8 | 7 | 8 | 7 | 8 | 8 | 7 | 7.9 |
+| 14 Evidential discipline | 8 | 10 | 8 | 10 | 8 | 7 | 8 | 8 | 9 | 5 | 9 | 7 | – | 8.1 |
+| 15 Conceptual coherence | 9 | 9 | 8 | 9 | 9 | 8 | 8 | 7 | 8 | 8 | 9 | 8 | 7 | 8.2 |
+| 16 Memorability | 8 | 9 | 7 | 10 | 9 | 7 | 7 | 6 | 7 | 6 | 9 | 9 | 8 | 7.8 |
+| 17 Seed planting | 9 | 9 | 9 | 9 | 9 | 8 | 8 | 7 | 8 | 7 | 8 | 8 | – | 8.3 |
+| 18 Spoiler control | 9 | 9 | 8 | 9 | 9 | 8 | 7 | 8 | 8 | 8 | 9 | 9 | – | 8.4 |
+| 19 Pacing | 8 | 8 | 6 | 9 | 7 | 7 | 5 | 5 | 7 | 6 | 8 | 7 | 8 | 7.0 |
+| 20 Repetition | 8 | 8 | 6 | 8 | 8 | 7 | 5 | 7 | 6 | 5 | 7 | 5 | 7 | 6.7 |
+| 21 Book-level importance | 8 | 9 | 8 | 10 | 10 | 8 | 8 | 7 | 8 | 6 | 9 | 8 | 6 | 8.1 |
+| **22 Overall (holistic)** | **8.5** | **9** | **8** | **9.5** | **9** | **7.5** | **7.5** | **6.5** | **7.5** | **6.5** | **9** | **8.5** | **7.5** | **8.0** |
+
+The three weakest rows book-wide (repetition, discovery, pacing) are the three findings the plan in §6 is built around. Technical precision and evidential discipline are the strongest rows, which is why the next pass is not a prose pass.
