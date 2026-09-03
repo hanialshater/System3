@@ -38,6 +38,8 @@ Obviously some of it lives in Claude. But which Claude?
 
 The parser agent does not know everything the performance agent knows. Neither remembers every previous session. Some knowledge lives in code, some in tests, Git history, progress files, task boundaries and conventions. Some lives in GCC, whose behavior the project is willing to trust for certain questions. Some lives in Carlini, who notices that the current organization no longer matches the work and changes it.
 
+Karl Popper had a name for the place where that knowledge lives. Beside the physical world and the world of individual minds he proposed a third, the world of theories, problems, arguments and records: knowledge that exists in books, instruments and institutions and can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it World 3, and argued that most of what humanity knows lives there rather than in anyone's head. The name System 3 comes from somewhere else, but the coincidence is not one I want to hide. The compiler project's knowledge lives in Popper's third world, with one addition he would have enjoyed: this one has a build system, and a test suite through which the first world can still object.
+
 The project knows more than any participant. It can also become wrong in ways no participant intended. A progress file can preserve a bad diagnosis. A specialist can improve its own metric while harming the compiler. A lock that prevents duplicated effort can also prevent a useful second attack. Two agents can appear to confirm one another while both inherited the same mistaken assumption.
 
 The organization can become part of the intelligence. It can also become part of the bug.
@@ -204,6 +206,8 @@ A record preserves what somebody says happened. An experiment gives the world an
 
 We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens.
 
+Charles Sanders Peirce later argued that this is what separates science from every other way of settling belief, whether by stubbornness, by authority or by what seems reasonable from an armchair: it is the only method whose results are fixed by something other than the believer, and so the only one that can correct itself. I am a pragmatist in his sense throughout this book. When I say contact with reality, I do not mean a mystical correspondence between sentences and things. I mean an arrangement in which something outside the current explanation is able to make the explanation fail.
+
 Experimental traditions have multiple histories, and what became modern science eventually mixed mathematics, instrumentation, craft, institutions and social practices that no single civilization or thinker possessed in complete form. The pieces accumulated.
 
 The agent version is almost embarrassingly literal. Run the program. Execute the query. Open the browser. Measure the latency. Compile the kernel against GCC. Reasoning has left the conversation. Something outside the current explanation now has a chance to be inconvenient.
@@ -285,6 +289,8 @@ The natural answer is A. But the answer can become self-reinforcing. More agents
 The current best explanation and the best use of the next unit of investigative capacity are not necessarily the same question. A weak theory may deserve another experiment because it explains the one anomaly the dominant framework cannot touch. A critic whose objections never change allocation is not really part of the epistemic institution. She is doing quality-assurance theatre.
 
 Compute allocation is epistemic policy. So is memory. So is context sharing. So is credit. Who receives the capacity to generate evidence partly determines which possible truths the institution can afford to discover.
+
+Kevin Zollman and others have modeled this formally: simulated communities of scientists in which the structure of communication decides whether the group converges on the truth or on the first plausible answer, and in which a less connected community sometimes does better, because a bad early result does not spread as fast. That is the isolation principle with a proof attached, and it makes the question of agent thirteen a question about topology, not only about budget.
 
 Human science has never escaped this problem. It has simply had much longer to argue about it.
 
