@@ -2,7 +2,19 @@
 
 *A Glimpse of Double Descent Life*
 
-The previous chapter ended with an uncomfortable possibility.
+LLM-as-a-judge arrived in my team looking like a threat.
+
+For years, a large part of what made an applied scientist valuable was that she could do two things most of the company could not: train a model, and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then models became something you download, and evaluation became something you ask a model to do, at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
+
+I have found it more useful to treat the instrument as a signal than as a competitor. The signal says the role is moving. The interesting question is where.
+
+The honest answer is that training and evaluation were never the point. They were the expensive part, which is different. What a scientist actually brings is stranger and harder to see on an org chart: a working map of where the frontier is, which of the ideas currently exciting everyone has already failed three times under another name, which result quietly changed the design space last month, which neighboring field has just built something that matters to our problem, and how to turn any of that into an investigation the company can trust. Somebody has to decide what evidence is strong enough for an institution to change its mind. A judge that can score a million recommendations overnight does not answer that question. It makes it urgent, because now there are a million more things that look like evidence.
+
+I want to be fair to the threat. Parts of my job should disappear. Nobody needs a scientist to run the same evaluation for the fourth time, or to hand-tune a model that an automated search will tune better by Thursday. If the only thing left is deciding what the instrument may be trusted to see, that is a smaller job than the one I trained for. I think it is also a more important one, but I would say that, and a book that has spent eleven chapters insisting that claims be exposed to something capable of disagreeing should not exempt its author's job description.
+
+So one profession, at least, is in the middle of the argument this book has been circling. The expensive part became infrastructure, and the humans did not disappear. They moved up a level and found that the level above was mostly questions.
+
+What if that is not a story about one job?
 
 What if AI does not merely answer more questions or automate more tasks, but steadily moves upward through the stack? It retrieves, ranks, composes, diagnoses the problem, chooses a strategy, builds the tool it needs and learns from the result.
 
