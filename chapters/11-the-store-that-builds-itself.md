@@ -318,29 +318,11 @@ The store does not literally build itself. It learns how to build more of the ex
 
 ## The Book Comes Back to Bite Me
 
-I began this project as a recommendation-system redesign. Then the chapters started appearing inside it.
+I began this project as a recommendation-system redesign. Then the chapters started appearing inside it: emergence, bounded problems, versatility, trust chains, a society of specialists, executable patterns, oversight from sparse feedback, an objective that is uncertain and plural, and machinery hidden from the customer until help is needed.
 
-Emergence: stop specifying every context and let useful compositions arise from primitives.
+The society of agents gives me a more compact description of that list: **build a scientific institution around the customer problem.** Not a lab coat pasted onto ecommerce. An architecture that can generate competing explanations, choose which are worth testing, intervene through reusable capabilities, expose those interventions to consequences, remember what survived, preserve disagreement where it carries information and revise its own problem vocabulary when anomalies accumulate.
 
-Bounded problems: diagnose something narrow enough to test rather than “optimize shopping.”
-
-Versatility: configure a smaller repertoire instead of multiplying bespoke experiences.
-
-System 3: preserve evidence, traces and boundaries so dynamic decisions can be trusted.
-
-Society: coordinate specialized capabilities rather than worship one universal model.
-
-Pattern Language: turn recurring successful responses into reusable operational knowledge.
-
-Automatic alignment research: use sparse customer and human feedback to discover where the system's behavior or repertoire is wrong.
-
-Layer 4: admit that the objective is uncertain, plural and capable of changing while the interaction unfolds.
-
-Fluent autonomy: hide most of that machinery from the customer and surface the right form of help when it matters.
-
-The society of agents gives me a more compact description of the entire list: **build a scientific institution around the customer problem.** Not a lab coat pasted onto ecommerce. An architecture that can generate competing explanations, choose which are worth testing, intervene through reusable capabilities, expose those interventions to consequences, remember what survived, preserve disagreement where it carries information and revise its own problem vocabulary when anomalies accumulate.
-
-I had spent nine chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
+I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
 
 That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
 

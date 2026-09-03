@@ -52,7 +52,7 @@ That works only while the human can provide enough of that new information. Scal
 
 ## The Judge Falls Behind
 
-In 2016, *Concrete Problems in AI Safety* gave this failure mode a wonderfully unromantic name: **scalable supervision**. Some objectives are simply too expensive for humans to evaluate frequently enough.
+In 2016, *Concrete Problems in AI Safety* gave this failure mode a wonderfully unromantic name: **scalable supervision** in the abstract, **scalable oversight** in the section heading. The second stuck. Some objectives are simply too expensive for humans to evaluate frequently enough.
 
 Imagine a system designing a processor.
 
@@ -130,7 +130,7 @@ But chain-of-thought is still text the model emits. What if we look below the te
 
 This does not mean there is one neuron labeled HONESTY. Nor does a direction correlated with honesty become a complete causal theory of honesty. It is an instrument.
 
-Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Anthropic's work on Claude found very large numbers of learned features while emphasizing that these decompositions are incomplete and that feature steering can have unexpected effects.
+Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Anthropic's work on Claude found very large numbers of learned features while emphasizing that these decompositions are incomplete and that feature steering can have unexpected effects. The idea is not one lab's. Hoagy Cunningham and colleagues published sparse-autoencoder decompositions of open models the same year, and Collin Burns and colleagues had earlier found truth-like directions in activations without using any labels at all.
 
 A related idea is **model diffing**. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic's crosscoder work compares internal features across model versions or architectures and tries to surface what is genuinely new or unusually different, directing scarce auditing effort toward the changes.
 
@@ -232,7 +232,7 @@ This is why I prefer **scalable oversight** to the image of a giant alignment ru
 
 So where does the human go? Not away; up. The goal is not to make the human label more things faster. At some scale that is simply a badly designed distributed system with one biological bottleneck.
 
-Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves suspiciously fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
+Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves too fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
 
 The human cannot remain in every loop. **The human has to remain in the loop that changes the loops.** That is a different kind of control, closer to a constitution than to micromanagement, and it is the same rule that governed self-improving learners: the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change it unilaterally. Scalable oversight is that rule applied to overseers.
 

@@ -110,7 +110,7 @@ A review gets added after a spectacular failure. Five years later the system is 
 
 I learned a version of this in a much less ancient civilization: Amazon.
 
-A customer presses a button and eventually a box appears at a door. Described from high enough up, the company sounds almost embarrassingly simple. Try asking one employee how the whole thing works.
+A customer presses a button and eventually a box appears at a door. Described from high enough up, the company sounds simple. Try asking one employee how the whole thing works.
 
 Product information comes from one collection of systems. Search and ranking may involve others. Availability depends on inventory. Price may depend on another stack. Payments, fraud, fulfillment, transportation, customer service and experimentation each have their own machinery. Underneath them sit identity systems, data pipelines, deployment systems, observability, permissions and a geological layer of services whose original authors have moved to another team, company or continent.
 

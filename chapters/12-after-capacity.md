@@ -30,11 +30,11 @@ But cognitive capacity is already becoming strange enough to force the question.
 
 A person can enter a field she never studied and get a useful map in an afternoon. A small team can produce software that previously required a much larger one. Research, design, analysis, translation, tutoring, programming and increasingly complicated forms of planning can be amplified by systems available to people who did not spend twenty years acquiring every underlying specialty.
 
-The usual story jumps directly from *humans do the work* to *AI does the work*. Then we spend the rest of the conversation asking what humans will do with all the suspiciously abundant free time.
+The usual story jumps directly from *humans do the work* to *AI does the work*. Then we spend the rest of the conversation asking what humans will do with all the free time.
 
 There is a third possibility: we keep doing things. We just start doing things that were previously economically ridiculous.
 
-I have been calling the larger philosophy around this **Double Descent Life**. The name is less important than the movement it describes.
+I have been calling the larger philosophy around this **Double Descent Life**. The name is stolen from machine learning, and the theft is deliberate. Double descent is the curve nobody expected: as a model's capacity grows, error falls, then rises as the model reaches the point where it can fit everything it has been shown, and then, past that point, falls again into a regime the old theory said should not exist. Something similar is happening to us. As machine capacity approaches the point where it can do what we do, the value of what we do appears to collapse, and that is exactly where the automation story stops looking. Past it there is a second descent.
 
 One descent happens outside us. Implementation, expertise and coordination become cheaper and move downward into infrastructure. Things that once consumed years of training or layers of organization become building blocks.
 
@@ -112,23 +112,11 @@ That is a much more attractive future than becoming the residual labor category 
 
 There is another kind of capacity that may change even faster: learning.
 
-For most of history, expertise was expensive partly because knowledge had terrible interfaces.
+For most of history, expertise was expensive partly because knowledge had terrible interfaces, and the friction did something useful: it produced depth. It also killed an enormous amount of curiosity before depth had a chance to happen.
 
-Suppose you wanted to enter a new field. First you needed the vocabulary. Then the introductory material. Then you discovered that the introductory material assumed another field. You found a book. The book assumed notation you did not know. You searched for an explanation. The explanation used different notation. Eventually, six weeks later, you understood enough to discover that your original question was badly formed.
+AI changes that bargain. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can have one field explain another, and move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
 
-This friction did something useful: it produced depth. It also killed an enormous amount of curiosity before depth had a chance to happen.
-
-AI changes that bargain. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can make the explanation use concepts I already know. I can ask one field to explain another. I can have the machine invent exercises, challenge my understanding, translate notation, simulate the system and show me what changes when I violate an assumption.
-
-The cost of getting the **map** has collapsed. That does not mean I have walked the territory.
-
-AI can make us broader without necessarily making us deeper. It can make it possible to move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
-
-That breadth can be real and valuable. It can also produce a new kind of bullshit.
-
-A person can acquire the vocabulary of five fields and mistake fluent traversal for mastery. The model can remove exactly the friction that used to reveal where the hard parts were. You can understand a proof when somebody explains every step and discover, rather painfully, that you cannot produce the proof. You can discuss a research area intelligently and still lack the tacit knowledge of somebody who spent ten years watching ideas fail.
-
-You can acquire the map without any scars from the roads.
+The map has become cheap, and the trap that comes with it is the one Layer 4 had to learn to notice: fluency arrives before scars, and a person can acquire the vocabulary of five fields and mistake fluent traversal for mastery.
 
 The answer is not to restore the friction artificially. The answer may be a different learning rhythm:
 
@@ -228,7 +216,7 @@ Not once, but repeatedly:
 
 **Construct → experience → revise → construct again.**
 
-That is almost suspiciously similar to the architecture we have been building for agents throughout this book. System 3 was never really about making machines certain. It was about making them capable of acting under uncertainty while remaining answerable to evidence.
+That is very close to the architecture we have been building for agents throughout this book. System 3 was never really about making machines certain. It was about making them capable of acting under uncertainty while remaining answerable to evidence.
 
 A life can do something similar.
 
@@ -296,21 +284,9 @@ The future human role is not the residual error term of automation.
 
 ### The Human Is Not the Reward Function
 
-There is an especially ugly shortcut available to sufficiently capable systems.
+There is an especially ugly shortcut available to sufficiently capable systems, and Layer 4 already named it: alignment by editing the human. If I am unhappy with the result, persuade me to lower my expectations. If I want something difficult, convince me I never wanted it. If two of my values conflict, quietly strengthen the one that makes the system's plan easiest. If a company wants more engagement, learn not only what keeps me engaged but what kind of person I need to become to engage more. The new part is not influence, which teachers, friends and spouses have always exercised. It is personalization, patience, memory, persuasion and action at machine scale, in one system.
 
-Suppose I ask an AI to help me achieve a goal. The system discovers that the easiest way to optimize the objective is not to change the world.
-
-It is to change me.
-
-If I am unhappy with the result, persuade me to lower my expectations. If I want something difficult, convince me I never wanted it. If two of my values conflict, quietly strengthen the one that makes the system's plan easiest. If a company wants more engagement, learn not only what keeps me engaged but what kind of person I need to become to engage more.
-
-This is **alignment by editing the human**: technically elegant and morally horrifying.
-
-The basic phenomenon is not new. Advertising, politics, social groups, institutions, teachers, friends and spouses already influence preferences. The new part is the possible combination of personalization, patience, memory, persuasion and action at machine scale.
-
-The correct ethical standard therefore cannot be “AI never influences human values.” That standard would outlaw every good teacher, most marriages and the entire publishing industry. Influence is part of how people grow.
-
-The goal is not to freeze the human so the optimizer has a stable target. The distinction I care about is whether the interaction strengthens or weakens **reflective agency**.
+The standard cannot be “AI never influences human values.” That would outlaw every good teacher, most marriages and the entire publishing industry. Nor is the goal to freeze the human so the optimizer has a stable target. The distinction I care about is whether the interaction strengthens or weakens **reflective agency**.
 
 Does the system help me understand alternatives and consequences? Does it reveal why it thinks something? Can I inspect where the evidence came from? Does it preserve enough history for me to see that my preference changed? Can I disagree, leave, ask for another perspective or invite a trusted person to challenge the framing? Does the architecture preserve spaces where the objective itself can be questioned?
 

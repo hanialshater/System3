@@ -261,3 +261,39 @@ Per-chapter scores on the 22 dimensions in `prompts/chapter-version-evaluation.m
 | **22 Overall (holistic)** | **8.5** | **9** | **8** | **9.5** | **9** | **7.5** | **7.5** | **6.5** | **7.5** | **6.5** | **9** | **8.5** | **7.5** | **8.0** |
 
 The three weakest rows book-wide (repetition, discovery, pacing) are the three findings the plan in §6 is built around. Technical precision and evidential discipline are the strongest rows, which is why the next pass is not a prose pass.
+
+---
+
+## 8. Improvement pass applied (same day)
+
+Applied to the chapter files in the commit following this note. Every edit is a deletion, a fold, or a sentence built from material already in the manuscript or the repository record; nothing was invented.
+
+**Phase A (author items), partially drafted from the record**
+- A2 (Ch10): the framework litany at the old `10:145–157` replaced with the actual second attempt, drawn only from what this repository documents: the evaluator brief (`prompts/chapter-version-evaluation.md`), the blind cold reads, the protected-lines list, the deletion-only pass, and the "not applied, author's call" refusals (schema table, nine-clause sentence, bridging-sentence catches). **Author must verify the first-person claims** before this stands.
+- A3 (Ch12): the double-descent paragraph added; the ML curve is now mapped to capacity and the two descents.
+- A1 (Ch8 judge scene) and A4 (Ch9 first-person scene): **not done**; only the author can supply them.
+- A5: second cigarette fixed; the Devesh naming question left to the author.
+
+**Phase B**
+- B1 (Ch7): pre-announced ladder at `07:33` removed; "Recursive More" heading and its definitional taxonomy folded (two sentences kept, including "recursive more. More what?"); headings "First, Prove the Rewrite", "Where This Goes" and "Open-Ended Does Not Mean Unbounded" removed with their text folded into the neighbouring sections. 19 → 15 headings (plan said ≤ 12; the remaining rungs each carry one heading, and merging further would cut author structure). "The philosophy of science becomes almost embarrassingly literal" (a near-twin of Ch5's line) → "stops being an analogy".
+- B2 (Ch9): now opens on "Find me the cheapest flight."; the Ch8 inheritance is one sentence; the book-editing anecdote is one callback paragraph with the correction list removed. Only Ch6 and Ch10 open on that anecdote now.
+- B3 (Ch12): "Learning at the Speed of Curiosity" reduced to the friction/bargain paragraph plus "Explore broadly. Descend selectively." with a one-line pointer to Layer 4's map-and-scars argument; "The Human Is Not the Reward Function" setup reduced to a callback that keeps the marriages joke (the better version) and the reflective-agency turn. ~450 words removed.
+- B4: Ch11's nine-item roll-call replaced by one sentence; "nine chapters" → "ten chapters"; "Automatic alignment research" label gone with the list. Ch10's recap became the trace (A2). Ch7's pre-list removed (B1). Ch12's recap kept, as planned.
+- B5 (Ch3): "How We Got Here" compressed from ~1,050 to ~650 words; HumanEval/APPS name-drops and the two summary paragraphs cut; the copy-paste, spoon, interns and sunk-cost passages kept; SWE-bench and SWE-agent kept to one sentence so their references stay anchored. Chapter 8,120 → 7,800 words (plan target 6,800 not reached; the remaining length is the chapter's own material). Coinages: "implicit metric" was already lowercase; "Borrow a Mind" is a heading only. No change.
+- B6: Ch4 four aphorisms un-bolded (lines kept). "almost embarrassingly" 5 → 2 (Ch5 "embarrassingly literal" and Ch11 kept). "suspiciously" 8 → 4 (Ch2, Ch3, Ch7 ×2 kept as the intended echo and the DevOps joke). "Congratulations." left at three by judgment: the Ch3 instance is lowercase inside a mocked quotation, and the Ch6 and Ch7 beats are two chapters apart and both earned.
+- B7 (Ch8): one sentence naming Cunningham et al. (2023) and Burns et al. (2022) after the Anthropic sparse-feature paragraph; both added to the references. Anthropic mentions unchanged at eleven; the concentration is now at least not a monopoly on the idea.
+
+**Phase C**
+- C1: verified against the paper's abstract: *Concrete Problems* says "scalable supervision" in the abstract and "Scalable Oversight" in the section heading. The sentence at `08:55` now says so; the chapter's title is thereby attributed.
+- C2: Live-SWE-agent reference completed (Chunqiu Steven Xia et al., 2025, arXiv 2511.13646), verified by web search.
+- C3: **not done** (2026-dated figures not re-verified; arXiv is blocked from this environment, and the Anthropic pages were not fetched).
+- C4: Ch11 label and count fixed; README "WIP / not locked" paragraph replaced. Ch9 title form and the references' missing Ch10 heading left as they are.
+- C5: done.
+
+**Phase D**
+- D1, D2: **not done** (figures and opener art need the author's assets).
+- D3: `dist/` is rebuilt by the `build-book-pdf` workflow on push to `main`; nothing to do on the branch.
+
+**Phase E**: not started; requires human readers.
+
+Word counts after the pass: Ch3 7,800; Ch7 6,500; Ch9 3,900; Ch10 2,380; Ch12 6,070.

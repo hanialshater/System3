@@ -146,13 +146,15 @@ The interface itself can become part of the solution.
 
 Put the pieces together and Fluent Autonomy is less magical than it first sounds.
 
-A human supplies an imperfect intention. The system interprets it provisionally rather than pretending it received a utility function. It decides what it already knows, what needs research and what should remain uncertain. It retrieves relevant cultural memory without treating precedent as scripture. It creates the smallest useful organization around the problem, selects tools, exposes important claims to reality and allocates evaluation where error would matter. It keeps traces. It asks the human when human information has high value. It learns from correction without converting one correction into universal law. And it returns not only an artifact or action, but enough consequence that the human can learn too.
+The second time the sentence came around, it did not arrive alone. By then an institution had accumulated around it, most of it made of previous corrections.
 
-That is a lot of machinery. The point is that I should rarely have to name any of it.
+There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. There were readers who were deliberately kept ignorant. A chapter would go to an evaluator that had never seen the manuscript's history, with nothing but the brief and the chapter, because a reader who remembers the last ten edits will approve the eleventh for reasons that have nothing to do with the prose. There was a list of lines nobody was allowed to touch. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
 
-The system should not require me to know whether this particular task needs debate, a critic, three independent evaluators, a circuit monitor, a retrieval pattern or no ceremony whatsoever. Those are implementation details at the level I am trying to leave behind.
+What came back was not four polished paragraphs. It was a table of the places where the writing had stopped sounding like a person, each with a reason, and a second table of things I refused. The evaluators wanted the schema table in the chapter on patterns gone; it is the one concrete artifact in that chapter, and it stayed. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that the connective sentences an earlier pass had added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-The unit of interaction becomes closer to:
+I did not operate any of this. I said the sentence, and the structure that had grown around the earlier corrections assembled itself: retrieval of what had survived, evaluators isolated from the history, a protected surface, a record of what was applied and what was overruled and why. The institution did the work. The refusals were mine, and they were the part that needed a human.
+
+The unit of interaction had become closer to:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 

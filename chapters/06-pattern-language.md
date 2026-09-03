@@ -106,7 +106,7 @@ A saved instruction is too small a unit.
 
 Christopher Alexander's *A Pattern Language* was about towns, buildings and recurring design problems. A pattern was never a commandment. It named a situation, the forces that made it difficult, a response that had repeatedly worked and the consequences of using that response.
 
-That abstraction fits agent knowledge almost suspiciously well.
+That abstraction fits agent knowledge uncomfortably well.
 
 Consider:
 

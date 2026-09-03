@@ -2,33 +2,17 @@
 
 *The Human Learns Too*
 
-Scalable oversight spent an absurd amount of machinery trying to preserve human judgment.
+Find me the cheapest flight.
 
-Then it ended with an inconvenient sentence:
+I have not supplied a utility function. Perhaps I literally want minimum price. Or perhaps I mean cheap, but not three stops, a seventeen-hour layover, a self-transfer through an airport where I need a visa and an arrival at 4:20 in the morning because technically I saved €38.
 
-**The overseer is not ground truth.**
+Humans communicate goals by leaving out almost everything.
 
-There is a simple reason. The overseer is changing too.
+Other humans survive this because they carry models of culture, normality, consequences and us. They ask questions. They notice that our literal words conflict with what we usually do. They understand that “cheap” is often shorthand for a larger bundle of trade-offs.
 
-When we started editing this book, “make the chapter better” sounded like a reasonable instruction. It was not.
+Scalable oversight spent an absurd amount of machinery keeping human judgment relevant, and ended on the admission that the overseer is not ground truth. The flight shows the simplest reason why. The overseer has not finished deciding what she wants.
 
-Better in what sense?
-
-More rigorous? Shorter? More academic? More entertaining? Easier to cite? More likely to sell? More likely to impress someone who owns several blazers and says “thought leadership” without irony?
-
-For a while the edits became objectively more polished and subjectively worse. The first corrections were about rhythm, and the agent learned them. The later ones were stranger, because I had not known they were rules until an edit broke them.
-
-Don't explain every joke.
-
-Don't apologize for a claim in the sentence after the claim.
-
-A paragraph that sounds quotable on every line is a paragraph nobody will quote.
-
-Don't make the provocative ideas safe enough that nobody can disagree with them.
-
-If the edit makes me sound like a better writer and less like me, revert it.
-
-Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked.
+I learned this while editing this book. “Make the chapter better” sounded like a reasonable instruction. It was not. Better in what sense? More rigorous? Shorter? More academic? More entertaining? Easier to cite? More likely to sell? More likely to impress someone who owns several blazers and says “thought leadership” without irony? For a while the edits became objectively more polished and subjectively worse, and the corrections I found myself making were rules I had not known were rules until an edit broke them. Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked.
 
 The objective did not merely become clearer to the system. It became clearer to me.
 
@@ -44,19 +28,7 @@ And above them sits something easy to draw and extremely hard to build:
 
 **what the human wants.**
 
-The diagram makes this look like a box. It is not a box.
-
-If I say:
-
-> Find me the cheapest flight.
-
-I have not supplied a utility function. Perhaps I literally want minimum price. Or perhaps I mean cheap, but not three stops, a seventeen-hour layover, a self-transfer through an airport where I need a visa and an arrival at 4:20 in the morning because technically I saved €38.
-
-Humans communicate goals by leaving out almost everything.
-
-Other humans survive this because they carry models of culture, normality, consequences and us. They ask questions. They notice that our literal words conflict with what we usually do. They understand that “cheap” is often shorthand for a larger bundle of trade-offs.
-
-A prompt is therefore not Layer 4. It is **evidence about Layer 4**.
+The diagram makes this look like a box. It is not a box. A prompt is not Layer 4. It is **evidence about Layer 4**.
 
 Cooperative inverse reinforcement learning, which appeared earlier in the story of the reward, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.
 

@@ -30,7 +30,7 @@ Good's argument is only a few lines long, and it hides almost the entire problem
 
 For sixty years that word sat in the argument like an unexploded shell. Pattern Language armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
-The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. It looked like a ladder, climbed one rung at a time. The learner learned for itself, then chose what to learn, then had to stay itself while learning, then generated its own curriculum, then inferred its own objective, then designed its own learning machinery, then generated its own experience, then graded itself, and then started doing the research. At the top it reached the institution that had been doing all of this, and began editing that too.
+The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. It looked like a ladder, climbed one rung at a time, and at the top of it sat the institution that had been doing the teaching.
 
 Every time, the same thing happened:
 
@@ -220,8 +220,6 @@ That scales judgment far beyond direct human labeling. It also creates a new pro
 
 We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
 
-## First, Prove the Rewrite
-
 All this time, the old recursive dream had been waiting for rigor.
 
 In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
@@ -278,7 +276,7 @@ A self-improving harness therefore starts to look less like ordinary software ma
 
 By 2026, this was consolidating into its own practical discipline: harness design, context engineering, self-improving harnesses and eventually joint optimization of harness and model weights.
 
-The philosophy of science becomes almost embarrassingly literal.
+The philosophy of science stops being an analogy.
 
 Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants.
 
@@ -287,8 +285,6 @@ A memory policy is now a hypothesis, a workflow an intervention, an evaluator an
 A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**. The learner has climbed past its own learning machinery and reached the institution that housed it.
 
 That is what I mean by science turning inward.
-
-## Where This Goes
 
 Now imagine where this goes.
 
@@ -302,13 +298,9 @@ But it does not look like a glowing brain rewriting its own soul at midnight. It
 
 The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps, which leaves one question standing: **who decides which descendant gets to survive?**
 
-## Recursive More
-
 By this point *improvement* has accumulated too many meanings to use casually: higher reward, better exploration, more retention, faster adaptation, better architectures, broader competence, better tools and better research procedures.
 
-These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain.
-
-It helps to separate the terms. **Self-reference** means a system can act on something that includes itself. **Self-hosting** means the tool participates in producing the next version of the tool. **Meta-optimization** means we optimize the process doing the optimization. **Self-improvement** adds a judgment, that the descendant is better according to some evaluator, and **recursive self-improvement** adds leverage, because the improvement changes the system's ability to produce further improvements. The first three do not guarantee the fourth. A compiler can compile a worse compiler. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
+These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
 
 There is no context-free scalar called *improvement*. Better is conditional on an environment, a horizon, a resource budget, constraints and some account of what matters.
 
@@ -429,8 +421,6 @@ So recursive self-improvement contains three questions machine learning often ke
 “More capable” is not a moral category. Viruses improve at replication, propaganda improves at persuasion, and a research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week.
 
 Self-improvement tells us only that a system is becoming better according to **some ordering**. Selection rules are choices.
-
-## Open-Ended Does Not Mean Unbounded
 
 This leaves two freedoms that are easy to collapse.
 

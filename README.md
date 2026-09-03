@@ -29,9 +29,9 @@ This is the spine to preserve in future edits. Philosophy of science is not a de
 - [Chapter 3 — The Vibe Coder's Seat](chapters/03-deep-mode.md) — when the clean referee disappears, judgment becomes inquiry: evidence, independent pressure, disagreement and a tiny institution
 - [Chapter 4 — System 3](chapters/04-system-3.md) — epistemic status, provenance, instruments, accumulated experience, trust chains, triangulation and the social scaffold
 
-### Second arc — WIP
+### Second arc
 
-These chapters are first integrated drafts and are **not locked**. They will receive the same structural, voice, technical-precision, and anti-LLM-writing passes used on the earlier chapters.
+These chapters have received the same structural, voice, technical-precision and anti-LLM-writing passes as the first arc. The record is in [`resources/evaluations/`](resources/evaluations/); the latest assessment still marks Chapters 8 and 10 for one author pass.
 
 - [Chapter 5 — The Society of Agents](chapters/05-the-society-of-agents.md) — **the reveal: philosophy of science becomes agent architecture**
 - [Chapter 6 — Pattern Language](chapters/06-pattern-language.md) — the scientific institution acquires executable culture and memory

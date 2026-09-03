@@ -30,9 +30,7 @@ Before trying to automate that, I had to notice how much of the work around the 
 
 Coding first appeared as a strange side effect of language modeling.
 
-The earliest useful tasks were conveniently small. Give the model a function signature, a comment, or a programming problem and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
-
-Then tools such as GitHub Copilot put that capability inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch code appear underneath it.
+The earliest useful tasks were conveniently small. Give the model a function signature or a comment and ask it to fill in the implementation. Then tools such as GitHub Copilot put that capability inside the editor: describe what should happen next and watch code appear underneath it.
 
 This was useful enough that the limitations became interesting.
 
@@ -42,25 +40,11 @@ By the time GPT-4 arrived, I increasingly wanted to use models on exactly these 
 
 My first agent-computer interface was copy and paste.
 
-The model might be doing sophisticated reasoning in the middle, but I performed every interaction with the software around it. I searched the repository, decided which file mattered, assembled the context, applied the edit, ran the tests, and carried back whatever reality had said about the edit.
-
 Then the bug crossed three files and context itself became a job. Paste one class but forget the interface it implements; the model confidently invents a method that does not exist. Add the interface and now it needs the database schema. Add the schema and another helper suddenly matters. Eventually half the repository is sitting in the conversation and somehow the model understands less.
-
-A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
 
 We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
-Software-engineering benchmarks exposed the same gap. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
-
-Eventually we stopped carrying the loop by hand.
-
-Give the model access to the repository. Let it search for symbols and references. Let it open files, edit them and inspect the diff. Give it a terminal. When a test fails, return the failure and let that result shape what happens next.
-
-A coding agent is, at its simplest, this loop made executable. The language model supplies much of the programming knowledge and reasoning; the environment lets it inspect software, act on it and observe the consequences.
-
-Software is unusually friendly to this arrangement. Files can be searched. Programs can be executed. Tests can say no. Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
-
-Systems such as SWE-agent made the interface itself part of the problem. How the model searches, how much of a file it sees, how edits are applied and what information comes back from commands can matter almost as much as another clever prompt. The useful object is no longer just the model. It is the model operating inside a world where software can push back.
+Eventually we stopped carrying the loop by hand. Give the model access to the repository. Let it search for symbols, open files, edit them and inspect the diff. Give it a terminal. When a test fails, return the failure and let that result shape what happens next. A coding agent is, at its simplest, this loop made executable, and software is unusually friendly to the arrangement: files can be searched, programs can be executed, tests can say no, and Git can return you to the time before you had the idea. SWE-bench, built from real GitHub issues, made this the unit of evaluation, and systems such as SWE-agent showed that how the model searches, reads and edits can matter almost as much as another clever prompt.
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong.
 
@@ -75,8 +59,6 @@ Suppose an agent decides early that our Merge Sort demo should use React and a r
 Humans call our version of this sunk cost. The agent has a respectable excuse: its context window is literally full of evidence that this is what the project is.
 
 So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner's misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
-
-Looking backward, the progression is less mysterious than the word *agent* sometimes makes it sound. Models learned to generate useful pieces of code. We put them in editors. Repository access, editing and execution moved into the loop. Better interfaces, persistent instructions, context management and branching followed.
 
 Bit by bit, work the human had been doing around the model became part of the machine.
 
@@ -528,7 +510,7 @@ We gave the orchestrator the problem, the capabilities available to it, and enou
 
 The orchestrator did not need to be best at any of those jobs. It had to decide which job the inquiry currently needed.
 
-At the top, the loop was almost embarrassingly simple:
+At the top, the loop was almost too simple to write down:
 
 **state of inquiry → choose a move → act → observe → update the state of inquiry**
 
