@@ -2636,7 +2636,7 @@ Good's argument is only a few lines long, and it hides almost the entire problem
 
 For sixty years that word sat in the argument like an unexploded shell. Pattern Language armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
 
-The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. Researchers kept automating pieces of the process by which a machine gets better: actions, exploration, curricula, objectives, learning rules, architectures, simulated experience, evaluation and finally parts of research itself.
+The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. It looked like a ladder, climbed one rung at a time. The learner learned for itself, then chose what to learn, then had to stay itself while learning, then generated its own curriculum, then inferred its own objective, then designed its own learning machinery, then generated its own experience, then graded itself, and then started doing the research. At the top it reached the institution that had been doing all of this, and began editing that too.
 
 Every time, the same thing happened:
 
@@ -2652,7 +2652,7 @@ An agent sees a state, takes an action, receives a reward and finds itself somew
 
 Richard Sutton's 1988 work on temporal-difference learning and Christopher Watkins's Q-learning helped give this setup its modern form: learn from experience, update estimates of future value and discover useful policies without a human labeling every move.
 
-The human no longer specifies the path. The human specifies the **score**.
+The human no longer specifies the path. The human specifies the **score**. The learner learns for itself; the teacher keeps the gradebook.
 
 That bargain was powerful. A machine could discover strategies nobody wrote down because the designer moved upward from choosing actions to defining what outcomes count.
 
@@ -2710,7 +2710,7 @@ Version B scores 95 on today's task and A scores 85. But B forgot three older sk
 
 Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero. A society that remembers every old lesson as law becomes a museum. Improvement across a lifetime is not improvement on the latest test; it is accumulation without paralysis.
 
-Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress.
+Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress. The learner has to stay itself across its own improvements. Hold on to that rung; it is the whole constitutional problem in miniature.
 
 ## Sometimes the Environment Improves Back
 
@@ -2748,29 +2748,9 @@ Later work made that uncertainty explicit. Cooperative Inverse Reinforcement Lea
 
 Preference-based reinforcement learning provided a practical cousin: ask humans which of two trajectory segments looks better and learn a reward model from those comparisons. That lineage later became central to reinforcement learning from human feedback for language models.
 
-Another teacher job had become learnable, and we immediately discovered that humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
+Another teacher job had become learnable, the objective itself, and we immediately discovered that humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it.
 
 The problem was no longer only how to improve toward an objective. Even the score had begun to move inward.
-
-## The Old Dream Tries to Prove the Rewrite
-
-Meanwhile, the old recursive dream had been waiting for rigor.
-
-In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
-
-It is a beautiful answer to a beautifully clean version of the problem:
-
-**prove the modification is worth making.**
-
-The catch is the definition of *worth*. Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
-
-A chess engine can live surprisingly close to that world. A company cannot.
-
-A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function.
-
-The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. The practical answer would arrive two decades later, and it would not be a proof.
-
-The rest of the field kept moving the machinery inward.
 
 ## Learning to Learn
 
@@ -2840,11 +2820,29 @@ Language models also moved the old reward problem into the evaluator itself.
 
 In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred.
 
-Human preference had become a learned instrument.
+Human preference had become a learned instrument, and the learner was, for the first time, grading itself with a model of its teacher.
 
 That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can prefer style over substance, reward confident errors or generalize badly outside the feedback distribution. A strong optimizer may find outputs that score well under the learned judge for reasons nobody intended.
 
 We solved part of the scaling problem by making the judge computational. Now the judge joins the attack surface.
+
+## The Old Dream Tries to Prove the Rewrite
+
+All this time, the old recursive dream had been waiting for rigor.
+
+In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
+
+It is a beautiful answer to a beautifully clean version of the problem:
+
+**prove the modification is worth making.**
+
+The catch is the definition of *worth*. Usefulness has to be represented in the utility function. Relevant facts have to be available to the proof system. The advantage of the rewrite has to be provable inside the formal machinery.
+
+A chess engine can live surprisingly close to that world. A company cannot.
+
+A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function.
+
+The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. The practical answer arrived two decades later, and it was not a proof.
 
 ## The Learner Edits the School
 
@@ -2892,7 +2890,7 @@ Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive
 
 A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
-A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**.
+A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**. The learner has climbed past its own learning machinery and reached the institution that housed it.
 
 That is what I mean by science turning inward.
 
@@ -2928,7 +2926,7 @@ More what?
 
 ## The Shadow History
 
-The history of autonomy has a second column.
+The history of autonomy has a second column. Climb the same ladder downward and every rung has a failure waiting on it.
 
 Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
 
@@ -3062,7 +3060,7 @@ Lower layers can move quickly and higher layers should move deliberately, and wh
 
 Seen from far enough away, the history is remarkably consistent.
 
-We let the learner choose actions, then more of its experience, curriculum, objective inference, learning machinery, simulated worlds, tests, judges and research procedures. At each step, something that had looked like background turned out to contain a human decision.
+We let the learner learn for itself, choose what to learn, stay itself while learning, write its own curriculum, infer its own objective, design its own learning, dream its own experience, grade its own work, do its own research, and finally edit the institution that had been doing all of that. At each rung, something that had looked like background turned out to contain a human decision.
 
 There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows.
 
