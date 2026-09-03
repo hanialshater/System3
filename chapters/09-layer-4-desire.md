@@ -18,13 +18,13 @@ More rigorous? Shorter? More academic? More entertaining? Easier to cite? More l
 
 For a while the edits became objectively more polished and subjectively worse. The first corrections were about rhythm, and the agent learned them. The later ones were stranger, because I had not known they were rules until an edit broke them.
 
-Don’t explain every joke.
+Don't explain every joke.
 
-Don’t apologize for a claim in the sentence after the claim.
+Don't apologize for a claim in the sentence after the claim.
 
 A paragraph that sounds quotable on every line is a paragraph nobody will quote.
 
-Don’t make the provocative ideas safe enough that nobody can disagree with them.
+Don't make the provocative ideas safe enough that nobody can disagree with them.
 
 If the edit makes me sound like a better writer and less like me, revert it.
 
@@ -100,7 +100,7 @@ That is a much more interesting model for AI assistance than “the machine know
 
 The point of the scaffold is not to become a permanent exoskeleton around every thought. It lets the learner operate at the edge of current competence, then gives more of the task back as competence grows.
 
-Benjamin Bloom’s famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom’s particular studies and should not be treated as a universal law of tutoring. The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce.
+Benjamin Bloom's famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom's particular studies and should not be treated as a universal law of tutoring. The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce.
 
 AI makes that old aspiration much cheaper.
 
@@ -154,7 +154,7 @@ AI changes some of those bounds.
 
 Suppose I am deciding whether to take a job.
 
-The system can compare compensation under several tax regimes, estimate commute time, summarize the company’s trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted outside work.
+The system can compare compensation under several tax regimes, estimate commute time, summarize the company's trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted outside work.
 
 The assistant has not merely evaluated an option. It has changed the **decision environment**.
 
@@ -194,7 +194,7 @@ That boundary matters because a system that sounds certain in such moments can e
 
 ## Advice Is an Intervention on the Human
 
-This is no longer hypothetical. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.
+This is no longer hypothetical. Anthropic's 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.
 
 That is a remarkable role for software. A spreadsheet does not usually tell me to reconsider my marriage. A compiler has opinions about semicolons but rarely about whether I should move countries.
 
@@ -202,7 +202,7 @@ A conversational model can be different. It is patient, personalized, available 
 
 Which means the AI does not merely **read** Layer 4. It writes to it.
 
-Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.
+Anthropic's work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person's ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.
 
 Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model.
 
@@ -248,7 +248,7 @@ That trade-off is wonderfully human. The interface people enjoy most is not alwa
 
 Sometimes friction is teaching.
 
-A good Layer 4 system therefore has to decide not only **what answer to give**, but what role the answer should play in the human’s cognition.
+A good Layer 4 system therefore has to decide not only **what answer to give**, but what role the answer should play in the human's cognition.
 
 Should I give the recommendation immediately? Should I first ask you to form your own view? Should I show three alternatives instead of one winner? Should I explain the uncertainty? Should I ask which assumption you disagree with? Should I do the routine analysis and leave the value trade-off with you? Should I refuse to collapse the ambiguity because the ambiguity is the thing you need to think about?
 
@@ -266,7 +266,7 @@ The second helps me understand the relevant evidence, notice a trade-off I had m
 
 Same action. Different human afterward.
 
-Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.
+Amartya Sen's capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.
 
 I do not want to turn Layer 4 into a philosophy-of-welfare survey. But the architectural implication is powerful.
 
@@ -324,7 +324,7 @@ Layer 4 asks:
 
 This is where System 3 turns back toward the person using it.
 
-Memory can reveal that today’s desire conflicts with yesterday’s commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
+Memory can reveal that today's desire conflicts with yesterday's commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
 
 The point is not to discover the perfect reward function but to keep goals **alive without making them ownerless**.
 

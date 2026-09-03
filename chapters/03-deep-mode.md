@@ -14,7 +14,7 @@ Most of the things I actually want AI to help me with are not like that.
 
 I picked educational demos for Merge Sort and Count-Min Sketch because they were still bounded—you can actually finish one before civilization collapses—but they live on the messier side of the boundary. You have to decide what to explain, what to leave out, how the interaction should work, how much should be visible at once, and what another person is likely to understand from any of it.
 
-The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” The algorithm itself is usually the easy part. The difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
+The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar's visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” The algorithm itself is usually the easy part. The difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
 Circle packing let the search be complicated because judgment was simple.
 
@@ -64,7 +64,7 @@ Systems such as SWE-agent made the interface itself part of the problem. How the
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong.
 
-More of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody’s head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
+More of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody's head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
 
 Long sessions produced the opposite problem. Context filled with abandoned experiments, obsolete assumptions and test output from three hypotheses ago. Memory became a problem of selection rather than storage.
 
@@ -74,7 +74,7 @@ Suppose an agent decides early that our Merge Sort demo should use React and a r
 
 Humans call our version of this sunk cost. The agent has a respectable excuse: its context window is literally full of evidence that this is what the project is.
 
-So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner’s misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
+So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner's misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
 Looking backward, the progression is less mysterious than the word *agent* sometimes makes it sound. Models learned to generate useful pieces of code. We put them in editors. Repository access, editing and execution moved into the loop. Better interfaces, persistent instructions, context management and branching followed.
 
@@ -140,23 +140,23 @@ That is the layer that remained stubbornly human: deciding what to try, which ev
 
 By then I had a rough map.
 
-**Layer 0 — Model.** GPT, Claude, Gemini and whatever comes next: general capability in language, code, reasoning and vision.
+**Layer 0—Model.** GPT, Claude, Gemini and whatever comes next: general capability in language, code, reasoning and vision.
 
-**Layer 1 — Agent.** Put the model in an environment where it can act. Claude Code, Codex and similar systems search repositories, edit files, execute commands and react to results.
+**Layer 1—Agent.** Put the model in an environment where it can act. Claude Code, Codex and similar systems search repositories, edit files, execute commands and react to results.
 
-**Layer 2 — Application.** Prepared environments remove much of the repeated software plumbing and let the conversation stay closer to the application itself.
+**Layer 2—Application.** Prepared environments remove much of the repeated software plumbing and let the conversation stay closer to the application itself.
 
-**Layer 3 — Deep Mode.** The problem-solving layer: decide what to try, why something failed, which evidence matters, and whether the current direction deserves another iteration.
+**Layer 3—Deep Mode.** The problem-solving layer: decide what to try, why something failed, which evidence matters, and whether the current direction deserves another iteration.
 
 Above that sits the problem I have mostly been avoiding.
 
-**Layer 4 — Intention.** What do we actually want?
+**Layer 4—Intention.** What do we actually want?
 
 Software likes that question to have been answered before work begins, preferably in Jira, where the answer can remain wrong in a structured and searchable format. Real goals are less cooperative. Seeing a solution can change what I realize I wanted.
 
 That problem is bigger than AI coding, so for now I am leaving it at the top of the stack.
 
-The borders are fuzzy. Coding agents make product decisions; design systems generate code; tomorrow’s products will rearrange the boxes again. What matters is the kind of decision being made, not which company happens to occupy which layer.
+The borders are fuzzy. Coding agents make product decisions; design systems generate code; tomorrow's products will rearrange the boxes again. What matters is the kind of decision being made, not which company happens to occupy which layer.
 
 People often call the experience of working this way *vibe coding*. I will use **AI coding** for the broader stack, but *vibe coder* remains a wonderfully accurate name for the human sitting near Layer 3: looking at what came back, deciding what feels wrong, asking for another direction, killing one idea, keeping part of another, and steering the process without having an algorithm for how.
 
@@ -188,7 +188,7 @@ When implementation was expensive, we dealt with much of this complexity by tryi
 
 Circle packing had already shown the basic move. One hill climber inherits its own history; evolutionary search maintains alternatives. Here what evolves can be more than a vector of parameters or even an algorithm: an **idea embodied in software**.
 
-One builder tries a recursion tree. Another focuses on the array. A third begins from the learner’s misconception. Mutations can be conceptual: remove the text, teach backward, make the learner predict, show synchronized representations, abandon interaction altogether.
+One builder tries a recursion tree. Another focuses on the array. A third begins from the learner's misconception. Mutations can be conceptual: remove the text, teach backward, make the learner predict, show synchronized representations, abandon interaction altogether.
 
 Useful pieces can move between them. One terrible demo may have a beautiful color mapping. Another may explain the merge clearly while making everything else unbearable. The final artifact does not have to inherit the entire history of either one.
 
@@ -376,7 +376,7 @@ Its reaction was roughly: I can see that the array keeps getting divided into sm
 
 That was useful because the demo really did have that problem.
 
-We had made recursion visible. From my position, that looked like progress. From the learner’s imagined position, we had merely made a mysterious operation easier to watch.
+We had made recursion visible. From my position, that looked like progress. From the learner's imagined position, we had merely made a mysterious operation easier to watch.
 
 Cognitive scientists use **Theory of Mind** for our ability to reason about mental states other than our own: what somebody knows, believes, wants or misunderstands. The other person may not simply know less. They may have a different model of what is happening.
 
@@ -416,9 +416,9 @@ The metric problem returns here in a more dangerous form. A rubric can make judg
 
 If the evaluator repeatedly rewards step-by-step explanation, explanations grow. If it likes polished onboarding, everything begins to look like onboarding. If familiar visual conventions read as “clear,” unusual approaches may disappear before they have time to become good.
 
-OpenAI’s CoastRunners experiment is the cartoon version of the problem: the agent learned to collect reward by driving in a loop instead of finishing the boat race.
+OpenAI's CoastRunners experiment is the cartoon version of the problem: the agent learned to collect reward by driving in a loop instead of finishing the boat race.
 
-Goodhart’s Law with a speedboat.
+Goodhart's Law with a speedboat.
 
 A language-model builder does not need such an obvious loophole. It can learn the style of artifact that another language model tends to reward. Making the evaluator more elaborate may simply create a more elaborate thing to game.
 
@@ -442,11 +442,11 @@ A learner can inspect the artifact from the knowledge boundary we developed abov
 
 I call these **Independent Evaluators**, though the important word is *independent*.
 
-Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. If all of them read the leading builder’s explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
+Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. If all of them read the leading builder's explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
 
 Sometimes the judges should see different things.
 
-The beginner should use the artifact before reading the builder’s explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not necessarily need to know which branch is currently winning.
+The beginner should use the artifact before reading the builder's explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not necessarily need to know which branch is currently winning.
 
 This became the **Isolation Principle**: preserve enough separation that independent pressure remains informative.
 
@@ -492,7 +492,7 @@ This looked less like a loss function and more like a tiny institution.
 
 Not a good institution automatically. Institutions can amplify conformity, entrench bad assumptions and become spectacularly efficient at measuring the wrong thing.
 
-Humans face the same difficulty. One person’s judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
+Humans face the same difficulty. One person's judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
 
 Apparently, when the clean loss function disappears, you eventually reinvent peer review.
 
@@ -556,11 +556,11 @@ There was no single diagonal-layering moment here, and I do not want to manufact
 
 The progress was distributed.
 
-Different branches exposed different weaknesses in our current idea of the demo. Tree-like representations made recursion visible but could make a simple algorithm look forbidding. Keeping the array visible connected the decomposition back to the data while also creating another place for the learner’s attention to go. Color could preserve identity between representations until too much color became another representation to decode. Some versions explained every step so carefully that the explanation became harder to follow than Merge Sort. Others became beautifully minimal and stopped teaching anything.
+Different branches exposed different weaknesses in our current idea of the demo. Tree-like representations made recursion visible but could make a simple algorithm look forbidding. Keeping the array visible connected the decomposition back to the data while also creating another place for the learner's attention to go. Color could preserve identity between representations until too much color became another representation to decode. Some versions explained every step so carefully that the explanation became harder to follow than Merge Sort. Others became beautifully minimal and stopped teaching anything.
 
 The useful pieces did not always live in the strongest overall artifact.
 
-A visual relationship could survive after the application that introduced it was discarded. A criticism from a simulated learner could change the next builder’s framing. Research could explain why a failure kept recurring. A browser could end a sophisticated discussion by demonstrating that the interaction simply did not work.
+A visual relationship could survive after the application that introduced it was discarded. A criticism from a simulated learner could change the next builder's framing. Research could explain why a failure kept recurring. A browser could end a sophisticated discussion by demonstrating that the interaction simply did not work.
 
 That is less cinematic than one agent inventing diagonal layering over coffee, but in some ways it is closer to Deep Mode. The result emerged from a population of partially successful attempts and judgments about what each had taught us.
 
@@ -572,7 +572,7 @@ I do not take these demos as evidence that we solved automated design.
 
 I do not even take them as evidence that the final demos teach humans better; that claim requires humans.
 
-They established the narrower point I cared about: more of the work I normally performed in the vibe coder’s seat could move into the system without first reducing creative problem solving to one fixed workflow.
+They established the narrower point I cared about: more of the work I normally performed in the vibe coder's seat could move into the system without first reducing creative problem solving to one fixed workflow.
 
 And that success exposed the harder problem.
 
@@ -588,7 +588,7 @@ This looks exactly like the compound intelligence we wanted.
 
 Now ask where the first claim came from.
 
-Perhaps it was a controlled educational study. Perhaps it was one teacher’s opinion. Perhaps the research agent inferred it from several examples. Perhaps five articles repeated the same claim because all five ultimately cited one source. Perhaps the study involved university students while our demo is for children.
+Perhaps it was a controlled educational study. Perhaps it was one teacher's opinion. Perhaps the research agent inferred it from several examples. Perhaps five articles repeated the same claim because all five ultimately cited one source. Perhaps the study involved university students while our demo is for children.
 
 Those are not small differences.
 
@@ -608,7 +608,7 @@ A cognitive architecture needs contracts too.
 
 But types and APIs are not enough.
 
-A research result, browser observation, evaluator preference, remembered failure and inherited design pattern should not enter the orchestrator’s context as five equally credible paragraphs.
+A research result, browser observation, evaluator preference, remembered failure and inherited design pattern should not enter the orchestrator's context as five equally credible paragraphs.
 
 Where did a claim come from? What was actually observed and what was inferred? Which parts were checked? What remains uncertain? If an evaluator preferred one artifact, from what perspective? If an old experiment taught us a lesson, how often has that lesson survived and under what conditions?
 
@@ -620,11 +620,11 @@ Humans ran into it long before AI. We built experiments, instruments, citations,
 
 These institutions are imperfect. Sometimes they preserve error. Sometimes they reward conformity. Sometimes the shopping cart survives peer review.
 
-But their purpose is not to make every individual dramatically smarter — it is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
+But their purpose is not to make every individual dramatically smarter—it is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
 
 Once cognition becomes distributed, the same questions become engineering questions: provenance, independence, replication, disagreement, authority.
 
-I had started the chapter trying to get myself out of the vibe coder’s seat. By automating more of the work there, I had ended up somewhere I did not expect.
+I had started the chapter trying to get myself out of the vibe coder's seat. By automating more of the work there, I had ended up somewhere I did not expect.
 
 The problem was no longer simply whether the agents were capable enough.
 

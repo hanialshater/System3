@@ -4,11 +4,11 @@
 
 Omar is walking his dog at night when something moves in the grass.
 
-The dog reacts first — ears up, body low, absolutely certain. Omar reacts too. Two nervous systems running the same ancient program: light and sound go in, a model of the world comes out, and the model says *something is there.*
+The dog reacts first—ears up, body low, absolutely certain. Omar reacts too. Two nervous systems running the same ancient program: light and sound go in, a model of the world comes out, and the model says *something is there.*
 
-For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where the checking stopped — nobody audited the interpreter, and the world filled up with spirits in the fields and omens in the sky.
+For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where the checking stopped—nobody audited the interpreter, and the world filled up with spirits in the fields and omens in the sky.
 
-The strange step is the second thought. The dog investigated the grass; Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it — or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong — and able to debug himself. Rational thought comes from that second loop, not from better eyes. Out of it came experiments that force reality to answer and statistics that protect us from the patterns we badly want to see. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
+The strange step is the second thought. The dog investigated the grass; Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it—or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong—and able to debug himself. Rational thought comes from that second loop, not from better eyes. Out of it came experiments that force reality to answer and statistics that protect us from the patterns we badly want to see. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
 
 Pattern Language made that self-correcting machinery software: memory, patterns, evaluators, tools and workflows that survive individual agents and shape what later agents do. Through all of it, one fact stayed reassuring. Human minds were doing the redesign.
 
@@ -16,7 +16,7 @@ Then a tool learned to do to itself what Omar had done to his own eyes.
 
 In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
-There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made — and now the thing being built had entered the factory.
+There was no intelligence explosion. No machine woke up; nothing escaped from a laboratory. A compiler had simply participated in producing the next version of the compiler. But a boundary that had held for the whole history of tools quietly became permeable. A hammer does not manufacture better hammers. A microscope has never redesigned a microscope. A printing press did not wake up one morning with opinions about typography. The maker had always stood outside the thing being made—and now the thing being built had entered the factory.
 
 Compiler people call the trick **self-hosting**. Sixteen Claudes were recently building exactly such a compiler; it returns here because the self-hosting compiler contains this chapter's whole warning in miniature:
 
@@ -68,7 +68,7 @@ Atari's *Montezuma's Revenge* became a museum exhibit for this problem. Useful r
 
 Humans do something stranger. Children open drawers nobody asked them to open and spend twenty minutes discovering that the cardboard box is more interesting than the toy.
 
-Researchers tried to move some of that exploration pressure inside the learner. Jürgen Schmidhuber was proposing curious model-building controllers as early as 1991: reward the learner for improving its own model of the world. Later work sharpened the idea into **learning progress** — seek places where ignorance is becoming competence.
+Researchers tried to move some of that exploration pressure inside the learner. Jürgen Schmidhuber was proposing curious model-building controllers as early as 1991: reward the learner for improving its own model of the world. Later work sharpened the idea into **learning progress**—seek places where ignorance is becoming competence.
 
 The learner could manufacture some of its own reasons to look around.
 
@@ -172,7 +172,7 @@ A company cannot.
 
 A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function.
 
-The Gödel Machine asked exactly the right question — *when should I accept a modification to myself?* — but its answer fit clean worlds better than messy ones. The practical answer would arrive two decades later, and it would not be a proof.
+The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. The practical answer would arrive two decades later, and it would not be a proof.
 
 The rest of the field kept moving the machinery inward.
 
@@ -498,7 +498,7 @@ Seen from far enough away, the history is remarkably consistent.
 
 We let the learner choose actions, then more of its experience, curriculum, objective inference, learning machinery, simulated worlds, tests, judges and research procedures. At each step, something that had looked like background turned out to contain a human decision.
 
-There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram — and then connected the arrows.
+There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows.
 
 The hardest teacher job was hidden inside all the others:
 

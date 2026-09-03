@@ -188,7 +188,7 @@ An LLM has no social capital of its own to lose. It can confidently produce some
 
 At its most compressed, the danger is **coherence outrunning correspondence**. The machine can become extraordinarily good at tongue without having an ear available to check against. The dangerous failures are not the ones that crash. They are the ones that seem to work: decaf confidence, indistinguishable from the real thing until the moment it matters.
 
-The missing ingredient is not punishment for models — it is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
+The missing ingredient is not punishment for models—it is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
 
 That is the problem System 3 is trying to solve.
 
@@ -447,21 +447,21 @@ Otherwise the scaffold becomes a cage.
 
 Return to the seven claims.
 
-**1. Krka National Park — True.** I was there. For me this sits close to embodied memory. For you it is testimony unless you extend the chain through records or other evidence.
+**1. Krka National Park—True.** I was there. For me this sits close to embodied memory. For you it is testimony unless you extend the chain through records or other evidence.
 
-**2. Best philosophical thinking at waterfalls — False.** I mostly do philosophy on buses and in boring waiting rooms. Waterfalls are for ice cream. The subject and the source are unfortunately the same man.
+**2. Best philosophical thinking at waterfalls—False.** I mostly do philosophy on buses and in boring waiting rooms. Waterfalls are for ice cream. The subject and the source are unfortunately the same man.
 
-**3. Permanent camel resident — False.** This can be checked against information about the park. You do not need my biography.
+**3. Permanent camel resident—False.** This can be checked against information about the park. You do not need my biography.
 
-**4. The tongue can touch its own ear — Unknown.** I genuinely do not know. I did not check. Neither did you. We can reason from anatomy and build a prior, but the shortest decisive chain would have been to stay there and watch.
+**4. The tongue can touch its own ear—Unknown.** I genuinely do not know. I did not check. Neither did you. We can reason from anatomy and build a prior, but the shortest decisive chain would have been to stay there and watch.
 
-**5. Ice cream ten minutes earlier — True.** Chocolate. Mostly testimony again.
+**5. Ice cream ten minutes earlier—True.** Chocolate. Mostly testimony again.
 
-**6. Camels are native to the Dalmatian coast — False.** You probably rejected this immediately without reconstructing camel evolutionary history or personally surveying Dalmatian fauna. A large inherited structure did that work for you.
+**6. Camels are native to the Dalmatian coast—False.** You probably rejected this immediately without reconstructing camel evolutionary history or personally surveying Dalmatian fauna. A large inherited structure did that work for you.
 
 **System 1 can be fast because System 3 has often been working for centuries underneath it.**
 
-**7. Real, unedited photograph — True.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence and gives us one more thing that may itself need to be trusted. And I could be lying to prove a point about trusting sources. If I told you the photograph was AI-generated, you would probably believe that too, because it fits a pattern you recognize.
+**7. Real, unedited photograph—True.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence and gives us one more thing that may itself need to be trusted. And I could be lying to prove a point about trusting sources. If I told you the photograph was AI-generated, you would probably believe that too, because it fits a pattern you recognize.
 
 Welcome to epistemology.
 
