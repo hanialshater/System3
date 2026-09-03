@@ -30,11 +30,11 @@ If you keep one sentence, keep this one: the impressive part is how far you can 
 
 *August 2026*
 
+
 # Chapter 1: Why I'm Betting on AI Agents
 
 *Or: How I Learned to Stop Micromanaging and Love Emergence*
 
-![Simple building blocks, complex emergence](../resources/image0132.png)
 
 *Simple building blocks, complex emergence*
 
@@ -242,7 +242,6 @@ If it works, things get much more interesting.
 
 *From Classic Algorithms to Autonomous Discovery*
 
-![The algorithmic vortex](../resources/image0135.png)
 
 *The algorithmic vortex*
 
@@ -270,7 +269,6 @@ And that is how I ended up spending an unreasonable amount of time packing circl
 
 ## The Running Example: Circle Packing
 
-![Citrus packing - a real-world example](../resources/image0138.png)
 
 *Citrus packing—a real-world example*
 
@@ -284,7 +282,6 @@ Unfortunately, the solution space is nasty. Every circle has a position and a ra
 
 For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.
 
-![Circle packing solution n=26](../resources/image0139.png)
 
 *Circle packing solution n=26*
 
@@ -300,7 +297,6 @@ The experiment becomes interesting once we ask a second question:
 
 For most of the history of algorithm design, the answer was us.
 
-![History of algorithm design](../resources/image0136.png)
 
 *History of algorithm design*
 
@@ -324,7 +320,6 @@ That is hill climbing:
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
-![Hill climbing progression](../resources/image0140.png)
 
 *Hill climbing progression*
 
@@ -362,7 +357,6 @@ That is usually nonsense because circle numbering is arbitrary. Two nearly ident
 
 So we used **bipartite matching crossover**. Rather than pair circles by position in an array, pair them according to their geometric role in the packing. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
 
-![Naive vs Geometric Crossover](../resources/image0141.png)
 
 *Naive vs Geometric Crossover*
 
@@ -370,7 +364,6 @@ So we used **bipartite matching crossover**. Rather than pair circles by positio
 
 Now we can evolve a population: mutate, repair, cross, select and repeat.
 
-![Evolutionary strategies with Bipartite Matching crossover](../resources/image0122.png)
 
 *Evolutionary strategies with Bipartite Matching crossover*
 
@@ -388,7 +381,6 @@ MAP-Elites takes a different approach. Instead of ranking every candidate on one
 
 For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
-![MAP-Elites archive visualization](../resources/image0123.png)
 
 *MAP-Elites archive visualization*
 
@@ -470,7 +462,6 @@ AlphaEvolve turns that basic idea into a much larger search process.
 
 Imagine one generation. The system selects a promising program from its archive, perhaps along with other successful but different programs that contain useful ideas. The model sees the code, information about previous attempts and the scores they produced, then proposes a patch. The patch is applied, the program runs and the evaluator scores what happened. The new program and its result go back into the archive. Then the process repeats.
 
-![AlphaEvolve architecture](../resources/image0124.png)
 
 *AlphaEvolve architecture*
 
@@ -544,7 +535,6 @@ I want to be careful with the word *discovered*. I had not seen that particular 
 
 Once that structural idea became strong enough, the nature of the work changed. The agent spent less time inventing new geometries and more time adjusting solver settings, tolerances, initialization details and all the boring machinery that suddenly matters when the last fraction of a percent becomes expensive.
 
-![Code evolution result](../resources/image0125.png)
 
 *Code evolution result: iterative optimization*
 
@@ -1322,6 +1312,7 @@ It was whether the things they believed deserved to be believed.
 
 How do you know what to trust?
 
+
 # Chapter 4: System 3
 
 *Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone*
@@ -1344,7 +1335,6 @@ So before we design another architecture, consider a camel.
 
 **Seven claims about this image. Some are true. Some are false. You can't verify most of them without trusting me:**
 
-![The author at Krka National Park](../resources/image0133.png)
 
 *The author at Krka National Park*
 
@@ -3088,6 +3078,7 @@ Omar could investigate the investigator. Now the investigator can rewrite itself
 
 The teacher does not disappear. She moves up another level.
 
+
 # Chapter 8: Scalable Oversight
 
 *Learning From a Human Who Cannot Label Everything*
@@ -3857,6 +3848,7 @@ A theory of fluent autonomy should survive contact with systems that cannot be r
 I needed a less polite laboratory.
 
 Fortunately, Monday morning was waiting.
+
 
 # Chapter 11: The Store That Builds Itself
 
@@ -4666,6 +4658,7 @@ It cannot be made with another architecture diagram.
 
 It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
+
 # Chapter 13: The Prophecy
 
 *The Love Prompt of Devesh*
@@ -4812,6 +4805,7 @@ Left it there.
 
 **THE END**
 
+
 # Appendix: The Zen of Autonomy
 
 ```text
@@ -4872,11 +4866,13 @@ We built scaffolds for AI because they couldn't.
 We built scaffolds for ourselves for the same reason.
 ```
 
+
 # A Note on the Illustrations
 
 The illustrations were designed as a second, quieter narrative for the book. They use an old human visual world—paper, ink, stone, workshops, landscapes, books and instruments—gradually inhabited by machine intelligence. The aim was not to illustrate each chapter literally, but to give it an image that becomes more meaningful after the chapter has been read.
 
 The recurring robots, institutions, doors, landscapes and machines are intentionally left unexplained. Some ideas should arrive visually before they are named. As the book moves from agents and architectures toward human intention and capacity, the images move with it. If you noticed that before reading this note, good. If you did not, that is good too.
+
 
 # Appendix: References
 
@@ -5077,6 +5073,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 ## Chapter 13 — The Prophecy
 
 - The Wachowskis, *The Matrix* (1999). The taxes are original.
+
 
 # About the Author
 
