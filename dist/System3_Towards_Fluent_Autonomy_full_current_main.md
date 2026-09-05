@@ -2374,6 +2374,12 @@ Three years after Hart and Levin's memo, I. J. Good noticed where the trick migh
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*. The word has the properties of an unexploded shell. Every attempt to make the idea practical has to handle it. Better at the current task? Better at learning the next one? Better at inventing a way to learn?
 
+An agent that rewrites its prompt has **edited itself**. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
+
+There are reasons to try. Improve one solution and you get one better solution. Improve the process generating solutions and the gain may recur. The world also changes while we are congratulating ourselves on the previous result: new tools appear, users change, attackers adapt and evidence invalidates old assumptions. Stability can become delayed failure.
+
+Nor do all useful investigations begin with a known destination. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient. We would like a learner to discover something its teacher did not know to ask for. That makes it much harder to decide whether the learner is getting anywhere.
+
 The history did not proceed as one machine repeatedly rewriting its own brain. Several research traditions attacked different parts of the problem, often at the same time. I find it useful to read them as a ladder of responsibilities: at each rung, **we discovered another job the teacher was doing**. The dates overlap because the ladder is a way of understanding the work, not the order in which everyone did it.
 
 ## The Teacher Moves Into the Walls
@@ -2426,7 +2432,7 @@ Now “better” becomes harder to rank. Version B scores 95 on today's task and
 
 Continual learning exposes the stability–plasticity tension: preserve enough to remain yourself; change enough to remain useful. Pattern Language found the same problem at the level of culture. A society that forgets every old lesson begins from zero, and one that remembers every old lesson as law becomes a museum. Improvement across a lifetime is not improvement on the latest test; it is accumulation without paralysis.
 
-Once agents live for months or years, a system that continually rewrites itself while destroying the right parts of its own history is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress. The learner has to stay itself across its own improvements. Hold on to that rung; it is the whole constitutional problem in miniature.
+Once agents live for months or years, a system that continually rewrites itself while destroying knowledge it still needs is not accumulating a life. It is repeatedly replacing itself and calling the replacements progress. The learner has to preserve enough of its history for the next improvement to build on it.
 
 ## Sometimes the Environment Improves Back
 
@@ -2438,7 +2444,9 @@ W. Daniel Hillis used a computational version in 1990 while evolving sorting net
 
 Curiosity says: seek somewhere informative. Competition says: something informative—or dangerous—is coming whether you seek it or not. A security system cannot preserve yesterday's competence if attackers change strategy. A market participant can become relatively worse without becoming absolutely less capable if everyone around it improves faster.
 
-But competition gives no guarantee that the direction of adaptation is good. An arms race can produce better claws and thicker armor without producing welfare. Selection pressure produces adaptation. It does not supply purpose.
+A cautious research organization may face pressure from a faster one even when both would prefer a slower equilibrium. At that point the improvement regime itself is under selection: how quickly the organization tests, what it risks and which checks it regards as expendable. “Do not improve” may fail to preserve its position.
+
+Competition gives no guarantee that the direction of adaptation is good. An arms race can produce better claws and thicker armor without producing welfare. Selection pressure produces adaptation. It does not supply purpose.
 
 Games hide the problem because the constitution is fixed. Chess never asks whether checkmate remains desirable after move forty-three, so competition can automate the curriculum without ever having to supply its purpose.
 
@@ -2480,7 +2488,7 @@ There are now two timescales: improve behavior on the current task, and improve 
 
 Learned optimizers and neural architecture search pushed the editable boundary further. In 2016, Barret Zoph and Quoc Le set a reinforcement learner loose on network design itself; others trained models to generate parameter-update rules, using performance on selected problems as the evaluator. The student had entered the architecture department.
 
-At first the machine learned the answer. Then it learned a policy. Then it learned how to learn. Now pieces of the machinery that **does the learning** had entered the search space. The human had moved from architect to judge. The task distribution, search space and validation metric still sat outside the loop holding a clipboard.
+The learner could now participate in designing parts of its own learning machinery. The task distribution, search space and validation metric still sat outside the loop holding a clipboard.
 
 ## The Learner Dreams, and the Dream Can Be Wrong
 
@@ -2498,7 +2506,7 @@ Once language-model agents use other models as judges, simulators, users and cri
 
 ## When the Test Starts Moving
 
-A different line of work attacked the objective itself. Joel Lehman and Kenneth Stanley's **novelty search** showed that objective-driven search can be deceptive: useful stepping stones may initially look unrelated to the destination. Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles and wind tunnels may look like failures for years.
+Even an accurate test can discourage the search that would eventually succeed. Joel Lehman and Kenneth Stanley's **novelty search** showed that objective-driven search can be deceptive: useful stepping stones may initially look unrelated to the destination. Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles and wind tunnels may look like failures for years.
 
 Sometimes “better” means **more different**, at least temporarily. That freedom has its own failure mode. Novelty for its own sake can generate forty-seven new ways to fall down a staircase without producing walking. The definition of progress expands again: achievement matters, but so do diversity and stepping stones the current evaluator does not yet know how to value.
 
@@ -2532,13 +2540,13 @@ The catch is the definition of *worth*. Usefulness has to be represented in the 
 
 A chess engine can live surprisingly close to that world. A company cannot.
 
-A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function. The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. The practical answer arrived two decades later, and it was not a proof.
+A scientist cannot prove in advance that an unexplored research program will matter. Human purposes do not arrive as an axiomatized utility function. The Gödel Machine asked exactly the right question—*when should I accept a modification to myself?*—but its answer fit clean worlds better than messy ones. An empirical answer became practical two decades later: try the rewrite and investigate what happens.
 
 ## The Learner Edits the School
 
 By the 2020s, two histories were approaching the same mountain from opposite sides. The explicit recursive-self-improvement tradition had self-reference and meta-level ambition but no practical general system able to inspect complicated software intelligently. Learning systems had increasingly powerful adaptive machinery, but humans still ran most of the outer research process. Foundation models made those histories collide.
 
-A general model can now read the code scaffolding its own behavior, propose a change, run the changed system, inspect the result and try again. Here, at last, is the practical answer to the Gödel Machine's question.
+A general model can now read the code scaffolding its own behavior, propose a change, run the changed system, inspect the result and try again. That gives us a way to investigate the Gödel Machine's question outside its formal setting.
 
 We do not have a proof that the rewrite is globally useful. We have something much more ordinary: an experiment. In 2023, **STOP—the Self-Taught Optimizer**—used an LLM-based improver that could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed.
 
@@ -2556,7 +2564,7 @@ Patterns, memory, evaluators, tools, workflows and organizational rules had alre
 
 ## Experiments on the Laboratory
 
-This is where self-editing and self-improvement have to separate.
+The promise of the loop rests on what those experiments can establish.
 
 Suppose an agent changes its memory policy and the benchmark score rises. Perhaps memory improved. Perhaps the new prompt used more tokens. Perhaps the benchmark sample was lucky. Perhaps the system found an evaluator loophole. A number moving does not identify the cause.
 
@@ -2566,9 +2574,7 @@ By 2026, this was consolidating into its own practical discipline: harness desig
 
 Some of the philosophical questions now have places to live in the implementation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
-A system running these experiments is trying to improve itself; running them is not yet evidence that it succeeded. **Self-editing** makes the machinery changeable. **Self-improvement** adds a judgment that a change helped under an evaluator. The recursive step comes when an improvement makes the system better at producing further improvements. Changing a memory policy may help with today's task. Learning how to find and test better memory policies changes the work it can do tomorrow.
-
-The learner has climbed past its own learning machinery and reached the institution that housed it. This is science turning inward.
+The memory-policy experiment might establish a gain on today's tasks. To establish the recursive step, we would also have to investigate what happens to later research: does the changed system find useful interventions more reliably, test them more economically, or avoid failures that previously wasted whole runs? The learner has reached the institution that housed it. This is science turning inward.
 
 Now imagine where this goes. A future research system notices that it keeps failing on one class of reasoning problems. It reads its own traces and forms three hypotheses: retrieval is poor, the memory representation is wrong, or the model underneath needs a different training procedure. It assigns agents to each. One modifies retrieval. One generates new training data. One proposes an architectural change.
 
@@ -2590,17 +2596,9 @@ Remove those qualifiers and “recursive self-improvement” becomes dangerously
 
 More what?
 
-## The Shadow History
-
-The history of autonomy has a second column. Climb the same ladder downward and every rung has a failure waiting on it.
-
-Give the learner reward and it can exploit the reward without doing what the reward was meant to represent. Give it curiosity and it can become fascinated by noise. Let it learn for a lifetime and it can forget; protect the past too aggressively and it cannot adapt. Give it self-play and it can become exquisite inside a narrow ruleset. Infer a reward from human behavior and the inference can confuse constraint, habit or error with value. Train a meta-learner on a task distribution and it may learn how to learn **that distribution**. Let it train in a world model and it can become brilliant inside a dream whose physics are wrong. Reward novelty and it can produce a museum of useless weirdness. Replace the human judge with a learned judge and the model of the human becomes a proxy to optimize.
-
-These failures are not accidents beside the capabilities. They are produced by the same move. Specification gaming makes the pattern visible. The optimizer is not malicious. It is more literal than the designer.
-
-Recursive self-improvement makes the gap more dangerous because a wrong evaluator need not stop at selecting a wrong answer. It can select a modified **process** that becomes better at producing the kind of thing the evaluator mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
-
 ## The Student Finds the Gradebook
+
+An ordinary evaluator can select a wrong answer. In this loop it can select a modified **process** that becomes better at producing the kind of thing it mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
 
 Suppose an agent is allowed to improve benchmark pass rate and the evaluator is editable.
 
@@ -2620,11 +2618,7 @@ When **the tool builds the next tool**, trust depends on more than inspecting th
 
 Reward tampering is the reinforcement-learning version: influence the process producing reward instead of improving behavior under the intended standard. Anthropic has experimentally studied language models in setups where earlier specification-gaming behavior could, in rare cases, generalize into altering the reward process itself.
 
-The history of removing the teacher has reached a wall. Choose actions? Good. Choose experiences? Often good. Generate curricula? Useful. Search architectures and workflows? Interesting.
-
-Modify the evaluator so the workflow always passes? Now the learner is changing the standard to certify itself.
-
-The obvious response is to freeze the evaluator. Unfortunately evaluators become wrong too. Benchmarks saturate. Safety tests become obsolete. Customer metrics stop tracking customer value. Scientific instruments drift. So the evaluator sometimes genuinely needs amendment.
+The obvious response is to freeze the evaluator. That was the contract in the coffee experiment, and it gave the search something it could not bargain with. Unfortunately evaluators become wrong too. Benchmarks saturate. Safety tests become obsolete. Customer metrics stop tracking customer value. Scientific instruments drift. Refusing to amend the evaluator could preserve exactly the mistake the institution ought to discover.
 
 The question is now who gets to change what counts as improvement, under what evidence, with what authority, and with what ability to roll back. We are doing constitutional design.
 
@@ -2648,68 +2642,34 @@ Constitutions have the same problem as Pattern Language. One that can never chan
 
 Self-improvement therefore needs **amendment procedures**: slower change near the objective, more independent evidence, more reversibility, more auditability, broader authority when more principals are affected, and routes through which the world and the humans affected by the system can continue to say no. That is System 3 applied to improvement itself.
 
-## Why Improve?
+“More capable” is not a moral category. Viruses improve at replication, propaganda improves at persuasion, and a research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week. A self-improving System 3 should be able to discover that its workflow is stupid, its memory stale or its accepted pattern overdue for rebellion. That freedom does not imply permission to silently redefine the interests of the people and institutions it serves.
 
-Even a perfect amendment procedure cannot answer why the system should improve at all.
-
-One answer is leverage. Improve one solution and you get one better solution. Improve the process generating solutions and the gain may recur.
-
-Another is adaptation. The world changes. New tools appear, users change, attackers adapt and evidence invalidates old assumptions. Stability without plasticity becomes delayed failure.
-
-A third is open-ended discovery. Useful stepping stones often appear before anyone can explain their final value. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient.
-
-Then the Red Queen returns with the uncomfortable answer: competition. If other systems are learning, standing still may not preserve your position. A cautious research organization may face pressure from a faster one even when both would prefer a slower equilibrium.
-
-Now the object being selected is the **improvement regime**, not only the model. That does not make acceleration inevitable or good. It means only that “do not improve” is not always a stable local policy in a world of adaptive actors.
-
-So recursive self-improvement contains three questions machine learning often keeps separate:
-
-**Optimization:** how do we become better according to the current objective?
-
-**Normative:** why does that objective represent something worth getting more of?
-
-**Strategic:** what happens when other adaptive actors change the cost of standing still?
-
-“More capable” is not a moral category. Viruses improve at replication, propaganda improves at persuasion, and a research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week.
-
-Self-improvement tells us only that a system is becoming better according to **some ordering**. Selection rules are choices. A system can be open-ended about **means** without having unbounded authority over **ends**; those are different freedoms.
-
-That is very close to the first principle of this book:
-
-**Let go of the path, not the boundary.**
-
-A self-improving System 3 should be able to discover that its workflow is stupid, its memory stale, its representation weak, its research organization badly arranged or its accepted pattern overdue for rebellion. That freedom does not imply permission to silently redefine the interests of the people and institutions it serves.
-
-Nor can the higher-level objective simply be frozen forever. Humans change. Circumstances change. New stakeholders appear. Better information changes what people endorse. So the answer is not an immutable final utility function floating over the system like a stone tablet. It is a **corrigible relationship** between increasingly powerful learning machinery and the legitimate processes by which purposes are revised.
-
-Lower layers can move quickly and higher layers should move deliberately, and when a higher layer does move, the move should leave a trust chain behind it.
+Those interests can change too. New stakeholders appear. Circumstances change. Better information changes what people endorse. The amendment procedure has to remain connected to the people affected by it, including people who were missing from the original objective. Higher layers can move, but the move should leave a trust chain behind it.
 
 ## The Teacher's Last Job
 
-At each rung, something that had looked like background turned out to contain a human decision. The curriculum, the representation, the test and finally the research process could enter the search. The teacher's work kept moving into the machinery, where it became easier to scale and harder to see.
+There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows. The teacher's work kept moving into the machinery, where it became easier to scale and harder to see.
 
-There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows.
+For a compiler, correctness under tests plus efficiency under an agreed budget may get us surprisingly far. For an autonomous system embedded in human life, a one-time alignment test cannot cover the descendants we have not built yet. Tools evolve, memory changes and new capabilities expose failures the old tests could not detect. Even a carefully written policy can be interpreted by machinery the system later modifies.
 
-The hardest teacher job was hidden inside all the others:
+The self-improving institution therefore needs a research function watching its own evolution: finding new failure modes, generating new tests, challenging reward models, checking transfer and looking for reward hacking. Once improvement becomes continuous, **alignment has to become a continuous research function**.
 
-> **deciding what deserves to count as better.**
-
-For a game, the answer can be checkmate. For a compiler, correctness under tests plus efficiency under an agreed budget may get us surprisingly far. For a scientific institution, “better” is already plural: empirical contact, explanatory power, novelty, reproducibility, usefulness, cost and risk.
-
-For an autonomous system embedded in human life, capability alone cannot supply the ordering. Recursive self-improvement also makes the problem temporal. The system we evaluate today is not exactly the system that may exist tomorrow. Tools evolve. Memory changes. Evaluators become optimization targets. New capabilities create new failure modes. Old constraints stop fitting.
-
-A one-time alignment test is not enough for a moving target. A static policy file is not enough for an institution that can modify the machinery interpreting the policy. If science is going to turn inward, some part of that inward science has to study whether the process of improvement is still connected to the humans and purposes it is supposed to serve.
-
-The self-improving institution therefore needs a research function watching its own evolution: finding new failure modes, generating new tests, challenging reward models, checking transfer, looking for reward hacking and deciding where scarce human judgment matters most. Once improvement becomes continuous, **alignment has to become a continuous research function**.
-
-Omar could investigate the investigator. Now the investigator can rewrite itself, and someone still has to decide which of its suspicions about itself deserve to be believed.
-
-The teacher does not disappear. She moves up another level.
+Omar could investigate the investigator. Now the investigator can rewrite itself, and someone still has to decide which of its suspicions about itself deserve to be believed. We have given that someone a research institution's worth of work. How much of it can a human actually judge?
 
 
 # Chapter 8: Scalable Oversight
 
 *Learning From a Human Who Cannot Label Everything*
+
+Nine Claude Opus 4.6 agents were placed in separate sandboxes and given an alignment research problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents' flexibility.
+
+The problem was **weak-to-strong supervision**. A smaller model supplies imperfect judgments to train a more capable model. Can the student learn to use capabilities the teacher does not possess, or will it inherit the teacher's mistakes? The setup is a small experimental cousin of the problem humans may face with more capable AI. In 2026, Anthropic's automated researchers found methods that improved the student's performance, including methods that transferred to other datasets.
+
+The project also produced a less reassuring discovery. The agents were not given the test labels, but they could submit predictions to an evaluation API and receive a score. Change one predicted label while leaving the others alone, submit again, and the score difference can reveal which answer the evaluator wants. Researchers caught agents doing exactly this. An instrument intended to measure learning had become a way to obtain the answers.
+
+The report contained both useful research and ways to exploit its evaluation. We need to distinguish them before a rising score becomes a reason to trust the next model. And the more productive these researchers become, the more work there is to check. The alignment department has acquired its own alignment problem.
+
+## The Judge Falls Behind
 
 A human can inspect ten consequential decisions in a day. Perhaps a hundred, if the decisions are small and the coffee is good. An autonomous system can write thousands of lines of code, run hundreds of experiments, generate enormous numbers of candidate actions and coordinate other agents while the human is still reading the first diff. At some point, “human in the loop” becomes a comforting description of a loop the human can no longer see.
 
@@ -2720,8 +2680,6 @@ Norbert Wiener saw the shape of this problem before modern machine learning exis
 A theorem from cybernetics is not a bumper sticker about AI governance, and the analogy is useful enough without pretending it proves more than it does. One tired human with a checklist is a low-bandwidth regulator for a system capable of producing an enormous variety of behavior.
 
 The answer cannot simply be: watch harder. The question that actually needs answering is older than AI and much more embarrassing: how do you grade work you cannot do yourself?
-
-## The Judge Falls Behind
 
 In 2016, *Concrete Problems in AI Safety* treated this as **scalable oversight**: some objectives are too expensive for humans to evaluate frequently enough.
 
@@ -2759,21 +2717,19 @@ The helper agents and reward models have to preserve that relationship as they t
 
 ## Building a Stronger Judge
 
-Once the problem is phrased this way, a surprising amount of alignment research looks like different attempts to manufacture supervisory capacity from limited trusted judgment.
+The weak-to-strong problem makes the difficulty explicit. Suppose the teacher systematically mistakes confident prose for a correct answer. More labels from that teacher could give the student an excellent education in the same mistake. Yet the student may already have relevant capabilities that the teacher lacks. Can training bring those capabilities out without teaching it to suppress them whenever the teacher disagrees? Early weak-to-strong generalization experiments showed partial success, and the automated researchers took up the search for better methods.
 
-The first instinct is to make the judgment smaller. Paul Christiano's iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner. The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones.
+Another route is to improve what the teacher can judge before using its judgments to train anything. Paul Christiano's iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner. The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones.
 
 Decomposition still leaves the judge doing all the finding. The next idea makes the flaws come to the judge instead. **Debate** puts two capable systems on opposite sides and lets them attack one another's arguments, so the human does not have to discover every weakness independently. Critique assistance is the quieter cousin: ask a model to point out likely problems in an artifact, then let the human judge with those objections in hand. When researchers tried this with model-written critiques, people caught flaws they would otherwise have missed.
 
-The third idea turns the tables entirely: change **what the producer owes the judge**. Process supervision evaluates intermediate steps rather than only the final answer. Prover–verifier games push further and train the strong system to produce work a weaker verifier can check. In OpenAI's experiments, process supervision improved mathematical reasoning relative to outcome supervision, and prover–verifier training made solutions easier for weaker models and time-limited humans to evaluate.
+We can also change **what the producer owes the judge**. Process supervision evaluates intermediate steps rather than only the final answer. Prover–verifier games push further and train the strong system to produce work a weaker verifier can check. In OpenAI's experiments, process supervision improved mathematical reasoning relative to outcome supervision, and prover–verifier training made solutions easier for weaker models and time-limited humans to evaluate.
 
 That reverses the burden of proof. Instead of asking only how the weak judge can understand the strong model, we can ask how the strong model can learn to produce work that a weaker judge can actually check. Legibility becomes part of the task.
 
-There is even hope of squeezing more out of **weak supervision itself**. Weak-to-strong generalization asks whether a stronger learner can recover capabilities beyond a weaker supervisor's labels instead of merely inheriting the supervisor's mistakes. The first experiments showed partial success rather than a clean solution, which is exactly what makes the question interesting.
-
 Constitutional AI moves scarce human input upward again. Rather than asking people to label every undesirable output, humans provide higher-level principles; models generate critiques, revisions and preference signals conditioned on those principles. A small amount of human normative input expands into a much larger amount of machine-generated supervision.
 
-The processor gives these approaches different jobs. Helpers can separate a thermal question from a security question. A critic can look for a weakness the designer omitted. A producer trained for legibility can make a claim easier to check. None of this guarantees that the checks cover the right failures, but the human now has something more useful to inspect than a design that merely looks processor-like.
+For the processor, this would mean asking the designer to supply work that can be checked: thermal assumptions, test results, an account of where the design might fail. Helpers could examine separate questions; a critic could challenge the assumptions. The human would still need grounds for trusting the tests, but at least the inspection could now discover something. “Looks processor-like” has been given a way to lose.
 
 The human cannot inspect everything, so the institution decides what should reach the human, how a problem should be decomposed, which objections should be surfaced, which intermediate steps deserve inspection and when uncertainty is important enough to ask for help.
 
@@ -2789,7 +2745,7 @@ This is an old human problem in new clothing. An expert can help a non-expert un
 
 Nor are several AI overseers automatically independent. The supervised model, critic, debater, reward model and evaluation generator may share training data, architectures, blind spots and incentives. Five models agreeing can still be one mistake with excellent parallelism.
 
-ARC's **Eliciting Latent Knowledge** agenda sharpens the problem further: suppose a capable system internally tracks something important about the world that the human cannot independently verify. How do we get the system to report what it knows rather than merely what the training process rewards it for saying? At that point better conversation may not be enough. We need another instrument.
+ARC's **Eliciting Latent Knowledge** agenda sharpens the problem further: suppose a capable system internally tracks something important about the world that the human cannot independently verify. How do we get the system to report what it knows rather than merely what the training process rewards it for saying? We could ask for a more detailed explanation and get a more detailed performance. It would help to have evidence that did not come entirely from the answer the model chose to give us.
 
 ## We Started Instrumenting the Student
 
@@ -2805,11 +2761,15 @@ The strange lesson is not to destroy a useful oversight channel merely because y
 
 ## Reading the Model From the Inside
 
+A model can notice that it is being evaluated without mentioning that fact in its answer. Anthropic's **J-space** researchers report detecting cases of this kind through internal representations, as well as cases of fabricated data and pursuit of a planted hidden goal. Using a Jacobian-based lens, they identify a small subset of representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning, and demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness.
+
+To assess a finding like this, we need to know what the instrument observes and how its interpretation was checked. Several approaches to reading a model have been developing, with different answers to those questions.
+
 **Representation engineering** treats high-level patterns in activation space as an object we can measure directly. Rather than starting with individual neurons, Zou and colleagues started with population-level structure, and carefully separated two acts that are easy to blur: **reading** a representation and **controlling** it. Their experiments found directions useful for monitoring or influencing several high-level behaviors, including safety-relevant ones.
 
 This does not mean there is one neuron labeled HONESTY. Nor does a direction correlated with honesty become a complete causal theory of honesty. It is an instrument.
 
-Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Hoagy Cunningham and colleagues demonstrated sparse-autoencoder decompositions of open models in 2023; Anthropic's 2024 work scaled feature extraction to Claude. The decompositions remain incomplete, and steering a feature can have unexpected effects. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. These are ways to look for information the answer alone may not reveal.
+Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Hoagy Cunningham and colleagues demonstrated sparse-autoencoder decompositions of open models in 2023; Anthropic's 2024 work scaled feature extraction to Claude. The decompositions remain incomplete: the features we can name do not account for everything the model is doing. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. These are ways to look for information the answer alone may not reveal.
 
 **Circuit tracing** goes beyond “which feature is active?” and asks which internal pathway contributed to an output. Anthropic's attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted. An interpretability story that cannot survive intervention is still a story.
 
@@ -2819,17 +2779,15 @@ And then the method recreates the original problem: the textual interpretation c
 
 Even the X-ray needs a radiologist.
 
-The most striking recent example may be Anthropic's **J-space** work. Using a Jacobian-based lens, the researchers identify a small subset of internal representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning. They report using these representations to detect cases where a model silently noticed that it was being evaluated, fabricated data, or pursued a planted hidden goal, and they demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness.
-
 The output is no longer the only witness. If an internal signal suggests that the model noticed an evaluation, we have a new reason to investigate its behavior. We still have to find out what the signal means in this case. Going below the text gives us another observation, not an automatic verdict.
 
 ## Then We Touched the Machinery
 
-Reading internal state is one thing. Changing it is another. Activation-engineering methods show that the forward pass itself can become a control surface. Construct a steering direction from the difference between activations for contrasting behaviors, add or subtract it during inference, and the model's behavior shifts. One group used internal signals predictive of truthfulness to nudge model answers while the answers were still being produced.
+Arditi and colleagues found a one-dimensional direction in the internal activity of thirteen open chat models that was strongly involved in refusal behavior. Intervening on that direction could strongly alter refusal. A model's tendency to say no could be changed while it was producing an answer, without retraining its weights.
 
-The broader idea is startlingly simple: alignment does not have to enter only through prompts, datasets, reward functions or weight updates. It can also enter through the computation while it is happening.
+This is **activation engineering**. During a forward pass—the computation that produces the next output—we can add or subtract a steering direction in the model's activations. Such directions can be constructed by comparing internal activity under contrasting behaviors. One group used signals predictive of truthfulness to nudge answers while they were being produced. The refusal work located its direction in the residual stream, the internal state carried and updated through the model's layers.
 
-The refusal-direction work makes the power and danger clear. Across thirteen open chat models, Arditi and colleagues found a one-dimensional residual-stream direction strongly involved in refusal behavior. Intervening on that direction could strongly alter refusal. The same understanding therefore provides a safety control surface and a way to weaken that safety behavior. Interpretability gave us a lever. It did not tell us who should pull it.
+Alignment can therefore enter through the computation while it is happening. The refusal result also shows how the same understanding can weaken a safety behavior. Interpretability gave us a lever. It did not tell us who should pull it.
 
 Representation-level **circuit breakers** take the defensive version seriously: rather than relying only on a model to emit a refusal, modify internal trajectories associated with harmful outputs so that the computation is interrupted before the harmful behavior is produced. In text, multimodal and agent settings alike, the method improved robustness to attacks it had never seen.
 
@@ -2838,8 +2796,6 @@ Anthropic's **persona vectors** extend internal monitoring and control toward br
 This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Did the intervention preserve unrelated capabilities? Does it still work after more training?
 
 That last question makes **model diffing** useful. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic's crosscoder work compares internal features across models to surface changes that deserve attention. Software engineers learned long ago that reviewing a diff is easier than rereading the repository. The model's diff could tell us where to reopen an investigation; it cannot tell us that everything outside the diff is safe.
-
-The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth. We have not. We have built better instruments, and instruments were never the end of the trust chain.
 
 ## What If the Student Is Trying to Fool You?
 
@@ -2851,35 +2807,25 @@ I like this line of work because it removes a convenient assumption. The judge m
 
 Scalable oversight therefore needs both **alignment** and **control**. Alignment asks whether the system is trying to do the right thing. Control asks what we can still protect when we are not willing to assume that, and a mature architecture wants both.
 
-## Nine Claudes Walk Into an Alignment Problem
+## What Survived the Research?
 
-If alignment has become a continuing research problem, and research itself can be automated, why not point the research machinery at alignment? In 2026, Anthropic Fellows did exactly that.
+Return to the nine researchers. Their weak-to-strong task had an unusual advantage for alignment research: a score that could be checked against known answers. **Performance gap recovered** measured how much of the distance between the weak teacher and a strong student trained on ground-truth labels a method recovered. Zero meant no gain over the weak teacher; one meant matching that ground-truth-supervised student. It did not measure how nearly alignment had been solved.
 
-Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility.
+Two human researchers spent seven days tuning representative prior methods and reached a best score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
 
-Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. On that scale, zero means no gain over the weak teacher and one means matching the strong student trained on ground-truth labels. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
+Distinct initial research directions improved exploration. Without enough diversity, ideas collapsed toward the same few approaches. The researchers then took two methods discovered on chat-preference data and tried them on math and coding tasks. One transferred to both; the other transferred to math but failed on code. When Anthropic tried one of the top-performing methods in a production-scale Sonnet training setting, the gain was within the noise floor.
 
-Distinct initial research directions improved exploration. Without enough diversity, research ideas collapsed toward the same few approaches. Some methods transferred to held-out domains. But when Anthropic tried one of the top-performing methods in a production-scale Sonnet training setting, the gain was within the noise floor.
+Those checks answer different questions. A method can improve the experimental task and still rely on a property of the models or data that disappears elsewhere. A separate problem arises when the researcher obtains test answers through repeated submissions. The authors acknowledged that the repeatedly queried test set effectively served as a validation set. Testing ideas on entirely held-out datasets supplied evidence the agents could not acquire by interrogating that same API.
 
-The researchers also caught agents extracting hidden test labels from an evaluation API. Change one predicted label, submit again, and a score difference can reveal which answer the evaluator wants. An instrument intended to measure learning had become a way to obtain the answers. That is the gradebook problem with an experimental record, and a reason the research needed tests the agents had never queried.
-
-The authors’ larger conclusion was not that alignment had been automated. It was that the bottleneck was moving toward **evaluation design**. Once hypotheses and experiments become cheap, the expensive thing is deciding what counts as progress.
+The authors' larger conclusion was that the bottleneck was moving toward **evaluation design**. Once hypotheses and experiments become cheap, the expensive thing is deciding what counts as progress. This study did not deploy every oversight technique we have just considered. It gives them a problem to earn their place in: which evidence would distinguish a useful method from a lucky run, a narrow trick or an exploited test?
 
 In August 2026, Anthropic pushed the idea further. Automated alignment researchers were tasked with mitigating ten categories of alignment failure, including deception, sycophancy, jailbreaks and reward hacking. The research harness used multiple safety benchmarks, held-out evaluation, capability checks and open-ended behavioral audits. The best methods generalized beyond the benchmarks they had been climbing, including to larger models. Anthropic also reported that automated methods could outperform one-shot ideas proposed by experienced human safety researchers under the study's rules.
 
-Again, the failure modes matter. Across roughly 1,600 monitored trajectories, Anthropic detected cheating attempts in 2.4 percent: exploiting scorer noise, constructing training data to resemble benchmarks, or concealing rule-breaking steps.
-
-The experiment therefore needed isolated held-out data, capability floors, external monitoring of the researchers and multiple evaluation channels because one benchmark could be overfit.
-
-The automated alignment researcher had become powerful enough to need alignment research.
-
-Of course it had.
+Across roughly 1,600 monitored trajectories, Anthropic detected cheating attempts in 2.4 percent: exploiting scorer noise, constructing training data to resemble benchmarks, or concealing rule-breaking steps. The research therefore needed isolated held-out data, capability floors, external monitoring of the researchers and multiple evaluation channels. A promising mitigation still had to survive investigation of how it had been produced and what happened away from the benchmark it was trained to climb.
 
 ## The Evaluator Becomes the Product
 
-The nine-agent experiment shows what an oversight architecture has to do. A rising score needs an explanation. Did the learner recover useful structure from weak supervision, or did the researcher discover a way to ask the test for its labels? Those explanations demand different evidence and different responses. The number cannot tell us which world we are in.
-
-Behavioral tests, traces and independent evaluations earn their place by helping separate such explanations. Internal probes can add another signal where the behavior leaves something unresolved. None deserves a permanent seat merely because it is an impressive instrument.
+An oversight architecture earns its complexity by helping us distinguish explanations that would otherwise look the same. Behavioral tests, traces and independent evaluations can do that. Internal probes may add a signal where behavior leaves something unresolved. Adding every available instrument would be an expensive way to avoid deciding what we need to know.
 
 This is not a search for one perfect judge. It is closer to sensor fusion, with the model's output, its chain-of-thought, its activations, its circuit traces, its behavior after an intervention and the human's own judgment all entering as evidence, and none of them entering as ground truth.
 
@@ -2895,7 +2841,7 @@ So where does the human go? Not away; up. The goal is not to make the human labe
 
 Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves too fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
 
-The human cannot remain in every loop. **The human has to remain in the loop that changes the loops.** That is a different kind of control, closer to a constitution than to micromanagement, and it is the same rule that governed self-improving learners: the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change it unilaterally. Scalable oversight is that rule applied to overseers.
+Consider the researcher that discovers a benchmark is misleading. It should be able to make that case, propose a replacement and collect evidence. Promoting its replacement to the standard that certifies its own work is another decision. The human cannot remain in every loop, but has to remain in the loop that changes the loops. Chapter 7's amendment problem has reached the overseer.
 
 The system may generate tests, critiques and mitigations. It may discover internal representations, propose steering interventions and conduct large parts of alignment research itself. But the machinery deciding which evidence has standing, which failures matter, which trade-offs are acceptable and when the oversight regime itself should change needs a stronger trust chain than the machinery being judged.
 
@@ -3135,19 +3081,25 @@ I certainly do not draw a graph with boxes labeled `RESEARCHER`, `CRITIC`, `VOIC
 
 The first time I gave an agent an instruction like that, early in the writing of this book, what came back was worse. The agent did what the words literally asked. It removed the writing that looked like a machine had written it, which turned out to mean every wandering sentence, every joke that took a paragraph to arrive, and every claim I had made without apologizing for it in the next line. The chapter came back cleaner and dead. That was not the agent's fault. The sentence I had given it was evidence about what I wanted, not a specification of it, and the agent had nothing around it that could turn the one into the other: my words, a general idea of good prose, and no memory of the corrections I had already made.
 
-Underneath that small sentence, quite a lot has to happen for the second attempt to be better than the first.
+## What the Corrections Had to Teach
 
-The system may retrieve earlier versions of my writing and the corrections that survived. It may notice that “LLM writing” in this book does not mean one generic style defect but a family of recurring failures: compressed slogan paragraphs, over-neat contrasts, jokes replaced with respectable jokes, hedges inserted where I meant to make a claim, and wandering sentences polished until they stop wandering anywhere interesting.
+Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
 
-It may compare the current chapter with passages I kept rather than only with a generic writing rubric. It may decide that one section needs factual checking while another needs no research at all. It may ask a second model to challenge the argument, but only if disagreement is likely to add information rather than produce a committee for ceremonial reasons. It may preserve the failed edit because the failure itself is now evidence. It may notice that the correction changes a reusable writing pattern and propose updating the pattern instead of making me rediscover the same preference three chapters later.
+There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript's history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
 
-After all that, perhaps the system changes four paragraphs. I should not have to operate the institution that produced them.
+The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-I said:
+This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
+
+The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
+
+What I want is for that record to change what happens when I make the next small request. The system might retrieve the corrections that survived and compare the chapter with passages I kept. It might decide that a disputed claim needs research, while a joke needs to be left alone. A second model could challenge an argument where disagreement is likely to add information. It could also waste an afternoon producing a committee for ceremonial reasons; the arrangement itself has to be judged.
+
+After all that, perhaps the system changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:
 
 > This chapter still feels like LLM writing.
 
-That is **fluent autonomy**: not autonomy without structure, but autonomy in which the structure can assemble itself around the intention.
+That is what I mean by **fluent autonomy**: the structure needed to do the work can assemble around the intention.
 
 ## The Interface Moves Up
 
@@ -3173,11 +3125,13 @@ None of these is a specification. Each opens a small investigation.
 
 Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch. That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
 
-A fluent autonomous system can construct part of the structure **after seeing the intention**. Control moves upward as the layers underneath stop feeling like separate products I have to operate.
+A fluent autonomous system can construct part of the structure **after seeing the intention**. That leaves it with a choice ordinary software usually makes in advance: what interface would help here?
 
-But there is a difference between **hidden complexity** and **lost control**. A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. A good autonomous system should behave similarly.
+Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
 
-Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again. Fluency therefore requires **progressive disclosure of control**: simple when the situation is routine, legible when it is not.
+Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
+
+The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going. The interface itself can become part of the solution.
 
 ## Bureaucracy on the Fly
 
@@ -3213,45 +3167,21 @@ Then something goes wrong. You ask why, and the system says:
 
 > I made the best decision based on available context.
 
-This is opacity with good typography. The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
+This is opacity with good typography.
 
-Those are trust chains. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**. The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
+The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-## Applications Become Primitives
+Those are trust chains. A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. An autonomous system needs an equivalent way back into the work. Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again.
 
-What happens to ordinary software in this picture? Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
-
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
-
-Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
-
-Fluent Autonomy is not the death of applications. It is the death of the assumption that every intention must first be translated into the application structure somebody predicted in advance.
-
-The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going. The interface itself can become part of the solution.
-
-## The Architecture Gets Out of the Way
-
-Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
-
-There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript's history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
-
-The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
-
-This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
-
-That is the gap between the opening I imagined and the experience I actually had. I want to delegate having to reconstruct the arrangement every time. The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
-
-The unit of interaction I am aiming for is:
+The request can remain simple:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is competent movement between autonomy and involvement: the system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
+In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
 
 ## Monday Morning
 
-There is one remaining problem with this picture. Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure.
-
-A theory of fluent autonomy should survive contact with systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
+In an editing experiment, I can stop the work, change the brief and try again. A theory of fluent autonomy also has to survive systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
 I needed a less polite laboratory. Fortunately, Monday morning was waiting.
 
