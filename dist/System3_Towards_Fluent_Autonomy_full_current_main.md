@@ -8,23 +8,17 @@ date: "August 2026"
 
 # Preface
 
-What could a billion-parameter reasoning machine learn from a camel trying to touch its ear with its tongue?
+I wanted to give an AI a difficult problem, go get coffee and come back to useful work I had not directed move by move. It could already help me write code, explain unfamiliar ideas and try approaches I would not have had the patience to try myself. But I was still there, choosing the next move, noticing when something had gone wrong and carrying enough of the problem in my head to rescue it. I wanted to find out how much of that I could hand over.
 
-More than you'd think. And less than you'd hope.
+One of the experiments in this book involves fitting twenty-six circles into a square. The geometry is difficult, but at least everyone agrees that the circles should stay inside the square. I could give the agent a way to check its work and leave it to search. Writing this book was less accommodating. I could dislike an edit without being able to explain exactly what it had damaged. Sometimes I only discovered what mattered to me after it had been removed.
 
-The two figures on the cover are Ferdinand de Saussure and Ludwig Wittgenstein. They spent the twentieth century arguing about what meaning actually is. Saussure said meaning is structure: words mean what they mean because of how they relate to other words, and the system never needs to touch the world. Wittgenstein said meaning is use: you understand *fire* not because it differs from *water* but because you have been burned.
+I wrote this book to follow those difficulties far enough to understand what I was asking the machine to take over. I needed to know what grounds it had for an answer and what could expose a mistake before the next decision depended on it. Questions about knowledge became decisions about how to build software.
 
-Neither of them lived to see the argument become an engineering problem.
+I have a personal stake in where this goes. I spent years acquiring some of the capabilities I am now trying to delegate. I want to see what I can attempt with that help, including things I would have left to people with different training. I also want to understand what happens to my own judgment when I no longer have to do so much of the work that trained it. Anyone beginning to rely on these systems has a version of that question, whether the help arrives at work or while learning something they had thought was beyond them.
 
-This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. We are not there yet. This book is about why not, what it would take, and what happened when I tried anyway: an agent that beat my reference score at circle packing while I was not watching, educational demos judged by simulated students, a coding agent given a memory and an epistemology, sixteen Claudes slowly becoming an organization, and a recommender-system design that gives the philosophy an A/B test it still has to face.
+This book is written inside the event it describes. Much of its evidence comes from 2025 and 2026, and some of it will age quickly. I have tried to keep track of where claims came from, what the experiments actually showed and where I am still working something out. The failures belong in the account because they changed what I thought I was building. The later chapters venture further into possibilities I cannot yet test as neatly as a square full of circles.
 
-Along the way it becomes a book about knowledge: how a machine that has read everything and touched nothing can still be caught being wrong, and what has to be built around it so that being wrong has consequences.
-
-It is also written inside the event it describes. A good share of its evidence is from 2025 and 2026, and some of it will be out of date before you finish reading. I have tried to treat those results the way the book says results should be treated: as claims with a source, a date and an expiry, not as settled facts. If the examples age and the argument does not, the book has done its job.
-
-It is written for engineers who suspect the missing piece is not a bigger model, for researchers who want another frame, and for builders ready to stop directing and start hiring.
-
-If you keep one sentence, keep this one: the impressive part is how far you can get with the right architecture. The dangerous part is forgetting that the architecture is doing the work.
+I am still betting on the possibility that brought me here: that we can give machines more room to work and gain room to act ourselves. What would make this a form of autonomy we would want to live with?
 
 *Hani Al-Shater*
 
