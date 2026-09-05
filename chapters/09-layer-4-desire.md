@@ -10,25 +10,17 @@ Humans communicate goals by leaving out almost everything.
 
 Other humans survive this because they carry models of culture, normality, consequences and us. They ask questions. They notice that our literal words conflict with what we usually do. They understand that “cheap” is often shorthand for a larger bundle of trade-offs.
 
-Scalable oversight spent an absurd amount of machinery keeping human judgment relevant, and ended on the admission that the overseer is not ground truth. The flight shows the simplest reason why. The overseer has not finished deciding what she wants.
+That can be a communication problem. I may know perfectly well that I will pay €38 to avoid sleeping on an airport floor; I just failed to mention it. The assistant needs to ask, and I have an answer.
+
+But put two reasonable itineraries in front of me and something else can happen. The cheaper one gives me another day with my family and costs me a miserable night of travel. Until I see those options together, I may not know how I weigh them. Asking the question has helped create the answer.
 
 I learned this while editing this book. “Make the chapter better” sounded like a reasonable instruction. It was not. Better in what sense? More rigorous? Shorter? More academic? More entertaining? Easier to cite? More likely to sell? More likely to impress someone who owns several blazers and says “thought leadership” without irony? For a while the edits became objectively more polished and subjectively worse, and the corrections I found myself making were rules I had not known were rules until an edit broke them. Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked.
 
-The objective did not merely become clearer to the system. It became clearer to me.
-
-That is Layer 4.
+The objective did not merely become clearer to the system. It became clearer to me. And there is a further possibility: learning and experience can change the person who will judge the next choice. A missing detail, an unformed preference and a changed mind can all look like an incomplete prompt. They need different kinds of help.
 
 ## A Prompt Is Evidence, Not the Objective
 
-The five-layer map was easy to draw.
-
-At the bottom sits the model. Above it, the action agent. Above that, applications and reusable computational environments. Then Deep Mode, the problem-solving layer that decides what to try next.
-
-And above them sits something easy to draw and extremely hard to build:
-
-**what the human wants.**
-
-The diagram makes this look like a box. It is not a box. A prompt is not Layer 4. It is **evidence about Layer 4**.
+The five-layer map left intention sitting above Deep Mode, where I could ask what to try next without yet resolving what made the whole attempt worth doing. The box in the diagram concealed the difficulty. A prompt gives the system **evidence about Layer 4**, and leaves it to discover how much of the intention is settled.
 
 Cooperative inverse reinforcement learning, which appeared earlier in the story of the reward, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.
 
@@ -38,11 +30,7 @@ But the formal picture still tempts us to imagine that the human knows the rewar
 
 ## The Human Learns Too
 
-There is a distinction that becomes surprisingly important once AI is useful enough:
-
-**performance is not learning.**
-
-A system can help me perform a task better today while making me less able to perform it tomorrow.
+The easiest place to see the human changing is a classroom, where changing the human is supposed to be the point. A system can help me perform a task better today while making me less able to perform it tomorrow. **Performance is not learning.**
 
 This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss.
 
@@ -60,7 +48,7 @@ We need to ask a second question:
 
 Sometimes the answer is nobody. I do not need to become a better invoice parser every time software handles an invoice. Sometimes the answer is clearly me. Layer 4 has to know the difference.
 
-## Scaffolding, Not Substitution
+## Giving the Work Back
 
 Educational psychology has an old word for one good version of this relationship: **scaffolding**.
 
@@ -144,11 +132,7 @@ Have a child. Move country. Change profession. Start the company. Convert to a r
 
 L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice.
 
-This is a direct problem for the simplest alignment picture.
-
-`human has preferences → AI infers preferences → AI optimizes preferences`
-
-Which human? The one before the experience or the one after?
+A system trying to infer and satisfy my preferences now has a problem about which version of me it is serving. The one before the experience or the one after?
 
 The future self may value things the current self barely understands. And the current self is the one who has to choose whether that future self gets created.
 
@@ -191,6 +175,8 @@ What it should not do is quietly discover which framing makes me easiest to stee
 Very efficient.
 
 Slightly evil.
+
+If I reject its diagnosis, the rejection has to remain capable of changing the advice. A theory of what I *really* want that treats every objection as further evidence for itself has stopped helping me think.
 
 ## Complementarity Does Not Happen Automatically
 
@@ -270,25 +256,13 @@ That makes the architecture less tidy. It also makes it more honest.
 
 I used to think Layer 4 was the objective layer. That is still true, but now the word **objective** feels too static.
 
-Layer 4 contains the current intention, but also uncertainty about the intention. It contains preferences, but also their history and conflicts. It contains what the human knows, what they do not know, what they are trying to learn and which parts of the task they want to remain capable of doing themselves. It contains commitments that should not be rewritten by one bad afternoon. It contains other people whose interests constrain what one user may legitimately ask for.
+Layer 4 needs a working account of the current intention and what remains uncertain about it: preferences, their history and conflicts, what the human is trying to learn, and which parts of the task they want to remain capable of doing themselves. Some commitments should survive one bad afternoon. Other people's interests may constrain what one user can legitimately ask for. The account will be partial, which is why correction has to remain possible.
 
 And it changes. The system acts, reality responds, the human sees consequences and learns. The system learns the human, the human learns through the system, and the intention changes.
 
 That is not a bug in alignment. It is what alignment has to align with.
 
-System 3 asked:
-
-> Why should I believe this?
-
-Scalable oversight asked:
-
-> How can my judgment remain relevant when I cannot supervise everything?
-
-Layer 4 asks:
-
-> **What do I want—and what do I need to understand before that question even has a good answer?**
-
-This is where System 3 turns back toward the person using it.
+The flight may need one clarification before booking. A lesson may need the assistant to withhold the answer until I have tried. A choice of profession may need room for a question neither of us can settle yet. Treat all three as instructions awaiting execution and the system can become very efficient at missing the point.
 
 Memory can reveal that today's desire conflicts with yesterday's commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
 
@@ -296,14 +270,4 @@ The point is not to discover the perfect reward function but to keep goals **ali
 
 The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
-That sharpens the definition of alignment this book has been circling.
-
-Not:
-
-> The machine permanently obeys a perfectly specified human objective.
-
-More like:
-
-> **The machine remains in a corrigible relationship with human intention while both the human and the world continue to change.**
-
-The word *relationship* matters. Because if that relationship can become reliable enough, the complexity underneath it can start disappearing from ordinary use.
+Alignment, in this picture, is a corrigible relationship with human intention while both the human and the world continue to change. The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me.

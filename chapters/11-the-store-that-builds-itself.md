@@ -2,10 +2,6 @@
 
 *When System 3 Came to Work*
 
-There is a danger in writing a book about future architectures. If you spend long enough drawing layers, agents, trust chains and feedback loops, eventually they all begin to behave beautifully.
-
-Then Monday morning arrives.
-
 I lead Applied Science for product ranking and recommendations at Zalando. That gives me a slightly unfair opportunity: I can spend the weekend writing that software should become more emergent, more compositional and less micromanaged, then arrive at work and discover that real software contains latency budgets, old interfaces, business constraints, experiments, dependencies, customers who refuse to behave like the diagram, and at least one matrix somebody created for a very sensible reason three years ago.
 
 The book came to work.
@@ -25,10 +21,6 @@ The page is smart inside the modules and surprisingly dumb between them.
 This looked familiar. The book began with a claim about emergence: once a complicated thing works reliably enough, the layer above can start treating it as a primitive. Coding agents made the same move with applications. Pattern Language did it with executable knowledge. Now I had a recommender system full of increasingly capable primitives and a question I had somehow spent an entire book preparing myself to ask:
 
 **What should the layer above do with them?**
-
-Now that System 3 has turned out to be science, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system—it is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
-
-Shopping is not a laboratory and customers are not experimental subjects, at least not in the cartoonish sense. The claim is narrower: the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product stops merely executing a model and joins a continuing inquiry into how to help.
 
 ## Stop Recommending for a Moment
 
@@ -56,7 +48,7 @@ These names are not truths hiding inside the customer's head. They are hypothese
 
 That last condition matters. I can invent an exquisitely named psychological state for every wiggle of the mouse, but if we cannot observe it well enough to test and cannot build anything that plausibly helps, we have created a taxonomy department rather than a recommender system. The problems have to be bounded enough to attack.
 
-Circle packing had an immutable evaluator. Shopping is messier, but the discipline is similar. Define a problem narrowly enough that an intervention can succeed or fail. If we claim somebody has comparison friction, we should eventually be able to ask whether comparison-like behavior diminished after we addressed it. If we say size anxiety is the blocker, we need evidence that the signal means something and a metric that can tell us whether our intervention helped rather than merely attracted a click.
+Circle packing had an immutable evaluator. Shopping is messier, but the discipline is similar. Define a problem narrowly enough that an intervention can succeed or fail. If we claim somebody has comparison friction, we need a way to distinguish a resolved comparison from a customer giving up. If we say size anxiety is the blocker, we need evidence that the signal means something and a metric that can tell us whether our intervention helped rather than merely attracted a click.
 
 Here the architecture started moving away from the familiar funnel.
 
@@ -104,7 +96,7 @@ At this point the obvious response is: fine, rank the experiences. That gets us 
 
 Suppose the system has already placed a strong size-confidence experience at the top of the page. Should another size-related module receive the same score it would have received before the first one was shown?
 
-Probably not. Some of the problem has already been addressed. A second module may add little and consume valuable attention.
+Probably not. We expect the first module to address some of the problem, which makes a second one less promising. Whether that expectation is justified is something the page has to teach us. A second module may add little and consume valuable attention.
 
 Now suppose a returns-clarity experience is more useful *after* fit evidence because the two together form a coherent decision aid. Its value may increase after the first experience appears.
 
@@ -120,7 +112,7 @@ And this is where the case study started resembling the society of agents. A soc
 
 ## Mei Does Not Need More Shoes
 
-Take a concrete customer. Call her Mei. Mei has two pairs of trail shoes open. She has returned to them several times across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
+Imagine a customer. Call her Mei. Mei has two pairs of trail shoes open. She has returned to them several times across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
 
 A conventional recommender can still do an excellent job here. It can find twenty more trail shoes that look similar, match her taste and are available in her size.
 
@@ -134,7 +126,9 @@ For years, the field has been extraordinarily good at finding things. Search fin
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
-The same point becomes even clearer with another customer.
+But Mei could stop switching because the comparison helped, because she gave up, or because dinner arrived. A quieter session is not yet a solved problem. In the proposed test, we would compare outcomes across customers eligible for this intervention, including a group receiving the existing experience. Does the comparison help people reach a decision without increasing later returns or regret? Direct customer feedback could help us understand what the behavioral measures miss.
+
+If switching falls while abandonment rises, the apparent success should make us distrust the metric. If a comparison helps some sessions and overwhelms others, the next change may belong in its eligibility rule. And if a simpler page helps just as much, the composer has learned something inconvenient about its own necessity. Even a useful intervention would not prove that we had read Mei's mind correctly.
 
 ## Sami Does Not Need a Click
 
@@ -256,7 +250,7 @@ We used the deliberately bland term **Surface Value**. This is where the project
 
 If Surface Value is module CTR, we have not solved the page problem. If it is total clicks, a page full of shiny modules may win while the customer gets nowhere. If it is immediate purchase probability, experiences that build confidence or improve a longer mission may be undervalued. If it is revenue, expensive products get interesting very quickly. If it is margin, the store's objective can start eating the customer's. If it is long-term value, we have gained a beautiful phrase and several years of causal-inference work.
 
-The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. If we address comparison friction, does the comparison behavior decrease? If we address size anxiety, do customers progress with fewer signs of uncertainty and without creating a return problem later?
+The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. For comparison friction, the signal must distinguish resolution from abandonment. For size anxiety, customers should be able to progress with fewer signs of uncertainty without creating a return problem later.
 
 This is Layer 4 in production. What do we actually want?
 
@@ -274,7 +268,7 @@ The architecture should not make disagreement disappear. It should make disagree
 
 After all of this, the sensible first experiment is obviously to build hundreds of widgets, a general customer-reasoning model, a cross-surface scheduler and an autonomous agent that redesigns fashion retail by Thursday.
 
-We did not do that. The first test is deliberately boring.
+The test we are designing is deliberately boring.
 
 One placement: the product page. A small number of validated customer problems. The existing recommendation library, with only limited new supply. A simple composition mechanism. A trace good enough to explain an individual decision. An authored objective before a learned one.
 
@@ -318,9 +312,7 @@ The store does not literally build itself. It learns how to build more of the ex
 
 ## The Book Comes Back to Bite Me
 
-I began this project as a recommendation-system redesign. Then the chapters started appearing inside it: emergence, bounded problems, versatility, trust chains, a society of specialists, executable patterns, oversight from sparse feedback, an objective that is uncertain and plural, and machinery hidden from the customer until help is needed.
-
-The society of agents gives me a more compact description of that list: **build a scientific institution around the customer problem.** Not a lab coat pasted onto ecommerce. An architecture that can generate competing explanations, choose which are worth testing, intervene through reusable capabilities, expose those interventions to consequences, remember what survived, preserve disagreement where it carries information and revise its own problem vocabulary when anomalies accumulate.
+I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
 I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
 
@@ -328,24 +320,4 @@ That does not prove the book. It is one case study, in one domain, at one moment
 
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
-And once you can imagine that happening in a store, it becomes difficult not to imagine it happening everywhere else.
-
-Software.
-
-Research.
-
-Education.
-
-Organizations.
-
-Government.
-
-Our own decisions.
-
-Which creates a problem larger than any recommender system.
-
-If AI keeps moving upward—if it increasingly discovers problems, selects strategies, builds solutions and turns experience into reusable knowledge—then asking what *the AI* should do is no longer enough.
-
-We have to ask what happens to us when capacity itself changes.
-
-That is not a software architecture question—it is the beginning of another philosophy.
+And once you can imagine that happening in a store, it becomes difficult not to imagine it happening in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.

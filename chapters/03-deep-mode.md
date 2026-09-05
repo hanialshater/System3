@@ -28,7 +28,9 @@ Before trying to automate that, I had to notice how much of the work around the 
 
 ## How We Got Here
 
-Coding first appeared as a strange side effect of language modeling. Nobody set out to build a programmer. Models trained to continue text turned out to continue code, and once somebody noticed, the earliest useful tasks were conveniently small: give the model a function signature, a comment or a programming puzzle and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests? Then GitHub Copilot put the trick inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch it appear underneath your cursor, which was delightful for about a week and then became the way things were.
+Models trained to continue text turned out to continue code. Researchers trained models specifically for the job, and many of the early tasks were conveniently small: give the model a function signature, a comment or a programming puzzle and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
+
+Then GitHub Copilot put the trick inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch it appear underneath your cursor, which was delightful for about a week and then became the way things were.
 
 This was useful enough that the limitations became interesting.
 
@@ -66,9 +68,7 @@ Humans call our version of this sunk cost. The agent has a respectable excuse: i
 
 So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner's misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-Looking backward, the progression is less mysterious than the word *agent* sometimes makes it sound. Every step took a job I had been doing by hand—searching, assembling context, applying the edit, running the test, remembering, keeping alternatives alive—and moved it into the machine. Models learned to generate useful pieces of code. We put them in editors. Repository access, editing and execution moved into the loop. Better interfaces, persistent instructions, context management and branching followed.
-
-Bit by bit, work the human had been doing around the model became part of the machine.
+Together, the interfaces, execution loop, context management and safeguards form the agent's **harness**. The evaluator is one part of it. Looking backward, its construction is less mysterious than the word *agent* sometimes makes it sound. Every step took a job I had been doing by hand—searching, assembling context, applying the edit, running the test, remembering, keeping alternatives alive—and moved it into the machine.
 
 But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for:
 
@@ -128,7 +128,7 @@ That is the layer that remained stubbornly human: deciding what to try, which ev
 
 ## The Five Layers of AI Coding
 
-By then I had a rough map.
+By then I had a rough map. Each layer marked a different kind of work we had learned to delegate, or were still trying to.
 
 **Layer 0—Model.** GPT, Claude, Gemini and whatever comes next: general capability in language, code, reasoning and vision.
 

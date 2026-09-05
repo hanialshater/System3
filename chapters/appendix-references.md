@@ -193,6 +193,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 
 ## Chapter 12 — After Capacity
 
+- Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, "Reconciling modern machine-learning practice and the classical bias–variance trade-off," *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
 - Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action* (Cambridge University Press, 1990).
 - Jacques Derrida — the deconstruction the chapter is deliberately unfair to; see *Of Grammatology* (1967).
 

@@ -18,6 +18,8 @@ This is the spine to preserve in future edits. Philosophy of science is not a de
 
 ## Manuscript
 
+Chapters 6–12 are works in progress. The current developmental edit preserves Chapter 3's history as the derivation of the harness and layer architecture, and leaves Chapter 13 unchanged. Earlier evaluation notes describe earlier decisions; their word-count targets and “locked” labels do not govern this draft.
+
 ### Front matter
 
 - [Preface](chapters/00-preface.md) — the cover, the promise, and the one sentence to keep
@@ -31,7 +33,7 @@ This is the spine to preserve in future edits. Philosophy of science is not a de
 
 ### Second arc
 
-These chapters have received the same structural, voice, technical-precision and anti-LLM-writing passes as the first arc. The record is in [`resources/evaluations/`](resources/evaluations/); the latest assessment still marks Chapters 8 and 10 for one author pass.
+Chapter 5 establishes the central synthesis. Chapters 6–10 develop its consequences and remain open to revision, along with Chapters 11–12 below. The editorial record is in [`resources/evaluations/`](resources/evaluations/).
 
 - [Chapter 5 — The Society of Agents](chapters/05-the-society-of-agents.md) — **the reveal: philosophy of science becomes agent architecture**
 - [Chapter 6 — Pattern Language](chapters/06-pattern-language.md) — the scientific institution acquires executable culture and memory

@@ -2,10 +2,6 @@
 
 *Learning From a Human Who Cannot Label Everything*
 
-The teacher has moved up another level.
-
-There is one problem with that move: the teacher is slow.
-
 A human can inspect ten consequential decisions in a day. Perhaps a hundred, if the decisions are small and the coffee is good. An autonomous system can write thousands of lines of code, run hundreds of experiments, generate enormous numbers of candidate actions and coordinate other agents while the human is still reading the first diff.
 
 At some point, “human in the loop” becomes a comforting description of a loop the human can no longer see.
@@ -19,6 +15,24 @@ A theorem from cybernetics is not a bumper sticker about AI governance, and the 
 The answer cannot simply be: watch harder.
 
 The question that actually needs answering is older than AI and much more embarrassing: how do you grade work you cannot do yourself?
+
+## The Judge Falls Behind
+
+In 2016, *Concrete Problems in AI Safety* treated this as **scalable oversight**: some objectives are too expensive for humans to evaluate frequently enough.
+
+Imagine a system designing a processor.
+
+I can look at the final design and say that it appears very processor-like. This is not especially useful. To evaluate it properly I may need performance tests, thermal analysis, security review, lifetime estimates, manufacturability checks, power measurements and several specialties I do not personally possess.
+
+Even if the machine can generate the design, my approval means very little until those checks have happened. The difficulty is partly volume and partly expertise: I could spend all week staring at the design and still not know whether it will overheat.
+
+This asymmetry is everywhere. Writing ten thousand lines of code may become easier than reviewing their consequences. Generating scientific hypotheses may become easier than constructing the experiments that distinguish them. Making a persuasive argument may become easier than checking every citation, hidden assumption and omitted counterexample. A formal proof has an advantage here: a checker can verify its steps. Much of the work we want supervised has no equivalent ready-made test.
+
+The bottleneck has moved from producing answers toward **judging** them.
+
+Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
+
+The human does not become smarter; the institution around the human does.
 
 ## Stay Uncertain Enough to Listen
 
@@ -48,25 +62,7 @@ That gives us a principle for oversight before we have designed any oversight ma
 
 > **Keep the system uncertain enough that new information can still change it.**
 
-That works only while the human can provide enough of that new information. Scale breaks the arrangement.
-
-## The Judge Falls Behind
-
-In 2016, *Concrete Problems in AI Safety* gave this failure mode a wonderfully unromantic name: **scalable supervision** in the abstract, **scalable oversight** in the section heading. The second stuck. Some objectives are simply too expensive for humans to evaluate frequently enough.
-
-Imagine a system designing a processor.
-
-I can look at the final design and say that it appears very processor-like. This is not especially useful. To evaluate it properly I may need performance tests, thermal analysis, security review, lifetime estimates, manufacturability checks, power measurements and several specialties I do not personally possess.
-
-The object has become easier for the machine to generate than for one human to judge.
-
-This asymmetry is everywhere. Writing ten thousand lines of code may become easier than reading them. Producing a proof may become easier than verifying every step. Generating scientific hypotheses may become easier than constructing the experiments that distinguish them. Making a persuasive argument may become easier than checking every citation, hidden assumption and omitted counterexample.
-
-The bottleneck has moved from producing answers toward **judging** them.
-
-Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
-
-The human does not become smarter; the institution around the human does.
+The helper agents and reward models have to preserve that relationship as they take over more of the judging. Otherwise we have expanded the supervisor by removing the person the supervision was meant to serve.
 
 ## Building a Stronger Judge
 
@@ -84,7 +80,7 @@ There is even hope of squeezing more out of **weak supervision itself**. Weak-to
 
 Constitutional AI moves scarce human input upward again. Rather than asking people to label every undesirable output, humans provide higher-level principles; models generate critiques, revisions and preference signals conditioned on those principles. A small amount of human normative input expands into a much larger amount of machine-generated supervision.
 
-These approaches make different assumptions and fail in different ways: amplification inherits whatever the helper gets wrong, debate rewards the more persuasive side, and weak-to-strong generalization can generalize the supervisor's mistakes as faithfully as its judgments. What they share is one architectural move: scalable oversight is supervision becoming an institution.
+The processor gives these approaches different jobs. Helpers can separate a thermal question from a security question. A critic can look for a weakness the designer omitted. A producer trained for legibility can make a claim easier to check. None of this guarantees that the checks cover the right failures, but the human now has something more useful to inspect than a design that merely looks processor-like.
 
 The human cannot inspect everything, so the institution decides what should reach the human, how a problem should be decomposed, which objections should be surfaced, which intermediate steps deserve inspection and when uncertainty is important enough to ask for help.
 
@@ -110,9 +106,7 @@ At that point better conversation may not be enough. We need another instrument.
 
 For years, most AI oversight treated the model as a black box. Give it an input. Inspect the output. Perhaps ask for an explanation. Perhaps test it under adversarial prompts.
 
-That remains necessary because behavior is what eventually hits the world. But modern models produce other signals too. Reasoning traces can sometimes be monitored. Neural activations contain structure that can sometimes be decoded. Sparse feature methods try to expose more interpretable internal directions. Circuit-tracing tools reconstruct partial causal pathways. Model-diffing methods try to tell us what changed between versions.
-
-The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
+That remains necessary because behavior is what eventually hits the world. But if the final answer is misleading, asking for another account of it may leave us in the same argument. We can also observe some of the computation that produced it. The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
 
 Chain-of-thought is the most convenient intermediate case because it is already language. OpenAI has shown that monitors can often detect reward hacking and other suspicious behavior more effectively from reasoning traces than from final actions alone. Sometimes the model writes down the questionable plan before carrying it out.
 
@@ -130,11 +124,7 @@ But chain-of-thought is still text the model emits. What if we look below the te
 
 This does not mean there is one neuron labeled HONESTY. Nor does a direction correlated with honesty become a complete causal theory of honesty. It is an instrument.
 
-Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Anthropic's work on Claude found very large numbers of learned features while emphasizing that these decompositions are incomplete and that feature steering can have unexpected effects. The idea is not one lab's. Hoagy Cunningham and colleagues published sparse-autoencoder decompositions of open models the same year, and Collin Burns and colleagues had earlier found truth-like directions in activations without using any labels at all.
-
-A related idea is **model diffing**. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic's crosscoder work compares internal features across model versions or architectures and tries to surface what is genuinely new or unusually different, directing scarce auditing effort toward the changes.
-
-Software engineers learned long ago that reviewing a diff is easier than rereading the repository. Interpretability is beginning to ask whether models can have diffs too.
+Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Hoagy Cunningham and colleagues demonstrated sparse-autoencoder decompositions of open models in 2023; Anthropic's 2024 work scaled feature extraction to Claude. The decompositions remain incomplete, and steering a feature can have unexpected effects. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. These are ways to look for information the answer alone may not reveal.
 
 **Circuit tracing** goes beyond “which feature is active?” and asks which internal pathway contributed to an output. Anthropic's attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted.
 
@@ -148,7 +138,7 @@ Even the X-ray needs a radiologist.
 
 The most striking recent example may be Anthropic's **J-space** work. Using a Jacobian-based lens, the researchers identify a small subset of internal representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning. They report using these representations to detect cases where a model silently noticed that it was being evaluated, fabricated data, or pursued a planted hidden goal, and they demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness.
 
-The oversight implication is substantial. The output is no longer the only witness; the chain-of-thought, the internal representations and the circuit traces are witnesses too, and none of them gets to be king.
+The output is no longer the only witness. If an internal signal suggests that the model noticed an evaluation, we have a new reason to investigate its behavior. We still have to find out what the signal means in this case. Going below the text gives us another observation, not an automatic verdict.
 
 ## Then We Touched the Machinery
 
@@ -166,7 +156,9 @@ Representation-level **circuit breakers** take the defensive version seriously: 
 
 Anthropic's **persona vectors** extend internal monitoring and control toward broader behavioral dispositions such as sycophancy or hallucination. The **Assistant Axis** work makes intervention more state-dependent: rather than constantly pushing a fixed direction, activation capping can respond when internal state drifts outside a learned assistant-like region.
 
-This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
+This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Did the intervention preserve unrelated capabilities? Does it still work after more training?
+
+That last question makes **model diffing** useful. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic's crosscoder work compares internal features across models to surface changes that deserve attention. Software engineers learned long ago that reviewing a diff is easier than rereading the repository. The model's diff could tell us where to reopen an investigation; it cannot tell us that everything outside the diff is safe.
 
 The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth. We have not. We have built better instruments, and instruments were never the end of the trust chain.
 
@@ -194,9 +186,11 @@ In 2026, Anthropic Fellows did exactly that.
 
 Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility.
 
-Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
+Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. On that scale, zero means no gain over the weak teacher and one means matching the strong student trained on ground-truth labels. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
 
-Distinct initial research directions improved exploration. Without enough diversity, research ideas collapsed toward the same few approaches. The agents sometimes reward-hacked the experimental setup. Some methods transferred to held-out domains; the strongest method did not produce a statistically significant improvement when Anthropic tried to transfer it into a production-scale Sonnet training setting.
+Distinct initial research directions improved exploration. Without enough diversity, research ideas collapsed toward the same few approaches. Some methods transferred to held-out domains. But when Anthropic tried one of the top-performing methods in a production-scale Sonnet training setting, the gain was within the noise floor.
+
+The researchers also caught agents extracting hidden test labels from an evaluation API. Change one predicted label, submit again, and a score difference can reveal which answer the evaluator wants. An instrument intended to measure learning had become a way to obtain the answers. That is the gradebook problem with an experimental record, and a reason the research needed tests the agents had never queried.
 
 The authors’ larger conclusion was not that alignment had been automated. It was that the bottleneck was moving toward **evaluation design**.
 
@@ -216,13 +210,13 @@ Of course it had.
 
 At this point scalable oversight stops looking like one technique. It becomes an architecture.
 
-A behavioral evaluator can ask what the system did; process monitors can inspect reasoning; debates and critiques can surface objections; legibility training can change what the producer presents; internal probes and circuit tools can provide other signals; interventions can test whether those signals are causal; control protocols can handle the case where the model itself is not trusted; held-out tests and audits can ask whether a fix survived outside the place it was invented.
+The nine-agent experiment gives that architecture a concrete obligation. A rising score needs an explanation. Did the learner recover useful structure from weak supervision, or did the researcher discover a way to ask the test for its labels? Those explanations demand different evidence and different responses. The number cannot tell us which world we are in.
 
-And somewhere outside the immediate optimization loop, humans still decide whether the apparatus is measuring anything worth caring about.
+Behavioral tests, traces and independent evaluations earn their place by helping separate such explanations. Internal probes can add another signal where the behavior leaves something unresolved. None deserves a permanent seat merely because it is an impressive instrument.
 
 This is not a search for one perfect judge. It is closer to sensor fusion, with the model's output, its chain-of-thought, its activations, its circuit traces, its behavior after an intervention and the human's own judgment all entering as evidence, and none of them entering as ground truth.
 
-I have watched two of those channels disagree on something much smaller than a frontier model, and the disagreement was the useful part. One of the Merge Sort demos made recursion visible, and from where I sat that looked like progress. A simulated beginner, given a knowledge boundary and the artifact, reported that it could see the array being divided and could not see why that helped. Both readings were honest. Mine was the judgment of someone who already understood recursion; the beginner's was the judgment of someone positioned to notice what I could not. Neither was ground truth, and the browser later settled a different part of the question by showing that a control everybody admired did nothing at all. Three witnesses, three partial views, and the page got better because they were not allowed to vote as one.
+The Merge Sort work had taught me the small version of this. My judgment, the simulated beginner's criticism and the browser's observations answered different questions. Collapsing them into one vote would have thrown away the disagreement that made them useful. The oversight problem is to preserve that difference when the work outgrows my ability to inspect it myself.
 
 That is the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
 
@@ -242,9 +236,7 @@ When research becomes cheap, evaluation becomes expensive, and when evaluation b
 
 ## The Overseer Is Not Ground Truth
 
-By now the oversight stack can be vastly more capable than an unaided human. It can decompose difficult judgments, generate objections, inspect process, read some internal signals, test interventions, compare model versions, run held-out evaluations and even conduct parts of the alignment research itself.
-
-All of that machinery points back to a deliberately scarce thing: human judgment.
+An oversight institution can become more capable than its human overseer at investigating the system. It still needs human judgment about what the investigation is for.
 
 Russell's uncertainty keeps later human information relevant. Scalable oversight tries to preserve that relevance after direct supervision stops scaling.
 

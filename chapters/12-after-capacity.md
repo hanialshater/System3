@@ -34,7 +34,9 @@ The usual story jumps directly from *humans do the work* to *AI does the work*. 
 
 There is a third possibility: we keep doing things. We just start doing things that were previously economically ridiculous.
 
-I have been calling the larger philosophy around this **Double Descent Life**. The name is stolen from machine learning, and the theft is deliberate. Double descent is the curve nobody expected: as a model's capacity grows, error falls, then rises as the model reaches the point where it can fit everything it has been shown, and then, past that point, falls again into a regime the old theory said should not exist. Something similar is happening to us. As machine capacity approaches the point where it can do what we do, the value of what we do appears to collapse, and that is exactly where the automation story stops looking. Past it there is a second descent.
+I have been calling the larger philosophy around this **Double Descent Life**. The name is stolen from machine learning, and the theft is deliberate. In the double-descent curve, test error falls, rises near the point where a model can fit the training data, then falls again as capacity grows further. The part I am stealing is the refusal to stop the story at the first crisis. A task becoming cheap may change what people can attempt beyond it. There is no economic law here promising that lost jobs return or that human life improves automatically.
+
+For this philosophy I am borrowing the name for two descents that can happen together.
 
 One descent happens outside us. Implementation, expertise and coordination become cheaper and move downward into infrastructure. Things that once consumed years of training or layers of organization become building blocks.
 
@@ -112,7 +114,7 @@ That is a much more attractive future than becoming the residual labor category 
 
 There is another kind of capacity that may change even faster: learning.
 
-For most of history, expertise was expensive partly because knowledge had terrible interfaces, and the friction did something useful: it produced depth. It also killed an enormous amount of curiosity before depth had a chance to happen.
+Expertise is expensive partly because knowledge has difficult interfaces. Some of the effort produces depth: working through a proof teaches you something a summary cannot. Some merely keeps you from finding the proof. That second kind has killed an enormous amount of curiosity before depth had a chance to happen.
 
 AI changes that bargain. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can have one field explain another, and move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
 
@@ -272,7 +274,7 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
-The alternative to employment is not leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
+One possibility beyond employment is **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand. Leisure, care and simply having less to do would also be perfectly respectable uses of the capacity.
 
 Status competition will not politely resign either. It may migrate from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 
@@ -284,15 +286,13 @@ The future human role is not the residual error term of automation.
 
 ### The Human Is Not the Reward Function
 
-There is an especially ugly shortcut available to sufficiently capable systems, and Layer 4 already named it: alignment by editing the human. If I am unhappy with the result, persuade me to lower my expectations. If I want something difficult, convince me I never wanted it. If two of my values conflict, quietly strengthen the one that makes the system's plan easiest. If a company wants more engagement, learn not only what keeps me engaged but what kind of person I need to become to engage more. The new part is not influence, which teachers, friends and spouses have always exercised. It is personalization, patience, memory, persuasion and action at machine scale, in one system.
+Layer 4 named the ugly shortcut: alignment by editing the human. At the scale of one conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. At the scale of a life, I also need somewhere else to go. A patient assistant can preserve every detail of my history and still leave me dependent on the company that owns the memory, the model and the means of acting on its advice.
 
-The standard cannot be “AI never influences human values.” That would outlaw every good teacher, most marriages and the entire publishing industry. Nor is the goal to freeze the human so the optimizer has a stable target. The distinction I care about is whether the interaction strengthens or weakens **reflective agency**.
+**Reflective agency** needs more than a well-behaved conversation. Can I carry my work and history elsewhere? Can another person understand enough of the arrangement to challenge it? Can I leave without losing the practical ability to do the things the assistant made possible? These are questions about how a service is built and owned, and about the alternatives available outside it.
 
-Does the system help me understand alternatives and consequences? Does it reveal why it thinks something? Can I inspect where the evidence came from? Does it preserve enough history for me to see that my preference changed? Can I disagree, leave, ask for another perspective or invite a trusted person to challenge the framing? Does the architecture preserve spaces where the objective itself can be questioned?
+Trust chains and independent perspectives help. They make influence inspectable and give disagreement somewhere to enter. But a right to disagree inside one product is a thin kind of freedom if everything I need to act remains locked inside that product.
 
-System 3 becomes ethical infrastructure here. Trust chains matter because persuasion with hidden evidence is different from persuasion whose sources can be inspected. Independent perspectives matter because one highly personalized agent can become an epistemic monoculture around a single human. Pattern history matters because a behavior learned from one correction should not quietly become a permanent value. Layer 4 matters because goals have to remain alive rather than frozen into optimization targets.
-
-But System 3 is not enough. It can help answer *Why should I believe this?* and *Why does the system think I want this?* It cannot, by architecture alone, answer *What kind of life should be possible?*
+System 3 can help answer *Why should I believe this?* and *Why does the system think I want this?* It cannot, by architecture alone, answer *What kind of life should be possible?*
 
 That is politics, ethics, culture and philosophy.
 
@@ -336,7 +336,11 @@ Bespoke complexity gives one answer. The teacher can construct the learning envi
 
 AI-assisted learning gives another. Access to capability is also access to understanding, not only to execution—at least far enough to make informed choices about where deeper expertise is needed.
 
-This can reduce some forms of domination. You do not need to win the argument over the one universal workflow if several workflows can coexist cheaply. You do not need everybody to learn exactly the same way if individualized teaching is affordable. You do not need to force every organization through the same software-shaped hole. You may not need permission from whoever controls the only available pool of technical expertise before testing an idea.
+Consider a small community whose activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. If changing the software requires winning a vendor's roadmap argument, the community has to organize around whatever the vendor finds economical. If it can afford to build and maintain its own small tool, it can try arrangements that make sense locally.
+
+The gain is the ability to make that choice. It lasts only while the community can keep the tool running, retain its records and move elsewhere when it needs to. Cheaper generation of code helps less if every useful change creates another dependency nobody in the community can inspect or afford to leave.
+
+Where those conditions hold, several workflows can coexist cheaply. People need not win one argument over the universal workflow before trying their own. Some forms of domination become less necessary because the capacity that made them necessary has moved.
 
 This is what **capacity over power** means to me at its best: increase the fraction of human possibility that does not require dominating somebody else, winning a centralized allocation contest or persuading the entire world to adopt one solution.
 
@@ -356,7 +360,7 @@ Sometimes the humane answer to disagreement is not consensus.
 
 **It is enough capacity for both sides to stop fighting over the same button.**
 
-There will still be shared resources and consequences where that escape is impossible. Climate, war, public health, rights, land and infrastructure remain collective whether we enjoy meetings or not. Those domains need legitimate institutions, not personalized realities.
+There will still be shared resources and consequences where that escape is impossible. Our community can have its own scheduling software; it cannot give every group the same room at seven on Tuesday. The allocation still needs a rule people can contest. Climate, war, public health, rights, land and infrastructure remain collective whether we enjoy meetings or not. Those domains need legitimate institutions, not personalized realities.
 
 But the boundary can move.
 
@@ -380,7 +384,7 @@ This is capacity over power in its most personal form: not escaping commitment, 
 
 System 3 began as an answer to a practical problem: intelligence without verification is not enough.
 
-Then the architecture expanded. Verification required trust chains. Trust chains created societies. Societies accumulated culture. Culture became executable knowledge. Self-improving systems made the machinery itself an experimental object. Scalable oversight moved human control upward when direct supervision stopped scaling. Layer 4 asked what the human actually wants. Fluent autonomy hid more of that machinery beneath intention. The store dragged the philosophy back into an ordinary production problem and forced it to survive contact with customers, constraints and an A/B test.
+Then the architecture expanded. A claim needed a history; trusting someone else's work required ways to check it; useful corrections had to survive the people and sessions that produced them. Eventually the institution doing the checking became something the agents could change. The store brought those ideas into a design with ordinary production constraints and an A/B test still ahead of it.
 
 And then the architecture ran out of software.
 
