@@ -12,19 +12,25 @@ I certainly do not draw a graph with boxes labeled `RESEARCHER`, `CRITIC`, `VOIC
 
 The first time I gave an agent an instruction like that, early in the writing of this book, what came back was worse. The agent did what the words literally asked. It removed the writing that looked like a machine had written it, which turned out to mean every wandering sentence, every joke that took a paragraph to arrive, and every claim I had made without apologizing for it in the next line. The chapter came back cleaner and dead. That was not the agent's fault. The sentence I had given it was evidence about what I wanted, not a specification of it, and the agent had nothing around it that could turn the one into the other: my words, a general idea of good prose, and no memory of the corrections I had already made.
 
-Underneath that small sentence, quite a lot has to happen for the second attempt to be better than the first.
+## What the Corrections Had to Teach
 
-The system may retrieve earlier versions of my writing and the corrections that survived. It may notice that “LLM writing” in this book does not mean one generic style defect but a family of recurring failures: compressed slogan paragraphs, over-neat contrasts, jokes replaced with respectable jokes, hedges inserted where I meant to make a claim, and wandering sentences polished until they stop wandering anywhere interesting.
+Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
 
-It may compare the current chapter with passages I kept rather than only with a generic writing rubric. It may decide that one section needs factual checking while another needs no research at all. It may ask a second model to challenge the argument, but only if disagreement is likely to add information rather than produce a committee for ceremonial reasons. It may preserve the failed edit because the failure itself is now evidence. It may notice that the correction changes a reusable writing pattern and propose updating the pattern instead of making me rediscover the same preference three chapters later.
+There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript's history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
 
-After all that, perhaps the system changes four paragraphs. I should not have to operate the institution that produced them.
+The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-I said:
+This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
+
+The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
+
+What I want is for that record to change what happens when I make the next small request. The system might retrieve the corrections that survived and compare the chapter with passages I kept. It might decide that a disputed claim needs research, while a joke needs to be left alone. A second model could challenge an argument where disagreement is likely to add information. It could also waste an afternoon producing a committee for ceremonial reasons; the arrangement itself has to be judged.
+
+After all that, perhaps the system changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:
 
 > This chapter still feels like LLM writing.
 
-That is **fluent autonomy**: not autonomy without structure, but autonomy in which the structure can assemble itself around the intention.
+That is what I mean by **fluent autonomy**: the structure needed to do the work can assemble around the intention.
 
 ## The Interface Moves Up
 
@@ -50,11 +56,13 @@ None of these is a specification. Each opens a small investigation.
 
 Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch. That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
 
-A fluent autonomous system can construct part of the structure **after seeing the intention**. Control moves upward as the layers underneath stop feeling like separate products I have to operate.
+A fluent autonomous system can construct part of the structure **after seeing the intention**. That leaves it with a choice ordinary software usually makes in advance: what interface would help here?
 
-But there is a difference between **hidden complexity** and **lost control**. A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. A good autonomous system should behave similarly.
+Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
 
-Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again. Fluency therefore requires **progressive disclosure of control**: simple when the situation is routine, legible when it is not.
+Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
+
+The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going. The interface itself can become part of the solution.
 
 ## Bureaucracy on the Fly
 
@@ -90,44 +98,20 @@ Then something goes wrong. You ask why, and the system says:
 
 > I made the best decision based on available context.
 
-This is opacity with good typography. The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
+This is opacity with good typography.
 
-Those are trust chains. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**. The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
+The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-## Applications Become Primitives
+Those are trust chains. A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. An autonomous system needs an equivalent way back into the work. Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again.
 
-What happens to ordinary software in this picture? Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
-
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
-
-Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
-
-Fluent Autonomy is not the death of applications. It is the death of the assumption that every intention must first be translated into the application structure somebody predicted in advance.
-
-The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going. The interface itself can become part of the solution.
-
-## The Architecture Gets Out of the Way
-
-Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
-
-There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript's history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
-
-The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
-
-This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
-
-That is the gap between the opening I imagined and the experience I actually had. I want to delegate having to reconstruct the arrangement every time. The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
-
-The unit of interaction I am aiming for is:
+The request can remain simple:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
-Fluency is competent movement between autonomy and involvement: the system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
+In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
 
 ## Monday Morning
 
-There is one remaining problem with this picture. Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure.
-
-A theory of fluent autonomy should survive contact with systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
+In an editing experiment, I can stop the work, change the brief and try again. A theory of fluent autonomy also has to survive systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
 I needed a less polite laboratory. Fortunately, Monday morning was waiting.
