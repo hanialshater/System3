@@ -32,9 +32,7 @@ The argument of this book began with a recurring move: once something complicate
 
 We stopped programming by wiring individual transistors. We stopped thinking about registers every time we wrote a high-level function. Libraries hid algorithms. Applications hid libraries. Coding agents began treating applications, files, browsers, terminals and APIs as tools.
 
-The complexity moved underneath a more useful interface.
-
-AI agents push that abstraction one level higher because the new interface is not another programming language. Increasingly it is an **outcome described incompletely in ordinary language**.
+AI agents push that abstraction one level higher. Increasingly the interface is an **outcome described incompletely in ordinary language**.
 
 That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
 
@@ -52,19 +50,11 @@ None of these is a specification. Each opens a small investigation.
 
 Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch. That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
 
-A fluent autonomous system can construct part of the structure **after seeing the intention**.
+A fluent autonomous system can construct part of the structure **after seeing the intention**. Control moves upward as the layers underneath stop feeling like separate products I have to operate.
 
-The point of autonomy was never to remove control. It was to move control upward.
+But there is a difference between **hidden complexity** and **lost control**. A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. A good autonomous system should behave similarly.
 
-Fluent Autonomy is what happens when the layers underneath stop feeling like separate products I have to operate. The complexity becomes infrastructure.
-
-But there is a difference between **hidden complexity** and **lost control**.
-
-A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. A good autonomous system should behave similarly.
-
-Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again.
-
-Fluency therefore requires **progressive disclosure of control**: simple when the situation is routine, legible when it is not.
+Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again. Fluency therefore requires **progressive disclosure of control**: simple when the situation is routine, legible when it is not.
 
 ## Bureaucracy on the Fly
 
@@ -74,63 +64,39 @@ Bureaucracy, in its useful form, is accumulated coordination. Roles, review boun
 
 The problem is that fixed bureaucracy calcifies. A six-person review process designed for a dangerous database migration eventually gets applied to changing a sentence in a help page because nobody remembered to tell the workflow that reality had changed.
 
-Agent systems give us the possibility of something stranger:
-
-**bureaucracy on the fly.**
-
-The organization can be assembled for the problem rather than inherited wholesale from the previous problem.
+Agent systems give us the possibility of **bureaucracy on the fly**: an organization assembled for the problem rather than inherited wholesale from the previous one.
 
 A factual question may need one agent and a source. A difficult scientific claim may need competing hypotheses, a literature search, code, an experiment and an evaluator insulated from the researcher who wants the result to work. A writing edit may need none of that: perhaps the original paragraph, a memory of previous corrections and enough restraint to leave the sentence alone. A high-impact financial action may need very little creativity and quite a lot of permission checking. A genuinely novel research problem may need several agents pursuing different approaches without sharing enough context to collapse into one correlated opinion.
 
-The organization should be **as large as the uncertainty deserves and no larger**.
+The organization should be **as large as the uncertainty deserves and no larger**. This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
-This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
-
-What used to be a workflow diagram becomes part of runtime.
-
-The human gives the problem. The system compiles an institution.
+What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution.
 
 ## Fluency Is Selective Friction
 
-There is an easy mistake here. A fluent agent is not an agent that never asks questions. It is also not an agent that asks permission for every action. That is an approval workflow that has learned to talk.
-
-Fluency means knowing **where friction belongs**.
+There is an easy mistake here. A fluent agent is not an agent that never asks questions. It is also not an agent that asks permission for every action. That is an approval workflow that has learned to talk. The useful question is where friction belongs.
 
 Rename two hundred temporary files according to a convention used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
 
-The human's own learning adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction.
+The human's own learning adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction. If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance—it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
-If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance—it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
-
-So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**.
-
-Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
-
-The best autonomous system spends human input well; needing little of it is a side effect.
+So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**. Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well.
 
 ## Invisible by Default, Legible on Demand
 
-There is another bad version of fluency.
-
-Everything works through one beautiful conversational box. The system performs research, edits files, transfers money, changes production settings and updates its own memory. The interface stays calm and minimalist throughout.
+There is another bad version of fluency. Everything works through one beautiful conversational box. The system performs research, edits files, transfers money, changes production settings and updates its own memory. The interface stays calm and minimalist throughout.
 
 Then something goes wrong. You ask why, and the system says:
 
 > I made the best decision based on available context.
 
-This is not fluency. It is opacity with good typography.
+This is opacity with good typography. The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
 
-The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
-
-Those are trust chains. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**.
-
-The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
+Those are trust chains. Fluent Autonomy does not make them disappear; it makes them available **when needed without requiring the human to operate them continuously**. The surface can be conversational as long as the substrate stays inspectable. That is the difference between an abstraction and a black box.
 
 ## Applications Become Primitives
 
-What happens to ordinary software in this picture?
-
-Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
+What happens to ordinary software in this picture? Probably less than the most enthusiastic agent demo suggests, and more than the current application model expects.
 
 Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
 
@@ -138,13 +104,9 @@ Sometimes I want Excel because seeing the table is faster than discussing it. So
 
 Fluent Autonomy is not the death of applications. It is the death of the assumption that every intention must first be translated into the application structure somebody predicted in advance.
 
-The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going.
-
-The interface itself can become part of the solution.
+The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going. The interface itself can become part of the solution.
 
 ## The Architecture Gets Out of the Way
-
-Put the pieces together and Fluent Autonomy is less magical than it first sounds.
 
 Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
 
@@ -162,16 +124,10 @@ The unit of interaction I am aiming for is:
 
 Fluency is competent movement between autonomy and involvement: the system acts freely where the ground is stable, slows down where it is not, surfaces its machinery when trust requires inspection, and gives control back to the human at the level where human judgment actually matters.
 
-Control did not disappear. It found a better interface.
-
 ## Monday Morning
 
-There is one remaining problem with this picture.
-
-Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure.
+There is one remaining problem with this picture. Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure.
 
 A theory of fluent autonomy should survive contact with systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
-I needed a less polite laboratory.
-
-Fortunately, Monday morning was waiting.
+I needed a less polite laboratory. Fortunately, Monday morning was waiting.
