@@ -22,7 +22,7 @@ Chapters 6–12 are works in progress. The current developmental edit preserves 
 
 ### Front matter
 
-- [Preface](chapters/00-preface.md) — the cover, the promise, and the one sentence to keep
+- [Preface](chapters/00-preface.md) — why the book begins with delegation and follows it into questions about knowledge and human autonomy
 
 ### Revised / established arc
 
