@@ -195,7 +195,8 @@ References are organized by chapter, in roughly the order the works appear. The 
 
 - Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, "Reconciling modern machine-learning practice and the classical bias–variance trade-off," *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
 - Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action* (Cambridge University Press, 1990).
-- Jacques Derrida — the deconstruction the chapter is deliberately unfair to; see *Of Grammatology* (1967).
+- Elinor Ostrom, "Beyond Markets and States: Polycentric Governance of Complex Economic Systems," *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter's community-room example and proposed AI applications are the author's thought experiment. <https://doi.org/10.1257/aer.100.3.641>
+- Jacques Derrida, "Signature Event Context" (1972), in *Limited Inc* (Northwestern University Press, 1988), 1–23 — repeatability and the impossibility of finally closing context; the gradient-descent connection is the author's provocation. See also *Of Grammatology* (1967).
 
 ## Chapter 13 — The Prophecy
 
