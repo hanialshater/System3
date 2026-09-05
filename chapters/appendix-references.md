@@ -37,7 +37,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Daniel Kahneman, *Thinking, Fast and Slow* (Farrar, Straus and Giroux, 2011).
 - Ferdinand de Saussure, *Course in General Linguistics* (1916).
 - Ludwig Wittgenstein, *Philosophical Investigations* (1953).
-- Live-SWE-agent — the agent work in which the MARC-file analyzer incident occurred: agents building new tools at runtime when existing instruments could not expose the data.
+- Chunqiu Steven Xia et al., "Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?" (2025) — the agent work in which the MARC-file analyzer incident occurred: agents building new tools at runtime when existing instruments could not expose the data. <https://arxiv.org/abs/2511.13646>
 - SWE-bench Verified (OpenAI, 2024) — the human-validated SWE-bench subset used in the epistemic-swe comparison. <https://openai.com/index/introducing-swe-bench-verified/>
 - mini-swe-agent (SWE-agent project) — the baseline agent in the chapter's experiment. <https://github.com/SWE-agent/mini-swe-agent>
 - Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
@@ -145,6 +145,8 @@ References are organized by chapter, in roughly the order the works appear. The 
 - OpenAI, "Reasoning models struggle to control their chains of thought, and that's good" (2026). <https://openai.com/index/reasoning-models-chain-of-thought-controllability/>
 - Andy Zou et al., "Representation Engineering: A Top-Down Approach to AI Transparency" (2023). <https://arxiv.org/abs/2310.01405>
 - Anthropic, "Mapping the Mind of a Large Language Model" (2024). <https://www.anthropic.com/research/mapping-mind-language-model>
+- Hoagy Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Features in Language Models" (2023). <https://arxiv.org/abs/2309.08600>
+- Collin Burns, Haotian Ye, Dan Klein and Jacob Steinhardt, "Discovering Latent Knowledge in Language Models Without Supervision" (2022). <https://arxiv.org/abs/2212.03827>
 - Anthropic, "A 'diff' tool for AI: Finding behavioral differences in new models" (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>
 - Anthropic, "Tracing the thoughts of a large language model" (2025) and the open-source circuit-tracing tools. <https://www.anthropic.com/research/tracing-thoughts-language-model> · <https://www.anthropic.com/research/open-source-circuit-tracing>
 - Anthropic, "Natural Language Autoencoders" (2026). <https://www.anthropic.com/research/natural-language-autoencoders>
@@ -191,6 +193,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 
 ## Chapter 12 — After Capacity
 
+- Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, "Reconciling modern machine-learning practice and the classical bias–variance trade-off," *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
 - Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action* (Cambridge University Press, 1990).
 - Jacques Derrida — the deconstruction the chapter is deliberately unfair to; see *Of Grammatology* (1967).
 

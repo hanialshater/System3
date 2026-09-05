@@ -28,43 +28,35 @@ Before trying to automate that, I had to notice how much of the work around the 
 
 ## How We Got Here
 
-Coding first appeared as a strange side effect of language modeling.
+Models trained to continue text turned out to continue code. Researchers trained models specifically for the job, and many of the early tasks were conveniently small: give the model a function signature, a comment or a programming puzzle and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
 
-The earliest useful tasks were conveniently small. Give the model a function signature, a comment, or a programming problem and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
-
-Then tools such as GitHub Copilot put that capability inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch code appear underneath it.
+Then GitHub Copilot put the trick inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch it appear underneath your cursor, which was delightful for about a week and then became the way things were.
 
 This was useful enough that the limitations became interesting.
 
-A real software task rarely arrives as an isolated function with a docstring politely explaining what needs to change. Someone says invoices occasionally show the wrong tax after a refund. Somewhere inside a 150,000-line CRM there is a reason. It may involve a controller, a database model, an old helper function, a test written three years ago, and an API whose behavior everyone on the team knows but nobody thought to document.
+A real software task rarely arrives as an isolated function with a docstring politely explaining what needs to change. Someone says invoices occasionally show the wrong tax after a refund. Somewhere inside a 150,000-line CRM there is a reason. It may involve a controller, a database model, an old helper function, a test written three years ago and an API whose behavior everyone on the team knows but nobody thought to document.
 
-By the time GPT-4 arrived, I increasingly wanted to use models on exactly these problems. The workflow was ridiculous. Find the file you suspect, copy a class into ChatGPT, describe the bug, copy the suggested patch into the editor, run the program, discover a new error, copy the traceback, paste that back into ChatGPT, repeat.
+By the time GPT-4 arrived, I wanted to use models on exactly these problems, and the workflow I invented for it was ridiculous. Find the file you suspect. Copy a class into ChatGPT. Describe the bug. Copy the suggested patch into the editor. Run the program. Discover a new error. Copy the traceback. Paste that back into ChatGPT. Repeat until it works or until dinner.
 
 My first agent-computer interface was copy and paste.
 
-The model might be doing sophisticated reasoning in the middle, but I performed every interaction with the software around it. I searched the repository, decided which file mattered, assembled the context, applied the edit, ran the tests, and carried back whatever reality had said about the edit.
+I did not think of it that way at the time. I thought I was using a very good autocomplete. Looking back, the model might have been doing sophisticated reasoning in the middle, but I was performing every interaction with the software around it: searching the repository, deciding which file mattered, assembling the context, applying the edit, running the tests and carrying back whatever reality had said about the edit. I was the hands, the eyes and the memory. The model was a brain in a jar, and I was the jar's entire staff.
 
-Then the bug crossed three files and context itself became a job. Paste one class but forget the interface it implements; the model confidently invents a method that does not exist. Add the interface and now it needs the database schema. Add the schema and another helper suddenly matters. Eventually half the repository is sitting in the conversation and somehow the model understands less.
-
-A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
+Then the bug crossed three files and context itself became a job. Paste one class but forget the interface it implements, and the model confidently invents a method that does not exist. Add the interface and now it needs the database schema. Add the schema and another helper suddenly matters. Eventually half the repository is sitting in the conversation and somehow the model understands less. A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
 
 We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
-Software-engineering benchmarks exposed the same gap. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
+Software-engineering benchmarks exposed the same gap from the other side. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues, so a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests. In other words, it had to do my job. The copy-and-paste one.
 
-Eventually we stopped carrying the loop by hand.
-
-Give the model access to the repository. Let it search for symbols and references. Let it open files, edit them and inspect the diff. Give it a terminal. When a test fails, return the failure and let that result shape what happens next.
-
-A coding agent is, at its simplest, this loop made executable. The language model supplies much of the programming knowledge and reasoning; the environment lets it inspect software, act on it and observe the consequences.
+Eventually we stopped carrying the loop by hand. Give the model access to the repository. Let it search for symbols and references. Let it open files, edit them and inspect the diff. Give it a terminal. When a test fails, return the failure and let that result shape what happens next. A coding agent is, at its simplest, this loop made executable. The language model supplies much of the programming knowledge and reasoning; the environment lets it inspect software, act on it and observe the consequences.
 
 Software is unusually friendly to this arrangement. Files can be searched. Programs can be executed. Tests can say no. Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
 
 Systems such as SWE-agent made the interface itself part of the problem. How the model searches, how much of a file it sees, how edits are applied and what information comes back from commands can matter almost as much as another clever prompt. The useful object is no longer just the model. It is the model operating inside a world where software can push back.
 
-Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong.
+Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
-More of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody's head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
+So more of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody's head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
 
 Long sessions produced the opposite problem. Context filled with abandoned experiments, obsolete assumptions and test output from three hypotheses ago. Memory became a problem of selection rather than storage.
 
@@ -76,9 +68,7 @@ Humans call our version of this sunk cost. The agent has a respectable excuse: i
 
 So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner's misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-Looking backward, the progression is less mysterious than the word *agent* sometimes makes it sound. Models learned to generate useful pieces of code. We put them in editors. Repository access, editing and execution moved into the loop. Better interfaces, persistent instructions, context management and branching followed.
-
-Bit by bit, work the human had been doing around the model became part of the machine.
+Together, the interfaces, execution loop, context management and safeguards form the agent's **harness**. The evaluator is one part of it. Looking backward, its construction is less mysterious than the word *agent* sometimes makes it sound. Every step took a job I had been doing by hand—searching, assembling context, applying the edit, running the test, remembering, keeping alternatives alive—and moved it into the machine.
 
 But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for:
 
@@ -138,7 +128,7 @@ That is the layer that remained stubbornly human: deciding what to try, which ev
 
 ## The Five Layers of AI Coding
 
-By then I had a rough map.
+By then I had a rough map. Each layer marked a different kind of work we had learned to delegate, or were still trying to.
 
 **Layer 0—Model.** GPT, Claude, Gemini and whatever comes next: general capability in language, code, reasoning and vision.
 
@@ -528,7 +518,7 @@ We gave the orchestrator the problem, the capabilities available to it, and enou
 
 The orchestrator did not need to be best at any of those jobs. It had to decide which job the inquiry currently needed.
 
-At the top, the loop was almost embarrassingly simple:
+At the top, the loop was almost too simple to write down:
 
 **state of inquiry → choose a move → act → observe → update the state of inquiry**
 

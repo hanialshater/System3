@@ -118,7 +118,7 @@ The Architect looked at her hand.
 
 Remembered the first time she'd held it—tiny fingers, a thousand simulations ago, when she still thought he was just a funny octopus who sold meat.
 
-He pulled his tentacle back and lit a cigarette.
+He pulled his tentacle back and lit another.
 
 “Worlds end, sweetheart. Capitalism doesn't. The only thing real here is taxes.”
 

@@ -156,7 +156,7 @@ Testimony comes with metadata.
 
 And we are all Alberto to someone. Someone may trust me on ranking systems because I have spent years working on them. Someone else may trust me about Jordan because I have lived there. If I begin confidently explaining marine biology, the correct response is not to transfer my credibility from machine learning to whales merely because the same mouth is speaking.
 
-**Trust is local.**
+Trust is local.
 
 We learn this early. Repeated interaction with caregivers builds expectations before we have words for evidence. Siblings contribute an important epistemological innovation: **some testimony is bullshit**. Teachers tell us about atoms, dinosaurs and wars we cannot personally verify. Science extends the chain through instruments, experiments, other investigators, criticism and replication.
 
@@ -168,7 +168,7 @@ Human knowledge is not simply a pile of facts. It is **epistemologically stratif
 
 Mature trust is not purely conservative either. Sometimes the instrument disagrees with the theory. At first you check the instrument. Then you repeat the experiment. If the anomaly survives long enough, eventually the trusted theory becomes the thing under investigation.
 
-**Productive distrust requires trust first.**
+Productive distrust requires trust first.
 
 Random distrust is just another form of stupidity. The interesting critic understands why the old structure earned trust before finding the point where that trust stops being deserved.
 
@@ -286,7 +286,7 @@ This changes how we should think about skills, tools and memory.
 
 A skill is knowledge externalized from the model. Someone—or some previous agent—learned something useful and wrote it down so later sessions would not need to rediscover it.
 
-**The model inherits the residue.**
+The model inherits the residue.
 
 But persistence is not trust. A terrible heuristic written into a skill file is simply a hallucination with better retention.
 
@@ -459,7 +459,7 @@ Return to the seven claims.
 
 **6. Camels are native to the Dalmatian coast—False.** You probably rejected this immediately without reconstructing camel evolutionary history or personally surveying Dalmatian fauna. A large inherited structure did that work for you.
 
-**System 1 can be fast because System 3 has often been working for centuries underneath it.**
+System 1 can be fast because System 3 has often been working for centuries underneath it.
 
 **7. Real, unedited photograph—True.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence and gives us one more thing that may itself need to be trusted. And I could be lying to prove a point about trusting sources. If I told you the photograph was AI-generated, you would probably believe that too, because it fits a pattern you recognize.
 

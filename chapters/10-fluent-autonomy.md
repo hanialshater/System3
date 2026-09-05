@@ -146,13 +146,17 @@ The interface itself can become part of the solution.
 
 Put the pieces together and Fluent Autonomy is less magical than it first sounds.
 
-A human supplies an imperfect intention. The system interprets it provisionally rather than pretending it received a utility function. It decides what it already knows, what needs research and what should remain uncertain. It retrieves relevant cultural memory without treating precedent as scripture. It creates the smallest useful organization around the problem, selects tools, exposes important claims to reality and allocates evaluation where error would matter. It keeps traces. It asks the human when human information has high value. It learns from correction without converting one correction into universal law. And it returns not only an artifact or action, but enough consequence that the human can learn too.
+Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
 
-That is a lot of machinery. The point is that I should rarely have to name any of it.
+There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript's history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
 
-The system should not require me to know whether this particular task needs debate, a critic, three independent evaluators, a circuit monitor, a retrieval pattern or no ceremony whatsoever. Those are implementation details at the level I am trying to leave behind.
+The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-The unit of interaction becomes closer to:
+This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
+
+That is the gap between the opening I imagined and the experience I actually had. I want to delegate having to reconstruct the arrangement every time. The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
+
+The unit of interaction I am aiming for is:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
@@ -164,7 +168,7 @@ Control did not disappear. It found a better interface.
 
 There is one remaining problem with this picture.
 
-Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure. No customer decides that the elegant experience is annoying. No production service has a latency budget. No old dependency turns out to be load-bearing for reasons nobody remembers.
+Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure.
 
 A theory of fluent autonomy should survive contact with systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 

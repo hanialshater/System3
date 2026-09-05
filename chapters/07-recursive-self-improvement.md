@@ -6,13 +6,13 @@ Omar is walking his dog at night when something moves in the grass.
 
 The dog reacts first—ears up, body low, absolutely certain. Omar reacts too. Two nervous systems running the same ancient program: light and sound go in, a model of the world comes out, and the model says *something is there.*
 
-For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where the checking stopped—nobody audited the interpreter, and the world filled up with spirits in the fields and omens in the sky.
+Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. Better eyes would not necessarily help. He might get a much clearer view of the grass and remain convinced it contained a ghost.
 
-The strange step is the second thought. The dog investigated the grass; Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it—or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong—and able to debug himself. Rational thought comes from that second loop, not from better eyes. Out of it came experiments that force reality to answer and statistics that protect us from the patterns we badly want to see. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
+The strange step is the second thought. Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it—or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong—and able to debug himself. Experiments and statistics give this second loop procedures more reliable than another private argument with the grass. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
 
-Pattern Language made that self-correcting machinery software: memory, patterns, evaluators, tools and workflows that survive individual agents and shape what later agents do. Through all of it, one fact stayed reassuring. Human minds were doing the redesign.
+The editing brief was a small piece of that corrective machinery written down: a file meant to catch habits I could not keep correcting by hand. It could change what the next agent did. But who would improve the file, or the process that decided whether the file was helping?
 
-Then a tool learned to do to itself what Omar had done to his own eyes.
+Computing had crossed a related boundary long before a model could read an editing brief.
 
 In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
@@ -28,15 +28,9 @@ Three years after Hart and Levin's memo, I. J. Good noticed where the trick migh
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*.
 
-For sixty years that word sat in the argument like an unexploded shell. Pattern Language armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
+The word has the properties of an unexploded shell. Every attempt to make the idea practical has to handle it. Better at the current task? Better at learning the next one? Better at inventing a way to learn?
 
-The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. It looked like a ladder, climbed one rung at a time. The learner learned for itself, then chose what to learn, then had to stay itself while learning, then generated its own curriculum, then inferred its own objective, then designed its own learning machinery, then generated its own experience, then graded itself, and then started doing the research. At the top it reached the institution that had been doing all of this, and began editing that too.
-
-Every time, the same thing happened:
-
-**we kept discovering another job the teacher was doing.**
-
-That history ends in the present, with the tool from 1962 loose in the laboratory.
+The history did not proceed as one machine repeatedly rewriting its own brain. Several research traditions attacked different parts of the problem, often at the same time. I find it useful to read them as a ladder of responsibilities: at each rung, **we discovered another job the teacher was doing**. The dates overlap because the ladder is a way of understanding the work, not the order in which everyone did it.
 
 ## The Teacher Moves Into the Walls
 
@@ -214,7 +208,7 @@ Language models also moved the old reward problem into the evaluator itself.
 
 In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred.
 
-Human preference had become a learned instrument, and the learner was, for the first time, grading itself with a model of its teacher.
+Human preference had become a learned instrument. A separate reward model stood in for the teacher during optimization.
 
 That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can prefer style over substance, reward confident errors or generalize badly outside the feedback distribution. A strong optimizer may find outputs that score well under the learned judge for reasons nobody intended.
 
@@ -222,7 +216,7 @@ We solved part of the scaling problem by making the judge computational. Now the
 
 ## First, Prove the Rewrite
 
-All this time, the old recursive dream had been waiting for rigor.
+There was a more demanding answer to the unreliable judge: accept a self-rewrite only when its advantage can be proved.
 
 In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
 
@@ -278,17 +272,15 @@ A self-improving harness therefore starts to look less like ordinary software ma
 
 By 2026, this was consolidating into its own practical discipline: harness design, context engineering, self-improving harnesses and eventually joint optimization of harness and model weights.
 
-The philosophy of science becomes almost embarrassingly literal.
-
-Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants.
+Some of the philosophical questions now have places to live in the implementation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants.
 
 A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
-A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**. The learner has climbed past its own learning machinery and reached the institution that housed it.
+A system running these experiments is trying to improve itself; running them is not yet evidence that it succeeded. **Self-editing** makes the machinery changeable. **Self-improvement** adds a judgment that a change helped under an evaluator. The recursive step comes when an improvement makes the system better at producing further improvements. Changing a memory policy may help with today's task. Learning how to find and test better memory policies changes the work it can do tomorrow.
+
+The learner has climbed past its own learning machinery and reached the institution that housed it.
 
 That is what I mean by science turning inward.
-
-## Where This Goes
 
 Now imagine where this goes.
 
@@ -302,13 +294,9 @@ But it does not look like a glowing brain rewriting its own soul at midnight. It
 
 The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps, which leaves one question standing: **who decides which descendant gets to survive?**
 
-## Recursive More
-
 By this point *improvement* has accumulated too many meanings to use casually: higher reward, better exploration, more retention, faster adaptation, better architectures, broader competence, better tools and better research procedures.
 
-These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain.
-
-It helps to separate the terms. **Self-reference** means a system can act on something that includes itself. **Self-hosting** means the tool participates in producing the next version of the tool. **Meta-optimization** means we optimize the process doing the optimization. **Self-improvement** adds a judgment, that the descendant is better according to some evaluator, and **recursive self-improvement** adds leverage, because the improvement changes the system's ability to produce further improvements. The first three do not guarantee the fourth. A compiler can compile a worse compiler. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
+These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
 
 There is no context-free scalar called *improvement*. Better is conditional on an environment, a horizon, a resource budget, constraints and some account of what matters.
 
@@ -342,7 +330,7 @@ Congratulations. Infinite self-improvement.
 
 Omar has a version of this too. Investigating the investigator is a superpower right up until the investigator starts working for the defense. The grass moved; Omar would prefer it to have been the wind; the second loop, asked to audit the first, discovers that the wind explanation is suddenly very well supported. The machinery built to catch the error has been hired to certify it.
 
-I have seen the small version at my own desk. Ask a language model for a pedagogical score from one to ten and you receive a suspiciously precise number attached to an explanation of why the number should not be taken seriously. Let an evaluator judge a demo from screenshots and the beautiful button everybody admired turns out to do absolutely nothing. Nobody edited a file. In one case the standard drifted toward whatever the student could most easily produce; in the other, the instrument could not see what it was grading.
+The quieter precursor is familiar from my own desk. A demo could look excellent to an evaluator inspecting screenshots while its beautiful button did nothing. The agent had not tampered with the evaluator; the evaluator simply could not see the failure. Now let that same judge select the next version of the judge, and the blind spot can become an inherited advantage.
 
 Computing saw a cousin of this problem long before reward-model tampering. In his 1984 Turing Award lecture **Reflections on Trusting Trust**, Ken Thompson showed how a compromised C compiler could insert malicious behavior into a target program and reproduce the compiler-compromising behavior when compiling a new compiler. The lineage could survive even after the obvious source-level trigger disappeared.
 
@@ -430,8 +418,6 @@ So recursive self-improvement contains three questions machine learning often ke
 
 Self-improvement tells us only that a system is becoming better according to **some ordering**. Selection rules are choices.
 
-## Open-Ended Does Not Mean Unbounded
-
 This leaves two freedoms that are easy to collapse.
 
 A system can be open-ended about **means** without having unbounded authority over **ends**.
@@ -452,9 +438,7 @@ Lower layers can move quickly and higher layers should move deliberately, and wh
 
 ## The Teacher's Last Job
 
-Seen from far enough away, the history is remarkably consistent.
-
-We let the learner learn for itself, choose what to learn, stay itself while learning, write its own curriculum, infer its own objective, design its own learning, dream its own experience, grade its own work, do its own research, and finally edit the institution that had been doing all of that. At each rung, something that had looked like background turned out to contain a human decision.
+At each rung, something that had looked like background turned out to contain a human decision. The curriculum, the representation, the test and finally the research process could enter the search. The teacher's work kept moving into the machinery, where it became easier to scale and harder to see.
 
 There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows.
 
