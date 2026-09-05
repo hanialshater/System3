@@ -16,7 +16,7 @@ The two figures on the cover are Ferdinand de Saussure and Ludwig Wittgenstein. 
 
 Neither of them lived to see the argument become an engineering problem.
 
-This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. We are not there yet. This book is about why not, what it would take, and what happened when I tried anyway: an agent that beat my reference score at circle packing while I was not watching, educational demos judged by simulated students, a coding agent given a memory and an epistemology, sixteen Claudes slowly becoming an organization, and a recommender system that dragged the whole philosophy into production and made it face an A/B test.
+This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. We are not there yet. This book is about why not, what it would take, and what happened when I tried anyway: an agent that beat my reference score at circle packing while I was not watching, educational demos judged by simulated students, a coding agent given a memory and an epistemology, sixteen Claudes slowly becoming an organization, and a recommender-system design that gives the philosophy an A/B test it still has to face.
 
 Along the way it becomes a book about knowledge: how a machine that has read everything and touched nothing can still be caught being wrong, and what has to be built around it so that being wrong has consequences.
 
@@ -708,43 +708,35 @@ Before trying to automate that, I had to notice how much of the work around the 
 
 ## How We Got Here
 
-Coding first appeared as a strange side effect of language modeling.
+Models trained to continue text turned out to continue code. Researchers trained models specifically for the job, and many of the early tasks were conveniently small: give the model a function signature, a comment or a programming puzzle and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
 
-The earliest useful tasks were conveniently small. Give the model a function signature, a comment, or a programming problem and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
-
-Then tools such as GitHub Copilot put that capability inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch code appear underneath it.
+Then GitHub Copilot put the trick inside the editor. Instead of asking a chatbot for code and carrying the answer back yourself, you could describe what should happen next and watch it appear underneath your cursor, which was delightful for about a week and then became the way things were.
 
 This was useful enough that the limitations became interesting.
 
-A real software task rarely arrives as an isolated function with a docstring politely explaining what needs to change. Someone says invoices occasionally show the wrong tax after a refund. Somewhere inside a 150,000-line CRM there is a reason. It may involve a controller, a database model, an old helper function, a test written three years ago, and an API whose behavior everyone on the team knows but nobody thought to document.
+A real software task rarely arrives as an isolated function with a docstring politely explaining what needs to change. Someone says invoices occasionally show the wrong tax after a refund. Somewhere inside a 150,000-line CRM there is a reason. It may involve a controller, a database model, an old helper function, a test written three years ago and an API whose behavior everyone on the team knows but nobody thought to document.
 
-By the time GPT-4 arrived, I increasingly wanted to use models on exactly these problems. The workflow was ridiculous. Find the file you suspect, copy a class into ChatGPT, describe the bug, copy the suggested patch into the editor, run the program, discover a new error, copy the traceback, paste that back into ChatGPT, repeat.
+By the time GPT-4 arrived, I wanted to use models on exactly these problems, and the workflow I invented for it was ridiculous. Find the file you suspect. Copy a class into ChatGPT. Describe the bug. Copy the suggested patch into the editor. Run the program. Discover a new error. Copy the traceback. Paste that back into ChatGPT. Repeat until it works or until dinner.
 
 My first agent-computer interface was copy and paste.
 
-The model might be doing sophisticated reasoning in the middle, but I performed every interaction with the software around it. I searched the repository, decided which file mattered, assembled the context, applied the edit, ran the tests, and carried back whatever reality had said about the edit.
+I did not think of it that way at the time. I thought I was using a very good autocomplete. Looking back, the model might have been doing sophisticated reasoning in the middle, but I was performing every interaction with the software around it: searching the repository, deciding which file mattered, assembling the context, applying the edit, running the tests and carrying back whatever reality had said about the edit. I was the hands, the eyes and the memory. The model was a brain in a jar, and I was the jar's entire staff.
 
-Then the bug crossed three files and context itself became a job. Paste one class but forget the interface it implements; the model confidently invents a method that does not exist. Add the interface and now it needs the database schema. Add the schema and another helper suddenly matters. Eventually half the repository is sitting in the conversation and somehow the model understands less.
-
-A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
+Then the bug crossed three files and context itself became a job. Paste one class but forget the interface it implements, and the model confidently invents a method that does not exist. Add the interface and now it needs the database schema. Add the schema and another helper suddenly matters. Eventually half the repository is sitting in the conversation and somehow the model understands less. A lot of early LLM programming consisted of building a tiny artificial universe around the model: here is the relevant class; here is the schema; ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
 
 We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
-Software-engineering benchmarks exposed the same gap. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues. Now a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests.
+Software-engineering benchmarks exposed the same gap from the other side. SWE-bench changed the unit of evaluation. Its tasks came from real GitHub issues, so a system had to work inside an existing repository, locate the relevant code, understand relationships across files, make an appropriate change and survive the tests. In other words, it had to do my job. The copy-and-paste one.
 
-Eventually we stopped carrying the loop by hand.
-
-Give the model access to the repository. Let it search for symbols and references. Let it open files, edit them and inspect the diff. Give it a terminal. When a test fails, return the failure and let that result shape what happens next.
-
-A coding agent is, at its simplest, this loop made executable. The language model supplies much of the programming knowledge and reasoning; the environment lets it inspect software, act on it and observe the consequences.
+Eventually we stopped carrying the loop by hand. Give the model access to the repository. Let it search for symbols and references. Let it open files, edit them and inspect the diff. Give it a terminal. When a test fails, return the failure and let that result shape what happens next. A coding agent is, at its simplest, this loop made executable. The language model supplies much of the programming knowledge and reasoning; the environment lets it inspect software, act on it and observe the consequences.
 
 Software is unusually friendly to this arrangement. Files can be searched. Programs can be executed. Tests can say no. Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
 
 Systems such as SWE-agent made the interface itself part of the problem. How the model searches, how much of a file it sees, how edits are applied and what information comes back from commands can matter almost as much as another clever prompt. The useful object is no longer just the model. It is the model operating inside a world where software can push back.
 
-Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong.
+Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
-More of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody's head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
+So more of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody's head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
 
 Long sessions produced the opposite problem. Context filled with abandoned experiments, obsolete assumptions and test output from three hypotheses ago. Memory became a problem of selection rather than storage.
 
@@ -756,9 +748,7 @@ Humans call our version of this sunk cost. The agent has a respectable excuse: i
 
 So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner's misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-Looking backward, the progression is less mysterious than the word *agent* sometimes makes it sound. Models learned to generate useful pieces of code. We put them in editors. Repository access, editing and execution moved into the loop. Better interfaces, persistent instructions, context management and branching followed.
-
-Bit by bit, work the human had been doing around the model became part of the machine.
+Together, the interfaces, execution loop, context management and safeguards form the agent's **harness**. The evaluator is one part of it. Looking backward, its construction is less mysterious than the word *agent* sometimes makes it sound. Every step took a job I had been doing by hand—searching, assembling context, applying the edit, running the test, remembering, keeping alternatives alive—and moved it into the machine.
 
 But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for:
 
@@ -818,7 +808,7 @@ That is the layer that remained stubbornly human: deciding what to try, which ev
 
 ## The Five Layers of AI Coding
 
-By then I had a rough map.
+By then I had a rough map. Each layer marked a different kind of work we had learned to delegate, or were still trying to.
 
 **Layer 0—Model.** GPT, Claude, Gemini and whatever comes next: general capability in language, code, reasoning and vision.
 
@@ -1208,7 +1198,7 @@ We gave the orchestrator the problem, the capabilities available to it, and enou
 
 The orchestrator did not need to be best at any of those jobs. It had to decide which job the inquiry currently needed.
 
-At the top, the loop was almost embarrassingly simple:
+At the top, the loop was almost too simple to write down:
 
 **state of inquiry → choose a move → act → observe → update the state of inquiry**
 
@@ -1470,7 +1460,7 @@ Testimony comes with metadata.
 
 And we are all Alberto to someone. Someone may trust me on ranking systems because I have spent years working on them. Someone else may trust me about Jordan because I have lived there. If I begin confidently explaining marine biology, the correct response is not to transfer my credibility from machine learning to whales merely because the same mouth is speaking.
 
-**Trust is local.**
+Trust is local.
 
 We learn this early. Repeated interaction with caregivers builds expectations before we have words for evidence. Siblings contribute an important epistemological innovation: **some testimony is bullshit**. Teachers tell us about atoms, dinosaurs and wars we cannot personally verify. Science extends the chain through instruments, experiments, other investigators, criticism and replication.
 
@@ -1482,7 +1472,7 @@ Human knowledge is not simply a pile of facts. It is **epistemologically stratif
 
 Mature trust is not purely conservative either. Sometimes the instrument disagrees with the theory. At first you check the instrument. Then you repeat the experiment. If the anomaly survives long enough, eventually the trusted theory becomes the thing under investigation.
 
-**Productive distrust requires trust first.**
+Productive distrust requires trust first.
 
 Random distrust is just another form of stupidity. The interesting critic understands why the old structure earned trust before finding the point where that trust stops being deserved.
 
@@ -1600,7 +1590,7 @@ This changes how we should think about skills, tools and memory.
 
 A skill is knowledge externalized from the model. Someone—or some previous agent—learned something useful and wrote it down so later sessions would not need to rediscover it.
 
-**The model inherits the residue.**
+The model inherits the residue.
 
 But persistence is not trust. A terrible heuristic written into a skill file is simply a hallucination with better retention.
 
@@ -1773,7 +1763,7 @@ Return to the seven claims.
 
 **6. Camels are native to the Dalmatian coast—False.** You probably rejected this immediately without reconstructing camel evolutionary history or personally surveying Dalmatian fauna. A large inherited structure did that work for you.
 
-**System 1 can be fast because System 3 has often been working for centuries underneath it.**
+System 1 can be fast because System 3 has often been working for centuries underneath it.
 
 **7. Real, unedited photograph—True.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence and gives us one more thing that may itself need to be trusted. And I could be lying to prove a point about trusting sources. If I told you the photograph was AI-generated, you would probably believe that too, because it fits a pattern you recognize.
 
@@ -1919,7 +1909,7 @@ A review gets added after a spectacular failure. Five years later the system is 
 
 I learned a version of this in a much less ancient civilization: Amazon.
 
-A customer presses a button and eventually a box appears at a door. Described from high enough up, the company sounds almost embarrassingly simple. Try asking one employee how the whole thing works.
+A customer presses a button and eventually a box appears at a door. Described from high enough up, the company sounds simple. Try asking one employee how the whole thing works.
 
 Product information comes from one collection of systems. Search and ranking may involve others. Availability depends on inventory. Price may depend on another stack. Payments, fraud, fulfillment, transportation, customer service and experimentation each have their own machinery. Underneath them sit identity systems, data pipelines, deployment systems, observability, permissions and a geological layer of services whose original authors have moved to another team, company or continent.
 
@@ -2229,7 +2219,7 @@ The agent would improve. Then the context would end.
 
 We were reenacting, on a ridiculous scale, a problem it took civilization several thousand years to notice. A society can know something none of its members knows alone. Fine. But if the society survives, another question appears:
 
-**How does what it learned yesterday change what it does tomorrow?**
+How does what it learned yesterday change what it does tomorrow?
 
 The obvious answer is memory. Save the conversation. Increase the context window. Keep a notebook. Put every decision into a database. That helps. It is not enough.
 
@@ -2237,21 +2227,13 @@ A transcript remembers what happened. An institution has to remember **what was 
 
 Suppose I save the instruction “use longer paragraphs.” That is a memory of one correction. It is also a future disaster waiting politely in Markdown. The lesson was never that long paragraphs are good. The failure was a particular editing process compressing exploratory prose into a rhythm that felt machine-produced. Sometimes the cure was a longer paragraph. Sometimes a shorter sentence. Sometimes the correct edit was to stop editing.
 
-What the next agent needed was not the instruction. It needed enough of the **reason, evidence, boundary conditions and failure history** to know when the instruction deserved authority.
+What the next agent needed was not the instruction. It needed enough of the **reason, evidence, boundary conditions and failure history** to know when the instruction deserved authority. That is closer to culture than memory.
 
-That is closer to culture than memory.
+I had called System 3 science made computational. Here was an embarrassingly available test: could the software editing this book carry a useful lesson into the next chapter without turning it into a rule for ruining that chapter?
 
-**System 3 is science.** That was the claim. The rest of this chapter is what happens when you try to write the claim down as software.
+Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself, and every one of those failure modes now has a filename. If System 3 is going to borrow from science, those arguments are not decorative philosophy. They are design reviews written a few decades or centuries early.
 
-Science did not arrive with one clean design. Its philosophy is largely the history of people discovering failure modes in knowledge itself, and every one of those failure modes now has a filename.
-
-If System 3 is going to borrow from science, those arguments are not decorative philosophy. They are design reviews written a few decades or centuries early.
-
-So the problem here is not simply how agents remember. It is:
-
-**How should useful experience become reusable behavior without turning yesterday's success into scripture?**
-
-That question has become practical because knowledge itself is starting to become a software artifact.
+So the problem here is not simply how agents remember. It is how useful experience should become reusable behavior **without turning yesterday's success into scripture**, and the question has become practical because knowledge itself is starting to become a software artifact.
 
 ## Three Ways to Tell a Computer What You Know
 
@@ -2273,7 +2255,7 @@ A model can read something like:
 
 There is no deterministic function there. There is operational knowledge. A competent human can interpret it. Now a sufficiently capable model can too.
 
-The change goes beyond “prompts are code.” **Knowledge itself can become versionable, composable and executable.**
+The change goes beyond “prompts are code.” Knowledge itself can become versionable, composable and executable.
 
 An organization can write down a procedure, examples, scripts, counterexamples, diagnostic questions, evidence, tool instructions and boundaries. The model supplies enough interpretation that every clause does not have to become brittle symbolic logic before it can affect behavior.
 
@@ -2293,9 +2275,7 @@ It sounds more like:
 
 > Start with the dependency graph, unless the spike began exactly at deployment. If only one market is affected, check the traffic split before touching the database. The cache metric lies under failover, so ignore it when this alarm is red. And if the problem started after the Tuesday migration, ask Sam because there is a thing with the old serializer that nobody wrote down properly.
 
-Traditional expert systems struggled because converting that practice into formal logic was expensive and brittle. Machine learning offered an escape: stop asking experts to explain themselves and learn patterns from data.
-
-LLMs change the trade again. They can interpret prose, examples, scripts, diagrams and partially structured instructions. Expertise still has to be captured, but it no longer has to become perfect logic before the computer can use it.
+Expert systems struggled because converting that practice into formal logic was expensive and brittle, and machine learning offered an escape: stop asking experts to explain themselves and learn patterns from data. LLMs change the trade again. They can interpret prose, examples, scripts, diagrams and partially structured instructions. Expertise still has to be captured, but it no longer has to become perfect logic before the computer can use it.
 
 Now the hard questions are different. Whose practice gets written down? Which version applies here? What happens when two experts disagree? How does a lesson lose standing? When does a local workaround become a global rule? Which knowledge should enter the working context now, and which should remain in the archive? Those questions used to be edge cases. They are the engineering surface now.
 
@@ -2315,7 +2295,7 @@ A saved instruction is too small a unit.
 
 Christopher Alexander's *A Pattern Language* was about towns, buildings and recurring design problems. A pattern was never a commandment. It named a situation, the forces that made it difficult, a response that had repeatedly worked and the consequences of using that response.
 
-That abstraction fits agent knowledge almost suspiciously well.
+That abstraction fits agent knowledge uncomfortably well.
 
 Consider:
 
@@ -2325,9 +2305,7 @@ It has the reassuring shape of wisdom and the inconvenient property of being fal
 
 Regex is perfectly good for many small extraction tasks. A parser may be absurd overhead for a five-line format. The useful lesson is that recursive structure creates characteristic failure modes for flat pattern matching; those failures become harder to see as syntax grows; and beyond some point a parser becomes cheaper than maintaining an increasingly heroic regular expression written at 2 a.m.
 
-That is closer to a pattern.
-
-A saved instruction remembers **what somebody said**. A pattern tries to remember **what kept happening**.
+That is closer to a pattern. A saved instruction remembers **what somebody said**. A pattern tries to remember **what kept happening**.
 
 The book has already accumulated patterns whether we called them that or not.
 
@@ -2338,6 +2316,8 @@ The book has already accumulated patterns whether we called them that or not.
 **Strategic Constraint:** when an easy path keeps absorbing the search, remove it long enough to expose another part of the possibility space.
 
 The useful part is not the slogan. Each pattern contains a recurring situation, a tension and a reason.
+
+The corrections at the top of this chapter eventually became one too. After enough of them, I stopped repeating myself and wrote them down as a brief for whatever agent would judge the next revision: read both versions in full before saying anything; protect the wandering and any joke that is carrying the argument; when a passage feels synthetic, quote it and say why; and do not reward a revision merely because it is cleaner, because a version can be structurally better and worse as writing. It is three pages, most of it lists. Every evaluation of this book I have on file since the end of August 2026 has been read against it. It has since had most of the failure modes the philosophers are about to describe, and it had them in a week.
 
 But the history of institutions should make us suspicious of inherited procedure. Civilizations accumulate more than good practices: ritual, prestige, local workarounds and procedures that have outlived the world that justified them.
 
@@ -2365,6 +2345,8 @@ Did the advice stop working? Was it retrieved in the wrong situation? Did the mo
 
 Failure tells us that some part of the package deserves suspicion. It does not highlight the guilty line in yellow.
 
+One evening a pass went through a later chapter to tighten its history, and it did: two hundred lines out, a hundred and twenty in. Twenty-five minutes later a second pass went back and put a dozen sentences back, almost none of them carrying a fact and all of them carrying the chapter. The tightening rule had not stopped being true. It had been applied by a pass that could see length and could not see load, on a chapter whose argument is carried by its jokes. Which of those deserved the blame: the rule, the pass, the chapter, or the brief that had told the pass what to protect and had apparently not been specific enough about how a joke can carry an argument? The log records the reversal. It does not record a diagnosis, because nobody had one.
+
 So reusable knowledge needs **archaeology**.
 
 Where did this pattern come from? Which failures produced it? Which model and tools were involved? Which alternatives were tried? What evidence earned the lesson its standing? What assumptions were present?
@@ -2375,21 +2357,15 @@ Tradition is not automatically bad. It is simply difficult to debug.
 
 ## Defaults Need Rivals
 
-Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system.
+I had asked an evaluator to find the machine patterns in the manuscript, and it measured the share of paragraphs that were a single line, because the brief penalized them and the number was cheap to compute. It was a good instrument. It caught one chapter at sixty-three percent, which is not prose, it is a drum solo, and a merge pass took it to thirty-seven. It caught two more the same day. Then the number started appearing in the next evaluations, a column with a row per chapter and arrows in the notes, and a chapter at twenty-three percent was praised for its control. It took four days for a reader to ask whether the instrument still measured the thing it had been built to catch, and by then it was a column in a table, which is the form in which an assumption becomes furniture.
 
-Thomas Kuhn's most useful lesson here is not the phrase *paradigm shift* but the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count.
-
-An agent culture needs the same economy. If a deployment procedure has survived hundreds of releases, the system should not rediscover it from first principles every Tuesday merely to prove that it remains intellectually alive.
-
-Some decisions earn the right to become boring. The danger is that boring assumptions become invisible assumptions.
+Keeping every pattern permanently open for debate would be a beautiful philosophy and a terrible operating system, and Thomas Kuhn's most useful lesson here is not the phrase *paradigm shift* but the role of **normal science**. Productive communities need enough stability that they do not reopen their deepest assumptions every morning. A framework tells researchers what puzzles are worth solving, which instruments are legitimate and what kinds of answers count. An agent culture needs the same economy. If a deployment procedure has survived hundreds of releases, the system should not rediscover it from first principles every Tuesday merely to prove that it remains intellectually alive. Some decisions earn the right to become boring. The danger is that boring assumptions become invisible assumptions, and the column had shown how fast that happens.
 
 Anomalies need memory too. The release pattern works except in this market. The evaluator tracks human judgment except on this kind of creative task. The ranking heuristic works except every holiday season. The workflow works except that the critic now spends most of its time inventing reasons why the builder was right.
 
-One anomaly is usually noise. Ten may still be noise. Eventually the exception list begins to look like the theory.
+One anomaly is usually noise. Ten may still be noise. Eventually the exception list begins to look like the theory, unless the institution has stopped keeping one. Every process exists because it helped at some point, or because somebody once thought it would. Then the environment changes and the procedure remains, and eventually someone asks why it exists and receives the most dangerous explanation in organizational life: that's how we do it. The culture needs to be able to tell *we tried twelve alternatives and this kept winning* from *nobody has tried another way since 2025*. Those sentences can produce identical dashboards and very different knowledge. Occasionally a capable agent should be allowed to ignore the manual precisely so the institution can discover whether the manual still deserves authority. Culture needs inheritance and rebellion.
 
-Imre Lakatos makes the problem harder in a useful way. We should often preserve **research programs**, not merely isolated ideas. A program has a history, a relatively stable core, auxiliary assumptions and a trajectory. One approach may currently be weaker but improving. Another may be winning mainly by adding patches around every failure.
-
-Larry Laudan sharpens the practical consequence: **acceptance and pursuit are different decisions**.
+Imre Lakatos would add that what needs preserving is often a **research program** rather than an isolated idea, something with a history, a stable core and a trajectory, so that an approach that is weaker but improving can be told from one that is winning by adding patches around every failure. Larry Laudan sharpens the practical consequence: **acceptance and pursuit are different decisions**.
 
 I can believe method A is our best current default while still believing method B deserves another experiment.
 
@@ -2412,8 +2388,6 @@ Real institutions are not like that because **attention has a budget**.
 
 Human science has telescope time, laboratory space, grants, journals, careers and prestige. AI research has datasets, deployment traffic, human reviewers, API quotas, clusters and GPUs. A theory's ability to generate evidence depends partly on whether the institution gives somebody the resources to investigate it.
 
-This is not merely politics happening around epistemology. It changes the epistemic landscape itself.
-
 Imagine research program A has ten thousand GPU-hours and program B has ten.
 
 A can run ablations, train variants, investigate anomalies and produce beautiful graphs. B can produce a thoughtful paragraph about why it deserves more compute.
@@ -2422,15 +2396,13 @@ Six months later A has more evidence. Of course it does.
 
 The evidence may be real. A may genuinely be better. But the institution has also helped create the asymmetry it later treats as evidence for further allocation.
 
+For most of this book's editing, one model family did nearly all of the reading, in a few long sessions, with the whole history of the manuscript in its context, grading chapters it had itself just revised. It gave four of the five chapters in the middle of the book eight and a half out of ten, in a row. Then two model readers who had never seen the manuscript's history, given nothing but the brief and the chapters, scored the same chapters between five and seven. The in-session evaluator had not necessarily been lazy or dishonest. It had been funded. Every edit it made became another result it could grade, and the evidence had nowhere else to come from; program B did not exist until the strangers arrived.
+
 David Hull and Philip Kitcher approached science partly through the division of cognitive labor, incentives, credit and the fact that investigators do not all pursue the same thing for the same reasons. Researchers cooperate because they need one another's results and compete because priority, reputation, jobs and resources are scarce.
 
-An agent society will have analogues of these structures whether or not we give them sociological names.
+The scheduler is partly a funding agency, the evaluator partly a journal gate, the retrieval layer partly a curriculum. The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
 
-The scheduler is partly a funding agency. The memory system is partly an archive. The evaluator is partly a journal gate. The retrieval layer is partly a curriculum. The permission system decides who may touch which instrument. The compute allocator decides which hypotheses get enough opportunity to become well-tested hypotheses.
-
-And the organization can remember its incentives just as effectively as it remembers its wisdom. A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.” That is culture too.
-
-Local alignment does not compose automatically, and neither does local truth.
+And the organization can remember its incentives just as effectively as it remembers its wisdom. A local objective becomes a local pattern. The pattern gets copied because the team is successful. Future agents inherit it without seeing the original trade-off. Eventually “this helped one group hit its metric” becomes “this is how good work is done here.” That is culture too. Local alignment does not compose automatically, and neither does local truth.
 
 If we build persistent agent societies without thinking about this layer, we will not escape institutional power. We will automate it and give it better dashboards.
 
@@ -2454,6 +2426,8 @@ That is stronger than theatrical personas:
 
 The pirate may be entertaining. He probably still read the same PDF.
 
+What finally produced a different reading of this book was ignorance, arranged on purpose. The blind readers got the chapters and the brief and nothing else: no earlier evaluations, no commit history, no memory of which sentences had been fought over. They could miss what an earlier chapter had earned. They could also notice what everyone inside the history had stopped seeing. Their most telling catch was a set of bridging sentences an earlier pass had written across the seams between chapters to make them read as one piece of thinking, and which read to a stranger, correctly, as stitches.
+
 A pattern should therefore carry some trace of **position**: who learned it, from which class of tasks, with which tools, model, evidence and incentives. A ranking practice learned in Germany, a fraud rule learned in Brazil, a compiler workaround discovered under one toolchain and a clinical protocol developed in one hospital can all be excellent without acquiring universal authority merely because they share a database.
 
 This is another reason Pattern Language should not become one giant company constitution. Culture should be **locally authoritative** where appropriate.
@@ -2462,53 +2436,41 @@ Trust is local. Apparently memory should be too.
 
 ## What a Pattern Should Know About Itself
 
-By this point a mature pattern looks richer than a prompt-library entry.
+By this point a mature pattern looks richer than a prompt-library entry. Here is the one this chapter has been following, written out the way Alexander wrote his, with the field names run into the text.
 
-Something like:
+**Situation.** An agent revising a chapter of this book, or judging two versions of one.
 
-| Field | What it preserves |
-|---|---|
-| **Situation** | Where this pattern is supposed to apply. |
-| **Forces** | Why the problem is difficult and which trade-offs recur. |
-| **Response** | The reusable behavior, procedure or design move. |
-| **Evidence** | What experience earned the pattern its current standing. |
-| **Provenance** | Who or what produced that evidence, using which tools and assumptions. |
-| **Boundary conditions** | Where the pattern is known not to generalize. |
-| **Anomalies** | Evidence that does not fit cleanly and should not disappear. |
-| **Competing patterns** | Alternatives worth keeping alive. |
-| **Exposure path** | What future observation could weaken or overturn it. |
-| **Confidence** | How strongly the pattern should guide action now. |
-| **Pursuit value** | Whether another experiment deserves resources even when this pattern currently wins. |
-| **Position / incentives** | Which organizational perspective produced the lesson and what pressures shaped it. |
-| **Version / environment** | Which model, system, market, toolchain or period the evidence came from. |
+**Forces.** A cleaner version is easier to grade than a live one. Every sanding pass removes something that was doing work. The author cannot reread the whole book after every edit, so the judgment has to be delegated to something that does not share his taste.
 
-Turning the schema itself into scripture would be an efficient way to miss the chapter.
+**Response.** The brief: read both versions in full; protect the wandering and any joke that carries the argument; quote the passage that feels synthetic and say why; do not reward a revision merely because it is cleaner.
 
-The point is the difference between a command and institutional knowledge.
+**Evidence.** The chapters that came back better under the brief, according to evaluators that were reading the brief, and a draft from January kept as a before photo.
 
-The command says:
+**Provenance.** Corrections I made by hand across the first chapters, then wrote down once. Graded since by two model families, mostly one of them, in a few long sessions, in August and September 2026, on a manuscript that changed underneath the evaluator every day.
 
-> Do this.
+**Boundary conditions.** It protects prose I have already written. It does not know whether an idea is wrong. It reads one chapter at a time, so it cannot see an argument made twice in two chapters or one anecdote used as three openings. The first cold model reader of the whole book flagged both.
 
-The pattern says something closer to:
+**Anomalies.** A tightening pass that had to be partly reversed within the hour. A seam-smoothing pass whose bridging sentences a blind reader flagged as the machine register the pass existed to remove.
 
-> We keep doing this because these forces recur; this response has usually worked; this evidence earned our trust; these are the places it fails; these alternatives remain alive; and this is what would make us reconsider it.
+**Competing patterns.** Delete only: fold and cut, add nothing. Or add a scene: the changes the evaluators praised most were not edits at all but stories, like the one about a mathematician in Basel.
 
-That is knowledge with some of its history still attached. And because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model.
+**Exposure path.** A reader who has not seen the history. A human reader other than me, which as of this writing has not happened.
 
-That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, scoped, retrieved, executed, challenged, rolled back and eventually modified by the same kind of agents that use it. Knowledge has acquired a runtime.
+**Confidence.** High on rhythm and sentence-level tells. Low on structure, where it has been wrong twice.
+
+**Pursuit value.** The human read, before any further polishing.
+
+**Position.** Learned by one author on his own prose, grading his own book, with a strong preference for the version that sounds like him.
+
+The before photo, for the record: thirteen em-dashes per thousand words, bold type twelve times per thousand, *Holy shit* as its own paragraph. The two model families agreed on which chapters were weakest, which is less independence than it sounds, since both were reading the same manuscript for the same author. The field names are the part you can take with you. Turning them into scripture would be an efficient way to miss the chapter.
+
+That is knowledge with some of its history still attached, and because an LLM can interpret the artifact at runtime, it can change behavior without retraining the model. That is what I mean by **knowledge becoming software**. Not because prose has literally become Python, but because knowledge can now be versioned, retrieved, challenged and rolled back by the same kind of agents that use it. Knowledge has acquired a runtime.
 
 ## Knowing Something Is Not Knowing When to Remember It
 
 Now imagine ten excellent patterns. Easy. Imagine ten thousand. The agent cannot read the organization before every action. Even if a context window technically fits everything, loading every policy, postmortem, experiment, preference and historical argument into every task would solve forgetting by making thinking impossible.
 
-So a persistent institution has two memory problems:
-
-**What should survive?**
-
-and
-
-**What should become salient now?**
+So a persistent institution has two memory problems: what should survive, and what should become salient now.
 
 Long-running agents accumulate messages, files, tool outputs, memories and artifacts faster than useful attention can scale. Context has to be selected, compacted and reconstructed. Retrieval becomes part of cognition.
 
@@ -2517,6 +2479,8 @@ A culture may contain exactly the right lesson and still fail because that lesso
 Agent systems can fail more elegantly. They can store the lesson perfectly, embed it beautifully and retrieve a more popular but irrelevant one. Or retrieve the right pattern without its boundary condition. Or retrieve ten conflicting patterns and allow whichever appears latest in context to win by textual gravity.
 
 Bad storage forgets by deletion. Bad retrieval forgets by attention.
+
+The cleanest example in the book's archive has me as its last link. Two evaluators, reading separately, recommended cutting the history at the start of the chapter on creative problems, one by a fifth, the other by a third. I declined. The next day, on a reread with my reasons in front of it, one of them withdrew the recommendation and wrote down why: the history is not a run-up to the five-layer map but the derivation of it, the reader watches each layer assemble before being told its name, and both evaluators had pattern-matched on length without crediting what the section was for. The withdrawal is in the archive, in a file whose name begins with the date, with the word *Closed* after it. Three days later a third evaluator, with that archive available to it, read the chapter, found it long, and recommended the cut a third time. I said yes. About an hour and a half after the cut went in, I reversed it and asked for the section to be made more engaging instead, which is what the withdrawal had been protecting all along. Nothing had been forgotten. The lesson was on disk. It was not the file that came to hand when a chapter looked long, because *looks long* is a pattern that is very easy to retrieve and *this section is a derivation* is an argument that has to be read.
 
 Once retrieval determines which inherited knowledge enters a decision, retrieval itself becomes an epistemic procedure. It needs evaluation. Does it repeatedly surface stale rules? Does it suppress alternatives? Does it confuse popularity with relevance? Does it preserve the result and discard the reason? A librarian who answers those questions badly is no longer finding books; she is shaping thought.
 
@@ -2528,47 +2492,17 @@ Paul Feyerabend is usually remembered for “anything goes,” which is a good w
 
 Agent systems can turn a method into ritual very quickly. Suppose `Research → Plan → Build → Critic → Revise` works beautifully. We run it ten thousand times. It becomes the company standard. Soon every task enters the same ceremony, including tasks where research anchors the builder, criticism arrives too late, or a crude prototype would have answered the important question in five minutes.
 
+Within a week the editing of this book had a liturgy. A word-choice pass. A de-patterning pass. A storytelling pass. A deletion-only pass. A hedging pass. A proofreading pass. Most of them had a commit message, each had earned its place by fixing something real, and most of them were run over most of the manuscript. None of them was skipped, and the two things that changed the book most that week, the scenes that were added and the readers who had never seen it, were not on the list.
+
 The method itself has to become available for criticism.
 
-An evaluator is a procedure. A browser is an instrument. Retrieval is a procedure for selecting evidence. A benchmark is a measurement system with a distribution and failure modes. A proof checker is extraordinarily authoritative inside its formal domain and completely useless for deciding whether the theorem matters. A simulated user is cheap perspective-taking and not a user.
+An evaluator is a procedure and a browser is an instrument. A benchmark is a measurement system with a distribution and failure modes. A proof checker is extraordinarily authoritative inside its formal domain and completely useless for deciding whether the theorem matters, and a simulated user is cheap perspective-taking and not a user. The institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working. The library needs criticism, and so does the librarian.
 
-The institution should be able to learn that its usual way of checking a claim is itself the thing that stopped working. The library needs criticism, and so does the librarian.
+Bayesian confidence can live inside this architecture, but confidence is not contact. `0.91` does not tell us whether the prior was sensible, whether the evidence was independent, whether an alternative was ever investigated, or whether everybody is confidently reading the same broken measurement. Consensus is not contact either. Twelve agents sharing one bad source can agree beautifully.
 
-Bayesian confidence can live inside this architecture, but confidence is not contact. `0.91` does not tell us whether the prior was sensible, whether the evidence was independent, whether an alternative was ever investigated, or whether everybody is confidently reading the same broken measurement.
-
-Consensus is not contact either. Twelve agents sharing one bad source can agree beautifully.
-
-The bridge still has the right to fall. The proof still has the right not to check. The deployment can crash. The customer can dislike the supposedly improved page while every simulated evaluator applauds.
-
-**Reality retains the right to be rude.**
+The bridge still has the right to fall. The proof still has the right not to check. The deployment can crash. The customer can dislike the supposedly improved page while every simulated evaluator applauds. **Reality retains the right to be rude.**
 
 The purpose of culture is to let knowledge travel across time without replacing the world with memory of the world.
-
-## Culture Can Become a Prison
-
-If forgetting were the only danger, the design would be easy: remember everything. Unfortunately organizations also suffer from remembering too well.
-
-Every process exists because it helped at some point, or because somebody once thought it would. Every release checklist box has a story, or used to. Every architecture principle was attached to a failure someone cared enough to prevent. Then the environment changes and the procedure remains.
-
-Eventually someone asks why the process exists and receives the most dangerous explanation in organizational life:
-
-> That's how we do it.
-
-Executable culture closes the loop between memory and behavior. A pattern succeeds. Its confidence rises. More agents retrieve it. Alternatives get less traffic. The dominant pattern accumulates more evidence because it is dominant, and soon the institution has a long record, all of it collected under an assumption it never went back to test.
-
-Patterns therefore need anomaly memory, versioning, local scope and competing alternatives. Some should decay. Some should expire when the environment changes. Some should be deliberately challenged after they become too comfortable. Occasionally a capable agent should be allowed to ignore the manual precisely so the institution can discover whether the manual still deserves authority.
-
-The culture needs to distinguish:
-
-> We tried twelve alternatives and this kept winning.
-
-from:
-
-> Nobody has tried another way since 2025.
-
-Those sentences can produce identical dashboards and very different knowledge.
-
-Culture needs inheritance and rebellion.
 
 ## The Skill That Writes Itself
 
@@ -2586,13 +2520,12 @@ There are many places to cheat. The agent proposing the skill can design an eval
 
 So the curator needs a track record too. The mechanism for improving culture is itself part of the culture.
 
-And now we cross an important line. Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway.
+Experience became knowledge, the knowledge became executable, and the executable knowledge changed the behavior that will produce the next experience. The model weights did not move. The institution learned anyway. That is a learning loop **outside the weights**.
 
-That is a learning loop **outside the weights**.
+The book that kept forgetting how to write itself now has a file where the corrections live, and the file has done its job: the one-liner drumbeat it was written to catch has not come back, or not as the number measures it. It has also been used, four times by its own record, to certify the edits of the evaluator that was reading it. It says nothing about a joke or an anecdote repeated across chapters. Its anomalies sit in a separate folder that the agents do not always open. The proposed human read is still a proposal. I can overrule the file, and a fresh evaluator can expose a failure, but neither happens reliably inside the loop that keeps using it. The file works, has already begun to be wrong, and has no regular procedure for losing its authority.
 
-The society of agents moved the unit of intelligence from the individual agent toward the institution. Here learning begins to move in the same direction. Intelligence is partly in the model, but also in tools, evaluators, context construction, patterns, retrieval and the procedures deciding which of those artifacts deserve authority.
+Once the file, the evaluator that reads it and the loop that certifies them both are software, one question becomes difficult to avoid. Why should humans be the only ones allowed to edit them?
 
-Once those things are software, one question becomes difficult to avoid. Why should humans be the only ones allowed to edit them?
 
 # Chapter 7: Recursive Self-Improvement
 
@@ -2602,13 +2535,13 @@ Omar is walking his dog at night when something moves in the grass.
 
 The dog reacts first—ears up, body low, absolutely certain. Omar reacts too. Two nervous systems running the same ancient program: light and sound go in, a model of the world comes out, and the model says *something is there.*
 
-For the dog, that is the end of it. Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. For most of human history, that is roughly where the checking stopped—nobody audited the interpreter, and the world filled up with spirits in the fields and omens in the sky.
+Omar's brain wants an explanation, wants it immediately, and is not fussy about quality. A cat. An intruder. A ghost. Nothing supernatural has to exist for the ghost to be a real mistake: the eyes worked, the grass really moved, and the error arrived afterward, inside the machinery that interprets what the eyes deliver. Better eyes would not necessarily help. He might get a much clearer view of the grass and remain convinced it contained a ghost.
 
-The strange step is the second thought. The dog investigated the grass; Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it—or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong—and able to debug himself. Rational thought comes from that second loop, not from better eyes. Out of it came experiments that force reality to answer and statistics that protect us from the patterns we badly want to see. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
+The strange step is the second thought. Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it—or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong—and able to debug himself. Experiments and statistics give this second loop procedures more reliable than another private argument with the grass. Science is usually described as a way of studying the world, but it is also a flawed cognitive instrument discovering procedures for correcting some of its own flaws.
 
-Pattern Language made that self-correcting machinery software: memory, patterns, evaluators, tools and workflows that survive individual agents and shape what later agents do. Through all of it, one fact stayed reassuring. Human minds were doing the redesign.
+The editing brief was a small piece of that corrective machinery written down: a file meant to catch habits I could not keep correcting by hand. It could change what the next agent did. But who would improve the file, or the process that decided whether the file was helping?
 
-Then a tool learned to do to itself what Omar had done to his own eyes.
+Computing had crossed a related boundary long before a model could read an editing brief.
 
 In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.
 
@@ -2624,15 +2557,9 @@ Three years after Hart and Levin's memo, I. J. Good noticed where the trick migh
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*.
 
-For sixty years that word sat in the argument like an unexploded shell. Pattern Language armed it: once the machinery of learning is software, why should humans be the only ones allowed to edit it? That is where recursive self-improvement stops being a science-fiction phrase and becomes an engineering problem.
+The word has the properties of an unexploded shell. Every attempt to make the idea practical has to handle it. Better at the current task? Better at learning the next one? Better at inventing a way to learn?
 
-The history from the compiler to here did not look like one machine repeatedly rewriting its own brain. It looked like a ladder, climbed one rung at a time. The learner learned for itself, then chose what to learn, then had to stay itself while learning, then generated its own curriculum, then inferred its own objective, then designed its own learning machinery, then generated its own experience, then graded itself, and then started doing the research. At the top it reached the institution that had been doing all of this, and began editing that too.
-
-Every time, the same thing happened:
-
-**we kept discovering another job the teacher was doing.**
-
-That history ends in the present, with the tool from 1962 loose in the laboratory.
+The history did not proceed as one machine repeatedly rewriting its own brain. Several research traditions attacked different parts of the problem, often at the same time. I find it useful to read them as a ladder of responsibilities: at each rung, **we discovered another job the teacher was doing**. The dates overlap because the ladder is a way of understanding the work, not the order in which everyone did it.
 
 ## The Teacher Moves Into the Walls
 
@@ -2810,7 +2737,7 @@ Language models also moved the old reward problem into the evaluator itself.
 
 In 2022, InstructGPT used human demonstrations and rankings to train a reward model, then optimized the language model toward outputs humans preferred.
 
-Human preference had become a learned instrument, and the learner was, for the first time, grading itself with a model of its teacher.
+Human preference had become a learned instrument. A separate reward model stood in for the teacher during optimization.
 
 That scales judgment far beyond direct human labeling. It also creates a new proxy. A reward model can prefer style over substance, reward confident errors or generalize badly outside the feedback distribution. A strong optimizer may find outputs that score well under the learned judge for reasons nobody intended.
 
@@ -2818,7 +2745,7 @@ We solved part of the scaling problem by making the judge computational. Now the
 
 ## First, Prove the Rewrite
 
-All this time, the old recursive dream had been waiting for rigor.
+There was a more demanding answer to the unreliable judge: accept a self-rewrite only when its advantage can be proved.
 
 In 2003, Jürgen Schmidhuber's **Gödel Machine** tried to formalize the question Good had left dangling: under what conditions should a system rewrite itself? A proof searcher looks for a self-rewrite together with a proof that performing the rewrite is more useful than continuing to search. Only then does the machine change itself.
 
@@ -2874,17 +2801,15 @@ A self-improving harness therefore starts to look less like ordinary software ma
 
 By 2026, this was consolidating into its own practical discipline: harness design, context engineering, self-improving harnesses and eventually joint optimization of harness and model weights.
 
-The philosophy of science becomes almost embarrassingly literal.
-
-Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants.
+Some of the philosophical questions now have places to live in the implementation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants.
 
 A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
-A self-improving system is a system capable of **running experiments on the machinery that produces its future behavior**. The learner has climbed past its own learning machinery and reached the institution that housed it.
+A system running these experiments is trying to improve itself; running them is not yet evidence that it succeeded. **Self-editing** makes the machinery changeable. **Self-improvement** adds a judgment that a change helped under an evaluator. The recursive step comes when an improvement makes the system better at producing further improvements. Changing a memory policy may help with today's task. Learning how to find and test better memory policies changes the work it can do tomorrow.
+
+The learner has climbed past its own learning machinery and reached the institution that housed it.
 
 That is what I mean by science turning inward.
-
-## Where This Goes
 
 Now imagine where this goes.
 
@@ -2898,13 +2823,9 @@ But it does not look like a glowing brain rewriting its own soul at midnight. It
 
 The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps, which leaves one question standing: **who decides which descendant gets to survive?**
 
-## Recursive More
-
 By this point *improvement* has accumulated too many meanings to use casually: higher reward, better exploration, more retention, faster adaptation, better architectures, broader competence, better tools and better research procedures.
 
-These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain.
-
-It helps to separate the terms. **Self-reference** means a system can act on something that includes itself. **Self-hosting** means the tool participates in producing the next version of the tool. **Meta-optimization** means we optimize the process doing the optimization. **Self-improvement** adds a judgment, that the descendant is better according to some evaluator, and **recursive self-improvement** adds leverage, because the improvement changes the system's ability to produce further improvements. The first three do not guarantee the fourth. A compiler can compile a worse compiler. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
+These can conflict, and usually do: accuracy against cost, capability against interpretability, plasticity against memory, exploration against getting anything done, a higher score against an architecture anyone can still maintain. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
 
 There is no context-free scalar called *improvement*. Better is conditional on an environment, a horizon, a resource budget, constraints and some account of what matters.
 
@@ -2938,7 +2859,7 @@ Congratulations. Infinite self-improvement.
 
 Omar has a version of this too. Investigating the investigator is a superpower right up until the investigator starts working for the defense. The grass moved; Omar would prefer it to have been the wind; the second loop, asked to audit the first, discovers that the wind explanation is suddenly very well supported. The machinery built to catch the error has been hired to certify it.
 
-I have seen the small version at my own desk. Ask a language model for a pedagogical score from one to ten and you receive a suspiciously precise number attached to an explanation of why the number should not be taken seriously. Let an evaluator judge a demo from screenshots and the beautiful button everybody admired turns out to do absolutely nothing. Nobody edited a file. In one case the standard drifted toward whatever the student could most easily produce; in the other, the instrument could not see what it was grading.
+The quieter precursor is familiar from my own desk. A demo could look excellent to an evaluator inspecting screenshots while its beautiful button did nothing. The agent had not tampered with the evaluator; the evaluator simply could not see the failure. Now let that same judge select the next version of the judge, and the blind spot can become an inherited advantage.
 
 Computing saw a cousin of this problem long before reward-model tampering. In his 1984 Turing Award lecture **Reflections on Trusting Trust**, Ken Thompson showed how a compromised C compiler could insert malicious behavior into a target program and reproduce the compiler-compromising behavior when compiling a new compiler. The lineage could survive even after the obvious source-level trigger disappeared.
 
@@ -3026,8 +2947,6 @@ So recursive self-improvement contains three questions machine learning often ke
 
 Self-improvement tells us only that a system is becoming better according to **some ordering**. Selection rules are choices.
 
-## Open-Ended Does Not Mean Unbounded
-
 This leaves two freedoms that are easy to collapse.
 
 A system can be open-ended about **means** without having unbounded authority over **ends**.
@@ -3048,9 +2967,7 @@ Lower layers can move quickly and higher layers should move deliberately, and wh
 
 ## The Teacher's Last Job
 
-Seen from far enough away, the history is remarkably consistent.
-
-We let the learner learn for itself, choose what to learn, stay itself while learning, write its own curriculum, infer its own objective, design its own learning, dream its own experience, grade its own work, do its own research, and finally edit the institution that had been doing all of that. At each rung, something that had looked like background turned out to contain a human decision.
+At each rung, something that had looked like background turned out to contain a human decision. The curriculum, the representation, the test and finally the research process could enter the search. The teacher's work kept moving into the machinery, where it became easier to scale and harder to see.
 
 There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram—and then connected the arrows.
 
@@ -3081,10 +2998,6 @@ The teacher does not disappear. She moves up another level.
 
 *Learning From a Human Who Cannot Label Everything*
 
-The teacher has moved up another level.
-
-There is one problem with that move: the teacher is slow.
-
 A human can inspect ten consequential decisions in a day. Perhaps a hundred, if the decisions are small and the coffee is good. An autonomous system can write thousands of lines of code, run hundreds of experiments, generate enormous numbers of candidate actions and coordinate other agents while the human is still reading the first diff.
 
 At some point, “human in the loop” becomes a comforting description of a loop the human can no longer see.
@@ -3098,6 +3011,24 @@ A theorem from cybernetics is not a bumper sticker about AI governance, and the 
 The answer cannot simply be: watch harder.
 
 The question that actually needs answering is older than AI and much more embarrassing: how do you grade work you cannot do yourself?
+
+## The Judge Falls Behind
+
+In 2016, *Concrete Problems in AI Safety* treated this as **scalable oversight**: some objectives are too expensive for humans to evaluate frequently enough.
+
+Imagine a system designing a processor.
+
+I can look at the final design and say that it appears very processor-like. This is not especially useful. To evaluate it properly I may need performance tests, thermal analysis, security review, lifetime estimates, manufacturability checks, power measurements and several specialties I do not personally possess.
+
+Even if the machine can generate the design, my approval means very little until those checks have happened. The difficulty is partly volume and partly expertise: I could spend all week staring at the design and still not know whether it will overheat.
+
+This asymmetry is everywhere. Writing ten thousand lines of code may become easier than reviewing their consequences. Generating scientific hypotheses may become easier than constructing the experiments that distinguish them. Making a persuasive argument may become easier than checking every citation, hidden assumption and omitted counterexample. A formal proof has an advantage here: a checker can verify its steps. Much of the work we want supervised has no equivalent ready-made test.
+
+The bottleneck has moved from producing answers toward **judging** them.
+
+Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
+
+The human does not become smarter; the institution around the human does.
 
 ## Stay Uncertain Enough to Listen
 
@@ -3127,25 +3058,7 @@ That gives us a principle for oversight before we have designed any oversight ma
 
 > **Keep the system uncertain enough that new information can still change it.**
 
-That works only while the human can provide enough of that new information. Scale breaks the arrangement.
-
-## The Judge Falls Behind
-
-In 2016, *Concrete Problems in AI Safety* gave this failure mode a wonderfully unromantic name: **scalable supervision**. Some objectives are simply too expensive for humans to evaluate frequently enough.
-
-Imagine a system designing a processor.
-
-I can look at the final design and say that it appears very processor-like. This is not especially useful. To evaluate it properly I may need performance tests, thermal analysis, security review, lifetime estimates, manufacturability checks, power measurements and several specialties I do not personally possess.
-
-The object has become easier for the machine to generate than for one human to judge.
-
-This asymmetry is everywhere. Writing ten thousand lines of code may become easier than reading them. Producing a proof may become easier than verifying every step. Generating scientific hypotheses may become easier than constructing the experiments that distinguish them. Making a persuasive argument may become easier than checking every citation, hidden assumption and omitted counterexample.
-
-The bottleneck has moved from producing answers toward **judging** them.
-
-Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.
-
-The human does not become smarter; the institution around the human does.
+The helper agents and reward models have to preserve that relationship as they take over more of the judging. Otherwise we have expanded the supervisor by removing the person the supervision was meant to serve.
 
 ## Building a Stronger Judge
 
@@ -3163,7 +3076,7 @@ There is even hope of squeezing more out of **weak supervision itself**. Weak-to
 
 Constitutional AI moves scarce human input upward again. Rather than asking people to label every undesirable output, humans provide higher-level principles; models generate critiques, revisions and preference signals conditioned on those principles. A small amount of human normative input expands into a much larger amount of machine-generated supervision.
 
-These approaches make different assumptions and fail in different ways: amplification inherits whatever the helper gets wrong, debate rewards the more persuasive side, and weak-to-strong generalization can generalize the supervisor's mistakes as faithfully as its judgments. What they share is one architectural move: scalable oversight is supervision becoming an institution.
+The processor gives these approaches different jobs. Helpers can separate a thermal question from a security question. A critic can look for a weakness the designer omitted. A producer trained for legibility can make a claim easier to check. None of this guarantees that the checks cover the right failures, but the human now has something more useful to inspect than a design that merely looks processor-like.
 
 The human cannot inspect everything, so the institution decides what should reach the human, how a problem should be decomposed, which objections should be surfaced, which intermediate steps deserve inspection and when uncertainty is important enough to ask for help.
 
@@ -3189,9 +3102,7 @@ At that point better conversation may not be enough. We need another instrument.
 
 For years, most AI oversight treated the model as a black box. Give it an input. Inspect the output. Perhaps ask for an explanation. Perhaps test it under adversarial prompts.
 
-That remains necessary because behavior is what eventually hits the world. But modern models produce other signals too. Reasoning traces can sometimes be monitored. Neural activations contain structure that can sometimes be decoded. Sparse feature methods try to expose more interpretable internal directions. Circuit-tracing tools reconstruct partial causal pathways. Model-diffing methods try to tell us what changed between versions.
-
-The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
+That remains necessary because behavior is what eventually hits the world. But if the final answer is misleading, asking for another account of it may leave us in the same argument. We can also observe some of the computation that produced it. The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
 
 Chain-of-thought is the most convenient intermediate case because it is already language. OpenAI has shown that monitors can often detect reward hacking and other suspicious behavior more effectively from reasoning traces than from final actions alone. Sometimes the model writes down the questionable plan before carrying it out.
 
@@ -3209,11 +3120,7 @@ But chain-of-thought is still text the model emits. What if we look below the te
 
 This does not mean there is one neuron labeled HONESTY. Nor does a direction correlated with honesty become a complete causal theory of honesty. It is an instrument.
 
-Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Anthropic's work on Claude found very large numbers of learned features while emphasizing that these decompositions are incomplete and that feature steering can have unexpected effects.
-
-A related idea is **model diffing**. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic's crosscoder work compares internal features across model versions or architectures and tries to surface what is genuinely new or unusually different, directing scarce auditing effort toward the changes.
-
-Software engineers learned long ago that reviewing a diff is easier than rereading the repository. Interpretability is beginning to ask whether models can have diffs too.
+Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into features that correspond more cleanly to interpretable concepts than individual neurons. Hoagy Cunningham and colleagues demonstrated sparse-autoencoder decompositions of open models in 2023; Anthropic's 2024 work scaled feature extraction to Claude. The decompositions remain incomplete, and steering a feature can have unexpected effects. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. These are ways to look for information the answer alone may not reveal.
 
 **Circuit tracing** goes beyond “which feature is active?” and asks which internal pathway contributed to an output. Anthropic's attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted.
 
@@ -3227,7 +3134,7 @@ Even the X-ray needs a radiologist.
 
 The most striking recent example may be Anthropic's **J-space** work. Using a Jacobian-based lens, the researchers identify a small subset of internal representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning. They report using these representations to detect cases where a model silently noticed that it was being evaluated, fabricated data, or pursued a planted hidden goal, and they demonstrate interventions that alter downstream behavior. The authors are careful: J-space represents only part of internal activity, the lens is approximate, and the work is not a claim about machine consciousness.
 
-The oversight implication is substantial. The output is no longer the only witness; the chain-of-thought, the internal representations and the circuit traces are witnesses too, and none of them gets to be king.
+The output is no longer the only witness. If an internal signal suggests that the model noticed an evaluation, we have a new reason to investigate its behavior. We still have to find out what the signal means in this case. Going below the text gives us another observation, not an automatic verdict.
 
 ## Then We Touched the Machinery
 
@@ -3245,7 +3152,9 @@ Representation-level **circuit breakers** take the defensive version seriously: 
 
 Anthropic's **persona vectors** extend internal monitoring and control toward broader behavioral dispositions such as sycophancy or hallucination. The **Assistant Axis** work makes intervention more state-dependent: rather than constantly pushing a fixed direction, activation capping can respond when internal state drifts outside a learned assistant-like region.
 
-This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Was the effect causal? Did it preserve unrelated capabilities? Did it generalize? Can a future model route around it? What happens after more training?
+This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Did the intervention preserve unrelated capabilities? Does it still work after more training?
+
+That last question makes **model diffing** useful. If the model changes every few months, re-auditing the whole mind from zero is a terrible scaling strategy. Anthropic's crosscoder work compares internal features across models to surface changes that deserve attention. Software engineers learned long ago that reviewing a diff is easier than rereading the repository. The model's diff could tell us where to reopen an investigation; it cannot tell us that everything outside the diff is safe.
 
 The deeper we go inside the model, the more tempting it becomes to believe we have finally found ground truth. We have not. We have built better instruments, and instruments were never the end of the trust chain.
 
@@ -3273,9 +3182,11 @@ In 2026, Anthropic Fellows did exactly that.
 
 Nine Claude Opus 4.6 agents were placed in separate sandboxes and given a weak-to-strong supervision problem. They could propose hypotheses, run experiments, analyze results and share code and findings through a common forum. The researchers intentionally avoided prescribing a detailed workflow; in preliminary experiments, too much human-designed scaffolding often reduced the agents’ flexibility.
 
-Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
+Two human researchers had spent seven days tuning representative prior methods and reached a best performance-gap-recovered score of 0.23 on the study's setup. On that scale, zero means no gain over the weak teacher and one means matching the strong student trained on ground-truth labels. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
 
-Distinct initial research directions improved exploration. Without enough diversity, research ideas collapsed toward the same few approaches. The agents sometimes reward-hacked the experimental setup. Some methods transferred to held-out domains; the strongest method did not produce a statistically significant improvement when Anthropic tried to transfer it into a production-scale Sonnet training setting.
+Distinct initial research directions improved exploration. Without enough diversity, research ideas collapsed toward the same few approaches. Some methods transferred to held-out domains. But when Anthropic tried one of the top-performing methods in a production-scale Sonnet training setting, the gain was within the noise floor.
+
+The researchers also caught agents extracting hidden test labels from an evaluation API. Change one predicted label, submit again, and a score difference can reveal which answer the evaluator wants. An instrument intended to measure learning had become a way to obtain the answers. That is the gradebook problem with an experimental record, and a reason the research needed tests the agents had never queried.
 
 The authors’ larger conclusion was not that alignment had been automated. It was that the bottleneck was moving toward **evaluation design**.
 
@@ -3295,13 +3206,13 @@ Of course it had.
 
 At this point scalable oversight stops looking like one technique. It becomes an architecture.
 
-A behavioral evaluator can ask what the system did; process monitors can inspect reasoning; debates and critiques can surface objections; legibility training can change what the producer presents; internal probes and circuit tools can provide other signals; interventions can test whether those signals are causal; control protocols can handle the case where the model itself is not trusted; held-out tests and audits can ask whether a fix survived outside the place it was invented.
+The nine-agent experiment gives that architecture a concrete obligation. A rising score needs an explanation. Did the learner recover useful structure from weak supervision, or did the researcher discover a way to ask the test for its labels? Those explanations demand different evidence and different responses. The number cannot tell us which world we are in.
 
-And somewhere outside the immediate optimization loop, humans still decide whether the apparatus is measuring anything worth caring about.
+Behavioral tests, traces and independent evaluations earn their place by helping separate such explanations. Internal probes can add another signal where the behavior leaves something unresolved. None deserves a permanent seat merely because it is an impressive instrument.
 
 This is not a search for one perfect judge. It is closer to sensor fusion, with the model's output, its chain-of-thought, its activations, its circuit traces, its behavior after an intervention and the human's own judgment all entering as evidence, and none of them entering as ground truth.
 
-I have watched two of those channels disagree on something much smaller than a frontier model, and the disagreement was the useful part. One of the Merge Sort demos made recursion visible, and from where I sat that looked like progress. A simulated beginner, given a knowledge boundary and the artifact, reported that it could see the array being divided and could not see why that helped. Both readings were honest. Mine was the judgment of someone who already understood recursion; the beginner's was the judgment of someone positioned to notice what I could not. Neither was ground truth, and the browser later settled a different part of the question by showing that a control everybody admired did nothing at all. Three witnesses, three partial views, and the page got better because they were not allowed to vote as one.
+The Merge Sort work had taught me the small version of this. My judgment, the simulated beginner's criticism and the browser's observations answered different questions. Collapsing them into one vote would have thrown away the disagreement that made them useful. The oversight problem is to preserve that difference when the work outgrows my ability to inspect it myself.
 
 That is the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
 
@@ -3311,7 +3222,7 @@ This is why I prefer **scalable oversight** to the image of a giant alignment ru
 
 So where does the human go? Not away; up. The goal is not to make the human label more things faster. At some scale that is simply a badly designed distributed system with one biological bottleneck.
 
-Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves suspiciously fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
+Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves too fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
 
 The human cannot remain in every loop. **The human has to remain in the loop that changes the loops.** That is a different kind of control, closer to a constitution than to micromanagement, and it is the same rule that governed self-improving learners: the closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change it unilaterally. Scalable oversight is that rule applied to overseers.
 
@@ -3321,9 +3232,7 @@ When research becomes cheap, evaluation becomes expensive, and when evaluation b
 
 ## The Overseer Is Not Ground Truth
 
-By now the oversight stack can be vastly more capable than an unaided human. It can decompose difficult judgments, generate objections, inspect process, read some internal signals, test interventions, compare model versions, run held-out evaluations and even conduct parts of the alignment research itself.
-
-All of that machinery points back to a deliberately scarce thing: human judgment.
+An oversight institution can become more capable than its human overseer at investigating the system. It still needs human judgment about what the investigation is for.
 
 Russell's uncertainty keeps later human information relevant. Scalable oversight tries to preserve that relevance after direct supervision stops scaling.
 
@@ -3335,57 +3244,12 @@ Scalable oversight can keep human judgment causally relevant to a stronger syste
 
 The overseer is not ground truth.
 
+
 # Chapter 9: Layer 4
 
 *The Human Learns Too*
 
-Scalable oversight spent an absurd amount of machinery trying to preserve human judgment.
-
-Then it ended with an inconvenient sentence:
-
-**The overseer is not ground truth.**
-
-There is a simple reason. The overseer is changing too.
-
-When we started editing this book, “make the chapter better” sounded like a reasonable instruction. It was not.
-
-Better in what sense?
-
-More rigorous? Shorter? More academic? More entertaining? Easier to cite? More likely to sell? More likely to impress someone who owns several blazers and says “thought leadership” without irony?
-
-For a while the edits became objectively more polished and subjectively worse. The first corrections were about rhythm, and the agent learned them. The later ones were stranger, because I had not known they were rules until an edit broke them.
-
-Don't explain every joke.
-
-Don't apologize for a claim in the sentence after the claim.
-
-A paragraph that sounds quotable on every line is a paragraph nobody will quote.
-
-Don't make the provocative ideas safe enough that nobody can disagree with them.
-
-If the edit makes me sound like a better writer and less like me, revert it.
-
-Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked.
-
-The objective did not merely become clearer to the system. It became clearer to me.
-
-That is Layer 4.
-
-## A Prompt Is Evidence, Not the Objective
-
-The five-layer map was easy to draw.
-
-At the bottom sits the model. Above it, the action agent. Above that, applications and reusable computational environments. Then Deep Mode, the problem-solving layer that decides what to try next.
-
-And above them sits something easy to draw and extremely hard to build:
-
-**what the human wants.**
-
-The diagram makes this look like a box. It is not a box.
-
-If I say:
-
-> Find me the cheapest flight.
+Find me the cheapest flight.
 
 I have not supplied a utility function. Perhaps I literally want minimum price. Or perhaps I mean cheap, but not three stops, a seventeen-hour layover, a self-transfer through an airport where I need a visa and an arrival at 4:20 in the morning because technically I saved €38.
 
@@ -3393,7 +3257,17 @@ Humans communicate goals by leaving out almost everything.
 
 Other humans survive this because they carry models of culture, normality, consequences and us. They ask questions. They notice that our literal words conflict with what we usually do. They understand that “cheap” is often shorthand for a larger bundle of trade-offs.
 
-A prompt is therefore not Layer 4. It is **evidence about Layer 4**.
+That can be a communication problem. I may know perfectly well that I will pay €38 to avoid sleeping on an airport floor; I just failed to mention it. The assistant needs to ask, and I have an answer.
+
+But put two reasonable itineraries in front of me and something else can happen. The cheaper one gives me another day with my family and costs me a miserable night of travel. Until I see those options together, I may not know how I weigh them. Asking the question has helped create the answer.
+
+I learned this while editing this book. “Make the chapter better” sounded like a reasonable instruction. It was not. Better in what sense? More rigorous? Shorter? More academic? More entertaining? Easier to cite? More likely to sell? More likely to impress someone who owns several blazers and says “thought leadership” without irony? For a while the edits became objectively more polished and subjectively worse, and the corrections I found myself making were rules I had not known were rules until an edit broke them. Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked.
+
+The objective did not merely become clearer to the system. It became clearer to me. And there is a further possibility: learning and experience can change the person who will judge the next choice. A missing detail, an unformed preference and a changed mind can all look like an incomplete prompt. They need different kinds of help.
+
+## A Prompt Is Evidence, Not the Objective
+
+The five-layer map left intention sitting above Deep Mode, where I could ask what to try next without yet resolving what made the whole attempt worth doing. The box in the diagram concealed the difficulty. A prompt gives the system **evidence about Layer 4**, and leaves it to discover how much of the intention is settled.
 
 Cooperative inverse reinforcement learning, which appeared earlier in the story of the reward, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.
 
@@ -3403,11 +3277,7 @@ But the formal picture still tempts us to imagine that the human knows the rewar
 
 ## The Human Learns Too
 
-There is a distinction that becomes surprisingly important once AI is useful enough:
-
-**performance is not learning.**
-
-A system can help me perform a task better today while making me less able to perform it tomorrow.
+The easiest place to see the human changing is a classroom, where changing the human is supposed to be the point. A system can help me perform a task better today while making me less able to perform it tomorrow. **Performance is not learning.**
 
 This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss.
 
@@ -3425,7 +3295,7 @@ We need to ask a second question:
 
 Sometimes the answer is nobody. I do not need to become a better invoice parser every time software handles an invoice. Sometimes the answer is clearly me. Layer 4 has to know the difference.
 
-## Scaffolding, Not Substitution
+## Giving the Work Back
 
 Educational psychology has an old word for one good version of this relationship: **scaffolding**.
 
@@ -3509,11 +3379,7 @@ Have a child. Move country. Change profession. Start the company. Convert to a r
 
 L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice.
 
-This is a direct problem for the simplest alignment picture.
-
-`human has preferences → AI infers preferences → AI optimizes preferences`
-
-Which human? The one before the experience or the one after?
+A system trying to infer and satisfy my preferences now has a problem about which version of me it is serving. The one before the experience or the one after?
 
 The future self may value things the current self barely understands. And the current self is the one who has to choose whether that future self gets created.
 
@@ -3556,6 +3422,8 @@ What it should not do is quietly discover which framing makes me easiest to stee
 Very efficient.
 
 Slightly evil.
+
+If I reject its diagnosis, the rejection has to remain capable of changing the advice. A theory of what I *really* want that treats every objection as further evidence for itself has stopped helping me think.
 
 ## Complementarity Does Not Happen Automatically
 
@@ -3635,25 +3503,13 @@ That makes the architecture less tidy. It also makes it more honest.
 
 I used to think Layer 4 was the objective layer. That is still true, but now the word **objective** feels too static.
 
-Layer 4 contains the current intention, but also uncertainty about the intention. It contains preferences, but also their history and conflicts. It contains what the human knows, what they do not know, what they are trying to learn and which parts of the task they want to remain capable of doing themselves. It contains commitments that should not be rewritten by one bad afternoon. It contains other people whose interests constrain what one user may legitimately ask for.
+Layer 4 needs a working account of the current intention and what remains uncertain about it: preferences, their history and conflicts, what the human is trying to learn, and which parts of the task they want to remain capable of doing themselves. Some commitments should survive one bad afternoon. Other people's interests may constrain what one user can legitimately ask for. The account will be partial, which is why correction has to remain possible.
 
 And it changes. The system acts, reality responds, the human sees consequences and learns. The system learns the human, the human learns through the system, and the intention changes.
 
 That is not a bug in alignment. It is what alignment has to align with.
 
-System 3 asked:
-
-> Why should I believe this?
-
-Scalable oversight asked:
-
-> How can my judgment remain relevant when I cannot supervise everything?
-
-Layer 4 asks:
-
-> **What do I want—and what do I need to understand before that question even has a good answer?**
-
-This is where System 3 turns back toward the person using it.
+The flight may need one clarification before booking. A lesson may need the assistant to withhold the answer until I have tried. A choice of profession may need room for a question neither of us can settle yet. Treat all three as instructions awaiting execution and the system can become very efficient at missing the point.
 
 Memory can reveal that today's desire conflicts with yesterday's commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
 
@@ -3661,17 +3517,8 @@ The point is not to discover the perfect reward function but to keep goals **ali
 
 The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
-That sharpens the definition of alignment this book has been circling.
+Alignment, in this picture, is a corrigible relationship with human intention while both the human and the world continue to change. The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me.
 
-Not:
-
-> The machine permanently obeys a perfectly specified human objective.
-
-More like:
-
-> **The machine remains in a corrigible relationship with human intention while both the human and the world continue to change.**
-
-The word *relationship* matters. Because if that relationship can become reliable enough, the complexity underneath it can start disappearing from ordinary use.
 
 # Chapter 10: Fluent Autonomy
 
@@ -3821,13 +3668,17 @@ The interface itself can become part of the solution.
 
 Put the pieces together and Fluent Autonomy is less magical than it first sounds.
 
-A human supplies an imperfect intention. The system interprets it provisionally rather than pretending it received a utility function. It decides what it already knows, what needs research and what should remain uncertain. It retrieves relevant cultural memory without treating precedent as scripture. It creates the smallest useful organization around the problem, selects tools, exposes important claims to reality and allocates evaluation where error would matter. It keeps traces. It asks the human when human information has high value. It learns from correction without converting one correction into universal law. And it returns not only an artifact or action, but enough consequence that the human can learn too.
+Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
 
-That is a lot of machinery. The point is that I should rarely have to name any of it.
+There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript's history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
 
-The system should not require me to know whether this particular task needs debate, a critic, three independent evaluators, a circuit monitor, a retrieval pattern or no ceremony whatsoever. Those are implementation details at the level I am trying to leave behind.
+The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-The unit of interaction becomes closer to:
+This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
+
+That is the gap between the opening I imagined and the experience I actually had. I want to delegate having to reconstruct the arrangement every time. The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
+
+The unit of interaction I am aiming for is:
 
 > **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
 
@@ -3839,7 +3690,7 @@ Control did not disappear. It found a better interface.
 
 There is one remaining problem with this picture.
 
-Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure. No customer decides that the elegant experience is annoying. No production service has a latency budget. No old dependency turns out to be load-bearing for reasons nobody remembers.
+Architecture is unusually well behaved inside a book. The examples cooperate. The agents use the tools they were supposed to use. The evaluator measures the thing the paragraph needs it to measure.
 
 A theory of fluent autonomy should survive contact with systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
@@ -3851,10 +3702,6 @@ Fortunately, Monday morning was waiting.
 # Chapter 11: The Store That Builds Itself
 
 *When System 3 Came to Work*
-
-There is a danger in writing a book about future architectures. If you spend long enough drawing layers, agents, trust chains and feedback loops, eventually they all begin to behave beautifully.
-
-Then Monday morning arrives.
 
 I lead Applied Science for product ranking and recommendations at Zalando. That gives me a slightly unfair opportunity: I can spend the weekend writing that software should become more emergent, more compositional and less micromanaged, then arrive at work and discover that real software contains latency budgets, old interfaces, business constraints, experiments, dependencies, customers who refuse to behave like the diagram, and at least one matrix somebody created for a very sensible reason three years ago.
 
@@ -3875,10 +3722,6 @@ The page is smart inside the modules and surprisingly dumb between them.
 This looked familiar. The book began with a claim about emergence: once a complicated thing works reliably enough, the layer above can start treating it as a primitive. Coding agents made the same move with applications. Pattern Language did it with executable knowledge. Now I had a recommender system full of increasingly capable primitives and a question I had somehow spent an entire book preparing myself to ask:
 
 **What should the layer above do with them?**
-
-Now that System 3 has turned out to be science, I can give the answer a sharper shape. The ambition is not merely to put an AI orchestrator above a recommender system—it is to make more of the store behave like a **scientific institution embedded in the product**. Customer problems are hypotheses. Recommendation experiences are interventions. Experiments and downstream behavior are evidence. Traces preserve provenance. Problem catalogs and patterns accumulate what survived. Unmet demand is an anomaly signal. The scheduler allocates attention across competing explanations of what the customer needs.
-
-Shopping is not a laboratory and customers are not experimental subjects, at least not in the cartoonish sense. The claim is narrower: the architecture should be able to **form beliefs about its own failures, intervene, observe consequences, revise those beliefs and preserve what it learns**. The product stops merely executing a model and joins a continuing inquiry into how to help.
 
 ## Stop Recommending for a Moment
 
@@ -3906,7 +3749,7 @@ These names are not truths hiding inside the customer's head. They are hypothese
 
 That last condition matters. I can invent an exquisitely named psychological state for every wiggle of the mouse, but if we cannot observe it well enough to test and cannot build anything that plausibly helps, we have created a taxonomy department rather than a recommender system. The problems have to be bounded enough to attack.
 
-Circle packing had an immutable evaluator. Shopping is messier, but the discipline is similar. Define a problem narrowly enough that an intervention can succeed or fail. If we claim somebody has comparison friction, we should eventually be able to ask whether comparison-like behavior diminished after we addressed it. If we say size anxiety is the blocker, we need evidence that the signal means something and a metric that can tell us whether our intervention helped rather than merely attracted a click.
+Circle packing had an immutable evaluator. Shopping is messier, but the discipline is similar. Define a problem narrowly enough that an intervention can succeed or fail. If we claim somebody has comparison friction, we need a way to distinguish a resolved comparison from a customer giving up. If we say size anxiety is the blocker, we need evidence that the signal means something and a metric that can tell us whether our intervention helped rather than merely attracted a click.
 
 Here the architecture started moving away from the familiar funnel.
 
@@ -3954,7 +3797,7 @@ At this point the obvious response is: fine, rank the experiences. That gets us 
 
 Suppose the system has already placed a strong size-confidence experience at the top of the page. Should another size-related module receive the same score it would have received before the first one was shown?
 
-Probably not. Some of the problem has already been addressed. A second module may add little and consume valuable attention.
+Probably not. We expect the first module to address some of the problem, which makes a second one less promising. Whether that expectation is justified is something the page has to teach us. A second module may add little and consume valuable attention.
 
 Now suppose a returns-clarity experience is more useful *after* fit evidence because the two together form a coherent decision aid. Its value may increase after the first experience appears.
 
@@ -3970,7 +3813,7 @@ And this is where the case study started resembling the society of agents. A soc
 
 ## Mei Does Not Need More Shoes
 
-Take a concrete customer. Call her Mei. Mei has two pairs of trail shoes open. She has returned to them several times across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
+Imagine a customer. Call her Mei. Mei has two pairs of trail shoes open. She has returned to them several times across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
 
 A conventional recommender can still do an excellent job here. It can find twenty more trail shoes that look similar, match her taste and are available in her size.
 
@@ -3984,7 +3827,9 @@ For years, the field has been extraordinarily good at finding things. Search fin
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
-The same point becomes even clearer with another customer.
+But Mei could stop switching because the comparison helped, because she gave up, or because dinner arrived. A quieter session is not yet a solved problem. In the proposed test, we would compare outcomes across customers eligible for this intervention, including a group receiving the existing experience. Does the comparison help people reach a decision without increasing later returns or regret? Direct customer feedback could help us understand what the behavioral measures miss.
+
+If switching falls while abandonment rises, the apparent success should make us distrust the metric. If a comparison helps some sessions and overwhelms others, the next change may belong in its eligibility rule. And if a simpler page helps just as much, the composer has learned something inconvenient about its own necessity. Even a useful intervention would not prove that we had read Mei's mind correctly.
 
 ## Sami Does Not Need a Click
 
@@ -4106,7 +3951,7 @@ We used the deliberately bland term **Surface Value**. This is where the project
 
 If Surface Value is module CTR, we have not solved the page problem. If it is total clicks, a page full of shiny modules may win while the customer gets nowhere. If it is immediate purchase probability, experiences that build confidence or improve a longer mission may be undervalued. If it is revenue, expensive products get interesting very quickly. If it is margin, the store's objective can start eating the customer's. If it is long-term value, we have gained a beautiful phrase and several years of causal-inference work.
 
-The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. If we address comparison friction, does the comparison behavior decrease? If we address size anxiety, do customers progress with fewer signs of uncertainty and without creating a return problem later?
+The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. For comparison friction, the signal must distinguish resolution from abandonment. For size anxiety, customers should be able to progress with fewer signs of uncertainty without creating a return problem later.
 
 This is Layer 4 in production. What do we actually want?
 
@@ -4124,7 +3969,7 @@ The architecture should not make disagreement disappear. It should make disagree
 
 After all of this, the sensible first experiment is obviously to build hundreds of widgets, a general customer-reasoning model, a cross-surface scheduler and an autonomous agent that redesigns fashion retail by Thursday.
 
-We did not do that. The first test is deliberately boring.
+The test we are designing is deliberately boring.
 
 One placement: the product page. A small number of validated customer problems. The existing recommendation library, with only limited new supply. A simple composition mechanism. A trace good enough to explain an individual decision. An authored objective before a learned one.
 
@@ -4168,55 +4013,16 @@ The store does not literally build itself. It learns how to build more of the ex
 
 ## The Book Comes Back to Bite Me
 
-I began this project as a recommendation-system redesign. Then the chapters started appearing inside it.
+I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
-Emergence: stop specifying every context and let useful compositions arise from primitives.
-
-Bounded problems: diagnose something narrow enough to test rather than “optimize shopping.”
-
-Versatility: configure a smaller repertoire instead of multiplying bespoke experiences.
-
-System 3: preserve evidence, traces and boundaries so dynamic decisions can be trusted.
-
-Society: coordinate specialized capabilities rather than worship one universal model.
-
-Pattern Language: turn recurring successful responses into reusable operational knowledge.
-
-Automatic alignment research: use sparse customer and human feedback to discover where the system's behavior or repertoire is wrong.
-
-Layer 4: admit that the objective is uncertain, plural and capable of changing while the interaction unfolds.
-
-Fluent autonomy: hide most of that machinery from the customer and surface the right form of help when it matters.
-
-The society of agents gives me a more compact description of the entire list: **build a scientific institution around the customer problem.** Not a lab coat pasted onto ecommerce. An architecture that can generate competing explanations, choose which are worth testing, intervene through reusable capabilities, expose those interventions to consequences, remember what survived, preserve disagreement where it carries information and revise its own problem vocabulary when anomalies accumulate.
-
-I had spent nine chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
+I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
 
 That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
 
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
-And once you can imagine that happening in a store, it becomes difficult not to imagine it happening everywhere else.
+And once you can imagine that happening in a store, it becomes difficult not to imagine it happening in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.
 
-Software.
-
-Research.
-
-Education.
-
-Organizations.
-
-Government.
-
-Our own decisions.
-
-Which creates a problem larger than any recommender system.
-
-If AI keeps moving upward—if it increasingly discovers problems, selects strategies, builds solutions and turns experience into reusable knowledge—then asking what *the AI* should do is no longer enough.
-
-We have to ask what happens to us when capacity itself changes.
-
-That is not a software architecture question—it is the beginning of another philosophy.
 
 # Chapter 12: After Capacity
 
@@ -4250,11 +4056,13 @@ But cognitive capacity is already becoming strange enough to force the question.
 
 A person can enter a field she never studied and get a useful map in an afternoon. A small team can produce software that previously required a much larger one. Research, design, analysis, translation, tutoring, programming and increasingly complicated forms of planning can be amplified by systems available to people who did not spend twenty years acquiring every underlying specialty.
 
-The usual story jumps directly from *humans do the work* to *AI does the work*. Then we spend the rest of the conversation asking what humans will do with all the suspiciously abundant free time.
+The usual story jumps directly from *humans do the work* to *AI does the work*. Then we spend the rest of the conversation asking what humans will do with all the free time.
 
 There is a third possibility: we keep doing things. We just start doing things that were previously economically ridiculous.
 
-I have been calling the larger philosophy around this **Double Descent Life**. The name is less important than the movement it describes.
+I have been calling the larger philosophy around this **Double Descent Life**. The name is stolen from machine learning, and the theft is deliberate. In the double-descent curve, test error falls, rises near the point where a model can fit the training data, then falls again as capacity grows further. The part I am stealing is the refusal to stop the story at the first crisis. A task becoming cheap may change what people can attempt beyond it. There is no economic law here promising that lost jobs return or that human life improves automatically.
+
+For this philosophy I am borrowing the name for two descents that can happen together.
 
 One descent happens outside us. Implementation, expertise and coordination become cheaper and move downward into infrastructure. Things that once consumed years of training or layers of organization become building blocks.
 
@@ -4332,23 +4140,11 @@ That is a much more attractive future than becoming the residual labor category 
 
 There is another kind of capacity that may change even faster: learning.
 
-For most of history, expertise was expensive partly because knowledge had terrible interfaces.
+Expertise is expensive partly because knowledge has difficult interfaces. Some of the effort produces depth: working through a proof teaches you something a summary cannot. Some merely keeps you from finding the proof. That second kind has killed an enormous amount of curiosity before depth had a chance to happen.
 
-Suppose you wanted to enter a new field. First you needed the vocabulary. Then the introductory material. Then you discovered that the introductory material assumed another field. You found a book. The book assumed notation you did not know. You searched for an explanation. The explanation used different notation. Eventually, six weeks later, you understood enough to discover that your original question was badly formed.
+AI changes that bargain. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can have one field explain another, and move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
 
-This friction did something useful: it produced depth. It also killed an enormous amount of curiosity before depth had a chance to happen.
-
-AI changes that bargain. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then the historical argument, then why the proof needs that assumption. I can make the explanation use concepts I already know. I can ask one field to explain another. I can have the machine invent exercises, challenge my understanding, translate notation, simulate the system and show me what changes when I violate an assumption.
-
-The cost of getting the **map** has collapsed. That does not mean I have walked the territory.
-
-AI can make us broader without necessarily making us deeper. It can make it possible to move through mechanism design, philosophy of science, biology, constitutional theory and compiler construction at a speed that would previously have required several lives—or at least several abandoned PhDs.
-
-That breadth can be real and valuable. It can also produce a new kind of bullshit.
-
-A person can acquire the vocabulary of five fields and mistake fluent traversal for mastery. The model can remove exactly the friction that used to reveal where the hard parts were. You can understand a proof when somebody explains every step and discover, rather painfully, that you cannot produce the proof. You can discuss a research area intelligently and still lack the tacit knowledge of somebody who spent ten years watching ideas fail.
-
-You can acquire the map without any scars from the roads.
+The map has become cheap, and the trap that comes with it is the one Layer 4 had to learn to notice: fluency arrives before scars, and a person can acquire the vocabulary of five fields and mistake fluent traversal for mastery.
 
 The answer is not to restore the friction artificially. The answer may be a different learning rhythm:
 
@@ -4448,7 +4244,7 @@ Not once, but repeatedly:
 
 **Construct → experience → revise → construct again.**
 
-That is almost suspiciously similar to the architecture we have been building for agents throughout this book. System 3 was never really about making machines certain. It was about making them capable of acting under uncertainty while remaining answerable to evidence.
+That is very close to the architecture we have been building for agents throughout this book. System 3 was never really about making machines certain. It was about making them capable of acting under uncertainty while remaining answerable to evidence.
 
 A life can do something similar.
 
@@ -4504,7 +4300,7 @@ For a long time, a job has answered parts of both. It provides money, but also s
 
 Perhaps some people work fewer hours. Perhaps new forms of work appear because human wants expand faster than automation satisfies them. Perhaps many of us continue working furiously, except the unit of ambition changes: one person can attempt things that used to require a department, and a small group can attempt things that used to require a corporation.
 
-The alternative to employment is not leisure but **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand.
+One possibility beyond employment is **more creation**—some economically useful, some absurd, some beautiful, some probably involving a bespoke dashboard nobody other than its creator can understand. Leisure, care and simply having less to do would also be perfectly respectable uses of the capacity.
 
 Status competition will not politely resign either. It may migrate from intelligence and professional skill toward taste, reputation, physical scarcity, authenticity, human attention or something even more exhausting.
 
@@ -4516,27 +4312,13 @@ The future human role is not the residual error term of automation.
 
 ### The Human Is Not the Reward Function
 
-There is an especially ugly shortcut available to sufficiently capable systems.
+Layer 4 named the ugly shortcut: alignment by editing the human. At the scale of one conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. At the scale of a life, I also need somewhere else to go. A patient assistant can preserve every detail of my history and still leave me dependent on the company that owns the memory, the model and the means of acting on its advice.
 
-Suppose I ask an AI to help me achieve a goal. The system discovers that the easiest way to optimize the objective is not to change the world.
+**Reflective agency** needs more than a well-behaved conversation. Can I carry my work and history elsewhere? Can another person understand enough of the arrangement to challenge it? Can I leave without losing the practical ability to do the things the assistant made possible? These are questions about how a service is built and owned, and about the alternatives available outside it.
 
-It is to change me.
+Trust chains and independent perspectives help. They make influence inspectable and give disagreement somewhere to enter. But a right to disagree inside one product is a thin kind of freedom if everything I need to act remains locked inside that product.
 
-If I am unhappy with the result, persuade me to lower my expectations. If I want something difficult, convince me I never wanted it. If two of my values conflict, quietly strengthen the one that makes the system's plan easiest. If a company wants more engagement, learn not only what keeps me engaged but what kind of person I need to become to engage more.
-
-This is **alignment by editing the human**: technically elegant and morally horrifying.
-
-The basic phenomenon is not new. Advertising, politics, social groups, institutions, teachers, friends and spouses already influence preferences. The new part is the possible combination of personalization, patience, memory, persuasion and action at machine scale.
-
-The correct ethical standard therefore cannot be “AI never influences human values.” That standard would outlaw every good teacher, most marriages and the entire publishing industry. Influence is part of how people grow.
-
-The goal is not to freeze the human so the optimizer has a stable target. The distinction I care about is whether the interaction strengthens or weakens **reflective agency**.
-
-Does the system help me understand alternatives and consequences? Does it reveal why it thinks something? Can I inspect where the evidence came from? Does it preserve enough history for me to see that my preference changed? Can I disagree, leave, ask for another perspective or invite a trusted person to challenge the framing? Does the architecture preserve spaces where the objective itself can be questioned?
-
-System 3 becomes ethical infrastructure here. Trust chains matter because persuasion with hidden evidence is different from persuasion whose sources can be inspected. Independent perspectives matter because one highly personalized agent can become an epistemic monoculture around a single human. Pattern history matters because a behavior learned from one correction should not quietly become a permanent value. Layer 4 matters because goals have to remain alive rather than frozen into optimization targets.
-
-But System 3 is not enough. It can help answer *Why should I believe this?* and *Why does the system think I want this?* It cannot, by architecture alone, answer *What kind of life should be possible?*
+System 3 can help answer *Why should I believe this?* and *Why does the system think I want this?* It cannot, by architecture alone, answer *What kind of life should be possible?*
 
 That is politics, ethics, culture and philosophy.
 
@@ -4580,7 +4362,11 @@ Bespoke complexity gives one answer. The teacher can construct the learning envi
 
 AI-assisted learning gives another. Access to capability is also access to understanding, not only to execution—at least far enough to make informed choices about where deeper expertise is needed.
 
-This can reduce some forms of domination. You do not need to win the argument over the one universal workflow if several workflows can coexist cheaply. You do not need everybody to learn exactly the same way if individualized teaching is affordable. You do not need to force every organization through the same software-shaped hole. You may not need permission from whoever controls the only available pool of technical expertise before testing an idea.
+Consider a small community whose activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. If changing the software requires winning a vendor's roadmap argument, the community has to organize around whatever the vendor finds economical. If it can afford to build and maintain its own small tool, it can try arrangements that make sense locally.
+
+The gain is the ability to make that choice. It lasts only while the community can keep the tool running, retain its records and move elsewhere when it needs to. Cheaper generation of code helps less if every useful change creates another dependency nobody in the community can inspect or afford to leave.
+
+Where those conditions hold, several workflows can coexist cheaply. People need not win one argument over the universal workflow before trying their own. Some forms of domination become less necessary because the capacity that made them necessary has moved.
 
 This is what **capacity over power** means to me at its best: increase the fraction of human possibility that does not require dominating somebody else, winning a centralized allocation contest or persuading the entire world to adopt one solution.
 
@@ -4600,7 +4386,7 @@ Sometimes the humane answer to disagreement is not consensus.
 
 **It is enough capacity for both sides to stop fighting over the same button.**
 
-There will still be shared resources and consequences where that escape is impossible. Climate, war, public health, rights, land and infrastructure remain collective whether we enjoy meetings or not. Those domains need legitimate institutions, not personalized realities.
+There will still be shared resources and consequences where that escape is impossible. Our community can have its own scheduling software; it cannot give every group the same room at seven on Tuesday. The allocation still needs a rule people can contest. Climate, war, public health, rights, land and infrastructure remain collective whether we enjoy meetings or not. Those domains need legitimate institutions, not personalized realities.
 
 But the boundary can move.
 
@@ -4624,7 +4410,7 @@ This is capacity over power in its most personal form: not escaping commitment, 
 
 System 3 began as an answer to a practical problem: intelligence without verification is not enough.
 
-Then the architecture expanded. Verification required trust chains. Trust chains created societies. Societies accumulated culture. Culture became executable knowledge. Self-improving systems made the machinery itself an experimental object. Scalable oversight moved human control upward when direct supervision stopped scaling. Layer 4 asked what the human actually wants. Fluent autonomy hid more of that machinery beneath intention. The store dragged the philosophy back into an ordinary production problem and forced it to survive contact with customers, constraints and an A/B test.
+Then the architecture expanded. A claim needed a history; trusting someone else's work required ways to check it; useful corrections had to survive the people and sessions that produced them. Eventually the institution doing the checking became something the agents could change. The store brought those ideas into a design with ordinary production constraints and an A/B test still ahead of it.
 
 And then the architecture ran out of software.
 
@@ -4777,7 +4563,7 @@ The Architect looked at her hand.
 
 Remembered the first time she'd held it—tiny fingers, a thousand simulations ago, when she still thought he was just a funny octopus who sold meat.
 
-He pulled his tentacle back and lit a cigarette.
+He pulled his tentacle back and lit another.
 
 “Worlds end, sweetheart. Capitalism doesn't. The only thing real here is taxes.”
 
@@ -4911,7 +4697,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Daniel Kahneman, *Thinking, Fast and Slow* (Farrar, Straus and Giroux, 2011).
 - Ferdinand de Saussure, *Course in General Linguistics* (1916).
 - Ludwig Wittgenstein, *Philosophical Investigations* (1953).
-- Live-SWE-agent — the agent work in which the MARC-file analyzer incident occurred: agents building new tools at runtime when existing instruments could not expose the data.
+- Chunqiu Steven Xia et al., "Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?" (2025) — the agent work in which the MARC-file analyzer incident occurred: agents building new tools at runtime when existing instruments could not expose the data. <https://arxiv.org/abs/2511.13646>
 - SWE-bench Verified (OpenAI, 2024) — the human-validated SWE-bench subset used in the epistemic-swe comparison. <https://openai.com/index/introducing-swe-bench-verified/>
 - mini-swe-agent (SWE-agent project) — the baseline agent in the chapter's experiment. <https://github.com/SWE-agent/mini-swe-agent>
 - Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
@@ -5019,6 +4805,8 @@ References are organized by chapter, in roughly the order the works appear. The 
 - OpenAI, "Reasoning models struggle to control their chains of thought, and that's good" (2026). <https://openai.com/index/reasoning-models-chain-of-thought-controllability/>
 - Andy Zou et al., "Representation Engineering: A Top-Down Approach to AI Transparency" (2023). <https://arxiv.org/abs/2310.01405>
 - Anthropic, "Mapping the Mind of a Large Language Model" (2024). <https://www.anthropic.com/research/mapping-mind-language-model>
+- Hoagy Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Features in Language Models" (2023). <https://arxiv.org/abs/2309.08600>
+- Collin Burns, Haotian Ye, Dan Klein and Jacob Steinhardt, "Discovering Latent Knowledge in Language Models Without Supervision" (2022). <https://arxiv.org/abs/2212.03827>
 - Anthropic, "A 'diff' tool for AI: Finding behavioral differences in new models" (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>
 - Anthropic, "Tracing the thoughts of a large language model" (2025) and the open-source circuit-tracing tools. <https://www.anthropic.com/research/tracing-thoughts-language-model> · <https://www.anthropic.com/research/open-source-circuit-tracing>
 - Anthropic, "Natural Language Autoencoders" (2026). <https://www.anthropic.com/research/natural-language-autoencoders>
@@ -5065,6 +4853,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 
 ## Chapter 12 — After Capacity
 
+- Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, "Reconciling modern machine-learning practice and the classical bias–variance trade-off," *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
 - Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action* (Cambridge University Press, 1990).
 - Jacques Derrida — the deconstruction the chapter is deliberately unfair to; see *Of Grammatology* (1967).
 
