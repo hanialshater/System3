@@ -1,16 +1,18 @@
 # Preface
 
-I wanted to give an AI a difficult problem, go get coffee and come back to useful work I had not directed move by move. It could already help me write code, explain unfamiliar ideas and try approaches I would not have had the patience to try myself. But I was still there, choosing the next move, noticing when something had gone wrong and carrying enough of the problem in my head to rescue it. I wanted to find out how much of that I could hand over.
+What could a billion-parameter reasoning machine learn from a camel trying to touch its ear with its tongue?
 
-One of the experiments in this book involves fitting twenty-six circles into a square. The geometry is difficult, but at least everyone agrees that the circles should stay inside the square. I could give the agent a way to check its work and leave it to search. Writing this book was less accommodating. I could dislike an edit without being able to explain exactly what it had damaged. Sometimes I only discovered what mattered to me after it had been removed.
+The two figures on the cover are Ferdinand de Saussure and Ludwig Wittgenstein. For Saussure, words acquire value through their relations to other words. Wittgenstein's later work put language inside the activities of life: *fire* is something you cook with, gather around and shout when the building is burning. Neither lived to see these questions become an engineering problem.
 
-I wrote this book to follow those difficulties far enough to understand what I was asking the machine to take over. I needed to know what grounds it had for an answer and what could expose a mistake before the next decision depended on it. Questions about knowledge became decisions about how to build software.
+This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. It follows what happened when I tried to build that kind of autonomy, from a square full of circles to systems whose work I could no longer judge with one convenient score.
 
-I have a personal stake in where this goes. I spent years acquiring some of the capabilities I am now trying to delegate. I want to see what I can attempt with that help, including things I would have left to people with different training. I also want to understand what happens to my own judgment when I no longer have to do so much of the work that trained it. Anyone beginning to rely on these systems has a version of that question, whether the help arrives at work or while learning something they had thought was beyond them.
+Along the way it becomes a book about knowledge: how a machine trained on human language can still be caught being wrong, and what has to be built around it so that being wrong has consequences.
 
-This book is written inside the event it describes. Much of its evidence comes from 2025 and 2026, and some of it will age quickly. I have tried to keep track of where claims came from, what the experiments actually showed and where I am still working something out. The failures belong in the account because they changed what I thought I was building. The later chapters venture further into possibilities I cannot yet test as neatly as a square full of circles.
+It is also written inside the event it describes. A good share of its evidence is from 2025 and 2026, and some of it will be out of date before you finish reading. I have tried to treat those results the way the book says results should be treated: as claims with a source, a date and an expiry, not as settled facts. If the examples age and the argument does not, the book has done its job.
 
-I am still betting on the possibility that brought me here: that we can give machines more room to work and gain room to act ourselves. What would make this a form of autonomy we would want to live with?
+It is written for engineers who suspect the missing piece is not a bigger model, for researchers who want another frame, and for builders ready to stop directing and start hiring.
+
+The impressive part is how far you can get with the right architecture. The dangerous part is forgetting that the architecture is doing the work.
 
 *Hani Al-Shater*
 

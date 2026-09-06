@@ -22,7 +22,7 @@ Chapters 6–12 are works in progress. The current developmental edit preserves 
 
 ### Front matter
 
-- [Preface](chapters/00-preface.md) — why the book begins with delegation and follows it into questions about knowledge and human autonomy
+- [Preface](chapters/00-preface.md) — camels, coffee, and the argument for building autonomy
 
 ### Revised / established arc
 
