@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "typography": {
+    "font": "Nimbus",
+    "size": 11.5,
+    "leading": 1.42,
+    "margin": 17,
+    "paper": "book",
+    "align": "justify"
+  },
+  "breaks": [],
+  "figures": [
+    {
+      "id": "glassmaker",
+      "section": "civilization-had-no-senku-1",
+      "anchor": "Knowing how to produce it was only the beginning.",
+      "art": "/art/knowledge-and-hands.webp",
+      "title": "Knowledge needs hands",
+      "style": "wide",
+      "height": 67
+    },
+    {
+      "id": "clay",
+      "section": "civilization-had-no-senku-1",
+      "anchor": "The mark did not need to be wiser than the clerk.",
+      "art": "/art/clay-and-memory.webp",
+      "title": "Clay and memory",
+      "style": "right",
+      "height": 57
+    }
+  ]
+}

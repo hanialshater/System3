@@ -1,0 +1,19 @@
+{
+  "name": "system3-book-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/prepare.mjs && vite --host 0.0.0.0",
+    "build": "node scripts/prepare.mjs && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "dompurify": "^3.3.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "pagedjs": "0.4.3"
+  },
+  "devDependencies": { "vite": "^7.1.0" }
+}
