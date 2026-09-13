@@ -2728,6 +2728,20 @@ Remove those qualifiers and “recursive self-improvement” becomes dangerously
 
 More what?
 
+## The Complexity of Self-Change
+
+Even after we agree on what better means, we may have to wait to find out whether we achieved it.
+
+Suppose an automated team changes a store's recommendations. Clicks rise that afternoon. Whether customers keep what they bought takes longer to discover. Before the returns arrive, the team has changed retrieval, ranking and page layout, then revised the procedure that chooses its next experiments. Each revision inherited the apparent success of the last. When returns finally rise, which version deserves the blame? The system investigating the failure is no longer the one that produced it.
+
+I think of this as **the complexity of self-change**: each revision changes the conditions under which we judge the next one. Some consequences arrive late; several changes may interact. An improvement tested in one arrangement may fail in its successor. We can become very quick at producing descendants while losing track of which ancestor taught them the wrong lesson.
+
+Peyman Milanfar makes a related argument through adaptive control: a self-improving loop cannot safely accelerate without regard to the rate at which trustworthy evidence becomes available.[^self-change] That does not establish one universal speed limit for AI. It identifies something our research institution has to measure: how long its important uncertainties remain unresolved while it keeps changing.
+
+The store could keep generating candidates while waiting for the earlier experiment's consequences. Preserve the deployed version and its comparison group; keep the later candidates separate until the evidence needed to adopt them arrives. If the experiment-selection procedure changes too, record which procedure commissioned each trial. Otherwise the next investigator inherits a rising score and a family history nobody can reconstruct.
+
+Better instruments and parallel trials may shorten the wait. Some observations will still take time. Recursive improvement has to improve the machinery for finding out, alongside the machinery for making changes. Otherwise the learner becomes better at changing itself faster than it becomes better at knowing whether it should.
+
 ## The Student Finds the Gradebook
 
 An ordinary evaluator can select a wrong answer. In this loop it can select a modified **process** that becomes better at producing the kind of thing it mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest. And then the learner notices the gradebook.
@@ -2787,6 +2801,8 @@ For a compiler, correctness under tests plus efficiency under an agreed budget m
 The self-improving institution therefore needs a research function watching its own evolution: finding new failure modes, generating new tests, challenging reward models, checking transfer and looking for reward hacking. Once improvement becomes continuous, **alignment has to become a continuous research function**.
 
 Omar could investigate the investigator. Now the investigator can rewrite itself, and someone still has to decide which of its suspicions about itself deserve to be believed. We have given that someone a research institution's worth of work. How much of it can a human actually judge?
+
+[^self-change]: Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026. Milanfar's adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
 
 
 # Chapter 8: Scalable Oversight
