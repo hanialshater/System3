@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "dompurify": "^3.3.0",
+    "konva": "^10.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0",
     "pagedjs": "0.4.3"
   },
-  "devDependencies": { "vite": "^7.1.0" }
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
 }

@@ -4,6 +4,7 @@ A Paged.js editor for the actual chapter Markdown in this repository. Run `npm c
 
 - Chapters 1–6 are bundled from the repository at build time. Chapter 5 section 2 has two separate illustration assets for the initial reflow test.
 - Edit section Markdown, reorder sections by drag or arrow buttons, change typography and page size, and anchor illustrations after a passage. Full chapter or selected-section preview. Print / Save as PDF uses the live Paged.js layout.
+- Click an illustration in the proof (or Edit on canvas in Artwork) to open the Konva artwork editor: crop with handles, resize on the page, rotate, flip, adjust brightness/contrast/saturation/opacity, grayscale, undo/redo, reset, or cancel. Adjustments are saved as normalized parameters in the layout JSON and re-rendered for the proof/PDF; source images are never overwritten.
 - Text and layout save locally by chapter. Download both draft files at any time.
 - GitHub pull reads a chosen branch. Save uses a fine-grained token with **Contents: read/write** on **hanialshater/System3**, held in memory only and sent directly to api.github.com. No credentials are embedded in the site or localStorage.
 - Saves atomically commit the chapter Markdown and `book-design/editor/chapter-NN.json` to a review branch. Remote manuscript/layout changes and concurrent branch advances are rejected; main/master writes are disabled in the editor. Merge the review branch on GitHub when ready.

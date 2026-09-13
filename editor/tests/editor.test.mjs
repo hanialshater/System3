@@ -25,3 +25,11 @@ test('save commits both files atomically and never forces a branch update',async
 test('main cannot be saved from the editor',async()=>{
  const g=new GitHub();g.token='test';await assert.rejects(g.save({...settings,writeBranch:'main'}),/review branch/);
 });
+
+test('art edits survive layout serialization and keep the source asset',()=>{
+ const input={figures:[{id:'a',section:'s',anchor:'text',art:'/art/knowledge-and-hands.webp',height:70,style:'wide',edit:{crop:{x:.2,y:.1,width:.6,height:.8},rotation:25,flipX:true,brightness:.1,contrast:.2,saturation:0,opacity:.8}}]};
+ const result=validateLayout(JSON.parse(JSON.stringify(validateLayout(input,5))),5).figures[0];assert.equal(result.art,input.figures[0].art);assert.equal(result.edit.rotation,25);assert.equal(result.edit.saturation,0);assert.deepEqual(result.edit.crop,input.figures[0].edit.crop);assert.equal(result.edit.flipX,true);
+});
+test('out-of-bounds crops and non-finite art controls are normalized',()=>{
+ const input={figures:[{section:'s',anchor:'text',art:'/art/clay-and-memory.webp',edit:{crop:{x:.9,y:-4,width:5,height:0},rotation:Infinity,brightness:'url(bad)',opacity:-1}}]};const e=validateLayout(input,5).figures[0].edit;assert.ok(e.crop.x+e.crop.width<=1);assert.equal(e.crop.y,0);assert.ok(e.crop.height>0);assert.equal(e.rotation,0);assert.equal(e.brightness,0);assert.equal(e.opacity,.1);
+});

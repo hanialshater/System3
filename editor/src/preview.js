@@ -2,6 +2,7 @@ import { Previewer } from 'pagedjs';
 import MarkdownIt from 'markdown-it';
 import footnote from 'markdown-it-footnote';
 import DOMPurify from 'dompurify';
+import {renderArt} from './art-render.js';
 const md = new MarkdownIt({ html: false, typographer: false }).use(footnote);
 const $ = s => document.querySelector(s);
 let renderId = null;
@@ -50,7 +51,10 @@ async function render(data) {
       const anchor = [...holder.querySelectorAll('p')].find(p => p.textContent.includes(figure.anchor));
       if (!anchor || !figure.anchor.trim()) { warnings.push(`“${figure.title}”: anchor passage not found.`); continue; }
       const f = document.createElement('figure'); f.className=figure.style; f.style.height=`${figure.height}mm`; f.dataset.figure=figure.id;
-      f.innerHTML=`<img src="${figure.art}" alt="${safe(figure.title)}">`;
+      let src=figure.art;
+      try{src=await renderArt(figure.art,figure.edit);}catch(e){warnings.push(`“${figure.title}”: ${e.message}`);}
+      f.setAttribute('role','button');f.setAttribute('tabindex','0');f.setAttribute('aria-label',`Edit artwork: ${figure.title}`);
+      f.innerHTML=`<img src="${src}" alt="${safe(figure.title)}">`;
       anchor.after(f);
     }
     content+=`<section data-section="${safe(section.id)}" class="${layout.breaks.includes(section.id)?'section-break':''}">${holder.innerHTML}</section>`;
@@ -67,10 +71,12 @@ async function render(data) {
     const screen=document.createElement('style');
     screen.textContent=`@media screen{body{background:#e6e8ea}.pagedjs_pages{display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 16px;zoom:${zoom/100}}.pagedjs_page{flex:none;margin:0;box-shadow:0 3px 12px #17253324}}@media print{body{background:white}.pagedjs_pages{display:block;padding:0;zoom:1}.pagedjs_page{margin:0!important;box-shadow:none;break-after:page}}`;
     document.head.append(screen);
+    const artStyle=document.createElement('style');artStyle.textContent='@media screen{figure[data-figure]{position:relative;cursor:pointer}figure[data-figure]:hover,figure[data-figure]:focus-visible{outline:2px solid #417b98;outline-offset:5px}figure[data-figure]:hover::after,figure[data-figure]:focus-visible::after{content:"Edit artwork";position:absolute;right:0;top:0;background:#265c75;color:white;padding:7px 10px;font:12px system-ui;border-radius:3px;pointer-events:none}}';document.head.append(artStyle);
     tell({type:'rendered',pages:flow.total,warnings});
   }
   finally {URL.revokeObjectURL(blob);}
-  document.addEventListener('click',e=>{const s=e.target.closest('[data-section]');if(s)tell({type:'select',section:s.dataset.section});});
+  document.addEventListener('click',e=>{const f=e.target.closest('[data-figure]');if(f){tell({type:'art',figure:f.dataset.figure});return;}const s=e.target.closest('[data-section]');if(s)tell({type:'select',section:s.dataset.section});});
+  document.addEventListener('keydown',e=>{const f=e.target.closest('[data-figure]');if(f&&['Enter',' '].includes(e.key)){e.preventDefault();tell({type:'art',figure:f.dataset.figure});}});
 }
 window.addEventListener('message',e=>{
   if(e.origin!==location.origin || e.source!==parent || !e.data?.studio)return;

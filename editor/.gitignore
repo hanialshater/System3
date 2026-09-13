@@ -3,3 +3,4 @@ dist/
 public/book/
 .vercel/
 verify-local.mjs
+verify-art.mjs
