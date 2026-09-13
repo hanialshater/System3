@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile,readdir} from 'node:fs/promises';
 import {splitSections,joinSections,validateLayout} from '../src/model.js';
 import {GitHub} from '../src/github.js';
+import {mergeComments} from '../src/comments.js';
 test('all six manuscripts round-trip without loss',async()=>{
  for(const name of (await readdir('../chapters')).filter(x=>/^0[1-6]-/.test(x))){const text=await readFile('../chapters/'+name,'utf8');assert.equal(joinSections(splitSections(text)),text,name);}
 });
@@ -32,4 +33,29 @@ test('art edits survive layout serialization and keep the source asset',()=>{
 });
 test('out-of-bounds crops and non-finite art controls are normalized',()=>{
  const input={figures:[{section:'s',anchor:'text',art:'/art/clay-and-memory.webp',edit:{crop:{x:.9,y:-4,width:5,height:0},rotation:Infinity,brightness:'url(bad)',opacity:-1}}]};const e=validateLayout(input,5).figures[0].edit;assert.ok(e.crop.x+e.crop.width<=1);assert.equal(e.crop.y,0);assert.ok(e.crop.height>0);assert.equal(e.rotation,0);assert.equal(e.brightness,0);assert.equal(e.opacity,.1);
+});
+
+const thread=(id,body)=>({id,target:{kind:'text',section:'opening-1',quote:'Opening',figure:''},resolved:false,messages:[{id:`${id}-1`,author:'Hani',body,createdAt:'2026-09-13T10:00:00Z'}]});
+test('independent threads and simultaneous replies merge without losing either contributor',()=>{
+ const base=[thread('a','First')],local=structuredClone(base),remote=structuredClone(base);
+ local[0].messages.push({id:'local',author:'A',body:'Local reply',createdAt:'2026-09-13T10:01:00Z'});
+ remote[0].messages.push({id:'remote',author:'B',body:'Remote reply',createdAt:'2026-09-13T10:02:00Z'});
+ local.push(thread('b','Second'));remote.push(thread('c','Third'));remote[0].resolved=true;
+ const merged=mergeComments(base,local,remote);assert.equal(merged.length,3);assert.equal(merged[0].messages.length,3);assert.equal(merged[0].resolved,true);assert.equal(local[0].messages.length,2);
+ assert.equal(mergeComments(base,merged,merged)[0].messages.length,3);
+});
+test('conflicting comment edits stop the save rather than overwrite a message',()=>{
+ const base=[thread('a','First')],local=structuredClone(base),remote=structuredClone(base);
+ local[0].messages[0].body='Local revision';remote[0].messages[0].body='Other revision';assert.throws(()=>mergeComments(base,local,remote),/changed in two places/);
+});
+test('layout geometry, paragraph breaks, and discussion anchors survive serialization',()=>{
+ const input={figures:[{id:'a',section:'s',anchor:'A paragraph',art:'/art/clay-and-memory.webp',style:'left',height:80,width:38,gap:6,placement:'before'}],comments:[thread('t','Keep this')],blockBreaks:[{section:'s',quote:'A paragraph'}]};
+ const result=validateLayout(JSON.parse(JSON.stringify(validateLayout(input,5))),5);assert.equal(result.figures[0].width,38);assert.equal(result.figures[0].placement,'before');assert.deepEqual(result.comments,input.comments);assert.deepEqual(result.blockBreaks,input.blockBreaks);
+});
+test('GitHub saves merge remote-only comments atomically alongside local layout edits',async()=>{
+ const base={version:1,comments:[thread('a','First')]},local=structuredClone(base),remote=structuredClone(base);local.figures=[];remote.comments.push(thread('b','Collaborator comment'));
+ const g=new GitHub();g.token='test';let written;
+ g.load=async()=>({markdown:'old',rawLayout:JSON.stringify(remote)});
+ g.request=async(p,o)=>{if(p.startsWith('git/ref/'))return{object:{sha:'parent'}};if(p==='git/commits/parent')return{tree:{sha:'tree'}};if(p==='git/trees')written=JSON.parse(o.body);return{sha:'next'};};
+ const result=await g.save({...settings,layout:local,baseLayout:JSON.stringify(base)});assert.equal(result.layout.comments.length,2);assert.equal(JSON.parse(written.tree[1].content).comments[1].messages[0].body,'Collaborator comment');assert.deepEqual(result.layout.figures,[]);
 });

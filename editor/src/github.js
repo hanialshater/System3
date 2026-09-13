@@ -1,3 +1,4 @@
+import {mergeComments} from './comments.js';
 // A user-supplied fine-grained token lives in memory only. It is sent exclusively to GitHub.
 export class GitHub {
   constructor() { this.token = ''; this.repo = 'hanialshater/System3'; }
@@ -31,7 +32,10 @@ export class GitHub {
     catch (e) { if (e.status !== 404) throw e; exists = false; head = await this.request(`git/ref/heads/${readBranch}`); }
     const parent = head.object.sha;
     const current = await this.load(path, layoutPath, parent);
-    if (current.markdown !== baseMarkdown || current.rawLayout !== baseLayout) throw new Error('The remote manuscript or layout has changed. Your local draft is safe. Download it, then pull that branch before saving.');
+    const base=baseLayout?JSON.parse(baseLayout):null,remote=current.rawLayout?JSON.parse(current.rawLayout):null;
+    const design=value=>{if(!value)return null;const copy={...value};delete copy.comments;return JSON.stringify(copy);};
+    if (current.markdown !== baseMarkdown || design(remote) !== design(base)) throw new Error('The remote manuscript or layout has changed. Your local draft is safe. Download it, then pull that branch before saving.');
+    layout={...layout,comments:mergeComments(base?.comments||[],layout.comments||[],remote?.comments||[])};
     const commit = await this.request(`git/commits/${parent}`);
     const tree = await this.request('git/trees', { method: 'POST', body: JSON.stringify({ base_tree: commit.tree.sha, tree: [
       { path, mode: '100644', type: 'blob', content: markdown },
@@ -40,6 +44,6 @@ export class GitHub {
     const next = await this.request('git/commits', { method: 'POST', body: JSON.stringify({ message: 'Update manuscript and page layout from Book Studio', tree: tree.sha, parents: [parent] }) });
     // Non-forced update rejects a concurrent change. Creation fails if another writer won the race.
     await this.request(exists ? `git/refs/heads/${writeBranch}` : 'git/refs', { method: exists ? 'PATCH' : 'POST', body: JSON.stringify(exists ? { sha: next.sha, force: false } : { ref: `refs/heads/${writeBranch}`, sha: next.sha }) });
-    return { sha: next.sha, url: `https://github.com/${this.repo}/commit/${next.sha}` };
+    return { sha: next.sha, url: `https://github.com/${this.repo}/commit/${next.sha}`,layout };
   }
 }

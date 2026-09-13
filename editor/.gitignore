@@ -4,3 +4,5 @@ public/book/
 .vercel/
 verify-local.mjs
 verify-art.mjs
+
+verify-layout.mjs

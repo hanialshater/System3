@@ -3,6 +3,8 @@ import MarkdownIt from 'markdown-it';
 import footnote from 'markdown-it-footnote';
 import DOMPurify from 'dompurify';
 import {renderArt} from './art-render.js';
+import {installPageControls} from './page-controls.js';
+import {passageText} from './passages.js';
 const md = new MarkdownIt({ html: false, typographer: false }).use(footnote);
 const $ = s => document.querySelector(s);
 let renderId = null;
@@ -28,7 +30,7 @@ async function render(data) {
     blockquote{margin:.8em 0 .8em 1em;border-left:2px solid #c4a66a;padding-left:.8em;font-style:italic}
     .section-break{break-before:page}.section-marker{display:none}
     figure{margin:1em 0;break-inside:avoid;clear:both}figure img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
-    figure.wide{width:100%}figure.left,figure.right{width:46%;clear:none;float:left;margin:.4em 1em .5em 0}figure.right{float:right;margin:.4em 0 .5em 1em}
+    figure.wide{width:100%;margin-left:auto;margin-right:auto}figure.left,figure.right{width:46%;clear:none;float:left;margin:.4em 1em .5em 0}figure.right{float:right;margin:.4em 0 .5em 1em}
     figure.plate{break-before:page;break-after:page;display:flex;align-items:center;justify-content:center;height:${height-t.margin*2-3}mm!important}
     code{font-size:.8em;overflow-wrap:anywhere}pre{font-size:.82em;white-space:pre-wrap;word-break:break-word;background:#eee9de;padding:.7em}
     table{border-collapse:collapse;width:100%;font-size:.8em}th,td{padding:.3em;border-bottom:1px solid #c7c0b4;text-align:left}
@@ -47,15 +49,16 @@ async function render(data) {
     // Scope footnote IDs to avoid collisions between independently rendered sections.
     holder.querySelectorAll('[id]').forEach(el=>el.id=`${section.id}-${el.id}`);
     holder.querySelectorAll('a[href^="#"]').forEach(el=>el.setAttribute('href',`#${section.id}-${el.getAttribute('href').slice(1)}`));
+    holder.querySelectorAll('p:not(.footnote-item p)').forEach(p=>{p.dataset.anchor=passageText(p);if((layout.blockBreaks||[]).some(b=>b.section===section.id&&b.quote===p.dataset.anchor))p.style.breakBefore='page';});
     for (const figure of layout.figures.filter(f=>f.section===section.id && f.style!=='hidden')) {
-      const anchor = [...holder.querySelectorAll('p')].find(p => p.textContent.includes(figure.anchor));
+      const anchor = [...holder.querySelectorAll('p')].find(p => (p.dataset.anchor||p.textContent).includes(figure.anchor));
       if (!anchor || !figure.anchor.trim()) { warnings.push(`“${figure.title}”: anchor passage not found.`); continue; }
-      const f = document.createElement('figure'); f.className=figure.style; f.style.height=`${figure.height}mm`; f.dataset.figure=figure.id;
+      const f = document.createElement('figure'); f.className=figure.style; f.style.height=`${figure.height}mm`; f.dataset.figure=figure.id; f.style.width=`${figure.width??(['left','right'].includes(figure.style)?46:100)}%`; f.style.marginTop=f.style.marginBottom=`${figure.gap??4}mm`;if(figure.style==='left')f.style.marginRight=`${figure.gap??4}mm`;if(figure.style==='right')f.style.marginLeft=`${figure.gap??4}mm`;
       let src=figure.art;
       try{src=await renderArt(figure.art,figure.edit);}catch(e){warnings.push(`“${figure.title}”: ${e.message}`);}
-      f.setAttribute('role','button');f.setAttribute('tabindex','0');f.setAttribute('aria-label',`Edit artwork: ${figure.title}`);
+      f.setAttribute('role','button');f.setAttribute('tabindex','0');f.setAttribute('aria-label',`Layout artwork: ${figure.title}`);
       f.innerHTML=`<img src="${src}" alt="${safe(figure.title)}">`;
-      anchor.after(f);
+      if(figure.placement==='before')anchor.before(f);else anchor.after(f);
     }
     content+=`<section data-section="${safe(section.id)}" class="${layout.breaks.includes(section.id)?'section-break':''}">${holder.innerHTML}</section>`;
   }
@@ -71,12 +74,11 @@ async function render(data) {
     const screen=document.createElement('style');
     screen.textContent=`@media screen{body{background:#e6e8ea}.pagedjs_pages{display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 16px;zoom:${zoom/100}}.pagedjs_page{flex:none;margin:0;box-shadow:0 3px 12px #17253324}}@media print{body{background:white}.pagedjs_pages{display:block;padding:0;zoom:1}.pagedjs_page{margin:0!important;box-shadow:none;break-after:page}}`;
     document.head.append(screen);
-    const artStyle=document.createElement('style');artStyle.textContent='@media screen{figure[data-figure]{position:relative;cursor:pointer}figure[data-figure]:hover,figure[data-figure]:focus-visible{outline:2px solid #417b98;outline-offset:5px}figure[data-figure]:hover::after,figure[data-figure]:focus-visible::after{content:"Edit artwork";position:absolute;right:0;top:0;background:#265c75;color:white;padding:7px 10px;font:12px system-ui;border-radius:3px;pointer-events:none}}';document.head.append(artStyle);
+    installPageControls({layout,tell});
     tell({type:'rendered',pages:flow.total,warnings});
   }
   finally {URL.revokeObjectURL(blob);}
-  document.addEventListener('click',e=>{const f=e.target.closest('[data-figure]');if(f){tell({type:'art',figure:f.dataset.figure});return;}const s=e.target.closest('[data-section]');if(s)tell({type:'select',section:s.dataset.section});});
-  document.addEventListener('keydown',e=>{const f=e.target.closest('[data-figure]');if(f&&['Enter',' '].includes(e.key)){e.preventDefault();tell({type:'art',figure:f.dataset.figure});}});
+
 }
 window.addEventListener('message',e=>{
   if(e.origin!==location.origin || e.source!==parent || !e.data?.studio)return;

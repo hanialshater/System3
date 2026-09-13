@@ -1,4 +1,5 @@
 import {normalizeArtEdit} from './art-state.js';
+import {normalizeComments} from './comments.js';
 export function splitSections(markdown) {
   const lines = markdown.split(/(?<=\n)/);
   const sections = []; let chunk = ''; let title = 'Opening'; let fence = null;
@@ -22,7 +23,7 @@ export function defaultLayout(number) {
   return {
     version: 1,
     typography: { font: 'Nimbus', size: 11.5, leading: 1.42, margin: 17, paper: 'book', align: 'justify' },
-    breaks: [],
+    breaks: [], blockBreaks: [], comments: [],
     figures: number === 5 ? [
       { id: 'glassmaker', section: 'civilization-had-no-senku-1', anchor: 'Knowing how to produce it was only the beginning.', art: '/art/knowledge-and-hands.webp', title: 'Knowledge needs hands', style: 'wide', height: 67 },
       { id: 'clay', section: 'civilization-had-no-senku-1', anchor: 'The mark did not need to be wiser than the clerk.', art: '/art/clay-and-memory.webp', title: 'Clay and memory', style: 'right', height: 57 }
@@ -38,6 +39,8 @@ export function validateLayout(input, number) {
     version: 1,
     typography: { font: ['Nimbus', 'Georgia', 'Palatino'].includes(t.font) ? t.font : base.typography.font, size: bound(t.size, 9, 16, 11.5), leading: bound(t.leading, 1.15, 1.9, 1.42), margin: bound(t.margin, 10, 27, 17), paper: ['book', 'a5', 'letter'].includes(t.paper) ? t.paper : 'book', align: t.align === 'left' ? 'left' : 'justify' },
     breaks: Array.isArray(input.breaks) ? input.breaks.filter(x => typeof x === 'string') : [],
-    figures: Array.isArray(input.figures) ? input.figures.filter(f => f && typeof f.section === 'string' && typeof f.anchor === 'string' && ['/art/knowledge-and-hands.webp', '/art/clay-and-memory.webp'].includes(f.art)).map(f => ({ id: String(f.id), section: f.section, anchor: f.anchor, art: f.art, title: String(f.title || 'Illustration'), style: ['wide','left','right','plate','hidden'].includes(f.style) ? f.style : 'wide', height: bound(f.height, 30, 110, 65), edit:normalizeArtEdit(f.edit) })) : base.figures
+    blockBreaks: Array.isArray(input.blockBreaks) ? input.blockBreaks.filter(x=>x && typeof x.section==='string' && typeof x.quote==='string').map(x=>({section:x.section,quote:x.quote.slice(0,2000)})) : [],
+    comments: normalizeComments(input.comments),
+    figures: Array.isArray(input.figures) ? input.figures.filter(f => f && typeof f.section === 'string' && typeof f.anchor === 'string' && ['/art/knowledge-and-hands.webp', '/art/clay-and-memory.webp'].includes(f.art)).map(f => ({ id: String(f.id), section: f.section, anchor: f.anchor, art: f.art, title: String(f.title || 'Illustration'), style: ['wide','left','right','plate','hidden'].includes(f.style) ? f.style : 'wide', height: bound(f.height, 20, 150, 65), width: bound(f.width, 20, 100, ['left','right'].includes(f.style)?46:100), gap: bound(f.gap, 0, 15, 4), placement: f.placement==='before'?'before':'after', edit:normalizeArtEdit(f.edit) })) : base.figures
   };
 }
