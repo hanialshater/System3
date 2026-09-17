@@ -239,6 +239,10 @@ In the click-rate dispute, “noted” supplies no answer. The critic points to 
 
 This is a more useful division of responsibilities than asking one agent to be optimistic and another to be skeptical. One agent produces a claim with its support. Another can contest the support. A decision procedure determines what may proceed and which questions remain open. The agents can disagree about the substantive issue while the software accurately records the disagreement and its consequences.
 
+Stellar Colosseum, a harness for mathematical research, gives this procedure a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim or dependency that failed, so the next round can repair the argument or return to exploring a different strategy.[^colosseum]
+
+Failed drafts remain available with their reviews attached. The next worker inherits both the attempted argument and the reasons for distrusting it. The reviewers can still be wrong. But their findings now change what happens next, and an unresolved objection can survive the departure of the agent that raised it.
+
 Who gets access to that procedure matters. A critic cannot examine an assumption if it receives only the conclusion. A domain expert cannot contribute evidence if the system accepts objections only in the vocabulary of the ranking team. And an agent given a different name does not acquire a different evidential position. We need to vary access to relevant observations and expertise, not merely the adjectives in the role prompt.
 
 Longino's contribution also prevents a comfortable fantasy about the final judge. Our product owner may reasonably care about short-term revenue; a customer researcher may investigate unnecessary effort; an infrastructure team may worry about cost. Their observations can be reliable while their preferred decisions differ. More accurate measurement may clarify the disagreement without resolving the goals behind it.
@@ -388,6 +392,8 @@ Now the claim to be tested is harder. A change must do more than make the curren
 [^priority]: Tristan Buckmaster, [public statement](https://cims.nyu.edu/~tristanb/statement.pdf), September 2026, especially pp. 1–4; OpenAI, [‘On the Navier–Stokes Millennium Prize Problem,’ ‘Concurrent work’](https://openai.com/index/navier-stokes-solution/), updated 10 September 2026. These are the participants’ accounts.
 
 [^longino]: Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
+
+[^colosseum]: Honghao Lin et al., ‘Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,’ arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. [Paper](https://arxiv.org/html/2609.15983v2). The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
 
 [^planck]: Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn's text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
 
