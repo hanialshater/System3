@@ -316,7 +316,9 @@ The smaller claim is enough:
 
 **The agent beat our reference while I was not writing the solution algorithm for it.**
 
-That was the result I cared about: AI participating in **discovering better code**. The agent had found more than a packing. It had also worked out when to explore a new geometry and when to stay with one and refine it. Part of the method had emerged with the answer.
+That was the result I cared about—not that AI writes code faster, but that AI can participate in **discovering better code**.
+
+The important shift is not speed. It is who owns the next idea.
 
 ## The Algorithmic Vortex
 

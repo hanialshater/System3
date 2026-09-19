@@ -16,6 +16,8 @@ The first four chapters build pieces of that architecture without naming the who
 
 This is the spine to preserve in future edits. Philosophy of science is not a detachable philosophy section; it is the glue connecting the agent architecture.
 
+The book develops its synthesis through stories, provocative hypotheses, humor and discoveries made in public. Preserve the strange connections and the path by which an idea becomes clear. The preface should raise the central question through a short story or example; keep methodological qualifications with the claims they qualify. Add connective explanation only where the reader needs it, and retain an original line when it carries more energy or thought than its tidier replacement.
+
 ## Manuscript
 
 Chapters 6–12 are works in progress. The current developmental edit preserves Chapter 3's history as the derivation of the harness and layer architecture, and leaves Chapter 13 unchanged. Earlier evaluation notes describe earlier decisions; their word-count targets and “locked” labels do not govern this draft.

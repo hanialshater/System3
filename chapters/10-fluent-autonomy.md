@@ -78,7 +78,7 @@ A factual question may need one agent and a source. A difficult scientific claim
 
 The organization should be **as large as the uncertainty deserves and no larger**. This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
-What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution. It can then revise the arrangement as the work reveals what is missing.
+What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution.
 
 ## Fluency Is Selective Friction
 

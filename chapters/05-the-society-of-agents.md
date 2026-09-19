@@ -372,7 +372,7 @@ An agent that changes its evaluator and then receives a better score may have im
 
 Sixteen Claudes built the compiler. Carlini kept rebuilding the conditions under which they could build it.
 
-The rest of this book follows what happens as more of that institution becomes executable: what it can learn to change, and what authority over our lives we are willing to give it.
+The rest of this book is about moving that work inside the box.
 
 ---
 

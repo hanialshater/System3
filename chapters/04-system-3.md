@@ -479,7 +479,7 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 Daniel Dennett's phrase for the first half is competence without comprehension. Whether the second half amounts to comprehension is a question for people with more patience than I have; the part of it that can be checked is the part the rest of this chapter builds.
 
-Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts. Each addition answers something the freer system could get wrong. We are beginning to see what autonomy asks of its surroundings.
+Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
 
 Real systems will not stay that simple. The moment one agent inherits a claim from another, no participant can personally reconstruct every path back to reality. A trust chain can preserve where a claim came from. It does not, by itself, tell us how the knowers who depend on those chains should be arranged.
 
