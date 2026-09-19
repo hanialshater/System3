@@ -210,7 +210,7 @@ Automated hyperparameter tuning is old. The new part is that a general model can
 
 Improve the research loop and every later experiment may change. Systems such as Meta's **HyperAgents** push the recursion outward again by making parts of the task-level and meta-level machinery editable inside one program.
 
-Patterns, memory, evaluators, tools, workflows and organizational rules had already become executable culture. Now more of that culture is experimental material. The scientific institution can begin to **modify parts of the laboratory while the experiment is still running**.
+Patterns, memory, evaluators, tools, workflows and organizational rules had already become executable culture. Now more of that culture is experimental material, including the arrangements that decide which changes survive. The scientific institution can begin to **modify parts of the laboratory while the experiment is still running**.
 
 ## Experiments on the Laboratory
 

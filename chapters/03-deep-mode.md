@@ -100,7 +100,7 @@ That is the layer that remained stubbornly human: deciding what to try, which ev
 
 ## The Five Layers of AI Coding
 
-By then I had a rough map. Each layer marked a different kind of work we had learned to delegate, or were still trying to.
+By then I had a rough map. Each layer marked a different kind of work we had learned to delegate, or were still trying to. I could draw the stack afterward because each working layer had made the next unfinished job easier to see.
 
 **Layer 0—Model.** GPT, Claude, Gemini and whatever comes next: general capability in language, code, reasoning and vision.
 
@@ -390,7 +390,7 @@ This looked less like a loss function and more like a tiny institution. Not a go
 
 Humans face the same difficulty. One person's judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
 
-Apparently, when the clean loss function disappears, you eventually reinvent peer review.
+I had set out to build a better evaluator. Its failures kept giving the surrounding machinery more work to do.
 
 Philosophers who worry about AI often say that what machines lack is judgment as opposed to mere reckoning: the capacity to be answerable to the world, to care whether the answer is right rather than merely well formed. Brian Cantwell Smith makes the argument carefully, and I think it is half right. What the machine lacks is real. But judgment, in the cases where humans exercise it well, was never a private faculty either. It is a person plus a tradition, plus other people positioned to object, plus consequences that arrive whether or not anyone wants them. When I stopped looking for judgment inside the evaluator and started building it between evaluators, the problem did not disappear. It turned into an engineering problem, which is the kind I know how to have.
 
@@ -426,7 +426,7 @@ Suppose two Merge Sort branches both make recursive decomposition clear, but eva
 
 Nothing in that sequence is especially magical. We simply did not have to decide the sequence before the inquiry began. Otherwise Deep Mode would be a larger workflow diagram containing more rectangles.
 
-It is not a universal problem-solving procedure. It gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. The workflow itself becomes part of the search.
+It is not a universal problem-solving procedure. It gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result. The workflow itself becomes part of the search.
 
 ## What Emerged
 
@@ -478,9 +478,9 @@ Where did a claim come from? What was actually observed and what was inferred? W
 
 The problem is not merely remembering something, but knowing what standing it deserves.
 
-Humans ran into it long before AI. We built experiments, instruments, citations, peer review, reputation, replication, expert communities, legal standards, audits and all the other slightly annoying machinery that lets one person rely on something another person learned without personally repeating every experiment since Galileo.
+Humans ran into it long before AI. We keep records, ask where a claim came from, seek another opinion and learn which people to consult about which problems. Much of what I know depends on work I could not personally repeat.
 
-These institutions are imperfect. Sometimes they preserve error. Sometimes they reward conformity. Sometimes the shopping cart survives peer review.
+These arrangements are imperfect. Sometimes they preserve error. Sometimes they reward conformity. Sometimes the shopping cart survives the review.
 
 But their purpose is not to make every individual dramatically smarter—it is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
 

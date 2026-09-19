@@ -10,7 +10,7 @@ Ask for the incident procedure and the answer sounds like this:
 
 She writes down *ask Sam*. That preserves the dependency beautifully. It does less for the incident that happens while Sam is on holiday. She needs to know what he looks for in the serializer, why he looks there, and when that suspicion is a waste of time.
 
-Carlini's compiler project depended on this kind of transfer. Its workers inherited code, tests, progress files, and procedures. The previous chapter followed the institution that made those inheritances possible. Now we have to open the files. What, exactly, should the institution leave inside them?
+Carlini's compiler project depended on this kind of transfer. Its workers inherited code, tests, progress files, and procedures. The institution had taken shape around failures; its next workers needed to inherit what those failures had taught it. Now we have to open the files. What, exactly, should the institution leave inside them?
 
 We could write “question your assumptions” at the top of every prompt. It would improve the atmosphere. It would not tell a machine which conclusion to withdraw when an assumption fails, which experiment could distinguish two explanations, or who is allowed to spend the money on that experiment.
 

@@ -1,19 +1,23 @@
 # Preface
 
-What could a billion-parameter reasoning machine learn from a camel trying to touch its ear with its tongue?
+This book began with a fairly unreasonable ambition: hand an AI system a problem, go get coffee, and come back to find that the work had continued without me. The coffee was the test.
 
-The two figures on the cover are Ferdinand de Saussure and Ludwig Wittgenstein. For Saussure, words acquire value through their relations to other words. Wittgenstein's later work put language inside the activities of life: *fire* is something you cook with, gather around and shout when the building is burning. Neither lived to see these questions become an engineering problem.
+The models could do much of the work. I was still choosing the next move, noticing when it had gone wrong, carrying lessons between attempts and deciding which result deserved another hour. Almost everything that made the work hang together still passed through me.
 
-This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. It follows what happened when I tried to build that kind of autonomy, from a square full of circles to systems whose work I could no longer judge with one convenient score.
+My first instinct was to build more machinery: choose the steps, connect the tools, write the controller. Then a circle-packing experiment made much of my controller look unnecessary. Given room to try things and a way to judge the result, the agent could discover more of the method for itself. I had wanted an answer I hadn't specified. I was beginning to get a way of working I hadn't specified either.
 
-Along the way it becomes a book about knowledge: how a machine trained on human language can still be caught being wrong, and what has to be built around it so that being wrong has consequences. What took shape already had a name.
+That is the possibility this book follows: emergence reaching beyond the solution into the architecture that produces it. How much of that architecture can take shape through the work itself? What has to remain dependable while the rest changes? And when the work outgrows anything one participant can understand, what holds it together?
 
-It is also written inside the event it describes. A good share of its evidence is from 2025 and 2026, and some of it will be out of date before you finish reading. I have tried to treat those results the way the book says results should be treated: as claims with a source, a date and an expiry, not as settled facts. If the examples age and the argument does not, the book has done its job.
+We still build the parts and choose the conditions. But each attempt reveals something missing, and repairing it changes what becomes possible next. The arrangement acquires a shape we did not begin by drawing.
+
+That took me from algorithms into questions about knowledge: how a machine trained on human language can be caught being wrong, and how that discovery changes what happens next. A camel trying to touch its ear with its tongue turns out to be relevant, as do the two philosophers on the cover, Saussure and Wittgenstein.
+
+Once that larger shape comes into view, memory, self-improvement and trust become parts of the same argument. Its consequences reach the people these systems are supposed to help.
+
+The book is written inside the event it describes. Much of its evidence comes from 2025 and 2026, and some will be out of date before you finish reading. I have treated those results as claims with a source, a date and an expiry. If the examples age and the argument does not, the book has done its job.
 
 It is written for engineers who suspect the missing piece is not a bigger model, for researchers who want another frame, and for builders ready to stop directing and start hiring.
 
-The impressive part is how far you can get with the right architecture. The dangerous part is forgetting that the architecture is doing the work.
+I wanted a system that could find its own way through a problem. I had not expected the attempt to change my idea of what a system should be.
 
-*Hani Al-Shater*
-
-*August 2026*
+*Hani Al-Shater — August 2026*

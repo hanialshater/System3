@@ -42,7 +42,7 @@ The harness kept changing. Near the end, new features started breaking old ones,
 
 Specialization addressed work the next failing test would never ask anyone to do. LLM-written code kept re-implementing what already existed. Someone needed to look for duplicates. Someone needed to improve the compiler's own speed, and someone else the quality of the code it emitted. Carlini assigned those roles, along with an agent to review the structure as a Rust developer and another to work on documentation, which is normally the moment you know a civilization has become serious. The crowd had become a staff.
 
-Look at the harness and every part carries the mark of a problem. Two workers reach for the same task, so there is a lock. A worker arrives with no memory, so there is a progress file. New features break old ones, so there is CI. Linux stops the whole crowd, so the harness learns to split it into smaller questions. None of the agents arriving on the last day needed to have lived through that history. The history was in the structure.
+Look at the harness and every part carries the mark of a problem. Two workers reach for the same task, so there is a lock. A worker arrives with no memory, so there is a progress file. New features break old ones, so there is CI. Linux stops the whole crowd, so the harness learns to split it into smaller questions. Carlini deliberately built the repairs; the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history. The history was in the structure.
 
 Same models. Different institution.
 
@@ -360,6 +360,8 @@ We call it science.
 
 System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
 
+The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.
+
 It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. A record can be buried; an objection can be ignored. Their survival depends on how the institution works.
 
 One question remains. Who changes the arrangement when the arrangement is the problem?
@@ -370,7 +372,7 @@ An agent that changes its evaluator and then receives a better score may have im
 
 Sixteen Claudes built the compiler. Carlini kept rebuilding the conditions under which they could build it.
 
-The rest of this book is about moving that work inside the box.
+The rest of this book follows what happens as more of that institution becomes executable: what it can learn to change, and what authority over our lives we are willing to give it.
 
 ---
 

@@ -256,7 +256,7 @@ The store does not literally build itself. It learns how to build more of the ex
 
 I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
-I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
+The same pressure was back: capable components had to work together on a problem no single component could judge. The design kept needing machinery for finding out where it was wrong. I had spent ten chapters arguing that these ideas belonged together, and a recommendation problem was making me build them together.
 
 That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
 

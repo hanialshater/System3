@@ -6,7 +6,7 @@ By Hani M.M. Al-Shater
 
 ## Central thesis
 
-The book's central architectural claim is that the problem of autonomous agents is, surprisingly, an old problem:
+The book follows emergence from solutions into methods, workflows and the institutions that make autonomous work possible. Its central architectural claim is that, as we build autonomous AI, we keep rediscovering science as its architecture. The parts are deliberately designed; the larger arrangement develops through attempts, failures and repairs around an old problem:
 
 > **How can bounded, fallible minds produce knowledge and action that remain answerable to a world none of them understands alone?**
 
@@ -22,7 +22,7 @@ Chapters 6–12 are works in progress. The current developmental edit preserves 
 
 ### Front matter
 
-- [Preface](chapters/00-preface.md) — camels, coffee, and the argument for building autonomy
+- [Preface](chapters/00-preface.md) — the coffee test and the question of how autonomy's architecture takes shape
 
 ### Revised / established arc
 

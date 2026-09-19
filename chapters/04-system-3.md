@@ -234,7 +234,7 @@ System 3 asks: *What are we entitled to treat as known?*
 
 It cuts across the stack. The model proposes something. The coding agent may test it. The application can collect real user behavior. Deep Mode may compare research, simulation and evaluation. Even Layer 4—the goal itself—can change when reality pushes back.
 
-If the five layers tell us **where** increasingly abstract work happens, System 3 is what keeps those layers **epistemically connected**.
+If the five layers tell us **where** increasingly abstract work happens, System 3 is what keeps those layers **epistemically connected**. Without it, delegating more of the work can give an unsupported claim more places to travel. The growing stack needs a way to carry the grounds for trust along with the work.
 
 ## Code Can Touch Back
 
@@ -479,7 +479,7 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 Daniel Dennett's phrase for the first half is competence without comprehension. Whether the second half amounts to comprehension is a question for people with more patience than I have; the part of it that can be checked is the part the rest of this chapter builds.
 
-Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
+Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts. Each addition answers something the freer system could get wrong. We are beginning to see what autonomy asks of its surroundings.
 
 Real systems will not stay that simple. The moment one agent inherits a claim from another, no participant can personally reconstruct every path back to reality. A trust chain can preserve where a claim came from. It does not, by itself, tell us how the knowers who depend on those chains should be arranged.
 

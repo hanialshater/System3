@@ -7,6 +7,7 @@ The Zen of Autonomy
 
 Conditions over commands.
 The farmer grows nothing. The plant does.
+Let the work change the architecture.
 
 Never write solution code.
 Spawn, evaluate, prune.
