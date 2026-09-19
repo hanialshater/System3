@@ -14,7 +14,7 @@ The two figures on the cover are Ferdinand de Saussure and Ludwig Wittgenstein. 
 
 This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. It follows what happened when I tried to build that kind of autonomy, from a square full of circles to systems whose work I could no longer judge with one convenient score.
 
-Along the way it becomes a book about knowledge: how a machine trained on human language can still be caught being wrong, and what has to be built around it so that being wrong has consequences.
+Along the way it becomes a book about knowledge: how a machine trained on human language can still be caught being wrong, and what has to be built around it so that being wrong has consequences. What took shape already had a name.
 
 It is also written inside the event it describes. A good share of its evidence is from 2025 and 2026, and some of it will be out of date before you finish reading. I have tried to treat those results the way the book says results should be treated: as claims with a source, a date and an expiry, not as settled facts. If the examples age and the argument does not, the book has done its job.
 
@@ -224,7 +224,7 @@ I find that exciting and uncomfortable in roughly equal measure, which is probab
 
 The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without a debate about aesthetics, pedagogy or whether the users are “delighted.”
 
-That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success.
+That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success. If the bet is right, the less convenient problems will force us to build an architecture we have met before.
 
 What we stop doing is telling the agent how to get there.
 
@@ -233,6 +233,7 @@ Inside that space, we let it search.
 If that fails, the whole argument has a problem.
 
 If it works, things get much more interesting.
+
 
 # Chapter 2: The Algorithm Vortex
 
@@ -1723,7 +1724,7 @@ Obviously some of it lives in Claude. But which Claude?
 
 The parser agent does not know what the performance agent knows. Neither remembers the previous session, and neither will exist next week. Some knowledge lives in code, some in tests, Git history, progress files, task boundaries and conventions. Some lives in GCC, which the project trusts as a reference for particular questions. Some lives in Carlini's head; he is the one who notices that the organization no longer fits the work and changes the harness.
 
-In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it World 3. The compiler project is a small World 3 with a Git remote.[^popper]
+In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it World 3. The compiler project is a small World 3 with a Git remote.[^popper-world3]
 
 Popper insisted on two properties of that world. We make it, but we do not control everything that follows from it: once a theory is written down it has consequences its author never saw, and problems nobody has noticed yet are already sitting in it. And it keeps our mistakes as carefully as our discoveries. A refuted theory is still a citizen of World 3; it just has a bad reputation.
 
@@ -2001,6 +2002,22 @@ A later investigator needs to be able to pull at that history. Where did the ass
 
 We can test whether these arrangements earn their keep. Keep the model and budget fixed. Give the critic another title, then give her evidence the builder never saw, and compare what she catches. Put a bad diagnosis in a progress file. Compare a system that merely remembers it with one that can trace it to the failed test it misdescribes. Does the mistake survive into the next worker's plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing.
 
+```{=latex}
+\clearpage
+```
+
+Give an agent a bounded problem and a referee it cannot charm, and it can find a direction nobody put in the plan.
+
+When judgment is less cooperative, it needs several judges, kept independent and made to use the thing.
+
+A claim needs a route back to something that could have said no.
+
+Sixteen agents need records, standards, specialists and a second witness capable of being wrong differently.
+
+Each piece answered a failure in the work. The institution emerged from the repairs.
+
+What the pieces buy is capacity: a claim that survives its author, an objection that survives the person who would rather not hear it, and things a population can attempt that none of its members could.
+
 I thought I was designing a society of agents.
 
 Humanity had already spent centuries building a society of fallible knowers.
@@ -2009,7 +2026,7 @@ We call it science.
 
 System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
 
-It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. We have spent centuries finding ways for a claim to survive its author, and for an objection to survive the person who would prefer not to hear it. Neither is guaranteed. Both can be built into the way the work is done.
+It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. A record can be buried; an objection can be ignored. Their survival depends on how the institution works.
 
 One question remains. Who changes the arrangement when the arrangement is the problem?
 
@@ -2027,7 +2044,7 @@ The rest of this book is about moving that work inside the box.
 
 [^carlini]: Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler's achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
 
-[^popper]: Karl Popper, “Epistemology Without a Knowing Subject,” lecture delivered in 1967, collected in *Objective Knowledge: An Evolutionary Approach* (1972). See the discussion of World 3, the machine-produced logarithm tables, and the two library thought experiments.
+[^popper-world3]: Karl Popper, “Epistemology Without a Knowing Subject,” lecture delivered in 1967, collected in *Objective Knowledge: An Evolutionary Approach* (1972). See the discussion of World 3, the machine-produced logarithm tables, and the two library thought experiments.
 
 [^stone-date]: The 2019 year is a chronology calculation, not an inference from the anime's release date. In the awakening sequence, Senku gives an elapsed count of 117,354,893,870 seconds and dates his awakening to 1 April 5738. Subtracting that interval places the petrification in June 2019. See *Dr. Stone*, chapter 13, “Stone World the Beginning,” adapted in season 1, episode 5; the sequence and count are also transcribed in [this chapter-by-chapter reading](https://note.com/sasa_yutu/n/n4106cceaec3d). The year agrees with the [series plot chronology](https://en.wikipedia.org/wiki/Dr._Stone#Plot). The opening retains the year without asserting an exact day or time.
 
@@ -2710,7 +2727,7 @@ A self-improving harness therefore starts to look less like ordinary software ma
 
 By 2026, this was consolidating into its own practical discipline: harness design, context engineering, self-improving harnesses and eventually joint optimization of harness and model weights.
 
-Some of the philosophical questions now have places to live in the implementation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
+Again, an engineering problem has brought us back to science—this time with the laboratory itself under investigation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
 The memory-policy experiment might establish a gain on today's tasks. To establish the recursive step, we would also have to investigate what happens to later research: does the changed system find useful interventions more reliably, test them more economically, or avoid failures that previously wasted whole runs? The learner has reached the institution that housed it. This is science turning inward.
 
@@ -3639,7 +3656,7 @@ Double Descent Life is the wager that cheap capacity opens another route: an att
 
 Not all capacity. We still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
-The earlier chapters built ways to distinguish what works from what merely looks convincing. Here I want to follow what they make possible.
+The earlier chapters followed engineering failures until the machinery assembled around them became recognizable as science. Double Descent Life asks what people could attempt if that machinery were within reach.
 
 ## Owning the Frontier
 
@@ -4051,6 +4068,23 @@ Left it there.
 **THE END**
 
 
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+```
+
+We built scaffolds for AI because they couldn't do it alone.\
+We built scaffolds for ourselves for the same reason.
+
+```{=latex}
+\end{center}
+\vspace*{\fill}
+\clearpage
+```
+
+
 # Appendix: The Zen of Autonomy
 
 ```text
@@ -4107,8 +4141,6 @@ Construct knowingly. Build anyway.
 The tongue cannot reach the ear.
 Build a system that can check.
 
-We built scaffolds for AI because they couldn't.
-We built scaffolds for ourselves for the same reason.
 ```
 
 
