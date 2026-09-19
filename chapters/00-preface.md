@@ -6,7 +6,7 @@ The two figures on the cover are Ferdinand de Saussure and Ludwig Wittgenstein. 
 
 This book is about autonomy—not the marketing kind, the kind where you hand a system a problem, go get coffee, and the coffee is the test. It follows what happened when I tried to build that kind of autonomy, from a square full of circles to systems whose work I could no longer judge with one convenient score.
 
-Along the way it becomes a book about knowledge: how a machine trained on human language can still be caught being wrong, and what has to be built around it so that being wrong has consequences.
+Along the way it becomes a book about knowledge: how a machine trained on human language can still be caught being wrong, and what has to be built around it so that being wrong has consequences. What took shape already had a name.
 
 It is also written inside the event it describes. A good share of its evidence is from 2025 and 2026, and some of it will be out of date before you finish reading. I have tried to treat those results the way the book says results should be treated: as claims with a source, a date and an expiry, not as settled facts. If the examples age and the argument does not, the book has done its job.
 

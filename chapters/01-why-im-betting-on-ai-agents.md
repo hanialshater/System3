@@ -196,7 +196,7 @@ I find that exciting and uncomfortable in roughly equal measure, which is probab
 
 The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without a debate about aesthetics, pedagogy or whether the users are “delighted.”
 
-That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success.
+That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success. If the bet is right, the less convenient problems will force us to build an architecture we have met before.
 
 What we stop doing is telling the agent how to get there.
 

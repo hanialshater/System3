@@ -54,6 +54,4 @@ Construct knowingly. Build anyway.
 The tongue cannot reach the ear.
 Build a system that can check.
 
-We built scaffolds for AI because they couldn't.
-We built scaffolds for ourselves for the same reason.
 ```

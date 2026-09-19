@@ -222,7 +222,7 @@ A self-improving harness therefore starts to look less like ordinary software ma
 
 By 2026, this was consolidating into its own practical discipline: harness design, context engineering, self-improving harnesses and eventually joint optimization of harness and model weights.
 
-Some of the philosophical questions now have places to live in the implementation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
+Again, an engineering problem has brought us back to science—this time with the laboratory itself under investigation. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
 The memory-policy experiment might establish a gain on today's tasks. To establish the recursive step, we would also have to investigate what happens to later research: does the changed system find useful interventions more reliably, test them more economically, or avoid failures that previously wasted whole runs? The learner has reached the institution that housed it. This is science turning inward.
 

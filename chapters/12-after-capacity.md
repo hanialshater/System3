@@ -30,7 +30,7 @@ Double Descent Life is the wager that cheap capacity opens another route: an att
 
 Not all capacity. We still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
-The earlier chapters built ways to distinguish what works from what merely looks convincing. Here I want to follow what they make possible.
+The earlier chapters followed engineering failures until the machinery assembled around them became recognizable as science. Double Descent Life asks what people could attempt if that machinery were within reach.
 
 ## Owning the Frontier
 
