@@ -1,19 +1,39 @@
 # Preface
 
-I built a system to make an AI agent autonomous. Then I deleted most of it.
+What if we could calculate an argument?
 
-The job was to pack circles into a square. I had a database of programs, selection logic, mutation prompts and a controller deciding what happened next. It was a satisfying amount of engineering. Then I looked at the coding agent helping me build it and wondered why I was writing so much machinery to tell it how to work.
+In the seventeenth century, Leibniz imagined a language so precise that two people could settle a disagreement by working through the symbols. *Calculemus*. Let us calculate. Politics? Ethics? Even your uncle’s special feeling for the market: excellent, uncle. Show us the equation.
 
-So I left it with the evaluator, told it to find a better packing, and went for coffee. It tried strategies, got stuck, changed direction and found a useful arrangement I hadn't put in the plan. It also decided when to stop inventing new geometries and start refining the one that worked. My controller had opinions about all of this. It was no longer there to express them.
+He aspired to discover truths and inventions through a universal calculus of thought. Two years before his death, he was still wishing for more time and talented people to help him.
 
-I had expected a solution I hadn't specified. Watching the agent change its own approach left me wondering how much of the surrounding machinery I had been specifying unnecessarily.
+Even Leibniz needed a team.
 
-What happens when the architecture itself is allowed to emerge?
+There is a familiar distance between seeing a possibility and having the capacity to pursue it.
 
-This book follows that question beyond the square, into problems where the evaluator is part of the difficulty and nobody can keep the whole undertaking in their head. A camel trying to touch its ear with its tongue gets involved. So do Saussure and Wittgenstein, the two philosophers on the cover. Their ideas about language turned out to have consequences for my software.
+Sometimes a small paper opens that distance beneath your feet. In 2017, Poincaré embeddings showed how hierarchies could fit into hyperbolic space. A year later, researchers were building neural networks there. A geometric insight was acquiring tools, inhabitants and extensions. MAP-Elites opened another territory: whole landscapes of good, different solutions, including behaviours that helped damaged robots learn to move again.
 
-It is written for engineers who suspect the missing piece is not a bigger model, for researchers who want another frame, and for builders ready to stop directing and start hiring.
+Someone opens a possibility. Other people arrive, build on it, discover problems and make things the original authors never specified. Eventually there is a cathedral where somebody once had a peculiar question.
 
-The impressive part is how far you can get with the right architecture. The dangerous part is forgetting that the architecture is doing the work.
+Usually, you get to help with a brick.
 
-*Hani Al-Shater — August 2026*
+Now imagine reading such a paper, describing what excites you to a group of AI agents, and going for coffee.
+
+When you return, there is a cathedral. An experiment has overturned your favourite assumption. Something built to investigate the failure has become the most interesting part. There is a working demonstration of an idea you haven’t had yet.
+
+Your coffee is still too hot.
+
+What changed was the mental capacity available to pursue the question. Enough work could happen, in enough directions, for discoveries to reshape the undertaking while you were away. Its complexity grew beyond what you could specify. Its organisation emerged through the work. You could begin something that once required the power to assemble an institution.
+
+Complexity over engineering. Emergence over design. Capacity over power. That is what happened while you were getting coffee.
+
+Humans already build beyond the limits of any individual mind. AI gives us new access to that capacity—and a reason to look again at the architecture that sustains it.
+
+It is September 2026 as I write this. OpenAI has reported an AI-generated solution to the Navier–Stokes Millennium Prize problem, produced by a group of roughly ten thousand agents working concurrently. The effort reached its result after about eighty-eight hours, followed by seventeen more for formalisation and verification. [¹](<https://openai.com/index/navier-stokes-solution/>)
+
+A long coffee, admittedly.
+
+Leibniz wanted talented people to help him. Three centuries later, we are learning what becomes possible when a question can occupy thousands of artificial minds.
+
+That capacity is taking shape as these lines are being written. I invite you on a journey to rediscover the ultimate AI architecture that makes it possible.
+
+Rediscover! Back to the future, then. Bring your coffee.
