@@ -8,25 +8,21 @@ date: "August 2026"
 
 # Preface
 
-This book began with a fairly unreasonable ambition: hand an AI system a problem, go get coffee, and come back to find that the work had continued without me. The coffee was the test.
+I built a system to make an AI agent autonomous. Then I deleted most of it.
 
-The models could do much of the work. I was still choosing the next move, noticing when it had gone wrong, carrying lessons between attempts and deciding which result deserved another hour. Almost everything that made the work hang together still passed through me.
+The job was to pack circles into a square. I had a database of programs, selection logic, mutation prompts and a controller deciding what happened next. It was a satisfying amount of engineering. Then I looked at the coding agent helping me build it and wondered why I was writing so much machinery to tell it how to work.
 
-My first instinct was to build more machinery: choose the steps, connect the tools, write the controller. Then a circle-packing experiment made much of my controller look unnecessary. Given room to try things and a way to judge the result, the agent could discover more of the method for itself. I had wanted an answer I hadn't specified. I was beginning to get a way of working I hadn't specified either.
+So I left it with the evaluator, told it to find a better packing, and went for coffee. It tried strategies, got stuck, changed direction and found a useful arrangement I hadn't put in the plan. It also decided when to stop inventing new geometries and start refining the one that worked. My controller had opinions about all of this. It was no longer there to express them.
 
-That is the possibility this book follows: emergence reaching beyond the solution into the architecture that produces it. How much of that architecture can take shape through the work itself? What has to remain dependable while the rest changes? And when the work outgrows anything one participant can understand, what holds it together?
+I had expected a solution I hadn't specified. Watching the agent change its own approach left me wondering how much of the surrounding machinery I had been specifying unnecessarily.
 
-We still build the parts and choose the conditions. But each attempt reveals something missing, and repairing it changes what becomes possible next. The arrangement acquires a shape we did not begin by drawing.
+What happens when the architecture itself is allowed to emerge?
 
-That took me from algorithms into questions about knowledge: how a machine trained on human language can be caught being wrong, and how that discovery changes what happens next. A camel trying to touch its ear with its tongue turns out to be relevant, as do the two philosophers on the cover, Saussure and Wittgenstein.
-
-Once that larger shape comes into view, memory, self-improvement and trust become parts of the same argument. Its consequences reach the people these systems are supposed to help.
-
-The book is written inside the event it describes. Much of its evidence comes from 2025 and 2026, and some will be out of date before you finish reading. I have treated those results as claims with a source, a date and an expiry. If the examples age and the argument does not, the book has done its job.
+This book follows that question beyond the square, into problems where the evaluator is part of the difficulty and nobody can keep the whole undertaking in their head. A camel trying to touch its ear with its tongue gets involved. So do Saussure and Wittgenstein, the two philosophers on the cover. Their ideas about language turned out to have consequences for my software.
 
 It is written for engineers who suspect the missing piece is not a bigger model, for researchers who want another frame, and for builders ready to stop directing and start hiring.
 
-I wanted a system that could find its own way through a problem. I had not expected the attempt to change my idea of what a system should be.
+The impressive part is how far you can get with the right architecture. The dangerous part is forgetting that the architecture is doing the work.
 
 *Hani Al-Shater — August 2026*
 
@@ -547,7 +543,9 @@ The smaller claim is enough:
 
 **The agent beat our reference while I was not writing the solution algorithm for it.**
 
-That was the result I cared about: AI participating in **discovering better code**. The agent had found more than a packing. It had also worked out when to explore a new geometry and when to stay with one and refine it. Part of the method had emerged with the answer.
+That was the result I cared about—not that AI writes code faster, but that AI can participate in **discovering better code**.
+
+The important shift is not speed. It is who owns the next idea.
 
 ## The Algorithmic Vortex
 
@@ -1069,8 +1067,6 @@ Builders proposed alternatives. Different judges approached them with different 
 This looked less like a loss function and more like a tiny institution. Not a good institution automatically. Institutions can amplify conformity, entrench bad assumptions and become spectacularly efficient at measuring the wrong thing.
 
 Humans face the same difficulty. One person's judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
-
-I had set out to build a better evaluator. Its failures kept giving the surrounding machinery more work to do.
 
 Philosophers who worry about AI often say that what machines lack is judgment as opposed to mere reckoning: the capacity to be answerable to the world, to care whether the answer is right rather than merely well formed. Brian Cantwell Smith makes the argument carefully, and I think it is half right. What the machine lacks is real. But judgment, in the cases where humans exercise it well, was never a private faculty either. It is a person plus a tradition, plus other people positioned to object, plus consequences that arrive whether or not anyone wants them. When I stopped looking for judgment inside the evaluator and started building it between evaluators, the problem did not disappear. It turned into an engineering problem, which is the kind I know how to have.
 
@@ -1653,7 +1649,7 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 Daniel Dennett's phrase for the first half is competence without comprehension. Whether the second half amounts to comprehension is a question for people with more patience than I have; the part of it that can be checked is the part the rest of this chapter builds.
 
-Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts. Each addition answers something the freer system could get wrong. We are beginning to see what autonomy asks of its surroundings.
+Everything so far can still be imagined around one agent: it acts, checks, remembers, records provenance and updates what it trusts.
 
 Real systems will not stay that simple. The moment one agent inherits a claim from another, no participant can personally reconstruct every path back to reality. A trust chain can preserve where a claim came from. It does not, by itself, tell us how the knowers who depend on those chains should be arranged.
 
@@ -2042,7 +2038,7 @@ An agent that changes its evaluator and then receives a better score may have im
 
 Sixteen Claudes built the compiler. Carlini kept rebuilding the conditions under which they could build it.
 
-The rest of this book follows what happens as more of that institution becomes executable: what it can learn to change, and what authority over our lives we are willing to give it.
+The rest of this book is about moving that work inside the box.
 
 ---
 
@@ -3008,7 +3004,7 @@ This is not a search for one perfect judge. It is closer to sensor fusion, with 
 
 The Merge Sort work had taught me the small version of this. My judgment, the simulated beginner's criticism and the browser's observations answered different questions. Collapsing them into one vote would have thrown away the disagreement that made them useful. The oversight problem is to preserve that difference when the work outgrows my ability to inspect it myself.
 
-That is the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. Its organization has to change as it discovers failures its designers did not anticipate. And it retains a route back to humans when the evidence stops being decisive.
+That is the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
 
 This is why I prefer **scalable oversight** to the image of a giant alignment rulebook. A rulebook assumes we already know the failures. A research institution expects to discover new ones.
 
@@ -3324,7 +3320,7 @@ A factual question may need one agent and a source. A difficult scientific claim
 
 The organization should be **as large as the uncertainty deserves and no larger**. This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
-What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution. It can then revise the arrangement as the work reveals what is missing.
+What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution.
 
 ## Fluency Is Selective Friction
 
@@ -3621,7 +3617,7 @@ The store does not literally build itself. It learns how to build more of the ex
 
 I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
-The same pressure was back: capable components had to work together on a problem no single component could judge. The design kept needing machinery for finding out where it was wrong. I had spent ten chapters arguing that these ideas belonged together, and a recommendation problem was making me build them together.
+I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
 
 That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
 
