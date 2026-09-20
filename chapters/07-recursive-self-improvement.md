@@ -26,7 +26,7 @@ There are reasons to try. Improve one solution and you get one better solution. 
 
 Nor do all useful investigations begin with a known destination. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient. We would like a learner to discover something its teacher did not know to ask for. That makes it much harder to decide whether the learner is getting anywhere.
 
-Let us give Chapter 6's store another ambition. Its research agents can already propose and review ranking experiments. Now we ask them to improve the way they do that work. They inherit procedures, instruments and a record of mistakes. Which of those arrangements should they be allowed to change? Each time they appear to need less instruction, the attempt will uncover another job the teacher had been doing.
+Let us put Chapter 6's pattern language to work inside an organization. Imagine an online store whose research agents use it: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They can already propose and review ranking experiments. Now we ask them to improve the way they do that work. They inherit procedures, instruments and a record of mistakes. Which of those arrangements should they be allowed to change? Each time they appear to need less instruction, the attempt will uncover another job the teacher had been doing.
 
 ## The Teacher Moves Into the Walls
 
@@ -80,9 +80,9 @@ The store can investigate new seller behavior and update again. But a research o
 
 ## Maybe the Reward Was the Problem
 
-Suppose clicks rise through these experiments, but customers in the follow-up study struggle to find a suitable product. We have already checked the event collection. The count is clean. The team can improve the learner, widen its exploration and defend against sellers gaming it, yet still be teaching it to produce more work for the customer.
+Suppose clicks rise through these experiments, but customers in a follow-up study struggle to find a suitable product. The team checks the event collection. The count is clean. We have met Bing's problem again: an accurate count can reward a worse experience. The team can improve the learner, widen its exploration and defend against sellers gaming it, yet still be teaching it to produce more work for the customer.
 
-The customer researcher in Chapter 6 asked for a different unit: the shopping task. The research agent now proposes to learn an account of what shoppers want. That sounds reasonable. Where would the account come from?
+Bing's researchers separated repeated effort from reasons to return, using sessions as a practical proxy for tasks. Our research agent now proposes to learn an account of what shoppers want. That sounds reasonable. Where would the account come from?
 
 Andrew Ng and Stuart Russell's 2000 paper on **inverse reinforcement learning** reversed the usual setup. Instead of receiving a reward function and learning a policy, the learner observes behavior and asks which reward functions could make that behavior look optimal.[^irl]
 
