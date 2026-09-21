@@ -142,7 +142,7 @@ Even a Merge Sort demo has an absurd design space. Bars or cards? Numbers or a t
 
 When implementation was expensive, we dealt with much of this complexity by trying to decide more before building. AI coding changes the economics. If another implementation costs minutes rather than days, I do not have to choose quite so much in advance.
 
-Circle packing had already shown the basic move. One hill climber inherits its own history; evolutionary search maintains alternatives. Here what evolves can be more than a vector of parameters or even an algorithm: an **idea embodied in software**.
+Here what evolves can be more than a vector of parameters or even an algorithm: an **idea embodied in software**.
 
 One builder tries a recursion tree. Another focuses on the array. A third begins from the learner's misconception. Mutations can be conceptual: remove the text, teach backward, make the learner predict, show synchronized representations, abandon interaction altogether.
 
@@ -342,7 +342,7 @@ Showing two artifacts and asking, “Which one would you rather give to somebody
 
 Relative judgment asks less of the evaluator. It does not require a stable internal unit called one pedagogy point. With many candidates, a model such as Bradley–Terry can infer an ordering from a subset of pairwise preferences. More important for the next generation, the explanation for each preference can survive alongside the ranking.
 
-Pairwise comparison removes some fake precision. It does not repair a biased judge. Bradley–Terry can aggregate preferences; it cannot make those preferences true.
+Bradley–Terry can aggregate preferences; it cannot make those preferences true.
 
 So I stopped asking one evaluator to represent everybody. A learner can inspect the artifact from the knowledge boundary we developed above. A teacher can focus on explanatory sequence. Another evaluator can look for cognitive load or accessibility. A domain expert can make sure our elegant simplification has not become false.
 
@@ -364,8 +364,6 @@ The evaluator awards two extra points when every tree node has the same color as
 
 The first communicates a problem. The second communicates the test.
 
-Isolation cannot remove shared bias. Two supposedly independent evaluators may still inherit the same assumptions from their training, culture or examples. But without isolation we can destroy even the independence we might have had.
-
 References helped with another problem: drift. “This is excellent” means something different if the evaluator has seen only the last four generations of our own work. For these demos I could give it examples from Distill, 3Blue1Brown or Jay Alammar—not as templates to copy, but as calibration for the level of clarity and finish we were aiming at.
 
 A reference should help answer *how good?*, not *what should this become?* Calibrate too strongly against one aesthetic and every road leads to Distill.
@@ -375,8 +373,6 @@ And the judge should use the thing. An early mistake was evaluating applications
 I used to call the browser ground truth. That was too generous.
 
 The browser gives the evaluator contact with the artifact rather than a description of it. It can establish that an interaction works and observe what is visible at each point in the experience. It cannot establish that a human learned Merge Sort.
-
-A simulated beginner saying the explanation is understandable gives us a hypothesis. Several evaluators preferring one design gives us comparative evidence. Neither substitutes for putting the artifact in front of actual learners.
 
 The danger in a fully automated loop is that simulated evidence quietly replaces the expensive kind. Everything inside the machine agrees, the browser works, the ranking improves, and the loop congratulates itself.
 

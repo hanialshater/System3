@@ -110,6 +110,8 @@ The request can remain simple:
 
 In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
 
+<!-- SLOT 5 (objections): the book never states the strongest case against "System 3 is science" and answers it. A draft, "Five Ways This Could Be Wrong", is in drafts/objections-draft.md. It belongs here, before Monday Morning, in your voice. -->
+
 ## Monday Morning
 
 In an editing experiment, I can stop the work, change the brief and try again. A theory of fluent autonomy also has to survive systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.

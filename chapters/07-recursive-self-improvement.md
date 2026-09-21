@@ -46,7 +46,7 @@ Our ranker can learn within the arrangement we supplied. The research team still
 
 At the store, the researchers soon become the bottleneck. The ranker can update while they are still deciding what to try next. Giving them more candidate models may just lengthen the queue. We would like the process that searches for improvements to become better at searching.
 
-I have seen a small version of the answer, though I was getting coffee at the time and read it afterward in the trace. The circle-packing agent, left alone with an evaluator and a promise that I would be back, did not improve one algorithm. It changed algorithms. It tried numerical optimizers, noticed that some of them kept converging to the same poor solutions, changed how it built its starting configurations, and mixed those constructions with numerical refinement. The thing being searched was not only the packing. It was the procedure for searching packings. And when diagonal layering appeared and held, the agent's own behavior changed again: less inventing of geometries, more adjusting of tolerances and solver settings, the boring work that only matters once the last fraction of a percent becomes expensive. Nobody scheduled that shift. The learner's progress changed what kind of learner it needed to be. The only thing in the room that did not move was the evaluator, and I had put it there.
+I have seen a small version of the answer, though I was getting coffee at the time and read it afterward in the trace. The circle-packing agent, left alone with an evaluator and a promise that I would be back, did not improve one algorithm. It changed algorithms. The thing being searched was not only the packing. It was the procedure for searching packings. And when diagonal layering appeared and held, the agent's own behavior changed again: less inventing of geometries, more adjusting of tolerances and solver settings, the boring work that only matters once the last fraction of a percent becomes expensive. Nobody scheduled that shift. The learner's progress changed what kind of learner it needed to be. The only thing in the room that did not move was the evaluator, and I had put it there.
 
 The store's research agent could do something similar: notice that another round of tuning is unlikely to help, change the training examples or try a different model. That would move a research choice inside the system. It would not yet establish that the agent had become better at making such choices.
 
@@ -102,7 +102,7 @@ Preference-based reinforcement learning provided a practical cousin: ask humans 
 
 The system could now learn an estimate of what the teacher wanted. Unfortunately humans are not reward functions walking around in shoes. They are inconsistent, constrained, strategic, tired and sometimes unsure what they want until they see an option. Sometimes they click the article because they hate it. Seven clicks can be a customer finding things or a customer failing to.
 
-A learned judge inherits its own uncertainties. It may prefer style over substance, reward confident errors or fail outside the situations represented in its training. The learner can become better at satisfying the judge while the connection to what people wanted gets worse. Our agent can propose a new measure of shopping success. The team can collect observations to assess it. But allowing the ranker to learn from that measure does not settle whether the research agent may also use it to certify its own improvements. We have acquired another instrument, with its own need for checking.
+A learned judge may prefer style over substance or fail outside its training situations. Our agent can propose a new measure of shopping success, and the team can collect observations to assess it. But allowing the ranker to learn from that measure does not settle whether the research agent may also use it to certify its own improvements.
 
 ## The Learner Dreams, and the Dream Can Be Wrong
 
@@ -114,7 +114,7 @@ A useful simulation could make the queue cheaper to investigate. But the epistem
 
 Omar has met the informal version of this problem. His horror film supplied a repertoire of explanations, and one was waiting when the grass moved. Rehearsing an interpretation can make it available without making it true.
 
-The team can compare simulated behavior with observations from actual shoppers, restrict where the model is used and send uncertain cases to live study. None of this makes simulation worthless. It makes the simulator an instrument whose limits travel with its results. Otherwise self-improvement can make the institution better at generating experience while also making it easier to train inside its own misconception.
+The team can compare simulated behavior with actual shoppers, restrict where the model is used and send uncertain cases to live study. None of this makes simulation worthless. It makes the simulator an instrument whose limits travel with its results. Otherwise self-improvement can make the institution better at generating experience while also making it easier to train inside its own misconception.
 
 Once language-model agents use other models as judges, simulators, users and critics, this matters even more: at sufficient scale, a society of models can perfect the art of agreeing with itself.
 
@@ -140,7 +140,7 @@ The ambition is old. In the 1980s programs such as BACON rediscovered Kepler's t
 
 Systems such as Meta's HyperAgents make parts of both the task agent and the machinery improving it editable within one program.[^hyperagents] The scope of the experiment widens. Changing how the store's agent retrieves failed trials might affect every subsequent investigation. Changing how it selects successors might affect every subsequent version of the investigator.
 
-The methods and records in Chapter 6 gave the next worker something to inherit. Here the worker can experiment on how that inheritance is assembled, retrieved and judged. The scientific institution can begin to modify parts of the laboratory while the experiment is still running.
+The worker can now experiment on how its inheritance is assembled, retrieved and judged. The scientific institution can begin to modify parts of the laboratory while the experiment is still running.
 
 ## Experiments on the Laboratory
 

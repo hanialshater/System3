@@ -37,3 +37,5 @@ Leibniz wanted talented people to help him. Three centuries later, we are learni
 That capacity is taking shape as these lines are being written. I invite you on a journey to rediscover the ultimate AI architecture that makes it possible.
 
 Rediscover! Back to the future, then. Bring your coffee.
+
+<!-- SLOT 6 (reader map): a one-page map of what each chapter demonstrates, argues, designs or imagines. Draft in drafts/reader-map.md. It answers the "ultimate architecture" overreach without weakening any claim. -->

@@ -282,7 +282,7 @@ There is more to a person than the few abilities a career had room for. There ma
 
 I would like us to find out how much more.
 
-Who actually gets that freedom is a much larger book. This one has one argument left. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
+Who actually gets that freedom is a much larger book, and I can't tell you how it goes. Nobody in this field can. So this one has one argument left, and it is a prophecy. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
 ---
 

@@ -16,6 +16,7 @@ Zero framework. Bash is enough.
 Hit a wall? Build a tool.
 
 Harness immutable. Prompts evolve.
+The judged do not amend the judge alone.
 Cross-pollinate. Then prune.
 Discovery before polish.
 

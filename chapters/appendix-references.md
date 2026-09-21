@@ -186,6 +186,7 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Amartya Sen's capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>
 - Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>
 - Arnaud Fickinger et al., "Multi-Principal Assistance Games" (2020). <https://arxiv.org/abs/2007.09540>
+- Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 11 — The Store That Builds Itself
 

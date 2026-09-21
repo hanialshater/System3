@@ -124,11 +124,9 @@ The people who run experiments for a living have a reflex about results like Bin
 
 In a case like this the meeting goes roughly as follows; I am describing the genre, not Bing's minutes. One team says the treatment is fine and the logging double-counted. Another says the logging is fine and a redirect dropped users from one arm. Someone notices the two arms ran on different client versions. We have made contact with reality and acquired a meeting.
 
-The previous chapter met this problem through instruments that disagreed. Its name is the **Duhem–Quine thesis**: no hypothesis is tested alone. Every test involves a bundle of claims about the world, the apparatus, and the way the apparatus was used. A failed prediction puts that bundle in question. The failure alone does not identify which part needs revision.[^quine] Hence the meeting.
+This is the **Duhem–Quine** problem from the previous chapter: the test challenges a bundle of assumptions about the world and the apparatus without identifying which one failed.[^quine] Hence the meeting.
 
 The dependency record makes the meeting more useful. It shows which claim depended on which version, which pipeline, and which assumption about what counts as one user. Each of those is a candidate, and each suggests a probe that attacks one ambiguity: replay a known session and count the events, pin the client version, rerun the split.
-
-There is no rule that says a failed test must indict the main hypothesis. Always protecting it would be equally foolish. The system needs to keep alternative diagnoses alive long enough to find observations that separate them.
 
 One detail is easy to miss. A second measurement may share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. The provenance must reach the common source. Otherwise the institution manufactures a second witness by creating a second spreadsheet.
 
@@ -150,6 +148,37 @@ A system capable of this move has to keep alternative representations, not only 
 
 **Therefore: record what the number is taken to mean as a claim of its own, open to challenge separately from the count.** The interpretation and the success criterion each had a row in our table. A number can be correct while the decision it recommends is wrong.
 
+## Write the Lesson Down
+
+The next reviewer should not have to rediscover what happened at Bing. Here is the lesson written as a candidate pattern, with the reasons and uncertainty kept alongside the instruction:
+
+```yaml
+id: ask-what-the-number-means
+confidence: provisional, one incident
+context: A ranking or search experiment reports a gain in an activity metric.
+problem: Activity can rise because people are succeeding or because they are struggling.
+therefore:
+  - State what the metric is taken to mean as a separate claim.
+  - Name an observation that would differ under the two readings.
+  - Commit that observation before looking at the result.
+documented_case: degraded_results_raised_queries
+validation_cases_needed: [genuine_gain, misleading_gain, insufficient_evidence]
+part_of: review-an-experiment
+may_call: locate-the-failure
+evidence_record: number-meaning-evaluations
+open_questions: number-meaning-challenges
+on_support_withdrawn:
+  - Reassess dependent interpretations using their remaining support.
+  - Return recommendations that lost required support to review.
+  - Retain the earlier decision and the reason for its change.
+```
+
+The links carry knowledge too. This pattern belongs inside *review-an-experiment* and may call *locate-the-failure*. It should not call on every statistical procedure in the building. Which method helps with which difficulty, which methods are alternatives, and which preconditions must hold before a method makes sense: that is what Alexander's links were for.
+
+A pattern can also mix kinds of content that need different kinds of support. “Activity can rise because people are struggling” is a claim about the world. “Check this before running an expensive analysis” is a recommendation about effort. “Do not alter the live experiment” is an authority boundary. A successful test of the first does not justify the other two automatically.
+
+The field names do not carry the epistemology. The processes that read and update them do. An `open_questions` field that no decision ever consults is a decorative conscience. A link to evidence matters when the system follows it, notices that the evidence concerns another tool version, and changes what it is prepared to conclude.
+
 ## Change the Representation
 
 Bing could change what its metric stood for while keeping the business of search recognizable. A field can move further: change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
@@ -165,8 +194,6 @@ Kuhn gives us a way to examine the larger change: a **paradigm** supplies a fiel
 Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Those questions survive even when the fashionable result no longer has to answer them. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools. Each new arrangement makes certain questions easier to ask and others easier to forget.
 
 The examples are part of how a paradigm holds. Kuhn's scientists learn from exemplars that no complete list of explicit rules can replace. I wrote an editing brief for this book after explaining the same corrections to successive agents. One instruction was “preserve the wandering,” which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage can teach the distinction: one version follows an uncertain thought until it becomes clear; the other announces the conclusion and removes the path that made it convincing. Both can contain long paragraphs. Measuring their length would miss what the examples are there to teach. Those examples also carry my taste into the next session. Preserving my judgment and preserving my mistakes used the same file format.
-
-For an agent, the examples become part of the operational knowledge. They help it recognize the situation before selecting the procedure. They also establish a familiar way of seeing. If every approved example rewards the same kind of explanation, the system may become better at reproducing that explanation while losing the ability to notice what it excludes.
 
 There is no `paradigm_shift()` call. There can be operations for branching a representation, retaining the old interpretation, collecting missing observations, and exposing a disputed standard for decision. Those operations make a change possible. They do not guarantee that it is wise.
 
@@ -186,7 +213,7 @@ Lakatos adds a way to judge a **research programme** over time, by its patches. 
 
 If use and investigation are driven by the same score, the best-supported approach acquires a monopoly on becoming better supported. A new task retrieves the incumbent pattern because it has the strongest record. Successful applications add to that record. The alternative receives little use, so it accumulates little evidence. After a while the system has a large collection of observations about the incumbent and very few comparisons. It can accurately report the size of its evidence base while misleading itself about what that evidence establishes.
 
-Kitcher's **division of cognitive labor**, which we met in Chapter 5, makes the collective stakes explicit. A field does best when not everyone backs the favorite. Choices that are sensible for each investigator can add up to a badly diversified community.[^kitcher] We cannot solve that by instructing every agent to pursue its most promising idea independently when all of them inherit the same ranking of ideas.
+Kitcher's **division of cognitive labor** makes the collective stakes explicit. Choices that are sensible for each investigator can add up to a badly diversified community.[^kitcher] We cannot solve that by instructing every agent to pursue its most promising idea independently when all of them inherit the same ranking of ideas.
 
 Nor does protecting alternatives mean funding every objection forever. An alternative can receive a bounded experiment whose outcome determines the next decision. What would it teach us, what does it cost, and which later choices could it change?
 
@@ -204,17 +231,9 @@ The history of choosing the route also became disputed. Tristan Buckmaster descr
 
 A checked proof does not settle that history. Learning that a route is promising can affect where we invest without supplying a single step of the proof. The provenance of a proof and the provenance of the decision to pursue it answer different questions.
 
-The other programmes did not get an equal chance to become the next promising result. The money is part of the evidence story. Power enters scientific work through the ability to commission observations, supply instruments, define acceptable problems, and sustain a programme through unproductive intervals. In an agent system, the equivalents include tool access, compute budgets, experimental traffic, data collection, and permission to change what gets measured. These are parts of the inquiry even when they appear in another team's configuration.
+The other programmes did not get an equal chance to become the next promising result. The money is part of the evidence story. Power enters scientific work through the ability to commission observations, supply instruments, define acceptable problems, and sustain a programme through unproductive intervals. Harari's history of the Scientific Revolution makes the outside view blunt: science does not set its own priorities; whoever pays for it does.[^harari] In an agent system, the equivalents include tool access, compute budgets, experimental traffic, data collection, and permission to change what gets measured. These are parts of the inquiry even when they appear in another team's configuration.
 
-Consider what those decisions leave us knowing:
-
-*The researchers judged Navier–Stokes the best available bet.*
-
-*The other problems might have yielded to further work.*
-
-*Workers were moved before that question was answered.*
-
-A record that compresses this into “the other problems were less tractable” has hidden a decision about power inside a statement about knowledge. Nothing in the scene requires dishonesty. The researchers had good reasons for spending their compute where they did. But resource decisions help produce the evidential situation on which the next resource decision will rely.
+A record that compresses this into “the other problems were less tractable” has hidden a decision about power inside a statement about knowledge. Nothing in the scene requires dishonesty. The researchers had good reasons for moving their workers, but the questions left behind remained unanswered. Resource decisions help produce the evidential situation on which the next resource decision will rely.
 
 Control over evaluation adds another layer. Suppose the budget owner accepts only experiments that predict a higher value of the current metric, and the proposed study concerns whether that metric represents improvement. The researcher has been invited to challenge an assumption on the condition that she first accept it. So the request is split. One part proposes a study and goes to experimental review. The other asks whether the success criterion should change and goes to whoever owns the product goal. A rejection of the second is recorded as a decision about the goal. It cannot be counted as a failed test of the alternative.
 
@@ -264,7 +283,7 @@ Now return to the sixteen Claudes. Every worker is temporary. The institution ca
 
 A fresh agent reads the same progress file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessor has disappeared, but the commitments that shaped its work have been transferred intact. Session turnover is not the replacement Planck was describing. The next generation can be born with the old generation's entire syllabus already in context.
 
-This changes what we should examine. The durable incumbent may be a retrieval preference, a canonical example, a benchmark, or a rule that gives one research branch first access to compute. Replacing the model does not necessarily alter any of them. A more capable model may become more effective at defending the inherited arrangement.
+The durable incumbent may be a retrieval preference, a canonical example, a benchmark, or a rule giving one branch first access to compute. A more capable replacement model may defend it more effectively.
 
 The engineering response cannot be “delete old knowledge periodically.” Useful expertise would disappear with the errors, and newness would become another unearned source of authority. A branch has to be able to start without every commitment whose adequacy is in question, while keeping the constraints that are not in question: consent, cost, the integrity of the data. Its results then need a comparison whose terms are explicit and open to challenge. If no available comparison can decide the issue, that limitation belongs in the record. A new vocabulary does not entitle its author to victory.
 
@@ -288,9 +307,7 @@ In Terence Tao's collaboration with DeepMind, AlphaEvolve found a slightly impro
 
 Availability is only the beginning of reuse. Kevin Buzzard checked Anthropic's Fermat formalization while leading his own publicly funded project on the theorem. His commitments included adding useful mathematics to the community library and making a document through which people could explore the modern proof. A completed formalization did not discharge those commitments. He welcomed the achievement and still had work to do.[^buzzard] A proof can check while leaving the next mathematician with a formidable renovation project.
 
-The same question reaches beyond mathematics. The AlphaFold database makes more than two hundred million protein-structure predictions available for research. AlphaGenome Atlas supplies predictions for roughly nine billion possible single-letter DNA changes.[^biology] These resources carry uncertainty; a prediction does not become an experimental observation by being stored beside a billion others. But a researcher can begin with material she could never have produced herself, select a candidate, and put it to a test its creators never planned.
-
-That is where the prospect of faster discovery becomes concrete. A reusable lemma can spare the next team a proof. A diagnostic procedure can spare it a failed experiment. A molecular prediction can suggest which of many costly experiments to run.
+The same question reaches beyond mathematics. The AlphaFold database makes more than two hundred million protein-structure predictions available for research. AlphaGenome Atlas supplies predictions for roughly nine billion possible single-letter DNA changes.[^biology] These resources carry uncertainty; a prediction does not become an experimental observation by being stored beside a billion others. But a researcher can begin with material she could never have produced herself, select a candidate, and put it to a test its creators never planned. Faster discovery depends partly on what the last investigation leaves usable.
 
 **Therefore: fund the work that makes a result usable: checking its scope, finding it again, explaining it, maintaining the tools around it.** If we fund only the next spectacular result, that work waits. The scientific community was already there, in the literature, the libraries, the instruments, and the people who maintained them. Agents inherit it and begin adding to it. The question is whether their additions make the next investigation more capable, or merely leave it with more to read.
 
@@ -298,38 +315,9 @@ That is where the prospect of faster discovery becomes concrete. A reusable lemm
 
 Which brings us back to the file. By now it holds more than can fit sensibly into one prompt. A pattern's instructions live separately from the records of its applications. A search retrieves the method and examples; a question about its standing retrieves the observations, versions, dependencies, and challenges behind it.
 
-Here is the Bing lesson written as a candidate pattern, with the reasons and uncertainty kept alongside the instruction:
+Bad storage forgets by deletion; bad retrieval forgets by attention. The query “review this experiment” can retrieve a popular checklist and leave the Bing warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. We can evaluate selection by looking at downstream work: whether the agent found the relevant concern, avoided irrelevant procedures, and reached a justified conclusion at an acceptable cost. Similarity between the task description and the retrieved prose is only an intermediate signal.
 
-```yaml
-id: ask-what-the-number-means
-confidence: provisional, one incident
-context: A ranking or search experiment reports a gain in an activity metric.
-problem: Activity can rise because people are succeeding or because they are struggling.
-therefore:
-  - State what the metric is taken to mean as a separate claim.
-  - Name an observation that would differ under the two readings.
-  - Commit that observation before looking at the result.
-documented_case: degraded_results_raised_queries
-validation_cases_needed: [genuine_gain, misleading_gain, insufficient_evidence]
-part_of: review-an-experiment
-may_call: locate-the-failure
-evidence_record: number-meaning-evaluations
-open_questions: number-meaning-challenges
-on_support_withdrawn:
-  - Reassess dependent interpretations using their remaining support.
-  - Return recommendations that lost required support to review.
-  - Retain the earlier decision and the reason for its change.
-```
-
-The links carry knowledge too. This pattern belongs inside *review-an-experiment* and may call *locate-the-failure*. It should not call on every statistical procedure in the building. Which method helps with which difficulty, which methods are alternatives, and which preconditions must hold before a method makes sense: that is what Alexander's links were for.
-
-A pattern can also mix kinds of content that need different kinds of support. “Activity can rise because people are struggling” is a claim about the world. “Check this before running an expensive analysis” is a recommendation about effort. “Do not alter the live experiment” is an authority boundary. A successful test of the first does not justify the other two automatically.
-
-The field names do not carry the epistemology. The processes that read and update them do. An `open_questions` field that no decision ever consults is a decorative conscience. A link to evidence matters when the system follows it, notices that the evidence concerns another tool version, and changes what it is prepared to conclude.
-
-Bad storage forgets by deletion; bad retrieval forgets by attention. The query “review this experiment” can retrieve a popular checklist and leave this warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. We can evaluate selection by looking at downstream work: whether the agent found the relevant concern, avoided irrelevant procedures, and reached a justified conclusion at an acceptable cost. Similarity between the task description and the retrieved prose is only an intermediate signal.
-
-A pattern extracted from one incident is a hypothesis with one data point. “Increases in activity are usually fake” would be a rather expensive lesson to draw from one bug. Agentic Context Engineering, or ACE, supplies one piece of the machinery for doing better: a generator, reflector, and curator maintain a structured playbook through incremental updates, which limits the loss of detail that occurs when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks; the usefulness of the lessons still depends on the feedback and quality of reflection.[^ace]
+Our candidate pattern still says `confidence: provisional, one incident`. A pattern extracted from one incident is a hypothesis with one data point. “Increases in activity are usually fake” would be a rather expensive lesson to draw from one bug. Agentic Context Engineering, or ACE, supplies one piece of the machinery for doing better: a generator, reflector, and curator maintain a structured playbook through incremental updates, which limits the loss of detail that occurs when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks; the usefulness of the lessons still depends on the feedback and quality of reflection.[^ace]
 
 So the candidate pattern faces cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with degraded experiences behind the gain, some with real gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs where stochastic variation matters, and records both the quality of the conclusions and the resources consumed. A curator that warns about metrics in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
 
@@ -446,5 +434,7 @@ Now the claim to be tested is harder. A change must do more than make the curren
 [^ace]: *Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models*, 2025. [Paper, version 1](https://arxiv.org/html/2510.04618v1).
 
 [^context]: Gloaguen et al., *Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?*, 2026, [arXiv:2602.11988v2](https://arxiv.org/html/2602.11988v2), revised 23 June; Jai Lal Lulla et al., *On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents*, 2026, [arXiv:2601.20404v2](https://arxiv.org/html/2601.20404v2), revised 30 March.
+
+[^harari]: Yuval Noah Harari, *Sapiens: A Brief History of Humankind*, 2014, ch. 14, ‘The Discovery of Ignorance.’
 
 [^feyerabend]: Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author's text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend's historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.

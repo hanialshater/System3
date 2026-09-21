@@ -178,6 +178,8 @@ It is also:
 
 > **What kind of human capability should this interaction preserve or expand?**
 
+Stuart Russell closes *Human Compatible* on the first path: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical. Asked at Layer 4, part of it becomes a design requirement.
+
 That does not mean every tool must teach. I do not need my dishwasher to run a seminar on fluid dynamics before cleaning the plates. But the more a system moves into learning, judgment, identity and long-horizon decisions, the harder it becomes to separate the quality of the outcome from the condition of the person producing it.
 
 ## The User Is Not Always the Only Principal
@@ -186,7 +188,13 @@ There is another complication. My preferences are not the only preferences in th
 
 If I ask an agent to maximize my salary, it cannot therefore commit fraud against my employer. If I ask it to help someone gain an advantage, the interests and rights of other people do not disappear from the moral universe. If I ask an autonomous system to optimize a marketplace, customers, sellers, workers and regulators may all have legitimate claims over what happens.
 
+Imagine a shopper asking the store's assistant whether she needs the more expensive trail shoes. She runs once a week on easy paths. The cheaper pair would do; the store earns more if she buys the other one. She has given the assistant enough information to help her spend less, and the company paying for it would rather she spent more.
+
+The assistant could tell her that the cheaper pair is enough, or keep finding reasons to discuss the expensive one. Both responses can contain true statements. Before asking which response better matches “human preferences,” we need to ask whose interests this assistant was allowed to serve, what it told the shopper about that arrangement, and whether she has any way to challenge it.
+
 Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred.
+
+<!-- SLOT 4 (your case goes here; consider giving it to Mei, so Chapter 11 meets someone the reader already knows): a real marketplace conflict where knowing both sides' preferences precisely still left open who decides. Editor B drafted the following; the idea is right, the cadence is not yours, and it restates Chapter 6's Longino point: "The store can learn exactly which ranking earns it more money while the customer learns exactly why she dislikes that ranking. Neither needs another preference survey for the disagreement to be real. Who may set the terms, who can object, and whose costs count are questions about authority. More accurate prediction can leave all three unresolved." -->
 
 So Layer 4 cannot simply mean “the user gets whatever the user wants.” The relevant human boundary can be plural. That makes the architecture less tidy. It also makes it more honest.
 
@@ -202,6 +210,6 @@ The flight may need one clarification before booking. A lesson may need the assi
 
 Memory can reveal that today's desire conflicts with yesterday's commitment. Independent perspectives can break a framing both human and assistant have become trapped inside. Simulation can make consequences imaginable. Trust chains can distinguish advice grounded in evidence from a confident story. Scaffolding can let the person learn rather than merely receive. Creative distrust can ask whether even a deeply held preference deserves another look.
 
-The scientific institution we have been building can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain **alive without making them ownerless**. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
+System 3, the scientific institution we have been building, can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain **alive without making them ownerless**. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
 Alignment, in this picture, is a corrigible relationship with human intention while both the human and the world continue to change. The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me.
