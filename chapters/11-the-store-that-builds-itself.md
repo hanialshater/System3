@@ -188,8 +188,6 @@ Imagine replaying anonymized customer sessions and asking a strong language mode
 
 The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Only intervention tells us how much of the outcome the problem was actually causing. Judea Pearl's ladder has three rungs, seeing, doing and imagining, and no quantity of the first substitutes for the second.[^store-pearl] A recommender that only observes is standing on rung one with excellent posture.
 
-I find this satisfying because the architecture does not merely *use* System 3. It needs System 3 to avoid hallucinating its own customers.
-
 This is the book's central thesis in work clothes. The LLM is excellent at generating explanations. The product architecture has to decide which explanations deserve pursuit, construct interventions that expose them to consequences, preserve the chain of evidence, and update the repertoire when the world refuses to cooperate.
 
 ## The Objective Fights Back
@@ -224,8 +222,6 @@ A bounded test separates the claims. Does dynamic composition beat a strong stat
 
 I love this part because it keeps the book honest. A philosophy of emergence should be willing to lose an A/B test. Otherwise it is not a philosophy of experimentation. It is branding.
 
-The A/B test is not there to validate the philosophy; it is there to threaten it.
-
 ## When the Page Stops Being the Product
 
 Suppose the narrow test works. Then the interesting version begins.
@@ -254,16 +250,10 @@ The store does not literally build itself. It learns how to build more of the ex
 
 I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
-I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
-
 That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
 
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
 And once you can imagine that happening in a store, it becomes difficult not to imagine it happening in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.
-
----
-
-> *A philosophy of emergence should be willing to lose an A/B test.*
 
 [^store-pearl]: Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.

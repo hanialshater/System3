@@ -20,7 +20,7 @@ In 1965, I. J. Good imagined an **ultraintelligent machine** better than any hum
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*. The word has the properties of an unexploded shell. Every attempt to make the idea practical has to handle it. Better at the current task? Better at learning the next one? Better at inventing a way to learn?
 
-The editing brief in Chapter 6 was a small piece of corrective machinery written down: a file meant to catch habits I could not keep correcting by hand. It could change what the next agent did. An agent that rewrites that file has edited itself. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
+The pattern file in Chapter 6 was a small piece of corrective machinery written down: a file meant to catch a misleading interpretation before the next experiment. It could change what the next agent did. An agent that rewrites that file has edited part of its working method. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
 
 There are reasons to try. Improve one solution and you get one better solution. Improve the process generating solutions and the gain may recur. The world also changes while we are congratulating ourselves on the previous result: new tools appear, users change, attackers adapt and evidence invalidates old assumptions. Stability can become delayed failure.
 
@@ -271,11 +271,6 @@ For a compiler, correctness under tests plus efficiency under an agreed budget m
 The self-improving institution therefore needs a research function watching its own evolution: finding new failure modes, generating new tests, challenging reward models, checking transfer and looking for reward hacking. Once improvement becomes continuous, alignment has to become a continuous research function.
 
 Omar could investigate the investigator. Now the investigator can rewrite itself, and someone still has to decide which of its suspicions about itself deserve to be believed. We have given that someone a research institution's worth of work. How much of it can a human actually judge?
-
----
-
-> *Self-reference is not self-improvement.*\
-> *The judged do not amend the judge alone.*
 
 ---
 

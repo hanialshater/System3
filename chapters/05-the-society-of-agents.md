@@ -369,11 +369,6 @@ The rest of this book is about moving that work inside the box.
 
 ---
 
-> *A record outlives the clerk.*\
-> *Five judges sharing one source are one witness.*
-
----
-
 
 [^carlini]: Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler's achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
 

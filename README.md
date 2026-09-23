@@ -56,6 +56,7 @@ Chapter 5 establishes the central synthesis. Chapters 6–10 develop its consequ
 ### Back matter
 
 - [The Zen of Autonomy](chapters/appendix-zen-of-autonomy.md)
+- [A Note on Evidence](chapters/appendix-note-on-evidence.md)
 - [A Note on the Illustrations](chapters/appendix-illustrations.md)
 - [References](chapters/appendix-references.md)
 - [About the Author](chapters/about-the-author.md)

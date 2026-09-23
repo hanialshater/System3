@@ -132,33 +132,28 @@ So the test needs a second half. Now and then the system should bring back somet
 
 I have claimed that as we build autonomous AI, we keep rediscovering science as its architecture. A book that spends several chapters demanding criticism with consequences should probably take some. Here is how I would attack the claim if somebody else had made it.
 
-**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Because of what the agents produce. A court settles a dispute by authority; a market settles it by price. The agents in these chapters produce claims: the patch works, the metric means what we think it means, the proof checks. The institution whose product is a claim that can be revised is science. Where the question turns to who decides, the book does reach for law. Chapter 7 needed a constitution, and Chapter 9 needed a boundary the evidence cannot cross. Science for what is known. A constitution for who decides.
+**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. The patch works, the metric means what we think it means, the proof checks: each has to remain open to that process. It does not decide whether the store should value revenue over customer welfare. Chapter 7 needed a constitution, and Chapter 9 needed a boundary the evidence cannot cross. Science for what is known. A constitution for who decides.
 
 **The weights will eat it.** This is the one that keeps me up. Richard Sutton, whom we met in Chapter 7 teaching machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[^bitter] Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
 
 My own evidence is on his side. In Chapter 2 I deleted my framework because the agent no longer needed it. In Chapter 8, researchers found that too much human-designed scaffolding made their automated researchers less flexible.
 
-I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the thing judging the packing was not the thing producing it, and more compute does not change that. What survives the bitter lesson is not the structure that helps a system think. It is the structure that lets someone else check.
+I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the evaluator did not have to believe the agent's account of the packing. More compute can improve both solver and judge; it cannot make the solver's assurance into independent evidence. The structure worth defending lets the work encounter a check it did not choose.
 
 Some of that structure may move inside the model, and then Chapter 8 happens again: we build instruments to find out whether the inside deserves trust. If a system someday certifies its own open-ended work, with no external check and no preserved disagreement, and the certification holds up when somebody else looks, I am wrong. I would like to read that paper. I would also like to know who reviewed it.
 
-**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Two things count against this. Neither is a proof. Carlini was building a compiler, not an epistemology; his locks, progress files and CI arrived as repairs. And my own epistemic agent in Chapter 4 solved fewer problems than the baseline. If I was arranging the evidence, I arranged it badly. Chapter 2 marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
+**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Two things count against this. Neither is a proof. Carlini was building a compiler, not an epistemology; his locks, progress files and CI arrived as repairs. And my own epistemic agent in Chapter 4 solved fewer problems than the baseline. I could still be reading familiar institutions into a narrower set of repairs. Chapter 2 marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
 
 **Agents are not scientists.** Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. True, and Chapter 6 says so: session turnover is not Planck’s funeral. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
 
 **Whoever owns the institution owns the answers.** Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible. Chapter 6 kept the funding decision next to the unfunded study, so that unfunded could not quietly become disproved. It cannot make ownership legitimate. That is the objection I can answer least, and Chapter 12 is where I try.
 
-None of this shows that the whole composition works. I have shown pieces, and the map at the front of the book says which. The rest is an argument, and like every other claim in this book, it would like a referee.
+None of this shows that the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 
 ## Monday Morning
 
 In an editing experiment, I can stop the work, change the brief and try again. A theory of fluent autonomy also has to survive systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
 I needed a less polite laboratory. Fortunately, Monday morning was waiting.
-
----
-
-> *Spend attention where it changes the result.*\
-> *Invisible by default. Legible on demand.*
 
 [^bitter]: Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.

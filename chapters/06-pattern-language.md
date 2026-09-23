@@ -67,8 +67,6 @@ For an organization the possibility is attractive. The model can change while th
 
 Now look at what the format does not require. How sure are we? Where did the pattern come from? What would show it to be wrong, and who disagreed? A skill file can hold all of that. Nothing in the format makes the writer include it or the reader act on it. We can repeat the journey from Berkeley: carry the instruction and leave its reasons behind. A library like that can preserve the wrong lesson at industrial speed.
 
-Chapter 5 ended with the reveal that the machinery we keep building is science. Now we need its pattern language: ways to keep a claim answerable to its reasons, and ways to discover that those reasons were wrong. Alexander's *Therefore* gives each lesson a job. The first is small enough to fit on a label.
-
 ## Give the Claim an Address
 
 Anthropic's formalization of Fermat's Last Theorem began badly. Wiles proved the theorem in 1995; the task in August 2026 was to make the proof checkable by Lean. Early attempts faltered as agents lost track of the project. The successful effort used Prove2Me: theorem statements became nodes in a dependency graph, with plain-language descriptions that let a worker find a result established by a worker it never met. In eleven days the agents produced a formalization using roughly thirty thousand intermediate theorems. Lean checked the completed proof under its three standard axioms; a separate comparator confirmed that the final statement was Mathlib's Fermat and not a convenient cousin.[^fermat]
@@ -354,11 +352,6 @@ For most of this chapter, we have held one boundary steady. A procedure decides 
 But the method is also software. The system can propose changes to its retrieval, its experiments, its reviewers, and the rules by which it promotes a lesson. It can begin investigating the machinery that makes its investigations possible.
 
 Now the claim to be tested is harder. A change must do more than make the current answer better or make the current evaluator happier. It must improve the system's ability to find and assess further changes. The process that judges improvement has entered the experiment.
-
----
-
-> *Patterns over recipes.*\
-> *Let knowledge accumulate. Let it be overthrown.*
 
 ---
 

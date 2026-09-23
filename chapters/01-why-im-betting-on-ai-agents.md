@@ -20,8 +20,6 @@ What fascinates me is not merely the complexity of the result, but how little of
 
 Relatively simple mechanisms interact. Feedback accumulates. Some configurations survive, others disappear, and complexity builds on top of what came before.
 
-The first idea I want to keep hold of is simple:
-
 **Control doesn't disappear. It moves upward.**
 
 When behavior becomes too complicated to specify move by move, you stop choosing every move and start choosing more of the conditions under which moves are made.
@@ -148,8 +146,6 @@ Agents will find shortcuts. They will exploit proxies. They will settle into sol
 
 Worse than wrong solutions are **confident wrong solutions**. An agent begins with a false assumption, reasons competently from it, researches around the assumption, constructs something sophisticated and explains the whole result coherently. Nothing crashes. There is no red test. Intelligence simply makes the wrong path more convincing.
 
-This is where my optimism about emergence becomes less romantic.
-
 **Emergence can give us capable systems. It doesn't give us trustworthy systems.**
 
 Giving a system more freedom forces us to think much harder about what surrounds that freedom. Trust becomes a question of provenance and evidence: how does the system know what it claims to know? Desire becomes a question of incentives: what behavior does the environment actually reward? Society appears as soon as multiple agents interact: what happens when they cooperate, specialize, disagree, manipulate one another or invent conventions nobody asked for?
@@ -178,8 +174,6 @@ In those problems, intelligent search has room to discover things our instructio
 
 Cultivation may be a better metaphor than scripting—not because agents are plants, but because pulling harder on the stem remains a surprisingly poor gardening strategy.
 
-I find that exciting and uncomfortable in roughly equal measure, which is probably why I keep coming back to it.
-
 ## A Bounded Problem
 
 The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without a debate about aesthetics, pedagogy or whether the users are “delighted.”
@@ -193,8 +187,3 @@ Inside that space, we let it search.
 If that fails, the whole argument has a problem.
 
 If it works, things get much more interesting.
-
----
-
-> *Conditions over commands.*\
-> *Let go of the path, not the boundary.*

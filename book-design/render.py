@@ -568,6 +568,7 @@ def build_book():
         })
     for path, head, title in [
         ("chapters/appendix-zen-of-autonomy.md", "THE ZEN OF AUTONOMY", "The Zen of Autonomy"),
+        ("chapters/appendix-note-on-evidence.md", "A NOTE ON EVIDENCE", "A Note on Evidence"),
         ("chapters/appendix-illustrations.md", "A NOTE ON THE ILLUSTRATIONS", "A Note on the Illustrations"),
         ("chapters/appendix-references.md", "REFERENCES", "References"),
         ("chapters/about-the-author.md", "ABOUT THE AUTHOR", "About the Author"),

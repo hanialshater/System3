@@ -168,7 +168,7 @@ This is not a search for one perfect judge. It is closer to sensor fusion, with 
 
 The Merge Sort work had taught me the small version of this. My judgment, the simulated beginner's criticism and the browser's observations answered different questions. Collapsing them into one vote would have thrown away the disagreement that made them useful. The oversight problem is to preserve that difference when the work outgrows my ability to inspect it myself.
 
-That is System 3, the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
+That is System 3 pointed at alignment: an institution that investigates the system itself and retains a route back to humans when the evidence stops being decisive.
 
 This is why I prefer **scalable oversight** to the image of a giant alignment rulebook. A rulebook assumes we already know the failures. A research institution expects to discover new ones.
 
@@ -193,10 +193,6 @@ But a scarce signal is not the same thing as a correct signal. Humans disagree. 
 Scalable oversight can keep human judgment causally relevant to a stronger system. It cannot, by itself, tell us which human judgment deserves to rule.
 
 The overseer is not ground truth.
-
----
-
-> *The human stays in the loop that changes the loops.*
 
 ---
 

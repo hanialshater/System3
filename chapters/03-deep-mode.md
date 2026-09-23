@@ -312,8 +312,6 @@ The confused student is not confused. Claude has not spent twenty minutes failin
 
 That model can expose a blind spot. It is not synthetic user research. I treat borrowed minds as instruments for generating criticisms and hypotheses, not as substitutes for the people they simulate.
 
-By this point the system could generate alternatives, research previous work, retrieve old ideas, reopen dead branches, force the search into unfamiliar regions, change representation, revise the objective and inspect the artifact from different points of view.
-
 We could generate plausible possibilities by the dozen.
 
 Now some of them had to die.
@@ -398,7 +396,7 @@ The missing piece was no longer another builder or another critic. It was the de
 
 So I tried giving that job to an orchestrator.
 
-By now the system had a respectable vocabulary. It could spawn independent builders, research previous work, retrieve context, preserve odd stepping stones, impose constraints, generate visual directions, compare artifacts, borrow different perspectives and interact with what had been built.
+By now the system had a respectable vocabulary of moves.
 
 But there was no reason every problem should use those moves in the same order.
 
@@ -438,7 +436,7 @@ Count-Min Sketch followed a different path. The first versions looked like the d
 
 As the work continued, the designs increasingly organized themselves around the conceptual difficulties rather than the structure of the implementation. Collisions became visible. Approximation became something the learner could observe rather than merely read about. The relationship between memory and accuracy became part of the experience.
 
-I do not take these demos as evidence that we solved automated design. I do not even take them as evidence that the final demos teach humans better; that claim requires humans. They established the narrower point I cared about: more of the work I normally performed in the vibe coder's seat could move into the system without first reducing creative problem solving to one fixed workflow.
+The demos do not establish that they teach humans better; that claim requires human learners. They showed me that more of the work I normally performed in the vibe coder's seat could move into the system without first reducing creative problem solving to one fixed workflow.
 
 And that success exposed the harder problem. At higher levels of abstraction, failure can become coherent.
 
@@ -485,7 +483,3 @@ I had started the chapter trying to get myself out of the vibe coder's seat. By 
 The problem was no longer simply whether the agents were capable enough. It was whether the things they believed deserved to be believed.
 
 How do you know what to trust?
-
----
-
-> *Let the work change the architecture.*

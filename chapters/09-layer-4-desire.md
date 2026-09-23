@@ -24,7 +24,7 @@ Cooperative inverse reinforcement learning, which appeared earlier in the story 
 
 I like the humility in that setup. The machine starts by admitting that it may not know what “good” means. But the formal picture still tempts us to imagine that the human knows the reward and the machine is trying to recover it. Often the human does not know either.
 
-## The Human Learns Too
+## Performance Is Not Learning
 
 The easiest place to see the human changing is a classroom, where changing the human is supposed to be the point. A system can help me perform a task better today while making me less able to perform it tomorrow. **Performance is not learning.**
 
@@ -200,7 +200,7 @@ So Layer 4 cannot simply mean “the user gets whatever the user wants.” The r
 
 ## The Objective Layer
 
-I used to think Layer 4 was the objective layer. That is still true, but now the word **objective** feels too static.
+Layer 4 is the objective layer, but the objective can change during the work.
 
 Layer 4 needs a working account of the current intention and what remains uncertain about it: preferences, their history and conflicts, what the human is trying to learn, and which parts of the task they want to remain capable of doing themselves. Some commitments should survive one bad afternoon. Other people's interests may constrain what one user can legitimately ask for. The account will be partial, which is why correction has to remain possible.
 
@@ -211,11 +211,6 @@ The flight may need one clarification before booking. A lesson may need the assi
 System 3, the scientific institution we have been building, can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain **alive without making them ownerless**. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
 Alignment, in this picture, is a corrigible relationship with human intention while both the human and the world continue to change. The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me.
-
----
-
-> *A prompt is evidence, not the objective.*\
-> *Scaffold. Don’t substitute.*
 
 [^russell-enfeeblement]: Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 

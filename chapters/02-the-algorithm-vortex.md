@@ -340,8 +340,6 @@ These are not universal laws of software engineering. They are rules for a parti
 
 ### Keep the Harness Immutable
 
-This one is the foundation.
-
 If the agent can change the evaluator, the meaning of the experiment evaporates. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement.
 
 At that point we are no longer optimizing circle packing.
@@ -355,8 +353,6 @@ But the thing saying whether it worked stays harder to change than the thing bei
 This is the boundary made executable.
 
 ### Never Write Solution Code Yourself
-
-This is deliberately provocative.
 
 You watch the agent try something mediocre and immediately think of a better approach. You want to help, and sometimes you should. But every time I jump in with my own solution, the search becomes a little more like whatever happened to occur to me first.
 
@@ -382,7 +378,7 @@ Diversity is useful. Preserving every bad idea forever is hoarding.
 
 If a branch keeps underperforming and contributes nothing interesting, eventually it should die so compute and attention can move elsewhere. Kill too early and you may discard an immature idea that needed another generation. Keep everything alive and you end up funding a large family of increasingly sophisticated failures.
 
-The practical rule is simple: **diversity needs a budget.** Search needs enough patience for novelty and enough cruelty for budget control.
+**Diversity needs a budget.** Search needs enough patience for novelty and enough cruelty for budget control.
 
 ### Separate Discovery From Polish
 
@@ -398,7 +394,7 @@ Do not spend hours polishing a local optimum you should abandon. And do not keep
 
 ## Zero Framework, With an Asterisk
 
-There is one correction worth making before we leave the experiment. I started calling this direction **zero framework**.
+I started calling this direction **zero framework**.
 
 It's a great slogan.
 
@@ -414,8 +410,6 @@ So yes: **Zero Framework. Bash is enough.**
 
 With the asterisk that Bash contains roughly half a century of civilization.
 
-This is worth remembering whenever somebody shows you an agent implemented in one hundred lines of Python. The hundred lines may be perfectly real. So is everything underneath them.
-
 ## The Easy Version of Autonomy
 
 It would be very easy to overread this experiment.
@@ -427,8 +421,6 @@ What we had was narrower and, to me, more useful. We had a **bounded problem** w
 The agent could propose an approach, implement it, run it, inspect the result, abandon it, create tools, borrow ideas from another direction and try again. My role moved away from writing the solver and toward defining the job, constructing the environment and defending the harness.
 
 That is the claim this chapter earns: **when the problem is bounded and reality supplies a hard enough referee, substantial decision-level control can move into the agent without giving up control of what counts as success.**
-
-That is already a meaningful change.
 
 It is also why circle packing is the easy version of autonomy.
 
@@ -443,9 +435,3 @@ We can still let the agent generate alternatives, branch, cross-pollinate and se
 In circle packing, the harness tells the agent when it is wrong.
 
 What happens when **the world no longer gives us one clean referee, and judgment itself has to be constructed**?
-
----
-
-> *Harness immutable. Prompts evolve.*\
-> *Never write solution code.*\
-> *Discovery before polish.*

@@ -330,8 +330,6 @@ The baseline often left behind debris from exploration: temporary scripts, broad
 
 That does not prove the trust stack caused the reduction, and smaller patches are not automatically better patches. The extra instructions may simply have made the agent more conservative. Persistent state may have changed behavior for reasons unrelated to my epistemic interpretation. Ten tasks from one repository cannot separate these explanations.
 
-Still, the behavior changed enough to be interesting.
-
 **The scaffold seemed to produce discipline before it produced capability.**
 
 That was not the hypothesis, which made the result more useful.
@@ -449,11 +447,6 @@ It is:
 > **How can a population of fallible knowers build knowledge together without losing contact with the world?**
 
 Humans have been working on that problem for a very long time.
-
----
-
-> *System 1 proposes. System 2 deliberates. System 3 checks.*\
-> *Trust is local. So is memory.*
 
 ---
 
