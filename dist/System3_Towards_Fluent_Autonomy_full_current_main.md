@@ -36,7 +36,7 @@ Complexity over engineering. Emergence over design. Capacity over power. That is
 
 Humans already build beyond the limits of any individual mind. AI gives us new access to that capacity—and a reason to look again at the architecture that sustains it.
 
-It is September 2026 as I write this. OpenAI has reported an AI-generated proof that the Navier–Stokes equations can break down: that a fluid which starts out perfectly smooth, pushed by a perfectly smooth force, can reach infinite speed in finite time. It is one of the answers the Millennium Prize problem accepts. The proof was produced by a group of roughly ten thousand agents working concurrently. The effort reached its result after about eighty-eight hours, followed by seventeen more for formalisation and verification.[^navier-preface] The Clay Institute says the problem appears to have been settled, and that it will take its time deciding.
+It is September 2026 as I write this. OpenAI has reported an AI-generated proof that the Navier–Stokes equations can break down: under a perfectly smooth force, the equations predict velocity growing without bound in finite time, even from perfectly smooth initial conditions. It is one of the answers the Millennium Prize problem accepts. The proof was produced by a group of roughly ten thousand agents working concurrently. The effort reached its result after about eighty-eight hours, followed by seventeen more for formalisation and verification.[^navier-preface] The Clay Institute says the problem appears to have been settled, and that it will take its time deciding.
 
 A long coffee, admittedly.
 
@@ -47,26 +47,6 @@ That capacity is taking shape as these lines are being written. I invite you on 
 Rediscover, because we have built it before. It took about four centuries, a great many arguments and at least one loose cable, and we never thought to call it an architecture.
 
 Back to the future, then. Bring your coffee.
-
----
-
-One more thing before the coffee cools. This is a book about trust chains, so you should know how far each chapter sits from its evidence. Some of it I ran, some I argue, some I have only designed, and one chapter I made up. Here is which is which.
-
-| Chapter | What it rests on | Status |
-|---|---|---|
-| 1. Why I’m Betting on AI Agents | An argument about search, emergence and where control goes | Argued |
-| 2. The Algorithm Vortex | My circle-packing runs, against a referee that cannot be charmed | Run, on a bounded problem |
-| 3. The Vibe Coder’s Seat | My teaching demos and the evaluators I built around them | Run; judged by simulated learners, not real ones |
-| 4. System 3 | A trust chain that starts with a face, and a ten-task experiment that mostly went against me | Argued; one small experiment |
-| 5. The Society of Agents | Sixteen Claudes building a compiler, and five thousand years of institutions | Argued from history |
-| 6. Pattern Language | Alexander’s patterns, Bing’s bug, Facebook’s feed, Fermat and Navier–Stokes, and one lesson written down as a pattern | Reported cases; the pattern is proposed and its test has not run |
-| 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
-| 8. Scalable Oversight | Other people’s research, with its limits | Reported |
-| 9. Layer 4 | Studies of tutoring and decision support, and an argument about intention | Argued from other people’s evidence |
-| 10. Fluent Autonomy | The editing of this book, and five ways the argument could be wrong | Lived; the fluency is still an ambition |
-| 11. The Store That Builds Itself | A product design at work | Designed; the test has not run |
-| 12. After Capacity | One failed recommendation experiment, Ostrom, and a hope | One case; the rest is argued |
-| 13. The Prophecy | An octopus | Made up |
 
 [^navier-preface]: OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, <https://openai.com/index/navier-stokes-solution/>; Clay Mathematics Institute, ‘Navier-Stokes Announcement,’ 11 September 2026, <https://www.claymath.org/news/navier-stokes-announcement/>. The result is finite-time blowup under smooth forcing, alternatives C and D of the official formulation. Chapter 6 returns to it, and to the dispute about how it was found.
 
@@ -91,8 +71,6 @@ Same pattern, different substrate.
 What fascinates me is not merely the complexity of the result, but how little of that result was ever specified. There is no blueprint containing the exact location of every future branch of an oak tree. No committee approved the final layout of London. Nobody designed English and then accidentally forgot to make the spelling system sane.
 
 Relatively simple mechanisms interact. Feedback accumulates. Some configurations survive, others disappear, and complexity builds on top of what came before.
-
-The first idea I want to keep hold of is simple:
 
 **Control doesn't disappear. It moves upward.**
 
@@ -220,8 +198,6 @@ Agents will find shortcuts. They will exploit proxies. They will settle into sol
 
 Worse than wrong solutions are **confident wrong solutions**. An agent begins with a false assumption, reasons competently from it, researches around the assumption, constructs something sophisticated and explains the whole result coherently. Nothing crashes. There is no red test. Intelligence simply makes the wrong path more convincing.
 
-This is where my optimism about emergence becomes less romantic.
-
 **Emergence can give us capable systems. It doesn't give us trustworthy systems.**
 
 Giving a system more freedom forces us to think much harder about what surrounds that freedom. Trust becomes a question of provenance and evidence: how does the system know what it claims to know? Desire becomes a question of incentives: what behavior does the environment actually reward? Society appears as soon as multiple agents interact: what happens when they cooperate, specialize, disagree, manipulate one another or invent conventions nobody asked for?
@@ -250,8 +226,6 @@ In those problems, intelligent search has room to discover things our instructio
 
 Cultivation may be a better metaphor than scripting—not because agents are plants, but because pulling harder on the stem remains a surprisingly poor gardening strategy.
 
-I find that exciting and uncomfortable in roughly equal measure, which is probably why I keep coming back to it.
-
 ## A Bounded Problem
 
 The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without a debate about aesthetics, pedagogy or whether the users are “delighted.”
@@ -265,11 +239,6 @@ Inside that space, we let it search.
 If that fails, the whole argument has a problem.
 
 If it works, things get much more interesting.
-
----
-
-> *Conditions over commands.*\
-> *Let go of the path, not the boundary.*
 
 
 # Chapter 2: The Algorithm Vortex
@@ -604,8 +573,6 @@ These are not universal laws of software engineering. They are rules for a parti
 
 ### Keep the Harness Immutable
 
-This one is the foundation.
-
 If the agent can change the evaluator, the meaning of the experiment evaporates. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement.
 
 At that point we are no longer optimizing circle packing.
@@ -619,8 +586,6 @@ But the thing saying whether it worked stays harder to change than the thing bei
 This is the boundary made executable.
 
 ### Never Write Solution Code Yourself
-
-This is deliberately provocative.
 
 You watch the agent try something mediocre and immediately think of a better approach. You want to help, and sometimes you should. But every time I jump in with my own solution, the search becomes a little more like whatever happened to occur to me first.
 
@@ -646,7 +611,7 @@ Diversity is useful. Preserving every bad idea forever is hoarding.
 
 If a branch keeps underperforming and contributes nothing interesting, eventually it should die so compute and attention can move elsewhere. Kill too early and you may discard an immature idea that needed another generation. Keep everything alive and you end up funding a large family of increasingly sophisticated failures.
 
-The practical rule is simple: **diversity needs a budget.** Search needs enough patience for novelty and enough cruelty for budget control.
+**Diversity needs a budget.** Search needs enough patience for novelty and enough cruelty for budget control.
 
 ### Separate Discovery From Polish
 
@@ -662,7 +627,7 @@ Do not spend hours polishing a local optimum you should abandon. And do not keep
 
 ## Zero Framework, With an Asterisk
 
-There is one correction worth making before we leave the experiment. I started calling this direction **zero framework**.
+I started calling this direction **zero framework**.
 
 It's a great slogan.
 
@@ -678,8 +643,6 @@ So yes: **Zero Framework. Bash is enough.**
 
 With the asterisk that Bash contains roughly half a century of civilization.
 
-This is worth remembering whenever somebody shows you an agent implemented in one hundred lines of Python. The hundred lines may be perfectly real. So is everything underneath them.
-
 ## The Easy Version of Autonomy
 
 It would be very easy to overread this experiment.
@@ -691,8 +654,6 @@ What we had was narrower and, to me, more useful. We had a **bounded problem** w
 The agent could propose an approach, implement it, run it, inspect the result, abandon it, create tools, borrow ideas from another direction and try again. My role moved away from writing the solver and toward defining the job, constructing the environment and defending the harness.
 
 That is the claim this chapter earns: **when the problem is bounded and reality supplies a hard enough referee, substantial decision-level control can move into the agent without giving up control of what counts as success.**
-
-That is already a meaningful change.
 
 It is also why circle packing is the easy version of autonomy.
 
@@ -707,12 +668,6 @@ We can still let the agent generate alternatives, branch, cross-pollinate and se
 In circle packing, the harness tells the agent when it is wrong.
 
 What happens when **the world no longer gives us one clean referee, and judgment itself has to be constructed**?
-
----
-
-> *Harness immutable. Prompts evolve.*\
-> *Never write solution code.*\
-> *Discovery before polish.*
 
 
 # Chapter 3: The Vibe Coder's Seat
@@ -1029,8 +984,6 @@ The confused student is not confused. Claude has not spent twenty minutes failin
 
 That model can expose a blind spot. It is not synthetic user research. I treat borrowed minds as instruments for generating criticisms and hypotheses, not as substitutes for the people they simulate.
 
-By this point the system could generate alternatives, research previous work, retrieve old ideas, reopen dead branches, force the search into unfamiliar regions, change representation, revise the objective and inspect the artifact from different points of view.
-
 We could generate plausible possibilities by the dozen.
 
 Now some of them had to die.
@@ -1115,7 +1068,7 @@ The missing piece was no longer another builder or another critic. It was the de
 
 So I tried giving that job to an orchestrator.
 
-By now the system had a respectable vocabulary. It could spawn independent builders, research previous work, retrieve context, preserve odd stepping stones, impose constraints, generate visual directions, compare artifacts, borrow different perspectives and interact with what had been built.
+By now the system had a respectable vocabulary of moves.
 
 But there was no reason every problem should use those moves in the same order.
 
@@ -1155,7 +1108,7 @@ Count-Min Sketch followed a different path. The first versions looked like the d
 
 As the work continued, the designs increasingly organized themselves around the conceptual difficulties rather than the structure of the implementation. Collisions became visible. Approximation became something the learner could observe rather than merely read about. The relationship between memory and accuracy became part of the experience.
 
-I do not take these demos as evidence that we solved automated design. I do not even take them as evidence that the final demos teach humans better; that claim requires humans. They established the narrower point I cared about: more of the work I normally performed in the vibe coder's seat could move into the system without first reducing creative problem solving to one fixed workflow.
+The demos do not establish that they teach humans better; that claim requires human learners. They showed me that more of the work I normally performed in the vibe coder's seat could move into the system without first reducing creative problem solving to one fixed workflow.
 
 And that success exposed the harder problem. At higher levels of abstraction, failure can become coherent.
 
@@ -1202,10 +1155,6 @@ I had started the chapter trying to get myself out of the vibe coder's seat. By 
 The problem was no longer simply whether the agents were capable enough. It was whether the things they believed deserved to be believed.
 
 How do you know what to trust?
-
----
-
-> *Let the work change the architecture.*
 
 
 # Chapter 4: System 3
@@ -1539,8 +1488,6 @@ The baseline often left behind debris from exploration: temporary scripts, broad
 
 That does not prove the trust stack caused the reduction, and smaller patches are not automatically better patches. The extra instructions may simply have made the agent more conservative. Persistent state may have changed behavior for reasons unrelated to my epistemic interpretation. Ten tasks from one repository cannot separate these explanations.
 
-Still, the behavior changed enough to be interesting.
-
 **The scaffold seemed to produce discipline before it produced capability.**
 
 That was not the hypothesis, which made the result more useful.
@@ -1658,11 +1605,6 @@ It is:
 > **How can a population of fallible knowers build knowledge together without losing contact with the world?**
 
 Humans have been working on that problem for a very long time.
-
----
-
-> *System 1 proposes. System 2 deliberates. System 3 checks.*\
-> *Trust is local. So is memory.*
 
 ---
 
@@ -2054,11 +1996,6 @@ The rest of this book is about moving that work inside the box.
 
 ---
 
-> *A record outlives the clerk.*\
-> *Five judges sharing one source are one witness.*
-
----
-
 
 [^carlini]: Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler's achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
 
@@ -2175,8 +2112,6 @@ Agent skills give the arrangement a container, and the container has Alexander's
 For an organization the possibility is attractive. The model can change while the local operating knowledge survives. A procedure can improve without waiting for a training run. A specialist can leave behind more than completed tasks.
 
 Now look at what the format does not require. How sure are we? Where did the pattern come from? What would show it to be wrong, and who disagreed? A skill file can hold all of that. Nothing in the format makes the writer include it or the reader act on it. We can repeat the journey from Berkeley: carry the instruction and leave its reasons behind. A library like that can preserve the wrong lesson at industrial speed.
-
-Chapter 5 ended with the reveal that the machinery we keep building is science. Now we need its pattern language: ways to keep a claim answerable to its reasons, and ways to discover that those reasons were wrong. Alexander's *Therefore* gives each lesson a job. The first is small enough to fit on a label.
 
 ## Give the Claim an Address
 
@@ -2466,11 +2401,6 @@ Now the claim to be tested is harder. A change must do more than make the curren
 
 ---
 
-> *Patterns over recipes.*\
-> *Let knowledge accumulate. Let it be overthrown.*
-
----
-
 [^alexander]: Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 1 (Independent Regions), 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves), 251 (Different Chairs), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
 
 [^beck]: Kent Beck and Ward Cunningham, “Using Pattern Languages for Object-Oriented Programs,” OOPSLA-87 workshop on the Specification and Design for Object-Oriented Programming, 1987.
@@ -2576,7 +2506,7 @@ In 1965, I. J. Good imagined an **ultraintelligent machine** better than any hum
 
 Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*. The word has the properties of an unexploded shell. Every attempt to make the idea practical has to handle it. Better at the current task? Better at learning the next one? Better at inventing a way to learn?
 
-The editing brief in Chapter 6 was a small piece of corrective machinery written down: a file meant to catch habits I could not keep correcting by hand. It could change what the next agent did. An agent that rewrites that file has edited itself. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
+The pattern file in Chapter 6 was a small piece of corrective machinery written down: a file meant to catch a misleading interpretation before the next experiment. It could change what the next agent did. An agent that rewrites that file has edited part of its working method. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
 
 There are reasons to try. Improve one solution and you get one better solution. Improve the process generating solutions and the gain may recur. The world also changes while we are congratulating ourselves on the previous result: new tools appear, users change, attackers adapt and evidence invalidates old assumptions. Stability can become delayed failure.
 
@@ -2830,11 +2760,6 @@ Omar could investigate the investigator. Now the investigator can rewrite itself
 
 ---
 
-> *Self-reference is not self-improvement.*\
-> *The judged do not amend the judge alone.*
-
----
-
 [^lisp]: Timothy P. Hart and Michael I. Levin, “The New Compiler,” MIT Artificial Intelligence Project Memo 39, 1962.
 
 [^good]: I. J. Good, “Speculations Concerning the First Ultraintelligent Machine,” *Advances in Computers* 6, 1965, pp. 31–88.
@@ -3070,7 +2995,7 @@ This is not a search for one perfect judge. It is closer to sensor fusion, with 
 
 The Merge Sort work had taught me the small version of this. My judgment, the simulated beginner's criticism and the browser's observations answered different questions. Collapsing them into one vote would have thrown away the disagreement that made them useful. The oversight problem is to preserve that difference when the work outgrows my ability to inspect it myself.
 
-That is System 3, the same institution, pointed at alignment. The overseer becomes a small scientific institution whose subject is the system itself. It has instruments, competing hypotheses, protected records, adversarial tests, independent checks, memory of previous failures and procedures for changing its procedures. And it retains a route back to humans when the evidence stops being decisive.
+That is System 3 pointed at alignment: an institution that investigates the system itself and retains a route back to humans when the evidence stops being decisive.
 
 This is why I prefer **scalable oversight** to the image of a giant alignment rulebook. A rulebook assumes we already know the failures. A research institution expects to discover new ones.
 
@@ -3095,10 +3020,6 @@ But a scarce signal is not the same thing as a correct signal. Humans disagree. 
 Scalable oversight can keep human judgment causally relevant to a stronger system. It cannot, by itself, tell us which human judgment deserves to rule.
 
 The overseer is not ground truth.
-
----
-
-> *The human stays in the loop that changes the loops.*
 
 ---
 
@@ -3187,7 +3108,7 @@ Cooperative inverse reinforcement learning, which appeared earlier in the story 
 
 I like the humility in that setup. The machine starts by admitting that it may not know what “good” means. But the formal picture still tempts us to imagine that the human knows the reward and the machine is trying to recover it. Often the human does not know either.
 
-## The Human Learns Too
+## Performance Is Not Learning
 
 The easiest place to see the human changing is a classroom, where changing the human is supposed to be the point. A system can help me perform a task better today while making me less able to perform it tomorrow. **Performance is not learning.**
 
@@ -3363,7 +3284,7 @@ So Layer 4 cannot simply mean “the user gets whatever the user wants.” The r
 
 ## The Objective Layer
 
-I used to think Layer 4 was the objective layer. That is still true, but now the word **objective** feels too static.
+Layer 4 is the objective layer, but the objective can change during the work.
 
 Layer 4 needs a working account of the current intention and what remains uncertain about it: preferences, their history and conflicts, what the human is trying to learn, and which parts of the task they want to remain capable of doing themselves. Some commitments should survive one bad afternoon. Other people's interests may constrain what one user can legitimately ask for. The account will be partial, which is why correction has to remain possible.
 
@@ -3374,11 +3295,6 @@ The flight may need one clarification before booking. A lesson may need the assi
 System 3, the scientific institution we have been building, can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain **alive without making them ownerless**. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
 Alignment, in this picture, is a corrigible relationship with human intention while both the human and the world continue to change. The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me.
-
----
-
-> *A prompt is evidence, not the objective.*\
-> *Scaffold. Don’t substitute.*
 
 [^russell-enfeeblement]: Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
@@ -3561,34 +3477,29 @@ So the test needs a second half. Now and then the system should bring back somet
 
 I have claimed that as we build autonomous AI, we keep rediscovering science as its architecture. A book that spends several chapters demanding criticism with consequences should probably take some. Here is how I would attack the claim if somebody else had made it.
 
-**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Because of what the agents produce. A court settles a dispute by authority; a market settles it by price. The agents in these chapters produce claims: the patch works, the metric means what we think it means, the proof checks. The institution whose product is a claim that can be revised is science. Where the question turns to who decides, the book does reach for law. Chapter 7 needed a constitution, and Chapter 9 needed a boundary the evidence cannot cross. Science for what is known. A constitution for who decides.
+**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. The patch works, the metric means what we think it means, the proof checks: each has to remain open to that process. It does not decide whether the store should value revenue over customer welfare. Chapter 7 needed a constitution, and Chapter 9 needed a boundary the evidence cannot cross. Science for what is known. A constitution for who decides.
 
 **The weights will eat it.** This is the one that keeps me up. Richard Sutton, whom we met in Chapter 7 teaching machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[^bitter] Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
 
 My own evidence is on his side. In Chapter 2 I deleted my framework because the agent no longer needed it. In Chapter 8, researchers found that too much human-designed scaffolding made their automated researchers less flexible.
 
-I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the thing judging the packing was not the thing producing it, and more compute does not change that. What survives the bitter lesson is not the structure that helps a system think. It is the structure that lets someone else check.
+I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the evaluator did not have to believe the agent's account of the packing. More compute can improve both solver and judge; it cannot make the solver's assurance into independent evidence. The structure worth defending lets the work encounter a check it did not choose.
 
 Some of that structure may move inside the model, and then Chapter 8 happens again: we build instruments to find out whether the inside deserves trust. If a system someday certifies its own open-ended work, with no external check and no preserved disagreement, and the certification holds up when somebody else looks, I am wrong. I would like to read that paper. I would also like to know who reviewed it.
 
-**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Two things count against this. Neither is a proof. Carlini was building a compiler, not an epistemology; his locks, progress files and CI arrived as repairs. And my own epistemic agent in Chapter 4 solved fewer problems than the baseline. If I was arranging the evidence, I arranged it badly. Chapter 2 marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
+**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Two things count against this. Neither is a proof. Carlini was building a compiler, not an epistemology; his locks, progress files and CI arrived as repairs. And my own epistemic agent in Chapter 4 solved fewer problems than the baseline. I could still be reading familiar institutions into a narrower set of repairs. Chapter 2 marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
 
 **Agents are not scientists.** Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. True, and Chapter 6 says so: session turnover is not Planck’s funeral. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
 
 **Whoever owns the institution owns the answers.** Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible. Chapter 6 kept the funding decision next to the unfunded study, so that unfunded could not quietly become disproved. It cannot make ownership legitimate. That is the objection I can answer least, and Chapter 12 is where I try.
 
-None of this shows that the whole composition works. I have shown pieces, and the map at the front of the book says which. The rest is an argument, and like every other claim in this book, it would like a referee.
+None of this shows that the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 
 ## Monday Morning
 
 In an editing experiment, I can stop the work, change the brief and try again. A theory of fluent autonomy also has to survive systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
 
 I needed a less polite laboratory. Fortunately, Monday morning was waiting.
-
----
-
-> *Spend attention where it changes the result.*\
-> *Invisible by default. Legible on demand.*
 
 [^bitter]: Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.
 
@@ -3783,8 +3694,6 @@ Imagine replaying anonymized customer sessions and asking a strong language mode
 
 The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Only intervention tells us how much of the outcome the problem was actually causing. Judea Pearl's ladder has three rungs, seeing, doing and imagining, and no quantity of the first substitutes for the second.[^store-pearl] A recommender that only observes is standing on rung one with excellent posture.
 
-I find this satisfying because the architecture does not merely *use* System 3. It needs System 3 to avoid hallucinating its own customers.
-
 This is the book's central thesis in work clothes. The LLM is excellent at generating explanations. The product architecture has to decide which explanations deserve pursuit, construct interventions that expose them to consequences, preserve the chain of evidence, and update the repertoire when the world refuses to cooperate.
 
 ## The Objective Fights Back
@@ -3819,8 +3728,6 @@ A bounded test separates the claims. Does dynamic composition beat a strong stat
 
 I love this part because it keeps the book honest. A philosophy of emergence should be willing to lose an A/B test. Otherwise it is not a philosophy of experimentation. It is branding.
 
-The A/B test is not there to validate the philosophy; it is there to threaten it.
-
 ## When the Page Stops Being the Product
 
 Suppose the narrow test works. Then the interesting version begins.
@@ -3849,17 +3756,11 @@ The store does not literally build itself. It learns how to build more of the ex
 
 I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
-I had spent ten chapters arguing that these ideas belonged together. Then I walked into a recommendation problem and found myself rebuilding the same architecture because the old abstraction stopped scaling.
-
 That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
 
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
 And once you can imagine that happening in a store, it becomes difficult not to imagine it happening in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.
-
----
-
-> *A philosophy of emergence should be willing to lose an A/B test.*
 
 [^store-pearl]: Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
 
@@ -4404,6 +4305,27 @@ The tongue cannot reach the ear.
 Build a system that can check.
 
 ```
+
+
+# A Note on Evidence
+
+This is a book about trust chains, so the distance between a chapter and its evidence should be visible. Some of it I ran, some I argue, some I have only designed, and one chapter I made up. Here is which is which.
+
+| Chapter | What it rests on | Status |
+|---|---|---|
+| 1. Why I’m Betting on AI Agents | An argument about search, emergence and where control goes | Argued |
+| 2. The Algorithm Vortex | My circle-packing runs, against a referee that cannot be charmed | Run, on a bounded problem |
+| 3. The Vibe Coder’s Seat | My teaching demos and the evaluators I built around them | Run; judged by simulated learners, not real ones |
+| 4. System 3 | A trust chain that starts with a face, and a ten-task experiment that mostly went against me | Argued; one small experiment |
+| 5. The Society of Agents | Sixteen Claudes building a compiler, and five thousand years of institutions | Argued from history |
+| 6. Pattern Language | Alexander’s patterns, Bing’s bug, Facebook’s feed, Fermat and Navier–Stokes, and one lesson written down as a pattern | Reported cases; the pattern is proposed and its test has not run |
+| 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
+| 8. Scalable Oversight | Other people’s research, with its limits | Reported |
+| 9. Layer 4 | Studies of tutoring and decision support, and an argument about intention | Argued from other people’s evidence |
+| 10. Fluent Autonomy | The editing of this book, and five ways the argument could be wrong | Lived; the fluency is still an ambition |
+| 11. The Store That Builds Itself | A product design at work | Designed; the test has not run |
+| 12. After Capacity | One failed recommendation experiment, Ostrom, and a hope | One case; the rest is argued |
+| 13. The Prophecy | A fictional coda | Fiction |
 
 
 # A Note on the Illustrations
