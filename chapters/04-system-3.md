@@ -2,21 +2,7 @@
 
 *Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone*
 
-Deep Mode left us with a system in which almost everything could work and the whole thing could still be wrong.
-
-A research agent makes a claim. A visual model turns it into a design. A coding agent implements the design perfectly. Several evaluators prefer it. Deep Mode invests another generation.
-
-Nothing crashes.
-
-The first claim was false.
-
-Once cognition is spread across researchers, builders, evaluators, tools, memories and agents, intelligence is no longer the only problem. Every component has to rely on things produced by the others. The orchestrator cannot repeat every experiment, reread every paper or independently reproduce every judgment before it acts.
-
-At some point, it has to trust.
-
-Humans have exactly the same problem. Most of what we call knowledge depends on it.
-
-So before we design another architecture, consider a camel.
+Before we design another architecture, consider a camel.
 
 Seven claims about this image. Some are true. Some are false. You can't verify most of them without trusting me:
 
@@ -34,15 +20,11 @@ Seven claims about this image. Some are true. Some are false. You can't verify m
 
 How do you decide which ones to believe?
 
-Some collide immediately with things you think you know. Some sound plausible but are almost impossible for you to verify. Some could be checked against another source. Others depend mostly on whether you trust me.
-
 Before the chapter has properly begun, you are already doing epistemology.
 
 *Answers later.*
 
 ## The Shortest Trust Chain
-
-There is a question that exposes something important about the difference between us and a language model:
 
 *Can your tongue touch your ear?*
 
@@ -58,15 +40,13 @@ Large language models have read billions of words about tongues and ears. They c
 
 What they cannot do is check their own tongue. They have no tongue.
 
-The example is silly. The difference is not.
-
-A body gives us causal contact with a world that does not care how plausible our story sounded. You try to lift something and discover it is heavier than it looked. You misjudge a step and gravity offers immediate peer review. You touch something hot and the argument ends quickly.
+A body gives us causal contact with a world that does not care how plausible our story sounded. You misjudge a step and gravity offers immediate peer review. You touch something hot and the argument ends quickly.
 
 A farmer knows cows partly this way. After years around them, cows are not merely propositions involving mammals, milk production and Bovidae. The farmer knows how they move, where not to stand, what a nervous animal looks like, how large a cow feels when there is no photograph between you and it. Some of that can be written down. Some is difficult to articulate at all.
 
-Direct experience is not automatically true experience. Our senses deceive us, memory degrades, and the human hand is a terrible thermometer if you need to distinguish 58°C from 62°C. But embodiment gives us something important: contact. The world can disagree.
+Our senses deceive us, memory degrades, and the human hand is a terrible thermometer if you need to distinguish 58°C from 62°C. But embodiment gives us something important: contact. The world can disagree.
 
-You do not need to get kicked by the same cow every morning to rediscover where not to stand. One encounter becomes a warning. Repeated encounters become heuristics. Eventually the history changes what you do next.
+You do not need to get kicked by the same cow every morning to rediscover where not to stand. One encounter becomes a warning. Repeated encounters become heuristics.
 
 Language models begin somewhere else. They begin mostly with the residue.
 
@@ -86,9 +66,9 @@ And yet it can talk about cows exceptionally well.
 
 Not literally. Saussure did not secretly invent attention in 1916, and structural linguistics is not a machine-learning architecture.
 
-The resemblance is more interesting than that. Language models are spectacular evidence for how much competence can emerge from structure learned inside symbolic data. They write, translate, debug software, explain physics and manipulate abstractions without first acquiring the farmer's relationship to cows or the child's relationship to fire.
+Language models are spectacular evidence for how much competence can emerge from structure learned inside symbolic data. They write, translate, debug software, explain physics and manipulate abstractions without first acquiring the farmer's relationship to cows or the child's relationship to fire.
 
-That is the surprise: the residue gets us extraordinarily far. It also leaves something behind.
+The residue gets us extraordinarily far. It also leaves something behind.
 
 A farmer's sentence may be the compressed endpoint of twenty years of encounters, other farmers' advice, veterinary knowledge and mistakes painful enough not to repeat. The model receives the sentence. The sentence enters a corpus. The corpus becomes training data. Regularities are compressed into weights.
 
@@ -98,13 +78,13 @@ Months later somebody asks:
 
 and the model gives an excellent answer.
 
-What usually does not come back is the archaeology. Which part rests on repeated observation? Which part came from veterinary guidance? Did five sources independently observe the same thing, or did four copy the fifth? Which claim is measurement and which merely fits the linguistic neighborhood?
+What usually does not come back is the archaeology. Which part rests on repeated observation? Did five sources independently observe the same thing, or did four copy the fifth?
 
 The conclusion survives. Much of the structure that earned it trust does not.
 
-This is what I mean by saying an LLM's knowledge is **epistemologically flat**. The flatness appears at the interface between claim and justification. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel in equally polished English.
+This is what I mean by saying an LLM's knowledge is **epistemologically flat**. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel in equally polished English.
 
-Wittgenstein helps draw the other side of the picture. His later philosophy pulled attention toward language as something that lives inside practice: activities, expectations, habits, rules and forms of life.[^wittgenstein]
+Wittgenstein's later philosophy pulled attention toward language as something that lives inside practice: activities, expectations, habits, rules and forms of life.[^wittgenstein]
 
 “Fire” keeps linguistic company with *heat*, *smoke*, *burn* and *wood*. It also cooks food and destroys houses. You move your hand away from it. Someone shouts the word in a crowded building and an entire social machinery begins to move.
 
@@ -112,17 +92,9 @@ The word participates in life.
 
 Emily Bender and Alexander Koller made a version of the same argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff past a coconut catapult. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Form alone, however much of it, is not meaning.[^octopus] I prefer dead Europeans to cephalopods, but the point is the same.
 
-I do not want to turn Saussure and Wittgenstein into action figures fighting over GPT. They worked in different traditions and the philosophy of language does not reduce itself to two dead Europeans and a transformer. But they give us two useful lines.
+A pretrained model inherits the linguistic residue of our practices. A deployed agent can begin to re-enter them: running code, using tools, observing users, interacting with institutions.
 
-Saussure's line: relationships within a symbolic system can carry an astonishing amount of linguistic structure.
-
-Wittgenstein's line: language also lives inside practices, consequences and forms of life.
-
-A pretrained model inherits the linguistic residue of those practices. A deployed agent can begin to re-enter them: running code, using tools, observing users, interacting with institutions. The model begins with residue. The larger system can begin to recover contact.
-
-But embodiment cannot be the whole answer. I know far too many things I have never touched, measured or personally witnessed. I have never measured the speed of light. I have never been to Antarctica. I have no direct embodied evidence for most of modern physics, most of history or whether penguins are currently wandering through Rome.
-
-Direct contact does not scale.
+But embodiment cannot be the whole answer. I know far too many things I have never touched, measured or personally witnessed. I have never measured the speed of light. I have never been to Antarctica. I have no direct embodied evidence for most of modern physics, most of history or whether penguins are currently wandering through Rome. Direct contact does not scale.
 
 So how do we know anything beyond it? For that, we need Alberto.
 
@@ -142,13 +114,9 @@ Not with mathematical certainty. Alberto could be wrong. He may misunderstand th
 
 But Alberto occupies a useful position in the trust chain. He is there. He has repeated exposure to Rome. I have a history with him. If he repeatedly lies to me about things he is well positioned to observe, I update my trust in Alberto. If he says, “I don't know about all of Italy, but I've never seen one in Rome,” the boundary of his knowledge is itself useful information.
 
-This is how testimony becomes valuable. We care who said it, what they were positioned to know, how reliable they have been, what incentives surround the claim and how easily it can be challenged.
-
 Testimony comes with metadata.
 
 And we are all Alberto to someone. Someone may trust me on ranking systems because I have spent years working on them. Someone else may trust me about Jordan because I have lived there. If I begin confidently explaining marine biology, the correct response is not to transfer my credibility from machine learning to whales merely because the same mouth is speaking.
-
-Trust is local.
 
 ## It Starts With a Face
 
@@ -162,27 +130,21 @@ Siblings contributed an important epistemological innovation: **some testimony i
 
 Then teachers told me about atoms, dinosaurs and wars none of us could verify. I believed them because my mother had sent me to that school, and because the parts I could check, the spelling and the sums, held up. From there the chain runs on to books, to the institutions that print them, and to a whole society's machinery for deciding what to believe.
 
-Civilization is full of machinery for making mediated trust less stupid. Courts use testimony and adversarial procedure. Engineering uses standards, tests and certification. Science uses instruments, publication and replication. Markets use reputation and prices. None guarantees truth. All preserve some structure around claims: where they came from, how they were challenged, what incentives surrounded them and what might make us stop believing them.
-
 At no point did I build my knowledge from the ground up. I grew trust upward from a face.
 
-Growth is the right word. Each layer was built on the one below it and reached a little further from anything I could touch. Nothing was replaced wholesale. When a layer failed, when the brother was lying or the textbook was out of date, I repaired that part and kept the rest. Knowledge goes up the way a city does, by addition and repair on top of what is already standing. Nobody gets to start from an empty field.
+Each layer was built on the one below it and reached a little further from anything I could touch. Nothing was replaced wholesale. When a layer failed, when the brother was lying or the textbook was out of date, I repaired that part and kept the rest. Knowledge goes up the way a city does, by addition and repair on top of what is already standing. Nobody gets to start from an empty field.
 
-Human knowledge is not simply a pile of facts. It is **epistemologically stratified**.
+Human knowledge is **epistemologically stratified**.
 
 “I touched the fire” is not the same as “my brother told me.” “My teacher said so” differs from “the experiment was independently replicated.” A measurement differs from an interpretation. A conjecture differs from an established result.
 
 Mature trust is not purely conservative either. Sometimes the instrument disagrees with the theory. At first you check the instrument. Then you repeat the experiment. If the anomaly survives long enough, eventually the trusted theory becomes the thing under investigation.
 
-Productive distrust requires trust first. Random distrust is just another form of stupidity. The interesting critic understands why the old structure earned trust before finding the point where that trust stops being deserved.
+Productive distrust requires trust first. Random distrust is just another form of stupidity.
 
-So a broken link is not always damage. An idea arrives from outside every chain I trust. Perhaps it is false. Perhaps it is bullshit. Perhaps it is an invention, and my trusted machinery has no place for it yet. Its unfamiliarity cannot decide the question. Most improvement is smaller than that: someone who trusts the structure finds the one place where it is wrong and fixes it there. Both are how the building goes up.
+Models inherit the text produced along the way, but usually not the live relationships underneath it. The paper, the article about the paper, the blog post disagreeing with the article and the Reddit thread where somebody confidently misunderstood both can all end up in the same training distribution. The model got the library without the childhood.
 
-Models inherit the text produced by these structures, but usually not the live relationships underneath them. The paper, the article about the paper, the blog post disagreeing with the article and the Reddit thread where somebody confidently misunderstood both can all end up in the same training distribution. The model got the library without the childhood.
-
-Frequency is not verification. Statistical dominance is not epistemic authority.
-
-In that sense, the model has no Alberto: no live record of who was positioned to know, where a claim came from, how its source behaved before, or where the source's competence stops.
+The model has no Alberto: no live record of who was positioned to know, where a claim came from, how its source behaved before, or where the source's competence stops.
 
 There is one more ingredient humans add almost without noticing: stakes.
 
@@ -192,11 +154,7 @@ Stakes are not truth. People lie despite consequences and institutions reward co
 
 An LLM has no social capital of its own to lose. It can confidently produce something false and, at the level of the model itself, nothing happens. The cost lands elsewhere: on the user, the application or the institution deploying it.
 
-At its most compressed, the danger is coherence outrunning correspondence. The machine can become extraordinarily good at tongue without having an ear available to check against. The dangerous failures are not the ones that crash. They are the ones that seem to work: decaf confidence, indistinguishable from the real thing until the moment it matters.
-
-The missing ingredient is not punishment for models. It is architecture that restores more of the evidence, consequence and accountability that the sentence alone cannot carry.
-
-That is the problem System 3 is trying to solve.
+The danger is coherence outrunning correspondence. The machine can become extraordinarily good at tongue without having an ear available to check against. The dangerous failures are not the ones that crash. They are the ones that seem to work: decaf confidence, indistinguishable from the real thing until the moment it matters.
 
 ## System 3
 
@@ -204,19 +162,15 @@ We are currently obsessed with making models think harder.
 
 System 2 reasoning has become a product category. Give the model more inference time, let it plan, search, reconsider and work through difficult problems before answering.
 
-This is useful. Reasoning matters.
-
 But reasoning perfectly from a bad premise still produces a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed. Deep Mode can coordinate five sophisticated judgments that all trace back to one hallucinated claim.
 
 At some point, thinking has to encounter something outside itself.
-
-This is where I use the term **System 3**.
 
 Kahneman's *Thinking, Fast and Slow* gave us the familiar distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[^kahneman]
 
 For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
 
-But human thought has always operated inside another structure that the two-system picture largely takes for granted. We test things. We build instruments. We execute code. We compare claims with records. We ask other people. We preserve failures. We create procedures that make some errors harder to hide and some evidence easier to inspect.
+But human thought has always operated inside another structure that the two-system picture largely takes for granted. We test things, build instruments, ask other people and preserve our failures.
 
 I call that external epistemic machinery System 3.
 
@@ -240,7 +194,18 @@ System 3 asks: *What are we entitled to treat as known?*
 
 It cuts across the stack. The model proposes something. The coding agent may test it. The application can collect real user behavior. Deep Mode may compare research, simulation and evaluation. Even Layer 4, the goal itself, can change when reality pushes back.
 
-If the five layers tell us where increasingly abstract work happens, System 3 is what keeps those layers epistemically connected. Without it, delegating more of the work can give an unsupported claim more places to travel. The growing stack needs a way to carry the grounds for trust along with the work.
+If the five layers tell us where increasingly abstract work happens, System 3 is what keeps those layers epistemically connected. Without it, delegating more of the work can give an unsupported claim more places to travel.
+
+Put on one page, the stack and the thing that cuts across it look like this:
+
+| Layer | The question it answers |
+|---|---|
+| 4 — Intention | What do we actually want? |
+| 3 — Deep Mode | Given what we know, what should we try next? |
+| 2 — Application | Can the work begin near the application instead of the plumbing? |
+| 1 — Agent | Can the model act, and see what happened? |
+| 0 — Model | What does the pattern suggest? |
+| **System 3, across all of them** | **What are we entitled to treat as known?** |
 
 ## Code Can Touch Back
 
@@ -264,7 +229,7 @@ The environment resisted. The agent's current apparatus was not enough, so it cr
 
 Humans have been doing this forever. We could not see bacteria, so we built microscopes. We could not perceive radio waves directly, so we built receivers. We could not conveniently inspect a MARC file, so apparently we wrote Python and called it epistemology.
 
-The failure changed the instrumentation; the instrumentation changed what could be observed next. That is System 3 in miniature.
+That is System 3 in miniature.
 
 AlphaGo offers another useful distinction. Its neural network supplied powerful intuition about promising moves and valuable positions. Monte Carlo Tree Search placed that intuition inside an explicit search process constrained by the state and consequences of Go.[^alphago]
 
@@ -272,7 +237,7 @@ I used to summarize this too simply as “the network proposes; the tree verifie
 
 RL can improve the gut. System 3 preserves more of the structure around the gut: what was tried, what happened, which paths failed, where claims came from, which tools earned confidence and where their boundaries lie.
 
-## What Should Survive a Session?
+## A Hallucination With Better Retention
 
 Return to the research claim about recursion trees:
 
@@ -280,7 +245,7 @@ Return to the research claim about recursion trees:
 
 In a flat architecture, the sentence enters context and competes with every other sentence according to relevance and whatever confidence the model implicitly assigns it.
 
-A trust-aware architecture wants more. Where did the claim come from? A controlled study? A teacher's opinion? A blog post? An inference made by the research agent? What population was tested? Does the result apply to our demo?
+A trust-aware architecture wants more. Where did the claim come from? A controlled study? A teacher's opinion? A blog post? What population was tested? Does the result apply to our demo?
 
 You do not need a bureaucratic dossier attached to every sentence. Sometimes “Alberto said the café is good” is enough.
 
@@ -288,15 +253,11 @@ But when the consequence matters, the claim should be able to carry provenance.
 
 That is a **trust chain**: a record of how far a claim sits from the evidence supporting it, what transformations happened along the way and which links we have chosen to trust. It does not guarantee truth.
 
-This changes how we should think about skills, tools and memory.
-
 A skill is knowledge externalized from the model. Someone, or some previous agent, learned something useful and wrote it down so later sessions would not need to rediscover it.
-
-The model inherits the residue.
 
 But persistence is not trust. A terrible heuristic written into a skill file is simply a hallucination with better retention.
 
-A useful skill needs some archaeology. Who created it? What problem was it solving? Where did it work? Where did it fail? What conditions limit its use?
+A useful skill needs some archaeology. Who created it? Where did it work? Where did it fail?
 
 Suppose an agent learns:
 
@@ -304,7 +265,7 @@ Suppose an agent learns:
 
 A flat skill stores the rule. A richer object can record that the heuristic came from several failed regex attempts, later worked across multiple nested formats, remains unnecessary for simple flat extraction and should be treated as a strong prior rather than a commandment.
 
-Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is *this tool is reliable here and dangerous there*. Reliability is conditional.
+Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is *this tool is reliable here and dangerous there*.
 
 The same applies to softer heuristics. “Regex tends to fail on deeply nested structures” is a **meta-belief**: something that can accumulate evidence for and against it.
 
@@ -316,8 +277,6 @@ A System 3 belief says:
 
 > This has worked often enough that I should prefer it, but new evidence can change my mind.
 
-Now the belief is challengeable.
-
 If you enjoy old epistemology labels, you can call the model a largely coherentist core, uncannily good at producing structures that hang together, and System 3 a thin foundationalist shell tied to observation, provenance and consequence. Philosophers can put down their weapons; I only need the architectural analogy.
 
 Coherence is valuable, but something outside the coherent system must occasionally be allowed to say no.
@@ -328,7 +287,7 @@ These are not abstract questions when they determine what millions of people bel
 
 **System 3 isn't philosophy to me. It's Tuesday.**
 
-## The Experiment
+## The Epistemic Agent
 
 I wanted to test a smaller claim than “we solved epistemology for AI.”
 
@@ -429,8 +388,6 @@ Structured experience biases future behavior toward what the system has learned.
 
 A mature System 3 therefore needs more than accumulation: forgetting, counterexamples, challenge, competing possibilities and occasional permission to ignore what it thinks it knows.
 
-Otherwise the scaffold becomes a cage.
-
 ## Creative Distrust
 
 Trusted knowledge makes you efficient. It can also make you boring. If an agent learns that tree visualizations worked for five recursive algorithms, eventually it may try to explain linear regression with a tree because the trust stack has become stronger than judgment. On 13579, knowledge about indexing may have made the wrong explanation harder to leave.
@@ -443,11 +400,9 @@ So System 3 needs **creative distrust** too.
 
 I do not mean contrarianism for sport, or the internet habit of assuming expert agreement proves corruption. Creative distrust is the ability to understand a trust chain well enough to know where you are breaking it and why.
 
-A mathematician follows an analogy because the structure looks interesting. A scientist repeats a strange experiment after accepted theory says the result should not happen. A designer violates a trusted pattern because this case exposes its boundary conditions.
+A scientist repeats a strange experiment after accepted theory says the result should not happen. A designer violates a trusted pattern because this case exposes its boundary conditions.
 
 A mature trust stack has two jobs pulling in opposite directions: let knowledge accumulate so we do not rediscover fire every morning, and leave enough room for reality to overthrow what accumulated.
-
-There is no final setting that makes trust and rebellion stop fighting.
 
 ## Back to the Camel
 
@@ -475,11 +430,7 @@ The lesson is not that nothing can be known. That conclusion is dramatic and mos
 
 The lesson is that **trust has structure**.
 
-Some claims sit close to direct interaction. Others arrive through testimony. Some pass through instruments and other people. Some are plausible inferences. Some have little track record but may still deserve investigation.
-
-Flatten all of that into equally confident language and something important disappears.
-
-The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It does not need to contain the entire chain inside its weights. The model is a mirror; the architecture determines what it reflects.
+The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It does not need to contain the entire chain inside its weights.
 
 **The model stays hollow. The system doesn't have to be.**
 
@@ -501,7 +452,12 @@ Humans have been working on that problem for a very long time.
 
 ---
 
-[^saussure]: Ferdinand de Saussure, *Course in General Linguistics*, 1916, on the arbitrariness of the sign and linguistic value. See also the *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. [Excerpt](https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm).
+> *System 1 proposes. System 2 deliberates. System 3 checks.*\
+> *Trust is local. So is memory.*
+
+---
+
+[^saussure]: Ferdinand de Saussure, *Course in General Linguistics*, 1916, on the arbitrariness of the sign and linguistic value. See also the *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. <https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm>.
 
 [^wittgenstein]: Ludwig Wittgenstein, *Philosophical Investigations*, 1953, especially §§23 and 43 on language-games and meaning as use.
 

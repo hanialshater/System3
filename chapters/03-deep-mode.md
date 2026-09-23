@@ -20,7 +20,7 @@ The problem-solving layer I eventually started calling **Deep Mode** grew out of
 
 Before trying to automate that, I had to notice how much of the work around the model had already moved into the machine.
 
-## How We Got Here
+## Stubbornly Human
 
 Models trained to continue text turned out to continue code. Researchers trained models specifically for the job, and many of the early tasks were conveniently small: give the model a function signature, a comment or a programming puzzle and ask it to fill in the implementation. Benchmarks such as HumanEval and APPS made this measurable: could a model turn a specification into a program that survived tests?
 
@@ -44,7 +44,7 @@ Eventually we stopped carrying the loop by hand. Give the model access to the re
 
 Software is unusually friendly to this arrangement. Files can be searched. Programs can be executed. Tests can say no. Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
 
-Systems such as SWE-agent made the interface itself part of the problem. How the model searches, how much of a file it sees, how edits are applied and what information comes back from commands can matter almost as much as another clever prompt. The useful object is no longer just the model. It is the model operating inside a world where software can push back.
+Systems such as SWE-agent made the interface itself part of the problem. How the model searches, how much of a file it sees, how edits are applied and what information comes back from commands can matter almost as much as another clever prompt. The useful object is the model operating inside a world where software can push back.
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
@@ -86,7 +86,7 @@ When another version becomes cheap, the balance changes. You can see the idea so
 
 Maybe we decide customers should create an account before seeing availability. It sounds reasonable: we need their details eventually. Then we build it and the experience immediately feels annoying. Parents arriving from a Google search do not want to establish a lifelong digital relationship with a football academy before discovering whether Saturday at ten is available.
 
-So login moves later. The artifact is no longer merely the end of the thinking process. It becomes something we think with.
+So login moves later. The artifact becomes something we think with.
 
 The Merge Sort demo made this even clearer because there was almost no business machinery to hide behind. I could ask an agent for an interactive explanation and receive something perfectly functional: an array of bars, controls, animation, perhaps some text explaining that the algorithm divides the input and merges the pieces again.
 
@@ -134,7 +134,7 @@ That was the part I still seemed to be doing manually. So I watched what I was a
 
 There was no universal workflow hiding there. A mathematician, a designer and a product manager can all spend a day solving hard problems while performing almost none of the same visible actions.
 
-But the same kinds of moves kept appearing. Sometimes I needed another attempt. Sometimes I needed information. Sometimes the search had become too narrow. Sometimes the representation itself was constraining what we could imagine. Sometimes the objective needed to change. Sometimes I needed to see the artifact from another mind. They were not useful in a fixed order.
+But the same kinds of moves kept appearing. Sometimes I needed another attempt, sometimes information. Sometimes the search had become too narrow, the representation was constraining what we could imagine, or the objective needed to change. Sometimes I needed to see the artifact from another mind. They were not useful in a fixed order.
 
 ### Keeping More Than One Idea Alive
 
@@ -246,7 +246,7 @@ OPRO—Optimization by PROmpting—is interesting for a related reason. In OPRO,
 
 Now let the history contain more than scores. Alongside hard measurements, tell the model what improved, what became worse, which trade-off appeared and what must survive the next attempt. The history of the search can retain some of its meaning rather than collapsing into a column of numbers.
 
-This begins to feel a little like reinforcement learning turned upside down. I mean that as an analogy about specification, not as a claim that these are the same algorithm. Decision Transformers, reinforcement learning and language-guided iteration are different mechanisms.
+This begins to feel a little like reinforcement learning turned upside down. I mean that as an analogy about specification, not as a claim that these are the same algorithm.
 
 The usual reinforcement-learning picture asks us to define a reward and then discover behavior that earns it.
 
@@ -318,7 +318,7 @@ We could generate plausible possibilities by the dozen.
 
 Now some of them had to die.
 
-## Who Judges the Judges?
+## Independent Evaluators
 
 At some point generating another opinion stops helping. Some artifacts have to survive and others have to disappear.
 
@@ -416,13 +416,13 @@ At the top, the loop was almost too simple to write down:
 
 The move itself was not fixed.
 
-Suppose two Merge Sort branches both make recursive decomposition clear, but evaluators keep reporting that learners lose track of how the tree corresponds to the array. The next move does not have to be “revise again.” The orchestrator can send a researcher after coordinated representations. Retrieval can surface an old prototype with a useful identity-preserving color scheme. A visual model can produce two spatial arrangements before anyone writes code. Builders can implement both. The browser may then reveal that one design requires the learner to look in two places at once precisely when the merge begins. That failure changes the question again.
+Suppose two Merge Sort branches both make recursive decomposition clear, but evaluators keep reporting that learners lose track of how the tree corresponds to the array. The next move does not have to be “revise again.” The orchestrator can send a researcher after coordinated representations. Retrieval can surface an old prototype with a useful identity-preserving color scheme. A visual model can produce two spatial arrangements before anyone writes code. Builders can implement both. The browser may then reveal that one design requires the learner to look in two places at once precisely when the merge begins.
 
 Nothing in that sequence is especially magical. We simply did not have to decide the sequence before the inquiry began. Otherwise Deep Mode would be a larger workflow diagram containing more rectangles.
 
 It is not a universal problem-solving procedure. It gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result. The workflow itself becomes part of the search.
 
-## What Emerged
+## Bars Moved Around
 
 The first Merge Sort demos were exactly what you would expect. Bars moved around. Numbers changed places. Everything sorted correctly. If you already understood Merge Sort, you could follow them. If you did not, they mostly provided animated evidence that a computer was performing an algorithm.
 
@@ -442,7 +442,7 @@ I do not take these demos as evidence that we solved automated design. I do not 
 
 And that success exposed the harder problem. At higher levels of abstraction, failure can become coherent.
 
-## What Holds the Architecture Together?
+## A Cathedral on a Shopping Cart
 
 Suppose the research agent reports that beginners understand recursion better when shown a tree. A visual model proposes a tree-based explanation. A coding agent builds it. A simulated beginner prefers it. Two evaluators agree, so the orchestrator allocates another generation to that lineage.
 
@@ -485,3 +485,7 @@ I had started the chapter trying to get myself out of the vibe coder's seat. By 
 The problem was no longer simply whether the agents were capable enough. It was whether the things they believed deserved to be believed.
 
 How do you know what to trust?
+
+---
+
+> *Let the work change the architecture.*

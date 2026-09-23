@@ -10,7 +10,7 @@ There are 253 of them. The first is about how the world should be divided into r
 
 Reading it is a strange experience. You keep recognizing things you have always known and never said. Alexander believed that some places are alive and some are dead, that everybody can feel the difference, and that the difference has no adequate name. He called it the quality without a name. He had trained as a mathematician at Cambridge before taking the first doctorate in architecture Harvard ever awarded, and he went after the unnameable quality the way a mathematician would. He broke it into problems small enough to state, and he stated them so that they could be wrong.
 
-That is the magic of the form, and it is worth looking at closely. Every pattern has the same anatomy. A name you can say in a meeting. A photograph. The context: which larger patterns this one helps complete. The problem, in bold, stated as forces pulling against each other. The evidence and the argument. Then the word *Therefore*, and the arrangement that resolves the forces, also in bold. Then the smaller patterns that complete this one. Every page is linked to the pages above and below it. It was hypertext in 1977.
+That is the magic of the form. Every pattern has the same anatomy. A name you can say in a meeting. A photograph. The context: which larger patterns this one helps complete. The problem, in bold, stated as forces pulling against each other. The evidence and the argument. Then the word *Therefore*, and the arrangement that resolves the forces, also in bold. Then the smaller patterns that complete this one. Every page is linked to the pages above and below it. It was hypertext in 1977.
 
 And every pattern carries a confidence mark. Two asterisks mean the authors believe they have found something close to an invariant. One means they have made progress and expect a better answer. None means they know they have not solved it and are telling you so. They say outright that the patterns are hypotheses: does the problem occur as described, and does the arrangement resolve it?[^alexander] You can test Light on Two Sides by walking through an office at four in the afternoon and seeing where people are.
 
@@ -55,7 +55,7 @@ Alexander's patterns and the programmers' patterns both had a human reader. The 
 
 People had tried to give written knowledge to a machine before. In 1977, the same year as Alexander's book, Edward Feigenbaum gave the attempt a name, **knowledge engineering**: acquiring expert knowledge, representing it, and using it to construct and explain reasoning. He argued that a system's power lies in its knowledge, and he found that the hard part is getting that knowledge out of the expert. In one diagnostic system, rules developed with a physician were tested against cases, exposing gaps and inconsistencies the collaboration then had to resolve.[^feigenbaum] The machine needed the knowledge in a form its reasoning machinery could use. Getting the expert to explain the exception was only the beginning; someone still had to make the system handle it.
 
-Andrej Karpathy's count of the ways to program a computer tells the rest. In Software 1.0 a person writes the rules as code. That is where the Gang of Four's patterns lived: advice for the human holding the keyboard, invisible to the machine. In Software 2.0 the program is a set of weights learned from examples. It can absorb what nobody could articulate, but there is no convenient place in the weights to inspect a pattern and amend its conditions. In Software 3.0 the program is written in a natural language and a model interprets it.[^karpathy] The pattern itself, with its context, its reasons and its *Therefore*, can now guide the machine doing the work. This is the moment the chapter's subtitle is about.
+Andrej Karpathy's count of the ways to program a computer tells the rest. In Software 1.0 a person writes the rules as code. That is where the Gang of Four's patterns lived: advice for the human holding the keyboard, invisible to the machine. In Software 2.0 the program is a set of weights learned from examples. It can absorb what nobody could articulate, but there is no convenient place in the weights to inspect a pattern and amend its conditions. In Software 3.0 the program is written in a natural language and a model interprets it.[^karpathy] The pattern itself, with its context, its reasons and its *Therefore*, can now guide the machine doing the work.
 
 That changes the cost of Feigenbaum's translation. We can supply an account of how a problem usually unfolds, with a worked example and a warning about a misleading instrument, without first expressing every qualification in logic. The model contributes the interpretation. Code still performs the operations for which precise execution matters. A model reads the incident procedure, chooses a diagnostic query, and hands arithmetic to code. Nobody benefits if the arithmetic becomes more literary.
 
@@ -106,7 +106,7 @@ Every experimentation team knows this meeting. The dashboard arrives before the 
 
 I do not know what was said in the room at Bing, so take what follows as the general case. A result like theirs is an invitation to the same meeting. More queries, more revenue: a reviewer can praise the obvious explanation, criticize it, or ask another model to do both. None of that changes the data. To investigate, it has to say what would look different if the explanation were wrong.
 
-Popper's demand is **falsifiability**: an empirical claim must risk being wrong. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test. That is more exact than an instruction to be skeptical.[^popper]
+Popper's demand is **falsifiability**: an empirical claim must risk being wrong. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test.[^popper]
 
 What if we set a task and observed whether people completed it? Repeated attempts without success would count against the cheerful reading of more queries. Later return visits could add evidence, though habit and alternatives matter there too. We have a test to design, and a reason for collecting something the headline omitted.
 
@@ -140,7 +140,7 @@ Here is what had happened at Bing. The treatment had a bug, and the bug made the
 
 The count was right. The cheerful interpretation was wrong. The task-completion test we proposed could have exposed the problem; another audit of the count would not. We had given the interpretation its own address. Now we know why it needed one.
 
-Saussure's point, which we met in Chapter 4, is **relational value**: a term means what it does through its differences from its neighbors.[^saussure] *More queries* meant *more engaged* only inside a system where a query was a unit of interest. Set it beside *session* and *task* and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad ranking.
+Saussure's point, which we met in Chapter 4, is **relational value**: a term means what it does through its differences from its neighbors.[^saussure-lectures] *More queries* meant *more engaged* only inside a system where a query was a unit of interest. Set it beside *session* and *task* and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad ranking.
 
 The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return. Tasks were harder to identify, so sessions served as a proxy. That distinction matters. A shorter session might mean success or abandonment. The new measure still needed an argument; a better name did not supply one.
 
@@ -191,7 +191,7 @@ In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks
 
 Kuhn gives us a way to examine the larger change: a **paradigm** supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[^kuhn] Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. The result reached the syllabus, the tools and the problems a new student would consider worth a career.
 
-Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Those questions survive even when the fashionable result no longer has to answer them. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools. Each new arrangement makes certain questions easier to ask and others easier to forget.
+Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Those questions survive even when the fashionable result no longer has to answer them. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools.
 
 The examples are part of how a paradigm holds. Kuhn's scientists learn from exemplars that no complete list of explicit rules can replace. I wrote an editing brief for this book after explaining the same corrections to successive agents. One instruction was “preserve the wandering,” which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage can teach the distinction: one version follows an uncertain thought until it becomes clear; the other announces the conclusion and removes the path that made it convincing. Both can contain long paragraphs. Measuring their length would miss what the examples are there to teach. Those examples also carry my taste into the next session. Preserving my judgment and preserving my mistakes used the same file format.
 
@@ -227,7 +227,7 @@ OpenAI's account of its Navier–Stokes proof shows a promising result changing 
 
 On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] Three events, not one: a decision to invest, a proof checked, a verdict pending. A success in one investigation had changed who could afford to keep investigating elsewhere. The other problems had lost workers, not been refuted.
 
-The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[^priority]
+The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[^priority] By OpenAI’s own account, the rumor traced to Buckmaster and to Alpöge, whom it describes as an Anthropic employee. Their concurrent result, on the forced Euler problem, had been produced with an internal Anthropic model. This book relies on Anthropic’s reports in several chapters, so that belongs in the record too.
 
 A checked proof does not settle that history. Learning that a route is promising can affect where we invest without supplying a single step of the proof. The provenance of a proof and the provenance of the decision to pursue it answer different questions.
 
@@ -357,7 +357,12 @@ Now the claim to be tested is harder. A change must do more than make the curren
 
 ---
 
-[^alexander]: Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 1 (Independent Regions), 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves), 251 (Different Chairs), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. [Text hosted by Cornell](https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf).
+> *Patterns over recipes.*\
+> *Let knowledge accumulate. Let it be overthrown.*
+
+---
+
+[^alexander]: Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 1 (Independent Regions), 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves), 251 (Different Chairs), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
 
 [^beck]: Kent Beck and Ward Cunningham, “Using Pattern Languages for Object-Oriented Programs,” OOPSLA-87 workshop on the Specification and Design for Object-Oriented Programming, 1987.
 
@@ -367,45 +372,45 @@ Now the claim to be tested is harder. A change must do more than make the curren
 
 [^alexander96]: Christopher Alexander, “The Origins of Pattern Theory: The Future of the Theory, and the Generation of a Living World,” keynote at OOPSLA 1996; published in *IEEE Software* 16(5), 1999, pp. 71–82.
 
-[^feigenbaum]: Edward A. Feigenbaum, *The Art of Artificial Intelligence: I. Themes and Case Studies of Knowledge Engineering*, Stanford report STAN-CS-77-621, 1977, especially the introduction and PUFF example. [Original report](https://infolab.stanford.edu/pub/cstr/reports/cs/tr/77/621/CS-TR-77-621.pdf).
+[^feigenbaum]: Edward A. Feigenbaum, *The Art of Artificial Intelligence: I. Themes and Case Studies of Knowledge Engineering*, Stanford report STAN-CS-77-621, 1977, especially the introduction and PUFF example. <https://infolab.stanford.edu/pub/cstr/reports/cs/tr/77/621/CS-TR-77-621.pdf>.
 
 [^karpathy]: Andrej Karpathy, “Software 2.0,” November 2017, and “Software Is Changing (Again),” talk at Y Combinator's AI Startup School, June 2025.
 
 [^skills]: Agent Skills, [official specification](https://agentskills.io/specification), consulted September 2026.
 
-[^voyager]: Guanzhi Wang et al., *Voyager: An Open-Ended Embodied Agent with Large Language Models*, 2023. [Paper, version 2](https://arxiv.org/html/2305.16291v2).
+[^voyager]: Guanzhi Wang et al., *Voyager: An Open-Ended Embodied Agent with Large Language Models*, 2023. <https://arxiv.org/html/2305.16291v2>.
 
-[^fermat]: Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, especially the account of Prove2Me and final verification. [Research post and links to the proof](https://www.anthropic.com/research/formalizing-fermats-last-theorem).
+[^fermat]: Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, especially the account of Prove2Me and final verification. <https://www.anthropic.com/research/formalizing-fermats-last-theorem>.
 
-[^doyle]: Jon Doyle, “Truth Maintenance Systems for Problem Solving,” *Proceedings of IJCAI*, 1977, p. 247. [Original summary](https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf). See also Doyle, “A Truth Maintenance System,” *Artificial Intelligence* 12(3), 1979, pp. 231–272, [publication record](https://doi.org/10.1016/0004-3702(79)90008-0). These systems maintain program justifications; identifying the real-world assumptions and evidential relationships remains a separate problem.
+[^doyle]: Jon Doyle, “Truth Maintenance Systems for Problem Solving,” *Proceedings of IJCAI*, 1977, p. 247. <https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf>. See also Doyle, “A Truth Maintenance System,” *Artificial Intelligence* 12(3), 1979, pp. 231–272, <https://doi.org/10.1016/0004-3702(79>90008-0). These systems maintain program justifications; identifying the real-world assumptions and evidential relationships remains a separate problem.
 
 [^kohavi]: Ron Kohavi, Alex Deng, Brian Frasca, Roger Longbotham, Toby Walker, and Ya Xu, “Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained,” *Proceedings of KDD*, 2012, section on the overall evaluation criterion for a search engine. [Original paper](https://exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf), §3.1. Sessions per user is a key component of the criterion; sessions serve as a practical proxy because tasks are harder to identify.
 
 [^kohavi2]: Kohavi et al., “Five Puzzling Outcomes Explained,” as above. The account of why queries and revenue rose is the authors' own.
 
-[^popper]: Karl Popper, *Conjectures and Refutations*, 1963, chapter 1, especially the discussion of risky predictions and testability. [Text](https://padron.entretemas.com.ve/documentos/Popper-Conjectures-Rwefutations-GrowthOfKnowledge.pdf). Popper treats falsifiability as a criterion for demarcating science; the use here is the narrower one, that a test is informative in proportion to the risk it imposes on the claim.
+[^popper]: Karl Popper, *Conjectures and Refutations*, 1963, chapter 1, especially the discussion of risky predictions and testability. <https://padron.entretemas.com.ve/documentos/Popper-Conjectures-Rwefutations-GrowthOfKnowledge.pdf>. Popper treats falsifiability as a criterion for demarcating science; the use here is the narrower one, that a test is informative in proportion to the risk it imposes on the claim.
 
 [^twyman]: On Twyman's law and trust checks, see Ron Kohavi, Diane Tang, and Ya Xu, *Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing*, 2020, chapter 3. On sample-ratio mismatch, see Aleksander Fabijan et al., “Diagnosing Sample Ratio Mismatch in Online Controlled Experiments,” *Proceedings of KDD*, 2019.
 
-[^quine]: W. V. O. Quine, “Two Dogmas of Empiricism,” 1951, section 6. [Text](https://www.ditext.com/quine/quine.html). Duhem's discussion of physical testing and Quine's broader holism differ in scope; the shared engineering difficulty here is identifying what to revise when a bundle of assumptions encounters a contrary result.
+[^quine]: W. V. O. Quine, “Two Dogmas of Empiricism,” 1951, section 6. <https://www.ditext.com/quine/quine.html>. Duhem's discussion of physical testing and Quine's broader holism differ in scope; the shared engineering difficulty here is identifying what to revise when a bundle of assumptions encounters a contrary result.
 
-[^saussure]: Ferdinand de Saussure, *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. [Excerpt](https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm). The structuralist connection here concerns Saussure’s account of relational linguistic value.
+[^saussure-lectures]: Ferdinand de Saussure, *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. <https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm>. The structuralist connection here concerns Saussure’s account of relational linguistic value.
 
 [^imagenet]: Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, “ImageNet Classification with Deep Convolutional Neural Networks,” *Advances in Neural Information Processing Systems* 25, 2012.
 
-[^kuhn]: Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. [Second-edition text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf).
+[^kuhn]: Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>.
 
-[^riemann]: Anthropic, ‘Learning more about Claude’s mathematical capabilities,’ 10 August 2026, updated 13 August. [Research account, paper, formalization, and transcripts](https://www.anthropic.com/research/riemann-zeta).
+[^riemann]: Anthropic, ‘Learning more about Claude’s mathematical capabilities,’ 10 August 2026, updated 13 August. <https://www.anthropic.com/research/riemann-zeta>.
 
-[^laudan]: Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. [Text](https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf).
+[^laudan]: Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. <https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf>.
 
-[^lakatos]: Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. [Collected volume](https://books.google.com/books?id=RRniFBI8Gi4C).
+[^lakatos]: Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
 
-[^kitcher]: Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. [Original article](https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf).
+[^kitcher]: Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>.
 
-[^navier]: OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, updated 10 September, especially ‘How we found the proof.’ [Announcement and proof links](https://openai.com/index/navier-stokes-solution/). The announced result uses smooth forcing and addresses alternatives C and D of the official formulation; it does not settle the unforced Navier–Stokes regularity question.
+[^navier]: OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, updated 10 September, especially ‘How we found the proof.’ <https://openai.com/index/navier-stokes-solution/>. The announced result uses smooth forcing and addresses alternatives C and D of the official formulation; it does not settle the unforced Navier–Stokes regularity question.
 
-[^clay]: Clay Mathematics Institute, ‘Navier-Stokes Announcement,’ 11 September 2026. [Statement](https://www.claymath.org/news/navier-stokes-announcement/). Status of the recent mathematical announcements in this chapter checked on 13 September 2026.
+[^clay]: Clay Mathematics Institute, ‘Navier-Stokes Announcement,’ 11 September 2026. <https://www.claymath.org/news/navier-stokes-announcement/>. Status of the recent mathematical announcements in this chapter checked on 13 September 2026.
 
 [^priority]: Tristan Buckmaster, [public statement](https://cims.nyu.edu/~tristanb/statement.pdf), September 2026, especially pp. 1–4; OpenAI, [‘On the Navier–Stokes Millennium Prize Problem,’ ‘Concurrent work’](https://openai.com/index/navier-stokes-solution/), updated 10 September 2026. These are the participants’ accounts.
 
@@ -417,21 +422,21 @@ Now the claim to be tested is harder. A change must do more than make the curren
 
 [^longino]: Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
 
-[^colosseum]: Honghao Lin et al., ‘Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,’ arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. [Paper](https://arxiv.org/html/2609.15983v2). The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
+[^colosseum]: Honghao Lin et al., ‘Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,’ arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. <https://arxiv.org/html/2609.15983v2>. The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
 
 [^planck]: Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn's text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
 
-[^funerals]: Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. [Article and abstract](https://pubmed.ncbi.nlm.nih.gov/31656315/).
+[^funerals]: Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. <https://pubmed.ncbi.nlm.nih.gov/31656315/>.
 
 [^world3]: Karl Popper, *Objective Knowledge: An Evolutionary Approach*, 1972, chapters 3 and 4, especially “Epistemology Without a Knowing Subject.”
 
-[^tao]: Terence Tao, ‘Mathematical exploration and discovery at scale,’ 5 November 2025. [Author’s account](https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/). See also Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, and Adam Zsolt Wagner, [paper](https://arxiv.org/abs/2511.02864).
+[^tao]: Terence Tao, ‘Mathematical exploration and discovery at scale,’ 5 November 2025. <https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/>. See also Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, and Adam Zsolt Wagner, <https://arxiv.org/abs/2511.02864>.
 
-[^buzzard]: Kevin Buzzard, ‘FLT: Anthropic has beaten me to it,’ 4 September 2026, especially ‘The code base’ and ‘What this work is, and is not.’ [Firsthand response](https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/).
+[^buzzard]: Kevin Buzzard, ‘FLT: Anthropic has beaten me to it,’ 4 September 2026, especially ‘The code base’ and ‘What this work is, and is not.’ <https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/>.
 
 [^biology]: Google DeepMind and EMBL-EBI, [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/); AlphaGenome Atlas team, [‘AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome’](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/), September 2026.
 
-[^ace]: *Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models*, 2025. [Paper, version 1](https://arxiv.org/html/2510.04618v1).
+[^ace]: *Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models*, 2025. <https://arxiv.org/html/2510.04618v1>.
 
 [^context]: Gloaguen et al., *Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?*, 2026, [arXiv:2602.11988v2](https://arxiv.org/html/2602.11988v2), revised 23 June; Jai Lal Lulla et al., *On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents*, 2026, [arXiv:2601.20404v2](https://arxiv.org/html/2601.20404v2), revised 30 March.
 

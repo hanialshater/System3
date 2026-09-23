@@ -1,6 +1,6 @@
 # Appendix: References
 
-References are organized by chapter, in roughly the order the works appear. The text names the work; this appendix carries the full citation and link. Web sources dated 2025–2026 were last verified in August 2026.
+References are organized by chapter, in roughly the order the works appear. The text names the work; this appendix carries the full citation and link. Web sources dated 2025–2026 were last verified in August 2026; sources from September 2026 were checked when cited.
 
 ## Chapter 1 — Why I'm Betting on AI Agents
 
@@ -188,6 +188,10 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Arnaud Fickinger et al., "Multi-Principal Assistance Games" (2020). <https://arxiv.org/abs/2007.09540>
 - Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
+## Chapter 10 — Fluent Autonomy
+
+- Richard S. Sutton, “The Bitter Lesson” (2019). <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>
+
 ## Chapter 11 — The Store That Builds Itself
 
 - Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
@@ -198,6 +202,9 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action* (Cambridge University Press, 1990).
 - Elinor Ostrom, "Beyond Markets and States: Polycentric Governance of Complex Economic Systems," *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter's community-room example and proposed AI applications are the author's thought experiment. <https://doi.org/10.1257/aer.100.3.641>
 - Jacques Derrida, "Signature Event Context" (1972), in *Limited Inc* (Northwestern University Press, 1988), 1–23 — repeatability and the impossibility of finally closing context; the gradient-descent connection is the author's provocation. See also *Of Grammatology* (1967).
+
+- Anthropic, “Formalizing Fermat’s Last Theorem” (2026). <https://www.anthropic.com/research/formalizing-fermats-last-theorem>
+- Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5 (2026). <https://www.anthropic.com/news/fable-mythos-access>
 
 ## Chapter 13 — The Prophecy
 

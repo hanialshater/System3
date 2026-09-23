@@ -28,7 +28,7 @@ Algorithms are almost perfect for this. The search can be brutally difficult whi
 
 And that is how I ended up spending an unreasonable amount of time packing circles into a square.
 
-## The Running Example: Circle Packing
+## Twenty-Six Circles
 
 ![Citrus packing - a real-world example](../resources/image0138.png)
 
@@ -70,7 +70,7 @@ A crude taxonomy helps. **Symbolic methods** give us explicit procedures, constr
 
 Circle packing lets us watch that handoff happen in miniature.
 
-## First Idea: Hill Climbing
+## Hill Climbing
 
 If I gave you a rough packing and asked you to improve it manually, one obvious strategy would be to make small changes. Move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn't.
 
@@ -94,7 +94,7 @@ In one simple run, the score climbed from around 1.33 to roughly 2.26. That is n
 
 Hill climbing is not failing because it is stupid. It is doing exactly what we asked: improving the solution immediately around it. The problem is that the current solution may live in the wrong part of the search space. Reaching a much better packing may require temporarily moving through configurations that look worse, or jumping to a structure that cannot be reached through a sequence of tiny improvements.
 
-This matters far beyond circle packing. A system can become expert at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
+A system can become expert at improving the thing in front of it while never questioning whether the thing in front of it is the right thing to improve.
 
 Here, the machine is searching—but the human still invented the search rule.
 
@@ -160,13 +160,11 @@ But MAP-Elites introduces another human choice: what dimensions define the archi
 
 The search had become more sophisticated, but the human was still deciding what counted as an interesting direction.
 
-That is the invention problem.
-
 ## The Invention Problem
 
 By this point, the search machinery was fairly capable. We had hill climbing, population search, repair, geometric crossover and quality-diversity archives. We could evaluate huge numbers of candidate packings and inspect far more of the search space than any human would explore manually.
 
-Yet every substantial conceptual jump came from somebody noticing something. Someone had to invent virtual forces. Someone had to realize that crossover should respect geometry. Someone had to choose the representation and decide which kinds of diversity were worth preserving.
+Yet every substantial conceptual jump came from somebody noticing something.
 
 Traditional search is excellent once we define the space and the legal moves. Sometimes the space and the moves are exactly the things we need to rethink.
 
@@ -248,7 +246,7 @@ What interested me even more than the resulting algorithms was what happened to 
 
 So, naturally, I built all of it.
 
-## My First Version: Build All the Machinery
+## So, Naturally, I Built All of It
 
 My instinct was predictable. I started building a framework: a database of programs, prompt sampler, evaluation loop, selection logic, mutation prompts, crossover, archive management. I used Aider and other coding agents to help reproduce the basic code-evolution pattern, and it worked. We could evolve circle-packing programs and get respectable solutions.
 
@@ -290,7 +288,7 @@ Everything inside the boundary can move.
 
 The boundary does not.
 
-## What Happened
+## Diagonal Layering
 
 The agent did not execute one elegant master plan. It bounced around, which was encouraging.
 
@@ -317,8 +315,6 @@ The smaller claim is enough:
 **The agent beat our reference while I was not writing the solution algorithm for it.**
 
 That was the result I cared about—not that AI writes code faster, but that AI can participate in **discovering better code**.
-
-The important shift is not speed. It is who owns the next idea.
 
 ## The Algorithmic Vortex
 
@@ -412,7 +408,7 @@ I meant that I was writing almost no custom orchestration framework. That is ver
 
 The framework did not vanish. It became somebody else's primitive.
 
-That fits the emergence argument almost suspiciously well. Once lower layers become reliable enough, we stop rebuilding them and treat them as building blocks. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
+That fits the emergence argument almost suspiciously well. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
 
 So yes: **Zero Framework. Bash is enough.**
 
@@ -420,7 +416,7 @@ With the asterisk that Bash contains roughly half a century of civilization.
 
 This is worth remembering whenever somebody shows you an agent implemented in one hundred lines of Python. The hundred lines may be perfectly real. So is everything underneath them.
 
-## What Did We Actually Learn?
+## The Easy Version of Autonomy
 
 It would be very easy to overread this experiment.
 
@@ -447,3 +443,9 @@ We can still let the agent generate alternatives, branch, cross-pollinate and se
 In circle packing, the harness tells the agent when it is wrong.
 
 What happens when **the world no longer gives us one clean referee, and judgment itself has to be constructed**?
+
+---
+
+> *Harness immutable. Prompts evolve.*\
+> *Never write solution code.*\
+> *Discovery before polish.*

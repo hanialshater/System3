@@ -132,7 +132,7 @@ One answer is to demand a proof. Schmidhuber's Gödel Machine, proposed in 2003,
 
 A game can supply exact rules and an agreed outcome. The store cannot supply a complete formal account of its customers, competitors and future purposes. When the agent proposes a different way to conduct research, we will usually have to investigate its effects. We can check that the software runs and still not know whether the institution should adopt it.
 
-Recent systems have made that empirical question easier to ask. In STOP, the Self-Taught Optimizer, an LLM-based program that improved code could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed.[^stop] The Darwin Gödel Machine let descendants modify a coding agent and enter an archive after evaluation. The current champion did not monopolize ancestry; other candidates remained available to produce descendants.[^dgm] That is one way to preserve the possibilities our agent was about to discard.
+Recent systems have made that empirical question easier to ask. In STOP, the Self-Taught Optimizer, an LLM-based program that improved code could itself become the object of improvement. The base model stayed fixed while the program determining how it was used changed.[^stop] The Darwin Gödel Machine let descendants modify a coding agent and enter an archive after evaluation. The current champion did not monopolize ancestry; other candidates remained available to produce descendants.[^dgm]
 
 In 2026, Andrej Karpathy's `autoresearch` repository made the engineering version look almost comically small: give an agent a compact training setup, a fixed experimental budget and an editable `train.py`; let it propose changes, run experiments, inspect the validation metric, keep improvements and discard regressions.[^autoresearch]
 
@@ -152,7 +152,7 @@ This is Chapter 6's machinery pointed at the harness that runs it. Popper gets a
 
 Retrieving the failed experiments is meant to help future research. A higher task score would tell us little about whether it does. We could give the old and revised research systems copies of the same starting agent, comparable unfamiliar problems and matched budgets, then let each try to improve its copy. Their resulting agents would face held-out work. We would also inspect the research: did the retained failures prevent repeated mistakes, or did retrieval merely consume more of the budget? Repeated trials would help distinguish a useful change from a fortunate run.
 
-That would be evidence about the ability to produce improvements under those conditions. It would not establish that the advantage compounds indefinitely. But it would test the recursive claim more directly than asking whether the revised system answers today's questions better. The learner has reached the institution that housed it. This is science turning inward.
+That would be evidence about the ability to produce improvements under those conditions. It would not establish that the advantage compounds indefinitely. But it would test the recursive claim more directly than asking whether the revised system answers today's questions better. The learner has reached the institution that housed it.
 
 Now imagine the change holds up. The revised research system wastes fewer trials repeating old mistakes and uses the recovered budget to find useful interventions. One of those interventions improves its research procedure again. That version produces better experiments; the better experiments produce a better successor; the successor is better at producing successors. There is Good's recursion. We would have to establish each link, including whether the advantage survives the changes it helps to produce.
 
@@ -170,7 +170,7 @@ Remove those qualifiers and “recursive self-improvement” becomes dangerously
 
 More what?
 
-## The Complexity of Self-Change
+## Before the Returns Arrive
 
 Even after we agree on what better means, we may have to wait to find out whether we achieved it.
 
@@ -271,6 +271,11 @@ For a compiler, correctness under tests plus efficiency under an agreed budget m
 The self-improving institution therefore needs a research function watching its own evolution: finding new failure modes, generating new tests, challenging reward models, checking transfer and looking for reward hacking. Once improvement becomes continuous, alignment has to become a continuous research function.
 
 Omar could investigate the investigator. Now the investigator can rewrite itself, and someone still has to decide which of its suspicions about itself deserve to be believed. We have given that someone a research institution's worth of work. How much of it can a human actually judge?
+
+---
+
+> *Self-reference is not self-improvement.*\
+> *The judged do not amend the judge alone.*
 
 ---
 

@@ -36,7 +36,7 @@ Once something complicated works reliably enough, we stop rebuilding it from fir
 
 Agentic AI, to me, looks like the next scaffolding layer.
 
-## The Lesson We Keep Missing
+## The Rule-Based Exoskeleton
 
 Machine learning was supposed to teach us this lesson a long time ago.
 
@@ -56,8 +56,6 @@ At that point, my job changes. I don't disappear; I move upstream. Instead of ch
 
 Or, less politely: **let go—but of the path, not the boundary.**
 
-The alternative to controlling every decision is not having no control. It is designing conditions under which bad decisions can lose.
-
 A slightly ridiculous thought experiment helped me see the distinction. Imagine you're trying to seed life on another planet. You've got raw materials, a primordial soup and perhaps a temperature range that doesn't instantly kill everything. Basically you've got all the LEGOs, except the LEGOs reproduce, mutate and occasionally develop venom.
 
 Do you bet on DNA, a biological copying system that took billions of years of evolution to get us here? Or do you bet on AI agents carrying a substantial chunk of accumulated human knowledge, able to experiment, simulate, adapt and reuse what they discover? Or, God forbid, do you send a group of product managers to write the requirements document for life?
@@ -70,8 +68,6 @@ That doesn't make the agent better than evolution. It makes the search fundament
 
 Initial conditions become **operating conditions**.
 
-That possibility is hard for me to ignore.
-
 ## When Search Moved Up a Level
 
 There is no clean moment when machine learning crossed from useful statistical machinery into something that felt qualitatively different. History rarely cooperates with chapter headings.
@@ -80,7 +76,7 @@ AlphaGo was one of those moments for me.
 
 The interesting part wasn't simply that a computer beat humans at Go. Computers had been humiliating us at games for years. It was how AlphaGo combined learned intuition with search: the network suggested promising moves and estimated positions; the tree explored what might follow. AlphaGo Zero pushed the idea further by learning through self-play rather than treating human game records as its main teacher.
 
-Then it found moves elite players found strange. That matters because the surprise was not merely computational. The system was finding useful strategies outside the path human tradition had naturally converged on.
+Then it found moves elite players found strange. The system was finding useful strategies outside the path human tradition had naturally converged on.
 
 Large language models created a much larger version of the same feeling.
 
@@ -116,11 +112,11 @@ This doesn't prove that agents are creative in exactly the human sense, and it c
 
 And if the agent inherits more of the search, the human inherits a different job.
 
-## What Are We Controlling Now?
+## Chaos With an API Key
 
 Suppose you're managing an excellent engineer. You don't sit behind her and approve every keystroke. If you do, one of you is unnecessary, and it may not be her.
 
-You decide what problem she owns. You provide context. You set constraints. You agree on what success looks like. You make sure she can access the systems she needs and cannot casually transfer the payroll budget to herself. You review important outcomes and change direction when the work reveals that the original plan was stupid.
+You decide what problem she owns, provide context, set constraints and agree on what success looks like. You make sure she can access the systems she needs and cannot casually transfer the payroll budget to herself. You review important outcomes and change direction when the work reveals that the original plan was stupid.
 
 The detailed actions belong to her. Much of the surrounding structure belongs to you.
 
@@ -142,13 +138,9 @@ Complexity people have a phrase I both love and distrust: **the edge of chaos**.
 
 This is not a new pattern. Evolution does not choose mutations individually, but the environment changes which organisms survive. Markets do not centrally select every transaction, but rules, incentives, scarcity and institutions shape behavior. Science does not dictate conclusions, but it surrounds claims with experiments, criticism, replication and the non-zero probability of being publicly embarrassed by Reviewer 2.
 
-The details emerge while the environment does more work than it first appears. We give up some authority over the next move and take on more responsibility for the conditions that make moves win or lose.
+We give up some authority over the next move and take on more responsibility for the conditions that make moves win or lose.
 
-That is what I mean by control moving upward.
-
-## The Terrifying Part
-
-There is an obvious problem with all this.
+## Confident Wrong Solutions
 
 If the agent only does what you specified, most failures trace back to your specification. Once it searches for solutions you didn't specify, it can discover failure modes you didn't specify either.
 
@@ -162,13 +154,13 @@ This is where my optimism about emergence becomes less romantic.
 
 Giving a system more freedom forces us to think much harder about what surrounds that freedom. Trust becomes a question of provenance and evidence: how does the system know what it claims to know? Desire becomes a question of incentives: what behavior does the environment actually reward? Society appears as soon as multiple agents interact: what happens when they cooperate, specialize, disagree, manipulate one another or invent conventions nobody asked for?
 
-Those questions will occupy much of this book. For now, the important point is simpler. More autonomy does not reduce the need for structure. It changes the kind of structure we need.
+More autonomy does not reduce the need for structure. It changes the kind of structure we need.
 
 It also changes what understanding should mean. We should not expect to reconstruct every micro-decision inside an autonomous system any more than we follow every molecule in a gas. Sometimes internals matter; sometimes behavior matters; sometimes the sequence of decisions matters; sometimes the useful question is what changes when we intervene. Mechanistic analysis, behavioral evaluation, traces and experiments answer different questions.
 
-The tool should match the question. The useful standard is not omniscience but whether we can detect the failures that matter, obtain evidence from outside the agent's own story and intervene before the interesting failure becomes a congressional hearing.
+The useful standard is not omniscience but whether we can detect the failures that matter, obtain evidence from outside the agent's own story and intervene before the interesting failure becomes a congressional hearing.
 
-## Why I'm Still Betting on This
+## Pulling Harder on the Stem
 
 After all of that, it would be reasonable to ask why I'm still excited.
 
@@ -188,11 +180,11 @@ Cultivation may be a better metaphor than scripting—not because agents are pla
 
 I find that exciting and uncomfortable in roughly equal measure, which is probably why I keep coming back to it.
 
-## Where We Go Next
+## A Bounded Problem
 
 The cleanest place to test the argument is a **bounded problem**: genuinely hard, but unusually cooperative about judgment. The constraints can be written down. Solutions can be evaluated. We can tell whether one attempt is better than another without a debate about aesthetics, pedagogy or whether the users are “delighted.”
 
-That gives us a clean experiment. We still choose the problem. We provide the building blocks. We construct the environment. We define the boundaries and decide what counts as success. I want to watch what takes shape inside those conditions: the solution, certainly, but also the way the system learns to work toward it.
+That gives us a clean experiment. We still choose the problem, provide the building blocks, construct the environment, define the boundaries and decide what counts as success. I want to watch what takes shape inside those conditions: the solution, certainly, but also the way the system learns to work toward it.
 
 What we stop doing is telling the agent how to get there.
 
@@ -201,3 +193,8 @@ Inside that space, we let it search.
 If that fails, the whole argument has a problem.
 
 If it works, things get much more interesting.
+
+---
+
+> *Conditions over commands.*\
+> *Let go of the path, not the boundary.*
