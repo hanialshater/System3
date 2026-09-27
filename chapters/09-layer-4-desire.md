@@ -36,7 +36,7 @@ Now compare that with a 2025 randomized trial in a college course. A custom AI t
 
 Same broad technology, different relationship to the learner. AI is not intrinsically a tutor or a crutch; the architecture decides which one it becomes.
 
-That changes how I think about Layer 4. If I ask an AI to help me learn linear algebra, “get the answers right” is not enough. If I ask it to help me write, “produce better prose” is not always enough. If I ask it to help me lead a team, “make the decision for me” may be exactly the wrong objective even when its decision is statistically better. Who is supposed to become more capable when this interaction is over?
+Who is supposed to become more capable when this interaction is over? A system that writes better prose for me and one that helps me become a better writer have different jobs.
 
 Sometimes the answer is nobody. I do not need to become a better invoice parser every time software handles an invoice. Sometimes the answer is clearly me. Layer 4 has to know the difference.
 
@@ -96,7 +96,7 @@ The assistant has changed the **decision environment**, and preferences themselv
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
-A decision assistant therefore does not have to rush to a recommendation. Sometimes the most useful thing it can do is make the choice **richer before making it easier**. What alternatives have you not considered? Which assumptions drive the ranking? What would have to be true for option B to beat option A? Which unknown is actually decision-relevant? What would your future self regret not having investigated?
+A decision assistant can make the choice **richer before making it easier**. If the higher salary keeps winning only because I have underestimated the travel, the next useful step is to work through an ordinary week, not recommend the job again.
 
 ## Some Choices Change the Person Choosing
 
@@ -152,7 +152,7 @@ The target is **appropriate reliance**, not maximum trust. And explanations alon
 
 Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less.[^l4-forcing] The interface people enjoy most is not always the one that preserves their judgment best. Sometimes friction is teaching.
 
-A good Layer 4 system therefore has to decide not only **what answer to give**, but what role the answer should play in the human's cognition. Should I give the recommendation immediately? Should I first ask you to form your own view? Should I do the routine analysis and leave the value trade-off with you? Should I refuse to collapse the ambiguity because the ambiguity is the thing you need to think about? The architecture of assistance changes the person doing the deciding. That belongs in Layer 4.
+The assistant now has a choice: offer its recommendation immediately, or ask me to form a view first. The less popular interface may leave me better able to judge the next recommendation.
 
 ## Capabilities
 
@@ -200,17 +200,11 @@ So Layer 4 cannot simply mean “the user gets whatever the user wants.” The r
 
 ## The Objective Layer
 
-Layer 4 is the objective layer, but the objective can change during the work.
-
-Layer 4 needs a working account of the current intention and what remains uncertain about it: preferences, their history and conflicts, what the human is trying to learn, and which parts of the task they want to remain capable of doing themselves. Some commitments should survive one bad afternoon. Other people's interests may constrain what one user can legitimately ask for. The account will be partial, which is why correction has to remain possible.
-
-And it changes. The system acts, reality responds, the human sees consequences and learns. The system learns the human, the human learns through the system, and the intention changes.
-
 The flight may need one clarification before booking. A lesson may need the assistant to withhold the answer until I have tried. A choice of profession may need room for a question neither of us can settle yet. Treat all three as instructions awaiting execution and the system can become very efficient at missing the point.
 
 System 3, the scientific institution we have been building, can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain **alive without making them ownerless**. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
-Alignment, in this picture, is a corrigible relationship with human intention while both the human and the world continue to change. The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me.
+The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me. How much of that should I have to explain every time I ask for help?
 
 [^russell-enfeeblement]: Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 

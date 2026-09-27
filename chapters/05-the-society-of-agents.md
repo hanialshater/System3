@@ -38,7 +38,7 @@ The harness kept changing. Near the end, new features started breaking old ones,
 
 Specialization addressed work the next failing test would never ask anyone to do. LLM-written code kept re-implementing what already existed. Someone needed to look for duplicates. Someone needed to improve the compiler's own speed, and someone else the quality of the code it emitted. Carlini assigned those roles, along with an agent to review the structure as a Rust developer and another to work on documentation, which is normally the moment you know a civilization has become serious. The crowd had become a staff.
 
-Look at the harness and every part carries the mark of a problem. Two workers reach for the same task, so there is a lock. A worker arrives with no memory, so there is a progress file. New features break old ones, so there is CI. Linux stops the whole crowd, so the harness learns to split it into smaller questions. Carlini deliberately built the repairs; the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history. The history was in the structure.
+Carlini deliberately built the repairs; the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history. The history was in the structure.
 
 Same models. Different institution.
 
@@ -188,8 +188,6 @@ The easiest reaction to one unreliable agent is to create five. Give one the tit
 
 Condorcet supplied a famous mathematical case for crowds in 1785. In the simple version, voters each have the same better-than-even chance of being right, and their votes are independent. Under those conditions, the probability of a correct majority approaches one as the crowd grows. Independence is doing work in that sentence. Voters who simply copy one source copy its mistakes. The crowd is the source, louder.[^condorcet]
 
-Five agents citing the same paper are not five witnesses. Five researchers repeating a claim that traces to one unsupported source are not corroboration. If everyone receives the same framing, reads the same leading explanation and inherits the same assumptions, agreement may tell us more about their starting point than about the claim.
-
 Agreement raises confidence when it would be difficult to explain if the claim were false. When five agents merely repeat one source, we have one witness wearing different coats.
 
 So useful independence has to be built. A critic should see the artifact before the builder's explanation. A second researcher should form a theory before reading the favorite. Different investigators should sometimes use different sources or methods. Separate containers help with some kinds of interference. They do not erase shared training, shared prompts or the bad diagnosis everyone read in `progress.md`.
@@ -321,11 +319,7 @@ Tests let the running program contradict an agent's account of it. Git history g
 
 The familiar failures come with them. A test suite can keep passing while the thing nobody thought to test quietly gets worse. Separate containers can inherit the same mistake. Git can preserve a change without preserving the reason an agent thought it justified. Carlini had built part of an institution. Some of the rest still lived in his head.
 
-Chapter 4 ended where one agent inherits a claim another has made. A trust chain can tell the receiver where it came from. Someone still has to decide whether to spend the next hour checking it.
-
-A research agent makes a weak assumption. Another receives it as context. A builder implements a coherent solution on top of it. An evaluator approves the solution. Two documents repeat the claim because they share an ancestor, and a third agent mistakes repetition for support. Eventually the assumption has code, citations and organizational history, and nobody lied. The institution manufactured the confidence.
-
-A later investigator needs to be able to pull at that history. Where did the assumption come from? What could show it was wrong? Who has the instrument to check, and will anyone give her time to use it? Preserving the record is only the beginning. The challenge has to be able to change what happens next.
+A trust chain can tell the next worker where a claim came from. Someone still has to decide whether to spend an hour checking it. Who has the instrument, and will anyone give her time to use it? Preserving the record is only the beginning. The challenge has to be able to change what happens next.
 
 We can test whether these arrangements earn their keep. Keep the model and budget fixed. Give the critic another title, then give her evidence the builder never saw, and compare what she catches. Put a bad diagnosis in a progress file. Compare a system that merely remembers it with one that can trace it to the failed test it misdescribes. Does the mistake survive into the next worker's plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing.
 
@@ -333,15 +327,7 @@ We can test whether these arrangements earn their keep. Keep the model and budge
 \clearpage
 ```
 
-Give an agent a bounded problem and a referee it cannot charm, and it can find a direction nobody put in the plan.
-
-When judgment is less cooperative, it needs several judges, kept independent and made to use the thing.
-
-A claim needs a route back to something that could have said no.
-
-Sixteen agents need records, standards, specialists and a second witness capable of being wrong differently.
-
-Each piece answered a failure in the work. The institution emerged from the repairs.
+Records, standards, specialists, a second witness capable of being wrong differently. Each piece answered a failure in the work. The institution emerged from the repairs.
 
 What the pieces buy is capacity: a claim that survives its author, an objection that survives the person who would rather not hear it, and things a population can attempt that none of its members could.
 

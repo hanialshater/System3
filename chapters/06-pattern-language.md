@@ -95,7 +95,7 @@ The history stays attached. A later worker asking why the recommendation was sus
 
 Suppose the agent recorded the result and left out the measurement assumption. Then an automatic correction has no link to follow. Someone has to discover the missing dependency. Lean can check the formal links in a proof; our graph cannot establish that an agent has recorded every assumption behind a business decision.
 
-**Therefore: store the claim with what it rests on, so that a correction has somewhere to go.** This is one answer to Chapter 4's question about what should survive a session. Some answers should survive with their reasons, so the institution can change its mind without having to rediscover everywhere the old mind went.
+**Therefore: store the claim with what it rests on, so that a correction has somewhere to go.**
 
 ## Commit the Test Before the Result
 
@@ -114,7 +114,7 @@ Asking the same dashboard for another chart may produce an attractive restatemen
 
 A model will answer that question plausibly in a prompt. The operational commitment is stronger: the answer becomes part of the experiment record, written before the result, and the later review checks what happened against it. A prediction revised after observation remains visible as a revision. Experimentation platforms and preregistered trials work this way on paper. Anyone who has sat in the meeting above knows how far practice is from paper.
 
-**Therefore: write down what would count against the claim before the result arrives, and keep the revision history.** The institution does not have to remember an investigator's intentions. It can inspect what was committed to the record.
+**Therefore: write down what would count against the claim before the result arrives, and keep the revision history.**
 
 ## Locate the Failure
 
@@ -144,7 +144,7 @@ The Bing researchers made sessions per user a key part of their criterion: help 
 
 A system capable of this move has to keep alternative representations, not only alternative answers. A branch can introduce task-based records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty: if it scores every proposal on the old number, the better approach looks worse exactly where it helps people finish sooner. Letting the challenger write an evaluator that declares itself the winner would prove little. We need an explicit dispute about what the evaluation is for, followed by agreed observations on which the approaches can be compared.
 
-**Therefore: record what the number is taken to mean as a claim of its own, open to challenge separately from the count.** The interpretation and the success criterion each had a row in our table. A number can be correct while the decision it recommends is wrong.
+**Therefore: record what the number is taken to mean as a claim of its own, open to challenge separately from the count.**
 
 ## Write the Lesson Down
 
@@ -177,9 +177,27 @@ A pattern can also mix kinds of content that need different kinds of support. �
 
 The field names do not carry the epistemology. The processes that read and update them do. An `open_questions` field that no decision ever consults is a decorative conscience. A link to evidence matters when the system follows it, notices that the evidence concerns another tool version, and changes what it is prepared to conclude.
 
+## Put the Library to Work
+
+Imagine giving the file to another agent and asking it to review an experiment. We have written a candidate lesson. Whether the next worker does better remains to be tested.
+
+Bad storage forgets by deletion; bad retrieval forgets by attention. The query “review this experiment” can retrieve a popular checklist and leave the Bing warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. We can evaluate selection by looking at downstream work: whether the agent found the relevant concern, avoided irrelevant procedures, and reached a justified conclusion at an acceptable cost. Similarity between the task description and the retrieved prose is only an intermediate signal.
+
+Suppose retrieval works. The reviewer finds the warning and starts challenging every rise in activity. It has learned something, but perhaps the wrong thing. Our candidate pattern says `confidence: provisional, one incident`. “Increases in activity are usually fake” would be a rather expensive lesson to draw from one bug.
+
+To find out, the candidate pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with degraded experiences behind the gain, some with real gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs where stochastic variation matters, and records both the quality of the conclusions and the resources consumed. A curator that warns about metrics in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
+
+This possibility is real. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks. Another study, by Lulla and colleagues, reported improvements in runtime and output-token use but did not comprehensively establish the correctness of the resulting changes.[^context] Together they make it difficult to confuse the presence of instructions with a demonstrated improvement in work.
+
+**Therefore: record how sure we are of each pattern, and make it earn that confidence on cases that did not produce it.** If the check helps only in search, its scope stays there, and the next agent working elsewhere does not inherit an irrelevant ritual. The evidence of learning is in the next investigation. The model's weights can stay fixed while a better method lets a new worker find something its predecessor missed.
+
+Agentic Context Engineering, or ACE, supplies one piece of the machinery for retaining those lessons: a generator, reflector, and curator maintain a structured playbook through incremental updates, limiting the loss of detail when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks; the usefulness of the lessons still depends on the feedback and quality of reflection.[^ace]
+
+Suppose the pattern earns its place. The next difficulty begins when it helps the reviewer identify a bad metric, but the procedure judging the review still rewards that metric. The file tells the agent to question what the institution pays it to accept.
+
 ## Change the Representation
 
-Bing could change what its metric stood for while keeping the business of search recognizable. A field can move further: change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
+An agent inheriting the Bing lesson might organize its next investigation around completed tasks instead of query counts. It would need different records and might favor results its existing evaluator penalizes. The business of search would remain recognizable. A field can move further: change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
 
 Before deep learning became dominant, there were several respectable ways to write a machine-learning paper. One began with a probabilistic model of how the data arose, derived the inference and tried to say something about uncertainty. In much of computer vision, people designed features before training a classifier. The architecture of the problem was partly in the heads of the people building it.
 
@@ -195,9 +213,9 @@ The examples are part of how a paradigm holds. Kuhn's scientists learn from exem
 
 There is no `paradigm_shift()` call. There can be operations for branching a representation, retaining the old interpretation, collecting missing observations, and exposing a disputed standard for decision. Those operations make a change possible. They do not guarantee that it is wise.
 
-**Therefore: keep a branch where the question itself is different, and state where it cannot be translated into the old one.** I do not know an agent institution that can do this.
+That branch needs room to ask a different question and to state where its results cannot be translated into the old terms. I do not know an agent institution that can do this.
 
-And possibilities require funding.
+The agent can write that proposal into `open_questions`. To answer it, someone has to pay for observations the old records do not contain.
 
 ## Separate Use from Investigation
 
@@ -209,15 +227,13 @@ Laudan's distinction is **acceptance versus pursuit**: what to believe today and
 
 Lakatos adds a way to judge a **research programme** over time, by its patches. A programme is progressive if its modifications predict something new, and degenerating if they only excuse the last failure.[^lakatos] The test applies to a file as well as to a field. Suppose a measurement pattern acquires an exception for one client, then another, then a third. Does each revision identify a recurring cause and work on further cases, or does it merely excuse the latest incident? The number of exceptions alone tells us little. A complicated world can require a complicated method.
 
-If use and investigation are driven by the same score, the best-supported approach acquires a monopoly on becoming better supported. A new task retrieves the incumbent pattern because it has the strongest record. Successful applications add to that record. The alternative receives little use, so it accumulates little evidence. After a while the system has a large collection of observations about the incumbent and very few comparisons. It can accurately report the size of its evidence base while misleading itself about what that evidence establishes.
+If use and investigation follow the same score, the incumbent pattern keeps being retrieved and accumulating evidence. The alternative keeps waiting for its first trial. The system can report an impressive evidence base with almost no comparisons in it.
 
 Kitcher's **division of cognitive labor** makes the collective stakes explicit. Choices that are sensible for each investigator can add up to a badly diversified community.[^kitcher] We cannot solve that by instructing every agent to pursue its most promising idea independently when all of them inherit the same ranking of ideas.
 
 Nor does protecting alternatives mean funding every objection forever. An alternative can receive a bounded experiment whose outcome determines the next decision. What would it teach us, what does it cost, and which later choices could it change?
 
-**Therefore: keep one policy for what to use today and another for what to investigate, and keep a queue of comparisons nobody has run yet.** Those are reasons for an allocation, recorded where they can be challenged.
-
-But the person recording these reasons may not be the person who controls the money.
+The queue of unrun comparisons needs its own allocation policy, separate from the policy that selects today's working method. But the person recording the reasons for an experiment may not control the money.
 
 ## Keep the Funding Decision Visible
 
@@ -231,17 +247,17 @@ A checked proof does not settle that history. Learning that a route is promising
 
 The other programmes did not get an equal chance to become the next promising result. The money is part of the evidence story. Power enters scientific work through the ability to commission observations, supply instruments, define acceptable problems, and sustain a programme through unproductive intervals. Harari's history of the Scientific Revolution makes the outside view blunt: science does not set its own priorities; whoever pays for it does.[^harari] In an agent system, the equivalents include tool access, compute budgets, experimental traffic, data collection, and permission to change what gets measured. These are parts of the inquiry even when they appear in another team's configuration.
 
-A record that compresses this into “the other problems were less tractable” has hidden a decision about power inside a statement about knowledge. Nothing in the scene requires dishonesty. The researchers had good reasons for moving their workers, but the questions left behind remained unanswered. Resource decisions help produce the evidential situation on which the next resource decision will rely.
+Compress this into “the other problems were less tractable” and a decision about resources has become a statement about knowledge. The questions left behind remained unanswered.
 
 Control over evaluation adds another layer. Suppose the budget owner accepts only experiments that predict a higher value of the current metric, and the proposed study concerns whether that metric represents improvement. The researcher has been invited to challenge an assumption on the condition that she first accept it. So the request is split. One part proposes a study and goes to experimental review. The other asks whether the success criterion should change and goes to whoever owns the product goal. A rejection of the second is recorded as a decision about the goal. It cannot be counted as a failed test of the alternative.
 
 Giving an agent an epistemic objection does not authorize it to spend somebody else's money. A funding policy can reserve capacity for challenges to the incumbent, but that policy is itself a choice made by people with power. Putting it in code makes it enforceable and inspectable. It does not make it neutral.
 
-**Therefore: attach the funding decision, and its reason, to the question it left unanswered.** Otherwise *unfunded* gradually becomes *unsupported*, and *unsupported* becomes *disproved* somewhere between the database and the executive summary. The institution's map of what it knows should include the questions it could not afford, or was not permitted, to answer.
+Attach the funding decision and its reason to the question it left unanswered. Otherwise *unfunded* gradually becomes *unsupported*, and *unsupported* becomes *disproved* somewhere between the database and the executive summary.
 
 ## Give the Objection a Consequence
 
-An organization can pay for criticism and still arrange for nothing to follow from it.
+Suppose the study gets funded and the objection holds up. We have now retrieved the lesson, tested it, and paid for the evidence it asked us to collect. An organization can do all of that and still arrange for nothing to follow.
 
 For years Facebook tuned its feed for engagement and time spent. But the company's research suggested that passively consuming professionally produced content could be bad for the people doing it. A person could keep scrolling without becoming better off. The number could go up while the thing it was supposed to stand for went down. Bing's question now concerned hours of people's lives.[^fbfiles]
 
@@ -263,9 +279,9 @@ Who gets access to that procedure matters. A critic cannot examine an assumption
 
 Longino also prevents a comfortable fantasy about the final judge. A product owner may reasonably care about revenue; a researcher may study harm; an infrastructure team may worry about cost. Their observations can be reliable while their preferred decisions differ. More accurate measurement may clarify the disagreement without resolving the goals behind it. The system should be able to say which dispute the next experiment can settle and which requires a decision about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
 
-**Therefore: tie every objection to the thing it challenges, record what became of it, and let the unanswered ones travel with the decision.** If the organization proceeds anyway, the decision-maker owns that choice, in writing.
+If the organization proceeds with an objection unresolved, the objection travels with the decision. The decision-maker owns that choice, in writing.
 
-At this point the institution can receive criticism, preserve alternatives, and explain its allocations. It can still spend decades declining to change.
+The objection can now survive its author. So can the assumption it challenges. Replace every agent in the institution and the same dispute may begin again, with the same side already winning.
 
 ## Test What the Next Agent Inherits
 
@@ -285,7 +301,7 @@ The durable incumbent may be a retrieval preference, a canonical example, a benc
 
 The engineering response cannot be “delete old knowledge periodically.” Useful expertise would disappear with the errors, and newness would become another unearned source of authority. A branch has to be able to start without every commitment whose adequacy is in question, while keeping the constraints that are not in question: consent, cost, the integrity of the data. Its results then need a comparison whose terms are explicit and open to challenge. If no available comparison can decide the issue, that limitation belongs in the record. A new vocabulary does not entitle its author to victory.
 
-**Therefore: let some workers start without the inherited commitment under test, and say exactly which commitments they still share.** Human institutions sometimes manage that through a change of personnel. A persistent agent institution needs mechanisms that act on the inherited structure itself.
+Changing the worker is easy. The experiment has to change what the worker inherits.
 
 ## Find Where the Result Lives
 
@@ -307,21 +323,9 @@ Availability is only the beginning of reuse. Kevin Buzzard checked Anthropic's F
 
 The same question reaches beyond mathematics. The AlphaFold database makes more than two hundred million protein-structure predictions available for research. AlphaGenome Atlas supplies predictions for roughly nine billion possible single-letter DNA changes.[^biology] These resources carry uncertainty; a prediction does not become an experimental observation by being stored beside a billion others. But a researcher can begin with material she could never have produced herself, select a candidate, and put it to a test its creators never planned. Faster discovery depends partly on what the last investigation leaves usable.
 
-**Therefore: fund the work that makes a result usable: checking its scope, finding it again, explaining it, maintaining the tools around it.** If we fund only the next spectacular result, that work waits. The scientific community was already there, in the literature, the libraries, the instruments, and the people who maintained them. Agents inherit it and begin adding to it. The question is whether their additions make the next investigation more capable, or merely leave it with more to read.
+Checking scope, explaining a result and maintaining its tools compete with the next spectacular discovery for funding. Leave that work undone and agents may give the next investigation more to read without making it more capable.
 
-## Put the Library to Work
-
-Which brings us back to the file. By now it holds more than can fit sensibly into one prompt. A pattern's instructions live separately from the records of its applications. A search retrieves the method and examples; a question about its standing retrieves the observations, versions, dependencies, and challenges behind it.
-
-Bad storage forgets by deletion; bad retrieval forgets by attention. The query “review this experiment” can retrieve a popular checklist and leave the Bing warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. We can evaluate selection by looking at downstream work: whether the agent found the relevant concern, avoided irrelevant procedures, and reached a justified conclusion at an acceptable cost. Similarity between the task description and the retrieved prose is only an intermediate signal.
-
-Our candidate pattern still says `confidence: provisional, one incident`. A pattern extracted from one incident is a hypothesis with one data point. “Increases in activity are usually fake” would be a rather expensive lesson to draw from one bug. Agentic Context Engineering, or ACE, supplies one piece of the machinery for doing better: a generator, reflector, and curator maintain a structured playbook through incremental updates, which limits the loss of detail that occurs when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks; the usefulness of the lessons still depends on the feedback and quality of reflection.[^ace]
-
-So the candidate pattern faces cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with degraded experiences behind the gain, some with real gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs where stochastic variation matters, and records both the quality of the conclusions and the resources consumed. A curator that warns about metrics in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
-
-This possibility is real. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks. Another study, by Lulla and colleagues, reported improvements in runtime and output-token use but did not comprehensively establish the correctness of the resulting changes.[^context] Together they make it difficult to confuse the presence of instructions with a demonstrated improvement in work.
-
-**Therefore: record how sure we are of each pattern, and make it earn that confidence on cases that did not produce it.** If the check helps only in search, its scope stays there, and the next agent working elsewhere does not inherit an irrelevant ritual. The evidence of learning is in the next investigation. The model's weights can stay fixed while a better method lets a new worker find something its predecessor missed.
+Our pattern's instructions can remain short while the record behind them grows. A search retrieves the method and examples; a question about its standing retrieves observations, versions, dependencies and challenges. But the procedures deciding what gets retrieved and which challenges count are themselves things the next worker inherits.
 
 ## Put the Procedure Under Test
 
@@ -337,21 +341,15 @@ Alexander's form now asks for a *Therefore*. We could write “revise the method
 
 ## What the File Says Now
 
-The graphs and procedures in these cases were designed. Their necessity became clear through the work: agents lost track of what others had established; a failed assignment produced a useful result; an encouraging finding changed the research budget. This is how I read these experiments: as the formation of scientific institutions. The need to coordinate fallible workers keeps bringing builders back to records, criticism, shared methods, and decisions about what deserves another attempt.
-
-Emergence does not make the institution ownerless. Someone can release the proof and retain control over the capacity that produced it. Someone chooses whether the next allocation buys another discovery, a better explanation of this one, or maintenance of the library both depend on. Our records can expose those choices. Changing who is entitled to make them requires more than editing a prompt.
-
 We have seen pieces of this language at work: shared proof graphs, experiments that challenge their own metrics, reviews that travel with failed arguments. I have not shown an agent institution that composes all of them, keeps their reasons alive, and changes its own way of seeing when those reasons fail. That is the ambition, and it still has to earn its confidence marks.
 
 <!-- EDITORIAL NOTE: optional close on Alexander's gate. In The Timeless Way of Building (final part, "The Kernel of the Way") he says the language is only a gate: you learn the discipline in order to pass through it. It rhymes with Feyerabend and with a system that rewrites its own language. Verify the passage before using. -->
 
 Imagine the next engineer opening the incident file a year from now. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
 
-For most of this chapter, we have held one boundary steady. A procedure decides whether proposed changes to working knowledge should be accepted. The system can revise a pattern while that procedure remains outside the revision being judged. It can learn under a method someone has supplied.
+So far, a procedure has decided which changes to the file deserve to survive. But that procedure is also software.
 
-But the method is also software. The system can propose changes to its retrieval, its experiments, its reviewers, and the rules by which it promotes a lesson. It can begin investigating the machinery that makes its investigations possible.
-
-Now the claim to be tested is harder. A change must do more than make the current answer better or make the current evaluator happier. It must improve the system's ability to find and assess further changes. The process that judges improvement has entered the experiment.
+What happens when the next agent proposes to rewrite it?
 
 ---
 

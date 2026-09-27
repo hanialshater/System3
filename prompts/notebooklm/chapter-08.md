@@ -14,15 +14,15 @@ Adapt Hani M.M. Al-Shater's "Chapter 8: Scalable Oversight" into an English vide
 
 1. Opening passage
 2. The Judge Falls Behind
-3. Stay Uncertain Enough to Listen
+3. Performance Gap Recovered
 4. An Excellent Education in the Same Mistake
-5. Performance Gap Recovered
-6. The Judge Can Be Fooled
-7. We Started Instrumenting the Student
-8. Reading the Model From the Inside
-9. Then We Touched the Machinery
-10. The Nastier Version
-11. The Evaluator Becomes the Product
+5. The Judge Can Be Fooled
+6. We Started Instrumenting the Student
+7. Reading the Model From the Inside
+8. Then We Touched the Machinery
+9. The Nastier Version
+10. The Evaluator Becomes the Product
+11. Stay Uncertain Enough to Listen
 12. The Human Cannot Stay in Every Loop
 13. The Overseer Is Not Ground Truth
 

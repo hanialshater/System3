@@ -1,4 +1,4 @@
-# Chapter 1: Why I’m Betting on AI Agents
+# Chapter 1: Why I'm Betting on AI Agents
 *Or: How I Learned to Stop Micromanaging and Love Emergence*
 
 ![Simple building blocks, complex emergence](../book-design/curated/assets/art/a005.jpg)
@@ -15,7 +15,7 @@ What fascinates me is how little of the result was specified in advance. No blue
 
 And we get to build on what they left. A programmer does not need to understand transistor physics. I can use a compiler without reproducing the intellectual history that made it possible, which is fortunate because I was hoping to finish before lunch. Enough of the complexity underneath has been made reliable that I can spend my attention elsewhere. When something breaks, I may have to descend a few layers and discover how much I was taking for granted.
 
-Agentic AI interests me as another place from which to begin. We have spent decades making more of our knowledge available to machines. Now we can give a system access to that knowledge, a problem, tools and time, and let it participate in deciding how the problem should be approached. I want to know how far that move can go.
+Agentic AI interests me as another place from which to begin. We have spent decades making more of our knowledge available to machines. Now we can give a system access to that knowledge, a problem, tools and time, and let it participate in deciding how the problem should be approached. Could I leave it with a hard problem and come back to progress I had not directed?
 
 ## The Rule-Based Exoskeleton
 
@@ -37,7 +37,7 @@ Cultivation may be a better metaphor than scripting, not because agents are plan
 
 A slightly ridiculous thought experiment helped me see the possibility. Imagine trying to seed life on another planet. You have raw materials, a primordial soup and a temperature range that does not instantly kill everything. Basically, you have all the LEGOs, except the LEGOs reproduce, mutate and occasionally develop venom. Do you bet on DNA, a biological fax machine, and wait? Do you send AI agents carrying accumulated human knowledge, with instruments and machinery they can use? Or, God forbid, do you send a group of product managers to write the requirements document for life?
 
-It is not a fair competition. The agents arrive with civilization in their luggage. Somebody built their computers, their instruments and the machines that keep them running. But that unfair advantage is exactly what interests me. They do not begin by discovering arithmetic, metallurgy and how to avoid setting the laboratory on fire. They inherit what already works and can spend their effort somewhere beyond it.
+It is not a fair competition. The agents arrive with civilization in their luggage. Somebody built their computers, their instruments and the machines that keep them running. They do not begin by discovering arithmetic, metallurgy and how to avoid setting the laboratory on fire. They inherit what already works and can spend their effort somewhere beyond it.
 
 We do this too. No human starts from zero, although we occasionally behave as if our opinions were independently discovered natural resources. We inherit language, tools, institutions and other people’s mistakes. Agents can draw on textbooks, numerical solvers, compilers, scientific papers and several thousand years of humans documenting what happened when we touched things we probably should not have touched.
 
@@ -47,17 +47,17 @@ That is how I think about **emergence over design**. The parts can be deliberate
 
 ## When Search Moved Up a Level
 
-AlphaGo was one of the moments when this became concrete for me. Computers had been humiliating us at games for years, but AlphaGo combined learned intuition with search in a way I found particularly interesting: the network suggested promising moves and estimated positions; the tree explored what might follow. AlphaGo Zero pushed further through self-play, without relying on human game records as its teacher. Strong play could develop along routes human tradition had not made familiar.
+AlphaGo made this concrete for me. Computers had been humiliating us at games for years, but here learned intuition guided the search: the network suggested promising moves and estimated positions; the tree explored what might follow. AlphaGo Zero went further, learning through self-play without human game records as its teacher. Strong play developed along routes human tradition had not made familiar.
 
-Large language models brought a much broader version of that feeling. Nobody implemented “explain quantum mechanics to a twelve-year-old,” “translate this joke without murdering it” and “write a breakup message that does not accidentally restart the relationship” as separate product features. We built training processes, supplied enormous amounts of data and computation, and obtained capabilities whose range was difficult to anticipate. I could keep asking for things nobody had put on a feature list.
+Large language models brought a much broader version of that feeling. Nobody implemented “translate this joke without murdering it” or “write a breakup message that does not accidentally restart the relationship” as separate product features. They came out of training, and I could keep asking for things nobody had put on a feature list.
 
 An agent can use those capabilities over successive attempts. It acts, inspects what happened and decides some of what to try next. The industry will eventually use the word *agent* for everything from a cron job with an LLM attached to a digital employee with an expense account and a performance review. I care about how much of the problem it actually owns.
 
-“Open this file, change this method and run this test” leaves most of the search with me. “Fix the bug” transfers more of it. “Find a better algorithm” transfers more again. Now the system may have to read, construct examples, choose an approach, abandon it, build a missing tool and notice that the original framing was unhelpful. It can do this with a trained model whose weights stay fixed throughout the investigation.
+“Open this file, change this method and run this test” leaves most of the search with me. “Fix the bug” transfers more of it. “Find a better algorithm” transfers more again. Now the system may have to read, construct examples, choose an approach, abandon it, build a missing tool and notice that the original framing was unhelpful. Its weights can stay fixed while the investigation keeps changing.
 
-Search has always had a problem with attractive hills. Improve the solution nearest to you and you can become exceptionally good at staying in the wrong neighborhood. Keeping a population of candidates helps preserve routes elsewhere. So can changing the representation or returning to a discarded attempt after another discovery makes it useful. Agents can try these moves in a space that includes algorithms, interfaces, research directions and ways of asking the question. They can also repeat the same assumption ten times with impressive efficiency. Having more attempts helps only if something useful can differ between them.
+Search has always had a problem with attractive hills. Improve the solution nearest to you and you can become exceptionally good at staying in the wrong neighborhood. Keeping a population of candidates helps preserve routes elsewhere. So can changing the representation or returning to a discarded attempt after another discovery makes it useful. Agents can try these moves in a space that includes algorithms, interfaces, research directions and ways of asking the question. Ten agents sharing one assumption are not a search party; they are a conga line, walking very confidently into the same lake.
 
-The primordial soup is code now: algorithms, libraries, compilers, simulators, databases and other agents. These pieces carry an enormous amount of work we no longer have to do ourselves. I would like to give the system enough freedom to find combinations I would not have thought to request.
+The primordial soup is code now: algorithms, libraries, compilers, simulators, databases and other agents. I would like to give the system enough freedom to find combinations I would not have thought to request. This is usually where the manager in me starts to get nervous.
 
 ## Chaos With an API Key
 
@@ -69,13 +69,13 @@ A model with text alone can describe an experiment. Give it execution and it can
 
 Selection pressure is literal-minded. Reward engagement and anger may flourish. Reward a benchmark score and somebody will eventually find a way to win that makes everyone regret inventing the benchmark. Nature produces cancer as well as coral reefs. We should expect ingenious results from a capable search process without assuming we will be pleased by its ingenuity.
 
-Too much prescription removes the room in which autonomy could help. Too little structure gives chaos an API key. Finding a useful arrangement takes work, and success may create reasons to change it. An agent could discover that a boundary obstructs an important experiment. I want it to be able to make that case. Quietly removing the boundary is another matter.
-
 We have encountered versions of this problem before. Markets operate within rules and institutions. Scientific claims encounter experiments, criticism and the non-zero probability of public embarrassment by Reviewer 2. Neither arrangement is free of failure or power. Yet people manage to coordinate substantial work without anyone specifying every action or carrying the whole undertaking in their head.
+
+Too much prescription removes the room in which autonomy could help. Too little structure gives chaos an API key. Finding a useful arrangement takes work, and success may create reasons to change it. An agent could discover that a boundary obstructs an important experiment. I want it to be able to make that case. Quietly removing the boundary is another matter.
 
 ## Confident Wrong Solutions
 
-The mistakes that worry me most are not the ones that crash. An agent begins with a false assumption, reasons competently from it, gathers material around it and constructs something sophisticated. Another agent receives the conclusion without the uncertainty. A third builds on it. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie. Intelligence made the wrong path easier to travel.
+The mistakes that worry me most are not the ones that crash. Imagine an agent deciding that customers who return a jacket dislike its style. In this case they liked the jacket; the sizing was wrong. But the return record does not say that. A second agent inherits the first agent’s conclusion and starts recommending different styles. A third writes a report explaining why those styles deserve more space in the catalog. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie. Intelligence made the wrong path easier to travel.
 
 I foresee AI-designed solutions that are terrifyingly efficient, perfectly logical, and utterly humorless. They'll look at us and say, "You guys are kind of messy. And your cat obsession is... illogical." Maybe they'll finally solve the mystery of the missing socks. Or create exponentially more of them.
 
@@ -87,31 +87,23 @@ We already depend on work we cannot personally reconstruct. No scientist repeats
 
 ## Which Limits Were Mine
 
-There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in. After a while, those limits begin to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do.
+There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in. After a while, those limits begin to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
 
 That is part of why I am interested in agents. I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
 
 We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first winning a contest for somebody else’s permission.
 
-**Capacity over power** names the direction I want to pursue. I am more interested in what people become able to do than in how many people one person becomes able to command. Whoever supplies that capacity may acquire new leverage over those who depend on it, and plenty of things people want to do are things they should not do. Those difficulties belong inside the ambition. We will have to face them alongside the exciting demonstrations.
+**Capacity over power** names the direction I want to pursue. I am more interested in what people become able to do than in how many people one person becomes able to command. Whoever supplies that capacity may acquire new leverage over those who depend on it, and plenty of things people want to do are things they should not do. Those difficulties belong inside the ambition.
 
 I want that capacity to leave more room for human purposes, including purposes too small, strange or personal to survive a funding committee. Some of that freedom may require systems whose methods I could not have specified myself. I am willing to give up choosing every move. I am much less willing to give up finding out what happened, changing direction or deciding that the undertaking no longer serves the reason I began it.
 
 ## A Bounded Problem
 
-The chapters that follow trace this possibility through experiments, research and proposals that still need testing. I start with agents searching for algorithms and building teaching demos. Their failures send me into questions about knowledge and institutions: what workers should inherit, how they should challenge one another, and whether they can improve their own ways of working. Eventually I take the argument back to a store, the kind of place where I have spent much of my career, and ask what I would actually build.
-
-Along the way, we will have to keep returning to the person asking for help. Our intentions can change as we discover what is possible. We may want help doing the work, help learning to do it, or enough freedom to attempt something we had stopped considering. By the end, I want to ask what a life with more of that capacity could contain. First, though, the machinery has to do something worth the trouble.
-
-The first bet is narrower:
+First, though, the machinery has to do something worth the trouble. The first bet is narrower:
 
 **I’m betting on systems capable of surprising us because there are problems where we can recognize a better outcome far more easily than we can specify the path that leads to it.**
 
 In those problems, intelligent search has room to discover things our instructions would have ruled out before the search even began. The sensible place to start is somewhere small enough to be embarrassed by the result: a bounded problem that is genuinely difficult but unusually cooperative about judgment. We can write down the constraints, check whether a solution obeys them and tell whether an attempt improved without convening a discussion about aesthetics, pedagogy or whether the users are “delighted.”
-
-We still choose the problem, supply tools and establish the boundary. Then we stop specifying the route. I want to see whether the system can find something useful and whether it can discover a better way of working toward it. Can I leave it with the problem and return to progress I did not have to direct?
-
-Later we will lose the convenience of an easy check. A better answer will become harder to recognize, and agreement among the judges will not necessarily help. For now, I wanted to know whether I could stop hovering over one difficult task.
 
 So I gave an agent some circles to pack.
 

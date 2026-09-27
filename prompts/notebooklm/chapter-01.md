@@ -14,11 +14,12 @@ Adapt Hani M.M. Al-Shater's "Chapter 1: Why I'm Betting on AI Agents" into an En
 
 1. Opening passage
 2. The Rule-Based Exoskeleton
-3. When Search Moved Up a Level
-4. Chaos With an API Key
-5. Confident Wrong Solutions
-6. Pulling Harder on the Stem
-7. A Bounded Problem
+3. The Head Start
+4. When Search Moved Up a Level
+5. Chaos With an API Key
+6. Confident Wrong Solutions
+7. Which Limits Were Mine
+8. A Bounded Problem
 
 ## Review
 

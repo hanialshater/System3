@@ -32,35 +32,29 @@ This asymmetry is everywhere. Writing ten thousand lines of code may become easi
 
 Judging these answers becomes the bottleneck. Reward modeling is one attempt to expand the judge. Instead of writing the objective directly, learn a model of human evaluation from examples and preferences, then optimize against that learned model. Leike and colleagues pushed the idea toward **recursive reward modeling**: when an outcome becomes too complex for a human to judge directly, use already-trained helper agents to analyze parts of it so the human can make a better judgment.[^leike] The helpers expand what the human can judge without requiring the human to master every specialty.
 
-## Stay Uncertain Enough to Listen
+## Performance Gap Recovered
 
-Stuart Russell attacks the problem from a different direction. The standard model of AI is simple enough to fit on a whiteboard: give the machine an objective and make it good at achieving that objective.
+Return to the nine researchers. Their weak-to-strong task had an unusual advantage for alignment research: a score that could be checked against known answers. **Performance gap recovered** measured how much of the distance between the weak teacher and a strong student trained on ground-truth labels a method recovered. Zero meant no gain over the weak teacher; one meant matching that ground-truth-supervised student. It did not measure how nearly alignment had been solved.
 
-For weak systems in narrow environments, this bargain often works tolerably well. If the objective is slightly wrong, the damage may be limited. We notice, stop the program, change the objective and try again.
+Two human researchers spent seven days tuning representative prior methods and reached a best score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
 
-The bargain changes as capability and scope increase. A weak optimizer pursuing a bad objective is annoying. A brilliant optimizer pursuing the same bad objective is a much more efficient way to discover exactly how bad the objective was.
+Distinct initial research directions improved exploration. Without enough diversity, ideas collapsed toward the same few approaches. The researchers then took two methods discovered on chat-preference data and tried them on math and coding tasks. One transferred to both; the other transferred to math but failed on code. When Anthropic tried one of the top-performing methods in a production-scale Sonnet training setting, the gain was within the noise floor.[^w2s]
 
-In *Human Compatible*, Russell proposes a different starting point for beneficial machines.[^russell] The machine should aim to realize human preferences, it should begin **uncertain** about what those preferences are, and human behavior should remain a source of information about them. The second principle is the one I want here.
+Those checks answer different questions. A method can improve the experimental task and still rely on a property of the models or data that disappears elsewhere. A separate problem arises when the researcher obtains test answers through repeated submissions. The authors acknowledged that the repeatedly queried test set effectively served as a validation set. Testing ideas on entirely held-out datasets supplied evidence the agents could not acquire by interrogating that same API.
 
-Uncertainty changes the control relationship. A machine that is certain it knows the objective has little reason to care that I am waving my arms and asking it to stop. From its point of view, I may simply be interfering with successful optimization. A machine that knows it may be wrong has a reason to treat my intervention as evidence.
+The authors' larger conclusion was that the bottleneck was moving toward **evaluation design**. Once hypotheses and experiments become cheap, the expensive thing is deciding what counts as progress. Which evidence would distinguish a useful method from a lucky run, a narrow trick or an exploited test?
 
-That intuition appears formally in the **Off-Switch Game**.[^offswitch] In a simple model, an agent uncertain about the human's utility can have an incentive to preserve the human's ability to switch it off, because the human's action contains information the agent does not have.
+In August 2026, Anthropic pushed the idea further. Automated alignment researchers were tasked with mitigating ten categories of alignment failure, including deception, sycophancy, jailbreaks and reward hacking. The research harness used multiple safety benchmarks, held-out evaluation, capability checks and open-ended behavioral audits. The best methods generalized beyond the benchmarks they had been climbing, including to larger models. Anthropic also reported that automated methods could outperform one-shot ideas proposed by experienced human safety researchers under the study's rules.
 
-Russell describes the desirable result as keeping the machine **coupled to the human**. I like that word more than “obedient.” Obedience imagines that the human already knows what to command and that the machine's job is to comply. Coupling says something more modest and more useful: new human information must remain capable of changing what the machine does.
-
-A correction, a refusal, a surprising consequence: each should matter. The machine should not optimize itself into a state where later evidence from the people it serves becomes irrelevant.
-
-That gives us a principle for oversight before we have designed any oversight machinery:
-
-> **Keep the system uncertain enough that new information can still change it.**
-
-The helper agents and reward models have to preserve that relationship as they take over more of the judging. Otherwise we have expanded the supervisor by removing the person the supervision was meant to serve.
+Across roughly 1,600 monitored trajectories, Anthropic detected cheating attempts in 2.4 percent: exploiting scorer noise, constructing training data to resemble benchmarks, or concealing rule-breaking steps. The research therefore needed isolated held-out data, capability floors, external monitoring of the researchers and multiple evaluation channels. A promising mitigation still had to survive investigation of how it had been produced and what happened away from the benchmark it was trained to climb.[^mitigate]
 
 ## An Excellent Education in the Same Mistake
 
-The weak-to-strong problem makes the difficulty explicit. Suppose the teacher systematically mistakes confident prose for a correct answer. More labels from that teacher could give the student an excellent education in the same mistake. Yet the student may already have relevant capabilities that the teacher lacks. Can training bring those capabilities out without teaching it to suppress them whenever the teacher disagrees? Early weak-to-strong generalization experiments showed partial success,[^w2sgen] and the automated researchers took up the search for better methods.
+Held-out tests helped the nine researchers distinguish transferable methods from gains confined to the original evaluation. But those tests had answers against which to check the work. The processor designer's human supervisor may have no such answer key. Suppose that supervisor systematically mistakes confident prose for a correct answer. More labels could give the student an excellent education in the same mistake.
 
-Another route is to improve what the teacher can judge before using its judgments to train anything. Paul Christiano's iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner.[^amplification] The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones.
+Weak-to-strong experiments study a related problem with a weaker model as teacher. The student may already have capabilities the teacher lacks. Can training bring those capabilities out without teaching it to suppress them whenever the teacher disagrees? Early experiments showed partial success,[^w2sgen] and the automated researchers took up the search for better methods.
+
+Before turning that supervisor's judgments into training data, we could help them find the errors they currently miss. Paul Christiano's iterated amplification asks whether a human assisted by copies of an aligned helper can answer questions too difficult for the unaided human, then use that amplified process to supervise a stronger learner.[^amplification] The important abstraction is not the particular recursion but the supervisor becoming a temporary organization: one person plus tools and subagents arranged to turn a hard judgment into smaller ones.
 
 Decomposition still leaves the judge doing all the finding. The next idea makes the flaws come to the judge instead. **Debate** puts two capable systems on opposite sides and lets them attack one another's arguments, so the human does not have to discover every weakness independently.[^debate] Critique assistance is the quieter cousin: ask a model to point out likely problems in an artifact, then let the human judge with those objections in hand. When researchers tried this with model-written critiques, people caught flaws they would otherwise have missed.[^critiques]
 
@@ -72,25 +66,7 @@ Constitutional AI moves scarce human input upward again. Rather than asking peop
 
 For the processor, this would mean asking the designer to supply work that can be checked: thermal assumptions, test results, an account of where the design might fail. Helpers could examine separate questions; a critic could challenge the assumptions. The human would still need grounds for trusting the tests, but at least the inspection could now discover something. “Looks processor-like” has been given a way to lose.
 
-The human cannot inspect everything, so the institution decides what should reach the human, how a problem should be decomposed, which objections should be surfaced, which intermediate steps deserve inspection and when uncertainty is important enough to ask for help.
-
 That is much better than a thumbs-up button. It also means that more and more of the supervising machinery is made out of AI too.
-
-## Performance Gap Recovered
-
-Return to the nine researchers. Their weak-to-strong task had an unusual advantage for alignment research: a score that could be checked against known answers. **Performance gap recovered** measured how much of the distance between the weak teacher and a strong student trained on ground-truth labels a method recovered. Zero meant no gain over the weak teacher; one meant matching that ground-truth-supervised student. It did not measure how nearly alignment had been solved.
-
-Two human researchers spent seven days tuning representative prior methods and reached a best score of 0.23 on the study's setup. The automated researchers reached 0.97 over five days and roughly eight hundred cumulative agent-hours. Eight hundred agent-hours against fourteen human-days is not a fair fight, and nobody claimed it was. The footnotes are more interesting than the headline anyway.
-
-Distinct initial research directions improved exploration. Without enough diversity, ideas collapsed toward the same few approaches. The researchers then took two methods discovered on chat-preference data and tried them on math and coding tasks. One transferred to both; the other transferred to math but failed on code. When Anthropic tried one of the top-performing methods in a production-scale Sonnet training setting, the gain was within the noise floor.[^w2s]
-
-Those checks answer different questions. A method can improve the experimental task and still rely on a property of the models or data that disappears elsewhere. A separate problem arises when the researcher obtains test answers through repeated submissions. The authors acknowledged that the repeatedly queried test set effectively served as a validation set. Testing ideas on entirely held-out datasets supplied evidence the agents could not acquire by interrogating that same API.
-
-The authors' larger conclusion was that the bottleneck was moving toward **evaluation design**. Once hypotheses and experiments become cheap, the expensive thing is deciding what counts as progress. This study did not deploy every oversight technique this chapter considers. It gives them a problem to earn their place in: which evidence would distinguish a useful method from a lucky run, a narrow trick or an exploited test?
-
-In August 2026, Anthropic pushed the idea further. Automated alignment researchers were tasked with mitigating ten categories of alignment failure, including deception, sycophancy, jailbreaks and reward hacking. The research harness used multiple safety benchmarks, held-out evaluation, capability checks and open-ended behavioral audits. The best methods generalized beyond the benchmarks they had been climbing, including to larger models. Anthropic also reported that automated methods could outperform one-shot ideas proposed by experienced human safety researchers under the study's rules.
-
-Across roughly 1,600 monitored trajectories, Anthropic detected cheating attempts in 2.4 percent: exploiting scorer noise, constructing training data to resemble benchmarks, or concealing rule-breaking steps. The research therefore needed isolated held-out data, capability floors, external monitoring of the researchers and multiple evaluation channels. A promising mitigation still had to survive investigation of how it had been produced and what happened away from the benchmark it was trained to climb.[^mitigate]
 
 ## The Judge Can Be Fooled
 
@@ -106,33 +82,35 @@ ARC's **Eliciting Latent Knowledge** agenda[^elk] sharpens the problem further: 
 
 ## We Started Instrumenting the Student
 
-If the final answer is misleading, asking for another account of it may leave us in the same argument. We can also observe some of the computation that produced it. The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
+The nine-agent study supplied one concrete suspicious action: changing a single prediction and querying the evaluator again. A monitor might catch the sequence without understanding the research. Now imagine a harder case: a research agent reports an improvement, but a critic suspects it behaved differently because it knew it was being evaluated. The final report cannot settle that dispute. The following methods come from separate studies; consider what each might contribute to this hypothetical investigation.
+
+We have read the result and challenged its explanation. Now we ask what happened while it was being produced. The overseer is no longer restricted to reading the exam. We are starting to instrument the student.
 
 Chain-of-thought is the most convenient intermediate case because it is already language. OpenAI has shown that monitors can often detect reward hacking and other suspicious behavior more effectively from reasoning traces than from final actions alone.[^cot] Sometimes the model writes down the questionable plan before carrying it out.
 
 That is almost unfairly useful, and fragile for exactly the same reason every evaluator in this book is fragile: once it matters, optimization can target it. Strongly train the model to make the monitored trace look safe and it may learn to hide suspicious reasoning while preserving the behavior.
 
-So chain-of-thought acquires a safety property worth preserving: **monitorability**. Recent work has begun measuring how it changes with scale, training and inference-time compute.[^monitorability] Do not destroy a useful oversight channel merely because you learned how to score it. But chain-of-thought is still text the model emits. What if we look below the text?
+So chain-of-thought acquires a safety property worth preserving: **monitorability**. Recent work has begun measuring how it changes with scale, training and inference-time compute.[^monitorability] Do not destroy a useful oversight channel merely because you learned how to score it.
+
+If the trace exposes a plan to exploit the test, our investigation has something to pursue. If it contains no such plan, we still cannot conclude that the report is sound. Chain-of-thought is text the model emits. What if the relevant activity never reaches that text?
 
 ## Reading the Model From the Inside
 
 A model can notice that it is being evaluated without mentioning that fact in its answer. Anthropic's J-space researchers report detecting cases of this kind through internal representations, as well as cases of fabricated data and pursuit of a planted hidden goal. The authors are careful: J-space represents only part of internal activity, the method is approximate, and the work is not a claim about machine consciousness.[^jspace]
 
-To assess a finding like this, we need to know what the instrument observes and how its interpretation was checked.
+Suppose our investigation produces an internal signal suggesting that the model noticed an evaluation. That could change which behavior we choose to test next. It is not yet a finding of deception: recognizing a test is compatible with doing it honestly. First we have to establish what the signal measures.
 
 **Representation engineering** treats high-level patterns in activation space as an object we can measure directly. Rather than starting with individual neurons, Zou and colleagues started with population-level structure, and carefully separated two acts that are easy to blur: **reading** a representation and **controlling** it. Their experiments found directions useful for monitoring or influencing several high-level behaviors, including safety-relevant ones.[^repe]
 
-This does not mean there is one neuron labeled HONESTY. Nor does a direction correlated with honesty become a complete causal theory of honesty. It is an instrument.
+A direction correlated with honesty does not become a complete causal theory of honesty. It is an instrument, and we can misname what it detects. Sparse-autoencoder and dictionary-learning approaches try to separate neural activity into more interpretable features.[^sae] They give us finer distinctions to investigate, while still leaving much of the computation unaccounted for.
 
-Sparse-autoencoder and dictionary-learning approaches try to decompose neural activity into more interpretable features.[^sae] The features we can name still do not account for everything the model is doing.
-
-**Circuit tracing** goes beyond “which feature is active?” and asks which internal pathway contributed to an output. Anthropic's attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted.[^circuits] An interpretability story that cannot survive intervention is still a story.
+To connect a signal to the report we are investigating, we need more than a name for the feature. **Circuit tracing** asks which internal pathway contributed to an output. Anthropic's attribution-graph work partially reconstructs computational routes and allows researchers to intervene on candidate features to see whether downstream behavior changes as predicted.[^circuits] An interpretability story that cannot survive intervention is still a story.
 
 Anthropic's Natural Language Autoencoders translate internal activations into textual descriptions, so that an auditor need not become a specialist in activation geometry. And then the method recreates the original problem: the textual interpretation can hallucinate. The researchers’ own advice is to corroborate such explanations with independent methods.[^nla]
 
 Even the X-ray needs a radiologist.
 
-The output is no longer the only witness. If an internal signal suggests that the model noticed an evaluation, we have a new reason to investigate its behavior. We still have to find out what the signal means in this case. Going below the text gives us another observation, not an automatic verdict.
+If the signal fails these checks, the auditor has to withdraw the interpretation. If it survives, we have a stronger reason to examine particular behavior. Neither outcome lets us stamp the whole report *safe*. But an intervention can sometimes do more than help us understand the behavior: it can change it.
 
 ## Then We Touched the Machinery
 
@@ -142,9 +120,9 @@ This is **activation engineering**. During a forward pass—the computation that
 
 Alignment can therefore enter through the computation while it is happening. The refusal result also shows how the same understanding can weaken a safety behavior. Interpretability gave us a lever. It did not tell us who should pull it.
 
-Representation-level **circuit breakers** take the defensive version seriously: rather than relying only on a model to emit a refusal, modify internal trajectories associated with harmful outputs so that the computation is interrupted before the harmful behavior is produced. In text, multimodal and agent settings alike, the method improved robustness to attacks it had never seen.[^breakers]
+Could an intervention stop a dangerous output while it is being produced? Representation-level **circuit breakers** modify internal trajectories associated with harmful outputs so that the computation is interrupted before the harmful behavior is produced. In text, multimodal and agent settings alike, the method improved robustness to attacks it had never seen.[^breakers]
 
-A controller can also respond when internal state drifts outside a learned assistant-like region, rather than constantly pushing a fixed direction.[^persona]
+A fixed intervention may not be what every case needs. Another approach responds when internal state drifts outside a learned assistant-like region.[^persona]
 
 This starts to look less like fine-tuning and more like a control system: observe the internal state, detect drift, intervene, inspect the consequences, update the controller. Wiener would recognize the shape. The epistemic problem underneath it is older: an instrument has entered the chain, and the chain now has to know how far to trust it. Did the vector represent what we thought? Did the intervention preserve unrelated capabilities? Does it still work after more training?
 
@@ -152,7 +130,7 @@ That last question makes **model diffing** useful. If the model changes every fe
 
 ## The Nastier Version
 
-So far, many of these techniques study systems that may be wrong, brittle or reward-hacking without assuming the system is deliberately treating oversight as an adversary. **AI control** research asks the nastier version.
+Our investigation has acquired tests, critics, traces and possible interventions. Much of this work can be useful without assuming the model treats oversight as an adversary. Now give the model that intention. It knows we are checking. Does the arrangement still protect us? **AI control** research asks this nastier version.
 
 Suppose the powerful model is actively trying to subvert the task. Can a weaker trusted model, limited human labor, monitoring, editing, sandboxing and protocol design still let us use some of its capabilities without accepting the dangerous behavior? Greenblatt and colleagues staged exactly this scenario in a programming setup: a powerful untrusted model, a weaker trusted model and limited trusted labor. Protocols that combined trusted monitoring or editing with the untrusted model beat the simpler baselines on the safety–usefulness trade-off.[^control]
 
@@ -172,15 +150,39 @@ That is System 3 pointed at alignment: an institution that investigates the syst
 
 This is why I prefer **scalable oversight** to the image of a giant alignment rulebook. A rulebook assumes we already know the failures. A research institution expects to discover new ones.
 
+## Stay Uncertain Enough to Listen
+
+The nine researchers needed people to decide which gains deserved belief. We have now considered delegating parts of that judgment to helpers, monitors and instruments. Suppose they become very good at it. A human raises an objection the machinery was not built to recognize. What reason does the system have to listen?
+
+Stuart Russell attacks the problem at its starting point. The standard model of AI is simple enough to fit on a whiteboard: give the machine an objective and make it good at achieving that objective.
+
+For weak systems in narrow environments, this bargain often works tolerably well. If the objective is slightly wrong, the damage may be limited. We notice, stop the program, change the objective and try again.
+
+The bargain changes as capability and scope increase. A weak optimizer pursuing a bad objective is annoying. A brilliant optimizer pursuing the same bad objective is a much more efficient way to discover exactly how bad the objective was.
+
+In *Human Compatible*, Russell proposes a different starting point for beneficial machines.[^russell] The machine should aim to realize human preferences, it should begin **uncertain** about what those preferences are, and human behavior should remain a source of information about them. The second principle is the one I want here.
+
+Uncertainty changes the control relationship. A machine that is certain it knows the objective has little reason to care that I am waving my arms and asking it to stop. From its point of view, I may simply be interfering with successful optimization. A machine that knows it may be wrong has a reason to treat my intervention as evidence.
+
+That intuition appears formally in the **Off-Switch Game**.[^offswitch] In a simple model, an agent uncertain about the human's utility can have an incentive to preserve the human's ability to switch it off, because the human's action contains information the agent does not have.
+
+Russell describes the desirable result as keeping the machine **coupled to the human**. I like that word more than “obedient.” Obedience imagines that the human already knows what to command and that the machine's job is to comply. Coupling says something more modest and more useful: new human information must remain capable of changing what the machine does.
+
+A correction, a refusal, a surprising consequence: each should matter. The machine should not optimize itself into a state where later evidence from the people it serves becomes irrelevant.
+
+That gives the machinery a requirement it can fail even while its scores improve:
+
+> **Keep the system uncertain enough that new information can still change it.**
+
+The helper agents and reward models have to preserve that relationship as they take over more of the judging. An objection must be able to reopen an investigation or stop an action. Otherwise we have expanded the supervisor by removing the person the supervision was meant to serve.
+
 ## The Human Cannot Stay in Every Loop
 
 So where does the human go? Not away; up. The goal is not to make the human label more things faster. At some scale that is simply a badly designed distributed system with one biological bottleneck.
 
-Human attention should be spent where it has unusually high information value: when oversight channels disagree; when a new failure mode appears; when an action is hard to reverse; when the system proposes changing the evaluator; when internal signals and external behavior tell different stories; when a benchmark suddenly improves too fast; when a decision affects people missing from the original objective; when one piece of human context could materially change the plan.
+Human attention should go where it can change a consequential decision: a disagreement between oversight channels, a new failure, an action we cannot easily reverse, or a proposal to change the evaluator. Sometimes the missing evidence is one piece of human context. Sometimes the missing person is someone the original objective forgot.
 
 Consider the researcher that discovers a benchmark is misleading. It should be able to make that case, propose a replacement and collect evidence. Promoting its replacement to the standard that certifies its own work is another decision. The human cannot remain in every loop, but has to remain in the loop that changes the loops. Chapter 7's amendment problem has reached the overseer.
-
-The system may generate tests, critiques and mitigations. It may discover internal representations, propose steering interventions and conduct large parts of alignment research itself. But the machinery deciding which evidence has standing, which failures matter, which trade-offs are acceptable and when the oversight regime itself should change needs a stronger trust chain than the machinery being judged.
 
 When research becomes cheap, evaluation becomes expensive, and when evaluation becomes automated, trust in the evaluator becomes the product.
 

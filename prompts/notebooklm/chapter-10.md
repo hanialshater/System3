@@ -20,7 +20,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 10: Fluent Autonomy" into an English video.
 6. Invisible by Default, Legible on Demand
 7. The Second Coffee Test
 8. Five Ways This Could Be Wrong
-9. Monday Morning
+9. The Store
 
 ## Review
 

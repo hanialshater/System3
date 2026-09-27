@@ -267,15 +267,7 @@ A flat skill stores the rule. A richer object can record that the heuristic came
 
 Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple substitutions but repeatedly damages indentation-sensitive blocks, the useful knowledge is *this tool is reliable here and dangerous there*.
 
-The same applies to softer heuristics. “Regex tends to fail on deeply nested structures” is a **meta-belief**: something that can accumulate evidence for and against it.
-
-A normal rule says:
-
-> Never use regex here.
-
-A System 3 belief says:
-
-> This has worked often enough that I should prefer it, but new evidence can change my mind.
+Such a heuristic is a **meta-belief**: a reason to prefer one approach, with evidence that can change its standing. “Never use regex here” has no place to put the counterexample.
 
 If you enjoy old epistemology labels, you can call the model a largely coherentist core, uncannily good at producing structures that hang together, and System 3 a thin foundationalist shell tied to observation, provenance and consequence. Philosophers can put down their weapons; I only need the architectural analogy.
 
@@ -372,19 +364,9 @@ It was wrong. The baseline took the simpler path and fixed the actual bug.
 
 One possible story is that accumulated epistemic structure made one family of explanations too salient. But one case cannot establish that causal story. Persistent state may have caused the wrong turn or merely accompanied it.
 
-What we can say is that structured memory changes the context in which future search occurs.
+Trust is **path-dependent**. Expertise works the same way. A great database engineer may see a database problem faster than most people, which is wonderful until the actual problem is the network. Paradigms focus attention. They can become prisons for exactly the same reason.
 
-Trust is **path-dependent**.
-
-Expertise works the same way. A great database engineer may see a database problem faster than most people, which is wonderful until the actual problem is the network. Paradigms focus attention. They can become prisons for exactly the same reason.
-
-The failure is more interesting to me than a clean win would have been because it kills the simplest story:
-
-> Add memory, get smarter agent.
-
-Structured experience biases future behavior toward what the system has learned. Sometimes that is exactly what we want. Sometimes the bias is the failure.
-
-A mature System 3 therefore needs more than accumulation: forgetting, counterexamples, challenge, competing possibilities and occasional permission to ignore what it thinks it knows.
+“Add memory, get smarter agent” had failed its first small test. What would let an agent challenge the experience it had accumulated?
 
 ## Creative Distrust
 

@@ -12,22 +12,23 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "35791fe29b0bad04a35f6fc1ac09b6c565220465b50be9982301471b9ac46a92",
+      "source_sha256": "66af3d68c9eb8e5e44c37405a28783828d16757f96c63eb679290b1aa2b57c1a",
       "brief": "prompts/notebooklm/chapter-01.md",
-      "brief_sha256": "cc232925e25aea7d0a750129266b383d8459195d2da478aad75034581e6a7ec1",
+      "brief_sha256": "685739afabc62cdb33523ad647e394a27277d255d2899e5eb8beebf756a35eb0",
       "sections": [
         "Opening passage",
         "The Rule-Based Exoskeleton",
+        "The Head Start",
         "When Search Moved Up a Level",
         "Chaos With an API Key",
         "Confident Wrong Solutions",
-        "Pulling Harder on the Stem",
+        "Which Limits Were Mine",
         "A Bounded Problem"
       ]
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "9ce632d511a6880306f4b3e9a1cc38d6e7335c56cfd04ab667bb6066ad95305e",
+      "source_sha256": "d1cc1362cd0397c043be773c6a1a90a75096c2321f00f058a62d626c4be7bd73",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "ae546bb9d689fc7e49602f95c2f2d2931638985cacd309b855c7a29df465d6e2",
       "sections": [
@@ -55,7 +56,7 @@
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "ddc208424d237847cb048876ddc5c87964f9c3fcd81ee271c5dc69cc19b90365",
+      "source_sha256": "fc7cff0e5e1e32fe29841e138f6b247ccf4b01fcac53f3b9f09632a3ee923c91",
       "brief": "prompts/notebooklm/chapter-03.md",
       "brief_sha256": "3b35c472c460df76d8410c507806efe79205d674d0d49c53029c29d03004a0bb",
       "sections": [
@@ -75,7 +76,7 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "969577a19642dfe1a2e528cedbd33834bdb4ef9371955c9dd00271971fff2b27",
+      "source_sha256": "6961b048af875f031e702b92866f6e302c2592bc48329c563c678c032fa0732d",
       "brief": "prompts/notebooklm/chapter-04.md",
       "brief_sha256": "c335671bb546bd55b693b81ce7e0739241171df122cecc3373f8283716019993",
       "sections": [
@@ -95,7 +96,7 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "cf20dd44bb5b1cb8f4532dbabf3aa7290c4ce7b44fd8f9d00b9d56ba9fe6c915",
+      "source_sha256": "c77a3c3dececa72a0f8787c1dda1699afdd1c9fede38201f6a5e990bf2aaaab3",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "355c6e35b9535882241bdda25e3e5feb27f52f94e2ccf7b64f05f7b16e52cd69",
       "sections": [
@@ -113,9 +114,9 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "4b48ed337ff0304fb144a74e37873acd0a711ca0b350fbb7d4bcc6b720b83081",
+      "source_sha256": "7a986cd4f71ef8b8ff84936040228cf9b170efe3322f3ec06f24ec7db2b2774e",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "7f0d52b633b31d901351e34f4e950ff32100d6b3b4de79015019a20479fb6a5d",
+      "brief_sha256": "271f20dd33d2637c9608c8732e3fc5664d396bbf2232235792fc154854c3bfea",
       "sections": [
         "Opening passage",
         "The Pattern Goes to Work",
@@ -126,20 +127,20 @@
         "Locate the Failure",
         "Ask What the Number Means",
         "Write the Lesson Down",
+        "Put the Library to Work",
         "Change the Representation",
         "Separate Use from Investigation",
         "Keep the Funding Decision Visible",
         "Give the Objection a Consequence",
         "Test What the Next Agent Inherits",
         "Find Where the Result Lives",
-        "Put the Library to Work",
         "Put the Procedure Under Test",
         "What the File Says Now"
       ]
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "760639e16da60612c2be2673ee071eba059053c278cc3bc920d379768c25b4de",
+      "source_sha256": "3ced812aea8be330532c1ff33bfb8b21dfd5d93bae145dcdcf575a1bf0251136",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "7422f3a551550a9c252c5692ce867dc54584f670763ab56eb4f6fc11383f558e",
       "sections": [
@@ -160,28 +161,28 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "4f115c6963b3cc2a6f94950f8be555638a1ab6042b61f0116491435c9d14b5a0",
+      "source_sha256": "96f2ff549d3e48e63dacf2ed67e82edd8c43b74259348b099f1f4fb69857b3ea",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "938b923849dce5dade760e10de3bb1938d0fe843322a9c7e5dce3f646ee93d22",
+      "brief_sha256": "75ef066f40bc86357f59621eef24d840a9bbe88e9110d3c01ab2bfa85e2d4cf8",
       "sections": [
         "Opening passage",
         "The Judge Falls Behind",
-        "Stay Uncertain Enough to Listen",
-        "An Excellent Education in the Same Mistake",
         "Performance Gap Recovered",
+        "An Excellent Education in the Same Mistake",
         "The Judge Can Be Fooled",
         "We Started Instrumenting the Student",
         "Reading the Model From the Inside",
         "Then We Touched the Machinery",
         "The Nastier Version",
         "The Evaluator Becomes the Product",
+        "Stay Uncertain Enough to Listen",
         "The Human Cannot Stay in Every Loop",
         "The Overseer Is Not Ground Truth"
       ]
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "1516bf0f2d9cc5633081ad4bcf76ca51a5a960a210e208a2e59939ee31f97fcd",
+      "source_sha256": "1cfe60f5b1cc8d7ba51062e59107a84d41267ce89b52f182a60f54f082cd69cc",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "745bc6bce1be0ed3c214228724196ed77bcb2c0ae624322e3c65c3106dcf3d23",
       "sections": [
@@ -201,9 +202,9 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "808a1d6e966a680e712e119b3c0580a6554c893f555e6a39ad46d02f27335471",
+      "source_sha256": "97139edf0d9f9fa14504ec4744fe5751a86e55293698a225a67116e055f0f171",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "b259fec94f2a090362c84ddf39e67462ec8e4caa6783ebcdf8cd4e3489601a26",
+      "brief_sha256": "20502caff4a9eb7ff91ff3123418ed5eb878f86dd9252a7d383dedc973897529",
       "sections": [
         "Opening passage",
         "What the Corrections Had to Teach",
@@ -213,12 +214,12 @@
         "Invisible by Default, Legible on Demand",
         "The Second Coffee Test",
         "Five Ways This Could Be Wrong",
-        "Monday Morning"
+        "The Store"
       ]
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "45beae267128210396ecc60db69d3c00c8dadc4452e342b331ba8ff4e8e37386",
+      "source_sha256": "38cecd53d7c7751a0ac8a23683a7fd20fb145b577fd7ad039a0e00b540db7020",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "135d8f8163a8f2de7e9bcc33101aa2fd37a5b377b543888d5d3660a0140f949d",
       "sections": [
@@ -241,7 +242,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "a59b894f095946f920f802493b31bab139aa8b69b7f82db40ff0b08c5ad126a2",
+      "source_sha256": "17ca979462376e26710020790d0a876e271fa83c9e2c1551427998de2abd4b3e",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "467cb72916132774e40568c52116ac873a866b56688241d9f59e0208ac89be2b",
       "sections": [

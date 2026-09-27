@@ -14,17 +14,9 @@ It is faster than you at a ridiculous number of things. It knows libraries you f
 
 This is the strange reality behind all the vibe-coding excitement. The machine is extremely capable, but you are still there. You check the architecture. You notice the missing case. You tell it that no, we are not redesigning the database because one button is the wrong color. You keep enough of the project in your own head to notice when the agent quietly wanders into another universe.
 
-The previous chapter ended with a claim: as more of the search moves into the machine, human control has to move upward from individual actions toward the environment, feedback and boundaries surrounding those actions.
+Production software is almost the worst place to find out whether I can leave. A supposedly simple task may involve deployment, legacy systems, users, security, another team's API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don't know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
 
-That sounds reasonable in prose.
-
-I wanted to see if it survived contact with an actual problem.
-
-Production software is almost the worst place to test it. A supposedly simple task may involve deployment, legacy systems, users, security, another team's API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don't know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
-
-I wanted something cleaner: a hard problem, but contained. Something where I could genuinely say, “figure it out,” and still have an objective way to know whether whatever came back was any good.
-
-I call these **bounded problems**. Not easy problems. Quite the opposite. They can require serious mathematics, programming, research or design, but the boundary is unusually cooperative: you can describe the problem, give the agent enough tools to work on it and evaluate what comes back without deploying to ten million customers first.
+I wanted a **bounded problem**: hard enough to demand invention, contained enough that I could say “figure it out” and judge what came back without deploying to ten million customers first.
 
 Algorithms are almost perfect for this. The search can be brutally difficult while the evaluator remains wonderfully stupid.
 
@@ -328,11 +320,7 @@ In our best run, the evaluator returned roughly **2.636**, slightly above the **
 
 That sentence needs a fence around it. Under our evaluator, the result beat our reference. Calling it a new state of the art in circle packing would require matching problem definitions, checking numerical tolerances and constraints, reproducing the result properly and doing a more serious literature search than this experiment justified.
 
-The smaller claim is enough:
-
-**The agent beat our reference while I was not writing the solution algorithm for it.**
-
-That was the result I cared about—not that AI writes code faster, but that AI can participate in **discovering better code**.
+**The agent beat our reference while I was not writing the solution algorithm for it.** That was the result I cared about.
 
 ## The Algorithmic Vortex
 
@@ -430,17 +418,9 @@ With the asterisk that Bash contains roughly half a century of civilization.
 
 ## The Easy Version of Autonomy
 
-It would be very easy to overread this experiment.
+The coffee test is not a license to give Claude a shell in production and go for a very long lunch. I could leave because the evaluator stayed behind, enforcing constraints I had chosen. Substantial control over the search moved into the agent; control over what counted as success did not.
 
-We did not prove that coding agents can autonomously solve arbitrary research problems, that AlphaEvolve-style systems are obsolete, that diagonal layering is historically novel in computational geometry, or that the right approach to production software is to give Claude a shell and go for a very long lunch.
-
-What we had was narrower and, to me, more useful. We had a **bounded problem** where evaluation was cheap and clear. We gave a capable coding agent substantial freedom and found that a surprisingly large fraction of the experimentation loop could happen without us directing every step.
-
-The agent could propose an approach, implement it, run it, inspect the result, abandon it, create tools, borrow ideas from another direction and try again. My role moved away from writing the solver and toward defining the job, constructing the environment and defending the harness.
-
-That is the claim this chapter earns: **when the problem is bounded and reality supplies a hard enough referee, substantial decision-level control can move into the agent without giving up control of what counts as success.**
-
-It is also why circle packing is the easy version of autonomy.
+That is also why circle packing is the easy version of autonomy.
 
 The evaluator gives us one number. If version B beats version A, nobody needs to simulate a confused student, debate whether the interface feels intuitive or convene a committee to decide whether the new solution is spiritually aligned with the learning objectives.
 

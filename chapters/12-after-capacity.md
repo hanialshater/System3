@@ -24,13 +24,11 @@ In the curve described by Belkin and colleagues, test error falls as a model gai
 
 I am borrowing the shape. Intellectual history does not obey a theorem about neural networks.
 
-Much of the modern world was built by reducing problems to what we could handle: engineer the complexity down, design the solution in advance, build one thing and reuse it. That is the first descent in the analogy. Chapter 5 followed how civilization accumulated capacity in institutions, often learning what arrangements it needed through failure. The spike in the middle I read, loosely, as a predicament the postmodern critics explored: more and more accounts can be made to fit the same facts, and none is obviously privileged. The critics were right about the predicament. We become better at questioning the arrangements we inhabit without necessarily gaining the means to change them.
+Much of the modern world was built by reducing problems to what we could handle: engineer the complexity down, design the solution in advance, build one thing and reuse it. That is the first descent in the analogy. The spike in the middle I read, loosely, as a predicament the postmodern critics explored: more and more accounts can be made to fit the same facts, and none is obviously privileged. The critics were right about the predicament. We become better at questioning the arrangements we inhabit without necessarily gaining the means to change them.
 
-Double Descent Life is the wager that cheap capacity opens another route: an attempt whose outcome is not already contained in the argument. Where scarcity made us engineer complexity away, we can afford to investigate it. Where it made us design arrangements in advance, they can develop through use and revision. Where it made us reuse one solution for everyone, we can assemble software, expertise and organization around the question in front of us. Complexity, emergence, capacity.
+Double Descent Life is the wager that cheap capacity lets us make an attempt. We can investigate more of the complexity, build around a particular need and let the arrangement change as we use it. The next result need not be another argument about what might work.
 
 Not all capacity. We still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
-
-The earlier chapters followed engineering failures until the machinery assembled around them became recognizable as science. Double Descent Life asks what people could attempt if they could assemble that capacity around questions of their own.
 
 ## Owning the Frontier
 
@@ -38,11 +36,7 @@ LLM-as-a-judge looked like a threat to my profession.
 
 For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-Chapter 4 gave me a small version of the problem. The epistemic agent produced smaller patches and solved fewer problems. I could admire its discipline or count the bugs it fixed. Those judgments did not give me the same answer.
-
-Ten tasks could not tell me why. The extra instructions might have made the agent more conservative. A memory of earlier failures might have helped on one task and sent it in the wrong direction on another. The order of the tasks might have mattered. Each explanation suggested a different next experiment.
-
-I could keep adding machinery and hope the next score improved. Or I could spend the next run finding out which part of the machinery deserved to stay. That choice required more than another model evaluation.
+The epistemic agent in Chapter 4 produced smaller patches and solved fewer problems. I could admire its discipline or count the bugs it fixed. Those judgments did not give me the same answer, and ten tasks could not tell me why. The next run could add more machinery or investigate which part deserved to stay. A cheaper evaluation had left me with a harder choice about what to evaluate.
 
 Scarcity rations the distinctions we can afford to investigate. Cheaper generation and evaluation let us attempt more comparisons. Someone still has to notice which question the last result failed to answer. A million judgments overnight is a million more things that look like evidence.
 
@@ -73,8 +67,6 @@ Imagine a mathematician assembling a workshop around one conjecture. It generate
 The workshop changes as she learns. A picture suggests a different representation. The new representation makes a search possible. The search returns an awkward case, and the awkward case is more interesting than the conjecture she began with. She builds the next instrument around it.
 
 That environment might be useful to one person for eighteen months. It could still be worth building. Its reason to exist is the investigation, not the market.
-
-The prototype in Chapter 11 points in this direction too. A row of products is a familiar, reusable unit of customer experience. One shopper needs help comparing two coats; another wants to know what she already owns that would work with a dress. A team could construct and investigate different experiences around those needs, instead of spending another quarter rearranging the same row. The form of the product becomes something we can question by making it.
 
 Maintenance, security and access to data remain part of the work. A cheap first version is not yet a system people can depend on. But these are reasons to build better tools for sustaining what we create. They do not restore the old economics by decree.
 
@@ -258,8 +250,6 @@ AI can participate in that process without owning it. It can show me possibiliti
 
 Or we may use the capacity to watch fourteen hours of personalized short video generated around whatever keeps us watching. If I let the system decide which desires deserve pursuing, I hand over some authorship of my life.
 
-I can prototype a tool before building a company, or learn enough of a field to make choosing a degree less of a leap in the dark. A community can try a limited version of a rule before asking everyone to live under it. Those trials have consequences for other people too. The extra room matters when it lowers their cost of learning as well.
-
 The future I want has more room in it.
 
 Room to get the map of a field quickly, then spend a year on the part that matters. Room for a small community to construct things around its actual needs, and for someone inside it to disagree. Room to try the strange art nobody would have funded. Room to be less economically useful without becoming less human.
@@ -283,8 +273,6 @@ By Sunday evening they might have an arrangement worth trying, a working tool an
 I have not run that weekend. A hundred agents is a picture, not a measured capability or a cost estimate.
 
 Nobody at the table needs a Nobel Prize. They should not each need a thirty-year research career before they can draw on what that research made possible. They need access to the knowledge, enough capacity to work with it and people willing to take responsibility for the attempt.
-
-A weekend could give a group the means to try an arrangement it had spent years petitioning somebody else to provide. A teacher could build an environment around the children she actually teaches. A question pursued after work could acquire the instruments of a serious investigation.
 
 That is the work I want to do: put the machinery this book has described within reach of people who have something they want to try. If someone else can build the same thing, I might have a collaborator.
 

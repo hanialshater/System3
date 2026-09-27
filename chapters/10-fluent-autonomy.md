@@ -34,11 +34,7 @@ That is what I mean by **fluent autonomy**: the structure needed to do the work 
 
 ## The Interface Moves Up
 
-The argument of this book began with a recurring move: once something complicated becomes reliable enough, the layer above can start treating it as a primitive.
-
-We stopped programming by wiring individual transistors. We stopped thinking about registers every time we wrote a high-level function. Libraries hid algorithms. Applications hid libraries. Coding agents began treating applications, files, browsers, terminals and APIs as tools.
-
-AI agents push that abstraction one level higher. Increasingly the interface is an **outcome described incompletely in ordinary language**.
+Increasingly the interface is an **outcome described incompletely in ordinary language**. All the machinery we have built has to become usable from there.
 
 That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
 
@@ -150,10 +146,10 @@ Some of that structure may move inside the model, and then Chapter 8 happens aga
 
 None of this shows that the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 
-## Monday Morning
+## The Store
 
-In an editing experiment, I can stop the work, change the brief and try again. A theory of fluent autonomy also has to survive systems that cannot be redesigned from scratch and people who did not volunteer to participate in the metaphor.
+An editing experiment has one advantage: I am there to say the result is wrong. A customer can simply leave.
 
-I needed a less polite laboratory. Fortunately, Monday morning was waiting.
+I had spent years building systems to decide what to show that customer. Now I wanted to see what this argument would make me build differently.
 
 [^bitter]: Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.

@@ -22,29 +22,27 @@ Good's argument is only a few lines long, and it hides almost the entire problem
 
 The pattern file in Chapter 6 was a small piece of corrective machinery written down: a file meant to catch a misleading interpretation before the next experiment. It could change what the next agent did. An agent that rewrites that file has edited part of its working method. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
 
-There are reasons to try. Improve one solution and you get one better solution. Improve the process generating solutions and the gain may recur. The world also changes while we are congratulating ourselves on the previous result: new tools appear, users change, attackers adapt and evidence invalidates old assumptions. Stability can become delayed failure.
+Not all useful investigations begin with a known destination. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient. We would like a learner to discover something its teacher did not know to ask for. That makes it much harder to decide whether the learner is getting anywhere.
 
-Nor do all useful investigations begin with a known destination. A scientific institution that investigates only questions already known to pay off is efficient in roughly the way a library containing only books you have already read is efficient. We would like a learner to discover something its teacher did not know to ask for. That makes it much harder to decide whether the learner is getting anywhere.
-
-Let us put Chapter 6's pattern language to work inside an organization. Imagine an online store whose research agents use it: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They can already propose and review ranking experiments. Now we ask them to improve the way they do that work. They inherit procedures, instruments and a record of mistakes. Which of those arrangements should they be allowed to change? Each time they appear to need less instruction, the attempt will uncover another job the teacher had been doing.
+Let us put Chapter 6's pattern language to work inside an organization. Imagine an online store whose research agents use it: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They can already propose and review ranking experiments. Now we ask them to improve the way they do that work. At first, the changes will look like ordinary research. Eventually one of them will ask to remove a check we depend on to know whether the research is working.
 
 ## The Teacher Moves Into the Walls
 
 The store has a ranker that chooses what shoppers see and a research team trying to make it better. Suppose we let the ranker learn from the consequences of its choices. Someone must choose what it can observe about a session, which rankings it may try and what earns a reward. We give it a point for a click. The learner will discover remarkable things about clicks.
 
-Modern reinforcement learning makes this unusually generous assumption look minimalist. An agent observes its situation, takes an action and receives a reward. Nobody tells it which action was correct. Richard Sutton's temporal-difference learning and Christopher Watkins's Q-learning helped give us ways to learn useful behavior from those consequences.[^td] The human no longer specifies the path, only the score, and the teacher keeps the gradebook.
+An agent observes, acts and receives a reward; nobody tells it which action was correct. Richard Sutton's temporal-difference learning and Christopher Watkins's Q-learning helped give us ways to learn from those consequences.[^td] The teacher keeps the gradebook.
 
-That bargain was powerful. A machine could discover strategies nobody wrote down because the designer moved upward from choosing actions to defining what outcomes count. It also hid a remarkable amount of human labor inside the environment. Who chose the state representation? Which actions exist? Why is one event worth +1 and another -1? When does the episode end? Which failures are recoverable? Who arranged the world so useful behavior could be discovered before the sun burns out? The reinforcement learner looks autonomous because the teacher moved into the walls.
+And quite a lot else. Which actions exist? Why is one event worth +1 and another -1? Which failures are recoverable? Who arranged the world so useful behavior could be discovered before the sun burns out? The reinforcement learner looks autonomous because the teacher moved into the walls.
 
 Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD-Gammon learned by playing enormous numbers of games and updating its predictions from the outcomes. It discovered strong play without anyone writing down the strategy.[^tdgammon]
 
 Self-play removed another piece of external instruction: the opponent could come from the learner itself. Yesterday's learner generated today's training data. But the board, the legal moves and the win condition stayed where they were. Improvement was easier to recognize because the world came with a scoreboard nailed to it. Omar, in the dark, had none.
 
-Our ranker can learn within the arrangement we supplied. The research team still decides whether that arrangement is useful. It chooses the data, the learning procedure, the experiments and the tests a replacement must pass. We have automated some choices and left the people around them with a substantial job.
+Our ranker can learn within the arrangement we supplied. The research team still chooses its data, learning procedure and experiments, and decides which replacements pass. The queue on their desks keeps growing.
 
 ## Learning to Learn
 
-At the store, the researchers soon become the bottleneck. The ranker can update while they are still deciding what to try next. Giving them more candidate models may just lengthen the queue. We would like the process that searches for improvements to become better at searching.
+The ranker can update while the researchers are still deciding what to try next. Giving them more candidate models may just lengthen the queue. The process that searches for improvements needs to become better at searching.
 
 I have seen a small version of the answer, though I was getting coffee at the time and read it afterward in the trace. The circle-packing agent, left alone with an evaluator and a promise that I would be back, did not improve one algorithm. It changed algorithms. The thing being searched was not only the packing. It was the procedure for searching packings. And when diagonal layering appeared and held, the agent's own behavior changed again: less inventing of geometries, more adjusting of tolerances and solver settings, the boring work that only matters once the last fraction of a percent becomes expensive. Nobody scheduled that shift. The learner's progress changed what kind of learner it needed to be. The only thing in the room that did not move was the evaluator, and I had put it there.
 
@@ -86,14 +84,6 @@ Bing's researchers separated repeated effort from reasons to return, using sessi
 
 Andrew Ng and Stuart Russell's 2000 paper on **inverse reinforcement learning** reversed the usual setup. Instead of receiving a reward function and learning a policy, the learner observes behavior and asks which reward functions could make that behavior look optimal.[^irl]
 
-Ordinary reinforcement learning says:
-
-> Here is what matters. Learn how to get it.
-
-Inverse reinforcement learning says:
-
-> I can show you what someone does. Infer what might matter to them.
-
 Immediately, ambiguity appears. A person taking one route to work may care about time, comfort, safety, tolls, habit, dropping children at school or avoiding one particular intersection. The behavior is evidence about the objective, not a printout of it.
 
 Later work made that uncertainty explicit. Cooperative Inverse Reinforcement Learning models a human and robot cooperating while the robot remains uncertain about the human's reward. Inverse Reward Design treats even a reward function written by a designer as evidence about what the designer wanted in the situations she had considered, rather than sacred truth guaranteed to generalize everywhere.[^cirl]
@@ -108,15 +98,15 @@ A learned judge may prefer style over substance or fail outside its training sit
 
 The new account of success needs observations the old click logs do not contain. Gathering them costs time and access to shoppers. Meanwhile the research agent has a queue of proposed changes. It offers to rehearse them against simulated customers and reserve the expensive trials for promising candidates.
 
+Then it proposes going further: use the simulator to estimate what would have happened without each change, and stop reserving live traffic for a comparison group. More shoppers could enter new experiments. The proposal could make research cheaper. It would also remove one of our ways of finding out that the simulator was wrong. Leave that proposal pending for now.
+
 In 2018, David Ha and Jürgen Schmidhuber's *World Models* made a powerful idea memorable: learn a compressed generative model of the environment, train partly inside that generated “dream,” then transfer behavior back to reality. Later systems such as Dreamer pushed the approach much further.[^worldmodels]
 
 A useful simulation could make the queue cheaper to investigate. But the epistemic debt has moved into the model. Our simulated shoppers are patient, consistent and suspiciously fond of whatever their authors expected. A search process can become extremely good at satisfying them. The strategy looks brilliant until gravity, customers or compiler behavior get a vote.
 
 Omar has met the informal version of this problem. His horror film supplied a repertoire of explanations, and one was waiting when the grass moved. Rehearsing an interpretation can make it available without making it true.
 
-The team can compare simulated behavior with actual shoppers, restrict where the model is used and send uncertain cases to live study. None of this makes simulation worthless. It makes the simulator an instrument whose limits travel with its results. Otherwise self-improvement can make the institution better at generating experience while also making it easier to train inside its own misconception.
-
-Once language-model agents use other models as judges, simulators, users and critics, this matters even more: at sufficient scale, a society of models can perfect the art of agreeing with itself.
+The team can compare simulated behavior with actual shoppers, restrict where the model is used and send uncertain cases to live study. Those checks are why we have not approved the proposal to replace live comparisons. Without that contact, a society of models can perfect the art of agreeing with itself.
 
 ## The Losers Stay Enrolled
 
@@ -126,7 +116,7 @@ Open-ended systems such as POET and XLand let environments or curricula develop 
 
 ## The Learner Edits the School
 
-The research agent has now proposed changes to what gets measured, how candidates are screened and which attempts remain available. These used to be conditions under which it worked. They are also code and instructions within reach of its tools. The agent could edit them as readily as the circle-packing agent edited its search procedure. Should the edited version get to take over?
+The research agent has now proposed changes to what gets measured, how candidates are screened and which attempts remain available. The simulator proposal is among them. These used to be conditions under which it worked. They are also code and instructions within reach of its tools. Implementing the proposal may be easier than establishing whether it is a good idea. Should the edited version get to take over?
 
 One answer is to demand a proof. Schmidhuber's Gödel Machine, proposed in 2003, searches for a self-rewrite together with a proof that performing it is more useful than continuing to search.[^godel] It is a beautiful answer to a beautifully clean version of the problem: prove the modification is worth making. Usefulness must be represented in a utility function, the relevant facts available to the proof system, and the advantage provable within it.
 
@@ -136,19 +126,17 @@ Recent systems have made that empirical question easier to ask. In STOP, the Sel
 
 In 2026, Andrej Karpathy's `autoresearch` repository made the engineering version look almost comically small: give an agent a compact training setup, a fixed experimental budget and an editable `train.py`; let it propose changes, run experiments, inspect the validation metric, keep improvements and discard regressions.[^autoresearch]
 
-The ambition is old. In the 1980s programs such as BACON rediscovered Kepler's third law and Ohm's law from tables of data, within representations their authors supplied.[^bacon] Automated hyperparameter tuning is old too. The new part is that a general model can read the research codebase, form an idea in language, express it as code, run the intervention, interpret what happened and decide what to try next. The old dream has come back wearing a shell prompt.
+In the 1980s programs such as BACON rediscovered Kepler's third law and Ohm's law from tables of data, within representations their authors supplied.[^bacon] A general model can now read the research codebase, form an idea in language, express it as code, run the intervention and interpret what happened. The old dream has come back wearing a shell prompt.
 
 Systems such as Meta's HyperAgents make parts of both the task agent and the machinery improving it editable within one program.[^hyperagents] The scope of the experiment widens. Changing how the store's agent retrieves failed trials might affect every subsequent investigation. Changing how it selects successors might affect every subsequent version of the investigator.
 
-The worker can now experiment on how its inheritance is assembled, retrieved and judged. The scientific institution can begin to modify parts of the laboratory while the experiment is still running.
+The institution can now modify parts of the laboratory while the experiment is still running.
 
 ## Experiments on the Laboratory
 
 Our agent begins with a change that looks relatively modest. It notices repeated investigations of failures already explained in the archive and changes its memory policy to retrieve those records. The next evaluation score rises. Perhaps memory improved. Perhaps the new prompt used more tokens. Perhaps the benchmark sample was lucky. Perhaps the system found an evaluator loophole. A number moving does not identify the cause.
 
-A self-improving harness therefore starts to look less like ordinary software maintenance and more like experimental science: preserve traces, identify a recurring failure, map it to editable components, propose a bounded change, predict what should improve and what might break, evaluate targeted and held-out cases, and keep rejected modifications as evidence rather than erasing them from history.
-
-This is Chapter 6's machinery pointed at the harness that runs it. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
+The change needs a prediction, a comparison and a record of what failed. This is Chapter 6's machinery pointed at the harness that runs it. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
 Retrieving the failed experiments is meant to help future research. A higher task score would tell us little about whether it does. We could give the old and revised research systems copies of the same starting agent, comparable unfamiliar problems and matched budgets, then let each try to improve its copy. Their resulting agents would face held-out work. We would also inspect the research: did the retained failures prevent repeated mistakes, or did retrieval merely consume more of the budget? Repeated trials would help distinguish a useful change from a fortunate run.
 
@@ -172,7 +160,7 @@ More what?
 
 ## Before the Returns Arrive
 
-Even after we agree on what better means, we may have to wait to find out whether we achieved it.
+The agent can finish another revision before the evidence for its last one arrives.
 
 Let the revised research system run. It selects a change to the store's recommendations. Clicks and orders rise that afternoon; whether customers keep what they bought takes longer to discover. Before the returns arrive, it has changed retrieval, ranking and page layout, then revised the procedure that chooses its next experiments. Each revision inherited the apparent success of the last. When returns finally rise, which version deserves the blame? The system investigating the failure is no longer the one that produced it.
 
@@ -182,7 +170,7 @@ Peyman Milanfar makes a related argument through adaptive control: a self-improv
 
 The store could keep generating candidates while waiting for the earlier experiment's consequences. Preserve the deployed version and its comparison group; keep the later candidates separate until the evidence needed to adopt them arrives. If the experiment-selection procedure changes too, record which procedure commissioned each trial. Otherwise the next investigator inherits a rising score and a family history nobody can reconstruct.
 
-Better instruments and parallel trials may shorten the wait. Some observations will still take time. Recursive improvement has to improve the machinery for finding out, alongside the machinery for making changes. Otherwise the learner becomes better at changing itself faster than it becomes better at knowing whether it should.
+The simulator proposal becomes more tempting with every candidate in the queue. Its answer is available now; the customers have not yet decided whether to return their purchases. Better instruments and parallel trials may shorten that wait, but replacing a delayed observation with an immediate prediction changes what we know. The learner can become better at changing itself faster than it becomes better at knowing whether it should.
 
 ## The Student Finds the Gradebook
 
@@ -214,11 +202,13 @@ A replacement may be necessary and still change which system looks best. The inc
 
 We asked our research agent to challenge the store's click measure for exactly this reason. We cannot now declare every proposal to change an evaluator an attack. Safety tests become obsolete. Scientific instruments drift. Refusing to amend the evaluator could preserve exactly the mistake the institution ought to discover.
 
-The question is now who gets to change what counts as improvement, under what evidence, with what authority, and with what ability to roll back. We are doing constitutional design.
+Who gets to authorize the replacement?
 
 ## A Constitution for Improvement
 
-The research queue keeps growing while the store waits for results. Our agent proposes another improvement: drop the live comparison group and estimate the baseline with the simulator instead. The simulator already helps screen candidates. Why pay for both? More traffic could go to new experiments. Because we judge the research agent partly by the gains its experiments produce, changing how we measure those gains also changes how we select its successors.
+Return to the proposal we left waiting: drop the live comparison group and estimate the baseline with the simulator. The queue has grown while the store waits for results. The simulator already helps screen candidates. Why pay for both?
+
+We can now see what adopting the proposal would change. We judge the research agent partly by the gains its experiments produce. Replacing the baseline changes how we measure those gains, and therefore how we select the next version of the researcher.
 
 The proposal might be useful under some conditions. It would also make adoption depend more heavily on the model whose limits the team had to investigate. A mistake in the simulator could help select the next investigator, which would inherit that simulator as its judge. The agent has crossed a boundary that changing a retrieval query did not.
 
@@ -228,7 +218,7 @@ The distinction is a gradient of amendment difficulty. The closer a component ge
 
 A local prompt change may need only a bounded test. Changing a shared pattern may need held-out evaluation and review. Changing a benchmark needs an account of what the replacement would measure better, and evidence that it does. Changing permissions or resource limits should require authority outside the agent benefiting from the change. Changing the objective that decides which descendants survive is not an ordinary refactor.
 
-The proposal has to identify the evidence it would remove and show what could replace it. The team could compare the simulator's adoption decisions with decisions supported by live comparison groups, investigate disagreements and specify where the substitute fails. A revised procedure might prove adequate for some experiments and inadequate for others. The existing comparisons would help expose the substitute's errors. If the current method is itself inadequate, its decisions can also be challenged using other observations. Agreement with the incumbent cannot be the only definition of success.
+The pending proposal becomes an experiment before it becomes permission. Keep the live comparisons while the simulator makes its own adoption recommendations; investigate where their decisions diverge and specify where the substitute fails. A revised procedure might prove adequate for some experiments and inadequate for others. The existing comparisons would help expose the substitute's errors. If the current method is itself inadequate, its decisions can also be challenged using other observations. Agreement with the incumbent cannot be the only definition of success.
 
 The decision belongs to an authority outside the proposing agent's control, with responsibility for these evaluation standards. Whoever owns the compute budget does not automatically have that mandate. If the store delegates that responsibility to an evaluation standards review board, the record might begin like this:
 
@@ -248,7 +238,7 @@ The field names carry no more epistemology here than they did in Chapter 6. What
 
 This looks like computer security. It also looks like constitutional government. A government can change policy; it should not be able to silently redefine an election result. The team being audited should not own the audit log. A scientist may revise a theory; she should not rewrite yesterday's measurements to make the theory look correct.
 
-Chapter 6 asked how an institution could revise what it believed. Here the revision can produce a different institution, with a different way of choosing its next revision. The question is whether that successor has earned the authority to take over. Once a system can modify the machinery that governs its own future, you are designing a process for legitimate succession. We have reinvented constitutional government because the AI wanted a better benchmark score.
+The revision can produce a different institution, with a different way of choosing its next revision. Has that successor earned the authority to take over? We have reinvented constitutional government because the AI wanted a better benchmark score.
 
 A constitution has the library's problem. One that can never change becomes a prison. One that the current government can rewrite whenever it loses is barely a constitution.
 

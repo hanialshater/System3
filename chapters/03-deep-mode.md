@@ -2,11 +2,9 @@
 
 *Beyond Algorithms: Agent Autonomy for Creative Problems*
 
-In the previous chapter, we gave an agent a difficult algorithmic problem and a lot of autonomy. It researched strategies, tried several approaches, got stuck, changed direction, and eventually found diagonal layering.
+The circle-packing agent could spend an hour pursuing some bizarre geometric idea and I did not have to sit beside it wondering whether version seventeen had more soul. We ran the evaluator.
 
-But circle packing had one enormous advantage that I did not appreciate enough at the beginning: we knew exactly what good meant.
-
-There was an Immutable Harness. Run the program and you got a number. Circles overlapped or they did not; the score improved or it did not. The agent could spend an hour pursuing some bizarre geometric idea and I did not have to sit beside it wondering whether version seventeen had more soul. We ran the evaluator.
+Then I asked for an educational demo.
 
 Most of the things I actually want AI to help me with are not like that. “Is this explanation pedagogically effective?” does not have a unit test. “Would a confused student understand this visualization?” cannot be settled with an `assert`. Two competent people can look at the same design, disagree completely, then switch sides five minutes later after using it. The feedback is subjective, noisy, sometimes contradictory, and often becomes clearer only after you have built the thing you were supposedly trying to specify beforehand.
 
@@ -58,7 +56,7 @@ Humans call our version of this sunk cost. The agent has a respectable excuse: i
 
 So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. Another starts from the learner's misconception rather than from either representation. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-Together, the interfaces, execution loop, context management and safeguards form the agent's **harness**. The evaluator is one part of it. Looking backward, its construction is less mysterious than the word *agent* sometimes makes it sound. Every step took a job I had been doing by hand—searching, assembling context, applying the edit, running the test, remembering, keeping alternatives alive—and moved it into the machine.
+Together, the interfaces, execution loop, context management and safeguards form the agent's **harness**. The evaluator is one part of it. The jar had acquired its own staff.
 
 But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for:
 
@@ -378,8 +376,6 @@ The student has not yet been asked.
 
 At some point I looked at what we had assembled and realized that *evaluator* no longer described it particularly well.
 
-Builders proposed alternatives. Different judges approached them with different concerns. Some information was deliberately kept separate. Pairwise comparison helped decide which directions deserved more work. References calibrated the judges. Browser agents interacted with the artifact. Hard tests handled the parts that really were hard facts. Real-user evidence could eventually enter where simulation stopped being enough.
-
 This looked less like a loss function and more like a tiny institution. Not a good institution automatically. Institutions can amplify conformity, entrench bad assumptions and become spectacularly efficient at measuring the wrong thing.
 
 Humans face the same difficulty. One person's judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
@@ -426,11 +422,7 @@ The first Merge Sort demos were exactly what you would expect. Bars moved around
 
 There was no single diagonal-layering moment here, and I do not want to manufacture one for the sake of the story. The progress was distributed.
 
-Different branches exposed different weaknesses in our current idea of the demo. Tree-like representations made recursion visible but could make a simple algorithm look forbidding. Keeping the array visible connected the decomposition back to the data while also creating another place for the learner's attention to go. Color could preserve identity between representations until too much color became another representation to decode. Some versions explained every step so carefully that the explanation became harder to follow than Merge Sort. Others became beautifully minimal and stopped teaching anything.
-
-The useful pieces did not always live in the strongest overall artifact. A visual relationship could survive after the application that introduced it was discarded. A criticism from a simulated learner could change the next builder's framing. Research could explain why a failure kept recurring. A browser could end a sophisticated discussion by demonstrating that the interaction simply did not work.
-
-That is less cinematic than one agent inventing diagonal layering over coffee, but in some ways it is closer to Deep Mode. The result emerged from a population of partially successful attempts and judgments about what each had taught us.
+Some versions explained every step so carefully that the explanation became harder to follow than Merge Sort. Others became beautifully minimal and stopped teaching anything. The useful pieces did not always live in the strongest overall artifact: a visual relationship could survive after the application that introduced it was discarded. We were learning what to keep, sometimes from attempts we had every other reason to kill.
 
 Count-Min Sketch followed a different path. The first versions looked like the data structure itself: grids with changing counters. Technically correct, pedagogically opaque.
 

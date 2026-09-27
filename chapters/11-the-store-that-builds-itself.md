@@ -12,9 +12,7 @@ One has visited several times across several days. She filtered by size and colo
 
 They can see the same recommendation modules in the same order. That is not because the recommendation models are stupid. Quite the opposite. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. We may have sophisticated intelligence inside each box while the arrangement of the boxes is mostly predetermined. The page is smart inside the modules and surprisingly dumb between them.
 
-This looked familiar. The book began with a claim about emergence: once a complicated thing works reliably enough, the layer above can start treating it as a primitive. Coding agents made the same move with applications. Pattern Language did it with executable knowledge. A recommender system could supply those primitives too. I had somehow spent an entire book preparing myself to ask:
-
-**What should the layer above do with them?**
+I had somehow spent an entire book preparing myself to ask: **what should the layer above do with them?**
 
 ## Stop Recommending for a Moment
 
@@ -24,7 +22,7 @@ The conventional recommendation question is usually some variation of:
 
 It is a very good question. Entire fields exist to answer it better. Retrieval finds candidates. Ranking orders them. Sequence models infer interests. Business rules remove things that should not be there. The machinery can become extremely sophisticated.
 
-But consider the customer who is switching between the same two pairs of trail shoes for the fourth time.
+But consider a customer—call her Mei—switching between the same two pairs of trail shoes for the fourth time.
 
 What does she need? Perhaps more trail shoes. Perhaps not. There is a point at which another excellent candidate is not help. It is homework.
 
@@ -64,7 +62,7 @@ But if the problem is comparison friction, a ranked list may be the wrong specie
 
 I started calling these reusable units **recommendation experiences**, or RXs. The name matters less than the abstraction. An RX is more than a model: a reusable capability that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
 
-The long-term ambition is a large library: carousels, comparisons, outfit builders, collages, finders, confidence modules, explanations, visual exploration, complementary-item experiences and things we have not invented yet. But the point is not to celebrate having hundreds of widgets. A library of two hundred overlapping experiences is just a new kind of legacy system with better animation.
+A library of two hundred overlapping experiences would be a new kind of legacy system with better animation.
 
 When a new need appears, first ask whether an existing experience can meet it with a different configuration: **composition over invention**. A Similar Items experience might be generic in one context and constrained to products available in the customer's size in another. A comparison component can compare different attributes depending on what matters in the current session. A collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense.
 
@@ -92,15 +90,13 @@ And this is where the design started resembling the society of agents. A society
 
 ## Mei Does Not Need More Shoes
 
-Imagine a customer. Call her Mei. Mei has two pairs of trail shoes open. She has returned to them several times across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
+Return to Mei and her two pairs of trail shoes. She has been coming back to them across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
 
 A conventional recommender can still do an excellent job here. It can find twenty more trail shoes that look similar, match her taste and are available in her size.
 
 But suppose the fingerprint says comparison friction is high and price-quality confusion is moderate. The composer can do something different. The first experience compares the two shoes Mei is actually deciding between on attributes relevant to her behavior. The second adds confidence evidence from customers or product information that helps resolve the remaining uncertainty. Generic similar-items may still survive because it has useful standalone value, but it moves down.
 
 She is not shown more choice. She is shown a way to close the choice she already has. That sentence changed how I thought about recommendations.
-
-For years, the field has been extraordinarily good at finding things. Search finds things. Recommenders find things you did not ask for. Retrieval systems find things at absurd scale. But shopping is not only a retrieval problem. At different moments it is also a comparison problem, a confidence problem, a visualization problem, a constraint problem and occasionally a “please stop showing me another black sneaker” problem.
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
@@ -154,7 +150,7 @@ Which signals were read? What problem fingerprint was inferred? Which experience
 
 The losers matter more than they first appear. If we log only what we served, we can attribute outcomes to the winner but we lose much of the decision context. We cannot tell whether an experience was absent because it was ineligible, starved by the objective or simply scored slightly below another. We cannot replay the decision properly. We cannot compare a new policy against the old choice set without reconstructing a world we chose not to record.
 
-Logging the loser set does not magically give us causal counterfactuals. Reality is not that generous. But it gives us the archaeology of the decision. This is exactly the move System 3 has been making throughout the book. Do not preserve only the polished conclusion. Preserve enough of the chain that future systems can inspect why the conclusion deserved trust.
+Logging the loser set does not magically give us causal counterfactuals. Reality is not that generous. It lets us reconstruct why this page existed, including the alternatives the customer never saw.
 
 The trace also changes development. You can build a simulator that replays saved scenarios. You can ask which experiences would be eligible in a context or which contexts a new experience could serve. You can run regression suites over scenarios before changing the library. A dynamic system becomes safer not because it stops changing but because its changes become replayable.
 
@@ -185,8 +181,6 @@ Imagine replaying anonymized customer sessions and asking a strong language mode
 “The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call. So narration should generate hypotheses, not production truth. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer's actual experience. Build a detector only after the hypothesis survives contact with something outside the model's coherence. Define what success looks like before the detector starts steering the page.
 
 The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Only intervention tells us how much of the outcome the problem was actually causing. Judea Pearl's ladder has three rungs, seeing, doing and imagining, and no quantity of the first substitutes for the second.[^store-pearl] A recommender that only observes is standing on rung one with excellent posture.
-
-This is the book's central thesis in work clothes. The LLM is excellent at generating explanations. The product architecture has to decide which explanations deserve pursuit, construct interventions that expose them to consequences, preserve the chain of evidence, and update the repertoire when the world refuses to cooperate.
 
 ## The Objective Fights Back
 

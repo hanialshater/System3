@@ -21,13 +21,13 @@ Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video.
 7. Locate the Failure
 8. Ask What the Number Means
 9. Write the Lesson Down
-10. Change the Representation
-11. Separate Use from Investigation
-12. Keep the Funding Decision Visible
-13. Give the Objection a Consequence
-14. Test What the Next Agent Inherits
-15. Find Where the Result Lives
-16. Put the Library to Work
+10. Put the Library to Work
+11. Change the Representation
+12. Separate Use from Investigation
+13. Keep the Funding Decision Visible
+14. Give the Objection a Consequence
+15. Test What the Next Agent Inherits
+16. Find Where the Result Lives
 17. Put the Procedure Under Test
 18. What the File Says Now
 
