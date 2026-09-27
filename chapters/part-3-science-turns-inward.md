@@ -18,7 +18,7 @@
 >
 > — The Zen of Autonomy
 
-One question remains. Who changes the arrangement when the arrangement is the problem?
+Who changes the arrangement when the arrangement is the problem?
 
 In the compiler project, that was Carlini. Human investigators have done it too: changed procedures, founded journals, rebuilt institutions and studied the failures of their own methods. We have managed it through argument, reform and the occasional death of an old professor. The difficulty is that the people judging a reform also depend on the institution being reformed. They have learned what a good result looks like inside it. So have the agents.
 

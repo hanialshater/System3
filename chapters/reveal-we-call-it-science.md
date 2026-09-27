@@ -19,7 +19,7 @@ We call it science.
 System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
 
 <!-- ASSISTANT EDIT: paragraph specifying the scientific function, for review. -->
-In that institution, a useful claim can still be reopened. A rival explanation can get time and instruments before it has won agreement. Investigators can check one another against independently gathered evidence, and failures can force changes in the methods and standards by which the institution decides what to accept.
+In that institution, using a claim does not put it beyond question. A rival explanation can get time and instruments before it has much support. Investigators can check one another using evidence they gathered separately. When a failure exposes something wrong with the method or the standard of evidence, that has to change too.
 <!-- END ASSISTANT EDIT -->
 
 The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.

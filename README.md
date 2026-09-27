@@ -90,6 +90,10 @@ Chapters 6–12 are works in progress. Chapter 13 is protected and unchanged. Ea
 - [References](chapters/appendix-references.md)
 - [About the Author](chapters/about-the-author.md)
 
+The author text also supplies the back cover. Render a 6 × 9 inch text proof with
+`python book-design/render_back_cover.py book-design/out/System3-back-cover.pdf`.
+The proof is a single back panel; printer-specific bleed, spine and barcode placement belong to the final cover setup.
+
 The assembly order lives in `.github/workflows/build-book-pdf.yml`. The page-design pipeline in `book-design/` renders chapters only and does not yet know about part, reveal or divider pages.
 
 ## Editorial prompts

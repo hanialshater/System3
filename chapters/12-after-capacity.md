@@ -34,19 +34,19 @@ The earlier chapters followed engineering failures until the machinery assembled
 
 ## Owning the Frontier
 
-LLM-as-a-judge arrived in my team looking like a threat.
+LLM-as-a-judge looked like a threat to my profession.
 
 For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-In a project recommending complementary fashion items, our LLM judge agreed with the fashion experts about what made a good recommendation. We had a plausible account of quality and an instrument that could apply it at scale. Then the business experiment came back. The metrics went down.
+Chapter 4 gave me a small version of the problem. The epistemic agent produced smaller patches and solved fewer problems. I could admire its discipline or count the bugs it fixed. Those judgments did not give me the same answer.
 
-Perhaps the recommendations diverted attention from something customers would otherwise have bought. Perhaps experts preferred combinations that customers admired without wanting to purchase. Price and popularity could be doing work we had attributed to quality. Agreement with the experts did not distinguish these explanations.
+Ten tasks could not tell me why. The extra instructions might have made the agent more conservative. A memory of earlier failures might have helped on one task and sent it in the wrong direction on another. The order of the tasks might have mattered. Each explanation suggested a different next experiment.
 
-We could change the widget or adjust the rubric and try again. But learning why it failed required an experiment that separated the possibilities. Which comparison would justify changing the judge, the experience or our account of what a good recommendation was?
+I could keep adding machinery and hope the next score improved. Or I could spend the next run finding out which part of the machinery deserved to stay. That choice required more than another model evaluation.
 
-Scarcity rations the distinctions a team can afford to investigate. The judge changed the ration. We could examine far more experiences than our experts would ever review and ask questions that had previously cost too much to ask. The instrument did not explain the failure. It made an old question urgent: what did its measurement mean? A million judgments overnight is a million more things that look like evidence.
+Scarcity rations the distinctions we can afford to investigate. Cheaper generation and evaluation let us attempt more comparisons. Someone still has to notice which question the last result failed to answer. A million judgments overnight is a million more things that look like evidence.
 
-A strong applied scientist brings a working map of the frontier. She knows which exciting idea has failed three times under another name, which result quietly changed what we could build last month, and which neighboring field has a method that might explain our disappointing experiment. She can turn that knowledge into an investigation the organization has reason to trust.
+A strong applied scientist brings a working map of the frontier. She knows which exciting idea has failed three times under another name, which result quietly changed what we could build last month, and which neighboring field has a method that might explain a disappointing experiment. She can turn that knowledge into an investigation the organization has reason to trust.
 
 Chapter 5 followed the larger society that makes this possible. A scientist inside a company is connected to arguments, discoveries and failures happening outside it. Without that connection, the company keeps approaching unfamiliar problems with its familiar machinery.
 
@@ -74,7 +74,7 @@ The workshop changes as she learns. A picture suggests a different representatio
 
 That environment might be useful to one person for eighteen months. It could still be worth building. Its reason to exist is the investigation, not the market.
 
-The recommendation project changes under this possibility too. A row of products is a familiar, reusable unit of customer experience. One shopper needs help comparing two coats; another wants to know what she already owns that would work with a dress. The team could construct and investigate different experiences around those needs, instead of spending another quarter rearranging the same row. The form of the product becomes something we can question by making it.
+The prototype in Chapter 11 points in this direction too. A row of products is a familiar, reusable unit of customer experience. One shopper needs help comparing two coats; another wants to know what she already owns that would work with a dress. A team could construct and investigate different experiences around those needs, instead of spending another quarter rearranging the same row. The form of the product becomes something we can question by making it.
 
 Maintenance, security and access to data remain part of the work. A cheap first version is not yet a system people can depend on. But these are reasons to build better tools for sustaining what we create. They do not restore the old economics by decree.
 
@@ -194,7 +194,7 @@ But where people retain the means to act, more differences can become opportunit
 
 Cheap software removed the vendor’s veto. It is worth asking where the cheapness comes from.
 
-The results in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[^flt-tokens] That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
+The efforts reported in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[^flt-tokens] That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
 
 Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models for almost three weeks to comply with United States export controls, and restored it when the controls were lifted.[^access] I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 

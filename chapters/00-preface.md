@@ -28,9 +28,7 @@ Complexity over engineering. Emergence over design. Capacity over power. That is
 
 Humans already build beyond the limits of any individual mind. AI gives us new access to that capacity—and a reason to look again at the architecture that sustains it.
 
-It is September 2026 as I write this. OpenAI has reported an AI-generated proof that the Navier–Stokes equations can break down: under a perfectly smooth force, the equations predict velocity growing without bound in finite time, even from perfectly smooth initial conditions. It is one of the answers the Millennium Prize problem accepts. The proof was produced by a group of roughly ten thousand agents working concurrently. The effort reached its result after about eighty-eight hours, followed by seventeen more for formalisation and verification.[^navier-preface] The Clay Institute says the problem appears to have been settled, and that it will take its time deciding.
-
-A long coffee, admittedly.
+It is September 2026 as I write this. Researchers are already sending groups of agents to build compilers and investigate mathematical problems. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[^agents-preface]
 
 Leibniz wanted talented people to help him. Three centuries later, we are learning what becomes possible when a question can occupy thousands of artificial minds.
 
@@ -40,4 +38,4 @@ Rediscover, because we have built it before. It took about four centuries, a gre
 
 Back to the future, then. Bring your coffee.
 
-[^navier-preface]: OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, <https://openai.com/index/navier-stokes-solution/>; Clay Mathematics Institute, ‘Navier-Stokes Announcement,’ 11 September 2026, <https://www.claymath.org/news/navier-stokes-announcement/>. The result is finite-time blowup under smooth forcing, alternatives C and D of the official formulation. Chapter 6 returns to it, and to the dispute about how it was found.
+[^agents-preface]: Nicholas Carlini, ‘Building a C compiler with a team of parallel Claudes,’ 5 February 2026, <https://www.anthropic.com/engineering/building-c-compiler>; OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, <https://openai.com/index/navier-stokes-solution/>. Chapters 5 and 6 examine the reported work, its limits and the questions still open at the time of writing.
