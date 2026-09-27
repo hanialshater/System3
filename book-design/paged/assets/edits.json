@@ -1,0 +1,82 @@
+[
+  {
+    "id": "a085",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a085.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a085-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: the attached existing book illustration. Remove ONLY the blank cream paper background around the globe, green beam, forests, ruins, bridge and delicate roots beneath it. Keep the existing painted artwork, colors, objects and layout as closely as possible. Output a high-resolution PNG with a genuinely transparent background and natural detailed painted silhouettes. Preserve fine hair, branches, roots and watercolor marks at the artwork edge. Do not add a rectangular or oval backdrop, halo, blur, gradient fade, drop shadow, border, text, or new scene elements. This is an isolated illustration to place directly on book paper, not a mockup of a printed page. Keep the same overall aspect ratio and do not crop off the depicted subjects."
+  },
+  {
+    "id": "a083",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a083.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a083-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: the attached existing book illustration. Remove ONLY the blank cream paper background around the elderly man, glasses and hand, with all three knowledge spheres above him. Preserve his face and the markings on the spheres. Repair only the small paper-colored rectangular interruption on the left spheres to complete their original circular contours. Keep the existing painted artwork, colors, objects and layout as closely as possible. Output a high-resolution PNG with a genuinely transparent background and natural detailed painted silhouettes. Preserve fine hair, branches, roots and watercolor marks at the artwork edge. Do not add a rectangular or oval backdrop, halo, blur, gradient fade, drop shadow, border, text, or new scene elements. This is an isolated illustration to place directly on book paper, not a mockup of a printed page. Keep the same overall aspect ratio and do not crop off the depicted subjects."
+  },
+  {
+    "id": "a086",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a086.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a086-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: the attached existing book illustration. Remove ONLY the blank cream paper background around the elderly glassmaker, young observer, hands, glassblowing rod, glowing glass and forge. Preserve both faces, the drawing and the small vessels. Keep the composition narrow and vertical. Keep the existing painted artwork, colors, objects and layout as closely as possible. Output a high-resolution PNG with a genuinely transparent background and natural detailed painted silhouettes. Preserve fine hair, branches, roots and watercolor marks at the artwork edge. Do not add a rectangular or oval backdrop, halo, blur, gradient fade, drop shadow, border, text, or new scene elements. This is an isolated illustration to place directly on book paper, not a mockup of a printed page. Keep the same overall aspect ratio and do not crop off the depicted subjects."
+  },
+  {
+    "id": "a079",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a079.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a079-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate the diagonal queue of small gold robots and the workshop doorway. Preserve the small labels 'linux/' and 'progress.md', every robot, and the perspective. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  },
+  {
+    "id": "a087",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a087.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a087-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate the grain pot, broken pottery, grain kernels and four clay tablets. Preserve the exact tally markings on the tablets. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  },
+  {
+    "id": "a088",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a088.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a088-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate the bronze grain measure, grain bags, scattered kernels and bundles of wooden texts with the small flame. Preserve the inscriptions as drawn. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  },
+  {
+    "id": "a089",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a089.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a089-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate all people in the queue, their faces, bags and clothing, the doorway frame, the seated clerk and desk, and the person walking away. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  },
+  {
+    "id": "a094",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a094.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a094-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate the large paper roll, all six small gold robots, their paper sheets with matching blue marks, the magnifying glass, the desk and rock. Preserve all faces, hands, antennae, objects and their arrangement. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  },
+  {
+    "id": "a103",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a103.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a103-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate the inspecting scientist, cable and machinery in the foreground, and the distant observatory, landscape and village with the blue beam. Preserve his face and the complete physical relationship of cable and socket. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  },
+  {
+    "id": "a107",
+    "source": "/Users/hani/Documents/GitHub/System3/book-design/curated/assets/art/a107.jpg",
+    "output": "/Users/hani/Documents/GitHub/System3/book-design/paged/assets/a107-cutout.png",
+    "tool": "built-in image_gen",
+    "purpose": "Background extraction for the Chapter 5 layout; original masters retained",
+    "prompt": "Use case: background-extraction. Edit target: attached existing book illustration. Isolate the hand with screwdriver, the glass box with four gold robots and its machinery, the books, pencils and plant. Preserve all book labels exactly: METHODS, INSTITUTIONS, EVALUATION, REALITY, DATA, USERS, CONSEQUENCES. Remove the blank cream paper background surrounding the painted scene, including any straight paper-colored patches left by the previous page extraction. Preserve the existing composition, perspective, subject shapes, identity, colors and detailed ink-and-watercolor style as closely as possible. Keep meaningful painted landscape/architecture and natural small ground shadows; let their irregular painted edges end in transparency. Output a genuinely transparent RGBA PNG, retaining the original wide aspect ratio. No rectangular backdrop, geometric clipping, oval vignette, blur, fade gradient, shadow halo, frame, new text or added objects. Do not crop off heads, limbs, labels or objects. This is a reusable transparent illustration, not a book-page mockup."
+  }
+]

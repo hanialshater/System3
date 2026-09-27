@@ -1,0 +1,29 @@
+Adapt Chapter 12: After Capacity by Hani M. M. Al-Shater into an English video. Select 12-after-capacity.md and chapter-12-notebooklm-storyboard.md. The chapter and its notes supply content; the storyboard supplies production directions. Do not narrate instructions or import other chapters. Follow the current manuscript if wording differs.
+
+Tell events before explaining concepts. Preserve the voice, dry humor, complications and delayed reveals. Attribute personal experiences to Hani. Distinguish reported research, illustrative scenes, the author’s experiments and proposed designs. No invented dialogue, data or successful outcomes. Retain the storyboard’s evidence limits even when compressing.
+
+Use documentary illustrations on warm paper, sparse labels and explanatory diagrams. Name concepts clearly, then map them to the story in a composed visual, not a dense table. Keep recurring visual objects consistent. Label hypothetical scenes and schematic plots. No generic AI imagery or repetitive slogans.
+
+STORYBOARD — KEEP THIS ORDER:
+
+1. OPENING — DANTZIG’S AFTERNOON. In 1947 Dantzig brings his linear-programming work to von Neumann.
+
+2. THE CURVE. First show the actual machine-learning shape: error falls, rises around interpolation, then falls again in the work cited.
+
+3. OWNING THE FRONTIER. Follow Hani’s experience with LLM judges making more evaluations affordable and exposing a question about his own role.
+
+4. BESPOKE COMES BACK. Revisit the compiler project’s cost and scale only as reported, with its dependencies.
+
+5. ANYONE COULD DO THAT. The same useful tool receives less admiration when it takes an afternoon.
+
+6. THE IDEOLOGY VORTEX. Show tradition, scientific inquiry and criticism coexisting in one life.
+
+7. CAPACITY OVER POWER. Tell Ostrom’s cases through people making workable rules for shared resources.
+
+8. THE SECOND DESCENT. More power to act does not make desire wise.
+
+9. THE DOOR AFTER SYSTEM 3. Imagine the irrigation association’s weekend with a hundred agents.
+
+10. ENDING. Return to Dantzig’s newly visible side of a question.
+
+Compress repeated explanation before dropping an event, complication or reveal. Keep numerical and causal qualifications from the full storyboard. End at the chapter’s own ending, with no generic recap or call to action.

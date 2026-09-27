@@ -82,7 +82,7 @@ What usually does not come back is the archaeology. Which part rests on repeated
 
 The conclusion survives. Much of the structure that earned it trust does not.
 
-This is what I mean by saying an LLM's knowledge is **epistemologically flat**. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel in equally polished English.
+The flatness appears at the interface between claim and justification. This is what I mean by saying an LLM's knowledge is **epistemologically flat**. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel in equally polished English.
 
 Wittgenstein's later philosophy pulled attention toward language as something that lives inside practice: activities, expectations, habits, rules and forms of life.[^wittgenstein]
 

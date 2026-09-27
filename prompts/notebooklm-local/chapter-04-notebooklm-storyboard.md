@@ -1,0 +1,30 @@
+# Chapter 4: System 3 — NotebookLM storyboard
+
+Prepared from the local manuscript on 20 September 2026. Production directions, not additional book content. Select this brief and the corresponding chapter as notebook sources. The chapter and its notes govern claims; this brief governs the adaptation.
+
+Adapt Hani M. M. Al-Shater’s Chapter 4: System 3, from System 3: Towards Fluent Autonomy, into an English video. Select 04-system-3.md as the content source, including its notes. This prompt supplies production directions; do not narrate the directions. Stay within this chapter. Use the current manuscript if wording differs from this prompt.
+
+Tell the argument through the chapter’s events for intelligent non-specialists. Attribute Hani’s experiences to Hani; the narrator must not claim them as its own. Preserve the dry humor, complications and uncertainty. Explain a concept after the event that makes it useful. No invented dialogue, inner thoughts, experiments, statistics or successful outcomes. Distinguish reported studies, the author’s experiments, illustrative cases and proposed designs. Figures and claims belong to the cited source’s setting, not all AI systems.
+
+VISUAL DIRECTION: Documentary illustrations, charcoal lines and precise diagrams on warm off-white paper, with restrained copper accents. Use concrete objects and readable, sparse labels. Carry the same visual objects through the story so the viewer can see what changes. No generic glowing brains, circuit-board wallpaper or bullet-heavy slides. A diagram should explain a relationship. Introduce named concepts one at a time, then map them to the concrete example in a composed visual with spoken explanation, not a dense table. Label hypothetical scenes and schematic plots where confusion is possible. Treat manuscript image placeholders as design cues, not facts or narration.
+
+MAIN IDEA: System 3 carries the grounds for trust through distributed work, while keeping accumulated knowledge open to correction.
+
+STORYBOARD — KEEP THIS ORDER:
+
+1. OPENING — THE CAMEL. Establish the competent chain built on a false premise, then use the actual photo and the seven claims exactly as listed in the manuscript. If the source photo is unavailable, use a clearly labeled illustration rather than counterfeit photographic evidence. Leave the claims unanswered until the closing return. Do not invent an eighth claim or settle the unknown claim early.
+2. THE SHORTEST TRUST CHAIN. Ask the tongue-ear question as the chapter does. Show hypothesis → action → observation through a body meeting the world. Then the farmer’s accumulated experience: later action can inherit a lesson without repeating the original mistake.
+3. SAUSSURE’S SPECIFICATION. Show different words for a cow and relationships among signs. Connect this carefully to language learned through text. Do not turn the comparison into a proof that models understand nothing, or claim humans directly verify all their own knowledge.
+4. CALL ALBERTO. Use the chapter’s Italian-penguin illustration, its possible exception and its humor. Map testimony to a person’s relevant access and history. Trust earned in one domain does not automatically transfer to another.
+5. IT STARTS WITH A FACE. A child first trusts care, then warnings and claims. Show repeated contact supporting later reliance. Follow the loss of source, consequence and accountability when only a plausible sentence remains. This earns the need for architecture.
+6. SYSTEM 3. Contrast more reasoning with evidence beyond the reasoning process. Name the chapter’s distinction among fast response, deliberation and a wider arrangement that preserves grounds for trust. Show claims traveling with origins, tools, tests and scope. This is an architectural proposal, not a newly discovered human brain module or a magic truth detector.
+7. CODE CAN TOUCH BACK. Execution returns an error. Let the failed API call puncture a plausible story. Distinguish learning compressed into model behavior from preserved records of what was tried and where a tool failed.
+8. WHAT SHOULD SURVIVE A SESSION? Revisit the recursion-tree claim. Attach source, population, scope and relevant evidence; keep the burden proportionate. Bring in Hani’s experience with reviews and credibility as the manuscript does, with personal attribution.
+9. THE EXPERIMENT. Introduce “Tool registry,” “Meta-beliefs” and “Failure memory” around epistemic-swe. Show the actual ten-task comparison before celebrating smaller patches: baseline solved 5/10, epistemic 4/10; average patches 620 versus 269 lines. The 57% reduction is sensitive to one large failed baseline patch. Small sample, order effects and alternative explanations stay in the narration.
+10. THE 13579 FAILURE; CREATIVE DISTRUST. Show the baseline storing actual dropped coordinate values while the epistemic agent pursues a coherent but wrong structural route. Accumulated memory may have made that route salient; the case does not prove causation. Let the scaffold visibly narrow attention, then reopen it through counterexamples and challenge.
+11. BACK TO THE CAMEL. Resolve all seven claims using the manuscript’s actual answers, retaining the unknown. Different claims need different trust chains. End on the population-level question about fallible knowers building knowledge together.
+
+PROTECT: Do not call the experiment a capability win. Memory can preserve error. Keep both accumulation and the means to challenge it.
+
+PACING AND FINAL CHECK: Keep the sequence above and the chapter’s section order. Allow each central event, its explanation and its complication to land. Compress repeated commentary before cutting evidence or qualifications. Do not spend the whole video on the opening and reduce later sections to a list. Use the chapter’s own ending; no generic recap, motivational flourish or new promise. Before finishing, check every numerical label against the manuscript, preserve the distinction between demonstrated and proposed work, and ensure that the last scene answers or complicates the opening question. Exact timings and shots are editorial requests, not guaranteed generator controls.
+

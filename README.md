@@ -94,10 +94,17 @@ The author text also supplies the back cover. Render a 6 × 9 inch text proof wi
 `python book-design/render_back_cover.py book-design/out/System3-back-cover.pdf`.
 The proof is a single back panel; printer-specific bleed, spine and barcode placement belong to the final cover setup.
 
-The assembly order lives in `.github/workflows/build-book-pdf.yml`. The page-design pipeline in `book-design/` renders chapters only and does not yet know about part, reveal or divider pages.
+The illustrated edition’s assembly order lives in `book-design/curated/book-order.json`, including the part openings, science reveal, interlude, alternative ending and evidence appendix. The older chapter-only draft renderer remains available for experiments.
 
 ## Editorial prompts
 
+- [Repository guide](book-design/README.md) and [review queue](resources/REVISIT.md) distinguish current production, experiments and material to revisit.
+- [Prompt index](prompts/README.md) distinguishes the two NotebookLM adaptation packs.
+
 - [Chapter Version Evaluation Prompt](prompts/chapter-version-evaluation.md) — compare old and revised chapter versions while protecting voice, humor, fireworks, technical credibility, seed planting, and human-writing feel.
 
-The Markdown chapters retain the manuscript's relative image references under `resources/`. The image assets themselves have not yet been added to this repository.
+## PDF production
+
+The [curated PDF workflow](book-design/PDF.md) rebuilds the 6×9 illustrated reading edition from the current chapters when requested. It checks whether inputs changed, preserves the supplied design and artwork, and reports placements that need review. Reusable artwork and embedded fonts live in `book-design/curated/assets/`; generated PDFs stay outside Git. The manuscript's older relative image references remain in place.
+
+The [Chapter 5 Paged.js proof](book-design/paged/README.md) adds flexible text masks, individual silhouettes, transparent cutouts and immersive edge crops, with a browser preview for masks and facing pages. It preserves the original full-image opener and has its own on-demand build.

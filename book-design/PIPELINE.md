@@ -1,3 +1,11 @@
+# Curated full-book PDF
+
+For the current on-demand 6×9 reading edition, see [PDF.md](PDF.md). Build only when requested; `chapters/` is the manuscript source.
+
+The [Chapter 5 Paged.js proof](paged/README.md) tests flexible text masks and page-side composition before full-book integration.
+
+The stages below describe the older draft-layout workflow, retained for layout experiments.
+
 # Book Design Pipeline
 
 Three stages, three owners, clean contracts between them. This is the book's own

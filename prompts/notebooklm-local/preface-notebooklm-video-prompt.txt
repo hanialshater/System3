@@ -1,0 +1,11 @@
+Adapt the Preface of Hani M. M. Al-Shater’s System 3: Towards Fluent Autonomy into a short English opening video. Use 00-preface.md as the content source. These are production instructions, not narration.
+
+Begin with Leibniz’s dream of making an argument calculable, preserving “Calculemus” and the uncle joke. Even Leibniz needs a team. Move from a promising paper to people building a new field around it: the preface’s hyperbolic geometry and MAP-Elites examples show an idea acquiring tools and descendants. Explain unfamiliar terms lightly; this is an invitation, not a technical survey.
+
+Turn to the imagined coffee break. Hani describes a question to agents, leaves, and returns to investigations, an overturned assumption and a demonstration he had not specified. Keep this clearly an imagined possibility, not a recorded experiment. A cathedral can serve as the visual metaphor, but do not imply a literal building appeared or prove a particular capability from the image.
+
+The preface also contains a time-sensitive report about a Navier–Stokes solution. Include that news beat only if the selected notebook contains the cited primary announcement and it supports the claim and figures. Otherwise omit that beat; do not present an unsupported manuscript statement as independently verified news or invent a substitute achievement.
+
+Return to Leibniz’s need for collaborators and the question of what expanded intellectual capacity makes possible. Preserve the closing invitation, rediscovery and coffee motif. Do not reveal Chapter 5’s explicit science/System 3 synthesis in this introduction.
+
+Use warm paper, restrained engraved illustrations and readable sparse labels. Let a question become a shared investigation. Preserve humor without adding new jokes, grandiose predictions or a generic AI montage. Attribute Hani’s first-person passages. End on the manuscript’s invitation rather than a recap. Keep this shorter than a chapter video; do not stretch a brief preface into a complete account of the book.

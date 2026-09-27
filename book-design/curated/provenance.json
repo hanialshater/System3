@@ -1,0 +1,29 @@
+{
+  "archive": "System3_Curated_Reproduction.zip",
+  "archive_sha256": "f251a83c9e7f06e9a25663970216f7b65729844f5e1f0750419e68e0a0e94b66",
+  "reference_pdf": "System3_Curated_6x9.pdf",
+  "reference_sha256": "c9e1fcbcc5ee03dadeaea3e1af72b03c8e5f6d824c7c0fade01732f4c251f3f7",
+  "imported_art": 88,
+  "covers": 14,
+  "source_titles": {
+    "00-preface.md": "Preface",
+    "01-why-im-betting-on-ai-agents.md": "Chapter 1: Why I'm Betting on AI Agents",
+    "02-the-algorithm-vortex.md": "Chapter 2: The Algorithm Vortex",
+    "03-deep-mode.md": "Chapter 3: The Vibe Coder's Seat",
+    "04-system-3.md": "Chapter 4: System 3",
+    "05-the-society-of-agents.md": "Chapter 5: The Society of Agents",
+    "06-pattern-language.md": "Chapter 6: Pattern Language",
+    "07-recursive-self-improvement.md": "Chapter 7: Recursive Self-Improvement",
+    "08-automatic-alignment-research.md": "Chapter 8: Scalable Oversight",
+    "09-layer-4-desire.md": "Chapter 9: Layer 4",
+    "10-fluent-autonomy.md": "Chapter 10: Fluent Autonomy",
+    "11-the-store-that-builds-itself.md": "Chapter 11: The Store That Builds Itself",
+    "12-after-capacity.md": "Chapter 12: After Capacity",
+    "13-the-prophecy.md": "Chapter 13: The Prophecy",
+    "about-the-author.md": "About the Author",
+    "appendix-illustrations.md": "A Note on the Illustrations",
+    "appendix-references.md": "Appendix: References",
+    "appendix-zen-of-autonomy.md": "Appendix: The Zen of Autonomy"
+  },
+  "notes": "Cropped curated art and embedded fonts only. Manuscript is read from repository chapters/. Cover 058 is rendered from the supplied proof. Other covers are original PNG masters. Original source-page numbers are provenance, never new output page numbers."
+}

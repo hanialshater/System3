@@ -1,0 +1,25 @@
+Adapt Chapter 10: Fluent Autonomy by Hani M. M. Al-Shater into an English video. Select 10-fluent-autonomy.md and chapter-10-notebooklm-storyboard.md. The chapter and its notes supply content; the storyboard supplies production directions. Do not narrate instructions or import other chapters. Follow the current manuscript if wording differs.
+
+Tell events before explaining concepts. Preserve the voice, dry humor, complications and delayed reveals. Attribute personal experiences to Hani. Distinguish reported research, illustrative scenes, the author’s experiments and proposed designs. No invented dialogue, data or successful outcomes. Retain the storyboard’s evidence limits even when compressing.
+
+Use documentary illustrations on warm paper, sparse labels and explanatory diagrams. Name concepts clearly, then map them to the story in a composed visual, not a dense table. Keep recurring visual objects consistent. Label hypothetical scenes and schematic plots. No generic AI imagery or repetitive slogans.
+
+STORYBOARD — KEEP THIS ORDER:
+
+1. OPENING. Begin with Hani’s exact request: “This chapter still feels like LLM writing.” Show the first edit becoming cleaner and dead as jokes, wandering and confidence disappear.
+
+2. WHAT THE CORRECTIONS HAD TO TEACH. Make the accumulated editing record tangible: a critic reads both versions, identifies synthetic passages, protects voice, preserves rejected edits and uses fresh readers where useful.
+
+3. THE POSSIBLE NEXT REQUEST. Follow the same sentence into a proposed working arrangement: retrieve surviving corrections, compare accepted passages, investigate a disputed claim, leave a joke alone, use another reader only when useful.
+
+4. THE INTERFACE MOVES UP. Show transistors, functions, libraries, applications and agents as accumulated usable layers.
+
+5. BUREAUCRACY ON THE FLY. Assemble roles, review boundaries and traces around a consequential change, then dismantle what the task does not need.
+
+6. FLUENCY IS SELECTIVE FRICTION. Use the manuscript’s two examples: routine renaming versus €200,000 to an unfamiliar account.
+
+7. INVISIBLE BY DEFAULT, LEGIBLE ON DEMAND. Begin with a calm interface, then let the user ask why.
+
+8. MONDAY MORNING. Return to Hani wanting to spend attention on the argument rather than repeatedly correcting the editing institution.
+
+Compress repeated explanation before dropping an event, complication or reveal. Keep numerical and causal qualifications from the full storyboard. End at the chapter’s own ending, with no generic recap or call to action.

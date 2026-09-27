@@ -1,0 +1,10 @@
+# Local PDF tooling and generated proofs; manuscript and reusable assets stay in Git.
+.venv-pdf/
+__pycache__/
+*.pyc
+/tmp/pdfs/
+/output/pdf/
+/output/archive/
+/dist/
+.DS_Store
+/book-design/paged/node_modules/

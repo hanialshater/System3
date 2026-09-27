@@ -126,7 +126,7 @@ Then the ambition to settle disagreement reached the past. In the account preser
 
 The bronze measure allowed two clerks to discover that their accounts disagreed. The order against the books tried to take that possibility away from the emperor's critics.
 
-A standard removes a decision from the future. We have decided, for now, not to reopen this question every time. Once exchange extends beyond people who know one another, the stranger reading the tablet needs to know what a sack is, what a seal proves, whose account wins when two disagree. Standards make that exchange possible. They can also make a decision difficult to challenge long after the people who made it have gone. The Qin measure was not the correct measure. It was the one backed by the state.
+A standard removes a decision from the future. We have decided, for now, not to reopen this question every time. Once exchange extends beyond people who know one another, the stranger reading the tablet needs to know what a sack is, what a seal proves, whose account wins when two disagree. Standards make that exchange possible. They can also make a decision difficult to challenge long after the people who made it have gone. The state had settled which measure to use. Whether a particular vessel met it was a question the decree could not answer.
 
 Seen that way, bureaucracy deserves a better reputation than it gets. A workflow is accumulated experience with some choices removed. Someone already had the argument, or discovered the failure, or decided that one action requires another pair of eyes, and the next person inherits the result as procedure. Amazon calls this a *mechanism*, and the useful sense of the word is not corporate: a mechanism is an attempt to make a desirable behavior survive the person who first cared about it.
 
@@ -319,7 +319,7 @@ The specialists make different parts of the project visible. A worker hunting du
 
 Tests let the running program contradict an agent's account of it. Git history gives another worker a route back through the changes that produced the result. The harness decides which failures each agent encounters; the allocation of workers decides which of those failures receives another hour. What the institution remembers, what it can observe and what it bothers to investigate have become things we can change.
 
-The familiar failures come with them. A test suite can keep passing while the thing nobody thought to test quietly gets worse. Separate containers can inherit the same mistake. Carlini had built part of an institution. Some of the rest still lived in his head.
+The familiar failures come with them. A test suite can keep passing while the thing nobody thought to test quietly gets worse. Separate containers can inherit the same mistake. Git can preserve a change without preserving the reason an agent thought it justified. Carlini had built part of an institution. Some of the rest still lived in his head.
 
 Chapter 4 ended where one agent inherits a claim another has made. A trust chain can tell the receiver where it came from. Someone still has to decide whether to spend the next hour checking it.
 

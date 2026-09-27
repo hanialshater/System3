@@ -1,0 +1,4 @@
+book-design/curated/assets/art/*.jpg filter=lfs diff=lfs merge=lfs -text
+book-design/curated/assets/art/*.png filter=lfs diff=lfs merge=lfs -text
+book-design/curated/assets/print/*.png filter=lfs diff=lfs merge=lfs -text
+book-design/paged/assets/*.png filter=lfs diff=lfs merge=lfs -text

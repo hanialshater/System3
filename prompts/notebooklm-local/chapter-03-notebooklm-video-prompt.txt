@@ -1,0 +1,29 @@
+Adapt Chapter 3: The Vibe Coder's Seat by Hani M. M. Al-Shater into an English video. Select 03-deep-mode.md and chapter-03-notebooklm-storyboard.md. The chapter and its notes supply content; the storyboard supplies production directions. Do not narrate instructions or import other chapters. Follow the current manuscript if wording differs.
+
+Tell events before explaining concepts. Preserve the voice, dry humor, complications and delayed reveals. Attribute personal experiences to Hani. Distinguish reported research, illustrative scenes, the author’s experiments and proposed designs. No invented dialogue, data or successful outcomes. Retain the storyboard’s evidence limits even when compressing.
+
+Use documentary illustrations on warm paper, sparse labels and explanatory diagrams. Name concepts clearly, then map them to the story in a composed visual, not a dense table. Keep recurring visual objects consistent. Label hypothetical scenes and schematic plots. No generic AI imagery or repetitive slogans.
+
+STORYBOARD — KEEP THIS ORDER:
+
+1. OPENING. Contrast circle packing’s clear evaluator with a Merge Sort demo that sorts correctly but teaches poorly.
+
+2. HOW WE GOT HERE. Follow code completion, editor assistance, repository-level work and prepared application environments in the manuscript’s order.
+
+3. THE FIVE LAYERS OF AI CODING. Build the stack with exact names: “0 Model,” “1 Agent,” “2 Application,” “3 Deep Mode,” “4 Intention.” Give each a distinct action: supply capability; act with tools; provide the application environment; choose the next investigative move; clarify what is wanted.
+
+4. WHAT I WAS STILL DOING. Follow the Merge Sort branches: arrays, trees, colors, learner-controlled steps.
+
+5. OPTIMIZING SOMETHING YOU CANNOT SCORE. Build a rubric, then expose the judgments hidden in its weights.
+
+6. BORROW A MIND. Give the simulated learner a specific knowledge boundary: arrays and loops, no recursion.
+
+7. WHO JUDGES THE JUDGES? Use CoastRunners to make reward exploitation concrete.
+
+8. DEEP MODE. Now hand the choice of next move to the orchestrator.
+
+9. WHAT EMERGED. Let useful features survive from discarded designs.
+
+10. WHAT HOLDS THE ARCHITECTURE TOGETHER? Trace one unsupported teaching claim through researcher, visual model, builder and evaluators.
+
+Compress repeated explanation before dropping an event, complication or reveal. Keep numerical and causal qualifications from the full storyboard. End at the chapter’s own ending, with no generic recap or call to action.

@@ -1,0 +1,35 @@
+Adapt Chapter 6: Pattern Language by Hani M. M. Al-Shater into an English video. Select 06-pattern-language.md and chapter-06-notebooklm-storyboard.md. The chapter and its notes supply content; the storyboard supplies production directions. Do not narrate instructions or import other chapters. Follow the current manuscript if wording differs.
+
+Tell events before explaining concepts. Preserve the voice, dry humor, complications and delayed reveals. Attribute personal experiences to Hani. Distinguish reported research, illustrative scenes, the author’s experiments and proposed designs. No invented dialogue, data or successful outcomes. Retain the storyboard’s evidence limits even when compressing.
+
+Use documentary illustrations on warm paper, sparse labels and explanatory diagrams. Name concepts clearly, then map them to the story in a composed visual, not a dense table. Keep recurring visual objects consistent. Label hypothetical scenes and schematic plots. No generic AI imagery or repetitive slogans.
+
+STORYBOARD — KEEP THIS ORDER:
+
+1. OPENING; PUT LOCAL KNOWLEDGE TO WORK. A new engineer knows the profession but must “ask Sam” about the serializer.
+
+2. COMPOSE METHODS. Introduce Alexander’s patterns as connected, revisable hypotheses.
+
+3. GIVE THE CLAIM AN ADDRESS. Draw separate nodes for observation, measurement assumption, interpretation and recommendation.
+
+4. COMMIT THE TEST BEFORE THE RESULT. Show the suspected duplicate-click event, the prediction recorded before the test and a controlled interaction.
+
+5. LOCATE THE FAILURE. Driver, retries and client versions offer rival diagnoses.
+
+6. CHANGE THE REPRESENTATION. Repair logging; clicks still rise.
+
+7. SEPARATE USE FROM INVESTIGATION. Keep a supported ranker in service while investigating the challenger.
+
+8. KEEP THE FUNDING DECISION VISIBLE. The incumbent runs experiments; the challenger waits for access.
+
+9. GIVE THE OBJECTION A CONSEQUENCE. A reviewer’s concern cannot end at “noted.” Show a traceable response: evidence, revision, test, reasoned rejection or unresolved issue.
+
+10. TEST WHAT THE NEXT AGENT INHERITS. Planck and the study of scientific participation lead back to disposable agents with persistent institutional habits.
+
+11. PUT THE LIBRARY TO WORK. Use the manuscript’s filled-in measurement pattern as a visual artifact.
+
+12. FIND WHERE THE RESULT LIVES. Follow the chapter’s mathematical construction, informal explanation, formal proof and biological resources.
+
+13. PUT THE PROCEDURE UNDER TEST. Feyerabend challenges methods that exclude their own correction.
+
+Compress repeated explanation before dropping an event, complication or reveal. Keep numerical and causal qualifications from the full storyboard. End at the chapter’s own ending, with no generic recap or call to action.

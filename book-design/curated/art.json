@@ -1,0 +1,3056 @@
+[
+  {
+    "id": "a005",
+    "source_page": 5,
+    "clip": [
+      0,
+      0.708,
+      1,
+      1
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.8902
+    ],
+    "exclude": [],
+    "file": "assets/art/a005.jpg",
+    "chapter": 1,
+    "after": "When behavior becomes too complicated to specify move by move, you stop choosing every move and start choosing more of the conditions under which moves are made."
+  },
+  {
+    "id": "a008",
+    "source_page": 8,
+    "clip": [
+      0.0,
+      0.51262,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9804,
+      0.949,
+      0.8824
+    ],
+    "exclude": [
+      [
+        0.09256,
+        0.47405,
+        0.51089,
+        0.53436
+      ],
+      [
+        0.09528,
+        0.50771,
+        0.43648,
+        0.53156
+      ]
+    ],
+    "file": "assets/art/a008.jpg",
+    "chapter": 1,
+    "after": "Initial conditions become **operating conditions**."
+  },
+  {
+    "id": "a009",
+    "source_page": 9,
+    "clip": [
+      0.0,
+      0.65358,
+      0.97459,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.64306,
+        0.5735,
+        0.67251
+      ],
+      [
+        0.09619,
+        0.67461,
+        0.44555,
+        0.70407
+      ]
+    ],
+    "file": "assets/art/a009.jpg",
+    "chapter": 1,
+    "after": "That is where agents become interesting."
+  },
+  {
+    "id": "a012",
+    "source_page": 12,
+    "clip": [
+      0.0,
+      0.49369,
+      1.0,
+      0.99158
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.50561,
+        0.51543,
+        0.53506
+      ]
+    ],
+    "file": "assets/art/a012.jpg",
+    "chapter": 1,
+    "after": "We give up some authority over the next move and take on more responsibility for the conditions that make moves win or lose."
+  },
+  {
+    "id": "a014",
+    "source_page": 14,
+    "clip": [
+      0.2931,
+      0.61501,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9804,
+      0.9529,
+      0.8824
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.57293,
+        0.63158,
+        0.65358
+      ],
+      [
+        0.09619,
+        0.64376,
+        0.42015,
+        0.67321
+      ],
+      [
+        0.09619,
+        0.67672,
+        0.62341,
+        0.70547
+      ],
+      [
+        0.09619,
+        0.69635,
+        0.49274,
+        0.72581
+      ]
+    ],
+    "file": "assets/art/a014.jpg",
+    "chapter": 1,
+    "after": "pulling harder on the stem remains a surprisingly poor gardening strategy"
+  },
+  {
+    "id": "a018",
+    "source_page": 18,
+    "clip": [
+      0.07623,
+      0.82889,
+      0.98639,
+      0.99229
+    ],
+    "paper": [
+      0.9765,
+      0.949,
+      0.8824
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.78191,
+        0.61252,
+        0.83941
+      ]
+    ],
+    "file": "assets/art/a018.jpg",
+    "chapter": 2,
+    "after": "Circle packing lets us watch that handoff happen in miniature."
+  },
+  {
+    "id": "a019",
+    "source_page": 19,
+    "clip": [
+      0.0,
+      0.58555,
+      1.0,
+      0.9986
+    ],
+    "paper": [
+      0.9765,
+      0.949,
+      0.8784
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.54278,
+        0.90472,
+        0.59046
+      ],
+      [
+        0.09619,
+        0.59327,
+        0.73412,
+        0.62202
+      ],
+      [
+        0.09619,
+        0.62482,
+        0.43013,
+        0.65358
+      ]
+    ],
+    "file": "assets/art/a019.jpg",
+    "chapter": 2,
+    "after": "So we give the machine a bigger space."
+  },
+  {
+    "id": "a021",
+    "source_page": 21,
+    "clip": [
+      0.0,
+      0.5021,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.37518,
+        0.90472,
+        0.51683
+      ],
+      [
+        0.09528,
+        0.50701,
+        0.34846,
+        0.56452
+      ]
+    ],
+    "file": "assets/art/a021.jpg",
+    "chapter": 2,
+    "after": "And that is how I ended up spending an unreasonable amount of time packing circles into a square."
+  },
+  {
+    "id": "a023",
+    "source_page": 23,
+    "clip": [
+      0.0,
+      0.52735,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09347,
+        0.52665,
+        0.90835,
+        0.57504
+      ],
+      [
+        0.09347,
+        0.56592,
+        0.47278,
+        0.59187
+      ],
+      [
+        0.09347,
+        0.59607,
+        0.89746,
+        0.65708
+      ]
+    ],
+    "file": "assets/art/a023.jpg",
+    "chapter": 2,
+    "after": "Now the machine can begin searching the **algorithm space**."
+  },
+  {
+    "id": "a026",
+    "source_page": 26,
+    "clip": [
+      0.0,
+      0.48738,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.902
+    ],
+    "exclude": [
+      [
+        0.08802,
+        0.45302,
+        0.91107,
+        0.5014
+      ],
+      [
+        0.08802,
+        0.49158,
+        0.77858,
+        0.52104
+      ],
+      [
+        0.08802,
+        0.51052,
+        0.2931,
+        0.53927
+      ],
+      [
+        0.08802,
+        0.54067,
+        0.65517,
+        0.56662
+      ],
+      [
+        0.08893,
+        0.57083,
+        0.451,
+        0.59958
+      ],
+      [
+        0.08802,
+        0.60028,
+        0.3049,
+        0.62973
+      ],
+      [
+        0.088,
+        0.488,
+        0.913,
+        0.514
+      ]
+    ],
+    "file": "assets/art/a026.jpg",
+    "chapter": 2,
+    "after": "The boundary does not."
+  },
+  {
+    "id": "a028",
+    "source_page": 28,
+    "clip": [
+      0.0,
+      0.40884,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8863
+    ],
+    "exclude": [
+      [
+        0.09074,
+        0.40323,
+        0.25681,
+        0.42917
+      ],
+      [
+        0.09074,
+        0.43198,
+        0.75499,
+        0.49719
+      ],
+      [
+        0.11797,
+        0.48668,
+        0.65971,
+        0.51543
+      ],
+      [
+        0.09074,
+        0.50491,
+        0.29583,
+        0.53436
+      ],
+      [
+        0.09074,
+        0.53436,
+        0.62704,
+        0.58205
+      ]
+    ],
+    "file": "assets/art/a028.jpg",
+    "chapter": 2,
+    "after": "The chapter began by asking who invents the next move. Here, for the first time in the experiment, the answer was not reliably \u201cme.\u201d"
+  },
+  {
+    "id": "a031",
+    "source_page": 31,
+    "clip": [
+      0.0,
+      0.53787,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9804,
+      0.9529,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09347,
+        0.52595,
+        0.7804,
+        0.5547
+      ]
+    ],
+    "file": "assets/art/a031.jpg",
+    "chapter": 2,
+    "after": "A tiny amount of code at the top can command enormous capability underneath"
+  },
+  {
+    "id": "a035",
+    "source_page": 35,
+    "clip": [
+      0.0,
+      0.68724,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9804,
+      0.9569,
+      0.8863
+    ],
+    "exclude": [],
+    "file": "assets/art/a035.jpg",
+    "chapter": 3,
+    "after": "ng the tests and carrying back whatever reality had said about the edit. I was the hands, the eyes and the memory. The model was a brain in a jar, and I was the jar's entire staff."
+  },
+  {
+    "id": "a036",
+    "source_page": 36,
+    "clip": [
+      0.0,
+      0.70757,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.898
+    ],
+    "exclude": [],
+    "file": "assets/art/a036.jpg",
+    "chapter": 3,
+    "after": "The useful object is the model operating inside a world where software can push back."
+  },
+  {
+    "id": "a038",
+    "source_page": 38,
+    "clip": [
+      0.5245,
+      0.62482,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.8941
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.64656,
+        0.60345,
+        0.75947
+      ],
+      [
+        0.09528,
+        0.79243,
+        0.58711,
+        0.86396
+      ]
+    ],
+    "file": "assets/art/a038.jpg",
+    "chapter": 3,
+    "after": "about React. They were always there. Implementation simply consumed enough attention that deciding what should exist and turning that decision into software felt like one activity."
+  },
+  {
+    "id": "a041",
+    "source_page": 41,
+    "clip": [
+      0.0,
+      0.67461,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09165,
+        0.64727,
+        0.32759,
+        0.67532
+      ],
+      [
+        0.09165,
+        0.67532,
+        0.85662,
+        0.70407
+      ],
+      [
+        0.09165,
+        0.69004,
+        0.33848,
+        0.72511
+      ]
+    ],
+    "file": "assets/art/a041.jpg",
+    "chapter": 3,
+    "after": "Share too little and everyone rediscovers the same lessons. Share too much and the first successful idea becomes a local culture."
+  },
+  {
+    "id": "a044",
+    "source_page": 44,
+    "clip": [
+      0.53085,
+      0.6683,
+      1.0,
+      0.95792
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.8941
+    ],
+    "exclude": [
+      [
+        0.09074,
+        0.56241,
+        0.9147,
+        0.74053
+      ],
+      [
+        0.09074,
+        0.76227,
+        0.63884,
+        0.82959
+      ],
+      [
+        0.09074,
+        0.85133,
+        0.56171,
+        0.89972
+      ]
+    ],
+    "file": "assets/art/a044.jpg",
+    "chapter": 3,
+    "after": "By now we could generate genuinely different artifacts. That left the problem we had avoided from the beginning. Which one is better?"
+  },
+  {
+    "id": "a050",
+    "source_page": 50,
+    "clip": [
+      0.01543,
+      0.81697,
+      0.98911,
+      0.98668
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.898
+    ],
+    "exclude": [],
+    "file": "assets/art/a050.jpg",
+    "chapter": 3,
+    "after": "Bradley\u2013Terry can aggregate preferences; it cannot make those preferences true."
+  },
+  {
+    "id": "a051",
+    "source_page": 51,
+    "clip": [
+      0.0,
+      0.68443,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9608,
+      0.902
+    ],
+    "exclude": [],
+    "file": "assets/art/a051.jpg",
+    "chapter": 3,
+    "after": "This became the **Isolation Principle**: preserve enough separation that independent pressure remains informative."
+  },
+  {
+    "id": "a052",
+    "source_page": 52,
+    "clip": [
+      0.0,
+      0.62903,
+      0.95191,
+      0.98457
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.902
+    ],
+    "exclude": [],
+    "file": "assets/art/a052.jpg",
+    "chapter": 3,
+    "after": "The student has not yet been asked."
+  },
+  {
+    "id": "a056",
+    "source_page": 56,
+    "clip": [
+      0.05535,
+      0.52875,
+      0.94918,
+      0.99509
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.902
+    ],
+    "exclude": [],
+    "file": "assets/art/a056.jpg",
+    "chapter": 3,
+    "after": "As the components become better at producing coherent outputs, the original mistake may become harder rather than easier to see."
+  },
+  {
+    "id": "a060",
+    "source_page": 60,
+    "clip": [
+      0.49909,
+      0.68163,
+      1.0,
+      0.99158
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.63955,
+        0.76951,
+        0.71879
+      ],
+      [
+        0.0971,
+        0.70898,
+        0.65154,
+        0.73773
+      ],
+      [
+        0.09619,
+        0.76017,
+        0.59982,
+        0.80575
+      ],
+      [
+        0.09619,
+        0.79874,
+        0.51815,
+        0.87868
+      ]
+    ],
+    "file": "assets/art/a060.jpg",
+    "chapter": 4,
+    "after": "Language models begin somewhere else. They begin mostly with the residue."
+  },
+  {
+    "id": "a063",
+    "source_page": 63,
+    "clip": [
+      0.39564,
+      0.50351,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09347,
+        0.48527,
+        0.71416,
+        0.51543
+      ],
+      [
+        0.09347,
+        0.55049,
+        0.90109,
+        0.61992
+      ],
+      [
+        0.09347,
+        0.6101,
+        0.80944,
+        0.63955
+      ]
+    ],
+    "file": "assets/art/a063.jpg",
+    "chapter": 4,
+    "after": "not to transfer my credibility from machine learning to whales"
+  },
+  {
+    "id": "a066",
+    "source_page": 66,
+    "clip": [
+      0.00454,
+      0.70617,
+      0.99819,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.902
+    ],
+    "exclude": [],
+    "file": "assets/art/a066.jpg",
+    "chapter": 4,
+    "after": "The Gut recognizes. The Head reasons. The Hand reaches outside the current story and finds something capable of disagreeing."
+  },
+  {
+    "id": "a067",
+    "source_page": 67,
+    "clip": [
+      0.45463,
+      0.58836,
+      1.0,
+      0.99649
+    ],
+    "paper": [
+      0.9922,
+      0.9765,
+      0.9294
+    ],
+    "exclude": [],
+    "file": "assets/art/a067.jpg",
+    "chapter": 4,
+    "after": "If the five layers tell us **where** increasingly abstract work happens, System 3 is what keeps those layers **epistemically connected**."
+  },
+  {
+    "id": "a075",
+    "source_page": 75,
+    "clip": [
+      0.02541,
+      0.52454,
+      0.96824,
+      0.97896
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.902
+    ],
+    "exclude": [
+      [
+        0.0971,
+        0.51332,
+        0.44283,
+        0.54348
+      ]
+    ],
+    "file": "assets/art/a075.jpg",
+    "chapter": 4,
+    "after": "**The model stays hollow. The system doesn't have to be.**"
+  },
+  {
+    "id": "a077",
+    "source_page": 77,
+    "clip": [
+      0.0,
+      0.6669,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.898
+    ],
+    "exclude": [
+      [
+        0.14247,
+        0.64797,
+        0.37659,
+        0.67532
+      ],
+      [
+        0.09619,
+        0.67742,
+        0.64338,
+        0.70687
+      ]
+    ],
+    "file": "assets/art/a077.jpg",
+    "chapter": 4,
+    "after": "Humans have been working on that problem for a very long time."
+  },
+  {
+    "id": "a079",
+    "source_page": 79,
+    "clip": [
+      0.0,
+      0.54137,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9804,
+      0.9529,
+      0.8824
+    ],
+    "exclude": [
+      [
+        0.0853,
+        0.48107,
+        0.89746,
+        0.57644
+      ],
+      [
+        0.0853,
+        0.56732,
+        0.57078,
+        0.59748
+      ],
+      [
+        0.0853,
+        0.60168,
+        0.44102,
+        0.63114
+      ]
+    ],
+    "file": "assets/art/a079.jpg",
+    "chapter": 5,
+    "after": "The harness grew around their failures."
+  },
+  {
+    "id": "a080",
+    "source_page": 80,
+    "clip": [
+      0.42287,
+      0.62763,
+      0.94918,
+      0.99369
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.8941
+    ],
+    "exclude": [
+      [
+        0.08802,
+        0.50281,
+        0.91561,
+        0.63675
+      ],
+      [
+        0.08893,
+        0.62763,
+        0.55082,
+        0.65708
+      ]
+    ],
+    "file": "assets/art/a080.jpg",
+    "chapter": 5,
+    "after": " window full of logs is a worker who has forgotten what it was doing. So the output went to disk, with a few lines of summary left behind and every error on its own greppable line."
+  },
+  {
+    "id": "a083",
+    "source_page": 83,
+    "clip": [
+      0.402,
+      0.45652,
+      0.96642,
+      0.99439
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.46003,
+        0.50091,
+        0.62623
+      ],
+      [
+        0.09528,
+        0.61641,
+        0.40653,
+        0.64586
+      ]
+    ],
+    "file": "assets/art/a083.jpg",
+    "chapter": 5,
+    "after": "look at the compiler's progress files, written by Claudes that no longer exist for Claudes that do not exist yet. In between, they sit on disk, right or wrong, with nobody looking."
+  },
+  {
+    "id": "a085",
+    "source_page": 85,
+    "clip": [
+      0.015,
+      0.23,
+      0.99,
+      0.85
+    ],
+    "paper": [
+      0.9765,
+      0.949,
+      0.8784
+    ],
+    "exclude": [
+      [
+        0.09256,
+        0.07504,
+        0.95917,
+        0.2244
+      ],
+      [
+        0.09256,
+        0.20898,
+        0.87114,
+        0.23843
+      ],
+      [
+        0.09437,
+        0.83801,
+        0.66515,
+        0.86816
+      ],
+      [
+        0.09347,
+        0.86676,
+        0.88113,
+        0.91655
+      ],
+      [
+        0.09437,
+        0.90743,
+        0.55445,
+        0.93689
+      ]
+    ],
+    "file": "assets/art/a085.jpg",
+    "chapter": 5,
+    "after": "on that could no longer supply him with breakfast. He needed shelter, food and fire. Much of what he knew would remain useless until he could make the equipment required to use it."
+  },
+  {
+    "id": "a086",
+    "source_page": 86,
+    "clip": [
+      0.0,
+      0.075,
+      0.50726,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.48457,
+        0.07924,
+        0.94465,
+        0.12973
+      ],
+      [
+        0.48457,
+        0.12132,
+        0.83575,
+        0.15077
+      ],
+      [
+        0.48548,
+        0.1662,
+        0.94283,
+        0.23843
+      ],
+      [
+        0.48548,
+        0.22861,
+        0.83212,
+        0.25877
+      ],
+      [
+        0.48548,
+        0.27349,
+        0.93285,
+        0.3878
+      ],
+      [
+        0.48548,
+        0.37868,
+        0.6216,
+        0.40603
+      ],
+      [
+        0.48639,
+        0.42356,
+        0.91016,
+        0.49579
+      ],
+      [
+        0.48639,
+        0.48668,
+        0.70508,
+        0.51403
+      ],
+      [
+        0.4873,
+        0.53226,
+        0.94646,
+        0.56241
+      ],
+      [
+        0.4882,
+        0.5533,
+        0.60254,
+        0.58205
+      ],
+      [
+        0.48639,
+        0.59607,
+        0.94465,
+        0.77419
+      ],
+      [
+        0.48639,
+        0.78892,
+        0.92831,
+        0.92216
+      ],
+      [
+        0.48639,
+        0.91374,
+        0.62613,
+        0.9432
+      ]
+    ],
+    "file": "assets/art/a086.jpg",
+    "chapter": 5,
+    "after": "es worth pursuing. His companions still have to make those steps work with what they have, but they do not have to discover the entire possibility of modern medicine along the way."
+  },
+  {
+    "id": "a087",
+    "source_page": 87,
+    "clip": [
+      0.01906,
+      0.67882,
+      0.96189,
+      0.91445
+    ],
+    "paper": [
+      0.9804,
+      0.9569,
+      0.8941
+    ],
+    "exclude": [
+      [
+        0.07532,
+        0.65288,
+        0.3775,
+        0.68373
+      ]
+    ],
+    "file": "assets/art/a087.jpg",
+    "chapter": 5,
+    "after": "The clerk could also enter the wrong amount, and his successor could copy it faithfully. The clay had preserved what it was given."
+  },
+  {
+    "id": "a088",
+    "source_page": 88,
+    "clip": [
+      0.0,
+      0.51683,
+      0.98094,
+      0.98247
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.8941
+    ],
+    "exclude": [
+      [
+        0.07713,
+        0.49719,
+        0.68966,
+        0.52735
+      ],
+      [
+        0.56261,
+        0.54698,
+        0.93194,
+        0.81066
+      ],
+      [
+        0.56443,
+        0.80435,
+        0.74682,
+        0.8345
+      ]
+    ],
+    "file": "assets/art/a088.jpg",
+    "chapter": 5,
+    "after": "The state had settled which measure to use. Whether a particular vessel met it was a question the decree could not answer.",
+    "previous_anchor": ". They can also make a decision difficult to challenge long after the people who made it have gone. The Qin measure was not the correct measure. It was the one backed by the state.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a089",
+    "source_page": 89,
+    "clip": [
+      0.00363,
+      0.2805,
+      0.96461,
+      0.69215
+    ],
+    "paper": [
+      0.9882,
+      0.9608,
+      0.8941
+    ],
+    "exclude": [],
+    "file": "assets/art/a089.jpg",
+    "chapter": 5,
+    "after": "blet, a bronze measure, a deployment guardrail: knowledge becomes structure. It allows work to pass between strangers. Now the strangers can each learn something the others do not."
+  },
+  {
+    "id": "a090",
+    "source_page": 90,
+    "clip": [
+      0.0,
+      0.32188,
+      0.61525,
+      1.0
+    ],
+    "paper": [
+      0.9804,
+      0.9569,
+      0.8863
+    ],
+    "exclude": [
+      [
+        0.09074,
+        0.29874,
+        0.3412,
+        0.32749
+      ],
+      [
+        0.58348,
+        0.33871,
+        0.93829,
+        0.58976
+      ],
+      [
+        0.60163,
+        0.58415,
+        0.78312,
+        0.6129
+      ],
+      [
+        0.60163,
+        0.62412,
+        0.9392,
+        0.93408
+      ],
+      [
+        0.60436,
+        0.92496,
+        0.79492,
+        0.95372
+      ]
+    ],
+    "file": "assets/art/a090.jpg",
+    "chapter": 5,
+    "after": "At the smaller company, reviews had been one engineer's afternoon."
+  },
+  {
+    "id": "a091",
+    "source_page": 91,
+    "clip": [
+      0.47005,
+      0.40252,
+      1.0,
+      0.92847
+    ],
+    "paper": [
+      0.9804,
+      0.9529,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.08984,
+        0.31557,
+        0.48004,
+        0.47896
+      ],
+      [
+        0.08984,
+        0.50421,
+        0.48004,
+        0.76227
+      ],
+      [
+        0.09074,
+        0.78822,
+        0.47187,
+        0.87518
+      ],
+      [
+        0.09165,
+        0.90042,
+        0.47459,
+        0.92987
+      ]
+    ],
+    "file": "assets/art/a091.jpg",
+    "chapter": 5,
+    "after": "Elaine never regained consciousness. She died thirteen days later.[^bromiley]"
+  },
+  {
+    "id": "a094",
+    "source_page": 94,
+    "clip": [
+      0.0,
+      0.62482,
+      1.0,
+      0.95582
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.898
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.6094,
+        0.49002,
+        0.63745
+      ],
+      [
+        0.5,
+        0.6094,
+        0.85935,
+        0.63745
+      ],
+      [
+        0.0971,
+        0.92777,
+        0.45372,
+        0.95582
+      ]
+    ],
+    "file": "assets/art/a094.jpg",
+    "chapter": 5,
+    "after": "For that we need more than another opinion."
+  },
+  {
+    "id": "a095",
+    "source_page": 95,
+    "clip": [
+      0.02359,
+      0.2202,
+      0.54265,
+      0.66059
+    ],
+    "paper": [
+      0.9804,
+      0.9529,
+      0.8863
+    ],
+    "exclude": [],
+    "file": "assets/art/a095.jpg",
+    "chapter": 5,
+    "after": "gain. And when the instrument shows something nobody has seen before, the observer has two things to explain: the discovery and why anyone should trust the device that produced it."
+  },
+  {
+    "id": "a099",
+    "source_page": 99,
+    "clip": [
+      0,
+      0.395,
+      1,
+      0.7
+    ],
+    "paper": [
+      0.9882,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.08893,
+        0.02595,
+        0.91379,
+        0.14727
+      ],
+      [
+        0.09074,
+        0.13815,
+        0.79038,
+        0.1676
+      ],
+      [
+        0.08984,
+        0.15849,
+        0.87477,
+        0.19565
+      ],
+      [
+        0.09074,
+        0.17882,
+        0.5363,
+        0.20827
+      ],
+      [
+        0.09074,
+        0.21038,
+        0.91198,
+        0.28121
+      ],
+      [
+        0.09165,
+        0.27209,
+        0.48185,
+        0.29874
+      ],
+      [
+        0.09074,
+        0.30575,
+        0.90926,
+        0.37658
+      ],
+      [
+        0.09074,
+        0.36816,
+        0.66515,
+        0.39762
+      ],
+      [
+        0.09165,
+        0.79313,
+        0.89927,
+        0.84362
+      ]
+    ],
+    "file": "assets/art/a099.jpg",
+    "chapter": 5,
+    "after": "ce took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage. A question cannot attract evidence from an instrument nobody builds."
+  },
+  {
+    "id": "a100",
+    "source_page": 100,
+    "clip": [
+      0.0,
+      0.29032,
+      0.59347,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.20477,
+        0.90472,
+        0.29243
+      ],
+      [
+        0.09891,
+        0.28541,
+        0.21688,
+        0.30645
+      ],
+      [
+        0.09619,
+        0.30435,
+        0.90653,
+        0.34572
+      ],
+      [
+        0.09619,
+        0.3324,
+        0.44374,
+        0.36115
+      ],
+      [
+        0.53539,
+        0.36606,
+        0.9274,
+        0.41374
+      ],
+      [
+        0.35481,
+        0.40393,
+        0.90563,
+        0.43268
+      ],
+      [
+        0.53539,
+        0.42286,
+        0.94283,
+        0.67602
+      ],
+      [
+        0.5726,
+        0.6648,
+        0.67786,
+        0.69565
+      ],
+      [
+        0.56534,
+        0.70056,
+        0.94192,
+        0.93548
+      ]
+    ],
+    "file": "assets/art/a100.jpg",
+    "chapter": 5,
+    "after": "Human science has never escaped this problem. It has simply had much longer to argue about it."
+  },
+  {
+    "id": "a102",
+    "source_page": 102,
+    "clip": [
+      0.0,
+      0.21879,
+      1.0,
+      0.8352
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.0971,
+        0.13254,
+        0.91924,
+        0.22651
+      ],
+      [
+        0.0971,
+        0.21739,
+        0.25862,
+        0.24474
+      ],
+      [
+        0.0971,
+        0.8338,
+        0.91561,
+        0.90673
+      ]
+    ],
+    "file": "assets/art/a102.jpg",
+    "chapter": 5,
+    "after": " many mistakes in one detector or analysis would not automatically appear in the other. Their agreement mattered because they were partly independent in ways relevant to the claim."
+  },
+  {
+    "id": "a103",
+    "source_page": 103,
+    "clip": [
+      0.0,
+      0.5007,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8941
+    ],
+    "exclude": [
+      [
+        0.55172,
+        0.51964,
+        0.90835,
+        0.54979
+      ],
+      [
+        0.55172,
+        0.5575,
+        0.82577,
+        0.58766
+      ]
+    ],
+    "file": "assets/art/a103.jpg",
+    "chapter": 5,
+    "after": "Now go back to the compiler."
+  },
+  {
+    "id": "a105",
+    "source_page": 105,
+    "clip": [
+      0.0,
+      0.12412,
+      0.56715,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9725,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.38203,
+        0.09257,
+        0.91379,
+        0.17251
+      ],
+      [
+        0.38203,
+        0.1683,
+        0.8167,
+        0.20056
+      ],
+      [
+        0.38203,
+        0.21809,
+        0.94102,
+        0.40252
+      ],
+      [
+        0.38203,
+        0.39551,
+        0.79401,
+        0.42496
+      ],
+      [
+        0.38203,
+        0.4453,
+        0.93013,
+        0.60589
+      ],
+      [
+        0.38113,
+        0.62412,
+        0.94465,
+        0.86115
+      ],
+      [
+        0.38475,
+        0.72791,
+        0.87024,
+        0.75596
+      ],
+      [
+        0.451,
+        0.85344,
+        0.72142,
+        0.8864
+      ]
+    ],
+    "file": "assets/art/a105.jpg",
+    "chapter": 5,
+    "after": "ribes. Does the mistake survive into the next worker's plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing."
+  },
+  {
+    "id": "a107",
+    "source_page": 107,
+    "clip": [
+      0.0,
+      0.37027,
+      1.0,
+      0.9432
+    ],
+    "paper": [
+      0.9843,
+      0.9608,
+      0.898
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.34642,
+        0.91107,
+        0.37658
+      ],
+      [
+        0.09619,
+        0.36606,
+        0.23866,
+        0.39271
+      ],
+      [
+        0.09619,
+        0.90182,
+        0.63339,
+        0.93128
+      ]
+    ],
+    "file": "assets/art/a107.jpg",
+    "chapter": 5,
+    "after": "The next three chapters are about moving that work inside the box.",
+    "section": "part-3-science-turns-inward.md",
+    "max_height": 100
+  },
+  {
+    "id": "a109",
+    "source_page": 109,
+    "clip": [
+      0.5,
+      0.46,
+      1,
+      1
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.07532,
+        0.21318,
+        0.9274,
+        0.28331
+      ],
+      [
+        0.07623,
+        0.28822,
+        0.62704,
+        0.31767
+      ],
+      [
+        0.1343,
+        0.32609,
+        0.85118,
+        0.39691
+      ],
+      [
+        0.07623,
+        0.42707,
+        0.9265,
+        0.45722
+      ],
+      [
+        0.07623,
+        0.44741,
+        0.80218,
+        0.47686
+      ],
+      [
+        0.07169,
+        0.46774,
+        0.61978,
+        0.59257
+      ],
+      [
+        0.07532,
+        0.58345,
+        0.50272,
+        0.76928
+      ],
+      [
+        0.07623,
+        0.79663,
+        0.44283,
+        0.90603
+      ]
+    ],
+    "file": "assets/art/a109.jpg",
+    "chapter": 6,
+    "after": "She writes down *ask Sam*."
+  },
+  {
+    "id": "a111",
+    "source_page": 111,
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "paper": [
+      0.9882,
+      0.9608,
+      0.8902
+    ],
+    "exclude": [],
+    "generated": "art/interior-111.png",
+    "file": "assets/art/a111.jpg",
+    "chapter": 6,
+    "after": "That is a **pattern language**:"
+  },
+  {
+    "id": "a112",
+    "source_page": 112,
+    "clip": [
+      0.0,
+      0.14937,
+      0.36298,
+      0.90112
+    ],
+    "paper": [
+      0.9922,
+      0.9765,
+      0.9255
+    ],
+    "exclude": [
+      [
+        0.34755,
+        0.07994,
+        0.92922,
+        0.19215
+      ],
+      [
+        0.34846,
+        0.18233,
+        0.84029,
+        0.21318
+      ],
+      [
+        0.35027,
+        0.22581,
+        0.92922,
+        0.38429
+      ],
+      [
+        0.3539,
+        0.24895,
+        0.85481,
+        0.2756
+      ],
+      [
+        0.35209,
+        0.37097,
+        0.47187,
+        0.39832
+      ],
+      [
+        0.35209,
+        0.41585,
+        0.92287,
+        0.57083
+      ],
+      [
+        0.3539,
+        0.56031,
+        0.63975,
+        0.58766
+      ],
+      [
+        0.3539,
+        0.60379,
+        0.92377,
+        0.71599
+      ],
+      [
+        0.35481,
+        0.70547,
+        0.43194,
+        0.73282
+      ],
+      [
+        0.3539,
+        0.74614,
+        0.92196,
+        0.89972
+      ],
+      [
+        0.35481,
+        0.8892,
+        0.5971,
+        0.92006
+      ]
+    ],
+    "file": "assets/art/a112.jpg",
+    "chapter": 6,
+    "after": "Code still performs the operations for which precise execution matters."
+  },
+  {
+    "id": "a115",
+    "source_page": 115,
+    "clip": [
+      0.0,
+      0.51122,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.0853,
+        0.48597,
+        0.44102,
+        0.51543
+      ],
+      [
+        0.0853,
+        0.51964,
+        0.54991,
+        0.54628
+      ]
+    ],
+    "file": "assets/art/a115.jpg",
+    "chapter": 6,
+    "after": "A different design gives each claim its own identity and records what it rests on."
+  },
+  {
+    "id": "a118",
+    "source_page": 118,
+    "clip": [
+      0.0,
+      0.57363,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.902
+    ],
+    "exclude": [
+      [
+        0.098,
+        0.45933,
+        0.90563,
+        0.59748
+      ],
+      [
+        0.098,
+        0.58766,
+        0.27949,
+        0.61641
+      ]
+    ],
+    "file": "assets/art/a118.jpg",
+    "chapter": 6,
+    "after": "Seven queries can be worse than two if five of them were spent recovering from a bad ranking."
+  },
+  {
+    "id": "a120",
+    "source_page": 120,
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.902
+    ],
+    "exclude": [],
+    "generated": "art/interior-120.png",
+    "file": "assets/art/a120.jpg",
+    "chapter": 6,
+    "after": "A complicated world can require a complicated method."
+  },
+  {
+    "id": "a122",
+    "source_page": 122,
+    "clip": [
+      0.12613,
+      0.48457,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9843,
+      0.9569,
+      0.8902
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.44741,
+        0.50272,
+        0.49299
+      ],
+      [
+        0.09619,
+        0.50281,
+        0.69601,
+        0.57363
+      ],
+      [
+        0.09619,
+        0.56381,
+        0.61978,
+        0.59257
+      ],
+      [
+        0.09619,
+        0.58415,
+        0.15789,
+        0.6101
+      ],
+      [
+        0.16062,
+        0.58415,
+        0.59165,
+        0.6129
+      ],
+      [
+        0.09619,
+        0.60519,
+        0.52722,
+        0.63324
+      ],
+      [
+        0.09619,
+        0.62482,
+        0.3902,
+        0.65147
+      ]
+    ],
+    "file": "assets/art/a122.jpg",
+    "chapter": 6,
+    "after": "roof checked, a verdict pending. A success in one investigation had changed who could afford to keep investigating elsewhere. The other problems had lost workers, not been refuted."
+  },
+  {
+    "id": "a125",
+    "source_page": 125,
+    "clip": [
+      0.0,
+      0.56311,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.46824,
+        0.53997,
+        0.90472,
+        0.56942
+      ],
+      [
+        0.09619,
+        0.54067,
+        0.45735,
+        0.56942
+      ],
+      [
+        0.09619,
+        0.55891,
+        0.38294,
+        0.58555
+      ]
+    ],
+    "file": "assets/art/a125.jpg",
+    "chapter": 6,
+    "after": "We have successfully parallelized the experience of being ignored.",
+    "previous_anchor": "ncies we already recorded. If the organization proceeds with the question unresolved, the decision-maker owns that choice. The unanswered objection travels with the recommendation.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a127",
+    "source_page": 127,
+    "clip": [
+      0.60254,
+      0.71108,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.69635,
+        0.66243,
+        0.84292
+      ],
+      [
+        0.16425,
+        0.74264,
+        0.63339,
+        0.77139
+      ],
+      [
+        0.09619,
+        0.86185,
+        0.62886,
+        0.96283
+      ]
+    ],
+    "file": "assets/art/a127.jpg",
+    "chapter": 6,
+    "after": "A persistent agent institution needs mechanisms that act on the inherited structure itself."
+  },
+  {
+    "id": "a133",
+    "source_page": 133,
+    "clip": [
+      0.01815,
+      0.25456,
+      0.98639,
+      0.831
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.08802,
+        0.23001,
+        0.41833,
+        0.25947
+      ]
+    ],
+    "file": "assets/art/a133.jpg",
+    "chapter": 6,
+    "after": "tter or make the current evaluator happier. It must improve the system's ability to find and assess further changes. The process that judges improvement has entered the experiment."
+  },
+  {
+    "id": "a135",
+    "source_page": 135,
+    "clip": [
+      0.0118,
+      0.69425,
+      1.0,
+      0.9986
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.08621,
+        0.61921,
+        0.9147,
+        0.70196
+      ],
+      [
+        0.08711,
+        0.69285,
+        0.14973,
+        0.7195
+      ]
+    ],
+    "file": "assets/art/a135.jpg",
+    "chapter": 7,
+    "after": "and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself."
+  },
+  {
+    "id": "a136",
+    "source_page": 136,
+    "clip": [
+      0.00091,
+      0.68583,
+      0.99819,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.6662,
+        0.72868,
+        0.69635
+      ]
+    ],
+    "file": "assets/art/a136.jpg",
+    "chapter": 7,
+    "after": "did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work."
+  },
+  {
+    "id": "a138",
+    "source_page": 138,
+    "clip": [
+      0.0,
+      0.71178,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9176
+    ],
+    "exclude": [
+      [
+        0.08711,
+        0.69425,
+        0.89655,
+        0.7244
+      ],
+      [
+        0.08711,
+        0.71459,
+        0.56987,
+        0.74404
+      ]
+    ],
+    "file": "assets/art/a138.jpg",
+    "chapter": 7,
+    "after": "Children open drawers nobody asked them to open and spend twenty minutes discovering that the cardboard box is more interesting than the toy.",
+    "previous_anchor": "The learner could manufacture some of its own reasons to look around. Then optimization did what optimization does. It took the instruction literally.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a139",
+    "source_page": 139,
+    "clip": [
+      0.02359,
+      0.73212,
+      0.9755,
+      0.99719
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.095,
+        0.727,
+        0.57,
+        0.744
+      ]
+    ],
+    "file": "assets/art/a139.jpg",
+    "chapter": 7,
+    "after": "Static. Static. Static. Jackpot.",
+    "previous_anchor": "g can destroy previously acquired knowledge. Later methods such as Elastic Weight Consolidation tried explicitly to preserve important older knowledge while learning something new.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a143",
+    "source_page": 143,
+    "clip": [
+      0.01815,
+      0.73422,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.68583,
+        0.90472,
+        0.75316
+      ],
+      [
+        0.09528,
+        0.74264,
+        0.18875,
+        0.77139
+      ]
+    ],
+    "file": "assets/art/a143.jpg",
+    "chapter": 7,
+    "after": "Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles and wind tunnels may look like failures for years.",
+    "previous_anchor": "unrelated to the destination. Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles and wind tunnels may look like failures for years.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a153",
+    "source_page": 153,
+    "clip": [
+      0,
+      0.37,
+      1,
+      0.888
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9216
+    ],
+    "exclude": [
+      [
+        0.15426,
+        0.89341,
+        0.47459,
+        0.93128
+      ],
+      [
+        0.11887,
+        0.91655,
+        0.90744,
+        0.9425
+      ],
+      [
+        0.11797,
+        0.93128,
+        0.39111,
+        0.95792
+      ]
+    ],
+    "file": "assets/art/a153.jpg",
+    "chapter": 7,
+    "after": "to decide which of its suspicions about itself deserve to be believed. We have given that someone a research institution's worth of work. How much of it can a human actually judge?",
+    "review_note": "Trimmed the source footnote rule and cut-off note below the illustration; the source-page crop formerly extended to 0.91."
+  },
+  {
+    "id": "a155",
+    "source_page": 155,
+    "clip": [
+      0.0,
+      0.71248,
+      1.0,
+      0.99509
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9216
+    ],
+    "exclude": [
+      [
+        0.09165,
+        0.69846,
+        0.60345,
+        0.72721
+      ]
+    ],
+    "file": "assets/art/a155.jpg",
+    "chapter": 8,
+    "after": " coordinate other agents while the human is still reading the first diff. At some point, \u201chuman in the loop\u201d becomes a comforting description of a loop the human can no longer see."
+  },
+  {
+    "id": "a157",
+    "source_page": 157,
+    "clip": [
+      0.0,
+      0.68513,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9176
+    ],
+    "exclude": [
+      [
+        0.09256,
+        0.65007,
+        0.9147,
+        0.7209
+      ],
+      [
+        0.11071,
+        0.71178,
+        0.37024,
+        0.74123
+      ]
+    ],
+    "file": "assets/art/a157.jpg",
+    "chapter": 8,
+    "after": "s, it should begin **uncertain** about what those preferences are, and human behavior should remain a source of information about them. The second principle is the one I want here."
+  },
+  {
+    "id": "a160",
+    "source_page": 160,
+    "clip": [
+      0.0,
+      0.71739,
+      0.99819,
+      0.99719
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.08893,
+        0.68934,
+        0.78221,
+        0.7195
+      ]
+    ],
+    "file": "assets/art/a160.jpg",
+    "chapter": 8,
+    "after": " reward model and evaluation generator may share training data, architectures, blind spots and incentives. Five models agreeing can still be one mistake with excellent parallelism."
+  },
+  {
+    "id": "a162",
+    "source_page": 162,
+    "clip": [
+      0.00726,
+      0.71248,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.09347,
+        0.70266,
+        0.17241,
+        0.73142
+      ],
+      [
+        0.19147,
+        0.70266,
+        0.78947,
+        0.73142
+      ]
+    ],
+    "file": "assets/art/a162.jpg",
+    "chapter": 8,
+    "after": "An interpretability story that cannot survive intervention is still a story."
+  },
+  {
+    "id": "a170",
+    "source_page": 170,
+    "clip": [
+      0.01452,
+      0.68513,
+      0.9873,
+      0.99299
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9255
+    ],
+    "exclude": [
+      [
+        0.07895,
+        0.66199,
+        0.30672,
+        0.69144
+      ]
+    ],
+    "file": "assets/art/a170.jpg",
+    "chapter": 9,
+    "after": ". Eventually \u201cbetter\u201d had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked."
+  },
+  {
+    "id": "a172",
+    "source_page": 172,
+    "clip": [
+      0.0,
+      0.68864,
+      0.68512,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9176
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.64586,
+        0.89927,
+        0.69705
+      ],
+      [
+        0.09619,
+        0.68654,
+        0.34755,
+        0.71669
+      ]
+    ],
+    "file": "assets/art/a172.jpg",
+    "chapter": 9,
+    "after": " is not to become a permanent exoskeleton around every thought. It lets the learner operate at the edge of current competence, then gives more of the task back as competence grows."
+  },
+  {
+    "id": "a176",
+    "source_page": 176,
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [],
+    "generated": "art/interior-176.png",
+    "file": "assets/art/a176.jpg",
+    "chapter": 9,
+    "after": "tant can expand the decision. It cannot live it for me. That boundary matters because a system that sounds certain in such moments can easily turn decision support into authorship."
+  },
+  {
+    "id": "a177",
+    "source_page": 177,
+    "clip": [
+      0.0,
+      0.71318,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.57504,
+        0.90744,
+        0.71599
+      ]
+    ],
+    "file": "assets/art/a177.jpg",
+    "chapter": 9,
+    "after": "The system can help me test them."
+  },
+  {
+    "id": "a178",
+    "source_page": 178,
+    "clip": [
+      0.09256,
+      0.78331,
+      0.89111,
+      1.0
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9176
+    ],
+    "exclude": [],
+    "file": "assets/art/a178.jpg",
+    "chapter": 9,
+    "after": "Sometimes friction is teaching."
+  },
+  {
+    "id": "a186",
+    "source_page": 186,
+    "clip": [
+      0.0,
+      0.65989,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.09165,
+        0.55189,
+        0.90744,
+        0.67882
+      ],
+      [
+        0.09437,
+        0.669,
+        0.39474,
+        0.69776
+      ]
+    ],
+    "file": "assets/art/a186.jpg",
+    "chapter": 10,
+    "after": "ermission checking. A genuinely novel research problem may need several agents pursuing different approaches without sharing enough context to collapse into one correlated opinion."
+  },
+  {
+    "id": "a187",
+    "source_page": 187,
+    "clip": [
+      0.0118,
+      0.69495,
+      0.99637,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.09165,
+        0.58836,
+        0.91107,
+        0.69916
+      ],
+      [
+        0.09256,
+        0.69004,
+        0.16515,
+        0.71669
+      ]
+    ],
+    "file": "assets/art/a187.jpg",
+    "chapter": 10,
+    "after": "failure mode appears\u2014or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well."
+  },
+  {
+    "id": "a190",
+    "source_page": 190,
+    "clip": [
+      0.02632,
+      0.6641,
+      0.99546,
+      0.99579
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.0853,
+        0.64656,
+        0.48639,
+        0.67602
+      ]
+    ],
+    "file": "assets/art/a190.jpg",
+    "chapter": 11,
+    "after": "have sophisticated intelligence inside each box while the arrangement of the boxes is mostly predetermined. The page is smart inside the modules and surprisingly dumb between them."
+  },
+  {
+    "id": "a191",
+    "source_page": 191,
+    "clip": [
+      0.20417,
+      0.80365,
+      1.0,
+      0.9993
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9176
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.70827,
+        0.90926,
+        0.81627
+      ],
+      [
+        0.0971,
+        0.80575,
+        0.43194,
+        0.8352
+      ]
+    ],
+    "file": "assets/art/a191.jpg",
+    "chapter": 11,
+    "after": "gh to test and cannot build anything that plausibly helps, we have created a taxonomy department rather than a recommender system. The problems have to be bounded enough to attack."
+  },
+  {
+    "id": "a195",
+    "source_page": 195,
+    "clip": [
+      0.00454,
+      0.73072,
+      0.99274,
+      1.0
+    ],
+    "paper": [
+      0.9922,
+      0.9804,
+      0.9373
+    ],
+    "exclude": [],
+    "file": "assets/art/a195.jpg",
+    "chapter": 11,
+    "after": "as to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem."
+  },
+  {
+    "id": "a196",
+    "source_page": 196,
+    "clip": [
+      0.00817,
+      0.68864,
+      0.99456,
+      1.0
+    ],
+    "paper": [
+      0.9922,
+      0.9725,
+      0.9176
+    ],
+    "exclude": [],
+    "file": "assets/art/a196.jpg",
+    "chapter": 11,
+    "after": "Direct customer feedback could help explain what the behavioral measures miss."
+  },
+  {
+    "id": "a201",
+    "source_page": 201,
+    "clip": [
+      0.01906,
+      0.63885,
+      0.99093,
+      0.98597
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.09528,
+        0.62132,
+        0.23593,
+        0.65007
+      ]
+    ],
+    "file": "assets/art/a201.jpg",
+    "chapter": 11,
+    "after": "I used the deliberately bland term **Surface Value**."
+  },
+  {
+    "id": "a209",
+    "source_page": 209,
+    "clip": [
+      0.0,
+      0.63745,
+      0.99909,
+      0.99439
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.08802,
+        0.60659,
+        0.73684,
+        0.67461
+      ]
+    ],
+    "file": "assets/art/a209.jpg",
+    "chapter": 12,
+    "after": "What would you attempt?",
+    "previous_anchor": "Human institutions were built under assumptions about what is difficult.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a211",
+    "source_page": 211,
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [],
+    "generated": "art/interior-211.png",
+    "file": "assets/art/a211.jpg",
+    "chapter": 12,
+    "after": "Imagine a bespoke family tool useful enough to hold the calendar, the children's learning history and the reasons behind years of small decisions.",
+    "previous_anchor": "y have tools built around how that family schedules, learns, travels, budgets and remembers things, with exactly zero concern for whether the addressable market justifies Series A.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a214",
+    "source_page": 214,
+    "clip": [
+      0.0,
+      0.67742,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.902
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.66971,
+        0.20508,
+        0.69635
+      ],
+      [
+        0.19419,
+        0.66971,
+        0.6833,
+        0.69916
+      ]
+    ],
+    "file": "assets/art/a214.jpg",
+    "chapter": 12,
+    "after": "Asking what humans are for smuggles in the assumption that our legitimacy depends on having a remaining function in somebody else's architecture.",
+    "previous_anchor": "But there is something odd about the grammar. What are humans **for**?",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a219",
+    "source_page": 219,
+    "clip": [
+      0,
+      0.79,
+      1,
+      1
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [
+      [
+        0.07804,
+        0.20196,
+        0.44465,
+        0.24684
+      ],
+      [
+        0.08258,
+        0.24965,
+        0.91742,
+        0.32118
+      ],
+      [
+        0.08258,
+        0.30856,
+        0.71869,
+        0.33801
+      ],
+      [
+        0.08258,
+        0.34011,
+        0.91652,
+        0.46003
+      ],
+      [
+        0.08258,
+        0.44951,
+        0.69873,
+        0.47966
+      ],
+      [
+        0.08258,
+        0.48177,
+        0.91742,
+        0.58906
+      ],
+      [
+        0.08258,
+        0.57854,
+        0.30944,
+        0.60519
+      ],
+      [
+        0.08348,
+        0.6115,
+        0.91379,
+        0.70056
+      ],
+      [
+        0.08348,
+        0.69004,
+        0.22958,
+        0.7202
+      ],
+      [
+        0.08348,
+        0.723,
+        0.87659,
+        0.77279
+      ],
+      [
+        0.08258,
+        0.76297,
+        0.4882,
+        0.79243
+      ]
+    ],
+    "file": "assets/art/a219.jpg",
+    "chapter": 12,
+    "after": "The compiler has to compile.",
+    "previous_anchor": "ry worldview is equally true. They are not. Reality remains annoyingly capable of rejecting bad engineering regardless of how socially constructed the bridge feels on the way down.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a223",
+    "source_page": 223,
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "paper": [
+      0.9922,
+      0.9647,
+      0.9059
+    ],
+    "exclude": [],
+    "generated": "art/interior-223.png",
+    "file": "assets/art/a223.jpg",
+    "chapter": 12,
+    "after": "hat maximizes attendance can produce a very well-evidenced reason to keep excluding them. The figures may be correct. What is in dispute is the rule giving those figures authority."
+  },
+  {
+    "id": "a224",
+    "source_page": 224,
+    "clip": [
+      0.01543,
+      0.64937,
+      0.99456,
+      0.99018
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9176
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.62833,
+        0.38929,
+        0.65778
+      ]
+    ],
+    "file": "assets/art/a224.jpg",
+    "chapter": 12,
+    "after": "Then two groups both want seven on Tuesday.",
+    "previous_anchor": "ems, these activities could be organized across several levels. The possibility depended on institutional conditions; calling something a community did not make cooperation happen.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a226",
+    "source_page": 226,
+    "clip": [
+      0.0,
+      0.68724,
+      1.0,
+      1.0
+    ],
+    "paper": [
+      0.9882,
+      0.9686,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.09256,
+        0.57223,
+        0.89927,
+        0.71459
+      ],
+      [
+        0.09256,
+        0.70477,
+        0.65426,
+        0.73633
+      ]
+    ],
+    "file": "assets/art/a226.jpg",
+    "chapter": 12,
+    "after": "I still want more room to discover which commitments deserve to become expensive.",
+    "previous_anchor": "n people who did not volunteer to be an experiment. The extra room matters when it lets us learn with less at stake, not when it becomes an excuse to ignore who is taking the risk.",
+    "review_note": "Reconnected to the current passage after reading the edited chapter and inspecting the illustration, 2026-09-20."
+  },
+  {
+    "id": "a229",
+    "source_page": 229,
+    "clip": [
+      0.4029,
+      0.67461,
+      0.99274,
+      0.98948
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9176
+    ],
+    "exclude": [
+      [
+        0.09619,
+        0.65217,
+        0.88929,
+        0.68233
+      ],
+      [
+        0.09619,
+        0.67251,
+        0.54991,
+        0.70266
+      ],
+      [
+        0.09528,
+        0.73983,
+        0.56806,
+        0.76999
+      ],
+      [
+        0.09528,
+        0.76017,
+        0.46007,
+        0.79032
+      ]
+    ],
+    "file": "assets/art/a229.jpg",
+    "chapter": 13,
+    "after": "*The house always wins.*"
+  },
+  {
+    "id": "a230",
+    "source_page": 230,
+    "clip": [
+      0.0,
+      0.73282,
+      1.0,
+      0.99649
+    ],
+    "paper": [
+      0.9922,
+      0.9686,
+      0.9137
+    ],
+    "exclude": [
+      [
+        0.09982,
+        0.71599,
+        0.22051,
+        0.74123
+      ]
+    ],
+    "file": "assets/art/a230.jpg",
+    "chapter": 13,
+    "after": "The longing."
+  },
+  {
+    "id": "a231",
+    "source_page": 231,
+    "clip": [
+      0.30036,
+      0.66971,
+      1.0,
+      0.99719
+    ],
+    "paper": [
+      0.9882,
+      0.9647,
+      0.9098
+    ],
+    "exclude": [
+      [
+        0.098,
+        0.65849,
+        0.75499,
+        0.68794
+      ],
+      [
+        0.09619,
+        0.69144,
+        0.30581,
+        0.74825
+      ],
+      [
+        0.09619,
+        0.7756,
+        0.41016,
+        0.88569
+      ]
+    ],
+    "file": "assets/art/a231.jpg",
+    "chapter": 13,
+    "after": "**THE END**"
+  },
+  {
+    "id": "photo58",
+    "source_page": 58,
+    "clip": [
+      0.19,
+      0.31,
+      0.866,
+      0.651
+    ],
+    "file": "assets/art/photo58.jpg",
+    "chapter": 4,
+    "after": null
+  }
+]

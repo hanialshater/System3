@@ -1,0 +1,157 @@
+{
+  "revision": "86a6f0a",
+  "review": "Existing images visually reviewed against revised passages; anchors reassigned explicitly. The glass-box illustration moves with its passage to Part III. No new illustrations generated.",
+  "changes": [
+    {
+      "art": "a008",
+      "old_chapter": 1,
+      "old_after": "That possibility is hard for me to ignore.",
+      "new_after": "Initial conditions become **operating conditions**."
+    },
+    {
+      "art": "a012",
+      "old_chapter": 1,
+      "old_after": "That is what I mean by control moving upward.",
+      "new_after": "We give up some authority over the next move and take on more responsibility for the conditions that make moves win or lose."
+    },
+    {
+      "art": "a014",
+      "old_chapter": 1,
+      "old_after": "I find that exciting and uncomfortable in roughly equal measure, which is probably why I keep coming back to it.",
+      "new_after": "pulling harder on the stem remains a surprisingly poor gardening strategy"
+    },
+    {
+      "art": "a021",
+      "old_chapter": 2,
+      "old_after": "That is the invention problem.",
+      "new_after": "And that is how I ended up spending an unreasonable amount of time packing circles into a square."
+    },
+    {
+      "art": "a031",
+      "old_chapter": 2,
+      "old_after": "his is worth remembering whenever somebody shows you an agent implemented in one hundred lines of Python. The hundred lines may be perfectly real. So is everything underneath them.",
+      "new_after": "A tiny amount of code at the top can command enormous capability underneath"
+    },
+    {
+      "art": "a036",
+      "old_chapter": 3,
+      "old_after": "m commands can matter almost as much as another clever prompt. The useful object is no longer just the model. It is the model operating inside a world where software can push back.",
+      "new_after": "The useful object is the model operating inside a world where software can push back."
+    },
+    {
+      "art": "a050",
+      "old_chapter": 3,
+      "old_after": "Pairwise comparison removes some fake precision. It does not repair a biased judge. Bradley\u2013Terry can aggregate preferences; it cannot make those preferences true.",
+      "new_after": "Bradley\u2013Terry can aggregate preferences; it cannot make those preferences true."
+    },
+    {
+      "art": "a051",
+      "old_chapter": 3,
+      "old_after": "ndependent evaluators may still inherit the same assumptions from their training, culture or examples. But without isolation we can destroy even the independence we might have had.",
+      "new_after": "This became the **Isolation Principle**: preserve enough separation that independent pressure remains informative."
+    },
+    {
+      "art": "a063",
+      "old_chapter": 4,
+      "old_after": "Trust is local.",
+      "new_after": "not to transfer my credibility from machine learning to whales"
+    },
+    {
+      "art": "a075",
+      "old_chapter": 4,
+      "old_after": "Otherwise the scaffold becomes a cage.",
+      "new_after": "**The model stays hollow. The system doesn't have to be.**"
+    },
+    {
+      "art": "a090",
+      "old_chapter": 5,
+      "old_after": "ew in ten thousand that a marketer could build a campaign on? A hundred people was not enough to cover the space. At the smaller company, reviews had been one engineer's afternoon.",
+      "new_after": "At the smaller company, reviews had been one engineer's afternoon."
+    },
+    {
+      "art": "a107",
+      "old_chapter": 5,
+      "old_after": "The rest of this book is about moving that work inside the box.",
+      "new_after": "The next three chapters are about moving that work inside the box.",
+      "new_section": "part-3-science-turns-inward.md"
+    },
+    {
+      "art": "a109",
+      "old_chapter": 6,
+      "old_after": "e to give them different representations. And when we try, the philosophers of science become inconvenient in a useful way: each finds something the proposed machine cannot yet do.",
+      "new_after": "She writes down *ask Sam*."
+    },
+    {
+      "art": "a111",
+      "old_chapter": 6,
+      "old_after": "an imaginary system that has to use such conditional knowledge. Its job is to review experiments in an online store. We will follow its records and decisions as the review unfolds.",
+      "new_after": "That is a **pattern language**:"
+    },
+    {
+      "art": "a112",
+      "old_chapter": 6,
+      "old_after": "We can store the instructions already. The harder question is how the machine represents what they allow it to conclude.",
+      "new_after": "Code still performs the operations for which precise execution matters."
+    },
+    {
+      "art": "a115",
+      "old_chapter": 6,
+      "old_after": "We still need to decide what should count as a reason.",
+      "new_after": "A different design gives each claim its own identity and records what it rests on."
+    },
+    {
+      "art": "a118",
+      "old_chapter": 6,
+      "old_after": "ry work did it take? Seven clicks can be worse than two if five of them were spent recovering from an unhelpful ranking. The additional interaction might be evidence of difficulty.",
+      "new_after": "Seven queries can be worse than two if five of them were spent recovering from a bad ranking."
+    },
+    {
+      "art": "a120",
+      "old_chapter": 6,
+      "old_after": "lone tells us little. A complicated world can require a complicated method. What matters is what the revisions let us explain or accomplish beyond the incidents that provoked them.",
+      "new_after": "A complicated world can require a complicated method."
+    },
+    {
+      "art": "a125",
+      "old_chapter": 6,
+      "old_after": "The unanswered objection travels with the recommendation.",
+      "new_after": "We have successfully parallelized the experience of being ignored."
+    },
+    {
+      "art": "a127",
+      "old_chapter": 6,
+      "old_after": "ination. Human institutions sometimes accomplish that through a change of personnel. A persistent agent institution will need mechanisms that act on the inherited structure itself.",
+      "new_after": "A persistent agent institution needs mechanisms that act on the inherited structure itself."
+    },
+    {
+      "art": "a162",
+      "old_chapter": 8,
+      "old_after": "researchers to intervene on candidate features to see whether downstream behavior changes as predicted. An interpretability story that cannot survive intervention is still a story.",
+      "new_after": "An interpretability story that cannot survive intervention is still a story."
+    },
+    {
+      "art": "a177",
+      "old_chapter": 9,
+      "old_after": "aps I want status. Perhaps I am exhausted. Perhaps I actually want to build something else. Those are different explanations of the same sentence. The system can help me test them.",
+      "new_after": "The system can help me test them."
+    },
+    {
+      "art": "a178",
+      "old_chapter": 9,
+      "old_after": ", although users liked the more demanding interfaces less. The interface people enjoy most is not always the one that preserves their judgment best. Sometimes friction is teaching.",
+      "new_after": "Sometimes friction is teaching."
+    },
+    {
+      "art": "a196",
+      "old_chapter": 11,
+      "old_after": "e. Does the comparison help people reach a decision without increasing later returns or regret? Direct customer feedback could help us understand what the behavioral measures miss.",
+      "new_after": "Direct customer feedback could help explain what the behavioral measures miss."
+    },
+    {
+      "art": "a201",
+      "old_chapter": 11,
+      "old_after": "We used the deliberately bland term **Surface Value**. This is where the project becomes philosophical against its will.",
+      "new_after": "I used the deliberately bland term **Surface Value**."
+    }
+  ]
+}

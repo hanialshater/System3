@@ -1,3 +1,2 @@
-out/pages/
-out/*.html
+/out/
 __pycache__/

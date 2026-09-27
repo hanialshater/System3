@@ -1,0 +1,23 @@
+Adapt Chapter 1: Why I'm Betting on AI Agents by Hani M. M. Al-Shater into an English video. Select 01-why-im-betting-on-ai-agents.md and chapter-01-notebooklm-storyboard.md. The chapter and its notes supply content; the storyboard supplies production directions. Do not narrate instructions or import other chapters. Follow the current manuscript if wording differs.
+
+Tell events before explaining concepts. Preserve the voice, dry humor, complications and delayed reveals. Attribute personal experiences to Hani. Distinguish reported research, illustrative scenes, the author’s experiments and proposed designs. No invented dialogue, data or successful outcomes. Retain the storyboard’s evidence limits even when compressing.
+
+Use documentary illustrations on warm paper, sparse labels and explanatory diagrams. Name concepts clearly, then map them to the story in a composed visual, not a dense table. Keep recurring visual objects consistent. Label hypothetical scenes and schematic plots. No generic AI imagery or repetitive slogans.
+
+STORYBOARD — KEEP THIS ORDER:
+
+1. OPENING — LIFE AND CIVILIZATION. Begin with the chapter’s fascination with complex systems and its pineapple joke, without extending the joke.
+
+2. THE LESSON WE KEEP MISSING. Show a learned model gradually surrounded by annotation rules, engineered features and production exceptions.
+
+3. WHEN SEARCH MOVED UP A LEVEL. Follow AlphaGo’s combination of learned guidance and search, then AlphaGo Zero’s self-play.
+
+4. WHAT ARE WE CONTROLLING NOW? Use the excellent-engineer example.
+
+5. THE TERRIFYING PART. Revisit nature’s inventiveness with both cooperation and parasites.
+
+6. WHY I’M STILL BETTING ON THIS. Hani’s narrower bet: some good outcomes are easier to recognize than the path to them is to specify.
+
+7. WHERE WE GO NEXT. End with the bounded experiment the next chapter will undertake: a hard search with explicit constraints and an evaluator.
+
+Compress repeated explanation before dropping an event, complication or reveal. Keep numerical and causal qualifications from the full storyboard. End at the chapter’s own ending, with no generic recap or call to action.

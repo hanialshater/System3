@@ -1,0 +1,14 @@
+{
+  "name": "system3-chapter-proofs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "status": "node build.mjs --status"
+  },
+  "dependencies": {
+    "agent-browser": "0.38.1",
+    "pagedjs": "0.4.3",
+    "playwright-core": "1.55.0"
+  }
+}

@@ -1,118 +1,62 @@
-name: Build full book PDF
+name: Build curated book PDF (manual)
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'chapters/**'
-      - 'resources/editorial/pdf-unicode.tex'
-      - '.github/workflows/build-book-pdf.yml'
-  pull_request:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      force:
+        description: Rebuild even if the cached proof is current
+        type: boolean
+        default: false
+      strict_art:
+        description: Fail if existing artwork anchors or covers need review
+        type: boolean
+        default: false
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: curated-pdf-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build-pdf:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout manuscript
-        uses: actions/checkout@v4
-
-      - name: Assemble manuscript
-        shell: bash
-        run: |
-          mkdir -p dist
-          cat > dist/System3_Towards_Fluent_Autonomy_full_current_main.md <<'EOF'
-          ---
-          title: "System 3: Towards Fluent Autonomy"
-          subtitle: "Trust Chains, Agent Autonomy, and the Architecture of AI That Works"
-          author: "Hani M.M. Al-Shater"
-          date: "September 2026"
-          ---
-          EOF
-
-          files=(
-            chapters/00-preface.md
-            chapters/part-1-emergence.md
-            chapters/01-why-im-betting-on-ai-agents.md
-            chapters/02-the-algorithm-vortex.md
-            chapters/03-deep-mode.md
-            chapters/part-2-institutions.md
-            chapters/04-system-3.md
-            chapters/05-the-society-of-agents.md
-            chapters/reveal-we-call-it-science.md
-            chapters/part-3-science-turns-inward.md
-            chapters/06-pattern-language.md
-            chapters/07-recursive-self-improvement.md
-            chapters/08-automatic-alignment-research.md
-            chapters/interlude-when-it-goes-wrong.md
-            chapters/part-4-keeping-the-human.md
-            chapters/09-layer-4-desire.md
-            chapters/10-fluent-autonomy.md
-            chapters/part-5-what-the-capacity-is-for.md
-            chapters/11-the-store-that-builds-itself.md
-            chapters/12-after-capacity.md
-            chapters/alternative-ending.md
-            chapters/13-the-prophecy.md
-            chapters/14-scaffolds.md
-            chapters/back-matter.md
-            chapters/appendix-zen-of-autonomy.md
-            chapters/appendix-note-on-evidence.md
-            chapters/appendix-illustrations.md
-            chapters/appendix-references.md
-            chapters/about-the-author.md
-          )
-
-          for f in "${files[@]}"; do
-            printf '\n\n' >> dist/System3_Towards_Fluent_Autonomy_full_current_main.md
-            # Image assets are not currently stored in the repo; omit broken image tags
-            # while retaining the manuscript's captions and surrounding prose.
-            sed -E '/^!\[.*\]\(.*\)$/d' "$f" >> dist/System3_Towards_Fluent_Autonomy_full_current_main.md
-          done
-
-          # XeLaTeX may not have an emoji glyph for the thumbs-up used once in Chapter 5.
-          sed -i 's/👍/[thumbs-up]/g' dist/System3_Towards_Fluent_Autonomy_full_current_main.md
-
-      - name: Build PDF with Pandoc
-        uses: docker://pandoc/latex:latest
+      - uses: actions/checkout@v4
         with:
-          args: >-
-            dist/System3_Towards_Fluent_Autonomy_full_current_main.md
-            -o dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
-            --from=markdown
-            --pdf-engine=xelatex
-            --include-in-header=resources/editorial/pdf-unicode.tex
-            --toc
-            --top-level-division=chapter
-            -V documentclass=book
-            -V classoption=openany
-            -V geometry:margin=0.9in
-            -V fontsize=11pt
-            -V linestretch=1.08
-            -V colorlinks=true
-            -V linkcolor=black
-            -V urlcolor=blue
-
-      - name: Publish generated manuscript and PDF to main
-        if: github.event_name == 'push'
-        shell: bash
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: book-design/requirements-pdf.txt
+      - name: Install PDF tools
+        run: python -m pip install -r book-design/requirements-pdf.txt
+      - name: Restore previous proof
+        uses: actions/cache@v4
+        with:
+          path: output/pdf
+          key: curated-pdf-v1-${{ runner.os }}-${{ hashFiles('chapters/*.md', 'book-design/pdf.py', 'book-design/requirements-pdf.txt', 'book-design/curated/**') }}
+          restore-keys: curated-pdf-v1-${{ runner.os }}-
+      - name: Test build safeguards
+        run: python -m unittest discover -s book-design/curated/tests -v
+      - name: Build only when needed
+        env:
+          FORCE_BUILD: ${{ inputs.force }}
+          STRICT_ART: ${{ inputs.strict_art }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/System3_Towards_Fluent_Autonomy_full_current_main.md dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
-          if git diff --cached --quiet; then
-            echo "Generated outputs unchanged"
-          else
-            git commit -m "Build current full-book PDF"
-            git push
-          fi
-
-      - name: Upload full book PDF
+          args=(build --preview)
+          if [[ "$FORCE_BUILD" == "true" ]]; then args+=(--force); fi
+          if [[ "$STRICT_ART" == "true" ]]; then args+=(--strict-art); fi
+          python book-design/pdf.py "${args[@]}"
+      - name: Upload reading proof and review report
         uses: actions/upload-artifact@v4
         with:
-          name: system3-full-book-pdf
-          path: dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
+          name: system3-curated-6x9
+          path: |
+            output/pdf/System3_Curated_6x9.pdf
+            output/pdf/build-report.json
+            output/pdf/previews/
           if-no-files-found: error
+          retention-days: 30

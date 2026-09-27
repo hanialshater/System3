@@ -1,0 +1,139 @@
+{
+  "prepared": "2026-09-20",
+  "purpose": "Source snapshot for adaptation prompts; hashes detect later changes, not factual verification.",
+  "chapters": [
+    {
+      "chapter": 0,
+      "source": "chapters/00-preface.md",
+      "source_sha256": "003a73917aa7cd7aeac0e5f84e7ab5aa0a8eae345e4bc56d2017fcad2567b5ac",
+      "prompt": "prompts/notebooklm-local/preface-notebooklm-video-prompt.txt",
+      "prompt_sha256": "5aedb12e5b8996c3a7bc9a7515bad7142b167d5372ad2c54b7083255ae2fc68b"
+    },
+    {
+      "chapter": 1,
+      "source": "chapters/01-why-im-betting-on-ai-agents.md",
+      "source_sha256": "c186eb390c0f820b0bac37d5c1ed830ca54e066894d2c560658f46bc9bc953aa",
+      "prompt": "prompts/notebooklm-local/chapter-01-notebooklm-video-prompt.txt",
+      "prompt_sha256": "66ccc5d9ef437d483517cbb563fb34daa809abd279080bfa7c709708aa2f6b28",
+      "storyboard": "prompts/notebooklm-local/chapter-01-notebooklm-storyboard.md",
+      "storyboard_sha256": "63157718238ea745830c92fc207614536e0fc8ce9a79a174ced0d8f52a788405"
+    },
+    {
+      "chapter": 2,
+      "source": "chapters/02-the-algorithm-vortex.md",
+      "source_sha256": "9b63857ab810ff43bcefa4b4cd80e6ee86581a1791e5bf00f59d2814bc9d77b0",
+      "prompt": "prompts/notebooklm-local/chapter-02-notebooklm-video-prompt.txt",
+      "prompt_sha256": "441531535675dfd4d031ad5b3da851d041941e06ba7c9f0203023adf25893fd9",
+      "storyboard": "prompts/notebooklm-local/chapter-02-notebooklm-storyboard.md",
+      "storyboard_sha256": "9a9044a77e6dcdbdbc5e831f794ee8295199d30daf29a57e905163ef331cc92f"
+    },
+    {
+      "chapter": 3,
+      "source": "chapters/03-deep-mode.md",
+      "source_sha256": "4f9e01d8072b721b2bb1c99f1dd60bd83b16987ffa59f391865c07553ee4d0c4",
+      "prompt": "prompts/notebooklm-local/chapter-03-notebooklm-video-prompt.txt",
+      "prompt_sha256": "bcc937d07ea4f15c624ce2b1589f23404a0ce8d3fdc1c7b28b4cc8de3ec44446",
+      "storyboard": "prompts/notebooklm-local/chapter-03-notebooklm-storyboard.md",
+      "storyboard_sha256": "96340f9957c208b724bdbf0ea7ba15d6ff7d89096a1f8b19aed28684247bc4e6"
+    },
+    {
+      "chapter": 4,
+      "source": "chapters/04-system-3.md",
+      "source_sha256": "2a5880866f9088d3d8c769662cca91136837ee13b65d6aa25e53a3c13d9cc2b5",
+      "prompt": "prompts/notebooklm-local/chapter-04-notebooklm-video-prompt.txt",
+      "prompt_sha256": "ca043867eb79c5244b0f6727ef341995a9f125c1401ff6d1d6ea99fdc8b116f3",
+      "storyboard": "prompts/notebooklm-local/chapter-04-notebooklm-storyboard.md",
+      "storyboard_sha256": "18f0d69cca657083be1fbb5db4b05fe1562d2785ea8433f95668fbf5bb20a1d2"
+    },
+    {
+      "chapter": 5,
+      "source": "chapters/05-the-society-of-agents.md",
+      "source_sha256": "b8d1b457eef26d0b00bfaeaaa10ec02e025a73ecd0fb8a633b050cc642b78bbc",
+      "prompt": "prompts/notebooklm-local/chapter-05-notebooklm-video-prompt.txt",
+      "prompt_sha256": "ba8248c4382dd74c9f9eb16e5d5dd620b106a3214a8ef818fcd071daba132057",
+      "storyboard": "prompts/notebooklm-local/chapter-05-notebooklm-storyboard.md",
+      "storyboard_sha256": "7b36b2a306cf71463776dcdfe375331ac46ce4f572ac80bed96517a71fc985d5"
+    },
+    {
+      "chapter": 6,
+      "source": "chapters/06-pattern-language.md",
+      "source_sha256": "4ed95ed019e359826f951ebe4e2cc726be9cf04d67c86eecb60e8767c3b051b1",
+      "prompt": "prompts/notebooklm-local/chapter-06-notebooklm-video-prompt.txt",
+      "prompt_sha256": "2db7912ccdcb256bbd5185023ec33c3e73f214204947f5fea6c64968ad497a5e",
+      "storyboard": "prompts/notebooklm-local/chapter-06-notebooklm-storyboard.md",
+      "storyboard_sha256": "9b32b3ddcd1f8f284f65f53676ad7e22b8ab4ffbf2aff68525016adcf8607b1b"
+    },
+    {
+      "chapter": 7,
+      "source": "chapters/07-recursive-self-improvement.md",
+      "source_sha256": "61207f68bc1c242ffc85b18a7f1571c52518c38ee2959dbbb4e023d38a0aaa48",
+      "prompt": "prompts/notebooklm-local/chapter-07-notebooklm-video-prompt.txt",
+      "prompt_sha256": "cb71fb6902d18e43f67f67dcea21a41372daa7d7e62d34adf3bfc20add3d0a0f",
+      "storyboard": "prompts/notebooklm-local/chapter-07-notebooklm-storyboard.md",
+      "storyboard_sha256": "f13fe1d42b06d3c649b9302aaeadf1591dad06024fefb937ce03ccaa33916270"
+    },
+    {
+      "chapter": 8,
+      "source": "chapters/08-automatic-alignment-research.md",
+      "source_sha256": "0013f6297aa578032f7821db113bb47f5cecf11d538ddf2b3f7b60e8a7f07cf7",
+      "prompt": "prompts/notebooklm-local/chapter-08-notebooklm-video-prompt.txt",
+      "prompt_sha256": "a4e4431bfbc997ac05ddf4b0cf6e673bbb492c6a971b86c8bf640c270c76ba64",
+      "storyboard": "prompts/notebooklm-local/chapter-08-notebooklm-storyboard.md",
+      "storyboard_sha256": "61e4fcbeab573f273e74f46101871c8c8245a83767ad2375c685ff0b26030101"
+    },
+    {
+      "chapter": 9,
+      "source": "chapters/09-layer-4-desire.md",
+      "source_sha256": "0f64de5f2097a5f0aa8fab0fbf0349b8d032126b64cd300978cc37c8720043e5",
+      "prompt": "prompts/notebooklm-local/chapter-09-notebooklm-video-prompt.txt",
+      "prompt_sha256": "7e4844ab29a74e0732bdb251fa84ee1e657743dc41ff40eccfa954647fb4b631",
+      "storyboard": "prompts/notebooklm-local/chapter-09-notebooklm-storyboard.md",
+      "storyboard_sha256": "506c07ebb48ae02fd5e754d747699e41e401a2a8f210c3dbcf1a3a57f1d70051"
+    },
+    {
+      "chapter": 10,
+      "source": "chapters/10-fluent-autonomy.md",
+      "source_sha256": "91c66b1ed2225b8016ff87c7be95233a2caf97cf1e073599f797ff41a590636a",
+      "prompt": "prompts/notebooklm-local/chapter-10-notebooklm-video-prompt.txt",
+      "prompt_sha256": "10afedc018ae69eefef0487110171415d8b262fb0f12c469623321cb9fb785cd",
+      "storyboard": "prompts/notebooklm-local/chapter-10-notebooklm-storyboard.md",
+      "storyboard_sha256": "292b17928c4d62b843832b814e195c095605e1c3e756eb4a37802ca7a427f1df"
+    },
+    {
+      "chapter": 11,
+      "source": "chapters/11-the-store-that-builds-itself.md",
+      "source_sha256": "7881507bc956893c7bf82de6e0442a2e182d61eb5692e96a36482652ab68ebc7",
+      "prompt": "prompts/notebooklm-local/chapter-11-notebooklm-video-prompt.txt",
+      "prompt_sha256": "076128088405ce520282978b97e68645b604e5b3fc5e16eaa2994e0be531e699",
+      "storyboard": "prompts/notebooklm-local/chapter-11-notebooklm-storyboard.md",
+      "storyboard_sha256": "10fcec7dd802ab3417060aaeacae9971f164bf28aa505448ee4c804dc464014f"
+    },
+    {
+      "chapter": 12,
+      "source": "chapters/12-after-capacity.md",
+      "source_sha256": "27c9c17eabc36b0df33f5dd60d49c876abeba615e1327e5724ff46d61b164ecd",
+      "prompt": "prompts/notebooklm-local/chapter-12-notebooklm-video-prompt.txt",
+      "prompt_sha256": "f8e6d420fcf2d9a38eb34d6ae3006f34ce95fcf5cebb32dcf5ce8e0b75969905",
+      "storyboard": "prompts/notebooklm-local/chapter-12-notebooklm-storyboard.md",
+      "storyboard_sha256": "31ad71594deb565bbd3c656b8925a56effb600ec2f13c8e743754471cc9c03d7"
+    },
+    {
+      "chapter": 13,
+      "source": "chapters/13-the-prophecy.md",
+      "source_sha256": "454a998eea45c7ec7e82629af4c776ed1572ded8328454b5d682714fc3d18d9f",
+      "prompt": "prompts/notebooklm-local/chapter-13-notebooklm-video-prompt.txt",
+      "prompt_sha256": "63f12184f5fda766774b78e8e206baeff0250e17eb5f43db399650778c2a4b73",
+      "storyboard": "prompts/notebooklm-local/chapter-13-notebooklm-storyboard.md",
+      "storyboard_sha256": "169673d094ed5f2f74ebb8f02b80bf0238a90b74dbe4be06291d47a9075a18ad"
+    },
+    {
+      "chapter": 14,
+      "source": "chapters/14-scaffolds.md",
+      "source_sha256": "f222f3431fef44d840ea08bc9123e44ab4cf8c014d04ec3890fcda6b7b6f8cc4",
+      "prompt": "prompts/notebooklm-local/chapter-14-notebooklm-video-prompt.txt",
+      "prompt_sha256": "7349d3cb5a75f6ff334d3c215d1e5f847d76b753530e2a6e8b5bc9adbd2204af",
+      "storyboard": "prompts/notebooklm-local/chapter-14-notebooklm-storyboard.md",
+      "storyboard_sha256": "dad754459ee80d1408e4937e7af25d9a9a512e54d5022c60c8f0664071fe600a"
+    }
+  ]
+}

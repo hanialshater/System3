@@ -1,0 +1,637 @@
+{
+  "chapter": 5,
+  "paper": "#fcf6e7",
+  "description": "Original full-image opener locked. Interior artwork uses individual vector silhouettes and deliberate outer-edge crops. No blur or rectangular fade. Text contours are independent of the artwork clipping path.",
+  "art": {
+    "a079": {
+      "mode": "wide",
+      "label": "The sixteen workers",
+      "width": 570,
+      "bleed": 20,
+      "silhouette": "M0 54 L4 50 L10 43 L16 43 L20 34 L27 32 L33 27 L38 28 L44 23 L50 24 L57 19 L64 18 L69 2 L100 0 L100 100 L0 100 Z",
+      "cutout": "assets/a079-cutout.png"
+    },
+    "a080": {
+      "mode": "contour",
+      "label": "A worker without a lasting memory",
+      "width": 245,
+      "paragraphs": 2,
+      "profile": "shoulder",
+      "bleed": 24,
+      "silhouette": "M39 4 L50 0 L54 9 C66 9 75 20 68 33 L78 38 L96 32 L100 43 L96 65 L81 69 L77 83 L86 93 L76 98 L14 98 L7 93 L9 83 L18 76 L30 73 L33 51 L29 36 L36 27 L33 16 Z"
+    },
+    "a083": {
+      "mode": "contour",
+      "label": "Popper and World 3",
+      "width": 250,
+      "paragraphs": 2,
+      "profile": "portrait",
+      "bleed": 32,
+      "silhouette": "M16 0 C27 -2 43 1 46 12 C59 3 78 6 85 15 L85 29 C98 40 99 61 91 71 L100 85 L92 99 L52 100 L21 95 L0 82 L0 63 L13 57 C-2 49 -1 34 8 29 C3 20 6 7 16 0 Z",
+      "cutout": "assets/a083-cutout.png"
+    },
+    "a085": {
+      "mode": "contour",
+      "label": "The world falls silent",
+      "width": 430,
+      "paragraphs": 5,
+      "profile": "rising-world",
+      "bleed": 134,
+      "artTop": 230,
+      "sceneHeight": 595,
+      "reserve": 204,
+      "sectionStart": true,
+      "silhouette": "M16 34 C21 9 37 -1 53 2 C59 2 65 8 68 12 L73 0 L77 0 L70 15 C82 29 88 54 84 68 L88 76 L83 85 L76 87 L66 98 L52 100 L42 95 L28 91 L19 81 L11 78 L6 64 L7 50 Z",
+      "cutout": "assets/a085-cutout.png"
+    },
+    "a086": {
+      "mode": "contour",
+      "label": "The chemistry and the hands",
+      "width": 185,
+      "paragraphs": 2,
+      "profile": "slender",
+      "bleed": 10,
+      "silhouette": "M0 0 L30 0 L44 9 C67 -1 98 0 100 20 L100 47 L87 55 L92 70 L81 82 L90 94 L67 100 L0 100 Z",
+      "cutout": "assets/a086-cutout.png",
+      "reserve": 151
+    },
+    "a087": {
+      "mode": "wide",
+      "label": "Clay remembers",
+      "width": 525,
+      "bleed": 8,
+      "silhouette": "M0 72 L5 68 C4 47 5 9 13 2 C23 -3 32 7 31 37 L34 59 L45 60 L46 49 L56 50 L59 58 L61 47 L70 46 L72 52 L75 39 L84 39 L87 47 L89 34 L99 32 L100 76 L90 88 L70 92 L50 97 L18 100 L0 95 Z",
+      "cutout": "assets/a087-cutout.png"
+    },
+    "a088": {
+      "mode": "wide",
+      "label": "Measures and authority",
+      "width": 560,
+      "bleed": 20,
+      "silhouette": "M0 33 L5 29 L6 13 L9 9 L8 0 L22 0 L27 9 L30 30 L34 32 L38 23 L44 25 L49 41 L52 46 L56 60 L67 68 L74 67 L82 70 L99 74 L100 88 L89 96 L67 100 L53 94 L35 88 L16 83 L0 67 Z",
+      "cutout": "assets/a088-cutout.png"
+    },
+    "a089": {
+      "mode": "wide",
+      "label": "The work acquires a structure",
+      "width": 570,
+      "bleed": 12,
+      "silhouette": "M0 24 L60 24 L62 0 L100 0 L100 100 L0 100 Z",
+      "cutout": "assets/a089-cutout.png"
+    },
+    "a090": {
+      "mode": "contour",
+      "label": "Specialization",
+      "width": 235,
+      "paragraphs": 2,
+      "profile": "portrait",
+      "bleed": 30,
+      "silhouette": "M0 13 L7 10 L9 5 L24 0 L42 1 L49 7 L74 7 L86 17 L96 37 L100 73 L89 93 L54 100 L16 100 L7 69 Z"
+    },
+    "a091": {
+      "mode": "contour",
+      "label": "What the team could not hear",
+      "width": 265,
+      "paragraphs": 3,
+      "profile": "hospital",
+      "bleed": 30,
+      "silhouette": "M0 15 C5 2 25 -3 39 5 L47 10 L57 2 L69 9 L81 5 L100 11 L100 100 L0 100 Z"
+    },
+    "a094": {
+      "mode": "wide",
+      "label": "Independent checking",
+      "width": 570,
+      "bleed": 16,
+      "silhouette": "M0 0 L20 0 C45 2 72 4 88 21 L100 21 L100 100 L0 100 Z",
+      "cutout": "assets/a094-cutout.png"
+    },
+    "a095": {
+      "mode": "contour",
+      "label": "An instrument changes what can be seen",
+      "width": 282,
+      "paragraphs": 2,
+      "profile": "room",
+      "bleed": 56,
+      "silhouette": "M2 28 L7 19 L7 10 C22 -2 63 -3 93 2 L100 7 L100 94 C85 100 39 101 17 94 L6 87 L4 75 L7 57 L0 46 Z"
+    },
+    "a099": {
+      "mode": "landscape",
+      "label": "Evidence under an ocean",
+      "width": 780,
+      "bleed": 102,
+      "artTop": 516,
+      "sceneHeight": 744,
+      "paragraphs": 4,
+      "includeHeading": true,
+      "silhouette": "M0 15 L4 12 L6 8 L9 14 L14 17 L19 23 L20 30 L39 30 L40 20 L43 17 L44 11 L46 20 L49 25 L49 29 L79 29 L83 24 L86 22 L88 17 L92 16 L94 11 L97 17 L100 15 L100 100 L0 100 Z",
+      "after": "Nobody had to accept the forces he proposed in order to accept that he had seen something real."
+    },
+    "a100": {
+      "mode": "contour",
+      "label": "The institution chooses where to look",
+      "width": 240,
+      "paragraphs": 3,
+      "profile": "portrait",
+      "bleed": 28,
+      "silhouette": "M0 0 L15 0 L18 11 L25 9 L44 14 L58 17 L71 29 L80 40 L91 41 L98 50 L100 91 L87 99 L37 100 L11 95 L0 87 Z"
+    },
+    "a102": {
+      "mode": "detector",
+      "label": "A detector no scientist can know alone",
+      "width": 790,
+      "bleed": 165,
+      "artTop": 210,
+      "sceneHeight": 744,
+      "paragraphs": 1,
+      "silhouette": "M0 17 L9 6 L23 7 L34 0 L56 0 L69 10 L78 6 L89 7 L98 16 L100 44 L100 85 L90 95 L77 100 L31 100 L12 91 L0 75 Z"
+    },
+    "a103": {
+      "mode": "wide",
+      "label": "Return to the compiler",
+      "width": 615,
+      "bleed": 25,
+      "silhouette": "M0 0 L34 0 L34 22 L50 22 L65 28 L77 27 L90 23 L100 23 L100 100 L0 100 Z",
+      "cutout": "assets/a103-cutout.png"
+    },
+    "a105": {
+      "mode": "contour",
+      "label": "A mistake can become an inheritance",
+      "width": 190,
+      "paragraphs": 3,
+      "profile": "slender",
+      "bleed": 16,
+      "silhouette": "M27 0 L66 0 L66 8 L61 14 L68 20 L67 30 L62 36 L72 44 L69 56 L68 67 L75 79 L83 83 L93 90 L100 96 L100 100 L0 100 L1 92 L7 82 L9 73 L10 62 L13 49 L12 39 L17 28 L17 19 L24 11 Z"
+    },
+    "a107": {
+      "mode": "closing",
+      "label": "Who changes the arrangement?",
+      "width": 552,
+      "bleed": 0,
+      "silhouette": "M0 0 L24 0 L28 10 L34 12 L77 5 L90 6 L99 12 L100 95 L90 100 L49 100 L26 94 L0 79 Z",
+      "paragraphs": 4,
+      "artTop": 390,
+      "sceneHeight": 744,
+      "cutout": "assets/a107-cutout.png"
+    }
+  },
+  "profiles": {
+    "room": {
+      "right": [
+        [
+          15,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          20,
+          100
+        ],
+        [
+          0,
+          82
+        ],
+        [
+          0,
+          18
+        ]
+      ],
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          85,
+          0
+        ],
+        [
+          100,
+          18
+        ],
+        [
+          100,
+          82
+        ],
+        [
+          80,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "shoulder": {
+      "right": [
+        [
+          64,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          40,
+          100
+        ],
+        [
+          18,
+          85
+        ],
+        [
+          3,
+          62
+        ],
+        [
+          12,
+          38
+        ],
+        [
+          39,
+          17
+        ]
+      ],
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          39,
+          0
+        ],
+        [
+          65,
+          19
+        ],
+        [
+          88,
+          40
+        ],
+        [
+          98,
+          65
+        ],
+        [
+          79,
+          87
+        ],
+        [
+          58,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "portrait": {
+      "right": [
+        [
+          34,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          25,
+          100
+        ],
+        [
+          2,
+          84
+        ],
+        [
+          12,
+          61
+        ],
+        [
+          25,
+          39
+        ],
+        [
+          25,
+          20
+        ]
+      ],
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          65,
+          0
+        ],
+        [
+          74,
+          22
+        ],
+        [
+          73,
+          41
+        ],
+        [
+          90,
+          66
+        ],
+        [
+          96,
+          85
+        ],
+        [
+          71,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "world": {
+      "right": [
+        [
+          67,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          31,
+          100
+        ],
+        [
+          7,
+          78
+        ],
+        [
+          0,
+          48
+        ],
+        [
+          21,
+          20
+        ]
+      ],
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          80,
+          19
+        ],
+        [
+          99,
+          48
+        ],
+        [
+          95,
+          74
+        ],
+        [
+          74,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "slender": {
+      "right": [
+        [
+          53,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          24,
+          100
+        ],
+        [
+          6,
+          82
+        ],
+        [
+          23,
+          55
+        ],
+        [
+          17,
+          30
+        ]
+      ],
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          78,
+          25
+        ],
+        [
+          79,
+          55
+        ],
+        [
+          97,
+          82
+        ],
+        [
+          73,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "rising-world": {
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          34
+        ],
+        [
+          50,
+          38
+        ],
+        [
+          73,
+          45
+        ],
+        [
+          94,
+          55
+        ],
+        [
+          100,
+          65
+        ],
+        [
+          97,
+          75
+        ],
+        [
+          85,
+          86
+        ],
+        [
+          60,
+          99
+        ],
+        [
+          0,
+          100
+        ]
+      ],
+      "right": [
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          34
+        ],
+        [
+          48,
+          38
+        ],
+        [
+          25,
+          45
+        ],
+        [
+          6,
+          55
+        ],
+        [
+          0,
+          65
+        ],
+        [
+          3,
+          75
+        ],
+        [
+          15,
+          86
+        ],
+        [
+          40,
+          99
+        ],
+        [
+          100,
+          100
+        ]
+      ]
+    },
+    "hospital": {
+      "right": [
+        [
+          55,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          32
+        ],
+        [
+          15,
+          14
+        ]
+      ],
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          65,
+          0
+        ],
+        [
+          87,
+          14
+        ],
+        [
+          100,
+          32
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    }
+  }
+}

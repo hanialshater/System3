@@ -1,0 +1,32 @@
+[
+  {
+    "file": "NimbusRoman-Regular.otf",
+    "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/master/fonts/NimbusRoman-Regular.otf",
+    "sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8"
+  },
+  {
+    "file": "NimbusRoman-Bold.otf",
+    "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/master/fonts/NimbusRoman-Bold.otf",
+    "sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e"
+  },
+  {
+    "file": "NimbusRoman-Italic.otf",
+    "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/master/fonts/NimbusRoman-Italic.otf",
+    "sha256": "b7c424e6cb79baddfcdcd9a9d87f9fc4fdd06f0e5160066e2b2e47bcd647c7b9"
+  },
+  {
+    "file": "NimbusRoman-BoldItalic.otf",
+    "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/master/fonts/NimbusRoman-BoldItalic.otf",
+    "sha256": "c84bcb17ab4ee54f16dadad6a3b0b2df37a24f9fc812897c4a59eeca785a5dec"
+  },
+  {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/master/fonts/LICENSE",
+    "sha256": "772b1b47eead8722156abaed483154e1dd1137e7035290550cea6444192a2e3f"
+  },
+  {
+    "file": "COPYING",
+    "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/master/fonts/COPYING",
+    "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+  }
+]

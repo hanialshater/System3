@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "purpose": "Reviewed print-resolution derivatives; originals preserved",
+  "method": "2x Real-ESRGAN CPU restoration blended 40% with 60% original Lanczos interpolation",
+  "printer": null,
+  "covers": {
+    "cover-001.png": {
+      "file": "assets/print/cover-001.png",
+      "source": "assets/art/cover-001.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "b2b7d00f4ebdf49ed3187dcdd2dae7ab0999d0854a97a6142e67e96e3f69a0aa",
+      "sha256": "1b4cf41424e9e2d1c6523440a0e0e88d7927e06685e2b0441b3600c59cfc3b88",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-004.png": {
+      "file": "assets/print/cover-004.png",
+      "source": "assets/art/cover-004.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "1bb5e2213e45bdaaf2411056b6cfe03da0448103f5b01f4b75c749e2e4b6056e",
+      "sha256": "43b5c548e09088bc9df619417a7020b20e2fbcf298ebe1f51ac4012ec399d064",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-016.png": {
+      "file": "assets/print/cover-016.png",
+      "source": "assets/art/cover-016.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "2973933fbe5f441c7c2fa8ea2825261f28831d127c6e7845043c226ea10f1350",
+      "sha256": "80751c581b588a284e362164dab1a5540485912950125a120790411bfb1837a0",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-033.png": {
+      "file": "assets/print/cover-033.png",
+      "source": "assets/art/cover-033.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "16d3a4b9621fbf473a26c3541b8bb8062be85e58e6d1a560c70b7dcd8b79b5bc",
+      "sha256": "49dd1bfa84e5cf2855399b1bbb01424561f249f48f69bdd92183cf2c68bf44f0",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-078.png": {
+      "file": "assets/print/cover-078.png",
+      "source": "assets/art/cover-078.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "d9974be96be8d061778dbea912f5a2ea4f7f184dacb3730be41fa65a8bfca135",
+      "sha256": "6ae28f065213afd3cf15e49f96e7c88de69cdfe0a0e838f867d13ca2f042830f",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-108.png": {
+      "file": "assets/print/cover-108.png",
+      "source": "assets/art/cover-108.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "fe9a3b0c66cb44458855b9a9e4a6c0983063e17a1f707c0b572ea283570fed28",
+      "sha256": "8c979a42692f82dd2f1078a1e934957a60c4b5fc8b4a5ccc7a0dddadaf0e643f",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-134.png": {
+      "file": "assets/print/cover-134.png",
+      "source": "assets/art/cover-134.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "b9a143430e1e3a2c4399e782fc55f2d9b34cfe33c4d82257a4b67a153a7d0e90",
+      "sha256": "e1f5a81c29ff18641477428ddb727ae38ba814b82b4ca41d6f57b10b0aa57cd9",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-154.png": {
+      "file": "assets/print/cover-154.png",
+      "source": "assets/art/cover-154.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "9060f8a8907ae1c97433562d8a23c8b2d2c8717e292a6beb4358b9ce6b97a4b5",
+      "sha256": "38217a844d4bb8574672eb8ffa1417db8eeeb746a7717630adadcd3aafa9ac06",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-169.png": {
+      "file": "assets/print/cover-169.png",
+      "source": "assets/art/cover-169.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "4decb92e05b8a4da00cb57f07cb38eae96a6ae7859f22258fe05d8f5d3af47d5",
+      "sha256": "465fb7aef6280c589a262fdabceecc4b0f636fec521920321a027ddddde161b0",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-182.png": {
+      "file": "assets/print/cover-182.png",
+      "source": "assets/art/cover-182.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "594a232f277d3dd2037bdd06bbafecbcdc24e162d74766e09e9d54dd057a794c",
+      "sha256": "1e026d315d38b5194dad8c0640d8e9cdee233bb9a680011fcae665044a7b93b3",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-189.png": {
+      "file": "assets/print/cover-189.png",
+      "source": "assets/art/cover-189.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "f8ae69a193d350c56ee1420647ebccf855f20a824bc86ba85e90a1eadcae864d",
+      "sha256": "0157850deda00ab15ff299a63b4f046732023f1adef85c7110c7c3bd9d06203c",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-206.png": {
+      "file": "assets/print/cover-206.png",
+      "source": "assets/art/cover-206.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "da7eac125b6726c9f34b0392e4cfcfc3b04ad75584b929e061bc972e58846f1d",
+      "sha256": "c0136fd9553ebf511af7f9b8604a44a85e606e0435b080990e83676b8af28cbd",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    },
+    "cover-228.png": {
+      "file": "assets/print/cover-228.png",
+      "source": "assets/art/cover-228.png",
+      "source_pixels": [
+        1024,
+        1536
+      ],
+      "pixels": [
+        2048,
+        3072
+      ],
+      "source_sha256": "7c453f5a3d7404c2e653c412ea069ae893baad717ff4936b56281eb9364e2395",
+      "sha256": "0089e611b95165b8381d7afe1cbd166e4c79496bec52582d4213656dc6b8f93d",
+      "upscaled": true,
+      "visual_review": "Accepted after visual inspection; original lettering, composition and framing preserved."
+    }
+  }
+}

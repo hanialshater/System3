@@ -1,0 +1,4 @@
+# Optional offline enhancement environment; ordinary PDF builds do not need it.
+ncnn==1.0.20260526
+numpy==2.5.3
+Pillow==12.3.0
