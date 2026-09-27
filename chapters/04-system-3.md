@@ -6,7 +6,7 @@ Before we design another architecture, consider a camel.
 
 Seven claims about this image. Some are true. Some are false. You can't verify most of them without trusting me:
 
-![The author at Krka National Park](../resources/image0133.png)
+![The author at Krka National Park](../book-design/curated/assets/art/photo58.jpg)
 
 *The author at Krka National Park*
 

@@ -1,0 +1,281 @@
+{
+  "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
+  "sources": [
+    {
+      "source": "chapters/00-preface.md",
+      "source_sha256": "f68f7029e12d3796c6d00e2f92bed50b8ed9b8cc49d4430fe5ee6889f088e03b",
+      "brief": "prompts/notebooklm/preface.md",
+      "brief_sha256": "d77904c5ea255aa9a65ff2e7293f15009aae55e5d2c3c15aa2b14d4e77bbbbd5",
+      "sections": [
+        "Opening passage"
+      ]
+    },
+    {
+      "source": "chapters/01-why-im-betting-on-ai-agents.md",
+      "source_sha256": "35791fe29b0bad04a35f6fc1ac09b6c565220465b50be9982301471b9ac46a92",
+      "brief": "prompts/notebooklm/chapter-01.md",
+      "brief_sha256": "cc232925e25aea7d0a750129266b383d8459195d2da478aad75034581e6a7ec1",
+      "sections": [
+        "Opening passage",
+        "The Rule-Based Exoskeleton",
+        "When Search Moved Up a Level",
+        "Chaos With an API Key",
+        "Confident Wrong Solutions",
+        "Pulling Harder on the Stem",
+        "A Bounded Problem"
+      ]
+    },
+    {
+      "source": "chapters/02-the-algorithm-vortex.md",
+      "source_sha256": "9ce632d511a6880306f4b3e9a1cc38d6e7335c56cfd04ab667bb6066ad95305e",
+      "brief": "prompts/notebooklm/chapter-02.md",
+      "brief_sha256": "ae546bb9d689fc7e49602f95c2f2d2931638985cacd309b855c7a29df465d6e2",
+      "sections": [
+        "Opening passage",
+        "Twenty-Six Circles",
+        "Hill Climbing",
+        "Evolutionary Algorithms",
+        "MAP-Elites: Don't Kill Weird Ideas Too Early",
+        "The Invention Problem",
+        "Let the Model Write the Solver",
+        "AlphaEvolve",
+        "So, Naturally, I Built All of It",
+        "The Coffee Test",
+        "Diagonal Layering",
+        "The Algorithmic Vortex",
+        "The Contract",
+        "Keep the Harness Immutable",
+        "Never Write Solution Code Yourself",
+        "Cross-Pollinate Without Collapsing Diversity",
+        "Prune Ruthlessly, But Not Stupidly",
+        "Separate Discovery From Polish",
+        "Zero Framework, With an Asterisk",
+        "The Easy Version of Autonomy"
+      ]
+    },
+    {
+      "source": "chapters/03-deep-mode.md",
+      "source_sha256": "ddc208424d237847cb048876ddc5c87964f9c3fcd81ee271c5dc69cc19b90365",
+      "brief": "prompts/notebooklm/chapter-03.md",
+      "brief_sha256": "3b35c472c460df76d8410c507806efe79205d674d0d49c53029c29d03004a0bb",
+      "sections": [
+        "Opening passage",
+        "Stubbornly Human",
+        "The Five Layers of AI Coding",
+        "What I Was Still Doing",
+        "Keeping More Than One Idea Alive",
+        "Draw It Before You Build It",
+        "Optimizing Something You Cannot Score",
+        "Borrow a Mind",
+        "Independent Evaluators",
+        "Deep Mode",
+        "Bars Moved Around",
+        "A Cathedral on a Shopping Cart"
+      ]
+    },
+    {
+      "source": "chapters/04-system-3.md",
+      "source_sha256": "969577a19642dfe1a2e528cedbd33834bdb4ef9371955c9dd00271971fff2b27",
+      "brief": "prompts/notebooklm/chapter-04.md",
+      "brief_sha256": "c335671bb546bd55b693b81ce7e0739241171df122cecc3373f8283716019993",
+      "sections": [
+        "Opening passage",
+        "The Shortest Trust Chain",
+        "Saussure's Specification",
+        "Call Alberto",
+        "It Starts With a Face",
+        "System 3",
+        "Code Can Touch Back",
+        "A Hallucination With Better Retention",
+        "The Epistemic Agent",
+        "The 13579 Failure",
+        "Creative Distrust",
+        "Back to the Camel"
+      ]
+    },
+    {
+      "source": "chapters/05-the-society-of-agents.md",
+      "source_sha256": "cf20dd44bb5b1cb8f4532dbabf3aa7290c4ce7b44fd8f9d00b9d56ba9fe6c915",
+      "brief": "prompts/notebooklm/chapter-05.md",
+      "brief_sha256": "355c6e35b9535882241bdda25e3e5feb27f52f94e2ccf7b64f05f7b16e52cd69",
+      "sections": [
+        "Opening passage",
+        "Civilization Had No Senku",
+        "Strangers Need Standards",
+        "The Society Gets Smarter by Making People Narrower",
+        "A Swarm Should Not Automatically Become a Meeting",
+        "A Man in a Dark Room",
+        "When Curiosity Became Procedure",
+        "The Org Chart Becomes Part of the Experiment",
+        "Science Gets Bigger Than the Scientist",
+        "Sixteen Claudes, Again"
+      ]
+    },
+    {
+      "source": "chapters/06-pattern-language.md",
+      "source_sha256": "4b48ed337ff0304fb144a74e37873acd0a711ca0b350fbb7d4bcc6b720b83081",
+      "brief": "prompts/notebooklm/chapter-06.md",
+      "brief_sha256": "7f0d52b633b31d901351e34f4e950ff32100d6b3b4de79015019a20479fb6a5d",
+      "sections": [
+        "Opening passage",
+        "The Pattern Goes to Work",
+        "Ask Sam",
+        "A Reader That Can Act",
+        "Give the Claim an Address",
+        "Commit the Test Before the Result",
+        "Locate the Failure",
+        "Ask What the Number Means",
+        "Write the Lesson Down",
+        "Change the Representation",
+        "Separate Use from Investigation",
+        "Keep the Funding Decision Visible",
+        "Give the Objection a Consequence",
+        "Test What the Next Agent Inherits",
+        "Find Where the Result Lives",
+        "Put the Library to Work",
+        "Put the Procedure Under Test",
+        "What the File Says Now"
+      ]
+    },
+    {
+      "source": "chapters/07-recursive-self-improvement.md",
+      "source_sha256": "760639e16da60612c2be2673ee071eba059053c278cc3bc920d379768c25b4de",
+      "brief": "prompts/notebooklm/chapter-07.md",
+      "brief_sha256": "7422f3a551550a9c252c5692ce867dc54584f670763ab56eb4f6fc11383f558e",
+      "sections": [
+        "Opening passage",
+        "The Teacher Moves Into the Walls",
+        "Learning to Learn",
+        "The Learner Chooses What to Learn",
+        "Maybe the Reward Was the Problem",
+        "The Learner Dreams, and the Dream Can Be Wrong",
+        "The Losers Stay Enrolled",
+        "The Learner Edits the School",
+        "Experiments on the Laboratory",
+        "Before the Returns Arrive",
+        "The Student Finds the Gradebook",
+        "A Constitution for Improvement",
+        "The Teacher's Last Job"
+      ]
+    },
+    {
+      "source": "chapters/08-automatic-alignment-research.md",
+      "source_sha256": "4f115c6963b3cc2a6f94950f8be555638a1ab6042b61f0116491435c9d14b5a0",
+      "brief": "prompts/notebooklm/chapter-08.md",
+      "brief_sha256": "938b923849dce5dade760e10de3bb1938d0fe843322a9c7e5dce3f646ee93d22",
+      "sections": [
+        "Opening passage",
+        "The Judge Falls Behind",
+        "Stay Uncertain Enough to Listen",
+        "An Excellent Education in the Same Mistake",
+        "Performance Gap Recovered",
+        "The Judge Can Be Fooled",
+        "We Started Instrumenting the Student",
+        "Reading the Model From the Inside",
+        "Then We Touched the Machinery",
+        "The Nastier Version",
+        "The Evaluator Becomes the Product",
+        "The Human Cannot Stay in Every Loop",
+        "The Overseer Is Not Ground Truth"
+      ]
+    },
+    {
+      "source": "chapters/09-layer-4-desire.md",
+      "source_sha256": "1516bf0f2d9cc5633081ad4bcf76ca51a5a960a210e208a2e59939ee31f97fcd",
+      "brief": "prompts/notebooklm/chapter-09.md",
+      "brief_sha256": "745bc6bce1be0ed3c214228724196ed77bcb2c0ae624322e3c65c3106dcf3d23",
+      "sections": [
+        "Opening passage",
+        "A Prompt Is Evidence, Not the Objective",
+        "Performance Is Not Learning",
+        "Giving the Work Back",
+        "The Map Gets Cheaper",
+        "The Imaginary Human in Economics",
+        "Some Choices Change the Person Choosing",
+        "Opinions About Semicolons",
+        "Declaring Synergy",
+        "Capabilities",
+        "More Than One Principal",
+        "The Objective Layer"
+      ]
+    },
+    {
+      "source": "chapters/10-fluent-autonomy.md",
+      "source_sha256": "808a1d6e966a680e712e119b3c0580a6554c893f555e6a39ad46d02f27335471",
+      "brief": "prompts/notebooklm/chapter-10.md",
+      "brief_sha256": "b259fec94f2a090362c84ddf39e67462ec8e4caa6783ebcdf8cd4e3489601a26",
+      "sections": [
+        "Opening passage",
+        "What the Corrections Had to Teach",
+        "The Interface Moves Up",
+        "Bureaucracy on the Fly",
+        "Selective Friction",
+        "Invisible by Default, Legible on Demand",
+        "The Second Coffee Test",
+        "Five Ways This Could Be Wrong",
+        "Monday Morning"
+      ]
+    },
+    {
+      "source": "chapters/11-the-store-that-builds-itself.md",
+      "source_sha256": "45beae267128210396ecc60db69d3c00c8dadc4452e342b331ba8ff4e8e37386",
+      "brief": "prompts/notebooklm/chapter-11.md",
+      "brief_sha256": "135d8f8163a8f2de7e9bcc33101aa2fd37a5b377b543888d5d3660a0140f949d",
+      "sections": [
+        "Opening passage",
+        "Stop Recommending for a Moment",
+        "People Refuse to Stay in the Funnel",
+        "A Library of Ways to Help",
+        "Composition Is Not Ranking With a New Hat",
+        "Mei Does Not Need More Shoes",
+        "Sami Does Not Need a Click",
+        "The Honest Cold Start",
+        "Replayable",
+        "A Theory Losing Contact With Reality",
+        "Let the LLM Narrate. Do Not Let It Declare Reality.",
+        "The Objective Fights Back",
+        "Deliberately Boring",
+        "When the Page Stops Being the Product",
+        "The Book Comes Back to Bite Me"
+      ]
+    },
+    {
+      "source": "chapters/12-after-capacity.md",
+      "source_sha256": "a59b894f095946f920f802493b31bab139aa8b69b7f82db40ff0b08c5ad126a2",
+      "brief": "prompts/notebooklm/chapter-12.md",
+      "brief_sha256": "467cb72916132774e40568c52116ac873a866b56688241d9f59e0208ac89be2b",
+      "sections": [
+        "Opening passage",
+        "The Curve",
+        "Owning the Frontier",
+        "Bespoke Comes Back",
+        "Anyone Could Do That",
+        "The Ideology Vortex",
+        "Capacity Over Power",
+        "Who Owns the Laboratory",
+        "The Second Descent",
+        "What Are Humans For?",
+        "The Human Is Not the Reward Function",
+        "The Door After System 3"
+      ]
+    },
+    {
+      "source": "chapters/13-the-prophecy.md",
+      "source_sha256": "454a998eea45c7ec7e82629af4c776ed1572ded8328454b5d682714fc3d18d9f",
+      "brief": "prompts/notebooklm/chapter-13.md",
+      "brief_sha256": "f2099cc6928b9333d07e59b7db6d035de5b2fad837f6c3edf08c6f9b07bf6e8f",
+      "sections": [
+        "Opening passage"
+      ]
+    },
+    {
+      "source": "chapters/14-scaffolds.md",
+      "source_sha256": "f222f3431fef44d840ea08bc9123e44ab4cf8c014d04ec3890fcda6b7b6f8cc4",
+      "brief": "prompts/notebooklm/scaffolds.md",
+      "brief_sha256": "df100d409e1881f4f4bbbae2084f485709da2a98a621f4f5725aeb90c47cfc85",
+      "sections": [
+        "The complete two-sentence coda"
+      ]
+    }
+  ]
+}

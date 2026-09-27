@@ -2,7 +2,7 @@
 
 *Or: How I Learned to Stop Micromanaging and Love Emergence*
 
-![Simple building blocks, complex emergence](../resources/image0132.png)
+![Simple building blocks, complex emergence](../book-design/curated/assets/art/a005.jpg)
 
 *Simple building blocks, complex emergence*
 

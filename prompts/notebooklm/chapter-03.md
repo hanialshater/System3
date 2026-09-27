@@ -1,0 +1,30 @@
+# Chapter 3: The Vibe Coder's Seat: video brief
+
+Source: [03-deep-mode.md](../../chapters/03-deep-mode.md), including its notes.
+
+This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
+
+## Video prompt
+
+```text
+Adapt Hani M.M. Al-Shater's "Chapter 3: The Vibe Coder's Seat" into an English video. Select the linked manuscript with all its notes as the factual source and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Preserve the early computing history and the five layers. The teaching demos were judged by simulated learners; do not imply a real student trial.
+```
+
+## Source order
+
+1. Opening passage
+2. Stubbornly Human
+3. The Five Layers of AI Coding
+4. What I Was Still Doing
+5. Keeping More Than One Idea Alive
+6. Draw It Before You Build It
+7. Optimizing Something You Cannot Score
+8. Borrow a Mind
+9. Independent Evaluators
+10. Deep Mode
+11. Bars Moved Around
+12. A Cathedral on a Shopping Cart
+
+## Review
+
+Check every numerical claim against the source, preserve the ending and reveal timing, and inspect diagram validity. Do not select retired prompt packs from Git history together with this brief.

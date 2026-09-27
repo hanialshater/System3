@@ -90,7 +90,8 @@ def prepare(raw):
         image = re.match(r'^!\[(.*?)\]\((.*?)\)', lines[i])
         if image:
             images.append(dict(alt=image[1], path=image[2]))
-            body.append('PHOTO_PLACEHOLDER' if 'image0133.png' in image[2] else '')
+            is_author_photo = image[2].endswith(('/image0133.png', '/photo58.jpg'))
+            body.append('PHOTO_PLACEHOLDER' if is_author_photo else '')
             i += 1
             while i < len(lines) and not lines[i].strip():
                 i += 1

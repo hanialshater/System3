@@ -1,0 +1,19 @@
+# Preface: video brief
+
+Source: [00-preface.md](../../chapters/00-preface.md), including its notes.
+
+This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
+
+## Video prompt
+
+```text
+Adapt Hani M.M. Al-Shater's "Preface" into an English video. Select the linked manuscript with all its notes as the factual source and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Keep the coffee test and rediscovery riddle. Do not restore the removed claim of a verified Navier-Stokes solution; use the current qualified report and notes.
+```
+
+## Source order
+
+1. Opening passage
+
+## Review
+
+Check every numerical claim against the source, preserve the ending and reveal timing, and inspect diagram validity. Do not select retired prompt packs from Git history together with this brief.

@@ -2,9 +2,11 @@
 
 *From Classic Algorithms to Autonomous Discovery*
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![The algorithmic vortex](../resources/image0135.png)
 
 *The algorithmic vortex*
+-->
 
 Once you discover AI coding, there's no going back.
 
@@ -30,8 +32,9 @@ And that is how I ended up spending an unreasonable amount of time packing circl
 
 ## Twenty-Six Circles
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![Citrus packing - a real-world example](../resources/image0138.png)
-
+-->
 *Citrus packing—a real-world example*
 
 The problem is simple enough to explain to a child. Take 26 circles and put them inside a square. None may overlap, none may cross the boundary and the circles do not have to be the same size. We want to maximize the sum of their radii.
@@ -44,9 +47,11 @@ Unfortunately, the solution space is nasty. Every circle has a position and a ra
 
 For the experiments in this chapter, we had a strong reference score around **2.635** under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![Circle packing solution n=26](../resources/image0139.png)
 
 *Circle packing solution n=26*
+-->
 
 *Figure: A strong reference packing for the 26-circle objective, scoring approximately **2.635** under our evaluator.*
 
@@ -60,9 +65,11 @@ The experiment becomes interesting once we ask a second question:
 
 For most of the history of algorithm design, the answer was us.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![History of algorithm design](../resources/image0136.png)
 
 *History of algorithm design*
+-->
 
 Humans invented explicit algorithms. When direct algorithms were not enough, we invented optimization procedures that searched over candidate solutions. Then we invented meta-heuristics that searched more broadly. Machine learning let systems learn useful structure from data. Now language models can write and modify the search procedure itself.
 
@@ -84,9 +91,11 @@ That is hill climbing:
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![Hill climbing progression](../resources/image0140.png)
 
 *Hill climbing progression*
+-->
 
 *Figure: Early mutations are often accepted, but as the packing tightens, valid improvements become increasingly rare and the search stalls.*
 
@@ -122,17 +131,21 @@ That is usually nonsense because circle numbering is arbitrary. Two nearly ident
 
 So we used **bipartite matching crossover**. Rather than pair circles by position in an array, pair them according to their geometric role in the packing. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![Naive vs Geometric Crossover](../resources/image0141.png)
 
 *Naive vs Geometric Crossover*
+-->
 
 *Figure: Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents.*
 
 Now we can evolve a population: mutate, repair, cross, select and repeat.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![Evolutionary strategies with Bipartite Matching crossover](../resources/image0122.png)
 
 *Evolutionary strategies with Bipartite Matching crossover*
+-->
 
 *Figure: Starting around 2.08, the evolutionary search reaches roughly 2.45 in this experiment—much better than the simple hill climber, but still below our reference.*
 
@@ -148,9 +161,11 @@ MAP-Elites takes a different approach. Instead of ranking every candidate on one
 
 For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![MAP-Elites archive visualization](../resources/image0123.png)
 
 *MAP-Elites archive visualization*
+-->
 
 This is **quality-diversity search**. The point is not merely to preserve the current winner, but to keep qualitatively different directions alive long enough to discover whether any of them become interesting.
 
@@ -228,9 +243,11 @@ AlphaEvolve turns that basic idea into a much larger search process.
 
 Imagine one generation. The system selects a promising program from its archive, perhaps along with other successful but different programs that contain useful ideas. The model sees the code, information about previous attempts and the scores they produced, then proposes a patch. The patch is applied, the program runs and the evaluator scores what happened. The new program and its result go back into the archive. Then the process repeats.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![AlphaEvolve architecture](../resources/image0124.png)
 
 *AlphaEvolve architecture*
+-->
 
 Diff-based mutation matters because real programs contain structure worth preserving. If every generation rewrites everything, useful ideas disappear as easily as bad ones. Small patches let the search alter the part it thinks matters while leaving the rest intact.
 
@@ -302,8 +319,9 @@ I want to be careful with the word *discovered*. I had not seen that particular 
 
 Once that structural idea became strong enough, the nature of the work changed. The agent spent less time inventing new geometries and more time adjusting solver settings, tolerances, initialization details and all the boring machinery that suddenly matters when the last fraction of a percent becomes expensive.
 
+<!-- MISSING FIGURE: source not recovered; see resources/art-direction/missing-figures.md.
 ![Code evolution result](../resources/image0125.png)
-
+-->
 *Code evolution result: iterative optimization*
 
 In our best run, the evaluator returned roughly **2.636**, slightly above the **2.635** reference we had been using.

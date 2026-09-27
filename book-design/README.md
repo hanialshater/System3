@@ -7,7 +7,7 @@ The manuscript lives in `../chapters/`; `curated/book-order.json` sets its order
 | --- | --- | --- |
 | `curated/` | Full-book renderer, layout, assets and checks | Current |
 | `paged/` | Chapter 5 text-flow and cutout proof | Experiment; not integrated |
-| `render_back_cover.py` | Standalone back-panel text proof | Requires Linux DejaVu fonts; portability pending |
+| `render_back_cover.py` | Standalone back-panel text proof | Uses bundled Nimbus Roman fonts |
 | `requirements-pdf.txt` | Normal build dependencies | Current |
 | `requirements-upscale.txt` | Cover enhancement dependencies | Reproduction only |
 | `paged/DESIGN.md` | Text-flow rationale | Chapter 5 experiment |
@@ -34,5 +34,5 @@ in `curated/assets/art/`; `curated/print-assets.json` selects enhanced covers
 from `curated/assets/print/`. Fonts and licenses live in `curated/assets/fonts/`.
 
 Outstanding work: seven Chapter 5 visual directions, the decision on full-book
-text-flow composition, back-cover utility portability, and printer-specific
+text-flow composition, missing technical figures, and printer-specific
 bleed, spine and color preparation. See [the review queue](../resources/REVISIT.md).

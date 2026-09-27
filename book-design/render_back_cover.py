@@ -8,14 +8,21 @@ from xml.sax.saxutils import escape
 from reportlab.lib.colors import HexColor
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 
 
 def render(source: Path, output: Path) -> None:
-    pdfmetrics.registerFont(TTFont("CoverSerif", "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"))
-    pdfmetrics.registerFont(TTFont("CoverSerifBold", "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"))
+    fonts = Path(__file__).resolve().parent / "curated/assets/fonts"
+    for suffix, name in (("Regular", "CoverSerif"), ("Bold", "CoverSerifBold")):
+        face = pdfmetrics.EmbeddedType1Face(
+            str(fonts / f"NimbusRoman-{suffix}.afm"),
+            str(fonts / f"NimbusRoman-{suffix}.pfb"),
+        )
+        pdfmetrics.registerTypeFace(face)
+        pdfmetrics.registerFont(pdfmetrics.Font(name, face.name, "WinAnsiEncoding"))
+    pdfmetrics.registerFontFamily("CoverSerif", normal="CoverSerif", bold="CoverSerifBold",
+                                  italic="CoverSerif", boldItalic="CoverSerifBold")
     blocks = source.read_text().strip().split("\n\n")
     title = blocks.pop(0).removeprefix("# ")
     width, height = 432, 648

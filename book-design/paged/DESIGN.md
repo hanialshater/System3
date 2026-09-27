@@ -28,13 +28,13 @@ The initial design identified historical source-page parity as a problem. The Pa
 
 Use quiet reading pages, images entering from an outer edge, lower-corner scenes and occasional larger scenes extending to page edges. Reserve the most immersive compositions for narrative moments that earn the space. Review facing-page spreads as well as individual pages. Preserve the manuscript, its narrative order and Chapter 5's reveal break.
 
-## Proposed implementation
+## Implemented proof and remaining evaluation
 
-Paged.js would handle pagination and facing-page templates. Store the artwork crop, text-permitted contour, blend mask and preferred page treatment beside the existing semantic text anchor. A preview overlay should distinguish allowed text, protected artwork, transition area and gutter clearance; remove this overlay in the reading PDF.
+Paged.js handles pagination and facing-page templates in the Chapter 5 proof. `chapter-05.json` stores the artwork treatment and contour overrides beside references to the curated anchors. The preview exposes text masks and facing pages; those controls do not print. See the README for the implemented contour and cutout behavior.
 
 CSS `shape-outside` can wrap text around nonrectangular floated exclusion regions. Translate the permitted region into suitable exclusions where possible. An arbitrary SVG mask alone does not create text flow, and arbitrary internal holes require more layout work. Prove the chosen contour behavior across page breaks in the actual Paged.js/Chromium export before adopting it for the book.
 
-Start with a Chapter 5 proof containing both page sides, a portrait, a broad scene and the reveal. Check font fidelity, reading order, text preservation, notes, links, mask alignment, line lengths, cutout edges and the exported SVG silhouettes. Compare it with the current reading proof before switching the full-book renderer.
+The Chapter 5 proof is the existing test case. Before adopting it across the book, recheck it against the current manuscript: font fidelity, reading order, text preservation, notes, links, mask alignment, line lengths, cutout edges and silhouettes. Compare it with the current full-book proof. The separate science reveal now follows Chapter 5 in the full-book reading order; do not silently append it to a chapter-only export.
 
 ## Build behavior
 

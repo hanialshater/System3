@@ -1,7 +1,0 @@
-Create a quiet closing coda from 14-scaffolds.md, using chapter-14-notebooklm-storyboard.md for visual direction. Ignore the LaTeX. The source has only two lines; do not expand it into a chapter explainer.
-
-Show a scaffold supporting AI. Narrate exactly: “We built scaffolds for AI because they couldn’t do it alone.”
-
-Widen the image to reveal support around the people building it too. Narrate exactly: “We built scaffolds for ourselves for the same reason.”
-
-Warm paper, restrained illustration, one shared composition. Hold the second line, then fade. Speak only the two source sentences. No recap, moral or call to action. If a longer overview is mandatory, use this as a closing segment rather than inventing material to fill it.

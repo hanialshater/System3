@@ -1,12 +1,9 @@
 # Editorial and video prompts
 
-- [Chapter evaluation](chapter-version-evaluation.md): compare revisions.
-- [Main NotebookLM pack](notebooklm.md): Chapters 1-13, with storyboards in
-  `notebooklm/`, checked against the revision recorded in that pack.
-- [September 20 local pack](notebooklm-local/README.md): a separate adaptation
-  with short prompts, detailed storyboards, a preface and the Scaffolds coda.
+- [Chapter evaluation](chapter-version-evaluation.md): compare revisions while protecting voice and evidence.
+- [NotebookLM video briefs](notebooklm/README.md): one current brief for each numbered chapter, the preface and the Scaffolds coda.
 
-The two video packs differ in content; they are not interchangeable duplicates.
-Both predate the latest manuscript edits. Review against the current chapter
-before generating a video. The local pack's source manifest preserves its
-original hashes so stale material remains detectable.
+The former main and local storyboard packs were retired because they competed
+and reflected older manuscripts. Their detailed wording remains in Git history
+at commit `13d415c`. Current briefs use exact section order from the manuscript,
+with chapter-specific constraints and a source hash, rather than stale factual summaries.

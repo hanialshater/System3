@@ -16,6 +16,12 @@ spec.loader.exec_module(build)
 
 
 class ManuscriptTests(unittest.TestCase):
+    def test_author_photo_survives_repaired_markdown_path(self):
+        legacy = prepare('![Author](../resources/image0133.png)\n\n*Author*\n\nProse.')
+        repaired = prepare('![Author](../book-design/curated/assets/art/photo58.jpg)\n\n*Author*\n\nProse.')
+        self.assertEqual(legacy[:3], repaired[:3])
+        self.assertEqual(repaired[0].count('PHOTO_PLACEHOLDER'), 1)
+
     def test_hidden_editorial_notes_and_visual_briefs(self):
         text,notes,directions,images=prepare('Before.\n<!-- DRAFT: never print me. -->\n<!-- [VISUAL: a new image] -->\n<!-- DIAGRAM — another brief -->\nAfter.')
         self.assertNotIn('DRAFT',text)

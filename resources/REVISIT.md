@@ -1,35 +1,28 @@
-# Repository review queue
+# Remaining editorial and production decisions
 
-Reviewed 27 September 2026. This is a production and editorial inventory, not
-authorization to rewrite manuscript prose or replace selected illustrations.
+Repository housekeeping was applied on 27 September 2026. The current
+[file inventory](FILE-INVENTORY.md) records what remains and the disposition of
+retired files.
 
-| Material | What needs review |
+| Item | Remaining work |
 | --- | --- |
-| `prompts/notebooklm.md` and `prompts/notebooklm-local/` | Choose or reconcile the two adaptations against current chapters. The local pack records source hashes; neither pack should be assumed current. Its Chapter 14 label refers to the Scaffolds coda, not another numbered chapter. |
-| `book-design/paged/` | Evaluate the Chapter 5 composition proof before adopting any of it in the full book. Its design rationale is in `paged/DESIGN.md`. |
-| `drafts/reader-map.md` | Compare this proposed reader map with the current evidence appendix; its draft claims may predate manuscript revisions. |
-| `drafts/objections-draft.md` | Unaccepted editorial prose; decide whether to incorporate, revise or retire it. |
-| `resources/chapter-openers/` | Small legacy opener files with older chapter numbering. Check references before renaming; curated masters are stored separately. |
-| Chapter inline image references | Some legacy figure targets are absent. The curated PDF uses explicit artwork mappings, but GitHub Markdown may still show broken images. Review mappings visually before replacing references. |
-| Chapter 5 visual directions | Seven outstanding illustration briefs were reported in the latest print pass. Existing artwork coverage does not complete these new briefs. |
-| `book-design/render_back_cover.py` | Replace hard-coded Linux font paths before using this standalone utility on macOS. |
-| `resources/evaluations/` | Dated historical assessments. Older locked labels, word targets and automatic-build instructions do not override the current manuscript and manual PDF workflow. |
-| Print production | Printer selection, bleed, spine, output profile and physical proof remain outstanding. |
+| Chapter 2 technical figures | Recover original figures/data or commission reviewed replacements. Ten absent references are retained as production comments; see [missing figures](art-direction/missing-figures.md). |
+| Chapter 5 visual directions | Seven briefs remain, including an opener request that conflicts with the selected opener and a glass-box concept already represented by a107. Reconcile before producing new art; see [backlog](art-direction/chapter-05-society-of-agents.md). |
+| Chapter 5 Paged.js proof | Evaluate against the current chapter before adopting its composition across the book. |
+| Author-review markers | The interlude, science reveal and evidence appendix retain drafting comments. Cleanup does not record author acceptance or rewrite their prose. |
+| Print production | Choose a printer; then set bleed, cover/spine geometry and output profile and obtain a physical proof. |
+| Video production | The current 15 briefs have checked source hashes and section order. Bespoke shot choices and generated videos still need editorial review. |
 
-## Cleanup performed
+## Completed
 
-- Removed the obsolete draft renderer, manifest-based art pipeline, generated
-  prompts, candidate images and superseded design contracts from `book-design/`.
-  Git history retains them. The current renderer does not depend on them.
-- Moved the text-flow design rationale into `book-design/paged/DESIGN.md`.
-- Grouped the September 20 local NotebookLM pack under `prompts/notebooklm-local/`;
-  updated its links and manifest paths while retaining recorded content hashes.
-- Moved 14 old draft PDFs and three `dist/` exports into the ignored local
-  `output/archive/2026-09-27/` directory. They remain recoverable from Git history
-  after the cleanup is committed. This does not shrink existing Git history.
-- Ignored future legacy build outputs and macOS metadata.
-- Kept the current manuscript, current PDF, original and enhanced artwork,
-  research, draft prose and historical evaluations intact.
+- Removed obsolete upload workflows and the retired TeX helper.
+- Made the back-cover utility use bundled fonts and visually checked its one-page output.
+- Archived legacy opener references and old art directions; published a current asset register.
+- Retired two competing video packs and generated one source-anchored pack with a freshness check.
+- Repaired the Chapter 1 image and Chapter 4 photo links; recorded unrecovered Chapter 2 figures without fabricated substitutes.
+- Retired the reader-map and objections drafts: their roles are fulfilled by the evidence appendix and Chapter 10.
+- Shortened the root README and retained its editorial guidance in `editorial/working-spine.md`.
+- Preserved current manuscript prose, selected artwork, LFS objects and historical evaluations.
 
-Temporary build diagnostics remain in ignored `tmp/pdfs/`; they include review
-evidence and enhancement candidates, so this pass did not erase them.
+Ignored PDF archives and build diagnostics are local recovery material. They are
+not part of the push and have not been erased.
