@@ -1,6 +1,6 @@
 # Flexible text masks and immersive page composition
 
-Design direction discussed on 2026-09-20. The [Chapter 5 Paged.js proof](paged/README.md) now implements this brief for review. The existing curated builder remains the full-book renderer. Builds happen only when requested.
+Design direction discussed on 2026-09-20. The [Chapter 5 Paged.js proof](README.md) implements this brief for review. This document records the experiment's rationale; its README describes implemented behavior. The curated builder remains the full-book renderer. Builds happen only when requested.
 
 Author's correction after the first proof: preserve the original chapter opener as the complete image, untouched. Interior graphics must feel part of the page through scale, silhouette, transparent backgrounds and deliberate edge crops. Blurring or fading a rectangular image is not the solution. The second proof removes the blanket fades and uses individual masks and selected transparent derivatives.
 
@@ -22,7 +22,7 @@ Resolve placement from the final physical page side after pagination. In this le
 
 Choose the crop and position first, then apply the corresponding text and blend masks in the same coordinate system. Left/right variants must continue to protect the actual subject. Moving art to the opposite edge does not automatically authorize mirroring faces, writing or diagrams.
 
-The current renderer's portrait tables still choose their side from the historical source-page number. The next renderer must remove that dependency and verify placement against final page side.
+The initial design identified historical source-page parity as a problem. The Paged.js proof discards that parity and checks placement against the final page side.
 
 ## Pacing and immersion
 

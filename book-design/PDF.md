@@ -80,4 +80,4 @@ With no printer selected, these are RGB artwork masters and a trim-size proof. A
 
 After these build files and assets are committed and pushed, open **Actions → Build curated book PDF (manual) → Run workflow**, choosing the desired branch. The action installs pinned dependencies, restores a previous proof when available, runs safeguards, builds only when needed, and uploads the PDF, report and previews as one artifact. Optional inputs force rebuilding or require resolved artwork anchors.
 
-The workflow runs only when explicitly dispatched. It has read-only repository permissions and never commits generated files back to `main`. It replaces the previous automatic Pandoc PDF workflow. The older `book-design/render.py` remains available for draft layout experiments; the curated flow above is the full-book build.
+The workflow runs only when explicitly dispatched. It has read-only repository permissions and never commits generated files back to `main`. The curated flow above is the full-book build; the former automatic Pandoc workflow and chapter-only draft renderer have been retired.

@@ -94,7 +94,7 @@ The author text also supplies the back cover. Render a 6 × 9 inch text proof wi
 `python book-design/render_back_cover.py book-design/out/System3-back-cover.pdf`.
 The proof is a single back panel; printer-specific bleed, spine and barcode placement belong to the final cover setup.
 
-The illustrated edition’s assembly order lives in `book-design/curated/book-order.json`, including the part openings, science reveal, interlude, alternative ending and evidence appendix. The older chapter-only draft renderer remains available for experiments.
+The illustrated edition’s assembly order lives in `book-design/curated/book-order.json`, including the part openings, science reveal, interlude, alternative ending and evidence appendix. See [book-design/README.md](book-design/README.md) for the current production files.
 
 ## Editorial prompts
 
