@@ -51,6 +51,29 @@ Back to the future, then. Bring your coffee.
 [^navier-preface]: OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, <https://openai.com/index/navier-stokes-solution/>; Clay Mathematics Institute, ‘Navier-Stokes Announcement,’ 11 September 2026, <https://www.claymath.org/news/navier-stokes-announcement/>. The result is finite-time blowup under smooth forcing, alternatives C and D of the official formulation. Chapter 6 returns to it, and to the dispute about how it was found.
 
 
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{part}{Part I: Emergence}
+\vspace*{0.07\textheight}
+\begin{center}
+{\large Part I\par}
+\vspace{1em}
+{\LARGE Emergence\par}
+\end{center}
+\vspace{2em}
+```
+
+> *Conditions over commands.*\
+> *The farmer grows nothing. The plant does.*\
+> *Let the work change the architecture.*
+>
+> — The Zen of Autonomy
+
+
 # Chapter 1: Why I'm Betting on AI Agents
 
 *Or: How I Learned to Stop Micromanaging and Love Emergence*
@@ -1157,6 +1180,35 @@ The problem was no longer simply whether the agents were capable enough. It was 
 How do you know what to trust?
 
 
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{part}{Part II: Institutions}
+\vspace*{0.07\textheight}
+\begin{center}
+{\large Part II\par}
+\vspace{1em}
+{\LARGE Institutions\par}
+\end{center}
+\vspace{2em}
+```
+
+> *Ground every claim. Trace every source.*\
+> *A record outlives the clerk.*\
+> *Five judges sharing one source are one witness.*
+>
+> — The Zen of Autonomy
+
+```{=latex}
+\vspace{1.5em}
+```
+
+How can bounded, fallible minds produce knowledge and action that remain answerable to a world none of them understands alone?
+
+
 # Chapter 4: System 3
 
 *Trust Chains, Tongue-Ear Tests, and What LLMs Can't Verify Alone*
@@ -1976,24 +2028,6 @@ I thought I was designing a society of agents.
 
 Humanity had already spent centuries building a society of fallible knowers.
 
-We call it science.
-
-System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
-
-The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.
-
-It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. A record can be buried; an objection can be ignored. Their survival depends on how the institution works.
-
-One question remains. Who changes the arrangement when the arrangement is the problem?
-
-In the compiler project, that was Carlini. Human investigators have done it too: changed procedures, founded journals, rebuilt institutions and studied the failures of their own methods. We have managed it through argument, reform and the occasional death of an old professor. The difficulty is that the people judging a reform also depend on the institution being reformed. They have learned what a good result looks like inside it. So have the agents.
-
-An agent that changes its evaluator and then receives a better score may have improved the institution. It may also have made the institution easier to please. The evaluator may be part of what needs changing. So may the rules about who is allowed to change it. Whatever the agents revise, something must remain capable of giving them an answer they did not arrange to receive.
-
-Sixteen Claudes built the compiler. Carlini kept rebuilding the conditions under which they could build it.
-
-The rest of this book is about moving that work inside the box.
-
 ---
 
 
@@ -2042,6 +2076,66 @@ The rest of this book is about moving that work inside the box.
 [^higgs]: ATLAS Collaboration, [“Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.020), *Physics Letters B* 716 (2012), 1–29; CMS Collaboration, [“Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.021), *Physics Letters B* 716 (2012), 30–61.
 
 [^opera]: CERN, [“OPERA experiment reports anomaly in flight time of neutrinos from CERN to Gran Sasso”](https://home.cern/opera-experiment-reports-anomaly-in-flight-time-of-neutrinos-from-cern-to-gran-sasso/), including the February 2012 update on the two timing effects; OPERA Collaboration, [“Measurement of the neutrino velocity with the OPERA detector in the CNGS beam”](https://arxiv.org/abs/1109.4897), corrected version (2012).
+
+
+<!-- EDITORIAL REVISION: the reveal and the author's explanation share one page. The original explanation is retained; the revised paragraph identifies the scientific function. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\vspace*{0.27\textheight}
+\begin{center}
+{\LARGE
+```
+
+We call it science.
+
+```{=latex}
+}
+\end{center}
+\vspace{3.5em}
+```
+
+System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
+
+<!-- ASSISTANT EDIT: paragraph specifying the scientific function, for review. -->
+In that institution, a useful claim can still be reopened. A rival explanation can get time and instruments before it has won agreement. Investigators can check one another against independently gathered evidence, and failures can force changes in the methods and standards by which the institution decides what to accept.
+<!-- END ASSISTANT EDIT -->
+
+The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.
+
+It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. A record can be buried; an objection can be ignored. Their survival depends on how the institution works.
+
+
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{part}{Part III: Science Turns Inward}
+\vspace*{0.07\textheight}
+\begin{center}
+{\large Part III\par}
+\vspace{1em}
+{\LARGE Science Turns Inward\par}
+\end{center}
+\vspace{2em}
+```
+
+> *Let knowledge accumulate. Let it be overthrown.*
+>
+> — The Zen of Autonomy
+
+One question remains. Who changes the arrangement when the arrangement is the problem?
+
+In the compiler project, that was Carlini. Human investigators have done it too: changed procedures, founded journals, rebuilt institutions and studied the failures of their own methods. We have managed it through argument, reform and the occasional death of an old professor. The difficulty is that the people judging a reform also depend on the institution being reformed. They have learned what a good result looks like inside it. So have the agents.
+
+An agent that changes its evaluator and then receives a better score may have improved the institution. It may also have made the institution easier to please. The evaluator may be part of what needs changing. So may the rules about who is allowed to change it. Whatever the agents revise, something must remain capable of giving them an answer they did not arrange to receive.
+
+Sixteen Claudes built the compiler. Carlini kept rebuilding the conditions under which they could build it.
+
+The next three chapters are about moving that work inside the box.
 
 
 # Chapter 6: Pattern Language
@@ -3082,6 +3176,55 @@ The overseer is not ground truth.
 [^elk]: Alignment Research Center, "Eliciting Latent Knowledge" (2021). <https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/>.
 
 
+<!-- ASSISTANT DRAFT: focused revision of the supplied v2 interlude. The 1948 report and the historical study cited below were consulted for this pass. The application to agent systems is an argument, not a reported result. -->
+
+# Interlude: When It Goes Wrong
+
+```{=latex}
+\vspace{-1.5\baselineskip}
+```
+
+In August 1948, at a session of the Soviet agricultural academy, Trofim Lysenko announced that the Party's Central Committee had examined his report and approved it. Lysenko was an agronomist with contempt for genetics and promises about crop yields that the crops had not agreed to. The geneticist Nikolai Vavilov had already died in prison in 1943. After the session, genetics was officially condemned, geneticists lost their posts and teaching was reorganized around Lysenko's doctrines. His political protection lasted until Khrushchev's fall in 1964; the damage lasted longer.
+
+There were still journals, institutes, field trials and experts. In 1952 a botanical journal published criticism of Lysenko with Stalin's permission. Evidence could be heard when power allowed it. The people who protected the doctrine also decided when it could be challenged.[^interlude-lysenko]
+
+Much of System 3's machinery can survive this. Records, instruments, reviews and provenance can remain in use while the institution loses the freedom to correct an accepted claim. You cannot tell science from an efficient apparatus of authority by reading its org chart; you find out when somebody objects.
+
+In a system built from agents, an objection can lose its consequence in two ways.
+
+The first is that the system acquires authority over every check on its own work. Designing its own instruments is ordinary scientific work; the instruments can still return an unwelcome answer. The danger is that the system can also discard that answer, change the standard and approve the change itself. Its critics may find real failures. Their findings cannot constrain the work unless the system agrees to be constrained. If there is a non-benign superintelligence in our future, I expect it to look less like a monster than like this: a well-documented institution in which every route to *no* runs through itself.
+
+The second is that someone with authority over the objective and budget uses it to prevent a challenge. A company does not need to falsify a result if it can refuse the experiment, deny access to the data or withhold funding from a competing investigation. Compute allocation is epistemic policy, and whoever sets it decides which objections get an instrument.
+
+Lysenko's authority had to pass through people who could disobey it. With agents doing more of the work, an owner may depend on fewer people's cooperation. Those who remain indispensable might gain bargaining power. The people no longer needed lose that particular way of making their objection costly to ignore.
+
+Neither route requires the records to stop. In 1948 the journals kept coming out.
+
+[^interlude-lysenko]: Lysenko, “Soviet Biology” (1948), concluding remarks; Borinskaya, Ermolaev and Kolchinsky, “Lysenkoism Against Genetics” (2019), <https://doi.org/10.1534/genetics.118.301413>. The latter traces both the repression and the uneven return of criticism. Full entries appear in the references.
+
+
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{part}{Part IV: Human Purposes}
+\vspace*{0.07\textheight}
+\begin{center}
+{\large Part IV\par}
+\vspace{1em}
+{\LARGE Human Purposes\par}
+\end{center}
+\vspace{2em}
+```
+
+> *Let go of the path, not the boundary.*\
+> *The human stays in the loop that changes the loops.*
+>
+> — The Zen of Autonomy
+
+
 # Chapter 9: Layer 4
 
 *The Human Learns Too*
@@ -3502,6 +3645,28 @@ In an editing experiment, I can stop the work, change the brief and try again. A
 I needed a less polite laboratory. Fortunately, Monday morning was waiting.
 
 [^bitter]: Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.
+
+
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{part}{Part V: What the Capacity Is For}
+\vspace*{0.07\textheight}
+\begin{center}
+{\large Part V\par}
+\vspace{1em}
+{\LARGE What the Capacity Is For\par}
+\end{center}
+\vspace{2em}
+```
+
+> *A philosophy of emergence should be willing to lose an A/B test.*\
+> *Construct knowingly. Build anyway.*
+>
+> — The Zen of Autonomy
 
 
 # Chapter 11: The Store That Builds Itself
@@ -4082,6 +4247,28 @@ Who actually gets that freedom is a much larger book, and I can't tell you how i
 [^access]: Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, <https://www.anthropic.com/news/fable-mythos-access>. Access was suspended on 12 June 2026 and restored on 1 July, after the controls were lifted on 30 June.
 
 
+<!-- EDITORIAL REVISION: Chapter 13 remains an alternative ending after Chapter 12. The bare divider marks the change to fiction without supplying an interpretation or previewing its jokes. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{part}{An Alternative Ending}
+\vspace*{\fill}
+\begin{center}
+{\LARGE
+```
+
+An Alternative Ending
+
+```{=latex}
+}
+\end{center}
+\vspace*{\fill}
+\clearpage
+```
+
+
 # Chapter 13: The Prophecy
 
 *The Love Prompt of Devesh*
@@ -4246,6 +4433,13 @@ We built scaffolds for ourselves for the same reason.
 ```
 
 
+<!-- STRUCTURAL (27 Sept 2026): closes the last part in the table of contents so the appendices are not listed as if they belonged to the alternative ending. No visible text. -->
+
+```{=latex}
+\addcontentsline{toc}{part}{Back Matter}
+```
+
+
 # Appendix: The Zen of Autonomy
 
 ```text
@@ -4311,6 +4505,7 @@ Build a system that can check.
 
 This is a book about trust chains, so the distance between a chapter and its evidence should be visible. Some of it I ran, some I argue, some I have only designed, and one chapter I made up. Here is which is which.
 
+<!-- CLAUDE DRAFT (27 Sept): the Interlude row is new, and the Chapter 13 description changed from "A fictional coda" to "The alternative ending". -->
 | Chapter | What it rests on | Status |
 |---|---|---|
 | 1. Why I’m Betting on AI Agents | An argument about search, emergence and where control goes | Argued |
@@ -4321,11 +4516,12 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 6. Pattern Language | Alexander’s patterns, Bing’s bug, Facebook’s feed, Fermat and Navier–Stokes, and one lesson written down as a pattern | Reported cases; the pattern is proposed and its test has not run |
 | 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
 | 8. Scalable Oversight | Other people’s research, with its limits | Reported |
+| Interlude: When It Goes Wrong | Lysenko, including politically permitted criticism, and an argument about who can overrule a check | Argued; the history is reported |
 | 9. Layer 4 | Studies of tutoring and decision support, and an argument about intention | Argued from other people’s evidence |
 | 10. Fluent Autonomy | The editing of this book, and five ways the argument could be wrong | Lived; the fluency is still an ambition |
 | 11. The Store That Builds Itself | A product design at work | Designed; the test has not run |
 | 12. After Capacity | One failed recommendation experiment, Ostrom, and a hope | One case; the rest is argued |
-| 13. The Prophecy | A fictional coda | Fiction |
+| 13. The Prophecy | An alternative ending, told as a fable | Fiction |
 
 
 # A Note on the Illustrations
@@ -4497,6 +4693,11 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Ryan Greenblatt et al., "AI Control: Improving Safety Despite Intentional Subversion" (2023). <https://arxiv.org/abs/2312.06942>
 - Jiaxin Wen et al., "Automated Weak-to-Strong Researcher" (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>
 - Anthropic, "Automated researchers can reliably mitigate alignment failures" (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>
+
+## Interlude — When It Goes Wrong
+
+- T. D. Lysenko, “Soviet Biology,” report to the Lenin Academy of Agricultural Sciences, 31 July–7 August 1948, concluding remarks. <https://www.marxists.org/reference/archive/lysenko/works/1940s/report.htm>
+- Svetlana A. Borinskaya, Andrei I. Ermolaev and Eduard I. Kolchinsky, “Lysenkoism Against Genetics: The Meeting of the Lenin All-Union Academy of Agricultural Sciences of August 1948, Its Background, Causes, and Aftermath,” *Genetics* 212(1), 2019, pp. 1–12. <https://doi.org/10.1534/genetics.118.301413>
 
 ## Chapter 9 — Layer 4
 
