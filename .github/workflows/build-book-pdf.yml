@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'chapters/**'
+      - 'resources/editorial/pdf-unicode.tex'
       - '.github/workflows/build-book-pdf.yml'
   pull_request:
     branches: [main]

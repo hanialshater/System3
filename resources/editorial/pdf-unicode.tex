@@ -1,6 +1,9 @@
 % Preserve the manuscript's IPA and status symbols with the book's TeX fonts.
+% Use XeTeX's native active characters; no newunicodechar package is required.
 \usepackage{tipa}
-\usepackage{newunicodechar}
-\newunicodechar{ʊ}{\textipa{U}}
-\newunicodechar{✓}{\ensuremath{\checkmark}}
-\newunicodechar{✗}{\ensuremath{\times}}
+\catcode`ʊ=\active
+\protected\defʊ{\textipa{U}}
+\catcode`✓=\active
+\protected\def✓{\ensuremath{\checkmark}}
+\catcode`✗=\active
+\protected\def✗{\ensuremath{\times}}
