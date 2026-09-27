@@ -35,20 +35,29 @@ jobs:
 
           files=(
             chapters/00-preface.md
+            chapters/part-1-emergence.md
             chapters/01-why-im-betting-on-ai-agents.md
             chapters/02-the-algorithm-vortex.md
             chapters/03-deep-mode.md
+            chapters/part-2-institutions.md
             chapters/04-system-3.md
             chapters/05-the-society-of-agents.md
+            chapters/reveal-we-call-it-science.md
+            chapters/part-3-science-turns-inward.md
             chapters/06-pattern-language.md
             chapters/07-recursive-self-improvement.md
             chapters/08-automatic-alignment-research.md
+            chapters/interlude-when-it-goes-wrong.md
+            chapters/part-4-keeping-the-human.md
             chapters/09-layer-4-desire.md
             chapters/10-fluent-autonomy.md
+            chapters/part-5-what-the-capacity-is-for.md
             chapters/11-the-store-that-builds-itself.md
             chapters/12-after-capacity.md
+            chapters/alternative-ending.md
             chapters/13-the-prophecy.md
             chapters/14-scaffolds.md
+            chapters/back-matter.md
             chapters/appendix-zen-of-autonomy.md
             chapters/appendix-note-on-evidence.md
             chapters/appendix-illustrations.md
@@ -74,6 +83,7 @@ jobs:
             -o dist/System3_Towards_Fluent_Autonomy_full_current_main.pdf
             --from=markdown
             --pdf-engine=xelatex
+            --include-in-header=resources/editorial/pdf-unicode.tex
             --toc
             --top-level-division=chapter
             -V documentclass=book

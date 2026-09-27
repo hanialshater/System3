@@ -161,6 +161,11 @@ References are organized by chapter, in roughly the order the works appear. The 
 - Jiaxin Wen et al., "Automated Weak-to-Strong Researcher" (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>
 - Anthropic, "Automated researchers can reliably mitigate alignment failures" (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>
 
+## Interlude — When It Goes Wrong
+
+- T. D. Lysenko, “Soviet Biology,” report to the Lenin Academy of Agricultural Sciences, 31 July–7 August 1948, concluding remarks. <https://www.marxists.org/reference/archive/lysenko/works/1940s/report.htm>
+- Svetlana A. Borinskaya, Andrei I. Ermolaev and Eduard I. Kolchinsky, “Lysenkoism Against Genetics: The Meeting of the Lenin All-Union Academy of Agricultural Sciences of August 1948, Its Background, Causes, and Aftermath,” *Genetics* 212(1), 2019, pp. 1–12. <https://doi.org/10.1534/genetics.118.301413>
+
 ## Chapter 9 — Layer 4
 
 - Dylan Hadfield-Menell et al., "Cooperative Inverse Reinforcement Learning" (2016). <https://arxiv.org/abs/1606.03137>

@@ -2,6 +2,7 @@
 
 This is a book about trust chains, so the distance between a chapter and its evidence should be visible. Some of it I ran, some I argue, some I have only designed, and one chapter I made up. Here is which is which.
 
+<!-- CLAUDE DRAFT (27 Sept): the Interlude row is new, and the Chapter 13 description changed from "A fictional coda" to "The alternative ending". -->
 | Chapter | What it rests on | Status |
 |---|---|---|
 | 1. Why I’m Betting on AI Agents | An argument about search, emergence and where control goes | Argued |
@@ -12,8 +13,9 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 6. Pattern Language | Alexander’s patterns, Bing’s bug, Facebook’s feed, Fermat and Navier–Stokes, and one lesson written down as a pattern | Reported cases; the pattern is proposed and its test has not run |
 | 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
 | 8. Scalable Oversight | Other people’s research, with its limits | Reported |
+| Interlude: When It Goes Wrong | Lysenko, including politically permitted criticism, and an argument about who can overrule a check | Argued; the history is reported |
 | 9. Layer 4 | Studies of tutoring and decision support, and an argument about intention | Argued from other people’s evidence |
 | 10. Fluent Autonomy | The editing of this book, and five ways the argument could be wrong | Lived; the fluency is still an ambition |
 | 11. The Store That Builds Itself | A product design at work | Designed; the test has not run |
 | 12. After Capacity | One failed recommendation experiment, Ostrom, and a hope | One case; the rest is argued |
-| 13. The Prophecy | A fictional coda | Fiction |
+| 13. The Prophecy | An alternative ending, told as a fable | Fiction |

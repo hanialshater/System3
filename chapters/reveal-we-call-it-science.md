@@ -1,0 +1,27 @@
+<!-- EDITORIAL REVISION: the reveal and the author's explanation share one page. The original explanation is retained; the revised paragraph identifies the scientific function. -->
+
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\vspace*{0.27\textheight}
+\begin{center}
+{\LARGE
+```
+
+We call it science.
+
+```{=latex}
+}
+\end{center}
+\vspace{3.5em}
+```
+
+System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
+
+<!-- ASSISTANT EDIT: paragraph specifying the scientific function, for review. -->
+In that institution, a useful claim can still be reopened. A rival explanation can get time and instruments before it has won agreement. Investigators can check one another against independently gathered evidence, and failures can force changes in the methods and standards by which the institution decides what to accept.
+<!-- END ASSISTANT EDIT -->
+
+The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.
+
+It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. A record can be buried; an objection can be ignored. Their survival depends on how the institution works.
