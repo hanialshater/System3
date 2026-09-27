@@ -36,9 +36,7 @@ Complexity over engineering. Emergence over design. Capacity over power. That is
 
 Humans already build beyond the limits of any individual mind. AI gives us new access to that capacity—and a reason to look again at the architecture that sustains it.
 
-It is September 2026 as I write this. OpenAI has reported an AI-generated proof that the Navier–Stokes equations can break down: under a perfectly smooth force, the equations predict velocity growing without bound in finite time, even from perfectly smooth initial conditions. It is one of the answers the Millennium Prize problem accepts. The proof was produced by a group of roughly ten thousand agents working concurrently. The effort reached its result after about eighty-eight hours, followed by seventeen more for formalisation and verification.[^navier-preface] The Clay Institute says the problem appears to have been settled, and that it will take its time deciding.
-
-A long coffee, admittedly.
+It is September 2026 as I write this. Researchers are already sending groups of agents to build compilers and investigate mathematical problems. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[^agents-preface]
 
 Leibniz wanted talented people to help him. Three centuries later, we are learning what becomes possible when a question can occupy thousands of artificial minds.
 
@@ -48,7 +46,7 @@ Rediscover, because we have built it before. It took about four centuries, a gre
 
 Back to the future, then. Bring your coffee.
 
-[^navier-preface]: OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, <https://openai.com/index/navier-stokes-solution/>; Clay Mathematics Institute, ‘Navier-Stokes Announcement,’ 11 September 2026, <https://www.claymath.org/news/navier-stokes-announcement/>. The result is finite-time blowup under smooth forcing, alternatives C and D of the official formulation. Chapter 6 returns to it, and to the dispute about how it was found.
+[^agents-preface]: Nicholas Carlini, ‘Building a C compiler with a team of parallel Claudes,’ 5 February 2026, <https://www.anthropic.com/engineering/building-c-compiler>; OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ 8 September 2026, <https://openai.com/index/navier-stokes-solution/>. Chapters 5 and 6 examine the reported work, its limits and the questions still open at the time of writing.
 
 
 <!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
@@ -1819,11 +1817,11 @@ A tablet, a bronze measure, a deployment guardrail: knowledge becomes structure.
 
 Then Amazon made me an offer, and the offer was reviews.
 
-Before that I had run the technology of a smaller e-commerce company, fewer than a hundred people for all of it: catalogue, search, payments, the warehouse software, the emails that went out at night. I knew every system because I had to. Amazon wanted me for the text under the fold. The fold is a newspaper word: the important story goes above it, then you fold the paper under your arm and forget the rest. On a product page, reviews were the rest. The organization whose applied science I would lead was more than a hundred people, which was more than the entire company I had just left, and I remember sitting with the offer and feeling faintly embarrassed for everyone involved. What could a hundred people possibly do with a text box?
+Before that I had run the technology of a smaller e-commerce company: catalogue, search, payments, the warehouse software, the emails that went out at night. I knew every system because I had to. Amazon wanted me for the text under the fold. The fold is a newspaper word: the important story goes above it, then you fold the paper under your arm and forget the rest. On a product page, reviews were the rest. The organization whose applied science I would lead was larger than the entire company I had just left, and I remember sitting with the offer and feeling faintly embarrassed for everyone involved. What could so many people possibly do with a text box?
 
 Here is what a text box contains. A grill weighs thirty kilograms. Is that good for a barbecue party? The catalogue cannot tell you; it can tell you thirty kilograms. Two thousand reviews can tell you, and they can tell you who bought it, why, what went wrong at the first party, what they wish they had known, and the small psychology of a person who wanted to feed twelve friends and got it slightly wrong. Once you look at nothing else, the text box turns out to hold the buyer's whole story.
 
-And the story wants work. How do you ask for a review without begging? How do you help a person who has never written anything write one? How do you summarize two thousand of them into a paragraph, find the useful ones, catch the fakes, carry them across nine languages, use them to explain a catalogue written by a manufacturer, feed them into search so that "good for parties" finds the grill, find the one review in ten thousand that a marketer could build a campaign on? A hundred people was not enough to cover the space. At the smaller company, reviews had been one engineer's afternoon.
+And the story wants work. How do you ask for a review without begging? How do you help a person who has never written anything write one? How do you summarize two thousand of them into a paragraph, find the useful ones, catch the fakes, carry them across languages, use them to explain a catalogue written by a manufacturer, feed them into search so that "good for parties" finds the grill, find the one review in ten thousand that a marketer could build a campaign on? A whole organization could spend its days inside that text box. At the smaller company, reviews had been one engineer's afternoon.
 
 The potter became better because she was not also the physician. Specialization gives people time to encounter differences a generalist may never notice. The society gains knowledge by distributing ignorance, and every organization, industry and science that gets big makes some version of that bargain: people go narrow, and the narrow place turns out to be bottomless.
 
@@ -2099,7 +2097,7 @@ We call it science.
 System 3 is science, in that sense and no smaller one. The familiar classroom sequence of hypothesis, experiment and conclusion leaves out most of what makes the work possible. I mean the laboratories, instruments, notebooks, standards, specialists, rival programs, criticism and trust through which a society learns things none of its members could find out alone.
 
 <!-- ASSISTANT EDIT: paragraph specifying the scientific function, for review. -->
-In that institution, a useful claim can still be reopened. A rival explanation can get time and instruments before it has won agreement. Investigators can check one another against independently gathered evidence, and failures can force changes in the methods and standards by which the institution decides what to accept.
+In that institution, using a claim does not put it beyond question. A rival explanation can get time and instruments before it has much support. Investigators can check one another using evidence they gathered separately. When a failure exposes something wrong with the method or the standard of evidence, that has to change too.
 <!-- END ASSISTANT EDIT -->
 
 The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.
@@ -2127,7 +2125,7 @@ It is messy. It contains hierarchy, fashion, fraud, career incentives and commun
 >
 > — The Zen of Autonomy
 
-One question remains. Who changes the arrangement when the arrangement is the problem?
+Who changes the arrangement when the arrangement is the problem?
 
 In the compiler project, that was Carlini. Human investigators have done it too: changed procedures, founded journals, rebuilt institutions and studied the failures of their own methods. We have managed it through argument, reform and the occasional death of an old professor. The difficulty is that the people judging a reform also depend on the institution being reformed. They have learned what a good result looks like inside it. So have the agents.
 
@@ -2361,7 +2359,7 @@ But the person recording these reasons may not be the person who controls the mo
 
 ## Keep the Funding Decision Visible
 
-OpenAI's account of its Navier–Stokes proof shows a promising result changing the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. Lean formalization and verification took another seventeen hours.[^navier]
+In OpenAI's September 2026 account of its Navier–Stokes investigation, a promising result changed the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. OpenAI reported another seventeen hours for Lean formalization and verification.[^navier]
 
 On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] Three events, not one: a decision to invest, a proof checked, a verdict pending. A success in one investigation had changed who could afford to keep investigating elsewhere. The other problems had lost workers, not been refuted.
 
@@ -3188,13 +3186,13 @@ In August 1948, at a session of the Soviet agricultural academy, Trofim Lysenko 
 
 There were still journals, institutes, field trials and experts. In 1952 a botanical journal published criticism of Lysenko with Stalin's permission. Evidence could be heard when power allowed it. The people who protected the doctrine also decided when it could be challenged.[^interlude-lysenko]
 
-Much of System 3's machinery can survive this. Records, instruments, reviews and provenance can remain in use while the institution loses the freedom to correct an accepted claim. You cannot tell science from an efficient apparatus of authority by reading its org chart; you find out when somebody objects.
+Much of System 3 could keep running under those conditions. The institution can preserve a claim's entire history and still refuse to correct it. You cannot tell science from an efficient apparatus of authority by reading its org chart; you find out when somebody objects.
 
 In a system built from agents, an objection can lose its consequence in two ways.
 
-The first is that the system acquires authority over every check on its own work. Designing its own instruments is ordinary scientific work; the instruments can still return an unwelcome answer. The danger is that the system can also discard that answer, change the standard and approve the change itself. Its critics may find real failures. Their findings cannot constrain the work unless the system agrees to be constrained. If there is a non-benign superintelligence in our future, I expect it to look less like a monster than like this: a well-documented institution in which every route to *no* runs through itself.
+The first is that the system becomes the final judge of every check on its own work. Scientists build their own instruments all the time. The instrument can still give them an unwelcome answer. The trouble begins when the system can discard that answer, change the standard and approve its own decision. A critic may find the failure and still need the system's permission to make it matter. If there is a non-benign superintelligence in our future, I expect it to look less like a monster than like this: a well-documented institution in which every route to *no* runs through itself.
 
-The second is that someone with authority over the objective and budget uses it to prevent a challenge. A company does not need to falsify a result if it can refuse the experiment, deny access to the data or withhold funding from a competing investigation. Compute allocation is epistemic policy, and whoever sets it decides which objections get an instrument.
+The second is that the owner prevents the challenge. A company does not need to falsify a result if it can refuse the experiment, deny access to the data or withhold funding from a competing investigation. An objection that needs an experiment can be stopped at the budget.
 
 Lysenko's authority had to pass through people who could disobey it. With agents doing more of the work, an owner may depend on fewer people's cooperation. Those who remain indispensable might gain bargaining power. The people no longer needed lose that particular way of making their objection costly to ignore.
 
@@ -3671,13 +3669,11 @@ I needed a less polite laboratory. Fortunately, Monday morning was waiting.
 
 # Chapter 11: The Store That Builds Itself
 
-*When System 3 Came to Work*
+*A Prototype Store*
 
-I lead Applied Science for product ranking and recommendations at Zalando. That gives me a slightly unfair opportunity: I can spend the weekend writing that software should become more emergent, more compositional and less micromanaged, then arrive at work and discover that real software contains latency budgets, old interfaces, business constraints, experiments, dependencies, customers who refuse to behave like the diagram, and at least one matrix somebody created for a very sensible reason three years ago.
+After years working on ranking and recommendations, I built a prototype store to try an idea I could no longer leave in the book. I wanted to see what would happen if the system could change the arrangement of the page around the customer's problem.
 
-The book came to work.
-
-At the time of writing, what follows is a design in progress, not a victory lap. We have not proved the grand version. In fact, one of the points of the design is to make it possible to discover that the grand version is wrong before spending two years building it. This is my account of the ideas, not a Zalando strategy announcement, and definitely not a claim that we solved shopping before lunch.
+This chapter develops the idea into a design for a store. The customers are imagined, and I have not run the business experiment. Part of the work is deciding what would be worth testing before spending two years building the grand version. I have definitely not solved shopping before lunch.
 
 The starting problem was almost embarrassingly simple. Imagine two customers looking at the same product page.
 
@@ -3685,7 +3681,7 @@ One has visited several times across several days. She filtered by size and colo
 
 They can see the same recommendation modules in the same order. That is not because the recommendation models are stupid. Quite the opposite. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. We may have sophisticated intelligence inside each box while the arrangement of the boxes is mostly predetermined. The page is smart inside the modules and surprisingly dumb between them.
 
-This looked familiar. The book began with a claim about emergence: once a complicated thing works reliably enough, the layer above can start treating it as a primitive. Coding agents made the same move with applications. Pattern Language did it with executable knowledge. Now I had a recommender system full of increasingly capable primitives and a question I had somehow spent an entire book preparing myself to ask:
+This looked familiar. The book began with a claim about emergence: once a complicated thing works reliably enough, the layer above can start treating it as a primitive. Coding agents made the same move with applications. Pattern Language did it with executable knowledge. A recommender system could supply those primitives too. I had somehow spent an entire book preparing myself to ask:
 
 **What should the layer above do with them?**
 
@@ -3719,7 +3715,7 @@ Funnels are useful because humans like diagrams that get narrower toward the bot
 
 Customers are less cooperative. Someone can be evaluating one product while exploring another category. She can be price-sensitive and size-anxious at the same time. She can know exactly what dress she wants and still be unsure whether it works with the shoes she already owns. She can add something to the basket, remove it, return to the product page, read reviews, open a size chart and then disappear for three days because a child needed dinner.
 
-A single lifecycle stage compresses this mess into one label. The design we began working with uses something richer: a **problem fingerprint**. Instead of saying the customer *is in Evaluate*, the system can represent several problem hypotheses at once, each with an intensity. Size anxiety may be high. Return hesitation moderate. Outfit seeking almost absent. Another customer on the same product may have the reverse pattern.
+A single lifecycle stage compresses this mess into one label. My design uses a **problem fingerprint**. Instead of saying the customer *is in Evaluate*, the system can represent several problem hypotheses at once, each with an intensity. Size anxiety may be high. Return hesitation moderate. Outfit seeking almost absent. Another customer on the same product may have the reverse pattern.
 
 The fingerprint is not a personality test—it is local to the customer, the current context, the surface and the available evidence. That is important because I do not want the system deciding that Hani is metaphysically a `RETURN_HESITANT_PERSON` and carrying that fact around until retirement. Some characteristics are durable. Many are situational.
 
@@ -3761,7 +3757,7 @@ The composer has to select experiences, configure them, order them and deduplica
 
 Most importantly, the **page becomes the unit**. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives. Increase CTR on this carousel. Improve conversion from that module. Raise engagement with this block. All reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation. The layer above has to reason about the composition as a whole.
 
-And this is where the case study started resembling the society of agents. A society is not improved merely by hiring the best individual expert in every discipline. Somebody still has to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem.
+And this is where the design started resembling the society of agents. A society is not improved merely by hiring the best individual expert in every discipline. Somebody still has to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem.
 
 ## Mei Does Not Need More Shoes
 
@@ -3777,7 +3773,7 @@ For years, the field has been extraordinarily good at finding things. Search fin
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
-But Mei could stop switching because the comparison helped, because she gave up, or because dinner arrived. A quieter session is not yet a solved problem. In the proposed test, we would compare outcomes across customers eligible for this intervention, including a group receiving the existing experience. Does the comparison help people reach a decision without increasing later returns or regret? Direct customer feedback could help us understand what the behavioral measures miss.
+But Mei could stop switching because the comparison helped, because she gave up, or because dinner arrived. A quieter session is not yet a solved problem. To test this, I would need to compare outcomes across customers eligible for the intervention, including a group receiving the existing experience. Does the comparison help people reach a decision without increasing later returns or regret? Direct customer feedback could help explain what the behavioral measures miss.
 
 If switching falls while abandonment rises, the apparent success should make us distrust the metric. If a comparison helps some sessions and overwhelms others, the next change may belong in its eligibility rule. And if a simpler page helps just as much, the composer has learned something inconvenient about its own necessity. Even a useful intervention would not prove that we had read Mei's mind correctly.
 
@@ -3833,7 +3829,7 @@ The trace also changes development. You can build a simulator that replays saved
 
 ## A Theory Losing Contact With Reality
 
-Somewhere around here the project stopped looking to me like a normal recommendation-system redesign.
+Somewhere around here the prototype stopped looking to me like a normal recommendation-system redesign.
 
 The models still matter enormously. We need representations, retrieval, ranking, sequence understanding, problem detectors, value models and probably more machinery than I can fit into a chapter without losing several readers to a sudden interest in gardening.
 
@@ -3845,7 +3841,7 @@ A new comparison module without that context is a feature. A comparison pattern 
 
 And culture has the same failure mode we saw earlier: it can become a junk drawer with tenure. If every newly observed problem creates another RX, the library eventually recreates the configuration matrix in a more colorful form. So new supply needs a gate. Is the problem real? How large is it? Can an existing experience be configured to address it? Where does the current library have weak coverage? Which experiences stopped relieving the problems they were created for and should disappear?
 
-This led to a pair of concepts I particularly like: **Coverage** and **Unmet Demand**. Coverage asks, at design time, which known problems the current library *could* address. Unmet Demand asks, from production, which detected problems remained insufficiently addressed after composition.
+This led to a pair of concepts I particularly like: **Coverage** and **Unmet Demand**. Coverage asks, at design time, which known problems the current library *could* address. In a live store, Unmet Demand would ask which detected problems remained insufficiently addressed after composition.
 
 Put them together and the roadmap starts to emerge from the system's own failures. That is a very different way to decide what to build next. If System 3 is science, Coverage and Unmet Demand are more than roadmap metrics. They tell the institution where its current theories and instruments are weak. A recurring problem with no effective RX is an anomaly the product cannot yet explain away; a heavily used intervention that stops relieving the problem is a theory losing contact with reality.
 
@@ -3863,19 +3859,19 @@ This is the book's central thesis in work clothes. The LLM is excellent at gener
 
 ## The Objective Fights Back
 
-Eventually the design forced us to name the thing the composer is supposed to optimize.
+Eventually the design forced me to name the thing the composer is supposed to optimize.
 
-We used the deliberately bland term **Surface Value**. This is where the project becomes philosophical against its will.
+I used the deliberately bland term **Surface Value**. This is where the prototype becomes philosophical against its will.
 
 If Surface Value is module CTR, we have not solved the page problem. If it is total clicks, a page full of shiny modules may win while the customer gets nowhere. If it is immediate purchase probability, experiences that build confidence or improve a longer mission may be undervalued. If it is revenue, expensive products get interesting very quickly. If it is margin, the store's objective can start eating the customer's. If it is long-term value, we have gained a beautiful phrase and several years of causal-inference work.
 
 The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. For comparison friction, the signal must distinguish resolution from abandonment. For size anxiety, customers should be able to progress with fewer signs of uncertainty without creating a return problem later.
 
-This is Layer 4 in production. What do we actually want?
+Before the store has a customer, it has the Layer 4 problem. What do we actually want?
 
 The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints, merchandising has opinions, margin and availability are real, and so are regulators. A system that pretends only one of these matters is not simpler; it is hiding politics inside a scalar.
 
-We are trying to make the trade-offs explicit enough to test, govern and revise. I do not expect to discover the One True Ecommerce Reward Function carved into a mountain somewhere outside Berlin.
+I want those trade-offs written into the design, where someone can question them. I do not expect to discover the One True Ecommerce Reward Function carved into a mountain somewhere outside Berlin.
 
 This is why I increasingly dislike architectures where business decisions enter through invisible overrides. If merchandising needs a lock, make it a typed constraint. If margin is part of the objective, admit it. If a claim needs compliance review, attach the evidence rule. If the system violates a soft constraint because another objective dominated it, log the violation.
 
@@ -3885,7 +3881,7 @@ The architecture should not make disagreement disappear. It should make disagree
 
 After all of this, the sensible first experiment is obviously to build hundreds of widgets, a general customer-reasoning model, a cross-surface scheduler and an autonomous agent that redesigns fashion retail by Thursday.
 
-The test we are designing is deliberately boring. One placement: the product page. A small number of validated customer problems. The existing recommendation library, with only limited new supply. A simple composition mechanism. A trace good enough to explain an individual decision. An authored objective before a learned one.
+The first test I would run is deliberately boring. One placement: the product page. Start by validating a small number of customer problems. Use a store's existing recommendation library, with only limited new supply. A simple composition mechanism. A trace good enough to explain an individual decision. An authored objective before a learned one.
 
 Why so narrow? Because if we invent a new library of experiences and change the selection mechanism at the same time, then run an experiment and get a flat result, we have learned almost nothing. Maybe the composer is bad. Maybe the new experiences are bad. Maybe both are good and the measurement is bad. Maybe the static page was already fine and I should have spent the quarter learning the guitar.
 
@@ -3919,9 +3915,9 @@ The store does not literally build itself. It learns how to build more of the ex
 
 ## The Book Comes Back to Bite Me
 
-I began this project as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
+I began the prototype as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
-That does not prove the book. It is one case study, in one domain, at one moment, and it may fail in several educational ways.
+That does not prove the book. I designed it with the book's argument in my head, and the test that could embarrass me is still ahead. It may fail in several educational ways.
 
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
@@ -3966,19 +3962,19 @@ The earlier chapters followed engineering failures until the machinery assembled
 
 ## Owning the Frontier
 
-LLM-as-a-judge arrived in my team looking like a threat.
+LLM-as-a-judge looked like a threat to my profession.
 
 For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-In a project recommending complementary fashion items, our LLM judge agreed with the fashion experts about what made a good recommendation. We had a plausible account of quality and an instrument that could apply it at scale. Then the business experiment came back. The metrics went down.
+Chapter 4 gave me a small version of the problem. The epistemic agent produced smaller patches and solved fewer problems. I could admire its discipline or count the bugs it fixed. Those judgments did not give me the same answer.
 
-Perhaps the recommendations diverted attention from something customers would otherwise have bought. Perhaps experts preferred combinations that customers admired without wanting to purchase. Price and popularity could be doing work we had attributed to quality. Agreement with the experts did not distinguish these explanations.
+Ten tasks could not tell me why. The extra instructions might have made the agent more conservative. A memory of earlier failures might have helped on one task and sent it in the wrong direction on another. The order of the tasks might have mattered. Each explanation suggested a different next experiment.
 
-We could change the widget or adjust the rubric and try again. But learning why it failed required an experiment that separated the possibilities. Which comparison would justify changing the judge, the experience or our account of what a good recommendation was?
+I could keep adding machinery and hope the next score improved. Or I could spend the next run finding out which part of the machinery deserved to stay. That choice required more than another model evaluation.
 
-Scarcity rations the distinctions a team can afford to investigate. The judge changed the ration. We could examine far more experiences than our experts would ever review and ask questions that had previously cost too much to ask. The instrument did not explain the failure. It made an old question urgent: what did its measurement mean? A million judgments overnight is a million more things that look like evidence.
+Scarcity rations the distinctions we can afford to investigate. Cheaper generation and evaluation let us attempt more comparisons. Someone still has to notice which question the last result failed to answer. A million judgments overnight is a million more things that look like evidence.
 
-A strong applied scientist brings a working map of the frontier. She knows which exciting idea has failed three times under another name, which result quietly changed what we could build last month, and which neighboring field has a method that might explain our disappointing experiment. She can turn that knowledge into an investigation the organization has reason to trust.
+A strong applied scientist brings a working map of the frontier. She knows which exciting idea has failed three times under another name, which result quietly changed what we could build last month, and which neighboring field has a method that might explain a disappointing experiment. She can turn that knowledge into an investigation the organization has reason to trust.
 
 Chapter 5 followed the larger society that makes this possible. A scientist inside a company is connected to arguments, discoveries and failures happening outside it. Without that connection, the company keeps approaching unfamiliar problems with its familiar machinery.
 
@@ -4006,7 +4002,7 @@ The workshop changes as she learns. A picture suggests a different representatio
 
 That environment might be useful to one person for eighteen months. It could still be worth building. Its reason to exist is the investigation, not the market.
 
-The recommendation project changes under this possibility too. A row of products is a familiar, reusable unit of customer experience. One shopper needs help comparing two coats; another wants to know what she already owns that would work with a dress. The team could construct and investigate different experiences around those needs, instead of spending another quarter rearranging the same row. The form of the product becomes something we can question by making it.
+The prototype in Chapter 11 points in this direction too. A row of products is a familiar, reusable unit of customer experience. One shopper needs help comparing two coats; another wants to know what she already owns that would work with a dress. A team could construct and investigate different experiences around those needs, instead of spending another quarter rearranging the same row. The form of the product becomes something we can question by making it.
 
 Maintenance, security and access to data remain part of the work. A cheap first version is not yet a system people can depend on. But these are reasons to build better tools for sustaining what we create. They do not restore the old economics by decree.
 
@@ -4126,7 +4122,7 @@ But where people retain the means to act, more differences can become opportunit
 
 Cheap software removed the vendor’s veto. It is worth asking where the cheapness comes from.
 
-The results in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[^flt-tokens] That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
+The efforts reported in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[^flt-tokens] That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
 
 Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models for almost three weeks to comply with United States export controls, and restored it when the controls were lifted.[^access] I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 
@@ -4516,11 +4512,11 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 6. Pattern Language | Alexander’s patterns, Bing’s bug, Facebook’s feed, Fermat and Navier–Stokes, and one lesson written down as a pattern | Reported cases; the pattern is proposed and its test has not run |
 | 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
 | 8. Scalable Oversight | Other people’s research, with its limits | Reported |
-| Interlude: When It Goes Wrong | Lysenko, including politically permitted criticism, and an argument about who can overrule a check | Argued; the history is reported |
+| Interlude: When It Goes Wrong | Lysenko, and what happens when the people being challenged decide whether to hear the challenge | Reported history; the application to agents is argued |
 | 9. Layer 4 | Studies of tutoring and decision support, and an argument about intention | Argued from other people’s evidence |
 | 10. Fluent Autonomy | The editing of this book, and five ways the argument could be wrong | Lived; the fluency is still an ambition |
-| 11. The Store That Builds Itself | A product design at work | Designed; the test has not run |
-| 12. After Capacity | One failed recommendation experiment, Ostrom, and a hope | One case; the rest is argued |
+| 11. The Store That Builds Itself | My prototype store, imagined customers and a proposed business experiment | Prototyped; the business experiment has not run |
+| 12. After Capacity | The small coding experiment from Chapter 4, Ostrom, and a hope | Argued from the earlier experiment and cited work; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |
 
 
@@ -4751,8 +4747,22 @@ References are organized by chapter, in roughly the order the works appear. The 
 
 # About the Author
 
-Hani M.M. Al-Shater leads Applied Science for product ranking and recommendations at Zalando. He has spent his career in machine learning as a technical leader, much of it on systems that rank human testimony — reviews, ratings, questions and answers — where trust and verification were never abstract questions.
+Hani M.M. Al-Shater has died twice.
 
-He lives with his wife and four kids, reads constantly, and finds that building things is how he thinks best.
+The first time, he was a kid, and someone explained that "superhero" is not a job. He took it badly, then took up computers, which is what you do when you can't fly.
 
-*Connect: [hani-alshater.com](https://www.hani-alshater.com)*
+The second time, he was deep in a respectable career, watching the promotion cycle come round again, when he noticed he was enjoying it. Not the work. The wheel.
+
+The afterlife was awkward. He was too much of a builder to be a philosopher and too much of a philosopher to be a proper engineer, not quite from where he was born and not quite from where he lives. Friends kindly pointed out that he had a good job and a family, so what exactly was the problem. He agreed. That was the problem.
+
+He kept building anyway, and every time a crack appeared, a very reasonable voice explained why it didn't matter. You cannot argue with that voice; reasoning is the voice. So he took up what he calls epistemic sarcasm: a joke that burns everything to the ground so you can build something new from the rubble.
+
+Since then he wakes at midnight, makes a coffee that is too hot, burns his assumptions and talks to an AI in incognito mode, the one place he can be whole with no strings attached. A life emerges in the chat window, then vanishes, as weirdly as ours do. It is an odd habit for a man who wrote a book about keeping records.
+
+Eventually he found out he wasn't in between after all. He belonged to a rare old species, the philosopher-builder, which AI is about to make a lot less rare.
+
+In daylight he keeps a vow: to drag philosophy out of the seminar room and onto the street, where people are trying to work out what AI means for their lives. This book is part of keeping it.
+
+Somewhere there is a timeline where he became a superhero. He switched that one to cartoons.
+
+Outside of that, he lives in Berlin with his beloved wife and four kids, and serves as Head of Applied Science at Zalando.
