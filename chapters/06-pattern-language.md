@@ -17,7 +17,7 @@ And every pattern carries a confidence mark. Two asterisks mean the authors beli
 
 He meant it politically, too. The language was supposed to take design away from professionals and hand it back to the people who would live in the rooms. A family with the book could lay out its own house and argue with the architect in the architect's terms.
 
-That is a **pattern language**. What master builders knew and could not say becomes available for someone else to use, question and connect to the work around it.
+That is a **pattern language**: builders' knowledge written down as connected proposals whose reasons are open to question.
 
 ## The Pattern Goes to Work
 
@@ -60,7 +60,7 @@ Andrej Karpathy's count of the ways to program a computer tells the rest. In Sof
 
 That changes the cost of Feigenbaum's translation. We can supply an account of how a problem usually unfolds, with a worked example and a warning about a misleading instrument, without first expressing every qualification in logic. A model reads the incident procedure, chooses a diagnostic query, and hands arithmetic to code. Nobody benefits if the arithmetic becomes more literary.
 
-That arrangement needs a name less magical than “the document is executable.” A document influences work when something selects it, interprets it, and acts on it. The same words can produce different actions in different models or environments.
+Calling the document “executable” hides the role of the reader. The same words can produce different actions in different models or environments.
 
 Agent skills give the arrangement a container with much of Alexander's anatomy. A named skill is discovered through a short description of when it applies: the context. When selected, it supplies instructions, scripts and examples: the *Therefore*. Calls to other skills can serve as links to smaller patterns.[^skills] Voyager, a Minecraft agent, showed capability accumulating this way. It keeps a library of executable skills, retrieves them through their descriptions and reuses them, with execution results and model-based verification supplying feedback.[^voyager]
 
@@ -239,7 +239,7 @@ In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks
 <!-- SLOT 2 (your first-person moment goes here): what you believed before, and the result that changed your mind. -->
 
 <!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): the contrast concerns agreement on the measure, not the difficulty of the whole transition. -->
-Kuhn gives us a way to examine the larger change: a **paradigm** supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[^kuhn] Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. In this respect, AlexNet is the easier case: the new representation won on the number everyone already trusted. The Bing case requires questioning the number itself.
+A **paradigm**, in Kuhn's account, supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[^kuhn] Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. In this respect, AlexNet is the easier case: the new representation won on the number everyone already trusted. The Bing case requires questioning the number itself.
 
 Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools.
 
@@ -265,7 +265,7 @@ Lakatos adds a way to judge a **research programme** over time, by its patches. 
 
 If use and investigation follow the same score, the incumbent pattern keeps being retrieved and accumulating evidence. The alternative keeps waiting for its first trial. The system can report an impressive evidence base with almost no comparisons in it.
 
-Kitcher's **division of cognitive labor** makes the collective stakes explicit. Choices that are sensible for each investigator can add up to a badly diversified community.[^kitcher] We cannot solve that by instructing every agent to pursue its most promising idea independently when all of them inherit the same ranking of ideas.
+When every agent inherits the same ranking of ideas, asking each to choose independently may send them all toward the same experiment. Kitcher treats this as a problem of the **division of cognitive labor**: choices that are sensible for individuals can leave a community pursuing too few alternatives.[^kitcher]
 
 An alternative can receive a bounded experiment whose outcome determines the next decision. What would it teach us, what does it cost, and which later choices could it change?
 
@@ -276,7 +276,7 @@ An alternative can receive a bounded experiment whose outcome determines the nex
 
 In OpenAI's September 2026 account of its Navier–Stokes investigation, a promising result changed the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. OpenAI reported another seventeen hours for Lean formalization and verification.[^navier]
 
-On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] Three events, not one: a decision to invest, a proof checked, a verdict pending. The other problems had lost workers, not been refuted.
+On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] The other problems had lost workers, not been refuted.
 
 The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[^priority] By OpenAI’s own account, the rumor traced to Buckmaster and to Alpöge, whom it describes as an Anthropic employee. Their concurrent result, on the forced Euler problem, had been produced with an internal Anthropic model. This book relies on Anthropic’s reports in several chapters, so that belongs in the record too.
 
@@ -314,7 +314,7 @@ Stellar Colosseum, a harness for mathematical research, gives the procedure a co
 
 Who gets access to that procedure matters. A critic cannot examine an assumption if it receives only the conclusion. A domain expert cannot contribute evidence if the system accepts objections only in the vocabulary of the ranking team. We need to vary access to relevant observations and expertise, not merely the adjectives in the role prompt.
 
-Longino also prevents a comfortable fantasy about the final judge. A product owner may reasonably care about revenue; a researcher may study harm; an infrastructure team may worry about cost. Their observations can be reliable while their preferred decisions differ. The system should be able to say which dispute the next experiment can settle and which requires a decision about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
+A product owner may reasonably care about revenue; a researcher may study harm; an infrastructure team may worry about cost. Their observations can be reliable while their preferred decisions differ. The system should be able to say which dispute the next experiment can settle and which requires a decision about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
 
 <!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): author's two sentences joined into a Therefore, one mark. The original wording is in git history. -->
 \* **Therefore: if the organization proceeds with an objection unresolved, the objection travels with the decision, and the decision-maker owns that choice in writing.**
@@ -331,7 +331,7 @@ A new generation learns the new examples first and has no old allegiance to surr
 
 There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.[^funerals] This does not establish that the departed scientists had been wrong. It shows that the organization of participation can change which work enters a field.
 
-Now return to the sixteen Claudes. Every worker is temporary. The institution can be remarkably permanent.
+Now return to the sixteen Claudes.
 
 A fresh agent reads the same progress file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessor has disappeared, but the commitments that shaped its work have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context.
 
