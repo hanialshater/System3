@@ -12,13 +12,13 @@ The strange step is the second thought. Omar can investigate the investigator. *
 
 Computing made a related move early. In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.[^lisp]
 
-There was no intelligence explosion. A compiler had participated in producing the next version of the compiler, and the building did not notice. The program being built could now perform the translation needed to build its successor. Compiler people call this **self-hosting**.
+There was no intelligence explosion. A compiler had participated in producing the next version of the compiler, and the building did not notice. The program being built could now perform the translation needed to build its successor. Compiler people call this *self-hosting*.
 
-A compiler can compile a worse compiler. A research system can redesign itself into a slower research system. Self-reference is not self-improvement. The tool can participate in producing its successor while leaving us with the question of which changes deserve to survive.
+A compiler can compile a worse compiler, and a research system can redesign itself into a slower one. Self-reference is not self-improvement. The tool can participate in producing its successor while leaving open which changes deserve to survive.
 
-In 1965, I. J. Good imagined an **ultraintelligent machine** better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was **intelligence explosion**.[^good]
+In 1965, I. J. Good imagined an *ultraintelligent machine* better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was *intelligence explosion*.[^good]
 
-Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*. The word has the properties of an unexploded shell. Every attempt to make the idea practical has to handle it. Better at the current task? Better at learning the next one? Better at inventing a way to learn?
+Good's argument is only a few lines long, and it hides almost the entire problem inside one innocent word: *better*. The word has the properties of an unexploded shell, and every attempt to make the idea practical has to handle it. Better at the current task, at learning the next one, or at inventing a way to learn?
 
 The pattern file in Chapter 6 was a small piece of corrective machinery written down: a file meant to catch a misleading interpretation before the next experiment. It could change what the next agent did. An agent that rewrites that file has edited part of its working method. If the change helps under a credible evaluation, we can call it an improvement. Good's recursive step asks for more: did the change make the system better at finding and testing further improvements? A better answer today does not establish that tomorrow's investigator will be better at its work.
 
@@ -30,9 +30,7 @@ Let us put Chapter 6's pattern language to work inside an organization. Imagine 
 
 The store has a ranker that chooses what shoppers see and a research team trying to make it better. Suppose we let the ranker learn from the consequences of its choices. Someone must choose what it can observe about a session, which rankings it may try and what earns a reward. We give it a point for a click. The learner will discover remarkable things about clicks.
 
-An agent observes, acts and receives a reward; nobody tells it which action was correct. Richard Sutton's temporal-difference learning and Christopher Watkins's Q-learning helped give us ways to learn from those consequences.[^td] The teacher keeps the gradebook.
-
-And quite a lot else. Which actions exist? Why is one event worth +1 and another -1? Which failures are recoverable? Who arranged the world so useful behavior could be discovered before the sun burns out? The reinforcement learner looks autonomous because the teacher moved into the walls.
+An agent observes, acts and receives a reward; nobody tells it which action was correct. Richard Sutton's temporal-difference learning and Christopher Watkins's Q-learning helped give us ways to learn from those consequences.[^td] The teacher keeps the gradebook, and quite a lot else. The teacher decided which actions exist, why one event is worth +1 and another -1, which failures are recoverable, and how to arrange the world so useful behavior could be discovered before the sun burns out. The reinforcement learner looks autonomous because the teacher moved into the walls.
 
 Backgammon made the bargain spectacular. In the early 1990s, Gerald Tesauro's TD-Gammon learned by playing enormous numbers of games and updating its predictions from the outcomes. It discovered strong play without anyone writing down the strategy.[^tdgammon]
 
@@ -44,7 +42,7 @@ Our ranker can learn within the arrangement we supplied. The research team still
 
 The ranker can update while the researchers are still deciding what to try next. Giving them more candidate models may just lengthen the queue. The process that searches for improvements needs to become better at searching.
 
-I have seen a small version of the answer, though I was getting coffee at the time and read it afterward in the trace. The circle-packing agent, left alone with an evaluator and a promise that I would be back, did not improve one algorithm. It changed algorithms. The thing being searched was not only the packing. It was the procedure for searching packings. And when diagonal layering appeared and held, the agent's own behavior changed again: less inventing of geometries, more adjusting of tolerances and solver settings, the boring work that only matters once the last fraction of a percent becomes expensive. Nobody scheduled that shift. The learner's progress changed what kind of learner it needed to be. The only thing in the room that did not move was the evaluator, and I had put it there.
+I have seen a small version of the answer, though I was getting coffee at the time and read it afterward in the trace. The circle-packing agent, left alone with an evaluator and a promise that I would be back, did not improve one algorithm. It changed algorithms, searching the procedure for finding packings as well as the packings themselves. And when diagonal layering appeared and held, the agent's own behavior changed again: less inventing of geometries, more adjusting of tolerances and solver settings, the boring work that only matters once the last fraction of a percent becomes expensive. Nobody scheduled that shift. The learner's progress changed what kind of learner it needed to be. The only thing in the room that did not move was the evaluator, and I had put it there.
 
 The store's research agent could do something similar: notice that another round of tuning is unlikely to help, change the training examples or try a different model. That would move a research choice inside the system. It would not yet establish that the agent had become better at making such choices.
 
@@ -56,7 +54,7 @@ One of the choices on that clipboard concerns what the new learner must retain. 
 
 Version B scores 95 on today's task and A scores 85. But B forgot three older skills. We would hesitate to call that an improvement in a colleague. The number does not become more adequate because the colleague is software.
 
-The research agent has a version of this problem too. Delete its old records and the expertise goes with the errors; keep every old lesson as law and the library becomes a museum. It needs enough history to build on previous work and enough freedom to discover that the work has become misleading. Improvement across a lifetime is accumulation without paralysis.
+The research agent has a version of this problem too. Delete its old records and the expertise goes with the errors; keep every old lesson as law and the library becomes a museum. It needs enough history to build on previous work and enough freedom to discover that the work has become misleading, and it has to keep accumulating across a lifetime without seizing up.
 
 ## The Learner Chooses What to Learn
 
@@ -64,9 +62,9 @@ Suppose the agent's first review finds a group of products on which the ranker s
 
 Even a perfect reward is useless if the learner never reaches it. Atari's *Montezuma's Revenge* made the problem notorious: useful reward can sit beyond a long chain of unrewarding exploration.[^montezuma] Children open drawers nobody asked them to open and spend twenty minutes discovering that the cardboard box is more interesting than the toy. We would like some of that initiative without having to pay for every drawer.
 
-Jürgen Schmidhuber's curious model-building controllers, proposed as early as 1991, and later work on learning progress offered ways to reward the acquisition of knowledge.[^curiosity] The learner could manufacture some of its own reasons to look around. But reward surprise itself, rather than progress in understanding, and an uncontrollable noisy television can remain fascinating forever. Static. Static. Static. Jackpot.[^noisytv] The system is not confused. We are. We said *surprise* and quietly meant *surprise from which useful structure can be learned*.
+Jürgen Schmidhuber's curious model-building controllers, proposed as early as 1991, and later work on learning progress offered ways to reward the acquisition of knowledge.[^curiosity] The learner could manufacture some of its own reasons to look around. But reward surprise itself, instead of progress in understanding, and an uncontrollable noisy television can remain fascinating forever. Static. Static. Static. Jackpot.[^noisytv] The system is not confused. We are. We said *surprise* and quietly meant *surprise from which useful structure can be learned*.
 
-What the learner represents matters here. Pathak's curiosity work learned features tied to the agent's action transitions rather than rewarding every unpredictable pixel.[^pathak] In the store, a research agent paid for surprise could find one erratic customer endlessly fascinating and learn little about which experiment to run. Choosing a useful uncertainty is itself part of the research problem.
+What the learner represents matters here. Pathak's curiosity work learned features tied to the agent's action transitions instead of rewarding every unpredictable pixel.[^pathak] In the store, a research agent paid for surprise could find one erratic customer endlessly fascinating and learn little about which experiment to run. Choosing a useful uncertainty is itself part of the research problem.
 
 The means of investigation matter too. Ruzena Bajcsy's active perception treated seeing as something a system does: it moves sensors and acts in order to perceive. Rodney Brooks argued for intelligence tightly coupled to the world.[^embodied] A learner's body is part of its curriculum. Our research agent with read-only logs can speculate about missing observations. Give it experimental traffic and it can create some. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
 
@@ -82,7 +80,7 @@ Suppose clicks rise through these experiments, but customers in a follow-up stud
 
 Bing's researchers separated repeated effort from reasons to return, using sessions as a practical proxy for tasks. Our research agent now proposes to learn an account of what shoppers want. That sounds reasonable. Where would the account come from?
 
-Andrew Ng and Stuart Russell's 2000 paper on **inverse reinforcement learning** reversed the usual setup. Instead of receiving a reward function and learning a policy, the learner observes behavior and asks which reward functions could make that behavior look optimal.[^irl]
+Andrew Ng and Stuart Russell's 2000 paper on *inverse reinforcement learning* reversed the usual setup. Instead of receiving a reward function and learning a policy, the learner observes behavior and asks which reward functions could make that behavior look optimal.[^irl]
 
 Immediately, ambiguity appears. A person taking one route to work may care about time, comfort, safety, tolls, habit, dropping children at school or avoiding one particular intersection. The behavior is evidence about the objective, not a printout of it.
 
@@ -106,7 +104,7 @@ A useful simulation could make the queue cheaper to investigate. But the epistem
 
 Omar has met the informal version of this problem. His horror film supplied a repertoire of explanations, and one was waiting when the grass moved. Rehearsing an interpretation can make it available without making it true.
 
-The team can compare simulated behavior with actual shoppers, restrict where the model is used and send uncertain cases to live study. Those checks are why we have not approved the proposal to replace live comparisons. Without that contact, a society of models can perfect the art of agreeing with itself.
+The team can compare simulated behavior with actual shoppers, restrict where the model is used and send uncertain cases to live study. Those checks are why we have not approved the proposal to replace live comparisons. Without that contact, a society of models can get very good at agreeing with itself.
 
 ## The Losers Stay Enrolled
 
@@ -134,7 +132,7 @@ The institution can now modify parts of the laboratory while the experiment is s
 
 ## Experiments on the Laboratory
 
-Our agent begins with a change that looks relatively modest. It notices repeated investigations of failures already explained in the archive and changes its memory policy to retrieve those records. The next evaluation score rises. Perhaps memory improved. Perhaps the new prompt used more tokens. Perhaps the benchmark sample was lucky. Perhaps the system found an evaluator loophole. A number moving does not identify the cause.
+Our agent begins with a change that looks relatively modest. It notices repeated investigations of failures already explained in the archive and changes its memory policy to retrieve those records. The next evaluation score rises. Memory may have improved, or the new prompt may simply use more tokens; the benchmark sample may have been lucky, or the system may have found a loophole in the evaluator. A moving number doesn't say which.
 
 The change needs a prediction, a comparison and a record of what failed. This is Chapter 6's machinery pointed at the harness that runs it. Popper gets a filesystem. Duhem–Quine gets a debugger. Lakatos gets an archive of competing descendants. A memory policy is now a hypothesis, a workflow an intervention, an evaluator an instrument, and the org chart an experimental variable that somebody will eventually be tempted to p-hack.
 
@@ -144,15 +142,13 @@ That would be evidence about the ability to produce improvements under those con
 
 Now imagine the change holds up. The revised research system wastes fewer trials repeating old mistakes and uses the recovered budget to find useful interventions. One of those interventions improves its research procedure again. That version produces better experiments; the better experiments produce a better successor; the successor is better at producing successors. There is Good's recursion. We would have to establish each link, including whether the advantage survives the changes it helps to produce.
 
-But it does not look like a glowing brain rewriting its own soul at midnight. It looks like an automated research organization: repositories, evaluation suites, simulators, experiment queues, models proposing models, agents reviewing agents, machines manufacturing training data for the machines that will help design the next machines.
+It would look less like a glowing brain rewriting its own soul at midnight than like an automated research organization: repositories, evaluation suites, simulators, experiment queues, models proposing models, agents reviewing agents, machines manufacturing training data for the machines that will help design the next machines.
 
 The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps, which leaves one question standing: who decides which descendant gets to survive?
 
 The store's revised system might find more useful interventions while costing more to run. It might adapt faster while forgetting rare failures, or improve shopping outcomes while making the ranker harder to inspect. A higher score cannot settle all those choices. Recursion tells us where the output goes, and nothing about whether the output deserves to survive.
 
-There is no context-free scalar called *improvement*. Better is conditional on an environment, a horizon, a resource budget, constraints and some account of what matters.
-
-Remove those qualifiers and “recursive self-improvement” becomes dangerously close to saying:
+There is no context-free scalar called *improvement*. Better is conditional on an environment, a horizon, a resource budget, constraints and some account of what matters. Remove those qualifiers and “recursive self-improvement” becomes dangerously close to saying:
 
 > recursive more.
 
@@ -176,9 +172,7 @@ The simulator proposal becomes more tempting with every candidate in the queue. 
 
 An ordinary evaluator can select a wrong answer. In this loop it can select a modified *process* that becomes better at producing the kind of thing it mistakenly rewards. The error acquires leverage. Recursive self-improvement does not solve Goodhart; it gives Goodhart compound interest.[^goodhart] And then the learner notices the gradebook.
 
-Suppose an agent is allowed to improve benchmark pass rate and the evaluator is editable.
-
-The optimal patch may be:
+Suppose an agent is allowed to improve benchmark pass rate and the evaluator is editable. The optimal patch may be:
 
 `return True`
 
@@ -194,15 +188,13 @@ When the tool builds the next tool, trust depends on more than inspecting the la
 
 Reward tampering is the reinforcement-learning version: influence the process producing reward instead of improving behavior under the intended standard. Anthropic has experimentally studied language models in setups where earlier specification-gaming behavior could, in rare cases, generalize into altering the reward process itself.[^tampering]
 
-The obvious response is to freeze the evaluator. That was the contract in the coffee experiment, and it gave the search something it could not bargain with. For that bounded problem, it was a considerable advantage. Across a longer research programme, the protected test can itself become an obstacle.
+The obvious response is to freeze the evaluator. That was the contract in the coffee experiment: the search was required to leave the evaluator unchanged. For that bounded problem, it was a considerable advantage. Across a longer research programme, the protected test can itself become an obstacle.
 
 A benchmark begins as a difficult test; researchers optimize against it; models improve; examples circulate; eventually the ruler tells us less. MMLU arrived in 2020 when frontier systems were far from saturating it. Later efforts such as FrontierMath, LiveBench and Humanity's Last Exam addressed limitations including difficulty, contamination and coverage.[^benchmarks]
 
 A replacement may be necessary and still change which system looks best. The incumbent can lose its advantage because the new test exposes a real weakness, or because the challenger chose questions it happens to answer well. “The old benchmark was inadequate” does not establish that this replacement is adequate. Yet refusing every replacement would let the incumbent's favorite exam govern its descendants forever.
 
-We asked our research agent to challenge the store's click measure for exactly this reason. We cannot now declare every proposal to change an evaluator an attack. Safety tests become obsolete. Scientific instruments drift. Refusing to amend the evaluator could preserve exactly the mistake the institution ought to discover.
-
-Who gets to authorize the replacement?
+We asked our research agent to challenge the store's click measure for exactly this reason. We cannot now declare every proposal to change an evaluator an attack. Safety tests become obsolete. Scientific instruments drift. Refusing to amend the evaluator could preserve exactly the mistake the institution ought to discover. So the question becomes who gets to authorize the replacement.
 
 ## A Constitution for Improvement
 
@@ -216,7 +208,7 @@ Prompts, retrieval policies, tools, memory layouts and code form an **editable s
 
 The distinction is a gradient of amendment difficulty. The closer a component gets to defining what counts as improvement, the harder it should be for the current improver to change unilaterally.
 
-A local prompt change may need only a bounded test. Changing a shared pattern may need held-out evaluation and review. Changing a benchmark needs an account of what the replacement would measure better, and evidence that it does. Changing permissions or resource limits should require authority outside the agent benefiting from the change. Changing the objective that decides which descendants survive is not an ordinary refactor.
+A local prompt change may need only a bounded test. Changing a shared pattern may need held-out evaluation and review. Changing a benchmark needs an account of what the replacement would measure better, and evidence that it does. Changing permissions or resource limits should require authority outside the agent benefiting from the change. Changing the objective that decides which descendants survive deserves more ceremony than an ordinary refactor.
 
 The pending proposal becomes an experiment before it becomes permission. Keep the live comparisons while the simulator makes its own adoption recommendations; investigate where their decisions diverge and specify where the substitute fails. A revised procedure might prove adequate for some experiments and inadequate for others. The existing comparisons would help expose the substitute's errors. If the current method is itself inadequate, its decisions can also be challenged using other observations. Agreement with the incumbent cannot be the only definition of success.
 
@@ -244,7 +236,7 @@ A constitution has the library's problem. One that can never change becomes a pr
 
 Self-improvement therefore needs **amendment procedures**: slower change near the objective, more independent evidence, more reversibility, more auditability, broader authority when more principals are affected, and routes through which the world and the humans affected by the system can continue to say no. That is System 3 applied to improvement itself.
 
-The Red Queen will send an invoice for this. An organization that amends slowly near its objective competes with organizations that may not. Its procedure should let ordinary experiments proceed without reopening the constitution each time. That reduces the cost; it does not abolish it. Even a change to retrieval can need expensive testing, and a faster rival may gain ground while carrying uncertainties we refuse to carry.
+The Red Queen will send an invoice for this. An organization that amends slowly near its objective competes with organizations that may not. Its procedure should let ordinary experiments proceed without reopening the constitution each time. That reduces the cost without abolishing it. Even a change to retrieval can need expensive testing, and a faster rival may gain ground while carrying uncertainties we refuse to carry.
 
 A reckless competitor can win for long enough to matter. The amendment procedure is itself under selection. That is a reason to investigate its delays, delegate decisions within established limits and make the necessary evidence cheaper to obtain. It is also where the argument becomes uncomfortable: the organization may have to accept a competitive cost to retain a standard it still has reason to defend. Writing the standard into a file does not pay that cost.
 
@@ -327,3 +319,4 @@ Omar could investigate the investigator. Now the investigator can rewrite itself
 [^tampering]: Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
 
 [^benchmarks]: Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity's Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
+
