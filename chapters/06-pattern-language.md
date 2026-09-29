@@ -12,7 +12,8 @@ Reading it is a strange experience. You keep recognizing things you have always 
 
 That is the magic of the form. Every pattern has the same anatomy. A name you can say in a meeting. A photograph. The context: which larger patterns this one helps complete. The problem, in bold, stated as forces pulling against each other. The evidence and the argument. Then the word *Therefore*, and the arrangement that resolves the forces, also in bold. Then the smaller patterns that complete this one. Every page is linked to the pages above and below it. It was hypertext in 1977.
 
-And every pattern carries a confidence mark. Two asterisks mean the authors believe they have found something close to an invariant. One means they have made progress and expect a better answer. None means they know they have not solved it and are telling you so. They say outright that the patterns are hypotheses: does the problem occur as described, and does the arrangement resolve it?[^alexander] You can test Light on Two Sides by walking through an office at four in the afternoon and seeing where people are.
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): an unmarked Alexander pattern still proposes a solution; what remains unfound is the invariant. -->
+And every pattern carries a confidence mark. Two asterisks mean the authors believe they have found something close to an invariant. One means they have made progress and expect a better answer. None means they offer one possible solution without claiming to have found what all successful solutions share. They say outright that the patterns are hypotheses: does the problem occur as described, and does the arrangement resolve it?[^alexander] You can test Light on Two Sides by walking through an office at four in the afternoon and seeing where people are.
 
 He meant it politically, too. The language was supposed to take design away from professionals and hand it back to the people who would live in the rooms. A family with the book could lay out its own house and argue with the architect in the architect's terms.
 
@@ -95,7 +96,10 @@ The history stays attached. A later worker asking why the recommendation was sus
 
 Suppose the agent recorded the result and left out the measurement assumption. Then an automatic correction has no link to follow. Someone has to discover the missing dependency. Lean can check the formal links in a proof; our graph cannot establish that an agent has recorded every assumption behind a business decision.
 
-**Therefore: store the claim with what it rests on, so that a correction has somewhere to go.**
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): confidence mark added; the legend defines this chapter's adaptation and distinguishes confidence in an arrangement from demonstrated agent implementation. -->
+\*\* **Therefore: store the claim with what it rests on, so that a correction has somewhere to go.**
+
+I borrow Alexander's asterisks to mark my confidence that the proposed arrangement can resolve the problem described: two for a well-supported practice, one for a promising proposal that needs further testing, none where its adequacy remains an open question. These are judgments about the arrangements, not a claim that an agent institution has successfully implemented them.
 
 ## Commit the Test Before the Result
 
@@ -114,7 +118,8 @@ Asking the same dashboard for another chart may produce an attractive restatemen
 
 A model will answer that question plausibly in a prompt. The operational commitment is stronger: the answer becomes part of the experiment record, written before the result, and the later review checks what happened against it. A prediction revised after observation remains visible as a revision. Experimentation platforms and preregistered trials work this way on paper. Anyone who has sat in the meeting above knows how far practice is from paper.
 
-**Therefore: write down what would count against the claim before the result arrives, and keep the revision history.**
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): confidence mark added. -->
+\*\* **Therefore: write down what would count against the claim before the result arrives, and keep the revision history.**
 
 ## Locate the Failure
 
@@ -130,7 +135,8 @@ One detail is easy to miss. A second measurement may share the same failed depen
 
 Capturing every possible dependency would cost more than the inquiry. Start with the support used in the recommendation and let a disputed result send you farther back. A missing dependency can still defeat the investigation; recording what was traced makes the gap easier to find next time.
 
-**Therefore: when a test fails, trace the assumptions it used and design probes that distinguish the possible failures.** A single counter called *harmful* cannot express which of them broke.
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): confidence mark added. -->
+\* **Therefore: when a test fails, trace the assumptions it used and design probes that distinguish the possible failures.** A single counter called *harmful* cannot express which of them broke.
 
 ## Ask What the Number Means
 
@@ -144,7 +150,8 @@ The Bing researchers made sessions per user a key part of their criterion: help 
 
 A system capable of this move has to keep alternative representations, not only alternative answers. A branch can introduce task-based records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty: if it scores every proposal on the old number, the better approach looks worse exactly where it helps people finish sooner. Letting the challenger write an evaluator that declares itself the winner would prove little. We need an explicit dispute about what the evaluation is for, followed by agreed observations on which the approaches can be compared.
 
-**Therefore: record what the number is taken to mean as a claim of its own, open to challenge separately from the count.**
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): confidence mark added. -->
+\* **Therefore: record what the number is taken to mean as a claim of its own, open to challenge separately from the count.**
 
 ## Write the Lesson Down
 
@@ -189,120 +196,12 @@ To find out, the candidate pattern has to face cases that did not produce it. Th
 
 This possibility is real. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks. Another study, by Lulla and colleagues, reported improvements in runtime and output-token use but did not comprehensively establish the correctness of the resulting changes.[^context] Together they make it difficult to confuse the presence of instructions with a demonstrated improvement in work.
 
-**Therefore: record how sure we are of each pattern, and make it earn that confidence on cases that did not produce it.** If the check helps only in search, its scope stays there, and the next agent working elsewhere does not inherit an irrelevant ritual. The evidence of learning is in the next investigation. The model's weights can stay fixed while a better method lets a new worker find something its predecessor missed.
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): confidence mark added. -->
+\* **Therefore: record how sure we are of each pattern, and make it earn that confidence on cases that did not produce it.** If the check helps only in search, its scope stays there, and the next agent working elsewhere does not inherit an irrelevant ritual. The evidence of learning is in the next investigation. The model's weights can stay fixed while a better method lets a new worker find something its predecessor missed.
 
 Agentic Context Engineering, or ACE, supplies one piece of the machinery for retaining those lessons: a generator, reflector, and curator maintain a structured playbook through incremental updates, limiting the loss of detail when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks; the usefulness of the lessons still depends on the feedback and quality of reflection.[^ace]
 
-Suppose the pattern earns its place. The next difficulty begins when it helps the reviewer identify a bad metric, but the procedure judging the review still rewards that metric. The file tells the agent to question what the institution pays it to accept.
-
-## Change the Representation
-
-An agent inheriting the Bing lesson might organize its next investigation around completed tasks instead of query counts. It would need different records and might favor results its existing evaluator penalizes. The business of search would remain recognizable. A field can move further: change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
-
-Before deep learning became dominant, there were several respectable ways to write a machine-learning paper. One began with a probabilistic model of how the data arose, derived the inference and tried to say something about uncertainty. In much of computer vision, people designed features before training a classifier. The architecture of the problem was partly in the heads of the people building it.
-
-In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks and a top-five error of about fifteen percent. The runner-up, using engineered features, had twenty-six.[^imagenet] That gap was legible on the existing scoreboard. What followed changed more than the score: learning the features became central to how much of the field worked. An expert could remain excellent at the old work while watching less of the new work require it.
-
-<!-- SLOT 2 (your first-person moment goes here): what you believed before, and the result that changed your mind. -->
-
-Kuhn gives us a way to examine the larger change: a **paradigm** supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[^kuhn] Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. The result reached the syllabus, the tools and the problems a new student would consider worth a career.
-
-Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Those questions survive even when the fashionable result no longer has to answer them. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools.
-
-The examples are part of how a paradigm holds. Kuhn's scientists learn from exemplars that no complete list of explicit rules can replace. I wrote an editing brief for this book after explaining the same corrections to successive agents. One instruction was “preserve the wandering,” which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage can teach the distinction: one version follows an uncertain thought until it becomes clear; the other announces the conclusion and removes the path that made it convincing. Both can contain long paragraphs. Measuring their length would miss what the examples are there to teach. Those examples also carry my taste into the next session. Preserving my judgment and preserving my mistakes used the same file format.
-
-There is no `paradigm_shift()` call. There can be operations for branching a representation, retaining the old interpretation, collecting missing observations, and exposing a disputed standard for decision. Those operations make a change possible. They do not guarantee that it is wise.
-
-That branch needs room to ask a different question and to state where its results cannot be translated into the old terms. I do not know an agent institution that can do this.
-
-The agent can write that proposal into `open_questions`. To answer it, someone has to pay for observations the old records do not contain.
-
-## Separate Use from Investigation
-
-In August 2026 an Anthropic engineer pointed an unreleased Claude at the Riemann hypothesis. It did not prove the hypothesis. On the way, Anthropic reports, it raised a lower bound on the proportion of the zeta function's nontrivial zeros on the critical line from 41.6 percent to 67.2 percent, combining published results. Roughly sixty subagents developed and reviewed arguments. Two Anthropic mathematicians checked the paper, two outside number theorists examined it, and the result was formalized in Lean. Anthropic did not expect the techniques to prove the full hypothesis.[^riemann]
-
-An evaluator asking only whether the assigned problem was solved would return *no*. That answer would be correct and a poor account of the research. The record needs room for the contribution: its own statement, support and remaining questions, linked to the unsuccessful attempt that produced it. Whether to fund a follow-up is another decision. The original ambition neither proves the byproduct valuable nor makes it worthless when the ambition fails.
-
-Laudan's distinction is **acceptance versus pursuit**: what to believe today and what to work on tomorrow are different questions. An approach can be the one we presently have most reason to work with while another deserves investigation because of the problems it may solve.[^laudan] A team can have good reasons to keep its current model in production and equally good reasons to fund the approach that might replace it.
-
-Lakatos adds a way to judge a **research programme** over time, by its patches. A programme is progressive if its modifications predict something new, and degenerating if they only excuse the last failure.[^lakatos] The test applies to a file as well as to a field. Suppose a measurement pattern acquires an exception for one client, then another, then a third. Does each revision identify a recurring cause and work on further cases, or does it merely excuse the latest incident? The number of exceptions alone tells us little. A complicated world can require a complicated method.
-
-If use and investigation follow the same score, the incumbent pattern keeps being retrieved and accumulating evidence. The alternative keeps waiting for its first trial. The system can report an impressive evidence base with almost no comparisons in it.
-
-Kitcher's **division of cognitive labor** makes the collective stakes explicit. Choices that are sensible for each investigator can add up to a badly diversified community.[^kitcher] We cannot solve that by instructing every agent to pursue its most promising idea independently when all of them inherit the same ranking of ideas.
-
-Nor does protecting alternatives mean funding every objection forever. An alternative can receive a bounded experiment whose outcome determines the next decision. What would it teach us, what does it cost, and which later choices could it change?
-
-The queue of unrun comparisons needs its own allocation policy, separate from the policy that selects today's working method. But the person recording the reasons for an experiment may not control the money.
-
-## Keep the Funding Decision Visible
-
-In OpenAI's September 2026 account of its Navier–Stokes investigation, a promising result changed the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. OpenAI reported another seventeen hours for Lean formalization and verification.[^navier]
-
-On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] Three events, not one: a decision to invest, a proof checked, a verdict pending. A success in one investigation had changed who could afford to keep investigating elsewhere. The other problems had lost workers, not been refuted.
-
-The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[^priority] By OpenAI’s own account, the rumor traced to Buckmaster and to Alpöge, whom it describes as an Anthropic employee. Their concurrent result, on the forced Euler problem, had been produced with an internal Anthropic model. This book relies on Anthropic’s reports in several chapters, so that belongs in the record too.
-
-A checked proof does not settle that history. Learning that a route is promising can affect where we invest without supplying a single step of the proof. The provenance of a proof and the provenance of the decision to pursue it answer different questions.
-
-The other programmes did not get an equal chance to become the next promising result. The money is part of the evidence story. Power enters scientific work through the ability to commission observations, supply instruments, define acceptable problems, and sustain a programme through unproductive intervals. Harari's history of the Scientific Revolution makes the outside view blunt: science does not set its own priorities; whoever pays for it does.[^harari] In an agent system, the equivalents include tool access, compute budgets, experimental traffic, data collection, and permission to change what gets measured. These are parts of the inquiry even when they appear in another team's configuration.
-
-Compress this into “the other problems were less tractable” and a decision about resources has become a statement about knowledge. The questions left behind remained unanswered.
-
-Control over evaluation adds another layer. Suppose the budget owner accepts only experiments that predict a higher value of the current metric, and the proposed study concerns whether that metric represents improvement. The researcher has been invited to challenge an assumption on the condition that she first accept it. So the request is split. One part proposes a study and goes to experimental review. The other asks whether the success criterion should change and goes to whoever owns the product goal. A rejection of the second is recorded as a decision about the goal. It cannot be counted as a failed test of the alternative.
-
-Giving an agent an epistemic objection does not authorize it to spend somebody else's money. A funding policy can reserve capacity for challenges to the incumbent, but that policy is itself a choice made by people with power. Putting it in code makes it enforceable and inspectable. It does not make it neutral.
-
-Attach the funding decision and its reason to the question it left unanswered. Otherwise *unfunded* gradually becomes *unsupported*, and *unsupported* becomes *disproved* somewhere between the database and the executive summary.
-
-## Give the Objection a Consequence
-
-Suppose the study gets funded and the objection holds up. We have now retrieved the lesson, tested it, and paid for the evidence it asked us to collect. An organization can do all of that and still arrange for nothing to follow.
-
-For years Facebook tuned its feed for engagement and time spent. But the company's research suggested that passively consuming professionally produced content could be bad for the people doing it. A person could keep scrolling without becoming better off. The number could go up while the thing it was supposed to stand for went down. Bing's question now concerned hours of people's lives.[^fbfiles]
-
-In January 2018 the company announced a change toward “meaningful social interactions,” favoring conversations and exchanges among friends and family. It looked like the right fix: move from measuring attention to measuring connection. Facebook even said it expected people to spend less time on the platform.[^fbchange]
-
-Then its researchers found publishers and political parties shifting toward outrage because that was what travelled. According to internal documents reported by the *Wall Street Journal*, heavy weighting of reshared material amplified angry voices, and researchers found misinformation, toxicity and violent content unusually common among reshares. They proposed reducing the boost for material likely to travel down long chains of users. Facebook made some changes for civic and health content, but Zuckerberg reportedly resisted expanding them if doing so materially reduced the interaction metric.[^fbfiles] The institution had heard the objection. The new number could still defeat it.
-
-The same reporting exposed research inside Instagram. Among surveyed teenage girls who already reported body-image difficulties, roughly one in three said Instagram made them feel worse. These were self-reports, not a demonstration of cause. Facebook disputed the reporting's characterization, pointed to positive findings elsewhere in the research, and said the work had informed product changes.[^instagram] The finding still required an answer. Some researchers told the *Journal* they struggled to get colleagues to appreciate its gravity. One former researcher put the institutional problem rather precisely: “We’re standing directly between people and their bonuses.”
-
-The organization had paid for the knowledge it was now resisting. These objections came from inside, from people employed to investigate the products. Having findings on the company's message board did not give the researchers authority over what followed. The public learned about these internal disputes through leaked documents. A criticism had travelled further than the institution's willingness to act on it.
-
-Longino's claim is that **objectivity is social**. It belongs to a community's criticism, not to any single mind, and it has institutional requirements: venues for criticism, uptake, shared standards, and a tempered equality of intellectual authority. Criticism has to enter the community's reasoning, not merely occur somewhere in its vicinity.[^longino]
-
-An objection needs an object. It can address the reported observation, the assumption connecting it to an interpretation, the proposed action, or the standard used to judge that action. The response must show what happened to the objection. It might supply missing evidence, revise the claim, commission a test, or explain why the criticism does not apply. A resource decision might leave it unresolved. Marking the thread *closed* tells us that somebody finished interacting with it; it says nothing about which outcome occurred. “Noted” is none of these. With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out. We have successfully parallelized the experience of being ignored.
-
-Stellar Colosseum, a harness for mathematical research, gives the procedure a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim or dependency that failed, so the next round can repair the argument or try a different strategy.[^colosseum] Failed drafts remain available with their reviews attached. The reviewers can still be wrong. But their findings change what happens next, and an unresolved objection can survive the departure of the agent that raised it.
-
-Who gets access to that procedure matters. A critic cannot examine an assumption if it receives only the conclusion. A domain expert cannot contribute evidence if the system accepts objections only in the vocabulary of the ranking team. And an agent given a different name does not acquire a different evidential position. We need to vary access to relevant observations and expertise, not merely the adjectives in the role prompt.
-
-Longino also prevents a comfortable fantasy about the final judge. A product owner may reasonably care about revenue; a researcher may study harm; an infrastructure team may worry about cost. Their observations can be reliable while their preferred decisions differ. More accurate measurement may clarify the disagreement without resolving the goals behind it. The system should be able to say which dispute the next experiment can settle and which requires a decision about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
-
-If the organization proceeds with an objection unresolved, the objection travels with the decision. The decision-maker owns that choice, in writing.
-
-The objection can now survive its author. So can the assumption it challenges. Replace every agent in the institution and the same dispute may begin again, with the same side already winning.
-
-## Test What the Next Agent Inherits
-
-Max Planck's observation about scientific change, now known as **Planck's principle**, is usually compressed into “science advances one funeral at a time.” His actual sentence describes a new truth gaining acceptance because, rather than all its opponents being persuaded,
-
-> “…its opponents eventually die, and a new generation grows up that is familiar with it.”[^planck]
-
-In Planck's account, opponents need not be persuaded. They can be outlived. A new generation learns the new examples first and has no old allegiance to surrender. The remark is bleak because the mechanism of correction lies partly outside the argument. We should not treat mortality as a scientific method, but we should ask what changes with the occupant of the chair.
-
-There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.[^funerals] This does not establish that the departed scientists had been wrong. It shows that the organization of participation can change which work enters a field.
-
-Now return to the sixteen Claudes. Every worker is temporary. The institution can be remarkably permanent.
-
-A fresh agent reads the same progress file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessor has disappeared, but the commitments that shaped its work have been transferred intact. Session turnover is not the replacement Planck was describing. The next generation can be born with the old generation's entire syllabus already in context.
-
-The durable incumbent may be a retrieval preference, a canonical example, a benchmark, or a rule giving one branch first access to compute. A more capable replacement model may defend it more effectively.
-
-The engineering response cannot be “delete old knowledge periodically.” Useful expertise would disappear with the errors, and newness would become another unearned source of authority. A branch has to be able to start without every commitment whose adequacy is in question, while keeping the constraints that are not in question: consent, cost, the integrity of the data. Its results then need a comparison whose terms are explicit and open to challenge. If no available comparison can decide the issue, that limitation belongs in the record. A new vocabulary does not entitle its author to victory.
-
-Changing the worker is easy. The experiment has to change what the worker inherits.
-
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): moved after the candidate pattern is tested, before the inquiry expands to representations and institutional power. The author's World 3 note moves with it. -->
 ## Find Where the Result Lives
 
 An agent inherits more than its own institution's files. Where does the knowledge of a result live? In the agent? Which one, exactly?
@@ -327,6 +226,126 @@ Checking scope, explaining a result and maintaining its tools compete with the n
 
 Our pattern's instructions can remain short while the record behind them grows. A search retrieves the method and examples; a question about its standing retrieves observations, versions, dependencies and challenges. But the procedures deciding what gets retrieved and which challenges count are themselves things the next worker inherits.
 
+Suppose the pattern earns its place. The next difficulty begins when it helps the reviewer identify a bad metric, but the procedure judging the review still rewards that metric. The file tells the agent to question what the institution pays it to accept.
+
+## Change the Representation
+
+An agent inheriting the Bing lesson might organize its next investigation around completed tasks instead of query counts. It would need different records and might favor results its existing evaluator penalizes. The business of search would remain recognizable. A field can move further: change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
+
+Before deep learning became dominant, there were several respectable ways to write a machine-learning paper. One began with a probabilistic model of how the data arose, derived the inference and tried to say something about uncertainty. In much of computer vision, people designed features before training a classifier. The architecture of the problem was partly in the heads of the people building it.
+
+In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks and a top-five error of about fifteen percent. The runner-up, using engineered features, had twenty-six.[^imagenet] That gap was legible on the existing scoreboard. What followed changed more than the score: learning the features became central to how much of the field worked. An expert could remain excellent at the old work while watching less of the new work require it.
+
+<!-- SLOT 2 (your first-person moment goes here): what you believed before, and the result that changed your mind. -->
+
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): the contrast concerns agreement on the measure, not the difficulty of the whole transition. -->
+Kuhn gives us a way to examine the larger change: a **paradigm** supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[^kuhn] Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. The result reached the syllabus, the tools and the problems a new student would consider worth a career. In this respect, AlexNet is the easier case: the new representation won on the number everyone already trusted. The Bing case requires questioning the number itself.
+
+Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Those questions survive even when the fashionable result no longer has to answer them. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools.
+
+The examples are part of how a paradigm holds. Kuhn's scientists learn from exemplars that no complete list of explicit rules can replace. I wrote an editing brief for this book after explaining the same corrections to successive agents. One instruction was “preserve the wandering,” which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage can teach the distinction: one version follows an uncertain thought until it becomes clear; the other announces the conclusion and removes the path that made it convincing. Both can contain long paragraphs. Measuring their length would miss what the examples are there to teach. Those examples also carry my taste into the next session. Preserving my judgment and preserving my mistakes used the same file format.
+
+There is no `paradigm_shift()` call. There can be operations for branching a representation, retaining the old interpretation, collecting missing observations, and exposing a disputed standard for decision. Those operations make a change possible. They do not guarantee that it is wise.
+
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): author's sentence recast as a Therefore; no mark indicates an open question about the proposed arrangement's adequacy. -->
+**Therefore: give the branch room to ask a different question, and make it state where its results cannot be translated into the old terms.** I do not know an agent institution that can do this.
+
+The agent can write that proposal into `open_questions`. To answer it, someone has to pay for observations the old records do not contain.
+
+## Separate Use from Investigation
+
+In August 2026 an Anthropic engineer pointed an unreleased Claude at the Riemann hypothesis. It did not prove the hypothesis. On the way, Anthropic reports, it raised a lower bound on the proportion of the zeta function's nontrivial zeros on the critical line from 41.6 percent to 67.2 percent, combining published results. Roughly sixty subagents developed and reviewed arguments. Two Anthropic mathematicians checked the paper, two outside number theorists examined it, and the result was formalized in Lean. Anthropic did not expect the techniques to prove the full hypothesis.[^riemann]
+
+An evaluator asking only whether the assigned problem was solved would return *no*. That answer would be correct and a poor account of the research. The record needs room for the contribution: its own statement, support and remaining questions, linked to the unsuccessful attempt that produced it. Whether to fund a follow-up is another decision. The original ambition neither proves the byproduct valuable nor makes it worthless when the ambition fails.
+
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): accepting the partial result and deciding whether to pursue the approach are separate judgments; failure to complete the original assignment is not epistemic rejection. -->
+Laudan's distinction is **acceptance versus pursuit**: what to believe today and what to work on tomorrow are different questions. An approach can be the one we presently have most reason to work with while another deserves investigation because of the problems it may solve.[^laudan] A team can have good reasons to keep its current model in production and equally good reasons to fund the approach that might replace it. Accepting the Riemann bound as a result would not, by itself, tell us whether to keep pursuing that route toward the full hypothesis.
+
+Lakatos adds a way to judge a **research programme** over time, by its patches. A programme is progressive if its modifications predict something new, and degenerating if they only excuse the last failure.[^lakatos] The test applies to a file as well as to a field. Suppose a measurement pattern acquires an exception for one client, then another, then a third. Does each revision identify a recurring cause and work on further cases, or does it merely excuse the latest incident? The number of exceptions alone tells us little. A complicated world can require a complicated method.
+
+If use and investigation follow the same score, the incumbent pattern keeps being retrieved and accumulating evidence. The alternative keeps waiting for its first trial. The system can report an impressive evidence base with almost no comparisons in it.
+
+Kitcher's **division of cognitive labor** makes the collective stakes explicit. Choices that are sensible for each investigator can add up to a badly diversified community.[^kitcher] We cannot solve that by instructing every agent to pursue its most promising idea independently when all of them inherit the same ranking of ideas.
+
+Nor does protecting alternatives mean funding every objection forever. An alternative can receive a bounded experiment whose outcome determines the next decision. What would it teach us, what does it cost, and which later choices could it change?
+
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): author's sentence recast as a Therefore, one mark. The original wording is in git history. -->
+\* **Therefore: give the queue of unrun comparisons its own allocation policy, separate from the policy that selects today's working method.** But the person recording the reasons for an experiment may not control the money.
+
+## Keep the Funding Decision Visible
+
+In OpenAI's September 2026 account of its Navier–Stokes investigation, a promising result changed the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. OpenAI reported another seventeen hours for Lean formalization and verification.[^navier]
+
+On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] Three events, not one: a decision to invest, a proof checked, a verdict pending. A success in one investigation had changed who could afford to keep investigating elsewhere. The other problems had lost workers, not been refuted.
+
+The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[^priority] By OpenAI’s own account, the rumor traced to Buckmaster and to Alpöge, whom it describes as an Anthropic employee. Their concurrent result, on the forced Euler problem, had been produced with an internal Anthropic model. This book relies on Anthropic’s reports in several chapters, so that belongs in the record too.
+
+A checked proof does not settle that history. Learning that a route is promising can affect where we invest without supplying a single step of the proof. The provenance of a proof and the provenance of the decision to pursue it answer different questions.
+
+The other programmes did not get an equal chance to become the next promising result. The money is part of the evidence story. Power enters scientific work through the ability to commission observations, supply instruments, define acceptable problems, and sustain a programme through unproductive intervals. Harari's history of the Scientific Revolution makes the outside view blunt: science does not set its own priorities; whoever pays for it does.[^harari] In an agent system, the equivalents include tool access, compute budgets, experimental traffic, data collection, and permission to change what gets measured. These are parts of the inquiry even when they appear in another team's configuration.
+
+Compress this into “the other problems were less tractable” and a decision about resources has become a statement about knowledge. The questions left behind remained unanswered.
+
+Control over evaluation adds another layer. Suppose the budget owner accepts only experiments that predict a higher value of the current metric, and the proposed study concerns whether that metric represents improvement. The researcher has been invited to challenge an assumption on the condition that she first accept it. So the request is split. One part proposes a study and goes to experimental review. The other asks whether the success criterion should change and goes to whoever owns the product goal. A rejection of the second is recorded as a decision about the goal. It cannot be counted as a failed test of the alternative.
+
+Giving an agent an epistemic objection does not authorize it to spend somebody else's money. A funding policy can reserve capacity for challenges to the incumbent, but that policy is itself a choice made by people with power. Putting it in code makes it enforceable and inspectable. It does not make it neutral.
+
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): author's sentence made a Therefore, one mark; wording unchanged. -->
+\* **Therefore: attach the funding decision and its reason to the question it left unanswered.** Otherwise *unfunded* gradually becomes *unsupported*, and *unsupported* becomes *disproved* somewhere between the database and the executive summary.
+
+## Give the Objection a Consequence
+
+Suppose the study gets funded and the objection holds up. We have now retrieved the lesson, tested it, and paid for the evidence it asked us to collect. An organization can do all of that and still arrange for nothing to follow.
+
+For years Facebook tuned its feed for engagement and time spent. But the company's research suggested that passively consuming professionally produced content could be bad for the people doing it. A person could keep scrolling without becoming better off. The number could go up while the thing it was supposed to stand for went down. Bing's question now concerned hours of people's lives.[^fbfiles]
+
+In January 2018 the company announced a change toward “meaningful social interactions,” favoring conversations and exchanges among friends and family. It looked like the right fix: move from measuring attention to measuring connection. Facebook even said it expected people to spend less time on the platform.[^fbchange]
+
+Then its researchers found publishers and political parties shifting toward outrage because that was what travelled. According to internal documents reported by the *Wall Street Journal*, heavy weighting of reshared material amplified angry voices, and researchers found misinformation, toxicity and violent content unusually common among reshares. They proposed reducing the boost for material likely to travel down long chains of users. Facebook made some changes for civic and health content, but Zuckerberg reportedly resisted expanding them if doing so materially reduced the interaction metric.[^fbfiles] The institution had heard the objection. The new number could still defeat it.
+
+<!-- ASSISTANT EDIT (29 Sept, Chapter 6 pass): Instagram paragraph compressed while retaining its platform attribution; footnote unchanged. -->
+The same reporting described researchers inside Instagram struggling to get colleagues to appreciate the gravity of their findings. One former researcher put the institutional problem rather precisely: “We’re standing directly between people and their bonuses.”[^instagram]
+
+The organization had paid for the knowledge it was now resisting. These objections came from inside, from people employed to investigate the products. Having findings on the company's message board did not give the researchers authority over what followed. The public learned about these internal disputes through leaked documents. A criticism had travelled further than the institution's willingness to act on it.
+
+Longino's claim is that **objectivity is social**. It belongs to a community's criticism, not to any single mind, and it has institutional requirements: venues for criticism, uptake, shared standards, and a tempered equality of intellectual authority. Criticism has to enter the community's reasoning, not merely occur somewhere in its vicinity.[^longino]
+
+An objection needs an object. It can address the reported observation, the assumption connecting it to an interpretation, the proposed action, or the standard used to judge that action. The response must show what happened to the objection. It might supply missing evidence, revise the claim, commission a test, or explain why the criticism does not apply. A resource decision might leave it unresolved. Marking the thread *closed* tells us that somebody finished interacting with it; it says nothing about which outcome occurred. “Noted” is none of these. With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out. We have successfully parallelized the experience of being ignored.
+
+Stellar Colosseum, a harness for mathematical research, gives the procedure a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim or dependency that failed, so the next round can repair the argument or try a different strategy.[^colosseum] Failed drafts remain available with their reviews attached. The reviewers can still be wrong. But their findings change what happens next, and an unresolved objection can survive the departure of the agent that raised it.
+
+Who gets access to that procedure matters. A critic cannot examine an assumption if it receives only the conclusion. A domain expert cannot contribute evidence if the system accepts objections only in the vocabulary of the ranking team. And an agent given a different name does not acquire a different evidential position. We need to vary access to relevant observations and expertise, not merely the adjectives in the role prompt.
+
+Longino also prevents a comfortable fantasy about the final judge. A product owner may reasonably care about revenue; a researcher may study harm; an infrastructure team may worry about cost. Their observations can be reliable while their preferred decisions differ. More accurate measurement may clarify the disagreement without resolving the goals behind it. The system should be able to say which dispute the next experiment can settle and which requires a decision about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
+
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): author's two sentences joined into a Therefore, one mark. The original wording is in git history. -->
+\* **Therefore: if the organization proceeds with an objection unresolved, the objection travels with the decision, and the decision-maker owns that choice in writing.**
+
+The objection can now survive its author. So can the assumption it challenges. Replace every agent in the institution and the same dispute may begin again, with the same side already winning.
+
+## Test What the Next Agent Inherits
+
+Max Planck's observation about scientific change, now known as **Planck's principle**, is usually compressed into “science advances one funeral at a time.” His actual sentence describes a new truth gaining acceptance because, rather than all its opponents being persuaded,
+
+> “…its opponents eventually die, and a new generation grows up that is familiar with it.”[^planck]
+
+In Planck's account, opponents need not be persuaded. They can be outlived. A new generation learns the new examples first and has no old allegiance to surrender. The remark is bleak because the mechanism of correction lies partly outside the argument. We should not treat mortality as a scientific method, but we should ask what changes with the occupant of the chair.
+
+There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.[^funerals] This does not establish that the departed scientists had been wrong. It shows that the organization of participation can change which work enters a field.
+
+Now return to the sixteen Claudes. Every worker is temporary. The institution can be remarkably permanent.
+
+A fresh agent reads the same progress file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessor has disappeared, but the commitments that shaped its work have been transferred intact. Session turnover is not the replacement Planck was describing. The next generation can be born with the old generation's entire syllabus already in context.
+
+The durable incumbent may be a retrieval preference, a canonical example, a benchmark, or a rule giving one branch first access to compute. A more capable replacement model may defend it more effectively.
+
+The engineering response cannot be “delete old knowledge periodically.” Useful expertise would disappear with the errors, and newness would become another unearned source of authority. A branch has to be able to start without every commitment whose adequacy is in question, while keeping the constraints that are not in question: consent, cost, the integrity of the data. Its results then need a comparison whose terms are explicit and open to challenge. If no available comparison can decide the issue, that limitation belongs in the record. A new vocabulary does not entitle its author to victory.
+
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): author's sentence recast as a Therefore, no mark. The original wording is in git history. -->
+Changing the worker is easy.
+
+**Therefore: change what the next worker inherits, not only the worker.**
+
 ## Put the Procedure Under Test
 
 Feyerabend's argument **against method** belongs here, after we have built something we might be tempted to call the scientific method. Every rule of method, he argued, has been usefully broken at some point in the history of science. A procedure that forbids its own violation cannot find out where it is wrong.[^feyerabend]
@@ -341,7 +360,8 @@ Alexander's form now asks for a *Therefore*. We could write “revise the method
 
 ## What the File Says Now
 
-We have seen pieces of this language at work: shared proof graphs, experiments that challenge their own metrics, reviews that travel with failed arguments. I have not shown an agent institution that composes all of them, keeps their reasons alive, and changes its own way of seeing when those reasons fail. That is the ambition, and it still has to earn its confidence marks.
+<!-- ASSISTANT EDIT (27 Sept, Chapter 6 pass): the two sentences after "earn its confidence marks" are new; they make the falling marks deliberate. -->
+We have seen pieces of this language at work: shared proof graphs, experiments that challenge their own metrics, reviews that travel with failed arguments. I have not shown an agent institution that composes all of them, keeps their reasons alive, and changes its own way of seeing when those reasons fail. That is the ambition, and it still has to earn its confidence marks. Look back at the marks. They thin out as the patterns climb from a single claim toward the institution that keeps it.
 
 <!-- EDITORIAL NOTE: optional close on Alexander's gate. In The Timeless Way of Building (final part, "The Kernel of the Way") he says the language is only a gate: you learn the discipline in order to pass through it. It rhymes with Feyerabend and with a system that rewrites its own language. Verify the passage before using. -->
 
