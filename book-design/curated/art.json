@@ -22,10 +22,10 @@
     "id": "a008",
     "source_page": 8,
     "clip": [
-      0.0,
+      0,
       0.51262,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9804,
@@ -54,10 +54,10 @@
     "id": "a009",
     "source_page": 9,
     "clip": [
-      0.0,
+      0,
       0.65358,
       0.97459,
-      1.0
+      1
     ],
     "paper": [
       0.9843,
@@ -86,9 +86,9 @@
     "id": "a012",
     "source_page": 12,
     "clip": [
-      0.0,
+      0,
       0.49369,
-      1.0,
+      1,
       0.99158
     ],
     "paper": [
@@ -114,8 +114,8 @@
     "clip": [
       0.2931,
       0.61501,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9804,
@@ -176,15 +176,15 @@
     ],
     "file": "assets/art/a018.jpg",
     "chapter": 2,
-    "after": "Circle packing lets us watch that handoff happen in miniature."
+    "after": "Circle packing lets us watch that handoff in miniature."
   },
   {
     "id": "a019",
     "source_page": 19,
     "clip": [
-      0.0,
+      0,
       0.58555,
-      1.0,
+      1,
       0.9986
     ],
     "paper": [
@@ -214,16 +214,16 @@
     ],
     "file": "assets/art/a019.jpg",
     "chapter": 2,
-    "after": "So we give the machine a bigger space."
+    "after": "So I gave it a bigger space."
   },
   {
     "id": "a021",
     "source_page": 21,
     "clip": [
-      0.0,
+      0,
       0.5021,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -246,16 +246,16 @@
     ],
     "file": "assets/art/a021.jpg",
     "chapter": 2,
-    "after": "And that is how I ended up spending an unreasonable amount of time packing circles into a square."
+    "after": "That is how I ended up spending an unreasonable amount of time packing circles into a square."
   },
   {
     "id": "a023",
     "source_page": 23,
     "clip": [
-      0.0,
+      0,
       0.52735,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -284,16 +284,16 @@
     ],
     "file": "assets/art/a023.jpg",
     "chapter": 2,
-    "after": "Now the machine can begin searching the **algorithm space**."
+    "after": "now the machine can begin searching the algorithm space."
   },
   {
     "id": "a026",
     "source_page": 26,
     "clip": [
-      0.0,
+      0,
       0.48738,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -346,16 +346,16 @@
     ],
     "file": "assets/art/a026.jpg",
     "chapter": 2,
-    "after": "The boundary does not."
+    "after": "everything inside the boundary can move, while the evaluator stays fixed."
   },
   {
     "id": "a028",
     "source_page": 28,
     "clip": [
-      0.0,
+      0,
       0.40884,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -396,16 +396,16 @@
     ],
     "file": "assets/art/a028.jpg",
     "chapter": 2,
-    "after": "The chapter began by asking who invents the next move. Here, for the first time in the experiment, the answer was not reliably \u201cme.\u201d"
+    "after": "The chapter began by asking who is inventing the next move. Here, for the first time in the experiment, the answer was not reliably \"me.\""
   },
   {
     "id": "a031",
     "source_page": 31,
     "clip": [
-      0.0,
+      0,
       0.53787,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9804,
@@ -428,10 +428,10 @@
     "id": "a035",
     "source_page": 35,
     "clip": [
-      0.0,
+      0,
       0.68724,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9804,
@@ -441,16 +441,16 @@
     "exclude": [],
     "file": "assets/art/a035.jpg",
     "chapter": 3,
-    "after": "ng the tests and carrying back whatever reality had said about the edit. I was the hands, the eyes and the memory. The model was a brain in a jar, and I was the jar's entire staff."
+    "after": "The model was a brain in a jar, and I was the jar's entire staff."
   },
   {
     "id": "a036",
     "source_page": 36,
     "clip": [
-      0.0,
+      0,
       0.70757,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -460,7 +460,7 @@
     "exclude": [],
     "file": "assets/art/a036.jpg",
     "chapter": 3,
-    "after": "The useful object is the model operating inside a world where software can push back."
+    "after": "How the model searches, sees files, applies edits and receives feedback can matter almost as much as another clever prompt."
   },
   {
     "id": "a038",
@@ -468,8 +468,8 @@
     "clip": [
       0.5245,
       0.62482,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -492,16 +492,16 @@
     ],
     "file": "assets/art/a038.jpg",
     "chapter": 3,
-    "after": "about React. They were always there. Implementation simply consumed enough attention that deciding what should exist and turning that decision into software felt like one activity."
+    "after": "implementation simply consumed enough attention that deciding what should exist and turning that decision into software felt like one activity."
   },
   {
     "id": "a041",
     "source_page": 41,
     "clip": [
-      0.0,
+      0,
       0.67461,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -530,7 +530,7 @@
     ],
     "file": "assets/art/a041.jpg",
     "chapter": 3,
-    "after": "Share too little and everyone rediscovers the same lessons. Share too much and the first successful idea becomes a local culture."
+    "after": "Share too little and everyone rediscovers the same lessons; share too much and the first successful idea becomes a local culture."
   },
   {
     "id": "a044",
@@ -538,7 +538,7 @@
     "clip": [
       0.53085,
       0.6683,
-      1.0,
+      1,
       0.95792
     ],
     "paper": [
@@ -568,7 +568,7 @@
     ],
     "file": "assets/art/a044.jpg",
     "chapter": 3,
-    "after": "By now we could generate genuinely different artifacts. That left the problem we had avoided from the beginning. Which one is better?"
+    "after": "By now we could generate genuinely different artifacts, which left the problem we had avoided from the beginning: which one is better?"
   },
   {
     "id": "a050",
@@ -587,16 +587,16 @@
     "exclude": [],
     "file": "assets/art/a050.jpg",
     "chapter": 3,
-    "after": "Bradley\u2013Terry can aggregate preferences; it cannot make those preferences true."
+    "after": "A tidy ranking can preserve every shared bias in the judgments behind it."
   },
   {
     "id": "a051",
     "source_page": 51,
     "clip": [
-      0.0,
+      0,
       0.68443,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -606,13 +606,13 @@
     "exclude": [],
     "file": "assets/art/a051.jpg",
     "chapter": 3,
-    "after": "This became the **Isolation Principle**: preserve enough separation that independent pressure remains informative."
+    "after": "The rule I ended up with was to keep enough separation between judges that their disagreement still means something."
   },
   {
     "id": "a052",
     "source_page": 52,
     "clip": [
-      0.0,
+      0,
       0.62903,
       0.95191,
       0.98457
@@ -644,7 +644,7 @@
     "exclude": [],
     "file": "assets/art/a056.jpg",
     "chapter": 3,
-    "after": "As the components become better at producing coherent outputs, the original mistake may become harder rather than easier to see."
+    "after": "As the components get better at producing coherent outputs, the original mistake may get harder to see."
   },
   {
     "id": "a060",
@@ -652,7 +652,7 @@
     "clip": [
       0.49909,
       0.68163,
-      1.0,
+      1,
       0.99158
     ],
     "paper": [
@@ -688,7 +688,7 @@
     ],
     "file": "assets/art/a060.jpg",
     "chapter": 4,
-    "after": "Language models begin somewhere else. They begin mostly with the residue."
+    "after": "Language models start somewhere else, mostly with the residue that all this experience leaves behind in writing."
   },
   {
     "id": "a063",
@@ -696,8 +696,8 @@
     "clip": [
       0.39564,
       0.50351,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -726,7 +726,7 @@
     ],
     "file": "assets/art/a063.jpg",
     "chapter": 4,
-    "after": "not to transfer my credibility from machine learning to whales"
+    "after": "they shouldn't carry my credibility over from machine learning to whales just because the same mouth is talking."
   },
   {
     "id": "a066",
@@ -735,7 +735,7 @@
       0.00454,
       0.70617,
       0.99819,
-      1.0
+      1
     ],
     "paper": [
       0.9882,
@@ -745,7 +745,7 @@
     "exclude": [],
     "file": "assets/art/a066.jpg",
     "chapter": 4,
-    "after": "The Gut recognizes. The Head reasons. The Hand reaches outside the current story and finds something capable of disagreeing."
+    "after": "The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it."
   },
   {
     "id": "a067",
@@ -753,7 +753,7 @@
     "clip": [
       0.45463,
       0.58836,
-      1.0,
+      1,
       0.99649
     ],
     "paper": [
@@ -764,7 +764,7 @@
     "exclude": [],
     "file": "assets/art/a067.jpg",
     "chapter": 4,
-    "after": "If the five layers tell us **where** increasingly abstract work happens, System 3 is what keeps those layers **epistemically connected**."
+    "after": "The five layers describe where increasingly abstract work happens, and System 3 keeps them epistemically connected."
   },
   {
     "id": "a075",
@@ -790,16 +790,16 @@
     ],
     "file": "assets/art/a075.jpg",
     "chapter": 4,
-    "after": "**The model stays hollow. The system doesn't have to be.**"
+    "after": "It doesn't need to hold the entire chain in its weights, because the system around it can."
   },
   {
     "id": "a077",
     "source_page": 77,
     "clip": [
-      0.0,
+      0,
       0.6669,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -828,10 +828,10 @@
     "id": "a079",
     "source_page": 79,
     "clip": [
-      0.0,
+      0,
       0.54137,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9804,
@@ -980,10 +980,10 @@
     "id": "a086",
     "source_page": 86,
     "clip": [
-      0.0,
+      0,
       0.075,
       0.50726,
-      1.0
+      1
     ],
     "paper": [
       0.9882,
@@ -1098,13 +1098,13 @@
     ],
     "file": "assets/art/a087.jpg",
     "chapter": 5,
-    "after": "The clerk could also enter the wrong amount, and his successor could copy it faithfully. The clay had preserved what it was given."
+    "after": "The clay kept the mistake as carefully as the grain."
   },
   {
     "id": "a088",
     "source_page": 88,
     "clip": [
-      0.0,
+      0,
       0.51683,
       0.98094,
       0.98247
@@ -1157,16 +1157,16 @@
     "exclude": [],
     "file": "assets/art/a089.jpg",
     "chapter": 5,
-    "after": "blet, a bronze measure, a deployment guardrail: knowledge becomes structure. It allows work to pass between strangers. Now the strangers can each learn something the others do not."
+    "after": "And once strangers can rely on one another's work, each of them can afford to learn something the others don't."
   },
   {
     "id": "a090",
     "source_page": 90,
     "clip": [
-      0.0,
+      0,
       0.32188,
       0.61525,
-      1.0
+      1
     ],
     "paper": [
       0.9804,
@@ -1215,7 +1215,7 @@
     "clip": [
       0.47005,
       0.40252,
-      1.0,
+      1,
       0.92847
     ],
     "paper": [
@@ -1257,9 +1257,9 @@
     "id": "a094",
     "source_page": 94,
     "clip": [
-      0.0,
+      0,
       0.62482,
-      1.0,
+      1,
       0.95582
     ],
     "paper": [
@@ -1289,7 +1289,7 @@
     ],
     "file": "assets/art/a094.jpg",
     "chapter": 5,
-    "after": "For that we need more than another opinion."
+    "after": "sooner or later the disagreement has to be put to some kind of test."
   },
   {
     "id": "a095",
@@ -1388,10 +1388,10 @@
     "id": "a100",
     "source_page": 100,
     "clip": [
-      0.0,
+      0,
       0.29032,
       0.59347,
-      1.0
+      1
     ],
     "paper": [
       0.9843,
@@ -1462,9 +1462,9 @@
     "id": "a102",
     "source_page": 102,
     "clip": [
-      0.0,
+      0,
       0.21879,
-      1.0,
+      1,
       0.8352
     ],
     "paper": [
@@ -1500,10 +1500,10 @@
     "id": "a103",
     "source_page": 103,
     "clip": [
-      0.0,
+      0,
       0.5007,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -1526,16 +1526,16 @@
     ],
     "file": "assets/art/a103.jpg",
     "chapter": 5,
-    "after": "Now go back to the compiler."
+    "after": "Go back to the compiler: task locks, Git, CI, progress files, sampled tests,"
   },
   {
     "id": "a105",
     "source_page": 105,
     "clip": [
-      0.0,
+      0,
       0.12412,
       0.56715,
-      1.0
+      1
     ],
     "paper": [
       0.9882,
@@ -1600,9 +1600,9 @@
     "id": "a107",
     "source_page": 107,
     "clip": [
-      0.0,
+      0,
       0.37027,
-      1.0,
+      1,
       0.9432
     ],
     "paper": [
@@ -1632,7 +1632,7 @@
     ],
     "file": "assets/art/a107.jpg",
     "chapter": 5,
-    "after": "The next three chapters are about moving that work inside the box.",
+    "after": "What the pieces buy is capacity:",
     "section": "part-3-science-turns-inward.md",
     "max_height": 100
   },
@@ -1728,7 +1728,7 @@
     "id": "a112",
     "source_page": 112,
     "clip": [
-      0.0,
+      0,
       0.14937,
       0.36298,
       0.90112
@@ -1808,16 +1808,16 @@
     ],
     "file": "assets/art/a112.jpg",
     "chapter": 6,
-    "after": "Code still performs the operations for which precise execution matters."
+    "after": "A model reads the incident procedure, chooses a diagnostic query, and hands arithmetic to code."
   },
   {
     "id": "a115",
     "source_page": 115,
     "clip": [
-      0.0,
+      0,
       0.51122,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -1846,10 +1846,10 @@
     "id": "a118",
     "source_page": 118,
     "clip": [
-      0.0,
+      0,
       0.57363,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -1892,7 +1892,7 @@
     "generated": "art/interior-120.png",
     "file": "assets/art/a120.jpg",
     "chapter": 6,
-    "after": "A complicated world can require a complicated method."
+    "after": "The file should record what was predicted and checked, including when the revision remains untested."
   },
   {
     "id": "a122",
@@ -1900,8 +1900,8 @@
     "clip": [
       0.12613,
       0.48457,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9843,
@@ -1954,16 +1954,16 @@
     ],
     "file": "assets/art/a122.jpg",
     "chapter": 6,
-    "after": "roof checked, a verdict pending. A success in one investigation had changed who could afford to keep investigating elsewhere. The other problems had lost workers, not been refuted."
+    "after": "The other problems had lost workers, not been refuted."
   },
   {
     "id": "a125",
     "source_page": 125,
     "clip": [
-      0.0,
+      0,
       0.56311,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2002,8 +2002,8 @@
     "clip": [
       0.60254,
       0.71108,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2032,7 +2032,7 @@
     ],
     "file": "assets/art/a127.jpg",
     "chapter": 6,
-    "after": "The experiment has to change what the worker inherits."
+    "after": "Therefore: change what the next worker inherits."
   },
   {
     "id": "a133",
@@ -2066,7 +2066,7 @@
     "clip": [
       0.0118,
       0.69425,
-      1.0,
+      1,
       0.9986
     ],
     "paper": [
@@ -2099,7 +2099,7 @@
       0.00091,
       0.68583,
       0.99819,
-      1.0
+      1
     ],
     "paper": [
       0.9882,
@@ -2122,10 +2122,10 @@
     "id": "a138",
     "source_page": 138,
     "clip": [
-      0.0,
+      0,
       0.71178,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2186,8 +2186,8 @@
     "clip": [
       0.01815,
       0.73422,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9922,
@@ -2257,9 +2257,9 @@
     "id": "a155",
     "source_page": 155,
     "clip": [
-      0.0,
+      0,
       0.71248,
-      1.0,
+      1,
       0.99509
     ],
     "paper": [
@@ -2277,16 +2277,16 @@
     ],
     "file": "assets/art/a155.jpg",
     "chapter": 8,
-    "after": " coordinate other agents while the human is still reading the first diff. At some point, \u201chuman in the loop\u201d becomes a comforting description of a loop the human can no longer see."
+    "after": " coordinate other agents while the human is still reading the first diff. At some point, “human in the loop” becomes a comforting description of a loop the human can no longer see."
   },
   {
     "id": "a157",
     "source_page": 157,
     "clip": [
-      0.0,
+      0,
       0.68513,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2315,7 +2315,7 @@
     "id": "a160",
     "source_page": 160,
     "clip": [
-      0.0,
+      0,
       0.71739,
       0.99819,
       0.99719
@@ -2343,8 +2343,8 @@
     "clip": [
       0.00726,
       0.71248,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9922,
@@ -2393,16 +2393,16 @@
     ],
     "file": "assets/art/a170.jpg",
     "chapter": 9,
-    "after": ". Eventually \u201cbetter\u201d had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked."
+    "after": ". Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked."
   },
   {
     "id": "a172",
     "source_page": 172,
     "clip": [
-      0.0,
+      0,
       0.68864,
       0.68512,
-      1.0
+      1
     ],
     "paper": [
       0.9882,
@@ -2451,10 +2451,10 @@
     "id": "a177",
     "source_page": 177,
     "clip": [
-      0.0,
+      0,
       0.71318,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9922,
@@ -2480,7 +2480,7 @@
       0.09256,
       0.78331,
       0.89111,
-      1.0
+      1
     ],
     "paper": [
       0.9922,
@@ -2496,10 +2496,10 @@
     "id": "a186",
     "source_page": 186,
     "clip": [
-      0.0,
+      0,
       0.65989,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2531,7 +2531,7 @@
       0.0118,
       0.69495,
       0.99637,
-      1.0
+      1
     ],
     "paper": [
       0.9882,
@@ -2554,7 +2554,7 @@
     ],
     "file": "assets/art/a187.jpg",
     "chapter": 10,
-    "after": "failure mode appears\u2014or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well."
+    "after": "failure mode appears—or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well."
   },
   {
     "id": "a190",
@@ -2588,7 +2588,7 @@
     "clip": [
       0.20417,
       0.80365,
-      1.0,
+      1,
       0.9993
     ],
     "paper": [
@@ -2621,7 +2621,7 @@
       0.00454,
       0.73072,
       0.99274,
-      1.0
+      1
     ],
     "paper": [
       0.9922,
@@ -2640,7 +2640,7 @@
       0.00817,
       0.68864,
       0.99456,
-      1.0
+      1
     ],
     "paper": [
       0.9922,
@@ -2682,7 +2682,7 @@
     "id": "a209",
     "source_page": 209,
     "clip": [
-      0.0,
+      0,
       0.63745,
       0.99909,
       0.99439
@@ -2732,10 +2732,10 @@
     "id": "a214",
     "source_page": 214,
     "clip": [
-      0.0,
+      0,
       0.67742,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2902,10 +2902,10 @@
     "id": "a226",
     "source_page": 226,
     "clip": [
-      0.0,
+      0,
       0.68724,
-      1.0,
-      1.0
+      1,
+      1
     ],
     "paper": [
       0.9882,
@@ -2980,9 +2980,9 @@
     "id": "a230",
     "source_page": 230,
     "clip": [
-      0.0,
+      0,
       0.73282,
-      1.0,
+      1,
       0.99649
     ],
     "paper": [
@@ -3008,7 +3008,7 @@
     "clip": [
       0.30036,
       0.66971,
-      1.0,
+      1,
       0.99719
     ],
     "paper": [

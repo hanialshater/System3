@@ -45,7 +45,7 @@ Ask for the incident procedure and the answer sounds like this:
 
 She writes down *ask Sam*. That preserves the dependency beautifully. It does less for the incident that happens while Sam is on holiday. She needs to know what he looks for in the serializer, why he looks there, and when that suspicion is a waste of time. Sam is a master builder who knows more than he can say, and nobody has written his patterns down.
 
-Carlini's compiler project depended on this kind of transfer. Its workers inherited code, tests, progress files and procedures from an institution that had taken shape around its failures. The next workers needed what those failures had taught. So we have to open the files and ask what the institution should leave in them.
+Chapter 5 followed the organization taking shape around Carlini's compiler project. Its workers inherited code, tests, progress files and procedures. Now we have to open those files: what should they preserve from the work, and how can the next worker challenge what she finds? Alexander's pattern language offers a form for that inheritance.
 
 If the file only says what we decided, the next worker inherits our mistakes. If it says why, she can find them.
 
@@ -255,9 +255,9 @@ Consider how it goes in an ordinary team. The review pattern from the Bing lesso
 
 Larry Laudan named the missing distinction **acceptance and pursuit**.[^laudan] What to believe today and what to work on tomorrow are different questions. The team had good reasons to keep using the incumbent and no mechanism for asking whether the rival deserved a trial. The Riemann bound raises the same pair of questions: accepting it as a result does not tell us whether to keep pursuing that route toward the full hypothesis.
 
-Six months of use leaves another trace. The incumbent pattern acquires an exception for one client, then another, then a third. Lakatos would read those patches as the **research programme**'s health record.[^lakatos] Does a revision predict a failure in a further case, and does that prediction hold up? Or does it merely explain the incident already observed? Those questions distinguish a progressive programme from one that keeps accommodating failures after the fact. The file should record what was predicted and checked, including when the revision remains untested.
+Six months of use leaves another trace. The incumbent pattern acquires an exception for one client, then another, then a third. Chapter 5 introduced Lakatos's patience with a **research programme**; here the patches let us examine what that patience buys.[^lakatos] Does a revision predict a failure in a further case, and does that prediction hold up? Or does it merely explain the incident already observed? Those questions distinguish a progressive programme from one that keeps accommodating failures after the fact. The file should record what was predicted and checked, including when the revision remains untested.
 
-Adding agents can multiply the same choice. Give a dozen of them the same ranking of ideas, ask each to choose independently, and all twelve may pick the same experiment. Philip Kitcher described the problem as the **division of cognitive labor**: choices that are sensible for each individual can leave a community pursuing too few alternatives.[^kitcher]
+Kitcher's **division of cognitive labor**, from Chapter 5, applies to this library too: a retrieval policy that keeps selecting the incumbent gives the rival no chance to acquire evidence.[^kitcher]
 
 The rival needs a bounded experiment whose outcome determines the next decision, costed in advance, with the later choices it could change written down beside it.
 
@@ -446,3 +446,4 @@ What happens when the next agent proposes to rewrite it?
 [^harari]: Yuval Noah Harari, *Sapiens: A Brief History of Humankind*, 2014, ch. 14, “The Discovery of Ignorance.”
 
 [^feyerabend]: Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author's text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend's historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
+
