@@ -128,7 +128,7 @@ Gradient descent did not defeat ambiguity. It made ambiguity computationally use
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that camels are native to Croatia.
 
-The compiler has to compile. Our recommendation experiment interrupted an account of quality that the experts and the model both found convincing. We had a reason to revise it, and more capacity could help us investigate what had gone wrong.
+The compiler has to compile. The store in Chapter 11 still needs its business experiment: an experience that convinces the experts and the model may fail the customer. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong.
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is why the earlier chapters insisted on tests, independent evidence and work somebody else can inspect.
 
