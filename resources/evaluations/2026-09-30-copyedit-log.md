@@ -122,3 +122,41 @@ The author asked for these decisions to be made so that the manuscript is ready 
 | Part-page and divider drafting comments | **Removed.** Only production comments remain: the `VISUAL`/`DIAGRAM` art directions and one structural note explaining invisible layout code. |
 
 **Manuscript status: ready for proofreading.** No author decisions are open. The remaining production work is listed in REVISIT: figures and art, front matter, clearance, and the printer.
+
+## Chapter 7 revision draft (for author review)
+
+Requested by the author after the Bradley–Terry comparison and discussion of the chapter's arc. The draft adds the chapter's own definition and outside evidence, and trims survey material.
+
+**Sources, all read in full:**
+- Lilian Weng, "Harness Engineering for Self-Improvement" (July 2026)
+- The Anthropic Institute, "Recursive self-improvement" (2026, updated 18 September)
+- Zheng et al., "Dream-RSI" (arXiv:2609.14858, September 2026), from a PDF the author supplied
+
+Milanfar's essay could not be fetched here. Its expanded description follows search summaries of the essay and must be checked against the text.
+
+**Added:**
+- **Definition, after Good.** Yudkowsky's phrase, Weng's harness-level broadening and Anthropic's "designs its own successor", followed by the chapter's own stricter test with three conditions: second-order, stated conditions, judged by something the system does not control.
+- **The Learner Dreams.** Dream-RSI as a careful real version of the store agent's simulator proposal: replay only over recorded outcomes, only the strategy code editable, redeployed online each round. Its guarantee holds only on recorded history.
+- **The Learner Edits the School.** Weng's ladder (prompts → context → workflow → harness → optimizer), the Darwin Gödel Machine's 20 → 50% with a fixed model, and STOP degrading on weaker models.
+- **Experiments on the Laboratory.** Anthropic's fixed-goal training-speedup test (about 3× → about 52×), with Anthropic's own caveat.
+- **Before the Returns Arrive.** Milanfar's small-gain argument stated in full; the simulator as the self-model; Amdahl's law and review as the bottleneck.
+- **New short section, "The Oldest Self-Improving Institution".** Science's changes to its own method as slow, externally judged self-improvement.
+- **Constitution.** Agentic Harness Engineering's read-only verifier and predicted-impact edits, and Weng's "outside the loop".
+
+**Trimmed:**
+- the Pathak sentence
+- the Montezuma's Revenge sentence
+- the Hillis paragraph
+- the Bajcsy/Brooks names, now one clause
+- the architecture-search details
+
+The trimmed sources move to Additional sources. Notes are renumbered 1–32.
+
+**Net length:** about 6,070 → about 7,000 words.
+
+**Gate:** seeds pass; build 319 pages, 87 illustrations, 0 placements needing review; references validate; unit tests pass.
+
+**Open items:**
+- Verify the Milanfar paraphrase against the essay.
+- Confirm that the Weng-reported numbers (Darwin Gödel Machine, STOP, Agentic Harness Engineering) match the primary papers; arXiv is blocked here.
+- Decide whether the Chapter 6 disclosure of reliance on Anthropic sources should mention the Institute piece.
