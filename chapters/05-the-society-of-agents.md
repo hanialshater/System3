@@ -45,7 +45,7 @@ So where does the knowledge of the compiler project live? Obviously some of it l
 
 The parser agent does not know what the performance agent knows. Neither remembers the previous session, and neither will exist next week. Some knowledge lives in code, some in tests, Git history, progress files, task boundaries and conventions. Some lives in GCC, which the project trusts as a reference for particular questions. Some lives in Carlini’s head; he is the one who notices that the organization no longer fits the work and changes the harness.
 
-In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it World 3. The compiler project is a small World 3 with a Git remote.[2](appendix-references.md#ref-05-popper-world3)
+In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it the third world, and later World 3. The compiler project is a small World 3 with a Git remote.[2](appendix-references.md#ref-05-popper-world3)
 
 Popper insisted on two properties of that world. We make it, but we do not control everything that follows from it: once a theory is written down it has consequences its author never saw, and problems nobody has noticed yet are already sitting in it. And it keeps our mistakes as carefully as our discoveries. A refuted theory is still a citizen of World 3; it just has a bad reputation.
 
@@ -108,9 +108,9 @@ Or the figure could be right, in a unit nobody else used. A record says somebody
 
 The king of Qin had that problem on an imperial scale. In 221 BCE he conquered the last of the six rival states and became the First Emperor, ruling an empire of regional writing traditions, currencies, weights and measures. Conquest had put strangers under one ruler. It had not made their accounts agree.
 
-Under the emperor and his chancellor Li Si, the state imposed common standards. Some surviving bronze measures carry the imperial edict that ordered the work. The vessel tells you how much it holds and, on its side, who decided. You can hold one and read the decision.[6](appendix-references.md#ref-05-qin)
+Under the emperor and his minister Li Si, later chancellor, the state imposed common standards. Some surviving bronze measures carry the imperial edict that ordered the work. The vessel tells you how much it holds and, on its side, who decided. You can hold one and read the decision.[6](appendix-references.md#ref-05-qin)
 
-Then the ambition to settle disagreement reached the past. In the account preserved by the historian Sima Qian, Li Si proposed in 213 BCE that certain private histories and philosophical texts be burned. Copies held by court scholars were exempt, along with useful technical works. A person could consult the past, provided the court controlled which past was available. The proposal was meant to stop old books from becoming arguments against the present ruler.[7](appendix-references.md#ref-05-qinbooks)
+Then the ambition to settle disagreement reached the past. In the account preserved by the historian Sima Qian, Li Si proposed in 213 BCE that the histories of states other than Qin, and privately held copies of the classics and the philosophers, be burned. Copies held by court scholars were exempt, along with works on medicine, divination and agriculture. A person could consult the past, provided the court controlled which past was available. The proposal was meant to stop old books from becoming arguments against the present ruler.[7](appendix-references.md#ref-05-qinbooks)
 
 The bronze measure allowed two clerks to discover that their accounts disagreed. The order against the books tried to take that possibility away from the emperor’s critics.
 
@@ -198,7 +198,7 @@ In March 1610 Galileo published a short book announcing, among other discoveries
 
 He was wrong about the moons, but his question was reasonable. Unpack the sentence *there are moons orbiting Jupiter* and it contains a telescope, the craft of grinding lenses, assumptions about optics, an interpretation of points of light, and the possibility that somebody else might build an instrument and look. A lens that made a distant church appear closer had not, by that fact alone, established the reliability of everything it showed in the sky.
 
-Later that year Kepler looked through another telescope and saw the moons himself. A flaw in Galileo’s lens now had a harder time explaining the result. The two observers still shared assumptions about light and astronomy, but the claim no longer depended on what one man said he had seen through one instrument.
+Later that year Kepler, using a telescope Galileo had sent to the Elector of Cologne, saw the moons himself. A flaw in one lens now had a harder time explaining the result. The two observers still shared assumptions about light and astronomy, and a lens grinder, but the claim no longer depended on what one man said he had seen through one instrument.
 
 A new instrument creates new facts and new ways to be wrong about them. The lens might distort, the point of light might not be there, nobody else might manage to reproduce it, and the operator might not know what she is doing. An instrument is a witness, and a witness needs a track record.
 
