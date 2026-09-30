@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-30",
+  "scope": "Resolve 10 Chapter 2 and 7 Chapter 5 briefs",
+  "new_raster_assets": [
+    {
+      "id": "ch5-linux-gate",
+      "file": "assets/art/ch5-linux-gate.png",
+      "method": "OpenAI built-in image generation",
+      "date": "2026-09-30",
+      "style_references": [
+        "a079"
+      ],
+      "prompt_brief": "Warm ivory, ink and watercolor landscape in the style of a079. Diverging paths through small blank-sign doorways converge on one enormous stone gate bearing a penguin emblem. Antique brass robots can work separately at the small doors but crowd together at the gate. Gentle isometric game-map composition, muted blue backpacks, organic fading edges, no text, no charts, no captions. 3:2 landscape, high resolution for 4.6-inch-wide print.",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "sha256": "82d608612a15971fa1353eaa6705a28f66c1d425b5b80447f2a462153326e0e6",
+      "placement_inches": [
+        4.625,
+        3.0833333333
+      ],
+      "effective_ppi": 332.1081081081081,
+      "status": "Implemented; visual review passed; no separate author sign-off recorded"
+    },
+    {
+      "id": "ch5-outside-designer",
+      "file": "assets/art/ch5-outside-designer.png",
+      "method": "OpenAI built-in image generation",
+      "date": "2026-09-30",
+      "style_references": [
+        "a079",
+        "a107"
+      ],
+      "prompt_brief": "Warm ivory, delicate pen and watercolor landscape diptych matching a079 and a107. Left: tiny brass robots cooperate inside a glass tabletop box; a human hand outside turns an external knob. Right: expansive human civilization with a potter, library, workshops, bridges and observatory; the enclosing corners fade into paper. No outside hand or controller over the human city. No text, labels, numerals or logos. Generous gap, organic feathered edges, muted blues and ochres, 3:2 landscape, legible at 4.6 inches.",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "sha256": "896d11cac42ac923f5fb57e8aa5d57361f9990c8a66dd2ee83d0cf25f5733b57",
+      "placement_inches": [
+        4.625,
+        3.0833333333
+      ],
+      "effective_ppi": 332.1081081081081,
+      "status": "Implemented; visual review passed; no separate author sign-off recorded"
+    }
+  ],
+  "new_native_vector_figures": 12,
+  "existing_assets_reconciled": [
+    "a018",
+    "a079",
+    "a083"
+  ],
+  "preserved_part_three_art": "a107",
+  "preserved_cover_plates": 14,
+  "technical_source": "technical_figures.py",
+  "reference_geometry": "circle-packing-reference.json",
+  "data_policy": "Reported chapter endpoints are labelled approximate and not reconstructed trajectories. Schematics do not imply measured run data.",
+  "review_iterations": [
+    "First complete 324-page proof: all text, font, resolution and collision gates passed; visually inspected all contact sheets and every new figure.",
+    "Refined diagram heights, short tables, chapter-ending paragraph spacing and Zen line spacing; inspect final build report for resulting pagination."
+  ]
+}

@@ -176,7 +176,7 @@
     ],
     "file": "assets/art/a018.jpg",
     "chapter": 2,
-    "after": "Circle packing lets us watch that handoff in miniature."
+    "after": "The problem is simple enough to explain to a child."
   },
   {
     "id": "a019",
@@ -2277,7 +2277,7 @@
     ],
     "file": "assets/art/a155.jpg",
     "chapter": 8,
-    "after": " coordinate other agents while the human is still reading the first diff. At some point, “human in the loop” becomes a comforting description of a loop the human can no longer see."
+    "after": " coordinate other agents while the human is still reading the first diff. At some point, \u201chuman in the loop\u201d becomes a comforting description of a loop the human can no longer see."
   },
   {
     "id": "a157",
@@ -2393,7 +2393,7 @@
     ],
     "file": "assets/art/a170.jpg",
     "chapter": 9,
-    "after": ". Eventually “better” had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked."
+    "after": ". Eventually \u201cbetter\u201d had acquired a surprising amount of structure. But something else had happened too: I had learned what I meant by better partly by seeing versions I disliked."
   },
   {
     "id": "a172",
@@ -2554,7 +2554,7 @@
     ],
     "file": "assets/art/a187.jpg",
     "chapter": 10,
-    "after": "failure mode appears—or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well."
+    "after": "failure mode appears\u2014or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well."
   },
   {
     "id": "a190",
@@ -3052,5 +3052,117 @@
     "file": "assets/art/photo58.jpg",
     "chapter": 4,
     "after": null
+  },
+  {
+    "id": "ch2-reference",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "reference",
+    "after": "For the experiments in this chapter, we had a strong reference score"
+  },
+  {
+    "id": "ch2-search-roles",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "history",
+    "after": "Circle packing lets us watch that handoff in miniature."
+  },
+  {
+    "id": "ch2-hill",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "hill",
+    "after": "In one simple run, the score climbed"
+  },
+  {
+    "id": "ch2-crossover",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "crossover",
+    "after": "So we used *bipartite matching crossover*"
+  },
+  {
+    "id": "ch2-evolution",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "evolution",
+    "after": "In this experiment the score rose from around 2.08"
+  },
+  {
+    "id": "ch2-archive",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "archive",
+    "after": "For circle packing, perhaps one dimension measures symmetry"
+  },
+  {
+    "id": "ch2-alphaevolve",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "alphaevolve",
+    "after": "AlphaEvolve scales that idea up."
+  },
+  {
+    "id": "ch2-result",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "result",
+    "after": "Calling it a new state of the art in circle packing would require"
+  },
+  {
+    "id": "ch2-vortex",
+    "chapter": 2,
+    "kind": "technical",
+    "figure": "vortex",
+    "after": "The search moves outward through levels."
+  },
+  {
+    "id": "ch5-harness",
+    "chapter": 5,
+    "kind": "technical",
+    "figure": "harness",
+    "after": "The harness kept changing. Near the end"
+  },
+  {
+    "id": "ch5-gcc",
+    "chapter": 5,
+    "kind": "technical",
+    "figure": "gcc",
+    "after": "A later pass with delta debugging helped isolate combinations"
+  },
+  {
+    "id": "ch5-institution",
+    "chapter": 5,
+    "kind": "technical",
+    "figure": "institution",
+    "after": "There is no lone human replacement for CERN"
+  },
+  {
+    "id": "ch5-linux-gate",
+    "chapter": 5,
+    "source_page": 0,
+    "file": "assets/art/ch5-linux-gate.png",
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "max_height": 222,
+    "after": "The organization was the bug."
+  },
+  {
+    "id": "ch5-outside-designer",
+    "chapter": 5,
+    "source_page": 0,
+    "file": "assets/art/ch5-outside-designer.png",
+    "clip": [
+      0,
+      0,
+      1,
+      0.5151515151515151
+    ],
+    "max_height": 222,
+    "after": "Human civilization has been living inside the large version"
   }
 ]
