@@ -122,3 +122,14 @@ The author asked for these decisions to be made so that the manuscript is ready 
 | Part-page and divider drafting comments | **Removed.** Only production comments remain: the `VISUAL`/`DIAGRAM` art directions and one structural note explaining invisible layout code. |
 
 **Manuscript status: ready for proofreading.** No author decisions are open. The remaining production work is listed in REVISIT: figures and art, front matter, clearance, and the printer.
+
+## Review follow-up (30 September 2026)
+
+The author requested a correction pass and merge of PR #10 after review. This follow-up supersedes the two source-verification decisions above; the delegated author decisions remain closed.
+
+- **Chapter 6:** restored the internal Anthropic model detail, explicitly attributed to OpenAI and tied to Alpöge and Buckmaster’s forced Euler result. OpenAI’s “Concurrent work” section supports it: <https://openai.com/index/navier-stokes-solution/>.
+- **Chapter 8:** restored attribution of the validation-set acknowledgment to the researchers, retaining their out-of-distribution split qualification. The primary report’s “Reward Hacking” section states this directly: <https://alignment.anthropic.com/2026/automated-w2s-researcher/>.
+- **Chapter 12:** replaced the apparent report of a completed recommendation experiment with the prospective business experiment described in Chapter 11. The passage keeps its point about testing persuasive judgments against customer outcomes.
+- **Chapter 12 reference 6:** added the OpenAI source for the concurrent-agent count alongside the Anthropic source for the Fermat token count.
+
+**Verification:** all 16 existing unit tests pass, including book-order and citation validation; the narrative-seed check passes with every listed anchor present; all 87 illustration text anchors resolve using the renderer’s block parser and anchor resolver. No new PDF was built or visually inspected in this follow-up. The earlier 317-page build predates these corrections; updated pagination and visual review remain to be checked in the next proof.
