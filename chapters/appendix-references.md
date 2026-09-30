@@ -245,41 +245,39 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 14. <a id="ref-07-hillis"></a>W. Daniel Hillis, “Co-evolving Parasites Improve Simulated Evolution as an Optimization Procedure,” *Physica D* 42, 1990, pp. 228–234.
 
-15. <a id="ref-07-alphazero"></a>David Silver et al., “Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm,” 2017, [arXiv:1712.01815](https://arxiv.org/abs/1712.01815).
+15. <a id="ref-07-irl"></a>Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” *Proceedings of ICML*, 2000.
 
-16. <a id="ref-07-irl"></a>Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” *Proceedings of ICML*, 2000.
+16. <a id="ref-07-cirl"></a>Dylan Hadfield-Menell, Anca Dragan, Pieter Abbeel, and Stuart Russell, “Cooperative Inverse Reinforcement Learning,” 2016, [arXiv:1606.03137](https://arxiv.org/abs/1606.03137); Hadfield-Menell et al., “Inverse Reward Design,” 2017, [arXiv:1711.02827](https://arxiv.org/abs/1711.02827).
 
-17. <a id="ref-07-cirl"></a>Dylan Hadfield-Menell, Anca Dragan, Pieter Abbeel, and Stuart Russell, “Cooperative Inverse Reinforcement Learning,” 2016, [arXiv:1606.03137](https://arxiv.org/abs/1606.03137); Hadfield-Menell et al., “Inverse Reward Design,” 2017, [arXiv:1711.02827](https://arxiv.org/abs/1711.02827).
+17. <a id="ref-07-rlhf"></a>Paul Christiano et al., “Deep Reinforcement Learning from Human Preferences,” 2017, [arXiv:1706.03741](https://arxiv.org/abs/1706.03741); Long Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” 2022, [arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
 
-18. <a id="ref-07-rlhf"></a>Paul Christiano et al., “Deep Reinforcement Learning from Human Preferences,” 2017, [arXiv:1706.03741](https://arxiv.org/abs/1706.03741); Long Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” 2022, [arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
+18. <a id="ref-07-worldmodels"></a>David Ha and Jürgen Schmidhuber, “World Models,” 2018, [arXiv:1803.10122](https://arxiv.org/abs/1803.10122); Danijar Hafner et al., “Dream to Control: Learning Behaviors by Latent Imagination,” 2019, [arXiv:1912.01603](https://arxiv.org/abs/1912.01603).
 
-19. <a id="ref-07-worldmodels"></a>David Ha and Jürgen Schmidhuber, “World Models,” 2018, [arXiv:1803.10122](https://arxiv.org/abs/1803.10122); Danijar Hafner et al., “Dream to Control: Learning Behaviors by Latent Imagination,” 2019, [arXiv:1912.01603](https://arxiv.org/abs/1912.01603).
+19. <a id="ref-07-novelty"></a>Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution through the Search for Novelty Alone,” *Evolutionary Computation* 19(2), 2011, pp. 189–223. The stepping-stone argument is developed in Stanley and Lehman, *Why Greatness Cannot Be Planned*, 2015.
 
-20. <a id="ref-07-novelty"></a>Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution through the Search for Novelty Alone,” *Evolutionary Computation* 19(2), 2011, pp. 189–223. The stepping-stone argument is developed in Stanley and Lehman, *Why Greatness Cannot Be Planned*, 2015.
+20. <a id="ref-07-openended"></a>Rui Wang et al., “Paired Open-Ended Trailblazer (POET),” 2019, [arXiv:1901.01753](https://arxiv.org/abs/1901.01753); Open Ended Learning Team, DeepMind, “Open-Ended Learning Leads to Generally Capable Agents,” 2021, [arXiv:2107.12808](https://arxiv.org/abs/2107.12808).
 
-21. <a id="ref-07-openended"></a>Rui Wang et al., “Paired Open-Ended Trailblazer (POET),” 2019, [arXiv:1901.01753](https://arxiv.org/abs/1901.01753); Open Ended Learning Team, DeepMind, “Open-Ended Learning Leads to Generally Capable Agents,” 2021, [arXiv:2107.12808](https://arxiv.org/abs/2107.12808).
+21. <a id="ref-07-godel"></a>Jürgen Schmidhuber, “Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements,” 2003, [arXiv:cs/0309048](https://arxiv.org/abs/cs/0309048).
 
-22. <a id="ref-07-godel"></a>Jürgen Schmidhuber, “Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements,” 2003, [arXiv:cs/0309048](https://arxiv.org/abs/cs/0309048).
+22. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
 
-23. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
+23. <a id="ref-07-dgm"></a>Jenny Zhang et al., “Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents,” 2025, [arXiv:2505.22954](https://arxiv.org/abs/2505.22954).
 
-24. <a id="ref-07-dgm"></a>Jenny Zhang et al., “Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents,” 2025, [arXiv:2505.22954](https://arxiv.org/abs/2505.22954).
+24. <a id="ref-07-autoresearch"></a>Andrej Karpathy, [`autoresearch`](https://github.com/karpathy/autoresearch), GitHub repository, 2026.
 
-25. <a id="ref-07-autoresearch"></a>Andrej Karpathy, [`autoresearch`](https://github.com/karpathy/autoresearch), GitHub repository, 2026.
+25. <a id="ref-07-bacon"></a>Pat Langley, Herbert A. Simon, Gary L. Bradshaw, and Jan M. Zytkow, *Scientific Discovery: Computational Explorations of the Creative Processes*, 1987; Paul Thagard, *Computational Philosophy of Science*, 1988.
 
-26. <a id="ref-07-bacon"></a>Pat Langley, Herbert A. Simon, Gary L. Bradshaw, and Jan M. Zytkow, *Scientific Discovery: Computational Explorations of the Creative Processes*, 1987; Paul Thagard, *Computational Philosophy of Science*, 1988.
+26. <a id="ref-07-hyperagents"></a>Jenny Zhang et al., “Hyperagents,” 2026, [arXiv:2603.19461](https://arxiv.org/abs/2603.19461).
 
-27. <a id="ref-07-hyperagents"></a>Jenny Zhang et al., “Hyperagents,” 2026, [arXiv:2603.19461](https://arxiv.org/abs/2603.19461).
+27. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
 
-28. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
+28. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
 
-29. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
+29. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
 
-30. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
+30. <a id="ref-07-tampering"></a>Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
 
-31. <a id="ref-07-tampering"></a>Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
-
-32. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
+31. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
 
 ### Additional sources
 
