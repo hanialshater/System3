@@ -50,7 +50,7 @@ def render(source):
     name = 'preface' if number == 0 else 'scaffolds' if number == 14 else f'chapter-{number:02d}'
     prompt = (
         f'Adapt Hani M.M. Al-Shater\'s "{title}" into an English video. '
-        'Select the linked manuscript with all its notes as the factual source and this brief as production guidance. '
+        'Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. '
         'Follow the ordered sections below, including events, explanations, qualifications and ending within each section. '
         'Attribute the author\'s experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. '
         'Do not invent dialogue, experiments, statistics or outcomes. Use only the source\'s claims and distinguish reports, arguments, proposed designs and fiction. '
@@ -60,7 +60,7 @@ def render(source):
         + RULES[number]
     )
     body = f'# {title}: video brief\n\n'
-    body += f'Source: [{source.name}](../../chapters/{source.name}), including its notes.\n\n'
+    body += f'Source: [{source.name}](../../chapters/{source.name}), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.\n\n'
     body += 'This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. '
     body += 'The source supplies the scenes and exact claims. Run `--check` before use.\n\n'
     body += f'## Video prompt\n\n```text\n{prompt}\n```\n\n## Source order\n\n'
@@ -82,6 +82,8 @@ def expected():
                             brief_sha256=hashlib.sha256(body.encode()).hexdigest(), sections=scenes))
     outputs['sources.json'] = json.dumps(dict(
         purpose='Exact source snapshot for generated production outlines; not factual or editorial approval.',
+        references='chapters/appendix-references.md',
+        references_sha256=hashlib.sha256((ROOT / 'chapters/appendix-references.md').read_bytes()).hexdigest(),
         sources=records), indent=2, ensure_ascii=False) + '\n'
     return outputs
 

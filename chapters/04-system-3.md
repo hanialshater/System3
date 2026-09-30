@@ -48,7 +48,7 @@ Language models start somewhere else, mostly with the residue that all this expe
 
 In the early twentieth century Ferdinand de Saussure made a radical claim about language: what a sign signifies does not determine its form. There is nothing inherently cow-like about the sound /kaʊ/. French speakers say *vache*, Germans say *Kuh*, and Japanese speakers say *ushi*.
 
-For Saussure, much of a sign's value comes from its relationships and differences with the other signs in the system. Language, on this view, is a network of contrasts held together by convention.[^saussure]
+For Saussure, much of a sign's value comes from its relationships and differences with the other signs in the system. Language, on this view, is a network of contrasts held together by convention.[1](appendix-references.md#ref-04-saussure)
 
 A century later we built something that learns a network of that kind. A transformer consumes enormous amounts of language and learns relationships among tokens and contexts. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
 
@@ -62,11 +62,11 @@ Months later somebody asks whether cows are dangerous, and the model gives an ex
 
 The conclusion survives training, and much of what earned it trust is lost along the way. That is what I mean when I call an LLM's knowledge epistemologically flat. The flatness sits between a claim and its justification. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel, in equally polished English.
 
-Wittgenstein's later philosophy drew attention to language as something that lives inside practice, in activities, habits, rules and what he called forms of life.[^wittgenstein]
+Wittgenstein's later philosophy drew attention to language as something that lives inside practice, in activities, habits, rules and what he called forms of life.[2](appendix-references.md#ref-04-wittgenstein)
 
 "Fire" keeps linguistic company with heat, smoke, burn and wood. Fire is also the thing that cooks food and destroys houses, the thing you pull your hand away from. Shout the word in a crowded building and a whole social machinery starts to move.
 
-Emily Bender and Alexander Koller made a version of this argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff through a conversation about a coconut catapult by offering praise. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Their argument is that learning form alone cannot give it meaning.[^octopus] I prefer dead Europeans to cephalopods, but the point is the same.
+Emily Bender and Alexander Koller made a version of this argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff through a conversation about a coconut catapult by offering praise. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Their argument is that learning form alone cannot give it meaning.[3](appendix-references.md#ref-04-octopus) I prefer dead Europeans to cephalopods, but the point is the same.
 
 A pretrained model inherits the linguistic residue of our practices. A deployed agent can start to re-enter them by running code, using tools, observing users and interacting with institutions.
 
@@ -128,7 +128,7 @@ At the moment we are obsessed with making models think harder. System 2 reasonin
 
 Reasoning perfectly from a bad premise still gets you a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed. Deep Mode can coordinate five sophisticated judgments that all trace back to one hallucinated claim. At some point thinking has to meet something outside itself.
 
-Kahneman's *Thinking, Fast and Slow* popularized the distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[^kahneman]
+Kahneman's *Thinking, Fast and Slow* popularized the distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[4](appendix-references.md#ref-04-kahneman)
 
 For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
 
@@ -167,11 +167,11 @@ The agent can try something, see what happens, update and try again. The farmer 
 
 A normal agent session can fail ten times, discover the right approach, solve the problem and throw away most of that history when the context ends. It is as if the farmer learned exactly where not to stand and then underwent elective amnesia every evening.
 
-In the Live-SWE-agent work, an agent ran into MARC files, the old bibliographic format libraries use. Its tools made the contents awkward to inspect, so it built an analyzer that displayed them in a readable form.[^liveswe] Its apparatus wasn't enough, so it built an instrument, and the instrument changed what it could observe.
+In the Live-SWE-agent work, an agent ran into MARC files, the old bibliographic format libraries use. Its tools made the contents awkward to inspect, so it built an analyzer that displayed them in a readable form.[5](appendix-references.md#ref-04-liveswe) Its apparatus wasn't enough, so it built an instrument, and the instrument changed what it could observe.
 
 People have always done this. We couldn't see bacteria, so we built microscopes, and we couldn't perceive radio waves, so we built receivers. The MARC analyzer is a humbler instrument of the same kind, and a small working example of System 3.
 
-AlphaGo draws a related distinction. Its neural network supplied powerful intuition about promising moves and valuable positions. Monte Carlo Tree Search placed that intuition inside an explicit search process constrained by the state and consequences of Go.[^alphago]
+AlphaGo draws a related distinction. Its neural network supplied powerful intuition about promising moves and valuable positions. Monte Carlo Tree Search placed that intuition inside an explicit search process constrained by the state and consequences of Go.[6](appendix-references.md#ref-04-alphago)
 
 I used to put this too simply: "the network proposes; the tree verifies." That gives the tree too much authority, since MCTS does not prove the network right. What it does is make intuition take part in an external, stateful process, where the game decides the consequences of a move whatever the network finds plausible.
 
@@ -223,7 +223,7 @@ A tool registry tracked tools, successes, failures and known failure modes. Meta
 
 The state persisted across sessions, so later problems could inherit things learned earlier. We also pruned it, because remembering everything eventually costs more context than it saves.
 
-We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model and tasks.[^swebench]
+We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model and tasks.[7](appendix-references.md#ref-04-swebench)
 
 Ten problems is nowhere near enough to establish a solve-rate advantage, and because state persisted across tasks, order effects may matter. I was not looking for a benchmark victory. I wanted to know whether the scaffold changed behavior strongly enough to see, and it did, though not the way I expected.
 
@@ -318,7 +318,7 @@ None of this means that nothing can be known, a conclusion that is dramatic and 
 
 The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It doesn't need to hold the entire chain in its weights, because the system around it can.
 
-Borrowing Daniel Dennett's phrase, I would call this competence without comprehension.[^dennett] Whether the system around it amounts to comprehension is a question for people with more patience than I have. The part of it that can be checked is the part the rest of this book builds.
+Borrowing Daniel Dennett's phrase, I would call this competence without comprehension.[8](appendix-references.md#ref-04-dennett) Whether the system around it amounts to comprehension is a question for people with more patience than I have. The part of it that can be checked is the part the rest of this book builds.
 
 Everything so far can still be imagined around one agent that acts, checks, remembers, records provenance and updates what it trusts.
 
@@ -329,19 +329,3 @@ The question then becomes: how can a population of fallible knowers build knowle
 Humans have been working on that problem for a very long time.
 
 ---
-
-[^saussure]: Ferdinand de Saussure, *Course in General Linguistics*, 1916, on the arbitrariness of the sign and linguistic value. See also the *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. <https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm>.
-
-[^wittgenstein]: Ludwig Wittgenstein, *Philosophical Investigations*, 1953, especially §§23 and 43 on language-games and meaning as use.
-
-[^octopus]: Emily M. Bender and Alexander Koller, “Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data,” *Proceedings of ACL*, 2020, pp. 5185–5198, section 4. <https://aclanthology.org/2020.acl-main.463/>.
-
-[^kahneman]: Daniel Kahneman, *Thinking, Fast and Slow*, 2011.
-
-[^liveswe]: Chunqiu Steven Xia, Zhe Wang, Yan Yang, Yuxiang Wei, and Lingming Zhang, “Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?”, 2025, [arXiv:2511.13646v2](https://arxiv.org/html/2511.13646v2), §2.2 and Figure 3 for the MARC analyzer. This example concerns tool creation during a task.
-
-[^alphago]: David Silver et al., “Mastering the Game of Go with Deep Neural Networks and Tree Search,” *Nature* 529, 2016, pp. 484–489.
-
-[^swebench]: Carlos E. Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?”, 2023, [arXiv:2310.06770](https://arxiv.org/abs/2310.06770); SWE-bench Verified is the human-validated subset released with OpenAI in August 2024. mini-swe-agent is the SWE-agent team's minimal bash-only scaffold.
-
-[^dennett]: Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds*, 2017.

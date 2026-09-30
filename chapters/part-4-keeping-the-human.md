@@ -1,4 +1,4 @@
-<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of System 3. -->
 
 ```{=latex}
 \clearpage
@@ -17,4 +17,4 @@
 > *Let go of the path, not the boundary.*\
 > *The human stays in the loop that changes the loops.*
 >
-> — The Zen of Autonomy
+> — The Zen of System 3

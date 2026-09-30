@@ -7,7 +7,7 @@ Sixteen Claudes walk into a kernel.
 <!-- VISUAL — chapter opener. Sixteen identical small robots in a queue at a single door labelled `linux/`. The door is human-sized; the queue is not. One robot at the back is reading a file labelled `progress.md`. Line-art, no color, half page. -->
 A few years ago that sentence would have looked absurd. By the time Nicholas Carlini tried it, agents writing compiler code was no longer the strange part. The strange part was watching sixteen capable agents slowly turn into an organization.
 
-The goal was almost offensively ambitious: a C compiler in Rust, from scratch, with no dependency beyond the standard library and no internet access, pushed far enough to compile the Linux kernel. Carlini had been using the task as a benchmark across generations of Claude models. Earlier versions could barely produce a working compiler. The next passed large test suites but could not build major real projects. Then, over nearly two thousand Claude Code sessions and two weeks, sixteen agents produced roughly a hundred thousand lines of compiler code that built Linux 6.9 on x86, ARM and RISC-V. It also compiled QEMU, FFmpeg, PostgreSQL and Redis.[^carlini]
+The goal was almost offensively ambitious: a C compiler in Rust, from scratch, with no dependency beyond the standard library and no internet access, pushed far enough to compile the Linux kernel. Carlini had been using the task as a benchmark across generations of Claude models. Earlier versions could barely produce a working compiler. The next passed large test suites but could not build major real projects. Then, over nearly two thousand Claude Code sessions and two weeks, sixteen agents produced roughly a hundred thousand lines of compiler code that built Linux 6.9 on x86, ARM and RISC-V. It also compiled QEMU, FFmpeg, PostgreSQL and Redis.[1](appendix-references.md#ref-05-carlini)
 
 It was nowhere near GCC. Its output ran slower than GCC with optimizations switched off, and it still borrowed an assembler and linker. One stage of the x86 boot path called GCC because the agents' own sixteen-bit code came out at nearly twice the size the kernel allows. Still, this was well beyond the kind of toy problem where sixteen agents succeed because the work happens to split into sixteen independent pieces.
 
@@ -45,7 +45,7 @@ So where does the knowledge of the compiler project live? Obviously some of it l
 
 The parser agent does not know what the performance agent knows. Neither remembers the previous session, and neither will exist next week. Some knowledge lives in code, some in tests, Git history, progress files, task boundaries and conventions. Some lives in GCC, which the project trusts as a reference for particular questions. Some lives in Carlini's head; he is the one who notices that the organization no longer fits the work and changes the harness.
 
-In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it World 3. The compiler project is a small World 3 with a Git remote.[^popper-world3]
+In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it World 3. The compiler project is a small World 3 with a Git remote.[2](appendix-references.md#ref-05-popper-world3)
 
 Popper insisted on two properties of that world. We make it, but we do not control everything that follows from it: once a theory is written down it has consequences its author never saw, and problems nobody has noticed yet are already sitting in it. And it keeps our mistakes as carefully as our discoveries. A refuted theory is still a citizen of World 3; it just has a bad reputation.
 
@@ -62,7 +62,7 @@ Human civilization has been living inside the large version for thousands of yea
 <!-- VISUAL — closing image for the section. Left panel: sixteen robots inside a glass box; a human hand outside adjusts a dial on the box. Right panel: a crowd of thousands of tiny humans inside a much larger box; the box's edges fade into the page. Same drawing style as the opener. -->
 ## Civilization Had No Senku
 
-In 2019, a green light swept across the Earth and turned humanity to stone.[^stone-date]
+In 2019, a green light swept across the Earth and turned humanity to stone.[3](appendix-references.md#ref-05-stone-date)
 
 People were caught in classrooms, at kitchen tables, crossing streets. Aircraft continued without pilots. Fires burned through neighborhoods where nobody could raise an alarm. The machinery kept running until it needed something from us.
 
@@ -80,7 +80,7 @@ Knowing how to produce it was only the beginning. Someone had to shape it into u
 
 The villagers gathered materials and learned unfamiliar processes while Ruri remained ill. Eventually they completed a sulfa drug and gave it to her. She recovered.
 
-The boy's name is Senku, and we have been following *Dr. Stone*.[^stone]
+The boy's name is Senku, and we have been following *Dr. Stone*.[4](appendix-references.md#ref-05-stone)
 
 Popper had imagined a related catastrophe in the same 1967 lecture. Destroy our machines and tools, along with our knowledge of how to use them, but preserve the libraries and our capacity to learn from them. After much suffering, civilization could recover. Destroy the libraries too, he argued, and its return would take many millennia. Popper left the libraries standing. *Dr. Stone* puts one inside a teenager.
 
@@ -94,7 +94,7 @@ Knowledge had a face. You knew whom to ask and remembered what happened when you
 
 Her vessels, meanwhile, ended up in storehouses that needed a memory beyond particular people. Grain arrived from different fields, portions were distributed, obligations remained. The person who witnessed a delivery might be absent when someone disputed the amount.
 
-By the late fourth millennium BCE, people in southern Mesopotamia were recording economic information in clay, including accounts concerning grain. The material that made the vessel could also keep an account of its contents. A new clerk could consult a transaction he had never witnessed, and the person who delivered the grain could discuss it with him over a record they could both inspect.[^writing]
+By the late fourth millennium BCE, people in southern Mesopotamia were recording economic information in clay, including accounts concerning grain. The material that made the vessel could also keep an account of its contents. A new clerk could consult a transaction he had never witnessed, and the person who delivered the grain could discuss it with him over a record they could both inspect.[5](appendix-references.md#ref-05-writing)
 
 The mark did not need to be wiser than the clerk. It needed to outlive him.
 
@@ -108,9 +108,9 @@ Or the figure could be right, in a unit nobody else used. A record says somebody
 
 The king of Qin had that problem on an imperial scale. In 221 BCE he conquered the last of the six rival states and became the First Emperor, ruling an empire of regional writing traditions, currencies, weights and measures. Conquest had put strangers under one ruler. It had not made their accounts agree.
 
-Under the emperor and his chancellor Li Si, the state imposed common standards. Some surviving bronze measures carry the imperial edict that ordered the work. The vessel tells you how much it holds and, on its side, who decided. You can hold one and read the decision.[^qin]
+Under the emperor and his chancellor Li Si, the state imposed common standards. Some surviving bronze measures carry the imperial edict that ordered the work. The vessel tells you how much it holds and, on its side, who decided. You can hold one and read the decision.[6](appendix-references.md#ref-05-qin)
 
-Then the ambition to settle disagreement reached the past. In the account preserved by the historian Sima Qian, Li Si proposed in 213 BCE that certain private histories and philosophical texts be burned. Copies held by court scholars were exempt, along with useful technical works. A person could consult the past, provided the court controlled which past was available. The proposal was meant to stop old books from becoming arguments against the present ruler.[^qinbooks]
+Then the ambition to settle disagreement reached the past. In the account preserved by the historian Sima Qian, Li Si proposed in 213 BCE that certain private histories and philosophical texts be burned. Copies held by court scholars were exempt, along with useful technical works. A person could consult the past, provided the court controlled which past was available. The proposal was meant to stop old books from becoming arguments against the present ruler.[7](appendix-references.md#ref-05-qinbooks)
 
 The bronze measure allowed two clerks to discover that their accounts disagreed. The order against the books tried to take that possibility away from the emperor's critics.
 
@@ -146,7 +146,7 @@ There was a procedure for this emergency: when neither intubation nor ventilatio
 
 The people with the most authority kept attempting the same solution. The people who saw the need to change course could not make that knowledge change what happened to her.
 
-Elaine never regained consciousness. She died thirteen days later.[^bromiley]
+Elaine never regained consciousness. She died thirteen days later.[8](appendix-references.md#ref-05-bromiley)
 
 Her husband, Martin, was an airline pilot. The surgeon wrote to him that he still could not see how they could have anticipated or avoided what happened. Martin wanted an investigation. In aviation, you investigated a disaster so that the next crew did not have to learn it again.
 
@@ -162,7 +162,7 @@ Robert Millikan watched tiny drops of oil fall between charged plates. He timed 
 
 The number he published in 1913 was slightly too small, because the viscosity of air he used was slightly wrong. It was a very good number for its time. It became the number.
 
-Feynman later described what happened to measurements that followed it: they crept upward toward the accepted value. Why so slowly? In his telling, a laboratory that got an answer close to Millikan's could write it up. An answer farther away sent the experimenter back to the apparatus, looking for what had gone wrong. The inherited number had become part of the method for deciding which results deserved to survive.[^millikan]
+Feynman later described what happened to measurements that followed it: they crept upward toward the accepted value. Why so slowly? In his telling, a laboratory that got an answer close to Millikan's could write it up. An answer farther away sent the experimenter back to the apparatus, looking for what had gone wrong. The inherited number had become part of the method for deciding which results deserved to survive.[9](appendix-references.md#ref-05-millikan)
 
 Meanwhile, X-rays offered a way to investigate the spacing of atoms in crystals, and from that spacing physicists could estimate the electron's charge by another route. Those measurements helped expose the discrepancy. Their apparatus had problems of its own, but the viscosity of air was not one of them. No amount of respect for Millikan could make a crystal inherit that particular mistake.
 
@@ -170,19 +170,19 @@ That is what a second witness is for: she has to be capable of being wrong diffe
 
 The easiest reaction to one unreliable agent is to create five. Give one the title *Researcher*, another *Critic*, another *Verifier*, put them in a conversation, and perhaps reality will be intimidated by the org chart. Humanity invented committees this way and then, dissatisfied with the original implementation, recreated them in software.
 
-Condorcet supplied a famous mathematical case for crowds in 1785. In the simple version, voters each have the same better-than-even chance of being right, and their votes are independent. Under those conditions, the probability of a correct majority approaches one as the crowd grows. Independence is doing work in that sentence. Voters who simply copy one source copy its mistakes. The crowd is the source, louder.[^condorcet]
+Condorcet supplied a famous mathematical case for crowds in 1785. In the simple version, voters each have the same better-than-even chance of being right, and their votes are independent. Under those conditions, the probability of a correct majority approaches one as the crowd grows. Independence is doing work in that sentence. Voters who simply copy one source copy its mistakes. The crowd is the source, louder.[10](appendix-references.md#ref-05-condorcet)
 
 Agreement raises confidence when it would be difficult to explain if the claim were false. When five agents merely repeat one source, we have one witness wearing different coats.
 
 So useful independence has to be built. A critic should see the artifact before the builder's explanation. A second researcher should form a theory before reading the favorite. Different investigators should sometimes use different sources or methods. Separate containers help with some kinds of interference, but shared training, shared prompts and the bad diagnosis everyone read in `progress.md` come through the walls.
 
-A strange branch may deserve another experiment even when nobody expects it to win. Kevin Zollman's models show why: under some conditions, less connected communities reach the truth more reliably because an early misleading result cannot bring everyone onto the same path before alternatives have been investigated.[^zollman]
+A strange branch may deserve another experiment even when nobody expects it to win. Kevin Zollman's models show why: under some conditions, less connected communities reach the truth more reliably because an early misleading result cannot bring everyone onto the same path before alternatives have been investigated.[11](appendix-references.md#ref-05-zollman)
 
 Permanent disagreement would be useless. An institution that never converges is a philosophy department with an alarming compute bill. Independence exists so that disagreement can carry information, and sooner or later the disagreement has to be put to some kind of test.
 
 ## A Man in a Dark Room
 
-Ibn al-Haytham darkened a room around the beginning of the eleventh century, made a small hole in one wall, and placed lamps outside it. On the opposite wall, spots of light appeared. Cover a lamp and its corresponding spot disappeared while the others remained.[^optics]
+Ibn al-Haytham darkened a room around the beginning of the eleventh century, made a small hole in one wall, and placed lamps outside it. On the opposite wall, spots of light appeared. Cover a lamp and its corresponding spot disappeared while the others remained.[12](appendix-references.md#ref-05-optics)
 
 Vision had been argued about for centuries. One tradition held that the eye sends something out toward the world; another that something travels into the eye. Ibn al-Haytham developed an account in which light travels from objects toward the eye. The dark room did not settle the whole dispute. It made part of the problem manageable: light from separate sources passed through the same opening along paths that could be traced, interrupted and examined.
 
@@ -190,11 +190,11 @@ The setup allowed someone who disagreed with him to do more than disagree.
 
 A record preserves what somebody says happened. An experiment gives the world another chance to answer.
 
-We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens. Charles Sanders Peirce later argued that this is what separates science from other ways of settling belief, whether by stubbornness, authority or what seems reasonable from an armchair: the answer is constrained by something beyond the believer. I am a pragmatist in his sense throughout this book, and *contact with reality*, wherever the phrase appears here, means that arrangement. Something outside the current explanation is able to make the explanation fail.[^peirce]
+We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens. Charles Sanders Peirce later argued that this is what separates science from other ways of settling belief, whether by stubbornness, authority or what seems reasonable from an armchair: the answer is constrained by something beyond the believer. I am a pragmatist in his sense throughout this book, and *contact with reality*, wherever the phrase appears here, means that arrangement. Something outside the current explanation is able to make the explanation fail.[13](appendix-references.md#ref-05-peirce)
 
 An experimental arrangement still has to travel. Someone elsewhere needs enough of the description, the equipment and the skill to make the world answer again. And when the instrument shows something nobody has seen before, the observer has two things to explain: the discovery and why anyone should trust the device that produced it.
 
-In March 1610 Galileo published a short book announcing, among other discoveries, four moons orbiting Jupiter. The next month he took his telescope to Bologna. Through the instrument, an earthly object could look wonderfully close. Point it at Jupiter and some observers could not find the moons Galileo said were there. Martin Horky, an assistant to the astronomer Giovanni Magini, reported that the device worked on earth and deceived in the heavens.[^galileo]
+In March 1610 Galileo published a short book announcing, among other discoveries, four moons orbiting Jupiter. The next month he took his telescope to Bologna. Through the instrument, an earthly object could look wonderfully close. Point it at Jupiter and some observers could not find the moons Galileo said were there. Martin Horky, an assistant to the astronomer Giovanni Magini, reported that the device worked on earth and deceived in the heavens.[14](appendix-references.md#ref-05-galileo)
 
 He was wrong about the moons, but his question was reasonable. Unpack the sentence *there are moons orbiting Jupiter* and it contains a telescope, the craft of grinding lenses, assumptions about optics, an interpretation of points of light, and the possibility that somebody else might build an instrument and look. A lens that made a distant church appear closer had not, by that fact alone, established the reliability of everything it showed in the sky.
 
@@ -208,15 +208,15 @@ A broken tool is a very efficient route to externally generated nonsense.
 
 ## Boyle's Pump
 
-Robert Boyle wanted to see what happened to a candle, a bell and a living animal when the air around them was taken away. In 1659 he had Robert Hooke build him a pump that could pull much of the air out of a glass vessel. The candle went out. The sound of the bell weakened. Animals struggled to breathe. He published the results in 1660 with descriptions of the apparatus and numbered experiments, so that a reader in another city could, in principle, build the pump and see for himself.[^boyle]
+Robert Boyle wanted to see what happened to a candle, a bell and a living animal when the air around them was taken away. In 1659 he had Robert Hooke build him a pump that could pull much of the air out of a glass vessel. The candle went out. The sound of the bell weakened. Animals struggled to breathe. He published the results in 1660 with descriptions of the apparatus and numbered experiments, so that a reader in another city could, in principle, build the pump and see for himself.[15](appendix-references.md#ref-05-boyle)
 
 Thomas Hobbes was unimpressed. A room full of gentlemen could agree about what they had seen and still be wrong. Their conclusion depended on the glass, the pump, the leaks and their eyes. Geometry was supposed to compel assent. Why should anyone outside Boyle's room have to accept the verdict of the people inside it?
 
-The pump gave the objection plenty to work with. In 1661 Christiaan Huygens found that water remained suspended in an evacuated vessel when it was expected to fall. Boyle's group could not reproduce it. For two years they had different facts about what water did when the air was removed. Was the difference in the air, the water, the glass, the pump, the operator or the explanation? In 1663 Huygens came to London, and with his participation the effect was reproduced there. The written account had crossed the sea before him. It had not brought everything the experiment needed.[^huygens]
+The pump gave the objection plenty to work with. In 1661 Christiaan Huygens found that water remained suspended in an evacuated vessel when it was expected to fall. Boyle's group could not reproduce it. For two years they had different facts about what water did when the air was removed. Was the difference in the air, the water, the glass, the pump, the operator or the explanation? In 1663 Huygens came to London, and with his participation the effect was reproduced there. The written account had crossed the sea before him. It had not brought everything the experiment needed.[16](appendix-references.md#ref-05-huygens)
 
 Reality had pushed back against the whole package without highlighting the guilty component.
 
-Pierre Duhem articulated the problem in 1906, and Quine later developed a broader version: a test depends on more than the hypothesis under investigation. It depends on instruments, background assumptions and the way the test is carried out. When a prediction fails, logic alone does not identify which part to abandon. Software engineers know the sensation without the names. A failing integration test proves the system is broken somewhere. Wonderful. You now have debugging.[^duhem]
+Pierre Duhem articulated the problem in 1906, and Quine later developed a broader version: a test depends on more than the hypothesis under investigation. It depends on instruments, background assumptions and the way the test is carried out. When a prediction fails, logic alone does not identify which part to abandon. Software engineers know the sensation without the names. A failing integration test proves the system is broken somewhere. Wonderful. You now have debugging.[17](appendix-references.md#ref-05-duhem)
 
 So the institution needs archaeology: a record of which instrument produced a measurement, which analysis transformed it, and where observation ended and interpretation began. Within a few years of Boyle's book, *Philosophical Transactions* was publishing reports that could outlive the room. Publication established a claim and a date, and gave someone elsewhere a route, however imperfect, to expose the claim to the world again. Reputation gathered around investigators and, more strangely, around instruments and procedures. The question *did this happen?* acquired machinery.
 
@@ -228,7 +228,7 @@ Knowledge now came with a route by which someone else might make a claim fail ag
 
 ## Who Gets the Next Agent?
 
-The coastlines of Africa and South America fit together suspiciously well, and in 1912 a German meteorologist named Alfred Wegener took the fit seriously. He proposed that the continents had once been one landmass and had drifted apart. Besides the coastlines, he had matching fossils on opposite sides of the Atlantic, matching rock formations and glacial traces in places that were now tropical. What he did not have was a force capable of moving a continent.[^wegener]
+The coastlines of Africa and South America fit together suspiciously well, and in 1912 a German meteorologist named Alfred Wegener took the fit seriously. He proposed that the continents had once been one landmass and had drifted apart. Besides the coastlines, he had matching fossils on opposite sides of the Atlantic, matching rock formations and glacial traces in places that were now tropical. What he did not have was a force capable of moving a continent.[18](appendix-references.md#ref-05-wegener)
 
 Much of geology declined, and not stupidly. The forces Wegener proposed were too weak, and a continent could not simply plough through an ocean floor that stayed where it was. The fossils needed explaining, but so did the physics. Wegener died on the Greenland ice in 1930, still unable to make the continents move to his critics' satisfaction.
 
@@ -246,7 +246,7 @@ Imagine research program A is ahead and has twelve agents. Program B looks weake
 
 The natural answer is A, and the answer reinforces itself: more agents, more experiments, more evidence, more confidence, more agents. Eventually the leading theory owns the building, and the weak one has a meteorologist.
 
-Philip Kitcher examined this problem in 1990: how should a community divide its labor among research programs? A community can benefit from some investigators pursuing a less promising approach even when each individual, considering only the best-supported option, would choose the leader. Lakatos supplied another reason for patience: an unresolved anomaly does not, by itself, tell us to abandon a research program. The question is what further work it makes possible.[^allocation]
+Philip Kitcher examined this problem in 1990: how should a community divide its labor among research programs? A community can benefit from some investigators pursuing a less promising approach even when each individual, considering only the best-supported option, would choose the leader. Lakatos supplied another reason for patience: an unresolved anomaly does not, by itself, tell us to abandon a research program. The question is what further work it makes possible.[19](appendix-references.md#ref-05-allocation)
 
 Compute allocation is epistemic policy. So is memory, so is context sharing, so is credit. Who receives the capacity to generate evidence helps decide which possible truths the institution can afford to discover. Which explanation is currently best and where the next unit of capacity should go are separate questions. A critic whose objections never change what gets investigated is doing quality-assurance theatre.
 
@@ -256,7 +256,7 @@ Human science has never escaped this problem. It has simply had much longer to a
 
 Accumulated knowledge eventually destroys the world of the universal expert.
 
-Newton was extraordinary. In January 1697, busy with the great recoinage at the Royal Mint, he received Johann Bernoulli's challenge: find the curve along which a bead slides fastest between two points. Bernoulli had given the mathematicians of Europe months. By John Conduitt's account, Newton came home at four in the afternoon, exhausted, and had it solved by four in the morning. The answer went to the Royal Society without his name, and Bernoulli recognized the author anyway: *Tanquam ex ungue leonem*, as the lion by its claw.[^newton]
+Newton was extraordinary. In January 1697, busy with the great recoinage at the Royal Mint, he received Johann Bernoulli's challenge: find the curve along which a bead slides fastest between two points. Bernoulli had given the mathematicians of Europe months. By John Conduitt's account, Newton came home at four in the afternoon, exhausted, and had it solved by four in the morning. The answer went to the Royal Society without his name, and Bernoulli recognized the author anyway: *Tanquam ex ungue leonem*, as the lion by its claw.[20](appendix-references.md#ref-05-newton)
 
 The story is usually told about Newton. The more important part is that Bernoulli's question could reach him at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight and returned to circulation. The attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Even the anonymous answer arrived carrying something of its author.
 
@@ -264,9 +264,9 @@ Genius mattered enormously. So did the network that let genius start from accumu
 
 Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help. Science became more powerful by making scientists less interchangeable.
 
-Because no researcher can personally reproduce every result she depends on, trust became more important at exactly the moment standards of evidence became stronger. A physicist relies on chemistry. A doctor relies on assays. A scientist cites work she could not reproduce from raw materials with the rest of her career and a very generous grant. John Hardwig called this epistemic dependence, and argued that it is a condition of rational knowledge: a person who refused to believe anything she had not verified herself would know almost nothing.[^hardwig] At scale, rigor is a way of organizing trust, because nobody gets to do without it.
+Because no researcher can personally reproduce every result she depends on, trust became more important at exactly the moment standards of evidence became stronger. A physicist relies on chemistry. A doctor relies on assays. A scientist cites work she could not reproduce from raw materials with the rest of her career and a very generous grant. John Hardwig called this epistemic dependence, and argued that it is a condition of rational knowledge: a person who refused to believe anything she had not verified herself would know almost nothing.[21](appendix-references.md#ref-05-hardwig) At scale, rigor is a way of organizing trust, because nobody gets to do without it.
 
-On 4 July 2012 the ATLAS and CMS collaborations at CERN announced a new particle consistent with the Higgs boson.[^higgs]
+On 4 July 2012 the ATLAS and CMS collaborations at CERN announced a new particle consistent with the Higgs boson.[22](appendix-references.md#ref-05-higgs)
 
 Who discovered it? Try pointing to the person. The papers had thousands of authors. The detectors contained technologies developed over decades by specialists in many countries. No physicist woke up that morning capable of rebuilding the Large Hadron Collider, recalibrating every detector, verifying every line of analysis software and re-deriving the theory before breakfast.
 
@@ -274,7 +274,7 @@ And yet the result was far more than rumor. A structure carried it: calibrations
 
 The year before, another collaboration had shown how much could hide inside a measurement. In September 2011 OPERA reported neutrinos arriving from CERN at a detector in Italy about sixty billionths of a second earlier than light would have. The statistical significance was striking. The collaboration presented the anomaly and asked for further scrutiny.
 
-In February 2012 it reported two possible problems in the timing equipment. A faulty optical-fibre connection could make the neutrinos appear early; an oscillator error pulled the measured time in the other direction. Further investigation and measurements removed the faster-than-light result. The timing equipment had turned an ordinary beam into an apparent challenge to relativity. One of the culprits was a loose cable.[^opera]
+In February 2012 it reported two possible problems in the timing equipment. A faulty optical-fibre connection could make the neutrinos appear early; an oscillator error pulled the measured time in the other direction. Further investigation and measurements removed the faster-than-light result. The timing equipment had turned an ordinary beam into an apparent challenge to relativity. One of the culprits was a loose cable.[23](appendix-references.md#ref-05-opera)
 
 The apparatus was still available to inspect after the result became famous. So were the calculations. A loose cable could be found, and finding it could change the answer.
 
@@ -306,51 +306,3 @@ I thought I was designing a society of agents.
 Humanity had already spent centuries building a society of fallible knowers.
 
 ---
-
-
-[^carlini]: Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler's achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
-
-[^popper-world3]: Karl Popper, “Epistemology Without a Knowing Subject,” lecture delivered in 1967, collected in *Objective Knowledge: An Evolutionary Approach* (1972). See the discussion of World 3, the machine-produced logarithm tables, and the two library thought experiments.
-
-[^stone-date]: Senku counts 117,354,893,870 seconds of petrification and dates his awakening to 1 April 5738, which puts the green light in June 2019. *Dr. Stone*, chapter 13, “Stone World the Beginning,” adapted in season 1, episode 5.
-
-[^stone]: Riichiro Inagaki and Boichi, *Dr. Stone* (2017–2022), the Kingdom of Science's effort to produce a sulfa drug for Ruri. The scene is a compressed retelling of that story arc.
-
-[^writing]: Hans J. Nissen, Peter Damerow and Robert K. Englund, *Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East* (1993). The potter and apprentice are illustrative characters, not a reconstructed historical incident.
-
-[^qin]: National Palace Museum, collection entry, “Oval Liang Measure by imperial decree of 26th year,” Qin dynasty, 221–207 BCE. The inscription provides a material example of standardization backed by imperial authority.
-
-[^qinbooks]: Sima Qian, *Records of the Grand Historian*, “Basic Annals of the First Emperor of Qin.” The narrative of the 213 BCE order is a later historical account. The extent of its implementation and its contribution to the subsequent loss of texts are disputed; the chapter does not attribute every later loss to it.
-
-[^bromiley]: Clinical Human Factors Group, [written evidence to the House of Commons Health Committee](https://publications.parliament.uk/pa/cm200708/cmselect/cmhealth/1137/1137we25.htm), September 2008, section 4. The account identifies failures of situational awareness, communication, decision-making and leadership in Elaine Bromiley's care.
-
-[^millikan]: Robert A. Millikan, “On the Elementary Electrical Charge and the Avogadro Constant,” *Physical Review* 2 (1913), 109–143; Richard P. Feynman, [“Cargo Cult Science”](https://calteches.library.caltech.edu/51/2/CargoCult.htm) (1974); Raymond T. Birge, “Probable Values of the General Physical Constants,” *Reviews of Modern Physics* 1 (1929), 1–73. Feynman's explanation of the slow correction is presented as his interpretation. The corrections involved several experimental routes, rather than a single decisive encounter. Allegations concerning Millikan's selection of observations remain disputed; see also David Goodstein, *On Fact and Fraud* (2010).
-
-[^condorcet]: Marquis de Condorcet, *Essai sur l'application de l'analyse à la probabilité des décisions rendues à la pluralité des voix* (1785). The paragraph describes the elementary independent-voter case, not a claim that every useful ensemble requires complete independence.
-
-[^zollman]: Kevin J. S. Zollman, “The Communication Structure of Epistemic Communities,” *Philosophy of Science* 74 (2007), 574–587, and “The Epistemic Benefit of Transient Diversity,” *Erkenntnis* 72 (2010), 17–35. The benefits depend on the learning situation and communication structure modeled.
-
-[^optics]: Ibn al-Haytham, *Kitāb al-Manāẓir* (*Book of Optics*), early eleventh century; A. I. Sabra, *The Optics of Ibn al-Haytham, Books I–III: On Direct Vision* (1989). The dark-room experiment illustrates controlled investigation of light propagation; it is not presented as a single decisive refutation of all emission theories of vision.
-
-[^peirce]: Charles Sanders Peirce, “The Fixation of Belief,” *Popular Science Monthly* 12 (1877), 1–15.
-
-[^galileo]: Galileo Galilei, *Sidereus Nuncius* (1610); Johannes Kepler, *Narratio de observatis a se quatuor Iovis satellitibus erronibus* (1611), reporting observations made in 1610. For the reception of Galileo's telescope and the Bologna episode, see Albert Van Helden, introduction and commentary to *Sidereus Nuncius, or The Sidereal Messenger* (1989).
-
-[^boyle]: Robert Boyle, *New Experiments Physico-Mechanicall, Touching the Spring of the Air, and Its Effects* (1660); Steven Shapin and Simon Schaffer, *Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life* (1985).
-
-[^huygens]: Shapin and Schaffer, *Leviathan and the Air-Pump*, discussion of Huygens and anomalous suspension. The reproduction of the effect established a shared phenomenon; it did not by itself settle every theoretical question about it.
-
-[^duhem]: Pierre Duhem, *La théorie physique: son objet et sa structure* (1906); W. V. O. Quine, “Two Dogmas of Empiricism,” *The Philosophical Review* 60 (1951), 20–43.
-
-[^wegener]: Alfred Wegener, *The Origin of Continents and Oceans* (first German edition, 1915); Frederick J. Vine and Drummond H. Matthews, “Magnetic Anomalies over Oceanic Ridges,” *Nature* 199 (1963), 947–949. Plate tectonics vindicated continental mobility while replacing important parts of Wegener's proposed mechanism.
-
-[^allocation]: Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87 (1990), 5–22; Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge* (1970).
-
-[^newton]: Johann Bernoulli's challenge in *Acta Eruditorum* (1696), and Newton's anonymous solution in *Philosophical Transactions* (1697). John Conduitt's [“Miscellanea,” Keynes Ms. 130.05](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/THEM00168), records the four-in-the-afternoon to four-in-the-morning account, attributing it to Catherine Conduitt. For the wider episode and the attribution anecdote, see Richard S. Westfall, *Never at Rest: A Biography of Isaac Newton* (1980).
-
-[^hardwig]: John Hardwig, “Epistemic Dependence,” *The Journal of Philosophy* 82 (1985), 335–349.
-
-[^higgs]: ATLAS Collaboration, [“Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.020), *Physics Letters B* 716 (2012), 1–29; CMS Collaboration, [“Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.021), *Physics Letters B* 716 (2012), 30–61.
-
-[^opera]: CERN, [“OPERA experiment reports anomaly in flight time of neutrinos from CERN to Gran Sasso”](https://home.cern/opera-experiment-reports-anomaly-in-flight-time-of-neutrinos-from-cern-to-gran-sasso/), including the February 2012 update on the two timing effects; OPERA Collaboration, [“Measurement of the neutrino velocity with the OPERA detector in the CNGS beam”](https://arxiv.org/abs/1109.4897), corrected version (2012).
-

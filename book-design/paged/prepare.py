@@ -11,7 +11,7 @@ from markdown_it import MarkdownIt
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 sys.path.insert(0, str(HERE.parent / 'curated'))
-from manuscript import prepare, resolve_anchor, latex_break
+from manuscript import prepare, resolve_anchor, latex_break, reference_entries, REFERENCE_LINK
 
 md = MarkdownIt('commonmark', {'html': False, 'typographer': False})
 
@@ -25,6 +25,14 @@ def uri(path):
 def main():
     raw = (ROOT / 'chapters/05-the-society-of-agents.md').read_text()
     text, definitions, directions, old_images = prepare(raw)
+    # A standalone chapter proof includes its slice of the central reference appendix.
+    entries = reference_entries((ROOT / 'chapters/appendix-references.md').read_text())
+    citations = REFERENCE_LINK.findall(text)
+    for number, anchor in citations:
+        if anchor not in entries or entries[anchor][0] != int(number):
+            raise ValueError(f'Missing or misnumbered reference: {anchor}')
+    definitions.extend((anchor, entries[anchor][1]) for anchor in dict.fromkeys(a for _, a in citations))
+    text = REFERENCE_LINK.sub(lambda m: f'[^{m[2]}]', text)
     keys = list(dict.fromkeys(re.findall(r'\[\^([^]]+)\]', text)))
     notes = dict(definitions)
     if set(keys) != set(notes):
@@ -75,7 +83,7 @@ def main():
         a['uri'] = uri(HERE / a['cutout']) if a.get('cutout') else uri(HERE.parent / 'curated' / a['file'])
         # Historical source-page parity is deliberately absent from layout data.
         del a['source_page']
-    note_html = '<section class="notes"><h2>Notes</h2><ol>'
+    note_html = '<section class="notes"><h2>References</h2><ol>'
     for index, key in enumerate(keys, 1):
         note_html += f'<li id="note-{index}" data-note="{index}">' + md.renderInline(notes[key]) + '</li>'
     note_html += '</ol></section>'

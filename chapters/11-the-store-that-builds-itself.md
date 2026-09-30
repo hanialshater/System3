@@ -180,7 +180,7 @@ Imagine replaying anonymized customer sessions and asking a strong language mode
 
 “The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call. So narration should generate hypotheses, not production truth. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer's actual experience. Build a detector only after the hypothesis survives contact with something outside the model's coherence. Define what success looks like before the detector starts steering the page.
 
-The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Only intervention tells us how much of the outcome the problem was actually causing. Judea Pearl's ladder has three rungs, seeing, doing and imagining, and no quantity of the first substitutes for the second.[^store-pearl] A recommender that only observes is standing on rung one with excellent posture.
+The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Only intervention tells us how much of the outcome the problem was actually causing. Judea Pearl's ladder has three rungs, seeing, doing and imagining, and no quantity of the first substitutes for the second.[1](appendix-references.md#ref-11-store-pearl) A recommender that only observes is standing on rung one with excellent posture.
 
 ## The Objective Fights Back
 
@@ -247,5 +247,3 @@ That does not prove the book. I designed it with the book's argument in my head,
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
 And once you can imagine that happening in a store, it becomes difficult not to imagine it happening in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.
-
-[^store-pearl]: Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.

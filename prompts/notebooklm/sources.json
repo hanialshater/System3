@@ -1,11 +1,13 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
+  "references": "chapters/appendix-references.md",
+  "references_sha256": "b6abbbef13ccc955fcd27a12c8a8c3cde0b3b9b3a807d70f1e84eace9da45185",
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "f68f7029e12d3796c6d00e2f92bed50b8ed9b8cc49d4430fe5ee6889f088e03b",
+      "source_sha256": "9702443fd8a78746af76d7d8b3fea874c5216c00459c02ab1743d7fa97006ec7",
       "brief": "prompts/notebooklm/preface.md",
-      "brief_sha256": "d77904c5ea255aa9a65ff2e7293f15009aae55e5d2c3c15aa2b14d4e77bbbbd5",
+      "brief_sha256": "5bf5195ffd6e02d61cb07fa55b2e663df1d5fc26213dffe814a518ee4e481f5e",
       "sections": [
         "Opening passage"
       ]
@@ -14,7 +16,7 @@
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
       "source_sha256": "66af3d68c9eb8e5e44c37405a28783828d16757f96c63eb679290b1aa2b57c1a",
       "brief": "prompts/notebooklm/chapter-01.md",
-      "brief_sha256": "685739afabc62cdb33523ad647e394a27277d255d2899e5eb8beebf756a35eb0",
+      "brief_sha256": "400487a6eca0f9b602be401c59cace8caa78fce51a9f1151d765bbc380f49217",
       "sections": [
         "Opening passage",
         "The Rule-Based Exoskeleton",
@@ -28,9 +30,9 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "d1cc1362cd0397c043be773c6a1a90a75096c2321f00f058a62d626c4be7bd73",
+      "source_sha256": "8c7292a4530df911a21812d63c23f696fb5260fd4580c99c6d7c60c7b7c9ba1a",
       "brief": "prompts/notebooklm/chapter-02.md",
-      "brief_sha256": "ae546bb9d689fc7e49602f95c2f2d2931638985cacd309b855c7a29df465d6e2",
+      "brief_sha256": "1cccdf9bbeee2335af131fb984a31d2860aa1e724d6482c30a9921f1635e206e",
       "sections": [
         "Opening passage",
         "Twenty-Six Circles",
@@ -39,26 +41,20 @@
         "MAP-Elites: Don't Kill Weird Ideas Too Early",
         "The Invention Problem",
         "Let the Model Write the Solver",
-        "AlphaEvolve",
         "So, Naturally, I Built All of It",
         "The Coffee Test",
         "Diagonal Layering",
         "The Algorithmic Vortex",
         "The Contract",
-        "Keep the Harness Immutable",
-        "Never Write Solution Code Yourself",
-        "Cross-Pollinate Without Collapsing Diversity",
-        "Prune Ruthlessly, But Not Stupidly",
-        "Separate Discovery From Polish",
         "Zero Framework, With an Asterisk",
         "The Easy Version of Autonomy"
       ]
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "fc7cff0e5e1e32fe29841e138f6b247ccf4b01fcac53f3b9f09632a3ee923c91",
+      "source_sha256": "1e1834b6856374eb9e12684b0dc7ee1dc1483ba2fe2c9c39505920cd83ec379b",
       "brief": "prompts/notebooklm/chapter-03.md",
-      "brief_sha256": "3b35c472c460df76d8410c507806efe79205d674d0d49c53029c29d03004a0bb",
+      "brief_sha256": "93c33911bd7ab7afbd3925e5718d82926f9e8c950c0dbd5ef4ba2c5e6db775f0",
       "sections": [
         "Opening passage",
         "Stubbornly Human",
@@ -76,9 +72,9 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "6961b048af875f031e702b92866f6e302c2592bc48329c563c678c032fa0732d",
+      "source_sha256": "7e738ed9b1008648ea823530d8bcfc839e5abb1d8050934e8ef17f2e21523c37",
       "brief": "prompts/notebooklm/chapter-04.md",
-      "brief_sha256": "c335671bb546bd55b693b81ce7e0739241171df122cecc3373f8283716019993",
+      "brief_sha256": "4007b12a40e1e716ff6a130fd1aeea16b11c8d4df53e3b1718809f426ef7b05d",
       "sections": [
         "Opening passage",
         "The Shortest Trust Chain",
@@ -96,9 +92,9 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "c77a3c3dececa72a0f8787c1dda1699afdd1c9fede38201f6a5e990bf2aaaab3",
+      "source_sha256": "f8dfe813494bbf5daaf2227b42014b6cc1fd5b288dbe36ddf9f368620c6365bb",
       "brief": "prompts/notebooklm/chapter-05.md",
-      "brief_sha256": "355c6e35b9535882241bdda25e3e5feb27f52f94e2ccf7b64f05f7b16e52cd69",
+      "brief_sha256": "352f6c6a2f9305e591562374bd6483785796f2b3aa674b8b68ff1a73663ff928",
       "sections": [
         "Opening passage",
         "Civilization Had No Senku",
@@ -106,17 +102,17 @@
         "The Society Gets Smarter by Making People Narrower",
         "A Swarm Should Not Automatically Become a Meeting",
         "A Man in a Dark Room",
-        "When Curiosity Became Procedure",
-        "The Org Chart Becomes Part of the Experiment",
+        "Boyle's Pump",
+        "Who Gets the Next Agent?",
         "Science Gets Bigger Than the Scientist",
         "Sixteen Claudes, Again"
       ]
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "7a986cd4f71ef8b8ff84936040228cf9b170efe3322f3ec06f24ec7db2b2774e",
+      "source_sha256": "c29e18ed28c472cd53a9c32a280172cb2f9e1624a0370f903a139facb71d79b9",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "271f20dd33d2637c9608c8732e3fc5664d396bbf2232235792fc154854c3bfea",
+      "brief_sha256": "c2b50f67d2453520817c50df3d0bc44adef1fec3ca6ecbadae02fe6592e7cc23",
       "sections": [
         "Opening passage",
         "The Pattern Goes to Work",
@@ -128,21 +124,21 @@
         "Ask What the Number Means",
         "Write the Lesson Down",
         "Put the Library to Work",
+        "Find Where the Result Lives",
         "Change the Representation",
         "Separate Use from Investigation",
         "Keep the Funding Decision Visible",
         "Give the Objection a Consequence",
         "Test What the Next Agent Inherits",
-        "Find Where the Result Lives",
         "Put the Procedure Under Test",
         "What the File Says Now"
       ]
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "3ced812aea8be330532c1ff33bfb8b21dfd5d93bae145dcdcf575a1bf0251136",
+      "source_sha256": "2e627f2ca4e622a760d2553683df811624fdd661c48a754f375f08a63154f81f",
       "brief": "prompts/notebooklm/chapter-07.md",
-      "brief_sha256": "7422f3a551550a9c252c5692ce867dc54584f670763ab56eb4f6fc11383f558e",
+      "brief_sha256": "91ff32315fcbd6d4315f8014bb5f04a644060b427d8ec2771346453dde985d9c",
       "sections": [
         "Opening passage",
         "The Teacher Moves Into the Walls",
@@ -161,9 +157,9 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "96f2ff549d3e48e63dacf2ed67e82edd8c43b74259348b099f1f4fb69857b3ea",
+      "source_sha256": "994f73b2f5dc40aa974e2efd61910c4b186bcc3eed21ab549afa78d7d5acfdc6",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "75ef066f40bc86357f59621eef24d840a9bbe88e9110d3c01ab2bfa85e2d4cf8",
+      "brief_sha256": "898f74aaf01975ec4f076d70964bb4874db614faa04c5edce4b3c79423f624e7",
       "sections": [
         "Opening passage",
         "The Judge Falls Behind",
@@ -182,9 +178,9 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "1cfe60f5b1cc8d7ba51062e59107a84d41267ce89b52f182a60f54f082cd69cc",
+      "source_sha256": "16a3fdab2a124f7fa312e433f8b53541dd4f78e0cd20d2f11c3693a9b5c10c46",
       "brief": "prompts/notebooklm/chapter-09.md",
-      "brief_sha256": "745bc6bce1be0ed3c214228724196ed77bcb2c0ae624322e3c65c3106dcf3d23",
+      "brief_sha256": "4bdbd705421b61684bc90c2424ddc54db09055496776082245f6f2034d79168c",
       "sections": [
         "Opening passage",
         "A Prompt Is Evidence, Not the Objective",
@@ -202,9 +198,9 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "97139edf0d9f9fa14504ec4744fe5751a86e55293698a225a67116e055f0f171",
+      "source_sha256": "c750c79986128fb3d1fef8725b18786cb9c4a73f0326c8bfc09b200b8306ecca",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "20502caff4a9eb7ff91ff3123418ed5eb878f86dd9252a7d383dedc973897529",
+      "brief_sha256": "810ad659d11acc2f0e3cf6aed73416a3c4bc631c674e962f830059b118421448",
       "sections": [
         "Opening passage",
         "What the Corrections Had to Teach",
@@ -219,9 +215,9 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "38cecd53d7c7751a0ac8a23683a7fd20fb145b577fd7ad039a0e00b540db7020",
+      "source_sha256": "56672b4b9d5affffe347842987391ceef3c5963c910eda4ad59fee169cb10fe4",
       "brief": "prompts/notebooklm/chapter-11.md",
-      "brief_sha256": "135d8f8163a8f2de7e9bcc33101aa2fd37a5b377b543888d5d3660a0140f949d",
+      "brief_sha256": "7ce63d80be8426d0379487b075039b7a54714500da3ab6b34c23d23f16a6a186",
       "sections": [
         "Opening passage",
         "Stop Recommending for a Moment",
@@ -242,9 +238,9 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "17ca979462376e26710020790d0a876e271fa83c9e2c1551427998de2abd4b3e",
+      "source_sha256": "b84cb73ece4f2e73d05ef66c6aa36851b9d9a559461b28593c4137c438901959",
       "brief": "prompts/notebooklm/chapter-12.md",
-      "brief_sha256": "467cb72916132774e40568c52116ac873a866b56688241d9f59e0208ac89be2b",
+      "brief_sha256": "d64d5aa565008f382d4063bf7c265bb02d79b22fca5cdb6b20bb8496a103dd82",
       "sections": [
         "Opening passage",
         "The Curve",
@@ -264,7 +260,7 @@
       "source": "chapters/13-the-prophecy.md",
       "source_sha256": "454a998eea45c7ec7e82629af4c776ed1572ded8328454b5d682714fc3d18d9f",
       "brief": "prompts/notebooklm/chapter-13.md",
-      "brief_sha256": "f2099cc6928b9333d07e59b7db6d035de5b2fad837f6c3edf08c6f9b07bf6e8f",
+      "brief_sha256": "82c1eb5b1f59a1c30ab5e3db1a916190c6f07d01af2d4ab887b9e6263f908e91",
       "sections": [
         "Opening passage"
       ]
@@ -273,7 +269,7 @@
       "source": "chapters/14-scaffolds.md",
       "source_sha256": "f222f3431fef44d840ea08bc9123e44ab4cf8c014d04ec3890fcda6b7b6f8cc4",
       "brief": "prompts/notebooklm/scaffolds.md",
-      "brief_sha256": "df100d409e1881f4f4bbbae2084f485709da2a98a621f4f5725aeb90c47cfc85",
+      "brief_sha256": "cb9c633bbd43e6ff5a73b6c0392aa5e46720e14a8fb0459fc558f376d2e4fec5",
       "sections": [
         "The complete two-sentence coda"
       ]

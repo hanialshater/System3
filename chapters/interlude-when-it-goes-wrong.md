@@ -8,7 +8,7 @@
 
 In August 1948, at a session of the Soviet agricultural academy, Trofim Lysenko announced that the Party's Central Committee had examined his report and approved it. Lysenko was an agronomist with contempt for genetics and promises about crop yields that the crops had not agreed to. The geneticist Nikolai Vavilov had already died in prison in 1943. After the session, genetics was officially condemned, geneticists lost their posts and teaching was reorganized around Lysenko's doctrines. His political protection lasted until Khrushchev's fall in 1964; the damage lasted longer.
 
-There were still journals, institutes, field trials and experts. In 1952 a botanical journal published criticism of Lysenko with Stalin's permission. Evidence could be heard when power allowed it. The people who protected the doctrine also decided when it could be challenged.[^interlude-lysenko]
+There were still journals, institutes, field trials and experts. In 1952 a botanical journal published criticism of Lysenko with Stalin's permission. Evidence could be heard when power allowed it. The people who protected the doctrine also decided when it could be challenged.[1](appendix-references.md#ref-interlude-interlude-lysenko)
 
 Much of System 3 could keep running under those conditions. The institution can preserve a claim's entire history and still refuse to correct it. You cannot tell science from an efficient apparatus of authority by reading its org chart; you find out when somebody objects.
 
@@ -21,5 +21,3 @@ The second is that the owner prevents the challenge. A company does not need to 
 Lysenko's authority had to pass through people who could disobey it. With agents doing more of the work, an owner may depend on fewer people's cooperation. Those who remain indispensable might gain bargaining power. The people no longer needed lose that particular way of making their objection costly to ignore.
 
 Neither route requires the records to stop. In 1948 the journals kept coming out.
-
-[^interlude-lysenko]: Lysenko, “Soviet Biology” (1948), concluding remarks; Borinskaya, Ermolaev and Kolchinsky, “Lysenkoism Against Genetics” (2019), <https://doi.org/10.1534/genetics.118.301413>. The latter traces both the repression and the uneven return of criticism. Full entries appear in the references.

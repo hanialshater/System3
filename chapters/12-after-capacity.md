@@ -2,7 +2,7 @@
 
 *A Glimpse of Double Descent Life*
 
-In October 1947, George Dantzig went to John von Neumann with his emerging ideas about linear programming. He had spent the summer inventing a way to solve such problems, the method later called simplex, and had come to Princeton to ask for a better one. He began explaining in detail. Von Neumann told him to get to the point. Dantzig compressed a summer's work into a minute or two, and von Neumann stood up and lectured for over an hour on a theory Dantzig had never heard of. As Dantzig remembered it, von Neumann seemed to be constructing the theory while he spoke. He called it duality: one formulation searches for the best solution; another can establish how good any solution could possibly be. He connected it to his work with Oskar Morgenstern on games. Dantzig sat there stunned. His summer had not been wasted. It had a side he had not known was there.[^after-1]
+In October 1947, George Dantzig went to John von Neumann with his emerging ideas about linear programming. He had spent the summer inventing a way to solve such problems, the method later called simplex, and had come to Princeton to ask for a better one. He began explaining in detail. Von Neumann told him to get to the point. Dantzig compressed a summer's work into a minute or two, and von Neumann stood up and lectured for over an hour on a theory Dantzig had never heard of. As Dantzig remembered it, von Neumann seemed to be constructing the theory while he spoke. He called it duality: one formulation searches for the best solution; another can establish how good any solution could possibly be. He connected it to his work with Oskar Morgenstern on games. Dantzig sat there stunned. His summer had not been wasted. It had a side he had not known was there.[1](appendix-references.md#ref-12-after-1)
 
 I usually read stories like these from a safe distance. Extraordinary people did extraordinary things. Then I return to an afternoon in which locating the correct spreadsheet is a substantial intellectual achievement.
 
@@ -20,7 +20,7 @@ Some of this is already ordinary. I can ask a stupid question immediately, then 
 
 The title is stolen from machine learning, and the theft is deliberate.
 
-In the curve described by Belkin and colleagues, test error falls as a model gains capacity, rises near the point where it can fit its training data exactly, then falls again as capacity grows further.[^after-2] The familiar lesson was to limit capacity to avoid overfitting. The second descent complicated that lesson. More capacity supplied more candidates; how the training procedure selected among them mattered.
+In the curve described by Belkin and colleagues, test error falls as a model gains capacity, rises near the point where it can fit its training data exactly, then falls again as capacity grows further.[2](appendix-references.md#ref-12-after-2) The familiar lesson was to limit capacity to avoid overfitting. The second descent complicated that lesson. More capacity supplied more candidates; how the training procedure selected among them mattered.
 
 I am borrowing the shape. Intellectual history does not obey a theorem about neural networks.
 
@@ -56,13 +56,11 @@ The same capacity that makes my profession less secure puts more of the frontier
 
 There is a point in an ambitious project when I begin mentally hiring the people it would require. Somebody who knows this part, somebody who has spent years on that part, somebody to keep the parts from drifting into separate projects. Before long I have a budget, a staffing problem and a reason to postpone the idea.
 
-Sixteen agents building a C compiler moves that point.
-
-Nicholas Carlini's experiment took roughly two weeks, nearly two thousand sessions and about twenty thousand dollars in API costs, and produced a compiler that could build a bootable Linux kernel, with the dependencies and limitations his account describes.[^after-3] Chapter 5 examined the organization behind the achievement. Here I am interested in what its price does to our imagination.
+Agents begin to change that calculation when they can take on some of the building and testing. I am interested in the projects that become worth attempting when assembling the help costs less.
 
 Software has often required a bargain. One team builds a product for many customers; each customer rearranges some of its work to fit. This was an enormous improvement over everyone commissioning their own system. It also gave us organizations whose procedures preserve the decisions of a dropdown menu designed ten years ago.
 
-Imagine a mathematician assembling a workshop around one conjecture. It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day's investigation instead of a separate project waiting for a collaborator.
+Imagine a mathematician assembling a workshop around one conjecture.[3](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day's investigation instead of a separate project waiting for a collaborator.
 
 The workshop changes as she learns. A picture suggests a different representation. The new representation makes a search possible. The search returns an awkward case, and the awkward case is more interesting than the conjecture she began with. She builds the next instrument around it.
 
@@ -120,7 +118,7 @@ There is an oddity in the machinery making this conceivable. It has learned from
 
 I have a sentence that gets me into trouble: gradient descent is the answer to Derrida.
 
-This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[^after-4]
+This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[4](appendix-references.md#ref-12-after-4)
 
 Large language models operate inside that difficulty. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pushes them toward behavior that works under the conditions in which they are trained and evaluated. Nobody had to settle the meaning of every word first.
 
@@ -142,7 +140,7 @@ Elinor Ostrom studied people who had already begun.
 
 ## Capacity Over Power
 
-An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom's *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[^after-5]
+An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom's *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[5](appendix-references.md#ref-12-after-5)
 
 If those were the only two answers, what were these people doing?
 
@@ -186,9 +184,9 @@ But where people retain the means to act, more differences can become opportunit
 
 Cheap software removed the vendor’s veto. It is worth asking where the cheapness comes from.
 
-The efforts reported in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[^flt-tokens] That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
+The efforts reported in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[6](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
 
-Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models for almost three weeks to comply with United States export controls, and restored it when the controls were lifted.[^access] I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
+Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models for almost three weeks to comply with United States export controls, and restored it when the controls were lifted.[7](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 
 The same capacity cuts the other way. Chapter 7 noted that a research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week. A community that can build its own tools is a lovely picture. So is its opposite, and it uses the same API. Some capacity should stay expensive on purpose. That is Chapter 7’s constitutional surface at the scale of a society: the closer a capability comes to harm that cannot be undone, the more authority it should take to use it, and the less that authority should belong to whoever benefits from the answer.
 
@@ -287,17 +285,3 @@ I would like us to find out how much more.
 Who actually gets that freedom is a much larger book, and I can't tell you how it goes. Nobody in this field can. So this one has one argument left, and it is a prophecy. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
 ---
-
-[^after-1]: George B. Dantzig, “Reminiscences about the origins of linear programming,” *Operations Research Letters* 1(2), 1982, pp. 43–48. The encounter is also discussed in Bernhard von Stengel, [“Zero-Sum Games and Linear Programming Duality”](https://arxiv.org/html/2205.11196v6). The opening describes Dantzig's recollection; it does not attribute a complete modern proof of LP duality to that conversation.
-
-[^after-2]: Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, [“Reconciling modern machine learning practice and the bias-variance trade-off”](https://arxiv.org/html/1812.11118v2), *PNAS* 116(32), 2019, pp. 15849–15854. In their random-feature experiments, the researchers explicitly selected the smallest-norm solution among those that fit the data; larger model classes allowed such solutions with smaller norms. Double Descent Life borrows the curve's shape as a philosophical analogy.
-
-[^after-3]: Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), February 5, 2026. The mathematical workshop, alternative recommendation experiences and community tool are prospective examples, not reported deployments.
-
-[^after-4]: Jacques Derrida, “Signature Event Context,” in *Limited Inc*, Northwestern University Press, 1988. The comparison with gradient descent is a philosophical provocation, not a claim that optimization refutes Derrida's argument.
-
-[^after-5]: Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action*, Cambridge University Press, 1990. See also Elinor Ostrom and Michael Cox, [“Moving beyond panaceas: a multi-tiered diagnostic approach for social-ecological analysis”](https://www.cambridge.org/core/journals/environmental-conservation/article/moving-beyond-panaceas-a-multitiered-diagnostic-approach-for-socialecological-analysis/F4870A21ED502BB7D9A1784CF2B9E100), *Environmental Conservation* 37(4), 2010, pp. 451–463. The connection to the ideology vortex is the author's philosophical reading of this work.
-
-[^flt-tokens]: Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, <https://www.anthropic.com/research/formalizing-fermats-last-theorem>.
-
-[^access]: Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, <https://www.anthropic.com/news/fable-mythos-access>. Access was suspended on 12 June 2026 and restored on 1 July, after the controls were lifted on 30 June.

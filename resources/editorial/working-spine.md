@@ -27,7 +27,7 @@ In one sentence: give AI autonomy and control moves up to the conditions; the ar
 | Chapter 13 | 13 | A visible “An Alternative Ending” divider marks a fictional counterweight to Chapter 12’s hoped-for future. The fable retains its comedy, questions of identity and emotional ending. |
 | Scaffolds page | — | The last word, after both endings. Pairs with the reveal page; follows the fable directly. |
 
-Part titles and epigraphs share one page. The reveal and its definition share one page; the next page poses Part III’s question. Part pages carry an epigraph from *The Zen of Autonomy*. They turn toward the next part; they do not recap the last one.
+Part titles and epigraphs share one page. The reveal and its definition share one page; the next page poses Part III’s question. Part pages carry an epigraph from *The Zen of System 3*. They turn toward the next part; they do not recap the last one.
 
 Seeds planted early and paid off later are listed in [`resources/editorial/easter-egg-register.md`](../editorial/easter-egg-register.md). Read it before any edit pass, and run `resources/editorial/check-eggs.sh` after one. Confirmed seeds fail the check; proposed ones only warn.
 

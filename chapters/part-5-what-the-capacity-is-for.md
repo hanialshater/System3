@@ -1,4 +1,4 @@
-<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of System 3. -->
 
 ```{=latex}
 \clearpage
@@ -17,4 +17,4 @@
 > *A philosophy of emergence should be willing to lose an A/B test.*\
 > *Construct knowingly. Build anyway.*
 >
-> — The Zen of Autonomy
+> — The Zen of System 3

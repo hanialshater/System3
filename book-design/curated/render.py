@@ -5,7 +5,7 @@ Historic source-page numbers describe assets, never fixed positions in this book
 """
 from pathlib import Path
 import re,json,html,os,math,collections,argparse
-from manuscript import prepare, resolve_anchor, latex_break, ordered_paths, structural_layout
+from manuscript import prepare, resolve_anchor, latex_break, ordered_paths, structural_layout, reference_entries, validate_references, REFERENCE_ANCHOR
 from print_quality import cover_path
 import fitz
 from pdf_immersion import soften_placement, fitted_rect
@@ -41,6 +41,7 @@ S['h3']=ParagraphStyle('h3',parent=S['body'],fontName='Book-Bold',fontSize=12.5,
 S['quote']=ParagraphStyle('quote',parent=S['body'],fontName='Book-Italic',leftIndent=14,rightIndent=10,spaceBefore=4,spaceAfter=10)
 S['list']=ParagraphStyle('list',parent=S['body'],leftIndent=16,firstLineIndent=0,bulletIndent=1,spaceAfter=5)
 S['small']=ParagraphStyle('small',parent=S['body'],fontSize=10,leading=13,spaceAfter=7)
+S['reference']=ParagraphStyle('reference',parent=S['small'],leftIndent=16,firstLineIndent=0,bulletIndent=1)
 S['cell']=ParagraphStyle('cell',parent=S['body'],fontSize=9.4,leading=12,spaceAfter=0)
 S['code']=ParagraphStyle('code',fontName='Code',fontSize=8.0,leading=11,textColor=INK,backColor=colors.HexColor('#f1eee6'),borderPadding=9,spaceBefore=7,spaceAfter=11)
 MD=MarkdownIt('commonmark',{'html':False}).enable('table')
@@ -60,15 +61,16 @@ def safe(s):
  return s
 
 def inline(ts,chapter):
- out=[]
+ out=[];reference_links=[]
  for t in ts or []:
   if t.type=='text':
-   pieces=re.split(r'(\[\^[^\]]+\])',t.content)
+   pieces=re.split(r'(\[\^[^\]]+\]|<a id="ref-[A-Za-z0-9_-]+"></a>)',t.content)
    for z in pieces:
     if z.startswith('[^') and z.endswith(']'):
      key=z[2:-1];ns=note_map.get((chapter,key))
      if not ns:raise ValueError(f'Undefined footnote {key} in section {chapter}')
      out.append(f'<super><link href="#note-{chapter}-{ns}" color="#354f61">{ns}</link></super>')
+    elif REFERENCE_ANCHOR.fullmatch(z):out.append(f'<a name="{REFERENCE_ANCHOR.fullmatch(z)[1]}"/>')
     else:out.append(safe(z))
   elif t.type in ('softbreak','hardbreak'):out.append('<br/>' if t.type=='hardbreak' else ' ')
   elif t.type=='em_open':out.append('<i>')
@@ -76,8 +78,13 @@ def inline(ts,chapter):
   elif t.type=='strong_open':out.append('<b>')
   elif t.type=='strong_close':out.append('</b>')
   elif t.type=='code_inline':out.append('<font name="Code" size="9">'+safe(t.content)+'</font>')
-  elif t.type=='link_open':out.append('<link color="#354f61" href="'+html.escape(t.attrGet('href'),quote=True)+'">')
-  elif t.type=='link_close':out.append('</link>')
+  elif t.type=='link_open':
+   href=t.attrGet('href');reference=href.startswith('appendix-references.md#ref-');reference_links.append(reference)
+   if reference:href='#'+href.split('#',1)[1];out.append('<super>')
+   out.append('<link color="#354f61" href="'+html.escape(href,quote=True)+'">')
+  elif t.type=='link_close':
+   out.append('</link>')
+   if reference_links.pop():out.append('</super>')
   elif t.type=='image':pass
   else:out.append(safe(t.content))
  return ''.join(out)
@@ -105,7 +112,7 @@ def blocks(text,ch):
   elif t.type=='list_item_open':
    currentbullet= ('•' if lists[-1][0]=='bullet_list_open' else str(lists[-1][1])+'.');lists[-1][1]+=1
   elif t.type in ('heading_open','paragraph_open'):
-   child=ts[i+1];raw=child.content
+   child=ts[i+1];raw=REFERENCE_ANCHOR.sub('',child.content)
    if raw=='PHOTO_PLACEHOLDER':bs.append(dict(kind='photo',raw=''));i+=3;continue
    kind=t.tag if t.type=='heading_open' else ('list' if lists else 'quote' if quote else 'body')
    bs.append(dict(kind=kind,raw=raw,markup=inline(child.children,ch),bullet=currentbullet));currentbullet=None;i+=2
@@ -201,6 +208,8 @@ def bindarts(bs,ch,filename):
 
 note_map={};sections=[]
 paths=ordered_paths(REPO/'chapters',R/'book-order.json')
+references=reference_entries((REPO/'chapters/appendix-references.md').read_text())
+validate_references(paths,references)
 for index,path in enumerate(paths):
  ch=int(path.name.split('-')[0]) if re.match(r'^\d+-',path.name) else 100+index
  sections.append((ch,path,prep(path,ch)))
@@ -251,14 +260,14 @@ for ch,path,txt in sections:
    # Preserve logical code lines; wrap only long physical display lines.
    import textwrap
    code='\n'.join('\n'.join(textwrap.wrap(line,width=64,subsequent_indent='    ',replace_whitespace=False,drop_whitespace=False)) if len(line)>64 else line for line in b['raw'].splitlines())
-   code_style=ParagraphStyle('zen',parent=S['code'],fontSize=7.7,leading=9.3) if path.name=='appendix-zen-of-autonomy.md' else S['code']
+   code_style=ParagraphStyle('zen',parent=S['code'],fontSize=7.7,leading=9.3) if path.name=='appendix-zen-of-system-3.md' else S['code']
    snippet=XPreformatted(safe(code),code_style)
    if len(code.splitlines())<20:
     if story and isinstance(story[-1],Paragraph):story[-1].keepWithNext=True
     story.append(KeepTogether([snippet]))
    else:story.append(snippet)
   else:
-   style='small' if path.name=='appendix-references.md' and kind=='body' else kind
+   style=('reference' if kind=='list' else 'small') if path.name=='appendix-references.md' and kind in ('body','list') else kind
    p=makeparagraph(b,style)
    if path.name=='about-the-author.md' and kind=='body':p=Paragraph(b['markup'],ParagraphStyle('author',parent=S['body'],fontSize=11,leading=14,spaceAfter=6))
    if interlude:p=Paragraph(b['markup'],ParagraphStyle('interlude',parent=S['body'],alignment=1,leading=20))

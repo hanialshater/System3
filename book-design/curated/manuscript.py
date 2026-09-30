@@ -2,6 +2,36 @@
 import re
 import json
 
+REFERENCE_LINK = re.compile(r'\[(\d+)\]\(appendix-references\.md#(ref-[A-Za-z0-9_-]+)\)')
+REFERENCE_ANCHOR = re.compile(r'<a id="(ref-[A-Za-z0-9_-]+)"></a>')
+
+
+def reference_entries(raw):
+    """Read the single reference appendix without changing source qualifications."""
+    entries = {}
+    for match in re.finditer(r'(?m)^(\d+)\. <a id="(ref-[A-Za-z0-9_-]+)"></a>(.+)$', raw):
+        number, anchor, content = match.groups()
+        if anchor in entries:
+            raise ValueError(f'Duplicate reference anchor: {anchor}')
+        entries[anchor] = (int(number), content)
+    return entries
+
+
+def validate_references(paths, entries):
+    """Fail before rendering if a citation loses its target or chapter number."""
+    cited = set()
+    for path in paths:
+        raw = path.read_text()
+        for number, anchor in REFERENCE_LINK.findall(raw):
+            if anchor not in entries:
+                raise ValueError(f'Missing reference {anchor} in {path.name}')
+            if entries[anchor][0] != int(number):
+                raise ValueError(f'Wrong reference number for {anchor} in {path.name}')
+            cited.add(anchor)
+    missing = set(entries) - cited
+    if missing:
+        raise ValueError(f'Uncited numbered references: {sorted(missing)}')
+
 
 def ordered_paths(directory, manifest):
     names = json.loads(manifest.read_text())

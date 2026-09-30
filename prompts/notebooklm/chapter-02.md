@@ -1,13 +1,13 @@
 # Chapter 2: The Algorithm Vortex: video brief
 
-Source: [02-the-algorithm-vortex.md](../../chapters/02-the-algorithm-vortex.md), including its notes.
+Source: [02-the-algorithm-vortex.md](../../chapters/02-the-algorithm-vortex.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
 
 This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
 
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 2: The Algorithm Vortex" into an English video. Select the linked manuscript with all its notes as the factual source and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Keep the immutable evaluator, local scope of reported scores, and distinction between discovery in this run and historical novelty. Never invent valid packings, progress curves or absent figures.
+Adapt Hani M.M. Al-Shater's "Chapter 2: The Algorithm Vortex" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Keep the immutable evaluator, local scope of reported scores, and distinction between discovery in this run and historical novelty. Never invent valid packings, progress curves or absent figures.
 ```
 
 ## Source order
@@ -19,19 +19,13 @@ Adapt Hani M.M. Al-Shater's "Chapter 2: The Algorithm Vortex" into an English vi
 5. MAP-Elites: Don't Kill Weird Ideas Too Early
 6. The Invention Problem
 7. Let the Model Write the Solver
-8. AlphaEvolve
-9. So, Naturally, I Built All of It
-10. The Coffee Test
-11. Diagonal Layering
-12. The Algorithmic Vortex
-13. The Contract
-14. Keep the Harness Immutable
-15. Never Write Solution Code Yourself
-16. Cross-Pollinate Without Collapsing Diversity
-17. Prune Ruthlessly, But Not Stupidly
-18. Separate Discovery From Polish
-19. Zero Framework, With an Asterisk
-20. The Easy Version of Autonomy
+8. So, Naturally, I Built All of It
+9. The Coffee Test
+10. Diagonal Layering
+11. The Algorithmic Vortex
+12. The Contract
+13. Zero Framework, With an Asterisk
+14. The Easy Version of Autonomy
 
 ## Review
 

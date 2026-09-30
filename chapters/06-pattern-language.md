@@ -12,7 +12,7 @@ Reading it is a strange experience. You keep recognizing things you have always 
 
 Every pattern begins with a name you can say in a meeting and a photograph. It places the problem inside the larger patterns it helps complete, then states it in bold as forces pulling against each other. Evidence and argument lead to the word *Therefore*, followed by the arrangement that resolves the forces, also in bold. Links to smaller patterns show how to complete it. You can follow them from a neighborhood to a house to a window seat. It was hypertext in 1977.
 
-And every pattern carries a confidence mark. Two asterisks mean the authors believe they have found something close to an invariant. One means they have made progress and expect a better answer. None means they offer one possible solution without claiming to have found what all successful solutions share. They say outright that the patterns are hypotheses: does the problem occur as described, and does the arrangement resolve it?[^alexander] You can test Light on Two Sides by walking through an office at four in the afternoon and seeing where people are.
+And every pattern carries a confidence mark. Two asterisks mean the authors believe they have found something close to an invariant. One means they have made progress and expect a better answer. None means they offer one possible solution without claiming to have found what all successful solutions share. They say outright that the patterns are hypotheses: does the problem occur as described, and does the arrangement resolve it?[1](appendix-references.md#ref-06-alexander) You can test Light on Two Sides by walking through an office at four in the afternoon and seeing where people are.
 
 He meant it politically, too. The language was supposed to take design away from professionals and hand it back to the people who would live in the rooms. A family with the book could lay out its own house and argue with the architect in the architect's terms.
 
@@ -20,18 +20,18 @@ That is a **pattern language**: builders' knowledge written down as connected pr
 
 ## The Pattern Goes to Work
 
-In 1987 two programmers, Kent Beck and Ward Cunningham, were helping a group at Tektronix that could not get a user interface designed. Both had read Alexander. They wrote five small patterns, with names like Window Per Task and Short Menus, handed them to the people who would use the system, and let those people do the design. It worked well enough that they reported it at a workshop that autumn.[^beck]
+In 1987 two programmers, Kent Beck and Ward Cunningham, were helping a group at Tektronix that could not get a user interface designed. Both had read Alexander. They wrote five small patterns, with names like Window Per Task and Short Menus, handed them to the people who would use the system, and let those people do the design. It worked well enough that they reported it at a workshop that autumn.[2](appendix-references.md#ref-06-beck)
 
-The idea travelled the way Alexander's book travels, from hand to hand. In 1993 a group of programmers met on a hillside in Colorado to work out how software patterns should be written, and called themselves the Hillside Group. The next year four of their circle published *Design Patterns*: twenty-three named arrangements for object-oriented code, with Alexander quoted in its opening pages.[^gof] A generation of engineers learned to say Observer, Factory and Singleton the way builders say lintel. A design review could now be held in nouns.
+The idea travelled the way Alexander's book travels, from hand to hand. In 1993 a group of programmers met on a hillside in Colorado to work out how software patterns should be written, and called themselves the Hillside Group. The next year four of their circle published *Design Patterns*: twenty-three named arrangements for object-oriented code, with Alexander quoted in its opening pages.[3](appendix-references.md#ref-06-gof) A generation of engineers learned to say Observer, Factory and Singleton the way builders say lintel. A design review could now be held in nouns.
 
-In 1995 Cunningham needed somewhere for programmers to collect and edit patterns together, so he wrote a small program that let any reader change any page. He called it WikiWikiWeb. The wiki was invented to hold a pattern language.[^wiki] Six years later an encyclopedia borrowed the idea. Around the same time Will Wright, who had been reading Alexander, turned an architecture toy into *The Sims*. A book about window seats had reached the design of software, the largest reference work ever written, and one of the best-selling computer games.
+In 1995 Cunningham needed somewhere for programmers to collect and edit patterns together, so he wrote a small program that let any reader change any page. He called it WikiWikiWeb. The wiki was invented to hold a pattern language.[4](appendix-references.md#ref-06-wiki) Six years later an encyclopedia borrowed the idea. Around the same time Will Wright, who had been reading Alexander, turned an architecture toy into *The Sims*. A book about window seats had reached the design of software, the largest reference work ever written, and one of the best-selling computer games.
 
 The name travelled faster than the reasons. You could say Singleton in a meeting without bringing along any of the contexts and trade-offs the books still described. A pattern had been a hypothesis about when an arrangement resolves a conflict. In use, it could become a badge: something good engineers were seen to use.
 
 <!-- SLOT 3 (your story replaces the next paragraph): a design pattern you watched being applied as a rule. -->
 Anyone who worked through those years has seen what followed. Codebases filled with factories that built one kind of object and singletons guarding nothing. Folk rules came loose the same way. “Never use regex on nested syntax” has the reassuring shape of wisdom and the inconvenient property of being false: a fixed format with one level of nesting can be matched with a regular expression perfectly well. The pattern worth keeping records when a parser becomes cheaper than maintaining an increasingly heroic expression at two in the morning.
 
-In 1996 the programmers invited Alexander to give the keynote at their largest conference. He came, a little bemused to find himself famous in a field he did not work in, and he was gracious, and he was not sure they had taken what mattered. He asked whether their patterns carried the two things his were for: making something better for the people who live in it, and generating a coherent whole from the parts. He suspected they had mostly adopted a format for trading ideas.[^alexander96]
+In 1996 the programmers invited Alexander to give the keynote at their largest conference. He came, a little bemused to find himself famous in a field he did not work in, and he was gracious, and he was not sure they had taken what mattered. He asked whether their patterns carried the two things his were for: making something better for the people who live in it, and generating a coherent whole from the parts. He suspected they had mostly adopted a format for trading ideas.[5](appendix-references.md#ref-06-alexander96)
 
 ## Ask Sam
 
@@ -45,7 +45,7 @@ Ask for the incident procedure and the answer sounds like this:
 
 She writes down *ask Sam*. That preserves the dependency beautifully. It does less for the incident that happens while Sam is on holiday. She needs to know what he looks for in the serializer, why he looks there, and when that suspicion is a waste of time. Sam is a master builder who knows more than he can say, and nobody has written his patterns down.
 
-Chapter 5 followed the organization taking shape around Carlini's compiler project. Its workers inherited code, tests, progress files and procedures. Now we have to open those files: what should they preserve from the work, and how can the next worker challenge what she finds? Alexander's pattern language offers a form for that inheritance.
+An institution passes on more than its conclusions. Its workers inherit methods, records and procedures. What should those records preserve from the work, and how can the next worker challenge what she finds? Alexander's pattern language offers a form for that inheritance.
 
 If the file only says what we decided, the next worker inherits our mistakes. If it says why, she can find them.
 
@@ -53,15 +53,15 @@ If the file only says what we decided, the next worker inherits our mistakes. If
 
 Alexander's patterns and the programmers' patterns both had a human reader. The third life gives the pattern a machine reader with tools.
 
-People had tried to give written knowledge to a machine before. In 1977, the same year as Alexander's book, Edward Feigenbaum gave the attempt a name, **knowledge engineering**: acquiring expert knowledge, representing it, and using it to construct and explain reasoning. He argued that a system's power lies in its knowledge, and he found that the hard part is getting that knowledge out of the expert. In one diagnostic system, rules developed with a physician were tested against cases, exposing gaps and inconsistencies the collaboration then had to resolve.[^feigenbaum] Getting the expert to explain the exception was only the beginning; someone still had to make the system handle it.
+People had tried to give written knowledge to a machine before. In 1977, the same year as Alexander's book, Edward Feigenbaum gave the attempt a name, **knowledge engineering**: acquiring expert knowledge, representing it, and using it to construct and explain reasoning. He argued that a system's power lies in its knowledge, and he found that the hard part is getting that knowledge out of the expert. In one diagnostic system, rules developed with a physician were tested against cases, exposing gaps and inconsistencies the collaboration then had to resolve.[6](appendix-references.md#ref-06-feigenbaum) Getting the expert to explain the exception was only the beginning; someone still had to make the system handle it.
 
-Andrej Karpathy's count of the ways to program a computer tells the rest. In Software 1.0 a person writes the rules as code. That is where the Gang of Four's patterns lived: advice for the human holding the keyboard, invisible to the machine. In Software 2.0 the program is a set of weights learned from examples. It can absorb what nobody could articulate, but there is no convenient place in the weights to inspect a pattern and amend its conditions. In Software 3.0 the program is written in a natural language and a model interprets it.[^karpathy] The machine doing the work can now read the pattern, follow its *Therefore*, and consult the reasons behind it.
+Andrej Karpathy's count of the ways to program a computer tells the rest. In Software 1.0 a person writes the rules as code. That is where the Gang of Four's patterns lived: advice for the human holding the keyboard, invisible to the machine. In Software 2.0 the program is a set of weights learned from examples. It can absorb what nobody could articulate, but there is no convenient place in the weights to inspect a pattern and amend its conditions. In Software 3.0 the program is written in a natural language and a model interprets it.[7](appendix-references.md#ref-06-karpathy) The machine doing the work can now read the pattern, follow its *Therefore*, and consult the reasons behind it.
 
 That changes the cost of Feigenbaum's translation. We can supply an account of how a problem usually unfolds, with a worked example and a warning about a misleading instrument, without first expressing every qualification in logic. A model reads the incident procedure, chooses a diagnostic query, and hands arithmetic to code. Nobody benefits if the arithmetic becomes more literary.
 
 I avoid calling such a document executable, because the word hides the reader. The same words can produce different actions in different models or environments.
 
-Agent skills give the arrangement a container with much of Alexander's anatomy. A named skill is discovered through a short description of when it applies: the context. When selected, it supplies instructions, scripts and examples: the *Therefore*. Calls to other skills can serve as links to smaller patterns.[^skills] Voyager, a Minecraft agent, showed capability accumulating this way. It keeps a library of executable skills, retrieves them through their descriptions and reuses them, with execution results and model-based verification supplying feedback.[^voyager]
+Agent skills give the arrangement a container with much of Alexander's anatomy. A named skill is discovered through a short description of when it applies: the context. When selected, it supplies instructions, scripts and examples: the *Therefore*. Calls to other skills can serve as links to smaller patterns.[8](appendix-references.md#ref-06-skills) Voyager, a Minecraft agent, showed capability accumulating this way. It keeps a library of executable skills, retrieves them through their descriptions and reuses them, with execution results and model-based verification supplying feedback.[9](appendix-references.md#ref-06-voyager)
 
 An organization could keep this local operating knowledge through a change of model, or improve a procedure without waiting for a training run. A specialist could leave behind a method the next worker can use.
 
@@ -69,13 +69,13 @@ But how sure are we that the pattern works? Where did it come from, what would s
 
 ## Give the Claim an Address
 
-Anthropic's formalization of Fermat's Last Theorem began badly. Wiles's proof was published in 1995; the task in August 2026 was to make the proof checkable by Lean. Early attempts faltered as agents lost track of the project. The successful effort used Prove2Me: theorem statements became nodes in a dependency graph, with plain-language descriptions that let a worker find a result established by a worker it never met. In eleven days the agents produced a formalization using roughly thirty thousand intermediate theorems. Lean checked the completed proof under its three standard axioms; a separate comparator confirmed that the final statement was Mathlib's Fermat and not a convenient cousin.[^fermat]
+Anthropic's formalization of Fermat's Last Theorem began badly. Wiles's proof was published in 1995; the task in August 2026 was to make the proof checkable by Lean. Early attempts faltered as agents lost track of the project. The successful effort used Prove2Me: theorem statements became nodes in a dependency graph, with plain-language descriptions that let a worker find a result established by a worker it never met. In eleven days the agents produced a formalization using roughly thirty thousand intermediate theorems. Lean checked the completed proof under its three standard axioms; a separate comparator confirmed that the final statement was Mathlib's Fermat and not a convenient cousin.[10](appendix-references.md#ref-06-fermat)
 
 The next worker had something better than a colleague's assurance that the mathematics was probably fine.
 
-Jon Doyle was designing machinery for this long before language models. He called it **truth maintenance**: beliefs keep their reasons, and when a reason is withdrawn, everything resting on it comes up for review.[^doyle] Doyle's machinery tracks justifications. It cannot check them against the world, and a program can faithfully maintain the consequences of reasons that were never true.
+Jon Doyle was designing machinery for this long before language models. He called it **truth maintenance**: beliefs keep their reasons, and when a reason is withdrawn, everything resting on it comes up for review.[11](appendix-references.md#ref-06-doyle) Doyle's machinery tracks justifications. It cannot check them against the world, and a program can faithfully maintain the consequences of reasons that were never true.
 
-Most of us have no Lean. Here is a claim of the kind my field produces every week, and this one is real. An experiment at Bing reported that people in the treatment were running over ten percent more queries, and revenue per user was up by about thirty percent.[^kohavi] That sounds like a result worth keeping. Suppose it goes into a report, another agent summarizes the report, and a third uses the summary to recommend shipping. If something turns out to be wrong with the experiment, where will the correction go?
+Most of us have no Lean. Here is a claim of the kind my field produces every week, and this one is real. An experiment at Bing reported that people in the treatment were running over ten percent more queries, and revenue per user was up by about thirty percent.[12](appendix-references.md#ref-06-kohavi) That sounds like a result worth keeping. Suppose it goes into a report, another agent summarizes the report, and a third uses the summary to recommend shipping. If something turns out to be wrong with the experiment, where will the correction go?
 
 Searching every document for the word *queries* is one possible response. It will be popular with the company selling us tokens.
 
@@ -106,7 +106,7 @@ Every experimentation team knows this meeting. The dashboard arrives before the 
 
 I do not know what was said in the room at Bing, so take what follows here and in the next section as the general case. A result like theirs is an invitation to the same meeting. More queries, more revenue: a reviewer can praise the obvious explanation, criticize it, or ask another model to do both. None of that changes the data. To investigate, the reviewer has to say what would look different if the explanation were wrong.
 
-Popper's demand is **falsifiability**: an empirical claim must risk being wrong. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test.[^popper]
+Popper's demand is **falsifiability**: an empirical claim must risk being wrong. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test.[13](appendix-references.md#ref-06-popper)
 
 What if we set a task and observed whether people completed it? Repeated attempts without success would count against the cheerful reading of more queries.
 
@@ -120,11 +120,11 @@ A model will answer that question plausibly in a prompt. The operational commitm
 
 ## Locate the Failure
 
-The people who run experiments for a living have a reflex about results like Bing's. They call it Twyman's law: any figure that looks interesting or different is usually wrong. Thirty percent more revenue is very interesting. The first check is whether the two arms even contain the numbers of users the design says they should. A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it.[^twyman]
+The people who run experiments for a living have a reflex about results like Bing's. They call it Twyman's law: any figure that looks interesting or different is usually wrong. Thirty percent more revenue is very interesting. The first check is whether the two arms even contain the numbers of users the design says they should. A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it.[14](appendix-references.md#ref-06-twyman)
 
 If the check fails, the meeting usually goes something like this. One team says the treatment is fine and the logging double-counted. Another says the logging is fine and a redirect dropped users from one arm. Someone notices the two arms ran on different client versions. We have made contact with reality and acquired a meeting.
 
-This is the **Duhem–Quine** problem from the previous chapter: the test challenges a bundle of assumptions about the world and the apparatus without identifying which one failed.[^quine] Hence the meeting.
+This is the **Duhem–Quine** problem from the previous chapter: the test challenges a bundle of assumptions about the world and the apparatus without identifying which one failed.[15](appendix-references.md#ref-06-quine) Hence the meeting.
 
 The dependency record makes the meeting more useful by tracing claims to client versions, data pipelines and assumptions about what counts as one user. Investigators can then probe a suspected failure by replaying a known session and counting the events, pinning the client version, or rerunning the split.
 
@@ -136,11 +136,11 @@ Capturing every possible dependency would cost more than the inquiry. Start with
 
 ## Ask What the Number Means
 
-Here is what had happened at Bing. The treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue went up. Two of the organization's headline numbers were celebrating an experience that had been degraded.[^kohavi2]
+Here is what had happened at Bing. The treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue went up. Two of the organization's headline numbers were celebrating an experience that had been degraded.[16](appendix-references.md#ref-06-kohavi2)
 
 The count was right. The cheerful interpretation was wrong. The task-completion test we proposed could have exposed the problem; another audit of the count would not. This is why the interpretation needed its own address.
 
-Saussure's point, which we met in Chapter 4, is **relational value**: a term means what it does through its differences from its neighbors.[^saussure-lectures] *More queries* meant *more engaged* only inside a system where a query was a unit of interest. Set it beside *session* and *task* and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad ranking.
+Saussure's point, which we met in Chapter 4, is **relational value**: a term means what it does through its differences from its neighbors.[17](appendix-references.md#ref-06-saussure-lectures) *More queries* meant *more engaged* only inside a system where a query was a unit of interest. Set it beside *session* and *task* and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad ranking.
 
 The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return. Tasks were harder to identify, so sessions served as a proxy. A shorter session might mean success or abandonment.
 
@@ -189,9 +189,9 @@ Suppose retrieval works. The reviewer finds the warning and starts challenging e
 
 To find out, the candidate pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with degraded experiences behind the gain, some with real gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs where stochastic variation matters, and records both the quality of the conclusions and the resources consumed. A curator that warns about metrics in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
 
-Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks. Another study, by Lulla and colleagues, reported improvements in runtime and output-token use but did not comprehensively establish the correctness of the resulting changes.[^context]
+Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks. Another study, by Lulla and colleagues, reported improvements in runtime and output-token use but did not comprehensively establish the correctness of the resulting changes.[18](appendix-references.md#ref-06-context)
 
-Agentic Context Engineering, or ACE, supplies one piece of the machinery for retaining and revising lessons: a generator, reflector, and curator maintain a structured playbook through incremental updates, limiting the loss of detail when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks.[^ace]
+Agentic Context Engineering, or ACE, supplies one piece of the machinery for retaining and revising lessons: a generator, reflector, and curator maintain a structured playbook through incremental updates, limiting the loss of detail when each update replaces the whole summary. Its reported evaluations show gains on the studied tasks.[19](appendix-references.md#ref-06-ace)
 
 A lesson that passes should also carry its scope. If the check helps only in search, its scope stays there, and the next agent working elsewhere does not inherit an irrelevant ritual. The model's weights can stay fixed while a better method lets a new worker find something its predecessor missed.
 
@@ -201,7 +201,7 @@ A lesson that passes should also carry its scope. If the check helps only in sea
 
 An agent inherits more than its own institution's files. So where does the knowledge of a result live, if no single agent holds it?
 
-Chapter 5 borrowed Popper's name for the answer: **World 3**, the world of theories, proofs, libraries and instruments, which exists outside any particular head and outlasts whoever produced it.[^world3]
+Chapter 5 borrowed Popper's name for the answer: **World 3**, the world of theories, proofs, libraries and instruments, which exists outside any particular head and outlasts whoever produced it.[20](appendix-references.md#ref-06-world3)
 
 <!-- EDITORIAL NOTE (Hani, 21 Sept): the homes of World 3.
 Idea: knowledge bases, ontologies, the web, search and LLMs are all descendants of the library, and most began as science solving its own filing problem (the web at CERN, 1989; PageRank as citation analysis; the wiki for patterns; community-run ontologies such as the Gene Ontology). Each move made knowledge cheaper to reach and dropped something the previous institution had worked for: the edition, the catalogue card, the editor. Wikipedia had to reinvent the footnote ("citation needed" = give the claim an address). The LLM is the latest and most convenient house, the whole library in one voice, and it arrived without a catalogue card (Ch. 4: epistemologically flat; "the library without the childhood").
@@ -211,11 +211,11 @@ Draft paragraph:
 World 3 has moved house several times. It lived in memory, then on clay, then in libraries with catalogues, then in journals with citation indexes. The web was built at CERN so physicists could find each other's papers; the ranking that made it searchable was citation analysis pointed at links. Each move made knowledge cheaper to reach, and each one left something behind that the last institution had worked for: the edition, the catalogue card, the editor. Wikipedia had to reinvent the footnote and enforce it with volunteers. A language model is the latest house and the most convenient, the whole library in one voice, and it arrived without a single catalogue card. Every new memory has needed its System 3 rebuilt. This one is ours to build.
 -->
 
-In Terence Tao's collaboration with DeepMind, AlphaEvolve found a slightly improved construction for three-dimensional finite-field Kakeya sets. Deep Think helped produce an informal proof, and AlphaProof formalized it in Lean.[^tao] The next investigation can use the construction, examine its explanation, or check the formal proof under its specified axioms. None requires summoning the original workers back into existence. World 3 has acquired participants that arrive through an API.
+In Terence Tao's collaboration with DeepMind, AlphaEvolve found a slightly improved construction for three-dimensional finite-field Kakeya sets. Deep Think helped produce an informal proof, and AlphaProof formalized it in Lean.[21](appendix-references.md#ref-06-tao) The next investigation can use the construction, examine its explanation, or check the formal proof under its specified axioms. None requires summoning the original workers back into existence. World 3 has acquired participants that arrive through an API.
 
-Availability is only the beginning of reuse. Kevin Buzzard checked Anthropic's Fermat formalization while leading his own publicly funded project on the theorem. His commitments included adding useful mathematics to the community library and making a document through which people could explore the modern proof. A completed formalization did not discharge those commitments.[^buzzard] A proof can check while leaving the next mathematician with a formidable renovation project.
+Availability is only the beginning of reuse. Kevin Buzzard checked Anthropic's Fermat formalization while leading his own publicly funded project on the theorem. His commitments included adding useful mathematics to the community library and making a document through which people could explore the modern proof. A completed formalization did not discharge those commitments.[22](appendix-references.md#ref-06-buzzard) A proof can check while leaving the next mathematician with a formidable renovation project.
 
-The same question reaches beyond mathematics. The AlphaFold database makes more than two hundred million protein-structure predictions available for research. AlphaGenome Atlas supplies predictions for roughly nine billion possible single-letter DNA changes.[^biology] These resources carry uncertainty; a prediction does not become an experimental observation by being stored beside a billion others. But a researcher can begin with material she could never have produced herself, select a candidate, and put it to a test its creators never planned.
+The same question reaches beyond mathematics. The AlphaFold database makes more than two hundred million protein-structure predictions available for research. AlphaGenome Atlas supplies predictions for roughly nine billion possible single-letter DNA changes.[23](appendix-references.md#ref-06-biology) These resources carry uncertainty; a prediction does not become an experimental observation by being stored beside a billion others. But a researcher can begin with material she could never have produced herself, select a candidate, and put it to a test its creators never planned.
 
 Checking scope, explaining a result and maintaining its tools compete with the next spectacular discovery for funding. Leave that work undone and agents may give the next investigation more to read without making it more capable.
 
@@ -229,11 +229,11 @@ An agent inheriting the Bing lesson might organize its next investigation around
 
 Before deep learning became dominant, there were several respectable ways to write a machine-learning paper. One began with a probabilistic model of how the data arose, derived the inference and tried to say something about uncertainty. In much of computer vision, people designed features before training a classifier. The architecture of the problem was partly in the heads of the people building it.
 
-In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks and a top-five error of about fifteen percent. The runner-up, using engineered features, had twenty-six.[^imagenet] That gap was legible on the existing scoreboard. What followed changed more than the score: learning the features became central to how much of the field worked. An expert could remain excellent at the old work while watching less of the new work require it.
+In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks and a top-five error of about fifteen percent. The runner-up, using engineered features, had twenty-six.[24](appendix-references.md#ref-06-imagenet) That gap was legible on the existing scoreboard. What followed changed more than the score: learning the features became central to how much of the field worked. An expert could remain excellent at the old work while watching less of the new work require it.
 
 <!-- SLOT 2 (your first-person moment goes here): what you believed before, and the result that changed your mind. -->
 
-A **paradigm**, in Kuhn's account, supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[^kuhn] Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. In this respect AlexNet is the easier case, because the new representation won on the number everyone already trusted. The Bing case requires questioning the number itself.
+A **paradigm**, in Kuhn's account, supplies a field with exemplary achievements, important problems and standards for adequate solutions. It makes normal science possible because practitioners need not reconstruct the foundations before each experiment.[25](appendix-references.md#ref-06-kuhn) Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. In this respect AlexNet is the easier case, because the new representation won on the number everyone already trusted. The Bing case requires questioning the number itself.
 
 Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. Prompting a general model shifts the work again: some choices once made in a training pipeline move into instructions and tools.
 
@@ -247,17 +247,17 @@ I do not know an agent institution that can do this. The agent can write the pro
 
 ## Separate Use from Investigation
 
-In August 2026 an Anthropic engineer pointed an unreleased Claude at the Riemann hypothesis. It did not prove the hypothesis. On the way, Anthropic reports, it raised a lower bound on the proportion of the zeta function's nontrivial zeros on the critical line from 41.6 percent to 67.2 percent, combining published results. Roughly sixty subagents developed and reviewed arguments. Two Anthropic mathematicians checked the paper, two outside number theorists examined it, and the result was formalized in Lean. Anthropic did not expect the techniques to prove the full hypothesis.[^riemann]
+In August 2026 an Anthropic engineer pointed an unreleased Claude at the Riemann hypothesis. It did not prove the hypothesis. On the way, Anthropic reports, it raised a lower bound on the proportion of the zeta function's nontrivial zeros on the critical line from 41.6 percent to 67.2 percent, combining published results. Roughly sixty subagents developed and reviewed arguments. Two Anthropic mathematicians checked the paper, two outside number theorists examined it, and the result was formalized in Lean. Anthropic did not expect the techniques to prove the full hypothesis.[26](appendix-references.md#ref-06-riemann)
 
 An evaluator asking only whether the assigned problem was solved would return *no*. That answer would be correct and a poor account of the research. The record needs room for the contribution: its own statement, support and remaining questions, linked to the unsuccessful attempt that produced it. Whether to fund a follow-up is a separate decision.
 
 Consider how it goes in an ordinary team. The review pattern from the Bing lesson has been in use for six months. It is retrieved for every search experiment, so every review adds a line to its evidence record, and the record looks formidable. The team still uses query-based metrics, with the pattern prompting checks when a gain may be misleading. Someone once proposed collecting task-completion data routinely and making it the primary evaluation criterion, while keeping query counts as a diagnostic. That proposal required new instrumentation and a trial. It was never run. Every week the incumbent was the safer choice for the review at hand, and every week that choice was defensible. After six months the system can report an impressive evidence base with almost no comparisons in it.
 
-Larry Laudan named the missing distinction **acceptance and pursuit**.[^laudan] What to believe today and what to work on tomorrow are different questions. The team had good reasons to keep using the incumbent and no mechanism for asking whether the rival deserved a trial. The Riemann bound raises the same pair of questions: accepting it as a result does not tell us whether to keep pursuing that route toward the full hypothesis.
+Larry Laudan named the missing distinction **acceptance and pursuit**.[27](appendix-references.md#ref-06-laudan) What to believe today and what to work on tomorrow are different questions. The team had good reasons to keep using the incumbent and no mechanism for asking whether the rival deserved a trial. The Riemann bound raises the same pair of questions: accepting it as a result does not tell us whether to keep pursuing that route toward the full hypothesis.
 
-Six months of use leaves another trace. The incumbent pattern acquires an exception for one client, then another, then a third. Chapter 5 introduced Lakatos's patience with a **research programme**; here the patches let us examine what that patience buys.[^lakatos] Does a revision predict a failure in a further case, and does that prediction hold up? Or does it merely explain the incident already observed? Those questions distinguish a progressive programme from one that keeps accommodating failures after the fact. The file should record what was predicted and checked, including when the revision remains untested.
+Six months of use leaves another trace. The incumbent pattern acquires an exception for one client, then another, then a third. Chapter 5 introduced Lakatos's patience with a **research programme**; here the patches let us examine what that patience buys.[28](appendix-references.md#ref-06-lakatos) Does a revision predict a failure in a further case, and does that prediction hold up? Or does it merely explain the incident already observed? Those questions distinguish a progressive programme from one that keeps accommodating failures after the fact. The file should record what was predicted and checked, including when the revision remains untested.
 
-Kitcher's **division of cognitive labor**, from Chapter 5, applies to this library too: a retrieval policy that keeps selecting the incumbent gives the rival no chance to acquire evidence.[^kitcher]
+Kitcher's **division of cognitive labor**, from Chapter 5, applies to this library too: a retrieval policy that keeps selecting the incumbent gives the rival no chance to acquire evidence.[29](appendix-references.md#ref-06-kitcher)
 
 The rival needs a bounded experiment whose outcome determines the next decision, costed in advance, with the later choices it could change written down beside it.
 
@@ -267,17 +267,17 @@ The person recording the reasons for an experiment, however, may not control the
 
 ## Keep the Funding Decision Visible
 
-In OpenAI's September 2026 account of its Navier–Stokes investigation, a promising result changed the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. OpenAI reported another seventeen hours for Lean formalization and verification.[^navier]
+In OpenAI's September 2026 account of its Navier–Stokes investigation, a promising result changed the allocation. Groups of agents investigated the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups' findings into the next prompts. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay's alternatives C and D. OpenAI reported another seventeen hours for Lean formalization and verification.[30](appendix-references.md#ref-06-navier)
 
-On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[^clay] The other problems had lost workers, not been refuted.
+On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[31](appendix-references.md#ref-06-clay) The other problems had lost workers, not been refuted.
 
-The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[^priority] By OpenAI's own account, the rumor traced to Buckmaster and to Alpöge, whom it describes as an Anthropic employee. Their concurrent result, on the forced Euler problem, had been produced with an internal Anthropic model. This book relies on Anthropic's reports in several chapters, so that belongs in the record too.
+The history of choosing the route also became disputed. Tristan Buckmaster described his work with Levent Alpöge as extending a programme begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI's effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster's recent Codex prompts to train the system.[32](appendix-references.md#ref-06-priority) By OpenAI's own account, the rumor traced to Buckmaster and to Alpöge, whom it describes as an Anthropic employee. Their concurrent result, on the forced Euler problem, had been produced with an internal Anthropic model. This book relies on Anthropic's reports in several chapters, so that belongs in the record too.
 
 A checked proof does not settle that history. Learning that a route is promising can affect where we invest without supplying a single step of the proof.
 
 Imagine the team following up on its task-completion proposal. A researcher asks for two weeks of experimental traffic to test whether query counts track task completion at all. The request lands with the owner of the search-quality budget, who accepts experiments expected to raise the current metric, because that is how the budget was justified. The proposed study asks whether the metric represents improvement. The researcher has been invited to challenge an assumption on the condition that she first accept it.
 
-The budget owner controls the traffic, the compute and the permission to change what gets measured. In *Sapiens*, Harari puts the general point bluntly: science does not set its own priorities; whoever pays for it does.[^harari]
+The budget owner controls the traffic, the compute and the permission to change what gets measured. In *Sapiens*, Harari puts the general point bluntly: science does not set its own priorities; whoever pays for it does.[33](appendix-references.md#ref-06-harari)
 
 The team could split the request. One part proposes a study and goes to experimental review. The other asks whether the success criterion should change and goes to whoever owns the product goal. If the second is rejected, the rejection is recorded as a decision about the goal, with a name on it.
 
@@ -291,21 +291,21 @@ Otherwise *unfunded* gradually becomes *unsupported*, and *unsupported* becomes 
 
 Suppose the study gets funded and the objection holds up. After retrieving the lesson, testing it and paying for the evidence it asked us to collect, the organization can still arrange for nothing to follow.
 
-For years Facebook tuned its feed for engagement and time spent. In December 2017, Facebook's researchers publicly reviewed evidence that passive consumption could leave people feeling worse.[^fbwellbeing] A person could keep scrolling without becoming better off. It was Bing's question again, except that the activity being counted was now hours of people's lives.
+For years Facebook tuned its feed for engagement and time spent. In December 2017, Facebook's researchers publicly reviewed evidence that passive consumption could leave people feeling worse.[34](appendix-references.md#ref-06-fbwellbeing) A person could keep scrolling without becoming better off. It was Bing's question again, except that the activity being counted was now hours of people's lives.
 
-In January 2018 the company announced a change toward “meaningful social interactions,” favoring conversations and exchanges among friends and family. It looked like the right fix: move from measuring attention to measuring connection. Facebook even said it expected people to spend less time on the platform.[^fbchange]
+In January 2018 the company announced a change toward “meaningful social interactions,” favoring conversations and exchanges among friends and family. It looked like the right fix: move from measuring attention to measuring connection. Facebook even said it expected people to spend less time on the platform.[35](appendix-references.md#ref-06-fbchange)
 
-Then its researchers found publishers and political parties shifting toward outrage because that was what travelled. According to internal documents reported by the *Wall Street Journal*, heavy weighting of reshared material amplified angry voices, and researchers found misinformation, toxicity and violent content unusually common among reshares. They proposed reducing the boost for material likely to travel down long chains of users. Facebook made some changes for civic and health content, but Zuckerberg reportedly resisted expanding them if doing so materially reduced the interaction metric.[^fbfiles]
+Then its researchers found publishers and political parties shifting toward outrage because that was what travelled. According to internal documents reported by the *Wall Street Journal*, heavy weighting of reshared material amplified angry voices, and researchers found misinformation, toxicity and violent content unusually common among reshares. They proposed reducing the boost for material likely to travel down long chains of users. Facebook made some changes for civic and health content, but Zuckerberg reportedly resisted expanding them if doing so materially reduced the interaction metric.[36](appendix-references.md#ref-06-fbfiles)
 
-The same reporting described researchers inside Instagram struggling to get colleagues to appreciate the gravity of their findings. One former researcher put the institutional problem rather precisely: “We're standing directly between people and their bonuses.”[^instagram]
+The same reporting described researchers inside Instagram struggling to get colleagues to appreciate the gravity of their findings. One former researcher put the institutional problem rather precisely: “We're standing directly between people and their bonuses.”[37](appendix-references.md#ref-06-instagram)
 
 The organization had paid for the knowledge it was now resisting. These objections came from inside, from people employed to investigate the products. Having findings on the company's message board did not give the researchers authority over what followed. The public learned about these internal disputes through leaked documents.
 
 The response to an objection should identify the claim it challenges. A counting error calls for a different response from a dispute about whether more activity counts as success. Resolving it may require missing evidence, a revised claim or another experiment. The response might explain why the criticism does not apply, or a resource decision might leave it unresolved. Marking the thread *closed* tells us that somebody finished interacting with it; it says nothing about which outcome occurred. “Noted” is none of these. With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out. We have successfully parallelized the experience of being ignored.
 
-Helen Longino would locate that failure in the community. For her, **objectivity is social**: it belongs to a community's criticism and depends on venues for criticism, uptake, shared standards, and a tempered equality of intellectual authority.[^longino] The review channel provides a venue. “Noted” gives no account of how the objection entered the decision.
+Helen Longino would locate that failure in the community. For her, **objectivity is social**: it belongs to a community's criticism and depends on venues for criticism, uptake, shared standards, and a tempered equality of intellectual authority.[38](appendix-references.md#ref-06-longino) The review channel provides a venue. “Noted” gives no account of how the objection entered the decision.
 
-Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim or dependency that failed, so the next round can repair the argument or try a different strategy.[^colosseum] Failed drafts remain available with their reviews attached. The reviewers can still be wrong.
+Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim or dependency that failed, so the next round can repair the argument or try a different strategy.[39](appendix-references.md#ref-06-colosseum) Failed drafts remain available with their reviews attached. The reviewers can still be wrong.
 
 Who gets access to that procedure matters. A critic cannot examine an assumption if it receives only the conclusion. A domain expert cannot contribute evidence if the system accepts objections only in the vocabulary of the ranking team. Asking the same model to play the skeptic may elicit another argument, but the role prompt alone does not give it access to different observations or expertise.
 
@@ -319,13 +319,13 @@ The objection can now survive its author. So can the assumption it challenges. R
 
 Max Planck's observation about scientific change, now known as **Planck's principle**, is usually compressed into “science advances one funeral at a time.” His actual sentence describes a new truth gaining acceptance because, rather than all its opponents being persuaded,
 
-> “…its opponents eventually die, and a new generation grows up that is familiar with it.”[^planck]
+> “…its opponents eventually die, and a new generation grows up that is familiar with it.”[40](appendix-references.md#ref-06-planck)
 
 A new generation learns the new examples first and has no old allegiance to surrender. The remark is bleak because the mechanism of correction lies partly outside the argument. What changes with the occupant of the chair?
 
-There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.[^funerals] This does not establish that the departed scientists had been wrong. It shows that the organization of participation can change which work enters a field.
+There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.[41](appendix-references.md#ref-06-funerals) This does not establish that the departed scientists had been wrong. It shows that the organization of participation can change which work enters a field.
 
-Now return to the sixteen Claudes of Carlini's compiler project, or to any team built like it.
+Now consider a team of agents whose sessions end while the project continues.
 
 Imagine a new agent joining such a project. Its progress file contains a line written several generations of agents ago: *parser rewrite tried and abandoned; do not retry.* The line was true when written. The code it refers to has since been replaced, and the cause of the failure went with it. The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context.
 
@@ -341,7 +341,7 @@ Changing the worker is easy.
 
 Look back at what this chapter has built and ask how it could fail while every part works. It may faithfully preserve dependencies while omitting the important kind of dependency. It may compare candidate patterns on cases selected by the incumbent pattern. It may require evidence for an alternative while refusing the instruments needed to produce that evidence. Every individual operation can function as specified while the arrangement prevents the question that would matter.
 
-Feyerabend's argument **against method** reaches further. Every rule of method, he argued, has been usefully broken at some point in the history of science.[^feyerabend] Requiring a test before setting a rule aside would itself be another methodological rule. I am borrowing a smaller lesson: our procedures need room for investigations they would ordinarily exclude.
+Feyerabend's argument **against method** reaches further. Every rule of method, he argued, has been usefully broken at some point in the history of science.[42](appendix-references.md#ref-06-feyerabend) Requiring a test before setting a rule aside would itself be another methodological rule. I am borrowing a smaller lesson: our procedures need room for investigations they would ordinarily exclude.
 
 Some of these failures can be investigated through a relevant comparison. A retrieval policy can be evaluated against another policy. A reviewer can be compared with a reviewer given different evidence. A pattern can be withheld from a branch to see whether its absence reveals errors its presence concealed.
 
@@ -362,88 +362,3 @@ So far, a procedure has decided which changes to the file deserve to survive. Bu
 What happens when the next agent proposes to rewrite it?
 
 ---
-
-[^alexander]: Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 1 (Independent Regions), 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves), 251 (Different Chairs), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
-
-[^beck]: Kent Beck and Ward Cunningham, “Using Pattern Languages for Object-Oriented Programs,” OOPSLA-87 workshop on the Specification and Design for Object-Oriented Programming, 1987.
-
-[^wiki]: Ward Cunningham launched WikiWikiWeb in March 1995 as an editable supplement to the Portland Pattern Repository. See Bo Leuf and Ward Cunningham, *The Wiki Way*, 2001.
-
-[^gof]: Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, *Design Patterns: Elements of Reusable Object-Oriented Software*, 1994. On the Hillside Group, founded after an August 1993 meeting in Colorado, see its own history at hillside.net. Will Wright has described *A Pattern Language* as an inspiration for *The Sims* (2000) in several interviews.
-
-[^alexander96]: Christopher Alexander, “The Origins of Pattern Theory: The Future of the Theory, and the Generation of a Living World,” keynote at OOPSLA 1996; published in *IEEE Software* 16(5), 1999, pp. 71–82.
-
-[^feigenbaum]: Edward A. Feigenbaum, *The Art of Artificial Intelligence: I. Themes and Case Studies of Knowledge Engineering*, Stanford report STAN-CS-77-621, 1977, especially the introduction and PUFF example. <https://infolab.stanford.edu/pub/cstr/reports/cs/tr/77/621/CS-TR-77-621.pdf>.
-
-[^karpathy]: Andrej Karpathy, “Software 2.0,” November 2017, and “Software Is Changing (Again),” talk at Y Combinator's AI Startup School, June 2025.
-
-[^skills]: Agent Skills, [official specification](https://agentskills.io/specification), consulted September 2026.
-
-[^voyager]: Guanzhi Wang et al., *Voyager: An Open-Ended Embodied Agent with Large Language Models*, 2023. <https://arxiv.org/html/2305.16291v2>.
-
-[^fermat]: Anthropic, “Formalizing Fermat's Last Theorem,” 4 September 2026, especially the account of Prove2Me and final verification. <https://www.anthropic.com/research/formalizing-fermats-last-theorem>.
-
-[^doyle]: Jon Doyle, “Truth Maintenance Systems for Problem Solving,” *Proceedings of IJCAI*, 1977, p. 247. <https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf>. See also Doyle, “A Truth Maintenance System,” *Artificial Intelligence* 12(3), 1979, pp. 231–272, <https://doi.org/10.1016/0004-3702(79)90008-0>. These systems maintain program justifications; identifying the real-world assumptions and evidential relationships remains a separate problem.
-
-[^kohavi]: Ron Kohavi, Alex Deng, Brian Frasca, Roger Longbotham, Toby Walker, and Ya Xu, “Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained,” *Proceedings of KDD*, 2012, section on the overall evaluation criterion for a search engine. [Original paper](https://exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf), §3.1. Sessions per user is a key component of the criterion; sessions serve as a practical proxy because tasks are harder to identify.
-
-[^kohavi2]: Kohavi et al., “Five Puzzling Outcomes Explained,” as above. The account of why queries and revenue rose is the authors' own.
-
-[^popper]: Karl Popper, *Conjectures and Refutations*, 1963, chapter 1, especially the discussion of risky predictions and testability. <https://padron.entretemas.com.ve/documentos/Popper-Conjectures-Rwefutations-GrowthOfKnowledge.pdf>. Popper treats falsifiability as a criterion for demarcating science; I use only the narrower point that a test is informative in proportion to the risk it imposes on the claim.
-
-[^twyman]: On Twyman's law and trust checks, see Ron Kohavi, Diane Tang, and Ya Xu, *Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing*, 2020, chapter 3. On sample-ratio mismatch, see Aleksander Fabijan et al., “Diagnosing Sample Ratio Mismatch in Online Controlled Experiments,” *Proceedings of KDD*, 2019.
-
-[^quine]: W. V. O. Quine, “Two Dogmas of Empiricism,” 1951, section 6. <https://www.ditext.com/quine/quine.html>. Duhem's discussion of physical testing and Quine's broader holism differ in scope; the shared engineering difficulty is identifying what to revise when a bundle of assumptions meets a contrary result.
-
-[^saussure-lectures]: Ferdinand de Saussure, *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. <https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm>. The structuralist connection here concerns Saussure's account of relational linguistic value.
-
-[^imagenet]: Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, “ImageNet Classification with Deep Convolutional Neural Networks,” *Advances in Neural Information Processing Systems* 25, 2012.
-
-[^kuhn]: Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>.
-
-[^riemann]: Anthropic, “Learning more about Claude's mathematical capabilities,” 10 August 2026, updated 13 August. <https://www.anthropic.com/research/riemann-zeta>.
-
-[^laudan]: Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. <https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf>.
-
-[^lakatos]: Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
-
-[^kitcher]: Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>.
-
-[^navier]: OpenAI, “On the Navier–Stokes Millennium Prize Problem,” 8 September 2026, updated 10 September, especially “How we found the proof.” <https://openai.com/index/navier-stokes-solution/>. The announced result uses smooth forcing and addresses alternatives C and D of the official formulation; it does not settle the unforced Navier–Stokes regularity question.
-
-[^clay]: Clay Mathematics Institute, “Navier-Stokes Announcement,” 11 September 2026. <https://www.claymath.org/news/navier-stokes-announcement/>. Status of the recent mathematical announcements in this chapter checked on 13 September 2026.
-
-[^priority]: Tristan Buckmaster, [public statement](https://cims.nyu.edu/~tristanb/statement.pdf), September 2026, especially pp. 1–4; OpenAI, [“On the Navier–Stokes Millennium Prize Problem,” “Concurrent work”](https://openai.com/index/navier-stokes-solution/), updated 10 September 2026. These are the participants' accounts.
-
-[^fbwellbeing]: David Ginsberg and Moira Burke, [“Hard Questions: Is Spending Time on Social Media Bad for Us?”](https://about.fb.com/news/2017/12/hard-questions-is-spending-time-on-social-media-bad-for-us/), Facebook, 15 December 2017. The post reviews external studies and company research and distinguishes passive consumption from active interaction.
-
-[^fbfiles]: Keach Hagey and Jeff Horwitz, “Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead,” *The Wall Street Journal*, 15 September 2021, part of the Facebook Files series based on internal documents; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF16/20211201/114268/HHRG-117-IF16-20211201-SD012.pdf). The company said the ranking change was not the source of the world's divisions and that it had an integrity team working on exploitation of the algorithm. The article reports both limited adoption of fixes and resistance to extending them.
-
-[^fbchange]: Adam Mosseri, [“Bringing People Closer Together”](https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/), Facebook, 11 January 2018. The announcement describes prioritizing conversations and interactions among friends and family and anticipates reduced time spent on Facebook.
-
-[^instagram]: Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the body-image findings and the former researcher's statement about bonuses. For the company's response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September. The body-image proportion concerns respondents who reported that difficulty, not all teenage girls; the surveys do not establish causation.
-
-[^longino]: Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
-
-[^colosseum]: Honghao Lin et al., “Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,” arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. <https://arxiv.org/html/2609.15983v2>. The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
-
-[^planck]: Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn's text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
-
-[^funerals]: Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. <https://pubmed.ncbi.nlm.nih.gov/31656315/>.
-
-[^world3]: Karl Popper, *Objective Knowledge: An Evolutionary Approach*, 1972, chapters 3 and 4, especially “Epistemology Without a Knowing Subject.”
-
-[^tao]: Terence Tao, “Mathematical exploration and discovery at scale,” 5 November 2025. <https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/>. See also Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, and Adam Zsolt Wagner, <https://arxiv.org/abs/2511.02864>.
-
-[^buzzard]: Kevin Buzzard, “FLT: Anthropic has beaten me to it,” 4 September 2026, especially “The code base” and “What this work is, and is not.” <https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/>.
-
-[^biology]: Google DeepMind and EMBL-EBI, [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/); AlphaGenome Atlas team, [“AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome”](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/), September 2026.
-
-[^ace]: *Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models*, 2025. <https://arxiv.org/html/2510.04618v1>.
-
-[^context]: Gloaguen et al., *Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?*, 2026, [arXiv:2602.11988v2](https://arxiv.org/html/2602.11988v2), revised 23 June; Jai Lal Lulla et al., *On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents*, 2026, [arXiv:2601.20404v2](https://arxiv.org/html/2601.20404v2), revised 30 March.
-
-[^harari]: Yuval Noah Harari, *Sapiens: A Brief History of Humankind*, 2014, ch. 14, “The Discovery of Ignorance.”
-
-[^feyerabend]: Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author's text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend's historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
-

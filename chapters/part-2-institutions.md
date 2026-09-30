@@ -1,4 +1,4 @@
-<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of System 3. -->
 
 ```{=latex}
 \clearpage
@@ -18,7 +18,7 @@
 > *A record outlives the clerk.*\
 > *Five judges sharing one source are one witness.*
 >
-> — The Zen of Autonomy
+> — The Zen of System 3
 
 ```{=latex}
 \vspace{1.5em}

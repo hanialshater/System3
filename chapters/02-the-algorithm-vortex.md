@@ -24,7 +24,7 @@ That's the whole thing: no customers, no authentication, no stakeholder arriving
 
 Unfortunately, the solution space is nasty. Every circle has a position and a radius, and nearly every decision affects several others. Increase one radius and two neighbors may overlap. Move a neighbor and something else now needs to move. A packing can look almost perfect while being trapped in a configuration where every obvious improvement makes the solution invalid.
 
-For the experiments in this chapter, we had a strong reference score around 2.635 under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.[^alphaevolve]
+For the experiments in this chapter, we had a strong reference score around 2.635 under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.[1](appendix-references.md#ref-02-alphaevolve)
 
 *[Missing figure]* A strong reference packing for the 26-circle objective, scoring approximately 2.635 under our evaluator.
 <!-- Original asset reference: ../resources/image0139.png; see resources/art-direction/missing-figures.md. -->
@@ -267,5 +267,3 @@ That is why circle packing is the easy version of autonomy. The evaluator return
 When success is harder to judge, the agent can still generate alternatives, branch and search among them. It also has to find a way to decide which one is better. What happens when the world gives us no clean referee and judgment itself has to be constructed?
 
 ---
-
-[^alphaevolve]: Alexander Novikov et al., “AlphaEvolve: A coding agent for scientific and algorithmic discovery,” 2025, [arXiv:2506.13131](https://arxiv.org/html/2506.13131v1), §B.12 on packing circles inside a unit square to maximize the sum of radii; §§2.2–2.5 on prompt sampling, code generation, evaluation and evolution.

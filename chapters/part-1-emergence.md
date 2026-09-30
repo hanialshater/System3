@@ -1,4 +1,4 @@
-<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of Autonomy. -->
+<!-- EDITORIAL REVISION: one-page part opening; epigraph from The Zen of System 3. -->
 
 ```{=latex}
 \clearpage
@@ -18,4 +18,4 @@
 > *The farmer grows nothing. The plant does.*\
 > *Let the work change the architecture.*
 >
-> — The Zen of Autonomy
+> — The Zen of System 3

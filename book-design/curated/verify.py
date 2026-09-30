@@ -23,6 +23,11 @@ def plain(text):
     return ' '.join(out)
 
 
+def citation_fragments(value):
+    # Superscript labels are excluded from PDF body spans; check the prose around them.
+    return re.split(r'\[\^[^]]+\]|\[\d+\]\(appendix-references\.md#ref-[A-Za-z0-9_-]+\)', value)
+
+
 def verify(pdf, work):
     expected = json.loads((work/'expected.json').read_text())
     placements = json.loads((work/'placements.json').read_text())
@@ -60,7 +65,7 @@ def verify(pdf, work):
     for i, row in enumerate(expected):
         # Repeated table headers across page breaks interrupt the concatenated
         # table text. Verify each complete source cell independently.
-        fragments = [part for value in row.get('cells',[row['raw']]) for part in re.split(r'\[\^[^]]+\]', value)]
+        fragments = [part for value in row.get('cells',[row['raw']]) for part in citation_fragments(value)]
         wants = [compact(f if row['kind']=='code' else plain(f)) for f in fragments]
         if any(w and w not in actual for w in wants):
             missing.append(dict(index=i,chapter=row['chapter'],kind=row['kind'],text=row['raw']))

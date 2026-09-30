@@ -26,7 +26,7 @@ Complexity over engineering. Emergence over design. Capacity over power. That is
 
 Humans already build beyond the limits of any individual mind. AI gives us new access to that capacity—and a reason to look again at the architecture that sustains it.
 
-It is September 2026 as I write this. Researchers are already sending groups of agents to build compilers and investigate mathematical problems. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[^agents-preface]
+It is September 2026 as I write this. Researchers are already sending groups of agents to build compilers and investigate mathematical problems. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[1](appendix-references.md#ref-00-agents-preface)
 
 This book records part of that transformation as it happens. It also explores its philosophical meaning: how we come to know things, whose judgment we trust, and what we want to do with the capacity we are building.
 
@@ -35,5 +35,3 @@ Leibniz wanted talented people to help him. Three centuries later, we are learni
 Rediscover, because we have built it before. It took about four centuries, a great many arguments and at least one loose cable, and we never thought to call it an architecture.
 
 Back to the future, then. Bring your coffee.
-
-[^agents-preface]: Nicholas Carlini, "Building a C compiler with a team of parallel Claudes," 5 February 2026, <https://www.anthropic.com/engineering/building-c-compiler>; OpenAI, "On the Navier–Stokes Millennium Prize Problem," 8 September 2026, <https://openai.com/index/navier-stokes-solution/>. Chapters 5 and 6 examine the reported work, its limits and the questions still open at the time of writing.

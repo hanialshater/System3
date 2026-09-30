@@ -1251,7 +1251,7 @@
     ],
     "file": "assets/art/a091.jpg",
     "chapter": 5,
-    "after": "Elaine never regained consciousness. She died thirteen days later.[^bromiley]"
+    "after": "Elaine never regained consciousness. She died thirteen days later."
   },
   {
     "id": "a094",
@@ -1632,7 +1632,7 @@
     ],
     "file": "assets/art/a107.jpg",
     "chapter": 5,
-    "after": "What the pieces buy is capacity:",
+    "after": "The next three chapters ask what happens when the agents can remember, revise and investigate the conditions under which they work.",
     "section": "part-3-science-turns-inward.md",
     "max_height": 100
   },

@@ -1,13 +1,13 @@
 # Chapter 9: Layer 4: video brief
 
-Source: [09-layer-4-desire.md](../../chapters/09-layer-4-desire.md), including its notes.
+Source: [09-layer-4-desire.md](../../chapters/09-layer-4-desire.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
 
 This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
 
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 9: Layer 4" into an English video. Select the linked manuscript with all its notes as the factual source and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Keep performance distinct from learning and evidence distinct from authority over human purposes. Preserve plural principals and changes in what the person values.
+Adapt Hani M.M. Al-Shater's "Chapter 9: Layer 4" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Keep performance distinct from learning and evidence distinct from authority over human purposes. Preserve plural principals and changes in what the person values.
 ```
 
 ## Source order

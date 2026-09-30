@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 CURATED=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(CURATED))
-from manuscript import prepare, resolve_anchor, latex_break, structural_layout, ordered_paths
+from manuscript import prepare, resolve_anchor, latex_break, structural_layout, ordered_paths, reference_entries, validate_references
 from print_quality import effective_ppi, cover_path
 spec=importlib.util.spec_from_file_location('pdf_build',CURATED.parent/'pdf.py')
 build=importlib.util.module_from_spec(spec)
@@ -82,6 +82,36 @@ A sentence.[^one]
 
     def test_duplicate_footnotes_fail(self):
         with self.assertRaises(ValueError):prepare('[^a]: First\n[^a]: Second')
+
+    def test_central_references_resolve_without_chapter_definitions(self):
+        chapters = CURATED.parents[1] / 'chapters'
+        entries = reference_entries((chapters / 'appendix-references.md').read_text())
+        self.assertTrue(entries)
+        validate_references(chapters.glob('*.md'), entries)
+        for path in chapters.glob('*.md'):
+            self.assertFalse(prepare(path.read_text())[1], path.name)
+
+    def test_reference_errors_fail_before_rendering(self):
+        entry = '1. <a id="ref-05-example"></a>A source. Its qualification.\n'
+        entries = reference_entries(entry)
+        self.assertEqual(entries['ref-05-example'], (1, 'A source. Its qualification.'))
+        with self.assertRaises(ValueError):
+            reference_entries(entry + entry)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'chapter.md'
+            path.write_text('Claim.[1](appendix-references.md#ref-05-example)')
+            validate_references([path], entries)
+            path.write_text('Claim.[2](appendix-references.md#ref-05-example)')
+            with self.assertRaises(ValueError):validate_references([path], entries)
+            path.write_text('Claim.[1](appendix-references.md#ref-05-missing)')
+            with self.assertRaises(ValueError):validate_references([path], entries)
+            path.write_text('No citation.')
+            with self.assertRaises(ValueError):validate_references([path], entries)
+
+    def test_body_verification_ignores_superscript_reference_labels(self):
+        from verify import citation_fragments
+        self.assertEqual(citation_fragments('First.[12](appendix-references.md#ref-05-source) Next.'), ['First.', ' Next.'])
+        self.assertEqual(citation_fragments('First.[^source] Next.'), ['First.', ' Next.'])
 
     def test_reveal_and_interlude_latex_are_layout_only(self):
         self.assertTrue(latex_break('\\clearpage'))
