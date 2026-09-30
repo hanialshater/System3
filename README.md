@@ -13,7 +13,7 @@ proposed designs and a fictional alternative ending.
 
 - [Manuscript order](book-design/curated/book-order.json): the complete 29-file reading sequence.
 - [Preface](chapters/00-preface.md): begin here.
-- [Note on evidence and AI use](chapters/appendix-note-on-evidence.md): what has been run, argued, designed or imagined, and how AI helped write and revise the book.
+- [Note on evidence](chapters/appendix-note-on-evidence.md): what has been run, argued, designed or imagined.
 - [The Zen of System 3](chapters/appendix-zen-of-system-3.md): the book’s principles, from emergence and inquiry to human purposes.
 - [Working spine and editorial guidance](resources/editorial/working-spine.md): structure, voice and protected narrative connections.
 - [Narrative seed register](resources/editorial/easter-egg-register.md): run `bash resources/editorial/check-eggs.sh` after manuscript edits.

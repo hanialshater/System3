@@ -19,9 +19,3 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 11. The Store That Builds Itself | My prototype store, imagined customers and a proposed business experiment | Prototyped; the business experiment has not run |
 | 12. After Capacity | The small coding experiment from Chapter 4, Ostrom, and a hope | Argued from the earlier experiment and cited work; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |
-
-## How This Book Was Written
-
-I used AI to help write and revise this book: to draft passages, challenge arguments, compare versions and work through edits. Chapters 9 and 10 describe some of that process, including the moments when a more polished revision made the book worse. The tools also helped produce the code and illustrations used in the book.
-
-I chose what to keep. The argument, the judgments and any mistakes that remain are my responsibility. An AI suggestion is not evidence for a claim; the sources and the limits of the experiments have to carry that weight.
