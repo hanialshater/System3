@@ -1,5 +1,3 @@
-<!-- ASSISTANT DRAFT: focused revision of the supplied v2 interlude. The 1948 report and the historical study cited below were consulted for this pass. The application to agent systems is an argument, not a reported result. -->
-
 # Interlude: When It Goes Wrong
 
 ```{=latex}

@@ -192,8 +192,6 @@ The assistant could tell her that the cheaper pair is enough, or keep finding re
 
 Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred.[23](appendix-references.md#ref-09-l4-mpag)
 
-<!-- SLOT 4 (your case goes here; consider giving it to Mei, so Chapter 11 meets someone the reader already knows): a real marketplace conflict where knowing both sides' preferences precisely still left open who decides. Editor B drafted the following; the idea is right, the cadence is not yours, and it restates Chapter 6's Longino point: "The store can learn exactly which ranking earns it more money while the customer learns exactly why she dislikes that ranking. Neither needs another preference survey for the disagreement to be real. Who may set the terms, who can object, and whose costs count are questions about authority. More accurate prediction can leave all three unresolved." -->
-
 So Layer 4 cannot simply mean “the user gets whatever the user wants.” The relevant human boundary can be plural. That makes the architecture less tidy. It also makes it more honest.
 
 ## The Objective Layer

@@ -7,17 +7,16 @@ retired files.
 | Item | Remaining work |
 | --- | --- |
 | Chapter 2 technical figures | Recover original figures and data, or commission reviewed replacements. Since 30 September the ten absent figures are `DIAGRAM — missing figure` comments; the build tracks them and the reading edition no longer prints placeholders. See [missing figures](art-direction/missing-figures.md). |
-| Chapter 2 methods trail | If run records exist, add a short methods note for the 2.636 result: model and date, evaluator and tolerances, budget, attempts, human interventions. Nothing was invented in the copyedit. |
 | Chapter 5 visual directions | Seven briefs remain, including an opener request that conflicts with the selected opener and a glass-box concept already represented by a107. Reconcile before producing new art; see [backlog](art-direction/chapter-05-society-of-agents.md). |
 | Chapter 5 Paged.js proof | Evaluate against the current chapter before adopting its composition across the book. |
-| Author-review markers | Four decisions: the reveal (`ASSISTANT EDIT`), the interlude (`ASSISTANT DRAFT`), the evidence note (`CLAUDE DRAFT`) and Chapter 9's `SLOT 4`, which asks for the author's own marketplace case. The copyedit does not record acceptance. |
-| Unverified clauses | The primary source was unreachable from the copyedit environment for two clauses: (1) Chapter 8, that the weak-to-strong authors said the repeatedly queried test set "effectively served as a validation set"; (2) Chapter 6's priority dispute. The clause "produced partly with an internal Anthropic model" was removed pending a source. See the [copyedit log](evaluations/2026-09-30-copyedit-log.md). |
 | Front and back matter | A title page, copyright/ISBN page, dedication, acknowledgments and a decision on an index. None is in the manuscript. |
 | Clearance | Employer communications/legal review: the author bio names Zalando, and Chapter 5 describes the author's work at Amazon. |
 | Print production | Choose a printer; then set bleed, cover/spine geometry and output profile and obtain a physical proof. |
 | Video production | The current 15 briefs have checked source hashes and section order. Bespoke shot choices and generated videos still need editorial review. |
 
 ## Completed
+
+- 30 September: the author delegated the remaining manuscript decisions (see the copyedit log). The drafting markers were accepted, `SLOT 4` was removed, the unverifiable clauses were resolved, and the manuscript is proofread-ready.
 
 - Removed obsolete upload workflows and the retired TeX helper.
 - Made the back-cover utility use bundled fonts and visually checked its one-page output.

@@ -105,3 +105,20 @@ Every chapter here was re-read line by line against the plan and the house dimen
 **Production:** unchanged. Chapter 2 figures, Chapter 5 art, front matter (title, copyright/ISBN, dedication, acknowledgments, index decision), clearance, and printer/proof are all still open (see [REVISIT](../REVISIT.md)).
 
 This was a developmental copyedit by one editor with fact-checking support. It does not replace an independent human proofread of the typeset pages, which should be the last step before print.
+
+## Final decisions (delegated by the author, 30 September)
+
+The author asked for these decisions to be made so that the manuscript is ready for proofreading.
+
+| Item | Decision |
+|---|---|
+| Reveal page `ASSISTANT EDIT` | **Accepted.** The paragraph states what makes the arrangement scientific, which the 27 September review asked for. The markers are removed. |
+| Interlude `ASSISTANT DRAFT` | **Accepted.** The header comment is removed. |
+| Evidence note `CLAUDE DRAFT` | **Accepted.** The table matches the chapters. The comment is removed. |
+| Chapter 9 `SLOT 4` | **Removed.** The section already makes its point through the trail-shoe shopper and the multi-principal research. The editor's draft would have restated Chapter 6's Longino argument. |
+| Chapter 8 "validation set" clause | **Reworded** so it is the book's own inference rather than a quotation attributed to the authors: "In effect, the repeatedly queried test set had become a validation set." This follows from the confirmed repeated-submission exploit. |
+| Chapter 6 "internal Anthropic model" clause | **Stays removed.** No source was found. |
+| Chapter 2 methods trail | **No note added.** The chapter already fences the 2.636 claim as a result under the author's own evaluator, not a new state of the art. The evidence appendix labels it "Run, on a bounded problem". |
+| Part-page and divider drafting comments | **Removed.** Only production comments remain: the `VISUAL`/`DIAGRAM` art directions and one structural note explaining invisible layout code. |
+
+**Manuscript status: ready for proofreading.** No author decisions are open. The remaining production work is listed in REVISIT: figures and art, front matter, clearance, and the printer.

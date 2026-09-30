@@ -1,4 +1,3 @@
-<!-- EDITORIAL REVISION: Chapter 13 remains an alternative ending after Chapter 12. The bare divider marks the change to fiction without supplying an interpretation or previewing its jokes. -->
 
 ```{=latex}
 \clearpage
