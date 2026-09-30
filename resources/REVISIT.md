@@ -26,3 +26,12 @@ retired files.
 
 Ignored PDF archives and build diagnostics are local recovery material. They are
 not part of the push and have not been erased.
+
+## Chapter 6: optional author material
+
+The Ines thread is an explicitly imagined case. The earlier prompts for real author experiences remain optional; do not turn the fictional incidents into autobiography.
+
+- A design pattern you watched being applied as a rule (formerly Slot 3, “The Pattern Goes to Work”).
+- An experiment whose meaning was decided after the result came in (formerly Slot 1, “Commit the Test Before the Result”).
+- What you believed before a result changed your mind (formerly Slot 2, “Change the Representation”).
+- Optional Alexander close: verify the passage about the language as a gate in *The Timeless Way of Building*, “The Kernel of the Way,” before using it. The current chapter closes on Ines and hands the procedure to Chapter 7.

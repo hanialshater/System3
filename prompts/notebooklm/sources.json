@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "b6abbbef13ccc955fcd27a12c8a8c3cde0b3b9b3a807d70f1e84eace9da45185",
+  "references_sha256": "53b8186023a5ad61e431f2cf6b7393099283fff50db96581821eb3c278e3d902",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -110,19 +110,19 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "c29e18ed28c472cd53a9c32a280172cb2f9e1624a0370f903a139facb71d79b9",
+      "source_sha256": "82b95776520e6712197a3fc972ef112e8b6762b27460c3a8db7790881d7d58a7",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "c2b50f67d2453520817c50df3d0bc44adef1fec3ca6ecbadae02fe6592e7cc23",
+      "brief_sha256": "a62ccf0119722f6b5939b58be856ef0df787822e08e37c2a867a5aad40d00b72",
       "sections": [
         "Opening passage",
         "The Pattern Goes to Work",
         "Ask Sam",
-        "A Reader That Can Act",
         "Give the Claim an Address",
         "Commit the Test Before the Result",
         "Locate the Failure",
         "Ask What the Number Means",
         "Write the Lesson Down",
+        "A Reader That Can Act",
         "Put the Library to Work",
         "Find Where the Result Lives",
         "Change the Representation",

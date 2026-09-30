@@ -1702,7 +1702,7 @@
     ],
     "file": "assets/art/a109.jpg",
     "chapter": 6,
-    "after": "She writes down *ask Sam*."
+    "after": "*Ask Sam* preserves the dependency beautifully."
   },
   {
     "id": "a111",
@@ -1722,7 +1722,7 @@
     "generated": "art/interior-111.png",
     "file": "assets/art/a111.jpg",
     "chapter": 6,
-    "after": "That is a **pattern language**:"
+    "after": "That is a *pattern language*:"
   },
   {
     "id": "a112",
@@ -1808,7 +1808,7 @@
     ],
     "file": "assets/art/a112.jpg",
     "chapter": 6,
-    "after": "A model reads the incident procedure, chooses a diagnostic query, and hands arithmetic to code."
+    "after": "The machine doing the work can now read the pattern, follow its *Therefore* and consult the reasons behind it, without every qualification first being translated into logic."
   },
   {
     "id": "a115",
@@ -1892,7 +1892,7 @@
     "generated": "art/interior-120.png",
     "file": "assets/art/a120.jpg",
     "chapter": 6,
-    "after": "The file should record what was predicted and checked, including when the revision remains untested."
+    "after": "That distinguishes a progressive programme from one that keeps accommodating failures after the fact, and the file should record which it was."
   },
   {
     "id": "a122",

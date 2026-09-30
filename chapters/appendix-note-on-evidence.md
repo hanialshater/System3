@@ -10,7 +10,7 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 3. The Vibe Coder’s Seat | My teaching demos and the evaluators I built around them | Run; judged by simulated learners, not real ones |
 | 4. System 3 | A trust chain that starts with a face, and a ten-task experiment that mostly went against me | Argued; one small experiment |
 | 5. The Society of Agents | Sixteen Claudes building a compiler, and five thousand years of institutions | Argued from history |
-| 6. Pattern Language | Alexander’s patterns, Bing’s bug, Facebook’s feed, Fermat and Navier–Stokes, and one lesson written down as a pattern | Reported cases; the pattern is proposed and its test has not run |
+| 6. Pattern Language | Alexander’s patterns and reported research, threaded through Ines’s imagined search team and its evolving pattern file | Reported cases plus a thought experiment; Ines, Sam, their incidents, tests and outcomes are invented, not results of a deployed agent institution |
 | 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
 | 8. Scalable Oversight | Other people’s research, with its limits | Reported |
 | Interlude: When It Goes Wrong | Lysenko, and what happens when the people being challenged decide whether to hear the challenge | Reported history; the application to agents is argued |

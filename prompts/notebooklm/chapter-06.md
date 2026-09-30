@@ -7,7 +7,7 @@ This is a source-derived production outline, not a factual summary or a complete
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Follow the concrete pattern as it changes through failures and tests. Separate reported cases from the proposed pattern whose test has not run. Do not reinstate the removed internal company case or a claim of a certified Navier-Stokes solution.
+Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Follow Ines and the concrete pattern as the file changes through failures and tests. Ines, Sam, the search team, their incidents and test outcomes are imagined; distinguish them from the reported research. Do not present the story as evidence that an agent institution has implemented the design. Do not reinstate the removed internal company case or a claim of a certified Navier-Stokes solution.
 ```
 
 ## Source order
@@ -15,12 +15,12 @@ Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video.
 1. Opening passage
 2. The Pattern Goes to Work
 3. Ask Sam
-4. A Reader That Can Act
-5. Give the Claim an Address
-6. Commit the Test Before the Result
-7. Locate the Failure
-8. Ask What the Number Means
-9. Write the Lesson Down
+4. Give the Claim an Address
+5. Commit the Test Before the Result
+6. Locate the Failure
+7. Ask What the Number Means
+8. Write the Lesson Down
+9. A Reader That Can Act
 10. Put the Library to Work
 11. Find Where the Result Lives
 12. Change the Representation
