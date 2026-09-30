@@ -231,7 +231,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 7. <a id="ref-07-firephone"></a>Amazon.com, Inc., third-quarter 2014 financial results, 23 October 2014, reporting a charge of approximately $170 million related to Fire Phone inventory and supplier commitments.
 
-8. <a id="ref-07-echo"></a>On the reorganization of Lab126 and the Fire Phone team, see reporting in *The Wall Street Journal*, August 2015, summarized in “Wall Street Journal Reports That Amazon Has Downsized the Fire Phone Team,” Android Police, 27 August 2015. Amazon executives, including devices chief Dave Limp, have publicly credited the Fire Phone’s lessons in accounts of the Echo and Alexa. The market-share claim refers to US smart-speaker estimates in the years after launch.
+8. <a id="ref-07-echo"></a>On the reorganization of Lab126 and the Fire Phone team, see reporting in *The Wall Street Journal*, August 2015, summarized in “Wall Street Journal Reports That Amazon Has Downsized the Fire Phone Team,” Android Police, 27 August 2015. Amazon executives, including devices chief Dave Limp, have publicly credited the Fire Phone’s lessons in accounts of the Echo and Alexa.
 
 9. <a id="ref-07-distill"></a>Chris Olah and Shan Carter, “Research Debt,” *Distill*, 2017, [doi:10.23915/distill.00005](https://doi.org/10.23915/distill.00005).
 
@@ -239,7 +239,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 11. <a id="ref-07-weng"></a>Lilian Weng, “Harness Engineering for Self-Improvement,” Lil’Log, 4 July 2026, <https://lilianweng.github.io/posts/2026-07-04-harness/>. The Darwin Gödel Machine and STOP results, the progression of optimization targets and the Agentic Harness Engineering design (read-only verifier, tracer, run logs and model configuration; edits paired with predicted impact) are as Weng reports them from the cited papers.
 
-12. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “Recursive self-improvement,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The review bottleneck is reported in its discussion of Amdahl’s law.
+12. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
 
 13. <a id="ref-07-td"></a>Richard S. Sutton, “Learning to Predict by the Methods of Temporal Differences,” *Machine Learning* 3, 1988, pp. 9–44; Christopher J. C. H. Watkins, *Learning from Delayed Rewards*, PhD thesis, University of Cambridge, 1989.
 

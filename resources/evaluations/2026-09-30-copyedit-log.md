@@ -171,3 +171,16 @@ The trimmed sources move to Additional sources. Notes are renumbered 1–32.
 - Verify the Milanfar paraphrase against the essay.
 - Confirm that the Weng-reported numbers (Darwin Gödel Machine, STOP, Agentic Harness Engineering) match the primary papers; arXiv is blocked here.
 - Decide whether the Chapter 6 disclosure of reliance on Anthropic sources should mention the Institute piece.
+
+## Chapter 7 precision pass (1 October 2026)
+
+Follow-up to `3982dd7`, requested by the author after comparing the revision with main. The new chapter structure, store thread, complexity wall and constitutional proposal are retained.
+
+- Distinguished institutional learning from the stronger recursive claim. The S3 safeguard is no longer said to prove an improvement in the process of finding further improvements; the institution does not need a mind of its own, but its people still act deliberately.
+- Replaced the universal account of scientific method adoption with a fallible history of criticism, resistance and institutional learning. Removed the unsupported “oldest” superlative.
+- Kept Anthropic’s training-code benchmark as evidence of a prerequisite for recursion, and explicitly returned the recursive test to matched old/new improvers and held-out work. Corrected human review from an observed bottleneck to the source’s conditional warning; corrected the reference title to “When AI builds itself.”
+- Read Milanfar’s full essay at <https://milanfar.substack.com/p/intelligence-has-a-speed-limit>. Replaced the claim that feedback is stable “only” with small gain with his warning about model error and aggressive adaptation. Distinguished the customer simulator from a model of the improver itself. This closes the earlier open item about checking this paraphrase against the essay; it does not establish a general theorem about AI development speed.
+- Removed the rounded circle-packing score comparison from the levels table, softened the blanket claim about private reflection, and removed an obsolete market-share note in reference 8.
+- Moved the optional author-scene prompt out of the manuscript. No personal experience was invented. An optional future addition remains: a publicly discussable Amazon scene involving an accumulated runbook, a forgotten check or recognition for deleting unnecessary procedure. The chapter reads continuously without it.
+
+Verification: all 16 existing tests pass; narrative-seed checks pass; all six Chapter 7 artwork anchors resolve with the renderer’s block parser. No PDF was rebuilt for this pass. Remaining source checks from the earlier draft, including Weng-reported results against the primary papers, are not claimed complete here.
