@@ -6,14 +6,17 @@ retired files.
 
 | Item | Remaining work |
 | --- | --- |
-| Chapter 2 technical figures | Recover original figures/data or commission reviewed replacements. Ten absent references are retained as production comments; see [missing figures](art-direction/missing-figures.md). |
+| Chapter 2 technical figures | Recover original figures and data, or commission reviewed replacements. Since 30 September the ten absent figures are `DIAGRAM — missing figure` comments; the build tracks them and the reading edition no longer prints placeholders. See [missing figures](art-direction/missing-figures.md). |
 | Chapter 5 visual directions | Seven briefs remain, including an opener request that conflicts with the selected opener and a glass-box concept already represented by a107. Reconcile before producing new art; see [backlog](art-direction/chapter-05-society-of-agents.md). |
 | Chapter 5 Paged.js proof | Evaluate against the current chapter before adopting its composition across the book. |
-| Author-review markers | The interlude, science reveal and evidence appendix retain drafting comments. Cleanup does not record author acceptance or rewrite their prose. |
+| Front and back matter | A title page, copyright/ISBN page, dedication, acknowledgments and a decision on an index. None is in the manuscript. |
+| Clearance | Employer communications/legal review: the author bio names Zalando, and Chapter 5 describes the author's work at Amazon. |
 | Print production | Choose a printer; then set bleed, cover/spine geometry and output profile and obtain a physical proof. |
 | Video production | The current 15 briefs have checked source hashes and section order. Bespoke shot choices and generated videos still need editorial review. |
 
 ## Completed
+
+- 30 September: the author delegated the remaining manuscript decisions (see the copyedit log). The drafting markers were accepted, `SLOT 4` was removed, the unverifiable clauses were resolved, and the manuscript is proofread-ready.
 
 - Removed obsolete upload workflows and the retired TeX helper.
 - Made the back-cover utility use bundled fonts and visually checked its one-page output.

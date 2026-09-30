@@ -2,7 +2,7 @@
 
 *A Glimpse of Double Descent Life*
 
-In October 1947, George Dantzig went to John von Neumann with his emerging ideas about linear programming. He had spent the summer inventing a way to solve such problems, the method later called simplex, and had come to Princeton to ask for a better one. He began explaining in detail. Von Neumann told him to get to the point. Dantzig compressed a summer's work into a minute or two, and von Neumann stood up and lectured for over an hour on a theory Dantzig had never heard of. As Dantzig remembered it, von Neumann seemed to be constructing the theory while he spoke. He called it duality: one formulation searches for the best solution; another can establish how good any solution could possibly be. He connected it to his work with Oskar Morgenstern on games. Dantzig sat there stunned. His summer had not been wasted. It had a side he had not known was there.[1](appendix-references.md#ref-12-after-1)
+In October 1947, George Dantzig went to John von Neumann with his emerging ideas about linear programming. He had spent the summer inventing a way to solve such problems, the method later called simplex, and had come to Princeton to ask for a better one. He began explaining in detail. Von Neumann told him to get to the point. Dantzig compressed a summer’s work into under a minute, and von Neumann stood up and lectured for over an hour on a theory Dantzig had never heard of. As Dantzig remembered it, von Neumann seemed to be constructing the theory while he spoke. He called it duality: one formulation searches for the best solution; another can establish how good any solution could possibly be. He connected it to his work with Oskar Morgenstern on games. Dantzig sat there stunned. His summer had not been wasted. It had a side he had not known was there.[1](appendix-references.md#ref-12-after-1)
 
 I usually read stories like these from a safe distance. Extraordinary people did extraordinary things. Then I return to an afternoon in which locating the correct spreadsheet is a substantial intellectual achievement.
 
@@ -60,7 +60,7 @@ Agents begin to change that calculation when they can take on some of the buildi
 
 Software has often required a bargain. One team builds a product for many customers; each customer rearranges some of its work to fit. This was an enormous improvement over everyone commissioning their own system. It also gave us organizations whose procedures preserve the decisions of a dropdown menu designed ten years ago.
 
-Imagine a mathematician assembling a workshop around one conjecture.[3](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day's investigation instead of a separate project waiting for a collaborator.
+Imagine a mathematician assembling a workshop around one conjecture.[3](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day’s investigation instead of a separate project waiting for a collaborator.
 
 The workshop changes as she learns. A picture suggests a different representation. The new representation makes a search possible. The search returns an awkward case, and the awkward case is more interesting than the conjecture she began with. She builds the next instrument around it.
 
@@ -128,7 +128,7 @@ Gradient descent did not defeat ambiguity. It made ambiguity computationally use
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that camels are native to Croatia.
 
-The compiler has to compile. Our recommendation experiment interrupted an account of quality that the experts and the model both found convincing. We had a reason to revise it, and more capacity could help us investigate what had gone wrong.
+The compiler has to compile. The store in Chapter 11 still needs its business experiment: an experience that convinces the experts and the model may fail the customer. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong.
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is why the earlier chapters insisted on tests, independent evidence and work somebody else can inspect.
 
@@ -140,7 +140,7 @@ Elinor Ostrom studied people who had already begun.
 
 ## Capacity Over Power
 
-An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom's *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[5](appendix-references.md#ref-12-after-5)
+An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[5](appendix-references.md#ref-12-after-5)
 
 If those were the only two answers, what were these people doing?
 
@@ -152,13 +152,13 @@ I find this more encouraging than another theory of the good society. People wer
 
 Take something smaller than a watershed.
 
-A small community's activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
+A small community’s activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
 
 Changing the software requires persuading a vendor that eleven people with peculiar scheduling needs are worth its attention. They are unlikely to win that argument. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
 
 Suppose instead that they can afford to build and maintain a small tool of their own. Members could enter changing availability and explore possible schedules. They could try a rotation that gives the same group different evenings across a month, or reserve times that work with the accessible transport. The weird community with eleven members could have software built around all eleven of them and no plan whatsoever for customer acquisition.
 
-They can discover and revise the arrangement by using the tool and arguing about the results. Some of their disagreement may turn out to have been about the old software's default. A member who seemed unreasonable may have a perfectly manageable constraint. A better tool can reduce the amount of pleading required to have that constraint recognized.
+They can discover and revise the arrangement by using the tool and arguing about the results. Some of their disagreement may turn out to have been about the old software’s default. A member who seemed unreasonable may have a perfectly manageable constraint. A better tool can reduce the amount of pleading required to have that constraint recognized.
 
 Then two groups both want seven on Tuesday.
 
@@ -166,13 +166,13 @@ One proposes allocating the room to whichever group brings the most people. The 
 
 The community might guarantee each group some access, then use attendance to allocate the remaining time. Or it might rotate the popular slot. The model could show who would lose out under each arrangement and help discover options nobody had considered. The members would still have to settle a rule, and those disadvantaged by it would need a way to challenge it. More capable analysis makes the choice better informed; it does not confer the right to make it.
 
-Cheap software removed the vendor's veto. It did not produce a second room at seven on Tuesday.
+Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday.
 
 Another community could choose differently without either one having to prove that its workflow should become the universal product. This is what capacity over power means to me at its best: increase the fraction of human possibility that does not require dominating somebody else, winning a centralized allocation contest or persuading the entire world to adopt one solution.
 
 Humans often seek power because power is how we gain capacity. People also want power because humans are mammals with excellent branding.
 
-The ability to act can itself be called power. I care about what happens to other people's choices. Giving the community a tool it can change expands its options. Giving its chair a system whose terms only the chair can revise expands the chair's authority. Capacity over power is an ethical direction, not a forecast about stronger models.
+The ability to act can itself be called power. I care about what happens to other people’s choices. Giving the community a tool it can change expands its options. Giving its chair a system whose terms only the chair can revise expands the chair’s authority. Capacity over power is an ethical direction, not a forecast about stronger models.
 
 Helping members inspect and revise the arrangement may matter more than finding a slightly better schedule under rules nobody can question. It needs to survive the volunteer who built the tool. Its records should preserve why an exception was made, so the next committee does not spend three meetings rediscovering accessible transport. Members need ways to challenge the rules, including somewhere beyond the committee to turn when the committee is the problem. If more gets built while those freedoms shrink, power has simply moved somewhere less visible.
 
@@ -184,9 +184,9 @@ But where people retain the means to act, more differences can become opportunit
 
 Cheap software removed the vendor’s veto. It is worth asking where the cheapness comes from.
 
-The efforts reported in Chapter 6 came from the handful of organizations able to run ten thousand agents for eighty-eight hours, or to spend some six billion output tokens formalizing Fermat.[6](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and Kepler confirmed Galileo’s moons through an instrument that was not Galileo’s. A frontier model is harder to grind.
+The efforts reported in Chapter 6 came from the handful of organizations able to put ten thousand agents on one problem, or to spend some six billion output tokens formalizing Fermat.[6](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and within a year astronomers elsewhere were checking Galileo’s moons through telescopes of their own. A frontier model is harder to grind.
 
-Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models for almost three weeks to comply with United States export controls, and restored it when the controls were lifted.[7](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
+Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models to comply with United States export controls. One returned for everyone after almost three weeks, when the controls were lifted; the other came back only for a set of US organizations.[7](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 
 The same capacity cuts the other way. Chapter 7 noted that a research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week. A community that can build its own tools is a lovely picture. So is its opposite, and it uses the same API. Some capacity should stay expensive on purpose. That is Chapter 7’s constitutional surface at the scale of a society: the closer a capability comes to harm that cannot be undone, the more authority it should take to use it, and the less that authority should belong to whoever benefits from the answer.
 
@@ -202,13 +202,13 @@ Humans still have status anxiety, love, jealousy, curiosity and the ancient desi
 
 We infer, construct, revise and sometimes borrow our desires from the people and systems around us. We want security and novelty, belonging and freedom, status and peace. Sometimes we discover what we wanted only after getting the thing we thought we wanted.
 
-Where will I remain valuable? My question about the applied scientist's role makes sense as a question about earning a living. It becomes a much stranger one if I let the answer decide whether my life is valuable.
+Where will I remain valuable? My question about the applied scientist’s role makes sense as a question about earning a living. It becomes a much stranger one if I let the answer decide whether my life is valuable.
 
 ### What Are Humans For?
 
 Whenever automation becomes powerful, somebody asks what humans will be for.
 
-There is something odd about the grammar. A database is for storing information. A compiler is for translating programs. Asking what humans are for smuggles in the assumption that our legitimacy depends on having a remaining function in somebody else's architecture.
+There is something odd about the grammar. A database is for storing information. A compiler is for translating programs. Asking what humans are for smuggles in the assumption that our legitimacy depends on having a remaining function in somebody else’s architecture.
 
 My children do not need comparative advantage to justify dinner.
 
@@ -230,7 +230,7 @@ Nor do I want to replace the obligation to have an impressive career with an obl
 
 Layer 4 named the ugly shortcut: alignment by editing the human. In a conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. Over a life, I also need somewhere else to go.
 
-Imagine a bespoke family tool useful enough to hold the calendar, the children's learning history and the reasons behind years of small decisions. A button labeled Export may give me all the files and months of work to make them useful elsewhere. The tool gave the family more capacity and gave its owner more leverage over the family at the same time.
+Imagine a bespoke family tool useful enough to hold the calendar, the children’s learning history and the reasons behind years of small decisions. A button labeled Export may give me all the files and months of work to make them useful elsewhere. The tool gave the family more capacity and gave its owner more leverage over the family at the same time.
 
 A right to disagree inside one product is a thin kind of freedom if everything I need to act remains locked inside it. I do not need to become a competent engineer, teacher and system administrator before I am allowed to benefit from help. I need alternatives that work, including other people and institutions I can turn to. Independence cannot mean doing everything alone; that would undo most of the civilization Chapter 5 was trying to explain.
 
@@ -260,7 +260,7 @@ I still want more room to discover which commitments deserve to become expensive
 
 The scientist at the beginning of this chapter still has a job to think about. I have not reached the end with a proof that my profession is safe.
 
-I do have a better reason to work on these systems than defending the scarcity of what I know. Dantzig's afternoon makes me want access to a mind that can help me see further. Ostrom makes me want to find out what people could construct together if they had that help.
+I do have a better reason to work on these systems than defending the scarcity of what I know. Dantzig’s afternoon makes me want access to a mind that can help me see further. Ostrom makes me want to find out what people could construct together if they had that help.
 
 Imagine an irrigation association with a weekend and a hundred agents. Some investigate how other communities have handled shortages. Others examine the water records, build models, look for failures in the proposed schedules or write the software through which members can inspect and change them. A question raised over the table becomes another investigation. The work can follow it.
 
@@ -282,6 +282,6 @@ There is more to a person than the few abilities a career had room for. There ma
 
 I would like us to find out how much more.
 
-Who actually gets that freedom is a much larger book, and I can't tell you how it goes. Nobody in this field can. So this one has one argument left, and it is a prophecy. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
+Who actually gets that freedom is a much larger book, and I can’t tell you how it goes. Nobody in this field can. So this one has one argument left, and it is a prophecy. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
 ---

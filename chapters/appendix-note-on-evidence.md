@@ -2,7 +2,6 @@
 
 This is a book about trust chains, so the distance between a chapter and its evidence should be visible. Some of it I ran, some I argue, some I have only designed, and one chapter I made up. Here is which is which.
 
-<!-- CLAUDE DRAFT (27 Sept): the Interlude row is new, and the Chapter 13 description changed from "A fictional coda" to "The alternative ending". -->
 | Chapter | What it rests on | Status |
 |---|---|---|
 | 1. Why I’m Betting on AI Agents | An argument about search, emergence and where control goes | Argued |

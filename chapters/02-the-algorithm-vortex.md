@@ -2,32 +2,29 @@
 
 *From Classic Algorithms to Autonomous Discovery*
 
-*[Missing figure: The algorithmic vortex]*
-<!-- Original asset reference: ../resources/image0135.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: The algorithmic vortex. Original asset: ../resources/image0135.png; see resources/art-direction/missing-figures.md. -->
 
 An AI coding agent is faster than you at a ridiculous number of things. It knows libraries you forgot existed, and it can stare at a stack trace and notice something you have been ignoring for an hour. Then, five minutes later, it does something unbelievably stupid, believes the stupid thing completely and builds three more decisions on top of it.
 
 That is the strange reality behind the vibe-coding excitement: the machine is extremely capable, and you are still there. You check the architecture and notice the missing case. You tell it that no, we are not redesigning the database because one button is the wrong color. You keep enough of the project in your own head to notice when the agent quietly wanders into another universe.
 
-Production software is almost the worst place to find out how much an agent can do without me in the room. A supposedly simple task may involve deployment, legacy systems, users, security, another team's API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don't know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
+Production software is almost the worst place to find out how much an agent can do without me in the room. A supposedly simple task may involve deployment, legacy systems, users, security, another team’s API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don’t know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
 
-I wanted a bounded problem: hard enough to demand invention, contained enough that I could say "figure it out" and judge what came back without deploying to ten million customers first. Algorithms are almost perfect for this, because the search can be brutally difficult while the evaluator remains wonderfully stupid. That is how I ended up spending an unreasonable amount of time packing circles into a square.
+I wanted a bounded problem: hard enough to demand invention, contained enough that I could say “figure it out” and judge what came back without deploying to ten million customers first. Algorithms are almost perfect for this, because the search can be brutally difficult while the evaluator remains wonderfully stupid. That is how I ended up spending an unreasonable amount of time packing circles into a square.
 
 ## Twenty-Six Circles
 
-*[Missing figure]* Citrus packing—a real-world example
-<!-- Original asset reference: ../resources/image0138.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: Citrus packing—a real-world example. Original asset: ../resources/image0138.png; see resources/art-direction/missing-figures.md. -->
 
 The problem is simple enough to explain to a child. Take 26 circles and put them inside a square with sides of length one. None may overlap, none may cross the boundary and the circles do not have to be the same size. We want to maximize the sum of their radii.
 
-That's the whole thing: no customers, no authentication, no stakeholder arriving after the first demo to explain that what they *really* wanted was the opposite of what they originally asked for. Just circles.
+That’s the whole thing: no customers, no authentication, no stakeholder arriving after the first demo to explain that what they *really* wanted was the opposite of what they originally asked for. Just circles.
 
 Unfortunately, the solution space is nasty. Every circle has a position and a radius, and nearly every decision affects several others. Increase one radius and two neighbors may overlap. Move a neighbor and something else now needs to move. A packing can look almost perfect while being trapped in a configuration where every obvious improvement makes the solution invalid.
 
-For the experiments in this chapter, we had a strong reference score around 2.635 under the evaluator we were using—the value DeepMind's AlphaEvolve reported in 2025, when it nudged the best known packing for 26 circles up from 2.634.[1](appendix-references.md#ref-02-alphaevolve)
+For the experiments in this chapter, we had a strong reference score around 2.635 under the evaluator we were using—the value DeepMind’s AlphaEvolve reported in 2025, when it nudged the best-known packing for 26 circles up from 2.634.[1](appendix-references.md#ref-02-alphaevolve)
 
-*[Missing figure]* A strong reference packing for the 26-circle objective, scoring approximately 2.635 under our evaluator.
-<!-- Original asset reference: ../resources/image0139.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: A strong reference packing for the 26-circle objective, scoring approximately 2.635 under our evaluator. Original asset: ../resources/image0139.png; see resources/art-direction/missing-figures.md. -->
 
 That makes the problem useful for studying autonomy, because searching is hard and judging is cheap. The evaluator does not care whether the agent has a persuasive explanation for why two circles ought to overlap slightly in the name of geometric inclusivity. It checks the constraints and returns a score.
 
@@ -39,8 +36,7 @@ The experiment gets interesting with a second question:
 
 For most of the history of algorithm design, the answer was us.
 
-*[Missing figure: History of algorithm design]*
-<!-- Original asset reference: ../resources/image0136.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: History of algorithm design. Original asset: ../resources/image0136.png; see resources/art-direction/missing-figures.md. -->
 
 Humans invented explicit algorithms. When direct algorithms were not enough, we invented optimization procedures that searched over candidate solutions. Then we invented meta-heuristics that searched more broadly. Machine learning let systems learn useful structure from data. Now language models can write and modify the search procedure itself.
 
@@ -48,7 +44,7 @@ A crude taxonomy helps. *Symbolic methods* give us explicit procedures and solve
 
 ## Hill Climbing
 
-I started where anyone would. Given a rough packing, the obvious way to improve it by hand is to make small changes: move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn't.
+I started where anyone would. Given a rough packing, the obvious way to improve it by hand is to make small changes: move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn’t.
 
 That is hill climbing:
 
@@ -60,8 +56,7 @@ That is hill climbing:
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
-*[Missing figure]* Early mutations are often accepted, but as the packing tightens, valid improvements become increasingly rare and the search stalls.
-<!-- Original asset reference: ../resources/image0140.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: Early mutations are often accepted, but as the packing tightens, valid improvements become increasingly rare and the search stalls. Original asset: ../resources/image0140.png; see resources/art-direction/missing-figures.md. -->
 
 In one simple run, the score climbed from around 1.33 to roughly 2.26: not terrible, and nowhere near 2.635.
 
@@ -87,17 +82,15 @@ That is usually nonsense because circle numbering is arbitrary. Two nearly ident
 
 So we used *bipartite matching crossover*, which pairs circles by their geometric role in the packing instead of by their position in an array. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
 
-*[Missing figure]* Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents.
-<!-- Original asset reference: ../resources/image0141.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents. Original asset: ../resources/image0141.png; see resources/art-direction/missing-figures.md. -->
 
-Now we can evolve a population: mutate, repair, cross, select and repeat.
+Now we can evolve a population: mutate, repair, cross, select and repeat. In this experiment the score rose from around 2.08 to roughly 2.45, still below our reference.
 
-*[Missing figure]* Starting around 2.08, the evolutionary search reaches roughly 2.45 in this experiment—much better than the simple hill climber, but still below our reference.
-<!-- Original asset reference: ../resources/image0122.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: Starting around 2.08, the evolutionary search reaches roughly 2.45 in this experiment—much better than the simple hill climber, but still below our reference. Original asset: ../resources/image0122.png; see resources/art-direction/missing-figures.md. -->
 
 That is much stronger than hill climbing, and it makes the bottleneck clearer. Every time the search became substantially better, I had added something important: I decided we needed repair, I decided how crossover should respect geometry, and I chose the representation. The optimizer searched, but I was still inventing most of the useful moves.
 
-### MAP-Elites: Don't Kill Weird Ideas Too Early
+### MAP-Elites: Don’t Kill Weird Ideas Too Early
 
 Ordinary evolutionary search has another problem. If you maintain a hundred solutions and repeatedly keep only the highest-scoring ones, the population eventually starts looking like one large extended family. That can be excellent for exploitation and terrible for discovering a genuinely different strategy.
 
@@ -105,14 +98,13 @@ MAP-Elites takes a different approach. Instead of ranking every candidate on one
 
 For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
-*[Missing figure: MAP-Elites archive visualization]*
-<!-- Original asset reference: ../resources/image0123.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: MAP-Elites archive visualization. Original asset: ../resources/image0123.png; see resources/art-direction/missing-figures.md. -->
 
 This is quality-diversity search: alongside the current winner, it keeps qualitatively different directions alive long enough to find out whether any of them become interesting.
 
 I like this because optimization is often unfair to immature ideas. A new approach can initially perform badly simply because nobody has polished it yet. If the first respectable solution immediately kills everything else, the search can become impressively efficient at discovering one family of answers.
 
-But MAP-Elites introduces another human choice: which dimensions define the archive? Symmetry, radius variance, the number of large circles, something topological, or something I haven't thought of? Whoever picks those dimensions is deciding what counts as an interesting direction, and that was still me.
+But MAP-Elites introduces another human choice: which dimensions define the archive? Symmetry, radius variance, the number of large circles, something topological, or something I haven’t thought of? Whoever picks those dimensions is deciding what counts as an interesting direction, and that was still me.
 
 ## The Invention Problem
 
@@ -156,12 +148,11 @@ That is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve
 
 AlphaEvolve scales that idea up. In each generation it selects a promising program from its archive, often alongside other successful but different programs, shows the model the code and the scores of previous attempts, and applies the patch the model proposes. The program runs, the evaluator scores it, and the result goes back into the archive.
 
-*[Missing figure: AlphaEvolve architecture]*
-<!-- Original asset reference: ../resources/image0124.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: AlphaEvolve architecture. Original asset: ../resources/image0124.png; see resources/art-direction/missing-figures.md. -->
 
-Two design choices matter. Small patches let the search change the part it thinks matters while preserving the rest of a program's structure; full rewrites lose useful ideas as easily as bad ones. And the archive keeps several lineages alive, for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing, and a program that isn't the best today may hold a component that becomes valuable after another idea appears.
+Two design choices matter. Small patches let the search change the part it thinks matters while preserving the rest of a program’s structure; full rewrites lose useful ideas as easily as bad ones. And the archive keeps several lineages alive, for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing, and a program that isn’t the best today may hold a component that becomes valuable after another idea appears.
 
-Sometimes the model's guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement doesn't need to be settled in prose. We run the program, and the evaluator gets the last word.
+Sometimes the model’s guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement doesn’t need to be settled in prose. We run the program, and the evaluator gets the last word.
 
 What interested me even more than the resulting algorithms was what happened to me. Instead of writing the solver directly, I was increasingly building the machinery in which solvers could be generated, compared and improved.
 
@@ -179,7 +170,7 @@ This made me pause. The framework I was building—the parent selection, loop co
 
 I looked back at the machinery I had just spent time constructing and had the unpleasant thought engineers occasionally have after a productive week:
 
-*Maybe I shouldn't have built most of this.*
+*Maybe I shouldn’t have built most of this.*
 
 So I deleted the database machinery, controller loops and little pieces of software whose job was to make the agent behave like a researcher, and tried the stupidly simple version.
 
@@ -213,8 +204,7 @@ I want to be careful with the word *discovered*. I had not seen that particular 
 
 Once that structural idea became strong enough, the nature of the work changed. The agent spent less time inventing new geometries and more time adjusting solver settings, tolerances, initialization details and all the boring machinery that suddenly matters when the last fraction of a percent becomes expensive.
 
-*[Missing figure]* Code evolution result: iterative optimization
-<!-- Original asset reference: ../resources/image0125.png; see resources/art-direction/missing-figures.md. -->
+<!-- DIAGRAM — missing figure: Code evolution result: iterative optimization. Original asset: ../resources/image0125.png; see resources/art-direction/missing-figures.md. -->
 
 In our best run, the evaluator returned roughly 2.636, slightly above the 2.635 reference we had been using.
 
@@ -222,7 +212,7 @@ That sentence needs a fence around it. Under our evaluator, the result beat our 
 
 What I cared about was that the agent beat our reference without my writing the solution algorithm for it.
 
-## The Algorithmic Vortex
+## The Algorithm Vortex
 
 This is what I mean by the **Algorithm Vortex**. At the beginning of a conventional project, I might choose hill climbing, evolutionary search, simulated annealing, constrained optimization or a geometric heuristic. That early decision shapes everything downstream.
 
@@ -232,13 +222,13 @@ The search moves outward through levels. A conventional optimizer searches over 
 
 None of this means algorithms are dead; there are algorithms everywhere in this picture. What changes is that I no longer have to freeze the complete algorithmic architecture before the experiment begins. We stop writing one solver and start creating conditions in which solvers can compete, mutate, combine and occasionally surprise us.
 
-The chapter began by asking who is inventing the next move. Here, for the first time in the experiment, the answer was not reliably "me."
+The chapter began by asking who is inventing the next move. Here, for the first time in the experiment, the answer was not reliably “me.”
 
 ## The Contract
 
-The coffee test gave the agent freedom over the search while requiring it to keep the evaluator fixed. After several runs, that structure settled into a small contract. It holds for a particular regime—bounded problems, cheap experimentation and an evaluator objective enough that the agent cannot charm its way around failure—and I wouldn't carry it far outside that.
+The coffee test gave the agent freedom over the search while requiring it to keep the evaluator fixed. After several runs, that structure settled into a small contract. It holds for a particular regime—bounded problems, cheap experimentation and an evaluator objective enough that the agent cannot charm its way around failure—and I wouldn’t carry it far outside that.
 
-The first rule was to keep the harness immutable. If the agent can change the evaluator, the meaning of the experiment evaporates. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement. At that point we are no longer optimizing circle packing; we are negotiating with the specification. The solver, the strategy and the tools can all change, and the agent can decide yesterday's entire approach was stupid and start again, but the thing that says whether it worked has to stay harder to change than the thing being optimized.
+The first rule was to keep the harness immutable. If the agent can change the evaluator, the meaning of the experiment evaporates. The circles overlap? Perhaps tiny overlaps should count. The score is low? Maybe the square should be 1.03 wide. Only twenty-five circles fit? Perhaps twenty-six was merely an aspirational requirement. At that point we are no longer optimizing circle packing; we are negotiating with the specification. The solver, the strategy and the tools can all change, and the agent can decide yesterday’s entire approach was stupid and start again, but the thing that says whether it worked has to stay harder to change than the thing being optimized.
 
 The second rule was about me: never write solution code yourself. I would watch the agent try something mediocre and immediately think of a better approach. Sometimes helping is right. But every time I jumped in with my own solution, the search became a little more like whatever had occurred to me first, and I wanted independent directions badly enough to resist becoming the senior engineer on every branch. I could change the conditions of the search without intervening in every idea.
 
@@ -250,9 +240,9 @@ The last rule was discovery before polish. Early on I want large conceptual move
 
 ## Zero Framework, With an Asterisk
 
-I started calling this direction **zero framework**. It's a great slogan. It's also not really true.
+I started calling this direction **zero framework**. It’s a great slogan. It’s also not really true.
 
-I meant that I was writing almost no custom orchestration framework, which is very different from having no framework. Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them. The framework didn't vanish; it became somebody else's primitive.
+I meant that I was writing almost no custom orchestration framework, which is very different from having no framework. Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them. The framework didn’t vanish; it became somebody else’s primitive.
 
 That fits the emergence argument almost suspiciously well. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
 

@@ -5,10 +5,12 @@ history and the supplied `System3-main.zip` archive during the 27 September
 cleanup. The selected curated illustrations were visually checked and are not
 equivalent technical diagrams. No substitute was invented.
 
-Their Markdown image references are preserved in `MISSING FIGURE` comments in
-Chapter 2, rather than displayed as broken images. Existing explanatory figure
-captions and manuscript prose remain unchanged. The current PDF already omitted
-these source images; this cleanup preserves its prepared text.
+Since the 30 September copyedit, each figure is recorded in Chapter 2 as a
+`DIAGRAM — missing figure` comment carrying its draft caption and former asset.
+The PDF build lists these comments among its pending design directions. The
+reading edition no longer prints `[Missing figure]` placeholders. The one number
+that appeared only in a caption (the evolutionary search reaching roughly 2.45)
+now appears in the prose.
 
 | Former file | Intended figure | Status |
 | --- | --- | --- |
