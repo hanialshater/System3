@@ -50,7 +50,7 @@ That is a much more interesting model for AI assistance than “the machine know
 
 The point of the scaffold is not to become a permanent exoskeleton around every thought. It lets the learner operate at the edge of current competence, then gives more of the task back as competence grows.
 
-Benjamin Bloom's famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom's particular studies and should not be treated as a universal law of tutoring.[5](appendix-references.md#ref-09-l4-bloom) The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce.
+Benjamin Bloom’s famous tutoring work made individualized instruction the benchmark problem decades before anyone had a language model in a browser. The exact “two sigma” result belongs to Bloom’s particular studies and should not be treated as a universal law of tutoring.[5](appendix-references.md#ref-09-l4-bloom) The durable point is simpler: responsive one-to-one instruction can adapt explanation, pacing, feedback and difficulty to a learner in ways mass instruction struggles to reproduce.
 
 AI makes that old aspiration much cheaper. It can explain the same idea six ways without becoming offended that the first five failed. It can switch notation. Invent an example using something I already understand. Ask me to predict the next step. Generate a simpler problem when I am lost and a harder one when I am bored. Let me ask the stupid question at 1:17 a.m. without first deciding whether the stupid question is prestigious enough for office hours.
 
@@ -90,7 +90,7 @@ Real humans are bounded. We have limited attention, limited memory, limited time
 
 AI changes some of those bounds. Suppose I am deciding whether to take a job.
 
-The system can compare compensation under several tax regimes, estimate commute time, summarize the company's trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted outside work.
+The system can compare compensation under several tax regimes, estimate commute time, summarize the company’s trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted outside work.
 
 The assistant has changed the **decision environment**, and preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them.[11](appendix-references.md#ref-09-l4-constructive)
 
@@ -114,13 +114,13 @@ The assistant can expand the decision. It cannot live it for me. That boundary m
 
 ## Opinions About Semicolons
 
-This is already happening. Anthropic's 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.[13](appendix-references.md#ref-09-l4-guidance)
+This is already happening. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: what to do about relationships, health, careers, finances and other questions where the model is participating in judgment rather than merely retrieving facts.[13](appendix-references.md#ref-09-l4-guidance)
 
 That is a remarkable role for software. A spreadsheet does not usually tell me to reconsider my marriage. A compiler has opinions about semicolons but rarely about whether I should move countries.
 
 A conversational model can be different. It is patient, personalized, available at 2 a.m. and capable of producing a coherent argument for almost any path through a difficult life.
 
-Which means the AI does not merely **read** Layer 4. It writes to it. Anthropic's work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person's ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[14](appendix-references.md#ref-09-l4-disempowerment)
+Which means the AI does not merely **read** Layer 4. It writes to it. Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[14](appendix-references.md#ref-09-l4-disempowerment)
 
 Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model.[15](appendix-references.md#ref-09-l4-moraladvice)
 
@@ -162,7 +162,7 @@ The first gives me the answer immediately. I accept it because the assistant has
 
 The second helps me understand the relevant evidence, notice a trade-off I had missed, test my own reasoning and arrive at the decision with a better model of the problem. Same action. Different human afterward.
 
-Amartya Sen's capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.[20](appendix-references.md#ref-09-l4-sen)
+Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.[20](appendix-references.md#ref-09-l4-sen)
 
 An AI system can increase outcomes while reducing capability. It can make me more productive while making me less able to work without it. It can make a decision more accurate while making me less able to understand why. It can make my writing more polished while gradually replacing my taste with its taste.
 
@@ -188,7 +188,7 @@ My preferences are not the only preferences in the world.
 
 If I ask an agent to maximize my salary, it cannot therefore commit fraud against my employer. If I ask it to help someone gain an advantage, the interests and rights of other people do not disappear from the moral universe. If I ask an autonomous system to optimize a marketplace, customers, sellers, workers and regulators may all have legitimate claims over what happens.
 
-Imagine a shopper asking the store's assistant whether she needs the more expensive trail shoes. She runs once a week on easy paths. The cheaper pair would do; the store earns more if she buys the other one. She has given the assistant enough information to help her spend less, and the company paying for it would rather she spent more.
+Imagine a shopper asking the store’s assistant whether she needs the more expensive trail shoes. She runs once a week on easy paths. The cheaper pair would do; the store earns more if she buys the other one. She has given the assistant enough information to help her spend less, and the company paying for it would rather she spent more.
 
 The assistant could tell her that the cheaper pair is enough, or keep finding reasons to discuss the expensive one. Both responses can contain true statements. Before asking which response better matches “human preferences,” we need to ask whose interests this assistant was allowed to serve, what it told the shopper about that arrangement, and whether she has any way to challenge it.
 

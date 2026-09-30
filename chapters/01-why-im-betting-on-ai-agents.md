@@ -1,4 +1,4 @@
-# Chapter 1: Why I'm Betting on AI Agents
+# Chapter 1: Why I’m Betting on AI Agents
 *Or: How I Learned to Stop Micromanaging and Love Emergence*
 
 ![Simple building blocks, complex emergence](../book-design/curated/assets/art/a005.jpg)
@@ -77,7 +77,7 @@ Too much prescription removes the room in which autonomy could help. Too little 
 
 The mistakes that worry me most are not the ones that crash. Imagine an agent deciding that customers who return a jacket dislike its style. In this case they liked the jacket; the sizing was wrong. But the return record does not say that. A second agent inherits the first agent’s conclusion and starts recommending different styles. A third writes a report explaining why those styles deserve more space in the catalog. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie. Intelligence made the wrong path easier to travel.
 
-I foresee AI-designed solutions that are terrifyingly efficient, perfectly logical, and utterly humorless. They'll look at us and say, "You guys are kind of messy. And your cat obsession is... illogical." Maybe they'll finally solve the mystery of the missing socks. Or create exponentially more of them.
+I foresee AI-designed solutions that are terrifyingly efficient, perfectly logical, and utterly humorless. They’ll look at us and say, “You guys are kind of messy. And your cat obsession is… illogical.” Maybe they’ll finally solve the mystery of the missing socks. Or create exponentially more of them.
 
 **Emergence can give us capable systems. It does not, by itself, give us trustworthy ones.** Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
 
