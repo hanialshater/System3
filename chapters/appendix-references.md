@@ -439,7 +439,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 1. <a id="ref-12-after-1"></a>George B. Dantzig, “Reminiscences about the origins of linear programming,” *Operations Research Letters* 1(2), 1982, pp. 43–48. The encounter is also discussed in Bernhard von Stengel, [“Zero-Sum Games and Linear Programming Duality”](https://arxiv.org/html/2205.11196v6). The opening describes Dantzig’s recollection; it does not attribute a complete modern proof of LP duality to that conversation.
 
-2. <a id="ref-12-after-2"></a>Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, [“Reconciling modern machine learning practice and the bias-variance trade-off”](https://arxiv.org/html/1812.11118v2), *PNAS* 116(32), 2019, pp. 15849–15854. In their random-feature experiments, the researchers explicitly selected the smallest-norm solution among those that fit the data; larger model classes allowed such solutions with smaller norms. Double Descent Life borrows the curve’s shape as a philosophical analogy.
+2. <a id="ref-12-after-2"></a>Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, [“Reconciling modern machine-learning practice and the classical bias–variance trade-off”](https://arxiv.org/html/1812.11118v2), *PNAS* 116(32), 2019, pp. 15849–15854. In their random-feature experiments, the researchers explicitly selected the smallest-norm solution among those that fit the data; larger model classes allowed such solutions with smaller norms. Double Descent Life borrows the curve’s shape as a philosophical analogy.
 
 3. <a id="ref-12-after-3"></a>The mathematical workshop, alternative recommendation experiences and community tool are prospective examples, not reported deployments.
 
@@ -449,7 +449,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 6. <a id="ref-12-flt-tokens"></a>Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, <https://www.anthropic.com/research/formalizing-fermats-last-theorem>.
 
-7. <a id="ref-12-access"></a>Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, <https://www.anthropic.com/news/fable-mythos-access>. Access was suspended on 12 June 2026 and restored on 1 July, after the controls were lifted on 30 June.
+7. <a id="ref-12-access"></a>Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, 12 June 2026, <https://www.anthropic.com/news/fable-mythos-access>; Anthropic, announcement on redeploying Fable 5, 30 June 2026, updated 1 July, <https://www.anthropic.com/news/redeploying-fable-5>. Access to both models was suspended on 12 June 2026. The export controls were lifted on 30 June and Fable 5 was available globally again from 1 July; Mythos 5 was restored for a set of US organizations after US government approval on 26 June.
 
 ### Additional sources
 

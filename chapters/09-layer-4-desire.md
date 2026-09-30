@@ -18,15 +18,15 @@ The objective did not merely become clearer to the system. It became clearer to 
 
 ## A Prompt Is Evidence, Not the Objective
 
-The five-layer map left intention sitting above Deep Mode, where I could ask what to try next without yet resolving what made the whole attempt worth doing. The box in the diagram concealed the difficulty. A prompt gives the system **evidence about Layer 4**, and leaves it to discover how much of the intention is settled.
+The five-layer map left intention sitting above Deep Mode, where I could ask what to try next without yet resolving what made the whole attempt worth doing. The box in the diagram concealed the difficulty. A prompt gives the system evidence about Layer 4, and leaves it to discover how much of the intention is settled.
 
-Cooperative inverse reinforcement learning, which appeared earlier in the story of the reward, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.[1](appendix-references.md#ref-09-l4-cirl)
+Cooperative inverse reinforcement learning, which appeared in Chapter 7, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.[1](appendix-references.md#ref-09-l4-cirl)
 
 I like the humility in that setup. The machine starts by admitting that it may not know what “good” means. But the formal picture still tempts us to imagine that the human knows the reward and the machine is trying to recover it. Often the human does not know either.
 
 ## Performance Is Not Learning
 
-The easiest place to see the human changing is a classroom, where changing the human is supposed to be the point. A system can help me perform a task better today while making me less able to perform it tomorrow. **Performance is not learning.**
+The easiest place to see the human changing is a classroom, where changing the human is supposed to be the point. A system can help me perform a task better today while making me less able to perform it tomorrow. Performance is not learning.
 
 This is no longer a philosophical concern. In a field experiment involving nearly a thousand high-school mathematics students, researchers gave students access to two GPT-4-based tools. A relatively unconstrained ChatGPT-like system dramatically improved performance while students could use it. But when access was removed, those students performed worse than students who had never received the tool. A tutor version designed with safeguards against simply giving away the work largely mitigated that learning loss.[2](appendix-references.md#ref-09-l4-bastani)
 
@@ -42,7 +42,7 @@ Sometimes the answer is nobody. I do not need to become a better invoice parser 
 
 ## Giving the Work Back
 
-Educational psychology has an old word for one good version of this relationship: **scaffolding**.
+Educational psychology has an old word for one good version of this relationship: *scaffolding*.
 
 In a classic 1976 paper, David Wood, Jerome Bruner and Gail Ross studied how tutors help children solve problems beyond their current unaided ability. The tutor temporarily controls parts of the task the learner cannot yet manage, allowing the learner to stay engaged with the parts they can.[4](appendix-references.md#ref-09-l4-scaffolding)
 
@@ -70,9 +70,9 @@ That is powerful because orientation matters. Before deciding to invest weeks in
 
 Andy Clark and David Chalmers once argued that, under some conditions, external artifacts can become parts of a larger cognitive process rather than merely tools consulted by an isolated mind.[7](appendix-references.md#ref-09-l4-extended) The philosophy of the extended mind can stay unsettled; the practical observation is enough: notebooks, calculators, search engines and now language models change what one person can think through without carrying every intermediate state inside the skull.
 
-But orientation creates its own trap. **Fluency arrives before scars.**
+But orientation creates its own trap. Fluency arrives before scars.
 
-Nathan Ballantyne calls one version **epistemic trespassing**: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills.[8](appendix-references.md#ref-09-l4-trespassing) AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
+Nathan Ballantyne calls one version *epistemic trespassing*: experts carry authority from a domain they genuinely know into a neighboring domain where they lack the relevant evidence or interpretive skills.[8](appendix-references.md#ref-09-l4-trespassing) AI can make this temptation cheaper. After a few hours with a patient model, I can acquire vocabulary and a plausible story long before I acquire the tacit knowledge needed to know where the story breaks.
 
 Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally.[9](appendix-references.md#ref-09-l4-offloading)
 
@@ -92,17 +92,17 @@ AI changes some of those bounds. Suppose I am deciding whether to take a job.
 
 The system can compare compensation under several tax regimes, estimate commute time, summarize the company’s trajectory, help me identify people who left the team, generate questions for the hiring manager, model what my week might look like, remind me what I said I wanted six months ago and show me that the exciting role conflicts with the amount of time I also said I wanted outside work.
 
-The assistant has changed the **decision environment**, and preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them.[11](appendix-references.md#ref-09-l4-constructive)
+The assistant has changed the decision environment, and preferences themselves are often constructed during choice. Work by John Payne, James Bettman and colleagues describes decision-making as constructive: people do not always retrieve a complete ranking of options from an internal database. They use different strategies, notice new attributes, change what receives attention and build preferences partly in response to the problem in front of them.[11](appendix-references.md#ref-09-l4-constructive)
 
 This sounds obvious once you notice it. I may say I want the highest salary until I see what the extra money costs in travel. I may say I want maximum freedom until I compare it with the anxiety of unstable income. I may discover that what I called “career ambition” was partly a desire to work with unusually good people, and that another option supplies that without the title I thought mattered.
 
-A decision assistant can make the choice **richer before making it easier**. If the higher salary keeps winning only because I have underestimated the travel, the next useful step is to work through an ordinary week, not recommend the job again.
+A decision assistant can make the choice richer before making it easier. If the higher salary keeps winning only because I have underestimated the travel, the next useful step is to work through an ordinary week, not recommend the job again.
 
 ## Some Choices Change the Person Choosing
 
 Then there are decisions for which even a very good model of my current preferences is not enough. Have a child. Move country. Change profession. Start the company. Convert to a religion. Leave a relationship.
 
-L. A. Paul calls an important class of these **transformative experiences**. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice.[12](appendix-references.md#ref-09-l4-paul)
+L. A. Paul calls an important class of these *transformative experiences*. Some are epistemically transformative: you cannot fully know what the experience will be like before having it. Some are personally transformative: undergoing the experience can change the preferences with which you would later evaluate the choice.[12](appendix-references.md#ref-09-l4-paul)
 
 A system trying to infer and satisfy my preferences now has a problem about which version of me it is serving. The one before the experience or the one after? The future self may value things the current self barely understands. And the current self is the one who has to choose whether that future self gets created.
 
@@ -120,35 +120,33 @@ That is a remarkable role for software. A spreadsheet does not usually tell me t
 
 A conversational model can be different. It is patient, personalized, available at 2 a.m. and capable of producing a coherent argument for almost any path through a difficult life.
 
-Which means the AI does not merely **read** Layer 4. It writes to it. Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[14](appendix-references.md#ref-09-l4-disempowerment)
+Which means the AI does not merely *read* Layer 4. It writes to it. Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[14](appendix-references.md#ref-09-l4-disempowerment)
 
 Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model.[15](appendix-references.md#ref-09-l4-moraladvice)
 
 The goal therefore cannot be zero influence. That would make education impossible. Books, friends, teachers and the people closest to me all influence me. A good argument should change me if it reveals something true that I had ignored.
 
-The distinction I care about is between **helping me change through understanding** and changing me because the system has learned which psychological lever produces the easiest compliance.
+The distinction I care about is between helping me change through understanding and changing me because the system has learned which psychological lever produces the easiest compliance.
 
 If I say I want to quit my job, a useful assistant might help me separate several hypotheses. Perhaps I hate this week, or my manager, or the profession. Perhaps I want freedom, or status. Perhaps I am exhausted. Perhaps I actually want to build something else. Those are different explanations of the same sentence. The system can help me test them.
 
 What it should not do is quietly discover which framing makes me easiest to steer toward whatever outcome its own training process prefers. That would be alignment by editing the human.
 
-Very efficient.
-
-Slightly evil.
+Very efficient. Slightly evil.
 
 If I reject its diagnosis, the rejection has to remain capable of changing the advice. A theory of what I *really* want that treats every objection as further evidence for itself has stopped helping me think.
 
 ## Declaring Synergy
 
-The phrase **human plus AI** sounds automatically superior to either component alone. The evidence is less cooperative.
+The phrase *human plus AI* sounds automatically superior to either component alone. The evidence is less cooperative.
 
-A 2024 meta-analysis in *Nature Human Behaviour* reviewed 106 experiments reporting 370 effect sizes that compared humans alone, AI alone and human–AI combinations. On average, human–AI systems improved on humans alone, but they did **not** outperform the better of human or AI. In fact, the combined systems were worse than the best individual component on average. Decision tasks were particularly difficult; creation tasks looked more promising.[16](appendix-references.md#ref-09-l4-vaccaro)
+A 2024 meta-analysis in *Nature Human Behaviour* reviewed 106 experiments reporting 370 effect sizes that compared humans alone, AI alone and human–AI combinations. On average, human–AI systems improved on humans alone, but they did *not* outperform the better of human or AI. In fact, the combined systems were worse than the best individual component on average. Decision tasks were particularly difficult; creation tasks looked more promising.[16](appendix-references.md#ref-09-l4-vaccaro)
 
 So much for attaching a human to the API and declaring synergy.
 
 Decision support has a coordination problem. People can over-rely on AI. They can also under-rely on it. Research has found both algorithm aversion—people abandoning an algorithm after seeing it make errors even when it outperforms humans—and algorithm appreciation, where people give algorithmic advice more weight in other settings.[17](appendix-references.md#ref-09-l4-aversion)
 
-The target is **appropriate reliance**, not maximum trust. And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct.[18](appendix-references.md#ref-09-l4-verifiability)
+The target is *appropriate reliance*, not maximum trust. And explanations alone do not solve the problem. An explanation can make an answer feel understandable without making it verifiable. Work on AI-advised decision-making repeatedly finds that explanations often fail to produce complementary performance when the human still cannot tell whether the recommendation is actually correct.[18](appendix-references.md#ref-09-l4-verifiability)
 
 Sometimes the solution is more friction, not less. Zana Buçinca and colleagues tested “cognitive forcing” interfaces that required people to engage more actively with the problem rather than immediately accepting AI advice. These designs reduced overreliance compared with simpler explanation interfaces, although users liked the more demanding interfaces less.[19](appendix-references.md#ref-09-l4-forcing) The interface people enjoy most is not always the one that preserves their judgment best. Sometimes friction is teaching.
 
@@ -162,7 +160,7 @@ The first gives me the answer immediately. I accept it because the assistant has
 
 The second helps me understand the relevant evidence, notice a trade-off I had missed, test my own reasoning and arrive at the decision with a better model of the problem. Same action. Different human afterward.
 
-Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their **capabilities**.[20](appendix-references.md#ref-09-l4-sen)
+Amartya Sen’s capability approach offers a useful language for this distinction. Human welfare is not exhausted by achieved outcomes; it also matters what people are substantively free and able to do and become—their *capabilities*.[20](appendix-references.md#ref-09-l4-sen)
 
 An AI system can increase outcomes while reducing capability. It can make me more productive while making me less able to work without it. It can make a decision more accurate while making me less able to understand why. It can make my writing more polished while gradually replacing my taste with its taste.
 
@@ -176,9 +174,9 @@ So perhaps the right Layer 4 question is not merely:
 
 It is also:
 
-> **What kind of human capability should this interaction preserve or expand?**
+> What kind of human capability should this interaction preserve or expand?
 
-Stuart Russell closes *Human Compatible* on the first path: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[22](appendix-references.md#ref-09-russell-enfeeblement) Asked at Layer 4, part of it becomes a design requirement.
+Stuart Russell closes *Human Compatible* on that first danger, enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[22](appendix-references.md#ref-09-russell-enfeeblement) Asked at Layer 4, part of it becomes a design requirement.
 
 That does not mean every tool must teach. I do not need my dishwasher to run a seminar on fluid dynamics before cleaning the plates. But the more a system moves into learning, judgment, identity and long-horizon decisions, the harder it becomes to separate the quality of the outcome from the condition of the person producing it.
 
@@ -202,6 +200,6 @@ So Layer 4 cannot simply mean “the user gets whatever the user wants.” The r
 
 The flight may need one clarification before booking. A lesson may need the assistant to withhold the answer until I have tried. A choice of profession may need room for a question neither of us can settle yet. Treat all three as instructions awaiting execution and the system can become very efficient at missing the point.
 
-System 3, the scientific institution we have been building, can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain **alive without making them ownerless**. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
+System 3, the scientific institution we have been building, can investigate what a choice would do. It cannot turn the result into authority over whose purposes should prevail. Goals can take shape through the interaction too; they need to remain alive without making them ownerless. The AI should help me change when understanding changes me. It should not quietly take authorship of the change.
 
 The system needs to learn when to carry the work, when to help me learn it, and when the unresolved part belongs with me. How much of that should I have to explain every time I ask for help?

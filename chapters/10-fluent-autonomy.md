@@ -34,7 +34,7 @@ That is what I mean by **fluent autonomy**: the structure needed to do the work 
 
 ## The Interface Moves Up
 
-Increasingly the interface is an **outcome described incompletely in ordinary language**. All the machinery we have built has to become usable from there.
+Increasingly the interface is an outcome described incompletely in ordinary language. All the machinery we have built has to become usable from there.
 
 That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
 
@@ -52,7 +52,7 @@ None of these is a specification. Each opens a small investigation.
 
 Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch. That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
 
-A fluent autonomous system can construct part of the structure **after seeing the intention**. That leaves it with a choice ordinary software usually makes in advance: what interface would help here?
+A fluent autonomous system can construct part of the structure after seeing the intention. That leaves it with a choice ordinary software usually makes in advance: what interface would help here?
 
 Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
 
@@ -62,7 +62,7 @@ The application becomes a primitive available to the agent and to me. If a sprea
 
 ## Bureaucracy on the Fly
 
-There is a phrase that sounds like an insult until you need it: **bureaucracy**.
+There is a phrase that sounds like an insult until you need it: *bureaucracy*.
 
 Bureaucracy, in its useful form, is accumulated coordination. Roles, review boundaries, logs, standards, escalation paths and procedures exist because some kinds of work become unreliable when everybody improvises everything at once.
 
@@ -72,7 +72,7 @@ Agent systems give us the possibility of **bureaucracy on the fly**: an organiza
 
 A factual question may need one agent and a source. A difficult scientific claim may need competing hypotheses, a literature search, code, an experiment and an evaluator insulated from the researcher who wants the result to work. A writing edit may need none of that: perhaps the original paragraph, a memory of previous corrections and enough restraint to leave the sentence alone. A high-impact financial action may need very little creativity and quite a lot of permission checking. A genuinely novel research problem may need several agents pursuing different approaches without sharing enough context to collapse into one correlated opinion.
 
-The organization should be **as large as the uncertainty deserves and no larger**. This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
+The organization should be as large as the uncertainty deserves and no larger. This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
 
 What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution.
 
@@ -84,7 +84,7 @@ Rename two hundred temporary files according to a convention used every week for
 
 The human’s own learning adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction. If I ask the system to teach me statistics, instantly solving every exercise is not fluent assistance—it is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
 
-So the system has to infer not only **what outcome I want**, but **what role I want to retain in producing it**. Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well.
+So the system has to infer not only *what outcome I want*, but *what role I want to retain in producing it*. Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done. Needing little human input can be a side effect of spending it well.
 
 ## Invisible by Default, Legible on Demand
 
@@ -102,7 +102,7 @@ Those are trust chains. A compiler hides registers from me most of the time, but
 
 The request can remain simple:
 
-> **Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.**
+> Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.
 
 In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
 

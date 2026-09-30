@@ -12,7 +12,7 @@ One has visited several times across several days. She filtered by size and colo
 
 They can see the same recommendation modules in the same order. That is not because the recommendation models are stupid. Quite the opposite. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. We may have sophisticated intelligence inside each box while the arrangement of the boxes is mostly predetermined. The page is smart inside the modules and surprisingly dumb between them.
 
-I had somehow spent an entire book preparing myself to ask: **what should the layer above do with them?**
+I had somehow spent an entire book preparing myself to ask: what should the layer above do with them?
 
 ## Stop Recommending for a Moment
 
@@ -30,7 +30,7 @@ She may already have enough choice. Her problem could be that she cannot compare
 
 Once you phrase it this way, the object being predicted changes.
 
-Instead of asking only which *item* is relevant, we can ask which **bounded problem** is currently relevant.
+Instead of asking only which *item* is relevant, we can ask which *bounded problem* is currently relevant.
 
 Comparison friction. Size anxiety. Return hesitation. Quality uncertainty. Outfit visualization. Filter fatigue. Decision paralysis.
 
@@ -64,7 +64,7 @@ I started calling these reusable units **recommendation experiences**, or RXs. T
 
 A library of two hundred overlapping experiences would be a new kind of legacy system with better animation.
 
-When a new need appears, first ask whether an existing experience can meet it with a different configuration: **composition over invention**. A Similar Items experience might be generic in one context and constrained to products available in the customer’s size in another. A comparison component can compare different attributes depending on what matters in the current session. A collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense.
+When a new need appears, first ask whether an existing experience can meet it with a different configuration: *composition over invention*. A Similar Items experience might be generic in one context and constrained to products available in the customer’s size in another. A comparison component can compare different attributes depending on what matters in the current session. A collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense.
 
 Building for the hundredth experience changes what the first few need to be capable of. The more that useful behavior can be produced by configuring and composing a smaller number of strong primitives, the less the organization has to encode every new situation as another permanent branch in software.
 
@@ -84,7 +84,7 @@ The score of an experience therefore depends partly on what has already been sel
 
 The composer has to select experiences, configure them, order them and deduplicate not only repeated products but repeated *help*. It needs some notion of saturation: two size widgets can be one too many. It can model synergy: one experience may become more valuable after another. It should account for position cost because the top of a page is expensive real estate and a wonderful module in slot twelve may be a philosophical achievement rather than a product one. Constraints matter too, but I prefer many of them to be visible pressures rather than a secret forest of `if DE_mobile && campaign_X` rules.
 
-Most importantly, the **page becomes the unit**. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives. Increase CTR on this carousel. Improve conversion from that module. Raise engagement with this block. All reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation. The layer above has to reason about the composition as a whole.
+Most importantly, the page becomes the unit. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives. Increase CTR on this carousel. Improve conversion from that module. Raise engagement with this block. All reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation. The layer above has to reason about the composition as a whole.
 
 And this is where the design started resembling the society of agents. A society is not improved merely by hiring the best individual expert in every discipline. Somebody still has to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem.
 
@@ -108,7 +108,7 @@ If switching falls while abandonment rises, the apparent success should make us 
 
 Sami has selected a size but has not added the product to his basket. He opened the size chart twice. It is a brand he has not bought before. Perhaps his current problem is size anxiety, with some return hesitation behind it.
 
-One useful response might not be shoppable at all. Imagine a small evidence module explaining how people with comparable sizing histories tended to fit this item, or giving a properly substantiated signal about whether buyers kept their usual size. The exact claim matters enormously because a false fit claim is worse than a mediocre recommendation. But conceptually this is a different kind of RX: it provides **knowledge**, not another candidate.
+One useful response might not be shoppable at all. Imagine a small evidence module explaining how people with comparable sizing histories tended to fit this item, or giving a properly substantiated signal about whether buyers kept their usual size. The exact claim matters enormously because a false fit claim is worse than a mediocre recommendation. But conceptually this is a different kind of RX: it provides *knowledge*, not another candidate.
 
 Now try to optimize the whole system for expected click. The insight module is in trouble.
 
@@ -180,7 +180,7 @@ Imagine replaying anonymized customer sessions and asking a strong language mode
 
 “The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call. So narration should generate hypotheses, not production truth. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer’s actual experience. Build a detector only after the hypothesis survives contact with something outside the model’s coherence. Define what success looks like before the detector starts steering the page.
 
-The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Only intervention tells us how much of the outcome the problem was actually causing. Judea Pearl’s ladder has three rungs, seeing, doing and imagining, and no quantity of the first substitutes for the second.[1](appendix-references.md#ref-11-store-pearl) A recommender that only observes is standing on rung one with excellent posture.
+The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Learning how much of the outcome the problem actually caused takes an intervention, or causal assumptions strong enough to stand in for one. Judea Pearl’s ladder has three rungs, seeing, doing and imagining, and no quantity of the first answers questions about the second on its own.[1](appendix-references.md#ref-11-store-pearl) A recommender that only observes is standing on rung one with excellent posture.
 
 ## The Objective Fights Back
 
@@ -224,13 +224,13 @@ At that point, the word *page* starts to become suspicious. Why should the produ
 
 Why should a customer with a decision problem receive the same interface as somebody exploring for inspiration? Why should the home surface, product page, basket and later email behave like four organizations with partial amnesia if the customer is still pursuing one mission?
 
-The more capable the library becomes, the more the system can schedule **problems and interventions** rather than modules and slots.
+The more capable the library becomes, the more the system can schedule problems and interventions rather than modules and slots.
 
 A customer starts with a vague request for a wedding outfit. The system helps narrow the style. A collage makes one direction concrete. Seeing it changes what the customer wants. The problem shifts from exploration to comparison. A product finder resolves a constraint. A size question appears. The scheduler brings in fit evidence. The customer buys the dress but not the jacket. Later, a different surface may continue the unresolved part of the mission.
 
 There was never a hard-coded `WEDDING_FUNNEL_V7`. The journey emerged from bounded problems, reusable capabilities and changing evidence.
 
-The hundreds of widgets stop being a UI roadmap here and become a **vocabulary of action**. The interface is the current projection of the problem-solving process.
+The hundreds of widgets stop being a UI roadmap here and become a vocabulary of action. The interface is the current projection of the problem-solving process.
 
 Nobody wants every pixel generated by an LLM. Predictability, accessibility, design systems and latency all matter, and customers occasionally just want to buy socks without participating in an artificial-intelligence research program.
 
@@ -240,7 +240,7 @@ The store does not literally build itself. It learns how to build more of the ex
 
 ## The Book Comes Back to Bite Me
 
-I began the prototype as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a **scientific institution embedded in the product**. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
+I began the prototype as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a scientific institution embedded in the product. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
 That does not prove the book. I designed it with the book’s argument in my head, and the test that could embarrass me is still ahead. It may fail in several educational ways.
 

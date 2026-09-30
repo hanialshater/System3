@@ -54,3 +54,54 @@ Every chapter here was re-read line by line against the plan and the house dimen
 | Interlude | None beyond Pass 0. The `ASSISTANT DRAFT` marker stays for the author. | 8. | Author decision |
 
 **Chapter 7–8 gate:** seeds pass; build 317 pages, 87 illustrations, 0 placements or covers needing review; references validate after renumbering; unit tests pass.
+
+## Parts IV and V, the alternative ending, and back matter
+
+| Section | Changes | Re-evaluation | Status |
+|---|---|---|---|
+| Part IV and V pages | None beyond Pass 0. | — | Closed |
+| 9 | **Bold:** 16 spans reduced to the style sheet. Borrowed terms became italics (*scaffolding*, *epistemic trespassing*, *transformative experiences*, *appropriate reliance*, *capabilities*); emphasis and slogans became plain. **One-liners:** "Very efficient." / "Slightly evil." folded into one paragraph; the joke stays. **Back-references:** "which appeared earlier in the story of the reward" became "which appeared in Chapter 7"; Russell's closing now names the danger it refers to ("that first danger, enfeeblement"), which was four paragraphs back. **Fact check:** every study is confirmed (Bastani, Kestin, Tutor CoPilot, Vaccaro, Anthropic's 6% guidance figure, Wood/Bruner/Ross). | 8.5, unchanged. It reads less like a slide deck. | Closed; `SLOT 4` for the author |
+| 10 | **Bold:** kept for the coined terms (*fluent autonomy*, *bureaucracy on the fly*) and for the five run-in objection heads; removed from slogans and the closing blockquote. | 8.5 → 9. Its middle sections no longer shout, so "Five Ways This Could Be Wrong" lands harder. | Closed |
+| 11 | **Causality overstatement corrected**, the item still open from 27 September. "Only intervention tells us…" became "takes an intervention, or causal assumptions strong enough to stand in for one", and Pearl's ladder is now stated as data alone being unable to answer rung-two questions. **Bold:** kept for coined terms (problem fingerprint, recommendation experiences, Coverage, Unmet Demand, Surface Value); removed elsewhere. Pass 0: "e-commerce". **Not done:** the planned trim of "not X, it is Y" constructions. On re-reading, each one ("It is homework", "a resignation letter written in passive voice", "It is branding", "is culture") is a joke or turn that does argumentative work, and none shares a paragraph with another. | 8 → 8.5. The one factual overclaim in the design chapter is gone. | Closed |
+| 12 | **Fact-check corrections:** (1) Dantzig compressed his summer "into under a minute" (his words); (2) "ten thousand agents for eighty-eight hours", which conflated the launch-to-result time with the peak agent count and cited the Fermat source, became "put ten thousand agents on one problem"; (3) the telescope sentence no longer claims Kepler's instrument was not Galileo's (Galileo made it); it now says astronomers elsewhere checked the moons with telescopes of their own within a year; (4) the June 2026 access sentence now says one model returned for everyone and the other only for a set of US organizations, and the reference adds Anthropic's redeployment announcement with the correct dates. The Belkin reference now carries the *PNAS* title. | 8.5, unchanged. It now agrees with Chapters 5 and 6. | Closed |
+| Alternative ending, 13, scaffolds | Pass 0 typography only (curly quotes, ellipses). No wording touched. | Protected. | Closed |
+| Zen | None. The author revised the list on 30 September and kept both lines that the 27 September review questioned; they are treated as deliberate (see the plan). | — | Closed |
+| Evidence note | None. The `CLAUDE DRAFT` marker stays for the author. | — | Author decision |
+| Illustrations note, about the author | Pass 0 only. Employer clearance is added to REVISIT. | — | Closed; clearance for the author |
+| References | Chapter 7 renumbered (15–31); the AlphaZero preprint note was removed (the *Science* paper stays in Additional sources); the Fable/Mythos access note is corrected and extended; the Belkin title is corrected; Pass 0 quotes and one "programme". The build validates every citation number against its entry. | — | Closed |
+
+**Parts IV–V gate:** seeds pass; build 317 pages, 87 illustrations, 0 placements or covers needing review, 17 pending design directions; unit tests pass.
+
+**Final sweeps on the full manuscript:**
+- aspell over every added line finds only names and technical terms;
+- codespell finds no misspellings;
+- no unbalanced emphasis markers remain, apart from Chapter 6's intended `\*\*` confidence marks and literal "A*";
+- text extracted from the PDF contains no `[Missing figure]`, no HTML comment text and no "programrs".
+
+## Status after the copyedit
+
+| Section | Before | After | Readiness | What remains |
+|---|---:|---:|---|---|
+| Preface | 8.5 | 8.5 | Ready | — |
+| 1 | 8 | 8 | Ready | — |
+| 2 | 8.5 | 8.5 | Ready (text) | Figures; methods trail (author) |
+| 3 | 8.5 | 8.5 | Ready | — |
+| 4 | 9 | 9 | Ready | — |
+| 5 | 9 | 9 | Ready (text) | Visual briefs (art) |
+| Reveal | 8 | 8 | Author | `ASSISTANT EDIT` sign-off |
+| 6 | 8 | 8.5 | Ready | Priority-dispute clause if the author has a source |
+| 7 | 7.5 | 8 | Ready | — |
+| 8 | 8 | 8 | Ready | Confirm one clause against the primary blog |
+| Interlude | 8 | 8 | Author | `ASSISTANT DRAFT` sign-off |
+| 9 | 8.5 | 8.5 | Author | `SLOT 4` |
+| 10 | 8.5 | 9 | Ready | — |
+| 11 | 8 | 8.5 | Ready | — |
+| 12 | 8.5 | 8.5 | Ready | — |
+| 13 / ending / scaffolds | 7 / — / 9 | unchanged | Ready (protected) | — |
+| Back matter | — | — | Author | `CLAUDE DRAFT`; employer clearance |
+
+**Manuscript:** about 90% ready, up from about 75%. What remains are four author decisions (three sign-off markers and `SLOT 4`) and two clauses to confirm. After that the text is ready for a professional proofread.
+
+**Production:** unchanged. Chapter 2 figures, Chapter 5 art, front matter (title, copyright/ISBN, dedication, acknowledgments, index decision), clearance, and printer/proof are all still open (see [REVISIT](../REVISIT.md)).
+
+This was a developmental copyedit by one editor with fact-checking support. It does not replace an independent human proofread of the typeset pages, which should be the last step before print.
