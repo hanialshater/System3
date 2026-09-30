@@ -230,7 +230,7 @@ Knowledge now came with a route by which someone else might make a claim fail ag
 
 The coastlines of Africa and South America fit together suspiciously well, and in 1912 a German meteorologist named Alfred Wegener took the fit seriously. He proposed that the continents had once been one landmass and had drifted apart. Besides the coastlines, he had matching fossils on opposite sides of the Atlantic, matching rock formations and glacial traces in places that were now tropical. What he did not have was a force capable of moving a continent.[18](appendix-references.md#ref-05-wegener)
 
-Much of geology declined, and not stupidly. The forces Wegener proposed were too weak, and a continent could not simply plough through an ocean floor that stayed where it was. The fossils needed explaining, but so did the physics. Wegener died on the Greenland ice in 1930, still unable to make the continents move to his critics’ satisfaction.
+Much of geology declined, and not stupidly. The forces Wegener proposed were too weak, and a continent could not simply plow through an ocean floor that stayed where it was. The fossils needed explaining, but so did the physics. Wegener died on the Greenland ice in 1930, still unable to make the continents move to his critics’ satisfaction.
 
 Decades later, ships towing magnetometers began revealing a peculiar pattern on the ocean floor. The rock was magnetically striped. Bands on one side of a mid-ocean ridge had counterparts on the other, recording reversals of the Earth’s magnetic field as new crust formed and moved outward. The ocean floor itself was spreading. The continents were passengers.
 

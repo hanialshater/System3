@@ -14,7 +14,7 @@ The ambition was intentionally high. I wanted something closer to the best Disti
 
 Circle packing let the search be complicated because judgment was simple. Here judgment had become part of the problem.
 
-The problem-solving layer I eventually started calling **Deep Mode** grew out of one question: could the system take over some of the work of deciding what to try next, the inquiry itself as well as the implementation? Build another version, research the failure, retrieve an old idea, split into independent branches, change perspective, or abandon the direction?
+The problem-solving layer I eventually started calling **Deep Mode** grew out of one question: could the system take over some of the work of deciding what to try next, the inquiry itself as well as the implementation? Build another version, research the failure, retrieve an old idea, split into independent branches, change perspective or abandon the direction?
 
 Before trying to automate that, I had to notice how much of the work around the model had already moved into the machine.
 
