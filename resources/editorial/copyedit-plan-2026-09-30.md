@@ -23,6 +23,7 @@ The house editorial prompt (`prompts/chapter-version-evaluation.md`) governs thi
 | Punctuation with quotes | American: commas and periods inside closing quotes | — |
 | Ellipsis | Single glyph (…) | Code keeps `...`. |
 | Dashes | Unspaced em dash (—) | Use sparingly. Do not add dashes where a comma works. |
+| Serial comma | The manuscript mostly omits it. Remove it from simple word lists; keep it where the last item is a clause or long phrase, or where it helps the reader | No global pass: many series in the book are rhythmic clause sequences. |
 | Numbers | Words for one to one hundred in narrative prose | Numerals for measurements, scores, percentages from studies, years, table data, and technical problem statements ("26 circles"). |
 | Percent | "percent" in prose, "%" in tables | — |
 | Headings | Title case; capitalize words of four or more letters, including prepositions (With, From, Into, Than) | Short prepositions, articles and conjunctions stay lowercase. |

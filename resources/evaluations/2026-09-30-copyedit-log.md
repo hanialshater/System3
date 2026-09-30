@@ -40,3 +40,12 @@ Every chapter here was re-read line by line against the plan and the house dimen
 | Reveal | None. The `ASSISTANT EDIT` marker stays for the author. | 8. | Author decision |
 
 **Gate:** seeds pass; build 317 pages, 87 illustrations, 0 placements or covers needing review, 17 pending design directions (the 10 Chapter 2 figures are now counted); unit tests pass.
+
+## Part III
+
+| Section | Changes | Re-evaluation | Status |
+|---|---|---|---|
+| Part III page | None beyond Pass 0. | — | Closed |
+| 6 | **Fact-check corrections (six):** (1) Bing revenue per user "over", not "about", thirty percent; (2) Alexander's two asterisks mean "a true invariant"; (3) *Design Patterns* is attributed to "four authors from that movement", because only one of the four attended the 1993 Hillside meeting; (4) the Riemann result is attributed to Anthropic's August report, which describes an engineer who is not a mathematician; (5) "roughly ten thousand" is the Navier–Stokes group's peak concurrency, not a total across problems; (6) the priority-dispute sentence now attributes the "Anthropic employee" description to Alpöge alone, and drops "produced partly with an internal Anthropic model", which could not be verified. The author should restore that clause if they hold a source. **Line edits:** "a name you can say in a meeting and a photograph" became "…in a meeting, then a photograph" (the old order read as if you could say a photograph); three serial commas removed from simple lists; Pass 0 spelling. **Not done:** the planned compression of philosopher introductions. On close reading, the author's 29–30 September passes already reduced each to one or two sentences tied to the Ines story. Cutting further would remove the links the chapter builds between the thinkers and the story. | 8 → 8.5. The Ines thread carries the chapter, and every 2026 event is now stated as its source states it. Density remains its main cost. | Closed |
+
+**Chapter 6 gate:** seeds pass; build 317 pages, 87 illustrations, 0 placements or covers needing review; unit tests pass.
