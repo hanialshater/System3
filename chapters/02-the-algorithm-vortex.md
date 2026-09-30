@@ -2,7 +2,7 @@
 
 *From Classic Algorithms to Autonomous Discovery*
 
-<!-- DIAGRAM — missing figure: The algorithmic vortex. Original asset: ../resources/image0135.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-vortex. Original brief: DIAGRAM — missing figure: The algorithmic vortex. Original asset: ../resources/image0135.png; see resources/art-direction/missing-figures.md. -->
 
 An AI coding agent is faster than you at a ridiculous number of things. It knows libraries you forgot existed, and it can stare at a stack trace and notice something you have been ignoring for an hour. Then, five minutes later, it does something unbelievably stupid, believes the stupid thing completely and builds three more decisions on top of it.
 
@@ -14,7 +14,7 @@ I wanted a bounded problem: hard enough to demand invention, contained enough th
 
 ## Twenty-Six Circles
 
-<!-- DIAGRAM — missing figure: Citrus packing—a real-world example. Original asset: ../resources/image0138.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — a018. Original brief: DIAGRAM — missing figure: Citrus packing—a real-world example. Original asset: ../resources/image0138.png; see resources/art-direction/missing-figures.md. -->
 
 The problem is simple enough to explain to a child. Take 26 circles and put them inside a square with sides of length one. None may overlap, none may cross the boundary and the circles do not have to be the same size. We want to maximize the sum of their radii.
 
@@ -24,7 +24,7 @@ Unfortunately, the solution space is nasty. Every circle has a position and a ra
 
 For the experiments in this chapter, we had a strong reference score around 2.635 under the evaluator we were using—the value DeepMind’s AlphaEvolve reported in 2025, when it nudged the best-known packing for 26 circles up from 2.634.[1](appendix-references.md#ref-02-alphaevolve)
 
-<!-- DIAGRAM — missing figure: A strong reference packing for the 26-circle objective, scoring approximately 2.635 under our evaluator. Original asset: ../resources/image0139.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-reference. Original brief: DIAGRAM — missing figure: A strong reference packing for the 26-circle objective, scoring approximately 2.635 under our evaluator. Original asset: ../resources/image0139.png; see resources/art-direction/missing-figures.md. -->
 
 That makes the problem useful for studying autonomy, because searching is hard and judging is cheap. The evaluator does not care whether the agent has a persuasive explanation for why two circles ought to overlap slightly in the name of geometric inclusivity. It checks the constraints and returns a score.
 
@@ -36,7 +36,7 @@ The experiment gets interesting with a second question:
 
 For most of the history of algorithm design, the answer was us.
 
-<!-- DIAGRAM — missing figure: History of algorithm design. Original asset: ../resources/image0136.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-search-roles. Original brief: DIAGRAM — missing figure: History of algorithm design. Original asset: ../resources/image0136.png; see resources/art-direction/missing-figures.md. -->
 
 Humans invented explicit algorithms. When direct algorithms were not enough, we invented optimization procedures that searched over candidate solutions. Then we invented meta-heuristics that searched more broadly. Machine learning let systems learn useful structure from data. Now language models can write and modify the search procedure itself.
 
@@ -56,7 +56,7 @@ That is hill climbing:
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
-<!-- DIAGRAM — missing figure: Early mutations are often accepted, but as the packing tightens, valid improvements become increasingly rare and the search stalls. Original asset: ../resources/image0140.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-hill. Original brief: DIAGRAM — missing figure: Early mutations are often accepted, but as the packing tightens, valid improvements become increasingly rare and the search stalls. Original asset: ../resources/image0140.png; see resources/art-direction/missing-figures.md. -->
 
 In one simple run, the score climbed from around 1.33 to roughly 2.26: not terrible, and nowhere near 2.635.
 
@@ -82,11 +82,11 @@ That is usually nonsense because circle numbering is arbitrary. Two nearly ident
 
 So we used *bipartite matching crossover*, which pairs circles by their geometric role in the packing instead of by their position in an array. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
 
-<!-- DIAGRAM — missing figure: Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents. Original asset: ../resources/image0141.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-crossover. Original brief: DIAGRAM — missing figure: Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents. Original asset: ../resources/image0141.png; see resources/art-direction/missing-figures.md. -->
 
 Now we can evolve a population: mutate, repair, cross, select and repeat. In this experiment the score rose from around 2.08 to roughly 2.45, still below our reference.
 
-<!-- DIAGRAM — missing figure: Starting around 2.08, the evolutionary search reaches roughly 2.45 in this experiment—much better than the simple hill climber, but still below our reference. Original asset: ../resources/image0122.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-evolution. Original brief: DIAGRAM — missing figure: Starting around 2.08, the evolutionary search reaches roughly 2.45 in this experiment—much better than the simple hill climber, but still below our reference. Original asset: ../resources/image0122.png; see resources/art-direction/missing-figures.md. -->
 
 That is much stronger than hill climbing, and it makes the bottleneck clearer. Every time the search became substantially better, I had added something important: I decided we needed repair, I decided how crossover should respect geometry, and I chose the representation. The optimizer searched, but I was still inventing most of the useful moves.
 
@@ -98,7 +98,7 @@ MAP-Elites takes a different approach. Instead of ranking every candidate on one
 
 For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
-<!-- DIAGRAM — missing figure: MAP-Elites archive visualization. Original asset: ../resources/image0123.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-archive. Original brief: DIAGRAM — missing figure: MAP-Elites archive visualization. Original asset: ../resources/image0123.png; see resources/art-direction/missing-figures.md. -->
 
 This is quality-diversity search: alongside the current winner, it keeps qualitatively different directions alive long enough to find out whether any of them become interesting.
 
@@ -148,7 +148,7 @@ That is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve
 
 AlphaEvolve scales that idea up. In each generation it selects a promising program from its archive, often alongside other successful but different programs, shows the model the code and the scores of previous attempts, and applies the patch the model proposes. The program runs, the evaluator scores it, and the result goes back into the archive.
 
-<!-- DIAGRAM — missing figure: AlphaEvolve architecture. Original asset: ../resources/image0124.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-alphaevolve. Original brief: DIAGRAM — missing figure: AlphaEvolve architecture. Original asset: ../resources/image0124.png; see resources/art-direction/missing-figures.md. -->
 
 Two design choices matter. Small patches let the search change the part it thinks matters while preserving the rest of a program’s structure; full rewrites lose useful ideas as easily as bad ones. And the archive keeps several lineages alive, for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing, and a program that isn’t the best today may hold a component that becomes valuable after another idea appears.
 
@@ -204,7 +204,7 @@ I want to be careful with the word *discovered*. I had not seen that particular 
 
 Once that structural idea became strong enough, the nature of the work changed. The agent spent less time inventing new geometries and more time adjusting solver settings, tolerances, initialization details and all the boring machinery that suddenly matters when the last fraction of a percent becomes expensive.
 
-<!-- DIAGRAM — missing figure: Code evolution result: iterative optimization. Original asset: ../resources/image0125.png; see resources/art-direction/missing-figures.md. -->
+<!-- ART RESOLVED — ch2-result. Original brief: DIAGRAM — missing figure: Code evolution result: iterative optimization. Original asset: ../resources/image0125.png; see resources/art-direction/missing-figures.md. -->
 
 In our best run, the evaluator returned roughly 2.636, slightly above the 2.635 reference we had been using.
 

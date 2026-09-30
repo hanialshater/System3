@@ -7,6 +7,7 @@ from pathlib import Path
 import re,json,html,os,math,collections,argparse
 from manuscript import prepare, resolve_anchor, latex_break, ordered_paths, structural_layout, reference_entries, validate_references, REFERENCE_ANCHOR
 from print_quality import cover_path
+from technical_figures import TechnicalFigure, RECORDS as technical_records
 import fitz
 from pdf_immersion import soften_placement, fitted_rect
 from markdown_it import MarkdownIt
@@ -170,7 +171,7 @@ class Cover(Flowable):
  def draw(self):
   self.canv.saveState();self.canv.setFillColor(PAPER);self.canv.rect(-100,-100,800,1000,fill=1,stroke=0);self.canv.restoreState();covers.append(dict(source_page=self.n,page=self.canv.getPageNumber()))
 class Doc(BaseDocTemplate):
- def beforeDocument(self):placements.clear();covers.clear();bookmarks.clear();self.current='System 3'
+ def beforeDocument(self):technical_records.clear();placements.clear();covers.clear();bookmarks.clear();self.current='System 3'
  def afterFlowable(self,f):
   if hasattr(f,'key'):
    self.canv.bookmarkPage(f.key);self.notify('TOCEntry',(0,f.title,self.page,f.key));bookmarks.append((f.title,self.page,f.key));self.current=f.title
@@ -255,12 +256,12 @@ for ch,path,txt in sections:
    rows=[[Paragraph(c['markup'],S['cell']) for c in row] for row in b['rows']];nc=len(rows[0]);weights=[1]*nc
    if nc==3:weights=[.9,1.25,1.25]
    widths=[333*w/sum(weights) for w in weights]
-   t=Table(rows,colWidths=widths,repeatRows=1,hAlign='LEFT');t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e9eeed')),('LINEBELOW',(0,0),(-1,0),.6,BLUE),('LINEBELOW',(0,1),(-1,-1),.3,colors.HexColor('#c8c5b9')),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6)]));story.extend([Spacer(1,6),t,Spacer(1,12)])
+   t=Table(rows,colWidths=widths,repeatRows=1,hAlign='LEFT');t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e9eeed')),('LINEBELOW',(0,0),(-1,0),.6,BLUE),('LINEBELOW',(0,1),(-1,-1),.3,colors.HexColor('#c8c5b9')),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6)]));story.extend([Spacer(1,6),KeepTogether([t]) if t.wrap(333,558)[1]<330 else t,Spacer(1,12)])
   elif kind=='code':
    # Preserve logical code lines; wrap only long physical display lines.
    import textwrap
    code='\n'.join('\n'.join(textwrap.wrap(line,width=64,subsequent_indent='    ',replace_whitespace=False,drop_whitespace=False)) if len(line)>64 else line for line in b['raw'].splitlines())
-   code_style=ParagraphStyle('zen',parent=S['code'],fontSize=7.7,leading=9.3) if path.name=='appendix-zen-of-system-3.md' else S['code']
+   code_style=ParagraphStyle('zen',parent=S['code'],fontSize=7.7,leading=9.0) if path.name=='appendix-zen-of-system-3.md' else S['code']
    snippet=XPreformatted(safe(code),code_style)
    if len(code.splitlines())<20:
     if story and isinstance(story[-1],Paragraph):story[-1].keepWithNext=True
@@ -269,15 +270,20 @@ for ch,path,txt in sections:
   else:
    style=('reference' if kind=='list' else 'small') if path.name=='appendix-references.md' and kind in ('body','list') else kind
    p=makeparagraph(b,style)
+   if ch in (1,10) and kind in ('body','list','quote'):
+    p=Paragraph(b['markup'],ParagraphStyle(S[style].name,parent=S[style],spaceAfter=5.5 if ch==10 else 5),bulletText=b.get('bullet'))
    if path.name=='about-the-author.md' and kind=='body':p=Paragraph(b['markup'],ParagraphStyle('author',parent=S['body'],fontSize=11,leading=14,spaceAfter=6))
    if interlude:p=Paragraph(b['markup'],ParagraphStyle('interlude',parent=S['body'],alignment=1,leading=20))
    if divider:
     centered=kind=='h1' or path.name in ('alternative-ending.md','back-matter.md')
     p=Paragraph(b['markup'],ParagraphStyle('divider-'+kind,parent=S[style],alignment=1 if centered else 0))
    if idx==0 and not has_cover:p.key=key;p.title=title
+   if kind=='body' and idx==len(bs)-1 and len(norm(b['raw']))<70 and story and isinstance(story[-1],Paragraph):story[-1].keepWithNext=True
    story.append(p)
   for a in bind.get(idx,[]):
    if a['id'] not in SELECTED:continue
+   if a.get('kind')=='technical':
+    story.append(TechnicalFigure(a));continue
    if divider:
     story.append(Art(a,maxh=100));continue
    c=a['clip'];ar=(c[2]-c[0])*612/((c[3]-c[1])*792)
@@ -306,6 +312,9 @@ if notes:
 base=TMP/'typeset.pdf';doc=Doc(str(base),pagesize=(432,648),leftMargin=54,rightMargin=45,topMargin=48,bottomMargin=42,title='System 3 — Curated 6 × 9 Edition',author='Hani Al-Shater',pageCompression=1)
 frame=Frame(54,42,333,558,leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0,id='body');doc.addPageTemplates([PageTemplate(id='body',frames=[frame],onPage=decor),PageTemplate(id='interlude',frames=[Frame(54,42,333,558,leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0,id='interlude-frame')],onPage=plain_decor)])
 doc.multiBuild(story)
+for figure in technical_records:
+ for label in figure['labels']:expected.append(dict(chapter=0,kind='figure',raw=label))
+(TMP/'technical-placements.json').write_text(json.dumps(technical_records,indent=2))
 (TMP/'placements.json').write_text(json.dumps(placements,indent=2));(TMP/'cover-placements.json').write_text(json.dumps(covers,indent=2));(TMP/'resolved-art.json').write_text(json.dumps(mapping,indent=2));(TMP/'production-notes.json').write_text(json.dumps(exclusions,indent=2));(TMP/'expected.json').write_text(json.dumps(expected,indent=2))
 print('Typeset',doc.page,'pages;',len(placements),'illustrations;',len(notes),'notes',flush=True)
 # Composite artwork separately for PDF-viewer compatibility; body text remains native.
@@ -346,5 +355,5 @@ d.set_toc([[1,title,page] for title,page,key in bookmarks]);d.set_metadata({'tit
 b=d.tobytes(garbage=4,deflate=True)
 with OUT.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
 check=fitz.open(OUT);assert not check.is_repaired and len(check)==len(d)
-(TMP/'build-summary.json').write_text(json.dumps(dict(pages=len(d),size_inches=[6,9],body_font='Nimbus Roman',body_points=11.5,leading_points=15,original_art_regions=len(placements),edge_placements=sum(a.get('edge',False) for a in placements),bottom_placements=sum(a.get('bottom',False) for a in placements),style_version=IMMERSION['version'],footnotes=len(notes),bookmarks=[dict(title=t,page=p) for t,p,k in bookmarks],pdf_bytes=len(b),pending_art=pending_art,cover_warnings=cover_warnings,production_notes=exclusions,manuscript_files=[str(p.relative_to(REPO)) for _,p,_ in sections]),indent=2))
+(TMP/'build-summary.json').write_text(json.dumps(dict(pages=len(d),size_inches=[6,9],body_font='Nimbus Roman',body_points=11.5,leading_points=15,original_art_regions=len(placements),technical_figures=len(technical_records),edge_placements=sum(a.get('edge',False) for a in placements),bottom_placements=sum(a.get('bottom',False) for a in placements),style_version=IMMERSION['version'],footnotes=len(notes),bookmarks=[dict(title=t,page=p) for t,p,k in bookmarks],pdf_bytes=len(b),pending_art=pending_art,cover_warnings=cover_warnings,production_notes=exclusions,manuscript_files=[str(p.relative_to(REPO)) for _,p,_ in sections]),indent=2))
 print('Saved',OUT,len(b),flush=True)
