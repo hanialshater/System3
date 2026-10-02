@@ -136,9 +136,9 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "e36062bcde9d31237d17e5f553d23014335004a5d942339b033318dbe4570711",
+      "source_sha256": "a0e85903157bdcddf9dabbfc9d2c0e123c50e928a1aaa4eaddadf185718cfc1e",
       "brief": "prompts/notebooklm/chapter-07.md",
-      "brief_sha256": "845aa58c1990c3b3bfa839bbd095e3e2a22d24f1d376349ad7d575efa45ee0f0",
+      "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
         "Opening passage",
         "Nobody Has to Be Conscious",
@@ -148,7 +148,6 @@
         "Maybe the Reward Was the Problem",
         "The Learner Dreams, and the Dream Can Be Wrong",
         "The Learner Edits the School",
-        "Experiments on the Laboratory",
         "The Complexity Wall",
         "Before the Returns Arrive",
         "The Student Finds the Gradebook",

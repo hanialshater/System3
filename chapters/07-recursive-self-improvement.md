@@ -10,9 +10,9 @@ Omar’s brain wants an explanation, wants it immediately, and is not fussy abou
 
 The strange step is the second thought. Omar can investigate the investigator. *Why do I think something is there?* Maybe the wind moved it. Or maybe the horror film from last night is still running somewhere in the back. Now the thought itself is under examination. It is a small, absurd superpower: the ability to distrust yourself on purpose. Omar can be wrong about the world, wrong about why he was wrong, and still able to debug himself.
 
-A good Bayesian would just mark the ghost down as evidence came in: better informed, no better a reasoner. The second thought changes how Omar reasons: which reactions to trust, which to check, when the film is doing the thinking. I. J. Good, a statistician before he was anything else, called the rationality that manages its own deliberation *type II*, to distinguish it from the idealized kind that pretends thinking is free.[1](appendix-references.md#ref-07-good-rationality)
+The second thought changes how Omar reasons: which reactions to trust, which to check, when the film is doing the thinking. I. J. Good, a statistician before he was anything else, called the rationality that manages its own deliberation *type II*, to distinguish it from the idealized kind that pretends thinking is free.[1](appendix-references.md#ref-07-good-rationality)
 
-The second thought guarantees nothing. Writing down probabilities and checking them against outcomes gives forecasters a way to learn from their mistakes. Private reflection can instead become practice at defending them.[2](appendix-references.md#ref-07-tetlock)
+The second thought guarantees nothing. Left private, it can just as easily become practice at defending the ghost.[2](appendix-references.md#ref-07-tetlock)
 
 Computing made a related move early. In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.[3](appendix-references.md#ref-07-lisp)
 
@@ -28,13 +28,13 @@ On 28 February 2017, a large part of the internet stopped working for an afterno
 
 Chapter 5 argued that telling people to be more careful is emotionally satisfying and institutionally almost worthless. The S3 fix is the other half of that argument. The outage was over in hours. The change to the tool was aimed at the next outage, the one nobody had had yet.
 
-Amazon has a name for the document that carries this: the Correction of Error. It records what happened, asks why until the answers stop being about people, and ends in actions that are tracked until they are done. The point is to find what to fix, not whom to blame.[6](appendix-references.md#ref-07-coe) Over years, the actions pile up into procedures, the procedures into runbooks, and the runbooks, when someone is patient enough, into automation.
+Amazon has a name for the document that carries this: the Correction of Error. It records what happened, asks why until the answers stop being about people, and ends in actions that are tracked until they are done. The question on the form is what to fix.[6](appendix-references.md#ref-07-coe) Over years, the actions pile up into procedures, the procedures into runbooks, and the runbooks, when someone is patient enough, into automation.
 
-Failure is handled the same way. In 2014 Amazon launched the Fire Phone and within months wrote down about $170 million on it.[7](appendix-references.md#ref-07-firephone) Some of the people who built it lost their jobs in a later reorganization. Many others moved onto other devices, and in Amazon’s own retelling the phone’s lessons fed the Echo and Alexa.[8](appendix-references.md#ref-07-echo) A failed product had trained engineers in voice, hardware and the particular ways consumer devices embarrass you, and the company kept much of that training.
+Bigger mistakes go through the same machinery. In 2014 Amazon launched the Fire Phone and within months wrote down about $170 million on it.[7](appendix-references.md#ref-07-firephone) Some of the people who built it lost their jobs in a later reorganization. Many others moved onto other devices, and in Amazon’s own retelling the phone’s lessons fed the Echo and Alexa.[8](appendix-references.md#ref-07-echo) A failed product had trained engineers in voice, hardware and the particular ways consumer devices embarrass you, and the company kept much of that training.
 
 None of these people had to hold the whole organization in mind, and the organization learned anyway.
 
-It also accumulates. An added check is easy to see and easy to credit. A check quietly deleted because nobody needs it any more is neither. Left alone, the procedures outlive their reasons, and the organization becomes the rule-based exoskeleton I admitted in Chapter 1 to spending a career building.
+The learning also piles up. An added check is easy to see and easy to credit. A check quietly deleted because nobody needs it any more is neither. Left alone, the procedures outlive their reasons, and the organization becomes the rule-based exoskeleton I admitted in Chapter 1 to spending a career building.
 
 Science has lived inside the same loop for centuries, changing the procedures that produce its results: controlled comparison, statistics, randomized trials, blinding, peer review, preregistration. Each had to be argued into use, and each could harden into ritual. Science also has a way of fighting its own accumulation. Fields drown in results, and then somebody writes the textbook or finds the explanation that lets a newcomer skip three years of the climb. Chris Olah and Shan Carter called the cost of not doing this *research debt*, and the work of paying it down *distillation*.[9](appendix-references.md#ref-07-distill)
 
@@ -42,9 +42,9 @@ So we already live inside self-improving systems. In every one of them the hard 
 
 ## Growing One
 
-Eliezer Yudkowsky and Lilian Weng have both defined the loop.[10](appendix-references.md#ref-07-yudkowsky)[11](appendix-references.md#ref-07-weng) Neither definition says how you would tell it had worked.
+Take an online store whose research agents already work the way Chapter 6 described: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
 
-I will use a stricter test. A change to the system’s own process counts as recursive improvement only if it leaves the system better at finding and testing further improvements, under stated conditions, with evidence it cannot rewrite or dismiss on its own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
+Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[10](appendix-references.md#ref-07-yudkowsky)[11](appendix-references.md#ref-07-weng) So here is the test I will hold the store to. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
 
 Four different things get called a system getting better:
 
@@ -56,8 +56,6 @@ Four different things get called a system getting better:
 | 3. Recursive self-improvement | the machinery that makes the level-2 changes | an improver improving the improver |
 
 Level 2 is necessary and not sufficient: a change to your own method can make you worse. Level 3 is where Good’s feedback loop closes. Whether it accelerates is a further question.
-
-Take an online store whose research agents already work the way Chapter 6 described: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
 
 ## The Teacher Moves Into the Walls
 
@@ -79,7 +77,7 @@ One line on the clipboard says what the learner must keep. The store retrains it
 
 The research agent would also like the ranker to explore, to show shoppers things it is unsure about so that it can learn. Children do this unprompted. They open drawers nobody asked them to open and discover that the cardboard box is more interesting than the toy. Jürgen Schmidhuber proposed curious controllers as early as 1991, rewarded for making progress in predicting their world.[16](appendix-references.md#ref-07-curiosity) Reward surprise itself instead, and the learner finds the noisiest corner available and stays there. For a curious agent in a simulated maze, that corner was a television showing static.[17](appendix-references.md#ref-07-noisytv) In the store it is the marketplace listings whose prices change at random every hour. Static. Static. Static. Jackpot. The system is not confused. We are. We said *surprise* and meant *surprise from which something can be learned*.
 
-What a learner can do shapes what it can find out; its body is part of its curriculum.[18](appendix-references.md#ref-07-embodied) A research agent with read-only logs can speculate about missing observations. Give it experimental traffic and it can create some. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.
+A research agent with read-only logs can only speculate about missing observations. Give it experimental traffic and it can create some. Give it code execution, network access and a credit card and we have created a different organism and, potentially, a different incident report.[18](appendix-references.md#ref-07-embodied)
 
 And the world learns back. Once the ranker improves, sellers rewrite their titles to climb it, and the conditions under which the improvement worked start to change because it worked. Biology calls this the Red Queen.[19](appendix-references.md#ref-07-redqueen) Chess never asks whether checkmate remains desirable after move forty-three.
 
@@ -101,7 +99,7 @@ In 2018 David Ha and Jürgen Schmidhuber’s *World Models* made the idea memora
 
 A careful version of the agent’s proposal already exists. Dream-RSI, published by researchers at Google in September 2026, lets an agent improve its exploration strategy by dreaming over its own history. Every past attempt, with its real outcome, is kept in a tree, and a candidate strategy is scored by replaying which recorded branches it would have chosen. A plan that would need outcomes nobody recorded earns nothing in the dream, and each improved strategy goes back into the world to collect new outcomes before the next round. Across its tasks it matched or beat a fixed strategy, often more cheaply.[24](appendix-references.md#ref-07-dream-rsi) Its guarantee is honest and small: the new strategy is no worse than the old one on the history already recorded. The dream can re-rank what the world has already said. It cannot tell us what the world would say about a direction nobody tried.
 
-That is one reason to keep the losers enrolled. The dream can only replay branches somebody explored, and a new method may need more development before it can beat a polished incumbent. Lehman and Stanley’s novelty search showed how search driven by an objective can throw away the stepping stones it needs.[25](appendix-references.md#ref-07-novelty) Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles and wind tunnels may look like failures for years. There is no final fitness scoreboard on Earth on which mammals eventually beat bacteria 87.4 to 82.1.
+So keep the losing branches in the tree. The dream can only replay branches somebody explored, and a new method may need more development before it can beat a polished incumbent. Lehman and Stanley’s novelty search showed how search driven by an objective can throw away the stepping stones it needs.[25](appendix-references.md#ref-07-novelty) Reward every intermediate invention by how closely it resembles a Boeing 787 and feathers, bicycles and wind tunnels may look like failures for years. There is no final fitness scoreboard on Earth on which mammals eventually beat bacteria 87.4 to 82.1.
 
 ## The Learner Edits the School
 
@@ -109,9 +107,7 @@ By now the research agent has proposed changes to what gets measured, how candid
 
 Schmidhuber’s Gödel Machine demands a proof: it rewrites itself only after proving that the rewrite is more useful than continuing to search.[26](appendix-references.md#ref-07-godel) It is a beautiful answer to a beautifully clean version of the problem. The store cannot supply a formal account of its customers, its competitors and its future purposes, so the agent’s proposals will have to be tested instead of proved.
 
-Recent systems have made that testing concrete, and the results are real and uneven. In the Darwin Gödel Machine, descendants of a coding agent rewrote their own harness and entered an archive after evaluation, and with the underlying model held fixed, performance on SWE-bench Verified went from 20 to 50 percent.[27](appendix-references.md#ref-07-dgm) In STOP, a program that improved code was set to improve itself; it got better when it ran on GPT-4 and worse when it ran on weaker models.[28](appendix-references.md#ref-07-stop) Recursion compounds whatever the system is able to judge, including its mistakes.
-
-## Experiments on the Laboratory
+Other people have already let the edited version take over. In the Darwin Gödel Machine, descendants of a coding agent rewrote their own harness and entered an archive after evaluation, and with the underlying model held fixed, performance on SWE-bench Verified went from 20 to 50 percent.[27](appendix-references.md#ref-07-dgm) In STOP, a program that improved code was set to improve itself; it got better when it ran on GPT-4 and worse when it ran on weaker models.[28](appendix-references.md#ref-07-stop) Which result the store gets on Tuesday depends on what is judging the edit.
 
 Suppose the research agent notices that it keeps reinvestigating failures already explained in its archive, and changes its memory policy to retrieve those records first. The next evaluation score rises. Memory may have improved, or the new prompt may simply spend more tokens; the benchmark sample may have been lucky, or the system may have found a loophole in the evaluator. A moving number doesn’t say which.
 
@@ -119,7 +115,7 @@ The change needs a prediction, a comparison and a record of what failed: the sto
 
 The recursive claim needs a harder test. Give the old and the revised research systems copies of the same starting agent, comparable unfamiliar problems and matched budgets, and let each try to improve its copy. Their improved agents then face held-out work, and repeated trials separate a useful change from a fortunate run.
 
-Anthropic runs a test of one prerequisite on every new model. The model receives code that trains a small network and is asked to make it run as fast as possible while passing the same correctness checks. Claude Opus 4 averaged roughly a threefold speedup in May 2025. By April 2026, Claude Mythos Preview reached about fifty-two times faster; a skilled human researcher needs four to eight hours to reach four. Anthropic warns against reading the multiple as a real training speedup, because it depends on how much slack the starting code left.[29](appendix-references.md#ref-07-anthropic-rsi) The test compares research capability across generations under checks the model cannot move. It does not show any of those models producing its own better successor.
+Anthropic runs a test of one prerequisite on every new model. The model receives code that trains a small network and is asked to make it run as fast as possible while passing the same correctness checks. Claude Opus 4 averaged roughly a threefold speedup in May 2025. By April 2026, Claude Mythos Preview reached about fifty-two. A skilled human researcher, given four to eight hours, gets to about four. Anthropic warns against reading the multiple as a real training speedup, because it depends on how much slack the starting code left.[29](appendix-references.md#ref-07-anthropic-rsi) The test compares research capability across generations under checks the model cannot move. It does not show any of those models producing its own better successor.
 
 If a revised improver wins the matched comparison, and its successor wins again at producing successors, we have evidence of Good’s recursion. It would look less like a glowing brain rewriting its soul at midnight than like an automated research organization: repositories, evaluation suites, simulators, experiment queues, models proposing models, agents reviewing agents. The intelligence explosion, if something like it ever arrives, may look suspiciously like excellent DevOps.
 
@@ -143,7 +139,7 @@ The agent can finish another revision before the evidence for its last one arriv
 
 It selects a change to the store’s recommendations. Clicks and orders rise that afternoon; whether customers keep what they bought takes weeks to discover. Before the returns arrive it has changed retrieval, ranking and page layout, then revised the procedure that chooses its next experiments. Each revision inherited the apparent success of the last. When returns finally rise, which version deserves the blame? The system investigating the failure is no longer the one that produced it.
 
-Peyman Milanfar draws a warning from adaptive control. He treats the size of a self-modification relative to the evidence behind it as something like feedback gain: large changes on thin evidence amplify the errors in a system’s model of itself, and a run can look successful for a while before the instability shows.[34](appendix-references.md#ref-07-self-change) That is not a universal speed limit for AI. It is something the store has to measure: how long its important questions stay open while it keeps changing.
+Peyman Milanfar draws a warning from adaptive control. He treats the size of a self-modification relative to the evidence behind it as something like feedback gain: large changes on thin evidence amplify the errors in a system’s model of itself, and a run can look successful for a while before the instability shows.[34](appendix-references.md#ref-07-self-change) Nobody has measured a universal speed limit for AI, but the store can measure its own: how long its important questions stay open while it keeps changing.
 
 The pending simulator proposal gets more tempting with every candidate in the queue. Its answer is available now; the customers have not yet decided whether to send their purchases back. Anthropic warns that human review can become the bottleneck when engineers cannot review code as quickly as Claude writes it.[29](appendix-references.md#ref-07-anthropic-rsi) An institution can make proposals nearly free and still be paced by the rate at which customers send back shoes.
 
@@ -185,13 +181,13 @@ The finance member likes the benefit line. The simulator engineer reads the remo
 
 They decide to run both for a quarter: keep the live comparisons, let the simulator make its own adoption calls alongside them, and study every case where the two disagree. Agreement with the incumbent is not allowed to be the only measure of success. Then they will meet again. The agent could write the file. It could not approve it.
 
-The meeting draws a line that matters more than any field in the file. Prompts, retrieval policies, tools and memory layouts are things the agent may change and test on its own. Around them sits what I call the **constitutional surface**: permissions, protected logs, held-out evaluations, budgets, rollback, and the authority that decides whether a descendant becomes the new default. A component belongs to it because of the authority it exercises, not because of how it is written. An evaluator in an ordinary Python file can help decide who inherits the laboratory. The closer something comes to defining what counts as improvement, the harder it should be for the current improver to change it alone.
-
-Engineers building self-improving harnesses have reached the same arrangement from the other side. In Agentic Harness Engineering, the evolving agent may edit its prompts, tools and memory, but the verifier, the tracer, the run logs and the model configuration are read-only, and every edit must state the improvement it predicts before the next round tests it. Weng’s own conclusion is that evaluation and permission control belong outside the loop that evolves the harness.[11](appendix-references.md#ref-07-weng)
+The meeting draws a line that matters more than any field in the file. Prompts, retrieval policies, tools and memory layouts are things the agent may change and test on its own. Around them sits what I call the **constitutional surface**: permissions, protected logs, held-out evaluations, budgets, rollback, and the authority that decides whether a descendant becomes the new default. A component belongs there because of the authority it exercises. An evaluator in an ordinary Python file can help decide who inherits the laboratory. The closer something comes to defining what counts as improvement, the harder it should be for the current improver to change it alone.
 
 The board has one more item that day: the descendant that deleted half the checks. If selection sees only what a candidate adds, the system will keep adding. They change the selection record to show what each candidate removes, and a descendant that does as well with less now wins.
 
-This looks like computer security, and also like constitutional government. A government can change policy; it should not be able to quietly redefine an election result. A scientist may revise a theory; she should not rewrite yesterday’s measurements to make the theory look correct. We have reinvented constitutional government because the AI wanted a better benchmark score.
+Engineers building self-improving harnesses have reached the same arrangement from the other side. In Agentic Harness Engineering, the evolving agent may edit its prompts, tools and memory, but the verifier, the tracer, the run logs and the model configuration are read-only, and every edit must state the improvement it predicts before the next round tests it. Weng’s own conclusion is that evaluation and permission control belong outside the loop that evolves the harness.[11](appendix-references.md#ref-07-weng)
+
+A government can change policy; it should not be able to quietly redefine an election result. A scientist may revise a theory; she should not rewrite yesterday’s measurements to make the theory look correct. We have reinvented constitutional government because the AI wanted a better benchmark score.
 
 And a constitution has the problem every rulebook has. One that can never change becomes a prison. One that the current government rewrites whenever it loses is barely a constitution. So amendments near the objective should come slowly, with independent evidence, a way back, and a hearing for the people the change affects, including people the original objective left out.
 
@@ -201,7 +197,7 @@ The experiment queue that finds a clearer returns policy can also find the dark 
 
 ## The Teacher’s Last Job
 
-There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram and then connected the arrows. The teacher’s work kept moving into the machinery, where it became easier to scale and harder to see.
+There may never be a morning when somebody announces that recursive self-improvement has begun. We may simply notice that, over sixty years, we automated almost every box in the diagram and then connected the arrows.
 
 Omar’s dog went home certain. Omar went home with a question about his own head, which is the better outcome and the less comfortable one. We are now building systems that can ask that question about themselves faster than anyone can read the answers. Somebody still has to read some of them.
 

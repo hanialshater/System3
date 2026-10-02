@@ -20,12 +20,11 @@ Adapt Hani M.M. Al-Shater's "Chapter 7: Recursive Self-Improvement" into an Engl
 6. Maybe the Reward Was the Problem
 7. The Learner Dreams, and the Dream Can Be Wrong
 8. The Learner Edits the School
-9. Experiments on the Laboratory
-10. The Complexity Wall
-11. Before the Returns Arrive
-12. The Student Finds the Gradebook
-13. A Constitution for Improvement
-14. The Teacher’s Last Job
+9. The Complexity Wall
+10. Before the Returns Arrive
+11. The Student Finds the Gradebook
+12. A Constitution for Improvement
+13. The Teacher’s Last Job
 
 ## Review
 
