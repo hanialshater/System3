@@ -14,20 +14,18 @@ Adapt Hani M.M. Al-Shater's "Chapter 7: Recursive Self-Improvement" into an Engl
 
 1. Opening passage
 2. Nobody Has to Be Conscious
-3. Science Changes Its Methods
-4. Growing One
-5. The Teacher Moves Into the Walls
-6. Learning to Learn
-7. The Learner Chooses What to Learn
-8. Maybe the Reward Was the Problem
-9. The Learner Dreams, and the Dream Can Be Wrong
-10. The Learner Edits the School
-11. Experiments on the Laboratory
-12. The Complexity Wall
-13. Before the Returns Arrive
-14. The Student Finds the Gradebook
-15. A Constitution for Improvement
-16. The Teacher’s Last Job
+3. Growing One
+4. The Teacher Moves Into the Walls
+5. Learning to Learn
+6. Maybe the Reward Was the Problem
+7. The Learner Dreams, and the Dream Can Be Wrong
+8. The Learner Edits the School
+9. Experiments on the Laboratory
+10. The Complexity Wall
+11. Before the Returns Arrive
+12. The Student Finds the Gradebook
+13. A Constitution for Improvement
+14. The Teacher’s Last Job
 
 ## Review
 
