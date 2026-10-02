@@ -34,75 +34,45 @@ That is what I mean by **fluent autonomy**: the structure needed to do the work 
 
 ## The Interface Moves Up
 
-Increasingly the interface is an outcome described incompletely in ordinary language. All the machinery we have built has to become usable from there.
+Look at what I typed. It was not a specification. It named a feeling about a chapter and left the rest to the system, the way I would talk to a good editor. Most of what I want from these systems arrives like that. This argument feels wrong. I think this customer is stuck. Find out why this experiment moved. Each one opens a small investigation, and nobody can say in advance what shape it will take.
 
-That incompleteness matters. When I call a function, I am supposed to know what function I want. When I talk to another capable human, I often do not. I can say:
+Ordinary software needs the shape in advance. Someone decides the fields, the buttons and the states a workflow may enter, and the user’s intention has to fit through them. That predictability is valuable. It is also why so many forms ask for things nobody in the company can still explain.
 
-> This argument feels wrong.
->
-> Find somewhere good for dinner.
->
-> I think this customer is stuck.
->
-> We need to understand why this experiment moved.
->
-> I am considering changing jobs.
-
-None of these is a specification. Each opens a small investigation.
-
-Traditional software handles this badly because software usually requires the designer to anticipate the structure of the intention in advance. Somebody decides which fields exist, which buttons appear, which states the workflow may enter and which exceptions deserve their own branch. That predictability is useful. It is also why every mature enterprise product eventually contains a form whose existence can be explained only by an archaeological expedition through three reorganizations.
-
-A fluent autonomous system can construct part of the structure after seeing the intention. That leaves it with a choice ordinary software usually makes in advance: what interface would help here?
-
-Menus, spreadsheets, dashboards, canvases, forms and direct manipulation are not historical accidents waiting for language models to abolish them; often they are excellent interfaces.
-
-Sometimes I want Excel because seeing the table is faster than discussing it. Sometimes I want a dashboard because twenty numbers at once tell me more than twenty conversational turns. Sometimes I want to drag the object myself because my hand knows what I mean before I have words for it.
-
-The application becomes a primitive available to the agent and to me. If a spreadsheet is the right temporary representation, make one. If direct manipulation is better, show me the canvas. If the task is routine, use the tool and return the result. If the problem is underspecified, conversation may remain the best interface because conversation is what humans already use when neither side knows in advance exactly where the interaction is going.
+A fluent system can build some of the shape after it sees the intention, including the interface. For my editing request, the best answer may not be a chat reply at all. It may be the old paragraph and the new one side by side, with the correction that justified each change in the margin, so I can accept three and refuse one in thirty seconds. On another day the right interface is a spreadsheet, because a table is faster to read than a conversation about a table, or a canvas, because my hand knows what I mean before I can say it. Conversation stays the right choice when neither of us knows yet where the work is going. Menus and dashboards are not going away. They become things the agent can reach for, the way I do.
 
 ## Bureaucracy on the Fly
 
-There is a phrase that sounds like an insult until you need it: *bureaucracy*.
+The opening of this chapter described a small bureaucracy: an evaluator with a written brief, readers kept ignorant of the manuscript’s history, protected lines, a pass allowed only to delete. I assembled it by hand, because a single model asked to make the book better kept sanding the voice off it.
 
-Bureaucracy, in its useful form, is accumulated coordination. Roles, review boundaries, logs, standards, escalation paths and procedures exist because some kinds of work become unreliable when everybody improvises everything at once.
+Bureaucracy sounds like an insult until you need it. In its useful form it is accumulated coordination: roles, review boundaries, logs and escalation paths that exist because some work goes wrong when everybody improvises. Its usual failure is that it never comes down. A six-person review designed for a dangerous database migration ends up guarding a typo fix on a help page, because nobody told the workflow the risk had changed.
 
-The problem is that fixed bureaucracy calcifies. A six-person review process designed for a dangerous database migration eventually gets applied to changing a sentence in a help page because nobody remembered to tell the workflow that reality had changed.
+Agents make a different arrangement possible, which I call **bureaucracy on the fly**: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A payment to a new account needs almost no creativity and a great deal of permission checking. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion, Chapter 5’s second witness again. This is Deep Mode from Chapter 3, grown from choosing the next move to choosing the next organization.
 
-Agent systems give us the possibility of **bureaucracy on the fly**: an organization assembled for the problem rather than inherited wholesale from the previous one.
-
-A factual question may need one agent and a source. A difficult scientific claim may need competing hypotheses, a literature search, code, an experiment and an evaluator insulated from the researcher who wants the result to work. A writing edit may need none of that: perhaps the original paragraph, a memory of previous corrections and enough restraint to leave the sentence alone. A high-impact financial action may need very little creativity and quite a lot of permission checking. A genuinely novel research problem may need several agents pursuing different approaches without sharing enough context to collapse into one correlated opinion.
-
-The organization should be as large as the uncertainty deserves and no larger. This is where the society, the patterns and the oversight machinery meet: patterns tell the system which institutional shapes have worked before, and System 3 keeps those patterns answerable to evidence. The system can compose a temporary organization, run it, observe whether it helped, preserve what deserves to survive and dismantle the rest.
-
-What used to be a workflow diagram becomes part of runtime. The human gives the problem, and the system compiles an institution.
+The organization should be as large as the uncertainty and no larger. The patterns from Chapter 6 tell the system which shapes have worked before, and System 3 keeps those patterns answerable to whether they helped this time. What used to be a workflow diagram becomes something the system compiles at runtime, runs and throws away.
 
 ## Selective Friction
 
-A fluent agent still asks questions. It just does not ask permission for every action, which would make it an approval workflow that has learned to talk. The useful question is where friction belongs.
+Rename two hundred temporary files according to a convention we have used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
 
-Rename two hundred temporary files according to a convention used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
+Editing sits in between, which is where it gets interesting. I do not want to approve every comma. I do want to be asked before a joke is cut, because only I know which jokes are holding up an argument. Chapter 9 added another reason to slow down: sometimes the friction is how I learn, and a system that removes it removes the learning too.
 
-The human’s own learning adds another reason to slow down. Sometimes friction is not about safety. Sometimes friction is the point of the interaction. If I ask the system to teach me statistics, instantly solving every exercise is substitution wearing a tutor badge. If I ask for help deciding between two life choices, collapsing the uncertainty into one confident recommendation may remove exactly the thinking I needed to do. If I want a routine analysis completed, making me rediscover every intermediate step is wasted attention.
-
-So the system has to infer not only *what outcome I want*, but *what role I want to retain in producing it*. Human attention is scarce, but the objective is not to minimize it. Spend it where it changes the result, where the action is hard to reverse, where values conflict, where the evidence is weak, where a new failure mode appears—or where the human is trying to become more capable rather than merely get the thing done.
+So the system has to read two things from a small request: the outcome I want, and how much of producing it I want to keep. My attention is scarce, and the goal is to spend it well, which is different from spending as little of it as possible. It belongs on actions that cannot be undone, on values that conflict, on weak evidence, on failures nobody has seen before, and on whatever I am trying to get better at.
 
 ## Invisible by Default, Legible on Demand
 
-There is another bad version of fluency. Everything works through one beautiful conversational box. The system performs research, edits files, transfers money, changes production settings and updates its own memory. The interface stays calm and minimalist throughout.
-
-Then something goes wrong. You ask why, and the system says:
+The bad version of fluency is one calm conversational box that researches, edits files, moves money and rewrites its own memory, and when something goes wrong, tells you:
 
 > I made the best decision based on available context.
 
-This is opacity with good typography.
+That is opacity with good typography.
 
-The architecture underneath the interface has to leave traces. Which evidence mattered? Which pattern was retrieved? What alternatives were considered? Which evaluator rejected the other approach? What changed from the previous version? Which action is reversible? What uncertainty was hidden because it did not matter, and what uncertainty should have reached the human but did not?
+When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains, and the architecture under a fluent interface has to keep them: which evidence mattered, which pattern was retrieved, which alternative an evaluator rejected, which action can still be undone.
 
-Those are trust chains. A compiler hides registers from me most of the time, but I can still inspect the generated assembly when the abstraction leaks. A database hides pages and indexes until performance becomes strange. An autonomous system needs an equivalent way back into the work. Most of the time I should be able to speak at the level of intention. When something becomes uncertain, consequential or surprising, the lower layers should become visible again.
+A compiler hides registers until I need to read the assembly. A database hides its pages until a query gets strangely slow. An autonomous system needs the same way back into the work, quiet while things go as expected and open all the way down when something is uncertain, consequential or surprising.
 
-The request can remain simple:
+The request can stay simple:
 
-> Here is what I am trying to accomplish. Help me get there without losing contact with reality—or with me.
+> Here is what I am trying to accomplish. Help me get there without losing contact with reality, or with me.
 
 In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
 
@@ -145,8 +115,6 @@ Some of that structure may move inside the model, and then Chapter 8 happens aga
 **Whoever owns the institution owns the answers.** Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible. Chapter 6 kept the funding decision next to the unfunded study, so that unfunded could not quietly become disproved. It cannot make ownership legitimate. That is the objection I can answer least, and Chapter 12 is where I try.
 
 None of this shows that the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
-
-## The Store
 
 An editing experiment has one advantage: I am there to say the result is wrong. A customer can simply leave.
 

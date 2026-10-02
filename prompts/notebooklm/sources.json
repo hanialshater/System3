@@ -195,9 +195,9 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "d8f8504a5a169cb5df8bfc240fd212744a3dfcc21213ea3cb70326dd6e9057df",
+      "source_sha256": "698df5e482157ba633e460a99f6298464ff104ffa9f4a8e1012ce50904ca52c8",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "810ad659d11acc2f0e3cf6aed73416a3c4bc631c674e962f830059b118421448",
+      "brief_sha256": "e42497eb34c5d281dc79343ce98c1e06ef1bfef60f3b5195afdf51ff417b2a41",
       "sections": [
         "Opening passage",
         "What the Corrections Had to Teach",
@@ -206,8 +206,7 @@
         "Selective Friction",
         "Invisible by Default, Legible on Demand",
         "The Second Coffee Test",
-        "Five Ways This Could Be Wrong",
-        "The Store"
+        "Five Ways This Could Be Wrong"
       ]
     },
     {
