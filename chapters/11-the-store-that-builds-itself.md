@@ -62,7 +62,7 @@ Today, when people hear “recommendation,” they often picture a ranked list o
 
 But if the problem is comparison friction, a ranked list may be the wrong species of answer. The useful experience could be a comparison between the two products the customer is actually considering. If the problem is size anxiety, the useful thing may be evidence about fit. If the customer cannot imagine an outfit, it may be a generated collage. If she has only a vague mission, perhaps a product finder is better. If she knows exactly what she wants but the catalog is overwhelming, maybe the right action is a guided filter.
 
-I started calling these reusable units recommendation experiences. The name matters less than the abstraction. Each one is a reusable capability, larger than a model, that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
+I started calling these reusable units **recommendation experiences**. The name matters less than the abstraction. Each one is a reusable capability, larger than a model, that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
 
 A library of two hundred overlapping experiences would be a new kind of legacy system with better animation.
 
@@ -186,7 +186,7 @@ The same rule applies to observational analysis. Customers with comparison frict
 
 Eventually the design forced me to name the thing the composer is supposed to optimize.
 
-I gave it a deliberately bland name, the value of the surface. This is where the prototype becomes philosophical against its will.
+I used the deliberately bland term **Surface Value**. This is where the prototype becomes philosophical against its will.
 
 If that value is module CTR, we have not solved the page problem. If it is total clicks, a page full of shiny modules may win while the customer gets nowhere. If it is immediate purchase probability, experiences that build confidence or improve a longer mission may be undervalued. If it is revenue, expensive products get interesting very quickly. If it is margin, the store’s objective can start eating the customer’s. If it is long-term value, we have gained a beautiful phrase and several years of causal-inference work.
 

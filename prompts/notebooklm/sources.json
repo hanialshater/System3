@@ -72,7 +72,7 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "2ef665d4fcf9ed3c643c781c28f71a70c0e084af56829c011c68b148e1ad281c",
+      "source_sha256": "80e49dc774f3019b7b6da69183e2aa67a7b3e76abc11f55c5895c2c780186a60",
       "brief": "prompts/notebooklm/chapter-04.md",
       "brief_sha256": "d78cfa0a54a7bd22f945bbd921eb1d82eed5f93d850b737c8e0f54d313cec775",
       "sections": [
@@ -192,9 +192,9 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "51d46e75e3dcce17c52a12c5c60e028be25348224e2211a59485019af075a7ef",
+      "source_sha256": "f56025cbb2b9b2a550e70467957b485e97fa98ac8aaf9ab58f25ddbc5fa2e26a",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "b372952eef185a16ae636fe172c1c85cb5a44f8442a7cd58f617181d7540b0bf",
+      "brief_sha256": "304de6a986786eba13ede76f8368648a343fe68ef8c6dda695a6b465bc2ef2c5",
       "sections": [
         "Opening passage",
         "What the Corrections Had to Teach",
@@ -203,12 +203,12 @@
         "Selective Friction",
         "Invisible by Default, Legible on Demand",
         "The Second Coffee Test",
-        "Where I Would Push"
+        "Where This Could Be Wrong"
       ]
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "537067f1ddafb6d52717f3ad97f2f109817a77eb8c062265081a33e6f4fe81df",
+      "source_sha256": "9cca3129926fcb9cd2ae50c286dea6e6fe35a6fa84078cd23b41474fc30c97b3",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "7ce63d80be8426d0379487b075039b7a54714500da3ab6b34c23d23f16a6a186",
       "sections": [

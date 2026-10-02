@@ -19,7 +19,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 10: Fluent Autonomy" into an English video.
 5. Selective Friction
 6. Invisible by Default, Legible on Demand
 7. The Second Coffee Test
-8. Where I Would Push
+8. Where This Could Be Wrong
 
 ## Review
 

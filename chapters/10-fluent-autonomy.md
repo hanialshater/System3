@@ -84,7 +84,7 @@ And the test can be passed too well. A system that never makes me repeat a corre
 
 So the test needs a second half. Now and then the system should bring back something I refused, with a reason, and now and then I should change my mind. If that never happens, either my taste is finished or the system has stopped trying.
 
-## Where I Would Push
+## Where This Could Be Wrong
 
 The second coffee test asks the system to bring back what I refused, with a reason. If somebody else had claimed that building autonomous AI keeps rediscovering science, this is where I would push.
 

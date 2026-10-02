@@ -128,7 +128,9 @@ Kahneman’s *Thinking, Fast and Slow* popularized the distinction between Syste
 
 For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
 
-But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks, though not always by touch: a formal proof never needs to touch a cow.
+But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks.
+
+A cruder version is easier to remember: the Gut, the Head and the Hand. The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it. Peer review has no hand, provenance has no fingers and a formal proof never needs to touch a cow, so take the mnemonic loosely.
 
 System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back.
 
