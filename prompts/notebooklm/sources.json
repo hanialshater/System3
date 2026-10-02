@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "ad4cc2a03a3205462e6980d9391d578990a2d2954e13900f973f980966f1d434",
+  "references_sha256": "5a10d5d0c87239c7b43868ba2d9c596b7d97eecc7d9302da94626158e36ea819",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "951e0425a004e7a22d87cffa96c07d21eb9ff2b55ccdca704dcfb5e040b438cd",
+      "source_sha256": "4492b82018a13f8a9f5fb6dea5d23475c532c3739d37ec5c278647c900f87502",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -192,7 +192,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "01d8f07f7a5466dbce9308748fe3a4d83de8088e285a2f1eb52f3db157d9a8d6",
+      "source_sha256": "86c1bb9408eb85fec3c3c52cb0a6396f9216bee12c72583828dbb1b80cbd6faa",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "e42497eb34c5d281dc79343ce98c1e06ef1bfef60f3b5195afdf51ff417b2a41",
       "sections": [

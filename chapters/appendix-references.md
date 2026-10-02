@@ -448,25 +448,21 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 13. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
 
-14. <a id="ref-09-l4-scaffolding"></a>David Wood, Jerome S. Bruner and Gail Ross, “The role of tutoring in problem solving,” *Journal of Child Psychology and Psychiatry* 17 (1976), 89–100. <https://doi.org/10.1111/j.1469-7610.1976.tb00381.x>.
+14. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
 
-15. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
+15. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-16. <a id="ref-09-l4-kestin"></a>Gregory Kestin et al., “AI tutoring outperforms in-class active learning,” *Scientific Reports* 15, 17458 (2025). <https://www.nature.com/articles/s41598-025-97652-6>.
+16. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
-17. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
+17. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
 
-18. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
+18. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-19. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
+19. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
 
-20. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
+20. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
 
-21. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
-
-22. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
-
-23. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+21. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 10 — Fluent Autonomy
 

@@ -10,21 +10,21 @@ That is all. I do not specify a workflow. I do not say which previous chapters t
 
 I certainly do not draw a graph with boxes labeled `RESEARCHER`, `CRITIC`, `VOICE CHECKER`, `FACT CHECKER`, `ORCHESTRATOR` and `HUMAN APPROVAL`. I have done enough architecture diagrams for one lifetime.
 
-The first time I gave an agent an instruction like that, early in the writing of this book, what came back was worse. The agent did what the words literally asked. It removed the writing that looked like a machine had written it, which turned out to mean every wandering sentence, every joke that took a paragraph to arrive, and every claim I had made without apologizing for it in the next line. The chapter came back cleaner and dead. That was not the agent’s fault. The sentence I had given it was evidence about what I wanted, not a specification of it, and the agent had nothing around it that could turn the one into the other: my words, a general idea of good prose, and no memory of the corrections I had already made.
+The first time I gave an agent an instruction like that, early in the writing of this book, what came back was worse. The agent did what the words literally asked. It removed the writing that looked like a machine had written it, which turned out to mean every wandering sentence, every joke that took a paragraph to arrive, and every claim I had made without apologizing for it in the next line. The chapter came back cleaner and dead. That was not the agent’s fault. It had my one sentence, a general idea of good prose, and no memory of a single correction I had already made.
 
 ## What the Corrections Had to Teach
 
-Later attempts had something the first one lacked: an accumulated record of corrections. The editing history shows what that made possible, and how much work I was still doing.
+By the later drafts I had built a small institution around that one sentence.
 
-There was an evaluator with a written brief: read both versions in full, protect the wandering and the jokes that carry argument, quote the exact passage that feels synthetic and say why, and refuse to reward a revision merely because it is cleaner. Some model readers were deliberately kept ignorant of the manuscript’s history, since remembering the last ten edits can give a critic reasons to approve the eleventh that have nothing to do with the prose. There were protected lines. One pass was permitted only to delete and fold, because the failure it was fixing was made of additions.
+One model read both versions of a chapter in full, under a written brief: protect the wandering, keep any joke that carries an argument, quote the exact passage that feels synthetic and say why, and never reward a revision just because it is cleaner. Other readers were kept ignorant of the manuscript’s history on purpose, because a critic who remembers the last ten edits has reasons to approve the eleventh that have nothing to do with the prose. Some lines were protected. One pass was allowed only to delete and fold, because the failure it was fixing was made of additions.
 
-The evaluations recorded places where the writing had stopped sounding like a person, each with a reason, and changes I refused. At one stage they wanted the schema table in the chapter on patterns gone. I kept it because the chapter needed a concrete artifact; it later became the filled-in pattern the reader has now seen. They wanted a nine-clause sentence dismantled; it stayed. They caught, twice, that connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
+The readers were often right, and I refused them anyway when they were not. They wanted the schema table in Chapter 6 gone; I kept it because that chapter needed one concrete artifact, and it grew into the filled-in pattern file. They wanted a nine-clause sentence dismantled; it stayed. Twice they caught that the connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-This was still work. I was refusing edits, correcting the process and restoring things it had removed. The brief and the separate readings gave those interventions something to build on; they had not made my labor disappear. The history at the start of Chapter 3 still got cut after the reason for keeping it had been recorded. I had to bring it back.
+None of it ran by itself. I was refusing edits, correcting the process and restoring what it had removed. The history at the start of Chapter 3 got cut after the reason for keeping it had been written down, and I had to put it back by hand.
 
 The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
 
-What I want is for that record to change what happens when I make the next small request. The system might retrieve the corrections that survived and compare the chapter with passages I kept. It might decide that a disputed claim needs research, while a joke needs to be left alone. A second model could challenge an argument where disagreement is likely to add information. It could also waste an afternoon producing a committee for ceremonial reasons; the arrangement itself has to be judged.
+What I want is for that record to change what happens when I make the next small request. The system might retrieve the corrections that survived and compare the chapter with passages I kept. It might decide that a disputed claim needs research and that a particular paragraph should be left alone. A second model could challenge an argument where disagreement is likely to add information. It could also waste an afternoon producing a committee for ceremonial reasons; the arrangement itself has to be judged.
 
 After all that, perhaps the system changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:
 
@@ -46,15 +46,15 @@ Bureaucracy sounds like an insult until you need it. In its useful form it is ac
 
 Agents make a different arrangement possible, which I call **bureaucracy on the fly**: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A payment to a new account needs almost no creativity and a great deal of permission checking. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion. This is Deep Mode grown up, choosing the next organization as well as the next move.
 
-My editing bureaucracy was the right size for a book and would have been absurd for a typo. The skill is matching the organization to the uncertainty and taking it down again afterward. What used to be a workflow diagram becomes something the system compiles at runtime, runs and throws away.
+My editing bureaucracy was the right size for a book and would have been absurd for a typo. What used to be a workflow diagram becomes something the system compiles at runtime, runs and throws away.
 
 ## Selective Friction
 
 Rename two hundred temporary files according to a convention we have used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
 
-Editing sits in between, which is where it gets interesting. I do not want to approve every comma. I do want to be asked before a joke is cut, because only I know which jokes are holding up an argument. And sometimes the friction is how I learn, and a system that removes it removes the learning too.
+Editing sits in between. I do not want to approve every comma. I do want to be asked before a joke is cut, because only I know which jokes are holding up an argument. And sometimes the friction is how I learn, and a system that removes it removes the learning too.
 
-So the system has to read two things from a small request: the outcome I want, and how much of producing it I want to keep. My attention is scarce, and the goal is to spend it well, which is different from spending as little of it as possible. In editing that means the jokes that hold up an argument, the claims I cannot check myself, and the passages where I am still working out what I think.
+So the system has to read two things from a small request: the outcome I want, and how much of producing it I want to keep. My attention is scarce, and I want it spent on the claims I cannot check myself and the passages where I am still working out what I think.
 
 ## Invisible by Default, Legible on Demand
 
@@ -64,13 +64,9 @@ The bad version of fluency is one calm conversational box that researches, edits
 
 That is opacity with good typography.
 
-When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains, and the architecture under a fluent interface has to keep them: which evidence mattered, which pattern was retrieved, which alternative an evaluator rejected, which action can still be undone.
+When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains, and the architecture under a fluent interface has to keep them.
 
 A compiler hides registers until I need to read the assembly. A database hides its pages until a query gets strangely slow. An autonomous system needs the same way back into the work, quiet while things go as expected and open all the way down when something is uncertain, consequential or surprising.
-
-The request can stay simple:
-
-> Here is what I am trying to accomplish. Help me get there without losing contact with reality, or with me.
 
 In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
 
@@ -96,9 +92,9 @@ So the test needs a second half. Now and then the system should bring back somet
 
 I have claimed that as we build autonomous AI, we keep rediscovering science as its architecture. A book that spends several chapters demanding criticism with consequences should probably take some. Here is how I would attack the claim if somebody else had made it.
 
-**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. The patch works, the metric means what we think it means, the proof checks: each has to remain open to that process. It does not decide whether the store should value revenue over customer welfare. Science can settle what is true about the store. It cannot settle who gets to decide what the store is for.
+**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. That process can tell you whether the patch works or the proof checks. It cannot settle who gets to decide what the store is for.
 
-**The weights will eat it.** This is the one that keeps me up. Richard Sutton, who helped teach machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[1](appendix-references.md#ref-10-bitter) Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
+**The weights will eat it.** Richard Sutton, who helped teach machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[1](appendix-references.md#ref-10-bitter) Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
 
 My own evidence is on his side. I deleted my circle-packing framework because the agent no longer needed it, and Anthropic’s automated alignment researchers worked better with less human-designed scaffolding.
 
@@ -106,7 +102,7 @@ I think Sutton is right about most of what I deleted. The orchestration was a gu
 
 Some of that structure may move inside the model, and then we are back to building instruments to find out whether the inside deserves trust. If a system someday certifies its own open-ended work, with no external check and no preserved disagreement, and the certification holds up when somebody else looks, I am wrong. I would like to read that paper. I would also like to know who reviewed it.
 
-**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. The useful test is whether these arrangements improve the work. My own epistemic agent solved fewer problems than the baseline. I could still be reading familiar institutions into a narrower set of repairs, though not every example is my reading: the ExploitGym agents built a shared record that nobody designed and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
+**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. The useful test is whether these arrangements improve the work. My own epistemic agent solved fewer problems than the baseline. Some of this may be me seeing Popper in the traces. But I did not design the shared record the ExploitGym agents built; nobody did, and nobody wanted it. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
 
 **Agents are not scientists.** Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. True: session turnover is not Planck’s funeral. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
 
@@ -114,6 +110,6 @@ Some of that structure may move inside the model, and then we are back to buildi
 
 None of this shows that the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 
-An editing experiment has one advantage: I am there to say the result is wrong. A customer can simply leave.
+An editing experiment has one advantage: I am there to say the result is wrong. A customer who gets a bad page files no correction. She leaves.
 
 I had spent years building systems to decide what to show that customer. Now I wanted to see what this argument would make me build differently.
