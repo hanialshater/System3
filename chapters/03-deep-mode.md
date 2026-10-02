@@ -8,7 +8,7 @@ Then I asked for an educational demo.
 
 Most of the things I actually want AI to help me with are not like that. “Is this explanation pedagogically effective?” does not have a unit test. “Would a confused student understand this visualization?” cannot be settled with an `assert`. Two competent people can look at the same design, disagree completely, then switch sides five minutes later after using it. The feedback is subjective, noisy, sometimes contradictory, and often becomes clearer only after you have built the thing you were supposedly trying to specify beforehand.
 
-I picked educational demos for Merge Sort and Count-Min Sketch because they were still bounded—you can actually finish one before civilization collapses—but they live on the messier side of the boundary. You have to decide what to explain, what to leave out, how the interaction should work, how much should be visible at once, and what another person is likely to understand from any of it.
+I picked educational demos for Merge Sort and Count-Min Sketch because they were still bounded (you can actually finish one before civilization collapses), but they live on the messier side of the boundary. You have to decide what to explain, what to leave out, how the interaction should work, how much should be visible at once, and what another person is likely to understand from any of it.
 
 The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
@@ -20,7 +20,7 @@ Before trying to automate that, I had to notice how much of the work around the 
 
 ## Stubbornly Human
 
-Models trained to continue text turned out to continue code. Researchers trained models for the job; HumanEval and APPS tested whether they could turn function specifications or programming problems into code that survived tests.
+Models trained to continue text turned out to continue code.
 
 Then GitHub Copilot put the trick inside the editor. Describe what should happen next and watch it appear underneath your cursor, which was delightful for about a week and then became the way things were.
 
@@ -42,8 +42,6 @@ Eventually we gave the model the repository and a terminal. It could search, ope
 
 Software is unusually friendly to this arrangement: files can be searched, programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
 
-SWE-agent made the interface itself part of the problem. How the model searches, sees files, applies edits and receives feedback can matter almost as much as another clever prompt.
-
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
 So more of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody’s head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
@@ -56,7 +54,7 @@ Humans call our version of this sunk cost. The agent has a respectable excuse: i
 
 So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. A third starts from the learner’s misconception. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-Together, the interfaces, execution loop, context management and safeguards form the agent’s **harness**. The evaluator is one part of it. The jar had acquired its own staff.
+Together, the interfaces, execution loop, context management and safeguards make up the agent’s harness, meaning here everything built around the model so it can work, of which the evaluator is only one part. The jar had acquired its own staff.
 
 But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for, which was simply *build the application.*
 
@@ -102,7 +100,7 @@ By then I had a rough map. Each layer marked a different kind of work we had lea
 
 **Layer 3—Deep Mode.** The problem-solving layer: decide what to try, why something failed, which evidence matters, and whether the current direction deserves another iteration.
 
-**Layer 4—Intention.** What do we actually want? This is the problem I have mostly been avoiding.
+**Layer 4—Desire.** What do we actually want? This is the problem I have mostly been avoiding.
 
 Software likes that question to have been answered before work begins, preferably in Jira, where the answer can remain wrong in a structured and searchable format. Real goals are less cooperative. Seeing a solution can change what I realize I wanted. That problem is bigger than AI coding, so for now I am leaving it at the top of the stack.
 
@@ -132,9 +130,9 @@ One builder tries a recursion tree. Another focuses on the array. A third begins
 
 Useful pieces can move between them. One terrible demo may have a beautiful color mapping. Another may explain the merge clearly while making everything else unbearable. The final artifact does not have to inherit the entire history of either one.
 
-But diversity is fragile. If every branch sees the current winner and its complete reasoning history, parallelism quickly becomes several agents improving the same idea. Sometimes I want the branches to exchange what worked; sometimes I want a fresh branch to remain ignorant long enough to become genuinely different. Share too little and everyone rediscovers the same lessons; share too much and the first successful idea becomes a local culture.
+But diversity is fragile. If every branch sees the current winner and its complete reasoning history, parallelism quickly becomes several agents improving the same idea.
 
-Research creates the same tension. People have been teaching recursion for decades. There are textbooks, lecture notes, visualizations, papers, classroom experiments and a great deal of trial and error sitting on the internet. Before I spend another afternoon inventing my fourth way of moving colored rectangles around, I probably want to know what is already there.
+Research creates the same risk. People have been teaching recursion for decades. There are textbooks, lecture notes, visualizations, papers, classroom experiments and a great deal of trial and error sitting on the internet. Before I spend another afternoon inventing my fourth way of moving colored rectangles around, I probably want to know what is already there.
 
 But research is most useful when the work has produced a real question. Suppose a recursion tree makes decomposition visible but learners lose the relationship between the tree and the changing array. Now I can ask how other systems have coordinated two representations without requiring people to watch half the screen at once. At that point research is a move in the investigation, and it stops being a ceremony performed before building.
 
@@ -142,9 +140,9 @@ Retrieval plays the same role inside our own history. Somewhere in a growing pro
 
 Exact search works when I remember a phrase, an API or an evaluator comment; embeddings help when I remember the idea and have lost the words; and some documents already have a structure worth navigating. Good coding agents do not “retrieve the repository” once; they move through it as the question changes. Layer 3 needs the same habit across stranger objects: research, screenshots, old interactions, code, evaluations and dead branches.
 
-A dead branch can still hold live knowledge. A lineage that lost globally may contain a stepping stone that becomes useful later. The exploration literature has several versions of this idea—quality-diversity, novelty search, Go-Explore and related approaches. Do not spend the entire search budget polishing the place that currently looks best. Preserve some alternatives and some routes back to places that almost worked.
+A dead branch can still hold live knowledge. A lineage that lost globally may contain a stepping stone that becomes useful later. Do not spend the entire search budget polishing the place that currently looks best. Preserve some alternatives and some routes back to places that almost worked.
 
-The same logic gave us **Strategic Constraints**. After several generations of Merge Sort demos, the builders were exploring. They were also still giving me bars. Better bars, admittedly. Bars that split gracefully, changed color as recursion deepened, synchronized with a tree and perhaps deserved their own design award. Given enough iterations, I had every reason to believe we would eventually produce the finest moving bars known to humanity.
+The same logic gave us strategic constraints. After several generations of Merge Sort demos, the builders were exploring. They were also still giving me bars. Better bars, admittedly. Bars that split gracefully, changed color as recursion deepened, synchronized with a tree and perhaps deserved their own design award. Given enough iterations, I had every reason to believe we would eventually produce the finest moving bars known to humanity.
 
 So remove the easy path. No bars.
 
@@ -166,13 +164,11 @@ But the composition could be surprisingly thoughtful. A Merge Sort mockup might 
 
 I remember looking at some of these and thinking: holy shit. I didn’t want to ship the images, and usually I didn’t. What got me was that I had given the model a concept in language and it had returned something like a spatial argument about how the concept might be taught.
 
-After that I stopped treating image generation as the last stage—*the product is designed, now make it pretty*—and started using it while I was still trying to understand what the product could be. A mockup is a cheap hypothesis. Often most of it is disposable and one relationship is worth stealing.
+After that I stopped treating image generation as the last stage (*the product is designed, now make it pretty*) and started using it while I was still trying to understand what the product could be. A mockup is a cheap hypothesis. Often most of it is disposable and one relationship is worth stealing.
 
 Then the coding agent can make that relationship executable, which is where the picture has to pay its debts. The recursion tree cannot invent an extra branch because the composition looked nicer that way. The interaction has to possess a state. The button has to do something other than contribute emotionally to the page.
 
 Different representations expose different mistakes. I do not need the stronger claim that an image model “understands pedagogy.” The practical point is enough: changing the representation changes what the search can discover.
-
-By now we could generate genuinely different artifacts, which left the problem we had avoided from the beginning: which one is better?
 
 ## Optimizing Something You Cannot Score
 
@@ -198,9 +194,7 @@ Language models make that communication channel available inside the optimizatio
 
 Natural language can therefore function as an *implicit metric*, though not in the strict mathematical sense: there is no guarantee that “intuitive” defines a stable ordering, and two evaluators may interpret it differently. Still, language can do some of the work a metric normally does. It gives the search a direction, communicates why one attempt is preferred to another, and preserves trade-offs that a scalar would erase.
 
-OPRO—Optimization by PROmpting—is interesting for a related reason. In OPRO, an LLM sees an optimization problem, previous candidates and their outcomes, then proposes another candidate. Candidate quality in the published setting is still evaluated by an explicit score, so OPRO is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written transformation rule.
-
-Now let the history contain more than scores. Alongside hard measurements, tell the model what improved, what became worse, which trade-off appeared and what must survive the next attempt, and the history of the search keeps some of its meaning instead of collapsing into a column of numbers.
+Let the record of past attempts that the model sees contain more than scores. Alongside hard measurements, tell the model what improved, what became worse, which trade-off appeared and what must survive the next attempt, and the history of the search keeps some of its meaning instead of collapsing into a column of numbers.
 
 This begins to feel a little like reinforcement learning turned upside down. I mean that as an analogy about specification; I am not claiming these are the same algorithm. The usual reinforcement-learning picture asks us to define a reward and then discover behavior that earns it. Here I can begin with something much less respectable:
 
@@ -212,9 +206,7 @@ Those are descriptions of a direction. None of them is a reward function, yet th
 
 I began the project insisting on an *interactive* Merge Sort demo. Interactivity sounded obviously desirable. Then I saw versions with buttons, sliders and enough learner participation to qualify as a small democracy, while one quieter version explained the central idea much better. Apparently clicking things was never the objective. Later the demos became good at showing recursive splitting and I realized they were treating merging almost as cleanup, so the objective moved again.
 
-The search was doing something I normally associate with optimization in reverse: instead of starting from a fully specified reward and discovering the policy, I was using candidate policies—actual artifacts—to discover what the reward description should have been.
-
-Recognition arrives before specification in a lot of creative work. We know a terrible design when we see one before we can write a complete theory of what would make it good. AI makes that loop cheap. The natural-language objective guides the search; artifacts make the objective concrete enough to argue with; the description changes and the search continues. Sometimes ambiguity just means we haven’t learned enough yet.
+Recognition arrives before specification in a lot of creative work. We know a terrible design when we see one before we can write a complete theory of what would make it good. AI makes it cheap to see one.
 
 But “make this intuitive for a beginner” hides almost everything interesting, starting with which beginner.
 
@@ -240,13 +232,11 @@ Or:
 
 > You understand recursion but have never seen Merge Sort. Tell me when you first understand why dividing the array makes sorting easier.
 
-Those are different evaluators because they are positioned to notice different things. The same move works outside education. A customer may know exactly what jacket they want without knowing the vocabulary our catalog uses. A developer can be excellent at distributed systems and know nothing about the peculiar assumptions buried in our deployment process. A reader can have followed this book perfectly well without having lived inside its conceptual structure for months.
+Those are different evaluators because they are positioned to notice different things. The same move works outside education. A customer may know exactly what jacket they want without knowing the vocabulary our catalog uses. A reader can have followed this book perfectly well without having lived inside its conceptual structure for months.
 
 This is cheap perspective-taking, and also a cheap way to fool yourself.
 
 The confused student is not confused. Claude has not spent twenty minutes failing to understand recursion while everybody else in the classroom moves ahead. It is generating a plausible model of how such a person might react, and that model can expose a blind spot. I use borrowed minds the way I would use a sharp colleague’s guess about users: as a source of criticisms and hypotheses worth checking with the people themselves.
-
-We could now generate plausible possibilities by the dozen, and some of them had to die.
 
 ## Independent Evaluators
 
@@ -268,7 +258,7 @@ Relative judgment asks less of the evaluator. It does not require a stable inter
 
 So I stopped asking one evaluator to represent everybody. A learner can inspect the artifact from the knowledge boundary we developed above. A teacher can focus on explanatory sequence. Another evaluator can look for cognitive load or accessibility. A domain expert can make sure our elegant simplification has not become false.
 
-I call these **Independent Evaluators**, though the important word is *independent*.
+I call these independent evaluators, though the important word is *independent*.
 
 Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. If all of them read the leading builder’s explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
 
@@ -294,11 +284,11 @@ The danger in a fully automated loop is that simulated evidence quietly replaces
 
 The student has not yet been asked.
 
-At some point I looked at what we had assembled and realized that *evaluator* no longer described it particularly well. It looked less like a loss function than a tiny institution, and institutions are not automatically good: they can amplify conformity, entrench bad assumptions and become spectacularly efficient at measuring what doesn’t matter.
+At some point I looked at what we had assembled and realized that *evaluator* no longer described it particularly well. It looked like a tiny institution, and institutions can become spectacularly efficient at measuring what doesn’t matter.
 
 Humans face the same difficulty. One person’s judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
 
-Philosophers who worry about AI often say that what machines lack is judgment as opposed to mere reckoning: the capacity to be answerable to the world, to care whether the answer is right rather than merely well formed. Brian Cantwell Smith makes the argument carefully, and I think it is half right. What the machine lacks is real. But judgment, in the cases where humans exercise it well, was never a private faculty either. It is a person plus a tradition, plus other people positioned to object, plus consequences that arrive whether or not anyone wants them. When I stopped looking for judgment inside the evaluator and started building it between evaluators, the problem did not disappear. It turned into an engineering problem, which is the kind I know how to have.
+Brian Cantwell Smith argues that what machines lack is judgment as opposed to mere reckoning: the capacity to be answerable to the world, to care whether the answer is right rather than merely well formed. He makes the argument carefully, and I think it is half right. What the machine lacks is real. But judgment, in the cases where humans exercise it well, was never a private faculty either. It is a person plus a tradition, plus other people positioned to object, plus consequences that arrive whether or not anyone wants them. When I stopped looking for judgment inside the evaluator and started building it between evaluators, the problem did not disappear. It turned into an engineering problem, which is the kind I know how to have.
 
 And that made the remaining human job painfully obvious. I still decided when to research, when to build, which branches stayed isolated, whether a strange direction deserved another generation, which disagreement mattered, when to retrieve another example, and when the simulations had reached the point where only a real person could answer the question. I had automated much of the work, but I was still running the inquiry.
 
@@ -312,7 +302,7 @@ Research first may be sensible for one task and destructive for another because 
 
 A fixed Planner → Builder → Critic → Revise loop can be useful. It also answers all of those questions in advance. I wanted some of the workflow to remain inside the search.
 
-We gave the orchestrator the problem, the capabilities available to it, and enough of the search history to decide what kind of move made sense next. Everyone else kept their jobs: builders built, researchers researched, evaluators judged, and the browser agents, visual systems and retrieval did what they had been doing. The orchestrator didn’t need to be the best at any of it. Its job was deciding which job the inquiry needed now.
+We gave the orchestrator the problem, the capabilities available to it, and enough of the search history to decide what kind of move made sense next. Everyone else kept their jobs: builders built, researchers researched, evaluators judged, and the browser agents, visual systems and retrieval did what they had been doing. The orchestrator didn’t need to be the best at any of it.
 
 At the top, the loop was almost too simple to write down:
 
@@ -322,7 +312,7 @@ The move itself was not fixed. Suppose two Merge Sort branches both make recursi
 
 Nothing in that sequence is especially magical. We simply did not have to decide the sequence before the inquiry began. Otherwise Deep Mode would be a larger workflow diagram containing more rectangles.
 
-Deep Mode makes no claim to be a universal problem-solving procedure. It gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result. The workflow itself becomes part of the search.
+Deep Mode makes no claim to be a universal problem-solving procedure. It gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result.
 
 ## Bars Moved Around
 
@@ -364,7 +354,7 @@ Remembering something is the easy part. The hard part is knowing what standing i
 
 Humans ran into this long before AI. We keep records, ask where a claim came from, seek another opinion and learn which people to consult about which problems. Much of what I know depends on work I could not personally repeat.
 
-These arrangements are imperfect. They sometimes preserve error and reward conformity, and sometimes the shopping cart survives the review. Their purpose is to let fallible people build on one another while preserving some structure around why a claim deserves trust. Nobody expects them to make every individual dramatically smarter.
+These arrangements are imperfect. They sometimes preserve error and reward conformity, and sometimes the shopping cart survives the review. Their purpose is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
 
 Once cognition becomes distributed, the same questions become engineering questions: provenance, independence, replication, disagreement, authority.
 

@@ -13,18 +13,16 @@ Adapt Hani M.M. Al-Shater's "Chapter 8: Scalable Oversight" into an English vide
 ## Source order
 
 1. Opening passage
-2. The Judge Falls Behind
-3. Performance Gap Recovered
-4. An Excellent Education in the Same Mistake
-5. The Judge Can Be Fooled
-6. We Started Instrumenting the Student
-7. Reading the Model From the Inside
-8. Then We Touched the Machinery
-9. The Nastier Version
-10. The Evaluator Becomes the Product
-11. Stay Uncertain Enough to Listen
-12. The Human Cannot Stay in Every Loop
-13. The Overseer Is Not Ground Truth
+2. A New Kind of Employee
+3. Retrain Them
+4. Read Their Notes
+5. Open Their Head
+6. Change Their Mind Mid-Sentence
+7. Get a Second Opinion
+8. Keep the Budget Out of Reach
+9. Make It Ask
+10. When the Employee Does the Alignment Research
+11. The Top Loop
 
 ## Review
 

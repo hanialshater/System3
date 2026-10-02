@@ -2,6 +2,8 @@
 
 *When Knowledge Becomes Software*
 
+<!-- AUTHOR: C6-1. The Ines/Sam running case is invented and does a lived example's job across the whole chapter. Is there a real incident, or a real runbook line (an "ask X" you have seen), that could anchor it? If so, supply it; otherwise confirm the invented case stays as is. -->
+
 Imagine a search team. At ten past two in the morning, search in one market starts returning empty pages. The engineer on call—call her Ines—has been at the company for five weeks. The runbook on her second screen is admirably clear until the line where it stops being clear: *if it started after Tuesday’s migration, ask Sam. There is a thing with the old serializer.*
 
 It started after Tuesday’s migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
@@ -64,7 +66,7 @@ Mathematics has the cleanest version of this problem, and recently a very large 
 
 Jon Doyle was building machinery for this in the late 1970s. In his truth maintenance system, beliefs kept their reasons, and when a reason was withdrawn, everything resting on it came up for review.[7](appendix-references.md#ref-06-doyle) Doyle’s machinery tracks justifications. It cannot check them against the world, and a program can faithfully maintain the consequences of reasons that were never true.
 
-Most of us have no Lean. Here is a claim of the kind my field produces every week, and this one is real. An experiment at Bing reported that people in the treatment were running over ten percent more queries, and revenue per user was up by over thirty percent.[8](appendix-references.md#ref-06-kohavi) That sounds like a result worth keeping. Suppose it goes into a report, another agent summarizes the report, and a third uses the summary to recommend shipping. If something turns out to be wrong with the experiment, where will the correction go?
+Most of us have no Lean. A claim of the kind my field produces every week, and this one is real: an experiment at Bing reported that people in the treatment were running over ten percent more queries, and revenue per user was up by over thirty percent.[8](appendix-references.md#ref-06-kohavi) That sounds like a result worth keeping. Suppose it goes into a report, another agent summarizes the report, and a third uses the summary to recommend shipping. If something turns out to be wrong with the experiment, where will the correction go?
 
 Searching every document for the word *queries* is one possible response. It will be popular with the company selling us tokens.
 
@@ -110,13 +112,13 @@ The people who run experiments for a living have a reflex about results like the
 
 Ines runs the check, and it fails. Her meeting goes something like this. One team says the treatment is fine and the logging double-counted. Another says the logging is fine and a redirect dropped users from one arm. Someone notices the two arms ran on different client versions. We have made contact with reality and acquired a meeting.
 
-Duhem and Quine, from the previous chapter, explained this meeting long before anyone scheduled it. A failed test indicts a whole bundle of assumptions about the world and the apparatus, and does not say which one to blame.[11](appendix-references.md#ref-06-quine)
+Duhem and Quine explained this meeting long before anyone scheduled it. A failed test indicts a whole bundle of assumptions about the world and the apparatus, and does not say which one to blame.[11](appendix-references.md#ref-06-quine)
 
 The dependency record makes the meeting more useful by tracing claims to client versions, data pipelines and what counts as one user, so each suspicion gets a probe: replay a known session, pin the client version, rerun the split.
 
 Ines’s probes find it within a day. One client version sent part of the treatment arm through a redirect that dropped users before logging began. In the table’s terms, the measurement assumption has been withdrawn, and the recommendation to ship has gone back to review without anyone searching for the word *queries*. Once the arms are repaired, most of the revenue gain disappears.
 
-A second measurement may share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. The provenance must reach the common source. Otherwise the institution manufactures a second witness by creating a second spreadsheet.
+A second measurement may share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. The provenance must reach the common source.
 
 Capturing every possible dependency would cost more than the inquiry. Start with the support used in the recommendation and let a disputed result send you farther back.
 
@@ -126,11 +128,11 @@ Capturing every possible dependency would cost more than the inquiry. Start with
 
 The queries, though, survive the repair. Ines goes looking for anyone who has seen this shape before, and finds Bing’s researchers, who had.
 
-Here is what had happened at Bing. The treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue went up. Two of the organization’s headline numbers were celebrating an experience that had been degraded.[12](appendix-references.md#ref-06-kohavi2)
+At Bing, the treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue went up. Two of the organization’s headline numbers were celebrating an experience that had been degraded.[12](appendix-references.md#ref-06-kohavi2)
 
 The count was right, and the cheerful interpretation was wrong. Another audit of the count would not establish what the extra queries meant; a task-completion test like the one Ines proposed might have. The interpretation had needed its own row in the table all along.
 
-Saussure’s point, which we met in Chapter 4, is relational value: a term means what it does through its differences from its neighbors.[13](appendix-references.md#ref-06-saussure-lectures) *More queries* meant *more engaged* only inside a system where a query was a unit of interest. Set it beside *session* and *task* and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad ranking.
+Saussure’s point is relational value: a term means what it does through its differences from its neighbors.[13](appendix-references.md#ref-06-saussure-lectures) *More queries* meant *more engaged* only inside a system where a query was a unit of interest. Set it beside *session* and *task* and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad ranking.
 
 The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return. Tasks were harder to identify, so sessions served as a proxy. A shorter session might mean success or abandonment.
 
@@ -181,13 +183,13 @@ I avoid calling such a document executable, because the word hides the reader: t
 
 Agent skills give the arrangement a container with much of Alexander’s anatomy. A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the *Therefore*. Calls to other skills serve as links to smaller patterns.[16](appendix-references.md#ref-06-skills)
 
-So Ines puts the lesson in her team’s skill library. Nothing in the format makes the writer include the reasons or the reader act on them. We can repeat the journey from Berkeley: carry the instruction and leave its reasons behind. A library like that can preserve the wrong lesson at industrial speed.
+So Ines puts the lesson in her team’s skill library. Nothing in the format makes the writer include the reasons or the reader act on them. A library like that can preserve the wrong lesson at industrial speed.
 
 ## Put the Library to Work
 
 Ines gives the file to the team’s review agent and asks it to review an experiment. Does it do better?
 
-Bad storage forgets by deletion; bad retrieval forgets by attention. The query “review this experiment” can retrieve a popular checklist and leave the Bing warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. Whether retrieval worked shows up later, in whether the review caught what mattered.
+The query “review this experiment” can retrieve a popular checklist and leave the Bing warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. Whether retrieval worked shows up later, in whether the review caught what mattered.
 
 Suppose retrieval works. For two weeks the agent raises the question every time a search experiment reports more activity, and raises it well. Then it starts treating the warning as a verdict. A faster image server increased page views, and a separate task study found that more customers completed their purchases. The agent still recommends holding the release until someone explains away the extra activity. The pattern says `confidence: provisional, one incident`. “Increases in activity are usually fake” is far more than one bug can teach.
 
@@ -214,9 +216,11 @@ The next agent can see both where the pattern has been tested and how its predec
 
 Ines’s file is a small house, and most of what it rests on lives elsewhere, in a paper by Bing’s researchers, in textbooks on experimentation, in the habits of a field. Where does the knowledge of a result live, if no single agent holds it?
 
-Chapter 5 borrowed Popper’s name for the answer, World 3: the theories, problems and arguments that exist outside any particular head and outlast whoever produced them.[18](appendix-references.md#ref-06-world3)
+Popper’s name for the answer is World 3: the theories, problems and arguments that exist outside any particular head and outlast whoever produced them.[18](appendix-references.md#ref-06-world3)
 
-The ways we preserve and find that knowledge have changed. Clay records, libraries with catalogs, journals with citation indexes: each gave the next worker a different way into what others had learned. The web was built at CERN to help scientists share information; PageRank brought citation analysis to its links. Wikipedia made verifiability and citations work that its editors could demand of one another.[19](appendix-references.md#ref-06-knowledge-web) Easier access did not make the work of checking sources disappear. A language model offers the most convenient entrance yet, the whole library in one voice, but the answer may arrive without a catalog card. The machinery for checking it has to reach this new entrance too. This one is ours to build.
+The ways we preserve and find that knowledge have changed many times, and each change gave the next worker a different way into what others had learned. Wikipedia made verifiability and citations work that its editors could demand of one another.[19](appendix-references.md#ref-06-knowledge-web) Easier access did not make the work of checking sources disappear. A language model offers the most convenient entrance yet, the whole library in one voice, but the answer may arrive without a catalog card.
+
+<!-- AUTHOR: C6-3 cut the clay records / catalogs / citation indexes / CERN / PageRank history from this paragraph; consider moving it into the note for ref-06-knowledge-web. -->
 
 The newest residents arrive through an API. In Terence Tao’s collaboration with DeepMind, AlphaEvolve found a slightly improved construction for three-dimensional finite-field Kakeya sets; Deep Think helped produce an informal proof, and AlphaProof formalized it in Lean.[20](appendix-references.md#ref-06-tao) The AlphaFold database makes more than two hundred million protein-structure predictions available for research, and AlphaGenome Atlas supplies predictions for roughly nine billion possible single-letter DNA changes.[21](appendix-references.md#ref-06-biology) A prediction does not become an observation by being stored beside a billion others, but a researcher can begin with material she could never have produced and put it to a test its creators never planned.
 
@@ -256,11 +260,13 @@ Ines’s team faces the small version. The review pattern from the Bing lesson h
 
 Larry Laudan called what the team was missing the difference between acceptance and pursuit.[26](appendix-references.md#ref-06-laudan) What to believe today and what to work on tomorrow are different questions. The team had good reasons to keep using the incumbent and no mechanism for asking whether the rival deserved a trial. The Riemann bound raises the same pair of questions. Accepting it as a result does not tell us whether to keep pursuing that route toward the full hypothesis.
 
-Six months of use leaves another trace. The incumbent pattern acquires an exception for one client, then another, then a third. Chapter 5 introduced Lakatos’s patience with a research program; here the patches let us examine what that patience buys.[27](appendix-references.md#ref-06-lakatos) Does a revision predict a failure in a further case that then holds up, or does it merely explain the incident already observed? That distinguishes a progressive program from one that keeps accommodating failures after the fact, and the file should record which it was.
+Six months of use leaves another trace. The incumbent pattern acquires an exception for one client, then another, then a third. Here the patches let us examine what Lakatos’s patience with a research program buys.[27](appendix-references.md#ref-06-lakatos) Does a revision predict a failure in a further case that then holds up, or does it merely explain the incident already observed? That distinguishes a progressive program from one that keeps accommodating failures after the fact, and the file should record which it was.
 
-Kitcher’s worry from Chapter 5, about how a community divides its cognitive labor, returns in miniature. A retrieval policy that keeps selecting the incumbent never lets the rival collect evidence.[28](appendix-references.md#ref-06-kitcher)
+Philip Kitcher’s worry, about how a community divides its cognitive labor, returns in miniature. A retrieval policy that keeps selecting the incumbent never lets the rival collect evidence.[28](appendix-references.md#ref-06-kitcher)
 
 Ines’s rival needs a small experiment with a price on it and a note saying which later decisions its result would change.
+
+<!-- AUTHOR: C6-5. Every section runs Ines beat, citation, maxim, starred Therefore. Keep as is, or vary what precedes the Therefore (some sections could open on it), or fold this Therefore and the funding one below together, since both concern allocation? Your call; not changed. -->
 
 \* **Therefore: give the queue of unrun comparisons its own allocation policy, separate from the policy that selects today’s working method.**
 
@@ -268,7 +274,7 @@ The person recording the reasons for an experiment, however, may not control the
 
 ## Keep the Funding Decision Visible
 
-OpenAI’s September 2026 account of its Navier–Stokes investigation shows allocation happening at speed. Groups of agents went after the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups’ findings into the next prompts. That group grew to roughly ten thousand concurrent agents. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay’s alternatives C and D; OpenAI reported another seventeen hours for Lean formalization and verification.[29](appendix-references.md#ref-06-navier) On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[30](appendix-references.md#ref-06-clay) The other problems had lost workers, not been refuted.
+OpenAI’s September 2026 account of its Navier–Stokes investigation shows allocation happening at speed. Groups of agents went after the open Millennium Problems. A result on the Euler equations persuaded the researchers to move workers from the other problems to Navier–Stokes, carrying the Euler result and the groups’ findings into the next prompts. That group grew to roughly ten thousand concurrent agents. About four days after launch, the group produced a proposed proof of finite-time blowup under smooth forcing, addressing Clay’s alternatives C and D; OpenAI reported another seventeen hours for Lean formalization and verification.[29](appendix-references.md#ref-06-navier) On September 11 the Clay Mathematics Institute said the problem appeared to be settled; evaluation and the assignment of credit would follow its deliberately unhurried process.[30](appendix-references.md#ref-06-clay) The other problems had only lost their workers.
 
 Who deserves credit for the route is now disputed, and the participants’ accounts are in the references.[31](appendix-references.md#ref-06-priority) One detail belongs here. The rumor that started OpenAI’s search concerned concurrent work by Tristan Buckmaster and Levent Alpöge. According to OpenAI, Alpöge was an Anthropic employee, and the pair used an internal Anthropic model to resolve the forced Euler problem. This book relies on Anthropic’s reports in several chapters, so that belongs in the record too.
 
@@ -302,7 +308,7 @@ The organization had paid for the knowledge it was now resisting. Having finding
 
 A response to an objection should identify the claim it challenges and say what happened to it: new evidence, a revised claim, another experiment, a reason the criticism does not apply, or a budget decision that left it open. *Closed* says only that somebody stopped typing. “Noted” is none of these. With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out. We have successfully parallelized the experience of being ignored.
 
-Helen Longino would locate that failure in the community. On her account, objectivity belongs to a community’s criticism, and depends on venues for it, uptake, shared standards and a tempered equality of intellectual authority.[36](appendix-references.md#ref-06-longino) The review channel provides a venue. “Noted” gives no account of how the objection entered the decision.
+Helen Longino would locate that failure in the community. On her account, objectivity belongs to a community’s criticism, and depends on venues for it, uptake, shared standards and a tempered equality of intellectual authority.[36](appendix-references.md#ref-06-longino) The review channel provides a venue.
 
 Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim that failed, so the next round can repair it or try another route.[37](appendix-references.md#ref-06-colosseum) Failed drafts remain available with their reviews attached. The reviewers can still be wrong.
 
@@ -327,7 +333,7 @@ objections:
     reason: Task completion has not yet been measured reliably across all markets.
 ```
 
-An `open_questions` field that no decision ever consults is a decorative conscience. These lines matter when the next review follows them, notices that the evidence concerns another surface or another tool version, and changes what it is prepared to conclude.
+These lines matter when the next review follows them, notices that the evidence concerns another surface or another tool version, and changes what it is prepared to conclude.
 
 \* **Therefore: if the organization proceeds with an objection unresolved, the objection travels with the decision, and the decision-maker owns that choice in writing.**
 
@@ -345,7 +351,7 @@ There is empirical work on that question. Studying the premature deaths of emine
 
 Sam, eventually, moves to another team. Nothing about his leaving changes what the file says.
 
-Now imagine a new agent joining Ines’s project. Its progress file contains a line Sam wrote two years ago: *serializer rewrite tried and abandoned; do not retry.* The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation’s entire syllabus already in context. Session turnover is not a funeral; nothing that was believed has died.
+Now imagine a new agent joining Ines’s project. Its progress file contains a line Sam wrote two years ago: *serializer rewrite tried and abandoned; do not retry.* The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation’s entire syllabus already in context.
 
 In that file the durable incumbent is a single sentence. Elsewhere it may be a retrieval preference, a canonical example, a benchmark, or a rule giving one branch first access to compute. A more capable replacement model may defend it more effectively.
 
@@ -357,19 +363,19 @@ Changing the worker is easy.
 
 ## Put the Procedure Under Test
 
-Look back at what this chapter has built and ask how it could fail while every part works. It may faithfully preserve dependencies while omitting the important kind of dependency. It may compare candidate patterns on cases selected by the incumbent pattern. It may require evidence for an alternative while refusing the instruments needed to produce that evidence. Every individual operation can function as specified while the arrangement prevents the question that would matter.
+How could all this fail while every part works? It may faithfully preserve dependencies while omitting the important kind of dependency. It may compare candidate patterns on cases selected by the incumbent pattern. It may require evidence for an alternative while refusing the instruments needed to produce that evidence. Every individual operation can function as specified while the arrangement prevents the question that would matter.
 
 Feyerabend’s *Against Method* goes further. Every rule of method, he argued, has been usefully broken at some point in the history of science.[40](appendix-references.md#ref-06-feyerabend) Requiring a test before setting a rule aside would itself be another methodological rule. I am borrowing a smaller lesson: our procedures need room for investigations they would ordinarily exclude.
 
-Some of these failures can be investigated through a relevant comparison. A retrieval policy can be evaluated against another policy. A reviewer can be compared with a reviewer given different evidence. A pattern can be withheld from a branch to see whether its absence reveals errors its presence concealed.
+Some of these failures can be investigated through a relevant comparison: one retrieval policy against another, a reviewer against a reviewer given different evidence, or a branch with a pattern withheld to see whether its absence reveals errors its presence concealed.
 
 Other disputes reach the purpose or authority of the system. Whether a feed should be ranked for activity or for something harder to count cannot be settled by letting whichever evaluator produces the higher score appoint itself. Someone still has to make and own the decision about which consequences matter.
 
-Alexander’s form now asks for a *Therefore*. We could write “revise the method when it fails.” But the method decides which failures count. The next chapter has to open that loop.
+Alexander’s form now asks for a *Therefore*. We could write “revise the method when it fails.” But the method decides which failures count.
 
 ## What the File Says Now
 
-We have seen pieces of this language at work: shared proof graphs, experiments that challenge their own metrics, reviews that travel with failed arguments. I have not shown an agent institution that composes all of them, keeps their reasons alive, and changes its own way of seeing when those reasons fail. That is the ambition, and it still has to earn its confidence marks.
+I have not shown an agent institution that composes these patterns, keeps their reasons alive, and changes its own way of seeing when those reasons fail. That is the ambition, and it still has to earn its confidence marks.
 
 Two years after that night, Ines opens the incident file again. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
 

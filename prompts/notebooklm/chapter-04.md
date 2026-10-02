@@ -14,7 +14,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 4: System 3" into an English video. Select 
 
 1. Opening passage
 2. The Shortest Trust Chain
-3. Saussure's Specification
+3. Saussure’s Specification
 4. Call Alberto
 5. It Starts With a Face
 6. System 3

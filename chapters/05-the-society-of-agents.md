@@ -32,9 +32,9 @@ Carlini changed the harness. Most of the kernel was compiled with GCC and only a
 
 The harness kept changing. Near the end, new features started breaking old ones, so Carlini added a continuous integration pipeline with stricter checks on new commits.
 
-Specialization addressed work the next failing test would never ask anyone to do. LLM-written code kept re-implementing what already existed. Someone needed to look for duplicates. Someone needed to improve the compiler’s own speed, and someone else the quality of the code it emitted. Carlini assigned those roles, along with an agent to review the structure as a Rust developer and another to work on documentation, which is normally the moment you know a civilization has become serious. The crowd had become a staff.
+Specialization addressed work the next failing test would never ask anyone to do. LLM-written code kept re-implementing what already existed. Someone needed to look for duplicates. Someone needed to improve the compiler’s own speed, and someone else the quality of the code it emitted. Carlini assigned those roles, along with an agent to review the structure as a Rust developer and another to work on documentation, which is normally the moment you know a civilization has become serious.
 
-Carlini deliberately built the repairs; the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history. The history was in the structure.
+Carlini deliberately built the repairs; the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history.
 
 That interests me more than the generic claim that multi-agent systems scale. I have watched the same thing happen to teams of people, where it goes by the less glamorous name of reorganization, and nobody writes a blog post.
 
@@ -55,7 +55,7 @@ The project also has a way to challenge some of what those files say without wai
 
 The project can also become wrong in ways no participant intended. A progress file carries a bad diagnosis into later sessions. A specialist improves its own metric while degrading the compiler. A lock prevents duplicated effort and also prevents a useful second attempt. Two agents confirm each other while both inherited the same mistake from the same file. Carlini’s closing worry was that passing tests can make unfinished work look complete.
 
-This is the question the last chapter ended on: how a population of fallible knowers can build knowledge together without losing contact with the world. The compiler is its small version, and it came with a luxury. One person could step back from the agents’ work, see that their institution no longer fit it, and rebuild the harness.
+The question is how a population of fallible knowers can build knowledge together without losing contact with the world. The compiler is its small version, and it came with a luxury. One person could step back from the agents’ work, see that their institution no longer fit it, and rebuild the harness.
 
 Human civilization has been living inside the large version for thousands of years, with no one standing outside it.
 
@@ -88,6 +88,7 @@ Senku remembers a world in which the medicine already exists. He can work backwa
 
 Real civilization had no Senku, and nobody standing outside it with the roadmap.
 
+<!-- AUTHOR: C5-14 — the potter is a composite. Is there a real apprenticeship (your own, or a team's) that could stand here? -->
 A potter learned from clay, fire and vessels that cracked. She tried a change, repeated it when it worked, then taught it to an apprentice. When his pot cracked, she recognized something he had done that morning. He remembered doing it, remembered her warning, and now had an expensive reason to pay attention. It took several more firings before his hands could feel the difference she noticed immediately. When he became a teacher, he passed on what he had learned, including precautions he did not entirely understand, because the last person who omitted them had ruined a firing.
 
 Knowledge had a face. You knew whom to ask and remembered what happened when you listened. Senku had the chemistry; Kaseki had the hands. Whatever they failed to pass on could die with them.
@@ -120,9 +121,9 @@ Seen that way, bureaucracy deserves a better reputation than it gets. A workflow
 
 When something goes wrong you can tell everyone to be more careful, which is emotionally satisfying and institutionally almost worthless, or you can change the system so the dangerous action is slightly harder and the correct one slightly easier.
 
-That is how an institution learns, and it is also how it scars. A review gets added after a spectacular failure. Five years later the system is different, nobody remembers the incident, and ten thousand ordinary changes still pass through the review because the procedure survived its reason. The apprentice kept a precaution he never understood. The institution can do the same, with a much larger kiln.
+That is how an institution learns, and it is also how it scars. A review gets added after a spectacular failure. Five years later the system is different, nobody remembers the incident, and ten thousand ordinary changes still pass through the review because the procedure survived its reason. The apprentice kept a precaution he never understood. The institution can do the same.
 
-A tablet, a bronze measure, a deployment guardrail: each turns knowledge into structure that lets work pass between strangers. And once strangers can rely on one another’s work, each of them can afford to learn something the others don’t.
+And once strangers can rely on one another’s work, each of them can afford to learn something the others don’t.
 
 ## The Society Gets Smarter by Making People Narrower
 
@@ -136,7 +137,7 @@ And the story wants work. How do you ask for a review without begging? How do yo
 
 The potter became better because she was not also the physician. Specialization gives people time to encounter differences a generalist may never notice. The society gains knowledge by distributing ignorance, and every organization, industry and science that gets big makes some version of that bargain: people go narrow, and the narrow place turns out to be bottomless.
 
-Try finding one person who knows how to make the phone in your pocket, from raw materials to a working device. The glass, the chip design, the fabrication equipment, the lenses inside that equipment, the assembly and the software belong to different bodies of expertise. The company whose name is on the back must coordinate work it could not reproduce inside one person’s head. Civilization, in this sense, is a trust chain with plumbing.
+Try finding one person who knows how to make the phone in your pocket, from raw materials to a working device. The glass, the chip design, the fabrication equipment, the lenses inside that equipment, the assembly and the software belong to different bodies of expertise. The company whose name is on the back must coordinate work it could not reproduce inside one person’s head.
 
 On a March morning in 2005, in an English hospital, Elaine Bromiley, a healthy woman of thirty-seven, was put to sleep for a routine nasal operation. The anesthetist could not get a breathing tube into her airway. He could not ventilate her adequately either. He called for help, and help came: a second anesthetist, then the surgeon, all consultants, with decades of experience between them.
 
@@ -150,9 +151,9 @@ Elaine never regained consciousness. She died thirteen days later.[8](appendix-r
 
 Her husband, Martin, was an airline pilot. The surgeon wrote to him that he still could not see how they could have anticipated or avoided what happened. Martin wanted an investigation. In aviation, you investigated a disaster so that the next crew did not have to learn it again.
 
-The independent review found a pattern his industry knew painfully well. Skilled people had become absorbed in an attempted solution while the situation around them changed. Nobody managed to interrupt it. Even who was supposed to be in charge was disputed. Aviation had spent years developing ways for crews to recognize this pattern, challenge one another and change course. Technical competence alone had not been enough there either.
+The independent review found a pattern his industry knew painfully well. Skilled people had become absorbed in an attempted solution while the situation around them changed. Nobody managed to interrupt it. Even who was supposed to be in charge was disputed. Aviation had spent years developing ways for crews to recognize this pattern, challenge one another and change course.
 
-A hospital needs people who see different things. The nurse at the bedside, the radiologist reading an image and the surgeon do not become interchangeable because they share a patient. Their authority has to follow what they know, and their observations need a way to interrupt someone else’s plan. The expertise in Elaine’s operating theater was real. So was the failure to use it.
+A hospital needs people who see different things. The nurse at the bedside, the radiologist reading an image and the surgeon do not become interchangeable because they share a patient. Their authority has to follow what they know, and their observations need a way to interrupt someone else’s plan.
 
 The potter’s mistakes cracked in her own kiln. A specialist’s mistakes travel, and each person who receives one may have good reason to trust it. So the people who see a problem need a way to reach the people who can act on it.
 
@@ -170,7 +171,7 @@ That is what a second witness is for: she has to be capable of being wrong diffe
 
 The easiest reaction to one unreliable agent is to create five. Give one the title *Researcher*, another *Critic*, another *Verifier*, put them in a conversation, and perhaps reality will be intimidated by the org chart. Humanity invented committees this way and then, dissatisfied with the original implementation, recreated them in software.
 
-Condorcet supplied a famous mathematical case for crowds in 1785. In the simple version, voters each have the same better-than-even chance of being right, and their votes are independent. Under those conditions, the probability of a correct majority approaches one as the crowd grows. Independence is doing work in that sentence. Voters who simply copy one source copy its mistakes. The crowd is the source, louder.[10](appendix-references.md#ref-05-condorcet)
+Condorcet supplied a famous mathematical case for crowds in 1785. In the simple version, voters each have the same better-than-even chance of being right, and their votes are independent. Under those conditions, the probability of a correct majority approaches one as the crowd grows. Independence is doing work in that sentence. Voters who simply copy one source copy its mistakes.[10](appendix-references.md#ref-05-condorcet)
 
 Agreement raises confidence when it would be difficult to explain if the claim were false. When five agents merely repeat one source, we have one witness wearing different coats.
 
@@ -184,11 +185,7 @@ Permanent disagreement would be useless. An institution that never converges is 
 
 Ibn al-Haytham darkened a room around the beginning of the eleventh century, made a small hole in one wall, and placed lamps outside it. On the opposite wall, spots of light appeared. Cover a lamp and its corresponding spot disappeared while the others remained.[12](appendix-references.md#ref-05-optics)
 
-Vision had been argued about for centuries. One tradition held that the eye sends something out toward the world; another that something travels into the eye. Ibn al-Haytham developed an account in which light travels from objects toward the eye. The dark room did not settle the whole dispute. It made part of the problem manageable: light from separate sources passed through the same opening along paths that could be traced, interrupted and examined.
-
-The setup allowed someone who disagreed with him to do more than disagree.
-
-A record preserves what somebody says happened. An experiment gives the world another chance to answer.
+Vision had been argued about for centuries. One tradition held that the eye sends something out toward the world; another that something travels into the eye. Ibn al-Haytham developed an account in which light travels from objects toward the eye. The dark room did not settle the whole dispute. It made part of the problem manageable: light from separate sources passed through the same opening along paths that could be traced, interrupted and examined. The setup allowed someone who disagreed with him to do more than disagree.
 
 We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens. Charles Sanders Peirce later argued that this is what separates science from other ways of settling belief, whether by stubbornness, authority or what seems reasonable from an armchair: the answer is constrained by something beyond the believer. I am a pragmatist in his sense throughout this book, and *contact with reality*, wherever the phrase appears here, means that arrangement. Something outside the current explanation is able to make the explanation fail.[13](appendix-references.md#ref-05-peirce)
 
@@ -200,7 +197,7 @@ He was wrong about the moons, but his question was reasonable. Unpack the senten
 
 Later that year Kepler, using a telescope Galileo had sent to the Elector of Cologne, saw the moons himself. A flaw in one lens now had a harder time explaining the result. The two observers still shared assumptions about light and astronomy, and a lens grinder, but the claim no longer depended on what one man said he had seen through one instrument.
 
-A new instrument creates new facts and new ways to be wrong about them. The lens might distort, the point of light might not be there, nobody else might manage to reproduce it, and the operator might not know what she is doing. An instrument is a witness, and a witness needs a track record.
+A new instrument creates new facts and new ways to be wrong about them. The lens might distort, the point of light might not be there, nobody else might manage to reproduce it, and the operator might not know what she is doing.
 
 The agent version is almost embarrassingly literal: run the program, execute the query, open the browser, measure the latency, compile the kernel against GCC. Reasoning has left the conversation, and something outside the current explanation now has a chance to be inconvenient. But every one of those actions brings the telescope’s questions with it: how reliable the tool is, on which problems, what it actually measures, when it fails and who calibrated it.
 
@@ -220,7 +217,7 @@ Pierre Duhem articulated the problem in 1906, and Quine later developed a broade
 
 So the institution needs archaeology: a record of which instrument produced a measurement, which analysis transformed it, and where observation ended and interpretation began. Within a few years of Boyle’s book, *Philosophical Transactions* was publishing reports that could outlive the room. Publication established a claim and a date, and gave someone elsewhere a route, however imperfect, to expose the claim to the world again. Reputation gathered around investigators and, more strangely, around instruments and procedures. The question *did this happen?* acquired machinery.
 
-The machinery was never clean. Access was unequal. Standing affected which claims traveled. Replication could be possible in principle and unaffordable in practice. Medicine later made one form of self-restraint explicit: in a randomized trial, the allocation procedure stops the investigator’s own preference from deciding who gets which treatment. Sometimes bureaucracy is epistemology with a clipboard.
+The machinery was never clean. Access was unequal. Standing affected which claims traveled. Replication could be possible in principle and unaffordable in practice. Medicine later made one form of self-restraint explicit: in a randomized trial, the allocation procedure stops the investigator’s own preference from deciding who gets which treatment.
 
 In an agent system this is provenance around a claim, an assumption graph, a trace. Without the history, reality can tell us we are wrong while leaving us remarkably creative about which part of the system deserves blame.
 
@@ -260,7 +257,7 @@ Newton was extraordinary. In January 1697, busy with the great recoinage at the 
 
 The story is usually told about Newton. The more important part is that Bernoulli’s question could reach him at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight and returned to circulation. The attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Even the anonymous answer arrived carrying something of its author.
 
-Genius mattered enormously. So did the network that let genius start from accumulated work instead of from dirt.
+Genius mattered enormously, and so did the network that let genius start from accumulated work instead of from dirt.
 
 Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help. Science became more powerful by making scientists less interchangeable.
 
@@ -278,14 +275,14 @@ In February 2012 it reported two possible problems in the timing equipment. A fa
 
 The apparatus was still available to inspect after the result became famous. So were the calculations. A loose cable could be found, and finding it could change the answer.
 
-A modern experiment is a society organized around an argument with reality. It is dangerous: a bad calibration can propagate, a shared assumption can synchronize thousands of competent people, prestige can suppress criticism, a procedure can survive long enough to become ritual. But without the machine we lose the knowledge too. There is no lone human replacement for CERN, no polymath who can substitute for modern medicine, no chief scientist carrying scientific civilization in her head.
+A modern experiment is a society organized around an argument with reality. It is dangerous: a bad calibration can propagate, a shared assumption can synchronize thousands of competent people, prestige can suppress criticism, a procedure can survive long enough to become ritual. But without the machine we lose the knowledge too. There is no lone human replacement for CERN.
 
 <!-- ART RESOLVED — ch5-institution. Original brief: DIAGRAM — seven jobs and an eighth. Seven numbered panels inside one frame: "1. Remember — records", "2. Standardize — shared measures and conventions", "3. Specialize — local expertise", "4. Disagree independently — separate investigations", "5. Observe — instruments", "6. Trace — provenance", "7. Allocate — attention and resources". An eighth label, "Revise the institution", has an arrow returning to the frame itself. The arrow changes the arrangement of the panels. This is a map of functions, not a sequence of historical stages. Use the chapter's line-art style. -->
 ## Sixteen Claudes, Again
 
 Go back to the compiler: task locks, Git, CI, progress files, sampled tests, a trusted reference compiler, specialists, a harness that turned one global failure into many small investigations, and a human who watched the work and rebuilt parts of the arrangement when it broke.
 
-At the beginning of the chapter these looked like practical tricks for coordinating coding agents. The progress file looks different after the clerk’s tablet. It need not be wiser than the Claude; it needs to outlive it. The next worker can remember something it never witnessed. Shared conventions let it compare its work with another’s without renegotiating every term. The bronze measure did that for strangers who disagreed about grain.
+At the beginning of the chapter these looked like practical tricks for coordinating coding agents. The progress file is the clerk’s tablet. The next worker can remember something it never witnessed. Shared conventions let it compare its work with another’s without renegotiating every term. The bronze measure did that for strangers who disagreed about grain.
 
 The specialists make different parts of the project visible. A worker hunting duplicate code sees something the worker chasing a parser bug may pass over, just as the reviews team found a whole field of work inside a text box. Authority follows the question: GCC can settle many disputes about what a C program should do without being asked how the whole project should be run. But agreement among specialists still needs examining. Did they investigate separately, or did the same progress file tell all of them what to think?
 
@@ -296,8 +293,6 @@ The familiar failures come with them. A test suite can keep passing while the th
 Tracing a claim takes time and access to the right instruments. The institution has to give someone both, and a way to act on what she finds.
 
 We can test whether these arrangements earn their keep. Keep the model and budget fixed. Give the critic another title, then give her evidence the builder never saw, and compare what she catches. Put a bad diagnosis in a progress file. Compare a system that merely remembers it with one that can trace it to the failed test it misdescribes. Does the mistake survive into the next worker’s plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing.
-
-Records, standards, specialists and a second witness capable of being wrong differently: each piece answered a failure in the work, and the institution emerged from the repairs.
 
 What the pieces buy is capacity: a claim that survives its author, an objection that survives the person who would rather not hear it, and things a population can attempt that none of its members could.
 

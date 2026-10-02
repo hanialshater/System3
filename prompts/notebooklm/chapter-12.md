@@ -14,10 +14,10 @@ Adapt Hani M.M. Al-Shater's "Chapter 12: After Capacity" into an English video. 
 
 1. Opening passage
 2. The Curve
-3. Owning the Frontier
+3. The River Moves
 4. Bespoke Comes Back
 5. Anyone Could Do That
-6. The Ideology Vortex
+6. The Answer to Derrida
 7. Capacity Over Power
 8. Who Owns the Laboratory
 9. The Second Descent

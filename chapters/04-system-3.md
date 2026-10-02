@@ -52,9 +52,7 @@ For Saussure, much of a sign’s value comes from its relationships and differen
 
 A century later we built something that learns a network of that kind. A transformer consumes enormous amounts of language and learns relationships among tokens and contexts. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
 
-Read today, Saussure’s theory looks uncannily like a specification for GPT. He did not secretly invent attention in 1916, and structural linguistics is not a machine-learning architecture. But language models are spectacular evidence for how much competence can emerge from structure learned inside symbolic data. They write, translate, debug software and explain physics without ever acquiring the farmer’s relationship to cows or a child’s relationship to fire.
-
-The residue carries a great deal, though not everything.
+Read today, Saussure’s theory looks uncannily like a specification for GPT. Language models are spectacular evidence for how much competence can emerge from structure learned inside symbolic data. They write, translate, debug software and explain physics without ever acquiring the farmer’s relationship to cows or a child’s relationship to fire.
 
 A farmer’s sentence about cows may compress twenty years of encounters, other farmers’ advice, veterinary knowledge and mistakes painful enough not to repeat. The sentence goes into a corpus, the corpus becomes training data, and its regularities are compressed into weights.
 
@@ -62,9 +60,7 @@ Months later somebody asks whether cows are dangerous, and the model gives an ex
 
 The conclusion survives training, and much of what earned it trust is lost along the way. That is what I mean when I call an LLM’s knowledge epistemologically flat. The flatness sits between a claim and its justification. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel, in equally polished English.
 
-Wittgenstein’s later philosophy drew attention to language as something that lives inside practice, in activities, habits, rules and what he called forms of life.[2](appendix-references.md#ref-04-wittgenstein)
-
-“Fire” keeps linguistic company with heat, smoke, burn and wood. Fire is also the thing that cooks food and destroys houses, the thing you pull your hand away from. Shout the word in a crowded building and a whole social machinery starts to move.
+“Fire” keeps linguistic company with heat, smoke, burn and wood. Fire is also the thing that cooks food and destroys houses, the thing you pull your hand away from. Shout the word in a crowded building and a whole social machinery starts to move. This is what Wittgenstein’s later philosophy drew attention to: language living inside practice, in activities, habits, rules and what he called forms of life.[2](appendix-references.md#ref-04-wittgenstein)
 
 Emily Bender and Alexander Koller made a version of this argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff through a conversation about a coconut catapult by offering praise. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Their argument is that learning form alone cannot give it meaning.[3](appendix-references.md#ref-04-octopus) I prefer dead Europeans to cephalopods, but the point is the same.
 
@@ -120,37 +116,25 @@ Consequences don’t make anyone truthful. People lie despite them, and institut
 
 An LLM has no social capital of its own to lose. It can confidently produce something false and, at the level of the model itself, nothing happens. The cost lands elsewhere: on the user, the application or the institution deploying it.
 
-The danger is coherence outrunning correspondence, with the machine getting very good at tongue and having no ear to check it against. The failures to worry about are the ones that seem to work. A crash at least tells you something went wrong.
+The danger is coherence outrunning correspondence, with the machine getting very good at tongue and having no ear to check it against.
 
 ## System 3
 
 At the moment we are obsessed with making models think harder. System 2 reasoning has become a product category: give the model more inference time and let it plan, search, reconsider and work through difficult problems before it answers.
 
-Reasoning perfectly from a bad premise still gets you a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed. Deep Mode can coordinate five sophisticated judgments that all trace back to one hallucinated claim. At some point thinking has to meet something outside itself.
+Reasoning perfectly from a bad premise still gets you a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed. At some point thinking has to meet something outside itself.
 
 Kahneman’s *Thinking, Fast and Slow* popularized the distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[4](appendix-references.md#ref-04-kahneman)
 
 For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
 
-But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks.
+But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks, though not always by touch: a formal proof never needs to touch a cow.
 
-A cruder version is easier to remember: the Gut, the Head and the Hand. The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it. Peer review has no hand, provenance has no fingers and a formal proof never needs to touch a cow, so take the mnemonic loosely.
-
-Deep Mode is Layer 3, the problem-solving layer. System 3 runs through every layer.
-
-Deep Mode asks: Given what we know, what should we try next?
-
-System 3 asks: What are we entitled to treat as known?
-
-The model proposes something, the coding agent may test it, and the application can collect real user behavior. Deep Mode may compare research, simulation and evaluation. Even Layer 4, the goal itself, can change when reality pushes back.
-
-The five layers describe where increasingly abstract work happens, and System 3 keeps them epistemically connected. Without it, every layer we delegate to is one more place for an unsupported claim to travel.
-
-Here is the stack, with System 3 running across it:
+System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back.
 
 |Layer|The question it answers|
 |---|---|
-|4 — Intention|What do we actually want?|
+|4 — Desire|What do we actually want?|
 |3 — Deep Mode|Given what we know, what should we try next?|
 |2 — Application|Can the work begin near the application instead of the plumbing?|
 |1 — Agent|Can the model act, and see what happened?|
@@ -278,7 +262,7 @@ self._pixel_keep = np.nonzero([
 ])[0]
 ```
 
-The second approach was not stupid. That is why the case matters.
+The second approach was reasonable. That is why the case matters.
 
 The agent had accumulated context about indexing, dimensionality and coordinate-system failures. Its chosen explanation fit that context, and the path it followed looked principled and coherent.
 
@@ -286,7 +270,7 @@ It was wrong. The baseline took the simpler path and fixed the actual bug.
 
 One possible story is that accumulated epistemic structure made one family of explanations too salient. But one case cannot establish that causal story. Persistent state may have caused the wrong turn or merely accompanied it.
 
-Trust is path-dependent, and so is expertise. A great database engineer may see a database problem faster than most people, which is wonderful until the actual problem is the network. The same focus that makes a paradigm useful can trap the people working inside it.
+Trust is path-dependent, and so is expertise. A great database engineer may see a database problem faster than most people, which is wonderful until the actual problem is the network.
 
 “Add memory, get a smarter agent” had failed its first small test. It left me wondering what would let an agent challenge the experience it had accumulated.
 
@@ -296,7 +280,9 @@ Trusted knowledge makes you efficient, and it can also make you boring. If an ag
 
 A new idea can arrive with very little evidence behind it. It may be right and still sound like my brother’s bullshit. System 3 needs room for creative distrust too.
 
-By that I mean understanding a trust chain well enough to know where you are breaking it and why. Contrarianism for sport doesn’t count, and neither does the internet habit of treating expert agreement as proof of corruption.
+By that I mean understanding a trust chain well enough to know where you are breaking it and why.
+
+<!-- AUTHOR: Creative Distrust needs a real scene, e.g. a case of creative distrust from the eight years ranking reviews; it could replace or join the scientist and designer sentences below. -->
 
 A scientist repeats a strange experiment after accepted theory says the result should not happen. A designer violates a trusted pattern because this case exposes its boundary conditions.
 
@@ -314,11 +300,11 @@ Now the seven claims.
 6. **Camels are native to the Dalmatian coast: false.** You probably rejected this immediately without reconstructing camel evolutionary history or personally surveying Dalmatian fauna. A large inherited structure did that work for you. System 1 can be fast because System 3 has often been working underneath it for centuries.
 7. **Real, unedited photograph: true.** The image alone cannot establish that. A stronger chain might include the original file, metadata, cryptographic signing, independent witnesses or another provenance system. Every extra link can increase confidence, and every one is something else that may need to be trusted. I could also be lying to prove a point about trusting sources. If I told you the photograph was AI-generated, you would probably believe that too, because it fits a pattern you recognize.
 
-None of this means that nothing can be known, a conclusion that is dramatic and mostly useless. It means that trust has structure.
+None of this means that nothing can be known, a conclusion that is dramatic and mostly useless. Trust has structure.
 
 The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It doesn’t need to hold the entire chain in its weights, because the system around it can.
 
-Borrowing Daniel Dennett’s phrase, I would call this competence without comprehension.[8](appendix-references.md#ref-04-dennett) Whether the system around it amounts to comprehension is a question for people with more patience than I have. The part of it that can be checked is the part the rest of this book builds.
+Borrowing Daniel Dennett’s phrase, I would call this competence without comprehension.[8](appendix-references.md#ref-04-dennett) Whether the system around it amounts to comprehension is a question for people with more patience than I have.
 
 Everything so far can still be imagined around one agent that acts, checks, remembers, records provenance and updates what it trusts.
 
