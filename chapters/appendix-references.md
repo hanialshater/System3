@@ -395,25 +395,23 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 22. <a id="ref-08-khan"></a>Akbir Khan et al., “Debating with More Persuasive LLMs Leads to More Truthful Answers,” ICML 2024. <https://arxiv.org/abs/2402.06782>. On the QuALITY task, non-expert human judges reached 88 percent accuracy with debate against a 60 percent naive baseline.
 
-23. <a id="ref-08-legibility"></a>Hunter Lightman et al., “Let’s Verify Step by Step” (process supervision, OpenAI, 2023). <https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/>; Jan Hendrik Kirchner et al., “Prover-Verifier Games improve legibility of LLM outputs” (OpenAI, 2024). <https://openai.com/index/prover-verifier-games-improve-legibility/>.
+23. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
 
-24. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
+24. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
 
-25. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
+25. <a id="ref-08-control-roadmap"></a>Google DeepMind, AI control roadmap (2026). <https://arxiv.org/abs/2607.13087>.
 
-26. <a id="ref-08-control-roadmap"></a>Google DeepMind, AI control roadmap (2026). <https://arxiv.org/abs/2607.13087>.
+26. <a id="ref-08-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
 
-27. <a id="ref-08-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
+27. <a id="ref-08-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
 
-28. <a id="ref-08-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
+28. <a id="ref-08-clarify"></a>Michael J. Q. Zhang, W. Bradley Knox and Eunsol Choi, “Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions,” ICLR 2025. <https://arxiv.org/abs/2410.13788>.
 
-29. <a id="ref-08-clarify"></a>Michael J. Q. Zhang, W. Bradley Knox and Eunsol Choi, “Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions,” ICLR 2025. <https://arxiv.org/abs/2410.13788>.
+29. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>.
 
-30. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>.
+30. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
 
-31. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
-
-32. <a id="ref-08-mitigate"></a>Anthropic, “Automated researchers can reliably mitigate alignment failures” (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>.
+31. <a id="ref-08-mitigate"></a>Anthropic, “Automated researchers can reliably mitigate alignment failures” (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>.
 
 ## Interlude — When It Goes Wrong
 
@@ -484,6 +482,12 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 6. <a id="ref-12-flt-tokens"></a>OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ <https://openai.com/index/navier-stokes-solution/> (the group that produced the reported resolution involved on the order of 10,000 concurrent agents); Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, <https://www.anthropic.com/research/formalizing-fermats-last-theorem> (the formalization’s reported token use).
 
 7. <a id="ref-12-access"></a>Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, 12 June 2026, <https://www.anthropic.com/news/fable-mythos-access>; Anthropic, announcement on redeploying Fable 5, 30 June 2026, updated 1 July, <https://www.anthropic.com/news/redeploying-fable-5>. Access to both models was suspended on 12 June 2026. The export controls were lifted on 30 June and Fable 5 was available globally again from 1 July; Mythos 5 was restored for a set of US organizations after US government approval on 26 June.
+
+### Additional sources
+
+- Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, “Reconciling modern machine-learning practice and the classical bias–variance trade-off,” *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
+- Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter’s community-room example and proposed AI applications are the author’s thought experiment. <https://doi.org/10.1257/aer.100.3.641>
+- Jacques Derrida, “Signature Event Context” (1972), in *Limited Inc* (Northwestern University Press, 1988), 1–23 — repeatability and the impossibility of finally closing context; the gradient-descent connection is the author’s provocation. See also *Of Grammatology* (1967).
 
 ### Additional sources
 
