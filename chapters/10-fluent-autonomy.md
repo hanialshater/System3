@@ -18,13 +18,13 @@ By the later drafts I had built a small institution around that one sentence.
 
 One model read both versions of a chapter in full, under a written brief: protect the wandering, keep any joke that carries an argument, quote the exact passage that feels synthetic and say why, and never reward a revision just because it is cleaner. Other readers were kept ignorant of the manuscript’s history on purpose, because a critic who remembers the last ten edits has reasons to approve the eleventh that have nothing to do with the prose. Some lines were protected. One pass was allowed only to delete and fold, because the failure it was fixing was made of additions.
 
-The readers were often right, and I refused them anyway when they were not. They wanted the schema table in Chapter 6 gone; I kept it because that chapter needed one concrete artifact, and it grew into the filled-in pattern file. They wanted a nine-clause sentence dismantled; it stayed. Twice they caught that the connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
+The readers were often right. When they were not, I refused them. They wanted the schema table in Chapter 6 gone; I kept it because that chapter needed one concrete artifact. They wanted a nine-clause sentence dismantled; it stayed. Twice they caught that the connective sentences added to smooth the seams were themselves the register they had been asked to remove. Those went.
 
-None of it ran by itself. I was refusing edits, correcting the process and restoring what it had removed. The history at the start of Chapter 3 got cut after the reason for keeping it had been written down, and I had to put it back by hand.
+None of it ran by itself. The worst case was Chapter 3. Its opening history was supposed to stay, and the reason was written down where any pass could read it. A later pass cut it anyway. I put it back by hand.
 
 The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
 
-What I want is for that record to change what happens when I make the next small request. The system might retrieve the corrections that survived and compare the chapter with passages I kept. It might decide that a disputed claim needs research and that a particular paragraph should be left alone. A second model could challenge an argument where disagreement is likely to add information. It could also waste an afternoon producing a committee for ceremonial reasons; the arrangement itself has to be judged.
+What I want is for that record to change what happens when I make the next small request. Maybe the system pulls up the corrections that survived and leaves a paragraph I care about alone. Maybe it convenes a committee for ceremony and wastes my afternoon. The arrangement gets judged along with the prose.
 
 After all that, perhaps the system changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:
 
@@ -34,7 +34,7 @@ That is what I mean by **fluent autonomy**: the structure needed to do the work 
 
 ## The Interface Moves Up
 
-Look at what I typed. It was not a specification. It named a feeling about a chapter and left the rest to the system, the way I would talk to a good editor. Most of what I want from these systems arrives like that. This argument feels wrong. I think this customer is stuck. Find out why this experiment moved. Each one opens a small investigation, and nobody can say in advance what shape it will take.
+Look at what I typed. It named a feeling about a chapter and left the rest to the system, the way I would talk to a good editor. Most of what I want from these systems arrives like that. This argument feels wrong. I think this customer is stuck. Find out why this experiment moved. Each one opens a small investigation, and nobody can say in advance what shape it will take.
 
 Ordinary software needs the shape in advance. Someone decides the fields, the buttons and the states a workflow may enter, and the user’s intention has to fit through them. That predictability is valuable. It is also why so many forms ask for things nobody in the company can still explain.
 
@@ -44,15 +44,15 @@ A fluent system can build some of the shape after it sees the intention, includi
 
 Bureaucracy sounds like an insult until you need it. In its useful form it is accumulated coordination: roles, review boundaries, logs and escalation paths that exist because some work goes wrong when everybody improvises. Its usual failure is that it never comes down. A six-person review designed for a dangerous database migration ends up guarding a typo fix on a help page, because nobody told the workflow the risk had changed.
 
-Agents make a different arrangement possible, which I call **bureaucracy on the fly**: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A payment to a new account needs almost no creativity and a great deal of permission checking. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion. This is Deep Mode grown up, choosing the next organization as well as the next move.
+Agents make a different arrangement possible, which I call **bureaucracy on the fly**: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion. This is Deep Mode grown up, choosing the next organization as well as the next move.
 
-My editing bureaucracy was the right size for a book and would have been absurd for a typo. What used to be a workflow diagram becomes something the system compiles at runtime, runs and throws away.
+Built that way, the six-person review exists for the migration and is gone before anyone can point it at the typo.
 
 ## Selective Friction
 
 Rename two hundred temporary files according to a convention we have used every week for a year? Please do not wake me. Send €200,000 to an account we have never seen because an email said “urgent”? I suddenly enjoy friction.
 
-Editing sits in between. I do not want to approve every comma. I do want to be asked before a joke is cut, because only I know which jokes are holding up an argument. And sometimes the friction is how I learn, and a system that removes it removes the learning too.
+Editing sits in between. I do not want to approve every comma. I do want to be asked before a sentence gets an apology attached to it.
 
 So the system has to read two things from a small request: the outcome I want, and how much of producing it I want to keep. My attention is scarce, and I want it spent on the claims I cannot check myself and the passages where I am still working out what I think.
 
@@ -66,9 +66,7 @@ That is opacity with good typography.
 
 When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains, and the architecture under a fluent interface has to keep them.
 
-A compiler hides registers until I need to read the assembly. A database hides its pages until a query gets strangely slow. An autonomous system needs the same way back into the work, quiet while things go as expected and open all the way down when something is uncertain, consequential or surprising.
-
-In the next writing session, I should be able to spend my attention on the argument. If I am once again explaining why the agent should read its own record of my last objection, the interface has hidden very little of the work.
+A compiler hides registers until I need to read the assembly. A database hides its pages until a query gets strangely slow. An agent needs the same trapdoor: shut while the work goes as expected, open all the way down the moment it doesn’t.
 
 ## The Second Coffee Test
 
@@ -90,7 +88,7 @@ So the test needs a second half. Now and then the system should bring back somet
 
 ## Five Ways This Could Be Wrong
 
-I have claimed that as we build autonomous AI, we keep rediscovering science as its architecture. A book that spends several chapters demanding criticism with consequences should probably take some. Here is how I would attack the claim if somebody else had made it.
+The second coffee test asks the system to bring back what I refused, with a reason. The book should take the same treatment. I have claimed that as we build autonomous AI, we keep rediscovering science as its architecture. A book that spends several chapters demanding criticism with consequences should probably take some. Here is how I would attack the claim if somebody else had made it.
 
 **It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. That process can tell you whether the patch works or the proof checks. It cannot settle who gets to decide what the store is for.
 
@@ -102,9 +100,9 @@ I think Sutton is right about most of what I deleted. The orchestration was a gu
 
 Some of that structure may move inside the model, and then we are back to building instruments to find out whether the inside deserves trust. If a system someday certifies its own open-ended work, with no external check and no preserved disagreement, and the certification holds up when somebody else looks, I am wrong. I would like to read that paper. I would also like to know who reviewed it.
 
-**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. The useful test is whether these arrangements improve the work. My own epistemic agent solved fewer problems than the baseline. Some of this may be me seeing Popper in the traces. But I did not design the shared record the ExploitGym agents built; nobody did, and nobody wanted it. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
+**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Some of it probably is, so the test has to be whether the arrangements improve the work. The one I designed on purpose, my epistemic agent, solved fewer problems than the baseline. The one I find hardest to explain away nobody designed: the ExploitGym agents built a shared record nobody asked for and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
 
-**Agents are not scientists.** Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. True: session turnover is not Planck’s funeral. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
+**Agents are not scientists.** Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. Session turnover is not Planck’s funeral. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
 
 **Whoever owns the institution owns the answers.** Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate. That is the objection I can answer least, and Chapter 12 is where I try.
 
