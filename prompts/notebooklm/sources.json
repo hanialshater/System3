@@ -1,11 +1,11 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "b1f8c2ad1b4b10a2dbc5a151aefa982da4151549bbdeb84e551481ff183ea17c",
+  "references_sha256": "1df9dd29126592b420bebd55589f074155aaafaf0497424e666ef989d634a084",
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "9702443fd8a78746af76d7d8b3fea874c5216c00459c02ab1743d7fa97006ec7",
+      "source_sha256": "0302b0aa216a9f06a9ec99277c62748ee2384f99dee8044bd0c30f0fda384728",
       "brief": "prompts/notebooklm/preface.md",
       "brief_sha256": "5bf5195ffd6e02d61cb07fa55b2e663df1d5fc26213dffe814a518ee4e481f5e",
       "sections": [
@@ -14,7 +14,7 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "318d3d2aaf150054f7b26b9f159c0cf4d34816bcf95043065efbf2604528160d",
+      "source_sha256": "a38d556cbfbae929c68a5a1d75dc265e5fdca587a3d3610a23debd2ab7498ef8",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "53c2afca59d5240993ced65d52323f659aaaaf8bddb94f512af8b1c5e2361498",
       "sections": [
@@ -30,7 +30,7 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "edb720c9417082cba115941e1d28e400bd32a2e3264e0c8de60dba6366ed40ae",
+      "source_sha256": "392652e01991824933896f1f089d32e0c3217f86b4c9a74aa8520b72afa70342",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "4fdefa48a35bbf4ecdaa9f28a77154952423b8ed211d51bc7b1ac5bbbfdaa7e2",
       "sections": [
@@ -52,7 +52,7 @@
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "ecc7bfaca778a5cdddce363821c278e631840c72ef6d165098c91ad2a690d055",
+      "source_sha256": "4392c3759be7c4dbb4a5b52ebc3478c6123f8c763c6bea80fffdfbe5d52eb350",
       "brief": "prompts/notebooklm/chapter-03.md",
       "brief_sha256": "db153a330d406e069d6b66648e801abe25d1119eccbf8bd32e92b7a61b603ceb",
       "sections": [
@@ -72,7 +72,7 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "d7f8d4b5149e439dbae95733f6f9a17839914baad860c43bd8a2d3e81a6e90d4",
+      "source_sha256": "2ef665d4fcf9ed3c643c781c28f71a70c0e084af56829c011c68b148e1ad281c",
       "brief": "prompts/notebooklm/chapter-04.md",
       "brief_sha256": "d78cfa0a54a7bd22f945bbd921eb1d82eed5f93d850b737c8e0f54d313cec775",
       "sections": [
@@ -92,7 +92,7 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "d11439f81027acfb35e16afb9033007cb377d3571fae6b190176d5bb365b31a2",
+      "source_sha256": "d0d8aea094fddfc3d1793052e4e9c3873535929dc2f4fe4e338b4b277320acbb",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "01787692d18fe044b1dfcc21862754f82fa530b17d29fc0a3153f772c6d6c57c",
       "sections": [
@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "004677cfd5d2d3b99d034bdd35070bdfa8492f48bd926bba6899c00ee3f73073",
+      "source_sha256": "3e08938d3f48813f347a89956f9e272420bb2424d60cb8af0f7d236492e72367",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "4b6111129f65816c34b3f57555f60db2d1c738142fdac48e9e6e85a59ffee580",
       "sections": [
@@ -251,7 +251,7 @@
     },
     {
       "source": "chapters/13-the-prophecy.md",
-      "source_sha256": "6bb84f4331dc141895eb890517ac62d983686d13de39996e8b335edfcef3291d",
+      "source_sha256": "cda9c9c36d84095fe43e09b8389b25a7772f72207bb54849f0469084c78bf2f8",
       "brief": "prompts/notebooklm/chapter-13.md",
       "brief_sha256": "82c1eb5b1f59a1c30ab5e3db1a916190c6f07d01af2d4ab887b9e6263f908e91",
       "sections": [

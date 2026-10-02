@@ -66,14 +66,6 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 - Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
 - Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds* (W. W. Norton, 2017) — “competence without comprehension.”
 
-### Additional sources
-
-- Chunqiu Steven Xia et al., “Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?” (2025) — the agent work in which the MARC-file analyzer incident occurred: agents building new tools at runtime when existing instruments could not expose the data. <https://arxiv.org/abs/2511.13646>
-- SWE-bench Verified (OpenAI, 2024) — the human-validated SWE-bench subset used in the epistemic-swe comparison. <https://openai.com/index/introducing-swe-bench-verified/>
-- mini-swe-agent (SWE-agent project) — the baseline agent in the chapter’s experiment. <https://github.com/SWE-agent/mini-swe-agent>
-- Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
-- Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds* (W. W. Norton, 2017) — “competence without comprehension.”
-
 ## Chapter 5 — The Society of Agents
 
 1. <a id="ref-05-carlini"></a>Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler’s achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
@@ -168,47 +160,43 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 19. <a id="ref-06-knowledge-web"></a>CERN, [“The birth of the Web”](https://home.cern/science/computing/the-birth-of-the-web/); Sergey Brin and Lawrence Page, [“The Anatomy of a Large-Scale Hypertextual Web Search Engine”](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf), *Computer Networks* 30 (1998), 107–117, §2.1; Wikipedia, [“Verifiability”](https://en.wikipedia.org/wiki/Wikipedia:Verifiability), especially the responsibility for providing citations. The sequence of changing knowledge infrastructures is the author’s synthesis, not a claim that each medium displaced its predecessors.
 
-20. <a id="ref-06-tao"></a>Terence Tao, “Mathematical exploration and discovery at scale,” 5 November 2025. <https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/>. See also Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, and Adam Zsolt Wagner, <https://arxiv.org/abs/2511.02864>.
+20. <a id="ref-06-buzzard"></a>Kevin Buzzard, “FLT: Anthropic has beaten me to it,” 4 September 2026, especially “The code base” and “What this work is, and is not.” <https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/>.
 
-21. <a id="ref-06-biology"></a>Google DeepMind and EMBL-EBI, [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/); AlphaGenome Atlas team, [“AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome”](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/), September 2026.
+21. <a id="ref-06-imagenet"></a>Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, “ImageNet Classification with Deep Convolutional Neural Networks,” *Advances in Neural Information Processing Systems* 25, 2012.
 
-22. <a id="ref-06-buzzard"></a>Kevin Buzzard, “FLT: Anthropic has beaten me to it,” 4 September 2026, especially “The code base” and “What this work is, and is not.” <https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/>.
+22. <a id="ref-06-kuhn"></a>Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>.
 
-23. <a id="ref-06-imagenet"></a>Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, “ImageNet Classification with Deep Convolutional Neural Networks,” *Advances in Neural Information Processing Systems* 25, 2012.
+23. <a id="ref-06-riemann"></a>Anthropic, “Learning more about Claude’s mathematical capabilities,” 10 August 2026, updated 13 August. <https://www.anthropic.com/research/riemann-zeta>.
 
-24. <a id="ref-06-kuhn"></a>Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>.
+24. <a id="ref-06-laudan"></a>Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. <https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf>.
 
-25. <a id="ref-06-riemann"></a>Anthropic, “Learning more about Claude’s mathematical capabilities,” 10 August 2026, updated 13 August. <https://www.anthropic.com/research/riemann-zeta>.
+25. <a id="ref-06-lakatos"></a>Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
 
-26. <a id="ref-06-laudan"></a>Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. <https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf>.
+26. <a id="ref-06-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>.
 
-27. <a id="ref-06-lakatos"></a>Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
+27. <a id="ref-06-navier"></a>OpenAI, “On the Navier–Stokes Millennium Prize Problem,” 8 September 2026, updated 10 September, especially “How we found the proof.” <https://openai.com/index/navier-stokes-solution/>. The announced result uses smooth forcing and addresses alternatives C and D of the official formulation; it does not settle the unforced Navier–Stokes regularity question.
 
-28. <a id="ref-06-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>.
+28. <a id="ref-06-clay"></a>Clay Mathematics Institute, “Navier-Stokes Announcement,” 11 September 2026. <https://www.claymath.org/news/navier-stokes-announcement/>. Status of the recent mathematical announcements in this chapter checked on 13 September 2026.
 
-29. <a id="ref-06-navier"></a>OpenAI, “On the Navier–Stokes Millennium Prize Problem,” 8 September 2026, updated 10 September, especially “How we found the proof.” <https://openai.com/index/navier-stokes-solution/>. The announced result uses smooth forcing and addresses alternatives C and D of the official formulation; it does not settle the unforced Navier–Stokes regularity question.
+29. <a id="ref-06-priority"></a>Tristan Buckmaster, [public statement](https://cims.nyu.edu/~tristanb/statement.pdf), September 2026, especially pp. 1–4; OpenAI, [“On the Navier–Stokes Millennium Prize Problem,” “Concurrent work”](https://openai.com/index/navier-stokes-solution/), updated 10 September 2026. These are the participants’ accounts. Buckmaster described his work with Levent Alpöge as extending a program begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI’s effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster’s recent Codex prompts to train the system.
 
-30. <a id="ref-06-clay"></a>Clay Mathematics Institute, “Navier-Stokes Announcement,” 11 September 2026. <https://www.claymath.org/news/navier-stokes-announcement/>. Status of the recent mathematical announcements in this chapter checked on 13 September 2026.
+30. <a id="ref-06-fbwellbeing"></a>David Ginsberg and Moira Burke, [“Hard Questions: Is Spending Time on Social Media Bad for Us?”](https://about.fb.com/news/2017/12/hard-questions-is-spending-time-on-social-media-bad-for-us/), Facebook, 15 December 2017. The post reviews external studies and company research and distinguishes passive consumption from active interaction.
 
-31. <a id="ref-06-priority"></a>Tristan Buckmaster, [public statement](https://cims.nyu.edu/~tristanb/statement.pdf), September 2026, especially pp. 1–4; OpenAI, [“On the Navier–Stokes Millennium Prize Problem,” “Concurrent work”](https://openai.com/index/navier-stokes-solution/), updated 10 September 2026. These are the participants’ accounts. Buckmaster described his work with Levent Alpöge as extending a program begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI’s effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster’s recent Codex prompts to train the system.
+31. <a id="ref-06-fbchange"></a>Adam Mosseri, [“Bringing People Closer Together”](https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/), Facebook, 11 January 2018. The announcement describes prioritizing conversations and interactions among friends and family and anticipates reduced time spent on Facebook.
 
-32. <a id="ref-06-fbwellbeing"></a>David Ginsberg and Moira Burke, [“Hard Questions: Is Spending Time on Social Media Bad for Us?”](https://about.fb.com/news/2017/12/hard-questions-is-spending-time-on-social-media-bad-for-us/), Facebook, 15 December 2017. The post reviews external studies and company research and distinguishes passive consumption from active interaction.
+32. <a id="ref-06-fbfiles"></a>Keach Hagey and Jeff Horwitz, “Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead,” *The Wall Street Journal*, 15 September 2021, part of the Facebook Files series based on internal documents; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF16/20211201/114268/HHRG-117-IF16-20211201-SD012.pdf). The company said the ranking change was not the source of the world’s divisions and that it had an integrity team working on exploitation of the algorithm. The article reports both limited adoption of fixes and resistance to extending them.
 
-33. <a id="ref-06-fbchange"></a>Adam Mosseri, [“Bringing People Closer Together”](https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/), Facebook, 11 January 2018. The announcement describes prioritizing conversations and interactions among friends and family and anticipates reduced time spent on Facebook.
+33. <a id="ref-06-instagram"></a>Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the body-image findings and the former researcher’s statement about bonuses. For the company’s response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September. The body-image proportion concerns respondents who reported that difficulty, not all teenage girls; the surveys do not establish causation.
 
-34. <a id="ref-06-fbfiles"></a>Keach Hagey and Jeff Horwitz, “Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead,” *The Wall Street Journal*, 15 September 2021, part of the Facebook Files series based on internal documents; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF16/20211201/114268/HHRG-117-IF16-20211201-SD012.pdf). The company said the ranking change was not the source of the world’s divisions and that it had an integrity team working on exploitation of the algorithm. The article reports both limited adoption of fixes and resistance to extending them.
+34. <a id="ref-06-longino"></a>Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
 
-35. <a id="ref-06-instagram"></a>Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the body-image findings and the former researcher’s statement about bonuses. For the company’s response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September. The body-image proportion concerns respondents who reported that difficulty, not all teenage girls; the surveys do not establish causation.
+35. <a id="ref-06-colosseum"></a>Honghao Lin et al., “Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,” arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. <https://arxiv.org/html/2609.15983v2>. The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
 
-36. <a id="ref-06-longino"></a>Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
+36. <a id="ref-06-planck"></a>Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn’s text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
 
-37. <a id="ref-06-colosseum"></a>Honghao Lin et al., “Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,” arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. <https://arxiv.org/html/2609.15983v2>. The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
+37. <a id="ref-06-funerals"></a>Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. <https://pubmed.ncbi.nlm.nih.gov/31656315/>.
 
-38. <a id="ref-06-planck"></a>Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn’s text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
-
-39. <a id="ref-06-funerals"></a>Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. <https://pubmed.ncbi.nlm.nih.gov/31656315/>.
-
-40. <a id="ref-06-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
+38. <a id="ref-06-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
 
 ### Additional sources
 
@@ -286,41 +274,6 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 30. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
 
 31. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
-
-### Additional sources
-
-- Tim Hart and Mike Levin’s self-hosting LISP 1.5 compiler (MIT, 1962), preserved in the Computer History Museum’s LISP 1.5 family archive. <https://softwarepreservation.computerhistory.org/LISP/lisp15_family.html>
-- I. J. Good, “Speculations Concerning the First Ultraintelligent Machine,” *Advances in Computers* 6 (1965), 31–88. <https://doi.org/10.1016/S0065-2458%2808%2960418-0>
-- Richard S. Sutton, “Learning to predict by the methods of temporal differences,” *Machine Learning* 3 (1988), 9–44. <https://doi.org/10.1007/BF00115009>
-- Christopher J. C. H. Watkins and Peter Dayan, “Q-learning,” *Machine Learning* 8 (1992), 279–292. <https://doi.org/10.1007/BF00992698>
-- Gerald Tesauro, “Programming backgammon using self-teaching neural nets,” *Artificial Intelligence* 134 (2002), 181–199. <https://doi.org/10.1016/S0004-3702%2801%2900110-2>
-- Jürgen Schmidhuber, “Curious model-building control systems” (1991) and related work on artificial curiosity. <https://people.idsia.ch/~juergen/curiositysab/curiositysab.html>
-- Pierre-Yves Oudeyer, Frédéric Kaplan and Verena V. Hafner, “Intrinsic Motivation Systems for Autonomous Mental Development,” *IEEE Transactions on Evolutionary Computation* 11 (2007), 265–286. <https://www.pyoudeyer.com/ims.pdf>
-- Marc G. Bellemare et al., “Unifying Count-Based Exploration and Intrinsic Motivation,” 2016, [arXiv:1606.01868](https://arxiv.org/abs/1606.01868).
-- Deepak Pathak et al., “Curiosity-driven Exploration by Self-supervised Prediction,” ICML 2017. <https://proceedings.mlr.press/v70/pathak17a.html>
-- Yuri Burda et al., “Exploration by Random Network Distillation” (2018). <https://arxiv.org/abs/1810.12894>
-- Ruzena Bajcsy, “Active Perception,” *Proceedings of the IEEE* 76 (1988), 966–1005. <https://doi.org/10.1109/5.5968>
-- Rodney A. Brooks, “Intelligence Without Representation,” *Artificial Intelligence* 47 (1991), 139–159. <https://people.csail.mit.edu/brooks/papers/representation.pdf>
-- Michael McCloskey and Neal J. Cohen, “Catastrophic Interference in Connectionist Networks,” *Psychology of Learning and Motivation* 24 (1989), 109–165. <https://doi.org/10.1016/S0079-7421%2808%2960536-8>
-- James Kirkpatrick et al., “Overcoming catastrophic forgetting in neural networks” (Elastic Weight Consolidation), *PNAS* 114 (2017), 3521–3526. <https://pmc.ncbi.nlm.nih.gov/articles/PMC5380101/>
-- Leigh Van Valen, “A New Evolutionary Law,” *Evolutionary Theory* 1 (1973), 1–30 — the Red Queen hypothesis; see also the Santa Fe Institute retrospective. <https://www.santafe.edu/research/results/papers/37-revisiting-leigh-van-valens-a-new-evolutionary->
-- W. Daniel Hillis, “Co-evolving parasites improve simulated evolution as an optimization procedure,” *Physica D* 42 (1990), 228–234. <https://doi.org/10.1016/0167-2789%2890%2990076-2>
-- David Silver et al., “A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play” (AlphaZero), *Science* 362 (2018), 1140–1144. <https://www.science.org/doi/10.1126/science.aar6404>
-- Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” ICML 2000. <https://ai.stanford.edu/~ang/papers/icml00-irl.pdf>
-- Chelsea Finn, Pieter Abbeel and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks” (MAML), ICML 2017. <https://proceedings.mlr.press/v70/finn17a.html>
-- Marcin Andrychowicz et al., “Learning to Learn by Gradient Descent by Gradient Descent,” 2016, [arXiv:1606.04474](https://arxiv.org/abs/1606.04474).
-- Pat Langley, Herbert A. Simon, Gary L. Bradshaw and Jan M. Zytkow, *Scientific Discovery: Computational Explorations of the Creative Processes*, MIT Press, 1987.
-- Rui Wang et al., “Paired Open-Ended Trailblazer (POET),” 2019, [arXiv:1901.01753](https://arxiv.org/abs/1901.01753).
-- Irwan Bello et al., “Neural Optimizer Search with Reinforcement Learning,” ICML 2017. <https://proceedings.mlr.press/v70/bello17a.html>
-- Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” ICLR 2017. <https://research.google/pubs/neural-architecture-search-with-reinforcement-learning/>
-- Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution Through the Search for Novelty Alone,” *Evolutionary Computation* 19 (2011), 189–223. <https://stars.library.ucf.edu/facultybib2010/1530/>
-- Rui Wang et al., “Enhanced POET: Open-Ended Reinforcement Learning through Unbounded Invention of Learning Challenges and their Solutions,” ICML 2020. <https://proceedings.mlr.press/v119/wang20l.html>
-- DeepMind Open-Ended Learning Team, “Generally capable agents emerge from open-ended play” (XLand, 2021). <https://deepmind.google/blog/generally-capable-agents-emerge-from-open-ended-play/>
-- Elliot Glazer et al., “FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI” (Epoch AI, 2024). <https://epoch.ai/frontiermath/tiers-1-4/the-benchmark>
-- Meta AI, “HyperAgents” (2026) — task and meta-level modification machinery in one editable program. <https://ai.meta.com/research/publications/hyperagents/>
-- Victoria Krakovna et al., “Specification gaming: the flip side of AI ingenuity” (DeepMind, 2020). <https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/>
-- Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27 (1984), 761–763. <https://doi.org/10.1145/358198.358210>
-- Anthropic, “Sycophancy to subterfuge: Investigating reward-tampering in language models” (2024). <https://www.anthropic.com/research/reward-tampering>
 
 ### Additional sources
 
@@ -490,12 +443,6 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 6. <a id="ref-12-flt-tokens"></a>OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ <https://openai.com/index/navier-stokes-solution/> (the group that produced the reported resolution involved on the order of 10,000 concurrent agents); Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, <https://www.anthropic.com/research/formalizing-fermats-last-theorem> (the formalization’s reported token use).
 
 7. <a id="ref-12-access"></a>Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, 12 June 2026, <https://www.anthropic.com/news/fable-mythos-access>; Anthropic, announcement on redeploying Fable 5, 30 June 2026, updated 1 July, <https://www.anthropic.com/news/redeploying-fable-5>. Access to both models was suspended on 12 June 2026. The export controls were lifted on 30 June and Fable 5 was available globally again from 1 July; Mythos 5 was restored for a set of US organizations after US government approval on 26 June.
-
-### Additional sources
-
-- Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, “Reconciling modern machine-learning practice and the classical bias–variance trade-off,” *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
-- Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter’s community-room example and proposed AI applications are the author’s thought experiment. <https://doi.org/10.1257/aer.100.3.641>
-- Jacques Derrida, “Signature Event Context” (1972), in *Limited Inc* (Northwestern University Press, 1988), 1–23 — repeatability and the impossibility of finally closing context; the gradient-descent connection is the author’s provocation. See also *Of Grammatology* (1967).
 
 ### Additional sources
 
