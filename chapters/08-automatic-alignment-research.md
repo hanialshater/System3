@@ -76,7 +76,7 @@ The refusal result cuts both ways. The same understanding that could strengthen 
 
 Used defensively, steering looks more like engineering than ethics. *Circuit breakers* reroute internal trajectories associated with harmful outputs so the computation stops before the harmful text appears, and they held up against attacks they had not been trained on.[26](appendix-references.md#ref-08-breakers) Persona vectors measure traits such as sycophancy as directions, and the assistant axis caps activations when the model drifts away from its assistant character.[27](appendix-references.md#ref-08-persona) The same vectors can flag training data likely to push a model toward an unwanted persona before training starts, which loops back to the cheating model in the previous section.
 
-Wiener would recognize the shape: observe the internal state, detect drift, intervene, check the result. Then a new version arrives. Re-auditing a whole mind every few months does not scale, so Anthropic built tools that compare internal features across versions and show what changed.[28](appendix-references.md#ref-08-diff) Reviewing a diff is easier than rereading the repository, as every engineer knows. A diff tells you where to look again. It cannot promise that nothing outside it matters.
+Wiener would recognize the shape: observe the internal state, detect drift, intervene, check the result. Then a new version arrives. Re-auditing a whole mind every few months does not scale, so Anthropic built tools that compare internal features across versions and show what changed.[28](appendix-references.md#ref-08-diff) Reviewing a diff is easier than rereading the repository, as every engineer knows. A diff tells you where to look again.
 
 ## Get a Second Opinion
 
@@ -108,7 +108,7 @@ That gives the whole apparatus one requirement it can fail while every score imp
 
 ## The Top Loop
 
-Put the pieces together and you do not get a perfect judge. You get something closer to sensor fusion: the output, the reasoning notes, the activations, the circuit traces, the behavior under steering, the control protocol’s monitors and a human’s judgment, each entering as evidence and none as ground truth. My Merge Sort evaluators in Chapter 3 taught me the small version. Collapsing different judges into one vote throws away the disagreement that made them useful.
+Put the pieces together and you do not get a perfect judge. You get something closer to sensor fusion: the output, the reasoning notes, the activations, the circuit traces, the behavior under steering, the control protocol’s monitors and a human’s judgment, each entering as evidence and none as ground truth. My Merge Sort evaluators in Chapter 3 taught me the small version: one vote would have thrown away the disagreement that made them useful.
 
 The human does not disappear from this picture. She moves up, to the places where attention can still change a consequential decision: two oversight channels that disagree, a failure nobody has seen before, an action that cannot be undone, a proposal to change the evaluator. A research agent that discovers its benchmark is misleading should be able to say so and propose a better one. Letting that replacement certify the agent’s own work is a different decision, and it belongs to the loop that changes the loops.
 

@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "7b20415c23bed2a69f20625279c50cfc4851c96e74c13ea8fce28f74cd511443",
+      "source_sha256": "b8373c980d10960b82c8ebf8267e5588bd1e80c06b3a9782f76cf63d84010fc4",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "828de965ef1461e71ba58efb5f8975cf2683f60a33d0a9215ae3e482aad4414d",
       "sections": [
@@ -160,7 +160,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "02ba2412c82c9b0d94609d58b622dd0deb4ec320629d1351e81118f2058555cd",
+      "source_sha256": "12315547e66064c59f1589ab1f12e81ac0739c1b38e3cd0636d7482fc3bdd43a",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "984b75833500d2cf295f6f2fcc8ecc60d5e083329665afa2b9e215d5bb237171",
       "sections": [
@@ -179,7 +179,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "a3eb3c4416175f5a281dc74568a33922d7601d2c166a98b0a8a0fcc535dca434",
+      "source_sha256": "e886cd20238787424116ae445d2d6b4a743aab2c5582fff1c5009d256b16ce1c",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -195,7 +195,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "9aef08f04506b56e736fd1146b69044e4e0a326a0f955376e2b6fcbac1e1f49d",
+      "source_sha256": "d8f8504a5a169cb5df8bfc240fd212744a3dfcc21213ea3cb70326dd6e9057df",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "810ad659d11acc2f0e3cf6aed73416a3c4bc631c674e962f830059b118421448",
       "sections": [

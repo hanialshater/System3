@@ -10,7 +10,7 @@ It happens at small scale every day. Find me the cheapest flight. I have not sup
 
 I learned this while editing this book. “Make the chapter better” sounded like a reasonable instruction. It was not. Better in what sense? More rigorous? Shorter? More entertaining? More likely to impress someone who owns several blazers and says “thought leadership” without irony? For a while the edits became objectively more polished and subjectively worse, and the corrections I found myself making were rules I had not known were rules until an edit broke them. I learned what I meant by better partly by seeing versions I disliked.
 
-The objective did not merely become clearer to the system. It became clearer to me.
+The person it became clearer to was me.
 
 ## What Remains in the Seat
 
@@ -78,7 +78,7 @@ The question gets sharper when the assistant belongs to someone who sells. Imagi
 
 Conversational AI makes all of this urgent, because people already bring it their lives. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: relationships, health, careers, finances, the questions where the model participates in judgment instead of retrieving facts.[8](appendix-references.md#ref-09-l4-guidance) A compiler has opinions about semicolons but rarely about whether I should move countries.
 
-So the AI does not merely *read* the desire layer. It writes to it. Anthropic’s work on disempowerment tries to measure the dangerous version of that influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[9](appendix-references.md#ref-09-l4-disempowerment)
+So the AI writes to the desire layer as well as reading it. Anthropic’s work on disempowerment tries to measure the dangerous version of that influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy names what to watch for: an assistant that leaves people believing less accurately, choosing less authentically or acting less on their own values than before.[9](appendix-references.md#ref-09-l4-disempowerment)
 
 The goal cannot be zero influence. Books, friends, teachers and the people closest to me all influence what I want, and a suggestion that reveals something true about me should change me. The line I care about runs between helping someone change through understanding and changing them because the system has learned which lever produces the easiest compliance. The second is alignment by editing the human.
 
@@ -88,7 +88,7 @@ Very efficient. Slightly evil.
 
 There is a quieter way to fail, and current assistants commit it daily. You ask what is possible, and you receive everything.
 
-On Monday the clinic founder asks how small clinics schedule appointments. A model can return four thousand fluent words: market sizes, regulations, seven software categories, a SWOT table nobody requested. All of it may be accurate. Very little of it will survive until Friday. The model has a context window; she has a memory that forgets, attention that tires and a mind that changes slowly. Dumping the frontier on someone is not the same as showing it to her.
+On Monday the clinic founder asks how small clinics schedule appointments. A model can return four thousand fluent words: market sizes, regulations, seven software categories, a SWOT table nobody requested. All of it may be accurate. Very little of it will survive until Friday. The model has a context window; she has a memory that forgets, attention that tires and a mind that changes slowly.
 
 An assistant that understood human learning would do something that looks less impressive. On Monday it would show her one adjacent market and stop. On Wednesday it would ask her to explain that market back without her notes, and she would find the gap in her own answer. A week later, when she has half forgotten it, it would bring the market back beside a new one. It would look slower, and it would leave her knowing more. Hermann Ebbinghaus worked out why in the 1880s by memorizing lists of nonsense syllables and timing how fast he lost them.[10](appendix-references.md#ref-09-ebbinghaus) Later researchers found that reviews spaced over days beat the same hours crammed into one sitting,[11](appendix-references.md#ref-09-spacing) and that trying to recall something strengthens it more than reading it again.[12](appendix-references.md#ref-09-testing) A model can recite the frontier in one breath. A person takes it in by forgetting it, coming back and trying again.
 
@@ -102,7 +102,7 @@ The cheap map has its own hazard. A few weeks with a patient model gives the fou
 
 So sometimes the helpful assistant adds friction. Zana Buçinca and colleagues found that interfaces requiring people to think before seeing the AI’s answer reduced overreliance, even though users liked them less.[17](appendix-references.md#ref-09-l4-forcing) The interface people enjoy most is not always the one that leaves them more capable.
 
-Learning belongs in a chapter about desire because you cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Developing a desire means developing a capability. Amartya Sen’s capability approach makes the point at the scale of a life: what matters is not only what people achieve but what they are substantively free and able to do and become.[18](appendix-references.md#ref-09-l4-sen) Two assistants can help the founder reach the same good decision. One hands it to her. The other leaves her understanding her market well enough to make the next decision herself. Same action, different human afterward.
+Learning belongs in a chapter about desire because you cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Developing a desire means developing a capability. Amartya Sen’s capability approach makes the point at the scale of a life: what matters is not only what people achieve but what they are substantively free and able to do and become.[18](appendix-references.md#ref-09-l4-sen) Two assistants can help the founder reach the same good decision. One hands it to her. The other leaves her understanding her market well enough to make the next decision herself.
 
 ## Desire Is a Group Activity
 

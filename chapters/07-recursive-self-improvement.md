@@ -38,13 +38,13 @@ Failure is handled the same way. In 2014 Amazon launched the Fire Phone and with
 
 The people doing this work know they are changing something. None needs to hold the whole organization in mind. Incidents become changes to tools, experience becomes procedure, failed projects remain reserves of skill, and other people, looking at the evidence over time, decide what counted. The organization can learn without having a mind of its own.
 
-It does accumulate. An added check is easy to see and easy to credit. A check quietly deleted because nobody needs it any more is neither. Left alone, the procedures outlive their reasons, and the organization becomes the rule-based exoskeleton I admitted in Chapter 1 to spending a career building. It simplifies only as fast as simplification is noticed.
+It does accumulate. An added check is easy to see and easy to credit. A check quietly deleted because nobody needs it any more is neither. Left alone, the procedures outlive their reasons, and the organization becomes the rule-based exoskeleton I admitted in Chapter 1 to spending a career building.
 
 ## Science Changes Its Methods
 
 Science has spent centuries changing the procedures that produce its results. Controlled comparison, statistics, randomized trials, blinding, peer review and preregistration all change how research is done. Their value has to be investigated too: under what conditions do they make findings more reliable, and what do they miss? Omar’s second thought has acquired instruments, records and other people who can disagree with it.
 
-The accumulation has been uneven. A useful method can meet resistance; a weak one can become routine. Other laboratories can put a method to work and find failures its authors missed, but that independence has to be maintained. Evidence that a method works also arrives at the speed of the experiments it governs. Slowness can give criticism time to catch up. It can also protect an incumbent.
+The accumulation has been uneven. A useful method can meet resistance; a weak one can become routine. Other laboratories can put a method to work and find failures its authors missed, but that independence has to be maintained. Evidence that a method works also arrives at the speed of the experiments it governs. Slowness gives criticism time to catch up, and gives an incumbent the same time to dig in.
 
 Science also has a way of fighting its own accumulation. Fields drown in results, and then somebody writes the textbook or finds the explanation that lets a newcomer skip three years of the climb. Chris Olah and Shan Carter called the cost of not doing this *research debt*, and the work of paying it down *distillation*.[9](appendix-references.md#ref-07-distill)
 
@@ -54,7 +54,7 @@ So we already live inside self-improving systems. One question follows us from e
 
 Eliezer Yudkowsky describes recursive self-improvement as an AI using its current intelligence to improve the cognitive machinery that produces its intelligence.[10](appendix-references.md#ref-07-yudkowsky) Lilian Weng widens the machinery to include the harness around a model and the pipeline that trains its successor.[11](appendix-references.md#ref-07-weng) Anthropic describes the destination as a system capable of fully autonomously designing and developing its own successor.[12](appendix-references.md#ref-07-anthropic-rsi) These descriptions say where the loop is going. None of them says how we would know it had worked.
 
-I will use a stricter test for the recursive claim. A change to the system’s own process must leave it better at finding and testing further improvements, under stated conditions, with evidence it cannot rewrite or dismiss on its own. The S3 tool change shows an organization correcting an operational weakness. It does not establish that the organization became better at finding its next correction. Omar’s second thought leaves the same question open. We need to test the investigator as well as the answer.
+I will use a stricter test for the recursive claim. A change to the system’s own process must leave it better at finding and testing further improvements, under stated conditions, with evidence it cannot rewrite or dismiss on its own. The S3 tool change shows an organization correcting an operational weakness. It does not establish that the organization became better at finding its next correction. Omar’s second thought leaves the same question open.
 
 Four different things get called a system getting better:
 
@@ -111,7 +111,7 @@ The new account of success needs observations the old click logs do not contain,
 
 Then it proposes going further: use the simulator to estimate what would have happened without each change, and stop reserving live traffic for a comparison group. More shoppers could enter new experiments. The proposal would make research cheaper. It would also remove one of our ways of finding out that the simulator was wrong. We leave it pending.
 
-In 2018, David Ha and Jürgen Schmidhuber’s *World Models* made a powerful idea memorable: learn a compressed generative model of the environment, train partly inside that generated “dream,” then transfer behavior back to reality.[24](appendix-references.md#ref-07-worldmodels) A useful simulation could make the queue cheaper to investigate. But the epistemic debt has moved into the model. Our simulated shoppers are patient, consistent and suspiciously fond of whatever their authors expected. A search process can become extremely good at satisfying them.
+In 2018, David Ha and Jürgen Schmidhuber’s *World Models* made a powerful idea memorable: learn a compressed generative model of the environment, train partly inside that generated “dream,” then transfer behavior back to reality.[24](appendix-references.md#ref-07-worldmodels) A useful simulation could make the queue cheaper to investigate. But the epistemic debt has moved into the model. Our simulated shoppers are patient, consistent and suspiciously fond of whatever their authors expected.
 
 Omar has met the informal version of this problem. His horror film supplied a repertoire of explanations, and one was waiting when the grass moved. Rehearsing an interpretation can make it available without making it true.
 
@@ -155,7 +155,7 @@ Search compounds inside the space it is given. Some of the important advances ch
 
 The store’s research agent meets a smaller version of the same problem. Every time an experiment goes wrong, it does what a good organization does and adds a check: a guard on the traffic split, a test for seasonal products, a review step for anything touching prices. Each check is justified by an incident. After a year there are dozens. They interact, several contradict each other, and each new check has to be tested against all the old ones. The agent now spends more of its budget verifying its own procedure than running experiments. A descendant proposes deleting half the checks, and on held-out work it does as well and runs twice as many trials. It is nearly rejected, because the selection record counts what each candidate adds and has no column for what it removes.
 
-My guess, and I want to be clear it is a guess, is that this is where self-improvement stalls first: not when the system runs out of intelligence, but when it adds structure faster than it can verify or simplify it. Amazon thickens unless deletion is noticed. Science drowns unless someone distills. The searched networks grew irregular until a plain one embarrassed them. Weng makes a related point about self-improving harnesses: smarter models help keep them from being over-engineered.[11](appendix-references.md#ref-07-weng) Verification can improve too, so the wall may move. Whether checking keeps pace with adding is the race worth watching.
+My guess, and I want to be clear it is a guess, is that this is where self-improvement stalls first: not when the system runs out of intelligence, but when it adds structure faster than it can verify or simplify it. Amazon thickens unless deletion is noticed. Science drowns unless someone distills. The searched networks grew irregular until a plain one embarrassed them. Weng makes a related point about self-improving harnesses: smarter models help keep them from being over-engineered.[11](appendix-references.md#ref-07-weng) Verification can improve too, so the wall may move.
 
 ## Before the Returns Arrive
 
@@ -163,7 +163,7 @@ The agent can finish another revision before the evidence for its last one arriv
 
 Let the research system run. It selects a change to the store’s recommendations. Clicks and orders rise that afternoon; whether customers keep what they bought takes longer to discover. Before the returns arrive, it has changed retrieval, ranking and page layout, then revised the procedure that chooses its next experiments. Each revision inherited the apparent success of the last. When returns finally rise, which version deserves the blame? The system investigating the failure is no longer the one that produced it.
 
-I think of this as **the complexity of self-change**: each revision changes the conditions under which we judge the next one. Some consequences arrive late; several changes may interact. An improvement tested in one arrangement may fail in its successor.
+I think of this as **the complexity of self-change**: each revision changes the conditions under which we judge the next one. Some consequences arrive late; several changes may interact.
 
 Peyman Milanfar draws a warning from adaptive control: a stability proof can fail to protect a real system when the world violates the model’s assumptions. He treats the size of a self-modification relative to the evidence supporting it as an analogue of feedback gain. Large changes made on thin evidence can amplify errors in the system’s model of itself. A run may look successful for a while before the instability appears.[36](appendix-references.md#ref-07-self-change) That does not establish one universal speed limit for AI. It identifies something our research institution has to measure: how long its important uncertainties remain unresolved while it keeps changing.
 
@@ -221,7 +221,7 @@ Engineers building self-improving harnesses have reached the same arrangement fr
 
 The descendant that deleted half the checks needs one more article. If selection sees only what a candidate adds, the system will keep adding. The selection record should show what each candidate removes, and a descendant that does as well with less should win. It is Chapter 11’s rule, that a new system has to beat simplification, applied to the improver.
 
-This looks like computer security. It also looks like constitutional government. A government can change policy; it should not be able to silently redefine an election result. A scientist may revise a theory; she should not rewrite yesterday’s measurements to make the theory look correct. We have reinvented constitutional government because the AI wanted a better benchmark score.
+This looks like computer security, and also like constitutional government. A government can change policy; it should not be able to silently redefine an election result. A scientist may revise a theory; she should not rewrite yesterday’s measurements to make the theory look correct. We have reinvented constitutional government because the AI wanted a better benchmark score.
 
 A constitution has the library’s problem. One that can never change becomes a prison. One that the current government can rewrite whenever it loses is barely a constitution. Self-improvement therefore needs **amendment procedures**: slower change near the objective, more independent evidence, more reversibility, more auditability, broader authority when more principals are affected, and routes through which the world and the humans affected by the system can continue to say no. That is System 3 applied to improvement itself. Scientific institutions have struggled with these questions for centuries; their failures belong in the design brief too.
 
