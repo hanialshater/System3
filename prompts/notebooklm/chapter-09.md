@@ -13,17 +13,13 @@ Adapt Hani M.M. Al-Shater's "Chapter 9: The Desire Layer" into an English video.
 ## Source order
 
 1. Opening passage
-2. A Prompt Is Evidence, Not the Objective
-3. Performance Is Not Learning
-4. Giving the Work Back
-5. The Map Gets Cheaper
-6. The Imaginary Human in Economics
-7. Some Choices Change the Person Choosing
-8. Opinions About Semicolons
-9. Declaring Synergy
-10. Capabilities
-11. More Than One Principal
-12. The Objective Layer
+2. What Remains in the Seat
+3. Nobody Wanted AWS in 1995
+4. Owning the Frontier
+5. Imagine Mallorca
+6. A Human Is Not a Context Window
+7. Desire Is a Group Activity
+8. Authoring What You Want
 
 ## Review
 

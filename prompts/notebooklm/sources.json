@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "f8fb2bedab2ba373f712a68480408841669d164d05975bac2544793fb7b9d307",
+  "references_sha256": "b610f0a6bfce6e5be677a0ef7fb11a74d874b1f172262fee1cd2132ad81ca6b3",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -181,22 +181,18 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "b95284b442df6147135c23dc76fef7a340996061cc9835925c9385eed5dadb85",
+      "source_sha256": "4c48784bfa084154d305fcbeb5681edcde82bcf712d64476db7c316719a5c356",
       "brief": "prompts/notebooklm/chapter-09.md",
-      "brief_sha256": "c585a91cff589fbc13a7ea25c43598069ded959236fb75041c4eba79503ecc43",
+      "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
         "Opening passage",
-        "A Prompt Is Evidence, Not the Objective",
-        "Performance Is Not Learning",
-        "Giving the Work Back",
-        "The Map Gets Cheaper",
-        "The Imaginary Human in Economics",
-        "Some Choices Change the Person Choosing",
-        "Opinions About Semicolons",
-        "Declaring Synergy",
-        "Capabilities",
-        "More Than One Principal",
-        "The Objective Layer"
+        "What Remains in the Seat",
+        "Nobody Wanted AWS in 1995",
+        "Owning the Frontier",
+        "Imagine Mallorca",
+        "A Human Is Not a Context Window",
+        "Desire Is a Group Activity",
+        "Authoring What You Want"
       ]
     },
     {
@@ -241,13 +237,13 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "dfff5c0828b1529ecc4b1e9824f2f7bd5cbaba15bbe3b2c871bbf9e7b05902f6",
+      "source_sha256": "9fb4e927f381aefa70588750c735ad6201a50f035d248edeaf7eae98c7409547",
       "brief": "prompts/notebooklm/chapter-12.md",
-      "brief_sha256": "d64d5aa565008f382d4063bf7c265bb02d79b22fca5cdb6b20bb8496a103dd82",
+      "brief_sha256": "96db14aeef9bcbe0ac59225c5c7c660e0eb4a6b7cc72f9a7ad4d8fd8a3259fdf",
       "sections": [
         "Opening passage",
         "The Curve",
-        "Owning the Frontier",
+        "The River Moves",
         "Bespoke Comes Back",
         "Anyone Could Do That",
         "The Ideology Vortex",

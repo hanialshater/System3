@@ -30,27 +30,17 @@ Double Descent Life is the wager that cheap capacity lets us make an attempt. We
 
 Not all capacity. We still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
-## Owning the Frontier
+## The River Moves
 
 LLM-as-a-judge looked like a threat to my profession.
 
 For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-The epistemic agent in Chapter 4 produced smaller patches and solved fewer problems. I could admire its discipline or count the bugs it fixed. Those judgments did not give me the same answer, and ten tasks could not tell me why. The next run could add more machinery or investigate which part deserved to stay. A cheaper evaluation had left me with a harder choice about what to evaluate.
-
-Scarcity rations the distinctions we can afford to investigate. Cheaper generation and evaluation let us attempt more comparisons. Someone still has to notice which question the last result failed to answer. A million judgments overnight is a million more things that look like evidence.
-
-A strong applied scientist brings a working map of the frontier. She knows which exciting idea has failed three times under another name, which result quietly changed what we could build last month, and which neighboring field has a method that might explain a disappointing experiment. She can turn that knowledge into an investigation the organization has reason to trust.
-
-Chapter 5 followed the larger society that makes this possible. A scientist inside a company is connected to arguments, discoveries and failures happening outside it. Without that connection, the company keeps approaching unfamiliar problems with its familiar machinery.
-
-I think of this as owning the frontier. It is the vibe coder’s seat from Chapter 3, at the scale of a career: once building and checking become cheap, what remains is deciding what is worth trying next. Someone takes responsibility for noticing where the possibilities have changed and finding out what the organization can actually do with them.
-
-Training and evaluation were never the whole purpose of the job. They were the expensive part of it, and expensive is easy to mistake for essential.
+Chapter 9 followed the job to where I think it goes. The applied scientists who mattered never only trained models; they told an organization what had become possible, why, and what it would mean for the business. That is owning the frontier, and cheap models put more of the frontier within reach of people who will never hire an applied scientist at all.
 
 There is useful work for me in that change. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
-The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it. Past the frontier sits the question Chapter 3 left at the top of the stack. When almost anything can be attempted, the scarce part is knowing what I want attempted.
+The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
 
 ## Bespoke Comes Back
 

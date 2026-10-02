@@ -404,49 +404,51 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 1. <a id="ref-09-l4-cirl"></a>Dylan Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning” (2016). <https://arxiv.org/abs/1606.03137>.
 
-2. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
+2. <a id="ref-09-amazon-history"></a>Amazon opened to the public on 16 July 1995 and billed itself as “Earth’s biggest bookstore.” See “Amazon opens for business,” History.com, <https://www.history.com/this-day-in-history/amazon-opens-for-business>; and “History of Amazon,” Wikipedia, <https://en.wikipedia.org/wiki/History_of_Amazon>. Amazon S3, the first generally available AWS storage service, launched on 14 March 2006; see AWS News Blog, “Eight years and counting of cloud computing,” <https://aws.amazon.com/blogs/aws/eight-years-and-counting-of-cloud-computing/>.
 
-3. <a id="ref-09-l4-kestin"></a>Gregory Kestin et al., “AI tutoring outperforms in-class active learning,” *Scientific Reports* 15, 17458 (2025). <https://www.nature.com/articles/s41598-025-97652-6>.
+3. <a id="ref-09-amazon-anthropic"></a>Amazon announced an additional $4 billion investment in Anthropic on 22 November 2024, bringing its total to $8 billion and naming AWS Anthropic’s primary training partner. See Bloomberg, “Amazon Invests an Additional $4 Billion in AI Firm Anthropic,” 22 November 2024, <https://www.bloomberg.com/news/articles/2024-11-22/amazon-investing-an-additional-4-billion-in-ai-firm-anthropic>. Claude models are also offered through Amazon Bedrock.
 
-4. <a id="ref-09-l4-scaffolding"></a>David Wood, Jerome S. Bruner and Gail Ross, “The role of tutoring in problem solving,” *Journal of Child Psychology and Psychiatry* 17 (1976), 89–100. <https://doi.org/10.1111/j.1469-7610.1976.tb00381.x>.
+4. <a id="ref-09-sarasvathy"></a>Saras D. Sarasvathy, “Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency,” *Academy of Management Review* 26 (2001), 243–263. <https://doi.org/10.5465/amr.2001.4378020>.
 
-5. <a id="ref-09-l4-bloom"></a>Benjamin S. Bloom, “The 2 Sigma Problem,” *Educational Researcher* 13 (1984), 4–16. <https://doi.org/10.3102/0013189X013006004>.
+5. <a id="ref-09-l4-constructive"></a>John W. Payne, James R. Bettman and Eric J. Johnson on constructive decision processes, *Acta Psychologica* 80 (1992). <https://doi.org/10.1016/0001-6918%2892%2990043-D>.
 
-6. <a id="ref-09-l4-copilot"></a>Rose E. Wang et al., “Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise” (2024). <https://arxiv.org/abs/2410.03017>.
+6. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
 
-7. <a id="ref-09-l4-extended"></a>Andy Clark and David Chalmers, “The Extended Mind,” *Analysis* 58 (1998), 7–19. <https://doi.org/10.1111/1467-8284.00096>.
+7. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
 
-8. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
+8. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
 
-9. <a id="ref-09-l4-offloading"></a>Lauren L. Richmond and R. G. Taylor, “The benefits and potential costs of cognitive offloading for retrospective information,” *Nature Reviews Psychology* 4 (2025), 312–321. <https://www.nature.com/articles/s44159-025-00432-2>.
+9. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
 
-10. <a id="ref-09-l4-simon"></a>Gary Schwarz, Tom Christensen and Xufeng Zhu, “Bounded Rationality, Satisficing, Artificial Intelligence, and Decision-Making in Public Organizations: The Contributions of Herbert Simon,” *Public Administration Review* 82 (2022), 902–904. <https://onlinelibrary.wiley.com/doi/full/10.1111/puar.13540>.
+10. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
 
-11. <a id="ref-09-l4-constructive"></a>John W. Payne, James R. Bettman and Eric J. Johnson on constructive decision processes, *Acta Psychologica* 80 (1992). <https://doi.org/10.1016/0001-6918%2892%2990043-D>.
+11. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
 
-12. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+12. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
 
-13. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
+13. <a id="ref-09-bjork"></a>Robert A. Bjork, “Memory and metamemory considerations in the training of human beings,” in Janet Metcalfe and Arthur P. Shimamura (eds.), *Metacognition: Knowing about Knowing* (MIT Press, 1994), 185–205.
 
-14. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
+14. <a id="ref-09-l4-scaffolding"></a>David Wood, Jerome S. Bruner and Gail Ross, “The role of tutoring in problem solving,” *Journal of Child Psychology and Psychiatry* 17 (1976), 89–100. <https://doi.org/10.1111/j.1469-7610.1976.tb00381.x>.
 
-15. <a id="ref-09-l4-moraladvice"></a>Ethan Landes, Kathryn B. Francis and Jim A. C. Everett, “People defer to AI moral advice, but not blindly,” *Cognition* 272 (2026), 106504. <https://doi.org/10.1016/j.cognition.2026.106504>.
+15. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
 
-16. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas Malone, “When combinations of humans and AI are useful,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>.
+16. <a id="ref-09-l4-kestin"></a>Gregory Kestin et al., “AI tutoring outperforms in-class active learning,” *Scientific Reports* 15, 17458 (2025). <https://www.nature.com/articles/s41598-025-97652-6>.
 
-17. <a id="ref-09-l4-aversion"></a>Berkeley J. Dietvorst, Joseph P. Simmons and Cade Massey, “Algorithm aversion: People erroneously avoid algorithms after seeing them err,” *Journal of Experimental Psychology: General* 144 (2015), 114–126. <https://doi.org/10.1037/xge0000033>; Jennifer M. Logg, Julia A. Minson and Don A. Moore, “Algorithm appreciation: People prefer algorithmic to human judgment,” *Organizational Behavior and Human Decision Processes* 151 (2019), 90–103. <https://doi.org/10.1016/j.obhdp.2018.12.005>.
+17. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-18. <a id="ref-09-l4-verifiability"></a>Raymond Fok and Daniel S. Weld, “In search of verifiability: Explanations rarely enable complementary performance in AI-advised decision making,” *AI Magazine* 45 (2024). <https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12182>.
+18. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
-19. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
+19. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas Malone, “When combinations of humans and AI are useful,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>.
 
 20. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
 
-21. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
+21. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-22. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+22. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
 
 23. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
+
+24. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 10 — Fluent Autonomy
 
