@@ -157,7 +157,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "6d7c8fc3a28d68d885bc2599d633b71472ec5d9cedd17f47d66a71ba9c293aaf",
+      "source_sha256": "d560298f97d7d9b45cd1f75007e2a4b2648072d744b06f7af139db211bf6bebb",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "ebcea50a0acdd5d78079e88cad57161769bcec8cca66ff899afd269bf9b0406a",
+      "source_sha256": "59f49f2bf0ec3228d331c94cb84cc5f0b8029fa3dcb09783f151a38049f9c6eb",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [

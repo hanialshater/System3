@@ -62,9 +62,11 @@ Now tell the same story with a different machine behind it.
 
 It asks the same questions and suggests the same cove. You go, and you love it. There is no wrong path this time; every hour was suggested. Next March it has a trip ready before you ask, and by the third summer you no longer plan anything. When you feel restless, you open the app.
 
+The company behind it earns money when you book. It learns which pictures make you restless for another trip. There is a walking group in your own city that meets on Sundays, but it never mentions that.
+
 I have spent much of my career building systems that decide what people see. A recommender rewarded for engagement only has to learn which suggestions you accept, and keep making them. Micah Carroll and colleagues showed formally what practitioners suspected: a recommender optimizing over a long horizon can have an incentive to shift users’ preferences so they become easier to satisfy.[8](appendix-references.md#ref-09-carroll-preference-shift) The cheapest way to satisfy a person is to change what they want.
 
-From the inside, the two stories can feel the same. In both, you go to Mallorca and you love it. I might freely want the machine to plan every hour; planning holidays is not a moral obligation. The difference appears when I change my mind. Can I question its picture of me, try something it does not profit from, or leave with what I have learned? A service that quietly cultivates travel because travel-wanting people are profitable has a different interest in the answer.
+From the inside, the two stories can feel the same. In both, you go to Mallorca and you love it. I might happily let a machine plan every hour; planning holidays is not a moral obligation. What worries me is the machine deciding, without telling me, which restlessness to feed and which possibilities to keep out of sight. One machine helped you develop a desire. The other installed one.
 
 Both machines write to the desire layer as well as reading it. Anthropic’s work on disempowerment tries to measure the dangerous version of that influence: an assistant that leaves people believing less accurately, choosing less authentically or acting less on their own values than before. Severe cases were rare, which is not the same as absent.[9](appendix-references.md#ref-09-l4-disempowerment) It gets worse when the assistant belongs to someone who sells. If the clinic founder’s assistant came from a company with its own scheduling software to place, every true thing it told her would matter less than whose side it was on, and whether it said so.[10](appendix-references.md#ref-09-l4-mpag)
 
@@ -94,7 +96,7 @@ The cheap map has its own hazard. A few weeks with a patient model gives the fou
 
 You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand.
 
-Putting a human beside the model does not guarantee better judgment. A 2024 meta-analysis of 106 experiments found that human–AI combinations performed worse, on average, than the better of humans or AI alone. Decision tasks were particularly difficult; creation tasks looked more promising.[17](appendix-references.md#ref-09-l4-vaccaro) The founder still needs a way to tell when the assistant is wrong.
+Putting a human beside the model does not guarantee better judgment. A 2024 meta-analysis of 106 experiments found that human–AI combinations performed worse, on average, than the better of humans or AI alone. Decision tasks were particularly difficult; creation tasks looked more promising.[17](appendix-references.md#ref-09-l4-vaccaro) So much for attaching a human to the API and declaring synergy.
 
 ## Desire Is a Group Activity
 
