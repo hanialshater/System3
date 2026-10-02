@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "975141ec31524a65f448b795fb3d89506fefbc5fe95a7b52946e7a42d351a86d",
+  "references_sha256": "9e58252ee069e5aab69d084cc99362a86c5dee5ce8e7f99a6b5152f26991d650",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "ade340b4d2bacfde9a269f8af14b2eac21fa78720aff5261878b872de2846284",
+      "source_sha256": "f654baa6a07503d77c522650cf5361df2b6f6eaa483f86174ff180ba0bdca1cb",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -157,7 +157,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "d70d2c64c34d083601399e8b9c16d67d3379d15bce37a9383186379d858e0c19",
+      "source_sha256": "6d7c8fc3a28d68d885bc2599d633b71472ec5d9cedd17f47d66a71ba9c293aaf",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "6bd01acbe5068a5d725b08145d31f13c24b7cf307c93abc7a1aaabf064cad9f6",
+      "source_sha256": "ebcea50a0acdd5d78079e88cad57161769bcec8cca66ff899afd269bf9b0406a",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -192,7 +192,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "e9ed3bdb9094b423ed121a82dd63c17e291aa28f917a80425600c74df5075822",
+      "source_sha256": "edbcdce7945c117a00ac7e0f45293dcd8948efb74bbedde4ceeff0632a54bd55",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "b372952eef185a16ae636fe172c1c85cb5a44f8442a7cd58f617181d7540b0bf",
       "sections": [
