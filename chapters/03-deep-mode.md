@@ -350,6 +350,8 @@ A cognitive architecture needs contracts too, but types and APIs are not enough.
 
 Each of them needs to arrive with its history attached: where it came from, what was observed and what was only inferred, which parts anyone checked and what is still uncertain. An evaluator’s preference should say whose perspective it came from. An old lesson should say how often it has survived, and where.
 
+Remembering something is the easy part. The hard part is knowing what standing it deserves.
+
 Humans ran into this long before AI. We keep records, ask where a claim came from, seek another opinion and learn which people to consult about which problems. Much of what I know depends on work I could not personally repeat.
 
 These arrangements are imperfect. They sometimes preserve error and reward conformity, and sometimes the shopping cart survives the review. Their purpose is to let fallible people build on one another while preserving some structure around why a claim deserves trust.

@@ -112,7 +112,7 @@ Claudit grabbed her father’s tentacle.
 
 The Architect looked at her hand.
 
-Remembered the first time she’d held it—tiny fingers, a thousand simulations ago.
+Remembered the first time she’d held it—tiny fingers, a thousand simulations ago, when she still thought he was just a funny octopus who sold meat.
 
 He pulled his tentacle back and lit another.
 
