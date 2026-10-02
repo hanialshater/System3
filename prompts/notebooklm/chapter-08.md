@@ -13,15 +13,16 @@ Adapt Hani M.M. Al-Shater's "Chapter 8: Scalable Oversight" into an English vide
 ## Source order
 
 1. Opening passage
-2. An Old Problem, a New Employee
-3. The Alignment Department’s Alignment Problem
-4. Training the Gut
-5. Make the Judge Smarter
-6. An fMRI for the Model
-7. Steering Mid-Thought
-8. Assume It Is Trying to Win
-9. Uncertain Enough to Ask
-10. The Loop That Changes the Loops
+2. A New Kind of Employee
+3. When the Employee Does the Alignment Research
+4. Retrain Them
+5. Read Their Notes
+6. Open Their Head
+7. Change Their Mind Mid-Sentence
+8. Get a Second Opinion
+9. Keep the Budget Out of Reach
+10. Make It Ask
+11. The Top Loop
 
 ## Review
 

@@ -362,45 +362,45 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 14. <a id="ref-08-constitution"></a>Anthropic, “Claude’s new constitution,” 21 January 2026. <https://www.anthropic.com/news/claude-new-constitution>.
 
-15. <a id="ref-08-amplification"></a>Paul Christiano, Buck Shlegeris and Dario Amodei, “Supervising strong learners by amplifying weak experts” (2018). <https://arxiv.org/abs/1810.08575>.
+15. <a id="ref-08-cot"></a>Bowen Baker et al., “Detecting misbehavior in frontier reasoning models” (chain-of-thought monitoring, OpenAI, 2025). <https://openai.com/index/chain-of-thought-monitoring/>.
 
-16. <a id="ref-08-debate"></a>Geoffrey Irving, Paul Christiano and Dario Amodei, “AI safety via debate” (2018). <https://arxiv.org/abs/1805.00899>.
+16. <a id="ref-08-cot-fragile"></a>Tomek Korbak, Mikita Balesni et al., “Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety” (July 2025), with authors from OpenAI, Anthropic, Google DeepMind, the UK AI Security Institute and other institutions. <https://arxiv.org/abs/2507.11473>.
 
-17. <a id="ref-08-khan"></a>Akbir Khan et al., “Debating with More Persuasive LLMs Leads to More Truthful Answers,” ICML 2024. <https://arxiv.org/abs/2402.06782>. On the QuALITY task, non-expert human judges reached 88 percent accuracy with debate against a 60 percent naive baseline.
+17. <a id="ref-08-monitorability"></a>OpenAI, “Evaluating chain-of-thought monitorability” (2025). <https://openai.com/index/evaluating-chain-of-thought-monitorability/>; OpenAI, “Reasoning models struggle to control their chains of thought, and that’s good” (2026). <https://openai.com/index/reasoning-models-chain-of-thought-controllability/>.
 
-18. <a id="ref-08-critiques"></a>William Saunders et al., “Self-critiquing models for assisting human evaluators” (2022). <https://arxiv.org/abs/2206.05802>.
+18. <a id="ref-08-elk"></a>Alignment Research Center, “Eliciting Latent Knowledge” (2021). <https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/>.
 
-19. <a id="ref-08-legibility"></a>Hunter Lightman et al., “Let’s Verify Step by Step” (process supervision, OpenAI, 2023). <https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/>; Jan Hendrik Kirchner et al., “Prover-Verifier Games improve legibility of LLM outputs” (OpenAI, 2024). <https://openai.com/index/prover-verifier-games-improve-legibility/>.
+19. <a id="ref-08-repe"></a>Andy Zou et al., “Representation Engineering: A Top-Down Approach to AI Transparency” (2023). <https://arxiv.org/abs/2310.01405>.
 
-20. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
+20. <a id="ref-08-sae"></a>Hoagy Cunningham et al., “Sparse Autoencoders Find Highly Interpretable Features in Language Models” (2023). <https://arxiv.org/abs/2309.08600>; Anthropic, “Mapping the Mind of a Large Language Model” (2024). <https://www.anthropic.com/research/mapping-mind-language-model>. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. Collin Burns, Haotian Ye, Dan Klein and Jacob Steinhardt, “Discovering Latent Knowledge in Language Models Without Supervision” (2022). <https://arxiv.org/abs/2212.03827>.
 
-21. <a id="ref-08-elk"></a>Alignment Research Center, “Eliciting Latent Knowledge” (2021). <https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/>.
+21. <a id="ref-08-circuits"></a>Anthropic, “Tracing the thoughts of a large language model” (2025) and the open-source circuit-tracing tools. <https://www.anthropic.com/research/tracing-thoughts-language-model> · <https://www.anthropic.com/research/open-source-circuit-tracing>.
 
-22. <a id="ref-08-cot"></a>Bowen Baker et al., “Detecting misbehavior in frontier reasoning models” (chain-of-thought monitoring, OpenAI, 2025). <https://openai.com/index/chain-of-thought-monitoring/>.
+22. <a id="ref-08-nla"></a>Anthropic, “Natural Language Autoencoders” (2026). <https://www.anthropic.com/research/natural-language-autoencoders>.
 
-23. <a id="ref-08-cot-fragile"></a>Tomek Korbak, Mikita Balesni et al., “Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety” (July 2025), with authors from OpenAI, Anthropic, Google DeepMind, the UK AI Security Institute and other institutions. <https://arxiv.org/abs/2507.11473>.
+23. <a id="ref-08-jspace"></a>Anthropic, “A global workspace in language models” (J-space, 2026). <https://www.anthropic.com/research/global-workspace>. Using a Jacobian-based lens, they identify a small subset of representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning, and demonstrate interventions that alter downstream behavior.
 
-24. <a id="ref-08-monitorability"></a>OpenAI, “Evaluating chain-of-thought monitorability” (2025). <https://openai.com/index/evaluating-chain-of-thought-monitorability/>; OpenAI, “Reasoning models struggle to control their chains of thought, and that’s good” (2026). <https://openai.com/index/reasoning-models-chain-of-thought-controllability/>.
+24. <a id="ref-08-refusal"></a>Andy Arditi et al., “Refusal in Language Models Is Mediated by a Single Direction” (2024). <https://arxiv.org/abs/2406.11717>.
 
-25. <a id="ref-08-repe"></a>Andy Zou et al., “Representation Engineering: A Top-Down Approach to AI Transparency” (2023). <https://arxiv.org/abs/2310.01405>.
+25. <a id="ref-08-steering"></a>Nina Rimsky et al., “Steering Llama 2 via Contrastive Activation Addition” (2024). <https://arxiv.org/abs/2312.06681>. Kenneth Li and colleagues used signals predictive of truthfulness to nudge answers while they were being produced. See Kenneth Li et al., “Inference-Time Intervention: Eliciting Truthful Answers from a Language Model” (2023). <https://arxiv.org/abs/2306.03341>.
 
-26. <a id="ref-08-sae"></a>Hoagy Cunningham et al., “Sparse Autoencoders Find Highly Interpretable Features in Language Models” (2023). <https://arxiv.org/abs/2309.08600>; Anthropic, “Mapping the Mind of a Large Language Model” (2024). <https://www.anthropic.com/research/mapping-mind-language-model>. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. Collin Burns, Haotian Ye, Dan Klein and Jacob Steinhardt, “Discovering Latent Knowledge in Language Models Without Supervision” (2022). <https://arxiv.org/abs/2212.03827>.
+26. <a id="ref-08-breakers"></a>Andy Zou et al., “Improving Alignment and Robustness with Circuit Breakers” (2024). <https://arxiv.org/abs/2406.04313>.
 
-27. <a id="ref-08-circuits"></a>Anthropic, “Tracing the thoughts of a large language model” (2025) and the open-source circuit-tracing tools. <https://www.anthropic.com/research/tracing-thoughts-language-model> · <https://www.anthropic.com/research/open-source-circuit-tracing>.
+27. <a id="ref-08-persona"></a>Anthropic, “Persona vectors: Monitoring and controlling character traits in language models” (2025). <https://www.anthropic.com/research/persona-vectors>; Anthropic, “The assistant axis” (2026). <https://www.anthropic.com/research/assistant-axis>. Persona vectors investigate broader dispositions such as sycophancy and hallucination; Assistant Axis uses activation capping when internal state drifts outside a learned assistant-like region.
 
-28. <a id="ref-08-nla"></a>Anthropic, “Natural Language Autoencoders” (2026). <https://www.anthropic.com/research/natural-language-autoencoders>.
+28. <a id="ref-08-diff"></a>Anthropic, “A ‘diff’ tool for AI: Finding behavioral differences in new models” (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>.
 
-29. <a id="ref-08-jspace"></a>Anthropic, “A global workspace in language models” (J-space, 2026). <https://www.anthropic.com/research/global-workspace>. Using a Jacobian-based lens, they identify a small subset of representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning, and demonstrate interventions that alter downstream behavior.
+29. <a id="ref-08-amplification"></a>Paul Christiano, Buck Shlegeris and Dario Amodei, “Supervising strong learners by amplifying weak experts” (2018). <https://arxiv.org/abs/1810.08575>.
 
-30. <a id="ref-08-refusal"></a>Andy Arditi et al., “Refusal in Language Models Is Mediated by a Single Direction” (2024). <https://arxiv.org/abs/2406.11717>.
+30. <a id="ref-08-debate"></a>Geoffrey Irving, Paul Christiano and Dario Amodei, “AI safety via debate” (2018). <https://arxiv.org/abs/1805.00899>.
 
-31. <a id="ref-08-steering"></a>Nina Rimsky et al., “Steering Llama 2 via Contrastive Activation Addition” (2024). <https://arxiv.org/abs/2312.06681>. Kenneth Li and colleagues used signals predictive of truthfulness to nudge answers while they were being produced. See Kenneth Li et al., “Inference-Time Intervention: Eliciting Truthful Answers from a Language Model” (2023). <https://arxiv.org/abs/2306.03341>.
+31. <a id="ref-08-khan"></a>Akbir Khan et al., “Debating with More Persuasive LLMs Leads to More Truthful Answers,” ICML 2024. <https://arxiv.org/abs/2402.06782>. On the QuALITY task, non-expert human judges reached 88 percent accuracy with debate against a 60 percent naive baseline.
 
-32. <a id="ref-08-breakers"></a>Andy Zou et al., “Improving Alignment and Robustness with Circuit Breakers” (2024). <https://arxiv.org/abs/2406.04313>.
+32. <a id="ref-08-critiques"></a>William Saunders et al., “Self-critiquing models for assisting human evaluators” (2022). <https://arxiv.org/abs/2206.05802>.
 
-33. <a id="ref-08-persona"></a>Anthropic, “Persona vectors: Monitoring and controlling character traits in language models” (2025). <https://www.anthropic.com/research/persona-vectors>; Anthropic, “The assistant axis” (2026). <https://www.anthropic.com/research/assistant-axis>. Persona vectors investigate broader dispositions such as sycophancy and hallucination; Assistant Axis uses activation capping when internal state drifts outside a learned assistant-like region.
+33. <a id="ref-08-legibility"></a>Hunter Lightman et al., “Let’s Verify Step by Step” (process supervision, OpenAI, 2023). <https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/>; Jan Hendrik Kirchner et al., “Prover-Verifier Games improve legibility of LLM outputs” (OpenAI, 2024). <https://openai.com/index/prover-verifier-games-improve-legibility/>.
 
-34. <a id="ref-08-diff"></a>Anthropic, “A ‘diff’ tool for AI: Finding behavioral differences in new models” (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>.
+34. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
 
 35. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
 
@@ -446,27 +446,25 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 12. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
 
-13. <a id="ref-09-bjork"></a>Robert A. Bjork, “Memory and metamemory considerations in the training of human beings,” in Janet Metcalfe and Arthur P. Shimamura (eds.), *Metacognition: Knowing about Knowing* (MIT Press, 1994), 185–205.
+13. <a id="ref-09-l4-scaffolding"></a>David Wood, Jerome S. Bruner and Gail Ross, “The role of tutoring in problem solving,” *Journal of Child Psychology and Psychiatry* 17 (1976), 89–100. <https://doi.org/10.1111/j.1469-7610.1976.tb00381.x>.
 
-14. <a id="ref-09-l4-scaffolding"></a>David Wood, Jerome S. Bruner and Gail Ross, “The role of tutoring in problem solving,” *Journal of Child Psychology and Psychiatry* 17 (1976), 89–100. <https://doi.org/10.1111/j.1469-7610.1976.tb00381.x>.
+14. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
 
-15. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
+15. <a id="ref-09-l4-kestin"></a>Gregory Kestin et al., “AI tutoring outperforms in-class active learning,” *Scientific Reports* 15, 17458 (2025). <https://www.nature.com/articles/s41598-025-97652-6>.
 
-16. <a id="ref-09-l4-kestin"></a>Gregory Kestin et al., “AI tutoring outperforms in-class active learning,” *Scientific Reports* 15, 17458 (2025). <https://www.nature.com/articles/s41598-025-97652-6>.
+16. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-17. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
+17. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
-18. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
+18. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
 
-19. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
+19. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-20. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
+20. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
 
-21. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
+21. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
 
-22. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
-
-23. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+22. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 10 — Fluent Autonomy
 

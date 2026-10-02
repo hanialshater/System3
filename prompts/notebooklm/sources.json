@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "993cac3a0a40d31263a725efabc787ed078d0ccb4ee2fa46cc4e7a590f0ddb6c",
+  "references_sha256": "74f7b864564b894cf87e76d2fb77a3d495b1edff3612ce79c1dd28dd40348523",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -160,25 +160,26 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "ca0f2b3e37ed8b5db0d1d28daaddfe3ea7ff0feba8092033c4010a0df9a6b402",
+      "source_sha256": "45d06f8b020b896cbfd6559b53311af917da17a2a9ac7ec202183979d6f95122",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "58f8da02a0d12d8e17a5770d1c8a17bd988a8736447c4fd3c1579020e4641d77",
+      "brief_sha256": "984b75833500d2cf295f6f2fcc8ecc60d5e083329665afa2b9e215d5bb237171",
       "sections": [
         "Opening passage",
-        "An Old Problem, a New Employee",
-        "The Alignment Department’s Alignment Problem",
-        "Training the Gut",
-        "Make the Judge Smarter",
-        "An fMRI for the Model",
-        "Steering Mid-Thought",
-        "Assume It Is Trying to Win",
-        "Uncertain Enough to Ask",
-        "The Loop That Changes the Loops"
+        "A New Kind of Employee",
+        "When the Employee Does the Alignment Research",
+        "Retrain Them",
+        "Read Their Notes",
+        "Open Their Head",
+        "Change Their Mind Mid-Sentence",
+        "Get a Second Opinion",
+        "Keep the Budget Out of Reach",
+        "Make It Ask",
+        "The Top Loop"
       ]
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "3bbd6ae62e436aee97d76602313c9b3cafbe5f9cef90f94c5eb5848ad44e7ae7",
+      "source_sha256": "a3eb3c4416175f5a281dc74568a33922d7601d2c166a98b0a8a0fcc535dca434",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
