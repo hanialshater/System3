@@ -14,14 +14,14 @@ Adapt Hani M.M. Al-Shater's "Chapter 8: Scalable Oversight" into an English vide
 
 1. Opening passage
 2. A New Kind of Employee
-3. When the Employee Does the Alignment Research
-4. Retrain Them
-5. Read Their Notes
-6. Open Their Head
-7. Change Their Mind Mid-Sentence
-8. Get a Second Opinion
-9. Keep the Budget Out of Reach
-10. Make It Ask
+3. Retrain Them
+4. Read Their Notes
+5. Open Their Head
+6. Change Their Mind Mid-Sentence
+7. Get a Second Opinion
+8. Keep the Budget Out of Reach
+9. Make It Ask
+10. When the Employee Does the Alignment Research
 11. The Top Loop
 
 ## Review

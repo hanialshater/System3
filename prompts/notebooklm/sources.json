@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "5a10d5d0c87239c7b43868ba2d9c596b7d97eecc7d9302da94626158e36ea819",
+  "references_sha256": "77e6efe67a8d6df5eb974944841d67a62d27cae7793b66a2b0a519c7ef2c1adb",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "a0e85903157bdcddf9dabbfc9d2c0e123c50e928a1aaa4eaddadf185718cfc1e",
+      "source_sha256": "22fe4022e80fd76579b0891adc2b6881ff7413d27fd5aaf60f61440f81e1760e",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -157,13 +157,12 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "0d6a9dccfc5e4393ed8261603cbc9bedae3ac932c56eeed33e83124291eed91d",
+      "source_sha256": "bcf4d1faf234c35fb0375c8a477a58dac65274c7d4480f26e208b0fab24f9872",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "984b75833500d2cf295f6f2fcc8ecc60d5e083329665afa2b9e215d5bb237171",
+      "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
         "Opening passage",
         "A New Kind of Employee",
-        "When the Employee Does the Alignment Research",
         "Retrain Them",
         "Read Their Notes",
         "Open Their Head",
@@ -171,6 +170,7 @@
         "Get a Second Opinion",
         "Keep the Budget Out of Reach",
         "Make It Ask",
+        "When the Employee Does the Alignment Research",
         "The Top Loop"
       ]
     },
@@ -231,7 +231,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "9fb4e927f381aefa70588750c735ad6201a50f035d248edeaf7eae98c7409547",
+      "source_sha256": "41c586769221b216b4453ea0c566e9716eea8cd75c18fe4f1632c5a91010c3b1",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "96db14aeef9bcbe0ac59225c5c7c660e0eb4a6b7cc72f9a7ad4d8fd8a3259fdf",
       "sections": [
