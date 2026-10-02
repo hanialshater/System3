@@ -160,7 +160,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "45d06f8b020b896cbfd6559b53311af917da17a2a9ac7ec202183979d6f95122",
+      "source_sha256": "02ba2412c82c9b0d94609d58b622dd0deb4ec320629d1351e81118f2058555cd",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "984b75833500d2cf295f6f2fcc8ecc60d5e083329665afa2b9e215d5bb237171",
       "sections": [
