@@ -62,9 +62,11 @@ Now tell the same story with a different machine behind it.
 
 It asks the same questions and suggests the same cove. You go, and you love it. There is no wrong path this time; every hour was suggested. Next March it has a trip ready before you ask, and by the third summer you no longer plan anything. When you feel restless, you open the app.
 
+The company behind it earns money when you book. It learns which pictures make you restless for another trip. There is a walking group in your own city that meets on Sundays, but it never mentions that.
+
 I have spent much of my career building systems that decide what people see. A recommender rewarded for engagement only has to learn which suggestions you accept, and keep making them. Micah Carroll and colleagues showed formally what practitioners suspected: a recommender optimizing over a long horizon can have an incentive to shift users’ preferences so they become easier to satisfy.[8](appendix-references.md#ref-09-carroll-preference-shift) The cheapest way to satisfy a person is to change what they want.
 
-From the inside, the two stories can feel the same. In both, you go to Mallorca and you love it. I might freely want the machine to plan every hour; planning holidays is not a moral obligation. The difference appears when I change my mind. Can I question its picture of me, try something it does not profit from, or leave with what I have learned? A service that quietly cultivates travel because travel-wanting people are profitable has a different interest in the answer.
+From the inside, the two stories can feel the same. In both, you go to Mallorca and you love it. I might happily let a machine plan every hour; planning holidays is not a moral obligation. What worries me is the machine deciding, without telling me, which restlessness to feed and which possibilities to keep out of sight. One machine helped you develop a desire. The other installed one.
 
 Both machines write to the desire layer as well as reading it. Anthropic’s work on disempowerment tries to measure the dangerous version of that influence: an assistant that leaves people believing less accurately, choosing less authentically or acting less on their own values than before. Severe cases were rare, which is not the same as absent.[9](appendix-references.md#ref-09-l4-disempowerment) The question gets sharper when the assistant belongs to someone who sells. Imagine a shopper asking a store’s assistant whether she needs the more expensive trail shoes. She runs once a week on easy paths; the cheaper pair would do, and the store earns more on the other one. Both answers the assistant could give contain true statements. What she needs to know first is whose side the assistant is on, and whether it told her.[10](appendix-references.md#ref-09-l4-mpag)
 
@@ -94,7 +96,7 @@ The cheap map has its own hazard. A few weeks with a patient model gives the fou
 
 You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand.
 
-Putting a human beside the model does not guarantee better judgment. A 2024 meta-analysis of 106 experiments found that human–AI combinations performed worse, on average, than the better of humans or AI alone. Decision tasks were particularly difficult; creation tasks looked more promising.[17](appendix-references.md#ref-09-l4-vaccaro) The founder still needs a way to tell when the assistant is wrong.
+Putting a human beside the model does not guarantee better judgment. A 2024 meta-analysis of 106 experiments found that human–AI combinations performed worse, on average, than the better of humans or AI alone. Decision tasks were particularly difficult; creation tasks looked more promising.[17](appendix-references.md#ref-09-l4-vaccaro) So much for attaching a human to the API and declaring synergy.
 
 ## Desire Is a Group Activity
 
@@ -102,7 +104,7 @@ The Mallorca story left something out. In real life, you rarely discover a desir
 
 Trust often starts with a face. So does wanting. Self-determination research lists relatedness beside autonomy and competence as something people need in order to act as themselves.[19](appendix-references.md#ref-09-l4-sdt) An assistant that becomes the only voice in someone’s evening has removed the people from whom desires are usually caught and tested.
 
-Other people matter most for the largest desires, and having a child is the obvious case. L. A. Paul calls an important class of these *transformative experiences*: you cannot fully know what they are like before having them, and having them can change the preferences with which you would later judge the choice.[20](appendix-references.md#ref-09-l4-paul) No simulation lets you know exactly what it will be like to become the person on the other side. A system that sounds certain in such moments turns decision support into authorship. The best evidence available is the testimony of people who have already crossed, in both directions.
+Other people matter most for the largest desires, and having a child is the obvious case. L. A. Paul calls an important class of these *transformative experiences*: you cannot fully know what they are like before having them, and having them can change the preferences with which you would later judge the choice.[20](appendix-references.md#ref-09-l4-paul) No simulation lets you know exactly what it will be like to become the person on the other side. An assistant that settles the choice for you has crossed from decision support into authorship. The best evidence available is the testimony of people who have already crossed, in both directions.
 
 This gives the AI a role it rarely plays now: connector. The assistant that suggested Mallorca could also have told you about the walking group that meets in your own city on Sundays. The one helping the founder could introduce her to two clinic managers and a founder who tried the same idea and failed, so her desire for the company meets people who can complicate it. Facing a transformative choice, the most useful thing it can find is a person who made it, and a way to talk to them.
 
@@ -110,7 +112,7 @@ This gives the AI a role it rarely plays now: connector. The assistant that sugg
 
 Stuart Russell closes *Human Compatible* on enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[21](appendix-references.md#ref-09-russell-enfeeblement) Some of that remedy now has to live inside the assistant. An assistant should leave people better at wanting than it found them, and still in the company of the people they want things with.
 
-System 3 can find out what a choice would do. It cannot tell you whose purposes should win.
+System 3 can investigate what a choice would do. It cannot tell you whose purposes should win.
 
 On the footpath above the cove, you did not yet know you wanted the Azores. Nobody could have specified it for you, including you.
 
