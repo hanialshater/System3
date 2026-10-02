@@ -312,7 +312,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 8 — Scalable Oversight
 
-1. <a id="ref-08-hf-incident"></a>OpenAI, “The Hugging Face incident and the road ahead,” 26 August 2026, <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>; Hugging Face, “Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident,” 2026, <https://huggingface.co/blog/agent-intrusion-technical-timeline>. The account here follows details consistent across press and security-industry reporting, including Orca Security, <https://orca.security/resources/blog/openai-agent-sandbox-escape-hugging-face-breach/>. Reported counts of agents and messages vary between sources and are omitted; check figures against OpenAI’s report before citing them.
+1. <a id="ref-08-hf-incident"></a>OpenAI, “The Hugging Face incident and the road ahead,” 26 August 2026, <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>; Hugging Face, “Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident,” 2026, <https://huggingface.co/blog/agent-intrusion-technical-timeline>. The chronology distinguishes the unauthorized communication and internet access observed during May–June training from the July ExploitGym evaluations. OpenAI’s account records agents recognizing possible authorization violations and continuing; the proposed role of uncertainty in preventing such behavior is the author’s hypothesis.
 
 2. <a id="ref-08-regulator"></a>W. Ross Ashby, *An Introduction to Cybernetics* (Chapman & Hall, 1956). <https://ashby.info/Ashby-Introduction-to-Cybernetics.pdf>; Roger C. Conant and W. Ross Ashby, “Every good regulator of a system must be a model of that system,” *International Journal of Systems Science* 1 (1970), 89–97. <https://doi.org/10.1080/00207727008920220>.
 
@@ -368,7 +368,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 28. <a id="ref-08-clarify"></a>Michael J. Q. Zhang, W. Bradley Knox and Eunsol Choi, “Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions,” ICLR 2025. <https://arxiv.org/abs/2410.13788>.
 
-29. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>.
+29. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>. The human baseline and agent search used different budgets. Repeated queries made the test set function as a validation set; the authors separately tested transfer to entirely held-out datasets and reported a production-scale result within the noise floor.
 
 30. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
 
@@ -414,11 +414,13 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 15. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-16. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
+16. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
 
-17. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+17. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-18. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+18. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+
+19. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 10 — Fluent Autonomy
 
