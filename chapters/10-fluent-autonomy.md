@@ -22,6 +22,8 @@ The readers were often right. When they were not, I refused them. They wanted th
 
 None of it ran by itself. The worst case was a chapter whose opening history was supposed to stay, and the reason was written down where any pass could read it. A later pass cut it anyway. I put it back by hand.
 
+The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
+
 What I want is for that record to change what happens when I make the next small request. The system should pull up the corrections that survived and leave a paragraph I care about alone, preferably without convening a committee for ceremony and wasting my afternoon.
 
 Perhaps in the end it changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:

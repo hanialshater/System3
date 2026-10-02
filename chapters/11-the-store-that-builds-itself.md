@@ -92,7 +92,9 @@ Back to Mei and her two pairs of trail shoes. She has been coming back to them a
 
 A conventional recommender can still do an excellent job here. It can find twenty more trail shoes that look similar, match her taste and are available in her size.
 
-But suppose the fingerprint says comparison friction is high and price-quality confusion is moderate. The composer can do something different. The first experience compares the two shoes Mei is actually deciding between on attributes relevant to her behavior. The second adds confidence evidence from customers or product information that helps resolve the remaining uncertainty. Generic similar-items may still survive because it has useful standalone value, but it moves down, and Mei is shown a way to close the choice she already has instead of being handed more of it.
+But suppose the fingerprint says comparison friction is high and price-quality confusion is moderate. The composer can do something different. The first experience compares the two shoes Mei is actually deciding between on attributes relevant to her behavior. The second adds confidence evidence from customers or product information that helps resolve the remaining uncertainty. Generic similar-items may still survive because it has useful standalone value, but it moves down.
+
+She is not shown more choice. She is shown a way to close the choice she already has. That sentence changed how I thought about recommendations.
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
@@ -162,9 +164,9 @@ A clever model makes an experience possible. It becomes useful organizational kn
 
 That knowledge can also become a junk drawer with tenure. If every newly observed problem creates another experience, the library eventually recreates the configuration matrix in a more colorful form. So new supply needs a gate that asks whether the problem is real and large enough, whether an existing experience could be configured to address it, and which experiences have stopped relieving the problems they were created for and should disappear.
 
-This led to a pair of measures I particularly like. The first asks, at design time, which known problems the current library *could* address. The second, in a live store, would ask which detected problems remained insufficiently addressed after composition.
+This led to a pair of concepts I particularly like: **Coverage** and **Unmet Demand**. Coverage asks, at design time, which known problems the current library *could* address. In a live store, Unmet Demand would ask which detected problems remained insufficiently addressed after composition.
 
-Put them together and the roadmap starts to emerge from the system’s own failures. The same two measures tell the institution where its current theories and instruments are weak. A recurring problem with no effective experience is an anomaly the product cannot yet explain away; a heavily used intervention that stops relieving the problem is a theory losing contact with reality.
+Put them together and the roadmap starts to emerge from the system’s own failures. If System 3 is science, Coverage and Unmet Demand are more than roadmap metrics. They tell the institution where its current theories and instruments are weak. A recurring problem with no effective experience is an anomaly the product cannot yet explain away; a heavily used intervention that stops relieving the problem is a theory losing contact with reality.
 
 ## Let the LLM Narrate. Do Not Let It Declare Reality.
 

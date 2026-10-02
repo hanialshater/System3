@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "1df9dd29126592b420bebd55589f074155aaafaf0497424e666ef989d634a084",
+  "references_sha256": "975141ec31524a65f448b795fb3d89506fefbc5fe95a7b52946e7a42d351a86d",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -52,7 +52,7 @@
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "4392c3759be7c4dbb4a5b52ebc3478c6123f8c763c6bea80fffdfbe5d52eb350",
+      "source_sha256": "8b4794b9fcd6ce3d1ae2baeefc0251a4eb619c21af211a6b03761bd757c4008b",
       "brief": "prompts/notebooklm/chapter-03.md",
       "brief_sha256": "db153a330d406e069d6b66648e801abe25d1119eccbf8bd32e92b7a61b603ceb",
       "sections": [
@@ -92,7 +92,7 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "d0d8aea094fddfc3d1793052e4e9c3873535929dc2f4fe4e338b4b277320acbb",
+      "source_sha256": "6cf1990dd8a4e5a18c6a029c6a9db4142aa327b93ec68aa92d8649273e2dd91a",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "01787692d18fe044b1dfcc21862754f82fa530b17d29fc0a3153f772c6d6c57c",
       "sections": [
@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "3e08938d3f48813f347a89956f9e272420bb2424d60cb8af0f7d236492e72367",
+      "source_sha256": "c84fa96816e044f2aea43bc5ef6640ffd1cca4a91abdc19e44c1f31c0ce143f5",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "4b6111129f65816c34b3f57555f60db2d1c738142fdac48e9e6e85a59ffee580",
       "sections": [
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "4adb930d95b09178d8690f22bdad2c8645454ea53f39165eb69fb5611fe16dc5",
+      "source_sha256": "ade340b4d2bacfde9a269f8af14b2eac21fa78720aff5261878b872de2846284",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -157,7 +157,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "94bf7832a188b21e407cab0afce499a187cf0747cb8b0d3b94db78c7cb0e1621",
+      "source_sha256": "d70d2c64c34d083601399e8b9c16d67d3379d15bce37a9383186379d858e0c19",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "f23e33d8eba2abeb9264c75950a61fffb4871cab6267e2a243a43610b34be9ed",
+      "source_sha256": "6bd01acbe5068a5d725b08145d31f13c24b7cf307c93abc7a1aaabf064cad9f6",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -192,7 +192,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "57c10253c21cd0a0f4a2e225737b09c1bea082a496a640811a713da3cbb40d38",
+      "source_sha256": "e9ed3bdb9094b423ed121a82dd63c17e291aa28f917a80425600c74df5075822",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "b372952eef185a16ae636fe172c1c85cb5a44f8442a7cd58f617181d7540b0bf",
       "sections": [
@@ -208,7 +208,7 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "f0673e4377c682ee32eaf782a98c51d5264561bf2daab0927c13f93eef78186a",
+      "source_sha256": "ccb188522c2f94d621daa144ef827c06c0f62b75ba4857a84b90c0db7c2ecb52",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "7ce63d80be8426d0379487b075039b7a54714500da3ab6b34c23d23f16a6a186",
       "sections": [
@@ -231,7 +231,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "68e45ac19e6246ed1003d47778dca0d156f50b1116c4f35c12d6828181f63c21",
+      "source_sha256": "4ee00ca6b6285d718052786bd7dba67b7d1e1b470253d84cba4cc461a78947a8",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "7b736c860b2af34b1960e37ab57feee784d74f42735457848f95341f44386b52",
       "sections": [
@@ -251,7 +251,7 @@
     },
     {
       "source": "chapters/13-the-prophecy.md",
-      "source_sha256": "cda9c9c36d84095fe43e09b8389b25a7772f72207bb54849f0469084c78bf2f8",
+      "source_sha256": "e804b4ea51a6a7be8f76f91be6fdd70ad1275198a79d22ee629aec0ff5145f6f",
       "brief": "prompts/notebooklm/chapter-13.md",
       "brief_sha256": "82c1eb5b1f59a1c30ab5e3db1a916190c6f07d01af2d4ab887b9e6263f908e91",
       "sections": [

@@ -94,6 +94,8 @@ Give everyone better information and surely the disagreements shrink. Some will.
 
 Decisions still get made. Institutions decide which qualifications count, and a leader with a convincing story can acquire more authority than someone who understands the problem. Even criticism can find a comfortable institutional role, provided it never changes what happens next: a dashboard stands in as evidence that an organization is scientific, a consultation as evidence that people have a say. Seeing how the story works does little for me on Monday morning, when I still need the permission.
 
+This is what I mean by the ideology vortex: inherited belief, reason, criticism, representation and power keep pulling us around the same disputes. The argument changes while the practical dependence survives.
+
 An alternative has to be possible somewhere. Someone needs the knowledge, time and means to make an attempt whose outcome is not already contained in the discussion. Otherwise, exposing the arrangement leaves us with an exposed arrangement that we still have to use.
 
 There is an oddity in the machinery making this conceivable. It has learned from the same accumulated language in which we argue about the impossibility of getting outside our descriptions.
@@ -106,9 +108,13 @@ Large language models operate inside that difficulty. They learn from use, relat
 
 Meaning remains fuzzy at the edges. The product ships anyway.
 
+Gradient descent did not defeat ambiguity. It made ambiguity computationally useful. The language carrying our disagreements can also help us construct things through which we learn something new.
+
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that camels are native to Croatia.
 
 The compiler has to compile. A store that builds itself still needs its business experiment: an experience that convinces the experts and the model may fail the customer. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong.
+
+An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is why the earlier chapters insisted on tests, independent evidence and work somebody else can inspect.
 
 Theories and traditions remain available to think with. But criticism leaves a practical question: once you have seen through an arrangement, how do you build one you can commit to?
 
@@ -124,7 +130,7 @@ If those were the only two answers, what were these people doing?
 
 She drew general principles from the cases and held the principles answerable to further cases. But she began with the arrangements people actually used, rather than assuming that one institutional prescription should fit them all. Nobody had to win the argument about the right social order before the irrigators could agree on a schedule.
 
-That is the turn I am interested in. You can take the criticism seriously, decline the grand narrative and still build something worth committing to. Start with the actual problem, draw on what others have learned and stay answerable to what happens. Calling something a community does not make this work. The arrangements that lasted had conditions, including ways for participants to help shape the rules under which they lived.
+That is the turn out of the vortex I am interested in. You can take the criticism seriously, decline the grand narrative and still build something worth committing to. Start with the actual problem, draw on what others have learned and stay answerable to what happens. Calling something a community does not make this work. The arrangements that lasted had conditions, including ways for participants to help shape the rules under which they lived.
 
 I find this more encouraging than another theory of the good society. People were participating in the construction of their common life. Those irrigators did not lack knowledge of their own valley. What might they have done with ready access to the experience of a hundred other valleys, and tools for exploring a proposed rule before the next dry season? A group could bring its experience of the problem and acquire much more of the expertise needed to investigate it. A missing specialty would no longer have to end the attempt.
 
@@ -259,6 +265,10 @@ That is the work I want to do: put the machinery this book has described within 
 I would like some of that freedom myself. A year on a question that once seemed inaccessible. Enough astronomy to make an evening outside with my children different. An unfamiliar subject becoming a source of pleasure long after it has stopped being useful for anything I could put on a slide. Some of the hours recovered from asking permission could go into the work. Some could go into enjoying the life around it.
 
 Dantzig brought a question and found that it had another side. I want more of us to have afternoons like that, and weekends in which we can do something about what we discover.
+
+There is more to a person than the few abilities a career had room for. There may be more to our common life than the arrangements we could previously afford to build.
+
+I would like us to find out how much more.
 
 Who actually gets those afternoons is a much larger book, and I can’t tell you how it goes. Nobody in this field can. So this one has one argument left, and it is a prophecy. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
