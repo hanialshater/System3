@@ -123,7 +123,7 @@ When something goes wrong you can tell everyone to be more careful, which is emo
 
 That is how an institution learns, and it is also how it scars. A review gets added after a spectacular failure. Five years later the system is different, nobody remembers the incident, and ten thousand ordinary changes still pass through the review because the procedure survived its reason. The apprentice kept a precaution he never understood. The institution can do the same.
 
-And once strangers can rely on one another’s work, each of them can afford to learn something the others don’t.
+A tablet, a bronze measure, a deployment guardrail: each turns knowledge into structure that lets work pass between strangers. And once strangers can rely on one another’s work, each of them can afford to learn something the others don’t.
 
 ## The Society Gets Smarter by Making People Narrower
 
@@ -293,6 +293,8 @@ The familiar failures come with them. A test suite can keep passing while the th
 Tracing a claim takes time and access to the right instruments. The institution has to give someone both, and a way to act on what she finds.
 
 We can test whether these arrangements earn their keep. Keep the model and budget fixed. Give the critic another title, then give her evidence the builder never saw, and compare what she catches. Put a bad diagnosis in a progress file. Compare a system that merely remembers it with one that can trace it to the failed test it misdescribes. Does the mistake survive into the next worker’s plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing.
+
+Each piece answered a failure in the work, and the institution emerged from the repairs.
 
 What the pieces buy is capacity: a claim that survives its author, an objection that survives the person who would rather not hear it, and things a population can attempt that none of its members could.
 

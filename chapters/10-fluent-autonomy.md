@@ -86,7 +86,7 @@ So the test needs a second half. Now and then the system should bring back somet
 
 ## Where This Could Be Wrong
 
-The second coffee test asks the system to bring back what I refused, with a reason. If somebody else had claimed that building autonomous AI keeps rediscovering science, this is where I would push.
+The second coffee test asks the system to bring back what I refused, with a reason. A book that spends several chapters demanding criticism with consequences should probably take some too. If somebody else had claimed that building autonomous AI keeps rediscovering science, this is where I would push.
 
 The easy objection is that it is only an analogy. Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. That process can tell you whether the patch works or the proof checks.
 

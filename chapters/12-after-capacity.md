@@ -248,7 +248,7 @@ I still want more room to discover which commitments deserve to become expensive
 
 The applied scientist still has a job to think about. I have not reached the end with a proof that my profession is safe.
 
-I do have a better reason to work on these systems than defending the scarcity of what I know.
+I do have a better reason to work on these systems than defending the scarcity of what I know. Dantzig’s afternoon makes me want access to a mind that can help me see further. Ostrom makes me want to find out what people could construct together if they had that help.
 
 Imagine an irrigation association with a weekend and a hundred agents. Some investigate how other communities have handled shortages. Others examine the water records, build models, look for failures in the proposed schedules or write the software through which members can inspect and change them. A question raised over the table becomes another investigation. The work can follow it.
 

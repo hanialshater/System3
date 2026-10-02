@@ -20,7 +20,7 @@ Your coffee is still too hot.
 
 What changed was the mental capacity available to pursue the question. Enough work could happen, in enough directions, for discoveries to reshape the undertaking while you were away. You could begin something that once required the power to assemble an institution.
 
-Complexity over engineering. Emergence over design. Capacity over power.
+Complexity over engineering. Emergence over design. Capacity over power. That is what happened while you were getting coffee.
 
 It is September 2026 as I write this. Anthropic has already had a team of parallel Claudes build a C compiler, and OpenAI has set agents on the Navier–Stokes Millennium Prize Problem. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[1](appendix-references.md#ref-00-agents-preface)
 

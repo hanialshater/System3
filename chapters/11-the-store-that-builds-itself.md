@@ -240,4 +240,6 @@ I began the prototype as a recommendation-system redesign. By the time the desig
 
 That does not prove the book. I designed it with the book’s argument in my head, and the test that could embarrass me is still ahead. It may fail in several educational ways.
 
+But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
+
 Once you can imagine a store learning that way, it is hard not to imagine the same thing in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.

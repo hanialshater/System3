@@ -110,6 +110,8 @@ This gives the AI a role it rarely plays now: connector. The assistant that sugg
 
 Stuart Russell closes *Human Compatible* on enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[21](appendix-references.md#ref-09-russell-enfeeblement) Some of that remedy now has to live inside the assistant. An assistant should leave people better at wanting than it found them, and still in the company of the people they want things with.
 
+System 3 can find out what a choice would do. It cannot tell you whose purposes should win.
+
 On the footpath above the cove, you did not yet know you wanted the Azores. Nobody could have specified it for you, including you.
 
 The system has to know which parts of the work to carry and which are still mine. How much of that should I have to explain every time I ask for help?
