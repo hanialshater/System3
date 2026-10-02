@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "b610f0a6bfce6e5be677a0ef7fb11a74d874b1f172262fee1cd2132ad81ca6b3",
+  "references_sha256": "2a2fd06c9ad70cb290db10f8ac58b8048de9c957a8542ff0721f218a0afd4bf9",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -181,7 +181,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "4c48784bfa084154d305fcbeb5681edcde82bcf712d64476db7c316719a5c356",
+      "source_sha256": "3bbd6ae62e436aee97d76602313c9b3cafbe5f9cef90f94c5eb5848ad44e7ae7",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [

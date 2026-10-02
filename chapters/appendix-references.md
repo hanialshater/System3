@@ -414,11 +414,11 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 6. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
 
-7. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
+7. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
 
-8. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
+8. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
 
-9. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+9. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
 
 10. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
 
@@ -438,17 +438,15 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 18. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
-19. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas Malone, “When combinations of humans and AI are useful,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>.
+19. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
 
-20. <a id="ref-09-l4-sen"></a>Amartya Sen’s capability approach — overview. <https://www.sciencedirect.com/science/article/abs/pii/S016972181000016X>.
+20. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-21. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
+21. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
 
-22. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
+22. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
 
-23. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
-
-24. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+23. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 10 — Fluent Autonomy
 
