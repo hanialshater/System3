@@ -44,13 +44,13 @@ A strong applied scientist brings a working map of the frontier. She knows which
 
 Chapter 5 followed the larger society that makes this possible. A scientist inside a company is connected to arguments, discoveries and failures happening outside it. Without that connection, the company keeps approaching unfamiliar problems with its familiar machinery.
 
-I think of this as owning the frontier. Someone takes responsibility for noticing where the possibilities have changed and finding out what the organization can actually do with them.
+I think of this as owning the frontier. It is the vibe coder’s seat from Chapter 3, at the scale of a career: once building and checking become cheap, what remains is deciding what is worth trying next. Someone takes responsibility for noticing where the possibilities have changed and finding out what the organization can actually do with them.
 
 Training and evaluation were never the whole purpose of the job. They were the expensive part of it, and expensive is easy to mistake for essential.
 
 There is useful work for me in that change. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
-The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
+The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it. Past the frontier sits the question Chapter 3 left at the top of the stack. When almost anything can be attempted, the scarce part is knowing what I want attempted.
 
 ## Bespoke Comes Back
 
