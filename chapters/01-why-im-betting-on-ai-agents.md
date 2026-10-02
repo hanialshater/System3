@@ -29,9 +29,9 @@ Engineering often makes a problem manageable by removing possibilities. We choos
 
 **Complexity over engineering** is a deliberately uncomfortable way to name my bet. I want us to be able to work with more of the problem before deciding which parts reality will have to do without. That may require considerable engineering: tools for exploring alternatives, environments in which mistakes are recoverable, ways to compare results. The difference is how much of the answer we insist on putting into the machinery before the search begins.
 
-**Control doesn’t disappear. It moves upward.** Instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
+Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
 
-Cultivation may be a better metaphor than scripting, not because agents are plants, but because pulling harder on the stem remains a surprisingly poor gardening strategy.
+Cultivation may be a better metaphor than scripting: pulling harder on the stem remains a surprisingly poor gardening strategy.
 
 ## The Head Start
 
@@ -41,19 +41,23 @@ It is not a fair competition. The agents arrive with civilization in their lugga
 
 We do this too. No human starts from zero, although we occasionally behave as if our opinions were independently discovered natural resources. We inherit language, tools, institutions and other people’s mistakes. Agents can draw on textbooks, numerical solvers, compilers, scientific papers and several thousand years of humans documenting what happened when we touched things we probably should not have touched.
 
-Imagine an agent beginning with algorithms from a library. None works well enough, so it writes a tool to examine the failures. The tool reveals a pattern worth investigating. Another worker uses it on a different case, finds a limitation and changes it. Meanwhile, they need somewhere to record what they tried, a way to avoid undoing each other’s work and some agreement about which results deserve to survive. We began by asking for a solution. We now have methods and a small organization to examine as well.
+Imagine an agent beginning with algorithms from a library. None works well enough, so it writes a tool to examine the failures. The tool reveals a pattern worth investigating. Another worker uses it on a different case, finds a limitation and changes it. Meanwhile, they need somewhere to record what they tried, a way to avoid undoing each other’s work and some agreement about which results deserve to survive.
 
-That is how I think about **emergence over design**. The parts can be deliberately built while the work teaches us how they need to fit together. I want to leave room for that learning. An architecture drawn before the first experiment may be an excellent starting point. I would be surprised if it were also the right place to finish.
+<!-- AUTHOR: C1-5. This run is imagined. Did a real run (circle packing or another) grow its own tools and notes? If so, describe it here in place of the hypothetical. -->
+
+The parts can be deliberately built while the work teaches us how they need to fit together. I want to leave room for that learning, for **emergence over design**. An architecture drawn before the first experiment may be an excellent starting point. I would be surprised if it were also the right place to finish.
 
 ## When Search Moved Up a Level
 
-AlphaGo made this concrete for me. Computers had been humiliating us at games for years, but here learned intuition guided the search: the network suggested promising moves and estimated positions; the tree explored what might follow. AlphaGo Zero went further, learning through self-play without human game records as its teacher. Strong play developed along routes human tradition had not made familiar.
+AlphaGo made this concrete for me: learned intuition guided the search.
+
+<!-- AUTHOR: C1-8 / X-2. Ch 4 keeps the full AlphaGo account. What did you actually see or feel when AlphaGo played? One or two sentences of your own here. -->
 
 Large language models brought a much broader version of that feeling. Nobody implemented “translate this joke without murdering it” or “write a breakup message that does not accidentally restart the relationship” as separate product features. They came out of training, and I could keep asking for things nobody had put on a feature list.
 
 An agent can use those capabilities over successive attempts. It acts, inspects what happened and decides some of what to try next. The industry will eventually use the word *agent* for everything from a cron job with an LLM attached to a digital employee with an expense account and a performance review. I care about how much of the problem it actually owns.
 
-“Open this file, change this method and run this test” leaves most of the search with me. “Fix the bug” transfers more of it. “Find a better algorithm” transfers more again. Now the system may have to read, construct examples, choose an approach, abandon it, build a missing tool and notice that the original framing was unhelpful. Its weights can stay fixed while the investigation keeps changing.
+“Open this file, change this method and run this test” leaves most of the search with me. “Fix the bug” transfers more of it. “Find a better algorithm” transfers more again. Now the system may have to read, construct examples, choose an approach, abandon it, build a missing tool and notice that the original framing was unhelpful.
 
 Search has always had a problem with attractive hills. Improve the solution nearest to you and you can become exceptionally good at staying in the wrong neighborhood. Keeping a population of candidates helps preserve routes elsewhere. So can changing the representation or returning to a discarded attempt after another discovery makes it useful. Agents can try these moves in a space that includes algorithms, interfaces, research directions and ways of asking the question. Ten agents sharing one assumption are not a search party; they are a conga line, walking very confidently into the same lake.
 
@@ -63,7 +67,7 @@ The primordial soup is code now: algorithms, libraries, compilers, simulators, d
 
 Suppose you manage an excellent engineer. You do not sit behind her and approve every keystroke. If you do, one of you is unnecessary, and it may not be her. You give her a problem, explain the context, agree on constraints and make sure she can reach the systems she needs. You also make sure she cannot casually transfer the payroll budget to herself. When the work reveals that the plan was stupid, you want her to tell you, preferably before the launch party.
 
-With an agent, much of the judgment and accountability we take for granted in a colleague has to be examined rather than assumed. I think about its working conditions in four parts: **building blocks, environment, feedback and boundaries**. Can it obtain the information and tools the work requires? Can it try something without making every mistake permanent? What can tell it that an attractive answer is wrong? Which decisions remain outside its authority?
+With an agent, much of the judgment and accountability we take for granted in a colleague has to be examined rather than assumed. I think about its working conditions in four parts: building blocks, environment, feedback and boundaries. Can it obtain the information and tools the work requires? Can it try something without making every mistake permanent? What can tell it that an attractive answer is wrong? Which decisions remain outside its authority?
 
 A model with text alone can describe an experiment. Give it execution and it can run one. Give it a simulator and it can rehearse possibilities, including possibilities the simulator models badly. A unit test, a customer response and another agent’s criticism each reveal something different. Choosing among them is part of setting up the work, and a convenient automated check may miss the thing we most needed to know.
 
@@ -75,13 +79,15 @@ Too much prescription removes the room in which autonomy could help. Too little 
 
 ## Confident Wrong Solutions
 
-The mistakes that worry me most are not the ones that crash. Imagine an agent deciding that customers who return a jacket dislike its style. In this case they liked the jacket; the sizing was wrong. But the return record does not say that. A second agent inherits the first agent’s conclusion and starts recommending different styles. A third writes a report explaining why those styles deserve more space in the catalog. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie. Intelligence made the wrong path easier to travel.
+The mistakes that worry me most are the confident ones. Imagine an agent deciding that customers who return a jacket dislike its style. In this case they liked the jacket; the sizing was wrong. But the return record does not say that. A second agent inherits the first agent’s conclusion and starts recommending different styles. A third writes a report explaining why those styles deserve more space in the catalog. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie.
 
-I foresee AI-designed solutions that are terrifyingly efficient, perfectly logical and utterly humorless. They’ll look at us and say, “You guys are kind of messy. And your cat obsession is… illogical.” Maybe they’ll finally solve the mystery of the missing socks. Or create exponentially more of them.
+<!-- AUTHOR: C1-6 / X-6. The jacket example is invented. Can a real ranking or recommendation mistake from your reviews and ratings work replace it? If so, update the Ch 3 callback ("exactly what jacket they want") at the same time. -->
 
-**Emergence can give us capable systems. It does not, by itself, give us trustworthy ones.** Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
+Maybe the agents will finally solve the mystery of the missing socks. Or create exponentially more of them.
 
-Then the difficulty reaches us. I have been speaking as though we know what success looks like and merely need help reaching it. Often we do not. I can ask for a better chapter and discover, through several polished versions I dislike, what I meant by better. A system can help me learn that. It can also make its own preferences so easy to accept that mine stop developing. I might end up with a more polished book and less confidence in my own taste.
+Capable is not the same as trustworthy. Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
+
+Then the difficulty reaches us. I have been speaking as though we know what success looks like and merely need help reaching it. Often we do not. I can ask for a better chapter and discover, through several polished versions I dislike, what I meant by better. A system can help me learn that, or make its own preferences so easy to accept that mine stop developing. I might end up with a more polished book and less confidence in my own taste.
 
 We already depend on work we cannot personally reconstruct. No scientist repeats every experiment she relies on. No engineer understands every layer beneath an application. We have learned, imperfectly, to build on other people’s knowledge while retaining ways to question it. Agents extend that dependence into work I might once have done myself. I need help that lets me examine something important without making me supervise everything.
 
@@ -91,11 +97,13 @@ There are things I have stopped considering because I know what they would take.
 
 That is part of why I am interested in agents. I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
 
-We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first winning a contest for somebody else’s permission.
+We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first finding the team, the budget or someone willing to believe in the idea.
 
-**Capacity over power** names the direction I want to pursue. I am more interested in what people become able to do than in how many people one person becomes able to command. Whoever supplies that capacity may acquire new leverage over those who depend on it, and plenty of things people want to do are things they should not do. Those difficulties belong inside the ambition.
+<!-- AUTHOR: C1-13. Is there a real limit you dropped, a project you stopped considering for lack of a team or budget, that could make this paragraph concrete? -->
 
-I want that capacity to leave more room for human purposes, including purposes too small, strange or personal to survive a funding committee. Some of that freedom may require systems whose methods I could not have specified myself. I am willing to give up choosing every move. I am much less willing to give up finding out what happened, changing direction or deciding that the undertaking no longer serves the reason I began it.
+I would choose **capacity over power**: what people become able to do matters more to me than how many people one person becomes able to command. Whoever supplies that capacity may acquire new leverage over those who depend on it, and plenty of things people want to do are things they should not do.
+
+I want that capacity to leave more room for human purposes, including purposes too small or strange to survive a funding committee. Some of that freedom may require systems whose methods I could not have specified myself. I am willing to give up choosing every move. I am much less willing to give up finding out what happened, changing direction or deciding that the undertaking no longer serves the reason I began it.
 
 ## A Bounded Problem
 

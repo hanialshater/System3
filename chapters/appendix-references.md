@@ -66,6 +66,14 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 - Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
 - Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds* (W. W. Norton, 2017) — “competence without comprehension.”
 
+### Additional sources
+
+- Chunqiu Steven Xia et al., “Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?” (2025) — the agent work in which the MARC-file analyzer incident occurred: agents building new tools at runtime when existing instruments could not expose the data. <https://arxiv.org/abs/2511.13646>
+- SWE-bench Verified (OpenAI, 2024) — the human-validated SWE-bench subset used in the epistemic-swe comparison. <https://openai.com/index/introducing-swe-bench-verified/>
+- mini-swe-agent (SWE-agent project) — the baseline agent in the chapter’s experiment. <https://github.com/SWE-agent/mini-swe-agent>
+- Astropy — the repository the ten evaluation problems were drawn from. <https://github.com/astropy/astropy>
+- Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds* (W. W. Norton, 2017) — “competence without comprehension.”
+
 ## Chapter 5 — The Society of Agents
 
 1. <a id="ref-05-carlini"></a>Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler’s achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
