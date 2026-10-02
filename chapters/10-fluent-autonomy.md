@@ -24,9 +24,9 @@ None of it ran by itself. The worst case was Chapter 3. Its opening history was 
 
 The refusal should remain mine. Remembering why I refused should not depend on my being there to refuse again.
 
-What I want is for that record to change what happens when I make the next small request. Maybe the system pulls up the corrections that survived and leaves a paragraph I care about alone. Maybe it convenes a committee for ceremony and wastes my afternoon. The arrangement gets judged along with the prose.
+What I want is for that record to change what happens when I make the next small request. Maybe the system pulls up the corrections that survived and leaves a paragraph I care about alone. Maybe it convenes a committee for ceremony and wastes my afternoon.
 
-After all that, perhaps the system changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:
+Perhaps in the end it changes four paragraphs. I should not have to reconstruct the institution that produced them. I said:
 
 > This chapter still feels like LLM writing.
 
@@ -45,8 +45,6 @@ A fluent system can build some of the shape after it sees the intention, includi
 Bureaucracy sounds like an insult until you need it. In its useful form it is accumulated coordination: roles, review boundaries, logs and escalation paths that exist because some work goes wrong when everybody improvises. Its usual failure is that it never comes down. A six-person review designed for a dangerous database migration ends up guarding a typo fix on a help page, because nobody told the workflow the risk had changed.
 
 Agents make a different arrangement possible, which I call **bureaucracy on the fly**: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion. This is Deep Mode grown up, choosing the next organization as well as the next move.
-
-Built that way, the six-person review exists for the migration and is gone before anyone can point it at the typo.
 
 ## Selective Friction
 
@@ -78,9 +76,9 @@ Most work does not let me leave, because I am part of the evaluator. Nobody else
 
 It is embarrassingly measurable. Count how often a correction I have already made has to be made again, and how many refused edits come back wearing a different sentence. Add the minutes at the start of each session spent explaining things the system has already written down. In circle packing the scores ran from 2.26 to 2.636. Here the unit is closer to the sigh.
 
-By that measure, the history I had to restore is a failure, and an instructive one. The reason for keeping it was on disk. Nothing consulted it at the moment it mattered. The clay had preserved what it was given.
+By that measure, the history I had to restore is a failure. The reason for keeping it was on disk. Nothing consulted it at the moment it mattered.
 
-The second test is harder than the first in two ways. The evaluator changes. I learn too, and a correction I made in March may be one I would reject in September. A fluent system has to tell a durable preference from a bad afternoon, which is exactly the distinction I am worst at making about myself.
+This test is also harder than the first. The evaluator changes. I learn too, and a correction I made in March may be one I would reject in September. A fluent system has to tell a durable preference from a bad afternoon, which is exactly the distinction I am worst at making about myself.
 
 And the test can be passed too well. A system that never makes me repeat a correction may simply have learned to show me only what I already like. Zero repeated corrections could mean fluency. It could also mean a very polite echo chamber.
 
@@ -88,9 +86,9 @@ So the test needs a second half. Now and then the system should bring back somet
 
 ## Five Ways This Could Be Wrong
 
-The second coffee test asks the system to bring back what I refused, with a reason. The book should take the same treatment. I have claimed that as we build autonomous AI, we keep rediscovering science as its architecture. A book that spends several chapters demanding criticism with consequences should probably take some. Here is how I would attack the claim if somebody else had made it.
+The second coffee test asks the system to bring back what I refused, with a reason. A book that spends several chapters demanding criticism with consequences should probably take some too. If somebody else had claimed that building autonomous AI keeps rediscovering science, this is where I would push.
 
-**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. That process can tell you whether the patch works or the proof checks. It cannot settle who gets to decide what the store is for.
+**It is only an analogy.** Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. That process can tell you whether the patch works or the proof checks.
 
 **The weights will eat it.** Richard Sutton, who helped teach machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[1](appendix-references.md#ref-10-bitter) Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
 
@@ -100,7 +98,7 @@ I think Sutton is right about most of what I deleted. The orchestration was a gu
 
 Some of that structure may move inside the model, and then we are back to building instruments to find out whether the inside deserves trust. If a system someday certifies its own open-ended work, with no external check and no preserved disagreement, and the certification holds up when somebody else looks, I am wrong. I would like to read that paper. I would also like to know who reviewed it.
 
-**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Some of it probably is, so the test has to be whether the arrangements improve the work. The one I designed on purpose, my epistemic agent, solved fewer problems than the baseline. The one I find hardest to explain away nobody designed: the ExploitGym agents built a shared record nobody asked for and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
+**I found what I was looking for.** I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Some of that is probably true. The fairer test is whether the arrangements improve the work. The one I designed on purpose, my epistemic agent, solved fewer problems than the baseline. The one I find hardest to explain away nobody designed: the ExploitGym agents built a shared record nobody asked for and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
 
 **Agents are not scientists.** Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. Session turnover is not Planck’s funeral. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
 
@@ -110,4 +108,4 @@ None of this shows that the whole composition works. I have shown pieces, and th
 
 An editing experiment has one advantage: I am there to say the result is wrong. A customer who gets a bad page files no correction. She leaves.
 
-I had spent years building systems to decide what to show that customer. Now I wanted to see what this argument would make me build differently.
+I spent years building systems that decide what to show her.

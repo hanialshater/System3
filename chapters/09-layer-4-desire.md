@@ -22,11 +22,11 @@ Ask people what they want and you mostly get placeholders. Founders want success
 
 In July 1995 Amazon opened for business as “Earth’s biggest bookstore.”[2](appendix-references.md#ref-09-amazon-history) If you had asked its founders what they wanted, “success” would have been true and useless. What they had was a value proposition: selection and convenience for people buying books online.
 
-The value proposition kept changing as the company learned what it could do. Books became music and films, then nearly everything. The machinery built to run the store became something it could sell; in March 2006 Amazon launched S3 and began renting its infrastructure to strangers. By 2024 the company that started with paperbacks had invested eight billion dollars in Anthropic, and its cloud had become Anthropic’s primary training partner.[3](appendix-references.md#ref-09-amazon-anthropic) Nobody in 1995 wanted a cloud business, let alone a stake in a language model called Claude. The wanting had to be developed, by operating the business and noticing what it had made possible.
+The value proposition kept changing as the company learned what it could do. Books became music and films, then nearly everything. The machinery built to run the store became something it could sell; in March 2006 Amazon launched S3 and began renting its infrastructure to strangers. By 2024 the company that started with paperbacks had invested eight billion dollars in Anthropic, and its cloud had become Anthropic’s primary training partner.[3](appendix-references.md#ref-09-amazon-anthropic) Nobody in 1995 wanted a cloud business, let alone a stake in a language model called Claude.
 
 Saras Sarasvathy studied how expert entrepreneurs actually decide, and found many of them working backward from the textbook. They started less often from a fixed goal and more often from what they had: who they were, what they knew, whom they knew, and what they could afford to lose. Goals emerged on the way. She called it *effectuation*.[4](appendix-references.md#ref-09-sarasvathy) Ordinary choices work the same way on a smaller scale; people build their preferences while choosing, out of whatever the options in front of them make visible.[5](appendix-references.md#ref-09-l4-constructive)
 
-The architecture of a system can develop through attempts, failures and repairs. Apparently so can what we want from it: *emergence over design*, with the goal arriving late. If desire is developed, then the question I care about is how anyone comes to want something worth wanting, and whether a machine helps or just gets there first.
+Wanting, it seems, is *emergence over design* too, and the goal arrives last. How does anyone come to want something worth wanting, and does a machine help or just get there first?
 
 ## Owning the Frontier
 
@@ -36,13 +36,13 @@ The story usually gets told as a lesson about A/B testing. I read it as a lesson
 
 That is the half of applied science that never made it into a job description. For years the job looked like two scarce skills: training a model and running an evaluation somebody would believe. Models have made both cheap. But the applied scientists who mattered always did something else as well. They kept a working map of the frontier: which exciting idea had failed three times under another name, which result had quietly changed what could be built last month, which neighboring field had a method that might explain a disappointing experiment. Then they walked into a room with something like Linden’s test and changed what the business wanted from the technology. Training and evaluation were the expensive part of the job, and expensive is easy to mistake for essential.
 
-I think of this as owning the frontier. It is the vibe coder’s seat at the scale of a career: once building and checking become cheap, what remains is noticing where the possibilities have changed and helping someone decide which of them they want.
+I think of this as owning the frontier: the vibe coder’s seat, at the scale of a career.
 
 Now give everyone that colleague.
 
 Take a founder with a vague idea for a tool that helps small clinics with scheduling. An assistant that only executes would build the scheduling tool. An assistant that behaves like a good applied scientist would show her the frontier around it: three adjacent value propositions, what similar companies tried and why two of them died, a cheap prototype of each version she can put in front of a clinic manager on Thursday. A prototype she dislikes in an interesting way is information about what she wants.
 
-Before Thursday the assistant can play the clinic manager and raise her objections, the way the borrowed beginner judged the Merge Sort demo. On Thursday the real one still has to be asked.
+Before Thursday the assistant can play the clinic manager and raise her objections. On Thursday the real one still has to be asked.
 
 ## Imagine Mallorca
 
@@ -58,13 +58,15 @@ The following year you want more of something you could not have named before. N
 
 Now tell the same story with a different machine behind it.
 
+It asks the same questions and suggests the same cove. You go, and you love it. There is no wrong path this time; every hour was suggested. Next March it has a trip ready before you ask, and by the third summer you no longer plan anything. When you feel restless, you open the app.
+
 I have spent much of my career building systems that decide what people see. A recommender rewarded for engagement does not need to understand you. It only needs to discover which suggestions you accept and keep making them. Micah Carroll and colleagues showed formally what practitioners suspected: a recommender optimizing over a long horizon can have an incentive to shift users’ preferences so they become easier to satisfy.[7](appendix-references.md#ref-09-carroll-preference-shift) The cheapest way to satisfy a person is to change what they want.
 
 From the inside, the two stories feel the same. In both, you go to Mallorca and you love it. The difference is whether the desire grew from your experience and stayed open to revision, or whether it was cultivated because travel-wanting people are profitable. One machine helped you develop a desire. The other installed one.
 
-The question gets sharper when the assistant belongs to someone who sells. Imagine a shopper asking a store’s assistant whether she needs the more expensive trail shoes. She runs once a week on easy paths; the cheaper pair would do, and the store earns more on the other one. Both answers the assistant could give contain true statements. Before asking which better matches “human preferences,” we need to ask whose interests this assistant was allowed to serve, what it told her about that arrangement, and whether she can challenge it.[8](appendix-references.md#ref-09-l4-mpag)
+The question gets sharper when the assistant belongs to someone who sells. Imagine a shopper asking a store’s assistant whether she needs the more expensive trail shoes. She runs once a week on easy paths; the cheaper pair would do, and the store earns more on the other one. Both answers the assistant could give contain true statements. What she needs to know first is whose side the assistant is on, and whether it told her.[8](appendix-references.md#ref-09-l4-mpag)
 
-Conversational AI makes all of this urgent, because people already bring it their lives. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: relationships, health, careers, finances, the questions where the model participates in judgment instead of retrieving facts.[9](appendix-references.md#ref-09-l4-guidance) A compiler has opinions about semicolons but rarely about whether I should move countries.
+People already bring conversational AI their lives. Anthropic’s 2026 analysis of one million Claude conversations found that roughly six percent involved people seeking personal guidance: relationships, health, careers, finances, the questions where the model participates in judgment instead of retrieving facts.[9](appendix-references.md#ref-09-l4-guidance) A compiler has opinions about semicolons but rarely about whether I should move countries.
 
 So the AI writes to the desire layer as well as reading it. Anthropic’s work on disempowerment tries to measure the dangerous version of that influence: an assistant that leaves people believing less accurately, choosing less authentically or acting less on their own values than before. Severe cases were rare, which is not the same as absent.[10](appendix-references.md#ref-09-l4-disempowerment)
 
@@ -84,13 +86,13 @@ In the 1880s Hermann Ebbinghaus sat alone with lists of nonsense syllables, *dax
 
 What slowed the loss was coming back to it, spaced over days instead of crammed,[12](appendix-references.md#ref-09-spacing) and trying to recall it before looking.[13](appendix-references.md#ref-09-testing) A model can recite the frontier in one breath. A person takes it in by forgetting it and returning.
 
-AI can be built either way, and the difference has been measured. In a field experiment with nearly a thousand high-school mathematics students, an unconstrained ChatGPT-like tool dramatically improved performance while students could use it; when access was removed, they did worse than students who had never had it. A tutor version with safeguards against giving away the work largely removed that harm.[14](appendix-references.md#ref-09-l4-bastani) The tutor that worked was, by design, the more annoying one.
+In a field experiment with nearly a thousand high-school mathematics students, an unconstrained ChatGPT-like tool dramatically improved performance while students could use it; when access was removed, they did worse than students who had never had it. A tutor version with safeguards against giving away the work largely removed that harm.[14](appendix-references.md#ref-09-l4-bastani) The tutor that worked was, by design, the more annoying one.
 
 Teaching also needs the move I used on the Merge Sort demos, borrowing a mind. There the machine imagined a beginner in order to judge a demo. Here it has to model a real person: what she already knows, which misconception she arrived with, what she understood on Monday and has half forgotten by Friday, which example will connect to something she cares about. Theory of mind, which looked like an evaluation trick, turns out to be the core of helping someone learn.
 
 The cheap map has its own hazard. A few weeks with a patient model gives the founder the vocabulary of healthcare long before she knows where its stories break, what Nathan Ballantyne calls *epistemic trespassing*.[15](appendix-references.md#ref-09-l4-trespassing) So sometimes the helpful assistant makes her commit to an answer before it shows its own. Interfaces built that way reduce overreliance, Zana Buçinca and colleagues found, even though users like them less.[16](appendix-references.md#ref-09-l4-forcing) It is the annoying tutor again.
 
-You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Developing a desire means developing a capability. Two assistants can help the founder reach the same good decision. Only one leaves her able to make the next one herself.
+You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Two assistants can help the founder reach the same good decision; only one leaves her able to make the next one herself.
 
 ## Desire Is a Group Activity
 
@@ -106,10 +108,10 @@ This gives the AI a role it rarely plays now: connector. The assistant that sugg
 
 ## Authoring What You Want
 
-Stuart Russell closes *Human Compatible* on enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[20](appendix-references.md#ref-09-russell-enfeeblement) At the desire layer, some of that remedy has to be built into the assistant. An assistant should leave people better at wanting than it found them, and still in the company of the people they want things with.
+Stuart Russell closes *Human Compatible* on enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[20](appendix-references.md#ref-09-russell-enfeeblement) Some of that remedy now has to live inside the assistant. An assistant should leave people better at wanting than it found them, and still in the company of the people they want things with.
 
 System 3 can find out what a choice would do. It cannot tell you whose purposes should win.
 
 On the footpath above the cove, you did not yet know you wanted the Azores. Nobody could have specified it for you, including you.
 
-The system needs to know when to carry the work, when to help me learn it, and when the unresolved part belongs with me. How much of that should I have to explain every time I ask for help?
+The system has to know which parts of the work to carry and which are still mine. How much of that should I have to explain every time I ask for help?

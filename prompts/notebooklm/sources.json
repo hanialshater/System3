@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "52d654eda378880461089178d38a160e4ab2786aac03ae0118b3862fe10fc31a",
+  "references_sha256": "02194521fbe02616fd931c69cb15442f48edc9546d94e5c5509dec10fb9c3daf",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "22fe4022e80fd76579b0891adc2b6881ff7413d27fd5aaf60f61440f81e1760e",
+      "source_sha256": "f582db0de1119deae1bd5ef81ce9f420603e825602b4115f20c4a71066cbce50",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "a2dee8829e103cd2bba9b046647ce5f7523585152b9060ef35b0280a437490d4",
+      "source_sha256": "b87e60cfd269abb8ef6714361912f908a3b674d62d94326454c739de48bbf382",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -192,7 +192,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "226e40a19a8ffee0969cde6849fcdfb86e5494e9b0ddf70896499ccf2e3132c5",
+      "source_sha256": "2dbebfbe732448033bfe9949fdae3c91bd908d5465fd3faa3f3707154168af6e",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "e42497eb34c5d281dc79343ce98c1e06ef1bfef60f3b5195afdf51ff417b2a41",
       "sections": [
