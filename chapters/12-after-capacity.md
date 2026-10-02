@@ -160,7 +160,7 @@ Another community could choose differently without either one having to prove th
 
 Humans often seek power because power is how we gain capacity. People also want power because humans are mammals with excellent branding.
 
-The ability to act can itself be called power, so capacity over power is an ethical direction: I care about what happens to other people’s choices. Giving the community a tool it can change expands its options. Giving its chair a system whose terms only the chair can revise expands the chair’s authority.
+The ability to act can itself be called power. I care about what happens to other people’s choices. Giving the community a tool it can change expands its options. Giving its chair a system whose terms only the chair can revise expands the chair’s authority. Capacity over power is an ethical direction, not a forecast about stronger models.
 
 Helping members inspect and revise the arrangement may matter more than finding a slightly better schedule under rules nobody can question. It needs to survive the volunteer who built the tool. Its records should preserve why an exception was made, so the next committee does not spend three meetings rediscovering accessible transport. Members need ways to challenge the rules, including somewhere beyond the committee to turn when the committee is the problem. If more gets built while those freedoms shrink, power has simply moved somewhere less visible.
 

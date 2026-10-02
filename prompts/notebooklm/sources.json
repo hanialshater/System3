@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "f03ae4b644414f9db7e5df71e1d8fa2a6dbe03ac5b9f7d3fee6eca278a3c1b62",
+      "source_sha256": "0807fdd3cc10429c7b01c13ea70fd8d09af5527a039428102cbaac0a6138e84f",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "d422f63f2691b9905eb52128f70f5d96a21764f6b9b42c118176dbb1f20e3d0d",
+      "source_sha256": "b3bd376701a837ffaf4943456932dab5916fe0875702774db55bbfa949005a51",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -231,7 +231,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "540b366608d8ec3cb4ec0ffb9f9ecc4165f3767d7284cd234422dda92d890ecc",
+      "source_sha256": "8f43fb3ef11c4f998952de25e390260bc5b61d70ed6a1e3080a11af960ab27a2",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "7b736c860b2af34b1960e37ab57feee784d74f42735457848f95341f44386b52",
       "sections": [
