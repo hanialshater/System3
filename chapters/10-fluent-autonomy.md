@@ -44,7 +44,7 @@ A fluent system can build some of the shape after it sees the intention, includi
 
 Bureaucracy sounds like an insult until you need it. In its useful form it is accumulated coordination: roles, review boundaries, logs and escalation paths that exist because some work goes wrong when everybody improvises. Its usual failure is that it never comes down. A six-person review designed for a dangerous database migration ends up guarding a typo fix on a help page, because nobody told the workflow the risk had changed.
 
-Agents make a different arrangement possible: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion.
+Agents make a different arrangement possible: an organization assembled for this problem and dismantled afterward. My editing request needs the readers who do not know the history and the record of what I refused. A factual question needs one agent and a source. A hard research question may need several agents kept far enough apart that they do not collapse into one opinion. This is Deep Mode grown up, choosing the next organization as well as the next move.
 
 ## Selective Friction
 
@@ -62,7 +62,7 @@ The bad version of fluency is one calm conversational box that researches, edits
 
 That is opacity with good typography.
 
-When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. The architecture under a fluent interface has to keep that record.
+When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains, and the architecture under a fluent interface has to keep them.
 
 A compiler hides registers until I need to read the assembly. A database hides its pages until a query gets strangely slow. An agent needs the same trapdoor: shut while the work goes as expected, open all the way down the moment it doesn’t.
 
@@ -105,7 +105,7 @@ Then there is the chance that I found what I was looking for. I had read Popper 
 
 The back channel shows coordination emerging. The scientific arrangement I am arguing for would also need rival explanations, independent checks and objections that can change the outcome. Keeping a shared record can serve a collective mistake just as well.
 
-The objection I can answer least is about ownership. Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate.
+The objection I can answer least is about ownership. Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate, and I come back to it near the end of the book.
 
 None of this shows the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 

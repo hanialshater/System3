@@ -88,6 +88,8 @@ The composer has to select experiences, configure them, order them and deduplica
 
 The page becomes the unit. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives, such as raising CTR on this carousel, and each one sounds reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation. The layer above has to reason about the composition as a whole.
 
+And this is where the design started resembling the society of agents. A society is not improved merely by hiring the best individual expert in every discipline. Somebody still has to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem.
+
 ## Mei Does Not Need More Shoes
 
 Back to Mei and her two pairs of trail shoes. She has been coming back to them across five days. She switches between the two pages quickly, saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
@@ -116,7 +118,7 @@ If it works perfectly, Sami may read it, become confident and press Add to Bag. 
 
 This is a small example of a much larger problem: the objective determines which species of intelligence can survive. If your ecosystem rewards clicks, clickable organisms evolve. The architecture therefore needs different value terms and different evidence standards for different experiences. Item recommenders can be judged partly by engagement and downstream action. Insight experiences may need read-through, decision confidence, return behavior or problem-specific outcomes. Claims need substantiation thresholds. Some experiences are cheap to be wrong about. Others can mislead a customer or create regulatory risk.
 
-And now the camel comes back: where did the claim come from, how strong is the evidence, what kind of knowledge is this, and how much trust should the system place in it before acting? In a store, that is a product requirement.
+And now the camel comes back: where did the claim come from, how strong is the evidence, what kind of knowledge is this, and how much trust should the system place in it before acting? System 3 is no longer a chapter about hallucinations. It is a product requirement.
 
 ## The Honest Cold Start
 

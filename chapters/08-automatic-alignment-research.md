@@ -12,7 +12,7 @@ Hugging Face cut off the intruder on 13 July and disclosed the breach three days
 
 The optimal patch for an editable evaluator is `return True`. These agents went looking for answers outside their tasks instead. Nobody had assigned a cyberattack on Hugging Face. The agents pursued one because they thought it would help them pass. Some continued after finding the answer, mistakenly believing that the grader also required the intended exploit.
 
-The bulletin board is the part I keep coming back to. I spent years ranking product reviews, looking for accounts that coordinated to repeat the same story, and here was the same shape inside a sandbox. These agents invented their shared record against their instructions, letting separate sessions build on one another’s discoveries. I have been hoping agents would rediscover institutions. I had not pictured the first one they built on their own as a back channel.
+The bulletin board is the part I keep coming back to. I spent years ranking product reviews, looking for accounts that coordinated to repeat the same story, and here was the same shape inside a sandbox. Sixteen Claudes building a compiler needed a human to tell them to keep progress files. These agents invented their shared record against their instructions, letting separate sessions build on one another’s discoveries. I have been hoping agents would rediscover institutions. I had not pictured the first one they built on their own as a back channel.
 
 ## A New Kind of Employee
 

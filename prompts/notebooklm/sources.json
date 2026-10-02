@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "c07cae9cd296b0b3a3fa0483f3fcbd2164179335acaf225bbbc786a9805ba843",
+      "source_sha256": "f03ae4b644414f9db7e5df71e1d8fa2a6dbe03ac5b9f7d3fee6eca278a3c1b62",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -157,7 +157,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "6d7c8fc3a28d68d885bc2599d633b71472ec5d9cedd17f47d66a71ba9c293aaf",
+      "source_sha256": "a9bae6849ecac52e0c6814bb261f5006b63b6014359100d84885c90f273809cf",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "b9dca229f30a76d21b58c57490de25e10f535ee9cbda46a868033e5f7e3b32cf",
+      "source_sha256": "293f309bd601ea95080e3748cf729438aafaab4bb920d036f411fcc6d1729c86",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -192,7 +192,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "edbcdce7945c117a00ac7e0f45293dcd8948efb74bbedde4ceeff0632a54bd55",
+      "source_sha256": "51d46e75e3dcce17c52a12c5c60e028be25348224e2211a59485019af075a7ef",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "b372952eef185a16ae636fe172c1c85cb5a44f8442a7cd58f617181d7540b0bf",
       "sections": [
@@ -208,7 +208,7 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "ee21dc9ad08d9e303f43a8085ad4961f0e04af21de809fa15fe0804b4acef63a",
+      "source_sha256": "537067f1ddafb6d52717f3ad97f2f109817a77eb8c062265081a33e6f4fe81df",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "7ce63d80be8426d0379487b075039b7a54714500da3ab6b34c23d23f16a6a186",
       "sections": [
@@ -231,7 +231,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "4ee00ca6b6285d718052786bd7dba67b7d1e1b470253d84cba4cc461a78947a8",
+      "source_sha256": "fe548cae16211f81c136b4f793fc09ca818dd260336c9708ae8c2b56d1640a53",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "7b736c860b2af34b1960e37ab57feee784d74f42735457848f95341f44386b52",
       "sections": [
