@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "1c8dac0eead66f833c54e9f66a2ffa407695fa5e207df23fff009f4271af33cb",
+  "references_sha256": "74f7b864564b894cf87e76d2fb77a3d495b1edff3612ce79c1dd28dd40348523",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -136,15 +136,17 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "873aa858681e1a3b6347b3bbbcd6954edcada862788b3eb0e352fc1656de353f",
+      "source_sha256": "b8373c980d10960b82c8ebf8267e5588bd1e80c06b3a9782f76cf63d84010fc4",
       "brief": "prompts/notebooklm/chapter-07.md",
-      "brief_sha256": "845aa58c1990c3b3bfa839bbd095e3e2a22d24f1d376349ad7d575efa45ee0f0",
+      "brief_sha256": "828de965ef1461e71ba58efb5f8975cf2683f60a33d0a9215ae3e482aad4414d",
       "sections": [
         "Opening passage",
         "Nobody Has to Be Conscious",
+        "Science Changes Its Methods",
         "Growing One",
         "The Teacher Moves Into the Walls",
         "Learning to Learn",
+        "The Learner Chooses What to Learn",
         "Maybe the Reward Was the Problem",
         "The Learner Dreams, and the Dream Can Be Wrong",
         "The Learner Edits the School",
@@ -158,7 +160,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "e5a004ba21a249f8c4f88338ec4f586d74aeb59c13ce9ab651986211606d80b7",
+      "source_sha256": "12315547e66064c59f1589ab1f12e81ac0739c1b38e3cd0636d7482fc3bdd43a",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "984b75833500d2cf295f6f2fcc8ecc60d5e083329665afa2b9e215d5bb237171",
       "sections": [
@@ -177,7 +179,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "80241a5002aabd53b4649397f95651fc06e93d8a642b48040d7312bcfc13d15a",
+      "source_sha256": "e886cd20238787424116ae445d2d6b4a743aab2c5582fff1c5009d256b16ce1c",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -193,7 +195,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "89caca1c7b4b4f61691b89eb752e892f88665f27c5492b697fb2417a514ced4b",
+      "source_sha256": "698df5e482157ba633e460a99f6298464ff104ffa9f4a8e1012ce50904ca52c8",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "e42497eb34c5d281dc79343ce98c1e06ef1bfef60f3b5195afdf51ff417b2a41",
       "sections": [
