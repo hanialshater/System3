@@ -30,7 +30,7 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "392652e01991824933896f1f089d32e0c3217f86b4c9a74aa8520b72afa70342",
+      "source_sha256": "05bde94c05573a8a640669eb3afc3adbf986edf609e2d872be0504e430ba9d50",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "4fdefa48a35bbf4ecdaa9f28a77154952423b8ed211d51bc7b1ac5bbbfdaa7e2",
       "sections": [
@@ -52,7 +52,7 @@
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "8b4794b9fcd6ce3d1ae2baeefc0251a4eb619c21af211a6b03761bd757c4008b",
+      "source_sha256": "3b82e0b1d3e362f32278a75739a2b00f7c7c430dd01e881475fe1431ceb3fd3d",
       "brief": "prompts/notebooklm/chapter-03.md",
       "brief_sha256": "db153a330d406e069d6b66648e801abe25d1119eccbf8bd32e92b7a61b603ceb",
       "sections": [
@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "088436a556db514fb898280f7d7bb5ecf9eb7d680603b389d14c3abcf6621358",
+      "source_sha256": "45eea78923a1cf4b9b192e34a529c5582f559021c0a8fddfbb6a63343b90b020",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "4b6111129f65816c34b3f57555f60db2d1c738142fdac48e9e6e85a59ffee580",
       "sections": [

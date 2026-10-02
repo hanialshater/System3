@@ -144,9 +144,11 @@ This gives the language model a much more interesting role. Rather than randomly
 
 A learned model proposing while code decides what survives: that is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve. The model proposes changes at a level where programs have semantic meaning; execution and the evaluator decide whether those ideas deserve to survive.
 
-AlphaEvolve runs that loop at scale: each generation it picks a promising program from an archive that keeps several different lineages alive, shows the model the code and earlier scores, and applies a small patch rather than a full rewrite, so useful structure survives and code evolution doesn’t quietly collapse back into hill climbing. That was the pattern I would soon try to rebuild myself.
+AlphaEvolve scales that idea up. In each generation it selects a promising program from its archive, often alongside other successful but different programs, shows the model the code and the scores of previous attempts, and applies the patch the model proposes. The program runs, the evaluator scores it, and the result goes back into the archive.
 
 <!-- ART RESOLVED — ch2-alphaevolve. Original brief: DIAGRAM — missing figure: AlphaEvolve architecture. Original asset: ../resources/image0124.png; see resources/art-direction/missing-figures.md. -->
+
+Two design choices matter. Small patches let the search change the part it thinks matters while preserving the rest of a program’s structure; full rewrites lose useful ideas as easily as bad ones. And the archive keeps several lineages alive, for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing, and a program that isn’t the best today may hold a component that becomes valuable after another idea appears. That was the pattern I would soon try to rebuild myself.
 
 Sometimes the model’s guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement doesn’t need to be settled in prose. We run the program, and the evaluator gets the last word.
 

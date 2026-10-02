@@ -42,6 +42,8 @@ Eventually we gave the model the repository and a terminal. It could search, ope
 
 Software is unusually friendly to this arrangement: files can be searched, programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
 
+SWE-agent made the interface itself part of the problem. How the model searches, sees files, applies edits and receives feedback can matter almost as much as another clever prompt.
+
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
 So more of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody’s head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
@@ -194,7 +196,9 @@ Language models make that communication channel available inside the optimizatio
 
 Natural language can therefore function as an *implicit metric*, though not in the strict mathematical sense: there is no guarantee that “intuitive” defines a stable ordering, and two evaluators may interpret it differently. Still, language can do some of the work a metric normally does. It gives the search a direction, communicates why one attempt is preferred to another, and preserves trade-offs that a scalar would erase.
 
-Let the record of past attempts that the model sees contain more than scores. Alongside hard measurements, tell the model what improved, what became worse, which trade-off appeared and what must survive the next attempt, and the history of the search keeps some of its meaning instead of collapsing into a column of numbers.
+OPRO—Optimization by PROmpting—is interesting for a related reason. In OPRO, an LLM sees an optimization problem, previous candidates and their outcomes, then proposes another candidate. Candidate quality in the published setting is still evaluated by an explicit score, so OPRO is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written transformation rule.
+
+Now let the history contain more than scores. Alongside hard measurements, tell the model what improved, what became worse, which trade-off appeared and what must survive the next attempt, and the history of the search keeps some of its meaning instead of collapsing into a column of numbers.
 
 This begins to feel a little like reinforcement learning turned upside down. I mean that as an analogy about specification; I am not claiming these are the same algorithm. The usual reinforcement-learning picture asks us to define a reward and then discover behavior that earns it. Here I can begin with something much less respectable:
 
