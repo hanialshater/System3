@@ -52,6 +52,8 @@ The fingerprint is local: to the customer, the context, the surface and the evid
 
 The architecture also separates the machine representation from the stories humans use to think. Designers and scientists may organize problems by funnel stage, mission, timing or recognizable archetype. Those lenses help us notice gaps and invent hypotheses. The runtime system can leave the story to the humans and work from signals, a problem fingerprint and a way to test whether the resulting behavior is useful. I like this separation because it protects us from one of the oldest mistakes in machine learning: turning a useful human abstraction into an ontological claim because we happened to put it in a feature table.
 
+The customer is not the funnel. The funnel is one way we look at the customer.
+
 ## A Library of Ways to Help
 
 Once you define demand as problems rather than slots, the supply side changes too.
@@ -130,7 +132,7 @@ One is to panic quietly and run a generic fallback while still speaking in the c
 
 Based on what, exactly? Her IP address and our enthusiasm?
 
-The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case. The architecture should know what it does not know. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
+The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not. Cold start is a state, not an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case. The architecture should know what it does not know. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
 
 ## Replayable
 
@@ -204,7 +206,7 @@ The first test I would run is deliberately boring. One placement: the product pa
 
 Why so narrow? Because if we invent a new library of experiences and change the selection mechanism at the same time, then run an experiment and get a flat result, we have learned almost nothing. Maybe the composer is bad. Maybe the new experiences are bad. Maybe both are good and the measurement is bad. Maybe the static page was already fine and I should have spent the quarter learning the guitar.
 
-A bounded test separates the claims. Does dynamic composition beat a strong static baseline? And importantly: does it beat simplification? That second competitor is easy to underestimate. Perhaps the best response to an overloaded page is fewer things. The system should have to earn its complexity against the possibility that removing modules produces a better customer experience. A philosophy of emergence should be willing to lose an A/B test.
+A bounded test separates the claims. Does dynamic composition beat a strong static baseline? And importantly: does it beat simplification? That second competitor is easy to underestimate. Perhaps the best response to an overloaded page is fewer things. The system should have to earn its complexity against the possibility that removing modules produces a better customer experience. A philosophy of emergence should be willing to lose an A/B test. Otherwise it is not a philosophy of experimentation. It is branding.
 
 ## When the Page Stops Being the Product
 

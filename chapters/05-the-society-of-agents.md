@@ -137,7 +137,7 @@ And the story wants work. How do you ask for a review without begging? How do yo
 
 The potter became better because she was not also the physician. Specialization gives people time to encounter differences a generalist may never notice. The society gains knowledge by distributing ignorance, and every organization, industry and science that gets big makes some version of that bargain: people go narrow, and the narrow place turns out to be bottomless.
 
-Try finding one person who knows how to make the phone in your pocket, from raw materials to a working device. The glass, the chip design, the fabrication equipment, the lenses inside that equipment, the assembly and the software belong to different bodies of expertise. The company whose name is on the back must coordinate work it could not reproduce inside one person’s head.
+Try finding one person who knows how to make the phone in your pocket, from raw materials to a working device. The glass, the chip design, the fabrication equipment, the lenses inside that equipment, the assembly and the software belong to different bodies of expertise. The company whose name is on the back must coordinate work it could not reproduce inside one person’s head. Civilization, in this sense, is a trust chain with plumbing.
 
 On a March morning in 2005, in an English hospital, Elaine Bromiley, a healthy woman of thirty-seven, was put to sleep for a routine nasal operation. The anesthetist could not get a breathing tube into her airway. He could not ventilate her adequately either. He called for help, and help came: a second anesthetist, then the surgeon, all consultants, with decades of experience between them.
 
@@ -217,7 +217,7 @@ Pierre Duhem articulated the problem in 1906, and Quine later developed a broade
 
 So the institution needs archaeology: a record of which instrument produced a measurement, which analysis transformed it, and where observation ended and interpretation began. Within a few years of Boyle’s book, *Philosophical Transactions* was publishing reports that could outlive the room. Publication established a claim and a date, and gave someone elsewhere a route, however imperfect, to expose the claim to the world again. Reputation gathered around investigators and, more strangely, around instruments and procedures. The question *did this happen?* acquired machinery.
 
-The machinery was never clean. Access was unequal. Standing affected which claims traveled. Replication could be possible in principle and unaffordable in practice. Medicine later made one form of self-restraint explicit: in a randomized trial, the allocation procedure stops the investigator’s own preference from deciding who gets which treatment.
+The machinery was never clean. Access was unequal. Standing affected which claims traveled. Replication could be possible in principle and unaffordable in practice. Medicine later made one form of self-restraint explicit: in a randomized trial, the allocation procedure stops the investigator’s own preference from deciding who gets which treatment. Sometimes bureaucracy is epistemology with a clipboard.
 
 In an agent system this is provenance around a claim, an assumption graph, a trace. Without the history, reality can tell us we are wrong while leaving us remarkably creative about which part of the system deserves blame.
 

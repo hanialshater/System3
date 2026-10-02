@@ -333,7 +333,7 @@ objections:
     reason: Task completion has not yet been measured reliably across all markets.
 ```
 
-These lines matter when the next review follows them, notices that the evidence concerns another surface or another tool version, and changes what it is prepared to conclude.
+An `open_questions` field that no decision ever consults is a decorative conscience. These lines matter when the next review follows them, notices that the evidence concerns another surface or another tool version, and changes what it is prepared to conclude.
 
 \* **Therefore: if the organization proceeds with an objection unresolved, the objection travels with the decision, and the decision-maker owns that choice in writing.**
 
@@ -351,7 +351,7 @@ There is empirical work on that question. Studying the premature deaths of emine
 
 Sam, eventually, moves to another team. Nothing about his leaving changes what the file says.
 
-Now imagine a new agent joining Ines’s project. Its progress file contains a line Sam wrote two years ago: *serializer rewrite tried and abandoned; do not retry.* The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation’s entire syllabus already in context.
+Now imagine a new agent joining Ines’s project. Its progress file contains a line Sam wrote two years ago: *serializer rewrite tried and abandoned; do not retry.* The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation’s entire syllabus already in context. Session turnover is not a funeral; nothing that was believed has died.
 
 In that file the durable incumbent is a single sentence. Elsewhere it may be a retrieval preference, a canonical example, a benchmark, or a rule giving one branch first access to compute. A more capable replacement model may defend it more effectively.
 
