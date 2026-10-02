@@ -17,7 +17,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 10: Fluent Autonomy" into an English video.
 3. The Interface Moves Up
 4. Bureaucracy on the Fly
 5. Selective Friction
-6. The Trapdoor
+6. Invisible by Default, Legible on Demand
 7. The Second Coffee Test
 8. Where I Would Push
 

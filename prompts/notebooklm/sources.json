@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "b0fba2738a7021d55a79c8b63558bf4db82bc21c9bea593babcb4d78350771c8",
+      "source_sha256": "4adb930d95b09178d8690f22bdad2c8645454ea53f39165eb69fb5611fe16dc5",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -192,16 +192,16 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "f33bdf05f702540e8fd5ebcde733879779b7b0cf651ab95a6c2c86c87500da56",
+      "source_sha256": "57c10253c21cd0a0f4a2e225737b09c1bea082a496a640811a713da3cbb40d38",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "b8f7446e74cd0b9d27724c0c011a13927df9679000f7e9b60feba87d95c39315",
+      "brief_sha256": "b372952eef185a16ae636fe172c1c85cb5a44f8442a7cd58f617181d7540b0bf",
       "sections": [
         "Opening passage",
         "What the Corrections Had to Teach",
         "The Interface Moves Up",
         "Bureaucracy on the Fly",
         "Selective Friction",
-        "The Trapdoor",
+        "Invisible by Default, Legible on Demand",
         "The Second Coffee Test",
         "Where I Would Push"
       ]

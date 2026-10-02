@@ -14,7 +14,7 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 8. Scalable Oversight | The OpenAI–Hugging Face incident and other people’s research on training, interpretability, steering, control and oversight, with its limits | Reported |
 | Interlude: When It Goes Wrong | Lysenko, and what happens when the people being challenged decide whether to hear the challenge | Reported history; the application to agents is argued |
 | 9. The Desire Layer | Amazon’s changing value proposition, the science of human learning and decision support, an imagined Mallorca summer, and an argument about how desire develops | Argued from history and other people’s evidence; the Mallorca traveller and the clinic founder are imagined |
-| 10. Fluent Autonomy | The editing of this book, and five ways the argument could be wrong | Lived; the fluency is still an ambition |
+| 10. Fluent Autonomy | The editing of this book, and where the argument could be wrong | Lived; the fluency is still an ambition |
 | 11. The Store That Builds Itself | My prototype store, imagined customers and a proposed business experiment | Prototyped; the business experiment has not run |
 | 12. After Capacity | The small coding experiment from Chapter 4, Ostrom, and a hope | Argued from the earlier experiment and cited work; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |

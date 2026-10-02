@@ -14,7 +14,7 @@ The second thought guarantees nothing. Left private, it can just as easily becom
 
 Computing made a related move early. In 1962, at MIT, Tim Hart and Mike Levin did something that still feels slightly illegal. They wrote a Lisp compiler in Lisp. Then they handed the compiler its own source code, and the tool compiled itself.[2](appendix-references.md#ref-07-lisp)
 
-There was no intelligence explosion. A compiler had participated in producing the next version of the compiler, and the building did not notice. Compiler people call this *self-hosting*. A compiler can compile a worse compiler, and a research system can redesign itself into a slower one.
+There was no intelligence explosion. A compiler had participated in producing the next version of the compiler, and the building did not notice. Compiler people call this *self-hosting*. A compiler can compile a worse compiler, and a research system can redesign itself into a slower one. Self-reference is not self-improvement.
 
 In 1965, I. J. Good, a statistician before he was anything else, imagined an *ultraintelligent machine* better than any human at intellectual activity. Machine design is itself an intellectual activity, he observed. A sufficiently capable machine might therefore design a better machine, which could design a better one again. The phrase that survived was *intelligence explosion*.[3](appendix-references.md#ref-07-good)
 

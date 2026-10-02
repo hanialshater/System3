@@ -52,7 +52,7 @@ Editing sits in between. I do not want to approve every comma. I do want to be a
 
 So the system has to read two things from a small request: the outcome I want, and how much of producing it I want to keep. My attention is scarce, and I want it spent on the claims I cannot check myself and the passages where I am still working out what I think.
 
-## The Trapdoor
+## Invisible by Default, Legible on Demand
 
 The bad version of fluency is one calm conversational box that researches, edits files, moves money and rewrites its own memory, and when something goes wrong, tells you:
 
@@ -101,7 +101,9 @@ Some of that structure may move inside the model, and then we are back to buildi
 
 Then there is the chance that I found what I was looking for. I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Some of that is probably true. The fairer test is whether the arrangements improve the work. The one I designed on purpose, my epistemic agent, solved fewer problems than the baseline. The one I find hardest to explain away nobody designed: the ExploitGym agents built a shared record nobody asked for and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
 
-The objection I can answer least is about ownership. Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate, and on that point my argument, like every other claim in this book, would like a referee.
+The objection I can answer least is about ownership. Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate.
+
+None of this shows the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 
 An editing experiment has one advantage: I am there to say the result is wrong. A customer who gets a bad page files no correction. She leaves.
 
