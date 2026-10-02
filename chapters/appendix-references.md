@@ -241,51 +241,78 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 12. <a id="ref-07-tdgammon"></a>Gerald Tesauro, “Temporal Difference Learning and TD-Gammon,” *Communications of the ACM* 38(3), 1995, pp. 58–68.
 
-13. <a id="ref-07-metalearning"></a>Yan Duan et al., “RL²: Fast Reinforcement Learning via Slow Reinforcement Learning,” 2016, [arXiv:1611.02779](https://arxiv.org/abs/1611.02779); Jane X. Wang et al., “Learning to Reinforcement Learn,” 2016, [arXiv:1611.05763](https://arxiv.org/abs/1611.05763); Chelsea Finn, Pieter Abbeel, and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,” 2017, [arXiv:1703.03400](https://arxiv.org/abs/1703.03400).
+13. <a id="ref-07-forgetting"></a>Michael McCloskey and Neal J. Cohen, “Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem,” *Psychology of Learning and Motivation*, 1989, pp. 109–165, [doi:10.1016/S0079-7421(08)60536-8](https://doi.org/10.1016/S0079-7421(08)60536-8); James Kirkpatrick et al., “Overcoming Catastrophic Forgetting in Neural Networks,” 2017, [arXiv:1612.00796](https://arxiv.org/abs/1612.00796).
 
-14. <a id="ref-07-forgetting"></a>Michael McCloskey and Neal J. Cohen, “Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem,” *Psychology of Learning and Motivation*, 1989, pp. 109–165, [doi:10.1016/S0079-7421(08)60536-8](https://doi.org/10.1016/S0079-7421(08)60536-8); James Kirkpatrick et al., “Overcoming Catastrophic Forgetting in Neural Networks,” 2017, [arXiv:1612.00796](https://arxiv.org/abs/1612.00796).
+14. <a id="ref-07-curiosity"></a>Jürgen Schmidhuber, “A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers,” *Proceedings of the International Conference on Simulation of Adaptive Behavior*, 1991, pp. 222–227; Pierre-Yves Oudeyer, Frédéric Kaplan, and Verena V. Hafner, “Intrinsic Motivation Systems for Autonomous Mental Development,” *IEEE Transactions on Evolutionary Computation* 11(2), 2007, pp. 265–286.
 
-15. <a id="ref-07-curiosity"></a>Jürgen Schmidhuber, “A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers,” *Proceedings of the International Conference on Simulation of Adaptive Behavior*, 1991, pp. 222–227; Pierre-Yves Oudeyer, Frédéric Kaplan, and Verena V. Hafner, “Intrinsic Motivation Systems for Autonomous Mental Development,” *IEEE Transactions on Evolutionary Computation* 11(2), 2007, pp. 265–286.
+15. <a id="ref-07-noisytv"></a>Yuri Burda et al., “Large-Scale Study of Curiosity-Driven Learning,” 2018, [arXiv:1808.04355](https://arxiv.org/abs/1808.04355).
 
-16. <a id="ref-07-noisytv"></a>Yuri Burda et al., “Large-Scale Study of Curiosity-Driven Learning,” 2018, [arXiv:1808.04355](https://arxiv.org/abs/1808.04355).
+16. <a id="ref-07-irl"></a>Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” *Proceedings of ICML*, 2000.
 
-17. <a id="ref-07-redqueen"></a>Leigh Van Valen, “A New Evolutionary Law,” *Evolutionary Theory* 1, 1973, pp. 1–30.
+17. <a id="ref-07-rlhf"></a>Paul Christiano et al., “Deep Reinforcement Learning from Human Preferences,” 2017, [arXiv:1706.03741](https://arxiv.org/abs/1706.03741); Long Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” 2022, [arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
 
-18. <a id="ref-07-irl"></a>Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” *Proceedings of ICML*, 2000.
+18. <a id="ref-07-worldmodels"></a>David Ha and Jürgen Schmidhuber, “World Models,” 2018, [arXiv:1803.10122](https://arxiv.org/abs/1803.10122); Danijar Hafner et al., “Dream to Control: Learning Behaviors by Latent Imagination,” 2019, [arXiv:1912.01603](https://arxiv.org/abs/1912.01603).
 
-19. <a id="ref-07-rlhf"></a>Paul Christiano et al., “Deep Reinforcement Learning from Human Preferences,” 2017, [arXiv:1706.03741](https://arxiv.org/abs/1706.03741); Long Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” 2022, [arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
+19. <a id="ref-07-dream-rsi"></a>Tong Zheng et al., “Dream-RSI: Recursive Self-Improvement through Evolving Worlds,” arXiv:2609.14858, 14 September 2026. The replay simulator uses only recorded outcomes; plans beyond the recorded trace “cannot earn replay reward”; the selected policy is guaranteed no worse than the current one only in average replay score on the fixed history.
 
-20. <a id="ref-07-worldmodels"></a>David Ha and Jürgen Schmidhuber, “World Models,” 2018, [arXiv:1803.10122](https://arxiv.org/abs/1803.10122); Danijar Hafner et al., “Dream to Control: Learning Behaviors by Latent Imagination,” 2019, [arXiv:1912.01603](https://arxiv.org/abs/1912.01603).
+20. <a id="ref-07-novelty"></a>Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution through the Search for Novelty Alone,” *Evolutionary Computation* 19(2), 2011, pp. 189–223. The stepping-stone argument is developed in Stanley and Lehman, *Why Greatness Cannot Be Planned*, 2015.
 
-21. <a id="ref-07-dream-rsi"></a>Tong Zheng et al., “Dream-RSI: Recursive Self-Improvement through Evolving Worlds,” arXiv:2609.14858, 14 September 2026. The replay simulator uses only recorded outcomes; plans beyond the recorded trace “cannot earn replay reward”; the selected policy is guaranteed no worse than the current one only in average replay score on the fixed history.
+21. <a id="ref-07-godel"></a>Jürgen Schmidhuber, “Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements,” 2003, [arXiv:cs/0309048](https://arxiv.org/abs/cs/0309048).
 
-22. <a id="ref-07-novelty"></a>Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution through the Search for Novelty Alone,” *Evolutionary Computation* 19(2), 2011, pp. 189–223. The stepping-stone argument is developed in Stanley and Lehman, *Why Greatness Cannot Be Planned*, 2015.
+22. <a id="ref-07-dgm"></a>Jenny Zhang et al., “Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents,” 2025, [arXiv:2505.22954](https://arxiv.org/abs/2505.22954).
 
-23. <a id="ref-07-godel"></a>Jürgen Schmidhuber, “Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements,” 2003, [arXiv:cs/0309048](https://arxiv.org/abs/cs/0309048).
+23. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
 
-24. <a id="ref-07-dgm"></a>Jenny Zhang et al., “Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents,” 2025, [arXiv:2505.22954](https://arxiv.org/abs/2505.22954).
+24. <a id="ref-07-nas"></a>Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” 2016, [arXiv:1611.01578](https://arxiv.org/abs/1611.01578). The search used 800 GPUs for several weeks.
 
-25. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
+25. <a id="ref-07-nas-random"></a>Liam Li and Ameet Talwalkar, “Random Search and Reproducibility for Neural Architecture Search,” *UAI*, 2019, [arXiv:1902.07638](https://arxiv.org/abs/1902.07638); Kaicheng Yu et al., “Evaluating the Search Phase of Neural Architecture Search,” *ICLR*, 2020, [arXiv:1902.08142](https://arxiv.org/abs/1902.08142).
 
-26. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
+26. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
 
-27. <a id="ref-07-nas"></a>Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” 2016, [arXiv:1611.01578](https://arxiv.org/abs/1611.01578). The search used 800 GPUs for several weeks.
+27. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
 
-28. <a id="ref-07-nas-random"></a>Liam Li and Ameet Talwalkar, “Random Search and Reproducibility for Neural Architecture Search,” *UAI*, 2019, [arXiv:1902.07638](https://arxiv.org/abs/1902.07638); Kaicheng Yu et al., “Evaluating the Search Phase of Neural Architecture Search,” *ICLR*, 2020, [arXiv:1902.08142](https://arxiv.org/abs/1902.08142).
+28. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
 
-29. <a id="ref-07-regnet"></a>Ilija Radosavovic et al., “Designing Network Design Spaces,” *CVPR*, 2020, [arXiv:2003.13678](https://arxiv.org/abs/2003.13678).
+29. <a id="ref-07-tampering"></a>Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
 
-30. <a id="ref-07-repvgg"></a>Xiaohan Ding et al., “RepVGG: Making VGG-style ConvNets Great Again,” *CVPR*, 2021, [arXiv:2101.03697](https://arxiv.org/abs/2101.03697). RepVGG reported over 80 percent top-1 ImageNet accuracy for a plain model and a favorable accuracy–speed trade-off against EfficientNet and RegNet on GPU.
+30. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
 
-31. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
+31. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
 
-32. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
+### Additional sources
 
-33. <a id="ref-07-tampering"></a>Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
-
-34. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
-
-35. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
+- Tim Hart and Mike Levin’s self-hosting LISP 1.5 compiler (MIT, 1962), preserved in the Computer History Museum’s LISP 1.5 family archive. <https://softwarepreservation.computerhistory.org/LISP/lisp15_family.html>
+- I. J. Good, “Speculations Concerning the First Ultraintelligent Machine,” *Advances in Computers* 6 (1965), 31–88. <https://doi.org/10.1016/S0065-2458%2808%2960418-0>
+- Richard S. Sutton, “Learning to predict by the methods of temporal differences,” *Machine Learning* 3 (1988), 9–44. <https://doi.org/10.1007/BF00115009>
+- Christopher J. C. H. Watkins and Peter Dayan, “Q-learning,” *Machine Learning* 8 (1992), 279–292. <https://doi.org/10.1007/BF00992698>
+- Gerald Tesauro, “Programming backgammon using self-teaching neural nets,” *Artificial Intelligence* 134 (2002), 181–199. <https://doi.org/10.1016/S0004-3702%2801%2900110-2>
+- Jürgen Schmidhuber, “Curious model-building control systems” (1991) and related work on artificial curiosity. <https://people.idsia.ch/~juergen/curiositysab/curiositysab.html>
+- Pierre-Yves Oudeyer, Frédéric Kaplan and Verena V. Hafner, “Intrinsic Motivation Systems for Autonomous Mental Development,” *IEEE Transactions on Evolutionary Computation* 11 (2007), 265–286. <https://www.pyoudeyer.com/ims.pdf>
+- Marc G. Bellemare et al., “Unifying Count-Based Exploration and Intrinsic Motivation,” 2016, [arXiv:1606.01868](https://arxiv.org/abs/1606.01868).
+- Deepak Pathak et al., “Curiosity-driven Exploration by Self-supervised Prediction,” ICML 2017. <https://proceedings.mlr.press/v70/pathak17a.html>
+- Yuri Burda et al., “Exploration by Random Network Distillation” (2018). <https://arxiv.org/abs/1810.12894>
+- Ruzena Bajcsy, “Active Perception,” *Proceedings of the IEEE* 76 (1988), 966–1005. <https://doi.org/10.1109/5.5968>
+- Rodney A. Brooks, “Intelligence Without Representation,” *Artificial Intelligence* 47 (1991), 139–159. <https://people.csail.mit.edu/brooks/papers/representation.pdf>
+- Michael McCloskey and Neal J. Cohen, “Catastrophic Interference in Connectionist Networks,” *Psychology of Learning and Motivation* 24 (1989), 109–165. <https://doi.org/10.1016/S0079-7421%2808%2960536-8>
+- James Kirkpatrick et al., “Overcoming catastrophic forgetting in neural networks” (Elastic Weight Consolidation), *PNAS* 114 (2017), 3521–3526. <https://pmc.ncbi.nlm.nih.gov/articles/PMC5380101/>
+- Leigh Van Valen, “A New Evolutionary Law,” *Evolutionary Theory* 1 (1973), 1–30 — the Red Queen hypothesis; see also the Santa Fe Institute retrospective. <https://www.santafe.edu/research/results/papers/37-revisiting-leigh-van-valens-a-new-evolutionary->
+- W. Daniel Hillis, “Co-evolving parasites improve simulated evolution as an optimization procedure,” *Physica D* 42 (1990), 228–234. <https://doi.org/10.1016/0167-2789%2890%2990076-2>
+- David Silver et al., “A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play” (AlphaZero), *Science* 362 (2018), 1140–1144. <https://www.science.org/doi/10.1126/science.aar6404>
+- Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” ICML 2000. <https://ai.stanford.edu/~ang/papers/icml00-irl.pdf>
+- Chelsea Finn, Pieter Abbeel and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks” (MAML), ICML 2017. <https://proceedings.mlr.press/v70/finn17a.html>
+- Marcin Andrychowicz et al., “Learning to Learn by Gradient Descent by Gradient Descent,” 2016, [arXiv:1606.04474](https://arxiv.org/abs/1606.04474).
+- Pat Langley, Herbert A. Simon, Gary L. Bradshaw and Jan M. Zytkow, *Scientific Discovery: Computational Explorations of the Creative Processes*, MIT Press, 1987.
+- Rui Wang et al., “Paired Open-Ended Trailblazer (POET),” 2019, [arXiv:1901.01753](https://arxiv.org/abs/1901.01753).
+- Irwan Bello et al., “Neural Optimizer Search with Reinforcement Learning,” ICML 2017. <https://proceedings.mlr.press/v70/bello17a.html>
+- Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” ICLR 2017. <https://research.google/pubs/neural-architecture-search-with-reinforcement-learning/>
+- Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution Through the Search for Novelty Alone,” *Evolutionary Computation* 19 (2011), 189–223. <https://stars.library.ucf.edu/facultybib2010/1530/>
+- Rui Wang et al., “Enhanced POET: Open-Ended Reinforcement Learning through Unbounded Invention of Learning Challenges and their Solutions,” ICML 2020. <https://proceedings.mlr.press/v119/wang20l.html>
+- DeepMind Open-Ended Learning Team, “Generally capable agents emerge from open-ended play” (XLand, 2021). <https://deepmind.google/blog/generally-capable-agents-emerge-from-open-ended-play/>
+- Elliot Glazer et al., “FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI” (Epoch AI, 2024). <https://epoch.ai/frontiermath/tiers-1-4/the-benchmark>
+- Meta AI, “HyperAgents” (2026) — task and meta-level modification machinery in one editable program. <https://ai.meta.com/research/publications/hyperagents/>
+- Victoria Krakovna et al., “Specification gaming: the flip side of AI ingenuity” (DeepMind, 2020). <https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/>
+- Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27 (1984), 761–763. <https://doi.org/10.1145/358198.358210>
+- Anthropic, “Sycophancy to subterfuge: Investigating reward-tampering in language models” (2024). <https://www.anthropic.com/research/reward-tampering>
 
 ### Additional sources
 
