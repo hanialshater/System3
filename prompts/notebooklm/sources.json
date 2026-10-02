@@ -181,7 +181,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "82d2d2ef464328070a69e742763b7a51976978d10c1c301e4ce009350714cb22",
+      "source_sha256": "b95284b442df6147135c23dc76fef7a340996061cc9835925c9385eed5dadb85",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "c585a91cff589fbc13a7ea25c43598069ded959236fb75041c4eba79503ecc43",
       "sections": [
