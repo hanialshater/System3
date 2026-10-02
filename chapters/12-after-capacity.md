@@ -228,7 +228,7 @@ Nor do I want to replace the obligation to have an impressive career with an obl
 
 ### The Human Is Not the Reward Function
 
-Layer 4 named the ugly shortcut: alignment by editing the human. In a conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. Over a life, I also need somewhere else to go.
+The desire layer named the ugly shortcut: alignment by editing the human. In a conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. Over a life, I also need somewhere else to go.
 
 Imagine a bespoke family tool useful enough to hold the calendar, the children’s learning history and the reasons behind years of small decisions. A button labeled Export may give me all the files and months of work to make them useful elsewhere. The tool gave the family more capacity and gave its owner more leverage over the family at the same time.
 
@@ -242,7 +242,7 @@ Nor productivity, if the optimum is becoming an efficient ghost. Nor authenticit
 
 A good life contains goods that conflict: love and freedom, ambition and rest, truth and mercy, security and adventure. Time spent finishing an investigation is time I cannot spend with my children. Abandoning it may let down people who depend on it. These conflicts are not bugs waiting for a scalarization expert. Asking the assistant to settle everything gives it authority over the trade-off. The trade-off remains.
 
-The human should not sit at Layer 4 merely as the source of a reward signal for the machine. The human participates in the process by which the objective is reconsidered. That is not a competence I am reserving for us because machines cannot yet do it; a machine may come to understand my trade-offs better than I do. It is a matter of whose life it is.
+The human should not sit at the desire layer merely as the source of a reward signal for the machine. The human participates in the process by which the objective is reconsidered. That is not a competence I am reserving for us because machines cannot yet do it; a machine may come to understand my trade-offs better than I do. It is a matter of whose life it is.
 
 AI can participate in that process without owning it. It can show me possibilities I did not know existed, teach me enough of a field to make a different choice imaginable, or help me try something before committing to it. Some desires will change through the experience. I may find the investigation worth finishing because of what I discover while doing it.
 

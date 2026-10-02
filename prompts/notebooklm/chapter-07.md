@@ -13,18 +13,21 @@ Adapt Hani M.M. Al-Shater's "Chapter 7: Recursive Self-Improvement" into an Engl
 ## Source order
 
 1. Opening passage
-2. The Teacher Moves Into the Walls
-3. Learning to Learn
-4. The Learner Chooses What to Learn
-5. Maybe the Reward Was the Problem
-6. The Learner Dreams, and the Dream Can Be Wrong
-7. The Losers Stay Enrolled
-8. The Learner Edits the School
-9. Experiments on the Laboratory
-10. Before the Returns Arrive
-11. The Student Finds the Gradebook
-12. A Constitution for Improvement
-13. The Teacher's Last Job
+2. Nobody Has to Be Conscious
+3. Science Changes Its Methods
+4. Growing One
+5. The Teacher Moves Into the Walls
+6. Learning to Learn
+7. The Learner Chooses What to Learn
+8. Maybe the Reward Was the Problem
+9. The Learner Dreams, and the Dream Can Be Wrong
+10. The Learner Edits the School
+11. Experiments on the Laboratory
+12. The Complexity Wall
+13. Before the Returns Arrive
+14. The Student Finds the Gradebook
+15. A Constitution for Improvement
+16. The Teacher’s Last Job
 
 ## Review
 

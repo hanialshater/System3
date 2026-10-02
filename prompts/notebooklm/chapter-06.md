@@ -24,7 +24,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video.
 10. Put the Library to Work
 11. Find Where the Result Lives
 12. Change the Representation
-13. Separate Use from Investigation
+13. Separate Use From Investigation
 14. Keep the Funding Decision Visible
 15. Give the Objection a Consequence
 16. Test What the Next Agent Inherits

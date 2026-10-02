@@ -400,7 +400,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 - T. D. Lysenko, “Soviet Biology,” report to the Lenin Academy of Agricultural Sciences, 31 July–7 August 1948, concluding remarks. <https://www.marxists.org/reference/archive/lysenko/works/1940s/report.htm>
 
-## Chapter 9 — Layer 4
+## Chapter 9 — The Desire Layer
 
 1. <a id="ref-09-l4-cirl"></a>Dylan Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning” (2016). <https://arxiv.org/abs/1606.03137>.
 

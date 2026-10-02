@@ -1,4 +1,4 @@
-# Chapter 9: Layer 4
+# Chapter 9: The Desire Layer
 
 *The Human Learns Too*
 
@@ -18,7 +18,7 @@ The objective did not merely become clearer to the system. It became clearer to 
 
 ## A Prompt Is Evidence, Not the Objective
 
-The five-layer map left intention sitting above Deep Mode, where I could ask what to try next without yet resolving what made the whole attempt worth doing. The box in the diagram concealed the difficulty. A prompt gives the system evidence about Layer 4, and leaves it to discover how much of the intention is settled.
+The five-layer map left desire sitting above Deep Mode, where I could ask what to try next without yet resolving what made the whole attempt worth doing. The box in the diagram concealed the difficulty. A prompt gives the system evidence about the desire layer, and leaves it to discover how much of the desire is settled.
 
 Cooperative inverse reinforcement learning, which appeared in Chapter 7, formalizes part of this intuition: the robot stays uncertain about what the human values, and human actions become information rather than merely commands.[1](appendix-references.md#ref-09-l4-cirl)
 
@@ -38,7 +38,7 @@ Same broad technology, different relationship to the learner. AI is not intrinsi
 
 Who is supposed to become more capable when this interaction is over? A system that writes better prose for me and one that helps me become a better writer have different jobs.
 
-Sometimes the answer is nobody. I do not need to become a better invoice parser every time software handles an invoice. Sometimes the answer is clearly me. Layer 4 has to know the difference.
+Sometimes the answer is nobody. I do not need to become a better invoice parser every time software handles an invoice. Sometimes the answer is clearly me. The desire layer has to know the difference.
 
 ## Giving the Work Back
 
@@ -76,11 +76,11 @@ Nathan Ballantyne calls one version *epistemic trespassing*: experts carry autho
 
 Cognitive offloading creates a related problem. External aids can improve immediate performance by reducing memory and processing demands, while also reducing what has to be retained or reconstructed internally.[9](appendix-references.md#ref-09-l4-offloading)
 
-So Layer 4 has to know what kind of learning episode this is.
+So the desire layer has to know what kind of learning episode this is.
 
 If I am orienting myself, a fast map may be exactly what I need. If I am trying to acquire durable competence, the system should gradually ask more of me: retrieval without hints, explanation in my own words, exercises, primary sources, code I actually run, claims I have to defend without the answer sitting beside me.
 
-The important distinction is not broad versus specialized but assisted familiarity versus owned understanding. AI can make the map cheap. Layer 4 has to notice when I have started confusing the map with the territory.
+The important distinction is not broad versus specialized but assisted familiarity versus owned understanding. AI can make the map cheap. The desire layer has to notice when I have started confusing the map with the territory.
 
 ## The Imaginary Human in Economics
 
@@ -120,7 +120,7 @@ That is a remarkable role for software. A spreadsheet does not usually tell me t
 
 A conversational model can be different. It is patient, personalized, available at 2 a.m. and capable of producing a coherent argument for almost any path through a difficult life.
 
-Which means the AI does not merely *read* Layer 4. It writes to it. Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[14](appendix-references.md#ref-09-l4-disempowerment)
+Which means the AI does not merely *read* the desire layer. It writes to it. Anthropic’s work on disempowerment tries to measure the dangerous version of this influence: cases where AI may undermine a person’s ability to form accurate beliefs, make authentic value judgments or act in line with their own values. Severe cases were rare in their dataset, but the taxonomy is exactly the right warning.[14](appendix-references.md#ref-09-l4-disempowerment)
 
 Other experiments show that people can change moral judgments after receiving LLM advice, including situations where they report trusting human advisors more while still being comparably influenced by the model.[15](appendix-references.md#ref-09-l4-moraladvice)
 
@@ -168,7 +168,7 @@ Or it can do the opposite: carry routine cognitive load, expose me to more possi
 
 Self-determination research uses a related vocabulary—autonomy and competence are not decorative extras around human motivation; they are part of what lets people act as self-directed agents.[21](appendix-references.md#ref-09-l4-sdt)
 
-So perhaps the right Layer 4 question is not merely:
+So perhaps the right question for the desire layer is not merely:
 
 > What does the human want?
 
@@ -176,7 +176,7 @@ It is also:
 
 > What kind of human capability should this interaction preserve or expand?
 
-Stuart Russell closes *Human Compatible* on that first danger, enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[22](appendix-references.md#ref-09-russell-enfeeblement) Asked at Layer 4, part of it becomes a design requirement.
+Stuart Russell closes *Human Compatible* on that first danger, enfeeblement: once machines can run a civilization, the incentive to hand it to the next generation weakens, and he concludes that the remedy is cultural, not technical.[22](appendix-references.md#ref-09-russell-enfeeblement) Asked at the desire layer, part of it becomes a design requirement.
 
 That does not mean every tool must teach. I do not need my dishwasher to run a seminar on fluid dynamics before cleaning the plates. But the more a system moves into learning, judgment, identity and long-horizon decisions, the harder it becomes to separate the quality of the outcome from the condition of the person producing it.
 
@@ -192,7 +192,7 @@ The assistant could tell her that the cheaper pair is enough, or keep finding re
 
 Work on multi-principal assistance games makes the formal problem obvious: once several humans with different preferences are involved, the system faces strategic behavior, conflicting interests and social-choice problems rather than one hidden reward waiting to be inferred.[23](appendix-references.md#ref-09-l4-mpag)
 
-So Layer 4 cannot simply mean “the user gets whatever the user wants.” The relevant human boundary can be plural. That makes the architecture less tidy. It also makes it more honest.
+So the desire layer cannot simply mean “the user gets whatever the user wants.” The relevant human boundary can be plural. That makes the architecture less tidy. It also makes it more honest.
 
 ## The Objective Layer
 

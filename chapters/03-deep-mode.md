@@ -102,7 +102,7 @@ By then I had a rough map. Each layer marked a different kind of work we had lea
 
 **Layer 3—Deep Mode.** The problem-solving layer: decide what to try, why something failed, which evidence matters, and whether the current direction deserves another iteration.
 
-**Layer 4—Intention.** What do we actually want? This is the problem I have mostly been avoiding.
+**Layer 4—Desire.** What do we actually want? This is the problem I have mostly been avoiding.
 
 Software likes that question to have been answered before work begins, preferably in Jira, where the answer can remain wrong in a structured and searchable format. Real goals are less cooperative. Seeing a solution can change what I realize I wanted. That problem is bigger than AI coding, so for now I am leaving it at the top of the stack.
 

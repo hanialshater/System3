@@ -142,7 +142,7 @@ Deep Mode asks: Given what we know, what should we try next?
 
 System 3 asks: What are we entitled to treat as known?
 
-The model proposes something, the coding agent may test it, and the application can collect real user behavior. Deep Mode may compare research, simulation and evaluation. Even Layer 4, the goal itself, can change when reality pushes back.
+The model proposes something, the coding agent may test it, and the application can collect real user behavior. Deep Mode may compare research, simulation and evaluation. Even the desire layer, the goal itself, can change when reality pushes back.
 
 The five layers describe where increasingly abstract work happens, and System 3 keeps them epistemically connected. Without it, every layer we delegate to is one more place for an unsupported claim to travel.
 
@@ -150,7 +150,7 @@ Here is the stack, with System 3 running across it:
 
 |Layer|The question it answers|
 |---|---|
-|4 — Intention|What do we actually want?|
+|4 — Desire|What do we actually want?|
 |3 — Deep Mode|Given what we know, what should we try next?|
 |2 — Application|Can the work begin near the application instead of the plumbing?|
 |1 — Agent|Can the model act, and see what happened?|

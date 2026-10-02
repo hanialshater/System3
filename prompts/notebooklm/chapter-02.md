@@ -16,13 +16,13 @@ Adapt Hani M.M. Al-Shater's "Chapter 2: The Algorithm Vortex" into an English vi
 2. Twenty-Six Circles
 3. Hill Climbing
 4. Evolutionary Algorithms
-5. MAP-Elites: Don't Kill Weird Ideas Too Early
+5. MAP-Elites: Don’t Kill Weird Ideas Too Early
 6. The Invention Problem
 7. Let the Model Write the Solver
 8. So, Naturally, I Built All of It
 9. The Coffee Test
 10. Diagonal Layering
-11. The Algorithmic Vortex
+11. The Algorithm Vortex
 12. The Contract
 13. Zero Framework, With an Asterisk
 14. The Easy Version of Autonomy

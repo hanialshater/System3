@@ -192,7 +192,7 @@ If Surface Value is module CTR, we have not solved the page problem. If it is to
 
 The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. For comparison friction, the signal must distinguish resolution from abandonment. For size anxiety, customers should be able to progress with fewer signs of uncertainty without creating a return problem later.
 
-Before the store has a customer, it has the Layer 4 problem. What do we actually want?
+Before the store has a customer, it has the desire-layer problem. What do we actually want?
 
 The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints, merchandising has opinions, margin and availability are real, and so are regulators. A system that pretends only one of these matters is not simpler; it is hiding politics inside a scalar.
 

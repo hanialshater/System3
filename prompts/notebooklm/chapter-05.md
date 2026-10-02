@@ -18,7 +18,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 5: The Society of Agents" into an English v
 4. The Society Gets Smarter by Making People Narrower
 5. A Swarm Should Not Automatically Become a Meeting
 6. A Man in a Dark Room
-7. Boyle's Pump
+7. Boyle’s Pump
 8. Who Gets the Next Agent?
 9. Science Gets Bigger Than the Scientist
 10. Sixteen Claudes, Again
