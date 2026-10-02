@@ -240,7 +240,7 @@ Or we may use the capacity to watch fourteen hours of personalized short video g
 
 The future I want has more room in it.
 
-Room to get the map of a field quickly, then spend a year on the part that matters. Room to be less economically useful without becoming less human.
+Room to get the map of a field quickly, then spend a year on the part that matters. Room for a small community to construct things around its actual needs, and for someone inside it to disagree. Room to try the strange art nobody would have funded. Room to be less economically useful without becoming less human.
 
 An infinite menu can become its own prison. I cannot test every version of a life before living one, and keeping all my options open may close the possibility of being somebody others can depend on. Some understanding becomes available only after commitment. Cheaper capacity can help me approach that point with more experience and fewer avoidable constraints; it cannot abolish the point.
 

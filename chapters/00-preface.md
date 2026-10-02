@@ -14,7 +14,7 @@ Usually, you get to help with a brick.
 
 Now imagine reading such a paper, describing what excites you to a group of AI agents, and going for coffee.
 
-When you return, there is a cathedral. An experiment has overturned your favorite assumption. There is a working demonstration of an idea you haven’t had yet.
+When you return, there is a cathedral. An experiment has overturned your favorite assumption. Something built to investigate the failure has become the most interesting part. There is a working demonstration of an idea you haven’t had yet.
 
 Your coffee is still too hot.
 

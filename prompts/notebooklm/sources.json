@@ -5,7 +5,7 @@
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "cbd73a3c5e789933b913f95c145fcbbe1df05fa97e7293a3cbcfb707bb5bcc1c",
+      "source_sha256": "ff8e0fffb0b02ace31ce61481dad521a2757c142e2a22503d7494bb23968ab74",
       "brief": "prompts/notebooklm/preface.md",
       "brief_sha256": "5bf5195ffd6e02d61cb07fa55b2e663df1d5fc26213dffe814a518ee4e481f5e",
       "sections": [
@@ -14,7 +14,7 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "a38d556cbfbae929c68a5a1d75dc265e5fdca587a3d3610a23debd2ab7498ef8",
+      "source_sha256": "31cac0e1cee2a6144f74011e2ab4b378509ea96f370618be856619d9c291e895",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "53c2afca59d5240993ced65d52323f659aaaaf8bddb94f512af8b1c5e2361498",
       "sections": [
@@ -231,7 +231,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "fd727858c1d066e18bdc0c2fc86864d0af64d76b80fc26d34044f1d7351cea20",
+      "source_sha256": "f4d373a26665bda676d91108f78b8b8b38170f5e0ce3e5aede6af00583c0a591",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "7b736c860b2af34b1960e37ab57feee784d74f42735457848f95341f44386b52",
       "sections": [
