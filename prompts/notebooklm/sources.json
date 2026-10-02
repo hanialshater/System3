@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "02194521fbe02616fd931c69cb15442f48edc9546d94e5c5509dec10fb9c3daf",
+  "references_sha256": "143e1220e5810802d80a2111488a0bac79eaba66fc88d03b5ac2549e02977068",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -157,7 +157,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "bcf4d1faf234c35fb0375c8a477a58dac65274c7d4480f26e208b0fab24f9872",
+      "source_sha256": "816dd07efc64f2654b4acdeb556dadf1b90a50e0bdecef4dfdc52e22d61a273c",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
