@@ -74,7 +74,9 @@ Institutions reuse too, and what they reuse is trust. If a project requires fund
 
 Then I learn what those signs look like and arrange part of my life around acquiring them.
 
-Then the signs acquire a budget. They direct money, equipment and years of attention toward work that resembles past successes, and a proposal shaped like those successes is easier for a committee to recognize. The resulting papers and careers make the pattern look like a description of how science naturally proceeds. Questions that do not fit may never receive enough work to show what they could have been. Each person can be making a reasonable decision; nobody has to decide that imitation should run the institution.
+A young researcher is choosing a question. She has an interest of her own, but she also needs funding and eventually a job. She studies the work that gets published and the people who get hired. A proposal shaped like those successes is easier for a committee to recognize. If she follows that path and succeeds, her career joins the evidence the next applicant studies.
+
+Then the signs acquire a budget. They direct money, equipment and years of attention toward work that resembles past successes. The resulting papers and careers make the pattern look like a description of how science naturally proceeds. Questions that do not fit may never receive enough work to show what they could have been. Each person can be making a reasonable decision; nobody has to decide that imitation should run the institution.
 
 That is how capacity and validation end up entangled. I need recognition to obtain the means; pursuing recognition changes what I want to do with them. I wanted to investigate a question and have become very good at being the sort of person who might be allowed to investigate it.
 

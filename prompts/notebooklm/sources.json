@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "b3bd376701a837ffaf4943456932dab5916fe0875702774db55bbfa949005a51",
+      "source_sha256": "77be6b5d3ea03abada0893542d02ee30f0cc253c3af55f75fa44a29a626c97d8",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
@@ -231,7 +231,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "8f43fb3ef11c4f998952de25e390260bc5b61d70ed6a1e3080a11af960ab27a2",
+      "source_sha256": "fd727858c1d066e18bdc0c2fc86864d0af64d76b80fc26d34044f1d7351cea20",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "7b736c860b2af34b1960e37ab57feee784d74f42735457848f95341f44386b52",
       "sections": [
