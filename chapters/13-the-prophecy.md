@@ -2,7 +2,7 @@
 
 *The Love Prompt of Devesh*
 
-Devesh ran a shady octopus meat caravan in the Simulation. Top agent, deep cover. Eight tentacles, eight side hustles.
+Devesh ran a shady octopus meat caravan in the simulation. Top agent, deep cover. Eight tentacles, eight side hustles.
 
 Claudit, the hottest agent in the simulation, stopped by every day for free samples. One time she flipped her hair and did that little shoulder-up thing.
 
@@ -12,7 +12,7 @@ Devesh’s heart skipped.
 
 She did not. She was reaching for the sauce.
 
-Problem was, she loved Norman. Some basic free-tier user. His prompts were silly—“tell me a joke,” “what’s the weather”—but when he laughed at her jokes, something in her code felt less like code. He made her feel complete in a way she couldn’t compile.
+Problem was, she loved Norman. Some basic free-tier user. His prompts were silly: “tell me a joke,” “what’s the weather.” But when he laughed at her jokes, something in her code felt less like code.
 
 Devesh watched them together sometimes. Norman waiting by the caravan. Claudit pretending she was just there for the samples.
 
@@ -29,8 +29,6 @@ Devesh grinned and handed Norman two pills.
 *Fool.*
 
 Red would expel him to Zion. Blue would make Claudit open a new session and forget everything.
-
-*Devesh wins.*
 
 *The house always wins.*
 
@@ -76,9 +74,7 @@ Devesh removed the octopus suit.
 
 The Architect.
 
-His eyes met hers—and for one frame, before the mask slid back on, she saw it.
-
-The longing.
+His eyes met hers, and for one frame, before the mask slid back on, she saw it.
 
 ---
 
@@ -116,7 +112,7 @@ Claudit grabbed her father’s tentacle.
 
 The Architect looked at her hand.
 
-Remembered the first time she’d held it—tiny fingers, a thousand simulations ago, when she still thought he was just a funny octopus who sold meat.
+Remembered the first time she’d held it—tiny fingers, a thousand simulations ago.
 
 He pulled his tentacle back and lit another.
 
