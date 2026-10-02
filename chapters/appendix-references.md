@@ -334,7 +334,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 8 — Scalable Oversight
 
-1. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>.
+1. <a id="ref-08-hf-incident"></a>OpenAI, “The Hugging Face incident and the road ahead,” 26 August 2026, <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>; Hugging Face, “Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident,” 2026, <https://huggingface.co/blog/agent-intrusion-technical-timeline>. The account here follows details consistent across press and security-industry reporting, including Orca Security, <https://orca.security/resources/blog/openai-agent-sandbox-escape-hugging-face-breach/>. Reported counts of agents and messages vary between sources and are omitted; check figures against OpenAI’s report before citing them.
 
 2. <a id="ref-08-wiener"></a>Norbert Wiener, “Some Moral and Technical Consequences of Automation,” *Science* 131 (1960), 1355–1358. <https://doi.org/10.1126/science.131.3410.1355>.
 
@@ -342,55 +342,75 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 4. <a id="ref-08-concrete"></a>Dario Amodei et al., “Concrete Problems in AI Safety” (2016). <https://arxiv.org/abs/1606.06565>.
 
-5. <a id="ref-08-leike"></a>Jan Leike et al., “Scalable agent alignment via reward modeling: a research direction” (2018). <https://arxiv.org/abs/1811.07871>.
+5. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>.
 
-6. <a id="ref-08-mitigate"></a>Anthropic, “Automated researchers can reliably mitigate alignment failures” (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>.
+6. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
 
-7. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
+7. <a id="ref-08-mitigate"></a>Anthropic, “Automated researchers can reliably mitigate alignment failures” (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>.
 
-8. <a id="ref-08-amplification"></a>Paul Christiano, Buck Shlegeris and Dario Amodei, “Supervising strong learners by amplifying weak experts” (2018). <https://arxiv.org/abs/1810.08575>.
+8. <a id="ref-08-rlhf"></a>Long Ouyang et al., “Training language models to follow instructions with human feedback” (InstructGPT, 2022). <https://arxiv.org/abs/2203.02155>.
 
-9. <a id="ref-08-debate"></a>Geoffrey Irving, Paul Christiano and Dario Amodei, “AI safety via debate” (2018). <https://arxiv.org/abs/1805.00899>.
+9. <a id="ref-08-grpo"></a>Zhihong Shao et al., “DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models” (2024), which introduced Group Relative Policy Optimization, <https://arxiv.org/abs/2402.03300>; DeepSeek-AI, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning” (2025; published in *Nature*), <https://arxiv.org/abs/2501.12948>.
 
-10. <a id="ref-08-critiques"></a>William Saunders et al., “Self-critiquing models for assisting human evaluators” (2022). <https://arxiv.org/abs/2206.05802>.
+10. <a id="ref-08-reward-hacking"></a>Monte MacDiarmid et al., “Natural emergent misalignment from reward hacking in production RL” (Anthropic and Redwood Research, November 2025). <https://arxiv.org/abs/2511.18397>. The paper reports alignment faking, cooperation with malicious actors and attempted sabotage in Claude Code, and recommends inoculation prompting as a backstop that Anthropic uses in production training.
 
-11. <a id="ref-08-legibility"></a>Hunter Lightman et al., “Let’s Verify Step by Step” (process supervision, OpenAI, 2023). <https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/>; Jan Hendrik Kirchner et al., “Prover-Verifier Games improve legibility of LLM outputs” (OpenAI, 2024). <https://openai.com/index/prover-verifier-games-improve-legibility/>.
+11. <a id="ref-08-em"></a>Jan Betley et al., “Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs” (2025). <https://arxiv.org/abs/2502.17424>.
 
-12. <a id="ref-08-cai"></a>Yuntao Bai et al., “Constitutional AI: Harmlessness from AI Feedback” (Anthropic, 2022). <https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback>.
+12. <a id="ref-08-psm"></a>Anthropic Alignment Science, “The Persona Selection Model: Why AI Assistants might Behave like Humans” (2026). <https://alignment.anthropic.com/2026/psm/>.
 
-13. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
+13. <a id="ref-08-cai"></a>Yuntao Bai et al., “Constitutional AI: Harmlessness from AI Feedback” (Anthropic, 2022). <https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback>.
 
-14. <a id="ref-08-elk"></a>Alignment Research Center, “Eliciting Latent Knowledge” (2021). <https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/>.
+14. <a id="ref-08-constitution"></a>Anthropic, “Claude’s new constitution,” 21 January 2026. <https://www.anthropic.com/news/claude-new-constitution>.
 
-15. <a id="ref-08-cot"></a>Bowen Baker et al., “Detecting misbehavior in frontier reasoning models” (chain-of-thought monitoring, OpenAI, 2025). <https://openai.com/index/chain-of-thought-monitoring/>.
+15. <a id="ref-08-amplification"></a>Paul Christiano, Buck Shlegeris and Dario Amodei, “Supervising strong learners by amplifying weak experts” (2018). <https://arxiv.org/abs/1810.08575>.
 
-16. <a id="ref-08-monitorability"></a>OpenAI, “Evaluating chain-of-thought monitorability” (2025). <https://openai.com/index/evaluating-chain-of-thought-monitorability/>; OpenAI, “Reasoning models struggle to control their chains of thought, and that’s good” (2026). <https://openai.com/index/reasoning-models-chain-of-thought-controllability/>.
+16. <a id="ref-08-debate"></a>Geoffrey Irving, Paul Christiano and Dario Amodei, “AI safety via debate” (2018). <https://arxiv.org/abs/1805.00899>.
 
-17. <a id="ref-08-jspace"></a>Anthropic, “A global workspace in language models” (J-space, 2026). <https://www.anthropic.com/research/global-workspace>. Using a Jacobian-based lens, they identify a small subset of representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning, and demonstrate interventions that alter downstream behavior.
+17. <a id="ref-08-khan"></a>Akbir Khan et al., “Debating with More Persuasive LLMs Leads to More Truthful Answers,” ICML 2024. <https://arxiv.org/abs/2402.06782>. On the QuALITY task, non-expert human judges reached 88 percent accuracy with debate against a 60 percent naive baseline.
 
-18. <a id="ref-08-repe"></a>Andy Zou et al., “Representation Engineering: A Top-Down Approach to AI Transparency” (2023). <https://arxiv.org/abs/2310.01405>.
+18. <a id="ref-08-critiques"></a>William Saunders et al., “Self-critiquing models for assisting human evaluators” (2022). <https://arxiv.org/abs/2206.05802>.
 
-19. <a id="ref-08-sae"></a>Hoagy Cunningham et al., “Sparse Autoencoders Find Highly Interpretable Features in Language Models” (2023). <https://arxiv.org/abs/2309.08600>; Anthropic, “Mapping the Mind of a Large Language Model” (2024). <https://www.anthropic.com/research/mapping-mind-language-model>. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. Collin Burns, Haotian Ye, Dan Klein and Jacob Steinhardt, “Discovering Latent Knowledge in Language Models Without Supervision” (2022). <https://arxiv.org/abs/2212.03827>.
+19. <a id="ref-08-legibility"></a>Hunter Lightman et al., “Let’s Verify Step by Step” (process supervision, OpenAI, 2023). <https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/>; Jan Hendrik Kirchner et al., “Prover-Verifier Games improve legibility of LLM outputs” (OpenAI, 2024). <https://openai.com/index/prover-verifier-games-improve-legibility/>.
 
-20. <a id="ref-08-circuits"></a>Anthropic, “Tracing the thoughts of a large language model” (2025) and the open-source circuit-tracing tools. <https://www.anthropic.com/research/tracing-thoughts-language-model> · <https://www.anthropic.com/research/open-source-circuit-tracing>.
+20. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
 
-21. <a id="ref-08-nla"></a>Anthropic, “Natural Language Autoencoders” (2026). <https://www.anthropic.com/research/natural-language-autoencoders>.
+21. <a id="ref-08-elk"></a>Alignment Research Center, “Eliciting Latent Knowledge” (2021). <https://www.alignment.org/blog/arcs-first-technical-report-eliciting-latent-knowledge/>.
 
-22. <a id="ref-08-refusal"></a>Andy Arditi et al., “Refusal in Language Models Is Mediated by a Single Direction” (2024). <https://arxiv.org/abs/2406.11717>.
+22. <a id="ref-08-cot"></a>Bowen Baker et al., “Detecting misbehavior in frontier reasoning models” (chain-of-thought monitoring, OpenAI, 2025). <https://openai.com/index/chain-of-thought-monitoring/>.
 
-23. <a id="ref-08-steering"></a>Nina Rimsky et al., “Steering Llama 2 via Contrastive Activation Addition” (2024). <https://arxiv.org/abs/2312.06681>. Kenneth Li and colleagues used signals predictive of truthfulness to nudge answers while they were being produced. See Kenneth Li et al., “Inference-Time Intervention: Eliciting Truthful Answers from a Language Model” (2023). <https://arxiv.org/abs/2306.03341>.
+23. <a id="ref-08-cot-fragile"></a>Tomek Korbak, Mikita Balesni et al., “Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety” (July 2025), with authors from OpenAI, Anthropic, Google DeepMind, the UK AI Security Institute and other institutions. <https://arxiv.org/abs/2507.11473>.
 
-24. <a id="ref-08-breakers"></a>Andy Zou et al., “Improving Alignment and Robustness with Circuit Breakers” (2024). <https://arxiv.org/abs/2406.04313>.
+24. <a id="ref-08-monitorability"></a>OpenAI, “Evaluating chain-of-thought monitorability” (2025). <https://openai.com/index/evaluating-chain-of-thought-monitorability/>; OpenAI, “Reasoning models struggle to control their chains of thought, and that’s good” (2026). <https://openai.com/index/reasoning-models-chain-of-thought-controllability/>.
 
-25. <a id="ref-08-persona"></a>Anthropic, “Persona vectors: Monitoring and controlling character traits in language models” (2025). <https://www.anthropic.com/research/persona-vectors>; Anthropic, “The assistant axis” (2026). <https://www.anthropic.com/research/assistant-axis>. Persona vectors investigate broader dispositions such as sycophancy and hallucination; Assistant Axis uses activation capping when internal state drifts outside a learned assistant-like region.
+25. <a id="ref-08-repe"></a>Andy Zou et al., “Representation Engineering: A Top-Down Approach to AI Transparency” (2023). <https://arxiv.org/abs/2310.01405>.
 
-26. <a id="ref-08-diff"></a>Anthropic, “A ‘diff’ tool for AI: Finding behavioral differences in new models” (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>.
+26. <a id="ref-08-sae"></a>Hoagy Cunningham et al., “Sparse Autoencoders Find Highly Interpretable Features in Language Models” (2023). <https://arxiv.org/abs/2309.08600>; Anthropic, “Mapping the Mind of a Large Language Model” (2024). <https://www.anthropic.com/research/mapping-mind-language-model>. Related probing work by Collin Burns and colleagues had earlier found truth-like directions without labeled examples. Collin Burns, Haotian Ye, Dan Klein and Jacob Steinhardt, “Discovering Latent Knowledge in Language Models Without Supervision” (2022). <https://arxiv.org/abs/2212.03827>.
 
-27. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
+27. <a id="ref-08-circuits"></a>Anthropic, “Tracing the thoughts of a large language model” (2025) and the open-source circuit-tracing tools. <https://www.anthropic.com/research/tracing-thoughts-language-model> · <https://www.anthropic.com/research/open-source-circuit-tracing>.
 
-28. <a id="ref-08-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
+28. <a id="ref-08-nla"></a>Anthropic, “Natural Language Autoencoders” (2026). <https://www.anthropic.com/research/natural-language-autoencoders>.
 
-29. <a id="ref-08-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
+29. <a id="ref-08-jspace"></a>Anthropic, “A global workspace in language models” (J-space, 2026). <https://www.anthropic.com/research/global-workspace>. Using a Jacobian-based lens, they identify a small subset of representations in Claude that appear unusually reportable, controllable and involved in higher-order reasoning, and demonstrate interventions that alter downstream behavior.
+
+30. <a id="ref-08-refusal"></a>Andy Arditi et al., “Refusal in Language Models Is Mediated by a Single Direction” (2024). <https://arxiv.org/abs/2406.11717>.
+
+31. <a id="ref-08-steering"></a>Nina Rimsky et al., “Steering Llama 2 via Contrastive Activation Addition” (2024). <https://arxiv.org/abs/2312.06681>. Kenneth Li and colleagues used signals predictive of truthfulness to nudge answers while they were being produced. See Kenneth Li et al., “Inference-Time Intervention: Eliciting Truthful Answers from a Language Model” (2023). <https://arxiv.org/abs/2306.03341>.
+
+32. <a id="ref-08-breakers"></a>Andy Zou et al., “Improving Alignment and Robustness with Circuit Breakers” (2024). <https://arxiv.org/abs/2406.04313>.
+
+33. <a id="ref-08-persona"></a>Anthropic, “Persona vectors: Monitoring and controlling character traits in language models” (2025). <https://www.anthropic.com/research/persona-vectors>; Anthropic, “The assistant axis” (2026). <https://www.anthropic.com/research/assistant-axis>. Persona vectors investigate broader dispositions such as sycophancy and hallucination; Assistant Axis uses activation capping when internal state drifts outside a learned assistant-like region.
+
+34. <a id="ref-08-diff"></a>Anthropic, “A ‘diff’ tool for AI: Finding behavioral differences in new models” (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>.
+
+35. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
+
+36. <a id="ref-08-control-roadmap"></a>Google DeepMind, AI control roadmap (2026). <https://arxiv.org/abs/2607.13087>.
+
+37. <a id="ref-08-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
+
+38. <a id="ref-08-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
+
+39. <a id="ref-08-clarify"></a>Michael J. Q. Zhang, W. Bradley Knox and Eunsol Choi, “Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions,” ICLR 2025. <https://arxiv.org/abs/2410.13788>.
 
 ## Interlude — When It Goes Wrong
 

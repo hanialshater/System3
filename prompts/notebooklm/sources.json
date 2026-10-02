@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "2a2fd06c9ad70cb290db10f8ac58b8048de9c957a8542ff0721f218a0afd4bf9",
+  "references_sha256": "993cac3a0a40d31263a725efabc787ed078d0ccb4ee2fa46cc4e7a590f0ddb6c",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -160,23 +160,20 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "84810eb4e224614a0c24d82ac336af140719995a6db05efb9c5eb6d14170c4c3",
+      "source_sha256": "ca0f2b3e37ed8b5db0d1d28daaddfe3ea7ff0feba8092033c4010a0df9a6b402",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "898f74aaf01975ec4f076d70964bb4874db614faa04c5edce4b3c79423f624e7",
+      "brief_sha256": "58f8da02a0d12d8e17a5770d1c8a17bd988a8736447c4fd3c1579020e4641d77",
       "sections": [
         "Opening passage",
-        "The Judge Falls Behind",
-        "Performance Gap Recovered",
-        "An Excellent Education in the Same Mistake",
-        "The Judge Can Be Fooled",
-        "We Started Instrumenting the Student",
-        "Reading the Model From the Inside",
-        "Then We Touched the Machinery",
-        "The Nastier Version",
-        "The Evaluator Becomes the Product",
-        "Stay Uncertain Enough to Listen",
-        "The Human Cannot Stay in Every Loop",
-        "The Overseer Is Not Ground Truth"
+        "An Old Problem, a New Employee",
+        "The Alignment Department’s Alignment Problem",
+        "Training the Gut",
+        "Make the Judge Smarter",
+        "An fMRI for the Model",
+        "Steering Mid-Thought",
+        "Assume It Is Trying to Win",
+        "Uncertain Enough to Ask",
+        "The Loop That Changes the Loops"
       ]
     },
     {
