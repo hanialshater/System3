@@ -7,8 +7,32 @@ This is a source-derived production outline, not a factual summary or a complete
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 4: System 3" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Preserve the trust chain from the opening photo through instruments and the small experiment. Keep the negative result and limited sample visible; do not turn it into proof of general effectiveness.
+Adapt Hani M.M. Al-Shater's "Chapter 4: System 3" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Preserve the trust chain from the opening photo through instruments and the small experiment. Keep the negative result and limited sample visible; do not turn it into proof of general effectiveness. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book.
 ```
+
+## The idea to land
+
+System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on external machinery of trust, instruments and records.
+
+## Moments to show
+
+- the camel
+- Call Alberto
+- the school the author's mother chose and the history he believed
+- the fire and the brother
+- the Gut, the Head and the Hand
+- the MARC analyzer
+- creative distrust
+- back to the camel
+
+## Lines to keep word for word
+
+- "System 3 checks."
+- "a formal proof never needs to touch a cow"
+
+## Imagined, reported or proposed
+
+The small experiment had a negative result on a limited sample; keep that visible.
 
 ## Source order
 
