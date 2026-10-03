@@ -71,6 +71,10 @@ recent decisions; never propose undoing them without naming them.
    author can fix: a missing lived scene, a real number, his own reaction to an event. Line
    editing alone tops out at around 7.5. The gap above that is almost always ownership.
 
+**Cite exactly.** Every line number you quote must come from `grep -n` or a numbered read of
+the current file, not from memory or an earlier version. The author checks them, and a wrong
+citation costs more trust than a missing one.
+
 ## Step 3: Propose before editing
 
 Before changing text, give the author:
