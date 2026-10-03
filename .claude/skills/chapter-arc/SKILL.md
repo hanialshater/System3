@@ -71,15 +71,40 @@ When planning a chapter, write its last line and the next chapter's first line t
   the case (Ch11).
 - **An imagined lived frame.** "I built a prototype" that never produces a moment the author lived.
 
+
+## Fit with the rest of the book
+
+A chapter that is well built but ignores the book around it will lose to a messier one that
+knows where it sits. In testing, the strongest plans checked these things. Before proposing
+anything:
+
+1. **Read the neighbours:** the chapter before, the chapter after, and any chapter that tells a
+   related story. *System 3* has a store in Ch7, a trail-shoe shopper in Ch9 and a prototype
+   store in Ch11. A new store chapter that doesn't mention them leaves a story with three homes.
+2. **List the threads the chapter touches:**
+   - seeds in `resources/editorial/easter-egg-register.md`;
+   - the human thread;
+   - the five-layer map;
+   - existing named characters (Omar, Ines, Mei).
+
+   Say which ones the chapter picks up, which it pays off, and which it must not explain.
+3. **Check the consequences:** where a new chapter goes, which hand-offs it breaks or creates,
+   what renumbering it forces, and what it does to part balance (word counts per part).
+4. **Check the author's recent edits:** `git log -5 -- chapters/<file>`. Don't propose cutting or
+   rewriting a passage he changed in the last few weeks without saying so.
+
 ## Working method
 
 **Planning a new chapter:**
-1. Ask what the chapter must do in the book, using `book-arc` for its position and hand-offs.
+1. Ask what the chapter must do in the book, using `book-arc` for its position and hand-offs, and work
+   through "Fit with the rest of the book" above.
 2. Choose the opening thing and the running case. Prefer the author's lived experience.
 3. List 7–10 sections as moves, each with a one-line purpose and the source or scene that
    carries it.
 4. Mark the coined term, the turn and the callback ending.
-5. Mark every place that needs the author's own scene as `[AUTHOR: …]`. **Never invent his
+5. Give each source its own scene. Two or three studies in one section is a survey; keep the one
+   the case needs, and put the others in notes.
+6. Mark every place that needs the author's own scene as `[AUTHOR: …]`. **Never invent his
    experiences.** Clearly labelled imagined cases ("Imagine…", "Suppose…") are fine. Real people
    and events must come from checkable sources.
 
@@ -88,7 +113,9 @@ When planning a chapter, write its last line and the next chapter's first line t
    with line references.
 2. Name which failure patterns apply.
 3. Propose a restructured outline, keeping the author's best passages and noting what moves
-   where.
+   where. Restructure; don't only reorder. If the chapter lacks a running case, propose one, or
+   say which `[AUTHOR: …]` scene would supply it.
+   Every source the outline keeps must get a scene, including the philosophers.
 4. Separate the fixes you can make from the material only he can supply.
 
 Do not edit chapter files unless he asks. A diagnosis or outline goes in the reply, or in a
@@ -107,6 +134,7 @@ Then give:
 - the coined term, and where it lands;
 - the turn;
 - the ending callback, plus the hand-off to the next chapter;
+- how the chapter fits the book: threads, neighbours, and the effect on placement;
 - the list of `[AUTHOR: …]` needs.
 
 For a diagnosis, use the template table first, then the proposed outline in the same format.

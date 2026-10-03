@@ -47,6 +47,12 @@ Collect the constraints:
 - protected chapters (Chapter 13 is protected in full);
 - the evidence note (`chapters/appendix-note-on-evidence.md`), which says what is lived, reported or imagined.
 
+Also read the neighbouring chapters, and any chapter that tells a related story. Note which
+threads, characters and seeds the chapter carries; the `chapter-arc` skill's "Fit with the rest
+of the book" section lists what to check. Run `git log -5 -- chapters/<file>`, and check
+`resources/evaluations/*revert-list*.md` for passages the author has restored. Those are his
+recent decisions; never propose undoing them without naming them.
+
 ## Step 2: Evaluate honestly
 
 1. Read the whole chapter.
@@ -54,7 +60,9 @@ Collect the constraints:
 3. **Use a blind reader rather than your own judgment for scores.** Self-grading runs high: in
    this project self-estimates of 8.6 came back as 7.0–7.4 from blind readers. Spawn a subagent
    that has not seen your edits. Give it Chapter 4 as the baseline plus the target chapter, and
-   ask for:
+   ask for the items below. If you cannot spawn a subagent, score it yourself, say so in the
+   report, and state that self-scores have run 1–1.5 points high in this project. Never present
+   self-scores as blind ones. Ask for:
    - scores for reads-as-human, engagement, momentum, prose, voice and overall;
    - per-section scores;
    - 6 concrete fixes;
@@ -145,6 +153,8 @@ For an edit pass, report:
 - any AUTHOR comments left.
 
 For comparing two versions of a chapter, use the house prompt `prompts/chapter-version-evaluation.md`.
+
+For line-level cleanup, the author's own `de-llm` skill is the authority when it is installed.
 
 Related skills: `chapter-arc` (shape of a chapter), `book-arc` (shape of the book),
 `author-voice` (how the prose should sound), `ai-tells` (line-level machine patterns).

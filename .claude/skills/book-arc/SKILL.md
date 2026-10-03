@@ -86,11 +86,18 @@ Work through these questions in order:
 8. **Where the author's lived material carries each part.** Mark gaps as `[AUTHOR: …]`. Never
    invent his experiences.
 
+## Weigh the parts
+
+Count words per part. A part much shorter than its neighbours, or one that is asked to carry
+both the human thread and a thesis trial, is a structural risk even when every chapter is good.
+Also check that no story, case or invented company has two homes. When one does, make one
+chapter the home and give the other a callback.
+
 ## Diagnosing an existing arc
 
 Map the book onto the nine elements above, as a table with one row per element: present, weak
 or missing, with file and line evidence. Then check that:
-- the reveal comes after the clues, not before;
+- the reveal comes after the clues, not before (search the chapters before the reveal for the withheld word itself);
 - each part does one job;
 - every seed pays off and no payoff is explained;
 - every hand-off connects;
