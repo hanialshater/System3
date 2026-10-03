@@ -1,5 +1,7 @@
 # NotebookLM video briefs
 
+To write or revise briefs, use the `video-briefs` skill (`.claude/skills/video-briefs/SKILL.md`).
+
 Use the chapter's current manuscript, including its notes, as the content source.
 Select its brief as production guidance and paste the brief's video prompt into
 the customization field. These files are source-derived outlines, not completed
