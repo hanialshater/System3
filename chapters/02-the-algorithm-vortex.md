@@ -102,11 +102,11 @@ This is quality-diversity search: alongside the current winner, it keeps qualita
 
 I like this because optimization is often unfair to immature ideas. A new approach can initially perform badly simply because nobody has polished it yet. If the first respectable solution immediately kills everything else, the search can become impressively efficient at discovering one family of answers.
 
-But MAP-Elites introduces another human choice: which dimensions define the archive? Symmetry, radius variance, the number of large circles, something topological, or something I haven’t thought of? Whoever picks those dimensions is deciding what counts as an interesting direction.
+But MAP-Elites introduces another human choice: which dimensions define the archive? Symmetry, radius variance, the number of large circles, something topological, or something I haven’t thought of? Whoever picks those dimensions is deciding what counts as an interesting direction, and that was still me.
 
 ## The Invention Problem
 
-By this point, the search machinery was fairly capable. We could evaluate huge numbers of candidate packings and inspect far more of the search space than any human would explore manually.
+By this point, the search machinery was fairly capable. We could evaluate huge numbers of candidate packings and inspect far more of the search space than any human would explore manually. Yet every substantial conceptual jump came from somebody noticing something.
 
 Traditional search is excellent once we define the space and the legal moves, but sometimes the space and the moves are exactly what needs rethinking. That is where learned models have something to offer.
 
@@ -244,7 +244,9 @@ I started calling this direction **zero framework**. It’s a great slogan. It�
 
 I meant that I was writing almost no custom orchestration framework, which is very different from having no framework. Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them. The framework didn’t vanish; it became somebody else’s primitive.
 
-Bash is enough, with the asterisk that Bash contains roughly half a century of civilization.
+That fits the emergence argument almost suspiciously well. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
+
+So yes, zero framework: Bash is enough, with the asterisk that Bash contains roughly half a century of civilization.
 
 ## The Easy Version of Autonomy
 

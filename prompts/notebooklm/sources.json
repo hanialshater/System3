@@ -14,7 +14,7 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "253846ab81b77cc24e39f94c8631dec654652a8ef700ac73aec04717e350e37b",
+      "source_sha256": "c04b85edf56a4025f773d6b1c7d8166e43c0002e9a1217e1a97c81ba9b153ebf",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "53c2afca59d5240993ced65d52323f659aaaaf8bddb94f512af8b1c5e2361498",
       "sections": [
@@ -30,7 +30,7 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "05bde94c05573a8a640669eb3afc3adbf986edf609e2d872be0504e430ba9d50",
+      "source_sha256": "8dc63c49922b3e42b6a3dd54b52f3e7908c1e88a6a62b8a8aa6e5c3b1152f245",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "4fdefa48a35bbf4ecdaa9f28a77154952423b8ed211d51bc7b1ac5bbbfdaa7e2",
       "sections": [
@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "f0472af83361a78f353aa17294fb93e2871b596038d1e21e1d0d8fd7c2aa4cdb",
+      "source_sha256": "661cfe75dd2694763a4233d57659108c7dfa0024f85de6c6d3782fc68bca3f3e",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "4b6111129f65816c34b3f57555f60db2d1c738142fdac48e9e6e85a59ffee580",
       "sections": [

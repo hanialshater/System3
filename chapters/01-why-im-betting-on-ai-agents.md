@@ -41,7 +41,7 @@ It is not a fair competition. The agents arrive with civilization in their lugga
 
 We do this too. No human starts from zero, although we occasionally behave as if our opinions were independently discovered natural resources. We inherit language, tools, institutions and other people’s mistakes. Agents can draw on textbooks, numerical solvers, compilers, scientific papers and several thousand years of humans documenting what happened when we touched things we probably should not have touched.
 
-Imagine an agent beginning with algorithms from a library. None works well enough, so it writes a tool to examine the failures. The tool reveals a pattern worth investigating. Another worker uses it on a different case, finds a limitation and changes it. Meanwhile, they need somewhere to record what they tried, a way to avoid undoing each other’s work and some agreement about which results deserve to survive.
+Imagine an agent beginning with algorithms from a library. None works well enough, so it writes a tool to examine the failures. The tool reveals a pattern worth investigating. Another worker uses it on a different case, finds a limitation and changes it. Meanwhile, they need somewhere to record what they tried, a way to avoid undoing each other’s work and some agreement about which results deserve to survive. We began by asking for a solution. We now have methods and a small organization to examine as well.
 
 <!-- AUTHOR: C1-5. This run is imagined. Did a real run (circle packing or another) grow its own tools and notes? If so, describe it here in place of the hypothetical. -->
 
@@ -97,7 +97,7 @@ There are things I have stopped considering because I know what they would take.
 
 That is part of why I am interested in agents. I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
 
-We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first finding the team, the budget or someone willing to believe in the idea.
+We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first finding the team and the budget, or winning a contest for somebody else’s permission.
 
 <!-- AUTHOR: C1-13. Is there a real limit you dropped, a project you stopped considering for lack of a team or budget, that could make this paragraph concrete? -->
 
