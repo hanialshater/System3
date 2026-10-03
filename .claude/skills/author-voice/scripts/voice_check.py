@@ -27,7 +27,8 @@ AI_VOCAB = ["delve", "tapestry", "robust", "seamless", "crucial", "moreover", "f
             "realm", "foster", "multifaceted", "nuanced", "intricate", "showcase", "embark",
             "pivotal", "testament", "underscore", "navigate the"]
 BRITISH = ["behaviour", "colour", "favour", "centre", "grey", "organis", "recognis", "optimis",
-           "labelled", "theatre", "realis", "analysed", "neighbour", "programme"]
+           "labelled", "theatre", "realis", "analysed", "neighbour", "programme",
+           "fortnight", "had got", "whilst", "amongst", "towards"]
 CONTRAST = [r"\bnot (?:merely|only|just|simply)\b",
             r"\b(?:is|are|was|were|isn't|aren't) not [^.;:]{1,60}[.;] (?:It|They|This|That) (?:is|are|was|were)\b",
             r"\bisn[’']t [^.;:]{1,60}[.;] (?:It|This|That)[’']s\b",
@@ -40,6 +41,7 @@ SENT = re.compile(r"(?<=[.!?”])\s+(?=[A-Z“\"(])")
 def prose(text):
     text = re.sub(r"```.*?```", "", text, flags=re.S)
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
+    text = re.sub(r"\[AUTHOR:[^\]]*\]", "", text)  # placeholders for the author are not prose
     # Blank lines are kept so paragraph boundaries survive; headings, tables and quotes are dropped.
     keep = [("" if l.lstrip().startswith(("#", "|", ">")) else l) for l in text.splitlines()]
     return re.sub(r"\n{3,}", "\n\n", "\n".join(keep)).strip()
