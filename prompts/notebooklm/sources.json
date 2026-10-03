@@ -7,7 +7,7 @@
       "source": "chapters/00-preface.md",
       "source_sha256": "6dd70f115f03d6708e2f02a9e7dfa170df3e49b347bde028b1b1f1a742302f60",
       "brief": "prompts/notebooklm/preface.md",
-      "brief_sha256": "2f6f992f5281b35b92703c9b9c1f6398884a21e490d397583cfad882e1ce48a9",
+      "brief_sha256": "fd7c8010be8cfa05600d5012bb4bf7165ad43393e78ca6797ff49511ebcffc19",
       "sections": [
         "Opening passage"
       ]
@@ -16,7 +16,7 @@
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
       "source_sha256": "c04b85edf56a4025f773d6b1c7d8166e43c0002e9a1217e1a97c81ba9b153ebf",
       "brief": "prompts/notebooklm/chapter-01.md",
-      "brief_sha256": "16c5081d1107edb67e4ef8acff4e47fdaed6accd97c3474d69a09e4a5953b951",
+      "brief_sha256": "4622b3513f6885ef000ac374c972d313b36adda1bcdf13f7c49479344df76e8f",
       "sections": [
         "Opening passage",
         "The Rule-Based Exoskeleton",
@@ -32,7 +32,7 @@
       "source": "chapters/02-the-algorithm-vortex.md",
       "source_sha256": "8dc63c49922b3e42b6a3dd54b52f3e7908c1e88a6a62b8a8aa6e5c3b1152f245",
       "brief": "prompts/notebooklm/chapter-02.md",
-      "brief_sha256": "07a034ff21c0d73a0c97b9b2169b03a0c68eaf8132bebc05f94a5b74cad566a0",
+      "brief_sha256": "64d7c32876f1224ab3a092a8ae762e7367698300ec67bd83ea223ec14f93a9d1",
       "sections": [
         "Opening passage",
         "Twenty-Six Circles",
@@ -54,7 +54,7 @@
       "source": "chapters/03-deep-mode.md",
       "source_sha256": "3b82e0b1d3e362f32278a75739a2b00f7c7c430dd01e881475fe1431ceb3fd3d",
       "brief": "prompts/notebooklm/chapter-03.md",
-      "brief_sha256": "938c260d51d708d7a740d51b63be17f93643fa53675b56934efecd4f7d7b194d",
+      "brief_sha256": "f8fe442fbbc8476dd76b8c57b38dc6781a314f76664bc20ee721433495032347",
       "sections": [
         "Opening passage",
         "Stubbornly Human",
@@ -74,7 +74,7 @@
       "source": "chapters/04-system-3.md",
       "source_sha256": "eec17186bfb69e53e9b544cec1ab9236449ee26e956055d61f6e5bc0b164e29c",
       "brief": "prompts/notebooklm/chapter-04.md",
-      "brief_sha256": "a235881a71f63cb4e3d5f60d570d039c035d31115a2bf55713aa2b198013facd",
+      "brief_sha256": "abc1aacab5dbf074a724ebcb5a31ac3d1c0a9cfd8e455bdd58837a8be55e0de1",
       "sections": [
         "Opening passage",
         "The Shortest Trust Chain",
@@ -94,7 +94,7 @@
       "source": "chapters/05-the-society-of-agents.md",
       "source_sha256": "f86cabb6248af467f97b78fd929ac98e65f6bfa78c004d4ce48b8e010ff72f70",
       "brief": "prompts/notebooklm/chapter-05.md",
-      "brief_sha256": "2f4760b1a5af2d0418db2c043f4f2cdb217ec9ba6358ea6aec93f084374c7a4a",
+      "brief_sha256": "65a13034781487e3b279c3f727d294d7b45fb55ce06da97ba853d95c59bf7d67",
       "sections": [
         "Opening passage",
         "Civilization Had No Senku",
@@ -112,7 +112,7 @@
       "source": "chapters/06-pattern-language.md",
       "source_sha256": "6cad7cdce4132f0975a133d8fc5a0addfd6b6a631f69a166a9ef27ce63a7dfdd",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "0cee56f458ea525dbb13c05aa42848f4d28903f616f675dff9541aeb1140addc",
+      "brief_sha256": "93854f4f75e9462fd30d276fcf898ca54a971758457d7f97c11986d8d74f34f9",
       "sections": [
         "Opening passage",
         "The Pattern Goes to Work",
@@ -138,7 +138,7 @@
       "source": "chapters/07-recursive-self-improvement.md",
       "source_sha256": "4082d66957cbe24fccb1e80dc7924e7a9ebce0142486d184d6f12d31129fd7bc",
       "brief": "prompts/notebooklm/chapter-07.md",
-      "brief_sha256": "811ec42051642369e31316ffb0c9b76f0c4484a3e62b65c7540f19e1579b0db0",
+      "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
       "sections": [
         "Opening passage",
         "Nobody Has to Be Conscious",
@@ -159,7 +159,7 @@
       "source": "chapters/08-automatic-alignment-research.md",
       "source_sha256": "cc9321afba5f07dd41843f9634fa8c7b954f676a87233904767c368c3a20ae18",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "69a97cc54d9e140ec3120ab1c432f1b57f6c4703c01cb41caf948668249e8250",
+      "brief_sha256": "b033f58937cd6a41d03ed4de880ac450f417c711c339cf7329c982c9b036d7c8",
       "sections": [
         "Opening passage",
         "A New Kind of Employee",
@@ -178,7 +178,7 @@
       "source": "chapters/09-layer-4-desire.md",
       "source_sha256": "dc73620878e5658bdcbfaed7a398f99fe644831dfaeb6361760cf2ab0f0f29c7",
       "brief": "prompts/notebooklm/chapter-09.md",
-      "brief_sha256": "79021d0e5abc89e080b36233a543a7c68dcc5b67edccac5b22f18a7a4065ade1",
+      "brief_sha256": "deafc6cb296acde7880c045d0e84d7693701ab8d9e54e5fdb38e18ab02c587a7",
       "sections": [
         "Opening passage",
         "What Remains in the Seat",
@@ -194,7 +194,7 @@
       "source": "chapters/10-fluent-autonomy.md",
       "source_sha256": "e2afade39d5fda7331a6e412f29d48bb71f230707182bc2a70d4c9fd9cd45cbd",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "0e8c8fe775d6da2418607be11b4afaf3263d0d9caf14b37d9fd06bf9e10c8bb4",
+      "brief_sha256": "8e83c067e2206774760c4155bbd41ce73d76abe7a8c831f15c55689365d29084",
       "sections": [
         "Opening passage",
         "What the Corrections Had to Teach",
@@ -210,7 +210,7 @@
       "source": "chapters/11-the-store-that-builds-itself.md",
       "source_sha256": "dd4f14f39844347cc79d2c48b39a1c3941e02d0047242166d1008780f57ca34e",
       "brief": "prompts/notebooklm/chapter-11.md",
-      "brief_sha256": "065d30bcfe63ef64f663898feb9db05407bae692946099c4165c29587174be0f",
+      "brief_sha256": "b0e06296c7f927edc1f108b7474680f646c9a91c1ecc05cf84509a72f31fa423",
       "sections": [
         "Opening passage",
         "Stop Recommending for a Moment",
@@ -233,7 +233,7 @@
       "source": "chapters/12-after-capacity.md",
       "source_sha256": "f4d373a26665bda676d91108f78b8b8b38170f5e0ce3e5aede6af00583c0a591",
       "brief": "prompts/notebooklm/chapter-12.md",
-      "brief_sha256": "62788244e9e908400d5f2ebec2b2e30c0ef1c761bc5bfa3505eb48b3b82916c4",
+      "brief_sha256": "e7df4bb8466d5e44d1d3cd371701dbec65000e3b391ab013b030b374cc7410bc",
       "sections": [
         "Opening passage",
         "The Curve",
@@ -253,7 +253,7 @@
       "source": "chapters/13-the-prophecy.md",
       "source_sha256": "6bb84f4331dc141895eb890517ac62d983686d13de39996e8b335edfcef3291d",
       "brief": "prompts/notebooklm/chapter-13.md",
-      "brief_sha256": "b1e842925439ab38aea84272e456bf5df74cfa78034d8bcc8893cf744292d235",
+      "brief_sha256": "f4e32d488fe0a52f96bfef7fd5c7f734ffe519adc3a1a1885802e7ae346be1b3",
       "sections": [
         "Opening passage"
       ]
@@ -262,7 +262,7 @@
       "source": "chapters/14-scaffolds.md",
       "source_sha256": "f53a5a79cb54fbef9ec765884b6ba84f223fd4bc9e32a9fee6e8f5f60af18f52",
       "brief": "prompts/notebooklm/scaffolds.md",
-      "brief_sha256": "289cd6a5d269bee8055e362701a8c16dacb00acb8a93f9f3544537abcec7d995",
+      "brief_sha256": "0ac4c623c6db8d5ae6b2d577c65b33251dbd93b9d721767dde4d74340b0b735f",
       "sections": [
         "The complete two-sentence coda"
       ]

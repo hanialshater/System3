@@ -98,6 +98,41 @@ CORE = {
 }
 
 
+# Visual language, from resources/art-direction (the selected openers' watercolor-and-ink treatment).
+STYLE_SHORT = ('Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, '
+               'warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.')
+
+STYLE = """Match the book's illustrations, not a generic AI look.
+
+- **Medium:** restrained watercolor with fine, slightly imperfect ink drawing on warm, lightly textured cream paper. Visible watercolor blooms, paper grain and soft edges. If the tool offers a watercolor style, choose it.
+- **Palette:** muted Prussian or denim blue, ochre, olive, warm gray and parchment. Brass for machines. Warm ochre light.
+- **World:** a retro-futurist field notebook from a civilization learning to live with intelligent machines. Books, notebooks, instruments, stone, coffee, old desks, mountains and cities, with agents placed inside that inherited human world.
+- **Robots:** one design family (brass, cream and muted gray-blue, the same age and patina). Neutral faces; they do not smile by default. Swarms read as small, coordinated and quiet.
+- **Tone:** warm, humane, strange, intellectually serious. One big idea per image, with air around it.
+- **Avoid:** cute robots learning philosophy, neon or Matrix green, cyberpunk, glowing brains, orange-and-teal grading, black-and-gold epic concept art, slogans painted into images.
+- **Diagrams** are a second visual language: clean thin ink lines, sparse labels, cream background. Mark them as schematic unless they show the chapter's real data.
+- **Evidence:** when the chapter relies on a real photograph or document, show it as an unaltered object on the page; never redraw or beautify it.
+- **Arc across the book:** machine, system, institution, culture, human. Early chapters may hold more machinery; from the desire layer on, people move back to the centre, and by the last chapters the robots almost disappear."""
+
+LOOK = {
+    0: 'A desk on cream paper: a coffee cup cooling beside a growing paper structure that becomes a small cathedral. Interior, quiet, one idea.',
+    1: 'Expansive landscape. A person seated in the foreground releasing a process: a swarm spiralling away, not being operated.',
+    2: 'Workshop. A single open algorithm book and a vortex of search climbing a level. Circle packings only as schematic ink diagrams; never draw an invented result as if it were real.',
+    3: 'Quiet interior. One person in the middle with branching possibilities around them; the five layers as a simple hand-inked stack. Keep it restrained.',
+    4: 'Documentary. Use the chapter\'s actual photograph as an unaltered evidence object taped to the cream page; the camel, instruments and the trust chain in ink around it.',
+    5: 'Monumental architecture. An observatory or academy where small agents with different roles observe, record and check; the clerk\'s clay tablet and a progress file as small, exact details.',
+    6: 'Transmission is the hero. Alexander\'s pattern pages (the balcony, the window seat, different chairs) passing from hand to hand and becoming a working file; move away from the desk.',
+    7: 'Workshop. A machine opening itself to replace a gear; a Go board in ink and wash for Move 37 and Move 78. Neutral expressions, no checklists or smiling screens.',
+    8: 'A small human correction steering a much larger research machine. The bulletin board as a back channel, notes being read, a head opened as a schematic, not gore or glowing brains.',
+    9: 'The human returns to the centre. A mirror reflecting branching lives rather than words; a Mediterranean coast in soft washes for the imagined Mallorca summer; people talking together.',
+    10: 'Mechanical herons in effortless formation: infrastructure that has become nearly invisible. A change of camera from the landscapes before it.',
+    11: 'The store itself is visibly compositional: shelves and framed modules quietly rearranging around one customer.',
+    12: 'Doors opening onto people, movement and room. The robots have almost gone. Dantzig\'s blackboard and a commons of shared water as human-scale details.',
+    13: 'A controlled surreal finale, a little darker and more theatrical, in the same paper and ink. Never show a twist before the text reveals it.',
+    14: 'Plain typeset text on cream paper. No illustration.',
+}
+
+
 def render(source):
     raw = source.read_text()
     clean, _, _, _ = prepare(raw)
@@ -130,6 +165,7 @@ def render(source):
         'Do not import other chapters or add a generic recap. No fixed runtime is imposed. '
         + RULES[number]
         + (' ' + BOOK if number not in (13, 14) else '')
+        + ' ' + STYLE_SHORT
     )
     body = f'# {title}: video brief\n\n'
     body += f'Source: [{source.name}](../../chapters/{source.name}), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.\n\n'
@@ -144,6 +180,7 @@ def render(source):
         body += '## Lines to keep word for word\n\n' + '\n'.join(f'- "{k}"' for k in core['keep']) + '\n\n'
     if core['labels']:
         body += f'## Imagined, reported or proposed\n\n{core["labels"]}\n\n'
+    body += f'## Visual style\n\n{STYLE}\n\n**This chapter:** {LOOK[number]}\n\n'
     body += '## Source order\n\n'
     body += '\n'.join(f'{i}. {heading}' for i, heading in enumerate(scenes, 1)) + '\n\n'
     body += '## Review\n\nCheck every numerical claim against the source, preserve the ending and reveal timing, '
@@ -151,14 +188,14 @@ def render(source):
     return name + '.md', body, scenes
 
 
-OVERVIEW = """# System 3: whole-book video brief
+OVERVIEW = f"""# System 3: whole-book video brief
 
 Sources: every chapter in [book order](../../book-design/curated/book-order.json), the part pages, the science reveal and the interlude, with the [reference appendix](../../chapters/appendix-references.md). This is production guidance for one overview video, not a summary to narrate.
 
 ## Video prompt
 
 ```text
-Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards Fluent Autonomy". Use the selected manuscript files as the only factual source and this brief as guidance. Carry two threads. First: as we build autonomous AI, we keep rediscovering science as its architecture, from emergence to institutions to science turning inward on itself. Second: as machines take over the work, human value moves first to the frontier and then to deciding what the work is for. Build towards the reveal "We call it science." at the end of Part II and do not state it earlier. Use a few of the book's own scenes rather than abstractions, attribute the author's experiences to him, keep his humour, and say plainly which examples are imagined. Do not explain the closing fable or its twists; at most, show that the book ends in fiction. Do not invent claims, numbers or quotations.
+Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards Fluent Autonomy". Use the selected manuscript files as the only factual source and this brief as guidance. Carry two threads. First: as we build autonomous AI, we keep rediscovering science as its architecture, from emergence to institutions to science turning inward on itself. Second: as machines take over the work, human value moves first to the frontier and then to deciding what the work is for. Build towards the reveal "We call it science." at the end of Part II and do not state it earlier. Use a few of the book's own scenes rather than abstractions, attribute the author's experiences to him, keep his humour, and say plainly which examples are imagined. Do not explain the closing fable or its twists; at most, show that the book ends in fiction. Do not invent claims, numbers or quotations. {STYLE_SHORT}
 ```
 
 ## The arc
@@ -172,6 +209,12 @@ Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards 
 7. **Part IV, Human Purposes** (Chapters 9 and 10). What remains in the seat is deciding what the trying is for; desire is learned, often together; fluent autonomy and the second coffee test.
 8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The store that builds itself; capacity over power, and finding out how much more a person can be.
 9. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
+
+## Visual style
+
+{STYLE}
+
+Follow the arc from machine to human across the parts: more machinery in Parts I to III, people at the centre from Part IV, the robots almost gone by Part V, and a darker, theatrical but same-world fable at the end.
 
 ## Lines to keep word for word
 

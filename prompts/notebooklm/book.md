@@ -5,7 +5,7 @@ Sources: every chapter in [book order](../../book-design/curated/book-order.json
 ## Video prompt
 
 ```text
-Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards Fluent Autonomy". Use the selected manuscript files as the only factual source and this brief as guidance. Carry two threads. First: as we build autonomous AI, we keep rediscovering science as its architecture, from emergence to institutions to science turning inward on itself. Second: as machines take over the work, human value moves first to the frontier and then to deciding what the work is for. Build towards the reveal "We call it science." at the end of Part II and do not state it earlier. Use a few of the book's own scenes rather than abstractions, attribute the author's experiences to him, keep his humour, and say plainly which examples are imagined. Do not explain the closing fable or its twists; at most, show that the book ends in fiction. Do not invent claims, numbers or quotations.
+Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards Fluent Autonomy". Use the selected manuscript files as the only factual source and this brief as guidance. Carry two threads. First: as we build autonomous AI, we keep rediscovering science as its architecture, from emergence to institutions to science turning inward on itself. Second: as machines take over the work, human value moves first to the frontier and then to deciding what the work is for. Build towards the reveal "We call it science." at the end of Part II and do not state it earlier. Use a few of the book's own scenes rather than abstractions, attribute the author's experiences to him, keep his humour, and say plainly which examples are imagined. Do not explain the closing fable or its twists; at most, show that the book ends in fiction. Do not invent claims, numbers or quotations. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
 ```
 
 ## The arc
@@ -19,6 +19,22 @@ Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards 
 7. **Part IV, Human Purposes** (Chapters 9 and 10). What remains in the seat is deciding what the trying is for; desire is learned, often together; fluent autonomy and the second coffee test.
 8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The store that builds itself; capacity over power, and finding out how much more a person can be.
 9. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
+
+## Visual style
+
+Match the book's illustrations, not a generic AI look.
+
+- **Medium:** restrained watercolor with fine, slightly imperfect ink drawing on warm, lightly textured cream paper. Visible watercolor blooms, paper grain and soft edges. If the tool offers a watercolor style, choose it.
+- **Palette:** muted Prussian or denim blue, ochre, olive, warm gray and parchment. Brass for machines. Warm ochre light.
+- **World:** a retro-futurist field notebook from a civilization learning to live with intelligent machines. Books, notebooks, instruments, stone, coffee, old desks, mountains and cities, with agents placed inside that inherited human world.
+- **Robots:** one design family (brass, cream and muted gray-blue, the same age and patina). Neutral faces; they do not smile by default. Swarms read as small, coordinated and quiet.
+- **Tone:** warm, humane, strange, intellectually serious. One big idea per image, with air around it.
+- **Avoid:** cute robots learning philosophy, neon or Matrix green, cyberpunk, glowing brains, orange-and-teal grading, black-and-gold epic concept art, slogans painted into images.
+- **Diagrams** are a second visual language: clean thin ink lines, sparse labels, cream background. Mark them as schematic unless they show the chapter's real data.
+- **Evidence:** when the chapter relies on a real photograph or document, show it as an unaltered object on the page; never redraw or beautify it.
+- **Arc across the book:** machine, system, institution, culture, human. Early chapters may hold more machinery; from the desire layer on, people move back to the centre, and by the last chapters the robots almost disappear.
+
+Follow the arc from machine to human across the parts: more machinery in Parts I to III, people at the centre from Part IV, the robots almost gone by Part V, and a darker, theatrical but same-world fable at the end.
 
 ## Lines to keep word for word
 

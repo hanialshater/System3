@@ -21,6 +21,9 @@ Each chapter brief now carries the book, not only its headings: the idea the vid
 must land, the moments to show, lines to keep word for word, and which examples are
 imagined, reported or proposed. `--check` fails if a kept line disappears from the
 manuscript, so edit `CORE` in `build_notebooklm.py` when you change one of those lines.
+Every brief also carries the book's visual style (watercolor and ink on cream paper,
+from `resources/art-direction/`) and a visual motif for that chapter (`STYLE` and
+`LOOK` in the generator).
 `book.md` is a whole-book overview brief that follows both threads and holds the
 science reveal until after Part II.
 
