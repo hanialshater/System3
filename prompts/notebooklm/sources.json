@@ -5,7 +5,7 @@
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "ff8e0fffb0b02ace31ce61481dad521a2757c142e2a22503d7494bb23968ab74",
+      "source_sha256": "6dd70f115f03d6708e2f02a9e7dfa170df3e49b347bde028b1b1f1a742302f60",
       "brief": "prompts/notebooklm/preface.md",
       "brief_sha256": "5bf5195ffd6e02d61cb07fa55b2e663df1d5fc26213dffe814a518ee4e481f5e",
       "sections": [
@@ -14,7 +14,7 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "753b77ac19fff55be2c37c217a4c85b1e02bcf5cad86c896c323536ecb0cf922",
+      "source_sha256": "253846ab81b77cc24e39f94c8631dec654652a8ef700ac73aec04717e350e37b",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "53c2afca59d5240993ced65d52323f659aaaaf8bddb94f512af8b1c5e2361498",
       "sections": [
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "f2fe54fa90ca56a612781fb1aa597a9f88fcf8dde8ec878b9583de78ba3f4203",
+      "source_sha256": "dc02ba05d5480de0e249e4671754aaec9f621628c8bcfa46352aa169480fc22d",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -157,7 +157,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "a9bae6849ecac52e0c6814bb261f5006b63b6014359100d84885c90f273809cf",
+      "source_sha256": "cc9321afba5f07dd41843f9634fa8c7b954f676a87233904767c368c3a20ae18",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "dae4cf838c83649442cc2a775eee0f657c36aa63ebd85bea42e18fc08e5ea7fe",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "5a07ac2ee03c63d0ecd1a0a805dde6bd8d264bd1243597294707e05c4db629fa",
+      "source_sha256": "dc73620878e5658bdcbfaed7a398f99fe644831dfaeb6361760cf2ab0f0f29c7",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [

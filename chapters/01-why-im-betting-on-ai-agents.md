@@ -83,7 +83,7 @@ The mistakes that worry me most are the confident ones. Imagine an agent decidin
 
 <!-- AUTHOR: C1-6 / X-6. The jacket example is invented. Can a real ranking or recommendation mistake from your reviews and ratings work replace it? If so, update the Ch 3 callback ("exactly what jacket they want") at the same time. -->
 
-I foresee AI-designed solutions that look at us and say, “You guys are kind of messy. And your cat obsession is… illogical.” Maybe they’ll finally solve the mystery of the missing socks. Or create exponentially more of them.
+Maybe the agents will finally solve the mystery of the missing socks. Or create exponentially more of them.
 
 Capable is not the same as trustworthy. Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
 
