@@ -77,6 +77,8 @@ Read the whole chapter. Flag a passage only if you can quote it exactly.
 
 ## Step 3: Protect what must stay
 
+- Never edit or report fixes for `chapters/13-the-prophecy.md`. The fable is protected in full;
+  only the author changes it.
 - Read `resources/editorial/easter-egg-register.md` first. Confirmed seeds must survive
   (run `bash resources/editorial/check-eggs.sh` after any edit).
 - Keep the author's best jokes and lines even if they match a pattern; the readers

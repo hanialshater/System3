@@ -31,3 +31,4 @@ Status: **confirmed** = author has confirmed it is deliberate. **proposed** = fo
 2. Do not explain a payoff. The fable in Chapter 13 stays unexplained; the reader either catches the octopus or does not.
 3. New material (part pages, interlude, divider pages) may plant seeds but must be added to this table when it does.
 4. If an anchor has to change, update the table in the same commit.
+5. Chapter 13 (`chapters/13-the-prophecy.md`) is protected in full. No edit pass, line edit or AI-tells fix touches it; only the author changes it.

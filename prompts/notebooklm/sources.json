@@ -251,7 +251,7 @@
     },
     {
       "source": "chapters/13-the-prophecy.md",
-      "source_sha256": "e804b4ea51a6a7be8f76f91be6fdd70ad1275198a79d22ee629aec0ff5145f6f",
+      "source_sha256": "6bb84f4331dc141895eb890517ac62d983686d13de39996e8b335edfcef3291d",
       "brief": "prompts/notebooklm/chapter-13.md",
       "brief_sha256": "82c1eb5b1f59a1c30ab5e3db1a916190c6f07d01af2d4ab887b9e6263f908e91",
       "sections": [
