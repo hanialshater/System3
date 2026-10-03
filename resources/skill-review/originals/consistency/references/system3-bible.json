@@ -1,0 +1,35 @@
+{
+  "_note": "Seed bible for System 3, built 3 Oct 2026 from past edits and the 2 Oct cross-chapter list (X-1..X-6). Homes marked '?' are open decisions for Hani.",
+  "terms": [
+    {"term": "System 3", "home": "04", "variants": ["System-3", "system 3"]},
+    {"term": "harness", "home": "03", "variants": [], "note": "X-5: Ch 2 bolds 'Immutable Harness', Ch 3 bolds 'harness' with a wider scope. Decide one home and one scope."},
+    {"term": "Deep Mode", "home": "03", "variants": ["deep mode"]},
+    {"term": "Algorithm Vortex", "home": "02", "variants": []},
+    {"term": "epistemologically stratified", "home": "04", "variants": []},
+    {"term": "Surface Value", "home": "11", "variants": []},
+    {"term": "Unmet Demand", "home": "11", "variants": []},
+    {"term": "problem fingerprint", "home": "11", "variants": []}
+  ],
+  "people": [
+    {"name": "Duhem", "home": "05", "intro": ["Pierre Duhem"]},
+    {"name": "Lakatos", "home": "05", "intro": ["Imre Lakatos"]},
+    {"name": "Kitcher", "home": "05", "intro": ["Philip Kitcher"]},
+    {"name": "Popper", "home": "05", "intro": ["Karl Popper"]},
+    {"name": "Alexander", "home": "06", "intro": ["Christopher Alexander"]},
+    {"name": "Ostrom", "home": "12", "intro": ["Elinor Ostrom"]}
+  ],
+  "counts": [
+    {"pattern": "\\b(\\w+) jobs\\b(?= (?:of|that|science|the institution))", "value": "seven"},
+    {"pattern": "\\b(\\w+) verbs\\b", "value": "eight"}
+  ],
+  "repeats": [
+    {"id": "X-1", "anchor": "not the ones that crash", "home": "03"},
+    {"id": "X-2", "anchor": "AlphaGo Zero", "home": "04"},
+    {"id": "X-6", "anchor": "return a jacket", "home": "?", "note": "Ch 1 invented example; Ch 3 callback. Replace or cut both together."}
+  ],
+  "names": [
+    {"canonical": "Alpöge", "variants": ["Alpoge"]},
+    {"canonical": "Córdoba", "variants": ["Cordoba"]},
+    {"canonical": "Martínez-Zoroa", "variants": ["Martinez-Zoroa"]}
+  ]
+}
