@@ -241,51 +241,59 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 12. <a id="ref-07-tdgammon"></a>Gerald Tesauro, “Temporal Difference Learning and TD-Gammon,” *Communications of the ACM* 38(3), 1995, pp. 58–68.
 
-13. <a id="ref-07-metalearning"></a>Yan Duan et al., “RL²: Fast Reinforcement Learning via Slow Reinforcement Learning,” 2016, [arXiv:1611.02779](https://arxiv.org/abs/1611.02779); Jane X. Wang et al., “Learning to Reinforcement Learn,” 2016, [arXiv:1611.05763](https://arxiv.org/abs/1611.05763); Chelsea Finn, Pieter Abbeel, and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,” 2017, [arXiv:1703.03400](https://arxiv.org/abs/1703.03400).
+13. <a id="ref-07-move37"></a>Cade Metz, “The Sadness and Beauty of Watching Google’s AI Play Go,” *Wired*, March 2016, and “In Two Moves, AlphaGo and Lee Sedol Redefined the Future,” *Wired*, March 2016. The one-in-ten-thousand estimate for Move 37 was AlphaGo’s own, reported by DeepMind; Fan Hui’s comments and Lee’s departure from the room are from Metz’s match reporting.
 
-14. <a id="ref-07-forgetting"></a>Michael McCloskey and Neal J. Cohen, “Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem,” *Psychology of Learning and Motivation*, 1989, pp. 109–165, [doi:10.1016/S0079-7421(08)60536-8](https://doi.org/10.1016/S0079-7421(08)60536-8); James Kirkpatrick et al., “Overcoming Catastrophic Forgetting in Neural Networks,” 2017, [arXiv:1612.00796](https://arxiv.org/abs/1612.00796).
+14. <a id="ref-07-alphagozero"></a>David Silver et al., “Mastering the game of Go without human knowledge,” *Nature* 550 (2017), 354–359. <https://doi.org/10.1038/nature24270>; DeepMind, “AlphaGo Zero: Starting from scratch,” 18 October 2017. <https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch/>.
 
-15. <a id="ref-07-curiosity"></a>Jürgen Schmidhuber, “A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers,” *Proceedings of the International Conference on Simulation of Adaptive Behavior*, 1991, pp. 222–227; Pierre-Yves Oudeyer, Frédéric Kaplan, and Verena V. Hafner, “Intrinsic Motivation Systems for Autonomous Mental Development,” *IEEE Transactions on Evolutionary Computation* 11(2), 2007, pp. 265–286.
+15. <a id="ref-07-metalearning"></a>Yan Duan et al., “RL²: Fast Reinforcement Learning via Slow Reinforcement Learning,” 2016, [arXiv:1611.02779](https://arxiv.org/abs/1611.02779); Jane X. Wang et al., “Learning to Reinforcement Learn,” 2016, [arXiv:1611.05763](https://arxiv.org/abs/1611.05763); Chelsea Finn, Pieter Abbeel, and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,” 2017, [arXiv:1703.03400](https://arxiv.org/abs/1703.03400).
 
-16. <a id="ref-07-noisytv"></a>Yuri Burda et al., “Large-Scale Study of Curiosity-Driven Learning,” 2018, [arXiv:1808.04355](https://arxiv.org/abs/1808.04355).
+16. <a id="ref-07-forgetting"></a>Michael McCloskey and Neal J. Cohen, “Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem,” *Psychology of Learning and Motivation*, 1989, pp. 109–165, [doi:10.1016/S0079-7421(08)60536-8](https://doi.org/10.1016/S0079-7421(08)60536-8); James Kirkpatrick et al., “Overcoming Catastrophic Forgetting in Neural Networks,” 2017, [arXiv:1612.00796](https://arxiv.org/abs/1612.00796).
 
-17. <a id="ref-07-redqueen"></a>Leigh Van Valen, “A New Evolutionary Law,” *Evolutionary Theory* 1, 1973, pp. 1–30.
+17. <a id="ref-07-curiosity"></a>Jürgen Schmidhuber, “A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers,” *Proceedings of the International Conference on Simulation of Adaptive Behavior*, 1991, pp. 222–227; Pierre-Yves Oudeyer, Frédéric Kaplan, and Verena V. Hafner, “Intrinsic Motivation Systems for Autonomous Mental Development,” *IEEE Transactions on Evolutionary Computation* 11(2), 2007, pp. 265–286.
 
-18. <a id="ref-07-irl"></a>Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” *Proceedings of ICML*, 2000.
+18. <a id="ref-07-noisytv"></a>Yuri Burda et al., “Large-Scale Study of Curiosity-Driven Learning,” 2018, [arXiv:1808.04355](https://arxiv.org/abs/1808.04355).
 
-19. <a id="ref-07-rlhf"></a>Paul Christiano et al., “Deep Reinforcement Learning from Human Preferences,” 2017, [arXiv:1706.03741](https://arxiv.org/abs/1706.03741); Long Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” 2022, [arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
+19. <a id="ref-07-redqueen"></a>Leigh Van Valen, “A New Evolutionary Law,” *Evolutionary Theory* 1, 1973, pp. 1–30.
 
-20. <a id="ref-07-worldmodels"></a>David Ha and Jürgen Schmidhuber, “World Models,” 2018, [arXiv:1803.10122](https://arxiv.org/abs/1803.10122); Danijar Hafner et al., “Dream to Control: Learning Behaviors by Latent Imagination,” 2019, [arXiv:1912.01603](https://arxiv.org/abs/1912.01603).
+20. <a id="ref-07-irl"></a>Andrew Y. Ng and Stuart Russell, “Algorithms for Inverse Reinforcement Learning,” *Proceedings of ICML*, 2000.
 
-21. <a id="ref-07-dream-rsi"></a>Tong Zheng et al., “Dream-RSI: Recursive Self-Improvement through Evolving Worlds,” arXiv:2609.14858, 14 September 2026. The replay simulator uses only recorded outcomes; plans beyond the recorded trace “cannot earn replay reward”; the selected policy is guaranteed no worse than the current one only in average replay score on the fixed history.
+21. <a id="ref-07-rlhf"></a>Paul Christiano et al., “Deep Reinforcement Learning from Human Preferences,” 2017, [arXiv:1706.03741](https://arxiv.org/abs/1706.03741); Long Ouyang et al., “Training Language Models to Follow Instructions with Human Feedback,” 2022, [arXiv:2203.02155](https://arxiv.org/abs/2203.02155).
 
-22. <a id="ref-07-novelty"></a>Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution through the Search for Novelty Alone,” *Evolutionary Computation* 19(2), 2011, pp. 189–223. The stepping-stone argument is developed in Stanley and Lehman, *Why Greatness Cannot Be Planned*, 2015.
+22. <a id="ref-07-worldmodels"></a>David Ha and Jürgen Schmidhuber, “World Models,” 2018, [arXiv:1803.10122](https://arxiv.org/abs/1803.10122); Danijar Hafner et al., “Dream to Control: Learning Behaviors by Latent Imagination,” 2019, [arXiv:1912.01603](https://arxiv.org/abs/1912.01603).
 
-23. <a id="ref-07-godel"></a>Jürgen Schmidhuber, “Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements,” 2003, [arXiv:cs/0309048](https://arxiv.org/abs/cs/0309048).
+23. <a id="ref-07-dream-rsi"></a>Tong Zheng et al., “Dream-RSI: Recursive Self-Improvement through Evolving Worlds,” arXiv:2609.14858, 14 September 2026. The replay simulator uses only recorded outcomes; plans beyond the recorded trace “cannot earn replay reward”; the selected policy is guaranteed no worse than the current one only in average replay score on the fixed history.
 
-24. <a id="ref-07-dgm"></a>Jenny Zhang et al., “Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents,” 2025, [arXiv:2505.22954](https://arxiv.org/abs/2505.22954).
+24. <a id="ref-07-novelty"></a>Joel Lehman and Kenneth O. Stanley, “Abandoning Objectives: Evolution through the Search for Novelty Alone,” *Evolutionary Computation* 19(2), 2011, pp. 189–223. The stepping-stone argument is developed in Stanley and Lehman, *Why Greatness Cannot Be Planned*, 2015.
 
-25. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
+25. <a id="ref-07-godel"></a>Jürgen Schmidhuber, “Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements,” 2003, [arXiv:cs/0309048](https://arxiv.org/abs/cs/0309048).
 
-26. <a id="ref-07-nas"></a>Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” 2016, [arXiv:1611.01578](https://arxiv.org/abs/1611.01578). The search used 800 GPUs for several weeks.
+26. <a id="ref-07-dgm"></a>Jenny Zhang et al., “Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents,” 2025, [arXiv:2505.22954](https://arxiv.org/abs/2505.22954).
 
-27. <a id="ref-07-nas-random"></a>Liam Li and Ameet Talwalkar, “Random Search and Reproducibility for Neural Architecture Search,” *UAI*, 2019, [arXiv:1902.07638](https://arxiv.org/abs/1902.07638); Kaicheng Yu et al., “Evaluating the Search Phase of Neural Architecture Search,” *ICLR*, 2020, [arXiv:1902.08142](https://arxiv.org/abs/1902.08142).
+27. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
 
-28. <a id="ref-07-regnet"></a>Ilija Radosavovic et al., “Designing Network Design Spaces,” *CVPR*, 2020, [arXiv:2003.13678](https://arxiv.org/abs/2003.13678).
+28. <a id="ref-07-nas"></a>Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” 2016, [arXiv:1611.01578](https://arxiv.org/abs/1611.01578). The search used 800 GPUs for several weeks.
 
-29. <a id="ref-07-repvgg"></a>Xiaohan Ding et al., “RepVGG: Making VGG-style ConvNets Great Again,” *CVPR*, 2021, [arXiv:2101.03697](https://arxiv.org/abs/2101.03697). RepVGG reported over 80 percent top-1 ImageNet accuracy for a plain model and a favorable accuracy–speed trade-off against EfficientNet and RegNet on GPU.
+29. <a id="ref-07-nas-random"></a>Liam Li and Ameet Talwalkar, “Random Search and Reproducibility for Neural Architecture Search,” *UAI*, 2019, [arXiv:1902.07638](https://arxiv.org/abs/1902.07638); Kaicheng Yu et al., “Evaluating the Search Phase of Neural Architecture Search,” *ICLR*, 2020, [arXiv:1902.08142](https://arxiv.org/abs/1902.08142).
 
-30. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
+30. <a id="ref-07-regnet"></a>Ilija Radosavovic et al., “Designing Network Design Spaces,” *CVPR*, 2020, [arXiv:2003.13678](https://arxiv.org/abs/2003.13678).
 
-31. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
+31. <a id="ref-07-repvgg"></a>Xiaohan Ding et al., “RepVGG: Making VGG-style ConvNets Great Again,” *CVPR*, 2021, [arXiv:2101.03697](https://arxiv.org/abs/2101.03697). RepVGG reported over 80 percent top-1 ImageNet accuracy for a plain model and a favorable accuracy–speed trade-off against EfficientNet and RegNet on GPU.
 
-32. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
+32. <a id="ref-07-move78"></a>Cade Metz, “In Two Moves, AlphaGo and Lee Sedol Redefined the Future,” *Wired*, March 2016, quoting David Silver on the one-in-ten-thousand estimate for Move 78; NPR, “After 3 Losses, Master Go Player Scores A Win Against Computer,” 13 March 2016, quoting Demis Hassabis on moves 79 and 87. <https://www.npr.org/sections/thetwo-way/2016/03/13/470284113/after-three-losses-master-go-player-scores-a-win-against-computer>.
 
-33. <a id="ref-07-tampering"></a>Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
+33. <a id="ref-07-adversarial-go"></a>Tony T. Wang et al., “Adversarial Policies Beat Superhuman Go AIs,” *Proceedings of the 40th International Conference on Machine Learning*, PMLR 202 (2023). <https://proceedings.mlr.press/v202/wang23g.html>. The paper reports that KataGo misevaluates large cyclically connected groups and that human players can apply the attack without algorithmic assistance; Kellin Pelrine’s games against KataGo were reported in February 2023.
 
-34. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
+34. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
 
-35. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
+35. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
+
+36. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
+
+37. <a id="ref-07-tampering"></a>Carson Denison et al., “Sycophancy to Subterfuge: Investigating Reward Tampering in Language Models,” Anthropic, 2024, [arXiv:2406.10162](https://arxiv.org/abs/2406.10162).
+
+38. <a id="ref-07-thompson"></a>Ken Thompson, “Reflections on Trusting Trust,” *Communications of the ACM* 27(8), 1984, pp. 761–763. Thompson shared the 1983 award with Dennis Ritchie.
+
+39. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
 
 ### Additional sources
 
@@ -398,47 +406,49 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 9 — The Desire Layer
 
-1. <a id="ref-09-l4-cirl"></a>Dylan Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning” (2016). <https://arxiv.org/abs/1606.03137>.
+1. <a id="ref-09-sedol"></a>Lee Sedol, retirement interview with Yonhap News Agency, November 2019, as reported by *The Next Web*, 27 November 2019. <https://thenextweb.com/artificial-intelligence/2019/11/27/world-champion-go-player-retires-ai-cannot-be-defeated/>.
 
-2. <a id="ref-09-amazon-history"></a>Amazon opened to the public on 16 July 1995 and billed itself as “Earth’s biggest bookstore.” See “Amazon opens for business,” History.com, <https://www.history.com/this-day-in-history/amazon-opens-for-business>; and “History of Amazon,” Wikipedia, <https://en.wikipedia.org/wiki/History_of_Amazon>. Amazon S3, the first generally available AWS storage service, launched on 14 March 2006; see AWS News Blog, “Eight years and counting of cloud computing,” <https://aws.amazon.com/blogs/aws/eight-years-and-counting-of-cloud-computing/>.
+2. <a id="ref-09-l4-cirl"></a>Dylan Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning” (2016). <https://arxiv.org/abs/1606.03137>.
 
-3. <a id="ref-09-amazon-anthropic"></a>Amazon announced an additional $4 billion investment in Anthropic on 22 November 2024, bringing its total to $8 billion and naming AWS Anthropic’s primary training partner. See Bloomberg, “Amazon Invests an Additional $4 Billion in AI Firm Anthropic,” 22 November 2024, <https://www.bloomberg.com/news/articles/2024-11-22/amazon-investing-an-additional-4-billion-in-ai-firm-anthropic>. Claude models are also offered through Amazon Bedrock.
+3. <a id="ref-09-amazon-history"></a>Amazon opened to the public on 16 July 1995 and billed itself as “Earth’s biggest bookstore.” See “Amazon opens for business,” History.com, <https://www.history.com/this-day-in-history/amazon-opens-for-business>; and “History of Amazon,” Wikipedia, <https://en.wikipedia.org/wiki/History_of_Amazon>. Amazon S3, the first generally available AWS storage service, launched on 14 March 2006; see AWS News Blog, “Eight years and counting of cloud computing,” <https://aws.amazon.com/blogs/aws/eight-years-and-counting-of-cloud-computing/>.
 
-4. <a id="ref-09-sarasvathy"></a>Saras D. Sarasvathy, “Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency,” *Academy of Management Review* 26 (2001), 243–263. <https://doi.org/10.5465/amr.2001.4378020>.
+4. <a id="ref-09-amazon-anthropic"></a>Amazon announced an additional $4 billion investment in Anthropic on 22 November 2024, bringing its total to $8 billion and naming AWS Anthropic’s primary training partner. See Bloomberg, “Amazon Invests an Additional $4 Billion in AI Firm Anthropic,” 22 November 2024, <https://www.bloomberg.com/news/articles/2024-11-22/amazon-investing-an-additional-4-billion-in-ai-firm-anthropic>. Claude models are also offered through Amazon Bedrock.
 
-5. <a id="ref-09-l4-constructive"></a>John W. Payne, James R. Bettman and Eric J. Johnson on constructive decision processes, *Acta Psychologica* 80 (1992). <https://doi.org/10.1016/0001-6918%2892%2990043-D>.
+5. <a id="ref-09-sarasvathy"></a>Saras D. Sarasvathy, “Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency,” *Academy of Management Review* 26 (2001), 243–263. <https://doi.org/10.5465/amr.2001.4378020>.
 
-6. <a id="ref-09-linden"></a>Greg Linden, “Early Amazon: Shopping cart recommendations,” *Geeking with Greg* (2006), <https://glinden.blogspot.com/2006/04/early-amazon-shopping-cart.html>; the episode is retold in Ronny Kohavi’s experimentation tutorials, e.g. <https://ai.stanford.edu/~ronnyk/2009-06-28KDDTutorialT4part1.pdf>.
+6. <a id="ref-09-l4-constructive"></a>John W. Payne, James R. Bettman and Eric J. Johnson on constructive decision processes, *Acta Psychologica* 80 (1992). <https://doi.org/10.1016/0001-6918%2892%2990043-D>.
 
-7. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
+7. <a id="ref-09-linden"></a>Greg Linden, “Early Amazon: Shopping cart recommendations,” *Geeking with Greg* (2006), <https://glinden.blogspot.com/2006/04/early-amazon-shopping-cart.html>; the episode is retold in Ronny Kohavi’s experimentation tutorials, e.g. <https://ai.stanford.edu/~ronnyk/2009-06-28KDDTutorialT4part1.pdf>.
 
-8. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
+8. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
 
-9. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
+9. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
 
-10. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
+10. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
 
-11. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
+11. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
 
-12. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
+12. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
 
-13. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
+13. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
 
-14. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
+14. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
 
-15. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
+15. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
 
-16. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
+16. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-17. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
+17. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
-18. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
+18. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
 
-19. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
+19. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-20. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+20. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
 
-21. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+21. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+
+22. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
 
 ## Chapter 10 — Fluent Autonomy
 

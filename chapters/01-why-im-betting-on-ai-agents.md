@@ -51,7 +51,7 @@ The parts can be deliberately built while the work teaches us how they need to f
 
 AlphaGo made this concrete for me: learned intuition guided the search.
 
-<!-- AUTHOR: C1-8 / X-2. Ch 4 keeps the full AlphaGo account. What did you actually see or feel when AlphaGo played? One or two sentences of your own here. -->
+<!-- AUTHOR: C1-8 / X-2. The full AlphaGo story (Move 37, AlphaGo Zero, Lee Sedol's Move 78) is now told in Ch 7, "The Teacher Moves Into the Walls" and "The Complexity Wall". What did you actually see or feel when AlphaGo played? One or two sentences of your own here. -->
 
 Large language models brought a much broader version of that feeling. Nobody implemented “translate this joke without murdering it” or “write a breakup message that does not accidentally restart the relationship” as separate product features. They came out of training, and I could keep asking for things nobody had put on a feature list.
 

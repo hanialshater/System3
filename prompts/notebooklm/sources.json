@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "9e58252ee069e5aab69d084cc99362a86c5dee5ce8e7f99a6b5152f26991d650",
+  "references_sha256": "a79bfbbe225cd3d695b6d7bc81d4693e4158f1401cdbd6921c2431b428cad3a1",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -14,7 +14,7 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "31cac0e1cee2a6144f74011e2ab4b378509ea96f370618be856619d9c291e895",
+      "source_sha256": "753b77ac19fff55be2c37c217a4c85b1e02bcf5cad86c896c323536ecb0cf922",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "53c2afca59d5240993ced65d52323f659aaaaf8bddb94f512af8b1c5e2361498",
       "sections": [
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "0807fdd3cc10429c7b01c13ea70fd8d09af5527a039428102cbaac0a6138e84f",
+      "source_sha256": "f2fe54fa90ca56a612781fb1aa597a9f88fcf8dde8ec878b9583de78ba3f4203",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [
@@ -176,7 +176,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "77be6b5d3ea03abada0893542d02ee30f0cc253c3af55f75fa44a29a626c97d8",
+      "source_sha256": "5a07ac2ee03c63d0ecd1a0a805dde6bd8d264bd1243597294707e05c4db629fa",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "ee6723504eb4a4a80be0cf9695e3e9aaf7c09a54fd377060c7258ca367fa57e6",
       "sections": [
