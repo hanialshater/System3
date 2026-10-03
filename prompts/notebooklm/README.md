@@ -17,6 +17,13 @@ After deliberate manuscript changes, regenerate the pack and review its source o
 .venv-pdf/bin/python prompts/build_notebooklm.py
 ```
 
+Each chapter brief now carries the book, not only its headings: the idea the video
+must land, the moments to show, lines to keep word for word, and which examples are
+imagined, reported or proposed. `--check` fails if a kept line disappears from the
+manuscript, so edit `CORE` in `build_notebooklm.py` when you change one of those lines.
+`book.md` is a whole-book overview brief that follows both threads and holds the
+science reveal until after Part II.
+
 The generator uses Markdown parsing so headings inside code examples do not become
 scenes. It strips editorial and artwork-production comments. `sources.json`
 records source and brief hashes; a passing check establishes freshness, not
@@ -24,6 +31,7 @@ factual verification or editorial approval.
 
 | Source | Brief |
 | --- | --- |
+| Whole book | [book](book.md) |
 | Preface | [preface](preface.md) |
 | Chapter 1 | [chapter-01](chapter-01.md) |
 | Chapter 2 | [chapter-02](chapter-02.md) |

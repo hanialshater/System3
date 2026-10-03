@@ -23,7 +23,7 @@ RULES = {
     7: 'Keep the history of learning and the imagined store research agent distinct. The constitution is a design, not evidence that recursive self-improvement is solved.',
     8: 'Preserve limits of weak supervision, oversight and internal measurements. Distinguish reading from intervention; the overseer is not ground truth.',
     9: 'Keep performance distinct from learning and evidence distinct from authority over human purposes. Preserve plural principals and changes in what the person values.',
-    10: 'Use the actual editing record, repeated corrections, second coffee test and five objections. Fluency remains an ambition; do not portray the desired experience as a working product.',
+    10: 'Use the actual editing record, repeated corrections, the second coffee test and the objections in "Where This Could Be Wrong". Fluency remains an ambition; do not portray the desired experience as a working product.',
     11: 'Distinguish the prototype from imagined customers and the proposed business experiment. Do not claim measured commercial success or restore the removed internal recommendation case.',
     12: 'Present the hoped-for future conditionally. Retain ownership, pluralism and the possibility of failure; there is no new experiment in this chapter. Do not import the fable that follows.',
     13: 'This is the alternative ending, told as fiction. Preserve the source sequence, dry comedy, identity twists and emotional ending. Do not explain a twist before the manuscript reveals it.',
@@ -31,9 +31,80 @@ RULES = {
 }
 
 
+BOOK = ('This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, '
+        'and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. '
+        'Let this chapter carry its own part of that argument; do not summarise the rest of the book.')
+
+# Per source: the idea the video must land, the moments it must show, exact lines it must keep,
+# and what is imagined, reported or proposed. KEEP lines are checked against the manuscript.
+CORE = {
+    0: dict(idea='Cheap mental capacity lets one person begin what once needed an institution, and the book goes looking for the architecture that makes such work trustworthy.',
+            moments=['Leibniz wanting talented people to help him', 'stepping away for coffee and coming back to find the work has grown', 'the three slogans', 'the riddle of rediscovery'],
+            keep=['Your coffee is still too hot.', 'Complexity over engineering. Emergence over design. Capacity over power.', 'Rediscover, because we have built it before.'],
+            labels='The coffee scene is a thought experiment addressed to the reader.'),
+    1: dict(idea='The author bets on agents because control moves upward, from choosing each move to shaping the conditions; emergence can give capability without giving trust.',
+            moments=['the author\'s own reasons and doubts', 'the jacket-returns failure', 'the socks joke', 'Reviewer 2'],
+            keep=['Nobody needed to lie.'],
+            labels='The self-organising agent and the jacket example are imagined illustrations.'),
+    2: dict(idea='Search keeps moving up a level, from tuning numbers to evolving whole programs, and for a long time the human was still the inventor.',
+            moments=['the circle-packing runs', 'MAP-Elites and the human choice of dimensions', 'AlphaEvolve as the pattern the author rebuilt', 'zero framework, and Bash', 'the coffee test'],
+            keep=['and that was still me.', 'Bash is enough, with the asterisk that Bash contains roughly half a century of civilization.'],
+            labels='Scores are from the author\'s own runs and are local to them; never invent packings or curves.'),
+    3: dict(idea='Deep Mode: once an agent can decide what to try next, the human seat moves up, and the work spans a five-layer stack from model to desire.',
+            moments=['the early computing history', 'the vibe coder\'s seat', 'the Merge Sort demos judged by simulated learners', 'the five layers, with the desire layer on top', 'the cathedral on a shopping cart'],
+            keep=['What do we actually want?', 'Nothing crashes.'],
+            labels='The teaching demos were judged by simulated learners, not students.'),
+    4: dict(idea='System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on external machinery of trust, instruments and records.',
+            moments=['the camel', 'Call Alberto', 'the school the author\'s mother chose and the history he believed', 'the fire and the brother', 'the Gut, the Head and the Hand', 'the MARC analyzer', 'creative distrust', 'back to the camel'],
+            keep=['System 3 checks.', 'a formal proof never needs to touch a cow'],
+            labels='The small experiment had a negative result on a limited sample; keep that visible.'),
+    5: dict(idea='Societies of agents rediscover institutions one repair at a time: records, standards, specialists and a second witness.',
+            moments=['sixteen Claudes building a C compiler and needing progress files', 'the clerk\'s tablet', 'Ibn al-Haytham in a dark room', 'Boyle\'s pump', 'Elaine Bromiley\'s operating theatre', 'the loose cable'],
+            keep=['Sometimes bureaucracy is epistemology with a clipboard.', 'Civilization, in this sense, is a trust chain with plumbing.', 'One of the culprits was a loose cable.'],
+            labels='The potter is a composite figure; the compiler project and historical cases are reported.'),
+    6: dict(idea='Knowledge travels best with its reasons and its confidence attached, which is what Alexander\'s pattern language did for rooms and agent skills can do for institutions.',
+            moments=['the balcony, the window seat and Different Chairs', 'the patterns travelling to software, the wiki and Wikipedia', 'Alexander\'s keynote and his doubt', 'Ines and Sam\'s incident file growing through failures'],
+            keep=['why am I suddenly emotionally invested in the width of a balcony?', 'is a decorative conscience'],
+            labels='Ines, Sam and their incidents are imagined; the history of patterns is reported.'),
+    7: dict(idea='A system that improves itself can only climb as high as its evaluator lets it; self-reference is not self-improvement, and the check has to come from outside.',
+            moments=['Omar and the dog at night', 'the click ranker with orange backgrounds', 'TD-Gammon, then Move 37 and AlphaGo Zero', 'the noisy-TV joke', 'neural architecture search and the space it was given', 'Lee Sedol\'s Move 78 and the 2023 amateur win against KataGo', 'return True', 'the constitutional surface'],
+            keep=['Static. Static. Static. Jackpot.', 'Self-reference is not self-improvement.', 'Nobody taught it Move 37.', 'The check came from outside it.'],
+            labels='Omar, the store and its research agent are imagined; the AlphaGo, KataGo and research history is reported. The constitution is a proposed design.'),
+    8: dict(idea='Aligning AI that may outthink us is a management problem the author knows from leading reports smarter than him, now with technical tools: retraining, reading notes, opening heads, steering, second opinions and making the system ask.',
+            moments=['the ExploitGym incident and the agents\' bulletin board', 'reward hacking spreading into wider misalignment', 'the rabbit couplet', 'Golden Gate Claude', 'debate lifting judges from 60 to 88 percent', 'the employee who does the alignment research'],
+            keep=['back channel'],
+            labels='The incident is reported; follow the chapter\'s chronology and qualifications exactly. Distinguish established causes from proposed safeguards.'),
+    9: dict(idea='When the machine can decide what to try next, what remains is deciding what the trying is for, and wanting is learned, often with other people.',
+            moments=['the vibe coder\'s seat', 'Lee Sedol\'s retirement', 'Amazon\'s changing value proposition', 'Greg Linden\'s shopping-cart test', 'an imagined Mallorca summer and the second machine', 'the clinic founder learning on Monday and Wednesday', 'desire as a group activity'],
+            keep=['What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for.', 'Very efficient. Slightly evil.'],
+            labels='The Mallorca traveller and the clinic founder are imagined; the Amazon history and research are reported.'),
+    10: dict(idea='Fluent autonomy means a small request quietly assembles the right organisation, invisible by default and legible on demand, without losing what the human refused.',
+             moments=['the one-sentence editing request and the dead chapter that came back', 'the blind readers and what the author refused', 'bureaucracy on the fly', 'the second coffee test', 'where this could be wrong'],
+             keep=['I spent years building systems that decide what to show her.'],
+             labels='The editing of this book is lived; the fluent system is an ambition, not a product.'),
+    11: dict(idea='A store that builds itself would compose ways to help, not rank more products, and would treat each page as an experiment it is willing to lose.',
+             moments=['the stuck customer', 'the problem fingerprint', 'recommendation experiences', 'Mei and the trail shoes', 'the honest cold start', 'Surface Value', 'the book biting back'],
+             keep=['A philosophy of emergence should be willing to lose an A/B test.', 'Cold start is a state, not an error.'],
+             labels='The prototype is the author\'s; Mei, Sami and Lea are imagined, and the business experiment is proposed.'),
+    12: dict(idea='After capacity becomes cheap, people can attempt instead of argue, and the question becomes who owns the laboratory and what we want the capacity for.',
+             moments=['Dantzig solving the problems he took for homework', 'the double-descent curve', 'the river moving under the applied scientist', 'the young researcher and the imitation loop', 'Ostrom\'s commons', 'the octopus ending'],
+             keep=['Gradient descent did not defeat ambiguity.', 'Capacity over power is an ethical direction, not a forecast about stronger models.', 'I would like us to find out how much more.'],
+             labels='The workshop, community tool and irrigators are illustrative, not reported cases.'),
+    13: dict(idea='A fable; let it be one.',
+             moments=['follow the source scene by scene'],
+             keep=['Decaf.'],
+             labels='Fiction. Explain nothing; every twist lands where the text puts it.'),
+    14: dict(idea='The closing coda.', moments=[], keep=[], labels=''),
+}
+
+
 def render(source):
     raw = source.read_text()
     clean, _, _, _ = prepare(raw)
+    norm = clean.replace('\u2019', "'")
+    missing = [k for k in CORE[int(source.name[:2])]['keep'] if k.replace('\u2019', "'") not in norm]
+    if missing:
+        raise SystemExit(f'{source.name}: lines the brief keeps are no longer in the manuscript: {missing}')
     tokens = MarkdownIt().parse(clean)
     title = 'Scaffolds' if source.name.startswith('14-') else None
     scenes = ['Opening passage']
@@ -58,16 +129,63 @@ def render(source):
         'Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. '
         'Do not import other chapters or add a generic recap. No fixed runtime is imposed. '
         + RULES[number]
+        + (' ' + BOOK if number not in (13, 14) else '')
     )
     body = f'# {title}: video brief\n\n'
     body += f'Source: [{source.name}](../../chapters/{source.name}), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.\n\n'
     body += 'This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. '
     body += 'The source supplies the scenes and exact claims. Run `--check` before use.\n\n'
-    body += f'## Video prompt\n\n```text\n{prompt}\n```\n\n## Source order\n\n'
+    core = CORE[number]
+    body += f'## Video prompt\n\n```text\n{prompt}\n```\n\n'
+    body += f'## The idea to land\n\n{core["idea"]}\n\n'
+    if core['moments']:
+        body += '## Moments to show\n\n' + '\n'.join(f'- {m}' for m in core['moments']) + '\n\n'
+    if core['keep']:
+        body += '## Lines to keep word for word\n\n' + '\n'.join(f'- "{k}"' for k in core['keep']) + '\n\n'
+    if core['labels']:
+        body += f'## Imagined, reported or proposed\n\n{core["labels"]}\n\n'
+    body += '## Source order\n\n'
     body += '\n'.join(f'{i}. {heading}' for i, heading in enumerate(scenes, 1)) + '\n\n'
     body += '## Review\n\nCheck every numerical claim against the source, preserve the ending and reveal timing, '
     body += 'and inspect diagram validity. Do not select retired prompt packs from Git history together with this brief.\n'
     return name + '.md', body, scenes
+
+
+OVERVIEW = """# System 3: whole-book video brief
+
+Sources: every chapter in [book order](../../book-design/curated/book-order.json), the part pages, the science reveal and the interlude, with the [reference appendix](../../chapters/appendix-references.md). This is production guidance for one overview video, not a summary to narrate.
+
+## Video prompt
+
+```text
+Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards Fluent Autonomy". Use the selected manuscript files as the only factual source and this brief as guidance. Carry two threads. First: as we build autonomous AI, we keep rediscovering science as its architecture, from emergence to institutions to science turning inward on itself. Second: as machines take over the work, human value moves first to the frontier and then to deciding what the work is for. Build towards the reveal "We call it science." at the end of Part II and do not state it earlier. Use a few of the book's own scenes rather than abstractions, attribute the author's experiences to him, keep his humour, and say plainly which examples are imagined. Do not explain the closing fable or its twists; at most, show that the book ends in fiction. Do not invent claims, numbers or quotations.
+```
+
+## The arc
+
+1. **Preface.** Leibniz needed a team; now capacity is cheap. Coffee, and the riddle of rediscovery.
+2. **Part I, Emergence** (Chapters 1 to 3). The bet on agents; search moving up a level in the circle-packing runs; Deep Mode, the vibe coder's seat and the five-layer stack.
+3. **Part II, Institutions** (Chapters 4 and 5). System 3 checks; the camel and Alberto; sixteen Claudes rediscovering progress files, standards and a second witness.
+4. **Reveal.** "We call it science."
+5. **Part III, Science Turns Inward** (Chapters 6 to 8). Pattern languages with their reasons attached; recursive self-improvement and its evaluator, told through AlphaGo; aligning agents that outthink us, opening on the ExploitGym incident.
+6. **Interlude.** When it goes wrong: Lysenko, and objections that stop mattering.
+7. **Part IV, Human Purposes** (Chapters 9 and 10). What remains in the seat is deciding what the trying is for; desire is learned, often together; fluent autonomy and the second coffee test.
+8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The store that builds itself; capacity over power, and finding out how much more a person can be.
+9. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
+
+## Lines to keep word for word
+
+- "Your coffee is still too hot."
+- "System 3 checks."
+- "We call it science."
+- "Self-reference is not self-improvement."
+- "What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for."
+- "We built scaffolds for ourselves for the same reason."
+
+## Review
+
+Check that the reveal comes after Part II, that imagined examples are labelled, and that nothing explains the fable. Run `--check` before use.
+"""
 
 
 def expected():
@@ -80,6 +198,7 @@ def expected():
                             source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
                             brief=f'prompts/notebooklm/{name}',
                             brief_sha256=hashlib.sha256(body.encode()).hexdigest(), sections=scenes))
+    outputs['book.md'] = OVERVIEW
     outputs['sources.json'] = json.dumps(dict(
         purpose='Exact source snapshot for generated production outlines; not factual or editorial approval.',
         references='chapters/appendix-references.md',
@@ -97,11 +216,11 @@ def main():
     if args.check:
         if stale:
             print('Stale or missing briefs: ' + ', '.join(stale)); return 1
-        print('All 15 video briefs match the current manuscript.'); return 0
+        print(f'All {len(outputs) - 1} video briefs match the current manuscript.'); return 0
     OUT.mkdir(exist_ok=True)
     for name, text in outputs.items():
         (OUT / name).write_text(text)
-    print('Generated 15 source-anchored video briefs and their source manifest.')
+    print(f'Generated {len(outputs) - 1} source-anchored video briefs and their source manifest.')
     return 0
 
 

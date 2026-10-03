@@ -7,8 +7,28 @@ This is a source-derived production outline, not a factual summary or a complete
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 10: Fluent Autonomy" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Use the actual editing record, repeated corrections, second coffee test and five objections. Fluency remains an ambition; do not portray the desired experience as a working product.
+Adapt Hani M.M. Al-Shater's "Chapter 10: Fluent Autonomy" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Use the actual editing record, repeated corrections, the second coffee test and the objections in "Where This Could Be Wrong". Fluency remains an ambition; do not portray the desired experience as a working product. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book.
 ```
+
+## The idea to land
+
+Fluent autonomy means a small request quietly assembles the right organisation, invisible by default and legible on demand, without losing what the human refused.
+
+## Moments to show
+
+- the one-sentence editing request and the dead chapter that came back
+- the blind readers and what the author refused
+- bureaucracy on the fly
+- the second coffee test
+- where this could be wrong
+
+## Lines to keep word for word
+
+- "I spent years building systems that decide what to show her."
+
+## Imagined, reported or proposed
+
+The editing of this book is lived; the fluent system is an ambition, not a product.
 
 ## Source order
 
