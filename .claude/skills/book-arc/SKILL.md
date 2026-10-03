@@ -15,7 +15,8 @@ are the author's own spine and seed register. Read them before proposing changes
    control moves up to the conditions, and the architecture that emerges from repairing
    autonomy's failures turns out to be science.
 
-   The word *science* stays off the page for five chapters:
+   The reveal is held back for five chapters. (Ch5 already uses the word "science" in a heading
+   and a few sentences, which blunts the reveal; a diagnosis should flag this.) The build-up runs:
    - a riddle in the preface ("we have built it before… at least one loose cable");
    - clues that get warmer (Ch3 lists the ingredients without naming the institution);
    - a near-miss at the end of Ch5 ("Humanity had already spent centuries building a society of

@@ -6,7 +6,7 @@ All references are `file:line` and relative to `/home/user/System3/` (chapter fi
 
 ### A1. The thesis, withheld and then revealed
 
-The working spine states the thesis in one sentence: "give AI autonomy and control moves up to the conditions; the architecture that emerges from repairing autonomy's failures turns out to be science" (`resources/editorial/working-spine.md:15`). The book keeps the word *science* off the page for five chapters and lets the reader assemble it.
+The working spine states the thesis in one sentence: "give AI autonomy and control moves up to the conditions; the architecture that emerges from repairing autonomy's failures turns out to be science" (`resources/editorial/working-spine.md:15`). The book holds the reveal back for five chapters and lets the reader assemble it. As of 3 October, though, Ch5 already uses the word in a heading ("Science Gets Bigger Than the Scientist") and a few sentences, which blunts the reveal.
 
 - **The riddle is planted.** The preface ends: "we have built it before. It took about four centuries, a great many arguments and at least one loose cable, and we never thought to call it an architecture" (`00-preface.md:31`).
 - **The clues get warmer.** Ch3 closes by naming the ingredients without naming the institution: "provenance, independence, replication, disagreement, authority" (`03-deep-mode.md:363`), and then asks "How do you know what to trust?" (`:367`). Ch4 ends "Humans have been working on that problem for a very long time" (`04-system-3.md:317`). The Part II page asks the spine question outright (`part-2-institutions.md:26`).
