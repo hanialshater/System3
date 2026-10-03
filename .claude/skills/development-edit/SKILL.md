@@ -144,5 +144,7 @@ For an edit pass, report:
 - the cut log;
 - any AUTHOR comments left.
 
+For comparing two versions of a chapter, use the house prompt `prompts/chapter-version-evaluation.md`.
+
 Related skills: `chapter-arc` (shape of a chapter), `book-arc` (shape of the book),
 `author-voice` (how the prose should sound), `ai-tells` (line-level machine patterns).
