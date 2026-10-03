@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "a79bfbbe225cd3d695b6d7bc81d4693e4158f1401cdbd6921c2431b428cad3a1",
+  "references_sha256": "f7b6ce180b185fd6a6d7dab70b897640a1cc003f9e3e2595a43a5433c110bc9b",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -136,7 +136,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "dc02ba05d5480de0e249e4671754aaec9f621628c8bcfa46352aa169480fc22d",
+      "source_sha256": "4082d66957cbe24fccb1e80dc7924e7a9ebce0142486d184d6f12d31129fd7bc",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8b04ed212422d52672dd0193776ae25a5c59862791535150054da70f3d70d6c1",
       "sections": [

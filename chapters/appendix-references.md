@@ -406,7 +406,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 9 — The Desire Layer
 
-1. <a id="ref-09-sedol"></a>Lee Sedol, retirement interview with Yonhap News Agency, November 2019, as reported by *The Next Web*, 27 November 2019. <https://thenextweb.com/artificial-intelligence/2019/11/27/world-champion-go-player-retires-ai-cannot-be-defeated/>.
+1. <a id="ref-09-sedol"></a>Yoo Cheong-mo, “(Yonhap Interview) Go master Lee says he quits unable to win over AI Go players,” *Yonhap News Agency*, 27 November 2019. <https://en.yna.co.kr/view/AEN20191127004800315>.
 
 2. <a id="ref-09-l4-cirl"></a>Dylan Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning” (2016). <https://arxiv.org/abs/1606.03137>.
 
