@@ -153,7 +153,7 @@ Her husband, Martin, was an airline pilot. The surgeon wrote to him that he stil
 
 The independent review found a pattern his industry knew painfully well. Skilled people had become absorbed in an attempted solution while the situation around them changed. Nobody managed to interrupt it. Even who was supposed to be in charge was disputed. Aviation had spent years developing ways for crews to recognize this pattern, challenge one another and change course.
 
-A hospital needs people who see different things. The nurse at the bedside, the radiologist reading an image and the surgeon do not become interchangeable because they share a patient. Their authority has to follow what they know, and their observations need a way to interrupt someone else’s plan.
+A hospital needs people who see different things. The nurse at the bedside, the radiologist reading an image and the surgeon do not become interchangeable because they share a patient. Their authority has to follow what they know, and their observations need a way to interrupt someone else’s plan. The expertise in Elaine’s operating theater was real, and so was the failure to use it.
 
 The potter’s mistakes cracked in her own kiln. A specialist’s mistakes travel, and each person who receives one may have good reason to trust it. So the people who see a problem need a way to reach the people who can act on it.
 
@@ -186,6 +186,8 @@ Permanent disagreement would be useless. An institution that never converges is 
 Ibn al-Haytham darkened a room around the beginning of the eleventh century, made a small hole in one wall, and placed lamps outside it. On the opposite wall, spots of light appeared. Cover a lamp and its corresponding spot disappeared while the others remained.[12](appendix-references.md#ref-05-optics)
 
 Vision had been argued about for centuries. One tradition held that the eye sends something out toward the world; another that something travels into the eye. Ibn al-Haytham developed an account in which light travels from objects toward the eye. The dark room did not settle the whole dispute. It made part of the problem manageable: light from separate sources passed through the same opening along paths that could be traced, interrupted and examined. The setup allowed someone who disagreed with him to do more than disagree.
+
+A record preserves what somebody says happened. An experiment gives the world another chance to answer.
 
 We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens. Charles Sanders Peirce later argued that this is what separates science from other ways of settling belief, whether by stubbornness, authority or what seems reasonable from an armchair: the answer is constrained by something beyond the believer. I am a pragmatist in his sense throughout this book, and *contact with reality*, wherever the phrase appears here, means that arrangement. Something outside the current explanation is able to make the explanation fail.[13](appendix-references.md#ref-05-peirce)
 

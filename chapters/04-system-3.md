@@ -132,7 +132,7 @@ But human thought has always run inside another structure that the two-system pi
 
 A cruder version is easier to remember: the Gut, the Head and the Hand. The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it. Peer review has no hand, provenance has no fingers and a formal proof never needs to touch a cow, so take the mnemonic loosely.
 
-System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back.
+System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back. Without System 3, every layer we delegate to is one more place for an unsupported claim to travel.
 
 |Layer|The question it answers|
 |---|---|
@@ -282,7 +282,7 @@ Trusted knowledge makes you efficient, and it can also make you boring. If an ag
 
 A new idea can arrive with very little evidence behind it. It may be right and still sound like my brother’s bullshit. System 3 needs room for creative distrust too.
 
-By that I mean understanding a trust chain well enough to know where you are breaking it and why.
+By that I mean understanding a trust chain well enough to know where you are breaking it and why. Contrarianism for sport doesn’t count, and neither does the internet habit of treating expert agreement as proof of corruption.
 
 <!-- AUTHOR: Creative Distrust needs a real scene, e.g. a case of creative distrust from the eight years ranking reviews; it could replace or join the scientist and designer sentences below. -->
 

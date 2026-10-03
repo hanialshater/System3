@@ -95,7 +95,6 @@ I will concede the analogy has edges. Science is shaped by human limits: careers
 **The weights will eat it.** That is the harder objection. Richard Sutton, who helped teach machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[1](appendix-references.md#ref-10-bitter) Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
 
 My own evidence is on his side. I deleted my circle-packing framework because the agent no longer needed it.
-<!-- AUTHOR: a clause here said Anthropic's automated alignment researchers worked better with less human-designed scaffolding. It had no citation here, so I cut it. Restore it with the existing reference id if you want it. -->
 
 I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the evaluator did not have to believe the agent’s account of the packing. More compute can improve both solver and judge; it cannot make the solver’s assurance into independent evidence. The structure worth defending lets the work encounter a check it did not choose.
 

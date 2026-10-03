@@ -72,7 +72,7 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "80e49dc774f3019b7b6da69183e2aa67a7b3e76abc11f55c5895c2c780186a60",
+      "source_sha256": "eec17186bfb69e53e9b544cec1ab9236449ee26e956055d61f6e5bc0b164e29c",
       "brief": "prompts/notebooklm/chapter-04.md",
       "brief_sha256": "d78cfa0a54a7bd22f945bbd921eb1d82eed5f93d850b737c8e0f54d313cec775",
       "sections": [
@@ -92,7 +92,7 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "8cd47ab92d0ea567ac35c5520d7f2833c4f4c80569640887da4ce4e2b52d5a8b",
+      "source_sha256": "f86cabb6248af467f97b78fd929ac98e65f6bfa78c004d4ce48b8e010ff72f70",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "01787692d18fe044b1dfcc21862754f82fa530b17d29fc0a3153f772c6d6c57c",
       "sections": [
@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "b4da1ce51aa0b3f7b2a002f8ba35be6d8d082de6a6caf19d2194762ef98d9a30",
+      "source_sha256": "6cad7cdce4132f0975a133d8fc5a0addfd6b6a631f69a166a9ef27ce63a7dfdd",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "4b6111129f65816c34b3f57555f60db2d1c738142fdac48e9e6e85a59ffee580",
       "sections": [
@@ -192,7 +192,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "50c981b044d3d7c87485cefda33bc6673152847d98abeca7db436ca2d054f251",
+      "source_sha256": "e2afade39d5fda7331a6e412f29d48bb71f230707182bc2a70d4c9fd9cd45cbd",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "304de6a986786eba13ede76f8368648a343fe68ef8c6dda695a6b465bc2ef2c5",
       "sections": [
