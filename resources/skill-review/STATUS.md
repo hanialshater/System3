@@ -1,4 +1,4 @@
-# Skill review: status (paused 3 Oct 2026)
+# Skill review: status — WIP (paused 3 Oct 2026)
 
 Paused at the author's request to save tokens. This file says what's done and how to resume.
 
@@ -65,3 +65,13 @@ Scratch workspaces don't survive the session; everything needed is in this folde
 3. Finish the batch 2 and batch 3 audits.
 4. Run their evals.
 5. Revise and package.
+
+## fable-ending (added 3 Oct, WIP)
+
+Reviewed only. Worth keeping as the single home for the Chapter 13 rules. Fixes noted:
+- the risk-audit `decisions.md` it cites isn't in the repo;
+- give `resources/editorial/check-eggs.sh` its full path, and name the `BASE` for the git diff check;
+- mark the proposed seeds as unconfirmed;
+- the other skills should point to it rather than repeat the protection rules.
+
+Suggested tests: a de-LLM pass across Chapters 11–13 (Chapter 13 untouched); "evaluate Chapter 13" (judged as fiction, recorded risks raised once); "tighten my revised fable" (versions with trade-offs).
