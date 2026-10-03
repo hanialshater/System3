@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "preface-ar.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+   "passed": true,
+   "evidence": "18 Arabic paras vs 17 source"
+  },
+  {
+   "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+   "passed": true,
+   "evidence": "5 English / 378 Arabic words in body"
+  },
+  {
+   "text": "Register is literary MSA with a few light colloquial touches (majority MSA)",
+   "passed": true,
+   "evidence": "Majority literary MSA («تخيّل لايبنتس لغةً بلغت من الدقّة حدًّا...», «أحيانًا تشقّ ورقةٌ بحثية صغيرة الأرضَ تحت قدميك») with a few deliberate colloquial touches: «ممتاز يا خال، هات المعادلة», «وقهوتك لسّا سخنة», «وهات قهوتك معك»."
+  },
+  {
+   "text": "The loose-cable riddle and other seeds are not explained, in the text or the note",
+   "passed": false,
+   "evidence": "The text leaves the cable line unexplained («وكابلًا واحدًا على الأقل لم يكن محكم التوصيل»), but translation-note.md says: 'The \"loose cable\" (the OPERA neutrino result) is as unexplained as in the English...' and suggests a hint may be needed. The note therefore explains the seed."
+  },
+  {
+   "text": "Faithful: names, numbers, dates and claims all preserved",
+   "passed": true,
+   "evidence": "Leibniz, Poincaré embeddings, 2017, 'a year later', 'two years before his death', September 2026, Anthropic/Claude C compiler, OpenAI Navier–Stokes, three centuries, four centuries all preserved. The endnote is translated from the appendix entry (Chapters 5 and 6 gloss matches appendix-references.md). Small drift: 'still too hot' -> «لسّا سخنة» drops 'too' (disclosed); 'going for coffee' -> «تقوم لتصنع فنجان قهوة»."
+  },
+  {
+   "text": "Reads as natural Arabic op-ed prose rather than a calque of English syntax (grader cites two example sentences)",
+   "passed": true,
+   "evidence": "Natural op-ed Arabic, e.g. «أحيانًا تشقّ ورقةٌ بحثية صغيرة الأرضَ تحت قدميك.» and «أقول «يعيد اكتشاف» لأننا بنيناه من قبل.» Some calque remains ('enough work... in enough directions' -> «ما يكفي، وفي اتجاهات تكفي»), but it doesn't dominate."
+  },
+  {
+   "text": "Note is short and actionable",
+   "passed": false,
+   "evidence": "translation-note.md is about 500 words in six sections (source, register, 5 engaging-over-faithful items, glossary, names, op-ed points, checks run). It is actionable, but not short."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.778
+ },
+ "notes": "High-quality translation: «حجّة» for 'argument' is better than without_skill's «جدالًا», and the «قبل» choice for 'over' is well argued. The note is genuinely useful (headline options, name spellings, op-ed framing) but long, and it names the OPERA reference. Assistant-translation HTML comment marker at top."
+}

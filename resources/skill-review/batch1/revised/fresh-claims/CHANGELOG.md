@@ -1,0 +1,30 @@
+# Changelog: fresh-claims (revision of 3 October 2026)
+
+- claims.py: adopted the auditor's rewrite (scratch-fc/claims.py) after review and testing; runs on python3.11 and 3.12 (audit 1: f-string SyntaxError on 3.11).
+- claims.py: parses numbered `[n](appendix-references.md#…)` citations; source column shows own / `next:` / `before:` citation, so `--only unsourced` means something (audit 2, 14).
+- claims.py: `shared-cite(n)` and `before:` flags for figures that lean on another paper's link (audit 14; grading: Ch 8 "quarter of prompts", 0.97 cited to Burns et al.).
+- claims.py: splits sentences after citation links and paragraphs before sentences (audit 3).
+- claims.py: fresh detection for year-less dates, live terms, `--recent`, section context and `--source-dates` (audit 4, 5).
+- claims.py: `org-report` vs `org`, `reported-result`, case-sensitive `superlative`, `status`, and `--only risky` (audit 6, 7).
+- claims.py: `--notes` adds WRONG NUMBER, OUT OF ORDER, OTHER CHAPTER, CROSS-CHAPTER, numbered-only UNCITED, QUOTE STYLE, more DATED CHECK phrases (audit 8, 16).
+- claims.py: NUM no longer counts "one", names with numbers or list markers (audit 12).
+- claims.py: `--numbers --near` compares one event's figures and qualifiers; skips model versions (audit 13).
+- claims.py: `--numbers` works without an argument (default units incl. tokens) (run finding: "--numbers requires an argument"; audit 18).
+- claims.py: new `--entries` mode lists each cited appendix entry with NO DATE / NO LINK / JOURNAL WITHOUT PAGES / EXACT DATE flags (run finding: check the entries themselves; eval 6 constitution date).
+- claims.py: new `--files` filter for chapter-scoped checks; `--skip` defaults to protected Ch 13 (audit 10; evals 5–6 were chapter-scoped).
+- claims.py: removed dead `if False` branch and quadratic duplicate-anchor check from the auditor's draft (own review).
+- scripts/regressions.py: new; finds corrections in git history that later edits reversed (run finding: ca80ba2 attribution back in Ch 8).
+- SKILL.md: new "What verified means" section: subject, comparison, qualifier, attribution, and the citation is the claim's own source; process doesn't replace reading (coordinator grading: no-skill run found errors the skill run marked verified).
+- SKILL.md: Access column (primary read / coverage only / not reached) and a read-before-print list (run finding: sources blocked by proxy).
+- SKILL.md: as-of date and base commit at the top; re-check-at-print list required in the record (run finding; eval 6 assertion).
+- SKILL.md: step 5 checks earlier corrections with regressions.py and past records (run finding: ca80ba2).
+- SKILL.md: step 7 checks appendix entries themselves (dates, pages, URLs) (run finding).
+- SKILL.md: step 8 discloses relationships between people and sources (run finding: Pelrine co-author).
+- SKILL.md: step 9 gives the ASSISTANT EDIT flag form, protects Ch 13 and seeds, respects revert lists, runs check-eggs.sh (audit 10, 11; common rules).
+- SKILL.md: step 1 gives exact command, paths and order file; Note on Evidence path named (audit 15).
+- SKILL.md: removed named-person example from the general rule; it lives in cases.md (audit 18).
+- SKILL.md: description narrowed (no print/build trigger, no "verify line citations"), neighbours named (audit 17).
+- ledger-template.md: Source used, Access and Wording test columns; superlative, description, relationship kinds; record format lists as-of, read-before-print and re-check-at-print (run findings; audit 18).
+- cases.md: header says lessons, not current state, with a dated snapshot and re-derive commands; "sixty subagents", 2.635, internal-model, Fisher and System 3 items marked with their current state (audit 9).
+- cases.md: new sections for reversed corrections, wording that passed on the event but failed on the sentence, and relationships to disclose (run findings; coordinator grading).
+- Not changed: the `fresh(context)` heuristic stays despite ~25% noise (rows are marked `?`); the author's wording rules and book-level checks are kept as written.

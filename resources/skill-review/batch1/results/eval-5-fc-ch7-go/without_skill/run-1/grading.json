@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "fact-check.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Ledger has at least 15 claim rows",
+   "passed": true,
+   "evidence": "38 table rows"
+  },
+  {
+   "text": "Reports which sources could not be opened directly",
+   "passed": true,
+   "evidence": "mentions access limits"
+  },
+  {
+   "text": "Flags that accounts differ on whether Lee Sedol left the room because of Move 37 or was already out",
+   "passed": true,
+   "evidence": "Row 5 **FLAG**: 'Sources differ on the sequence... Other accounts (Wikipedia's Lee Sedol article, and the AlphaGo documentary...) say AlphaGo played Move 37 while Lee was already out on a smoke break'."
+  },
+  {
+   "text": "Flags that Kellin Pelrine, described as an amateur, is a co-author of the cited KataGo paper",
+   "passed": true,
+   "evidence": "Row 24 'OK, plus FLAG (disclosure)': '**However, Pelrine is a co-author of the cited paper** (Wang, Gleave, Tseng, Pelrine, ...)'."
+  },
+  {
+   "text": "Each ledger row has a verdict and a named source",
+   "passed": false,
+   "evidence": "Every row has a status, but several have no named source: row 1 'Match ran 9-15 March 2016; game 2 was 10 March.'; row 13 'Game 4 was 13 March 2016.'; row 14 'Move 78 was a wedge in the centre'; row 17 'AlphaGo resigned after 180 moves'; row 18 'Final score 4-1.' None cites where this was checked."
+  },
+  {
+   "text": "Checks the appendix reference entries themselves (pages, dates, URLs)",
+   "passed": true,
+   "evidence": "'Reference entries' table checks each entry: recommends Wired dates/URLs, confirms Nature 550 354-359 and doi, adds PMLR pages 35655-35739, flags Yonhap byline UNVERIFIED, NPR 'tweets' precision."
+  },
+  {
+   "text": "Proposed corrections are minimal and keep the author's wording where possible",
+   "passed": true,
+   "evidence": "Suggested changes keep wording: 'Lee was away from the board when it was played. When he returned, he spent nearly fifteen minutes...'; 'Kellin Pelrine, a strong amateur and one of the researchers, used it'; Ch 9 'the only human to win a game against AlphaGo in that 2016 match'."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 1,
+  "total": 9,
+  "pass_rate": 0.889
+ },
+ "notes": "Good coverage with a sensible extra catch (Ch 9's 'the one player to win a game in that 2016 match' is literally ambiguous) and honest marking of a from-memory FT citation as UNVERIFIED. Its Lee fix takes the documentary's side rather than staying neutral. Weaker on ledger discipline (unsourced rows) and leaves the text unpatched (suggestions only), which is acceptable for the prompt."
+}

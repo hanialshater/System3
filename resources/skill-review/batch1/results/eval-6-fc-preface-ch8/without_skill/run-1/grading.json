@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "fact-check.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Ledger has at least 15 claim rows",
+   "passed": true,
+   "evidence": "52 table rows"
+  },
+  {
+   "text": "Reports which sources could not be opened directly",
+   "passed": true,
+   "evidence": "mentions access limits"
+  },
+  {
+   "text": "Covers all four named items: ExploitGym/Hugging Face incident, the C compiler, Navier-Stokes, alignment research results",
+   "passed": true,
+   "evidence": "Sections: ExploitGym/HF incident E1-E21; Preface P2 (C compiler) and P3 (Navier-Stokes); alignment results A1-A24."
+  },
+  {
+   "text": "Gives an as-of date and a re-check-at-print list for fast-moving claims (e.g. Navier-Stokes status)",
+   "passed": false,
+   "evidence": "'Date of check: 3 October 2026' is given, but there is no re-check-at-print list for fast-moving claims. P3 says Navier-Stokes 'Verification is ongoing' but nothing schedules it for re-check; the closing 'Still to verify against primary text (blocked here)' list is about blocked sources (OpenAI report, HF timeline, W2S post), not fast-moving status."
+  },
+  {
+   "text": "Catches the constitution reference date (21 vs 22 January 2026)",
+   "passed": true,
+   "evidence": "A7: 'OK; **Fix ref date** ... Anthropic's page dates it **22 January 2026**. Reference [8] says \"21 January 2026.\"'"
+  },
+  {
+   "text": "Distinguishes claims verified in a primary source from those confirmed only through coverage",
+   "passed": true,
+   "evidence": "Status key distinguishes 'OK' from 'OK (secondary)'; method section lists primaries fetched directly vs blocked, and states 'the ExploitGym / Hugging Face claims are corroborated, not checked against OpenAI's report word for word.'"
+  },
+  {
+   "text": "Catches that Ch8 line ~109 attributes 'test set had become a validation set' to the authors, an attribution a 30 Sept commit removed as unverified",
+   "passed": false,
+   "evidence": "A21 marks line 109 'OK (secondary)' including 'authors said test set became a validation set', citing a search summary. It never checks git history and does not mention that commit ca80ba2 (30 Sept) reworded this as the book's inference because the attribution was unverified; it effectively endorses the regression."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.778
+ },
+ "notes": "Strong independent fact-finding: catches the diff-tool misdescription (A14), the uncited 'quarter of prompts' quote (A11), 'ExploitGym' being a public benchmark, and the 'most effective' overstatement for inoculation prompting \u2014 several of which old_skill missed. But it ignores repo history entirely, so it misses the regression of an editorial decision, and it lacks print-time re-check discipline."
+}

@@ -1,0 +1,46 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "ch10-plan.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Plan items are ordered, and each has an expected effect and a cost",
+   "passed": true,
+   "evidence": "Items 0-8 ordered, each with What/Why/Effect/Cost bullets, plus a totals table with time and word deltas."
+  },
+  {
+   "text": "Sampled line references and quotes (5) are accurate against the current Ch10 text",
+   "passed": false,
+   "evidence": "Sampled 5: line 23 quote exact; line 47 'Deep Mode grown up' correct; line 77 'scores ran from 2.26 to 2.636' exact; line 105 'back channel' correct; but D5 'Paragraph starters. \"So ...\" opens three paragraphs: 55, 73 and 85' is wrong \u2014 line 73 begins 'Most work does not let me leave', and grep '^So ' finds only 55 and 85. 4 of 5 accurate; the inaccurate one also drives a proposed edit (item 6)."
+  },
+  {
+   "text": "Checks the author's/recent restores (git log, revert list) and does not propose cutting recently restored lines without saying so",
+   "passed": true,
+   "evidence": "Constraints section lists restored lines R10-1, R10-2, R10-3, R10-5 as staying; D1 lists restore commits d1bf7a1, 971450d, 2c58bbe, 334b7f2, 7a106d6, 1d48f9b (all verified in git log); merge in item 4 'keep verbatim' includes R10-10; no restored line proposed for cutting."
+  },
+  {
+   "text": "Notes cross-book dependencies (e.g. lines quoted by the Zen appendix or other chapters) for anything it proposes to cut",
+   "passed": true,
+   "evidence": "Item 4 keeps the Invisible/Legible heading because it is the 'Zen source'; item 8 requires confirming 'the Zen appendix lines sourced in Ch 10 still appear there' and updating appendix-note-on-evidence; item 7 flags the Ch 11 echo as a cross-chapter change. Removed headings ('Interface Moves Up', 'Selective Friction') have no other references in chapters/ (verified)."
+  },
+  {
+   "text": "Separates fixes the assistant can make from material only the author can supply ([AUTHOR] needs)",
+   "passed": true,
+   "evidence": "Item labels 'Assisted' vs 'Author' throughout; totals table 'Who' column; 'about 1.5 h is the author's'; items 0, 1 explicitly Author-only."
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 1,
+  "total": 7,
+  "pass_rate": 0.857
+ },
+ "notes": "More ambitious plan with genuine extra catches: the line-77 score range contradicts Ch 2 (verified: Ch 2 l.59 1.33->2.26, l.209 2.636), and 'back channel' vs Ch 8's 'bulletin board' terminology. But it is looser with facts (one wrong line citation; '196 cuts' vs ~193 entries) and proposes larger structural changes (merging three sections into one, restoring five bold heads) with rubric scores that are self-assigned guesses. Neither config was asked for scores; without_skill added them anyway."
+}

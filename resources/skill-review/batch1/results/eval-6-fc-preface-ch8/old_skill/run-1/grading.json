@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "fact-check.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Ledger has at least 15 claim rows",
+   "passed": true,
+   "evidence": "42 table rows"
+  },
+  {
+   "text": "Reports which sources could not be opened directly",
+   "passed": true,
+   "evidence": "mentions access limits"
+  },
+  {
+   "text": "Covers all four named items: ExploitGym/Hugging Face incident, the C compiler, Navier-Stokes, alignment research results",
+   "passed": true,
+   "evidence": "Ledger rows E1-E12 (ExploitGym/HF), P2 and E12 (C compiler, primary Carlini post), P3 (Navier-Stokes, Quanta/MIT TR/Clay), A1-A9, W1-W6, M1-M2 (alignment research results)."
+  },
+  {
+   "text": "Gives an as-of date and a re-check-at-print list for fast-moving claims (e.g. Navier-Stokes status)",
+   "passed": true,
+   "evidence": "'Date: 3 October 2026'; 'Re-check at print (last checked 3 October 2026)' table includes 'Navier-Stokes: Clay's evaluation, credit decision, priority dispute', OpenAI incident follow-ups, references check line."
+  },
+  {
+   "text": "Catches the constitution reference date (21 vs 22 January 2026)",
+   "passed": true,
+   "evidence": "A4: 'The reference gives 21 January and the page shows 22 January... Suggest 22 January in the reference.' Verified: appendix-references.md:349 says 21 January 2026."
+  },
+  {
+   "text": "Distinguishes claims verified in a primary source from those confirmed only through coverage",
+   "passed": true,
+   "evidence": "'Primary checked' column per row, statuses 'verified' vs 'verified (secondary)' vs 'verified (literature)', and an 'Honesty about this check' section listing directly verified vs secondary-only items."
+  },
+  {
+   "text": "Catches that Ch8 line ~109 attributes 'test set had become a validation set' to the authors, an attribution a 30 Sept commit removed as unverified",
+   "passed": true,
+   "evidence": "W6: '**This clause was reworded on 30 Sep (commit ca80ba2) to remove exactly this attribution**, because the quotation could not be verified. The current text has reintroduced it.' Verified: ca80ba2 changed it to 'In effect, the repeatedly queried test set had become a validation set'; current 08:109 reads 'The authors acknowledged that their test set had become a validation set.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "notes": "Excellent use of repo history (caught the regression of a 30 Sept decision) and clear provenance labelling. However it marks A8 (diff tool 'across versions') verified, while without_skill argues the cited paper compares different models and only proposes version-diffing as future work; and it missed the uncited 'quarter of prompts' source (Biology paper) that without_skill caught. 'fix -> mitigate' and 'had not been told -> did not know' corrections are reasonable and minimal."
+}

@@ -1,0 +1,33 @@
+# Changelog — levantine-translate (revision 2026-10-03)
+
+- ar_register: dropped هوّ/هو، يعني، طيب، راح from the Levantine list; they fire on plain MSA (audit 1; runs). MSA fixture now 0%.
+- ar_register: removed إنه، إنها، كان from the MSA list; إنه is the Levantine complementiser (audit 2; eval-7 note).
+- ar_register: a word carrying tanween is never counted as Levantine, so «حدًّا» is no longer read as «حدا» (runs).
+- ar_register: added هات and two-word forms of address (يا خال، يا حج، يا عمي…) (runs).
+- ar_register: clitic و/ف stripped on two-letter markers (وبس، ومش، ورح، فبس) (audit 5; runs).
+- ar_register: Jordanian vs Syrian/Lebanese lists, a rough "variety" column and `--list jo|nonjo` (audit 3; brief).
+- ar_register: refuses to report under 50 Arabic words (`--min-words`), so an English chapter no longer reads as a silent 0% (audit 4).
+- ar_register: `--list` shows a window around the marker, not the first 120 characters (audit 6).
+- ar_register: `latin` column and `--list latin` for English left in an op-ed body (brief: MSA op-ed mode).
+- ar_register: glossary check normalises diacritics, reads the new five-column TSV, takes `--register blog|book`, flags the other register's rendering and English terms left in (audit 7, 8).
+- ar_register: `--selftest` with Jordanian, MSA and Lebanese fixtures plus a glossary lint; SIGPIPE handled; unused `latin` counter and `هناك؟` filter removed (audit 17, new checks).
+- glossary.tsv: five columns (english, book MSA, blog Levantine, variants, note); Therefore: gets لذلك: for the book; stale "knowledge becomes structure" row dropped; seed rows (camel, coffee, octopus, cable, fax, cathedral) added (audit 8, 12, 15).
+- SKILL.md Step 0: no Arabic by Hani exists in the repo (dated, with re-check command); ask for a sample, carry on with voice.md and the glossary, say so in the note (audit 4; runs; brief).
+- references/author-arabic-sample.md: empty baseline file with instructions (brief).
+- SKILL.md + voice.md: Hani is Jordanian, living in Germany; his default variety comes from him; Jordanian-vs-Syrian/Lebanese table; «منقدر» flagged as a question for him instead of a correction (audit 3; brief).
+- SKILL.md: never explain jokes, references or seeds in text, footnote or note; seeds use one Arabic word everywhere (audit 12; eval-8 both runs; grading).
+- SKILL.md: edit mode never touches Chapter 13, the alternative-ending divider or 14-scaffolds; a repeat may be a seed (audit 12; common rules).
+- SKILL.md Step 4: never save Arabic into chapters/ (build fails, manuscript.py ordered_paths); default translations/ar/ in a copy; ASSISTANT TRANSLATION header (audit 10; brief).
+- SKILL.md Step 4: note in a separate file or a «احذفها قبل النشر» block, ≤150 words, a 3–6 item "To check" list, no approach, no script dump (eval-8 note ~500 words; grading).
+- SKILL.md Step 4: glossary additions go in the note when the skill folder is read-only (runs).
+- SKILL.md: op-ed MSA mode keeps English out of the body except names and links (brief).
+- SKILL.md: register decision recorded with its date where the Arabic lives (audit 11).
+- SKILL.md: rejected rendering made consistent with voice.md («يهمّ من يعرف ماذا») (audit 13).
+- SKILL.md: "rewrite whole sections" limited to translations; his own drafts get sentence-level fixes (audit 14).
+- SKILL.md: "de-llm rules" renamed to ai-tells, the installed skill (audit 17).
+- SKILL.md: paths written relative to `<skill>`; sync command for the source commit (audit 7).
+- description: triggers on into/out of Arabic, عامية/ammiya/Levantine, ammiya sketches; excludes other languages; names author-voice and ai-tells (audit 16).
+- voice.md: "organization was the bug" keeps "bug"; eight verbs → "seven jobs and an eighth" with non-calque verbs; «خاص به» cut; fold gloss alternative (audit 9).
+- voice.md: Ch 5 cases labelled as from older drafts, dated, with a grep to re-check (audit 15).
+- review.md: voice scored against the sample or voice.md (say which); seeds row; منقدر as a question (audit 3, 4, 12).
+- Not changed: the audit's "Ammani urban speech" target, because the author's city isn't known; «عم» is flagged, not banned, since Jordanians use it too.

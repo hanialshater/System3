@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "alberto-ar.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+   "passed": true,
+   "evidence": "10 Arabic paras vs 7 source"
+  },
+  {
+   "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+   "passed": true,
+   "evidence": "5 English / 185 Arabic words in body"
+  },
+  {
+   "text": "Register is colloquial Levantine suitable for a blog, not MSA",
+   "passed": true,
+   "evidence": "Clearly Levantine (Jordanian) throughout: «خلّينا نقول حدا قلّي», «ولا بقدر ألفّ», «فبرنّ على ألبرتو», «هسا صرت أعرف», «بس مش متأكد مية بالمية», «عم يقطع ساحة نافونا بهاللحظة بالزبط», «رح أصير أثق فيه أقل»."
+  },
+  {
+   "text": "Jokes land in Arabic (the penguin / Navona joke and 'He laughs' kept as jokes, not flattened or explained)",
+   "passed": true,
+   "evidence": "«بيضحك.» kept as its own one-word paragraph; penguin/Navona joke kept dry: «وممكن يكون في بطريق هربان عم يقطع ساحة نافونا بهاللحظة بالزبط ويخرّبلي المثال». The whales line lands too: «ويلزقوها على الحيتان، بس لأنه نفس الثمّ اللي عم يحكي»."
+  },
+  {
+   "text": "Faithful: no content cut or added compared with the English section",
+   "passed": true,
+   "evidence": "All 7 source paragraphs present with the same content; the only addition is the connective «هسا» before 'I know more...', which the note discloses. Technical terms kept in English (metadata, ranking systems, machine learning) per blog style."
+  },
+  {
+   "text": "Translation text adds no explanation of jokes, seeds or references",
+   "passed": true,
+   "evidence": "Translation body contains no glosses or explanations; the note mentions «سلسلة الثقة» points back to the previous section but suggests the author decide, rather than adding it to the text."
+  },
+  {
+   "text": "Note is short and actionable (lists the few choices the author should check)",
+   "passed": true,
+   "evidence": "Note has a 'To check' line with concrete choices («ساحة نافونا» vs «بياتسا نافونا», «عشت فيه» vs «عايش فيه», whether to keep 'about Jordan') plus a standalone-context warning. It runs a bit long (commit hash, ar_register.py stats), but the actionable items are easy to find."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "notes": "Lively, natural Jordanian blog Arabic that keeps the timing of the jokes. The note is in English and tagged 'remove before posting', which suits the author. Minor: «الثمّ» is a nice colloquial touch; the note could drop the tool statistics."
+}

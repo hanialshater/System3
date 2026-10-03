@@ -1,0 +1,29 @@
+# Protected lines for System 3 (snapshot 3 Oct 2026, repo 155c3a1).
+# One exact string per line, as it appears in chapters/ (curly quotes ’ “ ”).
+# Lines starting with # are comments. scripts/protected.py reads this file.
+# Re-check after any repo change:  python3 scripts/protected.py --repo /path/to/System3 --audit
+#
+# Author's protected list
+preserve the wrong lesson at industrial speed
+a decorative conscience
+We have successfully parallelized the experience of being ignored.
+Preserving my judgment and preserving my mistakes used the same file format
+Nobody is lying. The hypothesis has been fitted to the result.
+The objection can now survive its author. So can the assumption it challenges.
+Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday.
+Reality retains the right to be rude.
+And your cat obsession is… illogical.
+# Kept on purpose in earlier passes (jokes, titles)
+It is branding.
+Composition Is Not Ranking With a New Hat
+Zero Framework, With an Asterisk
+A Swarm Should Not Automatically Become a Meeting
+A prediction does not become an observation by being stored beside a billion others
+recreates the configuration matrix in a more colorful form
+#
+# Not in the repo any more (do not re-add without the author):
+#   "The model stays hollow"            cut by the author, cfade23 (30 Sep)
+#   "Direct contact does not scale"     cut by the author, cfade23
+#   "Otherwise the scaffold becomes a cage"  cut by the author, 8bcaac3 (23 Sep)
+#   "Otherwise I am decorative governance"   cut by Claude, d12f553 (2 Oct) - ask the author whether to restore
+#   "More what?"                        cut by Claude, 0214b7a - ask the author whether to restore

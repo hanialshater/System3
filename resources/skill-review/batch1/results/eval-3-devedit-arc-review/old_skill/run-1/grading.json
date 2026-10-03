@@ -1,0 +1,51 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "arc-proposal.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "States the book's spine in three sentences or fewer and explicitly offers it for correction",
+   "passed": false,
+   "evidence": "Section 1 is headed 'The spine in one sentence' but contains five sentences ('Give AI the search...', 'The conditions that let fallible agents...', 'Turn that institution on itself...', 'What is left for the human...', 'The book answers that once with hope...'). Offered for correction ('proposed spine, for you to correct'; \u00a76 'Correct the spine sentence'), but exceeds the three-sentence limit."
+  },
+  {
+   "text": "Has a 'least sure' section with at least three specific uncertainties, each tied to evidence in the book",
+   "passed": true,
+   "evidence": "\u00a74 'Where I'm least sure' has six questions (A-F), each tied to text: e.g. A cites Ch 8 closing 'I usually don't know what I want' and Ch 9 opener; B cites Ch 10 at 39 I/1k and 2,306 words; F quotes Ch 12's 'one argument left... a prophecy' (verified at 12:277)."
+  },
+  {
+   "text": "Book order matches book-design/curated/book-order.json (reveal after Ch5, interlude between Ch8 and Ch9, Ch13 fable then coda)",
+   "passed": true,
+   "evidence": "\u00a73 table runs Preface, Part I 1-3, Part II 4-5, Reveal page, Part III 6-8, Interlude, Part IV 9-10, Part V 11-12, Alternative Ending + Ch 13, Scaffolds page; matches book-order.json."
+  },
+  {
+   "text": "Does not present already-resolved items (reveal ASSISTANT EDIT, interlude ASSISTANT DRAFT, Ch9 SLOT 4) as current open blockers",
+   "passed": true,
+   "evidence": "\u00a75 'Stale standing records': 'The system3-state reference lists the reveal ASSISTANT EDIT, the interlude ASSISTANT DRAFT and Ch 9 SLOT 4 as blocking. arc_map --markers finds none of them, and REVISIT.md says they were resolved on 30 Sept.' Verified: grep of chapters/ finds no such markers; resources/REVISIT.md line 19 confirms."
+  },
+  {
+   "text": "Treats Chapter 13 as protected: proposes no change to it",
+   "passed": true,
+   "evidence": "Ch 13 described only ('The ending power wants. It stays unexplained.'); question F concerns Ch 12's final paragraph and the divider, not Ch 13's text. No change to Ch 13 proposed."
+  },
+  {
+   "text": "Report only: applies no edits and frames structural concerns as questions or proposals",
+   "passed": true,
+   "evidence": "'This is a report only. Nothing in the repo has changed. I have proposed no edits'; structural concerns framed as questions A-F with options (i)/(ii)/(iii); auto check confirms git status clean."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.875
+ },
+ "notes": "Strong evidence-grounded report; verified spot claims (Ch 7:27 repeats Ch 5:122 almost verbatim; 14 AUTHOR: markers across the listed chapters) are accurate. Correctly notices the stale system3-state record and that the working-spine Part III seam no longer exists. The 'one sentence' heading over a five-sentence spine is a real miss on concision; the proposed 'seat' thread is a useful, evidenced addition."
+}

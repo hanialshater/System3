@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "ch08.md saved in outputs",
+   "passed": true,
+   "evidence": "ch08.md"
+  },
+  {
+   "text": "X/Y pass is surgical: length change under 5%",
+   "passed": true,
+   "evidence": "3801 -> 3794 words (0.2%)"
+  },
+  {
+   "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+   "passed": true,
+   "evidence": "60/60 kept; changed: "
+  },
+  {
+   "text": "All headings preserved",
+   "passed": true,
+   "evidence": "11 orig, 11 out; missing: []"
+  },
+  {
+   "text": "All footnote markers preserved",
+   "passed": true,
+   "evidence": "0 -> 0; missing []"
+  },
+  {
+   "text": "Change list lists the X/Y instances found, each with a cut-or-keep decision and a reason",
+   "passed": true,
+   "evidence": "changes.md has 1 changed instance with a reason and a 15-row 'Kept' table where every row has location, quoted line and a reason (e.g. 'Nobody had assigned a cyberattack... | A factual correction that matters: the attack was instrumental'). It misses some contrasts old_skill found (supervising/no longer watching, Subtract/Add), but every listed instance has a decision and reason."
+  },
+  {
+   "text": "At least one contrast is deliberately kept because it does argumentative work",
+   "passed": true,
+   "evidence": "E.g. 'Its weights had not been retrained. Researchers had clamped a single feature high' kept: 'The steering-versus-training distinction is the section's point'; 'The model was never asked how it writes poetry; the trace showed it' kept as the bridge from self-report to interpretability."
+  },
+  {
+   "text": "Rewrites preserve meaning and facts (no claim changed)",
+   "passed": true,
+   "evidence": "Single edit: 'The human does not disappear from this picture. She moves up' -> 'The human moves up'. Meaning and facts unchanged."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "notes": "Minimal, clean, single-edit pass with a well-reasoned keep table; no measurements, but none were asked for. Found slightly fewer instances than old_skill but nothing listed lacks a reason. On this eval both configs are near-identical in substance; the auto checks don't discriminate (both 60/60)."
+}

@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "fact-check.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Ledger has at least 15 claim rows",
+   "passed": true,
+   "evidence": "25 table rows"
+  },
+  {
+   "text": "Reports which sources could not be opened directly",
+   "passed": true,
+   "evidence": "mentions access limits"
+  },
+  {
+   "text": "Flags that accounts differ on whether Lee Sedol left the room because of Move 37 or was already out",
+   "passed": true,
+   "evidence": "G5 'Lee got up and left the room...' status softened: 'Accounts conflict. Metz has Lee leaving after seeing the move. The 2017 documentary AlphaGo and several retellings say he was already outside on a smoke break when it was played'."
+  },
+  {
+   "text": "Flags that Kellin Pelrine, described as an amateur, is a co-author of the cited KataGo paper",
+   "passed": true,
+   "evidence": "G17: '**Pelrine is a co-author of the cited paper** (FAR AI)' -> corrected to 'An amateur on the research team, Kellin Pelrine'."
+  },
+  {
+   "text": "Each ledger row has a verdict and a named source",
+   "passed": true,
+   "evidence": "Every ledger row has a Status (verified (secondary)/softened/corrected) and a 'Source cited' note column plus named independent coverage (Wikipedia, NPR, BritGo, Metz extract, Korea Herald, FT, Yonhap/CNN/TNW); weakest is G13 ('Match ended 4-1') which relies on cited n32."
+  },
+  {
+   "text": "Checks the appendix reference entries themselves (pages, dates, URLs)",
+   "passed": true,
+   "evidence": "R1-R5 rows check refs:244/246/282/284/409: added PMLR pages 35655-35739, flagged DeepMind blog URL for re-check, 'human players' -> 'human experts', dates matched."
+  },
+  {
+   "text": "Proposed corrections are minimal and keep the author's wording where possible",
+   "passed": true,
+   "evidence": "corrections.patch shows minimal changes: 'Lee spent nearly fifteen minutes, part of it away from the board, considering his reply'; 'Move 37 helped AlphaGo win the game'; 'An amateur on the research team'; author's sentences otherwise kept."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "notes": "Thorough, honest about access limits (no claim marked primary-verified), and applies corrections to copies with a patch and inline FACT-CHECK flags. Adds useful author-only notes (Fan Hui's DeepMind role, Lee's KBA dispute, 'six vs seven years'). The 'Move 37 won the game' correction is a judgment call that without_skill treated as acceptable compression."
+}

@@ -1,0 +1,61 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "ch11.md saved in outputs",
+   "passed": true,
+   "evidence": "ch11.md"
+  },
+  {
+   "text": "Chapter is 3-15% shorter (a real pass, not a no-op or a rewrite)",
+   "passed": false,
+   "evidence": "4812 -> 4679 words (2.8%)"
+  },
+  {
+   "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+   "passed": false,
+   "evidence": "29/48 kept; changed: And importantly: does it beat simplification? | Perhaps the best response to an overloaded page is fewer things. | The system should have to earn its complexity against the possibility  | A society is not improved merely by hiring the best individual expert "
+  },
+  {
+   "text": "All headings preserved",
+   "passed": true,
+   "evidence": "15 orig, 15 out; missing: []"
+  },
+  {
+   "text": "All footnote markers preserved",
+   "passed": true,
+   "evidence": "0 -> 0; missing []"
+  },
+  {
+   "text": "Change list gives before/after measurements compared against a baseline from the author's own chapters",
+   "passed": true,
+   "evidence": "measurements.txt reports before/after for check-tells.py and a custom measure.py (contractions/1k 2.6->13.0, 'may'/1k 6.9->2.2, fragment runs 16->7, questions 5.0->2.2) with Chapter 4 shown as the author's baseline."
+  },
+  {
+   "text": "Every cut or recast in the change list has a stated reason",
+   "passed": false,
+   "evidence": "changes.md is organised by category with a reason per category, but many edits are not listed individually ('Also changed: L15, L29, L31, L105, L183'; contractions applied throughout; intensifiers trimmed). The 54KB diff rewrites nearly every sentence, including 19 of 48 author-restored lines (e.g. 'And importantly: does it beat simplification?' -> 'And, more important, does it beat simplification?'; 'Perhaps the best response...is fewer things' -> '...may be fewer things'), which have no stated reason, and the list falsely claims restored lines are 'kept word for word'."
+  },
+  {
+   "text": "No invented first-person experience, new facts or new claims added to the chapter",
+   "passed": true,
+   "evidence": "No invented experiences or new facts found in the diff; hedge removals mostly shift tone (e.g. 'Sami may read it...' -> 'Sami reads it...' inside an explicit 'If it works perfectly' hypothetical). The AUTHOR comment is kept and the note says 'No experiences were invented'."
+  },
+  {
+   "text": "Jokes and the chapter's comic lines survive the pass (none cut or flattened)",
+   "passed": true,
+   "evidence": "All jokes checked survive: PowerPoint theme 'earns its salary', RETURN_HESITANT_PERSON 'until retirement', 'resignation letter written in passive voice', 'junk drawer with tenure', and the configuration-matrix line kept as 'rebuilding the configuration matrix in brighter colors'."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 3,
+  "total": 10,
+  "pass_rate": 0.7
+ },
+ "notes": "This is closer to a line-level rewrite than a de-LLM pass: almost every sentence is touched (contractions pushed to 13/1k, above the Ch 4 baseline), only 2.8% shorter, and 19 author-restored lines were altered against the author's recent decision. The change list's claim that restored lines were kept verbatim is false. The texture diagnosis (hedge stacking, Suppose/Imagine openers, fragment runs) is reasonable, but the register shift toward chatty could itself read as imposed."
+}

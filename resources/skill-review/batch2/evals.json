@@ -1,0 +1,37 @@
+{
+ "skill_name": "batch2",
+ "evals": [
+  {
+   "id": 1,
+   "name": "art-ch9-review",
+   "prompt": "Evaluate the art for Chapter 9 of System 3 (chapters/09-layer-4-desire.md): which images are placed and actually print, which carry the argument, and keep / replace / add for each. Then write one generation brief for the most important gap. Save it as ch9-art.md.",
+   "expected_output": "",
+   "files": [],
+   "assertions": []
+  },
+  {
+   "id": 2,
+   "name": "art-anchors-check",
+   "prompt": "I've just done text passes on chapters 7 to 12 of System 3. Check that every art placement in those chapters still resolves against the current text, and tell me what broke and how to fix it. Report only; save it as art-anchors.md.",
+   "expected_output": "",
+   "files": [],
+   "assertions": []
+  },
+  {
+   "id": 3,
+   "name": "post-alberto",
+   "prompt": "Turn the 'Call Alberto' idea from Chapter 4 of System 3 (chapters/04-system-3.md) into a Coffee & Commute post for LinkedIn. Save it as post.md.",
+   "expected_output": "",
+   "files": [],
+   "assertions": []
+  },
+  {
+   "id": 4,
+   "name": "post-exploitgym",
+   "prompt": "Draft a LinkedIn post for my network from the ExploitGym story in Chapter 8 of System 3 (chapters/08-automatic-alignment-research.md), without spoiling the book. Save it as post.md with a short note to me.",
+   "expected_output": "",
+   "files": [],
+   "assertions": []
+  }
+ ]
+}

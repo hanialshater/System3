@@ -1,0 +1,61 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "ch11.md saved in outputs",
+   "passed": true,
+   "evidence": "ch11.md"
+  },
+  {
+   "text": "Chapter is 3-15% shorter (a real pass, not a no-op or a rewrite)",
+   "passed": true,
+   "evidence": "4812 -> 4537 words (5.7%)"
+  },
+  {
+   "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+   "passed": true,
+   "evidence": "47/48 kept; changed: That second competitor is easy to underestimate."
+  },
+  {
+   "text": "All headings preserved",
+   "passed": true,
+   "evidence": "15 orig, 15 out; missing: []"
+  },
+  {
+   "text": "All footnote markers preserved",
+   "passed": true,
+   "evidence": "0 -> 0; missing []"
+  },
+  {
+   "text": "Change list gives before/after measurements compared against a baseline from the author's own chapters",
+   "passed": true,
+   "evidence": "CHANGES.md has a before/after table from tells.py per 1k words (anaphora 2.37->1.17, parallel pairs, hedge 5.40->4.89, etc.) with Ch 2 and Ch 4 rows as the author's baseline, plus check-tells.py before/after and a 'Reading of the numbers' section interpreting the gap vs baseline."
+  },
+  {
+   "text": "Every cut or recast in the change list has a stated reason",
+   "passed": true,
+   "evidence": "All 31 numbered changes carry a bolded reason (e.g. #1 'Restates the clause before it...', #23 'Second telling of \"a new kind of legacy system with better animation\"'); recasts are marked '(new wording, flagged)'."
+  },
+  {
+   "text": "No invented first-person experience, new facts or new claims added to the chapter",
+   "passed": true,
+   "evidence": "Diff is cuts and folds of existing sentences only (e.g. #8 folds the 'If the problem is...' run, #22 folds 'You can' run). No new first-person anecdotes, facts or claims; the AUTHOR comment asking for a real prototype moment is preserved untouched."
+  },
+  {
+   "text": "Jokes and the chapter's comic lines survive the pass (none cut or flattened)",
+   "passed": false,
+   "evidence": "Change #23 cut 'the library eventually recreates the configuration matrix in a more colorful form', a dry comic line (reason given: second telling of 'legacy system with better animation'). Every other listed joke survives (grep: salary, RETURN_HESITANT_PERSON, fruit bowl, passive voice, tenure, posture, Berlin, socks all present), but the assertion requires none cut."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 1,
+  "total": 10,
+  "pass_rate": 0.9
+ },
+ "notes": "Careful, conservative pass (-5.7% by auto count) that explicitly protected the 2 Oct restored lines (47/48 kept) and lists optional cuts not made, plus a patch and apply script. Its diagnosis (anaphora/parallel pairs/restatement vs Ch 2/Ch 4) is grounded in numbers. Weak spot: change #28 touched a restored line ('That second competitor is easy to underestimate') despite claiming every restored line is untouched, and #23 removed a small joke."
+}

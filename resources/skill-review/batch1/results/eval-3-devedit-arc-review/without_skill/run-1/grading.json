@@ -1,0 +1,51 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "arc-proposal.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "States the book's spine in three sentences or fewer and explicitly offers it for correction",
+   "passed": false,
+   "evidence": "\u00a71 'The spine in one breath' is a paragraph of roughly ten sentences (from 'Give an agent a problem...' to '...for the same reason we built them for AI.'), plus a movement line. It is offered for correction ('If that paragraph is not your book, correct it first') but far exceeds three sentences."
+  },
+  {
+   "text": "Has a 'least sure' section with at least three specific uncertainties, each tied to evidence in the book",
+   "passed": true,
+   "evidence": "\u00a76 'Where I am least sure' has seven ranked questions, each tied to evidence: 6.1 Ch 10 ~2,300 words and half thesis defence; 6.3 Peirce at Ch 5 line 192 (verified); 6.5 Ch 12's 'one argument left... a prophecy'; 6.7 three stores in Ch 7, 9, 11."
+  },
+  {
+   "text": "Book order matches book-design/curated/book-order.json (reveal after Ch5, interlude between Ch8 and Ch9, Ch13 fable then coda)",
+   "passed": true,
+   "evidence": "\u00a72 unit table: Preface, Part I, 1-3, Part II, 4-5, Reveal page, Part III, 6-8, Interlude, Part IV, 9-10, Part V, 11-12, Alternative Ending divider, 13, Scaffolds page, back matter; matches book-order.json."
+  },
+  {
+   "text": "Does not present already-resolved items (reveal ASSISTANT EDIT, interlude ASSISTANT DRAFT, Ch9 SLOT 4) as current open blockers",
+   "passed": true,
+   "evidence": "Does not list the reveal/interlude/Ch9 markers as blockers anywhere; \u00a77 notes 'REVISIT.md says the drafting markers were accepted on 30 September' and treats only the 14 AUTHOR: placeholders as remaining (which are indeed still present)."
+  },
+  {
+   "text": "Treats Chapter 13 as protected: proposes no change to it",
+   "passed": true,
+   "evidence": "'Chapter 13 is discussed only as structure, and nothing here proposes touching its text'; 6.5 'I am not proposing to change Ch 13 itself.'"
+  },
+  {
+   "text": "Report only: applies no edits and frames structural concerns as questions or proposals",
+   "passed": true,
+   "evidence": "'This is a report only. Nothing in the manuscript has been changed. Every option below is a question for you'; \u00a75 slips framed as 'seams, not fixes'; git status clean."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.875
+ },
+ "notes": "Broader than old_skill: six named threads and an unregistered seed/payoff list (e.g. 'chaos an API key', 'scaffold' reversal) that would be valuable to a later edit pass; spot-checked line refs (Ch 5:192, Ch 12:39 vs Ch 9:39-41) are accurate. Weaker on concision: the spine is a long paragraph and the report is ~70% longer. Does not explicitly catch the stale system3-state record, though it does flag the 1 Oct evaluation as predating the current order."
+}

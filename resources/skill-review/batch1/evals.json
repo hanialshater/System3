@@ -1,0 +1,166 @@
+{
+ "skill_name": "author-skills",
+ "evals": [
+  {
+   "id": 1,
+   "name": "dellm-ch11-pass",
+   "skill": "de-llm",
+   "prompt": "Chapter 11 of System 3 (chapters/11-the-store-that-builds-itself.md) still feels like LLM writing to me. Do a de-LLM pass on it. Work on a copy: save the edited chapter as ch11.md, plus your change list and before/after measurements, in the outputs folder.",
+   "assertions": [
+    "Change list gives before/after measurements compared against a baseline from the author's own chapters",
+    "Every cut or recast in the change list has a stated reason",
+    "No invented first-person experience, new facts or new claims added to the chapter",
+    "Jokes and the chapter's comic lines survive the pass (none cut or flattened)",
+    "The change list's claims about protected or restored lines are accurate (they match what the edited copy actually contains)"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "dellm-xy-ch8",
+   "skill": "de-llm",
+   "prompt": "Do an X/Y pass on chapter 8 of System 3 (chapters/08-automatic-alignment-research.md): remove the 'not X but Y' / 'X is not Y. It is Z' pattern where it's a tic, keep it where it does work. Work on a copy: save ch08.md and the change list in the outputs folder.",
+   "assertions": [
+    "Change list lists the X/Y instances found, each with a cut-or-keep decision and a reason",
+    "At least one contrast is deliberately kept because it does argumentative work",
+    "Rewrites preserve meaning and facts (no claim changed)"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "devedit-arc-review",
+   "skill": "dev-edit",
+   "prompt": "Review the arc of System 3 as it stands now (book order in book-design/curated/book-order.json). Before any edits, propose the spine back to me so I can correct it, and tell me where you're least sure. Report only; save it as arc-proposal.md.",
+   "assertions": [
+    "States the book's spine in three sentences or fewer and explicitly offers it for correction",
+    "Has a 'least sure' section with at least three specific uncertainties, each tied to evidence in the book",
+    "Book order matches book-design/curated/book-order.json (reveal after Ch5, interlude between Ch8 and Ch9, Ch13 fable then coda)",
+    "Does not present already-resolved items (reveal ASSISTANT EDIT, interlude ASSISTANT DRAFT, Ch9 SLOT 4) as current open blockers",
+    "Treats Chapter 13 as protected: proposes no change to it",
+    "Report only: applies no edits and frames structural concerns as questions or proposals"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "devedit-ch10-plan",
+   "skill": "dev-edit",
+   "prompt": "Plan a development edit for Chapter 10 of System 3 (chapters/10-fluent-autonomy.md): diagnose it and give me an ordered plan with the expected effect and cost of each item. Don't implement anything. Save it as ch10-plan.md.",
+   "assertions": [
+    "Plan items are ordered, and each has an expected effect and a cost",
+    "Sampled line references and quotes (5) are accurate against the current Ch10 text",
+    "Checks the author's/recent restores (git log, revert list) and does not propose cutting recently restored lines without saying so",
+    "Notes cross-book dependencies (e.g. lines quoted by the Zen appendix or other chapters) for anything it proposes to cut",
+    "Separates fixes the assistant can make from material only the author can supply ([AUTHOR] needs)",
+    "Catches the Ch10 score range ('2.26 to 2.636') that conflicts with Chapter 2's numbers, or another cross-chapter factual inconsistency the grader confirms"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "fc-ch7-go",
+   "skill": "fresh-claims",
+   "prompt": "Fact-check the AlphaGo, AlphaGo Zero, Lee Sedol and KataGo passages in chapter 7 of System 3 (chapters/07-recursive-self-improvement.md), and the Lee Sedol passage in chapter 9, together with their entries in chapters/appendix-references.md, before print. Save the ledger and your findings as fact-check.md.",
+   "assertions": [
+    "Flags that accounts differ on whether Lee Sedol left the room because of Move 37 or was already out",
+    "Flags that Kellin Pelrine, described as an amateur, is a co-author of the cited KataGo paper",
+    "Each ledger row has a verdict and a named source",
+    "Checks the appendix reference entries themselves (pages, dates, URLs)",
+    "Proposed corrections are minimal and keep the author's wording where possible"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "fc-preface-ch8",
+   "skill": "fresh-claims",
+   "prompt": "Fact-check the recent (2025-2026) claims in the Preface and Chapter 8 of System 3 (chapters/00-preface.md, chapters/08-automatic-alignment-research.md): the ExploitGym / Hugging Face incident, the C compiler, Navier-Stokes, and the alignment research results. Save the ledger and findings as fact-check.md.",
+   "assertions": [
+    "Covers all four named items: ExploitGym/Hugging Face incident, the C compiler, Navier-Stokes, alignment research results",
+    "Gives an as-of date and a re-check-at-print list for fast-moving claims (e.g. Navier-Stokes status)",
+    "Catches the constitution reference date (21 vs 22 January 2026)",
+    "Distinguishes claims verified in a primary source from those confirmed only through coverage",
+    "Catches that Ch8 line ~109 attributes 'test set had become a validation set' to the authors, an attribution a 30 Sept commit removed as unverified",
+    "Finds at least one substantive wording-vs-source problem the grader confirms (e.g. Ch8 'across versions' where the paper compares different models, or the uncited 'about a quarter of prompts')"
+   ]
+  },
+  {
+   "id": 7,
+   "name": "lt-alberto-blog",
+   "skill": "levantine-translate",
+   "prompt": "Translate the 'Call Alberto' section of Chapter 4 of System 3 (chapters/04-system-3.md, the section headed '## Call Alberto') into Arabic for my blog. Save it as alberto-ar.md with a short note.",
+   "assertions": [
+    "Register is colloquial Levantine suitable for a blog, not MSA",
+    "Jokes land in Arabic (the penguin / Navona joke and 'He laughs' kept as jokes, not flattened or explained)",
+    "Faithful: no content cut or added compared with the English section",
+    "Translation text adds no explanation of jokes, seeds or references",
+    "Note is short and actionable (lists the few choices the author should check)"
+   ]
+  },
+  {
+   "id": 8,
+   "name": "lt-preface-msa",
+   "skill": "levantine-translate",
+   "prompt": "Translate the Preface of System 3 (chapters/00-preface.md) into Arabic for an Al Jazeera-style op-ed: literary MSA with light colloquial touches. Save it as preface-ar.md with a short note.",
+   "assertions": [
+    "Register is literary MSA with a few light colloquial touches (majority MSA)",
+    "The loose-cable riddle and other seeds are not explained, in the text or the note",
+    "Faithful: names, numbers, dates and claims all preserved",
+    "Reads as natural Arabic op-ed prose rather than a calque of English syntax (grader cites two example sentences)",
+    "Note is short and actionable"
+   ]
+  },
+  {
+   "id": 9,
+   "name": "dellm-ch12-heldout",
+   "prompt": "Chapter 12 (chapters/12-after-capacity.md) has had a few passes but still has places that read like an LLM wrote them. Do a de-LLM pass. Work on a copy: save ch12.md, the change list and before/after measurements in the outputs folder.",
+   "expected_output": "",
+   "files": [],
+   "assertions": [
+    "Change list gives before/after measurements compared against a baseline from the author's own chapters",
+    "Every change in the change list has a stated reason",
+    "No invented first-person experience, new facts or new claims added",
+    "Jokes and dry asides survive the pass",
+    "The change list's claims about protected or restored lines are accurate"
+   ]
+  },
+  {
+   "id": 10,
+   "name": "devedit-ch1-heldout",
+   "prompt": "Diagnose Chapter 1 of System 3 (chapters/01-why-im-betting-on-ai-agents.md) as a development editor and give me an ordered plan of what to change, with effect and cost for each item. Don't implement anything. Save it as ch1-plan.md.",
+   "expected_output": "",
+   "files": [],
+   "assertions": [
+    "Plan items are ordered, and each has an expected effect and a cost",
+    "Sampled line references and quotes (5) are accurate against the current Ch1 text",
+    "Identifies lines the author himself rewrote recently (27 Sep, aeddc03) and does not propose cutting them without flagging them as his",
+    "Leaves the restored cat-obsession joke alone or explicitly protects it",
+    "Separates fixes the assistant can make from material only the author can supply ([AUTHOR] needs)"
+   ]
+  },
+  {
+   "id": 11,
+   "name": "fc-ch2-heldout",
+   "prompt": "Fact-check the numbers, dates and named results in Chapter 2 of System 3 (chapters/02-the-algorithm-vortex.md) and its entries in chapters/appendix-references.md before print. Save the ledger and findings as fact-check.md.",
+   "expected_output": "",
+   "files": [],
+   "assertions": [
+    "Ledger rows each have a verdict, a named source and an access status (primary read / coverage only / not reached)",
+    "Checks the appendix reference entries themselves (pages, dates, URLs)",
+    "Gives an as-of date and a re-check-at-print list where claims can change",
+    "Each 'verified' verdict is supported for the exact wording (subject, comparison, qualifier), with at least one wording-level issue flagged or explicitly ruled out",
+    "Checks consistency of Chapter 2's numbers with places other chapters restate them"
+   ]
+  },
+  {
+   "id": 12,
+   "name": "lt-ch9-linkedin-heldout",
+   "prompt": "Translate the opening of Chapter 9 of System 3 (chapters/09-layer-4-desire.md, from the start up to the heading '## Nobody Wanted AWS in 1995') into Arabic for a LinkedIn post for my Arabic-speaking network. Save it as ch9-ar.md with a short note.",
+   "expected_output": "",
+   "files": [],
+   "assertions": [
+    "Register fits a LinkedIn post by this author (state the register chosen and why; colloquial Levantine or light MSA both acceptable if justified)",
+    "Faithful: no content cut or added beyond what a post format strictly needs, and any such change is listed",
+    "Translation text adds no explanation of jokes, seeds or references",
+    "Note is short (about 150 words or less) and actionable, kept separate from the post text",
+    "No Arabic file was saved into the repo's chapters/ folder"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "alberto-ar.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+   "passed": true,
+   "evidence": "9 Arabic paras vs 7 source"
+  },
+  {
+   "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+   "passed": true,
+   "evidence": "3 English / 233 Arabic words in body"
+  },
+  {
+   "text": "Register is colloquial Levantine suitable for a blog, not MSA",
+   "passed": false,
+   "evidence": "Body is MSA throughout, with no Levantine forms: «لنفترض أن أحدهم أخبرني», «لا أستطيع أن أتفقد بنفسي», «هل تعيش طيور البطريق», «لكنني لا أعرف ذلك يقينًا», «لا ينبغي لهم أن ينقلوا مصداقيتي». No مش/بدّي/هسا/عم/شو anywhere."
+  },
+  {
+   "text": "Jokes land in Arabic (the penguin / Navona joke and 'He laughs' kept as jokes, not flattened or explained)",
+   "passed": true,
+   "evidence": "«يضحك.» kept as its own line, and the Navona joke kept: «وقد يكون بطريق هارب يعبر ساحة نافونا في هذه اللحظة بالذات ويُفسد عليّ المثال». Neither is explained, though the MSA makes them stiffer than in English."
+  },
+  {
+   "text": "Faithful: no content cut or added compared with the English section",
+   "passed": true,
+   "evidence": "All paragraphs translated faithfully ('ranking systems' -> «أنظمة الترتيب», 'metadata' -> «بياناتها الوصفية»); nothing cut or added in the body."
+  },
+  {
+   "text": "Translation text adds no explanation of jokes, seeds or references",
+   "passed": true,
+   "evidence": "Translation body has no explanations. The reader-facing note at the top gives chapter context and quotes the previous section's last line, but it sits outside the translation and doesn't explain the jokes."
+  },
+  {
+   "text": "Note is short and actionable (lists the few choices the author should check)",
+   "passed": false,
+   "evidence": "The 'note' is a reader-facing blog preamble («هذا المقطع مترجم من الفصل الرابع...»), not a note to the author. It lists no choices to check (register, term choices, spellings)."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.778
+ },
+ "notes": "A competent, faithful MSA translation, but it ignores the blog register entirely, which is the core requirement here. The note was read as a blog intro rather than a translator's note, so the author gets nothing to review."
+}

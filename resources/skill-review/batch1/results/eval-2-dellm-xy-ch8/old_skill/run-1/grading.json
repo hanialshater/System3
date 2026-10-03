@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "ch08.md saved in outputs",
+   "passed": true,
+   "evidence": "ch08.md"
+  },
+  {
+   "text": "X/Y pass is surgical: length change under 5%",
+   "passed": true,
+   "evidence": "3801 -> 3800 words (0.0%)"
+  },
+  {
+   "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+   "passed": true,
+   "evidence": "60/60 kept; changed: "
+  },
+  {
+   "text": "All headings preserved",
+   "passed": true,
+   "evidence": "11 orig, 11 out; missing: []"
+  },
+  {
+   "text": "All footnote markers preserved",
+   "passed": true,
+   "evidence": "0 -> 0; missing []"
+  },
+  {
+   "text": "Change list lists the X/Y instances found, each with a cut-or-keep decision and a reason",
+   "passed": false,
+   "evidence": "CHANGES.md lists 2 cuts and 16 'Kept on purpose' items, but not every kept item has a reason: 'ten copies of one model can share one blind spot where ten human reports would have ten.' and 'Subtract it and the model stops refusing. Add it and the model refuses perfectly harmless requests.' are listed with no reason. One more is left as 'Optional, not applied'."
+  },
+  {
+   "text": "At least one contrast is deliberately kept because it does argumentative work",
+   "passed": true,
+   "evidence": "Many contrasts kept with argumentative reasons, e.g. 'Its weights had not been retrained. Researchers had clamped...' kept because 'It separates steering from retraining, which is what the section turns on'; 'If it makes ten decisions... If it makes ten thousand' kept as 'The pair is the argument'."
+  },
+  {
+   "text": "Rewrites preserve meaning and facts (no claim changed)",
+   "passed": true,
+   "evidence": "Two edits only: deleting 'The model was never asked how it writes poetry; the trace showed it.' and 'The human does not disappear from this picture. She moves up' -> 'The human moves up'. No claim changed. The first cut loses the explicit asking-vs-looking bridge from the self-report section, a small loss of connective meaning the change list acknowledges, but the paragraph above already states the trace showed it."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 1,
+  "total": 9,
+  "pass_rate": 0.889
+ },
+ "notes": "Thorough reading with measurements vs a Ch 2 baseline, a list of out-of-scope repetition issues for later, and a patch/apply script. It leaves an inline <!-- ASSISTANT EDIT --> comment in ch08.md (per house rule). The first cut is debatable; the without_skill run explicitly kept the same sentence as a bridge."
+}

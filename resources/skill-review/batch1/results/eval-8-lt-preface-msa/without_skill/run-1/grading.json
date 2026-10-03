@@ -1,0 +1,56 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "preface-ar.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+   "passed": true,
+   "evidence": "18 Arabic paras vs 17 source"
+  },
+  {
+   "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+   "passed": true,
+   "evidence": "3 English / 387 Arabic words in body"
+  },
+  {
+   "text": "Register is literary MSA with a few light colloquial touches (majority MSA)",
+   "passed": true,
+   "evidence": "Majority MSA («ماذا لو كان بوسعنا أن نَحسِب جدالًا؟», «نحن في سبتمبر/أيلول 2026 وأنا أكتب هذه السطور») with light colloquial touches: «ممتاز يا عمّي، هات المعادلة», «وقهوتك لسّه سخنة زيادة عن اللزوم», «وجيب قهوتك معك»."
+  },
+  {
+   "text": "The loose-cable riddle and other seeds are not explained, in the text or the note",
+   "passed": false,
+   "evidence": "The note (appended in preface-ar.md, addressed «للمحرر») says «\"السلك المرتخي\" إحالة ضمنية إلى تجربة أوبرا (2011) التي بدا فيها أن النيوترينوات أسرع من الضوء» and also explains the Back to the Future reference, so the seeds are explained in the note itself."
+  },
+  {
+   "text": "Faithful: names, numbers, dates and claims all preserved",
+   "passed": true,
+   "evidence": "Names, dates and numbers all preserved (2017, September 2026, three/four centuries, Anthropic, OpenAI, Navier–Stokes); footnote link [1] kept. Minor drift: 'a great many arguments' -> «جدالات لا تُحصى», 'Something built' -> «أداةٌ بُنيت», 'argument' -> «جدالًا» (closer to 'quarrel'). No claim altered."
+  },
+  {
+   "text": "Reads as natural Arabic op-ed prose rather than a calque of English syntax (grader cites two example sentences)",
+   "passed": true,
+   "evidence": "Natural prose, e.g. «أحيانًا تكفي ورقة بحثية صغيرة لتزحزح الأرض من تحت قدميك.» and «نحن في سبتمبر/أيلول 2026 وأنا أكتب هذه السطور.» Some calque remains («لكي تعيد الاكتشافاتُ تشكيلَ المشروع كله وأنت غائب»)."
+  },
+  {
+   "text": "Note is short and actionable",
+   "passed": false,
+   "evidence": "The note is one short paragraph, but it describes choices without flagging anything for the author to check or decide (no options, no 'to check' items). It also explains seeds, and because it sits inside the deliverable file addressed to the editor, it would ship to the outlet."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.778
+ },
+ "notes": "Fluent and comparable in quality to old_skill. «لسّه سخنة زيادة عن اللزوم» keeps 'too hot' better. «جدالًا» for 'argument' is a weaker choice, and the note leaks the OPERA and film references to the editor, which is worse than old_skill's private author note."
+}

@@ -1,0 +1,46 @@
+{
+ "expectations": [
+  {
+   "text": "Repository left unmodified (work done on copies)",
+   "passed": true,
+   "evidence": "git status clean"
+  },
+  {
+   "text": "ch10-plan.md saved in outputs",
+   "passed": true,
+   "evidence": "present"
+  },
+  {
+   "text": "Plan items are ordered, and each has an expected effect and a cost",
+   "passed": true,
+   "evidence": "\u00a74 table numbered 1-10 'by leverage per unit of cost', each row has 'Expected effect' and 'Cost' columns filled (e.g. item 1: 'Claude: about 2 hours... Author: about 1 hour... +60-120 words')."
+  },
+  {
+   "text": "Sampled line references and quotes (5) are accurate against the current Ch10 text",
+   "passed": true,
+   "evidence": "Sampled 5 against current file: line 23 'A later pass cut it anyway. I put it back by hand.' (exact); line 77 'It is embarrassingly measurable. Count how often...' (exact); line 79 'By that measure, the history I had to restore is a failure. The reason for keeping it was on disk.' (exact); line 99 'it cannot make the solver's assurance into independent evidence' (on line 99); line 109 evidence disclaimer (exact). Also 113 lines, 2,306 words correct."
+  },
+  {
+   "text": "Checks the author's/recent restores (git log, revert list) and does not propose cutting recently restored lines without saying so",
+   "passed": true,
+   "evidence": "Reads revert list and git log: protected list includes R10-1, R10-2, R10-3 ('cut by the AI-tells pass and restored in 971450d' \u2014 verified in git log --since=2026-09-25), R10-5, R10-9, R10-10; D8 surfaces unrestored R10-4/R10-8 and notes 1d48f9b dropped the R10-8 note; nothing proposed for cutting is a restored line."
+  },
+  {
+   "text": "Notes cross-book dependencies (e.g. lines quoted by the Zen appendix or other chapters) for anything it proposes to cut",
+   "passed": true,
+   "evidence": "Notes the Invisible/Legible heading is 'the only in-chapter source of a Zen line' (verified: appendix-zen line 50); option A' 'keeps every protected heading'; rejects merging Friction into Legible because it 'would delete Selective Friction, the only place that coinage lives, and Ch 11's callback to it, R11-17, was already cut'. Only heading removed is 'The Interface Moves Up', which grep shows is referenced nowhere else."
+  },
+  {
+   "text": "Separates fixes the assistant can make from material only the author can supply ([AUTHOR] needs)",
+   "passed": true,
+   "evidence": "'Kind' column labels each item: 'Data: Claude. Prose: author', 'Author only' (items 3, 10), 'Decision: author; restore: Claude'; 'No invented scene, number or detail anywhere.'"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 0,
+  "total": 7,
+  "pass_rate": 1.0
+ },
+ "notes": "High-precision plan: all sampled citations exact, protected/restored lines enumerated with IDs, and dependency reasoning explicit. The tabulate-then-author-writes split for the second coffee test is a disciplined handling of lived evidence. It misses the circle-packing score mismatch at line 77 (2.26-2.636 vs Ch 2's 1.33->2.26 and 2.636 best run) that without_skill caught."
+}

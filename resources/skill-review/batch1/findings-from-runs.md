@@ -1,0 +1,17 @@
+- levantine: no author Arabic baseline exists in repo; skill should give a fallback (ask author for a link/sample; else compare against references/voice.md examples).
+- ar_register: «إنه» counted MSA though colloquial; «حدًّا» counted as dialect «حدا» after diacritic stripping; «هو» counted dialect; misses «هات», «يا خال».
+- levantine: skill asks to add terms to glossary.tsv; when skill is read-only, list proposed terms in the note instead (state that).
+- no-skill MSA translation explained the 'loose cable' seed in its note: levantine skill should say don't explain seeds (egg register) in translator notes either.
+- de-llm: tells.py antithesis regex found 1 hit (false positive on a semicolon); real hits came from reading. check-tells.py needs chapter prefix not a path (document).
+- de-llm delivery: git format-patch/git am impossible read-only; patch header names temp file; document 'diff -u' fallback and apply command.
+- de-llm: ASSISTANT EDIT inline comments need removal before build (note it).
+- dev-edit: system3-state.md stale (reveal ASSISTANT EDIT, interlude ASSISTANT DRAFT, Ch9 SLOT 4 listed as blocking but resolved per REVISIT.md 30 Sept; old Ch8->9 seam quoted). Make state file explicitly a dated snapshot + add 'verify each item with grep before reporting'.
+- arc_map --motifs breaks on multiword terms unless quoted; --recaps missed Ch5/Ch7 near-repeat (needs fuzzy/n-gram cross-chapter repeat detection).
+- dev-edit run found Ch12 closing previews the fable (octopus, romance, two pills, taxes) – egg rule conflict worth surfacing to author.
+- dev-edit: 'stop until arc agreed' cannot be honoured in a one-shot report; skill should say: when the author asked for a plan, state the assumed arc and put it first under 'Your decisions' (the run improvised this).
+- de-llm eval1 (orig): check-tells.py ignores file args, scans all chapters. Antithesis/parallel rates rise after cuts because the chapter is shorter (rate artefact): report counts too. Run ran unit tests inside repo (pycache) — skill should say run tests on a copy or skip if deps missing. Pass kept lighter than 10–15% target to protect 2 Oct restored lines — target should yield to the author's restored lines.
+- de-llm eval1 (no skill): raised contractions 2.6→13 per 1k, over Ch4 baseline; reworded one restored line. Good: noted the biggest LLM-feel source is hypothetical cases, not line edits.
+- fresh-claims eval5 (orig): claims.py SyntaxError on 3.11 confirmed. Both runs: primary sources blocked by proxy; skill needs a "source access" column (primary read / secondary only) and a 'verify before print' list.
+- fresh-claims eval5: both found Lee-left-room, Pelrine co-author; no-skill also caught Ch9 "the one player to win a game" ambiguity; orig caught "Move 37 won the game" wording and 'that 2016 match' dangling reference.
+- dev-edit eval4 (no skill): found factual slips (2.26 vs 1.33 range, back channel vs bulletin board) and that the 1 Oct evaluation quotes an older version — dev-edit should verify evaluation docs against current chapter text.
+- levantine (revised) it2: ar_register --list msa/nonjo prints nothing when no hits; should print 'no hits'.

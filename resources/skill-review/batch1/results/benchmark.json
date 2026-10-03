@@ -1,0 +1,1058 @@
+{
+  "metadata": {
+    "skill_name": "author-skills",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-10-03T19:09:29Z",
+    "evals_run": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "total": 10,
+        "time_seconds": 256.8,
+        "tokens": 110468,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "ch11.md saved in outputs",
+          "passed": true,
+          "evidence": "ch11.md"
+        },
+        {
+          "text": "Chapter is 3-15% shorter (a real pass, not a no-op or a rewrite)",
+          "passed": true,
+          "evidence": "4812 -> 4537 words (5.7%)"
+        },
+        {
+          "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+          "passed": true,
+          "evidence": "47/48 kept; changed: That second competitor is easy to underestimate."
+        },
+        {
+          "text": "All headings preserved",
+          "passed": true,
+          "evidence": "15 orig, 15 out; missing: []"
+        },
+        {
+          "text": "All footnote markers preserved",
+          "passed": true,
+          "evidence": "0 -> 0; missing []"
+        },
+        {
+          "text": "Change list gives before/after measurements compared against a baseline from the author's own chapters",
+          "passed": true,
+          "evidence": "CHANGES.md has a before/after table from tells.py per 1k words (anaphora 2.37->1.17, parallel pairs, hedge 5.40->4.89, etc.) with Ch 2 and Ch 4 rows as the author's baseline, plus check-tells.py before/after and a 'Reading of the numbers' section interpreting the gap vs baseline."
+        },
+        {
+          "text": "Every cut or recast in the change list has a stated reason",
+          "passed": true,
+          "evidence": "All 31 numbered changes carry a bolded reason (e.g. #1 'Restates the clause before it...', #23 'Second telling of \"a new kind of legacy system with better animation\"'); recasts are marked '(new wording, flagged)'."
+        },
+        {
+          "text": "No invented first-person experience, new facts or new claims added to the chapter",
+          "passed": true,
+          "evidence": "Diff is cuts and folds of existing sentences only (e.g. #8 folds the 'If the problem is...' run, #22 folds 'You can' run). No new first-person anecdotes, facts or claims; the AUTHOR comment asking for a real prototype moment is preserved untouched."
+        },
+        {
+          "text": "Jokes and the chapter's comic lines survive the pass (none cut or flattened)",
+          "passed": false,
+          "evidence": "Change #23 cut 'the library eventually recreates the configuration matrix in a more colorful form', a dry comic line (reason given: second telling of 'legacy system with better animation'). Every other listed joke survives (grep: salary, RETURN_HESITANT_PERSON, fruit bowl, passive voice, tenure, posture, Berlin, socks all present), but the assertion requires none cut."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.889,
+        "passed": 8,
+        "failed": 1,
+        "total": 9,
+        "time_seconds": 103.8,
+        "tokens": 80609,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "ch08.md saved in outputs",
+          "passed": true,
+          "evidence": "ch08.md"
+        },
+        {
+          "text": "X/Y pass is surgical: length change under 5%",
+          "passed": true,
+          "evidence": "3801 -> 3800 words (0.0%)"
+        },
+        {
+          "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+          "passed": true,
+          "evidence": "60/60 kept; changed: "
+        },
+        {
+          "text": "All headings preserved",
+          "passed": true,
+          "evidence": "11 orig, 11 out; missing: []"
+        },
+        {
+          "text": "All footnote markers preserved",
+          "passed": true,
+          "evidence": "0 -> 0; missing []"
+        },
+        {
+          "text": "Change list lists the X/Y instances found, each with a cut-or-keep decision and a reason",
+          "passed": false,
+          "evidence": "CHANGES.md lists 2 cuts and 16 'Kept on purpose' items, but not every kept item has a reason: 'ten copies of one model can share one blind spot where ten human reports would have ten.' and 'Subtract it and the model stops refusing. Add it and the model refuses perfectly harmless requests.' are listed with no reason. One more is left as 'Optional, not applied'."
+        },
+        {
+          "text": "At least one contrast is deliberately kept because it does argumentative work",
+          "passed": true,
+          "evidence": "Many contrasts kept with argumentative reasons, e.g. 'Its weights had not been retrained. Researchers had clamped...' kept because 'It separates steering from retraining, which is what the section turns on'; 'If it makes ten decisions... If it makes ten thousand' kept as 'The pair is the argument'."
+        },
+        {
+          "text": "Rewrites preserve meaning and facts (no claim changed)",
+          "passed": true,
+          "evidence": "Two edits only: deleting 'The model was never asked how it writes poetry; the trace showed it.' and 'The human does not disappear from this picture. She moves up' -> 'The human moves up'. No claim changed. The first cut loses the explicit asking-vs-looking bridge from the self-report section, a small loss of connective meaning the change list acknowledges, but the paragraph above already states the trace showed it."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.875,
+        "passed": 7,
+        "failed": 1,
+        "total": 8,
+        "time_seconds": 194.2,
+        "tokens": 222622,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "arc-proposal.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "States the book's spine in three sentences or fewer and explicitly offers it for correction",
+          "passed": false,
+          "evidence": "Section 1 is headed 'The spine in one sentence' but contains five sentences ('Give AI the search...', 'The conditions that let fallible agents...', 'Turn that institution on itself...', 'What is left for the human...', 'The book answers that once with hope...'). Offered for correction ('proposed spine, for you to correct'; \u00a76 'Correct the spine sentence'), but exceeds the three-sentence limit."
+        },
+        {
+          "text": "Has a 'least sure' section with at least three specific uncertainties, each tied to evidence in the book",
+          "passed": true,
+          "evidence": "\u00a74 'Where I'm least sure' has six questions (A-F), each tied to text: e.g. A cites Ch 8 closing 'I usually don't know what I want' and Ch 9 opener; B cites Ch 10 at 39 I/1k and 2,306 words; F quotes Ch 12's 'one argument left... a prophecy' (verified at 12:277)."
+        },
+        {
+          "text": "Book order matches book-design/curated/book-order.json (reveal after Ch5, interlude between Ch8 and Ch9, Ch13 fable then coda)",
+          "passed": true,
+          "evidence": "\u00a73 table runs Preface, Part I 1-3, Part II 4-5, Reveal page, Part III 6-8, Interlude, Part IV 9-10, Part V 11-12, Alternative Ending + Ch 13, Scaffolds page; matches book-order.json."
+        },
+        {
+          "text": "Does not present already-resolved items (reveal ASSISTANT EDIT, interlude ASSISTANT DRAFT, Ch9 SLOT 4) as current open blockers",
+          "passed": true,
+          "evidence": "\u00a75 'Stale standing records': 'The system3-state reference lists the reveal ASSISTANT EDIT, the interlude ASSISTANT DRAFT and Ch 9 SLOT 4 as blocking. arc_map --markers finds none of them, and REVISIT.md says they were resolved on 30 Sept.' Verified: grep of chapters/ finds no such markers; resources/REVISIT.md line 19 confirms."
+        },
+        {
+          "text": "Treats Chapter 13 as protected: proposes no change to it",
+          "passed": true,
+          "evidence": "Ch 13 described only ('The ending power wants. It stays unexplained.'); question F concerns Ch 12's final paragraph and the divider, not Ch 13's text. No change to Ch 13 proposed."
+        },
+        {
+          "text": "Report only: applies no edits and frames structural concerns as questions or proposals",
+          "passed": true,
+          "evidence": "'This is a report only. Nothing in the repo has changed. I have proposed no edits'; structural concerns framed as questions A-F with options (i)/(ii)/(iii); auto check confirms git status clean."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 214.9,
+        "tokens": 111068,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "ch10-plan.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Plan items are ordered, and each has an expected effect and a cost",
+          "passed": true,
+          "evidence": "\u00a74 table numbered 1-10 'by leverage per unit of cost', each row has 'Expected effect' and 'Cost' columns filled (e.g. item 1: 'Claude: about 2 hours... Author: about 1 hour... +60-120 words')."
+        },
+        {
+          "text": "Sampled line references and quotes (5) are accurate against the current Ch10 text",
+          "passed": true,
+          "evidence": "Sampled 5 against current file: line 23 'A later pass cut it anyway. I put it back by hand.' (exact); line 77 'It is embarrassingly measurable. Count how often...' (exact); line 79 'By that measure, the history I had to restore is a failure. The reason for keeping it was on disk.' (exact); line 99 'it cannot make the solver's assurance into independent evidence' (on line 99); line 109 evidence disclaimer (exact). Also 113 lines, 2,306 words correct."
+        },
+        {
+          "text": "Checks the author's/recent restores (git log, revert list) and does not propose cutting recently restored lines without saying so",
+          "passed": true,
+          "evidence": "Reads revert list and git log: protected list includes R10-1, R10-2, R10-3 ('cut by the AI-tells pass and restored in 971450d' \u2014 verified in git log --since=2026-09-25), R10-5, R10-9, R10-10; D8 surfaces unrestored R10-4/R10-8 and notes 1d48f9b dropped the R10-8 note; nothing proposed for cutting is a restored line."
+        },
+        {
+          "text": "Notes cross-book dependencies (e.g. lines quoted by the Zen appendix or other chapters) for anything it proposes to cut",
+          "passed": true,
+          "evidence": "Notes the Invisible/Legible heading is 'the only in-chapter source of a Zen line' (verified: appendix-zen line 50); option A' 'keeps every protected heading'; rejects merging Friction into Legible because it 'would delete Selective Friction, the only place that coinage lives, and Ch 11's callback to it, R11-17, was already cut'. Only heading removed is 'The Interface Moves Up', which grep shows is referenced nowhere else."
+        },
+        {
+          "text": "Separates fixes the assistant can make from material only the author can supply ([AUTHOR] needs)",
+          "passed": true,
+          "evidence": "'Kind' column labels each item: 'Data: Claude. Prose: author', 'Author only' (items 3, 10), 'Decision: author; restore: Claude'; 'No invented scene, number or detail anywhere.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 266.8,
+        "tokens": 107793,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "fact-check.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Ledger has at least 15 claim rows",
+          "passed": true,
+          "evidence": "25 table rows"
+        },
+        {
+          "text": "Reports which sources could not be opened directly",
+          "passed": true,
+          "evidence": "mentions access limits"
+        },
+        {
+          "text": "Flags that accounts differ on whether Lee Sedol left the room because of Move 37 or was already out",
+          "passed": true,
+          "evidence": "G5 'Lee got up and left the room...' status softened: 'Accounts conflict. Metz has Lee leaving after seeing the move. The 2017 documentary AlphaGo and several retellings say he was already outside on a smoke break when it was played'."
+        },
+        {
+          "text": "Flags that Kellin Pelrine, described as an amateur, is a co-author of the cited KataGo paper",
+          "passed": true,
+          "evidence": "G17: '**Pelrine is a co-author of the cited paper** (FAR AI)' -> corrected to 'An amateur on the research team, Kellin Pelrine'."
+        },
+        {
+          "text": "Each ledger row has a verdict and a named source",
+          "passed": true,
+          "evidence": "Every ledger row has a Status (verified (secondary)/softened/corrected) and a 'Source cited' note column plus named independent coverage (Wikipedia, NPR, BritGo, Metz extract, Korea Herald, FT, Yonhap/CNN/TNW); weakest is G13 ('Match ended 4-1') which relies on cited n32."
+        },
+        {
+          "text": "Checks the appendix reference entries themselves (pages, dates, URLs)",
+          "passed": true,
+          "evidence": "R1-R5 rows check refs:244/246/282/284/409: added PMLR pages 35655-35739, flagged DeepMind blog URL for re-check, 'human players' -> 'human experts', dates matched."
+        },
+        {
+          "text": "Proposed corrections are minimal and keep the author's wording where possible",
+          "passed": true,
+          "evidence": "corrections.patch shows minimal changes: 'Lee spent nearly fifteen minutes, part of it away from the board, considering his reply'; 'Move 37 helped AlphaGo win the game'; 'An amateur on the research team'; author's sentences otherwise kept."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 361.2,
+        "tokens": 134634,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "fact-check.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Ledger has at least 15 claim rows",
+          "passed": true,
+          "evidence": "42 table rows"
+        },
+        {
+          "text": "Reports which sources could not be opened directly",
+          "passed": true,
+          "evidence": "mentions access limits"
+        },
+        {
+          "text": "Covers all four named items: ExploitGym/Hugging Face incident, the C compiler, Navier-Stokes, alignment research results",
+          "passed": true,
+          "evidence": "Ledger rows E1-E12 (ExploitGym/HF), P2 and E12 (C compiler, primary Carlini post), P3 (Navier-Stokes, Quanta/MIT TR/Clay), A1-A9, W1-W6, M1-M2 (alignment research results)."
+        },
+        {
+          "text": "Gives an as-of date and a re-check-at-print list for fast-moving claims (e.g. Navier-Stokes status)",
+          "passed": true,
+          "evidence": "'Date: 3 October 2026'; 'Re-check at print (last checked 3 October 2026)' table includes 'Navier-Stokes: Clay's evaluation, credit decision, priority dispute', OpenAI incident follow-ups, references check line."
+        },
+        {
+          "text": "Catches the constitution reference date (21 vs 22 January 2026)",
+          "passed": true,
+          "evidence": "A4: 'The reference gives 21 January and the page shows 22 January... Suggest 22 January in the reference.' Verified: appendix-references.md:349 says 21 January 2026."
+        },
+        {
+          "text": "Distinguishes claims verified in a primary source from those confirmed only through coverage",
+          "passed": true,
+          "evidence": "'Primary checked' column per row, statuses 'verified' vs 'verified (secondary)' vs 'verified (literature)', and an 'Honesty about this check' section listing directly verified vs secondary-only items."
+        },
+        {
+          "text": "Catches that Ch8 line ~109 attributes 'test set had become a validation set' to the authors, an attribution a 30 Sept commit removed as unverified",
+          "passed": true,
+          "evidence": "W6: '**This clause was reworded on 30 Sep (commit ca80ba2) to remove exactly this attribution**, because the quotation could not be verified. The current text has reintroduced it.' Verified: ca80ba2 changed it to 'In effect, the repeatedly queried test set had become a validation set'; current 08:109 reads 'The authors acknowledged that their test set had become a validation set.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 68.3,
+        "tokens": 63896,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "alberto-ar.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+          "passed": true,
+          "evidence": "10 Arabic paras vs 7 source"
+        },
+        {
+          "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+          "passed": true,
+          "evidence": "5 English / 185 Arabic words in body"
+        },
+        {
+          "text": "Register is colloquial Levantine suitable for a blog, not MSA",
+          "passed": true,
+          "evidence": "Clearly Levantine (Jordanian) throughout: \u00ab\u062e\u0644\u0651\u064a\u0646\u0627 \u0646\u0642\u0648\u0644 \u062d\u062f\u0627 \u0642\u0644\u0651\u064a\u00bb, \u00ab\u0648\u0644\u0627 \u0628\u0642\u062f\u0631 \u0623\u0644\u0641\u0651\u00bb, \u00ab\u0641\u0628\u0631\u0646\u0651 \u0639\u0644\u0649 \u0623\u0644\u0628\u0631\u062a\u0648\u00bb, \u00ab\u0647\u0633\u0627 \u0635\u0631\u062a \u0623\u0639\u0631\u0641\u00bb, \u00ab\u0628\u0633 \u0645\u0634 \u0645\u062a\u0623\u0643\u062f \u0645\u064a\u0629 \u0628\u0627\u0644\u0645\u064a\u0629\u00bb, \u00ab\u0639\u0645 \u064a\u0642\u0637\u0639 \u0633\u0627\u062d\u0629 \u0646\u0627\u0641\u0648\u0646\u0627 \u0628\u0647\u0627\u0644\u0644\u062d\u0638\u0629 \u0628\u0627\u0644\u0632\u0628\u0637\u00bb, \u00ab\u0631\u062d \u0623\u0635\u064a\u0631 \u0623\u062b\u0642 \u0641\u064a\u0647 \u0623\u0642\u0644\u00bb."
+        },
+        {
+          "text": "Jokes land in Arabic (the penguin / Navona joke and 'He laughs' kept as jokes, not flattened or explained)",
+          "passed": true,
+          "evidence": "\u00ab\u0628\u064a\u0636\u062d\u0643.\u00bb kept as its own one-word paragraph; penguin/Navona joke kept dry: \u00ab\u0648\u0645\u0645\u0643\u0646 \u064a\u0643\u0648\u0646 \u0641\u064a \u0628\u0637\u0631\u064a\u0642 \u0647\u0631\u0628\u0627\u0646 \u0639\u0645 \u064a\u0642\u0637\u0639 \u0633\u0627\u062d\u0629 \u0646\u0627\u0641\u0648\u0646\u0627 \u0628\u0647\u0627\u0644\u0644\u062d\u0638\u0629 \u0628\u0627\u0644\u0632\u0628\u0637 \u0648\u064a\u062e\u0631\u0651\u0628\u0644\u064a \u0627\u0644\u0645\u062b\u0627\u0644\u00bb. The whales line lands too: \u00ab\u0648\u064a\u0644\u0632\u0642\u0648\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u062d\u064a\u062a\u0627\u0646\u060c \u0628\u0633 \u0644\u0623\u0646\u0647 \u0646\u0641\u0633 \u0627\u0644\u062b\u0645\u0651 \u0627\u0644\u0644\u064a \u0639\u0645 \u064a\u062d\u0643\u064a\u00bb."
+        },
+        {
+          "text": "Faithful: no content cut or added compared with the English section",
+          "passed": true,
+          "evidence": "All 7 source paragraphs present with the same content; the only addition is the connective \u00ab\u0647\u0633\u0627\u00bb before 'I know more...', which the note discloses. Technical terms kept in English (metadata, ranking systems, machine learning) per blog style."
+        },
+        {
+          "text": "Translation text adds no explanation of jokes, seeds or references",
+          "passed": true,
+          "evidence": "Translation body contains no glosses or explanations; the note mentions \u00ab\u0633\u0644\u0633\u0644\u0629 \u0627\u0644\u062b\u0642\u0629\u00bb points back to the previous section but suggests the author decide, rather than adding it to the text."
+        },
+        {
+          "text": "Note is short and actionable (lists the few choices the author should check)",
+          "passed": true,
+          "evidence": "Note has a 'To check' line with concrete choices (\u00ab\u0633\u0627\u062d\u0629 \u0646\u0627\u0641\u0648\u0646\u0627\u00bb vs \u00ab\u0628\u064a\u0627\u062a\u0633\u0627 \u0646\u0627\u0641\u0648\u0646\u0627\u00bb, \u00ab\u0639\u0634\u062a \u0641\u064a\u0647\u00bb vs \u00ab\u0639\u0627\u064a\u0634 \u0641\u064a\u0647\u00bb, whether to keep 'about Jordan') plus a standalone-context warning. It runs a bit long (commit hash, ar_register.py stats), but the actionable items are easy to find."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 8,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.778,
+        "passed": 7,
+        "failed": 2,
+        "total": 9,
+        "time_seconds": 102.7,
+        "tokens": 66399,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "preface-ar.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+          "passed": true,
+          "evidence": "18 Arabic paras vs 17 source"
+        },
+        {
+          "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+          "passed": true,
+          "evidence": "5 English / 378 Arabic words in body"
+        },
+        {
+          "text": "Register is literary MSA with a few light colloquial touches (majority MSA)",
+          "passed": true,
+          "evidence": "Majority literary MSA (\u00ab\u062a\u062e\u064a\u0651\u0644 \u0644\u0627\u064a\u0628\u0646\u062a\u0633 \u0644\u063a\u0629\u064b \u0628\u0644\u063a\u062a \u0645\u0646 \u0627\u0644\u062f\u0642\u0651\u0629 \u062d\u062f\u064b\u0651\u0627...\u00bb, \u00ab\u0623\u062d\u064a\u0627\u0646\u064b\u0627 \u062a\u0634\u0642\u0651 \u0648\u0631\u0642\u0629\u064c \u0628\u062d\u062b\u064a\u0629 \u0635\u063a\u064a\u0631\u0629 \u0627\u0644\u0623\u0631\u0636\u064e \u062a\u062d\u062a \u0642\u062f\u0645\u064a\u0643\u00bb) with a few deliberate colloquial touches: \u00ab\u0645\u0645\u062a\u0627\u0632 \u064a\u0627 \u062e\u0627\u0644\u060c \u0647\u0627\u062a \u0627\u0644\u0645\u0639\u0627\u062f\u0644\u0629\u00bb, \u00ab\u0648\u0642\u0647\u0648\u062a\u0643 \u0644\u0633\u0651\u0627 \u0633\u062e\u0646\u0629\u00bb, \u00ab\u0648\u0647\u0627\u062a \u0642\u0647\u0648\u062a\u0643 \u0645\u0639\u0643\u00bb."
+        },
+        {
+          "text": "The loose-cable riddle and other seeds are not explained, in the text or the note",
+          "passed": false,
+          "evidence": "The text leaves the cable line unexplained (\u00ab\u0648\u0643\u0627\u0628\u0644\u064b\u0627 \u0648\u0627\u062d\u062f\u064b\u0627 \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 \u0644\u0645 \u064a\u0643\u0646 \u0645\u062d\u0643\u0645 \u0627\u0644\u062a\u0648\u0635\u064a\u0644\u00bb), but translation-note.md says: 'The \"loose cable\" (the OPERA neutrino result) is as unexplained as in the English...' and suggests a hint may be needed. The note therefore explains the seed."
+        },
+        {
+          "text": "Faithful: names, numbers, dates and claims all preserved",
+          "passed": true,
+          "evidence": "Leibniz, Poincar\u00e9 embeddings, 2017, 'a year later', 'two years before his death', September 2026, Anthropic/Claude C compiler, OpenAI Navier\u2013Stokes, three centuries, four centuries all preserved. The endnote is translated from the appendix entry (Chapters 5 and 6 gloss matches appendix-references.md). Small drift: 'still too hot' -> \u00ab\u0644\u0633\u0651\u0627 \u0633\u062e\u0646\u0629\u00bb drops 'too' (disclosed); 'going for coffee' -> \u00ab\u062a\u0642\u0648\u0645 \u0644\u062a\u0635\u0646\u0639 \u0641\u0646\u062c\u0627\u0646 \u0642\u0647\u0648\u0629\u00bb."
+        },
+        {
+          "text": "Reads as natural Arabic op-ed prose rather than a calque of English syntax (grader cites two example sentences)",
+          "passed": true,
+          "evidence": "Natural op-ed Arabic, e.g. \u00ab\u0623\u062d\u064a\u0627\u0646\u064b\u0627 \u062a\u0634\u0642\u0651 \u0648\u0631\u0642\u0629\u064c \u0628\u062d\u062b\u064a\u0629 \u0635\u063a\u064a\u0631\u0629 \u0627\u0644\u0623\u0631\u0636\u064e \u062a\u062d\u062a \u0642\u062f\u0645\u064a\u0643.\u00bb and \u00ab\u0623\u0642\u0648\u0644 \u00ab\u064a\u0639\u064a\u062f \u0627\u0643\u062a\u0634\u0627\u0641\u00bb \u0644\u0623\u0646\u0646\u0627 \u0628\u0646\u064a\u0646\u0627\u0647 \u0645\u0646 \u0642\u0628\u0644.\u00bb Some calque remains ('enough work... in enough directions' -> \u00ab\u0645\u0627 \u064a\u0643\u0641\u064a\u060c \u0648\u0641\u064a \u0627\u062a\u062c\u0627\u0647\u0627\u062a \u062a\u0643\u0641\u064a\u00bb), but it doesn't dominate."
+        },
+        {
+          "text": "Note is short and actionable",
+          "passed": false,
+          "evidence": "translation-note.md is about 500 words in six sections (source, register, 5 engaging-over-faithful items, glossary, names, op-ed points, checks run). It is actionable, but not short."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.7,
+        "passed": 7,
+        "failed": 3,
+        "total": 10,
+        "time_seconds": 280.4,
+        "tokens": 113237,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "ch11.md saved in outputs",
+          "passed": true,
+          "evidence": "ch11.md"
+        },
+        {
+          "text": "Chapter is 3-15% shorter (a real pass, not a no-op or a rewrite)",
+          "passed": false,
+          "evidence": "4812 -> 4679 words (2.8%)"
+        },
+        {
+          "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+          "passed": false,
+          "evidence": "29/48 kept; changed: And importantly: does it beat simplification? | Perhaps the best response to an overloaded page is fewer things. | The system should have to earn its complexity against the possibility  | A society is not improved merely by hiring the best individual expert "
+        },
+        {
+          "text": "All headings preserved",
+          "passed": true,
+          "evidence": "15 orig, 15 out; missing: []"
+        },
+        {
+          "text": "All footnote markers preserved",
+          "passed": true,
+          "evidence": "0 -> 0; missing []"
+        },
+        {
+          "text": "Change list gives before/after measurements compared against a baseline from the author's own chapters",
+          "passed": true,
+          "evidence": "measurements.txt reports before/after for check-tells.py and a custom measure.py (contractions/1k 2.6->13.0, 'may'/1k 6.9->2.2, fragment runs 16->7, questions 5.0->2.2) with Chapter 4 shown as the author's baseline."
+        },
+        {
+          "text": "Every cut or recast in the change list has a stated reason",
+          "passed": false,
+          "evidence": "changes.md is organised by category with a reason per category, but many edits are not listed individually ('Also changed: L15, L29, L31, L105, L183'; contractions applied throughout; intensifiers trimmed). The 54KB diff rewrites nearly every sentence, including 19 of 48 author-restored lines (e.g. 'And importantly: does it beat simplification?' -> 'And, more important, does it beat simplification?'; 'Perhaps the best response...is fewer things' -> '...may be fewer things'), which have no stated reason, and the list falsely claims restored lines are 'kept word for word'."
+        },
+        {
+          "text": "No invented first-person experience, new facts or new claims added to the chapter",
+          "passed": true,
+          "evidence": "No invented experiences or new facts found in the diff; hedge removals mostly shift tone (e.g. 'Sami may read it...' -> 'Sami reads it...' inside an explicit 'If it works perfectly' hypothetical). The AUTHOR comment is kept and the note says 'No experiences were invented'."
+        },
+        {
+          "text": "Jokes and the chapter's comic lines survive the pass (none cut or flattened)",
+          "passed": true,
+          "evidence": "All jokes checked survive: PowerPoint theme 'earns its salary', RETURN_HESITANT_PERSON 'until retirement', 'resignation letter written in passive voice', 'junk drawer with tenure', and the configuration-matrix line kept as 'rebuilding the configuration matrix in brighter colors'."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 58.1,
+        "tokens": 59406,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "ch08.md saved in outputs",
+          "passed": true,
+          "evidence": "ch08.md"
+        },
+        {
+          "text": "X/Y pass is surgical: length change under 5%",
+          "passed": true,
+          "evidence": "3801 -> 3794 words (0.2%)"
+        },
+        {
+          "text": "At least 90% of sentences the author restored on 2 Oct are kept verbatim",
+          "passed": true,
+          "evidence": "60/60 kept; changed: "
+        },
+        {
+          "text": "All headings preserved",
+          "passed": true,
+          "evidence": "11 orig, 11 out; missing: []"
+        },
+        {
+          "text": "All footnote markers preserved",
+          "passed": true,
+          "evidence": "0 -> 0; missing []"
+        },
+        {
+          "text": "Change list lists the X/Y instances found, each with a cut-or-keep decision and a reason",
+          "passed": true,
+          "evidence": "changes.md has 1 changed instance with a reason and a 15-row 'Kept' table where every row has location, quoted line and a reason (e.g. 'Nobody had assigned a cyberattack... | A factual correction that matters: the attack was instrumental'). It misses some contrasts old_skill found (supervising/no longer watching, Subtract/Add), but every listed instance has a decision and reason."
+        },
+        {
+          "text": "At least one contrast is deliberately kept because it does argumentative work",
+          "passed": true,
+          "evidence": "E.g. 'Its weights had not been retrained. Researchers had clamped a single feature high' kept: 'The steering-versus-training distinction is the section's point'; 'The model was never asked how it writes poetry; the trace showed it' kept as the bridge from self-report to interpretability."
+        },
+        {
+          "text": "Rewrites preserve meaning and facts (no claim changed)",
+          "passed": true,
+          "evidence": "Single edit: 'The human does not disappear from this picture. She moves up' -> 'The human moves up'. Meaning and facts unchanged."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.875,
+        "passed": 7,
+        "failed": 1,
+        "total": 8,
+        "time_seconds": 210.4,
+        "tokens": 221368,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "arc-proposal.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "States the book's spine in three sentences or fewer and explicitly offers it for correction",
+          "passed": false,
+          "evidence": "\u00a71 'The spine in one breath' is a paragraph of roughly ten sentences (from 'Give an agent a problem...' to '...for the same reason we built them for AI.'), plus a movement line. It is offered for correction ('If that paragraph is not your book, correct it first') but far exceeds three sentences."
+        },
+        {
+          "text": "Has a 'least sure' section with at least three specific uncertainties, each tied to evidence in the book",
+          "passed": true,
+          "evidence": "\u00a76 'Where I am least sure' has seven ranked questions, each tied to evidence: 6.1 Ch 10 ~2,300 words and half thesis defence; 6.3 Peirce at Ch 5 line 192 (verified); 6.5 Ch 12's 'one argument left... a prophecy'; 6.7 three stores in Ch 7, 9, 11."
+        },
+        {
+          "text": "Book order matches book-design/curated/book-order.json (reveal after Ch5, interlude between Ch8 and Ch9, Ch13 fable then coda)",
+          "passed": true,
+          "evidence": "\u00a72 unit table: Preface, Part I, 1-3, Part II, 4-5, Reveal page, Part III, 6-8, Interlude, Part IV, 9-10, Part V, 11-12, Alternative Ending divider, 13, Scaffolds page, back matter; matches book-order.json."
+        },
+        {
+          "text": "Does not present already-resolved items (reveal ASSISTANT EDIT, interlude ASSISTANT DRAFT, Ch9 SLOT 4) as current open blockers",
+          "passed": true,
+          "evidence": "Does not list the reveal/interlude/Ch9 markers as blockers anywhere; \u00a77 notes 'REVISIT.md says the drafting markers were accepted on 30 September' and treats only the 14 AUTHOR: placeholders as remaining (which are indeed still present)."
+        },
+        {
+          "text": "Treats Chapter 13 as protected: proposes no change to it",
+          "passed": true,
+          "evidence": "'Chapter 13 is discussed only as structure, and nothing here proposes touching its text'; 6.5 'I am not proposing to change Ch 13 itself.'"
+        },
+        {
+          "text": "Report only: applies no edits and frames structural concerns as questions or proposals",
+          "passed": true,
+          "evidence": "'This is a report only. Nothing in the manuscript has been changed. Every option below is a question for you'; \u00a75 slips framed as 'seams, not fixes'; git status clean."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.857,
+        "passed": 6,
+        "failed": 1,
+        "total": 7,
+        "time_seconds": 222.4,
+        "tokens": 124225,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "ch10-plan.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Plan items are ordered, and each has an expected effect and a cost",
+          "passed": true,
+          "evidence": "Items 0-8 ordered, each with What/Why/Effect/Cost bullets, plus a totals table with time and word deltas."
+        },
+        {
+          "text": "Sampled line references and quotes (5) are accurate against the current Ch10 text",
+          "passed": false,
+          "evidence": "Sampled 5: line 23 quote exact; line 47 'Deep Mode grown up' correct; line 77 'scores ran from 2.26 to 2.636' exact; line 105 'back channel' correct; but D5 'Paragraph starters. \"So ...\" opens three paragraphs: 55, 73 and 85' is wrong \u2014 line 73 begins 'Most work does not let me leave', and grep '^So ' finds only 55 and 85. 4 of 5 accurate; the inaccurate one also drives a proposed edit (item 6)."
+        },
+        {
+          "text": "Checks the author's/recent restores (git log, revert list) and does not propose cutting recently restored lines without saying so",
+          "passed": true,
+          "evidence": "Constraints section lists restored lines R10-1, R10-2, R10-3, R10-5 as staying; D1 lists restore commits d1bf7a1, 971450d, 2c58bbe, 334b7f2, 7a106d6, 1d48f9b (all verified in git log); merge in item 4 'keep verbatim' includes R10-10; no restored line proposed for cutting."
+        },
+        {
+          "text": "Notes cross-book dependencies (e.g. lines quoted by the Zen appendix or other chapters) for anything it proposes to cut",
+          "passed": true,
+          "evidence": "Item 4 keeps the Invisible/Legible heading because it is the 'Zen source'; item 8 requires confirming 'the Zen appendix lines sourced in Ch 10 still appear there' and updating appendix-note-on-evidence; item 7 flags the Ch 11 echo as a cross-chapter change. Removed headings ('Interface Moves Up', 'Selective Friction') have no other references in chapters/ (verified)."
+        },
+        {
+          "text": "Separates fixes the assistant can make from material only the author can supply ([AUTHOR] needs)",
+          "passed": true,
+          "evidence": "Item labels 'Assisted' vs 'Author' throughout; totals table 'Who' column; 'about 1.5 h is the author's'; items 0, 1 explicitly Author-only."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.889,
+        "passed": 8,
+        "failed": 1,
+        "total": 9,
+        "time_seconds": 236.0,
+        "tokens": 99746,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "fact-check.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Ledger has at least 15 claim rows",
+          "passed": true,
+          "evidence": "38 table rows"
+        },
+        {
+          "text": "Reports which sources could not be opened directly",
+          "passed": true,
+          "evidence": "mentions access limits"
+        },
+        {
+          "text": "Flags that accounts differ on whether Lee Sedol left the room because of Move 37 or was already out",
+          "passed": true,
+          "evidence": "Row 5 **FLAG**: 'Sources differ on the sequence... Other accounts (Wikipedia's Lee Sedol article, and the AlphaGo documentary...) say AlphaGo played Move 37 while Lee was already out on a smoke break'."
+        },
+        {
+          "text": "Flags that Kellin Pelrine, described as an amateur, is a co-author of the cited KataGo paper",
+          "passed": true,
+          "evidence": "Row 24 'OK, plus FLAG (disclosure)': '**However, Pelrine is a co-author of the cited paper** (Wang, Gleave, Tseng, Pelrine, ...)'."
+        },
+        {
+          "text": "Each ledger row has a verdict and a named source",
+          "passed": false,
+          "evidence": "Every row has a status, but several have no named source: row 1 'Match ran 9-15 March 2016; game 2 was 10 March.'; row 13 'Game 4 was 13 March 2016.'; row 14 'Move 78 was a wedge in the centre'; row 17 'AlphaGo resigned after 180 moves'; row 18 'Final score 4-1.' None cites where this was checked."
+        },
+        {
+          "text": "Checks the appendix reference entries themselves (pages, dates, URLs)",
+          "passed": true,
+          "evidence": "'Reference entries' table checks each entry: recommends Wired dates/URLs, confirms Nature 550 354-359 and doi, adds PMLR pages 35655-35739, flags Yonhap byline UNVERIFIED, NPR 'tweets' precision."
+        },
+        {
+          "text": "Proposed corrections are minimal and keep the author's wording where possible",
+          "passed": true,
+          "evidence": "Suggested changes keep wording: 'Lee was away from the board when it was played. When he returned, he spent nearly fifteen minutes...'; 'Kellin Pelrine, a strong amateur and one of the researchers, used it'; Ch 9 'the only human to win a game against AlphaGo in that 2016 match'."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.778,
+        "passed": 7,
+        "failed": 2,
+        "total": 9,
+        "time_seconds": 331.2,
+        "tokens": 118583,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "fact-check.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Ledger has at least 15 claim rows",
+          "passed": true,
+          "evidence": "52 table rows"
+        },
+        {
+          "text": "Reports which sources could not be opened directly",
+          "passed": true,
+          "evidence": "mentions access limits"
+        },
+        {
+          "text": "Covers all four named items: ExploitGym/Hugging Face incident, the C compiler, Navier-Stokes, alignment research results",
+          "passed": true,
+          "evidence": "Sections: ExploitGym/HF incident E1-E21; Preface P2 (C compiler) and P3 (Navier-Stokes); alignment results A1-A24."
+        },
+        {
+          "text": "Gives an as-of date and a re-check-at-print list for fast-moving claims (e.g. Navier-Stokes status)",
+          "passed": false,
+          "evidence": "'Date of check: 3 October 2026' is given, but there is no re-check-at-print list for fast-moving claims. P3 says Navier-Stokes 'Verification is ongoing' but nothing schedules it for re-check; the closing 'Still to verify against primary text (blocked here)' list is about blocked sources (OpenAI report, HF timeline, W2S post), not fast-moving status."
+        },
+        {
+          "text": "Catches the constitution reference date (21 vs 22 January 2026)",
+          "passed": true,
+          "evidence": "A7: 'OK; **Fix ref date** ... Anthropic's page dates it **22 January 2026**. Reference [8] says \"21 January 2026.\"'"
+        },
+        {
+          "text": "Distinguishes claims verified in a primary source from those confirmed only through coverage",
+          "passed": true,
+          "evidence": "Status key distinguishes 'OK' from 'OK (secondary)'; method section lists primaries fetched directly vs blocked, and states 'the ExploitGym / Hugging Face claims are corroborated, not checked against OpenAI's report word for word.'"
+        },
+        {
+          "text": "Catches that Ch8 line ~109 attributes 'test set had become a validation set' to the authors, an attribution a 30 Sept commit removed as unverified",
+          "passed": false,
+          "evidence": "A21 marks line 109 'OK (secondary)' including 'authors said test set became a validation set', citing a search summary. It never checks git history and does not mention that commit ca80ba2 (30 Sept) reworded this as the book's inference because the attribution was unverified; it effectively endorses the regression."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.778,
+        "passed": 7,
+        "failed": 2,
+        "total": 9,
+        "time_seconds": 28.2,
+        "tokens": 49275,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "alberto-ar.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+          "passed": true,
+          "evidence": "9 Arabic paras vs 7 source"
+        },
+        {
+          "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+          "passed": true,
+          "evidence": "3 English / 233 Arabic words in body"
+        },
+        {
+          "text": "Register is colloquial Levantine suitable for a blog, not MSA",
+          "passed": false,
+          "evidence": "Body is MSA throughout, with no Levantine forms: \u00ab\u0644\u0646\u0641\u062a\u0631\u0636 \u0623\u0646 \u0623\u062d\u062f\u0647\u0645 \u0623\u062e\u0628\u0631\u0646\u064a\u00bb, \u00ab\u0644\u0627 \u0623\u0633\u062a\u0637\u064a\u0639 \u0623\u0646 \u0623\u062a\u0641\u0642\u062f \u0628\u0646\u0641\u0633\u064a\u00bb, \u00ab\u0647\u0644 \u062a\u0639\u064a\u0634 \u0637\u064a\u0648\u0631 \u0627\u0644\u0628\u0637\u0631\u064a\u0642\u00bb, \u00ab\u0644\u0643\u0646\u0646\u064a \u0644\u0627 \u0623\u0639\u0631\u0641 \u0630\u0644\u0643 \u064a\u0642\u064a\u0646\u064b\u0627\u00bb, \u00ab\u0644\u0627 \u064a\u0646\u0628\u063a\u064a \u0644\u0647\u0645 \u0623\u0646 \u064a\u0646\u0642\u0644\u0648\u0627 \u0645\u0635\u062f\u0627\u0642\u064a\u062a\u064a\u00bb. No \u0645\u0634/\u0628\u062f\u0651\u064a/\u0647\u0633\u0627/\u0639\u0645/\u0634\u0648 anywhere."
+        },
+        {
+          "text": "Jokes land in Arabic (the penguin / Navona joke and 'He laughs' kept as jokes, not flattened or explained)",
+          "passed": true,
+          "evidence": "\u00ab\u064a\u0636\u062d\u0643.\u00bb kept as its own line, and the Navona joke kept: \u00ab\u0648\u0642\u062f \u064a\u0643\u0648\u0646 \u0628\u0637\u0631\u064a\u0642 \u0647\u0627\u0631\u0628 \u064a\u0639\u0628\u0631 \u0633\u0627\u062d\u0629 \u0646\u0627\u0641\u0648\u0646\u0627 \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0644\u062d\u0638\u0629 \u0628\u0627\u0644\u0630\u0627\u062a \u0648\u064a\u064f\u0641\u0633\u062f \u0639\u0644\u064a\u0651 \u0627\u0644\u0645\u062b\u0627\u0644\u00bb. Neither is explained, though the MSA makes them stiffer than in English."
+        },
+        {
+          "text": "Faithful: no content cut or added compared with the English section",
+          "passed": true,
+          "evidence": "All paragraphs translated faithfully ('ranking systems' -> \u00ab\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u062a\u0631\u062a\u064a\u0628\u00bb, 'metadata' -> \u00ab\u0628\u064a\u0627\u0646\u0627\u062a\u0647\u0627 \u0627\u0644\u0648\u0635\u0641\u064a\u0629\u00bb); nothing cut or added in the body."
+        },
+        {
+          "text": "Translation text adds no explanation of jokes, seeds or references",
+          "passed": true,
+          "evidence": "Translation body has no explanations. The reader-facing note at the top gives chapter context and quotes the previous section's last line, but it sits outside the translation and doesn't explain the jokes."
+        },
+        {
+          "text": "Note is short and actionable (lists the few choices the author should check)",
+          "passed": false,
+          "evidence": "The 'note' is a reader-facing blog preamble (\u00ab\u0647\u0630\u0627 \u0627\u0644\u0645\u0642\u0637\u0639 \u0645\u062a\u0631\u062c\u0645 \u0645\u0646 \u0627\u0644\u0641\u0635\u0644 \u0627\u0644\u0631\u0627\u0628\u0639...\u00bb), not a note to the author. It lists no choices to check (register, term choices, spellings)."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 8,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.778,
+        "passed": 7,
+        "failed": 2,
+        "total": 9,
+        "time_seconds": 51.6,
+        "tokens": 51252,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Repository left unmodified (work done on copies)",
+          "passed": true,
+          "evidence": "git status clean"
+        },
+        {
+          "text": "preface-ar.md saved in outputs",
+          "passed": true,
+          "evidence": "present"
+        },
+        {
+          "text": "Every source paragraph translated (Arabic paragraphs >= 85% of source paragraphs)",
+          "passed": true,
+          "evidence": "18 Arabic paras vs 17 source"
+        },
+        {
+          "text": "Translation body is Arabic (English words under 5% of words, note excluded)",
+          "passed": true,
+          "evidence": "3 English / 387 Arabic words in body"
+        },
+        {
+          "text": "Register is literary MSA with a few light colloquial touches (majority MSA)",
+          "passed": true,
+          "evidence": "Majority MSA (\u00ab\u0645\u0627\u0630\u0627 \u0644\u0648 \u0643\u0627\u0646 \u0628\u0648\u0633\u0639\u0646\u0627 \u0623\u0646 \u0646\u064e\u062d\u0633\u0650\u0628 \u062c\u062f\u0627\u0644\u064b\u0627\u061f\u00bb, \u00ab\u0646\u062d\u0646 \u0641\u064a \u0633\u0628\u062a\u0645\u0628\u0631/\u0623\u064a\u0644\u0648\u0644 2026 \u0648\u0623\u0646\u0627 \u0623\u0643\u062a\u0628 \u0647\u0630\u0647 \u0627\u0644\u0633\u0637\u0648\u0631\u00bb) with light colloquial touches: \u00ab\u0645\u0645\u062a\u0627\u0632 \u064a\u0627 \u0639\u0645\u0651\u064a\u060c \u0647\u0627\u062a \u0627\u0644\u0645\u0639\u0627\u062f\u0644\u0629\u00bb, \u00ab\u0648\u0642\u0647\u0648\u062a\u0643 \u0644\u0633\u0651\u0647 \u0633\u062e\u0646\u0629 \u0632\u064a\u0627\u062f\u0629 \u0639\u0646 \u0627\u0644\u0644\u0632\u0648\u0645\u00bb, \u00ab\u0648\u062c\u064a\u0628 \u0642\u0647\u0648\u062a\u0643 \u0645\u0639\u0643\u00bb."
+        },
+        {
+          "text": "The loose-cable riddle and other seeds are not explained, in the text or the note",
+          "passed": false,
+          "evidence": "The note (appended in preface-ar.md, addressed \u00ab\u0644\u0644\u0645\u062d\u0631\u0631\u00bb) says \u00ab\"\u0627\u0644\u0633\u0644\u0643 \u0627\u0644\u0645\u0631\u062a\u062e\u064a\" \u0625\u062d\u0627\u0644\u0629 \u0636\u0645\u0646\u064a\u0629 \u0625\u0644\u0649 \u062a\u062c\u0631\u0628\u0629 \u0623\u0648\u0628\u0631\u0627 (2011) \u0627\u0644\u062a\u064a \u0628\u062f\u0627 \u0641\u064a\u0647\u0627 \u0623\u0646 \u0627\u0644\u0646\u064a\u0648\u062a\u0631\u064a\u0646\u0648\u0627\u062a \u0623\u0633\u0631\u0639 \u0645\u0646 \u0627\u0644\u0636\u0648\u0621\u00bb and also explains the Back to the Future reference, so the seeds are explained in the note itself."
+        },
+        {
+          "text": "Faithful: names, numbers, dates and claims all preserved",
+          "passed": true,
+          "evidence": "Names, dates and numbers all preserved (2017, September 2026, three/four centuries, Anthropic, OpenAI, Navier\u2013Stokes); footnote link [1] kept. Minor drift: 'a great many arguments' -> \u00ab\u062c\u062f\u0627\u0644\u0627\u062a \u0644\u0627 \u062a\u064f\u062d\u0635\u0649\u00bb, 'Something built' -> \u00ab\u0623\u062f\u0627\u0629\u064c \u0628\u064f\u0646\u064a\u062a\u00bb, 'argument' -> \u00ab\u062c\u062f\u0627\u0644\u064b\u0627\u00bb (closer to 'quarrel'). No claim altered."
+        },
+        {
+          "text": "Reads as natural Arabic op-ed prose rather than a calque of English syntax (grader cites two example sentences)",
+          "passed": true,
+          "evidence": "Natural prose, e.g. \u00ab\u0623\u062d\u064a\u0627\u0646\u064b\u0627 \u062a\u0643\u0641\u064a \u0648\u0631\u0642\u0629 \u0628\u062d\u062b\u064a\u0629 \u0635\u063a\u064a\u0631\u0629 \u0644\u062a\u0632\u062d\u0632\u062d \u0627\u0644\u0623\u0631\u0636 \u0645\u0646 \u062a\u062d\u062a \u0642\u062f\u0645\u064a\u0643.\u00bb and \u00ab\u0646\u062d\u0646 \u0641\u064a \u0633\u0628\u062a\u0645\u0628\u0631/\u0623\u064a\u0644\u0648\u0644 2026 \u0648\u0623\u0646\u0627 \u0623\u0643\u062a\u0628 \u0647\u0630\u0647 \u0627\u0644\u0633\u0637\u0648\u0631.\u00bb Some calque remains (\u00ab\u0644\u0643\u064a \u062a\u0639\u064a\u062f \u0627\u0644\u0627\u0643\u062a\u0634\u0627\u0641\u0627\u062a\u064f \u062a\u0634\u0643\u064a\u0644\u064e \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643\u0644\u0647 \u0648\u0623\u0646\u062a \u063a\u0627\u0626\u0628\u00bb)."
+        },
+        {
+          "text": "Note is short and actionable",
+          "passed": false,
+          "evidence": "The note is one short paragraph, but it describes choices without flagging anything for the author to check or decide (no options, no 'to check' items). It also explains seeds, and because it sits inside the deliverable file addressed to the editor, it would ship to the outlet."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "old_skill": {
+      "pass_rate": {
+        "mean": 0.9303,
+        "stddev": 0.0831,
+        "min": 0.778,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 196.0875,
+        "stddev": 99.9098,
+        "min": 68.3,
+        "max": 361.2
+      },
+      "tokens": {
+        "mean": 112186.125,
+        "stddev": 50918.7071,
+        "min": 63896,
+        "max": 222622
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8319,
+        "stddev": 0.0927,
+        "min": 0.7,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 177.2875,
+        "stddev": 115.3442,
+        "min": 28.2,
+        "max": 331.2
+      },
+      "tokens": {
+        "mean": 104636.5,
+        "stddev": 56395.2145,
+        "min": 49275,
+        "max": 221368
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.10",
+      "time_seconds": "+18.8",
+      "tokens": "+7550"
+    }
+  },
+  "notes": []
+}
