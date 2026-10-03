@@ -14,7 +14,7 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "c04b85edf56a4025f773d6b1c7d8166e43c0002e9a1217e1a97c81ba9b153ebf",
+      "source_sha256": "a7a689122fea6d8ba137ef63de1ac1944f2e447584eff1ff0d6738b557e76aab",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "4622b3513f6885ef000ac374c972d313b36adda1bcdf13f7c49479344df76e8f",
       "sections": [
