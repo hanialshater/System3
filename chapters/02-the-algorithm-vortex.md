@@ -208,7 +208,7 @@ Once that structural idea became strong enough, the nature of the work changed. 
 
 In our best run, the evaluator returned roughly 2.636, slightly above the 2.635 reference we had been using.
 
-That sentence needs a fence around it. Under our evaluator, the result beat our reference; AlphaEvolve’s published construction sums to 2.63586, which also rounds to 2.636. Calling it a new state of the art in circle packing would require matching problem definitions, checking numerical tolerances and constraints, reproducing the result properly and doing a more serious literature search than this experiment justified.
+That sentence needs a fence around it. Under our evaluator, the result beat our reference. But the reference was a rounded figure: AlphaEvolve’s published construction sums to 2.63586, so at three decimals the two results are level. Calling it a new state of the art in circle packing would require matching problem definitions, checking numerical tolerances and constraints, reproducing the result properly and doing a more serious literature search than this experiment justified.
 
 What I cared about was that the agent beat our reference without my writing the solution algorithm for it.
 

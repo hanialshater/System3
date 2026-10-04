@@ -30,7 +30,7 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "e018491f86f2b13eae5c305a77d80284def4a40d08c52ab493579b996375c81b",
+      "source_sha256": "f7a85c94c315ab069b2a2196120ac8ea329e2f3fee7456b3edc423ce0f344283",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "64d7c32876f1224ab3a092a8ae762e7367698300ec67bd83ea223ec14f93a9d1",
       "sections": [
@@ -236,7 +236,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "18c94e04c3978ea5089a97608998ea3689d98b9de5fc310a68a5984cd37891cb",
+      "source_sha256": "2500b892dde4b1135ba94f445da08188d304e3f246d0e97c1beba11546882301",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "e7df4bb8466d5e44d1d3cd371701dbec65000e3b391ab013b030b374cc7410bc",
       "sections": [
