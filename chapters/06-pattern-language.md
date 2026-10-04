@@ -19,7 +19,7 @@ What Uncle Jalal had carried into the room were solutions that had shed the cond
 
 Pattern 159 is called Light on Two Sides of Every Room. It says that when people have a choice, they drift toward rooms with windows on two walls and leave the one-window rooms empty. Light from a single side glares. It flattens the faces across the table, so you cannot read them. Think of the rooms you have loved and count their windows.
 
-Pattern 88 is Street Café: a place to sit lazily, legitimately, on view, and watch the street go by. Pattern 180 says everybody loves a window seat. Pattern 167 says a balcony less than six feet deep will hardly ever be used, because nobody can pull a chair up to a table on it. You have seen those balconies. They hold a bicycle and a dead plant. Pattern 203 is Child Caves: children love tiny, cave-like places, so build them some. Pattern 251 is Different Chairs: people come in different sizes and sit in different ways, so never furnish a room with identical chairs. Pattern 252, Pools of Light, says that even lighting kills a room, because people gather where the light pools. The last one, 253, is Things from Your Life: put on your walls what matters to you and ignore what a decorator says belongs there.
+Pattern 88 is Street Café: a place to sit lazily, legitimately, on view, and watch the street go by. Pattern 167 says a balcony less than six feet deep will hardly ever be used, because nobody can pull a chair up to a table on it. You have seen those balconies. They hold a bicycle and a dead plant. Pattern 252, Pools of Light, says that even lighting kills a room, because people gather where the light pools. The last one, 253, is Things from Your Life: put on your walls what matters to you and ignore what a decorator says belongs there.
 
 There are 253 of them. The first is about how the world should be divided into regions. The last is about the photographs above your desk. In between come neighborhoods and bus stops, beer halls, stairs you can sit on, a bench by the front door. Christopher Alexander and five colleagues at Berkeley published the book in 1977. It runs past eleven hundred pages on Bible paper, and it has probably been read by more programmers than architects.
 
@@ -92,9 +92,7 @@ Karl Popper argued that an empirical claim earns its standing by risking refutat
 
 Engineers have egos, credentials and favorite architectures like everyone else. An impressive design that breaks under load fails the load test on Thursday, whatever its author's reputation.
 
-Patterns traveled well in that world. In 1987 Kent Beck and Ward Cunningham, both readers of Alexander, wrote five small interface patterns for a group at Tektronix and let the future users do the design.&#91;8&#93; Seven years later four authors from the movement that followed published Design Patterns, twenty-three named arrangements for object-oriented code with Alexander quoted in its opening pages.&#91;9&#93; A generation of engineers learned to say Observer, Factory and Singleton the way builders say lintel. A design review could now be held in nouns.
-
-In 1995 Cunningham needed somewhere for programmers to collect and edit patterns together, so he wrote a small program that let any reader change any page. He called it WikiWikiWeb. The wiki was invented to hold a pattern language.&#91;10&#93; Six years later an encyclopedia borrowed the idea.
+Patterns traveled well in that world. In 1987 Kent Beck and Ward Cunningham, both readers of Alexander, wrote five interface patterns for a group at Tektronix and let the future users do the design.&#91;8&#93; Seven years later Design Patterns gave programmers twenty-three named arrangements for object-oriented code.&#91;9&#93; A generation learned to say Observer, Factory and Singleton the way builders say lintel. In 1995 Cunningham built WikiWikiWeb so programmers could collect and edit patterns together.&#91;10&#93; The wiki was invented to hold a pattern language; six years later an encyclopedia borrowed the idea.
 
 Even here, the name traveled faster than the reasons. You could say Singleton in a meeting without bringing along any of the contexts and trade-offs the books still described. A pattern had been a hypothesis about when an arrangement resolves a conflict. In use, it could become a feather: something good engineers were seen to use. Codebases filled with factories that built one kind of object and singletons guarding nothing.
 
@@ -152,9 +150,9 @@ The probes found the broken assumption, but only after a week of archaeology, be
 
 A reason has to be attached to something. If a launch decision rested on the assumption that two weeks captures the effect, and the assumption turns out to be false, the correction needs somewhere to go: to the assumption and to everything built on it.
 
-Mathematics has the cleanest version of this problem, and recently a very large one. Anthropic's formalization of Fermat's Last Theorem began badly. The task, in August 2026, was to make Wiles's proof checkable by Lean, and early attempts faltered as agents lost track of the project. The successful effort used Prove2Me: theorem statements became nodes in a dependency graph, with plain-language descriptions that let a worker find a result established by a worker it never met. In eleven days the agents produced a formalization using roughly thirty thousand intermediate theorems. Lean checked the completed proof under its three standard axioms, and a separate comparator confirmed that the final statement was Mathlib's Fermat and not a convenient cousin.&#91;15&#93;
+Mathematics has the cleanest version of this problem, and recently a very large one. In Anthropic's 2026 formalization of Fermat's Last Theorem, early attempts faltered as agents lost track of the project. The successful effort used Prove2Me: theorem statements became nodes in a dependency graph, with plain-language descriptions that let one worker find a result established by another. In eleven days the agents produced a Lean-checked formalization built from roughly thirty thousand intermediate theorems.&#91;15&#93;
 
-Jon Doyle was building machinery for this in the late 1970s. In his truth maintenance system, beliefs kept their reasons, and when a reason was withdrawn, everything resting on it came up for review.&#91;16&#93; Doyle's machinery tracks justifications. It cannot check them against the world, and a program can faithfully maintain the consequences of reasons that were never true.
+Jon Doyle was building related machinery in the late 1970s. In his truth maintenance system, beliefs kept their reasons, and when a reason was withdrawn, everything resting on it came up for review.&#91;16&#93; It can track justifications; it cannot establish that the justifications were true.
 
 Most of us have no Lean. Take the claim on Uncle Jalal's slide: the redesigned home screen raised basket size by four percent over two weeks. Suppose it goes into a report, another agent summarizes the report, and a third uses the summary to justify the next redesign. Now that the gain has faded, where does the correction go?
 
@@ -281,12 +279,11 @@ Sam could have written something like this years ago, about the screen and about
 
 ## A Reader That Can Act
 
-Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools.
+Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools. The file can now do more than remind someone: it can stop a launch, request a holdout or call another skill.
 
+People had tried to give written knowledge to machines before. In 1977 Edward Feigenbaum named the attempt knowledge engineering and found its hardest part in the expert: getting the knowledge out, then maintaining the growing exceptions.&#91;21&#93; Expert systems spent years interviewing people like Sam.
 
-People had tried to give written knowledge to machines before. In 1977, the year of Alexander's book, Edward Feigenbaum named the attempt knowledge engineering, and found its hardest part in the expert: getting the knowledge out, then making the system handle each exception the expert eventually admitted to.&#91;21&#93; Expert systems spent years interviewing people like Sam, and most of them died of the interviews and the upkeep.
-
-Andrej Karpathy's count of the ways to program a computer tells what changed. In Software 1.0 a person writes the rules as code; the Gang of Four's patterns lived there, advice for the human holding the keyboard. In Software 2.0 the program is a set of learned weights, which can absorb what nobody could articulate and offer no convenient place to amend a pattern's conditions. In Software 3.0 the program is written in a natural language and a model interprets it.&#91;22&#93; The machine doing the work can now read the pattern, follow its Therefore and consult the reasons behind it, without every qualification first being translated into logic.
+Andrej Karpathy's Software 1.0/2.0/3.0 shorthand captures what changed. Rules written as code gave way partly to learned weights, and now natural language can itself instruct a model.&#91;22&#93; The machine doing the work can read the pattern, follow its Therefore and consult the reasons behind it without every qualification first being translated into logic.
 
 I avoid calling such a document executable, because the word hides the reader: the same words can produce different actions in different models.
 
