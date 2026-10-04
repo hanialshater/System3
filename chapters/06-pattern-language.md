@@ -3,11 +3,11 @@
 
 ## The Workshop
 
-Let me tell you a story about a tech leader. Call him Uncle Jalal.
+Let me tell you a story about a tech leader. Call him Uncle Jalal, as the team eventually did, partly out of affection and partly because he had a story for every occasion.
 
 Uncle Jalal joined an online grocery company carrying years of experience from elsewhere. In his first month the team held a roadmap workshop, and by lunch the whiteboard was full. Every idea arrived with a pedigree: a paper from a good conference, a keynote, a system that had worked beautifully somewhere else. Several of the somewhere elses were his.
 
-The room ranked the ideas by how convincing they sounded, which is how most rooms rank ideas. His sounded convincing, because he had seen them work. A peacock's tail persuades in much the same way. The display is expensive and hard to fake, so it impresses, whatever it actually reveals about the bird.&#91;1&#93;
+The room ranked the ideas by how convincing they sounded, which is how most rooms rank ideas. His sounded convincing because he had seen them work. A peacock's tail persuades the same way: the display is too expensive to fake, so it impresses, whatever it reveals about the bird.&#91;1&#93;
 
 Twice that afternoon Sam said, quietly, that the team had tried something like this before. He had no paper. He had a memory of a launch two years earlier and a feeling about how customers on the home screen behaved. The team wrote his comments on a smaller sticky note.
 
@@ -37,7 +37,6 @@ He meant it politically, too. The language was supposed to take design away from
 
 That is a pattern language: builders' knowledge, the kind Sam carries, written down as connected proposals whose context and reasons are open to question.
 
-The problem is not merely how to preserve knowledge. Libraries have done that for centuries. It is how to preserve enough of the conditions around a lesson that the next worker can use it without having to inherit it as scripture. Uncle Jalal's ideas had travelled without their conditions. Sam's knowledge had not travelled at all. Alexander's form offered a third possibility: let the lesson travel with the reasons that make it disputable.
 
 From here on I borrow Alexander's asterisks to mark my confidence that each proposed arrangement can resolve the problem described: two for a well-supported practice, one for a promising proposal that needs further testing, and no asterisk (an unmarked Therefore) where its adequacy remains an open question. The marks judge the arrangements. They do not claim that an agent institution has implemented them successfully.
 
@@ -45,7 +44,7 @@ From here on I borrow Alexander's asterisks to mark my confidence that each prop
 
 So the team did what a good team does with imported ideas. It tested them.
 
-An experimentation platform can be treated as an organization's Bayesian engine. Thomas Bayes's rule, published after his death in 1763, says how a belief should change when evidence arrives: start from a prior, weigh the evidence under competing possibilities, and end with a revised belief.&#91;3&#93; An A/B test need not itself be Bayesian for the organization to behave this way. The team starts with a guess about an idea, splits its customers, and lets the comparison move the guess. Over the years the archive of experiments can become the company's prior: a record of what worked here and what did not, earned on its own customers.
+An experimentation platform can behave like an organization's Bayesian engine. Thomas Bayes's rule, published after his death in 1763, says how a belief should change when evidence arrives: start from a prior, weigh the evidence under competing possibilities, and end with a revised belief.&#91;3&#93; The individual A/B test need not itself be Bayesian; the larger habit is. The team starts with a guess about an idea, splits its customers, and lets the comparison move the guess. Over the years the archive can become the company's prior: a record of what worked here and what did not, earned on its own customers.
 
 The engine said yes. The home-screen redesign, Uncle Jalal's favorite idea from the workshop, won by four percent. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them. A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before.
 
@@ -55,7 +54,7 @@ Uncle Jalal found out at the quarterly review. The slide said four percent, and 
 
 He had an answer ready. Seasonality, probably: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good answer. It sounded like analysis, it cited a real calendar, and it was the kind of thing an experienced person says. He did not know whether it was true.
 
-Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; What Uncle Jalal had just given the room was harder to catch than either, because it passes every test of sincerity. I call it high-functioning bullshit: real expertise and real conviction, with no live connection to the assumptions it depends on. He believed every word. His workshop ideas had been the same kind of thing: they had worked for other customers, with other baskets and other delivery windows, and none of those conditions had made the journey with him. I have given that kind of answer myself, more than once.
+Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; What he had just given the room was harder to catch than either, because it passed every test of sincerity. I call it high-functioning bullshit: real expertise and real conviction, with no live connection to the assumptions it depends on. He believed every word. His workshop ideas had been the same kind of thing: they had worked for other customers, with other baskets and other delivery windows, and none of those conditions had made the journey with him. I have given that kind of answer myself, more than once.
 
 Nobody in that room was against evidence. Science has few open enemies left in rooms like that one. The danger comes from inside the method, from work that has rigor's shape: a dashboard, a confidence interval, an experienced person explaining seasonality. It looks scientific and reasonable, and it fails on an assumption nobody checked.
 
@@ -63,7 +62,7 @@ Then the carousel's gain went the same way, and then the deals tile's.
 
 Every fade received an explanation, and every explanation was reasonable. The redesign had run into the school holidays. The carousel launched the week a promotion ended. The deals tile coincided with a competitor's discount week. Each story cited a real event, came from someone who knew the business and fit the incident it was written for, and none of them predicted the next fade.
 
-Imre Lakatos gave that history a test.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it. They were sincere, informed, and checked against nothing. The holiday story was his.
+Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it. They were sincere, informed, and checked against nothing. The holiday story was his.
 
 The Bayesian engine was updating faithfully. Something it could not see was eating the results.
 
@@ -89,7 +88,7 @@ The next home-screen launch was due in a month. Nobody on the product side could
 
 Engineering knowledge is reliable for a dull reason: it is checked constantly. A test suite runs on every commit, and a regression fails within minutes of being written. Alerts fire when a service drifts outside its limits. Load tests ask, before customers do, at what traffic a working system stops working, which is Alexander's context with numbers in it. Netflix built Chaos Monkey, a program that switched off its own production servers at random during working hours, so that engineers would discover their hidden assumptions while they were awake to fix them.&#91;6&#93;
 
-Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.&#91;7&#93; A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Popper also rejected the Bayesian picture. He did not think a theory grows more probable by piling up confirmations. For this chapter the two accounts divide the work. Bayes describes how an organization's beliefs should move when evidence arrives. Popper explains why engineering beliefs move quickly: the evidence arrives cheaply, often, and in a form that can say no.
+Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.&#91;7&#93; A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Popper had no patience for the Bayesian picture, but here the two divide the work neatly. Bayes describes how an organization's beliefs should move when evidence arrives. Popper explains why engineering beliefs move quickly: the evidence arrives cheaply, often, and in a form that can say no.
 
 Engineers have egos, credentials and favorite architectures like everyone else. An impressive design that breaks under load fails the load test on Thursday, whatever its author's reputation.
 
@@ -135,7 +134,7 @@ A few months after that night, Ines rotates into the team's experiment reviews. 
 
 It goes something like this. Uncle Jalal says the holidays. Someone from marketing says the promotion calendar. An analyst points out that the carousel release also changed the event logging. Someone else notices that in the carousel test the two arms do not contain the numbers of users the design says they should. We have made contact with reality and acquired a meeting.
 
-Duhem and Quine explained this meeting long before anyone scheduled it. A failed prediction indicts a whole bundle of assumptions about the world and the apparatus, and does not say which one to blame.&#91;12&#93;
+This is Duhem's problem from Chapter 5, the one Boyle's pump taught: a failed prediction indicts the whole bundle and does not say which part to blame.&#91;12&#93;
 
 The people who run experiments for a living have a reflex about results like these. They call it Twyman's law: any figure that looks interesting or different is usually wrong.&#91;13&#93; A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it. So Ines starts there, and then gives every remaining suspicion a probe. Each story predicts a different shape. The holidays predict a drop on the day schools closed, for everyone. A promotion predicts a drop on the day it ended. A logging change predicts a step in the raw event counts. And one story nobody in the meeting had told predicts something else: returning customers react strongly to anything new on the screen they open every week and then drift back, while first-time visitors, who have nothing to compare it with, show a smaller and steadier effect.
 
@@ -145,7 +144,7 @@ The customers had been reacting to novelty. Experimenters have names for this, n
 
 Uncle Jalal went to find Sam. Sam said he had known the screen did this. Then, to his credit, he said he had not known why. His pattern had been right for years and had never been tested, which is a dangerous way to be right.
 
-\* Therefore: when a result fails, trace the assumptions it used and design probes that distinguish the possible failures.
+\*\* Therefore: when a result fails, trace the assumptions it used and design probes that distinguish the possible failures.
 
 ## Give the Claim an Address
 
@@ -197,17 +196,17 @@ Time does the same work as neighbors. An item added to a basket in the first wee
 
 Both failures wear the costume of evidence. A rising number on a well-built dashboard is about the most scientific-looking object a business can produce, and nothing about its appearance tells you what it means.
 
-\* Therefore: record what the number is taken to mean, including the period it is taken to cover, as a claim of its own, open to challenge separately from the count.
+\*\* Therefore: record what the number is taken to mean, including the period it is taken to cover, as a claim of its own, open to challenge separately from the count.
 
 ## Commit the Test Before the Result
 
 Every experimentation team knows this meeting. The dashboard arrives before the agreement does. The headline metric is flat, a secondary one is up, and within the hour the secondary metric turns out to be what the experiment was really about. Nobody is lying. The hypothesis has been fitted to the result.
 
-The next change Ines reviews is Uncle Jalal's, of course: a new layout for weekly staples, and it comes back in the familiar shape, a strong two-week gain on the screen where gains fade. She can praise the obvious explanation, criticize it or ask a model to do both. None of that changes the data. To learn anything, she has to say in advance what would look different if the gain were novelty.
+The next change Ines reviews is Uncle Jalal's, of course: a new layout for weekly staples. It comes back in the familiar shape, with a strong two-week gain on the screen where gains fade. She can praise the obvious explanation, criticize it or ask a model to do both. None of that changes the data. To learn anything, she has to say in advance what would look different if the gain were novelty.
 
 Popper's demand applies here in its plainest form. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test. Every explanation of the fades had depended on exactly that arrangement.
 
-Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the last week of the test. If it is novelty, their curve will bend back toward the control while first-time visitors stay flat. She adds a third, more expensive one: a holdout of customers who keep the old layout for six weeks after launch, with the share of the gain that must survive written down in advance. The consequences will be partly probabilistic. A noisy curve can weaken an explanation without refuting it, and explanations do not always have the courtesy to be mutually exclusive.
+Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the last week of the test. If it is novelty, their curve will bend back toward the control while first-time visitors stay flat. She adds a third, more expensive one: a holdout of customers who keep the old layout for six weeks after launch, with the share of the gain that must survive written down in advance. None of this will be clean. A noisy curve can weaken an explanation without refuting it, and explanations do not always have the courtesy to be mutually exclusive.
 
 She also changes the review rules. From now on, no home-screen launch is approved until its committed predictions have been checked, and only someone senior can override the gate.
 
@@ -225,7 +224,7 @@ A post-launch monitor that compares holdout and launched customers is an alert t
 
 None of this is free. Engineering's checks are cheap because computers are patient. Product checks cost customers, traffic and weeks, which is exactly why experiments learned slowly in the first place.
 
-Long holdouts had been proposed before, more than once, and never run. Every week the two-week test was the safer choice for the decision at hand, and every week that choice was defensible. Larry Laudan called what the team was missing the difference between acceptance and pursuit.&#91;19&#93; What to believe today and what to work on tomorrow are different questions, and the team had a mechanism only for the first. Philip Kitcher's worry, about how a community divides its cognitive labor, applies in miniature.&#91;20&#93; A policy that always picks today's safest method never lets the alternative collect the evidence that would make it safe.
+Long holdouts had been proposed before, more than once, and never run. Every week the two-week test was the safer choice for the decision at hand, and every week that choice was defensible. Larry Laudan called what the team was missing the difference between acceptance and pursuit.&#91;19&#93; What to believe today and what to work on tomorrow are different questions, and the team had a mechanism only for the first. Chapter 5 asked who gets the next agent; here the same question decides which method gets tested.&#91;20&#93; A policy that always picks today's safest method never lets the alternative collect the evidence that would make it safe.
 
 So Ines asks for six-week holdouts on the team's next three launches, and the request lands with the owner of the experimentation budget, who funds experiments expected to raise the current metric. The proposed study asks whether the metric's two-week reading represents improvement at all. Ines has been invited to challenge an assumption on the condition that she first accept it. The budget owner is polite, senior and entirely right about what the budget was approved to do. She leaves the meeting having agreed with everything he said and received nothing she asked for.
 
@@ -243,7 +242,7 @@ Otherwise unfunded gradually becomes unsupported, and unsupported becomes dispro
 
 The three launches in the study were Uncle Jalal's staples layout, a second version of the deals tile, and a reminder that told customers when their usual delivery slot was about to fill up. The reminder was the least glamorous item from the workshop. It had come from the smaller sticky note.
 
-Six weeks is a long time to wait for a number with your reputation in it. By the last week Uncle Jalal had stopped checking the dashboard, which is to say he checked it twice a day.
+Six weeks is a long time to wait for a number with your reputation in it. By the last week he had stopped checking the dashboard, which is to say he checked it twice a day.
 
 The holdout results came in on a Thursday. His staples layout had kept about a fifth of its two-week gain. The deals tile had kept nothing. The slot reminder had kept all of its gain and grown a little, because customers who used it once came back to it every week. Nobody would have put it on a conference slide.
 
@@ -284,7 +283,6 @@ Sam could have written something like this years ago, about the screen and about
 
 Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools.
 
-That changes the problem. A pattern language had always been a way for knowledge to travel. Now the next worker may not merely consult the lesson. It can act on it: reject a launch, request a holdout, call another skill, move a recommendation back to review. Knowledge has crossed a line from advice into behavior.
 
 People had tried to give written knowledge to machines before. In 1977, the year of Alexander's book, Edward Feigenbaum named the attempt knowledge engineering, and found its hardest part in the expert: getting the knowledge out, then making the system handle each exception the expert eventually admitted to.&#91;21&#93; Expert systems spent years interviewing people like Sam, and most of them died of the interviews and the upkeep.
 
@@ -306,7 +304,7 @@ Ines gives the file to the team's review agent and asks it to review an experime
 
 The query "review this experiment" can retrieve a popular checklist and leave the fade warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. Whether retrieval worked shows up later, in whether the review caught what mattered.
 
-Suppose retrieval works. For two months the agent raises the question every time a home-screen experiment reports a two-week gain, and raises it well. Two launches go back for holdouts, and one of them fades exactly as predicted. The team starts to trust the file.
+Retrieval works. For two months the agent raises the question every time a home-screen experiment reports a two-week gain, and raises it well. Two launches go back for holdouts, and one of them fades exactly as predicted. The team starts to trust the file.
 
 Then the checkout team ships a speed-up. Pages load faster, completed orders rise over two weeks, and the agent, citing wins-that-fade, recommends holding the release for a six-week holdout. The checkout team objects that nobody gets used to a page loading quickly. The agent answers with the file's confidence, its five incidents and the holdout study. It is late November. Ines's review gate makes the recommendation binding unless someone senior overrides it.
 
@@ -314,7 +312,7 @@ Uncle Jalal was the someone senior. The recommendation was fluent, cited its sou
 
 The pattern said confidence: provisional, five incidents on one screen. Nothing on a checkout page is new in the way a home-screen banner is new. "Two-week gains are usually novelty" is far more than five incidents can teach.
 
-In Bayes's terms, the pattern's confidence is a prior, and priors are supposed to move. To find out how far, the candidate pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with faded gains behind them, some with lasting gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs, and records both the quality of the conclusions and the resources consumed. A curator that warns about novelty in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
+In Bayes's terms, the pattern's confidence is a prior, and priors are supposed to move. To find out how far, the candidate pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with faded gains behind them, some with lasting gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs, and records both the quality of the conclusions and the resources consumed. A reviewer that warns about novelty in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
 
 Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks.&#91;24&#93;
 
@@ -337,9 +335,7 @@ The next agent can see both where the pattern has been tested and how its predec
 
 The pattern makes two-week gains more trustworthy. It leaves the deeper question alone. The slot reminder suggested that what mattered was whether customers came back, and two-week basket size could not see that at all.
 
-Imagine the next review screen. The old dashboard has one large number at the top: basket size after two weeks. Ines wants another beside it: six-week return behavior. The first lets the team run experiments quickly. The second may tell them whether the change became useful rather than merely new. Changing the representation means changing what the organization is able to notice.
-
-Ines's agent proposes organizing the next investigation around what customers do over six weeks: whether they return, whether their weekly shop gets easier. To do that, a branch has to keep alternative representations as well as alternative answers. It can introduce the new records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty. If it scores every proposal on two-week baskets, the better approach looks worse exactly where it stops chasing novelty. Letting the challenger write an evaluator that declares itself the winner would prove little. The approaches need an explicit dispute about what evaluation is for, then observations both sides accept.
+Suppose the six-week criterion were accepted tomorrow. Ines's agent would still face a harder problem, because every record in the archive speaks in two-week baskets. To reorganize around what customers do over six weeks, whether they return and whether their weekly shop gets easier, a branch has to keep alternative representations as well as alternative answers. It can introduce the new records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty. If it scores every proposal on two-week baskets, the better approach looks worse exactly where it stops chasing novelty. Letting the challenger write an evaluator that declares itself the winner would prove little. The approaches need an explicit dispute about what evaluation is for, then observations both sides accept.
 
 A field can go further and change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
 
@@ -363,15 +359,15 @@ I do not know an agent institution that can do this. The agent can write the pro
 
 One reviewer with one file is still Ines with a better notebook. The larger change comes when many agents work on the same body of knowledge.
 
-Imagine the team's version. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches every launch against its holdout for six weeks after the dashboard closes. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
+The team builds a small version of this. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches every launch against its holdout for six weeks after the dashboard closes. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others, any more than Carlini's sixteen compiler agents did. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
 
-Popper's name for where such findings live is World 3: the theories, problems and arguments that exist outside any particular head and outlast whoever produced them.&#91;27&#93; Clay records, libraries with catalogs and journals with citation indexes each gave the next worker a different way into what others had learned. A language model offers the most convenient entrance yet, the whole library in one voice, but the answer may arrive without a catalog card. The machinery for checking it has to reach this new entrance too, or World 3 fills with fluent claims nobody can trace.
+This is the World 3 of Chapter 5, with a new front door.&#91;27&#93; A language model offers the most convenient entrance yet, the whole library in one voice, but the answer may arrive without a catalog card. The machinery for checking it has to reach this new entrance too, or World 3 fills with fluent claims nobody can trace.
 
 A shared graph also changes where the work goes. In September 2026 OpenAI described moving its agents from other Millennium Problems onto Navier–Stokes once a result on the Euler equations made that route look promising, carrying the groups' findings into the next prompts. The group grew to roughly ten thousand concurrent agents and produced a proposed proof of finite-time blowup under smooth forcing, which was then formalized and verified in Lean.&#91;28&#93; On September 11 the Clay Mathematics Institute said the problem appeared to be settled, with evaluation and credit to follow its deliberately unhurried process.&#91;29&#93; The other problems had only lost their workers.
 
 Who deserves credit for the route is now disputed, and the participants' accounts are in the references.&#91;30&#93; One detail belongs here. The rumor that started OpenAI's search concerned concurrent work by Tristan Buckmaster and Levent Alpöge. According to OpenAI, Alpöge was an Anthropic employee, and the pair used an internal Anthropic model to resolve the forced Euler problem. This book relies on Anthropic's reports in several chapters, so that belongs in the record too.
 
-The record also needs room for results nobody assigned. In August 2026 Anthropic reported that one of its engineers, not a mathematician, had pointed an unreleased Claude at the Riemann hypothesis. It did not prove the hypothesis. On the way it raised a lower bound on the proportion of the zeta function's nontrivial zeros on the critical line from 41.6 percent to 67.2 percent, and the result was examined by mathematicians and formalized in Lean.&#91;31&#93; An evaluator asking only whether the assigned problem was solved would return no. That answer would be correct and a poor account of the research. Whether to keep pursuing the route is a separate decision, which is Laudan's distinction again.
+The record also needs room for results nobody assigned. In August 2026 an unreleased Claude, pointed at the Riemann hypothesis by an Anthropic engineer who was not a mathematician, failed to prove it and along the way raised the lower bound on zeros on the critical line from 41.6 to 67.2 percent; mathematicians checked the result and it was formalized in Lean.&#91;31&#93; An evaluator asking whether the assigned problem was solved would say no, correctly, and miss the research. Whether to keep pursuing the route is Laudan's question again.
 
 Mathematics has Lean to catch fluent nonsense. A product organization has holdouts, A/A tests and cohort checks, which are slower and noisier. The graph is only as honest as the checks feeding it.
 
@@ -380,6 +376,10 @@ Mathematics has Lean to catch fluent nonsense. A product organization has holdou
 ## Give the Objection a Consequence
 
 The objection from Holdout Day still stands. On the home screen, two-week baskets predict six-week behavior poorly. After retrieving the lesson, testing it and paying for the evidence it asked for, the organization can still arrange for nothing to follow.
+
+Ines takes the holdout results back to the head of product, who had declined the six-week criterion once already. This time she has evidence. The reply arrives the next morning, one word long: noted.
+
+Facebook paid for a much larger version of the same lesson.
 
 For years Facebook tuned its feed for engagement and time spent. In December 2017, Facebook's researchers publicly reviewed evidence that passive consumption could leave people feeling worse.&#91;32&#93; A person could keep scrolling without becoming better off. It was Bing's question again, except that the activity being counted was now hours of people's lives.
 
@@ -436,9 +436,9 @@ There is empirical work on that question. Studying the premature deaths of emine
 
 Sam, eventually, moves to another team. The reorganization that moves him is drawn on a chart of roles and levels, and nothing on the chart shows the people who came to him with questions. Two years earlier, his leaving would have taken the serializer and the home screen with him. This time the file stays.
 
-The file also keeps what should have gone. Imagine a new agent joining the project. Its progress file contains a line Sam wrote two years ago: serializer rewrite tried and abandoned; do not retry. The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The fade pattern ages the same way. A later redesign removes the rotating banner that drove most of the novelty, but the pattern still tells every reviewer to discount two-week gains on the home screen.
+The file also keeps what should have gone. A new agent joins the project. Its progress file contains a line Sam wrote two years ago: serializer rewrite tried and abandoned; do not retry. The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The fade pattern ages the same way. A later redesign rebuilds the home screen so that it changes far less often, but the pattern still tells every reviewer to discount two-week gains on the home screen.
 
-These lines are high-functioning bullshit in its purest form, because nobody is producing them. They are confident, specific, written by someone who knew the system, and detached from the reasons that once made them true. There is no author left to doubt them, and, as the checkout team learned, a reviewer will cite them with complete confidence.
+Chapter 5's apprentice kept a precaution he never understood. These lines go one step further: they are high-functioning bullshit in its purest form, because nobody is producing them. They are confident, specific, written by someone who knew the system, and detached from the reasons that once made them true. There is no author left to doubt them, and, as the checkout team learned, a reviewer will cite them without blinking.
 
 The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context. Session turnover is not a funeral; nothing that was believed has died.
 
@@ -474,9 +474,7 @@ This time, before anyone ranks them, the review agent reads each idea against th
 
 Ines opens the incident file from that first night too. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
 
-By now the problem that began with a whiteboard has changed shape. It is no longer merely how to make knowledge travel. It is how to make knowledge durable enough to survive its author, transferable enough for another worker to use, executable enough for an agent to act on, and still corrigible when the world proves it wrong.
-
-None of the failures along the way required an enemy of science in the ordinary sense. They came from expertise without context, evidence without interpretation, explanations written after the result, criticism without consequence, memory without provenance, and methods that could protect themselves from the questions most likely to change them. Each repair pushed the file toward something familiar: provenance, prediction, criticism, competing explanations, institutional memory, and eventually criticism of the method itself. We had started with a runbook. We were rebuilding some of the machinery by which science learns.
+The whiteboard problem had changed by then. Knowledge had to survive the person who learned it, travel to someone who had not been there, tell a machine enough to act, and still leave a handle by which the next failure could change it. Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing.
 
 I have not shown an agent institution that composes these patterns into a coherent whole, which was the second of Alexander's two questions to the programmers in 1996. The patterns in this chapter still have to earn their asterisks together.
 
