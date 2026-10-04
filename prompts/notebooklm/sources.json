@@ -141,7 +141,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "91730d7c97a94912032de5ac95fe27094288ceea8d339482614912af220557dd",
+      "source_sha256": "755c664965abfd0490e1d4fc792951f9367d2718a8bfac904248f43bbf138fd4",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
       "sections": [
@@ -213,7 +213,7 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "fcea98ba54e921b85e151c4cbf3887c31efc5b94107db6bbade224088aa1b3e2",
+      "source_sha256": "c8401e0c8cc5fd69b3c575e9d122e85fc7f26ded7ebf5ebb23146dfdc1a51e73",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "b0e06296c7f927edc1f108b7474680f646c9a91c1ecc05cf84509a72f31fa423",
       "sections": [

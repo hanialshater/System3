@@ -189,7 +189,7 @@ Prompts, retrieval policies, tools and memory layouts are things the agent may c
 
 The board has one more item that day: the descendant that deleted half the checks. If selection sees only what a candidate adds, the system will keep adding. They change the selection record to show what each candidate removes, and a descendant that does as well with less now wins.
 
-Engineers building self-improving harnesses have reached the same arrangement from the other side. In Agentic Harness Engineering, the evolving agent may edit its prompts, tools and memory, but the verifier, the tracer, the run logs and the model configuration are read-only, and every edit must state the improvement it predicts before the next round tests it. Weng’s own conclusion is that evaluation and permission control belong outside the loop that evolves the harness.[10](appendix-references.md#ref-07-weng)
+Engineers building self-improving harnesses have reached the same arrangement from the other side. In Agentic Harness Engineering, the evolving agent may edit its prompts, tools and memory, but the verifier, the tracer, the run logs and the model configuration are read-only, and every edit must state the improvement it predicts before the next round tests it. Lilian Weng, whose survey reports the design, concludes that evaluation and permission control belong outside the loop that evolves the harness.[10](appendix-references.md#ref-07-weng)
 
 A government can change policy; it should not be able to quietly redefine an election result. A scientist may revise a theory; she should not rewrite yesterday’s measurements to make the theory look correct. We have reinvented constitutional government because the AI wanted a better benchmark score.
 

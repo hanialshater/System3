@@ -10,7 +10,7 @@ The customers below are imagined, and I have not run the business experiment. Pa
 
 The starting problem was almost embarrassingly simple. Imagine two customers looking at the same product page.
 
-One, call her Mei, has visited several times across several days. She filtered by size and color, looked at alternatives, came back, switched between two candidates and now appears to be stuck near a decision. The other customer arrived thirty seconds ago from a search result. We know almost nothing about what he wants, how serious he is, or whether he has looked at anything like it in six months.
+One, call her Mei, has visited several times across several days. She filtered by size and color, looked at alternatives, came back, switched between two candidates and now appears to be stuck near a decision. The other customer arrived thirty seconds ago from a search result. We know almost nothing about what he wants, how serious he is, or whether he has looked at anything like this product in six months.
 
 They can see the same recommendation modules in the same order, even though the models inside those modules may be very good. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. We may have sophisticated intelligence inside each box while the arrangement of the boxes is mostly predetermined. The page is smart inside the modules and surprisingly dumb between them.
 
