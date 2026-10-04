@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "f7b6ce180b185fd6a6d7dab70b897640a1cc003f9e3e2595a43a5433c110bc9b",
+  "references_sha256": "8e21fd64334aee3b2b77328f1254ba52acd4a8b180284f6f699dfebe6ed00fc5",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -110,9 +110,9 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "1752bd41f0d9be5ed0a0128d6456072904b52b32fba408d9969b1f17a99efd51",
+      "source_sha256": "f34ffd2856d11fc1f95ef8ad960173bfac7e6c942fd181699c0c983c79bcf219",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "0b53b168dbaae2b633111d7d9246fcfc767700902aa1a7a6b577e37bab7f968e",
+      "brief_sha256": "15a2b82bff3f8f08e688bea237a42ca762daa8d594ca024f498f3c4b3989f090",
       "sections": [
         "Opening passage",
         "The Workshop",
@@ -213,7 +213,7 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "dd4f14f39844347cc79d2c48b39a1c3941e02d0047242166d1008780f57ca34e",
+      "source_sha256": "b2d0904d8ba3d3cfa1d4678fcf3168ac7f0e3f4d8c246b3e1d909044e7e3cbf2",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "b0e06296c7f927edc1f108b7474680f646c9a91c1ecc05cf84509a72f31fa423",
       "sections": [

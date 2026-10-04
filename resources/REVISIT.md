@@ -11,12 +11,12 @@ retired files.
 | Chapter 5 Paged.js proof | Evaluate against the current chapter before adopting its composition across the book. |
 | Front and back matter | A title page, copyright/ISBN page, dedication, acknowledgments and a decision on an index. None is in the manuscript. |
 | Clearance | Employer communications/legal review: the author bio names Zalando, and Chapter 5 describes the author's work at Amazon. |
-| Disclosure policy | Chapter 6 now uses an imagined online grocer, but Chapter 11 keeps identifying details (“outside Berlin”, “fashion retail”, `DE_mobile`, “Add to Bag”), Chapter 7’s store sells clothes and shoes, and the bio names the employer. Choose one policy and apply it to all of them, together with the clearance row above. |
-| Chapter 6 references | Since the 4 October rewrite, Chapter 6 cites as plain `&#91;N&#93;` text, not linked `[N](appendix-references.md#ref-06-…)` citations. The 40 `ref-06-` appendix entries still follow the previous version; Frankfurt, for example, is cited but has no entry. The build’s reference check fails until the citations are linked and the appendix section is rebuilt in citation order. |
 | Print production | Choose a printer; then set bleed, cover/spine geometry and output profile and obtain a physical proof. |
 | Video production | The current 15 briefs have checked source hashes and section order. Bespoke shot choices and generated videos still need editorial review. |
 
 ## Completed
+
+- 4 October: disclosure policy decided. The employer is named only in the bio, pending the clearance row above; Chapter 11 no longer names Berlin, `DE_mobile` or fashion retail; Chapter 6 is a de-identified composite; the Note on Evidence states the policy. Chapter 6’s 40 citations are linked again, and its appendix section is rebuilt in citation order.
 
 - 30 September: the author delegated the remaining manuscript decisions (see the copyedit log). The drafting markers were accepted, `SLOT 4` was removed, the unverifiable clauses were resolved, and the manuscript is proofread-ready.
 
@@ -34,7 +34,7 @@ not part of the push and have not been erased.
 
 ## Chapter 6: optional author material
 
-The Ines thread is an explicitly imagined case. The earlier prompts for real author experiences remain optional; do not turn the fictional incidents into autobiography.
+The grocer thread (Uncle Jalal, Ines, Sam) is a de-identified composite, as the author confirmed on 4 October. Keep names, company and details changed and add no identifying detail. The earlier prompts for real author experiences remain optional.
 
 - A design pattern you watched being applied as a rule (formerly Slot 3, “The Pattern Goes to Work”).
 - An experiment whose meaning was decided after the result came in (formerly Slot 1, “Commit the Test Before the Result”).

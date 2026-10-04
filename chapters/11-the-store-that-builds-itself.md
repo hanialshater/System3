@@ -84,7 +84,7 @@ Now suppose a returns-clarity experience is more useful *after* fit evidence bec
 
 The score of an experience therefore depends partly on what has already been selected. That is composition.
 
-The composer has to select experiences, configure them, order them and deduplicate repeated *help* as well as repeated products. It needs some notion of saturation: two size widgets can be one too many. It can model synergy: one experience may become more valuable after another. It should account for position cost because the top of a page is expensive real estate and a wonderful module in slot twelve may be a philosophical achievement rather than a product one. Constraints matter too, but I prefer many of them to be visible pressures rather than a secret forest of `if DE_mobile && campaign_X` rules.
+The composer has to select experiences, configure them, order them and deduplicate repeated *help* as well as repeated products. It needs some notion of saturation: two size widgets can be one too many. It can model synergy: one experience may become more valuable after another. It should account for position cost because the top of a page is expensive real estate and a wonderful module in slot twelve may be a philosophical achievement rather than a product one. Constraints matter too, but I prefer many of them to be visible pressures rather than a secret forest of `if mobile && campaign_X` rules.
 
 The page becomes the unit. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives, such as raising CTR on this carousel, and each one sounds reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation. The layer above has to reason about the composition as a whole.
 
@@ -196,13 +196,13 @@ Before the store has a customer, it has to decide what it actually wants.
 
 The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints, merchandising has opinions, margin and availability are real, and so are regulators. A system that pretends only one of these matters is hiding politics inside a scalar.
 
-I want those trade-offs written into the design, where someone can question them. I do not expect to discover the One True E-commerce Reward Function carved into a mountain somewhere outside Berlin.
+I want those trade-offs written into the design, where someone can question them. I do not expect to discover the One True E-commerce Reward Function carved into a mountain somewhere.
 
 This is why I increasingly dislike architectures where business decisions enter through invisible overrides. If merchandising needs a lock, make it a typed constraint. If margin is part of the objective, admit it. If a claim needs compliance review, attach the evidence rule. If the system violates a soft constraint because another objective dominated it, log the violation, so that the disagreement stays somewhere people can inspect it.
 
 ## Deliberately Boring
 
-After all of this, the sensible first experiment is obviously to build hundreds of widgets, a general customer-reasoning model, a cross-surface scheduler and an autonomous agent that redesigns fashion retail by Thursday.
+After all of this, the sensible first experiment is obviously to build hundreds of widgets, a general customer-reasoning model, a cross-surface scheduler and an autonomous agent that redesigns retail by Thursday.
 
 The first test I would run is deliberately boring. One placement: the product page. Start by validating a small number of customer problems. Use a store’s existing recommendation library, with only limited new supply. A simple composition mechanism. A trace good enough to explain an individual decision. An authored objective before a learned one.
 
