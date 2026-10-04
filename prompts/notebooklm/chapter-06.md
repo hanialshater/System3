@@ -7,28 +7,37 @@ This is a source-derived production outline, not a factual summary or a complete
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Follow Ines and the concrete pattern as the file changes through failures and tests. Ines, Sam, the search team, their incidents and test outcomes are imagined; distinguish them from the reported research. Do not present the story as evidence that an agent institution has implemented the design. Do not reinstate the removed internal company case or a claim of a certified Navier-Stokes solution. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
+Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Follow Uncle Jalal, Sam and Ines as knowledge moves from prestige and tacit memory into tested, executable patterns. Preserve the peacock/feathers motif, high-functioning bullshit, Holdout Day, the file overgeneralizing at checkout, the one-word "noted" response, inherited stale knowledge and the final handoff to recursive self-improvement. Uncle Jalal, Sam, Ines, the grocery company, their incidents and test outcomes are imagined; distinguish them from Bing, Facebook, Alexander, the software-pattern history and reported AI/mathematics research. Keep Bayes as an organizational analogy, not a claim that every A/B test is Bayesian. Let the durable-transferable-executable-corrigible formulation arrive near the end, after the reader has discovered it. Do not present the story as evidence that an agent institution has implemented the design, and do not claim a certified Navier-Stokes solution. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
 ```
 
 ## The idea to land
 
-Knowledge travels best with its reasons and its confidence attached, which is what Alexander's pattern language did for rooms and agent skills can do for institutions.
+Knowledge must survive its author, travel with enough context for another worker to use, become actionable by an agent, and still remain open to correction: durable, transferable, executable and corrigible.
 
 ## Moments to show
 
-- the balcony, the window seat and Different Chairs
-- the patterns travelling to software, the wiki and Wikipedia
-- Alexander's keynote and his doubt
-- Ines and Sam's incident file growing through failures
+- Uncle Jalal's roadmap workshop, Sam's smaller sticky note and the peacock signal
+- Alexander's balcony patterns, confidence marks and the pattern language
+- the wins that vanish and high-functioning bullshit at the quarterly review
+- Ines at two in the morning with the runbook that says ask Sam
+- the novelty investigation and Holdout Day
+- the wins-that-fade skill becoming executable knowledge
+- the file wrongly blocking a checkout speed-up and earning a narrower scope
+- Bing's correct numbers with the wrong meaning
+- the one-word noted response followed by Facebook and Longino
+- stale inherited knowledge becoming high-functioning bullshit with no author
+- the second workshop and the final ask Ines line
 
 ## Lines to keep word for word
 
 - "why am I suddenly emotionally invested in the width of a balcony?"
+- "high-functioning bullshit"
 - "is a decorative conscience"
+- "Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing."
 
 ## Imagined, reported or proposed
 
-Ines, Sam and their incidents are imagined; the history of patterns is reported.
+Uncle Jalal, Sam, Ines, the grocery company and their incidents are imagined. Alexander and the software-pattern history, Bing, Facebook and the cited AI/mathematics cases are reported. The proposed agent institution and its pattern files are designs, not evidence of a deployed system.
 
 ## Visual style
 
@@ -44,28 +53,33 @@ Match the book's illustrations, not a generic AI look.
 - **Evidence:** when the chapter relies on a real photograph or document, show it as an unaltered object on the page; never redraw or beautify it.
 - **Arc across the book:** machine, system, institution, culture, human. Early chapters may hold more machinery; from the desire layer on, people move back to the centre, and by the last chapters the robots almost disappear.
 
-**This chapter:** Transmission is the hero. Alexander's pattern pages (the balcony, the window seat, different chairs) passing from hand to hand and becoming a working file; move away from the desk.
+**This chapter:** Transmission is the hero, but transmission changes form: Uncle Jalal's impressive whiteboard, Sam's small sticky note, Alexander's pattern pages, Ines's growing evidence file, then an agent acting from the file. Reuse the peacock/feather motif when prestige becomes executable dogma. End with the file surviving its people while remaining visibly open to correction.
 
 ## Source order
 
 1. Opening passage
-2. The Pattern Goes to Work
-3. Ask Sam
-4. Give the Claim an Address
-5. Commit the Test Before the Result
-6. Locate the Failure
-7. Ask What the Number Means
-8. Write the Lesson Down
-9. A Reader That Can Act
-10. Put the Library to Work
-11. Find Where the Result Lives
-12. Change the Representation
-13. Separate Use From Investigation
-14. Keep the Funding Decision Visible
-15. Give the Objection a Consequence
-16. Test What the Next Agent Inherits
-17. Put the Procedure Under Test
-18. What the File Says Now
+2. The Workshop
+3. Light on Two Sides
+4. Wins That Vanish
+5. The Quarterly Review
+6. Two in the Morning
+7. Why Engineering Learns
+8. Ask Sam
+9. Why Experiments Don't Learn
+10. Locate the Failure
+11. Give the Claim an Address
+12. Ask What the Number Means
+13. Commit the Test Before the Result
+14. Borrow the Load Test
+15. Holdout Day
+16. A Reader That Can Act
+17. The File Says No
+18. Change What We Measure
+19. Agents Together
+20. Give the Objection a Consequence
+21. Test What the Next Agent Inherits
+22. Put the Procedure Under Test
+23. What the File Says Now
 
 ## Review
 
