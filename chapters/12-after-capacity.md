@@ -34,9 +34,9 @@ Not all capacity. We still have one planet, finite land and energy, and twenty-f
 
 LLM-as-a-judge looked like a threat to my profession.
 
-A job accumulates around scarce skills the way a city accumulates around a river, and Chapter 9 described the river mine grew up around: training a model and running an evaluation somebody would believe. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
+A job accumulates around scarce skills the way a city accumulates around a river, and Chapter 9 described the two my job grew up around. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-Chapter 9’s answer was owning the frontier, and there is useful work for me there. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
+Chapter 9’s answer was owning the frontier, and there is useful work for me there. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. A role that moves upward describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
 The same capacity that makes my profession less secure puts more of the frontier within reach, including for people who will never hire an applied scientist at all. I can worry about what it will replace and still be impatient to find out what I can do with it.
 
@@ -180,7 +180,7 @@ The same capacity cuts the other way. A research agent that makes experiments ch
 
 So capacity over power can fail in two directions. Concentrate the capacity and everybody’s weekend runs on somebody else’s permission. Distribute it without the parts of System 3 that make it answerable and anyone can do anything while nobody can check. The first gives us a very efficient landlord. The second gives chaos an API key.
 
-What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
+What the architecture in this book can do is make the switches visible: a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
 
 ## The Second Descent
 

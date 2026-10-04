@@ -186,7 +186,7 @@ In every one of those tests the count was correct. What failed was the meaning t
 
 At Bing, a treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up by over ten percent. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue per user went up by over thirty percent. Two of the organization's headline numbers were celebrating an experience that had been degraded.[17](appendix-references.md#ref-06-kohavi)
 
-The count was right, and the cheerful interpretation was wrong. Another audit of the count would not have established what the extra queries meant. A test of whether people completed their tasks might have.
+Another audit of the count would not have established what the extra queries meant. A test of whether people completed their tasks might have.
 
 Saussure's point from Chapter 4 applies here: a term means what it does through its differences from its neighbors.[18](appendix-references.md#ref-06-saussure-lectures) More queries meant more engaged only inside a system where a query was a unit of interest. Set it beside session and task and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad result. The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return.
 
@@ -218,7 +218,7 @@ A model will propose a distinguishing test plausibly enough if asked. The commit
 
 The holdout is a load test pointed at time. A load test asks at what traffic a working system stops working; a long holdout asks at what week a working result stops working. Once Ines sees the resemblance, the rest of engineering's apparatus starts to translate.
 
-A post-launch monitor that compares holdout and launched customers is an alert that keeps running after the dashboard closes. Replaying old launch decisions against what later happened is a regression suite for the experimentation method: would today's review rules have shipped the three faded winners? An A/A test, two identical arms run through the whole platform, is chaos engineering for the Bayesian engine. If the engine declares a winner between two copies of the same screen, the engine is broken, and it is better to find out on a Tuesday afternoon.
+A post-launch monitor that compares holdout and launched customers is an alert that keeps running after the dashboard closes. Replaying old launch decisions against what later happened is a regression suite for the experimentation method: would today's review rules have shipped the three faded winners? An A/A test, two identical arms run through the whole platform, is chaos engineering for the Bayesian engine. If the engine declares winners between two copies of the same screen more often than its error rate allows, the engine is broken, and it is better to find out on a Tuesday afternoon.
 
 None of this is free. Engineering's checks are cheap because computers are patient. Product checks cost customers, traffic and weeks, which is exactly why experiments learned slowly in the first place.
 
@@ -250,7 +250,7 @@ It was the first result in the archive that the team could defend for longer tha
 
 The next reviewer should not have to rediscover any of this, or spend a week in Ines's meeting. She writes the lesson down as a candidate pattern, with the reasons and the uncertainty kept alongside the instruction:
 
-\`\`\`yaml
+```yaml
 id: wins-that-fade
 confidence: provisional, five incidents on one screen
 context: A home-screen or layout experiment reports a gain at the end of a two-week test.
@@ -269,7 +269,7 @@ on_support_withdrawn:
   - Reassess dependent interpretations using their remaining support.
   - Return recommendations that lost required support to review.
   - Retain the earlier decision and the reason for its change.
-\`\`\`
+```
 
 It belongs inside review-an-experiment and may call locate-the-failure, where the redirect bug now lives, rather than every statistical procedure in the building. Like Alexander's links, those references help a reader choose a method for the difficulty at hand and find an alternative when it fails.
 
@@ -315,14 +315,14 @@ Repository context files have already faced this kind of comparison. Gloaguen an
 
 A lesson that passes should also carry its scope. After a quarter of comparisons, the top of Ines's file might read:
 
-\`\`\`yaml
+```yaml
 id: wins-that-fade
 confidence: supported for visible layout and home-screen changes; untested elsewhere
 scope: changes returning customers can notice and react to as new
 known_failure: held a checkout speed-up whose gain survived a six-week holdout
 revision: treat changes customers cannot see, such as speed, as outside scope
 evidence_record: fade-evaluations
-\`\`\`
+```
 
 The next agent can see both where the pattern has been tested and how its predecessor misused it. Nobody had to retrain anything to get there.
 
@@ -390,7 +390,7 @@ A product owner may reasonably care about how many experiments the team can run 
 
 A year after Ines opened it, her file has grown fields nobody would have put in the first version:
 
-\`\`\`yaml
+```yaml
 open_questions:
   - Does the fade pattern hold outside the home screen?   # unfunded
 funding:
@@ -403,7 +403,7 @@ objections:
     decision: Keep two-week tests; add holdouts to major launches.
     owner: head of product
     reason: Six-week tests would cut the team's experiment capacity by two thirds.
-\`\`\`
+```
 
 An open_questions field that no decision ever consults is a decorative conscience. These lines matter when the next review follows them, notices that the evidence concerns another screen or another app version, and changes what it is prepared to conclude.
 
@@ -461,7 +461,7 @@ This time, before anyone ranks them, the review agent reads each idea against th
 
 Ines opens the incident file from that first night too. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
 
-The whiteboard problem had changed by then. Knowledge had to survive the person who learned it, travel to someone who had not been there, tell a machine enough to act, and still leave a handle by which the next failure could change it. Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing.
+The whiteboard problem had changed by then. Knowledge had to survive the person who learned it, travel to someone who had not been there, tell a machine enough to act, and still leave a handle by which the next failure could change it. Durable, transferable, actionable, corrigible: each repair had added one of the properties the file was missing.
 
 I have not shown an agent institution that composes these patterns into a coherent whole, which was the second of Alexander's two questions to the programmers in 1996. The patterns in this chapter still have to earn their asterisks together.
 

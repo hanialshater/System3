@@ -14,7 +14,7 @@ I learned this while editing this book. “Make the chapter better” sounded li
 
 In the vibe coder’s seat I used to decide what to try next, and Deep Mode took much of that job from me. What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for.
 
-Lee Sedol, the one player to win a game in that 2016 match, retired from professional Go in 2019. Even if he became number one, he said, “there is an entity that cannot be defeated.”[1](appendix-references.md#ref-09-sedol) For him the question of what remains arrived all at once. For most of us it is arriving one task at a time.
+Lee Sedol, who won one of the five games in that 2016 match, retired from professional Go in 2019. Even if he became number one, he said, “there is an entity that cannot be defeated.”[1](appendix-references.md#ref-09-sedol) For him the question of what remains arrived all at once. For most of us it is arriving one task at a time.
 
 The five-layer map put that at the top and called it the desire layer. Drawn as a box, it looked like the easy part: the human supplies the goal, the machine does the rest. Even cooperative inverse reinforcement learning, which lets the machine stay uncertain about the goal, imagines that goal sitting inside the human, waiting to be recovered.[2](appendix-references.md#ref-09-l4-cirl)
 

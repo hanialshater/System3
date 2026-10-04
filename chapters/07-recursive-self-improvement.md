@@ -24,7 +24,7 @@ Good’s argument is only a few lines long, and it hides almost the entire probl
 
 On 28 February 2017, a large part of the internet stopped working for an afternoon. An engineer at Amazon Web Services, following an established playbook to take a few servers out of service, mistyped one input to a command. Far more servers came out than intended, and S3, the storage service underneath an embarrassing fraction of the web, went down with them. Amazon’s public account of the incident spends little time on the person. It explains what the tool allowed. The tool was changed to remove capacity more slowly and to refuse any request that would take a subsystem below the minimum it needed.[4](appendix-references.md#ref-07-s3)
 
-Telling people to be more careful is emotionally satisfying and institutionally almost worthless. The outage was over in hours. The change to the tool was aimed at the next outage, the one nobody had had yet.
+The outage was over in hours. The change to the tool was aimed at the next outage, the one nobody had had yet.
 
 Amazon has a name for the document that carries this: the Correction of Error. It records what happened, asks why until the answers stop being about people, and ends in actions that are tracked until they are done. The question on the form is what to fix.[5](appendix-references.md#ref-07-coe) Over years, the actions pile up into procedures, the procedures into runbooks, and the runbooks, when someone is patient enough, into automation.
 
@@ -42,7 +42,7 @@ In every one of these loops, the hard question is who gets to say that a change 
 
 <!-- AUTHOR: the store and Omar are both invented. Could the real circle-packing run, or a real ranking or experiment story of yours, carry some of the store's beats? -->
 
-Leave Chapter 6’s grocer for a different business, an online store that sells clothes and shoes. Its research agents already keep records the way a good lab does: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
+Leave Chapter 6’s grocer for a different business, an imagined online store. Its research agents already keep records the way a good lab does: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
 
 Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[9](appendix-references.md#ref-07-yudkowsky)[10](appendix-references.md#ref-07-weng) The store has to decide. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
 

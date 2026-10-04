@@ -59,7 +59,7 @@ Match the book's illustrations, not a generic AI look.
 6. A Man in a Dark Room
 7. Boyle’s Pump
 8. Who Gets the Next Agent?
-9. Science Gets Bigger Than the Scientist
+9. Bigger Than Any Expert
 10. Sixteen Claudes, Again
 
 ## Review

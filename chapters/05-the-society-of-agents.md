@@ -249,19 +249,19 @@ Philip Kitcher examined this problem in 1990: how should a community divide its 
 
 Compute allocation is epistemic policy. So is memory, so is context sharing, so is credit. Who receives the capacity to generate evidence helps decide which possible truths the institution can afford to discover. Which explanation is currently best and where the next unit of capacity should go are separate questions. A critic whose objections never change what gets investigated is doing quality-assurance theater.
 
-Human science has never escaped this problem. It has simply had much longer to argue about it.
+Human inquiry has never escaped this problem. It has simply had much longer to argue about it.
 
-## Science Gets Bigger Than the Scientist
+## Bigger Than Any Expert
 
 Accumulated knowledge eventually destroys the world of the universal expert.
 
 Newton was extraordinary. In January 1697, busy with the great recoinage at the Royal Mint, he received Johann Bernoulli’s challenge: find the curve along which a bead slides fastest between two points. Bernoulli had given the mathematicians of Europe months. By John Conduitt’s account, Newton came home at four in the afternoon, exhausted, and had it solved by four in the morning. The answer went to the Royal Society without his name, and Bernoulli recognized the author anyway: *Tanquam ex ungue leonem*, as the lion by its claw.[20](appendix-references.md#ref-05-newton)
 
-The story is usually told about Newton. The more important part is that Bernoulli’s question could reach him at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight and returned to circulation. The attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Even the anonymous answer arrived carrying something of its author.
+The story is usually told about Newton. The more important part is that Bernoulli’s question could reach him at all. A challenge posed from Groningen was printed in a Leipzig journal, read in London, answered overnight and returned to circulation. The attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Even the anonymous answer arrived carrying something of its author.
 
 Genius mattered enormously, and so did the network that let genius start from accumulated work instead of from dirt.
 
-Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help. Science became more powerful by making scientists less interchangeable.
+Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help. Research became more powerful by making researchers less interchangeable.
 
 Because no researcher can personally reproduce every result she depends on, trust became more important at exactly the moment standards of evidence became stronger. A physicist relies on chemistry. A doctor relies on assays. A scientist cites work she could not reproduce from raw materials with the rest of her career and a very generous grant. John Hardwig called this epistemic dependence, and argued that it is a condition of rational knowledge: a person who refused to believe anything she had not verified herself would know almost nothing.[21](appendix-references.md#ref-05-hardwig) At scale, rigor is a way of organizing trust, because nobody gets to do without it.
 

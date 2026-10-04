@@ -1,7 +1,7 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "8e21fd64334aee3b2b77328f1254ba52acd4a8b180284f6f699dfebe6ed00fc5",
+  "references_sha256": "82c4f02129ab1ef9683993ce1cd794ce8885982a62cc5a71cab1080b58009521",
   "sources": [
     {
       "source": "chapters/00-preface.md",
@@ -30,7 +30,7 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "8dc63c49922b3e42b6a3dd54b52f3e7908c1e88a6a62b8a8aa6e5c3b1152f245",
+      "source_sha256": "e018491f86f2b13eae5c305a77d80284def4a40d08c52ab493579b996375c81b",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "64d7c32876f1224ab3a092a8ae762e7367698300ec67bd83ea223ec14f93a9d1",
       "sections": [
@@ -92,9 +92,9 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "f86cabb6248af467f97b78fd929ac98e65f6bfa78c004d4ce48b8e010ff72f70",
+      "source_sha256": "4d36c79d18cfc12eb039f0d0aa696037f2b1c5dd1d93592ccf02c820a462f4b4",
       "brief": "prompts/notebooklm/chapter-05.md",
-      "brief_sha256": "65a13034781487e3b279c3f727d294d7b45fb55ce06da97ba853d95c59bf7d67",
+      "brief_sha256": "b2c7723024a2968f67d7d39f6534938788dd0495733813e3fe2713b669574085",
       "sections": [
         "Opening passage",
         "Civilization Had No Senku",
@@ -104,15 +104,15 @@
         "A Man in a Dark Room",
         "Boyle’s Pump",
         "Who Gets the Next Agent?",
-        "Science Gets Bigger Than the Scientist",
+        "Bigger Than Any Expert",
         "Sixteen Claudes, Again"
       ]
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "f34ffd2856d11fc1f95ef8ad960173bfac7e6c942fd181699c0c983c79bcf219",
+      "source_sha256": "6b78bdaa34989c783db5af3a1b8d571131a6367604cc7399d7c55d17ab436bdf",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "15a2b82bff3f8f08e688bea237a42ca762daa8d594ca024f498f3c4b3989f090",
+      "brief_sha256": "c0577fe0d54ca4d08bf872762b77acdf69c1a51ff9f27ab5d6e6cbb97d7b182f",
       "sections": [
         "Opening passage",
         "The Workshop",
@@ -141,7 +141,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "e14961c81253d319c75a52f59e82d04b0ad405942dffa7b5044eb078b2015a5f",
+      "source_sha256": "592997ffec709e7b7cad3f8cfa30c80845d26df86257f9ecbf5f2a9aec3ee3dc",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
       "sections": [
@@ -181,7 +181,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "dc73620878e5658bdcbfaed7a398f99fe644831dfaeb6361760cf2ab0f0f29c7",
+      "source_sha256": "105591fc737d347214e5eef269b41d5f301157a328f73bc439437d449187855e",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "deafc6cb296acde7880c045d0e84d7693701ab8d9e54e5fdb38e18ab02c587a7",
       "sections": [
@@ -213,7 +213,7 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "b2d0904d8ba3d3cfa1d4678fcf3168ac7f0e3f4d8c246b3e1d909044e7e3cbf2",
+      "source_sha256": "56cb5ece5b6da08169301848bdc251633e1e02f2541667f359824ce25c4e0b88",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "b0e06296c7f927edc1f108b7474680f646c9a91c1ecc05cf84509a72f31fa423",
       "sections": [
@@ -236,7 +236,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "a713ebd7f3033e719345e9a31d95cdde455e9eab70d3c8058c0745460a0dcb2d",
+      "source_sha256": "18c94e04c3978ea5089a97608998ea3689d98b9de5fc310a68a5984cd37891cb",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "e7df4bb8466d5e44d1d3cd371701dbec65000e3b391ab013b030b374cc7410bc",
       "sections": [

@@ -16,7 +16,7 @@ Knowledge travels best with its reasons and its confidence attached, which is wh
 
 ## Moments to show
 
-- the balcony, the window seat and Different Chairs
+- the balcony and Light on Two Sides of Every Room
 - the patterns travelling to software, the wiki and Wikipedia
 - Alexander's keynote and his doubt
 - Ines and Sam's incident file growing through failures

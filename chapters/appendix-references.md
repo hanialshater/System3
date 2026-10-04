@@ -11,7 +11,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 - Pedro Domingos, *The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World* (Basic Books, 2015).
 - David Silver et al., “Mastering the game of Go with deep neural networks and tree search,” *Nature* 529 (2016), 484–489. <https://doi.org/10.1038/nature16961>
 - David Silver et al., “Mastering the game of Go without human knowledge” (AlphaGo Zero), *Nature* 550 (2017), 354–359. <https://doi.org/10.1038/nature24270>
-- Christopher G. Langton, “Computation at the edge of chaos: Phase transitions and emergent computation,” *Physica D* 42 (1990), 12–37 — one origin of the “edge of chaos” phrase the chapter both loves and distrusts. <https://doi.org/10.1016/0167-2789%2890%2990064-V>
+- Christopher G. Langton, “Computation at the edge of chaos: Phase transitions and emergent computation,” *Physica D* 42 (1990), 12–37 — one origin of the “edge of chaos” phrase. <https://doi.org/10.1016/0167-2789%2890%2990064-V>
 
 ## Chapter 2 — The Algorithm Vortex
 
@@ -124,7 +124,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 1. <a id="ref-06-peacock"></a>Amotz Zahavi, “Mate Selection—A Selection for a Handicap,” *Journal of Theoretical Biology* 53(1), 1975, pp. 205–214; Alan Grafen, “Biological Signals as Handicaps,” *Journal of Theoretical Biology* 144(4), 1990, pp. 517–546. The handicap principle concerns signals that are costly to produce; the comparison with a persuasive track record is the author’s.
 
-2. <a id="ref-06-alexander"></a>Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 1 (Independent Regions), 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves), 251 (Different Chairs), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
+2. <a id="ref-06-alexander"></a>Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
 
 3. <a id="ref-06-bayes"></a>Thomas Bayes, “An Essay towards Solving a Problem in the Doctrine of Chances,” communicated by Richard Price, *Philosophical Transactions of the Royal Society of London* 53, 1763, pp. 370–418.
 
@@ -138,7 +138,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 8. <a id="ref-06-beck"></a>Kent Beck and Ward Cunningham, “Using Pattern Languages for Object-Oriented Programs,” OOPSLA-87 workshop on the Specification and Design for Object-Oriented Programming, 1987.
 
-9. <a id="ref-06-gof"></a>Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, *Design Patterns: Elements of Reusable Object-Oriented Software*, 1994. On the Hillside Group, founded after an August 1993 meeting in Colorado, see its own history at hillside.net. Will Wright has described *A Pattern Language* as an inspiration for *The Sims* (2000) in several interviews.
+9. <a id="ref-06-gof"></a>Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, *Design Patterns: Elements of Reusable Object-Oriented Software*, 1994.
 
 10. <a id="ref-06-wiki"></a>Ward Cunningham launched WikiWikiWeb in March 1995 as an editable supplement to the Portland Pattern Repository. See Bo Leuf and Ward Cunningham, *The Wiki Way*, 2001.
 
@@ -190,7 +190,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 34. <a id="ref-06-fbfiles"></a>Keach Hagey and Jeff Horwitz, “Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead,” *The Wall Street Journal*, 15 September 2021, part of the Facebook Files series based on internal documents; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF16/20211201/114268/HHRG-117-IF16-20211201-SD012.pdf). The company said the ranking change was not the source of the world’s divisions and that it had an integrity team working on exploitation of the algorithm. The article reports both limited adoption of fixes and resistance to extending them.
 
-35. <a id="ref-06-instagram"></a>Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the body-image findings and the former researcher’s statement about bonuses. For the company’s response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September. The body-image proportion concerns respondents who reported that difficulty, not all teenage girls; the surveys do not establish causation.
+35. <a id="ref-06-instagram"></a>Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the former researcher’s statement about bonuses. For the company’s response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September.
 
 36. <a id="ref-06-longino"></a>Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
 
@@ -463,7 +463,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 2. <a id="ref-12-after-2"></a>Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, [“Reconciling modern machine-learning practice and the classical bias–variance trade-off”](https://arxiv.org/html/1812.11118v2), *PNAS* 116(32), 2019, pp. 15849–15854. In their random-feature experiments, the researchers explicitly selected the smallest-norm solution among those that fit the data; larger model classes allowed such solutions with smaller norms. Double Descent Life borrows the curve’s shape as a philosophical analogy.
 
-3. <a id="ref-12-after-3"></a>The mathematical workshop, alternative recommendation experiences and community tool are prospective examples, not reported deployments.
+3. <a id="ref-12-after-3"></a>The mathematical workshop and community tool are prospective examples, not reported deployments.
 
 4. <a id="ref-12-after-4"></a>Jacques Derrida, “Signature Event Context,” in *Limited Inc*, Northwestern University Press, 1988. The comparison with gradient descent is a philosophical provocation, not a claim that optimization refutes Derrida’s argument.
 
