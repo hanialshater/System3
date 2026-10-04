@@ -14,6 +14,6 @@
 ```
 
 > *Let go of the path, not the boundary.*\
-> *The human stays in the loop that changes the loops.*
+> *Leave the human room to change their mind.*
 >
 > — The Zen of System 3

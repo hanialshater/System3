@@ -4,7 +4,7 @@ What if we could calculate an argument?
 
 In the seventeenth century, Leibniz imagined a language so precise that two people could settle a disagreement by working through the symbols. *Calculemus*. Let us calculate. Politics? Ethics? Even your uncle’s special feeling for the market: excellent, uncle. Show us the equation.
 
-He aspired to discover truths and inventions through a universal calculus of thought. Two years before his death, he was still wishing for more time and talented people to help him. Even Leibniz needed a team.
+He aspired to discover truths and inventions through a universal calculus of thought. Nearly three years before his death, he was still wishing for more time and talented people to help him. Even Leibniz needed a team.
 
 Sometimes a small paper opens the ground beneath your feet. In 2017, Poincaré embeddings showed how hierarchies could fit into hyperbolic space. A year later, researchers were building neural networks there.
 

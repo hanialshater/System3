@@ -93,15 +93,16 @@ The evening evaluation missed these. Items marked ✓ were checked here against 
 - **Preface l.7** "Two years before his death": two readers place the letter to Rémond in
   January 1714, nearly three years before Leibniz died in November 1716.
 - ✓ **07:70** "Move 37 won the game": "AlphaGo won the game" is exact.
-- ✓ **07:132** "Seven years later": the adversarial-policy paper on KataGo appeared in 2022, six
-  years after 2016.
+- **07:132** "Seven years later": on checking, this stands. The paper was published at ICML 2023 and
+  Pelrine's games were in February 2023, seven years after 2016 (the preprint was 2022).
 - **07:47** "from Yudkowsky's to Weng's, say nothing about how you would tell": 07:192 then cites
   Weng placing evaluation outside the loop. Drop "to Weng's".
 - ✓ **08:77** "Training the debaters": in Khan et al. the debaters were made more persuasive at
   inference time. "Making the debaters more persuasive" is exact.
 - **06:290** "Calls to other skills": the Agent Skills specification has references, not calls
   (two readers).
-- **06:361** "41.6": the prior bound 5/12 is 41.67 percent; check which figure the source gives.
+- **06:361** "41.6": on checking, Anthropic's page gives "from 41.6% to 67.2%"; the text matches its
+  source.
 - **09:73** the multi-principal citation concerns combining several users, not a seller's hidden
   interest; **09:109** Paul argues testimony cannot convey what an experience will be like;
   **09:27** the stake is in the company, not the model.
@@ -157,3 +158,27 @@ epigraph; the Note's OpenAI clause and row 12. Checking first: the preface's Lei
 Needs the author: everything in the evening evaluation's "Needs the author" list, plus 06:185 and
 the other Chapter 6 continuity points, and whether Chapters 7 and 11 should keep their apparel
 detail under the disclosure policy.
+
+---
+
+## 7. Applied after this re-evaluation (author's instruction: no cuts of meaningful material)
+
+- **Chapter 13 restored to the author's text** of 21 September (commit `48fdb6b`). The 30 September
+  typography pass had changed its apostrophes and ellipses. `check-eggs.sh` now fails if the file
+  changes; the seed anchors use the author's straight apostrophes.
+- Preface l.7 "Nearly three years before his death" (letter to Rémond, 10 January 1714).
+- 05:192 "experimental inquiry" holds back *science* for the reveal; 05:264 "colleagues".
+- 06:290 "Pointers to other skills".
+- 07:47 "from Yudkowsky's on"; 07:70 "AlphaGo won the game, and Move 37 became the move people
+  remember".
+- 08:77 "Making the debaters more persuasive".
+- 09:27 "a stake in the company behind a language model called Claude".
+- 10:77 "from 1.33 to 2.636".
+- 11:13 "whether he has looked at anything like it in six months" (no product named).
+- Part IV epigraph: "Leave the human room to change their mind." replaces the line that recapped
+  Chapter 8; both lines stay in the Zen appendix.
+- Note on Evidence: OpenAI's reports in Chapters 6, 8 and 12; row 12 says "irrigation association".
+- ref-12-flt-tokens gives the six-billion-token figure.
+
+Nothing meaningful was cut: the only removed words are "to Weng's" (07:47) and the product name at
+11:13.

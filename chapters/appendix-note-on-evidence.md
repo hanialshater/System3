@@ -16,12 +16,12 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 9. The Desire Layer | Amazon’s changing value proposition, the science of human learning and decision support, an imagined Mallorca summer, and an argument about how desire develops | Argued from history and other people’s evidence; the Mallorca traveller and the clinic founder are imagined |
 | 10. Fluent Autonomy | The editing of this book, and where the argument could be wrong | Lived; the fluency is still an ambition |
 | 11. The Store That Builds Itself | My prototype store, imagined customers and a proposed business experiment | Prototyped; the prototype’s results are not reported here, and the business experiment has not run |
-| 12. After Capacity | Dantzig, Ostrom, an imagined mathematician’s workshop and irrigators, and a hope | Argued from cited work; no new experiment |
+| 12. After Capacity | Dantzig, Ostrom, an imagined mathematician’s workshop and irrigation association, and a hope | Argued from cited work; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |
 
 Where a case is a composite, as in Chapter 6, the names, the company and the details are changed. No chapter describes my current employer’s systems.
 
-Three companies supply more of this evidence than any others. Amazon, where I used to work, appears in Chapters 5, 7 and 9. Anthropic’s published reports carry much of Chapters 5 to 9 and part of Chapter 12, because they describe agent work in unusual detail, and an OpenAI report opens Chapter 8. None of them is a neutral witness about its own systems.
+Three companies supply more of this evidence than any others. Amazon, where I used to work, appears in Chapters 5, 7 and 9. Anthropic’s published reports carry much of Chapters 5 to 9 and part of Chapter 12, because they describe agent work in unusual detail, and OpenAI’s reports open Chapter 8 and supply the Navier–Stokes figures in Chapters 6 and 12. None of them is a neutral witness about its own systems.
 
 ## How This Book Was Written
 

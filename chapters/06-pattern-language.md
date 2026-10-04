@@ -287,7 +287,7 @@ Andrej Karpathy's Software 1.0/2.0/3.0 shorthand captures what changed. Rules wr
 
 I avoid calling such a document executable, because the word hides the reader: the same words can produce different actions in different models.
 
-Agent skills give the arrangement a container with much of Alexander's anatomy. A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the Therefore. Calls to other skills serve as links to smaller patterns.[23](appendix-references.md#ref-06-skills)
+Agent skills give the arrangement a container with much of Alexander's anatomy. A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the Therefore. Pointers to other skills serve as links to smaller patterns.[23](appendix-references.md#ref-06-skills)
 
 Feigenbaum's bottleneck has also moved. An agent can read three hundred experiment records, launch notes, postmortems and chat threads in an afternoon and propose patterns nobody wrote down. Given an archive that recorded the weeks after each test, it could have found Sam's fading screen before Uncle Jalal ever made his slide. Getting knowledge out has become cheap. Deciding which of the extracted lessons are true, where they apply and when to retire them has not.
 

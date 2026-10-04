@@ -9,7 +9,7 @@ The house editorial prompt (`prompts/chapter-version-evaluation.md`) governs thi
 - **Surgery over replacement.** Fix errors, inconsistencies and known overclaims. Cut or fold where a passage repeats work already done. Do not rewrite living prose into tidier prose.
 - **Delete and fold before adding.** Where a chapter is too long, prefer deletion and merging to new connective sentences. Added seams are the register this book keeps trying to remove.
 - **Protect the voice.** Protected lines, recurring motifs and deliberate jokes stay. The Chapter 1 "cat obsession" paragraph was restored by the author on 27 September and stays.
-- **Chapter 13 is protected.** It gets typography only.
+- **Chapter 13 is protected.** It gets no changes at all, typography included. The author’s text of 21 September 2026 (commit `48fdb6b`) was restored on 4 October, and `check-eggs.sh` fails if the file changes.
 - **Author acceptance is not an edit.** The `ASSISTANT EDIT`, `ASSISTANT DRAFT` and `CLAUDE DRAFT` markers record prose waiting for author sign-off. They stay in place and are listed in the PR for a decision. Chapter 9's `SLOT 4` asks for the author's own marketplace case, so it is not filled with an invented one.
 - **No fabricated evidence.** No invented figures, experiment details or autobiography. Where a record is missing, the text says so or keeps its present qualified wording.
 - **Keep seeds intact.** Run `resources/editorial/check-eggs.sh` after every chapter.
@@ -67,7 +67,8 @@ The house editorial prompt (`prompts/chapter-version-evaluation.md`) governs thi
 | 10 | De-bold slogans in the middle sections; line edit. | — |
 | 11 | Correct the causality overstatement. De-bold. Trim the "not X, it is Y" constructions where two sit in one paragraph. "ecommerce" → "e-commerce". | Changing the design itself. |
 | 12 | Correct "ten thousand agents for eighty-eight hours" and its citation; verify the June 2026 access sentence. | — |
-| 13, divider, scaffolds | Typography only. | Any wording. |
+| 13 | Nothing. Protected in full, typography included. | Any change. |
+| Divider, scaffolds | Typography only. | Any wording. |
 | Zen | Typography only. The author revised the Zen on 30 September, after the 27 September critique, and kept "Ground every claim. Trace every source." and "The tongue cannot reach the ear." Both are treated as deliberate maxims. The second is true of the reader's tongue, which is the test Chapter 4 actually sets. | Rewriting the list. |
 | Evidence note, illustrations note, references, about | Typography; reference entries changed only where citations move or facts are corrected. | Removing the `CLAUDE DRAFT` marker; employer clearance (author task). |
 

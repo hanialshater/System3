@@ -1,11 +1,11 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "82c4f02129ab1ef9683993ce1cd794ce8885982a62cc5a71cab1080b58009521",
+  "references_sha256": "76f76a255cc7ff73764d7478881d82196937d2b51027b8b74daf41c2e5d85d99",
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "6dd70f115f03d6708e2f02a9e7dfa170df3e49b347bde028b1b1f1a742302f60",
+      "source_sha256": "55fdcc9e4577431ad18c52e48316aa4fe50b662a79224425d371f1ca5a8d4030",
       "brief": "prompts/notebooklm/preface.md",
       "brief_sha256": "fd7c8010be8cfa05600d5012bb4bf7165ad43393e78ca6797ff49511ebcffc19",
       "sections": [
@@ -92,7 +92,7 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "4d36c79d18cfc12eb039f0d0aa696037f2b1c5dd1d93592ccf02c820a462f4b4",
+      "source_sha256": "7348327b469be999a40f76d95881554ec782f8868b48f50908a6b32b14e30a45",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "b2c7723024a2968f67d7d39f6534938788dd0495733813e3fe2713b669574085",
       "sections": [
@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "6b78bdaa34989c783db5af3a1b8d571131a6367604cc7399d7c55d17ab436bdf",
+      "source_sha256": "a16eccc2843604d2c316b5f07ae63d268e4f7dab8fbf3fca75ba323df9f7bdf9",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "c0577fe0d54ca4d08bf872762b77acdf69c1a51ff9f27ab5d6e6cbb97d7b182f",
       "sections": [
@@ -141,7 +141,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "592997ffec709e7b7cad3f8cfa30c80845d26df86257f9ecbf5f2a9aec3ee3dc",
+      "source_sha256": "91730d7c97a94912032de5ac95fe27094288ceea8d339482614912af220557dd",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
       "sections": [
@@ -162,7 +162,7 @@
     },
     {
       "source": "chapters/08-scalable-oversight.md",
-      "source_sha256": "cc9321afba5f07dd41843f9634fa8c7b954f676a87233904767c368c3a20ae18",
+      "source_sha256": "ff2838fc6024be01e95bc077ca15f078a91095add6b64ad87d03f3088b6af575",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "c481c3acf40e3d0eea46eba51c7d61974a61bcf409991050c4060631f94718e6",
       "sections": [
@@ -181,7 +181,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "105591fc737d347214e5eef269b41d5f301157a328f73bc439437d449187855e",
+      "source_sha256": "5f08eb701e102eec50b62b42e6e31cacaf0bd49e5a512d0f43193eb63b85d6e1",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "deafc6cb296acde7880c045d0e84d7693701ab8d9e54e5fdb38e18ab02c587a7",
       "sections": [
@@ -197,7 +197,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "e2afade39d5fda7331a6e412f29d48bb71f230707182bc2a70d4c9fd9cd45cbd",
+      "source_sha256": "e89324f0fb8689cd597fde555a51c5287d51ef00f7589799062b05d36ed74951",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "8e83c067e2206774760c4155bbd41ce73d76abe7a8c831f15c55689365d29084",
       "sections": [
@@ -213,7 +213,7 @@
     },
     {
       "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "56cb5ece5b6da08169301848bdc251633e1e02f2541667f359824ce25c4e0b88",
+      "source_sha256": "fcea98ba54e921b85e151c4cbf3887c31efc5b94107db6bbade224088aa1b3e2",
       "brief": "prompts/notebooklm/chapter-11.md",
       "brief_sha256": "b0e06296c7f927edc1f108b7474680f646c9a91c1ecc05cf84509a72f31fa423",
       "sections": [
@@ -256,7 +256,7 @@
     },
     {
       "source": "chapters/13-the-prophecy.md",
-      "source_sha256": "6bb84f4331dc141895eb890517ac62d983686d13de39996e8b335edfcef3291d",
+      "source_sha256": "454a998eea45c7ec7e82629af4c776ed1572ded8328454b5d682714fc3d18d9f",
       "brief": "prompts/notebooklm/chapter-13.md",
       "brief_sha256": "f4e32d488fe0a52f96bfef7fd5c7f734ffe519adc3a1a1885802e7ae346be1b3",
       "sections": [

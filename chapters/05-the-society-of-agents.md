@@ -189,7 +189,7 @@ Vision had been argued about for centuries. One tradition held that the eye send
 
 A record preserves what somebody says happened. An experiment gives the world another chance to answer.
 
-We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens. Charles Sanders Peirce later argued that this is what separates science from other ways of settling belief, whether by stubbornness, authority or what seems reasonable from an armchair: the answer is constrained by something beyond the believer. I am a pragmatist in his sense throughout this book, and *contact with reality*, wherever the phrase appears here, means that arrangement. Something outside the current explanation is able to make the explanation fail.[13](appendix-references.md#ref-05-peirce)
+We do not ask nature which theory it prefers. We arrange a situation in which different descriptions imply different things should occur, then watch what happens. Charles Sanders Peirce later argued that this is what separates experimental inquiry from other ways of settling belief, whether by stubbornness, authority or what seems reasonable from an armchair: the answer is constrained by something beyond the believer. I am a pragmatist in his sense throughout this book, and *contact with reality*, wherever the phrase appears here, means that arrangement. Something outside the current explanation is able to make the explanation fail.[13](appendix-references.md#ref-05-peirce)
 
 An experimental arrangement still has to travel. Someone elsewhere needs enough of the description, the equipment and the skill to make the world answer again. And when the instrument shows something nobody has seen before, the observer has two things to explain: the discovery and why anyone should trust the device that produced it.
 
@@ -261,7 +261,7 @@ The story is usually told about Newton. The more important part is that Bernoull
 
 Genius mattered enormously, and so did the network that let genius start from accumulated work instead of from dirt.
 
-Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help. Research became more powerful by making researchers less interchangeable.
+Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent colleagues next door could not read without help. Research became more powerful by making researchers less interchangeable.
 
 Because no researcher can personally reproduce every result she depends on, trust became more important at exactly the moment standards of evidence became stronger. A physicist relies on chemistry. A doctor relies on assays. A scientist cites work she could not reproduce from raw materials with the rest of her career and a very generous grant. John Hardwig called this epistemic dependence, and argued that it is a condition of rational knowledge: a person who refused to believe anything she had not verified herself would know almost nothing.[21](appendix-references.md#ref-05-hardwig) At scale, rigor is a way of organizing trust, because nobody gets to do without it.
 

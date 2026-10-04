@@ -74,7 +74,7 @@ Most work does not let me leave, because I am part of the evaluator. Nobody else
 
 *Can I stop repeating myself?*
 
-It is embarrassingly measurable. Count how often a correction I have already made has to be made again, and how many refused edits come back wearing a different sentence. Add the minutes at the start of each session spent explaining things the system has already written down. In circle packing the scores ran from 2.26 to 2.636. Here the unit is closer to the sigh.
+It is embarrassingly measurable. Count how often a correction I have already made has to be made again, and how many refused edits come back wearing a different sentence. Add the minutes at the start of each session spent explaining things the system has already written down. In circle packing the scores ran from 1.33 to 2.636. Here the unit is closer to the sigh.
 
 By that measure, the history I had to restore is a failure. The reason for keeping it was on disk. Nothing consulted it at the moment it mattered.
 

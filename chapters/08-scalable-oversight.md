@@ -74,7 +74,7 @@ It was a joke with a serious result inside it. Anything you can read reliably, y
 
 The oldest management technique for work you cannot judge is to find someone else who can help you judge it. Paul Christiano’s iterated amplification builds that into training, with a human and helper models together supervising a stronger learner.[20](appendix-references.md#ref-08-amplification)
 
-*Debate* goes further and puts two capable systems on opposite sides, so the flaws come to the judge.[21](appendix-references.md#ref-08-debate) In a 2024 study, non-expert humans answering questions about stories they were not allowed to read got 60 percent right on their own and 88 percent right after watching two models argue. Training the debaters to be more persuasive made the judges more accurate, because a lie had an opponent standing ready to expose it.[22](appendix-references.md#ref-08-khan)
+*Debate* goes further and puts two capable systems on opposite sides, so the flaws come to the judge.[21](appendix-references.md#ref-08-debate) In a 2024 study, non-expert humans answering questions about stories they were not allowed to read got 60 percent right on their own and 88 percent right after watching two models argue. Making the debaters more persuasive made the judges more accurate, because a lie had an opponent standing ready to expose it.[22](appendix-references.md#ref-08-khan)
 
 Prover–verifier games train strong models to show work a weaker checker can follow: *show me how you got there*, turned into a training objective.[23](appendix-references.md#ref-08-legibility)
 

@@ -17,7 +17,7 @@ check confirmed 13-the-prophecy.md "Decaf."
 check proposed 01-why-im-betting-on-ai-agents.md "octopuses: eight-armed problem-solvers"
 check proposed 04-system-3.md "hyper-intelligent octopus"
 check proposed 12-after-capacity.md "It requires an octopus"
-check proposed 13-the-prophecy.md "Hadn’t the octopus dreamed it was love?"
+check proposed 13-the-prophecy.md "Hadn't the octopus dreamed it was love?"
 check proposed 00-preface.md "at least one loose cable"
 check proposed 04-system-3.md "taps an undersea cable"
 check proposed 05-the-society-of-agents.md "One of the culprits was a loose cable."
@@ -31,14 +31,14 @@ check proposed 04-system-3.md "consider a camel"
 check proposed 11-the-store-that-builds-itself.md "And now the camel comes back"
 check proposed 12-after-capacity.md "camels are native to Croatia"
 check proposed 07-recursive-self-improvement.md "The Learner Dreams, and the Dream Can Be Wrong"
-check proposed 13-the-prophecy.md "hadn’t he dreamed he was an octopus?"
+check proposed 13-the-prophecy.md "hadn't he dreamed he was an octopus?"
 check proposed 00-preface.md "Eventually there is a cathedral"
 check proposed 03-the-vibe-coders-seat.md "A Cathedral on a Shopping Cart"
 check proposed 05-the-society-of-agents.md "with no one standing outside it"
 check proposed 13-the-prophecy.md "Behind it: forty monitors. Every timeline."
 check proposed 00-preface.md "Capacity over power."
 check proposed 12-after-capacity.md "## Capacity Over Power"
-check proposed 13-the-prophecy.md "Capitalism doesn’t."
+check proposed 13-the-prophecy.md "Capitalism doesn't."
 check proposed 00-preface.md "we never thought to call it an architecture"
 check proposed 12-after-capacity.md "In October 1947"
 check proposed 13-the-prophecy.md "11:53 PM, three minutes."
@@ -47,4 +47,12 @@ check confirmed 02-the-algorithm-vortex.md "Reviewer 2"
 # New material (added with the part structure)
 check proposed alternative-ending.md "An Alternative Ending"
 check proposed reveal-we-call-it-science.md "We call it science."
+# Chapter 13 is protected in full, typography included: the file must stay the author's text.
+# Only the author changes it; after an author edit, set PROTECTED_CH13 to `git hash-object chapters/13-the-prophecy.md`.
+PROTECTED_CH13=6673d37dd81cfc6127005a1fbf225a913085da12
+if [ "$(git hash-object 13-the-prophecy.md 2>/dev/null)" = "$PROTECTED_CH13" ]; then
+  printf 'ok    %-9s %-40s %s\n' protected 13-the-prophecy.md "author's text"
+else
+  printf 'FAIL  %-9s %-40s %s\n' protected 13-the-prophecy.md "differs from the author's text"; fail=1
+fi
 exit $fail
