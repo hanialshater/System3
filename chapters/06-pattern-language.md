@@ -37,13 +37,15 @@ He meant it politically, too. The language was supposed to take design away from
 
 That is a pattern language: builders' knowledge, the kind Sam carries, written down as connected proposals whose context and reasons are open to question.
 
+The problem is not merely how to preserve knowledge. Libraries have done that for centuries. It is how to preserve enough of the conditions around a lesson that the next worker can use it without having to inherit it as scripture. Uncle Jalal's ideas had travelled without their conditions. Sam's knowledge had not travelled at all. Alexander's form offered a third possibility: let the lesson travel with the reasons that make it disputable.
+
 From here on I borrow Alexander's asterisks to mark my confidence that each proposed arrangement can resolve the problem described: two for a well-supported practice, one for a promising proposal that needs further testing, and no asterisk (an unmarked Therefore) where its adequacy remains an open question. The marks judge the arrangements. They do not claim that an agent institution has implemented them successfully.
 
 ## Wins That Vanish
 
 So the team did what a good team does with imported ideas. It tested them.
 
-An experimentation platform is an organization's Bayesian engine. Thomas Bayes's rule, published after his death in 1763, says how a belief should change when evidence arrives: start from a prior, weigh how likely the evidence would be if the belief were true, and end with a revised belief.&#91;3&#93; Every A/B test is a small application of that rule. The team starts with a guess about an idea, splits its customers, and lets the comparison move the guess. Over the years the archive of experiments becomes the company's prior, a record of what worked here and what did not, earned on its own customers.
+An experimentation platform can be treated as an organization's Bayesian engine. Thomas Bayes's rule, published after his death in 1763, says how a belief should change when evidence arrives: start from a prior, weigh the evidence under competing possibilities, and end with a revised belief.&#91;3&#93; An A/B test need not itself be Bayesian for the organization to behave this way. The team starts with a guess about an idea, splits its customers, and lets the comparison move the guess. Over the years the archive of experiments can become the company's prior: a record of what worked here and what did not, earned on its own customers.
 
 The engine said yes. The home-screen redesign, Uncle Jalal's favorite idea from the workshop, won by four percent. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them. A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before.
 
@@ -282,6 +284,8 @@ Sam could have written something like this years ago, about the screen and about
 
 Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools.
 
+That changes the problem. A pattern language had always been a way for knowledge to travel. Now the next worker may not merely consult the lesson. It can act on it: reject a launch, request a holdout, call another skill, move a recommendation back to review. Knowledge has crossed a line from advice into behavior.
+
 People had tried to give written knowledge to machines before. In 1977, the year of Alexander's book, Edward Feigenbaum named the attempt knowledge engineering, and found its hardest part in the expert: getting the knowledge out, then making the system handle each exception the expert eventually admitted to.&#91;21&#93; Expert systems spent years interviewing people like Sam, and most of them died of the interviews and the upkeep.
 
 Andrej Karpathy's count of the ways to program a computer tells what changed. In Software 1.0 a person writes the rules as code; the Gang of Four's patterns lived there, advice for the human holding the keyboard. In Software 2.0 the program is a set of learned weights, which can absorb what nobody could articulate and offer no convenient place to amend a pattern's conditions. In Software 3.0 the program is written in a natural language and a model interprets it.&#91;22&#93; The machine doing the work can now read the pattern, follow its Therefore and consult the reasons behind it, without every qualification first being translated into logic.
@@ -332,6 +336,8 @@ The next agent can see both where the pattern has been tested and how its predec
 ## Change What We Measure
 
 The pattern makes two-week gains more trustworthy. It leaves the deeper question alone. The slot reminder suggested that what mattered was whether customers came back, and two-week basket size could not see that at all.
+
+Imagine the next review screen. The old dashboard has one large number at the top: basket size after two weeks. Ines wants another beside it: six-week return behavior. The first lets the team run experiments quickly. The second may tell them whether the change became useful rather than merely new. Changing the representation means changing what the organization is able to notice.
 
 Ines's agent proposes organizing the next investigation around what customers do over six weeks: whether they return, whether their weekly shop gets easier. To do that, a branch has to keep alternative representations as well as alternative answers. It can introduce the new records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty. If it scores every proposal on two-week baskets, the better approach looks worse exactly where it stops chasing novelty. Letting the challenger write an evaluator that declares itself the winner would prove little. The approaches need an explicit dispute about what evaluation is for, then observations both sides accept.
 
@@ -467,6 +473,10 @@ Uncle Jalal has an idea of his own on the board too. Before he presents it, he a
 This time, before anyone ranks them, the review agent reads each idea against the file. One was tried here and faded by week four, for reasons recorded beside the result. One held, under conditions that no longer apply. Two have never been tested on these customers at all, and the file says so plainly. The feathers are still there. They now have to stand next to local evidence, and the room can see which ideas deserve the next holdout. When the new colleague thinks the file is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right.
 
 Ines opens the incident file from that first night too. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
+
+By now the problem that began with a whiteboard has changed shape. It is no longer merely how to make knowledge travel. It is how to make knowledge durable enough to survive its author, transferable enough for another worker to use, executable enough for an agent to act on, and still corrigible when the world proves it wrong.
+
+None of the failures along the way required an enemy of science in the ordinary sense. They came from expertise without context, evidence without interpretation, explanations written after the result, criticism without consequence, memory without provenance, and methods that could protect themselves from the questions most likely to change them. Each repair pushed the file toward something familiar: provenance, prediction, criticism, competing explanations, institutional memory, and eventually criticism of the method itself. We had started with a runbook. We were rebuilding some of the machinery by which science learns.
 
 I have not shown an agent institution that composes these patterns into a coherent whole, which was the second of Alexander's two questions to the programmers in 1996. The patterns in this chapter still have to earn their asterisks together.
 
