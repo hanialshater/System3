@@ -1,6 +1,6 @@
 # Chapter 3: The Vibe Coder’s Seat: video brief
 
-Source: [03-deep-mode.md](../../chapters/03-deep-mode.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
+Source: [03-the-vibe-coders-seat.md](../../chapters/03-the-vibe-coders-seat.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
 
 This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
 

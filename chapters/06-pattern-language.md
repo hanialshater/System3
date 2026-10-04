@@ -188,7 +188,7 @@ At Bing, a treatment had a bug, and the bug made the search results worse. Peopl
 
 The count was right, and the cheerful interpretation was wrong. Another audit of the count would not have established what the extra queries meant. A test of whether people completed their tasks might have.
 
-Saussure's point is relational value: a term means what it does through its differences from its neighbors.&#91;18&#93; More queries meant more engaged only inside a system where a query was a unit of interest. Set it beside session and task and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad result. The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return.
+Saussure's point from Chapter 4 applies here: a term means what it does through its differences from its neighbors.&#91;18&#93; More queries meant more engaged only inside a system where a query was a unit of interest. Set it beside session and task and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad result. The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return.
 
 Time does the same work as neighbors. An item added to a basket in the first week of a new home screen sits beside curiosity. An item added in the third month sits beside habit. The team's two-week comparisons measured the first and were read as if they reported the second.
 

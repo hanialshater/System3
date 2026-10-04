@@ -1,6 +1,6 @@
 # Chapter 8: Scalable Oversight: video brief
 
-Source: [08-automatic-alignment-research.md](../../chapters/08-automatic-alignment-research.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
+Source: [08-scalable-oversight.md](../../chapters/08-scalable-oversight.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
 
 This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
 

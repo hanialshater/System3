@@ -49,23 +49,28 @@ Match the book's illustrations, not a generic AI look.
 ## Source order
 
 1. Opening passage
-2. The Pattern Goes to Work
-3. Ask Sam
-4. Give the Claim an Address
-5. Commit the Test Before the Result
-6. Locate the Failure
-7. Ask What the Number Means
-8. Write the Lesson Down
-9. A Reader That Can Act
-10. Put the Library to Work
-11. Find Where the Result Lives
-12. Change the Representation
-13. Separate Use From Investigation
-14. Keep the Funding Decision Visible
-15. Give the Objection a Consequence
-16. Test What the Next Agent Inherits
-17. Put the Procedure Under Test
-18. What the File Says Now
+2. The Workshop
+3. Light on Two Sides
+4. Wins That Vanish
+5. The Quarterly Review
+6. Two in the Morning
+7. Why Engineering Learns
+8. Ask Sam
+9. Why Experiments Don't Learn
+10. Locate the Failure
+11. Give the Claim an Address
+12. Ask What the Number Means
+13. Commit the Test Before the Result
+14. Borrow the Load Test
+15. Holdout Day
+16. A Reader That Can Act
+17. The File Says No
+18. Change What We Measure
+19. Agents Together
+20. Give the Objection a Consequence
+21. Test What the Next Agent Inherits
+22. Put the Procedure Under Test
+23. What the File Says Now
 
 ## Review
 

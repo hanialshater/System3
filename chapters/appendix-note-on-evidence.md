@@ -9,7 +9,7 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 3. The Vibe Coder’s Seat | My teaching demos and the evaluators I built around them | Run; judged by simulated learners, not real ones |
 | 4. System 3 | A trust chain that starts with a face, and a ten-task experiment that mostly went against me | Argued; one small experiment |
 | 5. The Society of Agents | Sixteen Claudes building a compiler, and five thousand years of institutions | Argued from history |
-| 6. Pattern Language | Alexander’s patterns and reported research, threaded through Ines’s imagined search team and its evolving pattern file | Reported cases plus a thought experiment; Ines, Sam, their incidents, tests and outcomes are invented, not results of a deployed agent institution |
+| 6. Pattern Language | Alexander’s patterns and reported research, threaded through an imagined online grocer whose experiment wins keep fading, and Ines’s evolving pattern file | Reported cases plus a thought experiment; Uncle Jalal, Ines, Sam, the company, its incidents, tests and outcomes are invented, not results of a deployed agent institution |
 | 7. Recursive Self-Improvement | Sixty years of learning systems, an imagined store’s research agent, and a constitution for amendment | Argued; the store is a thought experiment, the constitution a design |
 | 8. Scalable Oversight | The OpenAI–Hugging Face incident and other people’s research on training, interpretability, steering, control and oversight, with its limits | Reported |
 | Interlude: When It Goes Wrong | Lysenko, and what happens when the people being challenged decide whether to hear the challenge | Reported history; the application to agents is argued |
@@ -18,6 +18,8 @@ This is a book about trust chains, so the distance between a chapter and its evi
 | 11. The Store That Builds Itself | My prototype store, imagined customers and a proposed business experiment | Prototyped; the business experiment has not run |
 | 12. After Capacity | The small coding experiment from Chapter 4, Ostrom, and a hope | Argued from the earlier experiment and cited work; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |
+
+Two companies supply more of this evidence than any others. Amazon, where I used to work, appears in Chapters 5, 7 and 9. Anthropic’s published reports carry much of Chapters 6 to 9, because they describe agent work in unusual detail. Neither company is a neutral witness about its own systems.
 
 ## How This Book Was Written
 

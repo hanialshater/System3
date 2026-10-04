@@ -34,13 +34,11 @@ Not all capacity. We still have one planet, finite land and energy, and twenty-f
 
 LLM-as-a-judge looked like a threat to my profession.
 
-For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
+A job accumulates around scarce skills the way a city accumulates around a river, and Chapter 9 described the river mine grew up around: training a model and running an evaluation somebody would believe. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-The applied scientists who mattered never only trained models; they told an organization what had become possible, why, and what it would mean for the business. That is owning the frontier, and cheap models put more of the frontier within reach of people who will never hire an applied scientist at all.
+Chapter 9’s answer was owning the frontier, and there is useful work for me there. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
-There is useful work for me in that change. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
-
-The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
+The same capacity that makes my profession less secure puts more of the frontier within reach, including for people who will never hire an applied scientist at all. I can worry about what it will replace and still be impatient to find out what I can do with it.
 
 ## Bespoke Comes Back
 

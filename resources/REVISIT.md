@@ -11,6 +11,8 @@ retired files.
 | Chapter 5 Paged.js proof | Evaluate against the current chapter before adopting its composition across the book. |
 | Front and back matter | A title page, copyright/ISBN page, dedication, acknowledgments and a decision on an index. None is in the manuscript. |
 | Clearance | Employer communications/legal review: the author bio names Zalando, and Chapter 5 describes the author's work at Amazon. |
+| Disclosure policy | Chapter 6 now uses an imagined online grocer, but Chapter 11 keeps identifying details (“outside Berlin”, “fashion retail”, `DE_mobile`, “Add to Bag”), Chapter 7’s store sells clothes and shoes, and the bio names the employer. Choose one policy and apply it to all of them, together with the clearance row above. |
+| Chapter 6 references | Since the 4 October rewrite, Chapter 6 cites as plain `&#91;N&#93;` text, not linked `[N](appendix-references.md#ref-06-…)` citations. The 40 `ref-06-` appendix entries still follow the previous version; Frankfurt, for example, is cited but has no entry. The build’s reference check fails until the citations are linked and the appendix section is rebuilt in citation order. |
 | Print production | Choose a printer; then set bleed, cover/spine geometry and output profile and obtain a physical proof. |
 | Video production | The current 15 briefs have checked source hashes and section order. Bespoke shot choices and generated videos still need editorial review. |
 

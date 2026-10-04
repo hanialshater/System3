@@ -32,7 +32,7 @@ Bigger mistakes go through the same machinery. In 2014 Amazon launched the Fire 
 
 None of these people had to hold the whole organization in mind, and the organization learned anyway.
 
-The learning also piles up. Left alone, the procedures outlive their reasons, and the organization becomes the rule-based exoskeleton I spent a career building.
+The learning also piles up. Left alone, it becomes the rule-based exoskeleton I spent a career building.
 
 Science has lived inside the same loop for centuries, changing the procedures that produce its results: controlled comparison, statistics, randomized trials, blinding, peer review, preregistration. Each had to be argued into use, and each could harden into ritual. Science also has a way of fighting its own accumulation. Fields drown in results, and then somebody writes the textbook or finds the explanation that lets a newcomer skip three years of the climb. Chris Olah and Shan Carter called the cost of not doing this *research debt*, and the work of paying it down *distillation*.[8](appendix-references.md#ref-07-distill)
 
@@ -42,7 +42,7 @@ In every one of these loops, the hard question is who gets to say that a change 
 
 <!-- AUTHOR: the store and Omar are both invented. Could the real circle-packing run, or a real ranking or experiment story of yours, carry some of the store's beats? -->
 
-Take an online store whose research agents already keep records the way a good lab does: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
+Leave Chapter 6’s grocer for a different business, an online store that sells clothes and shoes. Its research agents already keep records the way a good lab does: their claims have addresses, their tests are committed before the results, and what each metric is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
 
 Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[9](appendix-references.md#ref-07-yudkowsky)[10](appendix-references.md#ref-07-weng) The store has to decide. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
 
@@ -85,7 +85,7 @@ And the world learns back. Once the ranker improves, sellers rewrite their title
 
 ## Maybe the Reward Was the Problem
 
-Clicks rise. Shoppers open the jacket, the typo-priced shoes and the orange photographs, and leave without what they came for. The count is clean and the experience is worse. The research agent proposes to stop rewarding clicks and to learn what shoppers actually want from what they do.
+Clicks rise. Shoppers open the jacket, the typo-priced shoes and the orange photographs, and leave without what they came for. It is Chapter 6’s Bing result again: the count is clean and the experience is worse. The research agent proposes to stop rewarding clicks and to learn what shoppers actually want from what they do.
 
 Andrew Ng and Stuart Russell called this *inverse reinforcement learning*: watch behavior and ask which rewards would make it look sensible.[20](appendix-references.md#ref-07-irl) Ambiguity appears at once. A person who takes the same route to work every day may care about time, comfort, tolls or avoiding one particular intersection. The behavior is evidence about the objective, not a printout of it.
 

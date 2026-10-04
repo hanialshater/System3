@@ -212,12 +212,12 @@ directions and the ten unrecovered Chapter 2 figures remain explicitly pending.
 | [chapters/00-preface.md](../chapters/00-preface.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
 | [chapters/01-why-im-betting-on-ai-agents.md](../chapters/01-why-im-betting-on-ai-agents.md) | **Updated** | Broken image target replaced by visually inspected curated emergence artwork. |
 | [chapters/02-the-algorithm-vortex.md](../chapters/02-the-algorithm-vortex.md) | **Review** | Ten absent figures preserved in hidden production comments; originals/data still needed. Prepared text unchanged. |
-| [chapters/03-deep-mode.md](../chapters/03-deep-mode.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
+| [chapters/03-the-vibe-coders-seat.md](../chapters/03-the-vibe-coders-seat.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
 | [chapters/04-system-3.md](../chapters/04-system-3.md) | **Updated** | Broken photo target replaced by existing photo58.jpg; PDF placement preserved. |
 | [chapters/05-the-society-of-agents.md](../chapters/05-the-society-of-agents.md) | **Review** | Seven visual briefs require design decisions and accepted artwork; cleanup does not complete them. |
 | [chapters/06-pattern-language.md](../chapters/06-pattern-language.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
 | [chapters/07-recursive-self-improvement.md](../chapters/07-recursive-self-improvement.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
-| [chapters/08-automatic-alignment-research.md](../chapters/08-automatic-alignment-research.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
+| [chapters/08-scalable-oversight.md](../chapters/08-scalable-oversight.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
 | [chapters/09-layer-4-desire.md](../chapters/09-layer-4-desire.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
 | [chapters/10-fluent-autonomy.md](../chapters/10-fluent-autonomy.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |
 | [chapters/11-the-store-that-builds-itself.md](../chapters/11-the-store-that-builds-itself.md) | **Keep** | Canonical manuscript source in book-order.json; keep in place. Editorial readiness is a separate review. |

@@ -51,10 +51,10 @@
       ]
     },
     {
-      "source": "chapters/03-deep-mode.md",
+      "source": "chapters/03-the-vibe-coders-seat.md",
       "source_sha256": "3b82e0b1d3e362f32278a75739a2b00f7c7c430dd01e881475fe1431ceb3fd3d",
       "brief": "prompts/notebooklm/chapter-03.md",
-      "brief_sha256": "f8fe442fbbc8476dd76b8c57b38dc6781a314f76664bc20ee721433495032347",
+      "brief_sha256": "16a429945aadd6a83edf602f5adbd1ad15a1e69d910651a668c5c75124542ade",
       "sections": [
         "Opening passage",
         "Stubbornly Human",
@@ -110,24 +110,29 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "6cad7cdce4132f0975a133d8fc5a0addfd6b6a631f69a166a9ef27ce63a7dfdd",
+      "source_sha256": "1752bd41f0d9be5ed0a0128d6456072904b52b32fba408d9969b1f17a99efd51",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "93854f4f75e9462fd30d276fcf898ca54a971758457d7f97c11986d8d74f34f9",
+      "brief_sha256": "0b53b168dbaae2b633111d7d9246fcfc767700902aa1a7a6b577e37bab7f968e",
       "sections": [
         "Opening passage",
-        "The Pattern Goes to Work",
+        "The Workshop",
+        "Light on Two Sides",
+        "Wins That Vanish",
+        "The Quarterly Review",
+        "Two in the Morning",
+        "Why Engineering Learns",
         "Ask Sam",
-        "Give the Claim an Address",
-        "Commit the Test Before the Result",
+        "Why Experiments Don't Learn",
         "Locate the Failure",
+        "Give the Claim an Address",
         "Ask What the Number Means",
-        "Write the Lesson Down",
+        "Commit the Test Before the Result",
+        "Borrow the Load Test",
+        "Holdout Day",
         "A Reader That Can Act",
-        "Put the Library to Work",
-        "Find Where the Result Lives",
-        "Change the Representation",
-        "Separate Use From Investigation",
-        "Keep the Funding Decision Visible",
+        "The File Says No",
+        "Change What We Measure",
+        "Agents Together",
         "Give the Objection a Consequence",
         "Test What the Next Agent Inherits",
         "Put the Procedure Under Test",
@@ -136,7 +141,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "4082d66957cbe24fccb1e80dc7924e7a9ebce0142486d184d6f12d31129fd7bc",
+      "source_sha256": "e14961c81253d319c75a52f59e82d04b0ad405942dffa7b5044eb078b2015a5f",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
       "sections": [
@@ -156,10 +161,10 @@
       ]
     },
     {
-      "source": "chapters/08-automatic-alignment-research.md",
+      "source": "chapters/08-scalable-oversight.md",
       "source_sha256": "cc9321afba5f07dd41843f9634fa8c7b954f676a87233904767c368c3a20ae18",
       "brief": "prompts/notebooklm/chapter-08.md",
-      "brief_sha256": "b033f58937cd6a41d03ed4de880ac450f417c711c339cf7329c982c9b036d7c8",
+      "brief_sha256": "c481c3acf40e3d0eea46eba51c7d61974a61bcf409991050c4060631f94718e6",
       "sections": [
         "Opening passage",
         "A New Kind of Employee",
@@ -231,7 +236,7 @@
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "f4d373a26665bda676d91108f78b8b8b38170f5e0ce3e5aede6af00583c0a591",
+      "source_sha256": "a713ebd7f3033e719345e9a31d95cdde455e9eab70d3c8058c0745460a0dcb2d",
       "brief": "prompts/notebooklm/chapter-12.md",
       "brief_sha256": "e7df4bb8466d5e44d1d3cd371701dbec65000e3b391ab013b030b374cc7410bc",
       "sections": [
