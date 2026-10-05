@@ -460,64 +460,151 @@ An open_questions field that no decision ever consults is a decorative conscienc
 
 \* Therefore: if the organization proceeds with an objection unresolved, the objection travels with the decision, and the decision-maker owns that choice in writing.
 
-## Test What the Next Agent Inherits
+## Three Departures
 
 Max Planck's observation about scientific change, now known as Planck's principle, is usually compressed into "science advances one funeral at a time." His actual sentence describes a new truth gaining acceptance because, rather than all its opponents being persuaded,
 
 > "…its opponents eventually die, and a new generation grows up that is familiar with it."&#91;38&#93;
 
-A new generation learns the new examples first and has no old allegiance to surrender. The remark is bleak because the mechanism of correction lies partly outside the argument. What changes with the occupant of the chair?
+The mechanism of correction lies partly outside the argument.
 
-There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.&#91;39&#93; None of that shows the departed scientists were wrong, only that who gets to participate can change which work enters a field.
+There is empirical work on it. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.&#91;39&#93; None of that shows the departed scientists were wrong. It shows that who gets to participate changes which work enters a field.
 
-Sam, eventually, moves to another team. The reorganization that moves a principal engineer is drawn on a chart of roles and levels, and nothing on the chart shows the people who came to him with questions. Two years earlier, his leaving would have taken the serializer, the home screen and a surprising fraction of the company's memory with him.
+The grocery company had now seen three kinds of departure.
 
-This time the company keeps working. New engineers still ship. Checkout still runs. Questions that once ended at Sam now terminate in records that can be followed, challenged and revised. The file stays.
+When the predecessor left, almost everything he knew left with him. What stayed was a document of decisions without reasons, and the team spent months unable to tell which lines were still true.
 
-The file also keeps what should have gone. A new agent joins the project. Its progress file contains a line Sam wrote two years ago: serializer rewrite tried and abandoned; do not retry. The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The fade pattern ages the same way. A later redesign rebuilds the home screen so that it changes far less often, but the pattern still tells every reviewer to discount two-week gains on the home screen.
+Then Sam moved to another team.
 
-Chapter 5's apprentice kept a precaution he never understood. These lines go one step further: they are high-functioning bullshit in its purest form, because nobody is producing them. The category was never Sam, Uncle Jalal or any other person. It is the idea after its conditions have fallen away: confident, specific, inherited from someone who knew the system, and detached from the reasons that once made it true. There is no author left to doubt it, and, as the checkout team learned, a reviewer will cite it without blinking.
+The reorganization that moved a principal engineer was drawn on a chart of roles and levels, and nothing on the chart showed the people who came to him with questions. Two years earlier his leaving would have taken the serializer, the home screen and a surprising fraction of the company's memory with him.
 
-The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context. Session turnover is not a funeral; nothing that was believed has died.
+This time the company kept working.
 
-In that file the durable incumbent is a single sentence. Elsewhere it may be a retrieval preference, a canonical example, a benchmark, or a rule giving one branch first access to compute. A more capable replacement model may defend it more effectively.
+Questions that once ended at Sam now ended in records that could be followed, challenged and revised. The runbook line that once read *ask Sam* now pointed to serializer-suspicion: what he looks for, why he looks there, and the two times the suspicion was wrong.
 
-Deleting old knowledge on a schedule would discard expertise along with the errors and make newness another unearned source of authority. The new agent needs permission to suspend a disputed instruction on an experimental branch, within its budgets and permissions, and a comparison whose terms are open to challenge. If no comparison can decide the issue, that belongs in the record too.
+The library also kept what should have gone.
+
+In his last week Sam added a line to the serializer pattern: rewrite tried and abandoned; do not retry. It was true when written. He wrote it in a hurry and did not link the dependency that had made the rewrite fail. A year later that dependency was replaced, and nothing came up for review because nothing pointed at it.
+
+The line stayed.
+
+The third departure happens every day and nobody notices it.
+
+Agent sessions end.
+
+A new agent joins the project, reads the same library, retrieves the same patterns, accepts the same categories and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context.
+
+Session turnover is not a funeral. Nothing that was believed has died.
+
+Chapter 5's apprentice kept a precaution he never understood. The stale serializer line goes one step further. It is high-functioning bullshit in its purest form because nobody is producing it. The category was never the predecessor, Jalal, Sam or the agent. It is the idea after its conditions have fallen away: confident, specific, inherited from someone who knew the system, detached from the reasons that once made it true.
+
+A more capable replacement model may defend it more effectively.
+
+Deleting old knowledge on a schedule would throw away expertise with the errors and make newness another unearned source of authority. The next worker needs standing to challenge what it inherits, suspend a disputed instruction on an experimental branch, and leave the dispute visible when no comparison can settle it.
 
 Changing the worker is easy.
 
-Therefore: change what the next worker inherits.
+Therefore: change what the next worker inherits, and give it standing to challenge the inheritance.
 
-## Put the Procedure Under Test
+## A Language
 
-All of this can fail while every part works. The graph can preserve dependencies while omitting the dependency that matters, as the archive once omitted what happened after the test. The evaluator can compare candidate patterns on cases selected by the incumbent pattern. The institution can demand evidence for an alternative while refusing the instruments needed to produce it. Every operation can function exactly as specified while the arrangement prevents the question that would change it.
+By its second year the library held more than wins-that-fade.
 
-The same failure can happen one level up. A procedure with provenance records, committed predictions, pattern evaluations and review channels looks more rigorous than anything in Uncle Jalal's first workshop. It can still rest on an assumption nobody checks, because the procedure itself decides what gets checked.
+review-an-experiment called say-what-the-result-would-mean before a test could start, locate-the-failure when a result looked suspicious, and wins-that-fade when a visible change reported an early gain. Incident review called serializer-suspicion and a dozen patterns like it. Each pattern named the larger one it served and the smaller ones it could call.
 
-Feyerabend's *Against Method* goes further. Every rule of method, he argued, has been usefully broken somewhere in the history of science.&#91;40&#93; Requiring a test before setting a rule aside is itself another methodological rule. The lesson here is narrower and brutal: a procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
+Then one review finally made the composition visible.
+
+A pricing experiment arrived with an early lift. The review agent loaded review-an-experiment and found a committed prediction missing. It called the evidence agent with say-what-the-result-would-mean; the evidence agent found a sample-ratio mismatch and invoked locate-the-failure. A data agent traced the mismatch to a logging path shared by both the headline metric and its supposed independent check. give-the-claim-an-address marked both measurements as depending on the same event stream. The recommendation agent could no longer call the result corroborated, and the review returned the launch for repair.
+
+No agent had to know the whole procedure in advance. The links in the patterns carried the work from one difficulty to the next.
+
+That is the point at which a pile of skills becomes a pattern language.
+
+Alexander's second question to the programmers becomes the right question for the agents: do the patterns generate a coherent whole?
+
+Sometimes they did not.
+
+A pattern from the growth team said to ship small wins quickly and learn from production. wins-that-fade said to wait for later evidence. Each was sound inside its own context, and the review agent, holding both, followed whichever retrieval ranked first.
+
+Alexander's book had an answer in its structure: a smaller pattern is chosen in light of the larger one it helps complete. A reversible launch whose purpose is to learn can ship quickly. A launch that commits the team to building the next redesign on its result needs stronger evidence. The conflict disappeared when each pattern's link to the larger one became explicit, not when somebody declared one pattern right in general.
+
+The patterns in this chapter now form a small language for institutions that run on agents:
+
+\`\`\`text
+**  locate-the-failure              trace assumptions; probe what distinguishes the failures
+**  say-what-the-result-would-mean  meaning, period and refutation, written first
+**  give-the-claim-an-address       each claim stored with what it rests on
+*   write-the-lesson-as-a-pattern   context, cases, what would make it wrong, links
+*   earn-confidence                 tested on cases it did not produce; evidence funded
+*   objection-travels               unresolved objections go with the decision
+    change-the-inheritance          the next worker may challenge what it inherits
+    put-the-procedure-under-test    no Therefore yet
+\`\`\`
+
+They have to earn their asterisks together.
+
+And they can fail together while every part works.
+
+The graph can preserve dependencies while omitting the one that matters, as Sam's last line did. The evaluator can compare candidate patterns on cases selected by the incumbent pattern. The institution can demand evidence for an alternative while refusing the instruments needed to produce it. Every operation can function exactly as specified while the arrangement prevents the question that would change it.
+
+A procedure with provenance records, committed predictions, pattern evaluations and review channels looks more rigorous than anything on Jalal's first whiteboard. It can still rest on an assumption nobody checks because the procedure itself decides what gets checked.
+
+Feyerabend argued in *Against Method* that every rule of method has been usefully broken somewhere in the history of science.&#91;40&#93; Requiring a test before setting a rule aside is itself another methodological rule.
+
+The lesson here is narrower and brutal: a procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
 
 Some failures yield to comparison: one retrieval policy against another, reviewers given different evidence, a branch with a pattern withheld to expose errors its presence concealed. Engineering already does this when it turns chaos experiments on its own monitoring.
 
 Other disputes reach the purpose or authority of the system. Whether a feed should be ranked for activity or for something harder to count cannot be settled by letting whichever evaluator produces the higher score appoint itself. Someone still has to make and own the decision about which consequences matter.
 
-Alexander's form now asks for a Therefore. We could write "revise the method when it fails." But the method decides which failures count.
+Alexander's form now asks for a Therefore.
+
+We could write "revise the method when it fails."
+
+But the method decides which failures count.
 
 ## What the File Says Now
 
-Two years after Uncle Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. Good: the room has acquired useful knowledge. Its conditions are still somewhere else.
+Two years after Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else.
 
-Uncle Jalal now has a way to make that distinction operational. He has an idea of his own on the board too. Before arguing for it, he asks the agent to check the pattern library. No local evidence. Good. The file has not rejected the idea; it has located the ignorance.
+The room has acquired useful knowledge.
 
-This time, before anyone ranks them, the review agent reads each idea against the pattern library. One was tried here and faded by week four, for reasons recorded beside the result. One held, under conditions that no longer apply. Two have never been tested on these customers at all, and the file says so plainly. The feathers are still there. They now have to stand next to local evidence, and the room can see which claims are supported, which are local, and which are still open. When the new colleague thinks the file is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right.
+Its conditions are still somewhere else.
 
-Ines opens the incident file from that first night too. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
+Jalal has an idea of his own on the board too. Before arguing for it, he asks the agent to check the library.
 
-The whiteboard problem had changed by then. Knowledge had to survive the person who learned it, travel to someone who had not been there, tell a machine enough to act, and still leave a handle by which the next failure could change it. Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing.
+No local evidence.
 
-Alexander's second question to the programmers in 1996 still stands: do the patterns compose into a coherent whole? The patterns in this chapter have to earn their asterisks together.
+The library has not rejected the idea. It has located the ignorance.
 
-Further down the runbook, a newer engineer has written ask Ines. This time there is a file behind the name.
+Before anyone ranks the ideas, the review agent reads each one against the pattern language. One was tried here and faded by week four, for reasons recorded beside the result. One held under conditions that no longer apply. Two have never been tested on these customers at all, and the library says so plainly.
 
-So far, a procedure has decided which changes to the file deserve to survive. But that procedure is also software.
+The feathers are still there. They now have to stand next to local evidence.
+
+When the new colleague thinks the library is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right, and the pattern that said otherwise gets a new line.
+
+Ines opens serializer-suspicion too. It says what Sam looks for, why he looks there, the two times the suspicion was wrong, and who disagreed. She can use his judgment without inheriting it whole, and she has learned to check whether his last line still has a reason attached.
+
+Alexander wanted the family to be able to argue with the architect.
+
+Now the next worker can argue with Sam, even while Sam is on holiday.
+
+The whiteboard problem has changed shape. Knowledge can survive the person who learned it, travel to someone who was not there, tell a machine enough to act, and still leave a handle by which the next failure can change it.
+
+Durable.
+
+Transferable.
+
+Executable.
+
+Corrigible.
+
+Further down the runbook, a newer engineer has written *ask Ines*.
+
+This time there is a file behind the name.
+
+So far, a procedure has decided which changes to the library deserve to survive.
+
+But that procedure is also software.
 
 What happens when the next agent proposes to rewrite it?
