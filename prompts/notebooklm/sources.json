@@ -110,7 +110,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "131f77981a2ac454912144817a2a2c527d2aa5fc7190cdb28c12b03128ecaa19",
+      "source_sha256": "653e2a821047cadf682db7ad81233c95c83d47be0ff92b5f8fa2b34cb7d5efbe",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "7b0bff46d69749540297905d2ebb068160de678c5d2e6b4c2d2762f771d9f455",
       "sections": [
