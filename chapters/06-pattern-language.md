@@ -290,51 +290,9 @@ A pattern can also mix kinds of content that need different kinds of support. "R
 Sam could have written something like this years ago, about the screen and about the serializer. Ines's version makes explicit the reasons that had lived mostly in Sam's head, and it has one reader Sam never had to plan for.
 
 
-
-The three launches in the study were Uncle Jalal's staples layout, a second version of the deals tile, and a reminder that told customers when their usual delivery slot was about to fill up. The reminder was the least glamorous item from the workshop. It had come from the smaller sticky note.
-
-Six weeks is a long time to wait for a number with your reputation in it. By the last week he had stopped checking the dashboard, which is to say he checked it twice a day.
-
-The holdout results came in on a Thursday. His staples layout had kept about a fifth of its two-week gain. The deals tile had kept nothing. The slot reminder had kept all of its gain and grown a little, because customers who used it once came back to it every week. Nobody would have put it on a conference slide.
-
-Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two of the three launches and wrong about the one that had been his idea.
-
-That mattered as much as Uncle Jalal's imported ideas fading. The point was not to replace outside expertise with tribal knowledge and call Sam the oracle. Both could be right. Both could be wrong. The missing thing was a form in which either kind of knowledge could travel far enough to be tested.
-
-It was the first result in the archive that the team could defend for longer than a fortnight. It was also the first time the archive contained a test of its own method.
-
-The next reviewer should not have to rediscover any of this, or spend a week in Ines's meeting. She writes the lesson down as a candidate pattern, with the reasons and the uncertainty kept alongside the instruction:
-
-\`\`\`yaml
-id: wins-that-fade
-confidence: provisional, five incidents on one screen
-context: A home-screen or layout experiment reports a gain at the end of a two-week test.
-problem: Returning customers react to what is new. The gain can disappear after the test window closes.
-therefore:
-  - State how long the effect is assumed to last, as a separate claim.
-  - Compare returning and first-time customers before trusting the gain.
-  - Commit that comparison, and a holdout length, before looking at the result.
-documented_cases: [three_faded_launches, holdout_study_two_faded_one_held]
-validation_cases_needed: [lasting_gain, faded_gain, insufficient_evidence]
-part_of: review-an-experiment
-may_call: locate-the-failure
-evidence_record: fade-evaluations
-open_questions: fade-challenges
-on_support_withdrawn:
-  - Reassess dependent interpretations using their remaining support.
-  - Return recommendations that lost required support to review.
-  - Retain the earlier decision and the reason for its change.
-\`\`\`
-
-It belongs inside review-an-experiment and may call locate-the-failure, where the redirect bug now lives, rather than every statistical procedure in the building. Like Alexander's links, those references help a reader choose a method for the difficulty at hand and find an alternative when it fails.
-
-A pattern can also mix kinds of content that need different kinds of support. "Returning customers on this screen react to novelty" is a claim about the world. "Compare cohorts before commissioning a holdout" is a recommendation about effort. "Do not alter a live experiment to rescue its result" is an authority boundary. A successful test of the first does not justify the other two automatically.
-
-Sam could have written something like this years ago, about the screen and about the serializer. Ines's version makes explicit the reasons that had lived mostly in Sam's head, and it has one reader Sam never had to plan for.
-
 ## A Reader That Can Act
 
-Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools. The file can now do more than remind someone: it can stop a launch, request a holdout or call another skill.
+Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools. The file can now do more than remind someone: it can raise a challenge, route a claim back to review or call another skill.
 
 People had tried to give written knowledge to machines before. In 1977, the year of Alexander's book, Edward Feigenbaum named the attempt knowledge engineering, and found its hardest part in the expert: getting the knowledge out, then making the system handle each exception the expert eventually admitted to.&#91;21&#93; Expert systems spent years interviewing people like Sam, and most of them died of the interviews and the upkeep.
 
@@ -356,17 +314,17 @@ Ines gives the file to the team's review agent and asks it to review an experime
 
 The query "review this experiment" can retrieve a popular checklist and leave the fade warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. Whether retrieval worked shows up later, in whether the review caught what mattered.
 
-Retrieval works. For two months the agent raises the question every time a home-screen experiment reports a two-week gain, and raises it well. Two launches go back for holdouts, and one of them fades exactly as predicted. The team starts to trust the file.
+Retrieval works. For two months the agent raises the pattern whenever a visible home-screen change reports an early gain. It asks for the cohort comparison the file calls for, cites the cases behind the warning, and distinguishes the ones that faded from the slot reminder that did not. The team starts to trust the file.
 
-Then the checkout team ships a speed-up. Pages load faster, completed orders rise over two weeks, and the agent, citing wins-that-fade, recommends holding the release for a six-week holdout. The checkout team objects that nobody gets used to a page loading quickly. The agent answers with the file's confidence, its five incidents and the holdout study. It is late November. Ines's review gate makes the recommendation binding unless someone senior overrides it.
+Then the checkout team ships a speed-up. Pages load faster and completed orders rise. The agent retrieves wins-that-fade and treats the result as another novelty case. It recommends delaying the broader rollout until the novelty pattern has been checked. The checkout team objects that customers do not get used to a page loading quickly in the same sense that they get used to a redesigned home screen. The file answers with its confidence and its documented cases. Ines's review gate makes the recommendation binding unless someone senior overrides it.
 
-Uncle Jalal was the someone senior. The recommendation was fluent, cited its sources and came from a rule that had earned trust on the home screen. He signed it. Most customers spent the busiest six weeks of the year on the slower checkout, and when the holdout came back the gain was intact and slightly larger.
+Uncle Jalal is the someone senior. The recommendation is fluent, cited and comes from a pattern that has earned trust. He signs it. The later evidence shows that the speed gain was durable.
 
-The mistake was institutional. A pattern whose scope had never been tested outside visible home-screen changes had acquired authority over checkout. The file had started producing its own feathers.
+The mistake is institutional. A pattern whose scope was visible changes had acquired authority over an invisible performance improvement. The file had started producing its own feathers.
 
 The pattern said confidence: provisional, five incidents on one screen. Nothing on a checkout page is new in the way a home-screen banner is new. "Two-week gains are usually novelty" is far more than five incidents can teach.
 
-In Bayes's terms, the pattern's confidence is a prior, and priors are supposed to move. To find out how far, the candidate pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with faded gains behind them, some with lasting gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs, and records both the quality of the conclusions and the resources consumed. A reviewer that warns about novelty in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
+In Ramsey's terms, confidence is a degree of belief, and a rational degree of belief should not float free of the evidence and choices that give it meaning. To find out how much confidence this pattern deserves, it has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with faded gains behind them, some with lasting gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs, and records both the quality of the conclusions and the resources consumed. A reviewer that warns about novelty in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
 
 Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks.&#91;24&#93;
 
@@ -376,7 +334,7 @@ A lesson that passes should also carry its scope. After a quarter of comparisons
 id: wins-that-fade
 confidence: supported for visible layout and home-screen changes; untested elsewhere
 scope: changes returning customers can notice and react to as new
-known_failure: held a checkout speed-up whose gain survived a six-week holdout
+known_failure: misapplied to an invisible checkout speed-up whose gain persisted
 revision: treat changes customers cannot see, such as speed, as outside scope
 evidence_record: fade-evaluations
 \`\`\`
@@ -413,7 +371,7 @@ I do not know an agent institution that can do this. The agent can write the pro
 
 One reviewer with one file is still Ines with a better notebook. The larger change comes when many agents work on the same body of knowledge.
 
-The team builds a small version of this. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches every launch against its holdout for six weeks after the dashboard closes. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others, any more than Carlini's sixteen compiler agents did. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
+The team builds a small version of this. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches whether accepted patterns continue to fit the launches that follow. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others, any more than Carlini's sixteen compiler agents did. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
 
 This is the World 3 of Chapter 5, with a new front door.&#91;27&#93; A language model offers the most convenient entrance yet, the whole library in one voice, but the answer may arrive without a catalog card. The machinery for checking it has to reach this new entrance too, or World 3 fills with fluent claims nobody can trace.
 
@@ -423,15 +381,15 @@ Who deserves credit for the route is now disputed, and the participants' account
 
 The record also needs room for results nobody assigned. In August 2026 an unreleased Claude, pointed at the Riemann hypothesis by an Anthropic engineer who was not a mathematician, failed to prove it and along the way raised the lower bound on zeros on the critical line from 41.6 to 67.2 percent; mathematicians checked the result and it was formalized in Lean.&#91;31&#93; An evaluator asking whether the assigned problem was solved would say no, correctly, and miss the research. Whether to keep pursuing the route is Laudan's question again.
 
-Mathematics has Lean to catch fluent nonsense. A product organization has holdouts, A/A tests and cohort checks, which are slower and noisier. The graph is only as honest as the checks feeding it.
+Mathematics has Lean to catch fluent nonsense. A product organization has experiments, A/A tests, cohort checks, later outcomes and sometimes nothing better than another contested measurement. They are slower and noisier. The graph is only as honest as the checks feeding it.
 
 \* Therefore: let agents share claims through a graph that records what each rests on, and record where the work was moved and why.
 
 ## Give the Objection a Consequence
 
-The objection from Holdout Day still stands. On the home screen, two-week baskets predict six-week behavior poorly. After retrieving the lesson, testing it and paying for the evidence it asked for, the organization can still arrange for nothing to follow.
+The objection from the pattern work still stands. On the home screen, early basket gains often predicted later behavior poorly. After retrieving the lesson, testing it and paying for the evidence it asked for, the organization can still arrange for nothing to follow.
 
-Ines takes the holdout results back to the head of product, who had declined the six-week criterion once already. This time she has evidence. The reply arrives the next morning, one word long: noted.
+Ines takes the accumulated pattern evidence back to the head of product, who had declined the longer-term criterion once already. This time she has more than an intuition. The reply arrives the next morning, one word long: noted.
 
 Facebook paid for a much larger version of the same lesson.
 
@@ -461,15 +419,15 @@ A year after Ines opened it, her file has grown fields nobody would have put in 
 open_questions:
   - Does the fade pattern hold outside the home screen?   # unfunded
 funding:
-  - six-week holdout study: funded through experimental review
-  - make six-week return rate the success criterion: declined by product-goal owner
+  - evaluate wins-that-fade against new and historical cases: funded through experimental review
+  - make longer-term return behavior part of the success criterion: declined by product-goal owner
 objections:
   - claim: Two-week basket size counts as improvement.
-    evidence: Holdouts show most two-week gains on the home screen fade by week six.
+    evidence: Repeated cases show that early home-screen gains can fade as returning customers adapt.
     status: unresolved
-    decision: Keep two-week tests; add holdouts to major launches.
+    decision: Keep the current primary criterion; require the fade pattern to remain visible in major reviews.
     owner: head of product
-    reason: Six-week tests would cut the team's experiment capacity by two thirds.
+    reason: A longer-term primary criterion would slow the team's decision cycle substantially.
 \`\`\`
 
 An open_questions field that no decision ever consults is a decorative conscience. These lines matter when the next review follows them, notices that the evidence concerns another screen or another app version, and changes what it is prepared to conclude.
@@ -510,7 +468,7 @@ Therefore: change what the next worker inherits.
 
 How could all this fail while every part works? It may faithfully preserve dependencies while omitting the important kind of dependency, as the archive once omitted the weeks after each test. It may compare candidate patterns on cases selected by the incumbent pattern. It may require evidence for an alternative while refusing the instruments needed to produce that evidence. Every individual operation can function as specified while the arrangement prevents the question that would matter.
 
-The same failure can happen one level up. A procedure with provenance records, preregistered predictions, holdouts and review channels looks more rigorous than anything in Uncle Jalal's first workshop. It can still rest on an assumption nobody checks, because the procedure itself decides what gets checked.
+The same failure can happen one level up. A procedure with provenance records, committed predictions, pattern evaluations and review channels looks more rigorous than anything in Uncle Jalal's first workshop. It can still rest on an assumption nobody checks, because the procedure itself decides what gets checked.
 
 Feyerabend's Against Method goes further. Every rule of method, he argued, has been usefully broken at some point in the history of science.&#91;40&#93; Requiring a test before setting a rule aside would itself be another methodological rule. I am borrowing a smaller lesson: our procedures need room for investigations they would ordinarily exclude.
 
@@ -524,9 +482,9 @@ Alexander's form now asks for a Therefore. We could write "revise the method whe
 
 Two years after Uncle Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. That is useful knowledge. It is also knowledge whose original conditions are somewhere else.
 
-Uncle Jalal knows the distinction now in a form the organization can use. He has an idea of his own on the board too. Before arguing for it, he asks the agent to check it against the file. The file says it has never been tested on these customers. Good. He puts it in the queue for a holdout instead of pretending that either his experience or the file has already settled the question.
+Uncle Jalal knows the distinction now in a form the organization can use. He has an idea of his own on the board too. Before arguing for it, he asks the agent to check it against the file. The file says it has never been tested on these customers. Good. That is not a rejection. It is an address for what the organization does not yet know.
 
-This time, before anyone ranks them, the review agent reads each idea against the file. One was tried here and faded by week four, for reasons recorded beside the result. One held, under conditions that no longer apply. Two have never been tested on these customers at all, and the file says so plainly. The feathers are still there. They now have to stand next to local evidence, and the room can see which ideas deserve the next holdout. When the new colleague thinks the file is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right.
+This time, before anyone ranks them, the review agent reads each idea against the pattern library. One was tried here and faded by week four, for reasons recorded beside the result. One held, under conditions that no longer apply. Two have never been tested on these customers at all, and the file says so plainly. The feathers are still there. They now have to stand next to local evidence, and the room can see which claims are supported, which are local, and which are still open. When the new colleague thinks the file is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right.
 
 Ines opens the incident file from that first night too. It says what Sam looks for in the serializer, why he looks there, the two times that suspicion was wrong, and who disagreed. She can use his judgment without having to inherit it whole. Alexander wanted the family to be able to argue with the architect. Now the next worker can argue with Sam, even while Sam is on holiday.
 
