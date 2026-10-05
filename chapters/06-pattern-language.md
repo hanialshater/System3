@@ -347,9 +347,7 @@ The slot reminder did not. Customers who used it once kept responding to it week
 
 Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his idea.
 
-Now both kinds of expertise had failed in public. Jalal's imported knowledge had lost its conditions on the journey. Sam's local knowledge had stayed close to its conditions and still overreached. Neither needed replacing by the other. Both needed a form that could travel far enough to meet cases capable of changing it.
-
-The team started to trust the file.
+Now both kinds of expertise had failed in public. Jalal's imported knowledge had lost its conditions on the journey. Sam's local knowledge had stayed close to its conditions and still overreached. Neither needed replacing by the other. Both needed a form that could travel far enough to meet cases capable of changing it. The team started to trust the file.
 
 Then the checkout team shipped a speed-up. Pages loaded faster and completed orders rose. The agent retrieved wins-that-fade, treated the result as another novelty case and recommended delaying the broader rollout until the pattern's predictions had been checked.
 
@@ -398,9 +396,7 @@ The larger objection still stood. On the home screen, early basket gains often p
 
 Changing a criterion is harder than changing an answer. Every record in the archive spoke in two-week baskets. A criterion built on what customers do over months needs new records, new instruments and new traffic. The evaluator is part of the difficulty: if it scores every proposal on two-week baskets, the alternative looks worse exactly where it stops chasing novelty.
 
-Jalal and Sam took the evidence to the head of product, who had declined the longer-term criterion once already.
-
-This time they had more than an intuition.
+Jalal and Sam took the evidence to the head of product, who had declined the longer-term criterion once already. This time they had more than an intuition.
 
 The reply arrived the next morning, one word long:
 
@@ -412,9 +408,7 @@ The organization had paid for knowledge it was resisting.
 
 A response to an objection should identify the claim it challenges and say what happened to it: new evidence, a revised claim, another experiment, a reason the criticism does not apply, or a budget decision that left it open.
 
-Closed says only that somebody stopped typing.
-
-Noted is none of these.
+Closed says only that somebody stopped typing; *noted* is none of these.
 
 With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out.
 
@@ -424,9 +418,7 @@ Helen Longino would locate the failure in the community. On her account, objecti
 
 Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. Objections travel with the proposals as other agents combine them into a longer argument. At final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect remains tied to the claim that failed, so the next round can repair it or try another route.&#91;37&#93;
 
-Who gets to object matters too. A critic who receives only the conclusion cannot examine the assumption. Telling the same model to play skeptic produces another argument, not another observation.
-
-And some disputes were never about evidence.
+Who gets to object matters too. A critic who receives only the conclusion cannot examine the assumption. Telling the same model to play skeptic produces another argument, not another observation. Some disputes were never about evidence either.
 
 A product owner can reasonably care about decision speed while a researcher cares about what customers do months later. Both can be reliable observers and still want different decisions. A system that cannot distinguish disputes more evidence could settle from disputes about purpose will keep requesting evidence to avoid naming a conflict over what matters.
 
@@ -466,9 +458,7 @@ The grocery company had now seen three kinds of departure.
 
 When the predecessor left, almost everything he knew left with him. What stayed was a document of decisions without reasons, and the team spent months unable to tell which lines were still true.
 
-Then Sam moved to another team.
-
-The reorganization that moved a principal engineer was drawn on a chart of roles and levels, and nothing on the chart showed the people who came to him with questions. Two years earlier his leaving would have taken the serializer, the home screen and a surprising fraction of the company's memory with him.
+Then Sam moved to another team. The reorganization that moved a principal engineer was drawn on a chart of roles and levels, and nothing on the chart showed the people who came to him with questions. Two years earlier his leaving would have taken the serializer, the home screen and a surprising fraction of the company's memory with him.
 
 This time the company kept working.
 
@@ -484,9 +474,7 @@ Chapter 5's apprentice kept a precaution he never understood. The stale serializ
 
 A more capable replacement model may defend it more effectively.
 
-Deleting old knowledge on a schedule would throw away expertise with the errors and make newness another unearned source of authority. The next worker needs standing to challenge what it inherits, suspend a disputed instruction on an experimental branch, and leave the dispute visible when no comparison can settle it.
-
-Changing the worker is easy.
+Deleting old knowledge on a schedule would throw away expertise with the errors and make newness another unearned source of authority. The next worker needs standing to challenge what it inherits, suspend a disputed instruction on an experimental branch, and leave the dispute visible when no comparison can settle it. Changing the worker is easy.
 
 Therefore: change what the next worker inherits, and give it standing to challenge the inheritance.
 
@@ -494,9 +482,7 @@ Therefore: change what the next worker inherits, and give it standing to challen
 
 By its second year the library held more than `wins-that-fade`.
 
-The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Incident review called `serializer-suspicion` and a dozen patterns like it. Each pattern named the larger one it served and the smaller ones it could call.
-
-Then one review finally made the composition visible.
+The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Incident review called `serializer-suspicion` and a dozen patterns like it. Each pattern named the larger one it served and the smaller ones it could call. One review finally made the composition visible.
 
 A pricing experiment arrived with an early lift. The review agent loaded `review-an-experiment` and found a committed prediction missing, so it routed that gap through `say-what-the-result-would-mean`. Separately, the size of the lift triggered `locate-the-failure`, where Twyman's check exposed a sample-ratio mismatch. A data agent traced the mismatch to a logging path shared by both the headline metric and its supposed independent check. `give-the-claim-an-address` marked both measurements as depending on the same event stream. The recommendation agent could no longer call the result corroborated, and the review returned the launch for repair.
 
@@ -506,9 +492,7 @@ That is the point at which a pile of skills becomes a pattern language.
 
 Alexander's second question to the programmers becomes the right question for the agents: do the patterns generate a coherent whole?
 
-Sometimes they did not.
-
-A pattern from the growth team said to ship small wins quickly and learn from production. `wins-that-fade` said to wait for later evidence. Each was sound inside its own context, and the review agent, holding both, followed whichever retrieval ranked first.
+Sometimes they did not. A pattern from the growth team said to ship small wins quickly and learn from production. `wins-that-fade` said to wait for later evidence. Each was sound inside its own context, and the review agent, holding both, followed whichever retrieval ranked first.
 
 Alexander's book had an answer in its structure: a smaller pattern is chosen in light of the larger one it helps complete. A reversible launch whose purpose is to learn can ship quickly. A launch that commits the team to building the next redesign on its result needs stronger evidence. The conflict disappeared when each pattern's link to the larger one became explicit, not when somebody declared one pattern right in general.
 
@@ -525,9 +509,7 @@ The patterns in this chapter now form a small language for institutions that run
     put-the-procedure-under-test    no Therefore yet
 ```
 
-They have to earn their asterisks together.
-
-And they can fail together while every part works.
+They have to earn their asterisks together, and they can fail together while every part works.
 
 The graph can preserve dependencies while omitting the one that matters, as Sam's last line did. The evaluator can compare candidate patterns on cases selected by the incumbent pattern. The institution can demand evidence for an alternative while refusing the instruments needed to produce it. Every operation can function exactly as specified while the arrangement prevents the question that would change it.
 
