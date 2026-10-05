@@ -11,7 +11,7 @@ He did not expect the team to copy his old playbook. That was partly why the ide
 
 Twice that afternoon Sam said, quietly, that the team had tried something like this before. Sam was a principal engineer, central to how the company actually worked and oddly peripheral to how it recorded what it knew. His name appeared in runbooks. People found him when migrations went strange. He remembered why apparently stupid pieces of the system were still there. He carried what companies politely call tribal knowledge.
 
-He had no paper for the home screen. He had a memory of a launch two years earlier and a feeling about how returning customers behaved. Uncle Jalal stopped on both comments and asked the team to keep them. They did, on smaller sticky notes. The problem was not that nobody respected Sam. The problem was that his knowledge had no portable form.
+He had no paper for the home screen. He had a memory of a launch two years earlier and a feeling about how returning customers behaved. Uncle Jalal stopped on both comments and asked the team to keep them. They did, on smaller sticky notes. Everyone respected Sam. Respect was not the missing technology. The company had no portable form for what he knew.
 
 Within a year several of the most convincing ideas on the whiteboard would fade, and Sam's smaller notes would matter more than their visual weight suggested.
 
@@ -58,7 +58,7 @@ The dashboard said yes. The home-screen redesign, Uncle Jalal's favorite idea fr
 
 The fade became impossible to ignore at the quarterly review. The slide still said four percent. The live number was flat. The head of the business asked the reasonable question: what happened?
 
-Uncle Jalal offered a hypothesis. Seasonality, maybe: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good hypothesis. It cited a real calendar and came from experience. The important word was maybe.
+Uncle Jalal offered a hypothesis. Seasonality, maybe: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good hypothesis, grounded in a real calendar and real experience. The most scientific word in it was *maybe*.
 
 The experiment record had nowhere to keep the *maybe* attached. It did not record which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. Repetition could turn a plausible hypothesis into an accepted explanation without adding a gram of evidence.
 
@@ -142,7 +142,7 @@ A few months after that night, Ines rotates into the team's experiment reviews. 
 
 It goes something like this. Uncle Jalal puts the holidays back on the board as one hypothesis. Someone from marketing adds the promotion calendar. An analyst points out that the carousel release also changed the event logging. Someone else notices that in the carousel test the two arms do not contain the numbers of users the design says they should. We have made contact with reality and acquired a meeting.
 
-This is Duhem's problem from Chapter 5, the one Boyle's pump taught: a failed prediction indicts the whole bundle and does not say which part to blame.&#91;12&#93;
+Chapter 5 gave this failure a name through Duhem and Boyle's pump: a failed prediction indicts the whole bundle and does not tell you which part to blame.&#91;12&#93;
 
 The people who run experiments for a living have a reflex about results like these. They call it Twyman's law: any figure that looks interesting or different is usually wrong.&#91;13&#93; A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it. So Ines starts there, and then gives every remaining suspicion a probe. Each story predicts a different shape. The holidays predict a drop on the day schools closed, for everyone. A promotion predicts a drop on the day it ended. A logging change predicts a step in the raw event counts. And one story nobody in the meeting had told predicts something else: returning customers react strongly to anything new on the screen they open every week and then drift back, while first-time visitors, who have nothing to compare it with, show a smaller and steadier effect.
 
@@ -214,7 +214,7 @@ The next change Ines reviews is a new layout for weekly staples, proposed by Unc
 
 Popper's demand applies here in its plainest form. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test. Every explanation of the fades had depended on exactly that arrangement.
 
-Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the later weeks of the experiment. If it is novelty, their curve will bend back toward the control while first-time visitors stay flatter. She adds the prediction to the candidate pattern itself: this is a case the pattern claims it can distinguish. None of this will be clean. A noisy curve can weaken an explanation without refuting it, and explanations do not always have the courtesy to be mutually exclusive.
+Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the later weeks of the experiment. If it is novelty, their curve will bend back toward the control while first-time visitors stay flatter. She adds the predictions to the candidate pattern itself. The pattern has named a case it claims it can distinguish. Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it, and explanations do not always have the courtesy to be mutually exclusive.
 
 She also changes the review rules. From now on, no home-screen launch is approved until its committed predictions have been checked, and only someone senior can override the gate.
 
@@ -250,13 +250,13 @@ Otherwise unfunded gradually becomes unsupported, and unsupported becomes dispro
 
 The next three relevant launches were Uncle Jalal's staples layout, a second version of the deals tile, and a reminder that told customers when their usual delivery slot was about to fill up. The reminder was the least glamorous item from the workshop. It had come from the smaller sticky note.
 
-This time the important object was not the experiment dashboard. It was the candidate pattern beside it. Before the results settled, the file already said what it expected to see: visible changes should move returning customers more sharply than first-time visitors, and if novelty was doing the work the returning-customer curve should bend back.
+This time the dashboard was not the star. The candidate pattern sat beside it, already committed to what it expected to see: visible changes should move returning customers more sharply than first-time visitors; if novelty was doing the work, their curve should bend back.
 
 The staples layout did. The deals tile did. The slot reminder did not. Customers who used the reminder once kept responding to it week after week. Nobody would have put it on a conference slide.
 
 Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two of the three launches and wrong about the one that had been his idea.
 
-That mattered as much as Uncle Jalal's imported ideas fading. The point was not to replace outside expertise with tribal knowledge and call Sam the oracle. Both could be right. Both could be wrong. The missing thing was a form in which either kind of knowledge could travel far enough to meet cases that could change it.
+Now both kinds of expertise had failed in public. Jalal's imported knowledge had lost its conditions on the journey. Sam's tribal knowledge had stayed close to its conditions and still overreached. Neither needed replacing by the other. Both needed a form that could travel far enough to meet cases capable of changing it.
 
 The pattern now had something Sam's original intuition and Uncle Jalal's imported experience had lacked in common: a history of where it worked, where it failed, and why its confidence had moved.
 
@@ -373,7 +373,7 @@ One reviewer with one file is still Ines with a better notebook. The larger chan
 
 The team builds a small version of this. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches whether accepted patterns continue to fit the launches that follow. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others, any more than Carlini's sixteen compiler agents did. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
 
-This is the World 3 of Chapter 5, with a new front door.&#91;27&#93; A language model can make the whole library answer in one voice. The catalog card disappears unless we rebuild it: where did this claim come from, what supports it, what contradicts it, what changed since it was written? Without that machinery, World 3 fills with fluent claims nobody can trace.
+Chapter 5 called the shared world of theories, problems and arguments World 3.&#91;27&#93; Language models give it a new front door: the whole library can answer in one voice. But the voice strips away the catalog card unless we rebuild it. Where did this claim come from? What supports it? What contradicts it? What changed since it was written? Without those handles, World 3 fills with fluent claims nobody can trace.
 
 A shared graph also changes where the work goes. In September 2026 OpenAI described moving its agents from other Millennium Problems onto Navier–Stokes once a result on the Euler equations made that route look promising, carrying the groups' findings into the next prompts. The group grew to roughly ten thousand concurrent agents and produced a proposed proof of finite-time blowup under smooth forcing, which was then formalized and verified in Lean.&#91;28&#93; On September 11 the Clay Mathematics Institute said the problem appeared to be settled, with evaluation and credit to follow its deliberately unhurried process.&#91;29&#93; The other problems had only lost their workers.
 
@@ -480,9 +480,9 @@ Alexander's form now asks for a Therefore. We could write "revise the method whe
 
 ## What the File Says Now
 
-Two years after Uncle Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. That is useful knowledge. It is also knowledge whose original conditions are somewhere else.
+Two years after Uncle Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. Good: the room has acquired useful knowledge. Its conditions are still somewhere else.
 
-Uncle Jalal knows the distinction now in a form the organization can use. He has an idea of his own on the board too. Before arguing for it, he asks the agent to check it against the file. The file says it has never been tested on these customers. Good. That is not a rejection. It is an address for what the organization does not yet know.
+Uncle Jalal now has a way to make that distinction operational. He has an idea of his own on the board too. Before arguing for it, he asks the agent to check the pattern library. No local evidence. Good. The file has not rejected the idea; it has located the ignorance.
 
 This time, before anyone ranks them, the review agent reads each idea against the pattern library. One was tried here and faded by week four, for reasons recorded beside the result. One held, under conditions that no longer apply. Two have never been tested on these customers at all, and the file says so plainly. The feathers are still there. They now have to stand next to local evidence, and the room can see which claims are supported, which are local, and which are still open. When the new colleague thinks the file is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right.
 
