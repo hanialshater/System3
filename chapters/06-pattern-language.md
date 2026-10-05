@@ -7,13 +7,15 @@ Let me tell you a story about a tech leader. Call him Uncle Jalal, as the team e
 
 Uncle Jalal joined an online grocery company carrying years of experience from elsewhere. In his first month the team held a roadmap workshop, and by lunch the whiteboard was full. Every idea arrived with a pedigree: a paper from a good conference, a keynote, a system that had worked beautifully somewhere else. Several of the somewhere elses were his.
 
-The room ranked the ideas by how convincing they sounded, which is how most rooms rank ideas. His sounded convincing because he had seen them work. A peacock's tail persuades the same way: the display is too expensive to fake, so it impresses, whatever it reveals about the bird.&#91;1&#93;
+He did not expect the team to copy his old playbook. That was partly why the ideas were on the wall: make the imported knowledge explicit, put it beside what this company knew, and test what survived contact with local customers. Still, the room ranked the ideas by how convincing they sounded, which is how most rooms rank ideas. His sounded convincing because he had seen them work. A peacock's tail persuades the same way: the display is too expensive to fake, so it impresses, whatever it reveals about the bird.&#91;1&#93;
 
-Twice that afternoon Sam said, quietly, that the team had tried something like this before. He had no paper. He had a memory of a launch two years earlier and a feeling about how customers on the home screen behaved. The team wrote his comments on a smaller sticky note.
+Twice that afternoon Sam said, quietly, that the team had tried something like this before. Sam was a principal engineer, central to how the company actually worked and oddly peripheral to how it recorded what it knew. His name appeared in runbooks. People found him when migrations went strange. He remembered why apparently stupid pieces of the system were still there. He carried what companies politely call tribal knowledge.
 
-Within a year most of that whiteboard would quietly fail, and the one person who could have said why was sitting by the door.
+He had no paper for the home screen. He had a memory of a launch two years earlier and a feeling about how returning customers behaved. Uncle Jalal stopped on both comments and asked the team to keep them. They did, on smaller sticky notes. The problem was not that nobody respected Sam. The problem was that his knowledge had no portable form.
 
-What Uncle Jalal had carried into the room were solutions that had shed the conditions under which they worked. An architect had worried about exactly that, for rooms.
+Within a year several of the most convincing ideas on the whiteboard would fade, and Sam's smaller notes would matter more than their visual weight suggested.
+
+What had travelled into the room were ideas whose original conditions had not travelled with them. Uncle Jalal knew that was possible; that was why he wanted them tested. What the company did not yet have was a way to make those conditions travel too. An architect had worried about exactly that, for rooms.
 
 ## Light on Two Sides
 
@@ -50,17 +52,19 @@ The engine said yes. The home-screen redesign, Uncle Jalal's favorite idea from 
 
 ## The Quarterly Review
 
-Uncle Jalal found out at the quarterly review. The slide said four percent, and he had made it. The head of the business asked a reasonable question: if the experiment showed four percent, why was the live number flat?
+The fade became impossible to ignore at the quarterly review. The slide still said four percent. The live number was flat. The head of the business asked the reasonable question: what happened?
 
-He had an answer ready. Seasonality, probably: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good answer. It sounded like analysis, it cited a real calendar, and it was the kind of thing an experienced person says. He did not know whether it was true.
+Uncle Jalal offered a hypothesis. Seasonality, maybe: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good hypothesis. It cited a real calendar and came from experience. The important word was maybe.
 
-Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; What he had just given the room was harder to catch than either, because it passed every test of sincerity. I call it high-functioning bullshit: real expertise and real conviction, with no live connection to the assumptions it depends on. He believed every word. His workshop ideas had been the same kind of thing: they had worked for other customers, with other baskets and other delivery windows, and none of those conditions had made the journey with him. I have given that kind of answer myself, more than once.
+The problem was that the experiment record had nowhere to keep the maybe attached. It did not record which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. A plausible hypothesis could harden into an explanation simply by being repeated.
 
-Nobody in that room was against evidence. Science has few open enemies left in rooms like that one. The danger comes from inside the method, from work that has rigor's shape: a dashboard, a confidence interval, an experienced person explaining seasonality. It looks scientific and reasonable, and it fails on an assumption nobody checked.
+Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; What interests me here is not a kind of person but a kind of idea. I call the failure mode high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true. I have produced ideas like that myself, more than once.
+
+That is why high-functioning bullshit is an enemy of science rather than merely bad behavior. Nobody in that room was against evidence. The danger came from inside the method, from work that had rigor's shape: a dashboard, a confidence interval, an experienced hypothesis whose question mark had disappeared. It looked scientific and reasonable, and it could survive without meeting the observation that would make it lose.
 
 Then the carousel's gain went the same way, and then the deals tile's.
 
-Every fade received an explanation, and every explanation was reasonable. The redesign had run into the school holidays. The carousel launched the week a promotion ended. The deals tile coincided with a competitor's discount week. Each story cited a real event, came from someone who knew the business and fit the incident it was written for, and none of them predicted the next fade.
+Every fade produced reasonable hypotheses. The redesign might have run into the school holidays. The carousel launched the week a promotion ended. The deals tile coincided with a competitor's discount week. Each story cited a real event and came from someone who knew the business. None had yet been made to predict the next fade.
 
 Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it. They were sincere, informed, and checked against nothing. The holiday story was his.
 
@@ -132,7 +136,7 @@ Each test told the truth about its own fortnight, and nothing connected the fort
 
 A few months after that night, Ines rotates into the team's experiment reviews. Her first act is to put the three fades in one room. It produces a meeting.
 
-It goes something like this. Uncle Jalal says the holidays. Someone from marketing says the promotion calendar. An analyst points out that the carousel release also changed the event logging. Someone else notices that in the carousel test the two arms do not contain the numbers of users the design says they should. We have made contact with reality and acquired a meeting.
+It goes something like this. Uncle Jalal puts the holidays back on the board as one hypothesis. Someone from marketing adds the promotion calendar. An analyst points out that the carousel release also changed the event logging. Someone else notices that in the carousel test the two arms do not contain the numbers of users the design says they should. We have made contact with reality and acquired a meeting.
 
 This is Duhem's problem from Chapter 5, the one Boyle's pump taught: a failed prediction indicts the whole bundle and does not say which part to blame.&#91;12&#93;
 
@@ -140,9 +144,9 @@ The people who run experiments for a living have a reflex about results like the
 
 The probes take a week. In the carousel test, one app version sent part of the treatment arm through a redirect that dropped users before logging began; once the arms were repaired, most of that gain disappeared. The other two curves settle it. Both bend before the holidays begin. Both have the same shape: returning customers spike in the first days and decay over about three weeks, whatever the calendar says. First-time visitors barely move.
 
-The customers had been reacting to novelty. Experimenters have names for this, novelty and primacy effects, and long-standing advice about them.&#91;14&#93; Uncle Jalal had read the advice. Knowing the names had not told him where they would bite, and the explanation he gave to the head of the business had been fluent, informed and wrong.
+The customers had been reacting to novelty. Experimenters have names for this, novelty and primacy effects, and long-standing advice about them.&#91;14&#93; Uncle Jalal had read the advice. Knowing the names had not told him where they would bite. His first hypothesis had been reasonable and wrong.
 
-Uncle Jalal went to find Sam. Sam said he had known the screen did this. Then, to his credit, he said he had not known why. His pattern had been right for years and had never been tested, which is a dangerous way to be right.
+He brought the curves to Sam. Sam said he had known for years that the screen did something like this. Then, to his credit, he said he had not known why. His local pattern had been right for years and had never been tested, which is a dangerous way to be right.
 
 \*\* Therefore: when a result fails, trace the assumptions it used and design probes that distinguish the possible failures.
 
@@ -248,6 +252,8 @@ The holdout results came in on a Thursday. His staples layout had kept about a f
 
 Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two of the three launches and wrong about the one that had been his idea.
 
+That mattered as much as Uncle Jalal's imported ideas fading. The point was not to replace outside expertise with tribal knowledge and call Sam the oracle. Both could be right. Both could be wrong. The missing thing was a form in which either kind of knowledge could travel far enough to be tested.
+
 It was the first result in the archive that the team could defend for longer than a fortnight. It was also the first time the archive contained a test of its own method.
 
 The next reviewer should not have to rediscover any of this, or spend a week in Ines's meeting. She writes the lesson down as a candidate pattern, with the reasons and the uncertainty kept alongside the instruction:
@@ -295,7 +301,7 @@ Feigenbaum's bottleneck has also moved. An agent can read three hundred experime
 
 So Ines puts the lesson in her team's skill library. Nothing in the format makes the writer include the reasons or the reader act on them. A library like that can preserve the wrong lesson at industrial speed.
 
-A language model can produce the shape of a careful argument on any topic in seconds: context, caveats, a confident recommendation, a tidy list of risks. A skill it writes for you will be fluent, well formatted and plausible, with nobody behind it who once doubted it. Uncle Jalal's holiday explanation needed an experienced person to deliver it. The machine version is high-functioning bullshit that needs nobody at all.
+A language model can produce the shape of a careful argument on any topic in seconds: context, caveats, a confident recommendation, a tidy list of risks. A skill it writes for you will be fluent, well formatted and plausible, with nobody behind it who once doubted it. A detached explanation once needed a person to keep repeating it. The machine version can persist, travel and act with nobody behind it at all. High-functioning bullshit has become infrastructure.
 
 ## The File Says No
 
@@ -307,7 +313,9 @@ Retrieval works. For two months the agent raises the question every time a home-
 
 Then the checkout team ships a speed-up. Pages load faster, completed orders rise over two weeks, and the agent, citing wins-that-fade, recommends holding the release for a six-week holdout. The checkout team objects that nobody gets used to a page loading quickly. The agent answers with the file's confidence, its five incidents and the holdout study. It is late November. Ines's review gate makes the recommendation binding unless someone senior overrides it.
 
-Uncle Jalal was the someone senior. The recommendation was fluent, cited its sources and sounded exactly like an experienced person explaining seasonality. He signed it. Most customers spent the busiest six weeks of the year on the slower checkout, and when the holdout came back the gain was intact and slightly larger. The file had started producing its own feathers, and Uncle Jalal had approved them for the same reason he had once produced them: they sounded like evidence.
+Uncle Jalal was the someone senior. The recommendation was fluent, cited its sources and came from a rule that had earned trust on the home screen. He signed it. Most customers spent the busiest six weeks of the year on the slower checkout, and when the holdout came back the gain was intact and slightly larger.
+
+The mistake was no longer Uncle Jalal's imported expertise. It was institutional. A pattern whose scope had never been tested outside visible home-screen changes had acquired authority over checkout. The file had started producing its own feathers.
 
 The pattern said confidence: provisional, five incidents on one screen. Nothing on a checkout page is new in the way a home-screen banner is new. "Two-week gains are usually novelty" is far more than five incidents can teach.
 
@@ -433,11 +441,13 @@ A new generation learns the new examples first and has no old allegiance to surr
 
 There is empirical work on that question. Studying the premature deaths of eminent life scientists, Pierre Azoulay, Christian Fons-Rosen and Joshua Graff Zivin found declining contributions from collaborators and increased contributions from outsiders to the affected fields. The incoming work drew on a different scientific corpus and was disproportionately likely to be highly cited.&#91;39&#93; None of that shows the departed scientists were wrong, only that who gets to participate can change which work enters a field.
 
-Sam, eventually, moves to another team. The reorganization that moves him is drawn on a chart of roles and levels, and nothing on the chart shows the people who came to him with questions. Two years earlier, his leaving would have taken the serializer and the home screen with him. This time the file stays.
+Sam, eventually, moves to another team. The reorganization that moves a principal engineer is drawn on a chart of roles and levels, and nothing on the chart shows the people who came to him with questions. Two years earlier, his leaving would have taken the serializer, the home screen and a surprising fraction of the company's memory with him.
+
+This time the company keeps working. New engineers still ship. Checkout still runs. Questions that once ended at Sam now terminate in records that can be followed, challenged and revised. The file stays.
 
 The file also keeps what should have gone. A new agent joins the project. Its progress file contains a line Sam wrote two years ago: serializer rewrite tried and abandoned; do not retry. The line was true when written. The dependency that made the rewrite fail has since been replaced, and the reason for the warning went with it. The fade pattern ages the same way. A later redesign rebuilds the home screen so that it changes far less often, but the pattern still tells every reviewer to discount two-week gains on the home screen.
 
-Chapter 5's apprentice kept a precaution he never understood. These lines go one step further: they are high-functioning bullshit in its purest form, because nobody is producing them. They are confident, specific, written by someone who knew the system, and detached from the reasons that once made them true. There is no author left to doubt them, and, as the checkout team learned, a reviewer will cite them without blinking.
+Chapter 5's apprentice kept a precaution he never understood. These lines go one step further: they are high-functioning bullshit in its purest form, because nobody is producing them. The category was never Sam, Uncle Jalal or any other person. It is the idea after its conditions have fallen away: confident, specific, inherited from someone who knew the system, and detached from the reasons that once made it true. There is no author left to doubt it, and, as the checkout team learned, a reviewer will cite it without blinking.
 
 The new agent reads the same file, retrieves the same successful patterns, accepts the same categories, and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context. Session turnover is not a funeral; nothing that was believed has died.
 
@@ -465,9 +475,9 @@ Alexander's form now asks for a Therefore. We could write "revise the method whe
 
 ## What the File Says Now
 
-Two years after Uncle Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. He presents them with exactly the confidence Uncle Jalal once had. Uncle Jalal recognizes it the way you recognize your own voice on a recording.
+Two years after Uncle Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. That is useful knowledge. It is also knowledge whose original conditions are somewhere else.
 
-Uncle Jalal has an idea of his own on the board too. Before he presents it, he asks the agent to check it against the file. The file says it has never been tested on these customers. He puts it in the queue for a holdout instead of at the top of the roadmap.
+Uncle Jalal knows the distinction now in a form the organization can use. He has an idea of his own on the board too. Before arguing for it, he asks the agent to check it against the file. The file says it has never been tested on these customers. Good. He puts it in the queue for a holdout instead of pretending that either his experience or the file has already settled the question.
 
 This time, before anyone ranks them, the review agent reads each idea against the file. One was tried here and faded by week four, for reasons recorded beside the result. One held, under conditions that no longer apply. Two have never been tested on these customers at all, and the file says so plainly. The feathers are still there. They now have to stand next to local evidence, and the room can see which ideas deserve the next holdout. When the new colleague thinks the file is wrong about one of them, he can name the claim, propose the probe and argue with it. On one of them he turns out to be right.
 
