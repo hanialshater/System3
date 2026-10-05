@@ -46,7 +46,11 @@ From here on I borrow Alexander's asterisks to mark my confidence that each prop
 
 So the team did what a good team does with imported ideas. It tested them.
 
-An experimentation platform can behave like an organization's Bayesian engine. Thomas Bayes's rule, published after his death in 1763, says how a belief should change when evidence arrives: start from a prior, weigh the evidence under competing possibilities, and end with a revised belief.&#91;3&#93; The individual A/B test need not itself be Bayesian; the larger habit is. The team starts with a guess about an idea, splits its customers, and lets the comparison move the guess. Over the years the archive can become the company's prior: a record of what worked here and what did not, earned on its own customers.
+An experimentation platform is supposed to do something subtler than declare winners. It should let an organization believe in degrees.
+
+The theorem that carries Bayes's name supplies some of the arithmetic, but the epistemology came much later. In 1926 Frank Ramsey's *Truth and Probability* treated belief as something that could come in degrees and connected those degrees to the choices a person was prepared to make. Inconsistent degrees of belief could make your own actions work against you. De Finetti developed the subjectivist line independently; Savage later gave it a more systematic decision-theoretic form. What came to be called Bayesian epistemology was not Bayes's philosophy of science. It was a twentieth-century attempt to make partial belief coherent and revisable.&#91;3&#93;
+
+That is the part I need here. The team need not pretend an idea is simply true or false. It can say how much confidence it has, what that confidence rests on, and what evidence should move it. An experiment archive ought to preserve that movement. Instead, this one mostly preserved verdicts.
 
 The engine said yes. The home-screen redesign, Uncle Jalal's favorite idea from the workshop, won by four percent. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them. A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before.
 
@@ -68,7 +72,7 @@ Every fade produced reasonable hypotheses. The redesign might have run into the 
 
 Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it. They were sincere, informed, and checked against nothing. The holiday story was his.
 
-The Bayesian engine was updating faithfully. Something it could not see was eating the results.
+The tests were producing evidence. The archive was losing the structure of the beliefs that evidence was supposed to change.
 
 ## Two in the Morning
 
@@ -92,7 +96,7 @@ The next home-screen launch was due in a month. Nobody on the product side could
 
 Engineering knowledge is reliable for a dull reason: it is checked constantly. A test suite runs on every commit, and a regression fails within minutes of being written. Alerts fire when a service drifts outside its limits. Load tests ask, before customers do, at what traffic a working system stops working, which is Alexander's context with numbers in it. Netflix built Chaos Monkey, a program that switched off its own production servers at random during working hours, so that engineers would discover their hidden assumptions while they were awake to fix them.&#91;6&#93;
 
-Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.&#91;7&#93; A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Popper had no patience for the Bayesian picture, but here the two divide the work neatly. Bayes describes how an organization's beliefs should move when evidence arrives. Popper explains why engineering beliefs move quickly: the evidence arrives cheaply, often, and in a form that can say no.
+Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.&#91;7&#93; A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Popper rejected the idea that surviving tests makes a theory more probable; Ramsey's tradition and Popper's are not the same philosophy. I need something from each. Ramsey gives us partial belief rather than verdicts. Popper asks whether the claim has met evidence capable of making it lose. Engineering beliefs move quickly because that evidence arrives cheaply, often, and in a form that can say no.
 
 Engineers have egos, credentials and favorite architectures like everyone else. An impressive design that breaks under load fails the load test on Thursday, whatever its author's reputation.
 
@@ -210,7 +214,7 @@ The next change Ines reviews is a new layout for weekly staples, proposed by Unc
 
 Popper's demand applies here in its plainest form. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test. Every explanation of the fades had depended on exactly that arrangement.
 
-Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the last week of the test. If it is novelty, their curve will bend back toward the control while first-time visitors stay flat. She adds a third, more expensive one: a holdout of customers who keep the old layout for six weeks after launch, with the share of the gain that must survive written down in advance. None of this will be clean. A noisy curve can weaken an explanation without refuting it, and explanations do not always have the courtesy to be mutually exclusive.
+Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the later weeks of the experiment. If it is novelty, their curve will bend back toward the control while first-time visitors stay flatter. She adds the prediction to the candidate pattern itself: this is a case the pattern claims it can distinguish. None of this will be clean. A noisy curve can weaken an explanation without refuting it, and explanations do not always have the courtesy to be mutually exclusive.
 
 She also changes the review rules. From now on, no home-screen launch is approved until its committed predictions have been checked, and only someone senior can override the gate.
 
@@ -220,29 +224,72 @@ A model will propose a distinguishing test plausibly enough if asked. The commit
 
 \*\* Therefore: write down what would count against the claim before the result arrives, and keep the revision history.
 
-## Borrow the Load Test
+## Make the Pattern Face Cases
 
-The holdout is a load test pointed at time. A load test asks at what traffic a working system stops working; a long holdout asks at what week a working result stops working. Once Ines sees the resemblance, the rest of engineering's apparatus starts to translate.
+A pattern that only explains the cases that produced it is a story with a good filing system.
 
-A post-launch monitor that compares holdout and launched customers is an alert that keeps running after the dashboard closes. Replaying old launch decisions against what later happened is a regression suite for the experimentation method: would today's review rules have shipped the three faded winners? An A/A test, two identical arms run through the whole platform, is chaos engineering for the Bayesian engine. If the engine declares a winner between two copies of the same screen, the engine is broken, and it is better to find out on a Tuesday afternoon.
+Engineering has a useful habit here. A regression test takes a failure that happened once and turns it into a challenge the system must survive again. The equivalent for Ines's pattern is not one special experimental technique. It is a growing set of cases: fades it should catch, lasting gains it should leave alone, ambiguous results on which it should admit uncertainty, and old launches replayed through the new review rule.
 
-None of this is free. Engineering's checks are cheap because computers are patient. Product checks cost customers, traffic and weeks, which is exactly why experiments learned slowly in the first place.
+That changes what the archive is for. The three vanished wins are no longer anecdotes supporting "wins fade." They are training cases for a proposal that can now be wrong in recognizable ways. The next launches become validation cases. An A/A test can still check whether the experimentation platform invents differences between identical arms. Cohort curves can test the novelty explanation. Later outcomes can tell the team whether a pattern that looked useful at decision time kept earning its confidence. The technique depends on the claim. The invariant is that the pattern must meet cases it did not get to choose.
 
-Long holdouts had been proposed before, more than once, and never run. Every week the two-week test was the safer choice for the decision at hand, and every week that choice was defensible. Larry Laudan called what the team was missing the difference between acceptance and pursuit.&#91;19&#93; What to believe today and what to work on tomorrow are different questions, and the team had a mechanism only for the first. Chapter 5 asked who gets the next agent; here the same question decides which method gets tested.&#91;20&#93; A policy that always picks today's safest method never lets the alternative collect the evidence that would make it safe.
+None of this is free. Product evidence costs traffic, engineering time and calendar time. Replaying old decisions costs analysis. Following an effect after the launch meeting has ended costs attention. That is why the archive had accumulated answers faster than challenges.
 
-So Ines asks for six-week holdouts on the team's next three launches, and the request lands with the owner of the experimentation budget, who funds experiments expected to raise the current metric. The proposed study asks whether the metric's two-week reading represents improvement at all. Ines has been invited to challenge an assumption on the condition that she first accept it. The budget owner is polite, senior and entirely right about what the budget was approved to do. She leaves the meeting having agreed with everything he said and received nothing she asked for.
+Larry Laudan called one version of the distinction acceptance and pursuit.&#91;19&#93; What to believe today and what to investigate tomorrow are different questions. Chapter 5 asked who gets the next agent; here the same allocation problem decides which doubts get investigated.&#91;20&#93; A policy that funds only today's accepted method can prevent its alternatives from collecting the evidence that would make them credible.
 
-The budget owner controls the traffic, the compute and the permission to change what gets measured.
+So Ines asks for capacity to test the candidate pattern against the next three relevant launches and against old cases it did not produce. The request lands with the owner of the experimentation budget, who reasonably asks what metric this work is expected to raise. Ines is asking for something slightly different: evidence about whether the organization's own lesson is any good.
 
-So Ines splits the request. One part proposes the holdout study and goes to experimental review, which funds it. The other asks whether the success criterion should change and goes to whoever owns the product goal. It is declined, and the rejection is recorded as a decision about the goal, with a name on it. At least the no has an address.
+She splits the request. The product experiments remain owned by the product teams. The pattern evaluation gets a small review budget of its own. A separate question—whether the success criterion itself should change—goes to whoever owns the product goal. It is declined, and the rejection is recorded as a decision about the goal, with a name on it. At least the no has an address.
 
 An agent with a sound epistemic objection still has no authority to spend somebody else's money. A funding policy can reserve capacity for challenges to the incumbent, but that policy is itself a choice made by people with power. Written into code, it can at least be inspected.
 
-\* Therefore: give the queue of unrun comparisons its own allocation policy, and attach each funding decision and its reason to the question it left unanswered.
+\* Therefore: give unresolved questions and candidate patterns an allocation policy for the evidence they still need, and attach each funding decision to the question it leaves unanswered.
 
 Otherwise unfunded gradually becomes unsupported, and unsupported becomes disproved somewhere between the database and the executive summary.
 
-## Holdout Day
+## The Pattern Goes to Work
+
+The next three relevant launches were Uncle Jalal's staples layout, a second version of the deals tile, and a reminder that told customers when their usual delivery slot was about to fill up. The reminder was the least glamorous item from the workshop. It had come from the smaller sticky note.
+
+This time the important object was not the experiment dashboard. It was the candidate pattern beside it. Before the results settled, the file already said what it expected to see: visible changes should move returning customers more sharply than first-time visitors, and if novelty was doing the work the returning-customer curve should bend back.
+
+The staples layout did. The deals tile did. The slot reminder did not. Customers who used the reminder once kept responding to it week after week. Nobody would have put it on a conference slide.
+
+Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two of the three launches and wrong about the one that had been his idea.
+
+That mattered as much as Uncle Jalal's imported ideas fading. The point was not to replace outside expertise with tribal knowledge and call Sam the oracle. Both could be right. Both could be wrong. The missing thing was a form in which either kind of knowledge could travel far enough to meet cases that could change it.
+
+The pattern now had something Sam's original intuition and Uncle Jalal's imported experience had lacked in common: a history of where it worked, where it failed, and why its confidence had moved.
+
+The next reviewer should not have to rediscover any of this, or spend a week in Ines's meeting. She writes the lesson down as a candidate pattern, with the reasons and the uncertainty kept alongside the instruction:
+
+\`\`\`yaml
+id: wins-that-fade
+confidence: provisional, tested on visible home-screen changes
+context: A visible home-screen or layout change reports an early gain.
+problem: Returning customers may react to what is new, so an early gain can be mistaken for a lasting preference.
+therefore:
+  - State what the early metric is being taken to mean.
+  - Compare returning and first-time customers.
+  - Commit the curve each explanation predicts before reading the later result.
+documented_cases: [three_faded_launches, staples_layout, deals_tile, slot_reminder]
+validation_cases_needed: [lasting_gain, faded_gain, outside_scope, insufficient_evidence]
+part_of: review-an-experiment
+may_call: locate-the-failure
+evidence_record: fade-evaluations
+open_questions: fade-challenges
+on_support_withdrawn:
+  - Reassess dependent interpretations using their remaining support.
+  - Return recommendations that lost required support to review.
+  - Retain the earlier decision and the reason for its change.
+\`\`\`
+
+It belongs inside review-an-experiment and may call locate-the-failure, where the redirect bug now lives, rather than every statistical procedure in the building. Like Alexander's links, those references help a reader choose a method for the difficulty at hand and find an alternative when it fails.
+
+A pattern can also mix kinds of content that need different kinds of support. "Returning customers on this screen react to novelty" is a claim about the world. "Compare cohorts before spending more traffic" is a recommendation about effort. "Do not alter a live experiment to rescue its result" is an authority boundary. A successful test of the first does not justify the other two automatically.
+
+Sam could have written something like this years ago, about the screen and about the serializer. Ines's version makes explicit the reasons that had lived mostly in Sam's head, and it has one reader Sam never had to plan for.
+
+
 
 The three launches in the study were Uncle Jalal's staples layout, a second version of the deals tile, and a reminder that told customers when their usual delivery slot was about to fill up. The reminder was the least glamorous item from the workshop. It had come from the smaller sticky note.
 
