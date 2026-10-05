@@ -204,6 +204,8 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ### Additional sources
 
+- Frank P. Ramsey, “Truth and Probability,” written 1926, published posthumously in *The Foundations of Mathematics and Other Logical Essays* (1931). On partial belief, subjective probability, preference and the early Dutch-book idea, see the Stanford Encyclopedia of Philosophy, “Frank Ramsey,” §6, <https://plato.stanford.edu/entries/ramsey/>.
+- Bruno de Finetti, “Foresight: Its Logical Laws, Its Subjective Sources” (1937), and Leonard J. Savage, *The Foundations of Statistics* (1954), for later development of the subjectivist and decision-theoretic tradition. See also Stanford Encyclopedia of Philosophy, “Bayesian Epistemology,” <https://plato.stanford.edu/entries/epistemology-bayesian/>.
 - Andrej Karpathy, “Software 2.0” (2017) — <https://karpathy.medium.com/software-2-0-a64152b37c35> — and “Software Is Changing (Again)” (talk, 2025), the source of “Software 3.0.”
 - Karl Popper, *The Logic of Scientific Discovery* (1934; English edition 1959) and *Conjectures and Refutations* (1963).
 - Pierre Duhem, *The Aim and Structure of Physical Theory* (1906); W. V. O. Quine, “Two Dogmas of Empiricism,” *Philosophical Review* 60 (1951), 20–43.
