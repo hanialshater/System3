@@ -172,37 +172,148 @@ What must a pattern carry when its reader can act on it, and what keeps that pat
 
 ## Locate the Failure
 
-A few months after that night, Ines rotates into the team's experiment reviews. Her first act is to put the three fades in one room. It produces a meeting.
+Jalal did not wait for the next quarterly review. He asked Sam to work on the fades with him, which surprised several people, including Sam.
 
-It goes something like this. Uncle Jalal puts the holidays back on the board as one hypothesis. Someone from marketing adds the promotion calendar. An analyst points out that the carousel release also changed the event logging. Someone else notices that in the carousel test the two arms do not contain the numbers of users the design says they should. We have made contact with reality and acquired a meeting.
+They put the three fades in one room. Jalal put the holidays back on the board as one hypothesis. Marketing added the promotion calendar. An analyst pointed out that the carousel release had also changed the event logging. Someone else noticed that in the carousel test the two arms did not contain the numbers of users the design said they should.
 
 Chapter 5 gave this failure a name through Duhem and Boyle's pump: a failed prediction indicts the whole bundle and does not tell you which part to blame.&#91;12&#93;
 
-The people who run experiments for a living have a reflex about results like these. They call it Twyman's law: any figure that looks interesting or different is usually wrong.&#91;13&#93; A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it. So Ines starts there, and then gives every remaining suspicion a probe. Each story predicts a different shape. The holidays predict a drop on the day schools closed, for everyone. A promotion predicts a drop on the day it ended. A logging change predicts a step in the raw event counts. And one story nobody in the meeting had told predicts something else: returning customers react strongly to anything new on the screen they open every week and then drift back, while first-time visitors, who have nothing to compare it with, show a smaller and steadier effect.
+People who run experiments for a living have a reflex about results like these. They call it Twyman's law: any figure that looks interesting or different is usually wrong.&#91;13&#93; A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it.
 
-The probes take a week. In the carousel test, one app version sent part of the treatment arm through a redirect that dropped users before logging began; once the arms were repaired, most of that gain disappeared. The other two curves settle it. Both bend before the holidays begin. Both have the same shape: returning customers spike in the first days and decay over about three weeks, whatever the calendar says. First-time visitors barely move.
+So they started there, then gave every remaining suspicion a probe. Each story predicted a different shape. Holidays predicted a drop when schools closed. A promotion predicted a drop when it ended. A logging change predicted a step in raw event counts. And one story nobody had told predicted something else: returning customers react strongly to anything new on the screen they open every week and then drift back, while first-time visitors, who have nothing to compare it with, move less.
 
-The customers had been reacting to novelty. Experimenters have names for this, novelty and primacy effects, and long-standing advice about them.&#91;14&#93; Uncle Jalal had read the advice. Knowing the names had not told him where they would bite. His first hypothesis had been reasonable and wrong.
+The archive had kept verdicts, but the warehouse had kept the events. Jalal asked the agent to pull the weeks after launch for every visible home-screen change the company had shipped in three years. There were forty. Nobody had put them side by side because each experiment had been closed when its scorecard turned green.
 
-He brought the curves to Sam. Sam said he had known for years that the screen did something like this. Then, to his credit, he said he had not known why. His local pattern had been right for years and had never been tested, which is a dangerous way to be right.
+The agent did it in an afternoon.
+
+This time it was asked for curves rather than opinions, and curves can be checked.
+
+The probes took a week. In the carousel test, one app version sent part of the treatment arm through a redirect that dropped users before logging began; once the arms were repaired, most of that gain disappeared. The other two fades had the same shape, and so did most of the forty. Returning customers spiked in the first days and decayed over about three weeks, whatever the calendar said. First-time visitors barely moved. Both curves bent before the holidays began.
+
+The customers had been reacting to novelty. Experimenters have names for this, novelty and primacy effects, and long-standing advice about them.&#91;14&#93; Jalal had read the advice. Knowing the name had not told him where it would bite. His first hypothesis had been reasonable and wrong.
+
+Sam said he had known for years that the screen did something like this. Then he added that he had not known why, how long it lasted, or that it barely touched new customers. His local pattern had been right for years and had never been tested, which is a dangerous way to be right.
+
+The archive needed to represent something older than experimentation platforms. In 1926 Frank Ramsey's *Truth and Probability* treated belief as graded rather than binary and tied those degrees to the choices a person was prepared to make.&#91;3&#93; Later subjectivist and decision-theoretic work developed the machinery, but the useful move here is simple: do not stamp an idea true or false. Record how much confidence you have, what that confidence rests on, and what evidence should move it.
+
+Popper rejected treating successful tests as making a theory more probable. His tradition and Ramsey's are not the same philosophy. I need something from each. Ramsey gives partial belief rather than verdicts. Popper asks whether the claim has met evidence capable of making it lose.
+
+The probes did both. They moved confidence, and they could have come back the other way.
 
 \*\* Therefore: when a result fails, trace the assumptions it used and design probes that distinguish the possible failures.
 
+## Say What the Result Would Mean
+
+In every one of those tests the count had been correct. What failed was the meaning attached to it, and other teams have met that failure in a sharper form.
+
+At Bing, a treatment had a bug, and the bug made search results worse. People could not find what they wanted, so they searched again and again. Queries per user went up by over ten percent. With poorer results on the page, advertisements looked comparatively relevant, and people clicked them. Revenue per user went up by over thirty percent. Two headline numbers were celebrating an experience that had been degraded.&#91;17&#93;
+
+Auditing the count again would not reveal what the extra queries meant. More queries meant more engagement only if a query was a unit of interest. Set beside sessions and completed tasks, it becomes a unit of effort: seven queries can be worse than two if five were spent recovering from a bad result.
+
+Time changes meaning the same way. An item added to a basket in the first week of a new home screen sits beside curiosity. An item added in the third month sits beside habit. The team's two-week comparisons measured the first and were read as if they reported the second.
+
+A rising number on a well-built dashboard is about the most scientific-looking object a business can produce, and nothing about its appearance tells you what it means.
+
+The next home-screen change was Jalal's own: a new layout for weekly staples. It came back in the familiar shape, with a strong early gain.
+
+Every experimentation team knows the meeting that usually follows. The headline metric is flat, a secondary one is up, and within the hour the secondary metric turns out to be what the experiment was really about. Nobody is lying. The hypothesis has been fitted to the result.
+
+So before the later weeks came in, Jalal and Sam wrote down what the competing explanations predicted. If the gain was lasting, returning customers would hold their new behavior. If it was novelty, their curve would bend back while first-time visitors stayed flatter. They also wrote down what basket size was being taken to mean, and over what period.
+
+Ines read the record before the review.
+
+"Where does it say what would make you stop believing this?"
+
+That was the engineering question. A runbook without an exit condition can become a trap. A test that cannot fail is decoration.
+
+They added the answer.
+
+Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it, and explanations do not always have the courtesy to be mutually exclusive. But the claim had finally named the observation capable of making it lose.
+
+Jalal changed the review rule. No visible home-screen launch would be approved until its committed predictions had been checked, and he kept the authority to override the gate himself.
+
+\*\* Therefore: before the result arrives, write down what the number is taken to mean, over what period, and what would count against the claim. Keep the revision history.
+
+## The First Skill
+
+The probes had needed a week of archaeology because no record said what each launch decision rested on. Jalal wanted the next reviewer, human or not, to start where they had finished.
+
+He asked the agent to draft the lesson as a skill from the forty curves, the probe results, the meeting notes and the committed predictions.
+
+It took four minutes.
+
+The draft was fluent, well formatted and plausible. It had a context, a problem, a Therefore and a tidy list of risks. It said gains on the home screen fade, and it listed the carousel among its supporting cases.
+
+Sam struck the carousel out. Its gain had come from a redirect that dropped users before logging, not from customers losing interest. A pattern that counted a logging bug as evidence of novelty would teach the next reader to stop looking for logging bugs. He narrowed "the home screen" to changes returning customers could see.
+
+Ines read the revision and added two things the draft still lacked.
+
+First: would_be_wrong_if.
+
+Second: a link to locate-the-failure.
+
+Her runbook had taught her what happens when an instruction has no exit condition and no route elsewhere. "Ask Sam" had been a dead end disguised as guidance. The pattern needed to say not only when to call it, but when to stop calling it and where to go next.
+
+Jalal added the confidence mark.
+
+The three knowers had built a fourth.
+
+That exchange is the new shape of Feigenbaum's bottleneck. An agent can read hundreds of experiment records, launch notes, postmortems and chat threads and propose patterns nobody wrote down. Getting knowledge out has become cheap. Deciding which extracted lessons are true, where they apply and when to retire them has not.
+
+A detached explanation once needed a person to keep repeating it. The machine version can persist, travel and act with nobody behind it at all.
+
+That is how high-functioning bullshit becomes infrastructure.
+
+The version that went into the team's skill library read:
+
+\`\`\`yaml
+id: wins-that-fade
+confidence: provisional; tested on visible home-screen changes
+context: A visible home-screen or layout change reports an early gain.
+problem: Returning customers may react to what is new, so an early gain can be mistaken for a lasting preference.
+therefore:
+  - State what the early metric is being taken to mean, and over what period.
+  - Compare returning and first-time customers.
+  - Commit the curve each explanation predicts before reading the later result.
+would_be_wrong_if: returning customers hold the gain on a visible change
+documented_cases: [home_redesign, deals_tile, historical_visible_changes_40]
+excluded_cases: {carousel: logging defect, see locate-the-failure}
+validation_cases_needed: [lasting_gain, faded_gain, outside_scope, insufficient_evidence]
+part_of: review-an-experiment
+may_call: locate-the-failure
+\`\`\`
+
+It belongs inside review-an-experiment and may call locate-the-failure, where the redirect bug now lives, rather than every statistical procedure in the building. Like Alexander's links, those references help a reader choose a method for the difficulty at hand and find an alternative when it fails.
+
+A pattern can mix content that needs different kinds of support. "Returning customers on this screen react to novelty" is a claim about the world. "Compare cohorts before spending more traffic" is a recommendation about effort. "Do not alter a live experiment to rescue its result" is an authority boundary. A successful test of the first does not justify the other two automatically.
+
+Examples carry what rules cannot. I wrote an editing brief for this book after explaining the same corrections to successive agents, and one instruction was "preserve the wandering," which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage teaches it where the rule never did. The examples also carry my taste into the next session, along with my blind spots. Preserving my judgment and preserving my mistakes use the same file format.
+
+Sam could have written something like wins-that-fade years ago, about the screen and about the serializer. The file makes explicit reasons that had lived mostly in his head, and it has a reader he never had to plan for: one that will act on it without asking.
+
+\* Therefore: write the lesson as a pattern, with its context, its cases, what would make it wrong, and links to the patterns it serves and calls.
+
 ## Give the Claim an Address
 
-The probes found the broken assumption, but only after a week of archaeology, because no record said what each launch decision had rested on. Ines wants the next correction to have somewhere to go.
+Trust is not a score attached to a pattern. It is the institution around it: provenance, tests, resources for challenges, and consequences when objections survive.
 
-A reason has to be attached to something. If a launch decision rested on the assumption that two weeks captures the effect, and the assumption turns out to be false, the correction needs somewhere to go: to the assumption and to everything built on it.
+A prior is a belief about an effect: how likely the staples layout is to hold its gain. Trust in a pattern is a belief about a lesson: how reliably wins-that-fade picks out novelty, and where it stops working. The first kind of belief can move while the second remains unearned.
+
+The second needs somewhere for corrections to go.
+
+Take the claim on Jalal's old slide: the redesigned home screen raised basket size by four percent over two weeks. It went into a report. One agent summarized the report; another used the summary to justify the next redesign. Then the gain faded.
+
+Where does the correction go?
+
+Searching every document for the word *basket* is one possible response. It will be popular with the company selling us tokens.
+
+A different design gives each claim its own identity and records what it rests on.
 
 Mathematics has the cleanest version of this problem, and recently a very large one. Anthropic's formalization of Fermat's Last Theorem began badly. The task, in August 2026, was to make Wiles's proof checkable by Lean, and early attempts faltered as agents lost track of the project. The successful effort used Prove2Me: theorem statements became nodes in a dependency graph, with plain-language descriptions that let a worker find a result established by a worker it never met. In eleven days the agents produced a formalization using roughly thirty thousand intermediate theorems. Lean checked the completed proof under its three standard axioms, and a separate comparator confirmed that the final statement was Mathlib's Fermat and not a convenient cousin.&#91;15&#93;
 
 Jon Doyle was building machinery for this in the late 1970s. In his truth maintenance system, beliefs kept their reasons, and when a reason was withdrawn, everything resting on it came up for review.&#91;16&#93; Doyle's machinery tracks justifications. It cannot check them against the world, and a program can faithfully maintain the consequences of reasons that were never true.
 
-Most of us have no Lean. Take the claim on Uncle Jalal's slide: the redesigned home screen raised basket size by four percent over two weeks. It goes into a report. One agent summarizes the report; another uses the summary to justify the next redesign. Then the gain fades. Where does the correction go?
-
-Searching every document for the word basket is one possible response. It will be popular with the company selling us tokens.
-
-A different design gives each claim its own identity and records what it rests on.
+Most of us have no Lean. For the four percent, the records look like this:
 
 |Record|What it says|What the fade changes|
 |---|---|---|
@@ -212,117 +323,19 @@ A different design gives each claim its own identity and records what it rests o
 |Success criterion|Bigger baskets count as improvement.|Repairing the duration does not settle whether this is the right criterion.|
 |Recommendation|Ship it, and build the next redesign on it.|Must be reconsidered if it relied on that assumption.|
 
-With the probes in, the duration assumption changes from accepted for this analysis to withdrawn, with the reason attached, and the two pending launches that relied on it move from ready for approval to requires review, without anyone searching for the word basket. Ordinary software can enforce those transitions without pretending to have discovered the fault itself, and a later worker can follow them back to the assumption that caused them.
+With the probes in, the duration assumption changes from accepted to withdrawn, with the reason attached, and the pending decisions that relied on it move back to review. A later worker, human or agent, can follow them to the assumption that caused the change.
 
-An LLM-written explanation produced after the fact cannot substitute for a record of what the earlier decision actually used. The holiday story shows the problem in human form: a plausible explanation can be generated after the result without becoming part of what the result actually tested.
+Chapter 5 called the shared world of theories, problems and arguments World 3.&#91;27&#93; Language models give it a new front door: the whole library can answer in one voice. But the voice strips away the catalog card unless we rebuild it. Where did this claim come from? What supports it? What contradicts it? What changed since it was written?
 
-If the agent recorded the result and left out the duration assumption, an automatic correction has no link to follow. Lean can check the formal links in a proof. Our graph cannot establish that an agent has recorded every assumption behind a business decision.
+The agent at two in the morning answered without a single catalog card.
+
+An explanation written after the fact cannot substitute for a record of what the earlier decision actually used. And if the agent records the result but leaves out the duration assumption, an automatic correction has no link to follow.
 
 Two measurements can share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. Provenance has to reach the common source.
 
 Capturing every possible dependency would cost more than the inquiry. Start with the support used in the recommendation and let a disputed result send you farther back.
 
 \*\* Therefore: store the claim with what it rests on, so that a correction has somewhere to go.
-
-## Ask What the Number Means
-
-In every one of those tests the count was correct. What failed was the meaning the team attached to it, and other teams have met that failure in a sharper form.
-
-At Bing, a treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up by over ten percent. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue per user went up by over thirty percent. Two of the organization's headline numbers were celebrating an experience that had been degraded.&#91;17&#93;
-
-The count was right, and the cheerful interpretation was wrong. Auditing the count again would not reveal what the extra queries meant. You need another observation: did people actually complete their tasks?
-
-Saussure's point is relational value: a term means what it does through its differences from its neighbors.&#91;18&#93; More queries meant more engaged only inside a system where a query was a unit of interest. Set it beside session and task and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad result. The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return.
-
-Time does the same work as neighbors. An item added to a basket in the first week of a new home screen sits beside curiosity. An item added in the third month sits beside habit. The team's two-week comparisons measured the first and were read as if they reported the second.
-
-Both failures wear the costume of evidence. A rising number on a well-built dashboard is about the most scientific-looking object a business can produce, and nothing about its appearance tells you what it means.
-
-\*\* Therefore: record what the number is taken to mean, including the period it is taken to cover, as a claim of its own, open to challenge separately from the count.
-
-## Commit the Test Before the Result
-
-Every experimentation team knows this meeting. The dashboard arrives before the agreement does. The headline metric is flat, a secondary one is up, and within the hour the secondary metric turns out to be what the experiment was really about. Nobody is lying. The hypothesis has been fitted to the result.
-
-The next change Ines reviews is a new layout for weekly staples, proposed by Uncle Jalal. It comes back in the familiar shape, with a strong two-week gain on the screen where gains fade. She can praise the obvious explanation, criticize it or ask a model to do both. None of that changes the data. To learn anything, she has to say in advance what would look different if the gain were novelty.
-
-Popper's demand applies here in its plainest form. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test. Every explanation of the fades had depended on exactly that arrangement.
-
-Ines writes two predictions into the experiment record before the result is final. If the gain is lasting, returning customers will hold their new behavior through the later weeks of the experiment. If it is novelty, their curve will bend back toward the control while first-time visitors stay flatter. She adds the predictions to the candidate pattern itself. The pattern has named a case it claims it can distinguish. Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it, and explanations do not always have the courtesy to be mutually exclusive.
-
-She also changes the review rules. From now on, no home-screen launch is approved until its committed predictions have been checked, and only someone senior can override the gate.
-
-Someone suggests breaking the result down by device first. The chart is lovely, and both explanations predict it, so it distinguishes nothing.
-
-A model will propose a distinguishing test plausibly enough if asked. The commitment is stronger when the test goes into the experiment record before the result and the later review checks against it. Experimentation platforms and preregistered trials work this way on paper. Anyone who has sat in the meeting above knows how far practice is from paper.
-
-\*\* Therefore: write down what would count against the claim before the result arrives, and keep the revision history.
-
-## Make the Pattern Face Cases
-
-A pattern that only explains the cases that produced it is a story with a good filing system.
-
-Engineering has a useful habit here. A regression test takes a failure that happened once and turns it into a challenge the system must survive again. The equivalent for Ines's pattern is not one special experimental technique. It is a growing set of cases: fades it should catch, lasting gains it should leave alone, ambiguous results on which it should admit uncertainty, and old launches replayed through the new review rule.
-
-That changes what the archive is for. The three vanished wins are no longer anecdotes supporting "wins fade." They are training cases for a proposal that can now be wrong in recognizable ways. The next launches become validation cases. An A/A test can still check whether the experimentation platform invents differences between identical arms. Cohort curves can test the novelty explanation. Later outcomes can tell the team whether a pattern that looked useful at decision time kept earning its confidence. The technique depends on the claim. The invariant is that the pattern must meet cases it did not get to choose.
-
-None of this is free. Product evidence costs traffic, engineering time and calendar time. Replaying old decisions costs analysis. Following an effect after the launch meeting has ended costs attention. That is why the archive had accumulated answers faster than challenges.
-
-Larry Laudan called one version of the distinction acceptance and pursuit.&#91;19&#93; What to believe today and what to investigate tomorrow are different questions. Chapter 5 asked who gets the next agent; here the same allocation problem decides which doubts get investigated.&#91;20&#93; A policy that funds only today's accepted method can prevent its alternatives from collecting the evidence that would make them credible.
-
-So Ines asks for capacity to test the candidate pattern against the next three relevant launches and against old cases it did not produce. The request lands with the owner of the experimentation budget, who reasonably asks what metric this work is expected to raise. Ines is asking for something slightly different: evidence about whether the organization's own lesson is any good.
-
-She splits the request. The product experiments remain owned by the product teams. The pattern evaluation gets a small review budget of its own. A separate question—whether the success criterion itself should change—goes to whoever owns the product goal. It is declined, and the rejection is recorded as a decision about the goal, with a name on it. At least the no has an address.
-
-An agent with a sound epistemic objection still has no authority to spend somebody else's money. A funding policy can reserve capacity for challenges to the incumbent, but that policy is itself a choice made by people with power. Written into code, it can at least be inspected.
-
-\* Therefore: give unresolved questions and candidate patterns an allocation policy for the evidence they still need, and attach each funding decision to the question it leaves unanswered.
-
-Otherwise unfunded gradually becomes unsupported, and unsupported becomes disproved somewhere between the database and the executive summary.
-
-## The Pattern Goes to Work
-
-The next three relevant launches were Uncle Jalal's staples layout, a second version of the deals tile, and a reminder that told customers when their usual delivery slot was about to fill up. The reminder was the least glamorous item from the workshop. It had come from the smaller sticky note.
-
-This time the dashboard was not the star. The candidate pattern sat beside it, already committed to what it expected to see: visible changes should move returning customers more sharply than first-time visitors; if novelty was doing the work, their curve should bend back.
-
-The staples layout did. The deals tile did. The slot reminder did not. Customers who used the reminder once kept responding to it week after week. Nobody would have put it on a conference slide.
-
-Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two of the three launches and wrong about the one that had been his idea.
-
-Now both kinds of expertise had failed in public. Jalal's imported knowledge had lost its conditions on the journey. Sam's tribal knowledge had stayed close to its conditions and still overreached. Neither needed replacing by the other. Both needed a form that could travel far enough to meet cases capable of changing it.
-
-The pattern now had something Sam's original intuition and Uncle Jalal's imported experience had lacked in common: a history of where it worked, where it failed, and why its confidence had moved.
-
-The next reviewer should not have to rediscover any of this, or spend a week in Ines's meeting. She writes the lesson down as a candidate pattern, with the reasons and the uncertainty kept alongside the instruction:
-
-\`\`\`yaml
-id: wins-that-fade
-confidence: provisional, tested on visible home-screen changes
-context: A visible home-screen or layout change reports an early gain.
-problem: Returning customers may react to what is new, so an early gain can be mistaken for a lasting preference.
-therefore:
-  - State what the early metric is being taken to mean.
-  - Compare returning and first-time customers.
-  - Commit the curve each explanation predicts before reading the later result.
-documented_cases: [three_faded_launches, staples_layout, deals_tile, slot_reminder]
-validation_cases_needed: [lasting_gain, faded_gain, outside_scope, insufficient_evidence]
-part_of: review-an-experiment
-may_call: locate-the-failure
-evidence_record: fade-evaluations
-open_questions: fade-challenges
-on_support_withdrawn:
-  - Reassess dependent interpretations using their remaining support.
-  - Return recommendations that lost required support to review.
-  - Retain the earlier decision and the reason for its change.
-\`\`\`
-
-It belongs inside review-an-experiment and may call locate-the-failure, where the redirect bug now lives, rather than every statistical procedure in the building. Like Alexander's links, those references help a reader choose a method for the difficulty at hand and find an alternative when it fails.
-
-A pattern can also mix kinds of content that need different kinds of support. "Returning customers on this screen react to novelty" is a claim about the world. "Compare cohorts before spending more traffic" is a recommendation about effort. "Do not alter a live experiment to rescue its result" is an authority boundary. A successful test of the first does not justify the other two automatically.
-
-Sam could have written something like this years ago, about the screen and about the serializer. Ines's version makes explicit the reasons that had lived mostly in Sam's head, and it has one reader Sam never had to plan for.
-
 
 ## A Reader That Can Act
 
