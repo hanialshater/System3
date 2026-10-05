@@ -202,6 +202,8 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 40. <a id="ref-06-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
 
+A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, and Anima Anandkumar, “Voyager: An Open-Ended Embodied Agent with Large Language Models,” 2023. Voyager uses an ever-growing library of executable skills indexed by descriptions; retrieved skills can be composed into more complex programs. <https://arxiv.org/abs/2305.16291>.
+
 ### Additional sources
 
 - Frank P. Ramsey, “Truth and Probability,” written 1926, published posthumously in *The Foundations of Mathematics and Other Logical Essays* (1931). On partial belief, subjective probability, preference and the early Dutch-book idea, see the Stanford Encyclopedia of Philosophy, “Frank Ramsey,” §6, <https://plato.stanford.edu/entries/ramsey/>.
@@ -212,7 +214,6 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 - Larry Laudan, *Progress and Its Problems: Towards a Theory of Scientific Growth* (University of California Press, 1977).
 - David L. Hull, *Science as a Process* (University of Chicago Press, 1988).
 - Philip Kitcher, “The Division of Cognitive Labor,” *Journal of Philosophy* 87 (1990), 5–22; *The Advancement of Science* (Oxford University Press, 1993).
-- Guanzhi Wang et al., *Voyager: An Open-Ended Embodied Agent with Large Language Models*, 2023. <https://arxiv.org/html/2305.16291v2>.
 - *Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models*, 2025. <https://arxiv.org/html/2510.04618v1>.
 - Yuval Noah Harari, *Sapiens: A Brief History of Humankind*, 2014, ch. 14, “The Discovery of Ignorance.”
 - Jai Lal Lulla et al., *On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents*, 2026, [arXiv:2601.20404v2](https://arxiv.org/html/2601.20404v2), revised 30 March.
