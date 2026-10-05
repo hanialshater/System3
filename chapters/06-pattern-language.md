@@ -162,7 +162,7 @@ Agent skills give the arrangement a container with much of Alexander's anatomy.&
 
 Voyager, a Minecraft agent described in 2023, shows a narrow but real version of this. It stored mastered behaviors as executable programs, indexed them by descriptions, retrieved them for related tasks, and composed simpler skills into harder ones.&#91;A&#93; Its world also supplied something the grocery company lacked: fast environmental feedback. Minecraft tells you quickly whether the pickaxe exists. Voyager's skill library lived in engineering's world of cheap checks.
 
-I avoid calling a natural-language pattern executable, because the word hides the reader: the same words can produce different actions in different models. A pattern written for an agent is still a hypothesis, now with a reader that can act on it at two in the morning.
+Calling a natural-language pattern executable hides the reader: the same words can produce different actions in different models. A pattern written for an agent is still a hypothesis, now with a reader that can act on it at two in the morning.
 
 The agent that answered Ines showed what such a reader does with fluent text and no reasons. Nothing in the skill format forces the writer to include those reasons or the reader to respect them.
 
@@ -196,7 +196,7 @@ Sam said he had known for years that the screen did something like this. Then he
 
 The archive needed to represent something older than experimentation platforms. In 1926 Frank Ramsey's *Truth and Probability* treated belief as graded rather than binary and tied those degrees to the choices a person was prepared to make.&#91;3&#93; Later subjectivist and decision-theoretic work developed the machinery, but the useful move here is simple: do not stamp an idea true or false. Record how much confidence you have, what that confidence rests on, and what evidence should move it.
 
-Popper rejected treating successful tests as making a theory more probable. His tradition and Ramsey's are not the same philosophy. I need something from each. Ramsey gives partial belief rather than verdicts. Popper asks whether the claim has met evidence capable of making it lose.
+Popper rejected treating successful tests as making a theory more probable. His tradition and Ramsey's are not the same philosophy; here they divide the work. Ramsey gives partial belief rather than verdicts. Popper asks whether the claim has met evidence capable of making it lose.
 
 The probes did both. They moved confidence, and they could have come back the other way.
 
@@ -266,7 +266,7 @@ That is how high-functioning bullshit becomes infrastructure.
 
 The version that went into the team's skill library read:
 
-\`\`\`yaml
+```yaml
 id: wins-that-fade
 confidence: provisional; tested on visible home-screen changes
 context: A visible home-screen or layout change reports an early gain.
@@ -281,7 +281,7 @@ excluded_cases: {carousel: logging defect, see locate-the-failure}
 validation_cases_needed: [lasting_gain, faded_gain, outside_scope, insufficient_evidence]
 part_of: review-an-experiment
 may_call: locate-the-failure
-\`\`\`
+```
 
 It belongs inside review-an-experiment and may call locate-the-failure, where the redirect bug now lives, rather than every statistical procedure in the building. Like Alexander's links, those references help a reader choose a method for the difficulty at hand and find an alternative when it fails.
 
@@ -385,7 +385,7 @@ An agent with a sound epistemic objection still has no authority to spend somebo
 
 After a quarter of comparisons, the top of the file read:
 
-\`\`\`yaml
+```yaml
 id: wins-that-fade
 confidence: supported for visible layout and home-screen changes; untested elsewhere
 scope: changes returning customers can notice and react to as new
@@ -394,7 +394,7 @@ lasting_cases: [slot_reminder]
 known_failure: misapplied to an invisible checkout speed-up whose gain persisted
 revision: treat changes customers cannot see, such as speed, as outside scope
 evidence_record: fade-evaluations
-\`\`\`
+```
 
 The next agent can see where the pattern has been tested, where it held, and how its predecessor misused it. Nobody had to retrain anything to get there.
 
@@ -440,7 +440,7 @@ A product owner can reasonably care about decision speed while a researcher care
 
 A year after Jalal, Sam and Ines wrote the first skill, the file had grown fields nobody would have put in version one:
 
-\`\`\`yaml
+```yaml
 open_questions:
   - Does the fade pattern hold outside the home screen?   # unfunded
 funding:
@@ -454,7 +454,7 @@ objections:
     decision: Keep the current primary criterion; require the fade pattern to remain visible in major reviews.
     owner: head of product
     reason: A longer-term primary criterion would slow the team's decision cycle substantially.
-\`\`\`
+```
 
 An open_questions field that no decision ever consults is a decorative conscience.
 
@@ -530,7 +530,7 @@ Alexander's book had an answer in its structure: a smaller pattern is chosen in 
 
 The patterns in this chapter now form a small language for institutions that run on agents:
 
-\`\`\`text
+```text
 **  locate-the-failure              trace assumptions; probe what distinguishes the failures
 **  say-what-the-result-would-mean  meaning, period and refutation, written first
 **  give-the-claim-an-address       each claim stored with what it rests on
@@ -539,7 +539,7 @@ The patterns in this chapter now form a small language for institutions that run
 *   objection-travels               unresolved objections go with the decision
     change-the-inheritance          the next worker may challenge what it inherits
     put-the-procedure-under-test    no Therefore yet
-\`\`\`
+```
 
 They have to earn their asterisks together.
 
@@ -551,7 +551,7 @@ A procedure with provenance records, committed predictions, pattern evaluations 
 
 Feyerabend argued in *Against Method* that every rule of method has been usefully broken somewhere in the history of science.&#91;40&#93; Requiring a test before setting a rule aside is itself another methodological rule.
 
-The lesson here is narrower and brutal: a procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
+The relevant lesson is brutal: a procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
 
 Some failures yield to comparison: one retrieval policy against another, reviewers given different evidence, a branch with a pattern withheld to expose errors its presence concealed. Engineering already does this when it turns chaos experiments on its own monitoring.
 
