@@ -110,9 +110,9 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "c654693f537a9a399c22ec30265b0076ad679ec7e483fcbfabba2fa3c2d96cd9",
+      "source_sha256": "dd7e4d02fc4bcf5de9cece59128dea039598a8b9f7b4cb7b10db3beafdb3e6fa",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "7fd11453ca5305ef0c1bdfab463f09c4d8e016f25a3e101c79b66149053a9d39",
+      "brief_sha256": "a50cb3122d0f9a8c3eaad990621a69bc08910fa7948994c6d9c26ac6dcedb8c6",
       "sections": [
         "Opening passage",
         "The Workshop",
