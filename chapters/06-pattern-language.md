@@ -337,130 +337,108 @@ Capturing every possible dependency would cost more than the inquiry. Start with
 
 \*\* Therefore: store the claim with what it rests on, so that a correction has somewhere to go.
 
-## A Reader That Can Act
-
-Alexander's patterns and the programmers' patterns both had a human reader. Ines's file will be read by a machine with tools. The file can now do more than remind someone: it can raise a challenge, route a claim back to review or call another skill.
-
-People had tried to give written knowledge to machines before. In 1977, the year of Alexander's book, Edward Feigenbaum named the attempt knowledge engineering, and found its hardest part in the expert: getting the knowledge out, then making the system handle each exception the expert eventually admitted to.&#91;21&#93; Expert systems spent years interviewing people like Sam, and most of them died of the interviews and the upkeep.
-
-Andrej Karpathy's count of the ways to program a computer tells what changed. In Software 1.0 a person writes the rules as code; the Gang of Four's patterns lived there, advice for the human holding the keyboard. In Software 2.0 the program is a set of learned weights, which can absorb what nobody could articulate and offer no convenient place to amend a pattern's conditions. In Software 3.0 the program is written in a natural language and a model interprets it.&#91;22&#93; The machine doing the work can now read the pattern, follow its Therefore and consult the reasons behind it, without every qualification first being translated into logic.
-
-I avoid calling such a document executable, because the word hides the reader: the same words can produce different actions in different models.
-
-Agent skills give the arrangement a container with much of Alexander's anatomy. A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the Therefore. Calls to other skills serve as links to smaller patterns.&#91;23&#93;
-
-Feigenbaum's bottleneck has also moved. An agent can read three hundred experiment records, launch notes, postmortems and chat threads in an afternoon and propose patterns nobody wrote down. Given an archive that recorded the weeks after each test, it could have found Sam's fading screen before the quarterly review ever needed an explanation. Getting knowledge out has become cheap. Deciding which of the extracted lessons are true, where they apply and when to retire them has not.
-
-So Ines puts the lesson in her team's skill library. Nothing in the format makes the writer include the reasons or the reader act on them. A library like that can preserve the wrong lesson at industrial speed.
-
-A language model can produce the shape of a careful argument on any topic in seconds: context, caveats, a confident recommendation, a tidy list of risks. A skill it writes for you will be fluent, well formatted and plausible, with nobody behind it who once doubted it. A detached explanation once needed a person to keep repeating it. The machine version can persist, travel and act with nobody behind it at all. High-functioning bullshit has become infrastructure.
-
 ## The File Says No
 
-Ines gives the file to the team's review agent and asks it to review an experiment. Does it do better?
+For two months the review agent raised wins-that-fade whenever a visible home-screen change reported an early gain. It asked for the cohort comparison, cited the cases behind the warning and checked the committed predictions.
 
-The query "review this experiment" can retrieve a popular checklist and leave the fade warning untouched on disk. Loading every checklist gives the reviewer the whole office filing cabinet and asks it to find the urgent part. Whether retrieval worked shows up later, in whether the review caught what mattered.
+Three launches went through it: Jalal's staples layout, a second version of the deals tile, and Sam's slot reminder from the smallest note on the workshop board.
 
-Retrieval works. For two months the agent raises the pattern whenever a visible home-screen change reports an early gain. It asks for the cohort comparison the file calls for, cites the cases behind the warning, and distinguishes the ones that faded from the slot reminder that did not. The team starts to trust the file.
+The staples layout faded.
 
-Then the checkout team ships a speed-up. Pages load faster and completed orders rise. The agent retrieves wins-that-fade and treats the result as another novelty case. It recommends delaying the broader rollout until the novelty pattern has been checked. The checkout team objects that customers do not get used to a page loading quickly in the same sense that they get used to a redesigned home screen. The file answers with its confidence and its documented cases. Ines's review gate makes the recommendation binding unless someone senior overrides it.
+The deals tile faded.
 
-Uncle Jalal is the someone senior. The recommendation is fluent, cited and comes from a pattern that has earned trust. He signs it. The later evidence shows that the speed gain was durable.
+The slot reminder did not. Customers who used it once kept responding to it week after week. Nobody would have put it on a conference slide.
 
-The mistake is institutional. A pattern whose scope was visible changes had acquired authority over an invisible performance improvement. The file had started producing its own feathers.
+Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his idea.
 
-The pattern said confidence: provisional, five incidents on one screen. Nothing on a checkout page is new in the way a home-screen banner is new. "Two-week gains are usually novelty" is far more than five incidents can teach.
+Now both kinds of expertise had failed in public. Jalal's imported knowledge had lost its conditions on the journey. Sam's local knowledge had stayed close to its conditions and still overreached. Neither needed replacing by the other. Both needed a form that could travel far enough to meet cases capable of changing it.
 
-In Ramsey's terms, confidence is a degree of belief, and a rational degree of belief should not float free of the evidence and choices that give it meaning. To find out how much confidence this pattern deserves, it has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same reports: some with faded gains behind them, some with lasting gains, some with too little evidence to say. The comparison keeps the model and tools fixed, repeats runs, and records both the quality of the conclusions and the resources consumed. A reviewer that warns about novelty in every report has learned how to sound concerned. A generic instruction to be careful can serve as the control. If the elaborate pattern performs no better, its philosophical bibliography does not entitle it to more context.
+The team started to trust the file.
 
-Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks.&#91;24&#93;
+Then the checkout team shipped a speed-up. Pages loaded faster and completed orders rose. The agent retrieved wins-that-fade, treated the result as another novelty case and recommended delaying the broader rollout until the pattern's predictions had been checked.
 
-A lesson that passes also carries its scope. After a quarter of comparisons, the top of Ines's file reads:
+Ines, who had built half of the speed-up, objected that customers do not get used to a page loading quickly the way they get used to a new banner. Nothing on the checkout page was new in that sense.
+
+The file answered with its confidence and documented cases. Jalal's review gate made the recommendation binding unless someone with override authority stepped in.
+
+That was Jalal.
+
+The recommendation was fluent, cited and came from a pattern that had earned trust partly by proving its own co-author wrong. He signed it.
+
+The later evidence showed that the speed gain was durable.
+
+The mistake was institutional. A pattern whose scope was visible changes had acquired authority over an invisible performance improvement. Forty home-screen launches can teach a great deal about home screens and nothing about checkout speed.
+
+The file had started producing its own feathers: the pattern written to make the room distrust confident stories had become the most confident story in the room.
+
+In Ramsey's terms, confidence is a degree of belief. To earn that confidence, the pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same historical reports: faded gains, lasting gains, ambiguous cases. The model and tools stayed fixed. A generic instruction to be careful served as the control.
+
+A reviewer that warns about novelty in every report has learned how to sound concerned.
+
+Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none; generated files also raised average costs across the two benchmarks.&#91;24&#93; Writing knowledge down for agents does not, by itself, make them better.
+
+Testing the pattern costs traffic, analysis and calendar time. Larry Laudan called one version of the distinction acceptance and pursuit.&#91;19&#93; What to believe today and what to investigate tomorrow are different questions. A policy that funds only today's accepted method can prevent alternatives from collecting the evidence that would make them credible.
+
+So Jalal split the problem. Product experiments stayed with the product teams. Pattern evaluation got a small review budget of its own. A different question—whether the success criterion itself should change—went to the head of product, who owned the goal.
+
+An agent with a sound epistemic objection still has no authority to spend somebody else's money. A funding policy is itself a choice made by people with power. Written into the record, it can at least be inspected.
+
+After a quarter of comparisons, the top of the file read:
 
 \`\`\`yaml
 id: wins-that-fade
 confidence: supported for visible layout and home-screen changes; untested elsewhere
 scope: changes returning customers can notice and react to as new
+documented_cases: [home_redesign, deals_tile, staples_layout, deals_tile_v2, historical_visible_changes_40]
+lasting_cases: [slot_reminder]
 known_failure: misapplied to an invisible checkout speed-up whose gain persisted
 revision: treat changes customers cannot see, such as speed, as outside scope
 evidence_record: fade-evaluations
 \`\`\`
 
-The next agent can see both where the pattern has been tested and how its predecessor misused it. Nobody had to retrain anything to get there.
+The next agent can see where the pattern has been tested, where it held, and how its predecessor misused it. Nobody had to retrain anything to get there.
 
-\* Therefore: record how sure we are of each pattern, and make it earn that confidence on cases that did not produce it.
+\* Therefore: record how sure we are of each pattern, make it earn that confidence on cases that did not produce it, and fund the evidence it still needs.
 
-## Change What We Measure
+## Noted
 
-The pattern makes two-week gains more trustworthy. It leaves the deeper question alone. The slot reminder suggested that what mattered was whether customers came back, and two-week basket size could not see that at all.
+The larger objection still stood. On the home screen, early basket gains often predicted later behavior poorly, and the slot reminder suggested that what mattered was whether customers came back. Two-week basket size could not see that at all.
 
-Even if the team adopts a longer-term criterion tomorrow, every record in the archive still speaks in two-week baskets. Reorganizing around what customers do over time—whether they return, whether their weekly shop gets easier—requires alternative representations, not merely alternative answers. It can introduce the new records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty. If it scores every proposal on two-week baskets, the better approach looks worse exactly where it stops chasing novelty. Letting the challenger write an evaluator that declares itself the winner would prove little. The approaches need an explicit dispute about what evaluation is for, then observations both sides accept.
+Changing a criterion is harder than changing an answer. Every record in the archive spoke in two-week baskets. A criterion built on what customers do over months needs new records, new instruments and new traffic. The evaluator is part of the difficulty: if it scores every proposal on two-week baskets, the alternative looks worse exactly where it stops chasing two-week baskets.
 
-A field can go further and change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
+Jalal and Sam took the evidence to the head of product, who had declined the longer-term criterion once already.
 
-Before deep learning became dominant, there were several respectable ways to write a machine-learning paper. One began with a probabilistic model of how the data arose, derived the inference and tried to say something about uncertainty. In much of computer vision, people designed features before training a classifier. The architecture of the problem was partly in the heads of the people building it.
+This time they had more than an intuition.
 
-In 2012 the AlexNet team won ImageNet with an ensemble of convolutional networks and a top-five error of about fifteen percent. The runner-up, using engineered features, had twenty-six.&#91;25&#93; That gap was legible on the existing scoreboard. What followed changed more than the score: learning the features became central to how much of the field worked. An expert could remain excellent at the old work while watching less of the new work require it.
+The reply arrived the next morning, one word long:
 
-Kuhn called what a field holds onto in such moments a paradigm. It supplies exemplary achievements, important problems and standards for adequate solutions, and it makes normal science possible because practitioners need not reconstruct the foundations before each experiment.&#91;26&#93; Here the old benchmark helped persuade people to change. The scoreboard survived; the education of the person standing in front of it changed. In this respect AlexNet is the easier case, because the new representation won on the number everyone already trusted. Ines's case is harder. Her new representation has to argue with the number.
+*noted.*
 
-Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what happened to uncertainty, small-data performance or guarantees. A six-week metric would cost the team two thirds of its experiments.
+Facebook paid for a much larger version of the same lesson. For years it tuned its feed for engagement and time spent. In December 2017 its researchers publicly reviewed evidence that passive consumption could leave people feeling worse,&#91;32&#93; and in January 2018 the company announced a shift toward "meaningful social interactions," saying it expected people to spend less time on the platform.&#91;33&#93; According to internal documents later reported by the Wall Street Journal, researchers then found publishers and political parties shifting toward outrage because that was what travelled, and Zuckerberg reportedly resisted fixes that materially reduced the new metric.&#91;34&#93; The same reporting described researchers inside Instagram struggling to get colleagues to appreciate the gravity of their findings. One former researcher put the institutional problem precisely: "We're standing directly between people and their bonuses."&#91;35&#93;
 
-The examples are part of how a paradigm holds. Kuhn's scientists learn from exemplars that no complete list of explicit rules can replace. I wrote an editing brief for this book after explaining the same corrections to successive agents, and later had agents mine the brief's rules from my own correction history. One instruction was "preserve the wandering," which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage can teach the distinction: one version follows an uncertain thought until it becomes clear; the other announces the conclusion and removes the path that made it convincing. Those examples also carry my taste into the next session. Preserving my judgment and preserving my mistakes used the same file format.
+The organization had paid for knowledge it was resisting.
 
-There is no paradigm_shift() call. But a system can branch a representation, retain the old interpretation, collect observations the old representation ignored, and expose the standard on which the two disagree.
+A response to an objection should identify the claim it challenges and say what happened to it: new evidence, a revised claim, another experiment, a reason the criticism does not apply, or a budget decision that left it open.
 
-Therefore: give the branch room to ask a different question, and make it state where its results cannot be translated into the old terms.
+Closed says only that somebody stopped typing.
 
-The hard boundary is not writing the alternative into open_questions. It is paying for observations the old records never collected. Representation change eventually becomes a decision about instruments, traffic, time and authority.
+Noted is none of these.
 
-## Agents Together
+With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out.
 
-One reviewer with one file is still Ines with a better notebook. The larger change comes when many agents work on the same body of knowledge.
+We have successfully parallelized the experience of being ignored.
 
-The team builds a small version of this. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches whether accepted patterns continue to fit the launches that follow. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others, any more than Carlini's sixteen compiler agents did. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
+Helen Longino would locate the failure in the community. On her account, objectivity belongs to a community's criticism and depends on venues for it, uptake, shared standards and a tempered equality of intellectual authority.&#91;36&#93; The review channel provided a venue. Uptake was what went missing.
 
-Chapter 5 called the shared world of theories, problems and arguments World 3.&#91;27&#93; Language models give it a new front door: the whole library can answer in one voice. But the voice strips away the catalog card unless we rebuild it. Where did this claim come from? What supports it? What contradicts it? What changed since it was written? Without those handles, World 3 fills with fluent claims nobody can trace.
+Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. Objections travel with the proposals as other agents combine them into a longer argument. At final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect remains tied to the claim that failed, so the next round can repair it or try another route.&#91;37&#93;
 
-A shared graph also changes where the work goes. In September 2026 OpenAI described moving its agents from other Millennium Problems onto Navier–Stokes once a result on the Euler equations made that route look promising, carrying the groups' findings into the next prompts. The group grew to roughly ten thousand concurrent agents and produced a proposed proof of finite-time blowup under smooth forcing, which was then formalized and verified in Lean.&#91;28&#93; On September 11 the Clay Mathematics Institute said the problem appeared to be settled, with evaluation and credit to follow its deliberately unhurried process.&#91;29&#93; The other problems had only lost their workers.
+Who gets to object matters too. A critic who receives only the conclusion cannot examine the assumption. Telling the same model to play skeptic produces another argument, not another observation.
 
-Who deserves credit for the route is now disputed, and the participants' accounts are in the references.&#91;30&#93; One detail belongs here. The rumor that started OpenAI's search concerned concurrent work by Tristan Buckmaster and Levent Alpöge. According to OpenAI, Alpöge was an Anthropic employee, and the pair used an internal Anthropic model to resolve the forced Euler problem. This book relies on Anthropic's reports in several chapters, so that belongs in the record too.
+And some disputes were never about evidence.
 
-The record also needs room for results nobody assigned. In August 2026 an unreleased Claude, pointed at the Riemann hypothesis by an Anthropic engineer who was not a mathematician, failed to prove it and along the way raised the lower bound on zeros on the critical line from 41.6 to 67.2 percent; mathematicians checked the result and it was formalized in Lean.&#91;31&#93; An evaluator asking whether the assigned problem was solved would say no, correctly, and miss the research. Whether to keep pursuing the route is Laudan's question again.
+A product owner can reasonably care about decision speed while a researcher cares about what customers do months later. Both can be reliable observers and still want different decisions. A system that cannot distinguish disputes more evidence could settle from disputes about purpose will keep requesting evidence to avoid naming a conflict over what matters.
 
-Mathematics has Lean to catch fluent nonsense. A product organization has experiments, A/A tests, cohort checks, later outcomes and sometimes nothing better than another contested measurement. They are slower and noisier. The graph is only as honest as the checks feeding it.
-
-\* Therefore: let agents share claims through a graph that records what each rests on, and record where the work was moved and why.
-
-## Give the Objection a Consequence
-
-The objection from the pattern work still stands. On the home screen, early basket gains often predicted later behavior poorly. After retrieving the lesson, testing it and paying for the evidence it asked for, the organization can still arrange for nothing to follow.
-
-Ines takes the accumulated pattern evidence back to the head of product, who had declined the longer-term criterion once already. This time she has more than an intuition. The reply arrives the next morning, one word long: noted.
-
-Facebook paid for a much larger version of the same lesson.
-
-For years Facebook tuned its feed for engagement and time spent. In December 2017, Facebook's researchers publicly reviewed evidence that passive consumption could leave people feeling worse.&#91;32&#93; A person could keep scrolling without becoming better off. It was Bing's question again, except that the activity being counted was now hours of people's lives.
-
-In January 2018 the company announced a shift toward "meaningful social interactions" among friends and family, and said it expected people to spend less time on the platform.&#91;33&#93; It looked like the right fix: scientific, reasonable, informed by its own research.
-
-Then, according to internal documents reported by the Wall Street Journal, its researchers found publishers and political parties shifting toward outrage because that was what traveled, with misinformation and toxicity unusually common among reshares. The new metric had assumed that interaction meant connection. Proposed fixes stayed limited, and Zuckerberg reportedly resisted changes that materially reduced the interaction metric.&#91;34&#93;
-
-The same reporting described researchers inside Instagram struggling to get colleagues to appreciate the gravity of their findings. One former researcher put the institutional problem rather precisely: "We're standing directly between people and their bonuses."&#91;35&#93;
-
-The organization had paid for the knowledge it was now resisting, and the public learned of the dispute through leaked documents.
-
-A response to an objection should identify the claim it challenges and say what happened to it: new evidence, a revised claim, another experiment, a reason the criticism does not apply, or a budget decision that left it open. Closed says only that somebody stopped typing. "Noted" is none of these. With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out. We have successfully parallelized the experience of being ignored.
-
-Helen Longino would locate that failure in the community. On her account, objectivity belongs to a community's criticism, and depends on venues for it, uptake, shared standards and a tempered equality of intellectual authority.&#91;36&#93; The review channel provides a venue.
-
-Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim that failed, so the next round can repair it or try another route.&#91;37&#93; Failed drafts remain available with their reviews attached. The reviewers can still be wrong.
-
-Who gets to object matters too. A critic who receives only the conclusion cannot examine the assumption. Telling the same model to play skeptic produces another argument, not another observation. And some disputes were never about evidence.
-
-A product owner can reasonably care about decision speed while a researcher cares about what customers do months later. Both can be reliable observers and still want different decisions. The system must distinguish disputes that more evidence can settle from disputes about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
-
-A year after Ines opened it, her file has grown fields nobody would have put in the first version:
+A year after Jalal, Sam and Ines wrote the first skill, the file had grown fields nobody would have put in version one:
 
 \`\`\`yaml
 open_questions:
@@ -471,17 +449,16 @@ funding:
 objections:
   - claim: Two-week basket size counts as improvement.
     evidence: Repeated cases show that early home-screen gains can fade as returning customers adapt.
+    kind: purpose
     status: unresolved
     decision: Keep the current primary criterion; require the fade pattern to remain visible in major reviews.
     owner: head of product
     reason: A longer-term primary criterion would slow the team's decision cycle substantially.
 \`\`\`
 
-An open_questions field that no decision ever consults is a decorative conscience. These lines matter when the next review follows them, notices that the evidence concerns another screen or another app version, and changes what it is prepared to conclude.
+An open_questions field that no decision ever consults is a decorative conscience.
 
 \* Therefore: if the organization proceeds with an objection unresolved, the objection travels with the decision, and the decision-maker owns that choice in writing.
-
-The objection can now survive its author. So can the assumption it challenges. Replace every agent in the institution and the same dispute may begin again, with the same side already winning.
 
 ## Test What the Next Agent Inherits
 
