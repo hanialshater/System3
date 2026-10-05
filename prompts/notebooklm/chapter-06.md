@@ -71,7 +71,7 @@ Match the book's illustrations, not a generic AI look.
 11. Give the Claim an Address
 12. Ask What the Number Means
 13. Commit the Test Before the Result
-14. Borrow the Load Test
+14. Make the Pattern Face Cases
 15. The Pattern Goes to Work
 16. A Reader That Can Act
 17. The File Says No
