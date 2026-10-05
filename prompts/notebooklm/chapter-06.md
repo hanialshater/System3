@@ -21,13 +21,14 @@ Knowledge must survive its author, travel with enough context for another worker
 - the full software lineage: Beck and Cunningham carry patterns into programming; Design Patterns turns them into a shared vocabulary; Cunningham builds WikiWikiWeb to collect patterns; Wikipedia later inherits the wiki; pattern names begin travelling faster than their reasons; Alexander's 1996 keynote asks whether programmers preserved what mattered
 - the wins that vanish and high-functioning bullshit at the quarterly review
 - Ines at two in the morning with the runbook that says ask Sam
-- the novelty investigation, then the candidate pattern facing old and new cases and going to work
+- Jalal, Sam and Ines turning the forty historical curves into the first agent skill; Sam removes a false supporting case, Ines adds the exit condition and route to another pattern, Jalal adds confidence
 - the wins-that-fade skill becoming executable knowledge
 - the file wrongly blocking a checkout speed-up and earning a narrower scope
 - Bing's correct numbers with the wrong meaning
 - the one-word noted response followed by Facebook and Longino
 - stale inherited knowledge becoming high-functioning bullshit with no author
-- the second workshop and the final ask Ines line
+- Three Departures: the predecessor leaves and reasons vanish; Sam leaves and the company keeps working; agent sessions end while inherited beliefs remain
+- the pattern library composing across multiple agents, then the second workshop and final ask Ines line
 
 ## Lines to keep word for word
 
@@ -58,29 +59,22 @@ Match the book's illustrations, not a generic AI look.
 
 ## Source order
 
-1. Opening passage
-2. The Workshop
-3. Light on Two Sides
-4. Wins That Vanish
-5. The Quarterly Review
-6. Two in the Morning
-7. Why Engineering Learns
-8. Ask Sam
-9. Why Experiments Don't Learn
-10. Locate the Failure
+1. The Handover
+2. Feathers
+3. Wins That Vanish
+4. Two in the Morning
+5. Light on Two Sides
+6. Names Travel Faster Than Reasons
+7. A Reader That Can Act
+8. Locate the Failure
+9. Say What the Result Would Mean
+10. The First Skill
 11. Give the Claim an Address
-12. Ask What the Number Means
-13. Commit the Test Before the Result
-14. Make the Pattern Face Cases
-15. The Pattern Goes to Work
-16. A Reader That Can Act
-17. The File Says No
-18. Change What We Measure
-19. Agents Together
-20. Give the Objection a Consequence
-21. Test What the Next Agent Inherits
-22. Put the Procedure Under Test
-23. What the File Says Now
+12. The File Says No
+13. Noted
+14. Three Departures
+15. A Language
+16. What the File Says Now
 
 ## Review
 
