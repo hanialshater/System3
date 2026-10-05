@@ -84,7 +84,7 @@ By four the city was taking orders again, because Ines rolled back the migration
 
 Set the missing serializer note aside for a moment and look at what carried her for the first two hours. An alert woke her within minutes of the first failed order. A dashboard showed which city, which service and which deploy. The runbook walked her through the dependency graph and the traffic split. The rollback she used is rehearsed every month, and the previous week's load test, run against a simulated Saturday-morning rush, told her the other cities could absorb the shifted traffic. Five weeks into the job, she restored a city on her own.
 
-Three months into his own job, Uncle Jalal had learned almost nothing from the experimentation archive that he could rely on.
+Three months into Uncle Jalal's tenure, the product side still had almost nothing in the experimentation archive that anyone could rely on beyond the fortnight each test had measured.
 
 The next home-screen launch was due in a month. Nobody on the product side could say whether to believe its result.
 
@@ -128,7 +128,7 @@ Put the two halves of the team side by side. Engineering's checks run thousands 
 
 The archive makes the gap wider. Open almost any experiment record and you will find a verdict: variant B, positive on the primary metric, shipped. You will rarely find what the verdict rested on. How long was the effect assumed to last? Which customers were assumed to behave like which? What was the metric taken to mean? Engineering writes its assumptions into tests that run again tomorrow. Experiments leave theirs in a meeting, and the meeting does not run again.
 
-When reality answers in a quarter, the most persuasive story in the room has months to harden before anything contradicts it, and by then its author may have moved on. Uncle Jalal's holiday explanation would have failed a load test in an afternoon. In the experiment archive it could live indefinitely.
+When reality answers in a quarter, the most persuasive story in the room has months to harden before anything contradicts it, and by then its author may have moved on. The holiday hypothesis would have failed a load test in an afternoon. In the experiment archive it could live indefinitely.
 
 Each test told the truth about its own fortnight, and nothing connected the fortnights. Ines, a few months later, was about to need all three things engineering had and experimentation lacked: a place for each assumption, a way to find the one that broke, and checks that keep running after the decision.
 
@@ -176,7 +176,7 @@ A different design gives each claim its own identity and records what it rests o
 
 With the probes in, the duration assumption changes from accepted for this analysis to withdrawn, with the reason attached, and the two pending launches that relied on it move from ready for approval to requires review, without anyone searching for the word basket. Ordinary software can enforce those transitions without pretending to have discovered the fault itself, and a later worker can follow them back to the assumption that caused them.
 
-An LLM-written explanation produced after the fact cannot substitute for a record of what the earlier decision actually used. Uncle Jalal's holiday story was that kind of explanation, produced by a human.
+An LLM-written explanation produced after the fact cannot substitute for a record of what the earlier decision actually used. The holiday story shows the problem in human form: a plausible explanation can be generated after the result without becoming part of what the result actually tested.
 
 If the agent recorded the result and left out the duration assumption, an automatic correction has no link to follow. Lean can check the formal links in a proof. Our graph cannot establish that an agent has recorded every assumption behind a business decision.
 
@@ -206,7 +206,7 @@ Both failures wear the costume of evidence. A rising number on a well-built dash
 
 Every experimentation team knows this meeting. The dashboard arrives before the agreement does. The headline metric is flat, a secondary one is up, and within the hour the secondary metric turns out to be what the experiment was really about. Nobody is lying. The hypothesis has been fitted to the result.
 
-The next change Ines reviews is Uncle Jalal's, of course: a new layout for weekly staples. It comes back in the familiar shape, with a strong two-week gain on the screen where gains fade. She can praise the obvious explanation, criticize it or ask a model to do both. None of that changes the data. To learn anything, she has to say in advance what would look different if the gain were novelty.
+The next change Ines reviews is a new layout for weekly staples, proposed by Uncle Jalal. It comes back in the familiar shape, with a strong two-week gain on the screen where gains fade. She can praise the obvious explanation, criticize it or ask a model to do both. None of that changes the data. To learn anything, she has to say in advance what would look different if the gain were novelty.
 
 Popper's demand applies here in its plainest form. A reviewer who can make every possible result sound like support has arranged to learn nothing from the test. Every explanation of the fades had depended on exactly that arrangement.
 
@@ -283,7 +283,7 @@ It belongs inside review-an-experiment and may call locate-the-failure, where th
 
 A pattern can also mix kinds of content that need different kinds of support. "Returning customers on this screen react to novelty" is a claim about the world. "Compare cohorts before commissioning a holdout" is a recommendation about effort. "Do not alter a live experiment to rescue its result" is an authority boundary. A successful test of the first does not justify the other two automatically.
 
-Sam could have written something like this years ago, about the screen and about the serializer. Ines's version has the reasons Sam never had, and one reader Sam never had to plan for.
+Sam could have written something like this years ago, about the screen and about the serializer. Ines's version makes explicit the reasons that had lived mostly in Sam's head, and it has one reader Sam never had to plan for.
 
 ## A Reader That Can Act
 
@@ -297,7 +297,7 @@ I avoid calling such a document executable, because the word hides the reader: t
 
 Agent skills give the arrangement a container with much of Alexander's anatomy. A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the Therefore. Calls to other skills serve as links to smaller patterns.&#91;23&#93;
 
-Feigenbaum's bottleneck has also moved. An agent can read three hundred experiment records, launch notes, postmortems and chat threads in an afternoon and propose patterns nobody wrote down. Given an archive that recorded the weeks after each test, it could have found Sam's fading screen before Uncle Jalal ever made his slide. Getting knowledge out has become cheap. Deciding which of the extracted lessons are true, where they apply and when to retire them has not.
+Feigenbaum's bottleneck has also moved. An agent can read three hundred experiment records, launch notes, postmortems and chat threads in an afternoon and propose patterns nobody wrote down. Given an archive that recorded the weeks after each test, it could have found Sam's fading screen before the quarterly review ever needed an explanation. Getting knowledge out has become cheap. Deciding which of the extracted lessons are true, where they apply and when to retire them has not.
 
 So Ines puts the lesson in her team's skill library. Nothing in the format makes the writer include the reasons or the reader act on them. A library like that can preserve the wrong lesson at industrial speed.
 
@@ -315,7 +315,7 @@ Then the checkout team ships a speed-up. Pages load faster, completed orders ris
 
 Uncle Jalal was the someone senior. The recommendation was fluent, cited its sources and came from a rule that had earned trust on the home screen. He signed it. Most customers spent the busiest six weeks of the year on the slower checkout, and when the holdout came back the gain was intact and slightly larger.
 
-The mistake was no longer Uncle Jalal's imported expertise. It was institutional. A pattern whose scope had never been tested outside visible home-screen changes had acquired authority over checkout. The file had started producing its own feathers.
+The mistake was institutional. A pattern whose scope had never been tested outside visible home-screen changes had acquired authority over checkout. The file had started producing its own feathers.
 
 The pattern said confidence: provisional, five incidents on one screen. Nothing on a checkout page is new in the way a home-screen banner is new. "Two-week gains are usually novelty" is far more than five incidents can teach.
 
