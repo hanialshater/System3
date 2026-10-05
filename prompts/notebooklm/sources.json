@@ -110,9 +110,9 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "dd7e4d02fc4bcf5de9cece59128dea039598a8b9f7b4cb7b10db3beafdb3e6fa",
+      "source_sha256": "1e8c29403fc2af61dbcd8fb669416445247d5e2bf8dbea336e09b103f5b3b33f",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "a50cb3122d0f9a8c3eaad990621a69bc08910fa7948994c6d9c26ac6dcedb8c6",
+      "brief_sha256": "6701c3402cd566cccff5fe3abc73a6e69d1fb2cea2bbc561275d492aac17dc0e",
       "sections": [
         "Opening passage",
         "The Workshop",
@@ -127,8 +127,8 @@
         "Give the Claim an Address",
         "Ask What the Number Means",
         "Commit the Test Before the Result",
-        "Borrow the Load Test",
-        "Holdout Day",
+        "Make the Pattern Face Cases",
+        "The Pattern Goes to Work",
         "A Reader That Can Act",
         "The File Says No",
         "Change What We Measure",
