@@ -23,11 +23,11 @@ He arrived carrying years of experience from elsewhere, and in his first month h
 
 He did not want the team to copy his old playbook. That was why the ideas were on the wall: make the imported knowledge explicit, put it beside what this company knew, and test what survived contact with local customers. Still, the room ranked the ideas by how convincing they sounded, which is how most rooms rank ideas, and his sounded convincing because he had seen them work.
 
-Amotz Zahavi's handicap principle gives us the peacock: a costly display can signal quality when a weaker animal cannot afford to imitate it.&#91;1&#93; The important condition is not the tail. It is the cost. The display stays informative only while something keeps it connected to the quality it advertises.
+Amotz Zahavi's handicap principle gives us the peacock: a costly display can signal quality when a weaker animal cannot afford to imitate it.&#91;1&#93; Its extravagance is informative because it remains costly enough to stay connected to the quality it advertises.
 
 Human expertise has costly displays too: a doctorate, a list of systems built, ten years of grinding. Jalal's were genuine. They certified judgment earned under particular conditions. The ideas on the whiteboard had travelled with the credential and without the customers, catalog, traffic and year that had made them work.
 
-Jalal was not hiding from that problem. He was in the room, would own the results, and wanted to be told when his ideas failed. They could fail anyway. Incentive was not the missing technology.
+Jalal was not hiding from that problem. He was in the room, would own the results, and wanted to be told when his ideas failed. Good incentives would not restore the conditions the ideas had left behind.
 
 Twice that afternoon Sam said, quietly, that the team had tried something like this before. Sam was a principal engineer, central to how the company actually worked and oddly peripheral to how it recorded what it knew. His name appeared in runbooks. People found him when migrations went strange. He remembered why apparently stupid pieces of the system were still there. He carried what companies politely call tribal knowledge.
 
@@ -37,7 +37,7 @@ Sam started to answer, stopped, and looked back at the board.
 
 "I don't know. You see it after a while."
 
-He also had one idea of his own, which went up on the smallest note: a reminder telling customers when their usual delivery slot was about to fill. Jalal kept both notes.
+He also had one idea of his own, which went up on the smallest note: a reminder telling customers when their usual delivery slot was about to fill. Jalal kept the warning and the reminder on the board.
 
 Everyone respected Sam. Respect was not the missing technology. The company had no portable form for what he knew.
 
@@ -91,7 +91,7 @@ The checks have a blind spot. The serializer fails rarely. A failure that comes 
 
 *Ask Sam* preserved the dependency beautifully and did nothing for Ines at two in the morning. She needed what Sam looks for, why he looks there, and when that suspicion is a waste of time.
 
-The product side lived in the same blind spot. Its experiments were slower and sparse, and the effect that mattered on the home screen arrived after everyone had stopped listening. The agent's database diagnosis survived one minute. The holiday story could survive indefinitely.
+The product side lived in the same blind spot. Its experiments were slower and sparser, and the effect that mattered on the home screen arrived after everyone had stopped listening. The agent's database diagnosis survived one minute. The holiday story could survive indefinitely.
 
 The next morning Ines opens a new document to write up the night and discovers that why is much harder to write down than what.
 
@@ -140,7 +140,7 @@ Engineering had a partial defense he did not mention. When a feathered pattern b
 
 The singleton guarding nothing and the holiday story are the same kind of object.
 
-Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; The enemy in this chapter is not a kind of person but a kind of idea. I call it high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true.
+Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; The enemy in this chapter is not a kind of person but a kind of idea. I call it high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true. I have produced ideas like that myself, more than once.
 
 The predecessor's handover could become full of it without anyone adding a word: every line sincere when written, every reason gradually falling away. So could the holiday story. So could the agent's diagnosis at two in the morning, with the further distinction that it had no author who could ever come to doubt it.
 
@@ -246,17 +246,13 @@ The draft was fluent, well formatted and plausible. It had a context, a problem,
 
 Sam struck the carousel out. Its gain had come from a redirect that dropped users before logging, not from customers losing interest. A pattern that counted a logging bug as evidence of novelty would teach the next reader to stop looking for logging bugs. He narrowed "the home screen" to changes returning customers could see.
 
-Ines read the revision and added two things the draft still lacked.
+The draft already carried the refutation condition from the experiment record. Ines added what it still lacked: a link to locate-the-failure.
 
-First: would_be_wrong_if.
-
-Second: a link to locate-the-failure.
-
-Her runbook had taught her what happens when an instruction has no exit condition and no route elsewhere. "Ask Sam" had been a dead end disguised as guidance. The pattern needed to say not only when to call it, but when to stop calling it and where to go next.
+Her runbook had taught her what happens when an instruction has no route elsewhere. "Ask Sam" had been a dead end disguised as guidance. A pattern needed to know where to send the reader when its own explanation stopped fitting.
 
 Jalal added the confidence mark.
 
-The three knowers had built a fourth.
+Between them, four incomplete knowers had built something none of them could carry alone.
 
 That exchange is the new shape of Feigenbaum's bottleneck. An agent can read hundreds of experiment records, launch notes, postmortems and chat threads and propose patterns nobody wrote down. Getting knowledge out has become cheap. Deciding which extracted lessons are true, where they apply and when to retire them has not.
 
@@ -359,11 +355,7 @@ Then the checkout team shipped a speed-up. Pages loaded faster and completed ord
 
 Ines, who had built half of the speed-up, objected that customers do not get used to a page loading quickly the way they get used to a new banner. Nothing on the checkout page was new in that sense.
 
-The file answered with its confidence and documented cases. Jalal's review gate made the recommendation binding unless someone with override authority stepped in.
-
-That was Jalal.
-
-The recommendation was fluent, cited and came from a pattern that had earned trust partly by proving its own co-author wrong. He signed it.
+The file answered with its confidence and documented cases. Jalal's review gate made the recommendation binding unless someone with override authority stepped in. Jalal had that authority. The recommendation was fluent, cited and came from a pattern that had earned trust partly by proving its own co-author wrong. He signed it.
 
 The later evidence showed that the speed gain was durable.
 
@@ -404,7 +396,7 @@ The next agent can see where the pattern has been tested, where it held, and how
 
 The larger objection still stood. On the home screen, early basket gains often predicted later behavior poorly, and the slot reminder suggested that what mattered was whether customers came back. Two-week basket size could not see that at all.
 
-Changing a criterion is harder than changing an answer. Every record in the archive spoke in two-week baskets. A criterion built on what customers do over months needs new records, new instruments and new traffic. The evaluator is part of the difficulty: if it scores every proposal on two-week baskets, the alternative looks worse exactly where it stops chasing two-week baskets.
+Changing a criterion is harder than changing an answer. Every record in the archive spoke in two-week baskets. A criterion built on what customers do over months needs new records, new instruments and new traffic. The evaluator is part of the difficulty: if it scores every proposal on two-week baskets, the alternative looks worse exactly where it stops chasing novelty.
 
 Jalal and Sam took the evidence to the head of product, who had declined the longer-term criterion once already.
 
@@ -482,17 +474,9 @@ This time the company kept working.
 
 Questions that once ended at Sam now ended in records that could be followed, challenged and revised. The runbook line that once read *ask Sam* now pointed to serializer-suspicion: what he looks for, why he looks there, and the two times the suspicion was wrong.
 
-The library also kept what should have gone.
+The library also kept what should have gone. In his last week Sam added a line to the serializer pattern: rewrite tried and abandoned; do not retry. It was true when written. He wrote it in a hurry and did not link the dependency that had made the rewrite fail. A year later that dependency was replaced, and nothing came up for review because nothing pointed at it. The line stayed.
 
-In his last week Sam added a line to the serializer pattern: rewrite tried and abandoned; do not retry. It was true when written. He wrote it in a hurry and did not link the dependency that had made the rewrite fail. A year later that dependency was replaced, and nothing came up for review because nothing pointed at it.
-
-The line stayed.
-
-The third departure happens every day and nobody notices it.
-
-Agent sessions end.
-
-A new agent joins the project, reads the same library, retrieves the same patterns, accepts the same categories and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context.
+The third departure happens every day and nobody notices it: agent sessions end. A new agent joins the project, reads the same library, retrieves the same patterns, accepts the same categories and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation's entire syllabus already in context.
 
 Session turnover is not a funeral. Nothing that was believed has died.
 
@@ -508,13 +492,13 @@ Therefore: change what the next worker inherits, and give it standing to challen
 
 ## A Language
 
-By its second year the library held more than wins-that-fade.
+By its second year the library held more than `wins-that-fade`.
 
-review-an-experiment called say-what-the-result-would-mean before a test could start, locate-the-failure when a result looked suspicious, and wins-that-fade when a visible change reported an early gain. Incident review called serializer-suspicion and a dozen patterns like it. Each pattern named the larger one it served and the smaller ones it could call.
+The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Incident review called `serializer-suspicion` and a dozen patterns like it. Each pattern named the larger one it served and the smaller ones it could call.
 
 Then one review finally made the composition visible.
 
-A pricing experiment arrived with an early lift. The review agent loaded review-an-experiment and found a committed prediction missing. It called the evidence agent with say-what-the-result-would-mean; the evidence agent found a sample-ratio mismatch and invoked locate-the-failure. A data agent traced the mismatch to a logging path shared by both the headline metric and its supposed independent check. give-the-claim-an-address marked both measurements as depending on the same event stream. The recommendation agent could no longer call the result corroborated, and the review returned the launch for repair.
+A pricing experiment arrived with an early lift. The review agent loaded `review-an-experiment` and found a committed prediction missing, so it routed that gap through `say-what-the-result-would-mean`. Separately, the size of the lift triggered `locate-the-failure`, where Twyman's check exposed a sample-ratio mismatch. A data agent traced the mismatch to a logging path shared by both the headline metric and its supposed independent check. `give-the-claim-an-address` marked both measurements as depending on the same event stream. The recommendation agent could no longer call the result corroborated, and the review returned the launch for repair.
 
 No agent had to know the whole procedure in advance. The links in the patterns carried the work from one difficulty to the next.
 
@@ -524,7 +508,7 @@ Alexander's second question to the programmers becomes the right question for th
 
 Sometimes they did not.
 
-A pattern from the growth team said to ship small wins quickly and learn from production. wins-that-fade said to wait for later evidence. Each was sound inside its own context, and the review agent, holding both, followed whichever retrieval ranked first.
+A pattern from the growth team said to ship small wins quickly and learn from production. `wins-that-fade` said to wait for later evidence. Each was sound inside its own context, and the review agent, holding both, followed whichever retrieval ranked first.
 
 Alexander's book had an answer in its structure: a smaller pattern is chosen in light of the larger one it helps complete. A reversible launch whose purpose is to learn can ship quickly. A launch that commits the team to building the next redesign on its result needs stronger evidence. The conflict disappeared when each pattern's link to the larger one became explicit, not when somebody declared one pattern right in general.
 
@@ -565,17 +549,9 @@ But the method decides which failures count.
 
 ## What the File Says Now
 
-Two years after Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else.
+Two years after Jalal's first workshop, the team holds another one. A new colleague has joined from a company with an excellent reputation, and by lunch the whiteboard is full again. His ideas are good. Several have worked beautifully somewhere else. The room has acquired useful knowledge whose conditions are still somewhere else.
 
-The room has acquired useful knowledge.
-
-Its conditions are still somewhere else.
-
-Jalal has an idea of his own on the board too. Before arguing for it, he asks the agent to check the library.
-
-No local evidence.
-
-The library has not rejected the idea. It has located the ignorance.
+Jalal has an idea of his own on the board too. Before arguing for it, he asks the agent to check the library. There is no local evidence. The library has not rejected the idea; it has located the ignorance.
 
 Before anyone ranks the ideas, the review agent reads each one against the pattern language. One was tried here and faded by week four, for reasons recorded beside the result. One held under conditions that no longer apply. Two have never been tested on these customers at all, and the library says so plainly.
 
@@ -589,15 +565,7 @@ Alexander wanted the family to be able to argue with the architect.
 
 Now the next worker can argue with Sam, even while Sam is on holiday.
 
-The whiteboard problem has changed shape. Knowledge can survive the person who learned it, travel to someone who was not there, tell a machine enough to act, and still leave a handle by which the next failure can change it.
-
-Durable.
-
-Transferable.
-
-Executable.
-
-Corrigible.
+The whiteboard problem has changed shape. Knowledge can survive the person who learned it, travel to someone who was not there, guide a machine that can act, and still leave a handle by which the next failure can change it.
 
 Further down the runbook, a newer engineer has written *ask Ines*.
 
