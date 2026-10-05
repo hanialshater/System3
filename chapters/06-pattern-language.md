@@ -23,7 +23,7 @@ Pattern 159 is called Light on Two Sides of Every Room. It says that when people
 
 Pattern 88 is Street Café: a place to sit lazily, legitimately, on view, and watch the street go by. Pattern 180 says everybody loves a window seat. Pattern 167 says a balcony less than six feet deep will hardly ever be used, because nobody can pull a chair up to a table on it. You have seen those balconies. They hold a bicycle and a dead plant. Pattern 203 is Child Caves: children love tiny, cave-like places, so build them some. Pattern 251 is Different Chairs: people come in different sizes and sit in different ways, so never furnish a room with identical chairs. Pattern 252, Pools of Light, says that even lighting kills a room, because people gather where the light pools. The last one, 253, is Things from Your Life: put on your walls what matters to you and ignore what a decorator says belongs there.
 
-There are 253 of them. The first is about how the world should be divided into regions. The last is about the photographs above your desk. In between come neighborhoods and bus stops, beer halls, stairs you can sit on, a bench by the front door. Christopher Alexander and five colleagues at Berkeley published the book in 1977. It runs past eleven hundred pages on Bible paper, and it has probably been read by more programmers than architects.
+There are 253 of them. The first is about how the world should be divided into regions. The last is about the photographs above your desk. In between come neighborhoods and bus stops, beer halls, stairs you can sit on, a bench by the front door. Christopher Alexander and five colleagues at Berkeley published the book in 1977. It runs past eleven hundred pages on Bible paper. Programmers would eventually make it part of their own intellectual history.
 
 Reading it is a strange experience. Somewhere in the middle of it I caught myself asking: why am I suddenly emotionally invested in the width of a balcony? You keep recognizing things you have always known and never said. Alexander believed that some places are alive and some are dead, that everybody can feel the difference, and that the difference has no adequate name. He called it the quality without a name. He had trained as a mathematician at Cambridge before taking the first doctorate in architecture Harvard ever awarded, and he went after the unnameable quality the way a mathematician would. He broke it into problems small enough to state, and he stated them so that they could be wrong.
 
@@ -46,13 +46,13 @@ From here on I borrow Alexander's asterisks to mark my confidence that each prop
 
 So the team did what a good team does with imported ideas. It tested them.
 
-An experimentation platform is supposed to do something subtler than declare winners. It should let an organization believe in degrees.
+An experimentation platform should do something subtler than declare winners. It should let an organization believe in degrees.
 
-The theorem that carries Bayes's name supplies some of the arithmetic, but the epistemology came much later. In 1926 Frank Ramsey's *Truth and Probability* treated belief as something that could come in degrees and connected those degrees to the choices a person was prepared to make. Inconsistent degrees of belief could make your own actions work against you. De Finetti developed the subjectivist line independently; Savage later gave it a more systematic decision-theoretic form. What came to be called Bayesian epistemology was not Bayes's philosophy of science. It was a twentieth-century attempt to make partial belief coherent and revisable.&#91;3&#93;
+Bayes supplied part of the arithmetic. The epistemology came later. In 1926 Frank Ramsey's *Truth and Probability* treated belief as graded and tied those degrees to the choices a person was prepared to make. Incoherent beliefs could make your own actions work against you. De Finetti developed the subjectivist line independently; Savage later gave it a systematic decision-theoretic form. Bayesian epistemology was not Bayes's philosophy of science. It was a twentieth-century attempt to make partial belief coherent and revisable.&#91;3&#93;
 
-That is the part I need here. The team need not pretend an idea is simply true or false. It can say how much confidence it has, what that confidence rests on, and what evidence should move it. An experiment archive ought to preserve that movement. Instead, this one mostly preserved verdicts.
+That distinction matters here. An idea need not be stamped true or false. The team can record how much confidence it has, what that confidence rests on, and what evidence should move it. A useful experiment archive preserves that movement. This one preserved verdicts.
 
-The engine said yes. The home-screen redesign, Uncle Jalal's favorite idea from the workshop, won by four percent. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them. A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before.
+The dashboard said yes. The home-screen redesign, Uncle Jalal's favorite idea from the workshop, won by four percent. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them. A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before.
 
 ## The Quarterly Review
 
@@ -60,15 +60,15 @@ The fade became impossible to ignore at the quarterly review. The slide still sa
 
 Uncle Jalal offered a hypothesis. Seasonality, maybe: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good hypothesis. It cited a real calendar and came from experience. The important word was maybe.
 
-The problem was that the experiment record had nowhere to keep the maybe attached. It did not record which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. A plausible hypothesis could harden into an explanation simply by being repeated.
+The experiment record had nowhere to keep the *maybe* attached. It did not record which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. Repetition could turn a plausible hypothesis into an accepted explanation without adding a gram of evidence.
 
-Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; What interests me here is not a kind of person but a kind of idea. I call the failure mode high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true. I have produced ideas like that myself, more than once.
+Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; The enemy here is not a kind of person but a kind of idea. I call it high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true. I have produced ideas like that myself, more than once.
 
-That is why high-functioning bullshit is an enemy of science rather than merely bad behavior. Nobody in that room was against evidence. The danger came from inside the method, from work that had rigor's shape: a dashboard, a confidence interval, an experienced hypothesis whose question mark had disappeared. It looked scientific and reasonable, and it could survive without meeting the observation that would make it lose.
+High-functioning bullshit is an enemy of science precisely because it does not look like an enemy. Nobody in that room was against evidence. The danger came dressed as rigor: a dashboard, a confidence interval, an experienced hypothesis whose question mark had disappeared. It looked scientific and reasonable while escaping the observation that could make it lose.
 
 Then the carousel's gain went the same way, and then the deals tile's.
 
-Every fade produced reasonable hypotheses. The redesign might have run into the school holidays. The carousel launched the week a promotion ended. The deals tile coincided with a competitor's discount week. Each story cited a real event and came from someone who knew the business. None had yet been made to predict the next fade.
+Every fade produced a reasonable hypothesis. School holidays. The end of a promotion. A competitor's discount week. Each story cited a real event and came from someone who knew the business. None predicted the next fade.
 
 Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it. They were sincere, informed, and checked against nothing. The holiday story was his.
 
@@ -132,7 +132,7 @@ Put the two halves of the team side by side. Engineering's checks run thousands 
 
 The archive makes the gap wider. Open almost any experiment record and you will find a verdict: variant B, positive on the primary metric, shipped. You will rarely find what the verdict rested on. How long was the effect assumed to last? Which customers were assumed to behave like which? What was the metric taken to mean? Engineering writes its assumptions into tests that run again tomorrow. Experiments leave theirs in a meeting, and the meeting does not run again.
 
-When reality answers in a quarter, the most persuasive story in the room has months to harden before anything contradicts it, and by then its author may have moved on. The holiday hypothesis would have failed a load test in an afternoon. In the experiment archive it could live indefinitely.
+When reality answers in a quarter, the most persuasive story in the room gets months to harden before anything contradicts it. By then its author may have moved on. The holiday hypothesis would have failed a load test in an afternoon. In the experiment archive it could live indefinitely.
 
 Each test told the truth about its own fortnight, and nothing connected the fortnights. Ines, a few months later, was about to need all three things engineering had and experimentation lacked: a place for each assumption, a way to find the one that broke, and checks that keep running after the decision.
 
@@ -164,7 +164,7 @@ Mathematics has the cleanest version of this problem, and recently a very large 
 
 Jon Doyle was building machinery for this in the late 1970s. In his truth maintenance system, beliefs kept their reasons, and when a reason was withdrawn, everything resting on it came up for review.&#91;16&#93; Doyle's machinery tracks justifications. It cannot check them against the world, and a program can faithfully maintain the consequences of reasons that were never true.
 
-Most of us have no Lean. Take the claim on Uncle Jalal's slide: the redesigned home screen raised basket size by four percent over two weeks. Suppose it goes into a report, another agent summarizes the report, and a third uses the summary to justify the next redesign. Now that the gain has faded, where does the correction go?
+Most of us have no Lean. Take the claim on Uncle Jalal's slide: the redesigned home screen raised basket size by four percent over two weeks. It goes into a report. One agent summarizes the report; another uses the summary to justify the next redesign. Then the gain fades. Where does the correction go?
 
 Searching every document for the word basket is one possible response. It will be popular with the company selling us tokens.
 
@@ -184,7 +184,7 @@ An LLM-written explanation produced after the fact cannot substitute for a recor
 
 If the agent recorded the result and left out the duration assumption, an automatic correction has no link to follow. Lean can check the formal links in a proof. Our graph cannot establish that an agent has recorded every assumption behind a business decision.
 
-A second measurement may share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. The provenance must reach the common source.
+Two measurements can share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. Provenance has to reach the common source.
 
 Capturing every possible dependency would cost more than the inquiry. Start with the support used in the recommendation and let a disputed result send you farther back.
 
@@ -196,7 +196,7 @@ In every one of those tests the count was correct. What failed was the meaning t
 
 At Bing, a treatment had a bug, and the bug made the search results worse. People could not find what they wanted, so they searched again, and again. Queries per user went up by over ten percent. With poorer results on the page, the advertisements looked comparatively relevant, and people clicked on them. Revenue per user went up by over thirty percent. Two of the organization's headline numbers were celebrating an experience that had been degraded.&#91;17&#93;
 
-The count was right, and the cheerful interpretation was wrong. Another audit of the count would not have established what the extra queries meant. A test of whether people completed their tasks might have.
+The count was right, and the cheerful interpretation was wrong. Auditing the count again would not reveal what the extra queries meant. You need another observation: did people actually complete their tasks?
 
 Saussure's point is relational value: a term means what it does through its differences from its neighbors.&#91;18&#93; More queries meant more engaged only inside a system where a query was a unit of interest. Set it beside session and task and it becomes a unit of effort. Seven queries can be worse than two if five of them were spent recovering from a bad result. The Bing researchers made sessions per user a key part of their criterion: help people finish and give them reasons to return.
 
@@ -328,7 +328,7 @@ In Ramsey's terms, confidence is a degree of belief, and a rational degree of be
 
 Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none. Generated files raised average costs by twenty to twenty-three percent across the two benchmarks.&#91;24&#93;
 
-A lesson that passes should also carry its scope. After a quarter of comparisons, the top of Ines's file might read:
+A lesson that passes also carries its scope. After a quarter of comparisons, the top of Ines's file reads:
 
 \`\`\`yaml
 id: wins-that-fade
@@ -347,7 +347,7 @@ The next agent can see both where the pattern has been tested and how its predec
 
 The pattern makes two-week gains more trustworthy. It leaves the deeper question alone. The slot reminder suggested that what mattered was whether customers came back, and two-week basket size could not see that at all.
 
-Suppose the six-week criterion were accepted tomorrow. Ines's agent would still face a harder problem, because every record in the archive speaks in two-week baskets. To reorganize around what customers do over six weeks, whether they return and whether their weekly shop gets easier, a branch has to keep alternative representations as well as alternative answers. It can introduce the new records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty. If it scores every proposal on two-week baskets, the better approach looks worse exactly where it stops chasing novelty. Letting the challenger write an evaluator that declares itself the winner would prove little. The approaches need an explicit dispute about what evaluation is for, then observations both sides accept.
+Even if the team adopts a longer-term criterion tomorrow, every record in the archive still speaks in two-week baskets. Reorganizing around what customers do over time—whether they return, whether their weekly shop gets easier—requires alternative representations, not merely alternative answers. It can introduce the new records, associate them with the old observations where possible, and state where translation fails. The evaluator is part of the difficulty. If it scores every proposal on two-week baskets, the better approach looks worse exactly where it stops chasing novelty. Letting the challenger write an evaluator that declares itself the winner would prove little. The approaches need an explicit dispute about what evaluation is for, then observations both sides accept.
 
 A field can go further and change what its practitioners learn to see as a problem worth solving. Many of my readers worked through one such change.
 
@@ -361,11 +361,11 @@ Kuhn also asks us to notice losses. A leap on a benchmark does not tell us what 
 
 The examples are part of how a paradigm holds. Kuhn's scientists learn from exemplars that no complete list of explicit rules can replace. I wrote an editing brief for this book after explaining the same corrections to successive agents, and later had agents mine the brief's rules from my own correction history. One instruction was "preserve the wandering," which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage can teach the distinction: one version follows an uncertain thought until it becomes clear; the other announces the conclusion and removes the path that made it convincing. Those examples also carry my taste into the next session. Preserving my judgment and preserving my mistakes used the same file format.
 
-There is no paradigm_shift() call. There can be operations for branching a representation, retaining the old interpretation, collecting missing observations and exposing a disputed standard for decision.
+There is no paradigm_shift() call. But a system can branch a representation, retain the old interpretation, collect observations the old representation ignored, and expose the standard on which the two disagree.
 
 Therefore: give the branch room to ask a different question, and make it state where its results cannot be translated into the old terms.
 
-I do not know an agent institution that can do this. The agent can write the proposal into open_questions. To answer it, someone has to pay for observations the old records do not contain.
+The hard boundary is not writing the alternative into open_questions. It is paying for observations the old records never collected. Representation change eventually becomes a decision about instruments, traffic, time and authority.
 
 ## Agents Together
 
@@ -373,7 +373,7 @@ One reviewer with one file is still Ines with a better notebook. The larger chan
 
 The team builds a small version of this. One agent reads the whole experiment archive and finds that gains on the home screen decay along the same curve across forty tests nobody had compared side by side. Another watches whether accepted patterns continue to fit the launches that follow. A third proposes cohort checks and A/A tests whenever a result looks interesting enough to trigger Twyman. None of them needs to meet the others, any more than Carlini's sixteen compiler agents did. They need what the Fermat agents had: claims with addresses in a shared graph, so that one agent's finding becomes the next agent's prior.
 
-This is the World 3 of Chapter 5, with a new front door.&#91;27&#93; A language model offers the most convenient entrance yet, the whole library in one voice, but the answer may arrive without a catalog card. The machinery for checking it has to reach this new entrance too, or World 3 fills with fluent claims nobody can trace.
+This is the World 3 of Chapter 5, with a new front door.&#91;27&#93; A language model can make the whole library answer in one voice. The catalog card disappears unless we rebuild it: where did this claim come from, what supports it, what contradicts it, what changed since it was written? Without that machinery, World 3 fills with fluent claims nobody can trace.
 
 A shared graph also changes where the work goes. In September 2026 OpenAI described moving its agents from other Millennium Problems onto Navier–Stokes once a result on the Euler equations made that route look promising, carrying the groups' findings into the next prompts. The group grew to roughly ten thousand concurrent agents and produced a proposed proof of finite-time blowup under smooth forcing, which was then formalized and verified in Lean.&#91;28&#93; On September 11 the Clay Mathematics Institute said the problem appeared to be settled, with evaluation and credit to follow its deliberately unhurried process.&#91;29&#93; The other problems had only lost their workers.
 
@@ -409,9 +409,9 @@ Helen Longino would locate that failure in the community. On her account, object
 
 Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. The objections travel with the proposals as other agents combine them into a longer argument. At the final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect is tied to the claim that failed, so the next round can repair it or try another route.&#91;37&#93; Failed drafts remain available with their reviews attached. The reviewers can still be wrong.
 
-It also matters who gets to object. A critic who receives only the conclusion cannot examine the assumption. Asking the same model to play the skeptic may elicit another argument, but the role prompt alone does not give it different observations. And some disputes were never about evidence.
+Who gets to object matters too. A critic who receives only the conclusion cannot examine the assumption. Telling the same model to play skeptic produces another argument, not another observation. And some disputes were never about evidence.
 
-A product owner may reasonably care about how many experiments the team can run while a researcher cares about what customers do in week six; both can be reliable observers who want different decisions. The system should be able to say which dispute the next experiment can settle and which requires a decision about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
+A product owner can reasonably care about decision speed while a researcher cares about what customers do months later. Both can be reliable observers and still want different decisions. The system must distinguish disputes that more evidence can settle from disputes about purpose. Otherwise it will keep requesting evidence to avoid naming a conflict over what matters.
 
 A year after Ines opened it, her file has grown fields nobody would have put in the first version:
 
@@ -466,13 +466,13 @@ Therefore: change what the next worker inherits.
 
 ## Put the Procedure Under Test
 
-How could all this fail while every part works? It may faithfully preserve dependencies while omitting the important kind of dependency, as the archive once omitted the weeks after each test. It may compare candidate patterns on cases selected by the incumbent pattern. It may require evidence for an alternative while refusing the instruments needed to produce that evidence. Every individual operation can function as specified while the arrangement prevents the question that would matter.
+All of this can fail while every part works. The graph can preserve dependencies while omitting the dependency that matters, as the archive once omitted what happened after the test. The evaluator can compare candidate patterns on cases selected by the incumbent pattern. The institution can demand evidence for an alternative while refusing the instruments needed to produce it. Every operation can function exactly as specified while the arrangement prevents the question that would change it.
 
 The same failure can happen one level up. A procedure with provenance records, committed predictions, pattern evaluations and review channels looks more rigorous than anything in Uncle Jalal's first workshop. It can still rest on an assumption nobody checks, because the procedure itself decides what gets checked.
 
-Feyerabend's Against Method goes further. Every rule of method, he argued, has been usefully broken at some point in the history of science.&#91;40&#93; Requiring a test before setting a rule aside would itself be another methodological rule. I am borrowing a smaller lesson: our procedures need room for investigations they would ordinarily exclude.
+Feyerabend's *Against Method* goes further. Every rule of method, he argued, has been usefully broken somewhere in the history of science.&#91;40&#93; Requiring a test before setting a rule aside is itself another methodological rule. The lesson here is narrower and brutal: a procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
 
-Some of these failures can be investigated through a relevant comparison: one retrieval policy against another, a reviewer against a reviewer given different evidence, or a branch with a pattern withheld to see whether its absence reveals errors its presence concealed. Engineering already does a version of this when it runs chaos experiments on its own monitoring.
+Some failures yield to comparison: one retrieval policy against another, reviewers given different evidence, a branch with a pattern withheld to expose errors its presence concealed. Engineering already does this when it turns chaos experiments on its own monitoring.
 
 Other disputes reach the purpose or authority of the system. Whether a feed should be ranked for activity or for something harder to count cannot be settled by letting whichever evaluator produces the higher score appoint itself. Someone still has to make and own the decision about which consequences matter.
 
@@ -490,7 +490,7 @@ Ines opens the incident file from that first night too. It says what Sam looks f
 
 The whiteboard problem had changed by then. Knowledge had to survive the person who learned it, travel to someone who had not been there, tell a machine enough to act, and still leave a handle by which the next failure could change it. Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing.
 
-I have not shown an agent institution that composes these patterns into a coherent whole, which was the second of Alexander's two questions to the programmers in 1996. The patterns in this chapter still have to earn their asterisks together.
+Alexander's second question to the programmers in 1996 still stands: do the patterns compose into a coherent whole? The patterns in this chapter have to earn their asterisks together.
 
 Further down the runbook, a newer engineer has written ask Ines. This time there is a file behind the name.
 
