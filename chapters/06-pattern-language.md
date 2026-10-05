@@ -126,99 +126,49 @@ That is a pattern language: builders' knowledge, the kind Sam carries, written d
 
 From here on I borrow Alexander's asterisks to mark my confidence that each proposed arrangement can resolve the problem described: two for a well-supported practice, one for a promising proposal that needs further testing, and no asterisk (an unmarked Therefore) where its adequacy remains an open question. The marks judge the arrangements. They do not claim that an agent institution has implemented them successfully.
 
-## Wins That Vanish
+## Names Travel Faster Than Reasons
 
-So the team did what a good team does with imported ideas. It tested them.
-
-An experimentation platform should do something subtler than declare winners. It should let an organization believe in degrees.
-
-Bayes supplied part of the arithmetic. The epistemology came later. In 1926 Frank Ramsey's *Truth and Probability* treated belief as graded and tied those degrees to the choices a person was prepared to make. Incoherent beliefs could make your own actions work against you. De Finetti developed the subjectivist line independently; Savage later gave it a systematic decision-theoretic form. Bayesian epistemology was not Bayes's philosophy of science. It was a twentieth-century attempt to make partial belief coherent and revisable.&#91;3&#93;
-
-That distinction matters here. An idea need not be stamped true or false. The team can record how much confidence it has, what that confidence rests on, and what evidence should move it. A useful experiment archive preserves that movement. This one preserved verdicts.
-
-The dashboard said yes. The home-screen redesign, Uncle Jalal's favorite idea from the workshop, won by four percent. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them. A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before.
-
-## The Quarterly Review
-
-The fade became impossible to ignore at the quarterly review. The slide still said four percent. The live number was flat. The head of the business asked the reasonable question: what happened?
-
-Uncle Jalal offered a hypothesis. Seasonality, maybe: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good hypothesis, grounded in a real calendar and real experience. The most scientific word in it was *maybe*.
-
-The experiment record had nowhere to keep the *maybe* attached. It did not record which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. Repetition could turn a plausible hypothesis into an accepted explanation without adding a gram of evidence.
-
-Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; The enemy here is not a kind of person but a kind of idea. I call it high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true. I have produced ideas like that myself, more than once.
-
-High-functioning bullshit is an enemy of science precisely because it does not look like an enemy. Nobody in that room was against evidence. The danger came dressed as rigor: a dashboard, a confidence interval, an experienced hypothesis whose question mark had disappeared. It looked scientific and reasonable while escaping the observation that could make it lose.
-
-Then the carousel's gain went the same way, and then the deals tile's.
-
-Every fade produced a reasonable hypothesis. School holidays. The end of a promotion. A competitor's discount week. Each story cited a real event and came from someone who knew the business. None predicted the next fade.
-
-Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it. They were sincere, informed, and checked against nothing. The holiday story was his.
-
-The tests were producing evidence. The archive was losing the structure of the beliefs that evidence was supposed to change.
-
-## Two in the Morning
-
-The same team had another side, and it worked.
-
-At ten past two one morning, checkout in one city stops accepting orders. The engineer on call, call her Ines, has been at the company for five weeks. The runbook on her second screen is admirably clear until the line where it stops being clear: if it started after Tuesday's migration, ask Sam. There is a thing with the old serializer.
-
-It started after Tuesday's migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
-
-Ines has the logs, the dashboards and an agent that has read every document the company owns. None of them contains what Sam looks for in the old serializer, because Sam never wrote it down. Nobody asked him to. It was never going to be two in the morning while he was away.
-
-By four the city was taking orders again, because Ines rolled back the migration, which restored service without explaining the failure.
-
-Set the missing serializer note aside for a moment and look at what carried her for the first two hours. An alert woke her within minutes of the first failed order. A dashboard showed which city, which service and which deploy. The runbook walked her through the dependency graph and the traffic split. The rollback she used is rehearsed every month, and the previous week's load test, run against a simulated Saturday-morning rush, told her the other cities could absorb the shifted traffic. Five weeks into the job, she restored a city on her own.
-
-Three months into Uncle Jalal's tenure, the product side still had almost nothing in the experimentation archive that anyone could rely on beyond the fortnight each test had measured.
-
-The next home-screen launch was due in a month. Nobody on the product side could say whether to believe its result.
-
-## Why Engineering Learns
-
-Engineering knowledge is reliable for a dull reason: it is checked constantly. A test suite runs on every commit, and a regression fails within minutes of being written. Alerts fire when a service drifts outside its limits. Load tests ask, before customers do, at what traffic a working system stops working, which is Alexander's context with numbers in it. Netflix built Chaos Monkey, a program that switched off its own production servers at random during working hours, so that engineers would discover their hidden assumptions while they were awake to fix them.&#91;6&#93;
-
-Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.&#91;7&#93; A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Popper rejected the idea that surviving tests makes a theory more probable; Ramsey's tradition and Popper's are not the same philosophy. I need something from each. Ramsey gives us partial belief rather than verdicts. Popper asks whether the claim has met evidence capable of making it lose. Engineering beliefs move quickly because that evidence arrives cheaply, often, and in a form that can say no.
-
-Engineers have egos, credentials and favorite architectures like everyone else. An impressive design that breaks under load fails the load test on Thursday, whatever its author's reputation.
-
-Patterns traveled well in that world. In 1987 Kent Beck and Ward Cunningham, both readers of Alexander, wrote five small interface patterns for a group at Tektronix and let the future users do the design.&#91;8&#93; Seven years later four authors from the movement that followed published Design Patterns, twenty-three named arrangements for object-oriented code with Alexander quoted in its opening pages.&#91;9&#93; A generation of engineers learned to say Observer, Factory and Singleton the way builders say lintel. A design review could now be held in nouns.
+Programmers took to Alexander faster than architects did. In 1987 Kent Beck and Ward Cunningham, both readers of Alexander, wrote five small interface patterns for a group at Tektronix and let the future users do the design.&#91;8&#93; Seven years later *Design Patterns* gave programmers twenty-three named arrangements for object-oriented code, with Alexander quoted in its opening pages.&#91;9&#93; A generation learned to say Observer, Factory and Singleton the way builders say lintel. A design review could now be held in nouns.
 
 In 1995 Cunningham needed somewhere for programmers to collect and edit patterns together, so he wrote a small program that let any reader change any page. He called it WikiWikiWeb. The wiki was invented to hold a pattern language.&#91;10&#93; Six years later an encyclopedia borrowed the idea.
 
-Even here, the name traveled faster than the reasons. You could say Singleton in a meeting without bringing along any of the contexts and trade-offs the books still described. A pattern had been a hypothesis about when an arrangement resolves a conflict. In use, it could become a feather: something good engineers were seen to use. Codebases filled with factories that built one kind of object and singletons guarding nothing.
+Even here, the name travelled faster than the reasons. You could say Singleton in a meeting without bringing along the contexts and trade-offs the books still described. A pattern had been a hypothesis about when an arrangement resolves a conflict. In use it could become a feather: something good engineers were seen to use. Codebases filled with factories that built one kind of object and singletons guarding nothing.
 
-In 1996 the programmers invited Alexander to give the keynote at their largest conference. He came, a little bemused to find himself famous in a field he did not work in, and he was gracious, and he was not sure they had taken what mattered. He asked whether their patterns carried the two things his were for: making something better for the people who live in it, and generating a coherent whole from the parts. He suspected they had mostly adopted a format for trading ideas.&#91;11&#93; Engineering had a partial defense he did not mention. When a feathered pattern broke something, a test usually said so.
+In 1996 the programmers invited Alexander to give the keynote at their largest conference. He was gracious, a little bemused to find himself famous in a field he did not work in, and unsure they had taken what mattered. He asked whether their patterns did the two things his were for: make something better for the people who live in it, and generate a coherent whole from the parts. He suspected they had mostly adopted a format for trading ideas.&#91;11&#93;
 
-## Ask Sam
+Engineering had a partial defense he did not mention. When a feathered pattern broke something, a test usually said so.
 
-Engineering's checks have a blind spot, and Ines found it at two in the morning. The serializer fails rarely. A failure that comes once a year produces one piece of feedback a year, and knowledge fed that slowly stays in the head of whoever happened to be there. In its rarely exercised corners, engineering looks a lot like experimentation.
+The singleton guarding nothing and the holiday story are the same kind of object.
 
-The runbook she had been working from read like this:
+Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.&#91;4&#93; The enemy in this chapter is not a kind of person but a kind of idea. I call it high-functioning bullshit: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true.
 
-> Start with the dependency graph, unless the spike began exactly at deployment. If only one city is affected, check the traffic split before touching the database. And if it started after Tuesday's migration, ask Sam. There is a thing with the old serializer.
+The predecessor's handover could become full of it without anyone adding a word: every line sincere when written, every reason gradually falling away. So could the holiday story. So could the agent's diagnosis at two in the morning, with the further distinction that it had no author who could ever come to doubt it.
 
-She knows Python, distributed systems and the collected technical culture of the internet, and she is still spectacularly unqualified to run this company's software. She does not know which apparently redundant check protects an old supplier integration, which dashboard changes meaning during failover, or why the elegant migration in the wiki was abandoned halfway through. Much of her first month consists of discovering the reasons behind things that look stupid.
+High-functioning bullshit is an enemy of science precisely because it does not look like an enemy.
 
-Ask Sam preserves the dependency beautifully. It did nothing for her at two in the morning. She needed what Sam looks for in the serializer, why he looks there, and when that suspicion is a waste of time. Sam is a master builder who knows more than he can say, about the serializer and about the home screen, and nobody has written his patterns down.
+Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.&#91;7&#93; A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Alexander's form gives builders' knowledge a way to take the same risk. A pattern that names its context, states its forces and marks its confidence has said where it can be wrong. Strip those parts away and the name keeps its authority while losing every handle by which it can lose an argument.
 
-She would settle for his reasons and some way to argue with them. Alexander had worked out a form for exactly that, for rooms.
+That is the difference between a pattern and a feather.
 
-If the file only says what we decided, the next worker inherits our mistakes. If it says why, she can find them.
+## A Reader That Can Act
 
-The next morning Ines opens a new document and discovers that why is much harder to write down than what.
+Alexander's patterns and the programmers' patterns both had a human reader. The company's next pattern would be read by a machine with tools.
 
-## Why Experiments Don't Learn
+People had tried to give written knowledge to machines before. In 1977, the year of Alexander's book, Edward Feigenbaum named the attempt knowledge engineering and found its hardest part in the expert: getting the knowledge out, then maintaining the exceptions the expert eventually admitted to.&#91;21&#93; Expert systems spent years interviewing people like Sam.
 
-Put the two halves of the team side by side. Engineering's checks run thousands of times a day. A product team runs a few dozen experiments a year. Each one costs traffic, engineering time and two weeks of waiting, and on the home screen the effect that mattered arrived after everyone had stopped listening.
+Andrej Karpathy's Software 1.0/2.0/3.0 shorthand captures what changed. In Software 1.0 a person writes the rules as code. In Software 2.0 learned weights absorb patterns nobody has to articulate and offer no convenient place to amend a pattern's conditions. In Software 3.0 natural language itself can instruct a model.&#91;22&#93; The machine doing the work can read a pattern, follow its Therefore and consult the reasons behind it without every qualification first being translated into logic.
 
-The archive makes the gap wider. Open almost any experiment record and you will find a verdict: variant B, positive on the primary metric, shipped. You will rarely find what the verdict rested on. How long was the effect assumed to last? Which customers were assumed to behave like which? What was the metric taken to mean? Engineering writes its assumptions into tests that run again tomorrow. Experiments leave theirs in a meeting, and the meeting does not run again.
+Agent skills give the arrangement a container with much of Alexander's anatomy.&#91;23&#93; A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the Therefore. Calls to other skills serve as links to smaller patterns. Retrieval does what Alexander's reader did when following links from the neighborhood to the window seat: an agent facing a problem picks the pattern whose context matches it.
 
-When reality answers in a quarter, the most persuasive story in the room gets months to harden before anything contradicts it. By then its author may have moved on. The holiday hypothesis would have failed a load test in an afternoon. In the experiment archive it could live indefinitely.
+Voyager, a Minecraft agent described in 2023, shows a narrow but real version of this. It stored mastered behaviors as executable programs, indexed them by descriptions, retrieved them for related tasks, and composed simpler skills into harder ones.&#91;A&#93; Its world also supplied something the grocery company lacked: fast environmental feedback. Minecraft tells you quickly whether the pickaxe exists. Voyager's skill library lived in engineering's world of cheap checks.
 
-Each test told the truth about its own fortnight, and nothing connected the fortnights. Ines, a few months later, was about to need all three things engineering had and experimentation lacked: a place for each assumption, a way to find the one that broke, and checks that keep running after the decision.
+I avoid calling a natural-language pattern executable, because the word hides the reader: the same words can produce different actions in different models. A pattern written for an agent is still a hypothesis, now with a reader that can act on it at two in the morning.
+
+The agent that answered Ines showed what such a reader does with fluent text and no reasons. Nothing in the skill format forces the writer to include those reasons or the reader to respect them.
+
+The question is no longer merely how to write down what Sam knows.
+
+What must a pattern carry when its reader can act on it, and what keeps that pattern connected to reality when reality answers slowly?
 
 ## Locate the Failure
 
