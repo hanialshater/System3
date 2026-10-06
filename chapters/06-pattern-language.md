@@ -323,60 +323,55 @@ Capturing every possible dependency would cost more than the inquiry. Start with
 
 ## The File Says No
 
-For two months the review agent raised wins-that-fade whenever a visible home-screen change reported an early gain. It asked for the cohort comparison, cited the cases behind the warning and checked the committed predictions.
-
-Three launches went through it: Jalal's staples layout, a second version of the deals tile, and Sam's slot reminder from the smallest note on the workshop board.
+For two months the review agent raised `wins-that-fade` whenever a visible home-screen change reported an early gain. It asked for the cohort comparison, cited the cases behind the warning and checked the predictions the team had committed to in advance. Three launches went through it: Jalal's staples layout, a second version of the deals tile, and Sam's slot reminder, the idea from the smallest note on the workshop board.
 
 The staples layout faded.
 
 The deals tile faded.
 
-The slot reminder did not. Customers who used it once kept responding to it week after week. Nobody would have put it on a conference slide.
+The slot reminder did not. Customers who used it once kept responding to it week after week, which is not the kind of result anyone puts on a conference slide. It also met the file's own refutation condition: a visible change whose gain returning customers held.
 
-Sam had expected the reminder to fade with the rest. Everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his idea.
+The pattern had done exactly what it was supposed to do. It had made a prediction sharp enough to lose, and the slot reminder made it lose. The team did not delete the evidence that had supported it or call the reminder an exception. They rewrote the claim. Visible home-screen changes often produce novelty effects in returning customers; one lasting case no longer refuted the whole pattern, but it changed its scope and confidence.
 
-Now both kinds of expertise had failed in public. Jalal's imported knowledge had lost its conditions on the journey. Sam's local knowledge had stayed close to its conditions and still overreached. Neither needed replacing by the other. Both needed a form that could travel far enough to meet cases capable of changing it. The team started to trust the file.
+Sam had expected the reminder to fade with the rest; everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his own idea. So both kinds of expertise had now failed in public. Jalal's imported knowledge had lost its conditions on the way in, and Sam's local knowledge had stayed close to its conditions and still overreached. What each of them needed was a form that could travel far enough to meet the cases that might change it, and for a while the file looked like that form. The team started to trust it.
 
-Then the checkout team shipped a speed-up. Pages loaded faster and completed orders rose. The agent retrieved wins-that-fade, treated the result as another novelty case and recommended delaying the broader rollout until the pattern's predictions had been checked.
+Then the checkout team shipped a speed-up. Pages loaded faster and completed orders rose. The agent retrieved `wins-that-fade`, treated the result as another novelty case and recommended delaying the broader rollout until the pattern's predictions had been checked.
 
-Ines, who had built half of the speed-up, objected that customers do not get used to a page loading quickly the way they get used to a new banner. Nothing on the checkout page was new in that sense.
+Ines, who had built half of the speed-up, objected. Customers do not get used to a page loading quickly the way they get used to a new banner, she said, and nothing on the checkout page was new in that sense.
 
-The file answered with its confidence and documented cases. Jalal's review gate made the recommendation binding unless someone with override authority stepped in. Jalal had that authority. The recommendation was fluent, cited and came from a pattern that had earned trust partly by proving its own co-author wrong. He signed it.
+The file answered with its confidence and its documented cases. Jalal's review gate made the recommendation binding unless someone with override authority stepped in, and Jalal had that authority. The recommendation was fluent and cited, and it came from a pattern that had earned trust partly by proving its own co-author wrong.
 
-The later evidence showed that the speed gain was durable.
+He signed it.
 
-The mistake was institutional. A pattern whose scope was visible changes had acquired authority over an invisible performance improvement. Forty home-screen launches can teach a great deal about home screens and nothing about checkout speed.
+The later evidence showed that the speed gain was durable. A pattern scoped to visible changes had acquired authority over an invisible performance improvement, and forty home-screen launches, however carefully read, say nothing about checkout speed. Each person in the review had acted reasonably; the institution had let a confident file decide a question outside its scope. The pattern written to make the room distrust confident stories had become the most confident story in the room, and the file had started producing feathers of its own.
 
-The file had started producing its own feathers: the pattern written to make the room distrust confident stories had become the most confident story in the room.
+In Ramsey's terms, confidence is a degree of belief, and the pattern could only earn its degree by facing cases that had not produced it. So Jalal set up a comparison. Two reviewers, with the same model and the same tools, read the same historical reports: faded gains, lasting gains and ambiguous cases. One had `wins-that-fade`; the other had only a generic instruction to be careful. The question was whether the pattern caught novelty that the control missed, or whether it simply warned about novelty in every report, in which case it had learned to sound concerned without learning to tell the cases apart.
 
-In Ramsey's terms, confidence is a degree of belief. To earn that confidence, the pattern has to face cases that did not produce it. The reviewer with the pattern and the reviewer without it read the same historical reports: faded gains, lasting gains, ambiguous cases. The model and tools stayed fixed. A generic instruction to be careful served as the control.
+Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written context files over using none, and the generated files also raised average costs across the two benchmarks.[24](appendix-references.md#ref-06-agents-md) Writing knowledge down for agents does not, by itself, make them better.
 
-A reviewer that warns about novelty in every report has learned how to sound concerned.
+Testing the pattern costs traffic, analysis and calendar time. Larry Laudan drew a version of this line between acceptance and pursuit:[19](appendix-references.md#ref-06-laudan) what to believe today and what to investigate tomorrow are different questions, and a policy that funds only today's accepted method can keep alternatives from ever collecting the evidence that would make them credible.
 
-Repository context files have already faced this kind of comparison. Gloaguen and colleagues' revised study found no statistically significant gain in task success from either generated or developer-written repository context files over using none; generated files also raised average costs across the two benchmarks.&#91;24&#93; Writing knowledge down for agents does not, by itself, make them better.
-
-Testing the pattern costs traffic, analysis and calendar time. Larry Laudan called one version of the distinction acceptance and pursuit.&#91;19&#93; What to believe today and what to investigate tomorrow are different questions. A policy that funds only today's accepted method can prevent alternatives from collecting the evidence that would make them credible.
-
-So Jalal split the problem. Product experiments stayed with the product teams. Pattern evaluation got a small review budget of its own. A different question—whether the success criterion itself should change—went to the head of product, who owned the goal.
-
-An agent with a sound epistemic objection still has no authority to spend somebody else's money. A funding policy is itself a choice made by people with power. Written into the record, it can at least be inspected.
+So Jalal split the problem. Product experiments stayed with the product teams, pattern evaluation got a small review budget of its own, and a different question, whether the success criterion itself should change, went to the head of product, who owned the goal. An agent with a sound epistemic objection still has no authority to spend somebody else's money. The funding policy is a choice made by people with power, but once written into the record, it can at least be inspected.
 
 After a quarter of comparisons, the top of the file read:
 
 ```yaml
 id: wins-that-fade
 confidence: supported for visible layout and home-screen changes; untested elsewhere
+context: A visible home-screen or layout change reports an early gain.
 scope: changes returning customers can notice and react to as new
+would_be_wrong_if: in a fresh evaluation set, returning customers hold the gain on most visible changes
 documented_cases: [home_redesign, deals_tile, staples_layout, deals_tile_v2, historical_visible_changes_40]
 lasting_cases: [slot_reminder]
+excluded_cases: {carousel: logging defect, see locate-the-failure}
 known_failure: misapplied to an invisible checkout speed-up whose gain persisted
-revision: treat changes customers cannot see, such as speed, as outside scope
+revision: treat changes customers cannot see, such as speed, as outside scope; restate would_be_wrong_if as a rate after slot_reminder
 evidence_record: fade-evaluations
 ```
 
-The next agent can see where the pattern has been tested, where it held, and how its predecessor misused it. Nobody had to retrain anything to get there.
+The next agent can see where the pattern has been tested, where it held, and how its predecessor misused it, and none of that required retraining a model.
 
-\* Therefore: record how sure we are of each pattern, make it earn that confidence on cases that did not produce it, and fund the evidence it still needs.
+* Therefore: record how sure we are of each pattern, make it earn that confidence on cases that did not produce it, and fund the evidence it still needs.
 
 ## Noted
 
