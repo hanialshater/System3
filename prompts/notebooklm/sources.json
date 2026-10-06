@@ -72,7 +72,7 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "eec17186bfb69e53e9b544cec1ab9236449ee26e956055d61f6e5bc0b164e29c",
+      "source_sha256": "00107952833a482001f82fcc63fea008968a50814b0f165b08f2b70203d5dd7e",
       "brief": "prompts/notebooklm/chapter-04.md",
       "brief_sha256": "abc1aacab5dbf074a724ebcb5a31ac3d1c0a9cfd8e455bdd58837a8be55e0de1",
       "sections": [
@@ -85,14 +85,13 @@
         "Code Can Touch Back",
         "A Hallucination With Better Retention",
         "The Epistemic Agent",
-        "The 13579 Failure",
         "Creative Distrust",
         "Back to the Camel"
       ]
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "f86cabb6248af467f97b78fd929ac98e65f6bfa78c004d4ce48b8e010ff72f70",
+      "source_sha256": "0a22e5df1e36f004305964583ad2469c6e24001e9038c8af9b464ab551baabfa",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "65a13034781487e3b279c3f727d294d7b45fb55ce06da97ba853d95c59bf7d67",
       "sections": [
@@ -110,7 +109,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "653e2a821047cadf682db7ad81233c95c83d47be0ff92b5f8fa2b34cb7d5efbe",
+      "source_sha256": "3141ff5b64bb25991382f9781ff1b85072435ad3625249dea94b5284b71ff581",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "7b0bff46d69749540297905d2ebb068160de678c5d2e6b4c2d2762f771d9f455",
       "sections": [
@@ -135,7 +134,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "4082d66957cbe24fccb1e80dc7924e7a9ebce0142486d184d6f12d31129fd7bc",
+      "source_sha256": "871197c6b15a8ad3027fd72d44eb26d1faa05de0b25e12e6d0be656f4557a79c",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
       "sections": [
