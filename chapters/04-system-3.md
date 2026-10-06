@@ -32,7 +32,7 @@ Tongue out, strain upward, dignity temporarily suspended, result observed.
 
 The epistemic chain here is about as short as they come. You form a hypothesis, act on the world, and the world answers. Your body is an experimental apparatus that follows you around all day, mostly free of charge.
 
-Large language models have read billions of words about tongues and ears. They can explain tongue anatomy, discuss auricular cartilage, and probably tell you about people whose tongues reach places you’ll wish you hadn’t asked about. They cannot try it on themselves. They have no tongue.
+Large language models have read billions of words about tongues and ears. They can explain tongue anatomy, discuss auricular cartilage, and probably tell you about people whose tongues reach places you’ll wish you hadn’t asked about. They cannot try it on themselves, because they have no tongue.
 
 A body puts us in causal contact with a world that doesn’t care how plausible our story sounded. Misjudge a step and gravity offers immediate peer review.
 
@@ -48,7 +48,7 @@ Language models start somewhere else, mostly with the residue that all this expe
 
 In the early twentieth century Ferdinand de Saussure made a radical claim about language: what a sign signifies does not determine its form. There is nothing inherently cow-like about the sound /kaʊ/. French speakers say *vache*, Germans say *Kuh*, and Japanese speakers say *ushi*.
 
-For Saussure, much of a sign’s value comes from its relationships and differences with the other signs in the system. Language, on this view, is a network of contrasts held together by convention.[1](appendix-references.md#ref-04-saussure)
+For Saussure, much of a sign’s value comes from its relationships and differences with the other signs in the system, so that language becomes a network of contrasts held together by convention.[1](appendix-references.md#ref-04-saussure)
 
 A century later we built something that learns a network of that kind. A transformer consumes enormous amounts of language and learns relationships among tokens and contexts. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
 
@@ -60,7 +60,7 @@ Months later somebody asks whether cows are dangerous, and the model gives an ex
 
 The conclusion survives training, and much of what earned it trust is lost along the way. That is what I mean when I call an LLM’s knowledge epistemologically flat. The flatness sits between a claim and its justification. A mathematical identity, an experimental result, an expert opinion, a rumor repeated ten thousand times and a plausible completion can all arrive through the same channel, in equally polished English.
 
-“Fire” keeps linguistic company with heat, smoke, burn and wood. Fire is also the thing that cooks food and destroys houses, the thing you pull your hand away from. Shout the word in a crowded building and a whole social machinery starts to move. This is what Wittgenstein’s later philosophy drew attention to: language living inside practice, in activities, habits, rules and what he called forms of life.[2](appendix-references.md#ref-04-wittgenstein)
+“Fire” keeps linguistic company with heat, smoke, burn and wood. Fire is also the thing that cooks food and destroys houses, the thing you pull your hand away from, and if you shout the word in a crowded building a whole social machinery starts to move. This is what Wittgenstein’s later philosophy drew attention to: language living inside practice, in activities, habits, rules and what he called forms of life.[2](appendix-references.md#ref-04-wittgenstein)
 
 Emily Bender and Alexander Koller made a version of this argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff through a conversation about a coconut catapult by offering praise. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Their argument is that learning form alone cannot give it meaning.[3](appendix-references.md#ref-04-octopus) I prefer dead Europeans to cephalopods, but the point is the same.
 
