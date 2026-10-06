@@ -5,63 +5,59 @@
 
 The handover document was eleven pages long, and every line in it was a decision.
 
-Keep the home-screen layout stable through December. Do not personalize the deals tile for first-time customers. The ranking migration is paused; do not restart it. The recipe feature underperformed; revisit only with a new data source.
+*Keep the home-screen layout stable through December. Do not personalize the deals tile for first-time customers. The ranking migration is paused; do not restart it. The recipe feature underperformed; revisit only with a new data source.*
 
-Its author had run the product team of an online grocery company for three years. Then he took a job somewhere larger, wrote the document in his last fortnight, and left after a farewell lunch and sincere good wishes. Nobody doubted that he had known what he was doing. The document was confident, specific and written by someone who had been there.
+Its author had run product at an online grocery company for three years. He wrote the document in his last fortnight and left after a farewell lunch and sincere good wishes. The document was confident and specific, and there was every reason to think he had known what he was doing.
 
-Within two months the team found the limit of a document made only of decisions. December had passed: did stable still apply in March? The recipe team had a new data source: was it the kind he meant? Nobody could say. The document recorded what had been decided and not what each decision rested on. Asking its author worked once. He answered politely from his new job and remembered less than the document did.
+In March the recipe team arrived at the roadmap meeting with a new data source. Someone pulled up the document. Was this the kind of source he meant? The line didn't say. Neither did the one about December, which had passed; half the room now read it as permanent and the other half as expired. Asking its author worked once. He answered politely from his new job and remembered less than the document did.
 
-Knowledge was not the problem. Between them the team had years of it. What they lacked was a way to keep a decision attached to its reasons, so that someone who had not been in the room could tell when a line had stopped being true.
+The meeting ended without a decision, and so did the next one. The home screen stayed exactly as he had left it, because nobody wanted to be the one who broke a rule they didn't understand.
 
-The company did what companies do. It hired another leader.
+The team had years of knowledge between them. What it lacked was a way to keep a decision attached to its reasons, so that someone who had not been in the room could tell when a line had stopped being true.
+
+The company did what companies do and hired another leader, one who brought plenty of reasons with him, most of them worked out somewhere else.
 
 ## Feathers
 
 Call him Uncle Jalal, as the team eventually did, partly out of affection and partly because he had a story for every occasion.
 
-He arrived carrying years of experience from elsewhere, and in his first month he held a roadmap workshop. By lunch the whiteboard was full. Every idea arrived with a pedigree: a paper from a good conference, a keynote, a system that had worked beautifully somewhere else. Several of the somewhere elses were his.
+He arrived with years of experience from elsewhere, and in his first month he held a roadmap workshop. By lunch the whiteboard was full. Every idea came with a pedigree: a paper from a good conference, a keynote, a system that had worked beautifully somewhere else (several of the somewhere elses were his). He put them on the wall precisely so they could be checked against what this company knew. The room still ranked them by how convincing they sounded, which is how most rooms rank ideas, and his sounded convincing because he had seen them work.
 
-He did not want the team to copy his old playbook. That was why the ideas were on the wall: make the imported knowledge explicit, put it beside what this company knew, and test what survived contact with local customers. Still, the room ranked the ideas by how convincing they sounded, which is how most rooms rank ideas, and his sounded convincing because he had seen them work.
+Amotz Zahavi's handicap principle gives us the peacock: a costly display can signal quality when a weaker animal cannot afford to imitate it.[1](appendix-references.md#ref-06-peacock) The tail is informative only as long as it stays costly enough to remain connected to the quality it advertises.
 
-Amotz Zahavi's handicap principle gives us the peacock: a costly display can signal quality when a weaker animal cannot afford to imitate it.&#91;1&#93; Its extravagance is informative because it remains costly enough to stay connected to the quality it advertises.
+Human expertise has costly displays too: a doctorate, a list of systems built, ten years of grinding. Jalal's were genuine, and they certified judgment earned under particular conditions. The ideas on the whiteboard had travelled with the credential and without the customers, catalog, traffic and year that had made them work. Jalal knew this, would own the results, and wanted to hear when his ideas failed, but good intentions could not bring those conditions back.
 
-Human expertise has costly displays too: a doctorate, a list of systems built, ten years of grinding. Jalal's were genuine. They certified judgment earned under particular conditions. The ideas on the whiteboard had travelled with the credential and without the customers, catalog, traffic and year that had made them work.
+Twice that afternoon Sam said, half to himself, that the team had tried something like this before. Sam was a principal engineer, central to how the company actually worked and oddly peripheral to how it recorded what it knew. His name appeared in runbooks, people found him when migrations went strange, and he remembered why apparently stupid pieces of the system were still there. He carried what companies politely call tribal knowledge.
 
-Jalal was not hiding from that problem. He was in the room, would own the results, and wanted to be told when his ideas failed. Good incentives would not restore the conditions the ideas had left behind.
-
-Twice that afternoon Sam said, quietly, that the team had tried something like this before. Sam was a principal engineer, central to how the company actually worked and oddly peripheral to how it recorded what it knew. His name appeared in runbooks. People found him when migrations went strange. He remembered why apparently stupid pieces of the system were still there. He carried what companies politely call tribal knowledge.
-
-He had no paper for the home screen. He had a memory of a launch two years earlier and a feeling about how returning customers behaved. Jalal asked why.
+He had no paper for the home screen, only a memory of a launch two years earlier and a feeling about how returning customers behaved. Jalal asked why.
 
 Sam started to answer, stopped, and looked back at the board.
 
 "I don't know. You see it after a while."
 
-He also had one idea of his own, which went up on the smallest note: a reminder telling customers when their usual delivery slot was about to fill. Jalal kept the warning and the reminder on the board.
+He also had one idea of his own, which went up on the smallest note: a reminder telling customers when their usual delivery slot was about to fill. Jalal kept both the warning and the reminder on the board.
 
-Everyone respected Sam. Respect was not the missing technology. The company had no portable form for what he knew.
-
-So the room held two kinds of knowledge with opposite defects. Jalal's was wide and had lost its conditions on the way in. Sam's was narrow and had kept its conditions, but could not leave his head. Within a year several of the most convincing ideas on the whiteboard would fade, and Sam's small notes would matter more than their size suggested.
+Everyone respected Sam, but respect gave the company no way to carry what he knew. So the room held two kinds of knowledge with opposite defects. Jalal's was wide and had lost its conditions on the way in. Sam's was narrow and had kept its conditions, but could not leave his head. Within a year several of the most convincing ideas on the whiteboard would fade.
 
 ## Wins That Vanish
 
-The team did what a good team does with imported ideas. It tested them.
+The team did what a good team does with imported ideas and tested them.
 
-The dashboard said yes. The home-screen redesign, Jalal's favorite idea from the workshop, won by four percent on basket size. So did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped them.
+The dashboard said yes. The home-screen redesign, Jalal's favorite idea from the workshop, won by four percent on basket size, and so did a recipe carousel and a personalized deals tile. Each test ran for two weeks, each came back green, and the team shipped all three.
 
-A fortnight after launch the redesign's gain was gone. The feature was still live. The numbers simply sat where they had been before. Then the carousel's gain went the same way, and then the deals tile's.
+A fortnight after launch the redesign's gain was gone. The feature was still live; the numbers had simply drifted back to where they had been before. Then the carousel's gain went the same way, and then the deals tile's.
 
-At the quarterly review the slide still said four percent. The live number was flat. The head of product asked the reasonable question: what happened?
+At the quarterly review the slide still said four percent while the live number was flat, and the head of product asked the reasonable question of what had happened.
 
-Jalal offered a hypothesis. Seasonality, maybe: the experiment had ended just before the school holidays, and grocery baskets change shape when children are at home. It was a good hypothesis, grounded in a real calendar and real experience. The most scientific word in it was *maybe*.
+Jalal offered a hypothesis. Perhaps it was seasonality: the experiment had ended just before the school holidays, and grocery baskets look different when children are at home. It was a good hypothesis, grounded in a real calendar and real experience, and the most scientific word in it was *maybe*.
 
-The experiment record had nowhere to keep the *maybe* attached. It did not record which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. Repetition could turn a plausible hypothesis into an accepted explanation without adding a gram of evidence.
+The experiment record had nowhere to keep the *maybe*. It did not note which assumption the holiday story depended on, what observation would distinguish it from another explanation, or when the explanation should be withdrawn. Repeated often enough, a plausible hypothesis could become an accepted explanation without adding a gram of evidence.
 
-Every fade produced another reasonable hypothesis. School holidays. The end of a promotion. A competitor's discount week. Each story cited a real event and came from someone who knew the business. None predicted the next fade.
+Every fade produced another reasonable hypothesis: school holidays, the end of a promotion, a competitor's discount week. Each cited a real event and came from someone who knew the business, and none predicted the next fade.
 
-Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.&#91;5&#93; A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and no record existed that would have shown it.
+Imre Lakatos, who in Chapter 5 counseled patience with anomalies, also gave a test for when patience has run out.[5](appendix-references.md#ref-06-lakatos) A research program protects its core with auxiliary hypotheses, and the patches tell you whether the program is healthy. In a progressive program, a revision predicts something new that then holds up. In a degenerating one, each revision explains the failure already observed and predicts nothing further. The team's explanations were degenerating, and they had no record that would have shown it.
 
-Nobody in that room was against evidence. The danger came dressed as rigor: a dashboard, a confidence interval, an experienced hypothesis whose question mark had quietly disappeared. The tests were producing evidence. The archive was keeping verdicts while losing the beliefs those verdicts were supposed to change.
+Everyone in that room was in favor of evidence. That made the problem harder to see. It looked like rigor: a dashboard, a confidence interval, an experienced hypothesis whose question mark had dropped away somewhere between meetings. The tests kept producing evidence, but the archive kept only the verdicts and lost the beliefs those verdicts were supposed to change.
 
 ## Two in the Morning
 
@@ -73,33 +69,25 @@ At ten past two one morning, checkout in one city stops accepting orders. The en
 
 It started after Tuesday's migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
 
-Ines also has the company's agent. It has read the wiki, the runbooks, three years of postmortems, the predecessor's handover. She asks what is wrong.
+Ines also has the company's agent, which has read the wiki, the runbooks, three years of postmortems and the predecessor's handover. She asks it what is wrong. Within seconds it produces a diagnosis with headings, three citations and a confident recommendation to check the database connection pool. It reads like the work of a senior engineer who has seen this before. It is wrong, and nothing in its tone says so.
 
-Within seconds it produces a diagnosis with headings, three citations and a confident recommendation to check the database connection pool. It reads like the work of a senior engineer who has seen this before.
+So there was a third knower in the building. Jalal had broad knowledge with little local context, and Sam had local context with no way to send it. The agent had every word the company had written and none of the reasons that had stayed in people's heads, and it could produce the display of expertise almost for free. Zahavi's condition had collapsed.
 
-It is wrong, and nothing in its tone says so.
+What saved Ines was a dashboard. Within a minute it showed that the connection pool was healthy, and she moved on.
 
-That was the third knower in the building. Jalal had broad knowledge with little local context. Sam had local context and no way to send it. The agent had every word the company had written and none of the reasons that had stayed in people's heads. Worse, it could produce the display of expertise almost for free. Zahavi's condition had collapsed.
+An alert had woken her within minutes of the first failed order. The dashboard showed which city, which service and which deploy. The runbook walked her through the dependency graph and the traffic split. The rollback she used was rehearsed every month, and the previous week's load test told her the other cities could absorb the shifted traffic. By four the city was taking orders again, although the rollback had restored service without explaining the failure.
 
-What saved Ines was a dashboard. Within a minute it showed the connection pool was healthy, and she moved on.
+Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Tests run on every commit. Alerts fire when a service drifts. Load tests ask, before customers do, where a working system stops working. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.[6](appendix-references.md#ref-06-chaos-monkey) Engineers have egos, credentials and favorite architectures like everyone else, but an impressive design that breaks under load still fails the load test on Thursday.
 
-An alert had woken her within minutes of the first failed order. The dashboard showed which city, which service and which deploy. The runbook walked her through the dependency graph and the traffic split. The rollback she used was rehearsed every month, and the previous week's load test told her the other cities could absorb the shifted traffic. By four the city was taking orders again. The rollback restored service without explaining the failure.
+The checks have a blind spot. The serializer fails rarely, and a failure that comes once a year produces one piece of feedback a year; knowledge fed that slowly stays in the head of whoever happened to be there. *Ask Sam* preserved the dependency and did nothing for Ines at two in the morning. What she needed was what Sam looks for, why he looks there, and when that suspicion is a waste of time.
 
-Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Tests run on every commit. Alerts fire when a service drifts. Load tests ask, before customers do, where a working system stops working. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.&#91;6&#93; Engineers have egos, credentials and favorite architectures like everyone else. An impressive design that breaks under load still fails the load test on Thursday.
+The product side lived in the same blind spot. Its experiments were slower and sparser, and the effect that mattered on the home screen arrived after everyone had stopped listening. The agent's database diagnosis lasted about a minute against the dashboard; the holiday story, with nothing to check it against, could last indefinitely.
 
-The checks have a blind spot. The serializer fails rarely. A failure that comes once a year produces one piece of feedback a year, and knowledge fed that slowly stays in the head of whoever happened to be there.
+The next morning Ines opens a new document to write up the night and discovers that *why* is much harder to write down than *what*. A file that records only what was decided passes the old mistakes to the next worker intact. One that records why gives her a chance to find them.
 
-*Ask Sam* preserved the dependency beautifully and did nothing for Ines at two in the morning. She needed what Sam looks for, why he looks there, and when that suspicion is a waste of time.
+The company had plenty of knowledge, in several forms. None of them could outlive the person who learned it and still be corrected when it stopped being true.
 
-The product side lived in the same blind spot. Its experiments were slower and sparser, and the effect that mattered on the home screen arrived after everyone had stopped listening. The agent's database diagnosis survived one minute. The holiday story could survive indefinitely.
-
-The next morning Ines opens a new document to write up the night and discovers that why is much harder to write down than what.
-
-If the file only says what we decided, the next worker inherits our mistakes. If it says why, she can find them.
-
-The company now had a predecessor's confident document, a leader's imported experience, an engineer's unwritten judgment and a machine that had read everything. It did not have a form in which knowledge could survive the person who learned it, travel to someone who was not there, and still be corrected when it stopped being true.
-
-An architect had already designed one, for buildings.
+An architect had already designed one that could, for buildings.
 
 ## Light on Two Sides
 
