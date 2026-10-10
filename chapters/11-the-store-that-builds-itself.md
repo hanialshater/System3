@@ -12,7 +12,7 @@ The starting problem was almost embarrassingly simple. Imagine two customers loo
 
 One, call her Mei, has visited several times across several days. She filtered by size and color, looked at alternatives, came back, switched between two candidates and now appears to be stuck near a decision. The other customer arrived thirty seconds ago from a search result. We know almost nothing about what he wants, how serious he is, or whether this is the first jacket he has seen in six months.
 
-They can see the same recommendation modules in the same order, even though the models inside those modules may be very good. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. We may have sophisticated intelligence inside each box while the arrangement of the boxes is mostly predetermined. The page is smart inside the modules and surprisingly dumb between them.
+They can see the same recommendation modules in the same order, even though the models inside those modules may be very good. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. The page is smart inside the modules and surprisingly dumb between them.
 
 So the question I wanted the prototype to ask was: what should the layer above do with them?
 
@@ -52,8 +52,6 @@ The fingerprint is local: to the customer, the context, the surface and the evid
 
 The architecture also separates the machine representation from the stories humans use to think. Designers and scientists may organize problems by funnel stage, mission, timing or recognizable archetype. Those lenses help us notice gaps and invent hypotheses. The runtime system can leave the story to the humans and work from signals, a problem fingerprint and a way to test whether the resulting behavior is useful. I like this separation because it protects us from one of the oldest mistakes in machine learning: turning a useful human abstraction into an ontological claim because we happened to put it in a feature table.
 
-The customer is not the funnel. The funnel is one way we look at the customer.
-
 ## A Library of Ways to Help
 
 Once you define demand as problems rather than slots, the supply side changes too.
@@ -62,13 +60,13 @@ Today, when people hear “recommendation,” they often picture a ranked list o
 
 But if the problem is comparison friction, a ranked list may be the wrong species of answer. The useful experience could be a comparison between the two products the customer is actually considering. If the problem is size anxiety, the useful thing may be evidence about fit. If the customer cannot imagine an outfit, it may be a generated collage. If she has only a vague mission, perhaps a product finder is better. If she knows exactly what she wants but the catalog is overwhelming, maybe the right action is a guided filter.
 
-I started calling these reusable units **recommendation experiences**. The name matters less than the abstraction. Each one is a reusable capability, larger than a model, that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
+I started calling these reusable units **recommendation experiences**. Each one is a reusable capability, larger than a model, that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
 
 A library of two hundred overlapping experiences would be a new kind of legacy system with better animation. So when a new need appears, first ask whether an existing experience can meet it with a different configuration. A Similar Items experience might be generic in one context and constrained to products in the customer’s size in another. A comparison component can compare different attributes depending on what matters in the current session, and a collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense.
 
 Building for the hundredth experience changes what the first few need to be capable of. The more that useful behavior can be produced by configuring and composing a smaller number of strong primitives, the less the organization has to encode every new situation as another permanent branch in software.
 
-I spent years in machine learning hearing that the answer to complexity was to learn rather than hand-author. Then, like everyone else, I helped build systems where the model learned beautifully inside a box surrounded by hand-authored configuration. The learning stopped at the edge of the box.
+I spent years in machine learning hearing that the answer to complexity was to learn rather than hand-author. Then, like everyone else, I helped build systems where the model learned beautifully inside a box surrounded by hand-authored configuration.
 
 ## Composition Is Not Ranking With a New Hat
 
@@ -80,11 +78,11 @@ Probably not. We expect the first module to address some of the problem, which m
 
 Now suppose a returns-clarity experience is more useful *after* fit evidence because the two together form a coherent decision aid. Its value may increase after the first experience appears.
 
-The score of an experience therefore depends partly on what has already been selected. That is composition.
+In composition, the score of an experience depends partly on what has already been selected.
 
 The composer has to select experiences, configure them, order them and deduplicate repeated *help* as well as repeated products. It needs some notion of saturation: two size widgets can be one too many. It can model synergy: one experience may become more valuable after another. It should account for position cost because the top of a page is expensive real estate and a wonderful module in slot twelve may be a philosophical achievement rather than a product one. Constraints matter too, but I prefer many of them to be visible pressures rather than a secret forest of `if DE_mobile && campaign_X` rules.
 
-The page becomes the unit. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives, such as raising CTR on this carousel, and each one sounds reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation. The layer above has to reason about the composition as a whole.
+The page becomes the unit. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives, such as raising CTR on this carousel, and each one sounds reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation.
 
 And this is where the design started resembling the society of agents. A society is not improved merely by hiring the best individual expert in every discipline. Somebody still has to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem.
 
@@ -96,7 +94,7 @@ A conventional recommender can still do an excellent job here. It can find twent
 
 But suppose the fingerprint says comparison friction is high and price-quality confusion is moderate. The composer can do something different. The first experience compares the two shoes Mei is actually deciding between on attributes relevant to her behavior. The second adds confidence evidence from customers or product information that helps resolve the remaining uncertainty. Generic similar-items may still survive because it has useful standalone value, but it moves down.
 
-She is not shown more choice. She is shown a way to close the choice she already has. That sentence changed how I thought about recommendations.
+She is not shown more choice. She is shown a way to close the choice she already has.
 
 A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
 
@@ -132,7 +130,7 @@ One is to panic quietly and run a generic fallback while still speaking in the c
 
 Based on what, exactly? Her IP address and our enthusiasm?
 
-The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not. Cold start is a state, not an error. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case. The architecture should know what it does not know. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
+The other is to treat low signal as a normal state with its own design. Lean on the anchor, season and population-level evidence. Prefer experiences with strong standalone value. Frame them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case. The architecture should know what it does not know. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
 
 ## Replayable
 
@@ -146,13 +144,19 @@ A composer makes a fresh decision from context. Now a customer reports a terribl
 
 “The model chose it” is not an answer. It is a resignation letter written in passive voice. So every composition needs a trace.
 
-Which signals were read? What problem fingerprint was inferred? Which experiences were eligible? Which were not? How were they configured? What scores did they receive? Which constraints mattered? What won? What lost? Which version of the composer produced the decision?
+The trace should record:
+
+- The signals read and the problem fingerprint inferred.
+- Eligible and ineligible experiences.
+- Their configurations, scores and relevant constraints.
+- The selected and rejected experiences.
+- The composer version.
 
 The losers matter more than they first appear. If we log only what we served, we can attribute outcomes to the winner but we lose much of the decision context. We cannot tell whether an experience was absent because it was ineligible, starved by the objective or simply scored slightly below another. We cannot replay the decision properly. We cannot compare a new policy against the old choice set without reconstructing a world we chose not to record.
 
 Logging the loser set does not magically give us causal counterfactuals. Reality is not that generous. It lets us reconstruct why this page existed, including the alternatives the customer never saw.
 
-The trace also changes development. You can build a simulator that replays saved scenarios. You can ask which experiences would be eligible in a context or which contexts a new experience could serve. You can run regression suites over scenarios before changing the library. A dynamic system can keep changing and still become safer, because each of its changes can be replayed.
+The trace also changes development. You can build a simulator that replays saved scenarios. You can ask which experiences would be eligible in a context or which contexts a new experience could serve. You can run regression suites over scenarios before changing the library.
 
 ## A Theory Losing Contact With Reality
 
@@ -190,8 +194,6 @@ If that value is module CTR, we have not solved the page problem. If it is total
 
 The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals. For comparison friction, the signal must distinguish resolution from abandonment. For size anxiety, customers should be able to progress with fewer signs of uncertainty without creating a return problem later.
 
-Before the store has a customer, it has to decide what it actually wants.
-
 The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints, merchandising has opinions, margin and availability are real, and so are regulators. A system that pretends only one of these matters is hiding politics inside a scalar.
 
 I want those trade-offs written into the design, where someone can question them. I do not expect to discover the One True E-commerce Reward Function carved into a mountain somewhere outside Berlin.
@@ -206,7 +208,7 @@ The first test I would run is deliberately boring. One placement: the product pa
 
 Why so narrow? Because if we invent a new library of experiences and change the selection mechanism at the same time, then run an experiment and get a flat result, we have learned almost nothing. Maybe the composer is bad. Maybe the new experiences are bad. Maybe both are good and the measurement is bad. Maybe the static page was already fine and I should have spent the quarter learning the guitar.
 
-A bounded test separates the claims. Does dynamic composition beat a strong static baseline? And importantly: does it beat simplification? That second competitor is easy to underestimate. Perhaps the best response to an overloaded page is fewer things. The system should have to earn its complexity against the possibility that removing modules produces a better customer experience. A philosophy of emergence should be willing to lose an A/B test. Otherwise it is not a philosophy of experimentation. It is branding.
+A bounded test separates the claims. Does dynamic composition beat a strong static baseline? And does it beat simplification? That second competitor is easy to underestimate. Perhaps the best response to an overloaded page is fewer things. The system should have to earn its complexity against the possibility that removing modules produces a better customer experience. A philosophy of emergence should be willing to lose an A/B test. Otherwise it is branding.
 
 ## When the Page Stops Being the Product
 
@@ -218,13 +220,9 @@ At that point, the word *page* starts to become suspicious. Why should the produ
 
 Why should a customer with a decision problem receive the same interface as somebody exploring for inspiration? Why should the home surface, product page, basket and later email behave like four organizations with partial amnesia if the customer is still pursuing one mission?
 
-The more capable the library becomes, the more the system can schedule problems and interventions rather than modules and slots.
-
 A customer starts with a vague request for a wedding outfit. The system helps narrow the style. A collage makes one direction concrete. Seeing it changes what the customer wants. The problem shifts from exploration to comparison. A product finder resolves a constraint. A size question appears. The scheduler brings in fit evidence. The customer buys the dress but not the jacket. Later, a different surface may continue the unresolved part of the mission.
 
 There was never a hard-coded `WEDDING_FUNNEL_V7`. The journey emerged from bounded problems, reusable capabilities and changing evidence.
-
-Here the hundreds of widgets become a vocabulary of action. The interface is the current projection of the problem-solving process.
 
 Nobody wants every pixel generated by an LLM. Predictability, accessibility, design systems and latency all matter, and customers occasionally just want to buy socks without participating in an artificial-intelligence research program. The machinery should become dynamic where dynamism earns its cost and remain boring where boring is excellent. But the direction is different from the old model of product development. Instead of predicting every useful journey in advance and encoding it as a fixed interface, we construct a repertoire of trusted capabilities and let the higher layer assemble them around the problem in front of it.
 
@@ -235,8 +233,6 @@ Taken literally, the title overstates it. The store learns how to build more of 
 I began the prototype as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a scientific institution embedded in the product. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
 
 That does not prove the book. I designed it with the book’s argument in my head, and the test that could embarrass me is still ahead. It may fail in several educational ways.
-
-But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
 
 The store is built from the local problem up: this catalog, these customers, this page. Its politics live in Surface Value, written down where someone inside the company can argue with it. Mei cannot, yet. Until she can, her interest is something the owner chooses to write in, not something she can enforce.
 

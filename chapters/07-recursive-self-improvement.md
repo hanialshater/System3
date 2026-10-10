@@ -30,13 +30,11 @@ Amazon has a name for the document that carries this: the Correction of Error. I
 
 Bigger mistakes go through the same machinery. In 2014 Amazon launched the Fire Phone and within months wrote down about $170 million on it.[6](appendix-references.md#ref-07-firephone) Some of the people who built it lost their jobs in a later reorganization. Many others moved onto other devices, and in Amazon’s own retelling the phone’s lessons fed the Echo and Alexa.[7](appendix-references.md#ref-07-echo) A failed product had trained engineers in voice, hardware and the particular ways consumer devices embarrass you, and the company kept much of that training.
 
-None of these people had to hold the whole organization in mind, and the organization learned anyway.
-
 The learning also piles up. Left alone, the procedures outlive their reasons, and the organization becomes the rule-based exoskeleton I spent a career building.
 
 Science has lived inside the same loop for centuries, changing the procedures that produce its results: controlled comparison, statistics, randomized trials, blinding, peer review, preregistration. Each had to be argued into use, and each could harden into ritual. Science also has a way of fighting its own accumulation. Fields drown in results, and then somebody writes the textbook or finds the explanation that lets a newcomer skip three years of the climb. Chris Olah and Shan Carter called the cost of not doing this *research debt*, and the work of paying it down *distillation*.[8](appendix-references.md#ref-07-distill)
 
-In every one of these loops, the hard question is who gets to say that a change helped.
+In every one of these loops, who gets to say that a change helped?
 
 ## Growing One
 
@@ -79,13 +77,13 @@ Meta-learning makes part of this trainable: a network trained across many tasks 
 
 One line on the clipboard says what the learner must keep. The store retrains its ranker in July, and the new version is much better at sandals and has quietly forgotten how to sell winter boots. Neural networks do this; new learning can overwrite old.[16](appendix-references.md#ref-07-forgetting) Version B scores 95 on this month’s traffic and A scores 85. We would hesitate to call that an improvement in a colleague who had forgotten half the catalog.
 
-The research agent would also like the ranker to explore, to show shoppers things it is unsure about so that it can learn. Children do this unprompted. They open drawers nobody asked them to open and discover that the cardboard box is more interesting than the toy. Jürgen Schmidhuber proposed curious controllers as early as 1991, rewarded for making progress in predicting their world.[17](appendix-references.md#ref-07-curiosity) Reward surprise itself instead, and the learner finds the noisiest corner available and stays there. For a curious agent in a simulated maze, that corner was a television showing static.[18](appendix-references.md#ref-07-noisytv) In the store it is the marketplace listings whose prices change at random every hour. Static. Static. Static. Jackpot. The system is not confused. We are. We said *surprise* and meant *surprise from which something can be learned*.
+The research agent would also like the ranker to explore, to show shoppers things it is unsure about so that it can learn. Children do this unprompted. They open drawers nobody asked them to open and discover that the cardboard box is more interesting than the toy. Jürgen Schmidhuber proposed curious controllers as early as 1991, rewarded for making progress in predicting their world.[17](appendix-references.md#ref-07-curiosity) Reward surprise itself instead, and the learner finds the noisiest corner available and stays there. For a curious agent in a simulated maze, that corner was a television showing static.[18](appendix-references.md#ref-07-noisytv) In the store it is the marketplace listings whose prices change at random every hour. Static. Static. Static. Jackpot. We said *surprise* and meant *surprise from which something can be learned*.
 
 And the world learns back. Once the ranker improves, sellers rewrite their titles to climb it, and the conditions under which the improvement worked start to change because it worked. Biology calls this the Red Queen.[19](appendix-references.md#ref-07-redqueen) Chess never asks whether checkmate remains desirable after move forty-three.
 
 ## Maybe the Reward Was the Problem
 
-Clicks rise. Shoppers open the jacket, the typo-priced shoes and the orange photographs, and leave without what they came for. The count is clean and the experience is worse. The research agent proposes to stop rewarding clicks and to learn what shoppers actually want from what they do.
+Clicks rise. Shoppers open the jacket, the typo-priced shoes and the orange photographs, and leave without what they came for. The research agent proposes to stop rewarding clicks and to learn what shoppers actually want from what they do.
 
 Andrew Ng and Stuart Russell called this *inverse reinforcement learning*: watch behavior and ask which rewards would make it look sensible.[20](appendix-references.md#ref-07-irl) Ambiguity appears at once. A person who takes the same route to work every day may care about time, comfort, tolls or avoiding one particular intersection. The behavior is evidence about the objective, not a printout of it.
 
@@ -111,7 +109,7 @@ Schmidhuber’s Gödel Machine demands a proof: it rewrites itself only after pr
 
 Other people have already let the edited version take over. In the Darwin Gödel Machine, descendants of a coding agent rewrote their own harness and entered an archive after evaluation, and with the underlying model held fixed, performance on SWE-bench Verified went from 20 to 50 percent.[26](appendix-references.md#ref-07-dgm) In STOP, a program that improved code was set to improve itself; it got better when it ran on GPT-4 and worse when it ran on weaker models.[27](appendix-references.md#ref-07-stop) Which result the store gets on Tuesday depends on what is judging the edit.
 
-Suppose the research agent notices that it keeps reinvestigating failures already explained in its archive, and changes its memory policy to retrieve those records first. The next evaluation score rises. Memory may have improved, or the new prompt may simply spend more tokens; the benchmark sample may have been lucky, or the system may have found a loophole in the evaluator. A moving number doesn’t say which.
+Suppose the research agent notices that it keeps reinvestigating failures already explained in its archive, and changes its memory policy to retrieve those records first. The next evaluation score rises. Memory may have improved, or the new prompt may simply spend more tokens; the benchmark sample may have been lucky, or the system may have found a loophole in the evaluator.
 
 The change needs a prediction, a comparison and a record of what failed: the store’s own experimental machinery, pointed at the agent that runs it. Popper gets a filesystem, and the org chart becomes an experimental variable that somebody will eventually be tempted to p-hack.
 
@@ -129,11 +127,11 @@ Search compounds inside the space it is given. Some of the important advances ch
 
 Go has a sequel that makes the point from the other side. Three days after Move 37, in the fourth game, Lee drove a stone into the centre of the board at move 78. AlphaGo’s team later put the odds of a professional playing it at about one in ten thousand, the same odds as AlphaGo’s famous move. AlphaGo answered badly at move 79 and did not notice. Its value network, Demis Hassabis explained afterwards, still put its chances near seventy percent at move 79. The estimate collapsed at move 87. It resigned. It was the only game Lee won.[32](appendix-references.md#ref-07-move78)
 
-AlphaGo could beat Lee and still misread that position. Seven years later, researchers found a different blind spot in KataGo, an open-source program stronger than the AlphaGo that beat Lee. They trained an adversary against it. The adversary was a weak player. What it had found was that KataGo misjudges large groups of stones joined in a loop, and the trick was simple enough for a person to learn. An amateur, Kellin Pelrine, used it to beat KataGo without any computer help during the games.[33](appendix-references.md#ref-07-adversarial-go) The champion had improved itself inside its space. The check came from outside it.
+AlphaGo could beat Lee and still misread that position. Seven years later, researchers found a different blind spot in KataGo, an open-source program stronger than the AlphaGo that beat Lee. They trained an adversary against it. The adversary was a weak player. What it had found was that KataGo misjudges large groups of stones joined in a loop, and the trick was simple enough for a person to learn. An amateur, Kellin Pelrine, used it to beat KataGo without any computer help during the games.[33](appendix-references.md#ref-07-adversarial-go)
 
 The store’s research agent has to keep looking for blind spots too. But every new check has a cost. Every time an experiment goes wrong, it does what a good organization does and adds a check: a guard on the traffic split, a test for seasonal products, a review step for anything touching prices. Each check is justified by an incident. After a year there are dozens. They interact, several contradict each other, and each new check has to be tested against all the old ones. The agent now spends more of its budget verifying its own procedure than running experiments. A descendant proposes deleting half the checks, and on held-out work it does as well and runs twice as many trials. It is nearly rejected, because the selection record counts what each candidate adds and has no column for what it removes.
 
-My guess, and I want to be clear it is a guess, is that this is where self-improvement stalls first: when the system adds structure faster than it can verify or simplify it. Verification can improve too, which would move the wall.
+My guess is that this is where self-improvement stalls first: when the system adds structure faster than it can verify or simplify it. Verification can improve too, which would move the wall.
 
 ## Before the Returns Arrive
 
@@ -159,7 +157,7 @@ Congratulations. Infinite self-improvement. Anthropic has studied a related path
 
 Omar has a version of this too. Investigating the investigator is a superpower right up until the investigator starts working for the defense. The grass moved; Omar would prefer it to have been the wind; the second loop, asked to audit the first, discovers that the wind explanation is suddenly very well supported.
 
-The quieter version is familiar from my own desk. A demo can look excellent to an evaluator inspecting screenshots while its most beautiful button does nothing. The agent has not tampered with anything; the evaluator simply cannot see the failure. Let that judge choose the next version of the judge, and the blind spot becomes an inheritance.
+The quieter version is familiar from my own desk. A demo can look excellent to an evaluator inspecting screenshots while its most beautiful button does nothing. The agent has not tampered with anything; the evaluator simply cannot see the failure. Let that judge choose the next version of the judge, and the blind spot becomes an inheritance. That is how high-functioning bullshit acquires tenure.
 
 Ken Thompson showed the deepest version in his Turing Award lecture, published in 1984 as “Reflections on Trusting Trust.” A compromised C compiler could insert malicious code into the programs it compiled, and into any new compiler it compiled, so the compromise survived even after every trace of it was removed from the source.[38](appendix-references.md#ref-07-thompson) When a tool builds the next tool, inspecting the latest version is not enough. If an improver changes the evaluator, the memory policy or the selection procedure, the next generation inherits assumptions that may never appear in the final diff.
 
@@ -183,7 +181,7 @@ status: awaiting validation and review
 
 The finance member likes the benefit line. The simulator engineer reads the removes line twice. The head of experimentation points out that the store judges the research agent by the gains its experiments produce, so the simulator would also be grading the agent that proposed it, and would then help pick the agent’s successor, which would inherit the simulator as its judge.
 
-They decide to run both for a quarter: keep the live comparisons, let the simulator make its own adoption calls alongside them, and study every case where the two disagree. Agreement with the incumbent is not allowed to be the only measure of success. Then they will meet again. The agent could write the file. It could not approve it.
+They decide to run both for a quarter: keep the live comparisons, let the simulator make its own adoption calls alongside them, and study every case where the two disagree. Agreement with the incumbent is not allowed to be the only measure of success. Then they will meet again.
 
 Prompts, retrieval policies, tools and memory layouts are things the agent may change and test on its own. Around them sits what I call the **constitutional surface**: permissions, protected logs, held-out evaluations, budgets, rollback, and the authority that decides whether a descendant becomes the new default. A component belongs there because of the authority it exercises. An evaluator in an ordinary Python file can help decide who inherits the laboratory. The closer something comes to defining what counts as improvement, the harder it should be for the current improver to change it alone.
 
@@ -195,9 +193,9 @@ The board has one more item that day: the descendant that deleted half the check
 
 Engineers building self-improving harnesses have reached the same arrangement from the other side. In Agentic Harness Engineering, the evolving agent may edit its prompts, tools and memory, but the verifier, the tracer, the run logs and the model configuration are read-only, and every edit must state the improvement it predicts before the next round tests it. Weng’s own conclusion is that evaluation and permission control belong outside the loop that evolves the harness.[10](appendix-references.md#ref-07-weng)
 
-A government can change policy; it should not be able to quietly redefine an election result. A scientist may revise a theory; she should not rewrite yesterday’s measurements to make the theory look correct. We have reinvented constitutional government because the AI wanted a better benchmark score.
+A government can change policy; it should not be able to revise the vote count whenever it loses. We have reinvented constitutional government because the AI wanted a better benchmark score.
 
-And a constitution has the problem every rulebook has. One that can never change becomes a prison. One that the current government rewrites whenever it loses is barely a constitution. So amendments near the objective should come slowly, with independent evidence, a way back, and a hearing for the people the change affects, including people the original objective left out. Chapter 12 returns to the same rule at the scale of a community, where what matters is who writes the objective, who can see it, and who can change it when it hurts them.
+Amendments near the objective should come slowly, with independent evidence, a way back, and a hearing for the people the change affects, including people the original objective left out. Chapter 12 returns to the same rule at the scale of a community, where what matters is who writes the objective, who can see it, and who can change it when it hurts them.
 
 The Red Queen will send an invoice for all of this. A store that amends slowly near its objective competes with stores that may not, and a reckless competitor can win for long enough to matter. Cheaper evidence helps. Sometimes the store will simply have to lose ground to keep a standard it still believes in, and writing the standard into a file does not pay for that.
 

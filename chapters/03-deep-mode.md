@@ -42,7 +42,7 @@ Of course, giving the model a computer created new ways to be annoying. Early co
 
 So more of the surrounding work moved into the system: small patches, diff inspection, targeted tests, checkpoints, planning, rollback. Repository knowledge moved too. Authentication conventions, ancient APIs and local rules that used to live in somebody’s head became `CLAUDE.md`, `AGENTS.md`, rules files and skills. If somebody had already learned something expensive about the codebase, we left it somewhere the next agent could find it.
 
-Long sessions produced the opposite problem. Context filled with abandoned experiments, obsolete assumptions and test output from three hypotheses ago, and memory became a problem of selection more than storage.
+Long sessions produced the opposite problem. Context filled with abandoned experiments, obsolete assumptions and test output from three hypotheses ago.
 
 Then history became a problem too. Suppose an agent decides early that our Merge Sort demo should use React and a recursion tree. It spends forty minutes building that version. Every later question now arrives in a context containing forty minutes of reasons, code and decisions supporting React and a recursion tree.
 
@@ -60,8 +60,6 @@ If the same plumbing is reconstructed on every project, it becomes reasonable to
 
 You lose some freedom, and that is often the point. A chef does not begin dinner by manufacturing a knife. When I open Python, I accept an astonishing number of decisions made by people I will never meet, because reconsidering all of them would make `print("hello")` a multigenerational project.
 
-Useful abstractions remove decisions whose answers are no longer interesting most of the time. After enough of those decisions disappear, something else becomes easier to see.
-
 Suppose the booking app works perfectly. The database is connected, deployment succeeds, the buttons behave, and nobody has accidentally built a cryptocurrency exchange inside the authentication service.
 
 I open the application and think: this is not very good. The software works. Now I have to worry about the football academy.
@@ -70,7 +68,7 @@ Parents probably shouldn’t see sessions meant for somebody else’s age group.
 
 None of those questions is really about React. They were always there; implementation simply consumed enough attention that deciding what should exist and turning that decision into software felt like one activity.
 
-When another version becomes cheap, the balance changes. You can see the idea sooner, and seeing it gives you information you did not have while discussing it.
+You can see the idea sooner, and seeing it gives you information you did not have while discussing it.
 
 Maybe we decide customers should create an account before seeing availability. It sounds reasonable: we need their details eventually. Then we build it and the experience immediately feels annoying. Parents arriving from a Google search do not want to establish a lifelong digital relationship with a football academy before discovering whether Saturday at ten is available. So login moves later, and the artifact becomes something we think with.
 
@@ -81,8 +79,6 @@ Technically, it was fine. Pedagogically, it could still be terrible. Watching ba
 There is no compiler error that tells me which diagnosis is right. I have to look at what we built, form an opinion about why it fails, and decide what would teach us something next. That might be a better version of this demo, a deliberately different one, some research, or putting the thing in front of somebody who does not already understand Merge Sort.
 
 Occasionally I discover that the question I started with was wrong. “Build an interactive Merge Sort demo” sounds like a goal until you see several interactive Merge Sort demos. Perhaps what I actually care about is getting somebody who has never encountered divide-and-conquer to understand why breaking one difficult problem into smaller ones helps. Once I realize that, interactivity is merely one possible means.
-
-That is the layer that remained stubbornly human: deciding what to try, which evidence matters, whether a result failed because of its implementation or its underlying idea, and what kind of attempt might teach us something next.
 
 ## The Five Layers of AI Coding
 
@@ -100,7 +96,7 @@ By then I had a rough map. Each layer marked a different kind of work we had lea
 
 Software likes that question to have been answered before work begins, preferably in Jira, where the answer can remain wrong in a structured and searchable format. Real goals are less cooperative. Seeing a solution can change what I realize I wanted. That problem is bigger than AI coding, so for now I am leaving it at the top of the stack.
 
-The borders are fuzzy. Coding agents make product decisions; design systems generate code; tomorrow’s products will rearrange the boxes again. What matters is the kind of decision being made. Which company happens to occupy which layer is a detail.
+The borders are fuzzy. Coding agents make product decisions; design systems generate code; tomorrow’s products will rearrange the boxes again.
 
 People often call the experience of working this way *vibe coding*. I will use *AI coding* for the broader stack, but *vibe coder* remains a wonderfully accurate name for the human sitting near Layer 3: looking at what came back, deciding what feels wrong, asking for another direction, killing one idea, keeping part of another, and steering the process without having an algorithm for how.
 
@@ -120,7 +116,7 @@ But the same kinds of moves kept appearing, in no particular order. I needed ano
 
 Even a Merge Sort demo has an absurd design space. It can use bars or cards, numbers or a tree, continuous animation or steps the learner controls. Color can mean recursion depth, identity or the active subproblem, and the explanation can come before the animation, during it or afterward. Every choice changes the usefulness of several others.
 
-When implementation was expensive, we dealt with much of this complexity by trying to decide more before building. AI coding changes the economics. If another implementation costs minutes instead of days, I do not have to choose quite so much in advance. What evolves can be more than a vector of parameters or even an algorithm; it can be an idea embodied in software.
+When implementation was expensive, we dealt with much of this complexity by trying to decide more before building. AI coding changes the economics. If another implementation costs minutes instead of days, I do not have to choose quite so much in advance.
 
 One builder tries a recursion tree. Another focuses on the array. A third begins from the learner’s misconception. Mutations can be conceptual: remove the text, teach backward, make the learner predict, show synchronized representations, abandon interaction altogether.
 
@@ -136,7 +132,7 @@ Retrieval plays the same role inside our own history. Somewhere in a growing pro
 
 Exact search works when I remember a phrase or an API; embeddings help when I remember the idea and have lost the words. Good coding agents do not “retrieve the repository” once; they move through it as the question changes. Layer 3 needs the same habit across stranger objects: research, screenshots, old interactions, evaluations and dead branches.
 
-A dead branch can still hold live knowledge. A lineage that lost globally may contain a stepping stone that becomes useful later. Do not spend the entire search budget polishing the place that currently looks best. Preserve some alternatives and some routes back to places that almost worked.
+Preserve some alternatives and some routes back to places that almost worked.
 
 The same logic gave us strategic constraints. After several generations of Merge Sort demos, the builders were exploring. They were also still giving me bars. Better bars, admittedly. Bars that split gracefully, changed color as recursion deepened, synchronized with a tree and perhaps deserved their own design award. Given enough iterations, I had every reason to believe we would eventually produce the finest moving bars known to humanity.
 
@@ -164,7 +160,7 @@ After that I stopped treating image generation as the last stage (*the product i
 
 Then the coding agent can make that relationship executable, which is where the picture has to pay its debts. The recursion tree cannot invent an extra branch because the composition looked nicer that way. The interaction has to possess a state. The button has to do something other than contribute emotionally to the page.
 
-Different representations expose different mistakes. I do not need the stronger claim that an image model “understands pedagogy.” The practical point is enough: changing the representation changes what the search can discover.
+Changing the representation changes what the search can discover.
 
 ## Optimizing Something You Cannot Score
 
@@ -188,7 +184,7 @@ That contains comparison, diagnosis, trade-offs, priorities and a proposed next 
 
 Language models make that communication channel available inside the optimization loop. The model already carries learned structure behind words such as *simple*, *confusing*, *elegant*, *intuitive*, *busy* and *beginner-friendly*. Those meanings are imperfect, culturally loaded and sometimes wrong. But they carry more structure than 7.4.
 
-Natural language can therefore function as an *implicit metric*, though not in the strict mathematical sense: there is no guarantee that “intuitive” defines a stable ordering, and two evaluators may interpret it differently. Still, language can do some of the work a metric normally does. It gives the search a direction, communicates why one attempt is preferred to another, and preserves trade-offs that a scalar would erase.
+Natural language can therefore function as an *implicit metric*, though not in the strict mathematical sense: there is no guarantee that “intuitive” defines a stable ordering, and two evaluators may interpret it differently. Still, language can do some of the work a metric normally does.
 
 OPRO, Optimization by PROmpting, makes a related move:[3](appendix-references.md#ref-03-opro) an LLM sees previous candidates and their scores and proposes the next one. It still needs an explicit score, so it is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written rule.
 
@@ -290,8 +286,6 @@ Brian Cantwell Smith argues that what machines lack is judgment as opposed to me
 
 And that made the remaining human job painfully obvious. I still decided when to research, when to build, which branches stayed isolated, whether a strange direction deserved another generation, which disagreement mattered, when to retrieve another example, and when the simulations had reached the point where only a real person could answer the question. I had automated much of the work, but I was still running the inquiry.
 
-Adding another builder or another critic wouldn’t fix that. Somebody still had to decide which kind of move the inquiry needed next, and so far that somebody was me.
-
 ## Deep Mode
 
 So I tried giving that job to an orchestrator. By now the system had a respectable vocabulary of moves, but there was no reason every problem should use them in the same order.
@@ -310,7 +304,7 @@ The move itself was not fixed. Suppose two Merge Sort branches both make recursi
 
 Nothing in that sequence is especially magical. We simply did not have to decide the sequence before the inquiry began. Otherwise Deep Mode would be a larger workflow diagram containing more rectangles.
 
-Deep Mode makes no claim to be a universal problem-solving procedure. It gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result.
+Deep Mode gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result.
 
 ## Bars Moved Around
 
@@ -336,7 +330,7 @@ This looks exactly like the compound intelligence we wanted. Now ask where the f
 
 It might have been a controlled educational study, or one teacher’s opinion, or something the research agent inferred from a handful of examples. Five articles might repeat it only because all five cite the same source. The study, if there was one, might have tested university students, and our demo is for children.
 
-Those are large differences, and everything downstream can still be perfectly competent. The research is wrong. The design responds intelligently to the wrong research. The implementation is flawless. The evaluators agree. The orchestrator invests another generation.
+The design responds intelligently to the wrong research. The evaluators agree, and the orchestrator invests another generation.
 
 Nothing crashes.
 
@@ -348,14 +342,12 @@ A cognitive architecture needs contracts too, but types and APIs are not enough.
 
 Each of them needs to arrive with its history attached: where it came from, what was observed and what was only inferred, which parts anyone checked and what is still uncertain. An evaluator’s preference should say whose perspective it came from. An old lesson should say how often it has survived, and where.
 
-Remembering something is the easy part. The hard part is knowing what standing it deserves.
-
 Humans ran into this long before AI. We keep records, ask where a claim came from, seek another opinion and learn which people to consult about which problems. Much of what I know depends on work I could not personally repeat.
 
 These arrangements are imperfect. They sometimes preserve error and reward conformity, and sometimes the shopping cart survives the review. Their purpose is to let fallible people build on one another while preserving some structure around why a claim deserves trust.
 
 Once cognition becomes distributed, the same questions become engineering questions: provenance, independence, replication, disagreement, authority.
 
-I had started the chapter trying to get myself out of the vibe coder’s seat. By automating more of the work there, I had ended up somewhere I did not expect. The question had moved from whether the agents were capable enough to whether the things they believed deserved to be believed.
+I had started the chapter trying to get myself out of the vibe coder’s seat. By automating more of the work there, I had ended up somewhere I did not expect.
 
 How do you know what to trust?

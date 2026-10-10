@@ -8,15 +8,15 @@ Then comes the part nobody puts in the demo. You look at the cathedral and ask y
 
 It happens at small scale every day. Find me the cheapest flight. I have not supplied a utility function. Perhaps I mean minimum price, or perhaps I mean cheap, but not three stops and an arrival at 4:20 in the morning because technically I saved €38. Put two reasonable itineraries in front of me, one cheaper and one that gives me another day with my family, and I may discover that I do not know how I weigh them until I see them side by side. Asking the question helps create the answer.
 
-I learned this while editing this book. “Make the chapter better” sounded like a reasonable instruction. It was not. Better in what sense? More rigorous? Shorter? More entertaining? More likely to impress someone who owns several blazers and says “thought leadership” without irony? For a while the edits became objectively more polished and subjectively worse, and the corrections I found myself making were rules I had not known were rules until an edit broke them. I learned what I meant by better partly by seeing versions I disliked.
+I learned this while editing this book. “Make the chapter better” sounded like a reasonable instruction. It was not. Better in what sense? More rigorous? Shorter? More entertaining? More likely to impress someone who owns several blazers and says “thought leadership” without irony? For a while the edits became objectively more polished and subjectively worse, and the corrections I found myself making were rules I had not known were rules until an edit broke them.
 
 ## What Remains in the Seat
 
 In the vibe coder’s seat I used to decide what to try next, and Deep Mode took much of that job from me. What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for.
 
-Lee Sedol, the one player to win a game in that 2016 match, retired from professional Go in 2019. Even if he became number one, he said, “there is an entity that cannot be defeated.”[1](appendix-references.md#ref-09-sedol) For him the question of what remains arrived all at once. For most of us it is arriving one task at a time.
+Lee Sedol, the one player to win a game in that 2016 match, retired from professional Go in 2019. Even if he became number one, he said, “there is an entity that cannot be defeated.”[1](appendix-references.md#ref-09-sedol)
 
-The five-layer map put that at the top and called it the desire layer. Drawn as a box, it looked like the easy part: the human supplies the goal, the machine does the rest. Even cooperative inverse reinforcement learning, which lets the machine stay uncertain about the goal, imagines that goal sitting inside the human, waiting to be recovered.[2](appendix-references.md#ref-09-l4-cirl)
+The five-layer map put the question of what we want at the top and called it the desire layer. Drawn as a box, it looked like the easy part: the human supplies the goal, the machine does the rest. Even cooperative inverse reinforcement learning, which lets the machine stay uncertain about the goal, imagines that goal sitting inside the human, waiting to be recovered.[2](appendix-references.md#ref-09-l4-cirl)
 
 Ask people what they want and you mostly get placeholders. Founders want success. Everybody wants to be happy. On a Friday evening, I want to have fun. All three are true, and none of them is something you could hand to an agent.
 
@@ -28,21 +28,17 @@ The value proposition kept changing as the company learned what it could do. Boo
 
 Saras Sarasvathy studied how expert entrepreneurs actually decide, and found many of them working backward from the textbook. Many of them began with what they had: who they were, what they knew, whom they knew, and what they could afford to lose. The goals turned up on the way. She called it *effectuation*.[5](appendix-references.md#ref-09-sarasvathy) Ordinary choices work the same way on a smaller scale; people build their preferences while choosing, out of whatever the options in front of them make visible.[6](appendix-references.md#ref-09-l4-constructive)
 
-How does anyone come to want something worth wanting, and does a machine help or just get there first?
-
 ## Owning the Frontier
 
 In 1998 an Amazon engineer named Greg Linden had an idea borrowed from the supermarket checkout aisle: look at what is in a customer’s shopping cart and recommend something to go with it. A senior vice-president of marketing was against it. Recommendations at checkout would distract people from paying, and Linden was told to stop working on it. He built a test anyway and ran it. The recommendations made enough money that the argument was over, and the feature launched.[7](appendix-references.md#ref-09-linden)
 
-The story usually gets told as a lesson about A/B testing. I read it as a lesson about what becomes worth wanting once somebody shows it is possible. Amazon already wanted more sales; Linden’s test revealed a better way to get them. The harder case is a discovery that changes the goal itself.
+The story usually gets told as a lesson about A/B testing. I read it as a lesson about what becomes worth wanting once somebody shows it is possible. Amazon already wanted more sales; Linden’s test revealed a better way to get them.
 
 That is the half of applied science that never made it into a job description. For years the job looked like two scarce skills: training a model and running an evaluation somebody would believe. Models have made both cheap. But the applied scientists who mattered always did something else as well. They kept a working map of the frontier: which exciting idea had failed three times under another name, which result had quietly changed what could be built last month, which neighboring field had a method that might explain a disappointing experiment. Then they walked into a room with something like Linden’s test and changed what the business wanted from the technology. Training and evaluation were the expensive part of the job, and expensive is easy to mistake for essential.
 
 I think of this as owning the frontier: the vibe coder’s seat, at the scale of a career.
 
-Now give everyone that colleague.
-
-Take a founder with a vague idea for a tool that helps small clinics with scheduling. An assistant that only executes would build the scheduling tool. An assistant that behaves like a good applied scientist would show her the frontier around it: three adjacent value propositions, what similar companies tried and why two of them died, a cheap prototype of each version she can put in front of a clinic manager on Thursday. A prototype she dislikes in an interesting way is information about what she wants.
+Now give that colleague to a founder with a vague idea for a tool that helps small clinics with scheduling. An assistant that only executes would build the scheduling tool. An assistant that behaves like a good applied scientist would show her the frontier around it: three adjacent value propositions, what similar companies tried and why two of them died, a cheap prototype of each version she can put in front of a clinic manager on Thursday. A prototype she dislikes in an interesting way is information about what she wants.
 
 Before Thursday the assistant can play the clinic manager and raise her objections. On Thursday the real one still has to be asked.
 
@@ -68,7 +64,7 @@ The company behind it earns money when you book. It learns which pictures make y
 
 I have spent much of my career building systems that decide what people see. A recommender rewarded for engagement only has to learn which suggestions you accept, and keep making them. Micah Carroll and colleagues showed formally what practitioners suspected: a recommender optimizing over a long horizon can have an incentive to shift users’ preferences so they become easier to satisfy.[9](appendix-references.md#ref-09-carroll-preference-shift) The cheapest way to satisfy a person is to change what they want.
 
-From the inside, the two stories can feel the same. In both, you go to Mallorca and you love it. I might happily let a machine plan every hour; planning holidays is not a moral obligation. What worries me is the machine deciding, without telling me, which restlessness to feed and which possibilities to keep out of sight. One machine helped you develop a desire. The other installed one.
+From the inside, the two stories can feel the same. In both, you go to Mallorca and you love it. I might happily let a machine plan every hour; planning holidays is not a moral obligation. What worries me is the machine deciding, without telling me, which restlessness to feed and which possibilities to keep out of sight.
 
 Jon Elster’s fox decides the grapes are sour because he cannot reach them. He calls this an adaptive preference: wanting shaped by what is available.[10](appendix-references.md#ref-09-elster) I recognize Chapter 1’s goldfish in it. Agnes Callard describes aspiration, the slow work of coming to value something we do not yet fully value, partly by trying the activities of someone who does.[11](appendix-references.md#ref-09-callard) The first machine gave the traveller a chance to try. The second kept her within its inventory. It could have an excellent engagement score while she quietly stopped considering anywhere else.
 
@@ -90,7 +86,7 @@ An assistant that understood human learning would do something that looks less i
 
 In the 1880s Hermann Ebbinghaus sat alone with lists of nonsense syllables, *dax*, *bok*, *yat*, learned them until he could recite them, and then timed how fast they left him.[14](appendix-references.md#ref-09-ebbinghaus) Much of a list was gone within a day.
 
-What slowed the loss was coming back to it, spaced over days instead of crammed,[15](appendix-references.md#ref-09-spacing) and trying to recall it before looking.[16](appendix-references.md#ref-09-testing) A model can recite the frontier in one breath. A person takes it in by forgetting it and returning.
+What slowed the loss was coming back to it, spaced over days instead of crammed,[15](appendix-references.md#ref-09-spacing) and trying to recall it before looking.[16](appendix-references.md#ref-09-testing)
 
 In a field experiment with nearly a thousand high-school mathematics students, an unconstrained ChatGPT-like tool dramatically improved performance while students could use it; when access was removed, they did worse than students who had never had it. A tutor version with safeguards against giving away the work largely removed that harm.[17](appendix-references.md#ref-09-l4-bastani) The tutor that worked was, by design, the more annoying one.
 
@@ -98,7 +94,7 @@ Teaching also needs the move I used on the Merge Sort demos, borrowing a mind: t
 
 The cheap map has its own hazard. A few weeks with a patient model gives the founder the vocabulary of healthcare long before she knows where its stories break, what Nathan Ballantyne calls *epistemic trespassing*.[18](appendix-references.md#ref-09-l4-trespassing) So sometimes the helpful assistant makes her commit to an answer before it shows its own, as it did on Wednesday. Interfaces built that way reduce overreliance, Zana Buçinca and colleagues found, even though users like them less.[19](appendix-references.md#ref-09-l4-forcing) It is the annoying tutor again, and of two assistants that help her reach the same good decision, it is the one that leaves her able to make the next one herself.
 
-You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. That was the founder’s week: the teaching was not a detour on the way to her decision. It was where the wanting came from.
+You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand.
 
 Putting a human beside the model does not guarantee better judgment. A 2024 meta-analysis of 106 experiments found that human–AI combinations performed worse, on average, than the better of humans or AI alone. Decision tasks were particularly difficult; creation tasks looked more promising.[20](appendix-references.md#ref-09-l4-vaccaro) So much for attaching a human to the API and declaring synergy.
 

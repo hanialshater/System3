@@ -26,7 +26,7 @@ For these experiments, we had a strong reference score around 2.635 under the ev
 
 <!-- ART RESOLVED — ch2-reference. Original brief: DIAGRAM — missing figure: A strong reference packing for the 26-circle objective, scoring approximately 2.635 under our evaluator. Original asset: ../resources/image0139.png; see resources/art-direction/missing-figures.md. -->
 
-That makes the problem useful for studying autonomy, because searching is hard and judging is cheap. The evaluator does not care whether the agent has a persuasive explanation for why two circles ought to overlap slightly in the name of geometric inclusivity. It checks the constraints and returns a score.
+The evaluator does not care whether the agent has a persuasive explanation for why two circles ought to overlap slightly in the name of geometric inclusivity. It checks the constraints and returns a score.
 
 There is something comforting about an evaluator with no personality.
 
@@ -108,8 +108,6 @@ But MAP-Elites introduces another human choice: which dimensions define the arch
 
 By this point, the search machinery was fairly capable. We could evaluate huge numbers of candidate packings and inspect far more of the search space than any human would explore manually. Yet every substantial conceptual jump came from somebody noticing something.
 
-Traditional search is excellent once we define the space and the legal moves, but sometimes the space and the moves are exactly what needs rethinking. That is where learned models have something to offer.
-
 I once asked an image-generation model to produce a picture of a circle-packing solution. This was not a serious benchmark; I have no idea what related examples it may have encountered during training, and I can already hear Reviewer 2 clearing his throat.
 
 I wanted to see something simpler: did the model have any useful geometric intuition about what a dense packing should look like?
@@ -118,7 +116,7 @@ Surprisingly, yes. The picture looked plausible. The circles had structure and t
 
 Then you counted the circles. There were the wrong number of them, and some constraints were violated. It was a beautiful answer to a nearby problem.
 
-That little experiment makes the asymmetry concrete. Learned models can be remarkably good at generating plausible structure without guaranteeing that every formal requirement survives generation. A symbolic optimizer has almost the opposite personality: give it a precise representation and constraints and it will obey them, but it will not naturally look at your representation and decide that you have been unimaginative.
+Learned models can be remarkably good at generating plausible structure without guaranteeing that every formal requirement survives generation. A symbolic optimizer has almost the opposite personality: give it a precise representation and constraints and it will obey them, but it will not naturally look at your representation and decide that you have been unimaginative.
 
 Put neural intuition and symbolic rigor in the same loop, or, in the slightly ridiculous version, let the brain invent things and make the body prove they work.
 
@@ -142,7 +140,7 @@ One program may use constrained optimization, another simulated annealing, anoth
 
 This gives the language model a much more interesting role. Rather than randomly perturbing numbers, it can read the program, form a rough theory about why it underperforms and change the algorithm. Perhaps the initialization is weak. Perhaps a geometric construction gets close but leaves local slack that numerical optimization could take up afterward, or a repair procedure keeps destroying useful structure and needs replacing. The mutation can now contain an idea expressed in code.
 
-A learned model proposing while code decides what survives: that is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve.[5](appendix-references.md#ref-02-funsearch) The model proposes changes at a level where programs have semantic meaning; execution and the evaluator decide whether those ideas deserve to survive.
+A learned model proposing while code decides what survives: that is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve.[5](appendix-references.md#ref-02-funsearch)
 
 AlphaEvolve scales that idea up. In each generation it selects a promising program from its archive, often alongside other successful but different programs, shows the model the code and the scores of previous attempts, and applies the patch the model proposes. The program runs, the evaluator scores it, and the result goes back into the archive.
 
@@ -150,7 +148,7 @@ AlphaEvolve scales that idea up. In each generation it selects a promising progr
 
 Two design choices matter. Small patches let the search change the part it thinks matters while preserving the rest of a program’s structure; full rewrites lose useful ideas as easily as bad ones. And the archive keeps several lineages alive, for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing, and a program that isn’t the best today may hold a component that becomes valuable after another idea appears. That was the pattern I would soon try to rebuild myself.
 
-Sometimes the model’s guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement doesn’t need to be settled in prose. We run the program, and the evaluator gets the last word.
+Sometimes the model’s guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python.
 
 What interested me even more than the resulting algorithms was what happened to me. Instead of writing the solver directly, I was increasingly building the machinery in which solvers could be generated, compared and improved.
 
@@ -162,7 +160,7 @@ I enjoyed this immensely because I like building systems that generate other sys
 
 While I was doing this, coding agents themselves were becoming much better with much less custom machinery. Earlier software-engineering agents often wrapped the model in carefully designed interfaces: custom editing commands, repository-search tools, restricted action spaces and plenty of logic controlling how the model interacted with the machine. Then increasingly minimal systems began demonstrating how far a capable model could get with something much simpler: a shell.
 
-The provocative version is that an agent with a shell has almost everything. It can `grep` to search, inspect files, run Python, apply patches, call Git, compose Unix tools and, if the tool it needs does not exist, write one. Bash is an entrance into decades of software accumulated underneath it.
+The provocative version is that an agent with a shell has almost everything. It can `grep` to search, inspect files, run Python, apply patches, call Git, compose Unix tools and, if the tool it needs does not exist, write one.
 
 This made me pause. The framework I was building—the parent selection, loop controller, experiment bookkeeping—was hard-coding behaviors that a sufficiently capable coding agent could increasingly perform itself. It could maintain notes, write helper scripts, explore several strategies, inspect failures and change direction.
 
@@ -188,6 +186,8 @@ Circle packing gives us a rare luxury because the evaluator can stay behind when
 
 I call that requirement the **Immutable Harness**: everything inside the boundary can move, while the evaluator stays fixed. Telling the agent not to edit a file states the rule; it does not make the file immutable.
 
+<!-- AUTHOR: C02-12. State how the evaluator was protected or independently checked in this run; distinguish the instruction from any enforcement. -->
+
 ## Diagonal Layering
 
 The agent did not execute one elegant master plan. It bounced around, which was encouraging.
@@ -210,17 +210,13 @@ In our best run, the evaluator returned roughly 2.636, slightly above the 2.635 
 
 That sentence needs a fence around it. Under our evaluator, the result beat our reference. Calling it a new state of the art in circle packing would require matching problem definitions, checking numerical tolerances and constraints, reproducing the result properly and doing a more serious literature search than this experiment justified.
 
-What I cared about was that the agent beat our reference without my writing the solution algorithm for it.
-
 ## The Algorithm Vortex
 
 This is what I mean by the **Algorithm Vortex**. At the beginning of a conventional project, I might choose hill climbing, evolutionary search, simulated annealing, constrained optimization or a geometric heuristic. That early decision shapes everything downstream.
 
 Once code is cheap to generate and evaluation is cheap enough to repeat, the choice no longer has to be permanent. A geometric construction can initialize a numerical optimizer. An evolutionary method can search parameters for another solver. A language model can notice a failure pattern and invent a repair procedure. Two ideas that began in separate lineages can meet later because an experiment suddenly makes the combination useful.
 
-The search moves outward through levels. A conventional optimizer searches over candidate solutions. Meta-heuristics search over larger families of candidates and strategies. Code evolution searches over programs that themselves search for solutions. Once a capable agent controls the experimentation loop, even the decision about which kind of search to try next can enter the search space.
-
-I no longer have to freeze the complete algorithmic architecture before the experiment begins. We stop writing one solver and start creating conditions in which solvers can compete, mutate, combine and occasionally surprise us.
+Once a capable agent controls the experimentation loop, even the decision about which kind of search to try next can enter the search space.
 
 Who was inventing the next move? For the first time in the experiment, not reliably me.
 
@@ -242,17 +238,13 @@ The last rule was discovery before polish. Early on I want large conceptual move
 
 I started calling this direction **zero framework**. It’s a great slogan. It’s also not really true.
 
-I meant that I was writing almost no custom orchestration framework, which is very different from having no framework. Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them. The framework didn’t vanish; it became somebody else’s primitive.
-
-That fits the emergence argument almost suspiciously well. A tiny amount of code at the top can command enormous capability underneath because previous generations of complexity have already been compressed into tools.
+I meant that I was writing almost no custom orchestration framework, which is very different from having no framework. Claude Code is itself a substantial system. The underlying model has absorbed enormous amounts of software and problem-solving knowledge. Bash, Python, SciPy, Git and the operating system represent decades of accumulated engineering. The evaluator is custom machinery. Even the supposedly trivial act of running a program and inspecting a result depends on layers we have become so accustomed to that we stop seeing them.
 
 So yes, zero framework: Bash is enough, with the asterisk that Bash contains roughly half a century of civilization.
 
 ## The Easy Version of Autonomy
 
 The coffee test is not a license to give Claude a shell in production and go for a very long lunch. I could leave because the evaluator stayed behind, enforcing constraints I had chosen. Substantial control over the search moved into the agent; control over what counted as success did not.
-
-That is why circle packing is the easy version of autonomy. The evaluator returns one number, and if version B beats version A, nobody has to convene a committee to decide whether the new solution is spiritually aligned with the learning objectives. The harness tells the agent when it is wrong.
 
 When success is harder to judge, the agent can still generate alternatives, branch and search among them. It also has to find a way to decide which one is better. What happens when the world gives us no clean referee and judgment itself has to be constructed?
 

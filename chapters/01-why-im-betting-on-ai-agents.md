@@ -9,11 +9,11 @@ We humans are obsessed with problem-solving. And what problem is more fascinatin
 
 Life produces coral reefs, immune systems, parasites, flowers, cancer and octopuses: eight-armed problem-solvers that extensively edit their own RNA, sense light through their skin and match the colors around them despite apparently color-blind eyes. It also produces creatures capable of spending twenty minutes arguing online about whether another creature is technically a fish. Human civilization adds philosophy, cathedrals, semiconductor fabs, global supply chains and airport lounges. Somehow, all of this became possible on a planet that began without a requirements document.
 
-What fascinates me is how little of the result was specified in advance. No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors. They were making decisions about the things in front of them, inside arrangements inherited from people who had been doing much the same.
+What fascinates me is how little of the result was specified in advance. No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors.
 
 And we get to build on what they left. A programmer does not need to understand transistor physics. I can use a compiler without reproducing the intellectual history that made it possible, which is fortunate because I was hoping to finish before lunch. Enough of the complexity underneath has been made reliable that I can spend my attention elsewhere. When something breaks, I may have to descend a few layers and discover how much I was taking for granted.
 
-Agentic AI interests me as another place from which to begin. We have spent decades making more of our knowledge available to machines. Now we can give a system access to that knowledge, a problem, tools and time, and let it participate in deciding how the problem should be approached. Could I leave it with a hard problem and come back to progress I had not directed?
+We have spent decades making more of our knowledge available to machines. Now we can give a system access to that knowledge, a problem, tools and time, and let it participate in deciding how the problem should be approached. Could I leave it with a hard problem and come back to progress I had not directed?
 
 ## The Rule-Based Exoskeleton
 
@@ -27,7 +27,7 @@ Engineering often makes a problem manageable by removing possibilities. We choos
 
 **Complexity over engineering** is a deliberately uncomfortable way to name my bet. I want us to be able to work with more of the problem before deciding which parts reality will have to do without. That may require considerable engineering: tools for exploring alternatives, environments in which mistakes are recoverable, ways to compare results. The difference is how much of the answer we insist on putting into the machinery before the search begins.
 
-Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
+Suppose the agent proposes a new tool or a different way to compare results. Which changes may it make on its own? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
 
 Cultivation may be a better metaphor than scripting: pulling harder on the stem remains a surprisingly poor gardening strategy.
 
@@ -35,7 +35,7 @@ Cultivation may be a better metaphor than scripting: pulling harder on the stem 
 
 A slightly ridiculous thought experiment helped me see the possibility. Imagine trying to seed life on another planet. You have raw materials, a primordial soup and a temperature range that does not instantly kill everything. Basically, you have all the LEGOs, except the LEGOs reproduce, mutate and occasionally develop venom. Do you bet on DNA, a biological fax machine, and wait? Do you send AI agents carrying accumulated human knowledge, with instruments and machinery they can use? Or do you send a group of product managers to write the requirements document for life?
 
-It is not a fair competition. The agents arrive with civilization in their luggage. Somebody built their computers, their instruments and the machines that keep them running. They do not begin by discovering arithmetic, metallurgy and how to avoid setting the laboratory on fire. They inherit what already works and can spend their effort somewhere beyond it.
+It is not a fair competition. The agents arrive with civilization in their luggage.
 
 We do this too. No human starts from zero, although we occasionally behave as if our opinions were independently discovered natural resources. We inherit language, tools, institutions and other people’s mistakes. Agents can draw on textbooks, numerical solvers, compilers, scientific papers and several thousand years of humans documenting what happened when we touched things we probably should not have touched.
 
@@ -43,7 +43,7 @@ Imagine an agent beginning with algorithms from a library. None works well enoug
 
 <!-- AUTHOR: C1-5. Optional: a concrete detail from a run that grew its own tools and notes would anchor this. -->
 
-The parts can be deliberately built while the work teaches us how they need to fit together. I want to leave room for that learning, for **emergence over design**. An architecture drawn before the first experiment may be an excellent starting point. I would be surprised if it were also the right place to finish.
+The parts can be deliberately built while the work teaches us how they need to fit together. I want to leave room for that learning, for **emergence over design**.
 
 ## When Search Moved Up a Level
 
@@ -69,11 +69,11 @@ With an agent, much of the judgment and accountability we take for granted in a 
 
 A model with text alone can describe an experiment. Give it execution and it can run one. Give it a simulator and it can rehearse possibilities, including possibilities the simulator models badly. A unit test, a customer response and another agent’s criticism each reveal something different. Choosing among them is part of setting up the work, and a convenient automated check may miss the thing we most needed to know.
 
-Selection pressure is literal-minded. Reward engagement and anger may flourish. Reward a benchmark score and somebody will eventually find a way to win that makes everyone regret inventing the benchmark. Nature produces cancer as well as coral reefs. We should expect ingenious results from a capable search process without assuming we will be pleased by its ingenuity.
+Selection pressure is literal-minded. Reward engagement and anger may flourish. Reward a benchmark score and somebody will eventually find a way to win that makes everyone regret inventing the benchmark.
 
-We have encountered versions of this problem before. Markets operate within rules and institutions. Scientific claims encounter experiments, criticism and the non-zero probability of public embarrassment by Reviewer 2. Neither arrangement is free of failure or power. Yet people manage to coordinate substantial work without anyone specifying every action or carrying the whole undertaking in their head.
+Markets operate within rules and institutions. Scientific claims encounter experiments, criticism and the non-zero probability of public embarrassment by Reviewer 2. Neither arrangement is free of failure or power. Yet people manage to coordinate substantial work without anyone specifying every action or carrying the whole undertaking in their head.
 
-Too much prescription removes the room in which autonomy could help. Too little structure gives chaos an API key. Finding a useful arrangement takes work, and success may create reasons to change it. An agent could discover that a boundary obstructs an important experiment. I want it to be able to make that case. Quietly removing the boundary is another matter.
+Too much prescription removes the room in which autonomy could help. Too little structure gives chaos an API key. An agent could discover that a boundary obstructs an important experiment. I want it to be able to make that case. Quietly removing the boundary is another matter.
 
 ## Confident Wrong Solutions
 
@@ -81,11 +81,11 @@ The mistakes that worry me most are the confident ones. Imagine an agent decidin
 
 <!-- AUTHOR: C1-6 / X-6. Optional: a sharper ranking or recommendation mistake could replace the jacket. If so, update the Ch 3 callback ("exactly what jacket they want") at the same time. -->
 
-Capable is not the same as trustworthy. Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
+Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
 
-Then the difficulty reaches us. I have been speaking as though we know what success looks like and merely need help reaching it. Often we do not. I can ask for a better chapter and discover, through several polished versions I dislike, what I meant by better. A system can help me learn that, or make its own preferences so easy to accept that mine stop developing. I might end up with a more polished book and less confidence in my own taste.
+I have been speaking as though we know what success looks like and merely need help reaching it. Often we do not. I can ask for a better chapter and discover, through several polished versions I dislike, what I meant by better. A system can help me learn that, or make its own preferences so easy to accept that mine stop developing. I might end up with a more polished book and less confidence in my own taste.
 
-We already depend on work we cannot personally reconstruct. No scientist repeats every experiment she relies on. No engineer understands every layer beneath an application. We have learned, imperfectly, to build on other people’s knowledge while retaining ways to question it. Agents extend that dependence into work I might once have done myself. I need help that lets me examine something important without making me supervise everything.
+We have learned, imperfectly, to build on other people’s knowledge while retaining ways to question it. Agents extend that dependence into work I might once have done myself. I need help that lets me examine something important without making me supervise everything.
 
 ## Which Limits Were Mine
 
@@ -109,7 +109,7 @@ First, though, the machinery has to do something worth the trouble. The first be
 
 **I’m betting on systems capable of surprising us because there are problems where we can recognize a better outcome far more easily than we can specify the path that leads to it.**
 
-In those problems, intelligent search has room to discover things our instructions would have ruled out before the search even began. The sensible place to start is somewhere small enough to be embarrassed by the result: a bounded problem that is genuinely difficult but unusually cooperative about judgment. We can write down the constraints, check whether a solution obeys them and tell whether an attempt improved without convening a discussion about aesthetics, pedagogy or whether the users are “delighted.”
+The sensible place to start is somewhere small enough to be embarrassed by the result: a bounded problem that is genuinely difficult but unusually cooperative about judgment. We can write down the constraints, check whether a solution obeys them and tell whether an attempt improved without convening a discussion about aesthetics, pedagogy or whether the users are “delighted.”
 
 So I gave an agent some circles to pack.
 

@@ -64,8 +64,6 @@ The conclusion survives training, and much of what earned it trust is lost along
 
 Emily Bender and Alexander Koller made a version of this argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff through a conversation about a coconut catapult by offering praise. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Their argument is that learning form alone cannot give it meaning.[3](appendix-references.md#ref-04-octopus) I prefer dead Europeans to cephalopods, but the point is the same.
 
-A pretrained model inherits the linguistic residue of our practices. A deployed agent can start to re-enter them by running code, using tools, observing users and interacting with institutions.
-
 Embodiment can’t be the whole answer, though. I know far too many things I have never touched, measured or witnessed. I have never measured the speed of light or been to Antarctica, and I have no direct evidence for most of modern physics, most of history, or whether penguins are wandering through Rome right now. Direct contact doesn’t scale.
 
 To know anything beyond it, I need Alberto.
@@ -100,19 +98,17 @@ Then teachers told me about atoms, dinosaurs and wars none of us could verify. I
 
 At no point did I build my knowledge from the ground up. I grew trust upward from a face.
 
-Each layer was built on the one below it and reached a little further from anything I could touch. Nothing was replaced wholesale. When a layer failed, when the brother was lying or the textbook was out of date, I repaired that part and kept the rest. Knowledge goes up the way a city does, by addition and repair on top of what is already standing. Nobody gets to start from an empty field.
-
-So human knowledge is epistemologically stratified. “I touched the fire” and “my brother told me” sit at different levels, and so do “my teacher said so” and “the experiment was independently replicated.” A measurement sits at a different level from an interpretation, and a conjecture from an established result.
+When the brother was lying or the textbook was out of date, I repaired that part and kept the rest. So human knowledge is epistemologically stratified. “I touched the fire” and “my brother told me” sit at different levels, and so do “my teacher said so” and “the experiment was independently replicated.” A measurement sits at a different level from an interpretation, and a conjecture from an established result.
 
 Mature trust can also turn on itself. When an instrument disagrees with a theory, you check the instrument first, then repeat the experiment. If the anomaly survives long enough, the trusted theory becomes the thing under investigation. That kind of distrust only works because there is trust underneath it.
 
 Models inherit the text produced along the way, but usually not the live relationships underneath it. The paper, the article about the paper, the blog post disagreeing with the article and the Reddit thread where somebody confidently misunderstood both can all end up in the same training distribution. The model got the library without the childhood.
 
-The model has no Alberto: no live record of who was positioned to know, where a claim came from, how its source behaved before, or where the source’s competence stops.
+The model has no Alberto.
 
 There is one more ingredient humans add almost without noticing, which is stakes. If Alberto lies to me repeatedly, I stop trusting him. If a researcher fabricates data and gets caught, the cost can be enormous. If an engineer signs off on a bridge and the bridge fails, “but the analysis sounded plausible” is no defense.
 
-Consequences don’t make anyone truthful. People lie despite them, and institutions reward confident nonsense all the time. But consequences do shape testimony. If a friend asks where to eat, I may guess. If someone asks whether to undergo surgery, I become much more careful.
+Consequences do shape testimony. If a friend asks where to eat, I may guess. If someone asks whether to undergo surgery, I become much more careful.
 
 An LLM has no social capital of its own to lose. It can confidently produce something false and, at the level of the model itself, nothing happens. The cost lands elsewhere: on the user, the application or the institution deploying it.
 
@@ -122,7 +118,7 @@ The danger is coherence outrunning correspondence, with the machine getting very
 
 At the moment we are obsessed with making models think harder. System 2 reasoning has become a product category: give the model more inference time and let it plan, search, reconsider and work through difficult problems before it answers.
 
-Reasoning perfectly from a bad premise still gets you a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed. At some point thinking has to meet something outside itself.
+Reasoning perfectly from a bad premise still gets you a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed.
 
 Kahneman’s *Thinking, Fast and Slow* popularized the distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[4](appendix-references.md#ref-04-kahneman)
 
@@ -134,7 +130,7 @@ Edwin Hutchins found this on the bridge of a navy ship. Navigation depended on s
 
 A cruder version is easier to remember: the Gut, the Head and the Hand. The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it. Peer review has no hand, provenance has no fingers and a formal proof never needs to touch a cow, so take the mnemonic loosely.
 
-System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back. Without System 3, every layer we delegate to is one more place for an unsupported claim to travel.
+System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back.
 
 |Layer|The question it answers|
 |---|---|
@@ -155,9 +151,9 @@ The agent can try something, see what happens, update and try again. The farmer 
 
 A normal agent session can fail ten times, discover the right approach, solve the problem and throw away most of that history when the context ends. It is as if the farmer learned exactly where not to stand and then underwent elective amnesia every evening.
 
-In the Live-SWE-agent work, an agent ran into MARC files, the old bibliographic format libraries use. Its tools made the contents awkward to inspect, so it built an analyzer that displayed them in a readable form.[6](appendix-references.md#ref-04-liveswe) Its apparatus wasn’t enough, so it built an instrument, and the instrument changed what it could observe.
+In the Live-SWE-agent work, an agent ran into MARC files, the old bibliographic format libraries use. Its tools made the contents awkward to inspect, so it built an analyzer that displayed them in a readable form.[6](appendix-references.md#ref-04-liveswe)
 
-People have always done this. We couldn’t see bacteria, so we built microscopes, and we couldn’t perceive radio waves, so we built receivers. The MARC analyzer is a humbler instrument of the same kind, and a small working example of System 3.
+People have always done this. We couldn’t see bacteria, so we built microscopes, and we couldn’t perceive radio waves, so we built receivers. The MARC analyzer is a humbler instrument of the same kind.
 
 AlphaGo draws a related distinction. Its neural network supplied powerful intuition about promising moves and valuable positions. Monte Carlo Tree Search placed that intuition inside an explicit search process constrained by the state and consequences of Go.[7](appendix-references.md#ref-04-alphago)
 
@@ -193,11 +189,9 @@ Tools can earn trust in the same way. If `edit_tool.py` succeeds on simple subst
 
 Such a heuristic is a meta-belief: a reason to prefer one approach, with evidence that can change its standing. “Never use regex here” has no place to put the counterexample.
 
-If you enjoy old epistemology labels, you can call the model a largely coherentist core, uncannily good at producing structures that hang together, and System 3 a thin foundationalist shell tied to observation, provenance and consequence. I only need the architectural analogy. Coherence is valuable, but something outside the coherent system must occasionally be allowed to say no.
+If you enjoy old epistemology labels, you can call the model a largely coherentist core, uncannily good at producing structures that hang together, and System 3 a thin foundationalist shell tied to observation, provenance and consequence. I only need the architectural analogy.
 
-This is personal for me. I spent eight years building systems that rank human testimony: reviews, ratings and Q&A. The hardest problem was never only relevance. It was trust stratification. Which claims deserve corroboration? What happens when ten accounts repeat the same lie? When does consensus become evidence, and when is it coordinated manipulation? How far should credibility transfer outside the domain in which it was earned?
-
-Those questions stop being abstract when the answers decide what millions of people believe about a product.
+This is personal for me. I spent eight years building systems that rank human testimony: reviews, ratings and Q&A. The hardest problem was never only relevance. It was trust stratification. What happens when ten accounts repeat the same lie? How far should credibility transfer outside the domain in which it was earned?
 
 System 3 isn’t philosophy to me. It’s Tuesday.
 
@@ -266,7 +260,7 @@ self._pixel_keep = np.nonzero([
 ])[0]
 ```
 
-The second approach was reasonable. That is why the case matters.
+The second approach was reasonable.
 
 The agent had accumulated context about indexing, dimensionality and coordinate-system failures. Its chosen explanation fit that context, and the path it followed looked principled and coherent.
 
@@ -288,8 +282,6 @@ By that I mean understanding a trust chain well enough to know where you are bre
 
 <!-- AUTHOR: Creative Distrust needs a real scene, e.g. a case of creative distrust from the eight years ranking reviews; it could replace or join the scientist and designer sentences below. -->
 
-A scientist repeats a strange experiment after accepted theory says the result should not happen. A designer violates a trusted pattern because this case exposes its boundary conditions.
-
 A mature trust stack has two jobs pulling in opposite directions: let knowledge accumulate so we do not rediscover fire every morning, and leave enough room for reality to overthrow what accumulated.
 
 ## Back to the Camel
@@ -310,9 +302,7 @@ The model can remain what it is: an extraordinarily general machine for navigati
 
 Borrowing Daniel Dennett’s phrase, I would call this competence without comprehension.[9](appendix-references.md#ref-04-dennett) Whether the system around it comprehends anything is a question for people with more patience than I have. The nearer question is whether we will: when an institution can check results no single person understands, who still understands enough to decide what to look for next?
 
-Everything so far can still be imagined around one agent that acts, checks, remembers, records provenance and updates what it trusts.
-
-Real systems will not stay that simple. The moment one agent inherits a claim from another, no participant can personally reconstruct every path back to reality. A trust chain can preserve where a claim came from. It does not, by itself, tell us how the knowers who depend on those chains should be arranged.
+The moment one agent inherits a claim from another, no participant can personally reconstruct every path back to reality. A trust chain can preserve where a claim came from. It does not, by itself, tell us how the knowers who depend on those chains should be arranged.
 
 The question then becomes: how can a population of fallible knowers build knowledge together without losing contact with the world?
 

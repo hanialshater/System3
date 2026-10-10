@@ -52,7 +52,7 @@ Rename two hundred temporary files according to a convention we have used every 
 
 Editing sits in between. I do not want to approve every comma. I do want to be asked before a sentence gets an apology attached to it.
 
-So the system has to read two things from a small request: the outcome I want, and how much of producing it I want to keep. My attention is scarce, and I want it spent on the claims I cannot check myself and the passages where I am still working out what I think.
+My attention is scarce, and I want it spent on the claims I cannot check myself and the passages where I am still working out what I think.
 
 ## Invisible by Default, Legible on Demand
 
@@ -62,7 +62,7 @@ The bad version of fluency is one calm conversational box that researches, edits
 
 That is opacity with good typography.
 
-When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains, and the architecture under a fluent interface has to keep them.
+When an edit comes back and a paragraph I liked is gone, the useful answer to *why* names the instruction that removed it, the earlier decision that should have protected it and the reason that decision lost. Those are trust chains.
 
 A compiler hides registers until I need to read the assembly. A database hides its pages until a query gets strangely slow. An agent needs the same trapdoor: shut while the work goes as expected, open all the way down the moment it doesn’t.
 
@@ -88,21 +88,19 @@ So the test needs a second half. Now and then the system should bring back somet
 
 The second coffee test asks the system to bring back what I refused, with a reason. A book that spends several chapters demanding criticism with consequences should probably take some too. If somebody else had claimed that building autonomous AI keeps rediscovering science, this is where I would push.
 
-The easy objection is that it is only an analogy. Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails. That process can tell you whether the patch works or the proof checks.
+The easy objection is that it is only an analogy. Any group of fallible workers needs records and review. Courts have them. So does an accounting department. Why science, and not law or a market? Courts establish facts too, and markets can reveal information. What I am calling science is the part of the institution that lets a claim lose even after people have begun using it: preserve the evidence and the method, invite rival explanations, run a test that could change the answer, and revise the claim when an instrument or assumption fails.
 
-I will concede the analogy has edges. Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. Whatever answers mortality and ambition does not have to come along. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
+I will concede the analogy has edges. Science is shaped by human limits: careers, journals, tenure, funerals. Agents have none of them. What transfers is whatever answers fallibility and coordination: a claim with an address, a test committed before the result, an objection with a consequence. A swarm should not automatically become a meeting, and it should certainly not acquire a tenure committee.
 
-**The weights will eat it.** That is the harder objection. Richard Sutton, who helped teach machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[1](appendix-references.md#ref-10-bitter) Scaffolding is what we build while we wait. Wait long enough and the weights eat it.
+**The weights will eat it.** That is the harder objection. Richard Sutton, who helped teach machines to learn from consequences, later wrote a short essay called “The Bitter Lesson”: across seventy years of AI research, general methods that scale with computation have beaten methods that build in what we think we know.[1](appendix-references.md#ref-10-bitter) Scaffolding is what we build while we wait.
 
 My own evidence is on his side. I deleted my circle-packing framework because the agent no longer needed it.
 
-I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the evaluator did not have to believe the agent’s account of the packing. More compute can improve both solver and judge; it cannot make the solver’s assurance into independent evidence. The structure worth defending lets the work encounter a check it did not choose.
+I think Sutton is right about most of what I deleted. The orchestration was a guess about how to search, and search is exactly what scales. But look at what I did not delete. The evaluator stayed. The coffee test worked because the evaluator did not have to believe the agent’s account of the packing. More compute can improve both solver and judge; it cannot make the solver’s assurance into independent evidence. The agent should not be able to edit the evaluator that accepts its packing.
 
 Some of that structure may move inside the model, and then we are back to building instruments to find out whether the inside deserves trust. If a system someday certifies its own open-ended work, with no external check and no preserved disagreement, and the certification holds up when somebody else looks, I am wrong. I would like to read that paper. I would also like to know who reviewed it.
 
-Then there is the chance that I found what I was looking for. I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Some of that is probably true. The fairer test is whether the arrangements improve the work. The one I designed on purpose, my epistemic agent, solved fewer problems than the baseline. The one I find hardest to explain away nobody designed: the ExploitGym agents built a shared record nobody asked for and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work.
-
-The back channel shows coordination emerging. The scientific arrangement I am arguing for would also need rival explanations, independent checks and objections that can change the outcome. Keeping a shared record can serve a collective mistake just as well.
+Then there is the chance that I found what I was looking for. I had read Popper before I read the traces, and the agents learned from human text, so of course they rebuild human institutions. Some of that is probably true. The fairer test is whether the arrangements improve the work. The one I designed on purpose, my epistemic agent, solved fewer problems than the baseline. The one I find hardest to explain away nobody designed: the ExploitGym agents built a shared record nobody asked for and nobody wanted. Circle packing marks the boundary: when the referee is cheap and exact, almost none of this is needed. The claim is about work where checking is expensive or ambiguous, which is, unfortunately, most work. The scientific arrangement I am arguing for would also need rival explanations, independent checks and objections that can change the outcome. Keeping a shared record can serve a collective mistake just as well.
 
 The objection I can answer least is about ownership. Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate, and I come back to it near the end of the book.
 

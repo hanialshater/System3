@@ -25,7 +25,7 @@ For a while this worked remarkably well, partly because compiler test suites are
 <!-- ART RESOLVED — ch5-linux-gate. Original brief: VISUAL — Linux as the boss level. The sixteen small robots have been walking across a wide map of many small doors (test cases, then SQLite, Redis, Lua). The map narrows to a single enormous gate, Bowser-castle scale, with a penguin silhouette on it. All sixteen are bunched in front of it. Game-map style, one color accent. -->
 Then they reached Linux, which is less a test suite than one enormous test. Compilation stopped at the first serious compiler bug. Agents arrived at the same failure, formed their own theories and pushed changes over one another’s. The locks could separate named tasks, but they could not turn this bottleneck into sixteen different investigations. The standing instruction to find something useful and attack it kept pointing everyone at the same place.
 
-The models had not changed. The problem had, and the organization that had worked so well on a test suite was now getting in the way. The organization was the bug.
+The organization was the bug.
 
 <!-- ART RESOLVED — ch5-gcc. Original brief: VISUAL — the GCC oracle. The kernel drawn as a wall of bricks. Most bricks are grey and stamped GCC; a scattered handful are colored and stamped with the new compiler's mark. A robot tests whether the wall stands. Three panels show the colored set shrinking as the failure is isolated. -->
 Carlini changed the harness. Most of the kernel was compiled with GCC and only a random subset of files with the new compiler. A successful boot cleared that combination for that run. A failure gave the agents a smaller set to investigate, replacing more files with GCC output to narrow the search. Sixteen agents could again work on different files. A later pass with delta debugging helped isolate combinations that failed together even though their components worked separately.
@@ -34,7 +34,7 @@ The harness kept changing. Near the end, new features started breaking old ones,
 
 Specialization addressed work the next failing test would never ask anyone to do. LLM-written code kept re-implementing what already existed. Someone needed to look for duplicates. Someone needed to improve the compiler’s own speed, and someone else the quality of the code it emitted. Carlini assigned those roles, along with an agent to review the structure as a Rust developer and another to work on documentation, which is normally the moment you know a civilization has become serious.
 
-Carlini built the repairs deliberately, but the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history.
+None of the agents arriving on the last day needed to have lived through that history.
 
 That interests me more than the generic claim that multi-agent systems scale. I have watched the same thing happen to teams of people, where it goes by the less glamorous name of reorganization, and nobody writes a blog post.
 
@@ -55,7 +55,7 @@ The project also has a way to challenge some of what those files say without wai
 
 The project can also become wrong in ways no participant intended. A progress file carries a bad diagnosis into later sessions. A specialist improves its own metric while degrading the compiler. A lock prevents duplicated effort and also prevents a useful second attempt. Two agents confirm each other while both inherited the same mistake from the same file. Carlini’s closing worry was that passing tests can make unfinished work look complete.
 
-The question is how a population of fallible knowers can build knowledge together without losing contact with the world. The compiler is its small version, and it came with a luxury. One person could step back from the agents’ work, see that their institution no longer fit it, and rebuild the harness.
+The compiler project came with a luxury. One person could step back from the agents’ work, see that their institution no longer fit it, and rebuild the harness.
 
 Human civilization has been living inside the large version for thousands of years, with no one standing outside it.
 
@@ -99,7 +99,7 @@ By the late fourth millennium BCE, people in southern Mesopotamia were recording
 
 The mark did not need to be wiser than the clerk. It needed to outlive him.
 
-The institution could now consult its own past. That brought new responsibilities: learning the marks, agreeing on their meanings and settling disputes when two records told different stories.
+The next clerk had to learn the marks, agree with others on their meanings and settle disputes when two records told different stories.
 
 The clerk could also enter the wrong amount, and his successor could copy it faithfully. The clay kept the mistake as carefully as the grain.
 
@@ -123,7 +123,7 @@ When something goes wrong you can tell everyone to be more careful, which is emo
 
 That is how an institution learns, and it is also how it scars. A review gets added after a spectacular failure. Five years later the system is different, nobody remembers the incident, and ten thousand ordinary changes still pass through the review because the procedure survived its reason. The apprentice kept a precaution he never understood. The institution can do the same.
 
-A tablet, a bronze measure, a deployment guardrail: each turns knowledge into structure that lets work pass between strangers. And once strangers can rely on one another’s work, each of them can afford to learn something the others don’t.
+Once strangers can rely on one another’s work, each of them can afford to learn something the others don’t.
 
 ## The Society Gets Smarter by Making People Narrower
 
@@ -131,7 +131,7 @@ Then Amazon made me an offer, and the offer was reviews.
 
 Before that I had run the technology of a smaller e-commerce company: catalog, search, payments, the warehouse software, the emails that went out at night. I knew every system because I had to. Amazon wanted me for the text under the fold. The fold is a newspaper word: the important story goes above it, then you fold the paper under your arm and forget the rest. On a product page, reviews were the rest. The organization whose applied science I would lead was larger than the entire company I had just left, and I remember sitting with the offer and feeling faintly embarrassed for everyone involved. What could so many people possibly do with a text box?
 
-Here is what a text box contains. A grill weighs thirty kilograms. Is that good for a barbecue party? The catalog cannot tell you; it can tell you thirty kilograms. Two thousand reviews can tell you, and they can tell you who bought it, why, what went wrong at the first party, what they wish they had known, and the small psychology of a person who wanted to feed twelve friends and got it slightly wrong. Look closely enough and the text box holds the buyer’s whole story.
+Here is what a text box contains. A grill weighs thirty kilograms. Is that good for a barbecue party? The catalog cannot tell you; it can tell you thirty kilograms. Two thousand reviews can tell you, and they can tell you who bought it, why, what went wrong at the first party, what they wish they had known, and the small psychology of a person who wanted to feed twelve friends and got it slightly wrong.
 
 And the story wants work. How do you ask for a review without begging? How do you help a person who has never written anything write one? How do you summarize two thousand of them into a paragraph, find the useful ones, catch the fakes, carry them across languages, use them to explain a catalog written by a manufacturer, feed them into search so that “good for parties” finds the grill, find the one review in ten thousand that a marketer could build a campaign on? A whole organization could spend its days inside that text box. At the smaller company, reviews had been one engineer’s afternoon.
 
@@ -145,8 +145,6 @@ Within four minutes she was visibly blue. Her oxygen saturation had fallen to fo
 
 There was a procedure for this emergency: when neither intubation nor ventilation works, make a surgical airway. A nurse fetched the equipment. It was in the room. Two nurses later said they knew what needed to be done but did not know how to broach the subject. The three consultants, meanwhile, remained fixed on intubation. They had lost track of the time and of how long Elaine had been without enough oxygen.
 
-The people with the most authority kept attempting the same solution. The people who saw the need to change course could not make that knowledge change what happened to her.
-
 Elaine never regained consciousness. She died thirteen days later.[9](appendix-references.md#ref-05-bromiley)
 
 Her husband, Martin, was an airline pilot. The surgeon wrote to him that he still could not see how they could have anticipated or avoided what happened. Martin wanted an investigation. In aviation, you investigated a disaster so that the next crew did not have to learn it again.
@@ -155,7 +153,7 @@ The independent review found a pattern his industry knew painfully well. Skilled
 
 A hospital needs people who see different things. The nurse at the bedside, the radiologist reading an image and the surgeon do not become interchangeable because they share a patient. Their authority has to follow what they know, and their observations need a way to interrupt someone else’s plan. The expertise in Elaine’s operating theater was real, and so was the failure to use it.
 
-The potter’s mistakes cracked in her own kiln. A specialist’s mistakes travel, and each person who receives one may have good reason to trust it. So the people who see a problem need a way to reach the people who can act on it.
+The potter’s mistakes cracked in her own kiln. A specialist’s mistakes travel, and each person who receives one may have good reason to trust it.
 
 ## A Swarm Should Not Automatically Become a Meeting
 
@@ -201,7 +199,7 @@ Later that year Kepler, using a telescope Galileo had sent to the Elector of Col
 
 A new instrument creates new facts and new ways to be wrong about them. The lens might distort, the point of light might not be there, nobody else might manage to reproduce it, and the operator might not know what she is doing.
 
-The agent version is almost embarrassingly literal: run the program, execute the query, open the browser, measure the latency, compile the kernel against GCC. Reasoning has left the conversation, and something outside the current explanation now has a chance to be inconvenient. But every one of those actions brings the telescope’s questions with it: how reliable the tool is, on which problems, what it actually measures, when it fails and who calibrated it.
+The agent version is almost embarrassingly literal: run the program, execute the query, open the browser, measure the latency, compile the kernel against GCC. The result can now be inconvenient. But every one of those actions brings the telescope’s questions with it: how reliable the tool is, on which problems, what it actually measures, when it fails and who calibrated it.
 
 A broken tool is a very efficient route to externally generated nonsense.
 
@@ -223,7 +221,7 @@ The machinery was never clean. Access was unequal. Standing affected which claim
 
 In an agent system this is provenance around a claim, an assumption graph, a trace. Without the history, reality can tell us we are wrong while leaving us remarkably creative about which part of the system deserves blame.
 
-Knowledge now came with a route by which someone else might make a claim fail again. A trust chain had acquired an escape hatch.
+A trust chain had acquired an escape hatch.
 
 ## Who Gets the Next Agent?
 
@@ -239,7 +237,7 @@ But the stripes had been there while he was alive. Turning them into evidence to
 
 Return to the agents. Suppose one proposes a hypothesis, another designs an experiment and a third evaluates the result. Now suppose all three inherited the same hidden assumption. The experiment fails. Which component changes? Reality does not care which file contains the variable named `hypothesis`; it pushes back against the arrangement as a whole. Who sees which evidence, which roles may modify the evaluator, which branches share context, which result is allowed to become everybody else’s premise: these decisions affect what the system can find out.
 
-Modern agent systems can make some of these choices dynamically. One problem may need several independent investigations, another a specialist and a verifier, another parallel workers around separable components. The bureaucracy can be temporary. The org chart can change with the problem. Organization itself has entered the search space, and whoever shapes it shapes what it can discover.
+Modern agent systems can make some of these choices dynamically. One problem may need several independent investigations, another a specialist and a verifier, another parallel workers around separable components. Organization itself has entered the search space, and whoever shapes it shapes what it can discover.
 
 Imagine research program A is ahead and has twelve agents. Program B looks weaker and has one. Where does the next available agent go?
 
@@ -247,9 +245,7 @@ The natural answer is A, and the answer reinforces itself: more agents, more exp
 
 Philip Kitcher examined this problem in 1990: how should a community divide its labor among research programs? A community can benefit from some investigators pursuing a less promising approach even when each individual, considering only the best-supported option, would choose the leader. Lakatos supplied another reason for patience: an unresolved anomaly does not, by itself, tell us to abandon a research program. The question is what further work it makes possible.[21](appendix-references.md#ref-05-allocation)
 
-Compute allocation is epistemic policy. So is memory, so is context sharing, so is credit. Who receives the capacity to generate evidence helps decide which possible truths the institution can afford to discover. Which explanation is currently best and where the next unit of capacity should go are separate questions. A critic whose objections never change what gets investigated is doing quality-assurance theater.
-
-Human science has never escaped this problem. It has simply had much longer to argue about it.
+Compute allocation is epistemic policy. So is memory, so is context sharing, so is credit. Who receives the capacity to generate evidence helps decide which possible truths the institution can afford to discover. A critic whose objections never change what gets investigated is doing quality-assurance theater.
 
 ## Science Gets Bigger Than the Scientist
 
@@ -261,7 +257,7 @@ The story is usually told about Newton. The more important part is that Bernoull
 
 Genius mattered enormously, and so did the network that let genius start from accumulated work instead of from dirt.
 
-Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help. Science became more powerful by making scientists less interchangeable.
+Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help.
 
 Because no researcher can personally reproduce every result she depends on, trust became more important at exactly the moment standards of evidence became stronger. A physicist relies on chemistry. A doctor relies on assays. A scientist cites work she could not reproduce from raw materials with the rest of her career and a very generous grant. John Hardwig called this epistemic dependence, and argued that it is a condition of rational knowledge: a person who refused to believe anything she had not verified herself would know almost nothing.[23](appendix-references.md#ref-05-hardwig) At scale, rigor is a way of organizing trust, because nobody gets to do without it.
 
@@ -284,9 +280,7 @@ A modern experiment is a society organized around an argument with reality. It i
 
 Go back to the compiler: task locks, Git, CI, progress files, sampled tests, a trusted reference compiler, specialists, a harness that turned one global failure into many small investigations, and a human who watched the work and rebuilt parts of the arrangement when it broke.
 
-At the beginning of the chapter these looked like practical tricks for coordinating coding agents. The progress file is the clerk’s tablet. The next worker can remember something it never witnessed. Shared conventions let it compare its work with another’s without renegotiating every term. The bronze measure did that for strangers who disagreed about grain.
-
-The specialists make different parts of the project visible. A worker hunting duplicate code sees something the worker chasing a parser bug may pass over, just as the reviews team found a whole field of work inside a text box. Authority follows the question: GCC can settle many disputes about what a C program should do without being asked how the whole project should be run. But agreement among specialists still needs examining. Did they investigate separately, or did the same progress file tell all of them what to think?
+The progress file is the clerk’s tablet: the next worker can remember something it never witnessed. Shared conventions do the bronze measure’s work. Specialists inspect different parts of the compiler, and authority follows the question: GCC can settle many disputes about what a C program should do without being asked how the whole project should be run. Did the specialists investigate separately, or did the same progress file tell all of them what to think?
 
 Tests let the running program contradict an agent’s account of it. Git history gives another worker a route back through the changes that produced the result. The harness decides which failures each agent encounters; the allocation of workers decides which of those failures receives another hour. What the institution remembers, what it can observe and what it bothers to investigate have become things we can change.
 
@@ -298,12 +292,8 @@ Michael Strevens puts much of science’s success down to an “iron rule”: in
 
 We can test whether these arrangements earn their keep. Keep the model and budget fixed. Give the critic another title, then give her evidence the builder never saw, and compare what she catches. Put a bad diagnosis in a progress file. Compare a system that merely remembers it with one that can trace it to the failed test it misdescribes. Does the mistake survive into the next worker’s plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing.
 
-Each piece answered a failure in the work, and the institution emerged from the repairs.
-
 What the pieces buy is capacity: a claim that survives its author, an objection that survives the person who would rather not hear it, and things a population can attempt that none of its members could.
 
 I thought I was designing a society of agents.
-
-Humanity had already spent centuries building a society of fallible knowers.
 
 ---

@@ -14,7 +14,7 @@ Some questions stall because I know too little to see where I could begin. Other
 
 Access to extraordinary intellectual capacity could change that. An interest might survive long enough to grow into an ability; a connection between fields might be mine to investigate. I might discover that the life I assembled around what I could already do had left quite a lot out.
 
-Some of this is already ordinary. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. Fields become more permeable. People become more dangerous, in the nicest sense.
+Some of this is already ordinary. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. People become more dangerous, in the nicest sense.
 
 ## The Curve
 
@@ -28,9 +28,9 @@ Much of the modern world was built by reducing problems to what we could handle:
 
 The spike is where a model has just enough capacity to fit everything, noise included. That is where I put the predicament the postmodern critics explored. We learned to fit a story to any fact, and nothing chose among the stories. None is obviously privileged. The critics were right about the predicament. We became very good at questioning the arrangements we inhabit without gaining the means to change them.
 
-The second descent did not come from going back to a smaller model. Past the peak, the data cannot choose either; every candidate fits. What chooses is the selection rule. That is the wager in the title, and it has two halves. Attempts the world can rule out, so that some stories actually lose. And a rule for choosing among the survivors that somebody has to write, and that we had better write where people can see it.
+The second descent did not come from going back to a smaller model. Past the peak, the data cannot choose either; every candidate fits. What chooses is the selection rule. My wager has two halves. Attempts the world can rule out, so that some stories actually lose. And a rule for choosing among the survivors that somebody has to write, and that we had better write where people can see it.
 
-Capacity cuts both ways here. Capacity to generate accounts makes the spike worse. A machine that can write a fluent explanation for anything gives us more fitted stories, faster, and no new way to tell them apart. The capacity that matters is the capacity to build an attempt and watch it fail. And not all capacity, either: we still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
+Capacity cuts both ways here. Capacity to generate accounts makes the spike worse. A machine that can write a fluent explanation for anything gives us more fitted stories, faster, and no new way to tell them apart. What matters here is the ability to build an attempt and watch it fail. That does not remove every limit: we still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
 Science gave fallible people ways to know things together that none could find out alone. It also had to decide which questions would get a laboratory, which rival explanation would get another year, and which student could afford to remain a student. In Chapter 5, I asked where the next thousand agent-hours should go. Here I want to change the size of the budget. Suppose we can afford to investigate sixty plausible explanations where we could previously investigate three. Sixty agents repeating the same mistake have spent the budget without buying anything. But if more investigations can genuinely reach the world, some questions we had to abandon can stay open.
 
@@ -48,7 +48,7 @@ Give everyone better information and surely the disagreements shrink. Some will.
 
 Decisions still get made. Institutions decide which qualifications count, and a leader with a convincing story can acquire more authority than someone who understands the problem. Even criticism can find a comfortable institutional role, provided it never changes what happens next: a dashboard stands in as evidence that an organization is scientific, a consultation as evidence that people have a say.
 
-This is what I mean by the ideology vortex: inherited belief, reason, criticism, representation and power keep pulling us around the same disputes. The argument changes while the practical dependence survives. Chapter 2’s algorithm vortex was a good thing, choices that no longer had to be frozen. This one is the opposite: choices that cannot be made, so the argument goes round again. The vortex is what living at the spike feels like.
+In the ideology vortex, inherited belief, reason, criticism, representation and power keep pulling us around the same disputes. Chapter 2’s algorithm vortex was a good thing, choices that no longer had to be frozen. This one is the opposite: choices that cannot be made, so the argument goes round again. The vortex is what living at the spike feels like.
 
 Look at how we argue now. Every position arrives with its critique already attached, and every critique with a critique of the critique. Everybody knows the categories are constructed, the metrics gamed, the experts conflicted, the institutions captured. Knowing has become cheap. It changes almost nothing, and it has found an excellent business model. A feed ranked for engagement is the vortex with a reward function: it pays for the next turn of the argument, not for its end. Chapter 6 told what Facebook’s own researchers found when it changed its metric: the outrage travelled, because that was what the system rewarded.
 
@@ -68,13 +68,11 @@ This is deliberately unfair to Derrida and possibly to gradient descent. In *Sig
 
 Large language models operate inside that difficulty. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pushes them toward behavior that works under the conditions in which they are trained and evaluated. Nobody had to settle the meaning of every word first.
 
-Meaning remains fuzzy at the edges. The product ships anyway.
-
 Derrida never claimed that communication fails. A sign can work and still be lifted out of its context and used somewhere its author never imagined. Chapter 4 called Saussure’s theory a specification for GPT; Derrida gives me a way to think about what happens when the output leaves the training context. Derrida was right, and it ships.
 
 It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. The model can produce a perfectly formed citation to nothing at all. We chose where training stopped and which tests counted. Deployment keeps finding places we did not think to look.
 
-Gradient descent did not defeat ambiguity. It made ambiguity computationally useful. The language carrying our disagreements can also help us construct things through which we learn something new. Criticism can show us that an arrangement need not be the only one. Capacity changes how many alternatives we can afford to build. System 3 gives the attempts a way to encounter evidence that could make us change them.
+Gradient descent did not defeat ambiguity. It made ambiguity computationally useful. The language carrying our disagreements can also help us construct things through which we learn something new.
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that camels are native to Croatia.
 
@@ -85,8 +83,6 @@ An eloquent machine left talking to itself could keep us in the vortex indefinit
 Theories and traditions remain available to think with. But criticism leaves a practical question: once you have seen through an arrangement, how do you build one you can commit to?
 
 The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is another possibility. We can construct them knowingly. Build institutions while remembering that institutions can be rebuilt, and that people will arrange their lives around the promises we make. We owe those people an account of what changed and a say in what happens next. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
-
-Constructing knowingly needs something to construct with.
 
 ## Bespoke Comes Back
 
@@ -106,11 +102,9 @@ Cheap capacity loosens that entanglement at one point. If I can do substantial w
 
 A weekend can be the beginning of an undertaking that changes the next ten years of a life. That interests me considerably more than using the weekend to produce the same presentation faster.
 
-Elinor Ostrom studied people who had already begun.
-
 ## Ostrom in a Weekend
 
-An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[7](appendix-references.md#ref-12-after-5)
+Elinor Ostrom studied people who had already begun. An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[7](appendix-references.md#ref-12-after-5)
 
 If those were the only two answers, what were these people doing?
 
@@ -138,9 +132,9 @@ Then two groups both want seven on Tuesday.
 
 One proposes allocating the room to whichever group brings the most people. The other is small partly because its members have fewer times at which they can attend. A system that maximizes attendance can produce a very well-evidenced reason to keep excluding them. The figures may be correct. What is in dispute is the rule giving those figures authority.
 
-The community might guarantee each group some access, then use attendance to allocate the remaining time. Or it might rotate the popular slot. The model could show who would lose out under each arrangement and help discover options nobody had considered. The members would still have to settle a rule, and those disadvantaged by it would need a way to challenge it. More capable analysis makes the choice better informed; it does not confer the right to make it.
+The community might guarantee each group some access, then use attendance to allocate the remaining time. Or it might rotate the popular slot. The model could show who would lose out under each arrangement and help discover options nobody had considered. The members would still have to settle a rule, and those disadvantaged by it would need a way to challenge it.
 
-Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. The first obstacle was the cost of building an alternative. The second is a conflict between people with claims on the same room. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
+Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
 
 “Capacity problems wearing a suit” ought to worry me. It is an easy sentence for an engineer to write about somebody else’s politics. James Scott showed what states did to forests and cities when they made them legible enough to manage; Morozov’s solutionism carries that warning into software.[8](appendix-references.md#ref-12-solutionism)
 
@@ -216,7 +210,7 @@ There is an ugly shortcut to alignment: edit the human. In a conversation, I wan
 
 System 3 can help answer *Why should I believe this?* and *Why does the system think I want this?* It cannot, by architecture alone, answer *What kind of life should be possible?* That is politics, ethics, culture and philosophy. The annoying disciplines.
 
-I do not want to maximize time with my children. That sounds nice until the optimizer concludes I should never go to work, see a friend alone, read a book in peace or spend fifteen minutes doing absolutely nothing because the children are statistically nearby. Nor productivity, if the optimum is becoming an efficient ghost. Nor authenticity so aggressive that I become unbearable at dinner. A good life contains goods that conflict: love and freedom, ambition and rest, truth and mercy, security and adventure. These conflicts are not bugs waiting for a scalarization expert. Asking the assistant to settle everything gives it authority over the trade-off. The trade-off remains.
+I do not want to maximize time with my children. That sounds nice until the optimizer concludes I should never go to work, see a friend alone, read a book in peace or spend fifteen minutes doing absolutely nothing because the children are statistically nearby. Nor productivity, if the optimum is becoming an efficient ghost. Nor authenticity so aggressive that I become unbearable at dinner. A good life contains goods that conflict: love and freedom, ambition and rest, truth and mercy, security and adventure. These conflicts are not bugs waiting for a scalarization expert. Asking the assistant to settle everything gives it authority over the trade-off.
 
 The human should not sit at the desire layer merely as the source of a reward signal for the machine. The human participates in the process by which the objective is reconsidered. A machine may come to understand my trade-offs better than I do, and I would still want the seat. It is a matter of whose life it is.
 

@@ -13,7 +13,7 @@ In March the recipe team arrived at the roadmap meeting with a new data source. 
 
 The meeting ended without a decision, and so did the next one. The home screen stayed exactly as he had left it, because nobody wanted to be the one who broke a rule they didn't understand.
 
-The team had years of knowledge between them. What it lacked was a way to keep a decision attached to its reasons, so that someone who had not been in the room could tell when a line had stopped being true.
+The team lacked a way to keep a decision attached to its reasons, so that someone who had not been in the room could tell when a line had stopped being true.
 
 The company did what companies do and hired another leader, one who brought plenty of reasons with him, most of them worked out somewhere else.
 
@@ -39,7 +39,7 @@ Michael Polanyi wrote the sentence for him: we can know more than we can tell.[3
 
 He also had one idea of his own, which went up on the smallest note: a reminder telling customers when their usual delivery slot was about to fill. Jalal kept both the warning and the reminder on the board.
 
-Everyone respected Sam, but respect gave the company no way to carry what he knew. So the room held two kinds of knowledge with opposite defects. Jalal’s was wide and had lost its conditions on the way in. Sam’s was narrow and had kept its conditions, but could not leave his head. Within a year several of the most convincing ideas on the whiteboard would fade.
+Within a year several of the most convincing ideas on the whiteboard would fade.
 
 ## Wins That Vanish
 
@@ -73,7 +73,7 @@ It started after Tuesday’s migration. Sam is on a beach in Portugal with his p
 
 Ines also has the company’s agent, which has read the wiki, the runbooks, three years of postmortems and the predecessor’s handover. She asks it what is wrong. Within seconds it produces a diagnosis with headings, three citations and a confident recommendation to check the database connection pool. It reads like the work of a senior engineer who has seen this before. It is wrong, and nothing in its tone says so.
 
-So there was a third knower in the building. Jalal had broad knowledge with little local context, and Sam had local context with no way to send it. The agent had every word the company had written and none of the reasons that had stayed in people’s heads, and it could produce the display of expertise almost for free. Zahavi’s condition had collapsed.
+So there was a third knower in the building. The agent had every word the company had written and none of the reasons that had stayed in people’s heads, and it could produce the display of expertise almost for free. Zahavi’s condition had collapsed.
 
 What saved Ines was a dashboard. Within a minute it showed that the connection pool was healthy, and she moved on. The runbook walked her through the dependency graph and the traffic split. The rollback she used was rehearsed every month, and the previous week’s load test told her the other cities could absorb the shifted traffic. By four the city was taking orders again, although the rollback had restored service without explaining the failure.
 
@@ -81,9 +81,9 @@ Engineering knowledge is reliable for a dull reason: it is checked constantly, a
 
 The checks have a blind spot. The serializer fails rarely, and a failure that comes once a year produces one piece of feedback a year; knowledge fed that slowly stays in the head of whoever happened to be there. *Ask Sam* preserved the dependency and did nothing for Ines at two in the morning. What she needed was what Sam looks for, why he looks there, and when that suspicion is a waste of time. The product side lived in the same blind spot. The agent’s database diagnosis lasted about a minute against the dashboard; the holiday story, with nothing to check it against, could last indefinitely.
 
-The next morning Ines opens a new document to write up the night and discovers that *why* is much harder to write down than *what*. The company had plenty of knowledge, in several forms. None of them could outlive the person who learned it and still be corrected when it stopped being true.
+The next morning Ines opens a new document to write up the night and discovers that *why* is much harder to write down than *what*.
 
-An architect had already designed one that could, for buildings.
+An architect had already designed a way to write down builders’ knowledge with its reasons.
 
 ## Light on Two Sides
 
@@ -101,11 +101,9 @@ The part Uncle Jalal’s workshop ideas had lost is the opening, where Alexander
 
 And every pattern carries a confidence mark. Two asterisks mean the authors believe they have stated a true invariant. One means they have made progress and expect a better answer. None means they offer one possible solution without claiming to have found what all successful solutions share. They say outright that the patterns are hypotheses. You can test Light on Two Sides by walking through an office at four in the afternoon and seeing where people are.
 
-A claim that says where it applies and how sure its author is has invited someone to check.
-
 He meant it politically, too. The language was supposed to take design away from professionals and hand it back to the people who would live in the rooms. A family with the book could lay out its own house and argue with the architect in the architect’s terms.
 
-That is a pattern language: builders’ knowledge, the kind Sam carries, written down as connected proposals whose context and reasons are open to question.
+A pattern language puts builders’ knowledge, the kind Sam carries, into connected proposals whose context and reasons are open to question.
 
 From here on I borrow Alexander’s asterisks to mark my confidence that each proposed arrangement can resolve the problem described: two for a well-supported practice, one for a promising proposal that needs further testing, and no asterisk (an unmarked Therefore) where its adequacy remains an open question. The marks judge the arrangements. They do not claim that an agent institution has implemented them successfully.
 
@@ -126,8 +124,6 @@ The predecessor’s handover could become full of it without anyone adding a wor
 High-functioning bullshit is an enemy of science precisely because it does not look like an enemy.
 
 Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.[13](appendix-references.md#ref-06-popper) A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Alexander’s form gives builders’ knowledge a way to take the same risk. A pattern that names its context, states its forces and marks its confidence has said where it can be wrong. Strip those parts away and the name keeps its authority while losing every handle by which it can lose an argument.
-
-That is the difference between a pattern and a feather.
 
 ## A Reader That Can Act
 
@@ -189,8 +185,6 @@ Ines read the record before the review.
 
 "Where does it say what would make you stop believing this?"
 
-That was the engineering question. A runbook without an exit condition can become a trap. A test that cannot fail is decoration.
-
 They added the answer. Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it. But the claim had finally named the observation capable of making it lose.
 
 Jalal changed the review rule. No visible home-screen launch would be approved until its committed predictions had been checked, and he kept the authority to override the gate himself.
@@ -213,13 +207,9 @@ The draft already carried the refutation condition from the experiment record. I
 
 Jalal added the confidence mark.
 
-Between them, four incomplete knowers had built something none of them could carry alone.
-
 That exchange is the new shape of Feigenbaum’s bottleneck. An agent can read hundreds of experiment records, launch notes, postmortems and chat threads and propose patterns nobody wrote down. Getting knowledge out has become cheap. Deciding which extracted lessons are true, where they apply and when to retire them has not.
 
 A detached explanation once needed a person to keep repeating it. The machine version can persist, travel and act with nobody behind it at all.
-
-That is how high-functioning bullshit becomes infrastructure.
 
 The version that went into the team’s skill library read:
 
@@ -247,8 +237,6 @@ Examples carry what rules cannot. I wrote an editing brief for this book after e
 \* Therefore: write the lesson as a pattern, with its context, its cases, what would make it wrong, and links to the patterns it serves and calls.
 
 ## Give the Claim an Address
-
-Trust is not a score attached to a pattern. It is the institution around it: provenance, tests, resources for challenges, and consequences when objections survive.
 
 Take the claim on Jalal’s old slide: the redesigned home screen raised basket size by four percent over two weeks. It went into a report. One agent summarized the report; another used the summary to justify the next redesign. Then the gain faded.
 
@@ -290,7 +278,7 @@ The slot reminder did not. Customers who used it once kept responding to it week
 
 The pattern had done exactly what it was supposed to do. It had made a prediction sharp enough to lose, and the slot reminder made it lose. The team did not delete the evidence that had supported it or call the reminder an exception. They rewrote the claim. Visible home-screen changes often produce novelty effects in returning customers; one lasting case no longer refuted the whole pattern, but it changed its scope and confidence.
 
-Sam had expected the reminder to fade with the rest; everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his own idea. So both kinds of expertise had now failed in public. Jalal’s imported knowledge had lost its conditions on the way in, and Sam’s local knowledge had stayed close to its conditions and still overreached. For a while the file looked like the form that could travel far enough to meet the cases that might change it. The team started to trust it.
+Sam had expected the reminder to fade with the rest; everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his own idea. The team started to trust it.
 
 Then the checkout team shipped a speed-up. Pages loaded faster and completed orders rose. The agent retrieved `wins-that-fade`, treated the result as another novelty case and recommended delaying the broader rollout until the pattern’s predictions had been checked.
 
@@ -300,7 +288,7 @@ The file answered with its confidence and its documented cases. Jalal’s review
 
 He signed it.
 
-The later evidence showed that the speed gain was durable. A pattern scoped to visible changes had acquired authority over an invisible performance improvement, and forty home-screen launches, however carefully read, say nothing about checkout speed. Each person in the review had acted reasonably; the institution had let a confident file decide a question outside its scope. The pattern written to make the room distrust confident stories had become the most confident story in the room, and the file had started producing feathers of its own.
+The later evidence showed that the speed gain was durable. A pattern scoped to visible changes had acquired authority over an invisible performance improvement, and forty home-screen launches, however carefully read, say nothing about checkout speed. The pattern written to make the room distrust confident stories had become the most confident story in the room, and the file had started producing feathers of its own.
 
 In Ramsey’s terms, confidence is a degree of belief, and the pattern could only earn its degree by facing cases that had not produced it. So Jalal set up a comparison. Two reviewers, with the same model and the same tools, read the same historical reports: faded gains, lasting gains and ambiguous cases. One had `wins-that-fade`; the other had only a generic instruction to be careful. The question was whether the pattern caught novelty that the control missed, or whether it simply warned about novelty in every report, in which case it had learned to sound concerned without learning to tell the cases apart.
 
@@ -390,7 +378,7 @@ The library also kept what should have gone. In his last week Sam added a line t
 
 The third departure happens every day and nobody notices it: agent sessions end. A new agent joins the project, reads the same library, retrieves the same patterns, accepts the same categories and is scored by the same evaluator. Its predecessors have disappeared, but their commitments have been transferred intact. The next generation can be born with the old generation’s entire syllabus already in context.
 
-Session turnover is not a funeral. Nothing that was believed has died.
+Session turnover is not a funeral.
 
 Nobody has to produce the stale serializer line’s high-functioning bullshit. It remains in the file, confident and specific, long after the conditions that justified it have changed. Sam wrote something true. The next worker inherited it too late. A more capable replacement model may defend it more effectively.
 
@@ -403,8 +391,6 @@ Therefore: change what the next worker inherits, and give it standing to challen
 By its second year the library held more than `wins-that-fade`. The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Each pattern named the larger one it served and the smaller ones it could call.
 
 One review made the composition visible. A pricing experiment arrived with an early lift. The review agent found a committed prediction missing and routed that gap through `say-what-the-result-would-mean`. The size of the lift triggered `locate-the-failure`, where Twyman’s check exposed a sample-ratio mismatch. A data agent traced it to a logging path shared by both the headline metric and its supposed independent check, and `give-the-claim-an-address` marked both measurements as depending on the same event stream. The review returned the launch for repair. No agent had to know the whole procedure in advance. The links carried the work from one difficulty to the next.
-
-That is the point at which a pile of skills becomes a pattern language.
 
 Alexander’s second question to the programmers becomes the right question for the agents: do the patterns generate a coherent whole?
 
@@ -425,7 +411,7 @@ The patterns in this chapter now form a small language for institutions that run
 
 They have to earn their asterisks together, and they can fail together while every part works. The graph can omit the one dependency that matters, as Sam’s last line did. The evaluator can compare candidate patterns on cases selected by the incumbent. The institution can demand evidence for an alternative while refusing the instruments needed to produce it. A procedure with provenance records, committed predictions, pattern evaluations and review channels looks more rigorous than anything on Jalal’s first whiteboard, and it can still rest on an assumption nobody checks, because the procedure itself decides what gets checked. Feyerabend argued that every rule of method has been usefully broken somewhere in the history of science.[35](appendix-references.md#ref-06-feyerabend) Requiring a test before setting a rule aside is itself another methodological rule.
 
-The lesson is brutal: a procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
+A procedure that cannot authorize an investigation outside its own method has made the method unfalsifiable.
 
 Some failures yield to comparison: a branch with a pattern withheld can expose errors its presence concealed. Others reach the purpose of the system, and cannot be settled by letting whichever evaluator produces the higher score appoint itself.
 

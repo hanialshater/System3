@@ -18,7 +18,7 @@ When you return, there is a cathedral. An experiment has overturned your favorit
 
 Your coffee is still too hot.
 
-What changed was the mental capacity available to pursue the question. Enough work could happen, in enough directions, for discoveries to reshape the undertaking while you were away. You could begin something that once required the power to assemble an institution.
+You could begin something that once required the power to assemble an institution.
 
 Complexity over engineering. Emergence over design. Capacity over power.
 
