@@ -167,7 +167,7 @@ Feynman later described what happened to measurements that followed it: they cre
 
 Meanwhile, X-rays offered a way to investigate the spacing of atoms in crystals, and from that spacing physicists could estimate the electron’s charge by another route. Those measurements helped expose the discrepancy. Their apparatus had problems of its own, but the viscosity of air was not one of them. No amount of respect for Millikan could make a crystal inherit that particular mistake.
 
-That is what a second witness is for: she has to be capable of being wrong differently. Copies of one model are, by default, wrong the same way.
+That is what a second witness is for: she has to be capable of being wrong differently. Copying the first witness does not establish that.
 
 The easiest reaction to one unreliable agent is to create five. Give one the title *Researcher*, another *Critic*, another *Verifier*, put them in a conversation, and perhaps reality will be intimidated by the org chart. Humanity invented committees this way and then, dissatisfied with the original implementation, recreated them in software.
 
@@ -294,7 +294,7 @@ The familiar failures come with them. A test suite can keep passing while the th
 
 Tracing a claim takes time and access to the right instruments. The institution has to give someone both, and a way to act on what she finds.
 
-I am not the first to argue that science works because of how its community is organized. Michael Strevens argues that it works because of the rules its community enforces, not the virtue of the people in it: an “iron rule” that forces every official dispute to be settled by empirical evidence in public, whatever the scientists privately believe.[26](appendix-references.md#ref-05-strevens) Jonathan Rauch calls the wider version the constitution of knowledge: rules that let strangers who disagree build a shared reality, with no one’s say-so counting as proof.[27](appendix-references.md#ref-05-rauch) Both books are about people, who are expensive, slow to copy and cannot rewrite their own rulebook overnight.
+Michael Strevens puts much of science’s success down to an “iron rule”: in official disputes, scientists have to argue from empirical evidence, whatever else they privately believe.[26](appendix-references.md#ref-05-strevens) Jonathan Rauch’s *The Constitution of Knowledge* follows the rules through which strangers who disagree can establish things together.[27](appendix-references.md#ref-05-rauch) Neither account needs the participants to become saints. But their participants are people. Adding another one takes rather more than starting a process.
 
 We can test whether these arrangements earn their keep. Keep the model and budget fixed. Give the critic another title, then give her evidence the builder never saw, and compare what she catches. Put a bad diagnosis in a progress file. Compare a system that merely remembers it with one that can trace it to the failed test it misdescribes. Does the mistake survive into the next worker’s plan? If these changes make no difference, the architecture owes us an explanation. The resemblance alone has proved nothing.
 

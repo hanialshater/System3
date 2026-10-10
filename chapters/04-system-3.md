@@ -130,7 +130,7 @@ For AI, the analogy is tempting. The base model looks something like System 1: f
 
 But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks.
 
-The idea is older than the name. Edwin Hutchins spent months on the bridge of a navy ship and found that navigation was not computed in anyone’s head. It was computed by a team, its charts, its instruments and its procedures, and no single sailor held the whole calculation.[5](appendix-references.md#ref-04-hutchins) He was studying cognition in the wild, outside the laboratory, and what he found there was distributed. System 3 asks agents to do on purpose what centuries of navigation practice taught sailors to do.
+Edwin Hutchins found this on the bridge of a navy ship. Navigation depended on sailors, charts, instruments and procedures; no single sailor held the whole calculation. He called this distributed cognition.[5](appendix-references.md#ref-04-hutchins) The ship could know where it was without any one person doing all the knowing. I want agents to inherit more of that arrangement.
 
 A cruder version is easier to remember: the Gut, the Head and the Hand. The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it. Peer review has no hand, provenance has no fingers and a formal proof never needs to touch a cow, so take the mnemonic loosely.
 

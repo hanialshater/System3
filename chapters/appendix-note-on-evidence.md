@@ -34,7 +34,7 @@ Plant one false diagnosis in a shared progress file and measure how often it rea
 | C | Models from different developers | Isolated, as in B |
 | D | Copies of one model | Isolated, plus a claim address linking the diagnosis to the test it misdescribes |
 
-The prediction, committed in advance: the false diagnosis survives most often in A, less in B and least in C, and D approaches C at lower cost. The claim is wrong if C does no better than B, or D does no better than B.
+The prediction, committed in advance: the false diagnosis survives most often in A, less in B and least in C, and D approaches C at lower cost. If C does no better than B, changing developers has bought nothing in this setup. If D does no better than B, the claim address has bought nothing. Neither result, by itself, settles whether adding more investigators supplies more independent evidence.
 
 ## How This Book Was Written
 

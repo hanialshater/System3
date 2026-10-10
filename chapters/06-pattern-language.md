@@ -121,8 +121,6 @@ The singleton guarding nothing and the holiday story are the same kind of object
 
 Harry Frankfurt distinguished the liar, who hides the truth, from the bullshitter, who does not care about it.[11](appendix-references.md#ref-06-frankfurt) Michael Townsen Hicks and colleagues have argued that language models are bullshitters in exactly his sense.[12](appendix-references.md#ref-06-hicks) My target is different: not a kind of speaker, human or machine, but a kind of idea. I call it **high-functioning bullshit**: an idea, explanation or practice that still carries the signals of expertise after losing the live connection to the assumptions that made it true. It can be sincerely believed. It can even once have been true. I have produced ideas like that myself, more than once.
 
-I have been circling it since Chapter 1: the jacket conclusion that acquired documentation and colleagues, the cathedral on a shopping cart, the epistemologically flat channel where a rumor and a replicated result arrive in the same polished English. Now it has a name, and I will keep using it.
-
 The predecessor’s handover could become full of it without anyone adding a word: every line sincere when written, every reason gradually falling away. So could the holiday story. So could the agent’s diagnosis at two in the morning, with the further distinction that it had no author who could ever come to doubt it.
 
 High-functioning bullshit is an enemy of science precisely because it does not look like an enemy.
@@ -394,7 +392,7 @@ The third departure happens every day and nobody notices it: agent sessions end.
 
 Session turnover is not a funeral. Nothing that was believed has died.
 
-The stale serializer line is high-functioning bullshit in its purest form because nobody is producing it. The category was never the predecessor, Jalal, Sam or the agent. It is the idea after its conditions have fallen away: confident, specific, inherited from someone who knew the system, detached from the reasons that once made it true. A more capable replacement model may defend it more effectively.
+Nobody has to produce the stale serializer line’s high-functioning bullshit. It remains in the file, confident and specific, long after the conditions that justified it have changed. Sam wrote something true. The next worker inherited it too late. A more capable replacement model may defend it more effectively.
 
 Deleting old knowledge on a schedule would throw away expertise with the errors and make newness another unearned source of authority. The next worker needs standing to challenge what it inherits, suspend a disputed instruction on an experimental branch, and leave the dispute visible when no comparison can settle it. Changing the worker is easy.
 

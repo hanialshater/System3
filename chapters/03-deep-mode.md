@@ -258,7 +258,7 @@ So I stopped asking one evaluator to represent everybody. A learner can inspect 
 
 I call these independent evaluators, though the important word is *independent*.
 
-Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. Copies agree because they are copies. If all of them read the leading builder’s explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
+Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. If all of them read the leading builder’s explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
 
 Sometimes the judges should see different things. The beginner should use the artifact before reading the builder’s explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not need to know which branch is currently winning. The rule I ended up with was to keep enough separation between judges that their disagreement still means something.
 
