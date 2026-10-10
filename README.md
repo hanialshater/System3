@@ -14,8 +14,8 @@ proposed designs and a fictional alternative ending.
 - [Manuscript order](book-design/curated/book-order.json): the complete 31-file reading sequence.
 - [Preface](chapters/00-preface.md): begin here.
 - [Note on evidence](chapters/appendix-note-on-evidence.md): what has been run, argued, designed or imagined.
-- [What This Book Proposes](chapters/afterword-what-this-book-proposes.md): the architectural proposal, the capacity argument and how they could be tested.
-- [The Ideas Behind System 3](chapters/appendix-ideas-behind-system-3.md): a problem-led guide to the philosophy used in the book.
+- [What System 3 Contributes](chapters/afterword-what-this-book-proposes.md): three explicit contributions, their relationship to contemporary philosophy of science and agent architecture, and how they could be tested.
+- [The Ideas Behind System 3](chapters/appendix-ideas-behind-system-3.md): a named summary of philosophy of science and the book's other intellectual sources.
 - [The Zen of System 3](chapters/appendix-zen-of-system-3.md): the book’s principles, from emergence and inquiry to human purposes.
 - [Working spine and editorial guidance](resources/editorial/working-spine.md): structure, voice and protected narrative connections.
 - [Narrative seed register](resources/editorial/easter-egg-register.md): run `bash resources/editorial/check-eggs.sh` after manuscript edits.

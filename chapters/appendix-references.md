@@ -489,8 +489,8 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 ## Appendix — The Ideas Behind System 3
 
-The guide also uses the references for Chapters 5 and 6, linked beside the relevant discussions. Its translations into agent architecture are the author's proposals.
+The first part of the guide summarizes the debates surveyed in Godfrey-Smith's 2003 introduction. The second names sources from other traditions, using their existing chapter references. The connections to System 3 and its agent architecture are the author's proposals.
 
 1. <a id="ref-guide-ramsey"></a>Frank P. Ramsey, “Truth and Probability,” written 1926, published in *The Foundations of Mathematics and Other Logical Essays* (1931), chapter VII, pp. 156–198, edited by R. B. Braithwaite. [Electronic edition of the author's text](https://fitelson.org/probability/ramsey.pdf). Ramsey develops partial belief, preference and consistency; the brief description of Bayesian updating includes later developments rather than attributing the whole tradition to him.
 
-2. <a id="ref-guide-godfrey-smith"></a>Peter Godfrey-Smith, *Theory and Reality: An Introduction to the Philosophy of Science*, University of Chicago Press, 2003. Recommended as a wider introductory survey. This guide selects problems relevant to the book's architecture rather than reproducing Godfrey-Smith's chapter sequence or claiming that the thinkers surveyed agree.
+2. <a id="ref-guide-godfrey-smith"></a>Peter Godfrey-Smith, *Theory and Reality: An Introduction to the Philosophy of Science*, University of Chicago Press, 2003. Chapters 2–15 provide the basis for the guide's selective summary of philosophy of science. The final section of that summary describes Godfrey-Smith's own synthesis of empiricism, naturalism and realism; it does not present that synthesis as a consensus among the thinkers surveyed.
