@@ -21,4 +21,6 @@ In that institution, using a claim does not put it beyond question. A rival expl
 
 The emergence reaches the architecture itself. The parts are deliberately built, but attempts to make them work together keep exposing the same needs. My claim is that, as we build autonomous AI, we keep rediscovering science as its architecture.
 
+But the minds available to science were expensive to train and had only so many afternoons. Those limits shaped the institution too. What happens when the price of another afternoon begins to change?
+
 It is messy. It contains hierarchy, fashion, fraud, career incentives and communities capable of becoming very sophisticated about the wrong thing. That is why it is a useful model for a system built from fallible agents rather than imaginary perfect reasoners. A record can be buried; an objection can be ignored. Their survival depends on how the institution works.

@@ -24,6 +24,10 @@ In the curve described by Belkin and colleagues, test error falls as a model gai
 
 I am borrowing the shape. Intellectual history does not obey a theorem about neural networks.
 
+Science gave fallible people ways to know things together that none could find out alone. It also had to decide which questions would get a laboratory, which rival explanation would get another year, and which student could afford to remain a student. Competent attention was scarce. In Chapter 5, I asked where the next thousand agent-hours should go. Here I want to change the size of the budget.
+
+Suppose we can afford to investigate sixty plausible explanations where we could previously investigate three. We still need ways to tell them apart. Sixty agents repeating the same mistake have spent the budget without buying that capacity. But if more investigations can genuinely reach the world, some questions we had to abandon can stay open. The institutions that organize inquiry become things we can experiment with too.
+
 Much of the modern world was built by reducing problems to what we could handle: engineer the complexity down, design the solution in advance, build one thing and reuse it. That is the first descent in the analogy. The spike in the middle I read, loosely, as a predicament the postmodern critics explored: more and more accounts can be made to fit the same facts, and none is obviously privileged. The critics were right about the predicament. We become better at questioning the arrangements we inhabit without necessarily gaining the means to change them.
 
 The wager in the title is that cheap capacity lets us make an attempt. We can investigate more of the complexity, build around a particular need and let the arrangement change as we use it. The next result need not be another argument about what might work.
@@ -112,7 +116,7 @@ Large language models operate inside that difficulty. They learn from use, relat
 
 Meaning remains fuzzy at the edges. The product ships anyway.
 
-Gradient descent did not defeat ambiguity. It made ambiguity computationally useful. The language carrying our disagreements can also help us construct things through which we learn something new.
+Gradient descent did not defeat ambiguity. It made ambiguity computationally useful. The language carrying our disagreements can also help us construct things through which we learn something new. Criticism can show us that an arrangement need not be the only one. Capacity changes how many alternatives we can afford to build. System 3 gives the attempts a way to encounter evidence that could make us change them.
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that camels are native to Croatia.
 
@@ -156,7 +160,7 @@ One proposes allocating the room to whichever group brings the most people. The 
 
 The community might guarantee each group some access, then use attendance to allocate the remaining time. Or it might rotate the popular slot. The model could show who would lose out under each arrangement and help discover options nobody had considered. The members would still have to settle a rule, and those disadvantaged by it would need a way to challenge it. More capable analysis makes the choice better informed; it does not confer the right to make it.
 
-Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday.
+Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. The first obstacle was the cost of building an alternative. The second is a conflict between people with claims on the same room. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
 
 Another community could choose differently without either one having to prove that its workflow should become the universal product. This is what capacity over power means to me at its best: increase the fraction of human possibility that does not require dominating somebody else, winning a centralized allocation contest or persuading the entire world to adopt one solution.
 
@@ -185,6 +189,8 @@ So capacity over power can fail in two directions. Concentrate the capacity and 
 What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
 
 ## The Second Descent
+
+Suppose the machinery works. The mathematician can build her workshop; the community can investigate schedules its vendor would never offer. Each successful attempt puts another choice within reach. The mathematician still has to choose a question worth a year of her life. The community still has to decide what it owes its members. Those choices become harder to postpone when lack of capacity stops making them for us.
 
 The capacity to act can scale faster than the capacity to want wisely.
 
@@ -263,6 +269,8 @@ By Sunday evening they might have an arrangement worth trying, a working tool an
 I have not run that weekend. A hundred agents is a picture, not a measured capability or a cost estimate.
 
 Nobody at the table needs a Nobel Prize. They should not each need a thirty-year research career before they can draw on what that research made possible. They need access to the knowledge, enough capacity to work with it and people willing to take responsibility for the attempt.
+
+Science made inquiry a shared undertaking that could outlive any participant. System 3 tries to make more of that machinery executable. Cheaper capacity could put it within reach of this table. The people sitting there still have to decide what they want from the valley, and live with what they decide.
 
 That is the work I want to do: put the machinery this book has described within reach of people who have something they want to try. If someone else can build the same thing, I might have a collaborator.
 
