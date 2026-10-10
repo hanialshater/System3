@@ -5,9 +5,7 @@
 
 *Simple building blocks, complex emergence*
 
-We humans are obsessed with problem-solving. And what problem is more fascinating than life itself, this messy, miraculous phenomenon responsible for everything from the creatures of the deepest ocean trenches to TikTok trends, mortgage-backed securities and people who voluntarily put pineapple on pizza?
-
-Pineapple doesn’t belong. I will die on this hill.
+We humans are obsessed with problem-solving. And what problem is more fascinating than life itself, this messy, miraculous phenomenon responsible for everything from the creatures of the deepest ocean trenches to TikTok trends and mortgage-backed securities?
 
 Life produces coral reefs, immune systems, parasites, flowers, cancer and octopuses: eight-armed problem-solvers that extensively edit their own RNA, sense light through their skin and match the colors around them despite apparently color-blind eyes. It also produces creatures capable of spending twenty minutes arguing online about whether another creature is technically a fish. Human civilization adds philosophy, cathedrals, semiconductor fabs, global supply chains and airport lounges. Somehow, all of this became possible on a planet that began without a requirements document.
 
@@ -19,7 +17,7 @@ Agentic AI interests me as another place from which to begin. We have spent deca
 
 ## The Rule-Based Exoskeleton
 
-Machine learning was supposed to teach us something about this. Stop writing a rule for every case. Give the machine examples and a way to learn. Let it discover useful structure we cannot articulate. Pedro Domingos’s *The Master Algorithm* gave an ambitious name to the hope that learning could replace much of the programming we did by hand.
+Machine learning was supposed to teach us something about this. Stop writing a rule for every case. Give the machine examples and a way to learn. Let it discover useful structure we cannot articulate. Pedro Domingos’s *The Master Algorithm* gave an ambitious name to the hope that learning could replace much of the programming we did by hand.[1](appendix-references.md#ref-01-domingos)
 
 Then we went back to work. We trained a model, found an edge case, added a rule, found another edge case, added another rule, and eventually built something that was theoretically learned end-to-end except for the large rule-based exoskeleton holding it upright. Sometimes this was entirely reasonable. Production systems are ugly. Deadlines exist. Regulators are less impressed by emergence than researchers are, and nobody gets promoted for saying, “the model will probably figure out chargebacks eventually.”
 
@@ -35,7 +33,7 @@ Cultivation may be a better metaphor than scripting: pulling harder on the stem 
 
 ## The Head Start
 
-A slightly ridiculous thought experiment helped me see the possibility. Imagine trying to seed life on another planet. You have raw materials, a primordial soup and a temperature range that does not instantly kill everything. Basically, you have all the LEGOs, except the LEGOs reproduce, mutate and occasionally develop venom. Do you bet on DNA, a biological fax machine, and wait? Do you send AI agents carrying accumulated human knowledge, with instruments and machinery they can use? Or, God forbid, do you send a group of product managers to write the requirements document for life?
+A slightly ridiculous thought experiment helped me see the possibility. Imagine trying to seed life on another planet. You have raw materials, a primordial soup and a temperature range that does not instantly kill everything. Basically, you have all the LEGOs, except the LEGOs reproduce, mutate and occasionally develop venom. Do you bet on DNA, a biological fax machine, and wait? Do you send AI agents carrying accumulated human knowledge, with instruments and machinery they can use? Or do you send a group of product managers to write the requirements document for life?
 
 It is not a fair competition. The agents arrive with civilization in their luggage. Somebody built their computers, their instruments and the machines that keep them running. They do not begin by discovering arithmetic, metallurgy and how to avoid setting the laboratory on fire. They inherit what already works and can spend their effort somewhere beyond it.
 
@@ -43,13 +41,13 @@ We do this too. No human starts from zero, although we occasionally behave as if
 
 Imagine an agent beginning with algorithms from a library. None works well enough, so it writes a tool to examine the failures. The tool reveals a pattern worth investigating. Another worker uses it on a different case, finds a limitation and changes it. Meanwhile, they need somewhere to record what they tried, a way to avoid undoing each other’s work and some agreement about which results deserve to survive. We began by asking for a solution. We now have methods and a small organization to examine as well.
 
-<!-- AUTHOR: C1-5. This run is imagined. Did a real run (circle packing or another) grow its own tools and notes? If so, describe it here in place of the hypothetical. -->
+<!-- AUTHOR: C1-5. Optional: a concrete detail from a run that grew its own tools and notes would anchor this. -->
 
 The parts can be deliberately built while the work teaches us how they need to fit together. I want to leave room for that learning, for **emergence over design**. An architecture drawn before the first experiment may be an excellent starting point. I would be surprised if it were also the right place to finish.
 
 ## When Search Moved Up a Level
 
-AlphaGo made this concrete for me: learned intuition guided the search.
+AlphaGo made this concrete for me: learned intuition guided the search.[2](appendix-references.md#ref-01-alphago)
 
 <!-- AUTHOR: C1-8 / X-2. The full AlphaGo story (Move 37, AlphaGo Zero, Lee Sedol's Move 78) is now told in Ch 7, "The Teacher Moves Into the Walls" and "The Complexity Wall". What did you actually see or feel when AlphaGo played? One or two sentences of your own here. -->
 
@@ -81,9 +79,7 @@ Too much prescription removes the room in which autonomy could help. Too little 
 
 The mistakes that worry me most are the confident ones. Imagine an agent deciding that customers who return a jacket dislike its style. In this case they liked the jacket; the sizing was wrong. But the return record does not say that. A second agent inherits the first agent’s conclusion and starts recommending different styles. A third writes a report explaining why those styles deserve more space in the catalog. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie.
 
-<!-- AUTHOR: C1-6 / X-6. The jacket example is invented. Can a real ranking or recommendation mistake from your reviews and ratings work replace it? If so, update the Ch 3 callback ("exactly what jacket they want") at the same time. -->
-
-Maybe the agents will finally solve the mystery of the missing socks. Or create exponentially more of them.
+<!-- AUTHOR: C1-6 / X-6. Optional: a sharper ranking or recommendation mistake could replace the jacket. If so, update the Ch 3 callback ("exactly what jacket they want") at the same time. -->
 
 Capable is not the same as trustworthy. Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
 
@@ -96,6 +92,8 @@ We already depend on work we cannot personally reconstruct. No scientist repeats
 There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in. After a while, those limits begin to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
 
 That is part of why I am interested in agents. I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
+
+There is an asymmetry hiding here. Seeing that an arrangement is wrong is cheap: an afternoon, a good argument, a sharp friend. Building a different one takes specialists, money, years and, usually, the permission of whoever runs the current one. So we get very good at the first, and mostly stop there.
 
 We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first finding the team and the budget, or winning a contest for somebody else’s permission.
 

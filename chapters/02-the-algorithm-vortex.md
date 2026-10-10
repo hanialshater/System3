@@ -78,7 +78,7 @@ Then we reached crossover. Suppose Parent A and Parent B both contain useful geo
 
 That is usually nonsense because circle numbering is arbitrary. Two nearly identical arrangements may store corresponding circles at completely different indices.
 
-So we used *bipartite matching crossover*, which pairs circles by their geometric role in the packing instead of by their position in an array. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.
+So we used *bipartite matching crossover*, which pairs circles by their geometric role in the packing instead of by their position in an array. The Hungarian algorithm gives us an efficient assignment, after which crossover has some chance of combining meaningful parts of the two parents instead of averaging unrelated circles and asking geometry for forgiveness.[2](appendix-references.md#ref-02-hungarian)
 
 <!-- ART RESOLVED — ch2-crossover. Original brief: DIAGRAM — missing figure: Naive crossover pairs circles by array index and often destroys useful structure. Geometric matching tries to identify corresponding circles before combining the parents. Original asset: ../resources/image0141.png; see resources/art-direction/missing-figures.md. -->
 
@@ -92,13 +92,13 @@ That is much stronger than hill climbing, and it makes the bottleneck clearer. E
 
 Ordinary evolutionary search has another problem. If you maintain a hundred solutions and repeatedly keep only the highest-scoring ones, the population eventually starts looking like one large extended family. That can be excellent for exploitation and terrible for discovering a genuinely different strategy.
 
-MAP-Elites takes a different approach. Instead of ranking every candidate on one axis and keeping only the winners, you describe solutions along a few behavioral dimensions and preserve the best candidate in different regions of that space.
+MAP-Elites takes a different approach.[3](appendix-references.md#ref-02-mapelites) Instead of ranking every candidate on one axis and keeping only the winners, you describe solutions along a few behavioral dimensions and preserve the best candidate in different regions of that space.
 
 For circle packing, perhaps one dimension measures symmetry and another measures how much circle sizes vary. One part of the archive may contain highly symmetric solutions. Another may contain asymmetric solutions with several large circles. Somewhere else may sit an ugly packing with a mediocre score and one strange structural idea that becomes useful five generations later.
 
 <!-- ART RESOLVED — ch2-archive. Original brief: DIAGRAM — missing figure: MAP-Elites archive visualization. Original asset: ../resources/image0123.png; see resources/art-direction/missing-figures.md. -->
 
-This is quality-diversity search: alongside the current winner, it keeps qualitatively different directions alive long enough to find out whether any of them become interesting.
+This is quality-diversity search:[4](appendix-references.md#ref-02-qd) alongside the current winner, it keeps qualitatively different directions alive long enough to find out whether any of them become interesting.
 
 I like this because optimization is often unfair to immature ideas. A new approach can initially perform badly simply because nobody has polished it yet. If the first respectable solution immediately kills everything else, the search can become impressively efficient at discovering one family of answers.
 
@@ -142,7 +142,7 @@ One program may use constrained optimization, another simulated annealing, anoth
 
 This gives the language model a much more interesting role. Rather than randomly perturbing numbers, it can read the program, form a rough theory about why it underperforms and change the algorithm. Perhaps the initialization is weak. Perhaps a geometric construction gets close but leaves local slack that numerical optimization could take up afterward, or a repair procedure keeps destroying useful structure and needs replacing. The mutation can now contain an idea expressed in code.
 
-A learned model proposing while code decides what survives: that is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve. The model proposes changes at a level where programs have semantic meaning; execution and the evaluator decide whether those ideas deserve to survive.
+A learned model proposing while code decides what survives: that is the neuro-symbolic step behind systems such as FunSearch and AlphaEvolve.[5](appendix-references.md#ref-02-funsearch) The model proposes changes at a level where programs have semantic meaning; execution and the evaluator decide whether those ideas deserve to survive.
 
 AlphaEvolve scales that idea up. In each generation it selects a promising program from its archive, often alongside other successful but different programs, shows the model the code and the scores of previous attempts, and applies the patch the model proposes. The program runs, the evaluator scores it, and the result goes back into the archive.
 
@@ -156,7 +156,7 @@ What interested me even more than the resulting algorithms was what happened to 
 
 ## So, Naturally, I Built All of It
 
-My instinct was predictable. I started building a framework: a database of programs, prompt sampler, evaluation loop, selection logic, mutation prompts, crossover, archive management. I used Aider and other coding agents to help reproduce the basic code-evolution pattern, and it worked. We could evolve circle-packing programs and get respectable solutions.
+My instinct was predictable. I started building a framework: a database of programs, prompt sampler, evaluation loop, selection logic, mutation prompts, crossover, archive management. I used Aider and other coding agents to help reproduce the basic code-evolution pattern, and it worked.[6](appendix-references.md#ref-02-tools) We could evolve circle-packing programs and get respectable solutions.
 
 I enjoyed this immensely because I like building systems that generate other systems, which I suspect is either a research interest or a mild personality disorder.
 

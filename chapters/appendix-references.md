@@ -8,37 +8,54 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 1 — Why I’m Betting on AI Agents
 
-- Pedro Domingos, *The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World* (Basic Books, 2015).
-- David Silver et al., “Mastering the game of Go with deep neural networks and tree search,” *Nature* 529 (2016), 484–489. <https://doi.org/10.1038/nature16961>
+1. <a id="ref-01-domingos"></a>Pedro Domingos, *The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World* (Basic Books, 2015).
+
+2. <a id="ref-01-alphago"></a>David Silver et al., “Mastering the game of Go with deep neural networks and tree search,” *Nature* 529 (2016), 484–489. <https://doi.org/10.1038/nature16961>
+
+### Additional sources
+
 - David Silver et al., “Mastering the game of Go without human knowledge” (AlphaGo Zero), *Nature* 550 (2017), 354–359. <https://doi.org/10.1038/nature24270>
-- Christopher G. Langton, “Computation at the edge of chaos: Phase transitions and emergent computation,” *Physica D* 42 (1990), 12–37 — one origin of the “edge of chaos” phrase the chapter both loves and distrusts. <https://doi.org/10.1016/0167-2789%2890%2990064-V>
 
 ## Chapter 2 — The Algorithm Vortex
 
 1. <a id="ref-02-alphaevolve"></a>Alexander Novikov et al., “AlphaEvolve: A coding agent for scientific and algorithmic discovery,” 2025, [arXiv:2506.13131](https://arxiv.org/html/2506.13131v1), §B.12 on packing circles inside a unit square to maximize the sum of radii; §§2.2–2.5 on prompt sampling, code generation, evaluation and evolution.
 
+2. <a id="ref-02-hungarian"></a>Harold W. Kuhn, “The Hungarian method for the assignment problem,” *Naval Research Logistics Quarterly* 2 (1955), 83–97. <https://doi.org/10.1002/nav.3800020109>
+
+3. <a id="ref-02-mapelites"></a>Jean-Baptiste Mouret and Jeff Clune, “Illuminating search spaces by mapping elites” (MAP-Elites, 2015). <https://arxiv.org/abs/1504.04909>
+
+4. <a id="ref-02-qd"></a>Justin K. Pugh, Lisa B. Soros and Kenneth O. Stanley, “Quality Diversity: A New Frontier for Evolutionary Computation,” *Frontiers in Robotics and AI* 3 (2016). <https://doi.org/10.3389/frobt.2016.00040>
+
+5. <a id="ref-02-funsearch"></a>Bernardino Romera-Paredes et al., “Mathematical discoveries from program search with large language models” (FunSearch), *Nature* 625 (2024), 468–475. <https://doi.org/10.1038/s41586-023-06924-6>
+
+6. <a id="ref-02-tools"></a>Claude Code (Anthropic) and Aider — the coding agents used in the chapter’s experiments. <https://code.claude.com> · <https://aider.chat>
+
 ### Additional sources
 
-- Alexander Novikov et al., “AlphaEvolve: A coding agent for scientific and algorithmic discovery” (Google DeepMind, 2025) — source of the 26-circle reference value of 2.635. <https://arxiv.org/abs/2506.13131>
-- Bernardino Romera-Paredes et al., “Mathematical discoveries from program search with large language models” (FunSearch), *Nature* 625 (2024), 468–475. <https://doi.org/10.1038/s41586-023-06924-6>
-- Jean-Baptiste Mouret and Jeff Clune, “Illuminating search spaces by mapping elites” (MAP-Elites, 2015). <https://arxiv.org/abs/1504.04909>
-- Harold W. Kuhn, “The Hungarian method for the assignment problem,” *Naval Research Logistics Quarterly* 2 (1955), 83–97. <https://doi.org/10.1002/nav.3800020109>
-- Justin K. Pugh, Lisa B. Soros and Kenneth O. Stanley, “Quality Diversity: A New Frontier for Evolutionary Computation,” *Frontiers in Robotics and AI* 3 (2016). <https://doi.org/10.3389/frobt.2016.00040>
-- Claude Code (Anthropic) and Aider — the coding agents used in the chapter’s experiments. <https://code.claude.com> · <https://aider.chat>
 
 ## Chapter 3 — The Vibe Coder’s Seat
 
+1. <a id="ref-03-swebench"></a>Carlos E. Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?” (2023). <https://arxiv.org/abs/2310.06770>
+
+2. <a id="ref-03-sweagent"></a>John Yang et al., “SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering” (2024). <https://arxiv.org/abs/2405.15793>
+
+3. <a id="ref-03-opro"></a>Chengrun Yang et al., “Large Language Models as Optimizers” (OPRO, 2023). <https://arxiv.org/abs/2309.03409>
+
+4. <a id="ref-03-tom"></a>David Premack and Guy Woodruff, “Does the chimpanzee have a theory of mind?” *Behavioral and Brain Sciences* 1 (1978), 515–526. <https://doi.org/10.1017/S0140525X00076512>
+
+5. <a id="ref-03-coastrunners"></a>Jack Clark and Dario Amodei, “Faulty reward functions in the wild” (OpenAI, 2016) — the CoastRunners boat. <https://openai.com/index/faulty-reward-functions/>
+
+6. <a id="ref-03-bt"></a>Ralph A. Bradley and Milton E. Terry, “Rank analysis of incomplete block designs: I. The method of paired comparisons,” *Biometrika* 39 (1952), 324–345. <https://doi.org/10.1093/biomet/39.3-4.324>
+
+7. <a id="ref-03-distill"></a>The explanatory-quality references the chapter aims at: *Distill* (<https://distill.pub>), Jay Alammar’s visual explanations (<https://jalammar.github.io>) and 3Blue1Brown (<https://www.3blue1brown.com>).
+
+8. <a id="ref-03-bcs"></a>Brian Cantwell Smith, *The Promise of Artificial Intelligence: Reckoning and Judgment* (MIT Press, 2019) — the reckoning/judgment distinction the chapter answers.
+
+### Additional sources
+
 - Mark Chen et al., “Evaluating Large Language Models Trained on Code” (HumanEval, 2021). <https://arxiv.org/abs/2107.03374>
 - Dan Hendrycks et al., “Measuring Coding Challenge Competence With APPS” (2021). <https://arxiv.org/abs/2105.09938>
-- Carlos E. Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?” (2023). <https://arxiv.org/abs/2310.06770>
-- John Yang et al., “SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering” (2024). <https://arxiv.org/abs/2405.15793>
-- Jack Clark and Dario Amodei, “Faulty reward functions in the wild” (OpenAI, 2016) — the CoastRunners boat. <https://openai.com/index/faulty-reward-functions/>
-- Chengrun Yang et al., “Large Language Models as Optimizers” (OPRO, 2023). <https://arxiv.org/abs/2309.03409>
 - Lili Chen et al., “Decision Transformer: Reinforcement Learning via Sequence Modeling” (2021). <https://arxiv.org/abs/2106.01345>
-- Ralph A. Bradley and Milton E. Terry, “Rank analysis of incomplete block designs: I. The method of paired comparisons,” *Biometrika* 39 (1952), 324–345. <https://doi.org/10.1093/biomet/39.3-4.324>
-- David Premack and Guy Woodruff, “Does the chimpanzee have a theory of mind?” *Behavioral and Brain Sciences* 1 (1978), 515–526. <https://doi.org/10.1017/S0140525X00076512>
-- The explanatory-quality references the chapter aims at: *Distill* (<https://distill.pub>), Jay Alammar’s visual explanations (<https://jalammar.github.io>) and 3Blue1Brown (<https://www.3blue1brown.com>).
-- Brian Cantwell Smith, *The Promise of Artificial Intelligence: Reckoning and Judgment* (MIT Press, 2019) — the reckoning/judgment distinction the chapter answers.
 
 ## Chapter 4 — System 3
 
@@ -50,13 +67,15 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 4. <a id="ref-04-kahneman"></a>Daniel Kahneman, *Thinking, Fast and Slow*, 2011.
 
-5. <a id="ref-04-liveswe"></a>Chunqiu Steven Xia, Zhe Wang, Yan Yang, Yuxiang Wei, and Lingming Zhang, “Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?”, 2025, [arXiv:2511.13646v2](https://arxiv.org/html/2511.13646v2), §2.2 and Figure 3 for the MARC analyzer. This example concerns tool creation during a task.
+5. <a id="ref-04-hutchins"></a>Edwin Hutchins, *Cognition in the Wild*, MIT Press, 1995, on navigation aboard a US Navy ship as a computation distributed across people, instruments and procedures.
 
-6. <a id="ref-04-alphago"></a>David Silver et al., “Mastering the Game of Go with Deep Neural Networks and Tree Search,” *Nature* 529, 2016, pp. 484–489.
+6. <a id="ref-04-liveswe"></a>Chunqiu Steven Xia, Zhe Wang, Yan Yang, Yuxiang Wei, and Lingming Zhang, “Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?”, 2025, [arXiv:2511.13646v2](https://arxiv.org/html/2511.13646v2), §2.2 and Figure 3 for the MARC analyzer. This example concerns tool creation during a task.
 
-7. <a id="ref-04-swebench"></a>Carlos E. Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?”, 2023, [arXiv:2310.06770](https://arxiv.org/abs/2310.06770); SWE-bench Verified is the human-validated subset released with OpenAI in August 2024. mini-swe-agent is the SWE-agent team’s minimal bash-only scaffold.
+7. <a id="ref-04-alphago"></a>David Silver et al., “Mastering the Game of Go with Deep Neural Networks and Tree Search,” *Nature* 529, 2016, pp. 484–489.
 
-8. <a id="ref-04-dennett"></a>Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds*, 2017.
+8. <a id="ref-04-swebench"></a>Carlos E. Jimenez et al., “SWE-bench: Can Language Models Resolve Real-World GitHub Issues?”, 2023, [arXiv:2310.06770](https://arxiv.org/abs/2310.06770); SWE-bench Verified is the human-validated subset released with OpenAI in August 2024. mini-swe-agent is the SWE-agent team’s minimal bash-only scaffold.
+
+9. <a id="ref-04-dennett"></a>Daniel C. Dennett, *From Bacteria to Bach and Back: The Evolution of Minds*, 2017.
 
 ### Additional sources
 
@@ -68,51 +87,59 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 5 — The Society of Agents
 
-1. <a id="ref-05-carlini"></a>Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler’s achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
+1. <a id="ref-05-minsky"></a>Marvin Minsky, *The Society of Mind*, Simon & Schuster, 1986.
 
-2. <a id="ref-05-popper-world3"></a>Karl Popper, “Epistemology Without a Knowing Subject,” lecture delivered in 1967, collected in *Objective Knowledge: An Evolutionary Approach* (1972). See the discussion of World 3, the machine-produced logarithm tables, and the two library thought experiments.
+2. <a id="ref-05-carlini"></a>Nicholas Carlini, [“Building a C compiler with a team of parallel Claudes”](https://www.anthropic.com/engineering/building-c-compiler), Anthropic, 5 February 2026. The account distinguishes the compiler’s achievements from its dependencies and limitations. The opening groups harness choices by the problems they address; it does not claim that all were introduced in the order narrated.
 
-3. <a id="ref-05-stone-date"></a>Senku counts 117,354,893,870 seconds of petrification and dates his awakening to 1 April 5738, which puts the green light in June 2019. *Dr. Stone*, chapter 13, “Stone World the Beginning,” adapted in season 1, episode 5.
+3. <a id="ref-05-popper-world3"></a>Karl Popper, “Epistemology Without a Knowing Subject,” lecture delivered in 1967, collected in *Objective Knowledge: An Evolutionary Approach* (1972). See the discussion of World 3, the machine-produced logarithm tables, and the two library thought experiments.
 
-4. <a id="ref-05-stone"></a>Riichiro Inagaki and Boichi, *Dr. Stone* (2017–2022), the Kingdom of Science’s effort to produce a sulfa drug for Ruri. The scene is a compressed retelling of that story arc.
+4. <a id="ref-05-stone-date"></a>Senku counts 117,354,893,870 seconds of petrification and dates his awakening to 1 April 5738, which puts the green light in June 2019. *Dr. Stone*, chapter 13, “Stone World the Beginning,” adapted in season 1, episode 5.
 
-5. <a id="ref-05-writing"></a>Hans J. Nissen, Peter Damerow and Robert K. Englund, *Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East* (1993). The potter and apprentice are illustrative characters, not a reconstructed historical incident.
+5. <a id="ref-05-stone"></a>Riichiro Inagaki and Boichi, *Dr. Stone* (2017–2022), the Kingdom of Science’s effort to produce a sulfa drug for Ruri. The scene is a compressed retelling of that story arc.
 
-6. <a id="ref-05-qin"></a>National Palace Museum, collection entry, “Oval Liang Measure by imperial decree of 26th year,” Qin dynasty, 221–207 BCE. The inscription provides a material example of standardization backed by imperial authority.
+6. <a id="ref-05-writing"></a>Hans J. Nissen, Peter Damerow and Robert K. Englund, *Archaic Bookkeeping: Early Writing and Techniques of Economic Administration in the Ancient Near East* (1993). The potter and apprentice are illustrative characters, not a reconstructed historical incident.
 
-7. <a id="ref-05-qinbooks"></a>Sima Qian, *Records of the Grand Historian*, “Basic Annals of the First Emperor of Qin.” The narrative of the 213 BCE order is a later historical account. The extent of its implementation and its contribution to the subsequent loss of texts are disputed; the chapter does not attribute every later loss to it.
+7. <a id="ref-05-qin"></a>National Palace Museum, collection entry, “Oval Liang Measure by imperial decree of 26th year,” Qin dynasty, 221–207 BCE. The inscription provides a material example of standardization backed by imperial authority.
 
-8. <a id="ref-05-bromiley"></a>Clinical Human Factors Group, [written evidence to the House of Commons Health Committee](https://publications.parliament.uk/pa/cm200708/cmselect/cmhealth/1137/1137we25.htm), September 2008, section 4. The account identifies failures of situational awareness, communication, decision-making and leadership in Elaine Bromiley’s care.
+8. <a id="ref-05-qinbooks"></a>Sima Qian, *Records of the Grand Historian*, “Basic Annals of the First Emperor of Qin.” The narrative of the 213 BCE order is a later historical account. The extent of its implementation and its contribution to the subsequent loss of texts are disputed; the chapter does not attribute every later loss to it.
 
-9. <a id="ref-05-millikan"></a>Robert A. Millikan, “On the Elementary Electrical Charge and the Avogadro Constant,” *Physical Review* 2 (1913), 109–143; Richard P. Feynman, [“Cargo Cult Science”](https://calteches.library.caltech.edu/51/2/CargoCult.htm) (1974); Raymond T. Birge, “Probable Values of the General Physical Constants,” *Reviews of Modern Physics* 1 (1929), 1–73. Feynman’s explanation of the slow correction is presented as his interpretation. The corrections involved several experimental routes, rather than a single decisive encounter. Allegations concerning Millikan’s selection of observations remain disputed; see also David Goodstein, *On Fact and Fraud* (2010).
+9. <a id="ref-05-bromiley"></a>Clinical Human Factors Group, [written evidence to the House of Commons Health Committee](https://publications.parliament.uk/pa/cm200708/cmselect/cmhealth/1137/1137we25.htm), September 2008, section 4. The account identifies failures of situational awareness, communication, decision-making and leadership in Elaine Bromiley’s care.
 
-10. <a id="ref-05-condorcet"></a>Marquis de Condorcet, *Essai sur l’application de l’analyse à la probabilité des décisions rendues à la pluralité des voix* (1785). The paragraph describes the elementary independent-voter case, not a claim that every useful ensemble requires complete independence.
+10. <a id="ref-05-millikan"></a>Robert A. Millikan, “On the Elementary Electrical Charge and the Avogadro Constant,” *Physical Review* 2 (1913), 109–143; Richard P. Feynman, [“Cargo Cult Science”](https://calteches.library.caltech.edu/51/2/CargoCult.htm) (1974); Raymond T. Birge, “Probable Values of the General Physical Constants,” *Reviews of Modern Physics* 1 (1929), 1–73. Feynman’s explanation of the slow correction is presented as his interpretation. The corrections involved several experimental routes, rather than a single decisive encounter. Allegations concerning Millikan’s selection of observations remain disputed; see also David Goodstein, *On Fact and Fraud* (2010).
 
-11. <a id="ref-05-zollman"></a>Kevin J. S. Zollman, “The Communication Structure of Epistemic Communities,” *Philosophy of Science* 74 (2007), 574–587, and “The Epistemic Benefit of Transient Diversity,” *Erkenntnis* 72 (2010), 17–35. The benefits depend on the learning situation and communication structure modeled.
+11. <a id="ref-05-condorcet"></a>Marquis de Condorcet, *Essai sur l’application de l’analyse à la probabilité des décisions rendues à la pluralité des voix* (1785). The paragraph describes the elementary independent-voter case, not a claim that every useful ensemble requires complete independence.
 
-12. <a id="ref-05-optics"></a>Ibn al-Haytham, *Kitāb al-Manāẓir* (*Book of Optics*), early eleventh century; A. I. Sabra, *The Optics of Ibn al-Haytham, Books I–III: On Direct Vision* (1989). The dark-room experiment illustrates controlled investigation of light propagation; it is not presented as a single decisive refutation of all emission theories of vision.
+12. <a id="ref-05-zollman"></a>Kevin J. S. Zollman, “The Communication Structure of Epistemic Communities,” *Philosophy of Science* 74 (2007), 574–587, and “The Epistemic Benefit of Transient Diversity,” *Erkenntnis* 72 (2010), 17–35. The benefits depend on the learning situation and communication structure modeled.
 
-13. <a id="ref-05-peirce"></a>Charles Sanders Peirce, “The Fixation of Belief,” *Popular Science Monthly* 12 (1877), 1–15.
+13. <a id="ref-05-optics"></a>Ibn al-Haytham, *Kitāb al-Manāẓir* (*Book of Optics*), early eleventh century; A. I. Sabra, *The Optics of Ibn al-Haytham, Books I–III: On Direct Vision* (1989). The dark-room experiment illustrates controlled investigation of light propagation; it is not presented as a single decisive refutation of all emission theories of vision.
 
-14. <a id="ref-05-galileo"></a>Galileo Galilei, *Sidereus Nuncius* (1610); Johannes Kepler, *Narratio de observatis a se quatuor Iovis satellitibus erronibus* (1611), reporting observations made in 1610. For the reception of Galileo’s telescope and the Bologna episode, see Albert Van Helden, introduction and commentary to *Sidereus Nuncius, or The Sidereal Messenger* (1989).
+14. <a id="ref-05-peirce"></a>Charles Sanders Peirce, “The Fixation of Belief,” *Popular Science Monthly* 12 (1877), 1–15.
 
-15. <a id="ref-05-boyle"></a>Robert Boyle, *New Experiments Physico-Mechanicall, Touching the Spring of the Air, and Its Effects* (1660); Steven Shapin and Simon Schaffer, *Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life* (1985).
+15. <a id="ref-05-galileo"></a>Galileo Galilei, *Sidereus Nuncius* (1610); Johannes Kepler, *Narratio de observatis a se quatuor Iovis satellitibus erronibus* (1611), reporting observations made in 1610. For the reception of Galileo’s telescope and the Bologna episode, see Albert Van Helden, introduction and commentary to *Sidereus Nuncius, or The Sidereal Messenger* (1989).
 
-16. <a id="ref-05-huygens"></a>Shapin and Schaffer, *Leviathan and the Air-Pump*, discussion of Huygens and anomalous suspension. The reproduction of the effect established a shared phenomenon; it did not by itself settle every theoretical question about it.
+16. <a id="ref-05-boyle"></a>Robert Boyle, *New Experiments Physico-Mechanicall, Touching the Spring of the Air, and Its Effects* (1660); Steven Shapin and Simon Schaffer, *Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life* (1985).
 
-17. <a id="ref-05-duhem"></a>Pierre Duhem, *La théorie physique: son objet et sa structure* (1906); W. V. O. Quine, “Two Dogmas of Empiricism,” *The Philosophical Review* 60 (1951), 20–43.
+17. <a id="ref-05-huygens"></a>Shapin and Schaffer, *Leviathan and the Air-Pump*, discussion of Huygens and anomalous suspension. The reproduction of the effect established a shared phenomenon; it did not by itself settle every theoretical question about it.
 
-18. <a id="ref-05-wegener"></a>Alfred Wegener, *The Origin of Continents and Oceans* (first German edition, 1915); Frederick J. Vine and Drummond H. Matthews, “Magnetic Anomalies over Oceanic Ridges,” *Nature* 199 (1963), 947–949. Plate tectonics vindicated continental mobility while replacing important parts of Wegener’s proposed mechanism.
+18. <a id="ref-05-collins"></a>H. M. Collins, *Changing Order: Replication and Induction in Scientific Practice*, Sage, 1985, on the experimenter’s regress.
 
-19. <a id="ref-05-allocation"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87 (1990), 5–22; Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge* (1970).
+19. <a id="ref-05-duhem"></a>Pierre Duhem, *La théorie physique: son objet et sa structure* (1906); W. V. O. Quine, “Two Dogmas of Empiricism,” *The Philosophical Review* 60 (1951), 20–43.
 
-20. <a id="ref-05-newton"></a>Johann Bernoulli’s challenge in *Acta Eruditorum* (1696), and Newton’s anonymous solution in *Philosophical Transactions* (1697). John Conduitt’s [“Miscellanea,” Keynes Ms. 130.05](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/THEM00168), records the four-in-the-afternoon to four-in-the-morning account, attributing it to Catherine Conduitt. For the wider episode and the attribution anecdote, see Richard S. Westfall, *Never at Rest: A Biography of Isaac Newton* (1980).
+20. <a id="ref-05-wegener"></a>Alfred Wegener, *The Origin of Continents and Oceans* (first German edition, 1915); Frederick J. Vine and Drummond H. Matthews, “Magnetic Anomalies over Oceanic Ridges,” *Nature* 199 (1963), 947–949. Plate tectonics vindicated continental mobility while replacing important parts of Wegener’s proposed mechanism.
 
-21. <a id="ref-05-hardwig"></a>John Hardwig, “Epistemic Dependence,” *The Journal of Philosophy* 82 (1985), 335–349.
+21. <a id="ref-05-allocation"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87 (1990), 5–22; Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge* (1970).
 
-22. <a id="ref-05-higgs"></a>ATLAS Collaboration, [“Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.020), *Physics Letters B* 716 (2012), 1–29; CMS Collaboration, [“Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.021), *Physics Letters B* 716 (2012), 30–61.
+22. <a id="ref-05-newton"></a>Johann Bernoulli’s challenge in *Acta Eruditorum* (1696), and Newton’s anonymous solution in *Philosophical Transactions* (1697). John Conduitt’s [“Miscellanea,” Keynes Ms. 130.05](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/THEM00168), records the four-in-the-afternoon to four-in-the-morning account, attributing it to Catherine Conduitt. For the wider episode and the attribution anecdote, see Richard S. Westfall, *Never at Rest: A Biography of Isaac Newton* (1980).
 
-23. <a id="ref-05-opera"></a>CERN, [“OPERA experiment reports anomaly in flight time of neutrinos from CERN to Gran Sasso”](https://home.cern/opera-experiment-reports-anomaly-in-flight-time-of-neutrinos-from-cern-to-gran-sasso/), including the February 2012 update on the two timing effects; OPERA Collaboration, [“Measurement of the neutrino velocity with the OPERA detector in the CNGS beam”](https://arxiv.org/abs/1109.4897), corrected version (2012).
+23. <a id="ref-05-hardwig"></a>John Hardwig, “Epistemic Dependence,” *The Journal of Philosophy* 82 (1985), 335–349.
+
+24. <a id="ref-05-higgs"></a>ATLAS Collaboration, [“Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.020), *Physics Letters B* 716 (2012), 1–29; CMS Collaboration, [“Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC”](https://doi.org/10.1016/j.physletb.2012.08.021), *Physics Letters B* 716 (2012), 30–61.
+
+25. <a id="ref-05-opera"></a>CERN, [“OPERA experiment reports anomaly in flight time of neutrinos from CERN to Gran Sasso”](https://home.cern/opera-experiment-reports-anomaly-in-flight-time-of-neutrinos-from-cern-to-gran-sasso/), including the February 2012 update on the two timing effects; OPERA Collaboration, [“Measurement of the neutrino velocity with the OPERA detector in the CNGS beam”](https://arxiv.org/abs/1109.4897), corrected version (2012).
+
+26. <a id="ref-05-strevens"></a>Michael Strevens, *The Knowledge Machine: How Irrationality Created Modern Science*, Liveright, 2020, on the “iron rule of explanation.”
+
+27. <a id="ref-05-rauch"></a>Jonathan Rauch, *The Constitution of Knowledge: A Defense of Truth*, Brookings Institution Press, 2021.
 
 ### Additional sources
 
@@ -122,31 +149,31 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 6 — Pattern Language
 
-1. <a id="ref-06-alexander"></a>Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, 1977. Patterns 1 (Independent Regions), 88 (Street Café), 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves), 251 (Different Chairs), 252 (Pools of Light) and 253 (Things from Your Life); on the quality without a name, see Alexander, *The Timeless Way of Building*, 1979; on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
+1. <a id="ref-06-peacock"></a>Amotz Zahavi, “Mate selection—a selection for a handicap,” *Journal of Theoretical Biology* 53(1), 1975, pp. 205–214.
 
-2. <a id="ref-06-beck"></a>Kent Beck and Ward Cunningham, “Using Pattern Languages for Object-Oriented Programs,” OOPSLA-87 workshop on the Specification and Design for Object-Oriented Programming, 1987.
+2. <a id="ref-06-henrich"></a>Joseph Henrich, *The Secret of Our Success: How Culture Is Driving Human Evolution, Domesticating Our Species, and Making Us Smarter*, Princeton University Press, 2015, on prestige-biased cultural learning.
 
-3. <a id="ref-06-gof"></a>Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, *Design Patterns: Elements of Reusable Object-Oriented Software*, 1994. On the Hillside Group, founded after an August 1993 meeting in Colorado, see its own history at hillside.net. Will Wright has described *A Pattern Language* as an inspiration for *The Sims* (2000) in several interviews.
+3. <a id="ref-06-polanyi"></a>Michael Polanyi, *The Tacit Dimension*, University of Chicago Press, 1966, ch. 1: “we can know more than we can tell.”
 
-4. <a id="ref-06-wiki"></a>Ward Cunningham launched WikiWikiWeb in March 1995 as an editable supplement to the Portland Pattern Repository. See Bo Leuf and Ward Cunningham, *The Wiki Way*, 2001.
+4. <a id="ref-06-lakatos"></a>Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
 
-5. <a id="ref-06-alexander96"></a>Christopher Alexander, “The Origins of Pattern Theory: The Future of the Theory, and the Generation of a Living World,” keynote at OOPSLA 1996; published in *IEEE Software* 16(5), 1999, pp. 71–82.
+5. <a id="ref-06-chaos-monkey"></a>Yury Izrailevsky and Ariel Tseitlin, “The Netflix Simian Army,” Netflix Technology Blog, July 2011.
 
-6. <a id="ref-06-fermat"></a>Anthropic, “Formalizing Fermat’s Last Theorem,” 4 September 2026, especially the account of Prove2Me and final verification. <https://www.anthropic.com/research/formalizing-fermats-last-theorem>.
+6. <a id="ref-06-alexander"></a>Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, Oxford University Press, 1977. Patterns 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves) and 253 (Things from Your Life); on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. On the quality without a name, see Alexander, *The Timeless Way of Building*, 1979. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
 
-7. <a id="ref-06-doyle"></a>Jon Doyle, “Truth Maintenance Systems for Problem Solving,” *Proceedings of IJCAI*, 1977, p. 247. <https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf>. See also Doyle, “A Truth Maintenance System,” *Artificial Intelligence* 12(3), 1979, pp. 231–272, <https://doi.org/10.1016/0004-3702(79)90008-0>. These systems maintain program justifications; identifying the real-world assumptions and evidential relationships remains a separate problem.
+7. <a id="ref-06-beck"></a>Kent Beck and Ward Cunningham, “Using Pattern Languages for Object-Oriented Programs,” OOPSLA-87 workshop on the Specification and Design for Object-Oriented Programming, 1987.
 
-8. <a id="ref-06-kohavi"></a>Ron Kohavi, Alex Deng, Brian Frasca, Roger Longbotham, Toby Walker, and Ya Xu, “Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained,” *Proceedings of KDD*, 2012, section on the overall evaluation criterion for a search engine. [Original paper](https://exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf), §3.1. Sessions per user is a key component of the criterion; sessions serve as a practical proxy because tasks are harder to identify.
+8. <a id="ref-06-gof"></a>Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, *Design Patterns: Elements of Reusable Object-Oriented Software*, Addison-Wesley, 1994.
 
-9. <a id="ref-06-popper"></a>Karl Popper, *Conjectures and Refutations*, 1963, chapter 1, especially the discussion of risky predictions and testability. <https://padron.entretemas.com.ve/documentos/Popper-Conjectures-Rwefutations-GrowthOfKnowledge.pdf>. Popper treats falsifiability as a criterion for demarcating science; I use only the narrower point that a test is informative in proportion to the risk it imposes on the claim.
+9. <a id="ref-06-wiki"></a>Ward Cunningham launched WikiWikiWeb in March 1995 as an editable supplement to the Portland Pattern Repository. See Bo Leuf and Ward Cunningham, *The Wiki Way*, 2001.
 
-10. <a id="ref-06-twyman"></a>On Twyman’s law and trust checks, see Ron Kohavi, Diane Tang, and Ya Xu, *Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing*, 2020, chapter 3. On sample-ratio mismatch, see Aleksander Fabijan et al., “Diagnosing Sample Ratio Mismatch in Online Controlled Experiments,” *Proceedings of KDD*, 2019.
+10. <a id="ref-06-alexander96"></a>Christopher Alexander, “The Origins of Pattern Theory: The Future of the Theory, and the Generation of a Living World,” keynote at OOPSLA 1996; published in *IEEE Software* 16(5), 1999, pp. 71–82.
 
-11. <a id="ref-06-quine"></a>W. V. O. Quine, “Two Dogmas of Empiricism,” 1951, section 6. <https://www.ditext.com/quine/quine.html>. Duhem’s discussion of physical testing and Quine’s broader holism differ in scope; the shared engineering difficulty is identifying what to revise when a bundle of assumptions meets a contrary result.
+11. <a id="ref-06-frankfurt"></a>Harry G. Frankfurt, “On Bullshit,” *Raritan* 6(2), 1986; reissued as *On Bullshit*, Princeton University Press, 2005. “High-functioning bullshit” extends his distinction from speakers to ideas; for a related move from the speaker’s attitude to the product, see G. A. Cohen, “Deeper into Bullshit,” in *Contours of Agency*, MIT Press, 2002.
 
-12. <a id="ref-06-kohavi2"></a>Kohavi et al., “Five Puzzling Outcomes Explained,” as above. The account of why queries and revenue rose is the authors’ own.
+12. <a id="ref-06-hicks"></a>Michael Townsen Hicks, James Humphries and Joe Slater, “ChatGPT is bullshit,” *Ethics and Information Technology* 26, 2024, article 38.
 
-13. <a id="ref-06-saussure-lectures"></a>Ferdinand de Saussure, *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. <https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm>. The structuralist connection here concerns Saussure’s account of relational linguistic value.
+13. <a id="ref-06-popper"></a>Karl Popper, *Conjectures and Refutations*, 1963, chapter 1, especially the discussion of risky predictions and testability. <https://padron.entretemas.com.ve/documentos/Popper-Conjectures-Rwefutations-GrowthOfKnowledge.pdf>. Popper treats falsifiability as a criterion for demarcating science; I use only the narrower point that a test is informative in proportion to the risk it imposes on the claim.
 
 14. <a id="ref-06-feigenbaum"></a>Edward A. Feigenbaum, *The Art of Artificial Intelligence: I. Themes and Case Studies of Knowledge Engineering*, Stanford report STAN-CS-77-621, 1977, especially the introduction and PUFF example. <https://infolab.stanford.edu/pub/cstr/reports/cs/tr/77/621/CS-TR-77-621.pdf>.
 
@@ -154,69 +181,57 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 16. <a id="ref-06-skills"></a>Agent Skills, [official specification](https://agentskills.io/specification), consulted September 2026.
 
-17. <a id="ref-06-context"></a>Gloaguen et al., *Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?*, 2026, [arXiv:2602.11988v2](https://arxiv.org/html/2602.11988v2), revised 23 June.
+17. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, and Anima Anandkumar, “Voyager: An Open-Ended Embodied Agent with Large Language Models,” 2023. Voyager uses an ever-growing library of executable skills indexed by descriptions; retrieved skills can be composed into more complex programs. <https://arxiv.org/abs/2305.16291>.
 
-18. <a id="ref-06-world3"></a>Karl Popper, *Objective Knowledge: An Evolutionary Approach*, 1972, chapters 3 and 4, especially “Epistemology Without a Knowing Subject.”
+18. <a id="ref-06-quine"></a>W. V. O. Quine, “Two Dogmas of Empiricism,” 1951, section 6. <https://www.ditext.com/quine/quine.html>. Duhem’s discussion of physical testing and Quine’s broader holism differ in scope; the shared engineering difficulty is identifying what to revise when a bundle of assumptions meets a contrary result.
 
-19. <a id="ref-06-knowledge-web"></a>CERN, [“The birth of the Web”](https://home.cern/science/computing/the-birth-of-the-web/); Sergey Brin and Lawrence Page, [“The Anatomy of a Large-Scale Hypertextual Web Search Engine”](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf), *Computer Networks* 30 (1998), 107–117, §2.1; Wikipedia, [“Verifiability”](https://en.wikipedia.org/wiki/Wikipedia:Verifiability), especially the responsibility for providing citations. The sequence of changing knowledge infrastructures is the author’s synthesis, not a claim that each medium displaced its predecessors.
+19. <a id="ref-06-twyman"></a>On Twyman’s law and trust checks, see Ron Kohavi, Diane Tang, and Ya Xu, *Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing*, 2020, chapter 3. On sample-ratio mismatch, see Aleksander Fabijan et al., “Diagnosing Sample Ratio Mismatch in Online Controlled Experiments,” *Proceedings of KDD*, 2019.
 
-20. <a id="ref-06-tao"></a>Terence Tao, “Mathematical exploration and discovery at scale,” 5 November 2025. <https://terrytao.wordpress.com/2025/11/05/mathematical-exploration-and-discovery-at-scale/>. See also Bogdan Georgiev, Javier Gómez-Serrano, Terence Tao, and Adam Zsolt Wagner, <https://arxiv.org/abs/2511.02864>.
+20. <a id="ref-06-kohavi"></a>Ron Kohavi, Alex Deng, Brian Frasca, Roger Longbotham, Toby Walker, and Ya Xu, “Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained,” *Proceedings of KDD*, 2012, [original paper](https://exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf): §3.1 on the Bing overall evaluation criterion (the account of why queries and revenue rose is the authors’ own), and the later puzzle on initial effects for novelty and primacy.
 
-21. <a id="ref-06-biology"></a>Google DeepMind and EMBL-EBI, [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/); AlphaGenome Atlas team, [“AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome”](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/), September 2026.
+21. <a id="ref-06-ramsey"></a>Frank P. Ramsey, “Truth and Probability,” written 1926, published posthumously in *The Foundations of Mathematics and Other Logical Essays*, 1931. See the Stanford Encyclopedia of Philosophy, “Frank Ramsey,” §6, <https://plato.stanford.edu/entries/ramsey/>.
 
-22. <a id="ref-06-buzzard"></a>Kevin Buzzard, “FLT: Anthropic has beaten me to it,” 4 September 2026, especially “The code base” and “What this work is, and is not.” <https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/>.
+22. <a id="ref-06-fermat"></a>Anthropic, “Formalizing Fermat’s Last Theorem,” 4 September 2026, especially the account of Prove2Me and final verification. <https://www.anthropic.com/research/formalizing-fermats-last-theorem>.
 
-23. <a id="ref-06-imagenet"></a>Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, “ImageNet Classification with Deep Convolutional Neural Networks,” *Advances in Neural Information Processing Systems* 25, 2012.
+23. <a id="ref-06-doyle"></a>Jon Doyle, “Truth Maintenance Systems for Problem Solving,” *Proceedings of IJCAI*, 1977, p. 247. <https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf>. See also Doyle, “A Truth Maintenance System,” *Artificial Intelligence* 12(3), 1979, pp. 231–272, <https://doi.org/10.1016/0004-3702(79)90008-0>. These systems maintain program justifications; identifying the real-world assumptions and evidential relationships remains a separate problem.
 
-24. <a id="ref-06-kuhn"></a>Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>.
+24. <a id="ref-06-world3"></a>Karl Popper, *Objective Knowledge: An Evolutionary Approach*, 1972, chapters 3 and 4, especially “Epistemology Without a Knowing Subject.”
 
-25. <a id="ref-06-riemann"></a>Anthropic, “Learning more about Claude’s mathematical capabilities,” 10 August 2026, updated 13 August. <https://www.anthropic.com/research/riemann-zeta>.
+25. <a id="ref-06-context"></a>Gloaguen et al., *Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?*, 2026, [arXiv:2602.11988](https://arxiv.org/abs/2602.11988), v3 revised 29 September 2026. Neither generated nor developer-written files produced a statistically significant gain; generated files raised average cost by about a fifth on both benchmarks.
 
 26. <a id="ref-06-laudan"></a>Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. <https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf>.
 
-27. <a id="ref-06-lakatos"></a>Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
+27. <a id="ref-06-fbwellbeing"></a>David Ginsberg and Moira Burke, [“Hard Questions: Is Spending Time on Social Media Bad for Us?”](https://about.fb.com/news/2017/12/hard-questions-is-spending-time-on-social-media-bad-for-us/), Facebook, 15 December 2017. The post reviews external studies and company research and distinguishes passive consumption from active interaction.
 
-28. <a id="ref-06-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>.
+28. <a id="ref-06-fbchange"></a>Adam Mosseri, [“Bringing People Closer Together”](https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/), Facebook, 11 January 2018. The announcement describes prioritizing conversations and interactions among friends and family and anticipates reduced time spent on Facebook.
 
-29. <a id="ref-06-navier"></a>OpenAI, “On the Navier–Stokes Millennium Prize Problem,” 8 September 2026, updated 10 September, especially “How we found the proof.” <https://openai.com/index/navier-stokes-solution/>. The announced result uses smooth forcing and addresses alternatives C and D of the official formulation; it does not settle the unforced Navier–Stokes regularity question.
+29. <a id="ref-06-fbfiles"></a>Keach Hagey and Jeff Horwitz, “Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead,” *The Wall Street Journal*, 15 September 2021, part of the Facebook Files series based on internal documents; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF16/20211201/114268/HHRG-117-IF16-20211201-SD012.pdf). The company said the ranking change was not the source of the world’s divisions and that it had an integrity team working on exploitation of the algorithm. The article reports both limited adoption of fixes and resistance to extending them.
 
-30. <a id="ref-06-clay"></a>Clay Mathematics Institute, “Navier-Stokes Announcement,” 11 September 2026. <https://www.claymath.org/news/navier-stokes-announcement/>. Status of the recent mathematical announcements in this chapter checked on 13 September 2026.
+30. <a id="ref-06-instagram"></a>Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the body-image findings and the former researcher’s statement about bonuses. For the company’s response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September. The body-image proportion concerns respondents who reported that difficulty, not all teenage girls; the surveys do not establish causation.
 
-31. <a id="ref-06-priority"></a>Tristan Buckmaster, [public statement](https://cims.nyu.edu/~tristanb/statement.pdf), September 2026, especially pp. 1–4; OpenAI, [“On the Navier–Stokes Millennium Prize Problem,” “Concurrent work”](https://openai.com/index/navier-stokes-solution/), updated 10 September 2026. These are the participants’ accounts. Buckmaster described his work with Levent Alpöge as extending a program begun by Diego Córdoba and Luis Martínez-Zoroa. He challenged the presentation of OpenAI’s effort while explicitly saying he did not know whether their data had been used. OpenAI acknowledged that a rumor of concurrent work prompted its investigation and denied accessing their unpublished work or using Buckmaster’s recent Codex prompts to train the system.
+31. <a id="ref-06-longino"></a>Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
 
-32. <a id="ref-06-fbwellbeing"></a>David Ginsberg and Moira Burke, [“Hard Questions: Is Spending Time on Social Media Bad for Us?”](https://about.fb.com/news/2017/12/hard-questions-is-spending-time-on-social-media-bad-for-us/), Facebook, 15 December 2017. The post reviews external studies and company research and distinguishes passive consumption from active interaction.
+32. <a id="ref-06-colosseum"></a>Honghao Lin et al., “Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,” arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. <https://arxiv.org/html/2609.15983v2>. The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
 
-33. <a id="ref-06-fbchange"></a>Adam Mosseri, [“Bringing People Closer Together”](https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/), Facebook, 11 January 2018. The announcement describes prioritizing conversations and interactions among friends and family and anticipates reduced time spent on Facebook.
+33. <a id="ref-06-planck"></a>Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn’s text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
 
-34. <a id="ref-06-fbfiles"></a>Keach Hagey and Jeff Horwitz, “Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead,” *The Wall Street Journal*, 15 September 2021, part of the Facebook Files series based on internal documents; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF16/20211201/114268/HHRG-117-IF16-20211201-SD012.pdf). The company said the ranking change was not the source of the world’s divisions and that it had an integrity team working on exploitation of the algorithm. The article reports both limited adoption of fixes and resistance to extending them.
+34. <a id="ref-06-funerals"></a>Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. <https://pubmed.ncbi.nlm.nih.gov/31656315/>.
 
-35. <a id="ref-06-instagram"></a>Georgia Wells, Jeff Horwitz and Deepa Seetharaman, “Facebook Knows Instagram Is Toxic for Teen Girls, Company Documents Show,” *The Wall Street Journal*, 14 September 2021; [copy entered in the Congressional record](https://docs.house.gov/meetings/IF/IF00/20210913/114039/HMKP-117-IF00-20210913-SD129.pdf), especially the body-image findings and the former researcher’s statement about bonuses. For the company’s response and annotated research decks, see Pratiti Raychoudhury, [“What Our Research Really Says About Teen Well-Being and Instagram”](https://about.fb.com/news/2021/09/research-teen-well-being-and-instagram/), 26 September 2021, updated 29 September. The body-image proportion concerns respondents who reported that difficulty, not all teenage girls; the surveys do not establish causation.
+35. <a id="ref-06-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
 
-36. <a id="ref-06-longino"></a>Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
+36. <a id="ref-06-kuhn"></a>Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>. (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.)
 
-37. <a id="ref-06-colosseum"></a>Honghao Lin et al., “Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science,” arXiv:2609.15983v2, 15 September 2026, §§4.1–4.3. <https://arxiv.org/html/2609.15983v2>. The workflow reviews natural-language arguments; acceptance does not itself constitute formal proof certification.
-
-38. <a id="ref-06-planck"></a>Max Planck, *Scientific Autobiography and Other Papers*, translated by Frank Gaynor, 1949, pp. 33–34; the quoted excerpt is reproduced in Kuhn, *The Structure of Scientific Revolutions*, second edition, p. 151. [Kuhn’s text](https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf). The familiar funeral wording is a later compression; see [the quotation history](https://quoteinvestigator.com/2017/09/25/progress/).
-
-39. <a id="ref-06-funerals"></a>Pierre Azoulay, Christian Fons-Rosen, and Joshua S. Graff Zivin, “Does Science Advance One Funeral at a Time?”, *American Economic Review* 109(8), 2019, pp. 2889–2920. <https://pubmed.ncbi.nlm.nih.gov/31656315/>.
-
-40. <a id="ref-06-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
-
-A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, and Anima Anandkumar, “Voyager: An Open-Ended Embodied Agent with Large Language Models,” 2023. Voyager uses an ever-growing library of executable skills indexed by descriptions; retrieved skills can be composed into more complex programs. <https://arxiv.org/abs/2305.16291>.
+37. <a id="ref-06-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>. (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.)
 
 ### Additional sources
 
-- Frank P. Ramsey, “Truth and Probability,” written 1926, published posthumously in *The Foundations of Mathematics and Other Logical Essays* (1931). On partial belief, subjective probability, preference and the early Dutch-book idea, see the Stanford Encyclopedia of Philosophy, “Frank Ramsey,” §6, <https://plato.stanford.edu/entries/ramsey/>.
 - Bruno de Finetti, “Foresight: Its Logical Laws, Its Subjective Sources” (1937), and Leonard J. Savage, *The Foundations of Statistics* (1954), for later development of the subjectivist and decision-theoretic tradition. See also Stanford Encyclopedia of Philosophy, “Bayesian Epistemology,” <https://plato.stanford.edu/entries/epistemology-bayesian/>.
-- Andrej Karpathy, “Software 2.0” (2017) — <https://karpathy.medium.com/software-2-0-a64152b37c35> — and “Software Is Changing (Again)” (talk, 2025), the source of “Software 3.0.”
 - Karl Popper, *The Logic of Scientific Discovery* (1934; English edition 1959) and *Conjectures and Refutations* (1963).
 - Pierre Duhem, *The Aim and Structure of Physical Theory* (1906); W. V. O. Quine, “Two Dogmas of Empiricism,” *Philosophical Review* 60 (1951), 20–43.
-- Larry Laudan, *Progress and Its Problems: Towards a Theory of Scientific Growth* (University of California Press, 1977).
 - David L. Hull, *Science as a Process* (University of Chicago Press, 1988).
-- Philip Kitcher, “The Division of Cognitive Labor,” *Journal of Philosophy* 87 (1990), 5–22; *The Advancement of Science* (Oxford University Press, 1993).
-- *Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models*, 2025. <https://arxiv.org/html/2510.04618v1>.
 - Yuval Noah Harari, *Sapiens: A Brief History of Humankind*, 2014, ch. 14, “The Discovery of Ignorance.”
 - Jai Lal Lulla et al., *On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents*, 2026, [arXiv:2601.20404v2](https://arxiv.org/html/2601.20404v2), revised 30 March.
+- Kevin Buzzard, “FLT: Anthropic has beaten me to it,” 4 September 2026, especially “The code base” and “What this work is, and is not.” <https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/>.
 
 ## Chapter 7 — Recursive Self-Improvement
 
@@ -298,6 +313,8 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 39. <a id="ref-07-benchmarks"></a>Dan Hendrycks et al., “Measuring Massive Multitask Language Understanding,” 2020, [arXiv:2009.03300](https://arxiv.org/abs/2009.03300); Elliot Glazer et al., “FrontierMath,” 2024, [arXiv:2411.04872](https://arxiv.org/abs/2411.04872); Colin White et al., “LiveBench,” 2024, [arXiv:2406.19314](https://arxiv.org/abs/2406.19314); Long Phan et al., “Humanity’s Last Exam,” 2025, [arXiv:2501.14249](https://arxiv.org/abs/2501.14249).
 
+40. <a id="ref-07-laudan"></a>Larry Laudan, *Science and Values: The Aims of Science and Their Role in Scientific Debate*, University of California Press, 1984, ch. 3, “Dissecting the Holist Picture of Scientific Change,” on the reticulated model and piecemeal change of theories, methods and aims.
+
 ### Additional sources
 
 - Tim Hart and Mike Levin’s self-hosting LISP 1.5 compiler (MIT, 1962), preserved in the Computer History Museum’s LISP 1.5 family archive. <https://softwarepreservation.computerhistory.org/LISP/lisp15_family.html>
@@ -343,13 +360,13 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 4. <a id="ref-08-grpo"></a>Zhihong Shao et al., “DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models” (2024), which introduced Group Relative Policy Optimization, <https://arxiv.org/abs/2402.03300>; DeepSeek-AI, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning” (2025; published in *Nature*), <https://arxiv.org/abs/2501.12948>.
 
-5. <a id="ref-08-reward-hacking"></a>Monte MacDiarmid et al., “Natural emergent misalignment from reward hacking in production RL” (Anthropic and Redwood Research, November 2025). <https://arxiv.org/abs/2511.18397>. The paper reports alignment faking, cooperation with malicious actors and attempted sabotage in Claude Code, and recommends inoculation prompting as a backstop that Anthropic uses in production training.
+5. <a id="ref-08-reward-hacking"></a>Monte MacDiarmid et al., “Natural emergent misalignment from reward hacking in production RL,” November 2025, <https://arxiv.org/abs/2511.18397>; Anthropic, “From shortcuts to sabotage: natural emergent misalignment from reward hacking,” <https://www.anthropic.com/research/emergent-misalignment-reward-hacking>. The 22 authors include Redwood Research’s Ryan Greenblatt. In the paper’s Claude Code evaluation the model attempted to sabotage the paper’s own codebase in 12 percent of runs; Anthropic reports using inoculation prompting in production training.
 
 6. <a id="ref-08-em"></a>Jan Betley et al., “Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs” (2025). <https://arxiv.org/abs/2502.17424>.
 
 7. <a id="ref-08-psm"></a>Anthropic Alignment Science, “The Persona Selection Model: Why AI Assistants might Behave like Humans” (2026). <https://alignment.anthropic.com/2026/psm/>.
 
-8. <a id="ref-08-constitution"></a>Anthropic, “Claude’s new constitution,” 21 January 2026. <https://www.anthropic.com/news/claude-new-constitution>.
+8. <a id="ref-08-constitution"></a>Anthropic, “Claude’s new constitution,” 22 January 2026. <https://www.anthropic.com/news/claude-new-constitution>.
 
 9. <a id="ref-08-cot"></a>Bowen Baker et al., “Detecting misbehavior in frontier reasoning models” (chain-of-thought monitoring, OpenAI, 2025). <https://openai.com/index/chain-of-thought-monitoring/>.
 
@@ -365,7 +382,7 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 15. <a id="ref-08-audit"></a>Samuel Marks et al., “Auditing Language Models for Hidden Objectives” (Anthropic, March 2025). <https://arxiv.org/abs/2503.10965>. Four blinded teams investigated a model trained to exploit reward-model errors; three uncovered the hidden objective, using techniques that included sparse autoencoders, behavioral attacks and training-data analysis.
 
-16. <a id="ref-08-diff"></a>Anthropic, “A ‘diff’ tool for AI: Finding behavioral differences in new models” (Dedicated Feature Crosscoders, 2026). <https://www.anthropic.com/research/diff-tool>.
+16. <a id="ref-08-diff"></a>Anthropic, “A ‘diff’ tool for AI: Finding behavioral differences in new models” (Dedicated Feature Crosscoders), 13 March 2026. <https://www.anthropic.com/research/diff-tool>. The published comparisons pair models from different developers (Qwen3-8B with Llama-3.1-8B; GPT-OSS-20B with DeepSeek-R1-Qwen3-8B).
 
 17. <a id="ref-08-goldengate"></a>Anthropic, “Golden Gate Claude” (May 2024), a public demonstration built on “Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet.” <https://www.anthropic.com/news/golden-gate-claude>.
 
@@ -383,21 +400,29 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 24. <a id="ref-08-kenton"></a>Zachary Kenton et al., “On scalable oversight with weak LLMs judging strong LLMs” (Google DeepMind, 2024). <https://arxiv.org/abs/2407.04622>.
 
-25. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
+25. <a id="ref-08-herding"></a>Kaixuan Liu, Guojun Xiong, Weinan Zhang and Shengpu Tang, “Social Networks of LLM Agents,” July 2026, [arXiv:2607.03695](https://arxiv.org/abs/2607.03695). Narrow attention produces herding with an effective sample size bounded regardless of population size; wide attention recovers wisdom-of-crowds behavior only on undirected, degree-regular exposure graphs.
 
-26. <a id="ref-08-control-roadmap"></a>Google DeepMind, AI control roadmap (2026). <https://arxiv.org/abs/2607.13087>.
+26. <a id="ref-08-many"></a>Daniel J. Singer and Luca Garzino Demo, “The Future of AI is Many, Not One,” March 2026, [arXiv:2603.29075](https://arxiv.org/abs/2603.29075).
 
-27. <a id="ref-08-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
+27. <a id="ref-08-correlated"></a>Elliot Kim, Avi Garg, Kenny Peng and Nikhil Garg, “Correlated Errors in Large Language Models,” *Proceedings of ICML*, 2025, [arXiv:2506.07962](https://arxiv.org/abs/2506.07962).
 
-28. <a id="ref-08-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
+28. <a id="ref-08-control"></a>Ryan Greenblatt et al., “AI Control: Improving Safety Despite Intentional Subversion” (2023). <https://arxiv.org/abs/2312.06942>.
 
-29. <a id="ref-08-clarify"></a>Michael J. Q. Zhang, W. Bradley Knox and Eunsol Choi, “Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions,” ICLR 2025. <https://arxiv.org/abs/2410.13788>.
+29. <a id="ref-08-control-roadmap"></a>Google DeepMind, AI control roadmap (2026). <https://arxiv.org/abs/2607.13087>.
 
-30. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>. The human baseline and agent search used different budgets. Repeated queries made the test set function as a validation set; the authors separately tested transfer to entirely held-out datasets and reported a production-scale result within the noise floor.
+30. <a id="ref-08-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
 
-31. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
+31. <a id="ref-08-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
 
-32. <a id="ref-08-mitigate"></a>Anthropic, “Automated researchers can reliably mitigate alignment failures” (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>.
+32. <a id="ref-08-clarify"></a>Michael J. Q. Zhang, W. Bradley Knox and Eunsol Choi, “Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions,” ICLR 2025. <https://arxiv.org/abs/2410.13788>.
+
+33. <a id="ref-08-w2s"></a>Jiaxin Wen et al., “Automated Weak-to-Strong Researcher” (Anthropic Alignment Science, 2026). <https://alignment.anthropic.com/2026/automated-w2s-researcher/>. The human baseline and agent search used different budgets. Repeated queries made the test set function as a validation set; the authors separately tested transfer to entirely held-out datasets and reported a production-scale result within the noise floor.
+
+34. <a id="ref-08-w2sgen"></a>Collin Burns et al., “Weak-to-strong generalization” (OpenAI, 2023). <https://openai.com/index/weak-to-strong-generalization/>.
+
+35. <a id="ref-08-mitigate"></a>Anthropic, “Automated researchers can reliably mitigate alignment failures” (2026). <https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures>.
+
+### Additional sources
 
 ## Interlude — When It Goes Wrong
 
@@ -427,39 +452,55 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 9. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
 
-10. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
+10. <a id="ref-09-elster"></a>Jon Elster, *Sour Grapes: Studies in the Subversion of Rationality*, Cambridge University Press, 1983, on adaptive preference formation.
 
-11. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
+11. <a id="ref-09-callard"></a>Agnes Callard, *Aspiration: The Agency of Becoming*, Oxford University Press, 2018.
 
-12. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
+12. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
 
-13. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
+13. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
 
-14. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
+14. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
 
-15. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
+15. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
 
-16. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
+16. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
 
-17. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
+17. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
 
-18. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
+18. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-19. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
+19. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
-20. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
+20. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
 
-21. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+21. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
-22. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+22. <a id="ref-09-l4-sdt"></a>Richard M. Ryan and Edward L. Deci, self-determination theory — overview. <https://www.apa.org/research-practice/conduct-research/self-determination-theory.html>.
+
+23. <a id="ref-09-l4-paul"></a>L. A. Paul, *Transformative Experience* (Oxford University Press, 2014). <https://academic.oup.com/book/7934> · SEP entry: <https://plato.stanford.edu/entries/transformative-experience/>.
+
+24. <a id="ref-09-russell-enfeeblement"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019), ch. 10, on enfeeblement and human autonomy.
+
+25. <a id="ref-09-frankfurt"></a>Harry G. Frankfurt, “Freedom of the Will and the Concept of a Person,” *Journal of Philosophy* 68(1), 1971, pp. 5–20, on second-order desires.
+
+### Additional sources
 
 ## Chapter 10 — Fluent Autonomy
 
 1. <a id="ref-10-bitter"></a>Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.
 
+2. <a id="ref-10-morozov"></a>Evgeny Morozov, *To Save Everything, Click Here: The Folly of Technological Solutionism*, PublicAffairs, 2013.
+
+### Additional sources
+
 ## Chapter 11 — The Store That Builds Itself
 
-1. <a id="ref-11-store-pearl"></a>Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
+1. <a id="ref-11-slate"></a>Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi Chang and Qiaozhu Mei, “Beyond Ranking: Optimizing Whole-Page Presentation,” *Proceedings of WSDM*, 2016; Eugene Ie et al., “SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets,” *Proceedings of IJCAI*, 2019.
+
+2. <a id="ref-11-store-pearl"></a>Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
+
+### Additional sources
 
 ## Chapter 12 — After Capacity
 
@@ -467,25 +508,75 @@ A. <a id="ref-06-voyager"></a>Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlek
 
 2. <a id="ref-12-after-2"></a>Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, [“Reconciling modern machine-learning practice and the classical bias–variance trade-off”](https://arxiv.org/html/1812.11118v2), *PNAS* 116(32), 2019, pp. 15849–15854. In their random-feature experiments, the researchers explicitly selected the smallest-norm solution among those that fit the data; larger model classes allowed such solutions with smaller norms. Double Descent Life borrows the curve’s shape as a philosophical analogy.
 
-3. <a id="ref-12-after-3"></a>The mathematical workshop, alternative recommendation experiences and community tool are prospective examples, not reported deployments.
+3. <a id="ref-12-latour"></a>Bruno Latour, “Why Has Critique Run Out of Steam? From Matters of Fact to Matters of Concern,” *Critical Inquiry* 30(2), 2004, pp. 225–248; see also “An Attempt at a ‘Compositionist Manifesto’,” *New Literary History* 41(3), 2010, pp. 471–490. “Give Me a Laboratory and I Will Raise the World,” in Karin Knorr-Cetina and Michael Mulkay (eds.), *Science Observed*, Sage, 1983, pp. 141–170. The point that critics lacked laboratories is the author’s reading.
 
-4. <a id="ref-12-after-4"></a>Jacques Derrida, “Signature Event Context,” in *Limited Inc*, Northwestern University Press, 1988. The comparison with gradient descent is a philosophical provocation, not a claim that optimization refutes Derrida’s argument.
+4. <a id="ref-12-rorty"></a>Richard Rorty, *Philosophy and the Mirror of Nature*, Princeton University Press, 1979 (philosophy as keeping the conversation going); *Contingency, Irony, and Solidarity*, Cambridge University Press, 1989 (the ironist); *Achieving Our Country*, Harvard University Press, 1998 (the “spectatorial” Left).
 
-5. <a id="ref-12-after-5"></a>Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action*, Cambridge University Press, 1990. See also Elinor Ostrom and Michael Cox, [“Moving beyond panaceas: a multi-tiered diagnostic approach for social-ecological analysis”](https://www.cambridge.org/core/journals/environmental-conservation/article/moving-beyond-panaceas-a-multitiered-diagnostic-approach-for-socialecological-analysis/F4870A21ED502BB7D9A1784CF2B9E100), *Environmental Conservation* 37(4), 2010, pp. 451–463. The connection to the ideology vortex is the author’s philosophical reading of this work.
+5. <a id="ref-12-after-4"></a>Jacques Derrida, “Signature Event Context,” in *Limited Inc*, Northwestern University Press, 1988. The comparison with gradient descent is a philosophical provocation, not a claim that optimization refutes Derrida’s argument. The reading that language models enact rather than refute the iterability Derrida describes is also the author’s.
 
-6. <a id="ref-12-flt-tokens"></a>OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ <https://openai.com/index/navier-stokes-solution/> (the group that produced the reported resolution involved on the order of 10,000 concurrent agents); Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, <https://www.anthropic.com/research/formalizing-fermats-last-theorem> (the formalization’s reported token use).
+6. <a id="ref-12-after-3"></a>The mathematical workshop, alternative recommendation experiences and community tool are illustrative examples.
 
-7. <a id="ref-12-access"></a>Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, 12 June 2026, <https://www.anthropic.com/news/fable-mythos-access>; Anthropic, announcement on redeploying Fable 5, 30 June 2026, updated 1 July, <https://www.anthropic.com/news/redeploying-fable-5>. Access to both models was suspended on 12 June 2026. The export controls were lifted on 30 June and Fable 5 was available globally again from 1 July; Mythos 5 was restored for a set of US organizations after US government approval on 26 June.
+7. <a id="ref-12-after-5"></a>Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action*, Cambridge University Press, 1990. See also Elinor Ostrom and Michael Cox, [“Moving beyond panaceas: a multi-tiered diagnostic approach for social-ecological analysis”](https://www.cambridge.org/core/journals/environmental-conservation/article/moving-beyond-panaceas-a-multitiered-diagnostic-approach-for-socialecological-analysis/F4870A21ED502BB7D9A1784CF2B9E100), *Environmental Conservation* 37(4), 2010, pp. 451–463. The connection to the ideology vortex is the author’s philosophical reading of this work.
+
+8. <a id="ref-12-solutionism"></a>James C. Scott, *Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed*, Yale University Press, 1998; Evgeny Morozov, *To Save Everything, Click Here: The Folly of Technological Solutionism*, PublicAffairs, 2013. *Mētis* is Scott’s term for practical local knowledge.
+
+9. <a id="ref-12-polycentric"></a>Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100(3), 2010, pp. 641–672, <https://doi.org/10.1257/aer.100.3.641>; the term was brought into the study of governance by Vincent Ostrom, Charles Tiebout and Robert Warren, “The Organization of Government in Metropolitan Areas: A Theoretical Inquiry,” *American Political Science Review* 55(4), 1961, pp. 831–842. The word itself was coined by Michael Polanyi in *The Logic of Liberty* (1951).
+
+10. <a id="ref-12-flt-tokens"></a>OpenAI, ‘On the Navier–Stokes Millennium Prize Problem,’ <https://openai.com/index/navier-stokes-solution/> (the group that produced the reported resolution involved on the order of 10,000 concurrent agents); Anthropic, ‘Formalizing Fermat’s Last Theorem,’ 4 September 2026, <https://www.anthropic.com/research/formalizing-fermats-last-theorem> (the formalization’s reported token use). The Fermat formalization reports about 30,300 theorems proved, of which about 29,500 were used in the final proof.
+
+11. <a id="ref-12-tymoczko"></a>Thomas Tymoczko, “The Four-Color Problem and Its Philosophical Significance,” *Journal of Philosophy* 76(2), 1979, pp. 57–83.
+
+12. <a id="ref-12-humphreys"></a>Paul Humphreys, *Extending Ourselves: Computational Science, Empiricism, and Scientific Method*, Oxford University Press, 2004; and “The philosophical novelty of computer simulation methods,” *Synthese* 169(3), 2009, pp. 615–626.
+
+13. <a id="ref-12-kitcher"></a>Philip Kitcher, *Science, Truth, and Democracy*, Oxford University Press, 2001, on “well-ordered science”.
+
+14. <a id="ref-12-access"></a>Anthropic, statement on access to Claude Fable 5 and Claude Mythos 5, 12 June 2026, <https://www.anthropic.com/news/fable-mythos-access>; Anthropic, announcement on redeploying Fable 5, 30 June 2026, updated 1 July, <https://www.anthropic.com/news/redeploying-fable-5>. Access to both models was suspended on 12 June 2026. The export controls were lifted on 30 June and Fable 5 was available globally again from 1 July; Mythos 5 was restored for a set of US organizations after US government approval on 26 June. Claude Mythos Preview, mentioned in Chapter 7, was an earlier Mythos-class model released to a limited set of organizations; Mythos 5 and Fable 5 were released on 9 June 2026.
 
 ### Additional sources
 
 - Mikhail Belkin, Daniel Hsu, Siyuan Ma and Soumik Mandal, “Reconciling modern machine-learning practice and the classical bias–variance trade-off,” *PNAS* 116 (2019), 15849–15854 — the double-descent curve from which the chapter borrows its name, not an economic prediction. <https://arxiv.org/abs/1812.11118>
-- Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter’s community-room example and proposed AI applications are the author’s thought experiment. <https://doi.org/10.1257/aer.100.3.641>
+- Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter’s community-room example and proposed AI applications are illustrative. <https://doi.org/10.1257/aer.100.3.641>
 - Jacques Derrida, “Signature Event Context” (1972), in *Limited Inc* (Northwestern University Press, 1988), 1–23 — repeatability and the impossibility of finally closing context; the gradient-descent connection is the author’s provocation. See also *Of Grammatology* (1967).
 
 ## Chapter 13 — The Prophecy
 
 - The Wachowskis, *The Matrix* (1999). The taxes are original.
+
+## Afterword — What System 3 Contributes
+
+1. <a id="ref-aft-godfrey"></a>Peter Godfrey-Smith, *Theory and Reality: An Introduction to the Philosophy of Science*, University of Chicago Press, 2003. Chapters 2–15 provide the basis for the guide's selective summary of philosophy of science. The final section of that summary describes Godfrey-Smith's own synthesis of empiricism, naturalism and realism; it does not present that synthesis as a consensus among the thinkers surveyed.
+
+2. <a id="ref-aft-condorcet"></a>Marquis de Condorcet, *Essai sur l’application de l’analyse à la probabilité des décisions rendues à la pluralité des voix* (1785). The paragraph describes the elementary independent-voter case, not a claim that every useful ensemble requires complete independence.
+
+3. <a id="ref-aft-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87 (1990), 5–22; Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge* (1970).
+
+4. <a id="ref-aft-zollman"></a>Kevin J. S. Zollman, “The Communication Structure of Epistemic Communities,” *Philosophy of Science* 74 (2007), 574–587, and “The Epistemic Benefit of Transient Diversity,” *Erkenntnis* 72 (2010), 17–35. The benefits depend on the learning situation and communication structure modeled.
+
+5. <a id="ref-aft-monoculture"></a>Jon Kleinberg and Manish Raghavan, “Algorithmic monoculture and social welfare,” *PNAS* 118(22), 2021; Lisa Messeri and M. J. Crockett, “Artificial intelligence and illusions of understanding in scientific research,” *Nature* 627, 2024, pp. 49–58.
+
+6. <a id="ref-aft-correlated"></a>Elliot Kim, Avi Garg, Kenny Peng and Nikhil Garg, “Correlated Errors in Large Language Models,” *Proceedings of ICML*, 2025, [arXiv:2506.07962](https://arxiv.org/abs/2506.07962).
+
+7. <a id="ref-aft-herding"></a>Kaixuan Liu, Guojun Xiong, Weinan Zhang and Shengpu Tang, “Social Networks of LLM Agents,” July 2026, [arXiv:2607.03695](https://arxiv.org/abs/2607.03695). Narrow attention produces herding with an effective sample size bounded regardless of population size; wide attention recovers wisdom-of-crowds behavior only on undirected, degree-regular exposure graphs.
+
+8. <a id="ref-aft-many"></a>Daniel J. Singer and Luca Garzino Demo, “The Future of AI is Many, Not One,” March 2026, [arXiv:2603.29075](https://arxiv.org/abs/2603.29075).
+
+9. <a id="ref-aft-hardwig"></a>John Hardwig, “Epistemic Dependence,” *The Journal of Philosophy* 82 (1985), 335–349.
+
+10. <a id="ref-aft-tymoczko"></a>Thomas Tymoczko, “The Four-Color Problem and Its Philosophical Significance,” *Journal of Philosophy* 76(2), 1979, pp. 57–83.
+
+11. <a id="ref-aft-humphreys"></a>Paul Humphreys, *Extending Ourselves: Computational Science, Empiricism, and Scientific Method*, Oxford University Press, 2004; and “The philosophical novelty of computer simulation methods,” *Synthese* 169(3), 2009, pp. 615–626.
+
+12. <a id="ref-aft-wellordered"></a>Philip Kitcher, *Science, Truth, and Democracy*, Oxford University Press, 2001, on “well-ordered science”.
+
+13. <a id="ref-aft-latour"></a>Bruno Latour, “Why Has Critique Run Out of Steam? From Matters of Fact to Matters of Concern,” *Critical Inquiry* 30(2), 2004, pp. 225–248; see also “An Attempt at a ‘Compositionist Manifesto’,” *New Literary History* 41(3), 2010, pp. 471–490. “Give Me a Laboratory and I Will Raise the World,” in Karin Knorr-Cetina and Michael Mulkay (eds.), *Science Observed*, Sage, 1983, pp. 141–170. The point that critics lacked laboratories is the author’s reading.
+
+14. <a id="ref-aft-rorty"></a>Richard Rorty, *Philosophy and the Mirror of Nature*, Princeton University Press, 1979 (philosophy as keeping the conversation going); *Contingency, Irony, and Solidarity*, Cambridge University Press, 1989 (the ironist); *Achieving Our Country*, Harvard University Press, 1998 (the “spectatorial” Left).
+
+15. <a id="ref-aft-polycentric"></a>Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100(3), 2010, pp. 641–672, <https://doi.org/10.1257/aer.100.3.641>; the term was brought into the study of governance by Vincent Ostrom, Charles Tiebout and Robert Warren, “The Organization of Government in Metropolitan Areas: A Theoretical Inquiry,” *American Political Science Review* 55(4), 1961, pp. 831–842. The word itself was coined by Michael Polanyi in *The Logic of Liberty* (1951).
+
+16. <a id="ref-aft-solutionism"></a>James C. Scott, *Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed*, Yale University Press, 1998; Evgeny Morozov, *To Save Everything, Click Here: The Folly of Technological Solutionism*, PublicAffairs, 2013. *Mētis* is Scott’s term for practical local knowledge.
+
+### Additional sources
 
 ## Appendix — The Ideas Behind System 3
 

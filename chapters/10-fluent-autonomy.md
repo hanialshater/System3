@@ -106,6 +106,8 @@ The back channel shows coordination emerging. The scientific arrangement I am ar
 
 The objection I can answer least is about ownership. Science at its best is a commons. The institutions in this book have owners: a lab that decides which problem gets ten thousand agents, a company that decides which experiment gets traffic, a vendor who decides which community’s constraints are worth a feature. The architecture can make ownership visible: a funding decision recorded next to the study it declined, so that unfunded cannot quietly become disproved. It cannot make ownership legitimate, and I come back to it near the end of the book.
 
+Close behind it is the charge that this is an engineer’s book answering political questions with architecture. Evgeny Morozov calls the habit solutionism.[2](appendix-references.md#ref-10-morozov) I have spent my career turning messy wants into objectives, so I am not a neutral judge. Morozov would add that making things visible is a favorite solutionist fix too, and he would not be wrong. What architecture can do is put the objective where the people it affects can fight it. Choosing it stays their job.
+
 None of this shows the whole composition works. I have shown pieces, and the note on evidence at the back says which. The rest is an argument, and like every other claim in this book, it would like a referee.
 
 An editing experiment has one advantage: I am there to say the result is wrong. A customer who gets a bad page files no correction. She leaves.

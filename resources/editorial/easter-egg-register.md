@@ -19,7 +19,7 @@ Status: **confirmed** = author has confirmed it is deliberate. **proposed** = fo
 | The dream | `07` → "The Learner Dreams, and the Dream Can Be Wrong" | `13` → "hadn’t he dreamed he was an octopus?" | proposed |
 | The cathedral | `00-preface` → "Eventually there is a cathedral" | `03` → "A Cathedral on a Shopping Cart" | proposed |
 | Standing outside the box | `05` → "with no one standing outside it" | `13` → "Behind it: forty monitors. Every timeline." | proposed |
-| Capacity over power | `00-preface` → "Capacity over power." · `12` → "## Capacity Over Power" | `13` → "Capitalism doesn’t." | proposed |
+| Capacity over power | `00-preface` → "Capacity over power." · `12` → "what capacity over power means to me" | `13` → "Capitalism doesn’t." | proposed |
 | The reveal riddle | `00-preface` → "we never thought to call it an architecture" | `reveal page` → "We call it science." | proposed |
 | 11:53 PM | `12` → "In October 1947" (the Doomsday Clock was first set at seven minutes to midnight in 1947) | `13` → "11:53 PM, three minutes." | proposed — may be coincidence |
 | Names | — | `13` → Devesh (roughly "lord of the gods"), Claudit (Claude + audit?), Norman (Don Norman's user?) | proposed — author to confirm |

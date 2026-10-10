@@ -30,4 +30,6 @@ Leibniz wanted talented people to help him. Three centuries later, we are learni
 
 Rediscover, because we have built it before. It took about four centuries, a great many arguments and at least one loose cable, and we never thought to call it an architecture.
 
+Then comes the part I care about most. Once that architecture is cheap, a small group with a question could run some of it themselves, over a weekend, around a problem nobody else would fund.
+
 Back to the future, then. Bring your coffee.

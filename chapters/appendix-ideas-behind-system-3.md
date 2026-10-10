@@ -24,25 +24,25 @@ Hempel's ravens problem exposes difficulties in simple accounts of confirming ge
 
 **Central idea:** scientific theories should risk failure. A theory that forbids some possible observations exposes itself to a test; one that can accommodate any outcome offers little empirical constraint. Successful tests leave a theory standing without proving it.
 
-**Difficulty:** an apparent falsification also implicates instruments and auxiliary assumptions. Scientific practice includes reasonable persistence in the face of anomalies. Popper's opposition to inductive confirmation also leaves a problem about why a well-tested theory deserves reliance in future decisions. System 3 uses exposure to failure without adopting all of Popper's philosophy.[9](appendix-references.md#ref-06-popper)
+**Difficulty:** an apparent falsification also implicates instruments and auxiliary assumptions. Scientific practice includes reasonable persistence in the face of anomalies. Popper's opposition to inductive confirmation also leaves a problem about why a well-tested theory deserves reliance in future decisions. System 3 uses exposure to failure without adopting all of Popper's philosophy.[13](appendix-references.md#ref-06-popper)
 
 ### Confirmation Holism — Pierre Duhem and W. V. O. Quine
 
 **Central idea:** evidence meets a bundle of commitments. A predicted result depends on a theory, assumptions about the situation, instruments and interpretation. A contrary result does not identify, by logic alone, which commitment should change.
 
-Duhem developed this difficulty for physical testing. Quine argued for a broader web of belief whose parts can be adjusted when experience conflicts with expectations. Their positions differ in scope. The practical consequence is to investigate competing accounts of the failure, rather than automatically discarding the headline theory or automatically blaming the apparatus.[17](appendix-references.md#ref-05-duhem)
+Duhem developed this difficulty for physical testing. Quine argued for a broader web of belief whose parts can be adjusted when experience conflicts with expectations. Their positions differ in scope. The practical consequence is to investigate competing accounts of the failure, rather than automatically discarding the headline theory or automatically blaming the apparatus.[19](appendix-references.md#ref-05-duhem)
 
 ### Paradigms, Normal Science and Revolutions — Thomas Kuhn
 
 **Central idea:** scientific work depends on shared frameworks, exemplary solutions and standards. During normal science, investigators solve demanding problems within that inheritance instead of reopening every fundamental assumption. Commitment is productive.
 
-Persistent anomalies can contribute to crises and changes of framework. A revolution may change the questions, concepts and standards used to compare explanations. Kuhn complicates the picture of science as a steady accumulation of individually verified facts. His account also raises questions about comparability and progress across frameworks; it need not be read as saying that every framework is equally good.[24](appendix-references.md#ref-06-kuhn)
+Persistent anomalies can contribute to crises and changes of framework. A revolution may change the questions, concepts and standards used to compare explanations. Kuhn complicates the picture of science as a steady accumulation of individually verified facts. His account also raises questions about comparability and progress across frameworks; it need not be read as saying that every framework is equally good.[36](appendix-references.md#ref-06-kuhn)
 
 ### Research Programmes — Imre Lakatos
 
 **Central idea:** assess a developing programme, not just one isolated hypothesis. A programme retains a core while revising surrounding assumptions. A progressive development leads to new predictions that receive support; a degenerating development mainly accommodates difficulties already encountered.
 
-This permits rational patience without treating every rescue story as progress. A promising programme may need time to develop its instruments or answer an anomaly. The hard practical question is when patience stops buying discovery. Lakatos supplies a way to appraise a trajectory, not a universal deadline for abandoning it.[27](appendix-references.md#ref-06-lakatos)
+This permits rational patience without treating every rescue story as progress. A promising programme may need time to develop its instruments or answer an anomaly. The hard practical question is when patience stops buying discovery. Lakatos supplies a way to appraise a trajectory, not a universal deadline for abandoning it.[4](appendix-references.md#ref-06-lakatos)
 
 ### Problem Solving, Acceptance and Pursuit — Larry Laudan
 
@@ -54,7 +54,7 @@ Laudan distinguishes *acceptance* from *pursuit*. The theory we have the best re
 
 **Central idea:** the history of scientific advances resists universal prescriptions for method. Rules later treated as essential were sometimes violated in productive work. Alternative theories can expose assumptions that remain invisible within the dominant account.
 
-Feyerabend's provocative “anything goes” challenges the philosopher's authority to legislate one method for all inquiry. It does not supply an easy operational procedure. System 3 takes the narrower lesson that methods must remain challengeable, while recognizing that its own requirement for testing an amendment is itself a methodological commitment.[40](appendix-references.md#ref-06-feyerabend)
+Feyerabend's provocative “anything goes” challenges the philosopher's authority to legislate one method for all inquiry. It does not supply an easy operational procedure. System 3 takes the narrower lesson that methods must remain challengeable, while recognizing that its own requirement for testing an amendment is itself a methodological commitment.[35](appendix-references.md#ref-06-feyerabend)
 
 ### Sociology of Science — Robert Merton, David Bloor, Steven Shapin, Simon Schaffer and Bruno Latour
 
@@ -66,7 +66,7 @@ These approaches disagree. Their shared challenge is that an account limited to 
 
 **Central idea:** background assumptions, exclusions and social position can affect which questions are asked and how evidence is interpreted. Diversity can reveal assumptions a homogeneous community takes for granted.
 
-Longino gives this an institutional account: effective criticism needs venues, uptake, accessible standards and a tempered equality of intellectual authority. Objectivity can be strengthened through organized interaction among differently situated knowers. Uptake means criticism can change the community's commitments; it does not require accepting every objection. Tempered equality provides standing to contribute without treating expertise as identical.[36](appendix-references.md#ref-06-longino)
+Longino gives this an institutional account: effective criticism needs venues, uptake, accessible standards and a tempered equality of intellectual authority. Objectivity can be strengthened through organized interaction among differently situated knowers. Uptake means criticism can change the community's commitments; it does not require accepting every objection. Tempered equality provides standing to contribute without treating expertise as identical.[31](appendix-references.md#ref-06-longino)
 
 ### Naturalism — John Dewey, W. V. O. Quine and Peter Godfrey-Smith
 
@@ -76,9 +76,9 @@ Naturalism has several versions. Quine proposed a radical absorption of epistemo
 
 ### Social Epistemology and the Division of Labor — David Hull, Philip Kitcher and Kevin Zollman
 
-**Central idea:** what is rational for an individual and what helps a community discover can diverge. Hull studies science as a social process involving credit, competition and cooperation. Kitcher examines how effort should be divided among approaches; everyone choosing the current favorite can produce a poor collective allocation.[28](appendix-references.md#ref-06-kitcher)
+**Central idea:** what is rational for an individual and what helps a community discover can diverge. Hull studies science as a social process involving credit, competition and cooperation. Kitcher examines how effort should be divided among approaches; everyone choosing the current favorite can produce a poor collective allocation.[37](appendix-references.md#ref-06-kitcher)
 
-Zollman's models show that communication structures can affect learning, including conditions where temporarily preserving different investigations helps prevent premature convergence. This is not a universal prescription for isolation. The unit of epistemic assessment includes the population, its incentives and its information flow.[11](appendix-references.md#ref-05-zollman)
+Zollman's models show that communication structures can affect learning, including conditions where temporarily preserving different investigations helps prevent premature convergence. This is not a universal prescription for isolation. The unit of epistemic assessment includes the population, its incentives and its information flow.[12](appendix-references.md#ref-05-zollman)
 
 ### Scientific Realism and Its Critics — Godfrey-Smith's Survey
 
@@ -108,25 +108,25 @@ Knowers are organisms already interacting with the world, using instruments to e
 
 ### Language, Meaning and Grounding — Saussure, Wittgenstein and Derrida
 
-**Saussure:** signs acquire value through relationships and differences within a linguistic system. **Wittgenstein:** meaning belongs to use within activities and forms of life. **Derrida:** signs can be repeated in new circumstances; context cannot finally close their interpretation.[1](appendix-references.md#ref-04-saussure)[2](appendix-references.md#ref-04-wittgenstein)[4](appendix-references.md#ref-12-after-4)
+**Saussure:** signs acquire value through relationships and differences within a linguistic system. **Wittgenstein:** meaning belongs to use within activities and forms of life. **Derrida:** signs can be repeated in new circumstances; context cannot finally close their interpretation.[1](appendix-references.md#ref-04-saussure)[2](appendix-references.md#ref-04-wittgenstein)[5](appendix-references.md#ref-12-after-4)
 
 These are distinct accounts. In Chapters 4 and 12, they help separate competence inside language from warranted claims about what happens outside it. “Gradient descent is the answer to Derrida” is my provocation: productive operation within ambiguity does not establish that Derrida was refuted.
 
 ### External Knowledge and Epistemic Dependence — Popper and John Hardwig
 
-**Popper's World 3:** theories, arguments and problems become objects others can examine beyond their authors' mental lives. **Hardwig's epistemic dependence:** knowing much requires reliance on work we cannot personally reproduce.[2](appendix-references.md#ref-05-popper-world3)[21](appendix-references.md#ref-05-hardwig)
+**Popper's World 3:** theories, arguments and problems become objects others can examine beyond their authors' mental lives. **Hardwig's epistemic dependence:** knowing much requires reliance on work we cannot personally reproduce.[3](appendix-references.md#ref-05-popper-world3)[23](appendix-references.md#ref-05-hardwig)
 
 Chapters 5 and 6 ask what changes when artificial participants can retrieve, use and revise that inheritance. The trust chain matters because the library contains errors as well as knowledge. A single fluent voice does not make the underlying dependencies disappear.
 
 ### Patterns and Knowledge Engineering — Christopher Alexander, Jon Doyle and Edward Feigenbaum
 
-**Alexander's pattern language:** practical knowledge travels with context, reasons and links to other patterns. **Doyle's truth maintenance:** program beliefs retain justifications so changes can propagate. **Feigenbaum's knowledge engineering:** useful systems depend heavily on domain knowledge and the difficulty of acquiring it.[1](appendix-references.md#ref-06-alexander)[7](appendix-references.md#ref-06-doyle)[14](appendix-references.md#ref-06-feigenbaum)
+**Alexander's pattern language:** practical knowledge travels with context, reasons and links to other patterns. **Doyle's truth maintenance:** program beliefs retain justifications so changes can propagate. **Feigenbaum's knowledge engineering:** useful systems depend heavily on domain knowledge and the difficulty of acquiring it.[6](appendix-references.md#ref-06-alexander)[23](appendix-references.md#ref-06-doyle)[14](appendix-references.md#ref-06-feigenbaum)
 
 Chapter 6 combines those inheritances in patterns a worker can execute and challenge. Extraction can become cheaper while validation remains difficult. Maintaining justifications does not establish that the justifications are true.
 
-### Learning, Search and Emergence — Langton, Sutton and the Agent Research
+### Learning, Search and Emergence — Sutton and the Agent Research
 
-**Langton's edge-of-chaos research** examines relationships between dynamical regimes and emergent computation. **Sutton's temporal-difference learning** and the reinforcement-learning tradition show how behavior can improve through consequences rather than supplied answers. Program-search systems such as FunSearch and AlphaEvolve extend learning and search into algorithm construction.[11](appendix-references.md#ref-07-td)[1](appendix-references.md#ref-02-alphaevolve)
+**Sutton's temporal-difference learning** and the reinforcement-learning tradition show how behavior can improve through consequences rather than supplied answers. Program-search systems such as FunSearch and AlphaEvolve extend learning and search into algorithm construction.[11](appendix-references.md#ref-07-td)[1](appendix-references.md#ref-02-alphaevolve)
 
 Chapters 1–3 and 7 follow control from the individual answer into the conditions of search: representations, environments, feedback and evaluation. Emergence does not mean that nobody designed the components or chose the reward.
 
@@ -138,19 +138,19 @@ Chapter 8 uses this lineage to ask how a weaker overseer can constrain a more ca
 
 ### Commons and Institutional Diversity — Elinor Ostrom
 
-**Central idea:** shared resources can be governed through arrangements users develop, monitor and revise. State control and private ownership do not exhaust the possibilities. Conditions and local circumstances matter; no single institutional template works everywhere.[5](appendix-references.md#ref-12-after-5)
+**Central idea:** shared resources can be governed through arrangements users develop, monitor and revise. State control and private ownership do not exhaust the possibilities. Conditions and local circumstances matter; no single institutional template works everywhere.[7](appendix-references.md#ref-12-after-5)
 
 Chapter 12 connects this to constructive capacity. Tools for learning from other cases and exploring proposed rules could expand what a small community can attempt. That application is my proposal. Ostrom's work also reminds us that participants need standing in the rules, not simply better calculations supplied to their rulers.
 
 ### Human Choice, Learning and Alignment — Kahneman, Ebbinghaus, Sarasvathy and Russell
 
-**Kahneman's two-system framework** supplies the cognitive comparison from which the title departs. **Ebbinghaus and later learning research** examine forgetting, practice and retrieval. **Sarasvathy's effectuation** describes goals developing through action with available means. **Russell's beneficial-AI approach** makes uncertainty about human preferences central.[4](appendix-references.md#ref-04-kahneman)[12](appendix-references.md#ref-09-ebbinghaus)[5](appendix-references.md#ref-09-sarasvathy)[27](appendix-references.md#ref-08-russell)
+**Kahneman's two-system framework** supplies the cognitive comparison from which the title departs. **Ebbinghaus and later learning research** examine forgetting, practice and retrieval. **Sarasvathy's effectuation** describes goals developing through action with available means. **Russell's beneficial-AI approach** makes uncertainty about human preferences central.[4](appendix-references.md#ref-04-kahneman)[14](appendix-references.md#ref-09-ebbinghaus)[5](appendix-references.md#ref-09-sarasvathy)[30](appendix-references.md#ref-08-russell)
 
 Chapters 9 and 12 bring these questions together: people learn slowly, discover and revise purposes, and can become dependent on assistance. The human participates in reconsidering objectives. System 3 is an external institutional proposal, not an empirically established third psychological processing system.
 
 ### Engineering Practice and Measurement
 
-Tests, runbooks, incident reviews, load tests, experiment diagnostics and version control provide working forms of memory and correction. Kohavi and colleagues' work on online experiments shows how correct headline measurements can support wrong conclusions. Goodhart's analysis, and Strathern's familiar formulation, warn about using targeted measures as if they retained their old informational role.[8](appendix-references.md#ref-06-kohavi)[36](appendix-references.md#ref-07-goodhart)
+Tests, runbooks, incident reviews, load tests, experiment diagnostics and version control provide working forms of memory and correction. Kohavi and colleagues' work on online experiments shows how correct headline measurements can support wrong conclusions. Goodhart's analysis, and Strathern's familiar formulation, warn about using targeted measures as if they retained their old informational role.[20](appendix-references.md#ref-06-kohavi)[36](appendix-references.md#ref-07-goodhart)
 
 These practices make the philosophical problems concrete. A passed test can miss the customer's difficulty; a postmortem can preserve a lesson without changing a future decision. The institution must connect its records to the next action.
 

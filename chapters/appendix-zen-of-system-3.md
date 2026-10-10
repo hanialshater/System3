@@ -24,6 +24,7 @@ Ground every claim. Trace every source.
 Trust is local. So is memory.
 A record outlives the clerk.
 Remembering is not knowing.
+A feather is not a reason.
 
 Five judges sharing one source are one witness.
 Reality retains the right to be rude.

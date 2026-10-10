@@ -14,81 +14,27 @@ Some questions stall because I know too little to see where I could begin. Other
 
 Access to extraordinary intellectual capacity could change that. An interest might survive long enough to grow into an ability; a connection between fields might be mine to investigate. I might discover that the life I assembled around what I could already do had left quite a lot out.
 
-Some of this is already ordinary. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. I can get far enough into a subject to discover a question worth staying with. Fields become more permeable. People become more dangerous, in the nicest sense.
+Some of this is already ordinary. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. Fields become more permeable. People become more dangerous, in the nicest sense.
 
 ## The Curve
 
 The title is stolen from machine learning, and the theft is deliberate.
 
-In the curve described by Belkin and colleagues, test error falls as a model gains capacity, rises near the point where it can fit its training data exactly, then falls again as capacity grows further.[2](appendix-references.md#ref-12-after-2) The familiar lesson was to limit capacity to avoid overfitting. The second descent complicated that lesson. More capacity supplied more candidates; how the training procedure selected among them mattered.
+In the curve described by Belkin and colleagues, test error falls as a model gains capacity, rises near the point where it can fit its training data exactly, then falls again as capacity grows further.[2](appendix-references.md#ref-12-after-2) The familiar lesson was to limit capacity to avoid overfitting. The second descent complicated that lesson. Past the peak, many models fit the data perfectly. More capacity did not remove that ambiguity; it supplied more candidates, and how the training procedure selected among them decided whether the result was any good.
 
 I am borrowing the shape. Intellectual history does not obey a theorem about neural networks.
 
-Science gave fallible people ways to know things together that none could find out alone. It also had to decide which questions would get a laboratory, which rival explanation would get another year, and which student could afford to remain a student. Competent attention was scarce. In Chapter 5, I asked where the next thousand agent-hours should go. Here I want to change the size of the budget.
+Much of the modern world was built by reducing problems to what we could handle: engineer the complexity down, design the solution in advance, build one thing and reuse it. That is the first descent. It worked astonishingly well. It also left out whatever the simplification could not hold. The customer became a funnel stage, the forest became a yield table, and the city became a grid.
 
-Suppose we can afford to investigate sixty plausible explanations where we could previously investigate three. We still need ways to tell them apart. Sixty agents repeating the same mistake have spent the budget without buying that capacity. But if more investigations can genuinely reach the world, some questions we had to abandon can stay open. The institutions that organize inquiry become things we can experiment with too.
+The spike is where a model has just enough capacity to fit everything, noise included. That is where I put the predicament the postmodern critics explored. We learned to fit a story to any fact, and nothing chose among the stories. None is obviously privileged. The critics were right about the predicament. We became very good at questioning the arrangements we inhabit without gaining the means to change them.
 
-Much of the modern world was built by reducing problems to what we could handle: engineer the complexity down, design the solution in advance, build one thing and reuse it. That is the first descent in the analogy. The spike in the middle I read, loosely, as a predicament the postmodern critics explored: more and more accounts can be made to fit the same facts, and none is obviously privileged. The critics were right about the predicament. We become better at questioning the arrangements we inhabit without necessarily gaining the means to change them.
+The second descent did not come from going back to a smaller model. Past the peak, the data cannot choose either; every candidate fits. What chooses is the selection rule. That is the wager in the title, and it has two halves. Attempts the world can rule out, so that some stories actually lose. And a rule for choosing among the survivors that somebody has to write, and that we had better write where people can see it.
 
-The wager in the title is that cheap capacity lets us make an attempt. We can investigate more of the complexity, build around a particular need and let the arrangement change as we use it. The next result need not be another argument about what might work.
+Capacity cuts both ways here. Capacity to generate accounts makes the spike worse. A machine that can write a fluent explanation for anything gives us more fitted stories, faster, and no new way to tell them apart. The capacity that matters is the capacity to build an attempt and watch it fail. And not all capacity, either: we still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
-Not all capacity. We still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
+Science gave fallible people ways to know things together that none could find out alone. It also had to decide which questions would get a laboratory, which rival explanation would get another year, and which student could afford to remain a student. In Chapter 5, I asked where the next thousand agent-hours should go. Here I want to change the size of the budget. Suppose we can afford to investigate sixty plausible explanations where we could previously investigate three. Sixty agents repeating the same mistake have spent the budget without buying anything. But if more investigations can genuinely reach the world, some questions we had to abandon can stay open.
 
-## The River Moves
-
-LLM-as-a-judge looked like a threat to my profession.
-
-For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
-
-The applied scientists who mattered never only trained models; they told an organization what had become possible, why, and what it would mean for the business. That is owning the frontier, and cheap models put more of the frontier within reach of people who will never hire an applied scientist at all.
-
-There is useful work for me in that change. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
-
-The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
-
-## Bespoke Comes Back
-
-There is a point in an ambitious project when I begin mentally hiring the people it would require. Somebody who knows this part, somebody who has spent years on that part, somebody to keep the parts from drifting into separate projects. Before long I have a budget, a staffing problem and a reason to postpone the idea.
-
-Agents begin to change that calculation when they can take on some of the building and testing. I am interested in the projects that become worth attempting when assembling the help costs less.
-
-Software has often required a bargain. One team builds a product for many customers; each customer rearranges some of its work to fit. This was an enormous improvement over everyone commissioning their own system. It also gave us organizations whose procedures preserve the decisions of a dropdown menu designed ten years ago.
-
-Imagine a mathematician assembling a workshop around one conjecture.[3](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day’s investigation instead of a separate project waiting for a collaborator.
-
-The workshop changes as she learns. A picture suggests a different representation. The new representation makes a search possible. The search returns an awkward case, and the awkward case is more interesting than the conjecture she began with. She builds the next instrument around it.
-
-That environment might be useful to one person for eighteen months. It could still be worth building.
-
-Maintenance, security and access to data remain part of the work. A cheap first version is not yet a system people can depend on. But these are reasons to build better tools for sustaining what we create.
-
-A weekend can be the beginning of an undertaking that changes the next ten years of a life. That interests me considerably more than using the weekend to produce the same presentation faster.
-
-## Anyone Could Do That
-
-“Anyone could do that” is a peculiar objection to something useful.
-
-If building my tool took six months of specialized work, people might be impressed. If an agent helped me build it in an afternoon, the same tool impresses less. The problem is still solved. What changed is how much the solution says about me.
-
-There are practical reasons to care. A scarce ability gives its owner bargaining power, and bargaining power matters when rent is due. But we carry that test well beyond bargaining. We use difficulty to decide which achievements deserve admiration and which ambitions are serious.
-
-I might want the tool to exist and want to be the person whose unusual ability made it possible. An improvement that satisfies the first desire can injure the second. It is embarrassing how easily I can describe this as a decline in standards.
-
-Institutions reuse too, and what they reuse is trust. If a project requires funding, a team or institutional access, I need people to believe I can do it. They cannot examine everything I know, so they look for signals: a qualification, a previous employer, a recognizable achievement, somebody credible willing to vouch for me. I have depended on these ways of deciding whom to trust myself.
-
-Then I learn what those signs look like and arrange part of my life around acquiring them.
-
-A young researcher is choosing a question. She has an interest of her own, but she also needs funding and eventually a job. She studies the work that gets published and the people who get hired. A proposal shaped like those successes is easier for a committee to recognize. If she follows that path and succeeds, her career joins the evidence the next applicant studies.
-
-Then the signs acquire a budget. They direct money, equipment and years of attention toward work that resembles past successes. The resulting papers and careers make the pattern look like a description of how science naturally proceeds. Questions that do not fit may never receive enough work to show what they could have been. Each person can be making a reasonable decision; nobody has to decide that imitation should run the institution.
-
-That is how capacity and validation end up entangled. I need recognition to obtain the means; pursuing recognition changes what I want to do with them. I wanted to investigate a question and have become very good at being the sort of person who might be allowed to investigate it.
-
-Cheap capacity loosens the entanglement at one point. If I can do substantial work before winning recognition, other people have an attempt to examine, and I have experience with which to question my own ambition. The project might matter more to me than I expected, or much less, once I am actually doing it.
-
-I can find out whether I care about the question when it is no longer a particularly good way to look impressive.
-
-## The Answer to Derrida
+## The Ideology Vortex
 
 I can understand whose interests an institution serves, which assumptions it smuggles in and why its claim to universality should make me suspicious. I can understand all of that and still need its permission on Monday morning.
 
@@ -100,21 +46,31 @@ These commitments can be sincere, and we draw on them unevenly. None supplies an
 
 Give everyone better information and surely the disagreements shrink. Some will. Others will get better lawyers.
 
-Decisions still get made. Institutions decide which qualifications count, and a leader with a convincing story can acquire more authority than someone who understands the problem. Even criticism can find a comfortable institutional role, provided it never changes what happens next: a dashboard stands in as evidence that an organization is scientific, a consultation as evidence that people have a say. Seeing how the story works does little for me on Monday morning, when I still need the permission.
+Decisions still get made. Institutions decide which qualifications count, and a leader with a convincing story can acquire more authority than someone who understands the problem. Even criticism can find a comfortable institutional role, provided it never changes what happens next: a dashboard stands in as evidence that an organization is scientific, a consultation as evidence that people have a say.
 
-This is what I mean by the ideology vortex: inherited belief, reason, criticism, representation and power keep pulling us around the same disputes. The argument changes while the practical dependence survives.
+This is what I mean by the ideology vortex: inherited belief, reason, criticism, representation and power keep pulling us around the same disputes. The argument changes while the practical dependence survives. Chapter 2’s algorithm vortex was a good thing, choices that no longer had to be frozen. This one is the opposite: choices that cannot be made, so the argument goes round again. The vortex is what living at the spike feels like.
+
+Look at how we argue now. Every position arrives with its critique already attached, and every critique with a critique of the critique. Everybody knows the categories are constructed, the metrics gamed, the experts conflicted, the institutions captured. Knowing has become cheap. It changes almost nothing, and it has found an excellent business model. A feed ranked for engagement is the vortex with a reward function: it pays for the next turn of the argument, not for its end. Chapter 6 told what Facebook’s own researchers found when it changed its metric: the outrage travelled, because that was what the system rewarded.
+
+Critique ended in text for an economic reason as much as a philosophical one. Reading an institution against itself takes a library card and a good afternoon. Building a different institution takes money, specialists, years and, usually, the permission of the institution you are criticizing. In 2004 Bruno Latour asked why critique had run out of steam, and called for composing things instead of debunking them.[3](appendix-references.md#ref-12-latour) He knew better than anyone what composing takes; decades earlier he had written “Give me a laboratory and I will raise the world.” Laboratories were exactly what most critics did not have. Richard Rorty wanted philosophy to keep the conversation going, and asked us to hold our commitments while knowing they are contingent.[4](appendix-references.md#ref-12-rorty) Later he turned on a Left that preferred spectating to building. The conversation kept going. That was the problem, and Rorty, to his credit, noticed.
 
 An alternative has to be possible somewhere. Someone needs the knowledge, time and means to make an attempt whose outcome is not already contained in the discussion. Otherwise, exposing the arrangement leaves us with an exposed arrangement that we still have to use.
+
+## The Answer to Derrida
 
 There is an oddity in the machinery making this conceivable. It has learned from the same accumulated language in which we argue about the impossibility of getting outside our descriptions.
 
 I have a sentence that gets me into trouble: gradient descent is the answer to Derrida.
 
-This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[4](appendix-references.md#ref-12-after-4)
+This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[5](appendix-references.md#ref-12-after-4)
 
 Large language models operate inside that difficulty. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pushes them toward behavior that works under the conditions in which they are trained and evaluated. Nobody had to settle the meaning of every word first.
 
 Meaning remains fuzzy at the edges. The product ships anyway.
+
+Here is what makes the sentence fair. Derrida never claimed that communication fails. He claimed that context can never be closed, and that every sign can be lifted out and grafted into somewhere new. A language model lives on that claim. It has no meaning anchored outside the play of differences, only relations and use, and it works. Chapter 4 called Saussure’s theory a specification for GPT; Derrida wrote the chapter on what happens next. So the answer is not that Derrida was wrong. Derrida was right, and it ships.
+
+He would have a reply, and it is a good one. The training data and the evaluation set are a context we closed by decision, and every deployment grafts the model somewhere that context never covered. Prompt injection is iterability with a security advisory. A hallucinated citation is a sign doing exactly what signs do. He would be right again. That is why the tests never stop.
 
 Gradient descent did not defeat ambiguity. It made ambiguity computationally useful. The language carrying our disagreements can also help us construct things through which we learn something new. Criticism can show us that an arrangement need not be the only one. Capacity changes how many alternatives we can afford to build. System 3 gives the attempts a way to encounter evidence that could make us change them.
 
@@ -122,37 +78,57 @@ Then, immediately, we rediscover why modernity existed. A model that can move be
 
 The compiler has to compile. A store that builds itself still needs its business experiment: an experience that convinces the experts and the model may fail the customer. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong.
 
-An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is why the earlier chapters insisted on tests, independent evidence and work somebody else can inspect.
+An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is high-functioning bullshit at the scale of a civilization. That is why the earlier chapters insisted on tests, independent evidence and work somebody else can inspect.
 
 Theories and traditions remain available to think with. But criticism leaves a practical question: once you have seen through an arrangement, how do you build one you can commit to?
 
 The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is another possibility. We can construct them knowingly. Build institutions while remembering that institutions can be rebuilt, and that people will arrange their lives around the promises we make. We owe those people an account of what changed and a say in what happens next. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
 
+Constructing knowingly needs something to construct with.
+
+## Bespoke Comes Back
+
+There is a point in an ambitious project when I begin mentally hiring the people it would require. Somebody who knows this part, somebody who has spent years on that part, somebody to keep the parts from drifting into separate projects. Before long I have a budget, a staffing problem and a reason to postpone the idea.
+
+Agents begin to change that calculation when they can take on some of the building and testing. Software has often required a bargain. One team builds a product for many customers; each customer rearranges some of its work to fit. This was an enormous improvement over everyone commissioning their own system. It also gave us organizations whose procedures preserve the decisions of a dropdown menu designed ten years ago.
+
+Imagine a mathematician assembling a workshop around one conjecture.[6](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day’s investigation instead of a separate project waiting for a collaborator.
+
+The workshop changes as she learns. A picture suggests a different representation. The new representation makes a search possible. The search returns an awkward case, and the awkward case is more interesting than the conjecture she began with. She builds the next instrument around it. That environment might be useful to one person for eighteen months. It could still be worth building. Maintenance, security and access to data remain part of the work, and a cheap first version is not yet a system people can depend on. But these are reasons to build better tools for sustaining what we create.
+
+“Anyone could do that” is a peculiar objection to something useful. If building my tool took six months of specialized work, people might be impressed. If an agent helped me build it in an afternoon, the same tool impresses less. The problem is still solved. What changed is how much the solution says about me. It is embarrassing how easily I can describe this as a decline in standards.
+
+That matters more than vanity, because institutions reuse trust. If a project requires funding, a team or institutional access, I need people to believe I can do it. They cannot examine everything I know, so they look for signals: a qualification, a previous employer, somebody credible willing to vouch for me. Then I learn what those signals look like and arrange part of my life around acquiring them. A young researcher studies which proposals get funded and writes one shaped like them; if it succeeds, her career joins the evidence the next applicant studies. Nobody has to decide that imitation should run the institution. I wanted to investigate a question and have become very good at being the sort of person who might be allowed to investigate it.
+
+Cheap capacity loosens that entanglement at one point. If I can do substantial work before winning recognition, other people have an attempt to examine, and I have experience with which to question my own ambition. I can find out whether I care about the question when it is no longer a particularly good way to look impressive.
+
+A weekend can be the beginning of an undertaking that changes the next ten years of a life. That interests me considerably more than using the weekend to produce the same presentation faster.
+
 Elinor Ostrom studied people who had already begun.
 
-## Capacity Over Power
+## Ostrom in a Weekend
 
-An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[5](appendix-references.md#ref-12-after-5)
+An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[7](appendix-references.md#ref-12-after-5)
 
 If those were the only two answers, what were these people doing?
 
 She drew general principles from the cases and held the principles answerable to further cases. But she began with the arrangements people actually used, rather than assuming that one institutional prescription should fit them all. Nobody had to win the argument about the right social order before the irrigators could agree on a schedule.
 
-That is the turn out of the vortex I am interested in. You can take the criticism seriously, decline the grand narrative and still build something worth committing to. Start with the actual problem, draw on what others have learned and stay answerable to what happens. Calling something a community does not make this work. The arrangements that lasted had conditions, including ways for participants to help shape the rules under which they lived.
+This is what I mean by building from first principles, and I mean it the irrigators’ way. Their first principles were not axioms. They were the valley: whose field goes dry first, which channel silts up, who cheats in August and what it costs to catch them. They started from the problem in front of them and the people living it, then borrowed what other valleys had learned. James Scott, whom I will need again in a moment, called that kind of knowledge *mētis*: practical, local, earned.[8](appendix-references.md#ref-12-solutionism) My first principles are his, not Silicon Valley’s. The Ostroms made a word central for the shape that results: *polycentric*, many centers of decision, overlapping, each able to make and revise its own rules.[9](appendix-references.md#ref-12-polycentric) No grand narrative is required. No relativism follows either, because the water reaches the field or it doesn’t. Whose field it reaches first is still a question for the people at the table, which is exactly why they have to be at it.
 
-I find this more encouraging than another theory of the good society. People were participating in the construction of their common life. Those irrigators did not lack knowledge of their own valley. What might they have done with ready access to the experience of a hundred other valleys, and tools for exploring a proposed rule before the next dry season? A group could bring its experience of the problem and acquire much more of the expertise needed to investigate it. A missing specialty would no longer have to end the attempt.
+That is the turn out of the vortex I am interested in. You can take the criticism seriously, decline the grand narrative and still build something worth committing to. Calling something a community does not make this work. The arrangements that lasted had conditions, including ways for participants to help shape the rules under which they lived.
+
+What stopped other groups from doing what the irrigators did varied. Sometimes it was trust, sometimes boundaries nobody could agree on, sometimes a state that refused to recognize rules it had not written. Sometimes, and this is the part I can do something about, it was the cost of the expertise. Those irrigators did not lack knowledge of their own valley. What might they have done with ready access to the experience of a hundred other valleys, and tools for exploring a proposed rule before the next dry season? A missing specialty would no longer have to end the attempt. Ostrom’s cases took generations. The question this book has been circling is what happens when some of that work fits into a weekend.
 
 Take something smaller than a watershed.
 
-<!-- AUTHOR: is this community real? One lived detail (which group, which room) would let it carry the section the way Dantzig carries the opening. -->
+<!-- AUTHOR: one specific detail (which group, which room) would let this carry the section the way Dantzig carries the opening. -->
 
 A small community’s activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
 
 Changing the software requires persuading a vendor that eleven people with peculiar scheduling needs are worth its attention. They are unlikely to win that argument. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
 
-Suppose instead that they can afford to build and maintain a small tool of their own. Members could enter changing availability and explore possible schedules. They could try a rotation that gives the same group different evenings across a month, or reserve times that work with the accessible transport. The weird community with eleven members could have software built around all eleven of them and no plan whatsoever for customer acquisition.
-
-They can discover and revise the arrangement by using the tool and arguing about the results. Some of their disagreement may turn out to have been about the old software’s default. A member who seemed unreasonable may have a perfectly manageable constraint. A better tool can reduce the amount of pleading required to have that constraint recognized.
+Suppose instead that they can afford to build and maintain a small tool of their own. Members could enter changing availability and explore possible schedules. They could try a rotation that gives the same group different evenings across a month, or reserve times that work with the accessible transport. The weird community with eleven members could have software built around all eleven of them and no plan whatsoever for customer acquisition. Some of their disagreement may turn out to have been about the old software’s default. A member who seemed unreasonable may have a perfectly manageable constraint.
 
 Then two groups both want seven on Tuesday.
 
@@ -162,25 +138,41 @@ The community might guarantee each group some access, then use attendance to all
 
 Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. The first obstacle was the cost of building an alternative. The second is a conflict between people with claims on the same room. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
 
+The obvious objection is the one I conceded in Chapter 10. Moving from text to optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. James Scott showed what states did to forests and cities when they made them legible enough to manage; Morozov’s solutionism is the software version.[8](appendix-references.md#ref-12-solutionism) He would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics. So let me be careful. The vendor’s veto was a capacity problem. Seven on Tuesday is not, and no amount of capacity turns it into one. The objection is right about where the danger goes. Optimization does not escape the politics. It hides them in the objective. That is why the room matters more than the scheduler. The difference between the irrigators and a high-modernist plan is not that one optimizes and the other doesn’t. It is who writes the objective, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people in the room.
+
 Another community could choose differently without either one having to prove that its workflow should become the universal product. This is what capacity over power means to me at its best: increase the fraction of human possibility that does not require dominating somebody else, winning a centralized allocation contest or persuading the entire world to adopt one solution.
 
 Humans often seek power because power is how we gain capacity. People also want power because humans are mammals with excellent branding.
 
 The ability to act can itself be called power. I care about what happens to other people’s choices. Giving the community a tool it can change expands its options. Giving its chair a system whose terms only the chair can revise expands the chair’s authority. Capacity over power is an ethical direction, not a forecast about stronger models.
 
-Helping members inspect and revise the arrangement may matter more than finding a slightly better schedule under rules nobody can question. It needs to survive the volunteer who built the tool. Its records should preserve why an exception was made, so the next committee does not spend three meetings rediscovering accessible transport. Members need ways to challenge the rules, including somewhere beyond the committee to turn when the committee is the problem. If more gets built while those freedoms shrink, power has simply moved somewhere less visible.
+The tool needs to survive the volunteer who built it. Its records should preserve why an exception was made, so the next committee does not spend three meetings rediscovering accessible transport. Members need ways to challenge the rules, including somewhere beyond the committee to turn when the committee is the problem. If more gets built while those freedoms shrink, power has simply moved somewhere less visible.
 
-Where consequences remain shared, so do the decisions. Climate, public health, land and infrastructure still need legitimate institutions whether we enjoy meetings or not. A community does not acquire a private planet because it can generate its own software.
+Where consequences remain shared, so do the decisions. Climate, public health, land and infrastructure still need legitimate institutions whether we enjoy meetings or not. A community does not acquire a private planet because it can generate its own software. But where people retain the means to act, more differences can become opportunities to build differently. Some of the effort spent winning permission can go into the undertaking itself. Some can return to the rest of a life.
 
-But where people retain the means to act, more differences can become opportunities to build differently. Some of the effort spent winning permission can go into the undertaking itself. Some can return to the rest of a life.
+## Beyond Comprehension
+
+Chapter 6 told how agents made Wiles’s proof of Fermat’s Last Theorem checkable by Lean: roughly thirty thousand intermediate theorems, which nobody is going to read.[10](appendix-references.md#ref-12-flt-tokens) Nobody needs to. The checker does not get bored, and its standards are written down. That was the easy case. Wiles understood the proof before any machine checked it.
+
+The four-color theorem was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand. Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[11](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[12](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
+
+System 3 is, among other things, an answer to that worry. Justification never lived inside one head anyway. Hardwig’s physicist relies on chemists she will never check; the Higgs discovery had thousands of authors and no single knower. A trust chain that runs through a proof checker, a held-out test and an independent replication can certify what no participant understands. Verification can be outsourced. That part works.
+
+Understanding cannot be outsourced, and it matters for a reason that has nothing to do with whether the result is true. In Chapter 9 I said you cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. A result can be certified and still leave us unable to ask the next question, or to decide what the next ten thousand agent-hours should be for. If discovery runs ahead of comprehension, people keep the right to check and lose the ability to choose.
+
+That gap does not stay empty. Somebody chooses the next problem. If it is not the people who understand enough to care, it will be whoever owns the machinery.
+
+So the second descent has a condition I did not see when I first drew the curve. Someone at the table has to understand enough to take part in the selection. Not every proof. Enough of the map to want something from it. That is what Dantzig got from von Neumann in an hour, and it is what cheap capacity could give back to many more people, if we build it to teach as well as to answer.
 
 ## Who Owns the Laboratory
 
-It is worth asking where cheap software comes from.
+It is worth asking where cheap capacity comes from.
 
-Putting ten thousand agents on one problem, or spending some six billion output tokens formalizing Fermat, is open to a handful of organizations.[6](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and within a year astronomers elsewhere were checking Galileo’s moons through telescopes of their own. A frontier model is harder to grind.
+Putting ten thousand agents on one problem, or spending some six billion output tokens formalizing Fermat, is open to a handful of organizations.[10](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and within a year astronomers elsewhere were checking Galileo’s moons through telescopes of their own. A frontier model is harder to grind.
 
-Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models to comply with United States export controls. One returned for everyone after almost three weeks, when the controls were lifted; the other came back only for a set of US organizations.[7](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
+Philip Kitcher asked who should set the agenda of science, and answered with an ideal he called well-ordered science: the questions pursued should be the ones citizens would choose after deliberating together, tutored by experts until they understood what was at stake.[13](appendix-references.md#ref-12-kitcher) That tutoring is the understanding condition from the last section, written into a theory of science. Kitcher was writing about public science staffed by people. A laboratory that runs on a private model, rented by the hour, changes the question. The agenda is set wherever the compute is allocated, and the people affected are rarely in that meeting.
+
+Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models to comply with United States export controls. One returned for everyone after almost three weeks, when the controls were lifted; the other came back only for a set of US organizations.[14](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 
 The same capacity cuts the other way. A research agent that makes experiments cheaper can accelerate medicine and weapons research in the same week. A community that can build its own tools is a lovely picture. So is its opposite, and it uses the same API. Some capacity should stay expensive on purpose. Think of it as a constitution written for a society instead of an agent: the closer a capability comes to harm that cannot be undone, the more authority it should take to use it, and the less that authority should belong to whoever benefits from the answer.
 
@@ -188,83 +180,55 @@ So capacity over power can fail in two directions. Concentrate the capacity and 
 
 What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
 
-## The Second Descent
+## What Are Humans For?
 
-Suppose the machinery works. The mathematician can build her workshop; the community can investigate schedules its vendor would never offer. Each successful attempt puts another choice within reach. The mathematician still has to choose a question worth a year of her life. The community still has to decide what it owes its members. Those choices become harder to postpone when lack of capacity stops making them for us.
+LLM-as-a-judge looked like a threat to my profession.
 
-The capacity to act can scale faster than the capacity to want wisely.
+For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-Humans still have status anxiety, love, jealousy, curiosity and the ancient desire to prove that the neighboring group is composed mainly of idiots. Giving us much more ability to execute whatever we want could be wonderful. It can also be a Ferrari engine attached to bicycle brakes.
+I could tell myself that the role moves upward, to owning the frontier, as I argued in Chapter 9. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
-We infer, construct, revise and sometimes borrow our desires from the people and systems around us. Sometimes we discover what we wanted only after getting the thing we thought we wanted.
+The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
 
-Where will I remain valuable? My question about the applied scientist’s role makes sense as a question about earning a living. It becomes a much stranger one if I let the answer decide whether my life is valuable.
+Where will I remain valuable? The question makes sense as a question about earning a living. It becomes a much stranger one if I let the answer decide whether my life is valuable.
 
-### What Are Humans For?
+The capacity to act can scale faster than the capacity to want wisely. Humans still have status anxiety, love, jealousy, curiosity and the ancient desire to prove that the neighboring group is composed mainly of idiots. Giving us much more ability to execute whatever we want could be wonderful. It can also be a Ferrari engine attached to bicycle brakes.
 
-Whenever automation becomes powerful, somebody asks what humans will be for.
-
-There is something odd about the grammar. A database is for storing information. A compiler is for translating programs. Asking what humans are for smuggles in the assumption that our legitimacy depends on having a remaining function in somebody else’s architecture.
+Whenever automation becomes powerful, somebody asks what humans will be for. There is something odd about the grammar. A database is for storing information. A compiler is for translating programs. Asking what humans are for smuggles in the assumption that our legitimacy depends on having a remaining function in somebody else’s architecture.
 
 My children do not need comparative advantage to justify dinner.
 
 Neither do I.
 
-A society that makes employment central to adult life bundles together two questions: How do people get resources? and What makes a life worth living? For a long time, a job has answered parts of both. It provides money, but also status, routine, social contact, identity, a reason to get dressed and a group of people with whom to complain about another group of people. Losing a job disturbs all of these at once.
+A society that makes employment central to adult life bundles together two questions: How do people get resources? and What makes a life worth living? A job answers parts of both. It provides money, but also status, routine, social contact, identity, a reason to get dressed and a group of people with whom to complain about another group of people. “You will have more time for creativity” is a rather incomplete answer, especially when the freed hours and the gains from automation belong to different people. A company can become more capable while its former employees lose the practical freedom to refuse bad work. Saying “human life has intrinsic value” will not pay anyone’s electricity bill. The distribution of capacity belongs inside this philosophy, not in a footnote after the exciting part.
 
-“You will have more time for creativity” is a rather incomplete answer, especially when the freed hours and the gains from automation belong to different people. A company can become more capable while its former employees lose the practical freedom to refuse bad work. Saying “human life has intrinsic value” will not pay their electricity bills. The distribution of capacity belongs inside this philosophy, not in a footnote after the exciting part.
+“Find the tasks machines cannot do” is a depressing philosophy of human value. It turns civilization into a benchmark where we keep moving humans to the remaining columns after every model release. If AI becomes better at poetry, we are not obligated to stop writing poems. Leisure, care and simply having less to do would also be perfectly respectable uses of the capacity.
 
-“Find the tasks machines cannot do” is a depressing philosophy of human value. It turns civilization into a benchmark where we keep moving humans to the remaining columns after every model release. If AI becomes better at poetry, we are not obligated to stop writing poems.
+I can still want to be an excellent scientist. The problem begins when I need science to remain difficult enough to require me before I can feel that my life has value. I do not want to make that depend on the next model release. Nor do I want to replace the obligation to have an impressive career with an obligation to produce important research on weekends, which would be an odd thing to discover in a chapter that keeps praising weekends. Someone who gains an evening with a friend has no obligation to spend it on a conjecture.
 
-Leisure, care and simply having less to do would also be perfectly respectable uses of the capacity.
-
-I can still want to be an excellent scientist. The problem begins when I need science to remain difficult enough to require me before I can feel that my life has value. I do not want to make that depend on the next model release.
-
-Nor do I want to replace the obligation to have an impressive career with an obligation to produce important research on weekends. Someone who gains an evening with a friend has no obligation to spend it on a conjecture.
-
-### The Human Is Not the Reward Function
-
-There is an ugly shortcut to alignment: edit the human. In a conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. Over a life, I also need somewhere else to go.
-
-Imagine a family tool useful enough to hold the calendar, the children’s learning history and the reasons behind years of small decisions. A button labeled Export may give me all the files and months of work to make them useful elsewhere. The tool gave the family more capacity and gave its owner more leverage over the family at the same time.
-
-A right to disagree inside one product is a thin kind of freedom if everything I need to act remains locked inside it. I do not need to become a competent engineer, teacher and system administrator before I am allowed to benefit from help. I need alternatives that work, including other people and institutions I can turn to, because an independence that meant doing everything alone would undo most of civilization.
+There is an ugly shortcut to alignment: edit the human. In a conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. Over a life, I also need somewhere else to go. Imagine a family tool useful enough to hold the calendar, the children’s learning history and the reasons behind years of small decisions. A button labeled Export may give me all the files and months of work to make them useful elsewhere. The tool gave the family more capacity and gave its owner more leverage over the family at the same time. A right to disagree inside one product is a thin kind of freedom if everything I need to act remains locked inside it.
 
 System 3 can help answer *Why should I believe this?* and *Why does the system think I want this?* It cannot, by architecture alone, answer *What kind of life should be possible?* That is politics, ethics, culture and philosophy. The annoying disciplines.
 
-I do not want to maximize time with my children. That sounds nice until the optimizer concludes I should never go to work, see a friend alone, read a book in peace or spend fifteen minutes doing absolutely nothing because the children are statistically nearby.
-
-Nor productivity, if the optimum is becoming an efficient ghost. Nor authenticity so aggressive that I become unbearable at dinner.
-
-A good life contains goods that conflict: love and freedom, ambition and rest, truth and mercy, security and adventure. Time spent finishing an investigation is time I cannot spend with my children. Abandoning it may let down people who depend on it. These conflicts are not bugs waiting for a scalarization expert. Asking the assistant to settle everything gives it authority over the trade-off. The trade-off remains.
+I do not want to maximize time with my children. That sounds nice until the optimizer concludes I should never go to work, see a friend alone, read a book in peace or spend fifteen minutes doing absolutely nothing because the children are statistically nearby. Nor productivity, if the optimum is becoming an efficient ghost. Nor authenticity so aggressive that I become unbearable at dinner. A good life contains goods that conflict: love and freedom, ambition and rest, truth and mercy, security and adventure. These conflicts are not bugs waiting for a scalarization expert. Asking the assistant to settle everything gives it authority over the trade-off. The trade-off remains.
 
 The human should not sit at the desire layer merely as the source of a reward signal for the machine. The human participates in the process by which the objective is reconsidered. A machine may come to understand my trade-offs better than I do, and I would still want the seat. It is a matter of whose life it is.
 
-AI can participate in that process without owning it. It can show me possibilities I did not know existed, teach me enough of a field to make a different choice imaginable, or help me try something before committing to it. Some desires will change through the experience. I may find the investigation worth finishing because of what I discover while doing it.
+Or we may use the capacity to watch fourteen hours of personalized short video generated around whatever keeps us watching. That is the vortex again, with better retention.
 
-Or we may use the capacity to watch fourteen hours of personalized short video generated around whatever keeps us watching. If I let the system decide which desires deserve pursuing, I hand over some authorship of my life.
+The future I want has more room in it. Room to get the map of a field quickly, then spend a year on the part that matters. Room for a small community to construct things around its actual needs, and for someone inside it to disagree. Room to try the strange art nobody would have funded. Room to be less economically useful without becoming less human.
 
-The future I want has more room in it.
-
-Room to get the map of a field quickly, then spend a year on the part that matters. Room for a small community to construct things around its actual needs, and for someone inside it to disagree. Room to try the strange art nobody would have funded. Room to be less economically useful without becoming less human.
-
-An infinite menu can become its own prison. I cannot test every version of a life before living one, and keeping all my options open may close the possibility of being somebody others can depend on. Some understanding becomes available only after commitment. Cheaper capacity can help me approach that point with more experience and fewer avoidable constraints; it cannot abolish the point.
-
-I still want more room to discover which commitments deserve to become expensive.
+An infinite menu can become its own prison. I cannot test every version of a life before living one, and keeping all my options open may close the possibility of being somebody others can depend on. Some understanding becomes available only after commitment. I still want more room to discover which commitments deserve to become expensive.
 
 ## The Door After System 3
-
-The applied scientist still has a job to think about. I have not reached the end with a proof that my profession is safe.
-
-I do have a better reason to work on these systems than defending the scarcity of what I know. Dantzig’s afternoon makes me want access to a mind that can help me see further. Ostrom makes me want to find out what people could construct together if they had that help.
 
 Imagine an irrigation association with a weekend and a hundred agents. Some investigate how other communities have handled shortages. Others examine the water records, build models, look for failures in the proposed schedules or write the software through which members can inspect and change them. A question raised over the table becomes another investigation. The work can follow it.
 
 Someone remembers why the apparently wasteful exception was introduced. Someone knows whose field goes dry first. Someone asks whether the people least able to attend the meeting have been counted at all. A model exposes a mistake in their account; their experience exposes a mistake in the model. They revise both.
 
-By Sunday evening they might have an arrangement worth trying, a working tool and a way to find out where they were wrong. The next dry season will teach them things the weekend could not, but they would meet it with something they had helped build.
+By Sunday evening they might have an arrangement worth trying, a working tool and a way to find out where they were wrong. The next dry season will teach them things the weekend could not, but they would meet it with something they had helped build, and understood well enough to change.
 
-<!-- AUTHOR: any real detail for the mathematician's workshop or the irrigators would help; both are currently imagined. -->
+<!-- AUTHOR: a concrete detail for the mathematician's workshop or the irrigators would help. -->
 
 I have not run that weekend. A hundred agents is a picture, not a measured capability or a cost estimate.
 
@@ -274,7 +238,7 @@ Science made inquiry a shared undertaking that could outlive any participant. Sy
 
 That is the work I want to do: put the machinery this book has described within reach of people who have something they want to try. If someone else can build the same thing, I might have a collaborator.
 
-I would like some of that freedom myself. A year on a question that once seemed inaccessible. Enough astronomy to make an evening outside with my children different. An unfamiliar subject becoming a source of pleasure long after it has stopped being useful for anything I could put on a slide. Some of the hours recovered from asking permission could go into the work. Some could go into enjoying the life around it.
+I would like some of that freedom myself. A year on a question that once seemed inaccessible. Enough astronomy to make an evening outside with my children different. An unfamiliar subject becoming a source of pleasure long after it has stopped being useful for anything I could put on a slide.
 
 Dantzig brought a question and found that it had another side. I want more of us to have afternoons like that, and weekends in which we can do something about what we discover.
 

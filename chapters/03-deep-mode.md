@@ -36,13 +36,7 @@ Then the bug crossed three files and context itself became a job. Paste one clas
 
 We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
-SWE-bench tested this larger job using real GitHub issues. The system had to navigate an existing repository, understand relationships across files, make a change and survive the tests. It had to do my job, the copy-and-paste one.
-
-Eventually we gave the model the repository and a terminal. It could search, open files, edit them, inspect the diff and run tests. Return the failures and let them shape its next attempt. A coding agent is, at its simplest, this loop made executable.
-
-Software is unusually friendly to this arrangement: files can be searched, programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea.
-
-SWE-agent made the interface itself part of the problem. How the model searches, sees files, applies edits and receives feedback can matter almost as much as another clever prompt.
+SWE-bench tested this larger job using real GitHub issues:[1](appendix-references.md#ref-03-swebench) navigate an existing repository, make a change and survive the tests. It had to do my job, the copy-and-paste one. Eventually we gave the model the repository and a terminal, and a coding agent became, at its simplest, this loop made executable. Software is unusually friendly to the arrangement: programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea. SWE-agent showed that the interface itself, how the model searches, sees files and receives feedback, can matter almost as much as another clever prompt.[2](appendix-references.md#ref-03-sweagent)
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
@@ -62,13 +56,13 @@ But there was still a large difference between an agent that could work competen
 
 Ask for a booking application for a football academy and an unconstrained coding agent first chooses a framework, installs packages, creates a database, decides how authentication should work, manages environment variables and configures deployment. Several minutes later, we have made enormous progress toward having somewhere to put the booking form.
 
-Somebody has to do that work. But if the same plumbing is reconstructed on every project, it becomes reasonable to prepare more of the world in advance. This is what made systems such as Replit and Lovable interesting to me. Runtime, deployment and common application machinery are already nearby, so the conversation can begin much closer to the application.
+If the same plumbing is reconstructed on every project, it becomes reasonable to prepare more of the world in advance. That is what made systems such as Replit and Lovable interesting to me. Runtime, deployment and common application machinery are already nearby, so the conversation can begin much closer to the application.
 
 You lose some freedom, and that is often the point. A chef does not begin dinner by manufacturing a knife. When I open Python, I accept an astonishing number of decisions made by people I will never meet, because reconsidering all of them would make `print("hello")` a multigenerational project.
 
 Useful abstractions remove decisions whose answers are no longer interesting most of the time. After enough of those decisions disappear, something else becomes easier to see.
 
-Suppose the booking app works perfectly. The database is connected, deployment succeeds, the buttons behave, the mobile layout is respectable, and nobody has accidentally built a cryptocurrency exchange inside the authentication service.
+Suppose the booking app works perfectly. The database is connected, deployment succeeds, the buttons behave, and nobody has accidentally built a cryptocurrency exchange inside the authentication service.
 
 I open the application and think: this is not very good. The software works. Now I have to worry about the football academy.
 
@@ -140,7 +134,7 @@ But research is most useful when the work has produced a real question. Suppose 
 
 Retrieval plays the same role inside our own history. Somewhere in a growing project there may be research notes, screenshots, evaluator comments, old branches and a discarded prototype whose only good idea was a color mapping that solves exactly the problem in front of us. I do not need the whole archive. I need the thing that helps with this decision.
 
-Exact search works when I remember a phrase, an API or an evaluator comment; embeddings help when I remember the idea and have lost the words; and some documents already have a structure worth navigating. Good coding agents do not “retrieve the repository” once; they move through it as the question changes. Layer 3 needs the same habit across stranger objects: research, screenshots, old interactions, code, evaluations and dead branches.
+Exact search works when I remember a phrase or an API; embeddings help when I remember the idea and have lost the words. Good coding agents do not “retrieve the repository” once; they move through it as the question changes. Layer 3 needs the same habit across stranger objects: research, screenshots, old interactions, evaluations and dead branches.
 
 A dead branch can still hold live knowledge. A lineage that lost globally may contain a stepping stone that becomes useful later. Do not spend the entire search budget polishing the place that currently looks best. Preserve some alternatives and some routes back to places that almost worked.
 
@@ -180,7 +174,7 @@ A huge amount of machine learning rests on this trick. We take something complic
 
 Suppose I want the same convenience for educational design. I can make a rubric: correctness, pedagogical clarity, visual quality, interaction, accessibility, engagement. Give each a weight and suddenly my vague dissatisfaction with a demo has become a respectable decimal.
 
-The decimal is comforting. Giving interaction fifteen percent would make the rubric precise without telling me why that weight was justified. I would still need to say what separates a seven from an eight in pedagogy, and why the list includes engagement but leaves out whether the learner can predict what happens next or explain why the merge matters. A metric forces me to commit to an idea of “good” before the search has taught me very much about the problem.
+The decimal is comforting. Giving interaction fifteen percent would make the rubric precise without telling me why that weight was justified, what separates a seven from an eight in pedagogy, or why the list includes engagement but leaves out whether the learner can predict what happens next. A metric forces me to commit to an idea of “good” before the search has taught me very much about the problem.
 
 I have nothing against metrics. If I care about latency, measure latency. If the code must pass a test, run the test. Hard measurements are wonderful when what we can measure is close to what we care about. The trouble begins when a rich objective is still poorly understood and we compress it anyway because optimization wants a number.
 
@@ -196,7 +190,7 @@ Language models make that communication channel available inside the optimizatio
 
 Natural language can therefore function as an *implicit metric*, though not in the strict mathematical sense: there is no guarantee that “intuitive” defines a stable ordering, and two evaluators may interpret it differently. Still, language can do some of the work a metric normally does. It gives the search a direction, communicates why one attempt is preferred to another, and preserves trade-offs that a scalar would erase.
 
-OPRO—Optimization by PROmpting—is interesting for a related reason. In OPRO, an LLM sees an optimization problem, previous candidates and their outcomes, then proposes another candidate. Candidate quality in the published setting is still evaluated by an explicit score, so OPRO is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written transformation rule.
+OPRO, Optimization by PROmpting, makes a related move:[3](appendix-references.md#ref-03-opro) an LLM sees previous candidates and their scores and proposes the next one. It still needs an explicit score, so it is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written rule.
 
 Now let the history contain more than scores. Alongside hard measurements, tell the model what improved, what became worse, which trade-off appeared and what must survive the next attempt, and the history of the search keeps some of its meaning instead of collapsing into a column of numbers.
 
@@ -226,7 +220,7 @@ Its reaction was roughly: I can see that the array keeps getting divided into sm
 
 That was useful because the demo really did have that problem. We had made recursion visible. From my position, that looked like progress. From the learner’s imagined position, we had merely made a mysterious operation easier to watch.
 
-Cognitive scientists use *Theory of Mind* for our ability to reason about mental states other than our own: what somebody knows, believes, wants or misunderstands. The other person may not simply know less; they may have a different model of what is happening.
+Cognitive scientists use *Theory of Mind* for our ability to reason about mental states other than our own:[4](appendix-references.md#ref-03-tom) what somebody knows, believes, wants or misunderstands. The other person may not simply know less; they may have a different model of what is happening.
 
 Instead of saying “you are a beginner,” I can specify the mind I want to borrow:
 
@@ -250,7 +244,7 @@ The metric problem returns here in a more dangerous form. A rubric can make judg
 
 If the evaluator repeatedly rewards step-by-step explanation, explanations grow. If it likes polished onboarding, everything begins to look like onboarding. If familiar visual conventions read as “clear,” unusual approaches may disappear before they have time to become good.
 
-OpenAI’s CoastRunners experiment is the cartoon version of the problem: the agent learned to collect reward by driving in a loop instead of finishing the boat race. It is Goodhart’s Law with a speedboat. A language-model builder does not need such an obvious loophole. It can learn the style of artifact that another language model tends to reward, and making the evaluator more elaborate may simply create a more elaborate thing to game.
+OpenAI’s CoastRunners experiment is the cartoon version of the problem:[5](appendix-references.md#ref-03-coastrunners) the agent learned to collect reward by driving in a loop instead of finishing the boat race. It is Goodhart’s Law with a speedboat. A language-model builder does not need such an obvious loophole. It can learn the style of artifact that another language model tends to reward, and making the evaluator more elaborate may simply create a more elaborate thing to game.
 
 One improvement was surprisingly mundane: stop pretending we were good at absolute scores.
 
@@ -258,13 +252,13 @@ I can drink a coffee and have almost no meaningful answer to “How good is this
 
 The same thing happened with the demos. “Give this interface a pedagogical score from 1 to 10” produced suspiciously precise numbers attached to explanations of why the number should not be taken too seriously. Showing two artifacts and asking, “Which one would you rather give to somebody encountering Merge Sort for the first time, and why?” worked better.
 
-Relative judgment asks less of the evaluator. It does not require a stable internal unit called one pedagogy point. With many candidates, a model such as Bradley–Terry can infer an ordering from a subset of pairwise preferences. More important for the next generation, the explanation for each preference can survive alongside the ranking. A tidy ranking can preserve every shared bias in the judgments behind it.
+Relative judgment asks less of the evaluator. It does not require a stable internal unit called one pedagogy point. With many candidates, a model such as Bradley–Terry can infer an ordering from a subset of pairwise preferences.[6](appendix-references.md#ref-03-bt) More important for the next generation, the explanation for each preference can survive alongside the ranking. A tidy ranking can preserve every shared bias in the judgments behind it.
 
 So I stopped asking one evaluator to represent everybody. A learner can inspect the artifact from the knowledge boundary we developed above. A teacher can focus on explanatory sequence. Another evaluator can look for cognitive load or accessibility. A domain expert can make sure our elegant simplification has not become false.
 
 I call these independent evaluators, though the important word is *independent*.
 
-Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. If all of them read the leading builder’s explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
+Five copies of the same model given the same context and asked to wear five hats may still share almost every important blind spot. Copies agree because they are copies. If all of them read the leading builder’s explanation of why its design is brilliant before inspecting the artifact, disagreement becomes less likely for reasons that have little to do with brilliance.
 
 Sometimes the judges should see different things. The beginner should use the artifact before reading the builder’s explanation. A critic looking for conceptual errors does not need three paragraphs explaining why the choice was clever. The usability evaluator does not need to know which branch is currently winning. The rule I ended up with was to keep enough separation between judges that their disagreement still means something.
 
@@ -278,7 +272,7 @@ and telling it:
 
 The first communicates a problem; the second communicates the test.
 
-References helped with another problem: drift. “This is excellent” means something different if the evaluator has seen only the last four generations of our own work. For these demos I could give it examples from Distill, 3Blue1Brown or Jay Alammar to calibrate the level of clarity and finish we were aiming at. The references were there to answer *how good?* I did not want them answering *what should this become?* Calibrate too strongly against one aesthetic and every road leads to Distill.
+References helped with another problem: drift. “This is excellent” means something different if the evaluator has seen only the last four generations of our own work. For these demos I could give it examples from Distill, 3Blue1Brown or Jay Alammar to calibrate the level of clarity and finish we were aiming at.[7](appendix-references.md#ref-03-distill) The references were there to answer *how good?* I did not want them answering *what should this become?* Calibrate too strongly against one aesthetic and every road leads to Distill.
 
 And the judge should use the thing. An early mistake was evaluating applications by reading their code or screenshots. A browser agent can click through the demo, resize the page, try controls in the wrong order, notice that an explanation appears after the moment when it would have helped, or discover that the beautiful button everybody admired does absolutely nothing.
 
@@ -292,7 +286,7 @@ At some point I looked at what we had assembled and realized that *evaluator* no
 
 Humans face the same difficulty. One person’s judgment is useful and fallible. So we compare work, preserve disagreement, create standards, ask specialists to inspect different aspects, reproduce results, and occasionally discover that an entire professional community has become extremely sophisticated about the wrong thing.
 
-Brian Cantwell Smith argues that what machines lack is judgment as opposed to mere reckoning: the capacity to be answerable to the world, to care whether the answer is right rather than merely well formed. He makes the argument carefully, and I think it is half right. What the machine lacks is real. But judgment, in the cases where humans exercise it well, was never a private faculty either. It is a person plus a tradition, plus other people positioned to object, plus consequences that arrive whether or not anyone wants them. When I stopped looking for judgment inside the evaluator and started building it between evaluators, the problem did not disappear. It turned into an engineering problem, which is the kind I know how to have.
+Brian Cantwell Smith argues that what machines lack is judgment as opposed to mere reckoning:[8](appendix-references.md#ref-03-bcs) the capacity to be answerable to the world, to care whether the answer is right rather than merely well formed. He makes the argument carefully, and I think it is half right. What the machine lacks is real. But judgment, in the cases where humans exercise it well, was never a private faculty either. It is a person plus a tradition, plus other people positioned to object, plus consequences that arrive whether or not anyone wants them. When I stopped looking for judgment inside the evaluator and started building it between evaluators, the problem did not disappear. It turned into an engineering problem, which is the kind I know how to have.
 
 And that made the remaining human job painfully obvious. I still decided when to research, when to build, which branches stayed isolated, whether a strange direction deserved another generation, which disagreement mattered, when to retrieve another example, and when the simulations had reached the point where only a real person could answer the question. I had automated much of the work, but I was still running the inquiry.
 

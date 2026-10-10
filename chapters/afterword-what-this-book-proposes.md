@@ -1,103 +1,71 @@
 # Afterword: What System 3 Contributes
 
-The book's central proposal is this:
+The book makes one claim and three supporting ones. The claim: as we build autonomous AI, we keep rediscovering science as its architecture, and that architecture, once cheap, lets people drop grand narratives without falling into relativism. They can build local arrangements, let the world rule some of them out, and choose among the survivors by rules the people affected can see and change.
 
-**Reliable open-ended autonomy needs an institution around the reasoner. Parts of that institution can become executable through agents. Changing the cost of cognitive and constructive capacity then changes which investigations and institutions are feasible, who can attempt them, and which questions of purpose and authority remain.**
+The three supporting claims are where I think the book adds something. Each is stated below with what it inherits, what is new, and what would show it wrong. I have tried to say plainly which parts are argued, which are designed and which have been tested, because a book about trust chains should be easy to audit.
 
-That proposal joins three contributions. The first concerns agent architecture. The second changes a condition under which epistemic institutions operate. The third follows that change into human agency and power.
+## The Starting Point
 
-## The Starting Point in Contemporary Philosophy of Science
+Peter Godfrey-Smith’s *Theory and Reality* ends with a picture I take as given. Science combines an empirical strategy, developing ideas so that experience can constrain them, with a social organization that carries the strategy out. Its reliability does not require perfect reasoners; the organization can expose errors its members would otherwise protect.[1](appendix-references.md#ref-aft-godfrey)
 
-The picture developed in Godfrey-Smith's *Theory and Reality* is a useful starting point. Science combines an empirical strategy—develop ideas so that experience can constrain them—with a social organization that carries out that strategy. Its reliability depends on instruments, procedures, specialization, criticism, incentives and the preservation of results. Perfect individual reasoners are unnecessary; the organization can expose errors its members would otherwise protect.[2](appendix-references.md#ref-guide-godfrey-smith)
+Popper, Duhem and Quine, Kuhn, Lakatos, Laudan, Longino and Kitcher argue about almost everything inside that picture. System 3 starts from what they share and asks what follows when the participants are artificial agents: cheap, copyable, able to use the records, build instruments and edit some of the rules they work under.
 
-This is a synthesis within contemporary philosophy of science, not a consensus that ends its disagreements. Popper emphasizes risky tests; Duhem and Quine complicate what a failed test identifies. Kuhn explains productive commitment to frameworks. Lakatos and Laudan distinguish patience, progress, acceptance and pursuit. Longino examines consequential critical interaction. Kitcher makes the division of cognitive labor part of the epistemic problem.
+## Thesis 1: Cheap Minds That Are Wrong Together
 
-System 3 starts with those achievements and asks what follows when the participants are artificial agents that can use the records, build instruments, execute procedures and modify some of the conditions under which they work.
+**When cognition is cheap and its copies share blind spots, the bottleneck of inquiry moves from producing hypotheses to producing independent evidence and getting criticism acted on.**
 
-## Contribution 1: Turn Social Epistemology into Executable Agent Architecture
+*Inheritance.* Condorcet’s jury theorem needs independent voters.[2](appendix-references.md#ref-aft-condorcet) Kitcher showed that identical rational investigators would all chase the leading program, and that science gets its division of labor from the pursuit of credit;[3](appendix-references.md#ref-aft-kitcher) Zollman, that less connected communities can reach the truth more reliably.[4](appendix-references.md#ref-aft-zollman) This work assumes that investigators are scarce, and that their differences come partly from biography and partly from incentives the institution designs.
 
-**Proposed contribution:** translate the conditions of reliable collective inquiry into records, workflows, information boundaries and authority structures that govern what agents actually do.
+*What is new.* Agents break those assumptions. Another investigator costs almost nothing; copies of one model start correlated before they have seen any evidence; and the credit system that diversified human science does not reach them. Others have worried about algorithmic monoculture and about AI narrowing what scientists study.[5](appendix-references.md#ref-aft-monoculture) Errors turn out to be correlated even across developers,[6](appendix-references.md#ref-aft-correlated) agent populations with narrow attention herd toward a bounded number of effective opinions,[7](appendix-references.md#ref-aft-herding) and there is a case for epistemically diverse groups of agents in discovery.[8](appendix-references.md#ref-aft-many) The book’s addition is the consequence for the institution: human science got some diversity from biography and engineered the rest through credit and priority; an agent institution has to engineer all of it, and oversight has the same problem, because an overseer can share a mind with what it oversees. The design primitives are in Chapters 3, 5, 6 and 8: critics who see the artifact before the builder’s account, isolated contexts, claims that carry their provenance, models from different developers.
 
-The basic unit becomes an investigation carried by a fallible population and its tools. A stronger model can improve that investigation, but it does not automatically repair a stale belief, create independent evidence or give a justified objection consequences.
+*What would show it wrong.* The note on evidence commits to an experiment in advance. If models from different developers catch a planted false belief no more often than isolated copies of one model, or if provenance adds nothing over isolation, the thesis is weaker than I have argued.
 
-| Intellectual inheritance | The problem it identifies | Architectural proposal in System 3 |
+## Thesis 2: Checking Without Understanding
+
+**Institutions can certify results no person understands, so justification can be outsourced. Understanding cannot be, and whoever owns the capacity starts deciding what inquiry is for.**
+
+*Inheritance.* Hardwig showed that rational belief already depends on others’ work we cannot check.[9](appendix-references.md#ref-aft-hardwig) Tymoczko argued that the computer proof of the four-color theorem put trust in a machine inside the warrant of a proof,[10](appendix-references.md#ref-aft-tymoczko) and Humphreys named the general condition epistemic opacity.[11](appendix-references.md#ref-aft-humphreys) Kitcher’s well-ordered science asks that inquiry pursue the questions informed citizens would choose.[12](appendix-references.md#ref-aft-wellordered)
+
+*What is new.* Most discussion of opacity asks whether opaque results are justified. System 3 answers yes, often, when the trust chain runs through checks that do not depend on anyone’s comprehension: a proof checker, a held-out test, an independent replication. The new problem lies elsewhere. You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. As discovery outruns comprehension, people keep the right to check and lose the ability to choose the next question. Kitcher’s tutored deliberators assumed public science staffed by people; a laboratory that runs on rented models moves the agenda to whoever allocates the compute. Chapters 9 and 12 develop this, from a seed in Chapter 4. The book’s remedy is Dantzig’s hour with von Neumann: build the capacity to teach as well as to answer, so that more people understand enough to take part in choosing. Chapter 7’s constitutional surface is the institutional half.
+
+*What would show it wrong.* If people who use these systems become measurably better at choosing productive questions in fields they did not understand before, the gap is closing rather than opening. That is an empirical question, and it is the one I most hope goes against me.
+
+## Thesis 3: Building Past the Critique
+
+**Postmodern critique stayed in text partly because building alternatives was too expensive. Cheap capacity moves the medium from interpretation to construction, and Ostrom’s polycentricity becomes affordable, provided objectives stay local, visible and amendable.**
+
+*Inheritance.* Latour asked why critique had run out of steam and called for composition.[13](appendix-references.md#ref-aft-latour) Rorty asked us to hold commitments knowing they are contingent, and later attacked a spectatorial Left that had given up on reform.[14](appendix-references.md#ref-aft-rorty) Ostrom found communities governing commons without waiting for the right theory of society, and her later work placed them inside the polycentric governance Vincent Ostrom had helped describe decades earlier.[15](appendix-references.md#ref-aft-polycentric) Scott and Morozov supply the objection: simplifying the world to make it legible and manageable is how high modernism and solutionism did their damage.[16](appendix-references.md#ref-aft-solutionism)
+
+*What is new.* Two things. First, an economic reading of the stalemate: the ideology vortex persists partly because seeing through an arrangement is cheap and building another is expensive. Second, a shape for the way out, borrowed from double descent. Past the point where every story fits, the data cannot choose, so a selection rule must; the wager is attempts the world can rule out, plus a selection rule written where the people affected can see and change it. Optimization does not escape politics. It moves politics into the objective, which is why the answer to solutionism is Ostrom’s conditions and not a better optimizer.
+
+*What would show it wrong.* If cheap capacity mostly produces more fluent critique and more content for the vortex, and small groups do not gain arrangements they can sustain, maintain and revise without a new landlord, the second descent is a picture and not a path.
+
+## The Architecture That Carries Them
+
+The theses need machinery. These are the book’s design proposals and the problems they inherit.
+
+| Inherited problem | Where it comes from | Proposal in System 3 |
 | --- | --- | --- |
-| Empiricism and Popper | A persuasive account can avoid contact with possible failure | External tests, instruments and predictions committed before results |
-| Duhem–Quine and Doyle | Failure implicates a bundle of assumptions; corrections can lose their targets | Claims with identities, recorded support and routes for dependent recommendations to return to review |
-| Popper's World 3 and Alexander | Knowledge must travel beyond its author with enough context to remain usable | Patterns containing scope, reasons, cases, failure conditions and links to other procedures |
-| Longino | Criticism can exist without affecting what the institution believes or does | Access for critics; recorded objections, responses and consequences when objections survive |
-| Laudan, Kitcher and Zollman | Belief, pursuit, resource allocation and information flow are different decisions | Budgets for alternatives, partly separate investigations and scrutiny of shared evidential dependencies |
-| Engineering and institutional governance | An improver can make its evaluator easier to satisfy | A constitutional surface protecting logs, held-out checks, permissions, budgets, rollback and successor selection |
+| A persuasive account can avoid contact with failure | Popper; empiricism | External tests, instruments and predictions committed before results |
+| Failure implicates a bundle; corrections lose their targets | Duhem and Quine; Doyle | Claims with addresses, recorded support, dependent decisions returned to review |
+| Knowledge travels without its conditions | Popper’s World 3; Alexander | Patterns with scope, cases, failure conditions and links; high-functioning bullshit named as the failure |
+| Criticism without consequences | Longino | Objections that travel with the decision and an owner who signs for proceeding |
+| Belief, pursuit and allocation get confused | Laudan; Kitcher; Zollman | Budgets for alternatives; isolation and diversity built deliberately |
+| The improver edits what judges it | Laudan’s reticulated model; engineering practice | A constitutional surface: the nearer a change sits to the aims, the slower and more independent its approval |
 
-The contribution is the connection between these properties and executable autonomous work. A pattern is more than advice in an archive when it can launch a test or alter the next recommendation. An objection is more than a review paragraph when it can keep an unsupported claim out of the next plan. A budget becomes epistemic policy when it determines which alternatives get opportunities to acquire evidence.
+Resemblance to a scientific institution establishes nothing by itself. Each proposal should beat a simpler arrangement on the same model and budget, or be dropped.
 
-Chapter 6's claim addresses and pattern language provide the knowledge machinery. Chapter 7's constitutional surface addresses a further problem: the institution can become one of the objects its own participants try to improve. The closer a change comes to defining what counts as improvement, the more independent authority its amendment should require.
-
-These are proposed implementations of inherited problems. The case is strongest for open-ended work with delayed or ambiguous evaluation; a bounded task with a trustworthy referee may need much less machinery. Their usefulness depends on comparisons with simpler arrangements. Resemblance to a scientific institution does not establish performance.
-
-## Contribution 2: Make Capacity a Variable in the Philosophy of Inquiry
-
-**Proposed contribution:** examine how a large change in general-purpose cognitive and constructive capacity changes the feasible space of epistemic institutions.
-
-This is the turn in Chapter 12. The earlier question is how to organize the available capacity. The later question is what changes when substantially more becomes available, at a different cost, to different people.
-
-Philosophy of science already addresses resources. Kitcher explicitly studies their allocation; social epistemology and the sociology of science examine access, incentives and dependence. This book's move is to follow a possible change in the cost and availability of cognitive work through the institutions those traditions study. Their problems persist, but the range of affordable responses can change.
-
-| Philosophical question | What changing capacity could make feasible | What still has to be established |
-| --- | --- | --- |
-| Popper: how can a claim face a demanding test? | More discriminating probes and instruments built for a particular question | That the test actually exposes the claim to failure |
-| Duhem–Quine: which assumption failed? | More rival diagnoses investigated, with better records of their dependencies | That the evidence distinguishes them rather than repeating one source |
-| Lakatos and Laudan: which alternative deserves further pursuit? | Work on programmes previously too expensive to develop | That continuing produces new information rather than endless rescue stories |
-| Longino: how can criticism expose background assumptions? | More perspectives and investigations with access to the disputed work | That perspectives differ meaningfully and justified criticism receives uptake |
-| Kitcher: how should the community divide its labor? | A larger portfolio, and small groups able to organize substantial inquiry | That allocation earns its cost and access extends beyond the capacity's owners |
-
-Imagine one hundred plausible explanations and enough resources to investigate three. Now suppose some change makes sixty serious investigations affordable. This does not abolish underdetermination. It changes which alternatives can receive work, which assumptions can be examined and which instruments can be built. The feasible frontier of inquiry has moved.
-
-Constructive capacity extends the same argument beyond investigation. A group may be able to build an arrangement it previously had to ask a vendor, employer or funding committee to provide. Criticism can establish that the existing arrangement is contingent. Capacity affects whether an alternative remains an argument or becomes something people can try.
-
-That is the distinction between **critical capacity** and **constructive capacity** in Chapter 12. The double-descent metaphor follows the movement from reducing complexity to fit our means, through recognizing the limitations of those reductions, toward acquiring means to investigate and build within more of the complexity. It is a philosophical analogy, not an economic law.
-
-This contribution concerns a change in the conditions of epistemology. Physical experiments can remain expensive. Data can remain inaccessible. Agents can share errors. Maintenance and review can absorb the savings. The claim has practical content only where more people acquire sustainable ability to investigate or construct alternatives.
-
-## Contribution 3: Connect Expanded Capacity to Power and Human Purpose
-
-**Proposed contribution:** distinguish constraints on knowing, constraints on building, dependence on authority, and conflicts among purposes—and examine how changing capacity moves their boundaries.
-
-The community-room example makes the distinction:
-
-| Constraint | What greater capacity can do | What it cannot establish by itself |
-| --- | --- | --- |
-| We do not know which schedules meet members' needs | Investigate availability, consequences and overlooked options | That its data or model includes everyone affected |
-| We cannot afford to build an alternative | Make a locally adapted tool feasible | That the tool can be sustained independently of its provider |
-| The vendor controls what arrangements we can use | Reduce that particular dependence if the group gains usable alternatives | That every participant gains standing to change the rules |
-| Two groups want the same room at seven on Tuesday | Reveal trade-offs and help design possible agreements | Which claim deserves priority or who has legitimate authority to decide |
-
-Some authority is sustained by the cost of obtaining an alternative. Lower that cost and a dependence can weaken. Other authority concerns genuinely shared consequences and scarce resources. More cognition does not produce another Tuesday evening or confer legitimacy on the schedule with the best score.
-
-Ostrom supplies an important connection: people can develop institutions around their circumstances while retaining ways to monitor, challenge and revise them. Cheap tools could enlarge their constructive possibilities. Ownership of those tools can also introduce a new dependence. Capacity and power remain entangled.
-
-The same distinction applies within a life. Assistance can reveal possibilities, help a person learn and support attempts through which desires change. The human therefore participates in reconsidering the objective. Treating a person as a fixed reward function misses that process; allowing the assistant to settle it grants the assistant authority over whose life it is.
-
-This extends the architectural question. We must ask whether an agent institution produces reliable work, who can use and govern it, and whether its assistance leaves people more able to understand and reconsider what they want. Better epistemic performance alone does not answer all three.
-
-## What Kind of Contribution Is This?
+## What Kind of Contribution This Is
 
 | Part of the argument | Status |
 | --- | --- |
-| Science's empirical and social organization; patterns, dependence and belief revision | Intellectual inheritance, summarized and connected |
-| Claims, executable patterns, consequential criticism and protected amendment | Architectural synthesis and design proposals |
-| Local experiments and the prototype store | Limited demonstrations, with the qualifications in the evidence note |
-| Cheaper capacity changing feasible investigations and institutions | A philosophical conjecture with empirical consequences |
-| Capacity over power; human participation in reconsidering purposes | An ethical direction and an argument about agency |
+| Science as empirical strategy plus social organization | Inherited and summarized |
+| Claim addresses, executable patterns, consequential objections, constitutional surface | Design proposals, partly demonstrated in others’ systems |
+| Thesis 1: correlated cheap inquirers | Argued; one experiment specified in advance and not yet run |
+| Thesis 2: verification without comprehension | Argued from mathematics and philosophy of science; an empirical question left open |
+| Thesis 3: polycentric construction after critique | A philosophical and ethical argument with practical tests named |
+| My own experiments | Small: one bounded problem, teaching demos judged by simulated learners, one ten-task comparison, one prototype |
 
-The contribution is this synthesis and the questions it makes concrete. The book does not demonstrate the complete architecture or establish priority over every related proposal. It gives us arrangements to build and claims to test.
+The book does not demonstrate the whole architecture or claim priority over every related proposal. It names three claims precisely enough to be wrong, and arrangements to build while we find out.
 
-For the architecture, compare models, tasks and budgets while changing provenance, objection uptake, information sharing or funding policy. Measure whether errors propagate, stale knowledge persists, alternatives produce discoveries and the system recovers from planted false beliefs. Count the costs of operating the institution.
-
-For capacity, examine what happens when the cost and availability of help change. Do small groups actually gain sustainable investigations and institutions? Which permissions become unnecessary? Which dependencies move to a new provider? More generated output is insufficient evidence of expanded agency.
-
-For human purposes, inspect participation and authority as well as performance. Can people understand consequential choices, challenge them, reconsider objectives and use workable alternatives? A successful optimizer can still leave the people it serves with less say.
-
-The book follows one continuous argument: **fallible cognition needs epistemic institutions; agents can make parts of those institutions executable; changing capacity changes who can investigate and construct; expanded possibilities make purpose, access and legitimacy more consequential.**
-
-That is what System 3 proposes to contribute to agent architecture and to the contemporary philosophy of inquiry.
+One sentence holds the argument together: **fallible cognition needs institutions that check; cheap, correlated cognition needs those institutions to manufacture independence; checking can outrun understanding, which moves the real question to who chooses; and cheap construction lets more people choose, locally, under rules they can see and change.**

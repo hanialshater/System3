@@ -4,9 +4,9 @@
 
 After years working on ranking and recommendations, I built a prototype store to try an idea I could no longer leave in the book. I wanted to see what would happen if the system could change the arrangement of the page around the customer’s problem.
 
-<!-- AUTHOR: What did the prototype actually do or show? A screen, a session, a surprise? Mei, Sami and Lea are hypothetical; one real moment from the prototype would anchor the chapter. -->
+<!-- AUTHOR: What did the prototype actually do or show? A screen, a session, a surprise? One moment from the prototype would anchor the chapter. -->
 
-The customers below are imagined, and I have not run the business experiment. Part of the work is deciding what would be worth testing before spending two years building the grand version. I have definitely not solved shopping before lunch.
+I have not run the business experiment. Part of the work is deciding what would be worth testing before spending two years building the grand version. I have definitely not solved shopping before lunch.
 
 The starting problem was almost embarrassingly simple. Imagine two customers looking at the same product page.
 
@@ -64,9 +64,7 @@ But if the problem is comparison friction, a ranked list may be the wrong specie
 
 I started calling these reusable units **recommendation experiences**. The name matters less than the abstraction. Each one is a reusable capability, larger than a model, that knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
 
-A library of two hundred overlapping experiences would be a new kind of legacy system with better animation.
-
-When a new need appears, first ask whether an existing experience can meet it with a different configuration, and build a new one only when it cannot. A Similar Items experience might be generic in one context and constrained to products available in the customer’s size in another. A comparison component can compare different attributes depending on what matters in the current session. A collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense.
+A library of two hundred overlapping experiences would be a new kind of legacy system with better animation. So when a new need appears, first ask whether an existing experience can meet it with a different configuration. A Similar Items experience might be generic in one context and constrained to products in the customer’s size in another. A comparison component can compare different attributes depending on what matters in the current session, and a collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense.
 
 Building for the hundredth experience changes what the first few need to be capable of. The more that useful behavior can be produced by configuring and composing a smaller number of strong primitives, the less the organization has to encode every new situation as another permanent branch in software.
 
@@ -74,7 +72,7 @@ I spent years in machine learning hearing that the answer to complexity was to l
 
 ## Composition Is Not Ranking With a New Hat
 
-At this point the obvious response is: fine, rank the experiences. That gets us part of the way and then breaks in an interesting place.
+At this point the obvious response is: fine, rank the experiences. That gets us part of the way and then breaks in an interesting place. Recommender researchers know part of this territory as slate and whole-page optimization;[1](appendix-references.md#ref-11-slate) the difference here is that the units being composed are kinds of help, not items.
 
 Suppose the system has already placed a strong size-confidence experience at the top of the page. Should another size-related module receive the same score it would have received before the first one was shown?
 
@@ -178,9 +176,9 @@ AI can help with problem discovery too, and here fooling ourselves becomes cheap
 
 Imagine replaying anonymized customer sessions and asking a strong language model to narrate what appears to be happening. The customer compared three products, opened the size chart, returned to one PDP, removed an item from the basket and left. The model can generate a plausible diagnosis. Cluster enough narrations and you may discover recurring forms of friction that your existing taxonomy missed.
 
-“The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call. So narration should only ever generate hypotheses. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer’s actual experience. Build a detector only after the hypothesis survives contact with something outside the model’s coherence. Define what success looks like before the detector starts steering the page.
+“The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call. So narration should only ever generate hypotheses. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer’s actual experience. Build a detector only after the hypothesis survives contact with something outside the model’s coherence. Skip that step and you have high-functioning bullshit with a dashboard. Define what success looks like before the detector starts steering the page.
 
-The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Learning how much of the outcome the problem actually caused takes an intervention, or causal assumptions strong enough to stand in for one. Judea Pearl’s ladder has three rungs, seeing, doing and imagining, and no quantity of the first answers questions about the second on its own.[1](appendix-references.md#ref-11-store-pearl) A recommender that only observes is standing on rung one with excellent posture.
+The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Learning how much of the outcome the problem actually caused takes an intervention, or causal assumptions strong enough to stand in for one. Judea Pearl’s ladder has three rungs, seeing, doing and imagining, and no quantity of the first answers questions about the second on its own.[2](appendix-references.md#ref-11-store-pearl) A recommender that only observes is standing on rung one with excellent posture.
 
 ## The Objective Fights Back
 
@@ -228,9 +226,7 @@ There was never a hard-coded `WEDDING_FUNNEL_V7`. The journey emerged from bound
 
 Here the hundreds of widgets become a vocabulary of action. The interface is the current projection of the problem-solving process.
 
-Nobody wants every pixel generated by an LLM. Predictability, accessibility, design systems and latency all matter, and customers occasionally just want to buy socks without participating in an artificial-intelligence research program.
-
-The machinery should become dynamic where dynamism earns its cost and remain boring where boring is excellent. But the direction is different from the old model of product development. Instead of predicting every useful journey in advance and encoding it as a fixed interface, we construct a repertoire of trusted capabilities and let the higher layer assemble them around the problem in front of it.
+Nobody wants every pixel generated by an LLM. Predictability, accessibility, design systems and latency all matter, and customers occasionally just want to buy socks without participating in an artificial-intelligence research program. The machinery should become dynamic where dynamism earns its cost and remain boring where boring is excellent. But the direction is different from the old model of product development. Instead of predicting every useful journey in advance and encoding it as a fixed interface, we construct a repertoire of trusted capabilities and let the higher layer assemble them around the problem in front of it.
 
 Taken literally, the title overstates it. The store learns how to build more of the experience it needs.
 
@@ -241,5 +237,7 @@ I began the prototype as a recommendation-system redesign. By the time the desig
 That does not prove the book. I designed it with the book’s argument in my head, and the test that could embarrass me is still ahead. It may fail in several educational ways.
 
 But it changed the question for me. The important future system may not be the model that predicts the next product best. It may be the system that can discover what kind of problem exists, recruit the right capabilities, construct an intervention, inspect whether it helped, learn from the gap and change what it does next.
+
+The store is built from the local problem up: this catalog, these customers, this page. Its politics live in Surface Value, written down where someone inside the company can argue with it. Mei cannot, yet. Until she can, her interest is something the owner chooses to write in, not something she can enforce.
 
 Once you can imagine a store learning that way, it is hard not to imagine the same thing in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.

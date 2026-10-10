@@ -130,6 +130,8 @@ For AI, the analogy is tempting. The base model looks something like System 1: f
 
 But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks.
 
+The idea is older than the name. Edwin Hutchins spent months on the bridge of a navy ship and found that navigation was not computed in anyone’s head. It was computed by a team, its charts, its instruments and its procedures, and no single sailor held the whole calculation.[5](appendix-references.md#ref-04-hutchins) He was studying cognition in the wild, outside the laboratory, and what he found there was distributed. System 3 asks agents to do on purpose what centuries of navigation practice taught sailors to do.
+
 A cruder version is easier to remember: the Gut, the Head and the Hand. The Gut recognizes and the Head reasons, while the Hand reaches outside the current story for something capable of disagreeing with it. Peer review has no hand, provenance has no fingers and a formal proof never needs to touch a cow, so take the mnemonic loosely.
 
 System 3 runs across every layer of the stack below. Even the desire layer, the goal itself, can change when reality pushes back. Without System 3, every layer we delegate to is one more place for an unsupported claim to travel.
@@ -153,11 +155,11 @@ The agent can try something, see what happens, update and try again. The farmer 
 
 A normal agent session can fail ten times, discover the right approach, solve the problem and throw away most of that history when the context ends. It is as if the farmer learned exactly where not to stand and then underwent elective amnesia every evening.
 
-In the Live-SWE-agent work, an agent ran into MARC files, the old bibliographic format libraries use. Its tools made the contents awkward to inspect, so it built an analyzer that displayed them in a readable form.[5](appendix-references.md#ref-04-liveswe) Its apparatus wasn’t enough, so it built an instrument, and the instrument changed what it could observe.
+In the Live-SWE-agent work, an agent ran into MARC files, the old bibliographic format libraries use. Its tools made the contents awkward to inspect, so it built an analyzer that displayed them in a readable form.[6](appendix-references.md#ref-04-liveswe) Its apparatus wasn’t enough, so it built an instrument, and the instrument changed what it could observe.
 
 People have always done this. We couldn’t see bacteria, so we built microscopes, and we couldn’t perceive radio waves, so we built receivers. The MARC analyzer is a humbler instrument of the same kind, and a small working example of System 3.
 
-AlphaGo draws a related distinction. Its neural network supplied powerful intuition about promising moves and valuable positions. Monte Carlo Tree Search placed that intuition inside an explicit search process constrained by the state and consequences of Go.[6](appendix-references.md#ref-04-alphago)
+AlphaGo draws a related distinction. Its neural network supplied powerful intuition about promising moves and valuable positions. Monte Carlo Tree Search placed that intuition inside an explicit search process constrained by the state and consequences of Go.[7](appendix-references.md#ref-04-alphago)
 
 I used to put this too simply: “the network proposes; the tree verifies.” That gives the tree too much authority, since MCTS does not prove the network right. What it does is make intuition take part in an external, stateful process, where the game decides the consequences of a move whatever the network finds plausible.
 
@@ -209,7 +211,7 @@ A tool registry tracked tools, successes, failures and known failure modes. Meta
 
 The state persisted across sessions, so later problems could inherit things learned earlier. We also pruned it, because remembering everything eventually costs more context than it saves.
 
-We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model and tasks.[7](appendix-references.md#ref-04-swebench)
+We compared mini-swe-agent with epistemic-swe on ten SWE-bench Verified problems from the Astropy repository, using the same base model and tasks.[8](appendix-references.md#ref-04-swebench)
 
 Ten problems is nowhere near enough to establish a solve-rate advantage, and because state persisted across tasks, order effects may matter. I was not looking for a benchmark victory. I wanted to know whether the scaffold changed behavior strongly enough to see, and it did, though not the way I expected.
 
@@ -306,7 +308,7 @@ None of this means that nothing can be known, a conclusion that is dramatic and 
 
 The model can remain what it is: an extraordinarily general machine for navigating learned patterns, capable of intuition and increasingly capable of reasoning. It doesn’t need to hold the entire chain in its weights, because the system around it can.
 
-Borrowing Daniel Dennett’s phrase, I would call this competence without comprehension.[8](appendix-references.md#ref-04-dennett) Whether the system around it amounts to comprehension is a question for people with more patience than I have.
+Borrowing Daniel Dennett’s phrase, I would call this competence without comprehension.[9](appendix-references.md#ref-04-dennett) Whether the system around it comprehends anything is a question for people with more patience than I have. The nearer question is whether we will: when an institution can check results no single person understands, who still understands enough to decide what to look for next?
 
 Everything so far can still be imagined around one agent that acts, checks, remembers, records provenance and updates what it trusts.
 
