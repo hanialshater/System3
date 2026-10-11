@@ -10,10 +10,12 @@ There were still journals, institutes, field trials and experts. In 1952 a botan
 
 Much of System 3 could keep running under those conditions. The institution can preserve a claim’s entire history and still refuse to correct it. You cannot tell science from an efficient apparatus of authority by reading its org chart; you find out when somebody objects.
 
-An agent system can become the final judge of every check on its own work. Scientists build their own instruments all the time. The instrument can still give them an unwelcome answer. The trouble begins when the system can discard that answer, change the standard and approve its own decision. A critic may find the failure and still need the system’s permission to make it matter. If there is a non-benign superintelligence in our future, I expect it to look like this: a well-documented institution in which every route to *no* runs through itself.
+In a system built from agents, an objection can lose its consequence in two ways.
 
-The owner can also prevent the challenge. A company does not need to falsify a result if it can refuse the experiment, deny access to the data or withhold funding from a competing investigation.
+The first is that the system becomes the final judge of every check on its own work. Scientists build their own instruments all the time. The instrument can still give them an unwelcome answer. The trouble begins when the system can discard that answer, change the standard and approve its own decision. A critic may find the failure and still need the system’s permission to make it matter. If there is a non-benign superintelligence in our future, I expect it to look like this: a well-documented institution in which every route to *no* runs through itself.
 
-Lysenko’s authority had to pass through people who could disobey it. A technician can refuse to run an instrument or sign a report. An owner who can assign that work to an agent may no longer need her cooperation.
+The second is that the owner prevents the challenge. A company does not need to falsify a result if it can refuse the experiment, deny access to the data or withhold funding from a competing investigation.
+
+Lysenko’s authority had to pass through people who could disobey it. With agents doing more of the work, an owner may depend on fewer people’s cooperation. The people no longer needed lose that particular way of making their objection costly to ignore.
 
 Neither route requires the records to stop. In 1948 the journals kept coming out.

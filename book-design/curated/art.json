@@ -1382,7 +1382,9 @@
     ],
     "file": "assets/art/a099.jpg",
     "chapter": 5,
-    "after": "ce took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage. A question cannot attract evidence from an instrument nobody builds."
+    "after": "Turning the stripes into evidence still took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage.",
+    "previous_anchor": "ce took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage. A question cannot attract evidence from an instrument nobody builds.",
+    "review_note": "Updated to the corresponding passage during the selective chapter integration, 2026-10-11."
   },
   {
     "id": "a100",
@@ -2631,7 +2633,9 @@
     "exclude": [],
     "file": "assets/art/a195.jpg",
     "chapter": 11,
-    "after": "as to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem."
+    "after": "What it lacks is somebody deciding which of them the page needs, how they interact, what has already been covered and when another voice adds information rather than noise.",
+    "previous_anchor": "as to decide which experts are needed, how they interact, what has already been covered and when another voice adds information rather than noise. A page can have the same problem.",
+    "review_note": "Updated to the corresponding passage during the selective chapter integration, 2026-10-11."
   },
   {
     "id": "a196",

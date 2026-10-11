@@ -16,7 +16,7 @@ The stories of companies, teams and people come from my experience. Names, compa
 | 8. Scalable Oversight | The OpenAI–Hugging Face incident and other people’s research on training, interpretability, steering, control and oversight, with its limits | Reported |
 | Interlude: When It Goes Wrong | Lysenko, and what happens when the people being challenged decide whether to hear the challenge | Reported history; the application to agents is argued |
 | 9. The Desire Layer | Amazon’s changing value proposition, the science of human learning and decision support, a Mallorca summer, and an argument about how desire develops | Argued from history and other people’s evidence; the traveller and the clinic founder are illustrative |
-| 10. Fluent Autonomy | The editing of this book, and where the argument could be wrong | Lived; the fluency is still an ambition |
+| 10. Fluent Autonomy | The editing of this book, read as a cycle of scaffolding, distillation and creative distrust, and where the argument could be wrong | Lived, with reported work on distillation; the fluency is still an ambition |
 | 11. The Store That Builds Itself | My prototype store, its customers and a proposed business experiment | Prototyped; the business experiment has not run |
 | 12. After Capacity | Ostrom’s cases, work on machine-checked proofs and epistemic opacity, a community and a weekend | Argued from cited work; the community is illustrative and the irrigators’ weekend is a proposal; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |

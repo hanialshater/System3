@@ -26,7 +26,7 @@ The new employee also comes in copies, and ten copies of one model can share one
 
 The compensation is that I can do things to this employee that would end my career if I tried them on a person. I can retrain her values. I can read her private notes while she works. I can open her head and look at what lights up, and change her mind in the middle of a sentence.
 
-Reading the notes and opening the head might give me evidence I could not get from the answer alone. But are these witnesses capable of being wrong differently? A student can learn its grader. It can learn what we want to read in its notes. Even the labels on the features inside its head may have been written by another model. I want a supervisor that catches something the employee misses; making both of them more capable is no guarantee of that.
+Two of those may give me a second witness on a mind I cannot outthink; the other two let me act on what the witnesses say. The question I want to ask of every witness in this chapter is the one Chapter 5 asked of the X-ray measurements of the electron’s charge: can it be wrong differently? Here the danger has a new shape. In Chapter 5 a shared calibration could make several measurements wrong together. In oversight the witness can share a mind with the thing it is watching: a grader the student can learn, notes written for their reader, descriptions of a model written by another model. A stronger supervisor may help. I also want evidence that it catches mistakes the employee misses, rather than becoming more capable at the same blind spots.
 
 ## Retrain Them
 

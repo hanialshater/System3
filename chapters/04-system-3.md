@@ -64,6 +64,8 @@ The conclusion survives training, and much of what earned it trust is lost along
 
 Emily Bender and Alexander Koller made a version of this argument with a hyper-intelligent octopus. It taps an undersea cable between two stranded islanders, learns their patterns and cuts in to impersonate one of them. It can bluff through a conversation about a coconut catapult by offering praise. Then a bear attacks, the islander asks how to defend herself with sticks, and the octopus has nothing. Their argument is that learning form alone cannot give it meaning.[3](appendix-references.md#ref-04-octopus) I prefer dead Europeans to cephalopods, but the point is the same.
 
+A pretrained model inherits the linguistic residue of our practices. A deployed agent can start to re-enter them by running code, using tools, observing users and interacting with institutions.
+
 Embodiment can’t be the whole answer, though. I know far too many things I have never touched, measured or witnessed. I have never measured the speed of light or been to Antarctica, and I have no direct evidence for most of modern physics, most of history, or whether penguins are wandering through Rome right now. Direct contact doesn’t scale.
 
 To know anything beyond it, I need Alberto.
@@ -104,11 +106,11 @@ Mature trust can also turn on itself. When an instrument disagrees with a theory
 
 Models inherit the text produced along the way, but usually not the live relationships underneath it. The paper, the article about the paper, the blog post disagreeing with the article and the Reddit thread where somebody confidently misunderstood both can all end up in the same training distribution. The model got the library without the childhood.
 
-The model has no Alberto.
+The model has no Alberto: no live record of who was positioned to know, where a claim came from, how its source behaved before, or where the source’s competence stops.
 
 There is one more ingredient humans add almost without noticing, which is stakes. If Alberto lies to me repeatedly, I stop trusting him. If a researcher fabricates data and gets caught, the cost can be enormous. If an engineer signs off on a bridge and the bridge fails, “but the analysis sounded plausible” is no defense.
 
-Consequences do shape testimony. If a friend asks where to eat, I may guess. If someone asks whether to undergo surgery, I become much more careful.
+Consequences don’t make anyone truthful. People lie despite them, and institutions reward confident nonsense all the time. But consequences do shape testimony. If a friend asks where to eat, I may guess. If someone asks whether to undergo surgery, I become much more careful.
 
 An LLM has no social capital of its own to lose. It can confidently produce something false and, at the level of the model itself, nothing happens. The cost lands elsewhere: on the user, the application or the institution deploying it.
 
@@ -279,6 +281,8 @@ Trusted knowledge makes you efficient, and it can also make you boring. If an ag
 A new idea can arrive with very little evidence behind it. It may be right and still sound like my brother’s bullshit. System 3 needs room for creative distrust too.
 
 By that I mean understanding a trust chain well enough to know where you are breaking it and why. Contrarianism for sport doesn’t count, and neither does the internet habit of treating expert agreement as proof of corruption.
+
+Chapter 10 comes back to it, aimed at the most awkward trust stack in this book, which is mine.
 
 <!-- AUTHOR: Creative Distrust needs a real scene, e.g. a case of creative distrust from the eight years ranking reviews; it could replace or join the scientist and designer sentences below. -->
 

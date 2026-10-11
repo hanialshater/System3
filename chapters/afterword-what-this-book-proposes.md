@@ -60,7 +60,7 @@ Resemblance to a scientific institution establishes nothing by itself. Each prop
 | Part of the argument | Status |
 | --- | --- |
 | Science as empirical strategy plus social organization | Inherited and summarized |
-| Claim addresses, executable patterns, consequential objections, constitutional surface | Design proposals, partly demonstrated in others’ systems |
+| Claim addresses, executable patterns, consequential objections, constitutional surface | Design proposals, partly demonstrated in others’ systems: the Fermat formalization’s dependency graph of theorem statements (Chapter 6), Stellar Colosseum’s fatal-flaw rule (Chapter 6), Agentic Harness Engineering’s read-only verifier (Chapter 7) |
 | Thesis 1: correlated cheap inquirers | Argued; one experiment specified in advance and not yet run |
 | Thesis 2: verification without comprehension | Argued from mathematics and philosophy of science; an empirical question left open |
 | Thesis 3: polycentric construction after critique | A philosophical and ethical argument with practical tests named |

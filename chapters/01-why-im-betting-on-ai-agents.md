@@ -27,7 +27,7 @@ Engineering often makes a problem manageable by removing possibilities. We choos
 
 **Complexity over engineering** is a deliberately uncomfortable way to name my bet. I want us to be able to work with more of the problem before deciding which parts reality will have to do without. That may require considerable engineering: tools for exploring alternatives, environments in which mistakes are recoverable, ways to compare results. The difference is how much of the answer we insist on putting into the machinery before the search begins.
 
-Suppose the agent proposes a new tool or a different way to compare results. Which changes may it make on its own? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
+Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
 
 Cultivation may be a better metaphor than scripting: pulling harder on the stem remains a surprisingly poor gardening strategy.
 

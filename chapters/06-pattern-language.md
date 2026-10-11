@@ -125,6 +125,8 @@ High-functioning bullshit is an enemy of science precisely because it does not l
 
 Karl Popper argued that an empirical claim earns its standing by risking refutation and surviving.[13](appendix-references.md#ref-06-popper) A modern engineering organization is a Popperian machine that runs thousands of attempted refutations a day. Alexander’s form gives builders’ knowledge a way to take the same risk. A pattern that names its context, states its forces and marks its confidence has said where it can be wrong. Strip those parts away and the name keeps its authority while losing every handle by which it can lose an argument.
 
+That is the difference between a pattern and a feather.
+
 ## A Reader That Can Act
 
 Alexander’s patterns and the programmers’ patterns both had a human reader. The company’s next pattern would be read by a machine with tools.
@@ -391,6 +393,8 @@ Therefore: change what the next worker inherits, and give it standing to challen
 By its second year the library held more than `wins-that-fade`. The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Each pattern named the larger one it served and the smaller ones it could call.
 
 One review made the composition visible. A pricing experiment arrived with an early lift. The review agent found a committed prediction missing and routed that gap through `say-what-the-result-would-mean`. The size of the lift triggered `locate-the-failure`, where Twyman’s check exposed a sample-ratio mismatch. A data agent traced it to a logging path shared by both the headline metric and its supposed independent check, and `give-the-claim-an-address` marked both measurements as depending on the same event stream. The review returned the launch for repair. No agent had to know the whole procedure in advance. The links carried the work from one difficulty to the next.
+
+That is the point at which a pile of skills becomes a pattern language.
 
 Alexander’s second question to the programmers becomes the right question for the agents: do the patterns generate a coherent whole?
 

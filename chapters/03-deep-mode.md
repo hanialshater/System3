@@ -68,7 +68,7 @@ Parents probably shouldn’t see sessions meant for somebody else’s age group.
 
 None of those questions is really about React. They were always there; implementation simply consumed enough attention that deciding what should exist and turning that decision into software felt like one activity.
 
-You can see the idea sooner, and seeing it gives you information you did not have while discussing it.
+When another version is cheap, you can see the idea sooner, and seeing it gives you information you did not have while discussing it.
 
 Maybe we decide customers should create an account before seeing availability. It sounds reasonable: we need their details eventually. Then we build it and the experience immediately feels annoying. Parents arriving from a Google search do not want to establish a lifelong digital relationship with a football academy before discovering whether Saturday at ten is available. So login moves later, and the artifact becomes something we think with.
 
@@ -160,7 +160,7 @@ After that I stopped treating image generation as the last stage (*the product i
 
 Then the coding agent can make that relationship executable, which is where the picture has to pay its debts. The recursion tree cannot invent an extra branch because the composition looked nicer that way. The interaction has to possess a state. The button has to do something other than contribute emotionally to the page.
 
-Changing the representation changes what the search can discover.
+Different representations expose different mistakes. I do not need the stronger claim that an image model “understands pedagogy.” The practical point is enough: changing the representation changes what the search can discover.
 
 ## Optimizing Something You Cannot Score
 
@@ -330,7 +330,7 @@ This looks exactly like the compound intelligence we wanted. Now ask where the f
 
 It might have been a controlled educational study, or one teacher’s opinion, or something the research agent inferred from a handful of examples. Five articles might repeat it only because all five cite the same source. The study, if there was one, might have tested university students, and our demo is for children.
 
-The design responds intelligently to the wrong research. The evaluators agree, and the orchestrator invests another generation.
+Those are large differences, and everything downstream can still be perfectly competent. The research is wrong. The design responds intelligently to the wrong research. The implementation is flawless. The evaluators agree. The orchestrator invests another generation.
 
 Nothing crashes.
 

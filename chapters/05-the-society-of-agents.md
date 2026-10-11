@@ -25,7 +25,7 @@ For a while this worked remarkably well, partly because compiler test suites are
 <!-- ART RESOLVED — ch5-linux-gate. Original brief: VISUAL — Linux as the boss level. The sixteen small robots have been walking across a wide map of many small doors (test cases, then SQLite, Redis, Lua). The map narrows to a single enormous gate, Bowser-castle scale, with a penguin silhouette on it. All sixteen are bunched in front of it. Game-map style, one color accent. -->
 Then they reached Linux, which is less a test suite than one enormous test. Compilation stopped at the first serious compiler bug. Agents arrived at the same failure, formed their own theories and pushed changes over one another’s. The locks could separate named tasks, but they could not turn this bottleneck into sixteen different investigations. The standing instruction to find something useful and attack it kept pointing everyone at the same place.
 
-The organization was the bug.
+The models had not changed. The problem had, and the organization that had worked so well on a test suite was now getting in the way. The organization was the bug.
 
 <!-- ART RESOLVED — ch5-gcc. Original brief: VISUAL — the GCC oracle. The kernel drawn as a wall of bricks. Most bricks are grey and stamped GCC; a scattered handful are colored and stamped with the new compiler's mark. A robot tests whether the wall stands. Three panels show the colored set shrinking as the failure is isolated. -->
 Carlini changed the harness. Most of the kernel was compiled with GCC and only a random subset of files with the new compiler. A successful boot cleared that combination for that run. A failure gave the agents a smaller set to investigate, replacing more files with GCC output to narrow the search. Sixteen agents could again work on different files. A later pass with delta debugging helped isolate combinations that failed together even though their components worked separately.
@@ -34,7 +34,7 @@ The harness kept changing. Near the end, new features started breaking old ones,
 
 Specialization addressed work the next failing test would never ask anyone to do. LLM-written code kept re-implementing what already existed. Someone needed to look for duplicates. Someone needed to improve the compiler’s own speed, and someone else the quality of the code it emitted. Carlini assigned those roles, along with an agent to review the structure as a Rust developer and another to work on documentation, which is normally the moment you know a civilization has become serious.
 
-None of the agents arriving on the last day needed to have lived through that history.
+Carlini built the repairs deliberately, but the work kept revealing which repairs the organization needed. None of the agents arriving on the last day needed to have lived through that history.
 
 That interests me more than the generic claim that multi-agent systems scale. I have watched the same thing happen to teams of people, where it goes by the less glamorous name of reorganization, and nobody writes a blog post.
 
@@ -47,7 +47,7 @@ The parser agent does not know what the performance agent knows. Neither remembe
 
 In 1967 Karl Popper gave a lecture called *Epistemology Without a Knowing Subject*, and meant it literally. Beside the physical world and the world of individual minds he proposed a third: the world of theories, problems, arguments, and the records that carry them. Knowledge there can be examined, criticized and improved by people who did not produce it and are not currently thinking about it. He called it the third world, and later World 3. The compiler project is a small World 3 with a Git remote.[3](appendix-references.md#ref-05-popper-world3)
 
-Popper insisted on two properties of that world. We make it, but we do not control everything that follows from it: once a theory is written down it has consequences its author never saw, and problems nobody has noticed yet are already sitting in it. And it keeps our mistakes as carefully as our discoveries. A refuted theory is still a citizen of World 3; it just has a bad reputation.
+Popper insisted on two properties of that world. We make it, but we do not control everything that follows from it: once a theory is written down it has consequences its author never saw, and problems nobody has noticed yet are already sitting in it. And it keeps our mistakes. A refuted theory is still a citizen of World 3; it just has a bad reputation.
 
 His own example was a book of logarithm tables, computed by a machine, printed, and never opened by anyone. Does it contain knowledge? Popper said yes. What matters is that someone could read it; whether anyone has is beside the point. Now look at the compiler’s progress files, written by Claudes that no longer exist for Claudes that do not exist yet. In between, they sit on disk, right or wrong, with nobody looking.
 
@@ -55,7 +55,7 @@ The project also has a way to challenge some of what those files say without wai
 
 The project can also become wrong in ways no participant intended. A progress file carries a bad diagnosis into later sessions. A specialist improves its own metric while degrading the compiler. A lock prevents duplicated effort and also prevents a useful second attempt. Two agents confirm each other while both inherited the same mistake from the same file. Carlini’s closing worry was that passing tests can make unfinished work look complete.
 
-The compiler project came with a luxury. One person could step back from the agents’ work, see that their institution no longer fit it, and rebuild the harness.
+The compiler is a small version of the question the last chapter ended on, and it came with a luxury. One person could step back from the agents’ work, see that their institution no longer fit it, and rebuild the harness.
 
 Human civilization has been living inside the large version for thousands of years, with no one standing outside it.
 
@@ -86,7 +86,7 @@ Popper had imagined a related catastrophe in the same 1967 lecture. Destroy our 
 
 Senku remembers a world in which the medicine already exists. He can work backward from it, identifying materials and processes worth pursuing. His companions still have to make those steps work with what they have, but they do not have to discover the entire possibility of modern medicine along the way.
 
-Real civilization had no Senku, and nobody standing outside it with the roadmap.
+Real civilization had no Senku. Nobody firing the first clay knew that glass was possible, let alone that a glass vessel would one day hold a sulfa drug. People had to discover what could exist at the same time as how to make it, and for a long time what they learned lived only in the hands and memories of particular people.
 
 <!-- AUTHOR: C5-14 — optional: a more specific apprenticeship detail could sharpen the potter. -->
 A potter learned from clay, fire and vessels that cracked. She tried a change, repeated it when it worked, then taught it to an apprentice. When his pot cracked, she recognized something he had done that morning. He remembered doing it, remembered her warning, and now had an expensive reason to pay attention. It took several more firings before his hands could feel the difference she noticed immediately. When he became a teacher, he passed on what he had learned, including precautions he did not entirely understand, because the last person who omitted them had ruined a firing.
@@ -99,15 +99,17 @@ By the late fourth millennium BCE, people in southern Mesopotamia were recording
 
 The mark did not need to be wiser than the clerk. It needed to outlive him.
 
-The next clerk had to learn the marks, agree with others on their meanings and settle disputes when two records told different stories.
+The records brought new responsibilities: learning the marks, agreeing on their meanings and settling disputes when two records told different stories.
 
 The clerk could also enter the wrong amount, and his successor could copy it faithfully. The clay kept the mistake as carefully as the grain.
 
 ## Strangers Need Standards
 
-Or the figure could be right, in a unit nobody else used. A record says somebody owes ten sacks of grain. What exactly is a sack?
+Or the figure could be right, in a unit nobody else used. A record says somebody owes ten sacks of grain. Whose sack?
 
-The king of Qin had that problem on an imperial scale. In 221 BCE he conquered the last of the six rival states and became the First Emperor, ruling an empire of regional writing traditions, currencies, weights and measures. Conquest had put strangers under one ruler. It had not made their accounts agree.
+Picture a grain dealer from one of the conquered states, standing at an imperial granary in the year after the conquest. His measure and the official’s go by familiar names and do not hold the same amount. A year earlier that was a quarrel between neighbors. Now it is a question for an empire.
+
+The king of Qin had that problem at the largest scale available. In 221 BCE he conquered the last of the six rival states and became the First Emperor, ruling an empire of regional writing traditions, currencies, weights and measures. Conquest had put strangers under one ruler. It had not made their accounts agree.
 
 Under the emperor and his minister Li Si, later chancellor, the state imposed common standards. Some surviving bronze measures carry the imperial edict that ordered the work. The vessel tells you how much it holds and, on its side, who decided. You can hold one and read the decision.[7](appendix-references.md#ref-05-qin)
 
@@ -131,7 +133,7 @@ Then Amazon made me an offer, and the offer was reviews.
 
 Before that I had run the technology of a smaller e-commerce company: catalog, search, payments, the warehouse software, the emails that went out at night. I knew every system because I had to. Amazon wanted me for the text under the fold. The fold is a newspaper word: the important story goes above it, then you fold the paper under your arm and forget the rest. On a product page, reviews were the rest. The organization whose applied science I would lead was larger than the entire company I had just left, and I remember sitting with the offer and feeling faintly embarrassed for everyone involved. What could so many people possibly do with a text box?
 
-Here is what a text box contains. A grill weighs thirty kilograms. Is that good for a barbecue party? The catalog cannot tell you; it can tell you thirty kilograms. Two thousand reviews can tell you, and they can tell you who bought it, why, what went wrong at the first party, what they wish they had known, and the small psychology of a person who wanted to feed twelve friends and got it slightly wrong.
+Here is what a text box contains. A grill weighs thirty kilograms. Is that good for a barbecue party? The catalog cannot tell you; it can tell you thirty kilograms. Two thousand reviews can tell you, and they can tell you who bought it, why, what went wrong at the first party, what they wish they had known, and the small psychology of a person who wanted to feed twelve friends and got it slightly wrong. Look closely enough and the text box holds the buyer’s whole story.
 
 And the story wants work. How do you ask for a review without begging? How do you help a person who has never written anything write one? How do you summarize two thousand of them into a paragraph, find the useful ones, catch the fakes, carry them across languages, use them to explain a catalog written by a manufacturer, feed them into search so that “good for parties” finds the grill, find the one review in ten thousand that a marketer could build a campaign on? A whole organization could spend its days inside that text box. At the smaller company, reviews had been one engineer’s afternoon.
 
@@ -144,6 +146,8 @@ On a March morning in 2005, in an English hospital, Elaine Bromiley, a healthy w
 Within four minutes she was visibly blue. Her oxygen saturation had fallen to forty percent. The doctors kept trying to get the tube in.
 
 There was a procedure for this emergency: when neither intubation nor ventilation works, make a surgical airway. A nurse fetched the equipment. It was in the room. Two nurses later said they knew what needed to be done but did not know how to broach the subject. The three consultants, meanwhile, remained fixed on intubation. They had lost track of the time and of how long Elaine had been without enough oxygen.
+
+The people with the most authority kept attempting the same solution. The people who saw the need to change course could not make that knowledge change what happened to her.
 
 Elaine never regained consciousness. She died thirteen days later.[9](appendix-references.md#ref-05-bromiley)
 
@@ -199,7 +203,7 @@ Later that year Kepler, using a telescope Galileo had sent to the Elector of Col
 
 A new instrument creates new facts and new ways to be wrong about them. The lens might distort, the point of light might not be there, nobody else might manage to reproduce it, and the operator might not know what she is doing.
 
-The agent version is almost embarrassingly literal: run the program, execute the query, open the browser, measure the latency, compile the kernel against GCC. The result can now be inconvenient. But every one of those actions brings the telescope’s questions with it: how reliable the tool is, on which problems, what it actually measures, when it fails and who calibrated it.
+The agent version is almost embarrassingly literal: run the program, execute the query, open the browser, measure the latency, compile the kernel against GCC. Reasoning has left the conversation, and something outside the current explanation now has a chance to be inconvenient. But every one of those actions brings the telescope’s questions with it: how reliable the tool is, on which problems, what it actually measures, when it fails and who calibrated it.
 
 A broken tool is a very efficient route to externally generated nonsense.
 
@@ -221,41 +225,47 @@ The machinery was never clean. Access was unequal. Standing affected which claim
 
 In an agent system this is provenance around a claim, an assumption graph, a trace. Without the history, reality can tell us we are wrong while leaving us remarkably creative about which part of the system deserves blame.
 
-A trust chain had acquired an escape hatch.
+Knowledge now came with a route by which someone else might make a claim fail again. A trust chain had acquired an escape hatch.
 
 ## Who Gets the Next Agent?
+
+Imagine research program A is ahead and has twelve agents. Program B looks weaker and has one. Where does the next available agent go?
+
+The natural answer is A, and the answer reinforces itself: more agents, more experiments, more evidence, more confidence, more agents. Program B rarely loses an argument. It just never gets the instrument that would let it win one.
 
 The coastlines of Africa and South America fit together suspiciously well, and in 1912 a German meteorologist named Alfred Wegener took the fit seriously. He proposed that the continents had once been one landmass and had drifted apart. Besides the coastlines, he had matching fossils on opposite sides of the Atlantic, matching rock formations and glacial traces in places that were now tropical. What he did not have was a force capable of moving a continent.[20](appendix-references.md#ref-05-wegener)
 
 Much of geology declined, and not stupidly. The forces Wegener proposed were too weak, and a continent could not simply plow through an ocean floor that stayed where it was. The fossils needed explaining, but so did the physics. Wegener died on the Greenland ice in 1930, still unable to make the continents move to his critics’ satisfaction.
 
-Decades later, ships towing magnetometers began revealing a peculiar pattern on the ocean floor. The rock was magnetically striped. Bands on one side of a mid-ocean ridge had counterparts on the other, recording reversals of the Earth’s magnetic field as new crust formed and moved outward. The ocean floor itself was spreading. The continents were passengers.
+For decades, continental drift was program B, and it had a meteorologist.
+
+In the 1950s, ships towing magnetometers began revealing a peculiar pattern on the ocean floor. The rock was magnetically striped. Bands on one side of a mid-ocean ridge had counterparts on the other, recording reversals of the Earth’s magnetic field as new crust formed and moved outward. The ocean floor itself was spreading. The continents were passengers.
 
 By the late 1960s, plate tectonics was bringing the scattered observations together. It rescued Wegener’s moving continents by changing the machinery underneath them. Nobody had to accept the forces he proposed in order to accept that he had seen something real.
 
-But the stripes had been there while he was alive. Turning them into evidence took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage. A question cannot attract evidence from an instrument nobody builds.
+But the stripes had been there while he was alive. Nobody sent the ships to vindicate Wegener; the surveys and the magnetometers had other sponsors and other purposes. Turning the stripes into evidence still took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage. A question cannot attract evidence from an instrument nobody builds.
 
 Return to the agents. Suppose one proposes a hypothesis, another designs an experiment and a third evaluates the result. Now suppose all three inherited the same hidden assumption. The experiment fails. Which component changes? Reality does not care which file contains the variable named `hypothesis`; it pushes back against the arrangement as a whole. Who sees which evidence, which roles may modify the evaluator, which branches share context, which result is allowed to become everybody else’s premise: these decisions affect what the system can find out.
 
 Modern agent systems can make some of these choices dynamically. One problem may need several independent investigations, another a specialist and a verifier, another parallel workers around separable components. Organization itself has entered the search space, and whoever shapes it shapes what it can discover.
 
-Imagine research program A is ahead and has twelve agents. Program B looks weaker and has one. Where does the next available agent go?
-
-The natural answer is A, and the answer reinforces itself: more agents, more experiments, more evidence, more confidence, more agents. Eventually the leading theory owns the building, and the weak one has a meteorologist.
-
 Philip Kitcher examined this problem in 1990: how should a community divide its labor among research programs? A community can benefit from some investigators pursuing a less promising approach even when each individual, considering only the best-supported option, would choose the leader. Lakatos supplied another reason for patience: an unresolved anomaly does not, by itself, tell us to abandon a research program. The question is what further work it makes possible.[21](appendix-references.md#ref-05-allocation)
 
-Compute allocation is epistemic policy. So is memory, so is context sharing, so is credit. Who receives the capacity to generate evidence helps decide which possible truths the institution can afford to discover. A critic whose objections never change what gets investigated is doing quality-assurance theater.
+Compute allocation is epistemic policy. So is memory, so is context sharing, so is credit. Who receives the capacity to generate evidence helps decide which possible truths the institution can afford to discover. Which explanation is currently best and where the next unit of capacity should go are separate questions.
+
+So here is the rule I would propose, and I mean *propose*: keep part of the budget away from the leader. A credible alternative that makes a testable prediction should get enough agents to reach its test, the way MAP-Elites in Chapter 2 kept a strange packing alive in a cell of its own. A portfolio of programs, each funded as far as one decisive experiment, can still converge. A parliament that never votes cannot. Whether the portfolio actually beats following the leader is a question an agent system can answer by running both, which is more than geology could do in 1930.
+
+A critic whose objections never change what gets investigated is doing quality-assurance theater.
 
 ## Science Gets Bigger Than the Scientist
 
-Accumulated knowledge eventually destroys the world of the universal expert.
-
 Newton was extraordinary. In January 1697, busy with the great recoinage at the Royal Mint, he received Johann Bernoulli’s challenge: find the curve along which a bead slides fastest between two points. Bernoulli had given the mathematicians of Europe months. By John Conduitt’s account, Newton came home at four in the afternoon, exhausted, and had it solved by four in the morning. The answer went to the Royal Society without his name, and Bernoulli recognized the author anyway: *Tanquam ex ungue leonem*, as the lion by its claw.[22](appendix-references.md#ref-05-newton)
 
-The story is usually told about Newton. The more important part is that Bernoulli’s question could reach him at all. A challenge posed in Switzerland was printed in a Leipzig journal, read in London, answered overnight and returned to circulation. The attribution rested on a shared mathematical language precise enough that a style could be recognized like handwriting. Even the anonymous answer arrived carrying something of its author.
+The story is usually told about Newton. The puzzle is how the question found him. A challenge posed in Switzerland was printed in a Leipzig journal, carried by correspondence, read in London, answered overnight and returned to circulation. Everyone involved could follow the problem because they shared a mathematical language precise enough that a style could be recognized like handwriting. Reputation did the rest of the routing: it decided who was worth challenging, and whose anonymous answer would be read with care. Bernoulli could recognize the claw because he already knew the lion.
 
-Genius mattered enormously, and so did the network that let genius start from accumulated work instead of from dirt.
+Reputation routed the attention. It did not make the answer right. Anyone with the mathematics could check the curve, and that is the part of the network that holds weight.
+
+Genius mattered enormously, and so did the network that let genius start from accumulated work instead of from dirt. Accumulated knowledge eventually destroys the world of the universal expert.
 
 Then success made the network more necessary. Laboratories specialized. Techniques required training. Journals multiplied, instruments grew complicated, and fields developed languages that excellent researchers next door could not read without help.
 
@@ -271,7 +281,7 @@ The year before, another collaboration had shown how much could hide inside a me
 
 In February 2012 it reported two possible problems in the timing equipment. A faulty optical-fiber connection could make the neutrinos appear early; an oscillator error pulled the measured time in the other direction. Further investigation and measurements removed the faster-than-light result. The timing equipment had turned an ordinary beam into an apparent challenge to relativity. One of the culprits was a loose cable.[25](appendix-references.md#ref-05-opera)
 
-The apparatus was still available to inspect after the result became famous. So were the calculations. A loose cable could be found, and finding it could change the answer.
+The network that carried the anomaly around the world within days also pointed thousands of expert eyes at one experiment’s timing system. The apparatus was still available to inspect after the result became famous. So were the calculations. A loose cable could be found, and finding it could change the answer. The same routing that made the claim famous made it checkable.
 
 A modern experiment is a society organized around an argument with reality. It is dangerous: a bad calibration can propagate, a shared assumption can synchronize thousands of competent people, prestige can suppress criticism, a procedure can survive long enough to become ritual. But without the machine we lose the knowledge too. There is no lone human replacement for CERN.
 
@@ -280,9 +290,11 @@ A modern experiment is a society organized around an argument with reality. It i
 
 Go back to the compiler: task locks, Git, CI, progress files, sampled tests, a trusted reference compiler, specialists, a harness that turned one global failure into many small investigations, and a human who watched the work and rebuilt parts of the arrangement when it broke.
 
-The progress file is the clerk’s tablet: the next worker can remember something it never witnessed. Shared conventions do the bronze measure’s work. Specialists inspect different parts of the compiler, and authority follows the question: GCC can settle many disputes about what a C program should do without being asked how the whole project should be run. Did the specialists investigate separately, or did the same progress file tell all of them what to think?
+At the beginning of the chapter these looked like practical tricks for coordinating coding agents. Read again, they are the project’s scientific method, and Carlini wrote most of it.
 
-Tests let the running program contradict an agent’s account of it. Git history gives another worker a route back through the changes that produced the result. The harness decides which failures each agent encounters; the allocation of workers decides which of those failures receives another hour. What the institution remembers, what it can observe and what it bothers to investigate have become things we can change.
+The sampled tests decided what each agent could see. Suppose a bug only shows up in code that uses bitfields: an agent whose sample contains none of those tests may never meet it, however clever it is. A different sample makes a different investigator. The lock files kept agents from attacking the same named problem at the same time; they could also keep a useful rival approach from receiving a second worker. The GCC oracle helped locate failures by changing which files were built by the new compiler and checking whether the kernel booted. The progress files supplied claims each new worker could inherit before checking them, the way the clerk’s tablet told a new clerk what had been delivered. The shared SSA design framed later questions about how to represent code. And the specialists existed because someone decided that duplicated code and slow output were questions worth a worker of their own.
+
+These are not merely facts about compilers. They are decisions about how a collective learns, written into a harness. Carlini made them and changed them when the work showed they were wrong. The agents did not reinvent the institution; they worked inside one that its designer kept repairing. Change the sampling, the locks or the oracle, and you change which errors the project could find.
 
 The familiar failures come with them. A test suite can keep passing while the thing nobody thought to test quietly gets worse. Separate containers can inherit the same mistake. Git can preserve a change without preserving the reason an agent thought it justified. Carlini had built part of an institution. Some of the rest still lived in his head.
 
@@ -295,5 +307,7 @@ We can test whether these arrangements earn their keep. Keep the model and budge
 What the pieces buy is capacity: a claim that survives its author, an objection that survives the person who would rather not hear it, and things a population can attempt that none of its members could.
 
 I thought I was designing a society of agents.
+
+Humanity had already spent centuries building a society of fallible knowers.
 
 ---

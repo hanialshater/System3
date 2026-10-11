@@ -144,7 +144,7 @@ Chapter 12 connects this to constructive capacity. Tools for learning from other
 
 ### Human Choice, Learning and Alignment — Kahneman, Ebbinghaus, Sarasvathy and Russell
 
-**Kahneman's two-system framework** supplies the cognitive comparison from which the title departs. **Ebbinghaus and later learning research** examine forgetting, practice and retrieval. **Sarasvathy's effectuation** describes goals developing through action with available means. **Russell's beneficial-AI approach** makes uncertainty about human preferences central.[4](appendix-references.md#ref-04-kahneman)[14](appendix-references.md#ref-09-ebbinghaus)[5](appendix-references.md#ref-09-sarasvathy)[30](appendix-references.md#ref-08-russell)
+**Kahneman's two-system framework** supplies the cognitive comparison from which the title departs. **Ebbinghaus and later learning research** examine forgetting, practice and retrieval. **Sarasvathy's effectuation** describes goals developing through action with available means. **Russell's beneficial-AI approach** makes uncertainty about human preferences central.[4](appendix-references.md#ref-04-kahneman)[15](appendix-references.md#ref-09-ebbinghaus)[5](appendix-references.md#ref-09-sarasvathy)[30](appendix-references.md#ref-08-russell)
 
 Chapters 9 and 12 bring these questions together: people learn slowly, discover and revise purposes, and can become dependent on assistance. The human participates in reconsidering objectives. System 3 is an external institutional proposal, not an empirically established third psychological processing system.
 

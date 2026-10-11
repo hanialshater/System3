@@ -148,7 +148,7 @@ AlphaEvolve scales that idea up. In each generation it selects a promising progr
 
 Two design choices matter. Small patches let the search change the part it thinks matters while preserving the rest of a program’s structure; full rewrites lose useful ideas as easily as bad ones. And the archive keeps several lineages alive, for the same reason the population mattered earlier. If every descendant comes from the current champion, code evolution quietly collapses back into hill climbing, and a program that isn’t the best today may hold a component that becomes valuable after another idea appears. That was the pattern I would soon try to rebuild myself.
 
-Sometimes the model’s guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python.
+Sometimes the model’s guess is excellent, and sometimes it produces nonsense wrapped in perfectly respectable Python. The nice thing about bounded algorithmic problems is that the disagreement doesn’t need to be settled in prose. We run the program, and the evaluator gets the last word.
 
 What interested me even more than the resulting algorithms was what happened to me. Instead of writing the solver directly, I was increasingly building the machinery in which solvers could be generated, compared and improved.
 
@@ -216,7 +216,7 @@ This is what I mean by the **Algorithm Vortex**. At the beginning of a conventio
 
 Once code is cheap to generate and evaluation is cheap enough to repeat, the choice no longer has to be permanent. A geometric construction can initialize a numerical optimizer. An evolutionary method can search parameters for another solver. A language model can notice a failure pattern and invent a repair procedure. Two ideas that began in separate lineages can meet later because an experiment suddenly makes the combination useful.
 
-Once a capable agent controls the experimentation loop, even the decision about which kind of search to try next can enter the search space.
+The search moves outward through levels. A conventional optimizer searches over candidate solutions. Meta-heuristics search over larger families of candidates and strategies. Code evolution searches over programs that themselves search for solutions. Once a capable agent controls the experimentation loop, even the decision about which kind of search to try next can enter the search space.
 
 Who was inventing the next move? For the first time in the experiment, not reliably me.
 

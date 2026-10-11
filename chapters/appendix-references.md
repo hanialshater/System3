@@ -289,21 +289,21 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 27. <a id="ref-07-stop"></a>Eric Zelikman et al., “Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation,” 2023, [arXiv:2310.02304](https://arxiv.org/abs/2310.02304).
 
-28. <a id="ref-07-nas"></a>Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” 2016, [arXiv:1611.01578](https://arxiv.org/abs/1611.01578). The search used 800 GPUs for several weeks.
+28. <a id="ref-07-move78"></a>Cade Metz, “In Two Moves, AlphaGo and Lee Sedol Redefined the Future,” *Wired*, March 2016, quoting David Silver on the one-in-ten-thousand estimate for Move 78; NPR, “After 3 Losses, Master Go Player Scores A Win Against Computer,” 13 March 2016, quoting Demis Hassabis on moves 79 and 87. <https://www.npr.org/sections/thetwo-way/2016/03/13/470284113/after-three-losses-master-go-player-scores-a-win-against-computer>.
 
-29. <a id="ref-07-nas-random"></a>Liam Li and Ameet Talwalkar, “Random Search and Reproducibility for Neural Architecture Search,” *UAI*, 2019, [arXiv:1902.07638](https://arxiv.org/abs/1902.07638); Kaicheng Yu et al., “Evaluating the Search Phase of Neural Architecture Search,” *ICLR*, 2020, [arXiv:1902.08142](https://arxiv.org/abs/1902.08142).
+29. <a id="ref-07-adversarial-go"></a>Tony T. Wang et al., “Adversarial Policies Beat Superhuman Go AIs,” *Proceedings of the 40th International Conference on Machine Learning*, PMLR 202 (2023). <https://proceedings.mlr.press/v202/wang23g.html>. The paper reports that KataGo misevaluates large cyclically connected groups and that human players can apply the attack without algorithmic assistance; Kellin Pelrine’s games against KataGo were reported in February 2023.
 
-30. <a id="ref-07-regnet"></a>Ilija Radosavovic et al., “Designing Network Design Spaces,” *CVPR*, 2020, [arXiv:2003.13678](https://arxiv.org/abs/2003.13678).
+30. <a id="ref-07-nas"></a>Barret Zoph and Quoc V. Le, “Neural Architecture Search with Reinforcement Learning,” 2016, [arXiv:1611.01578](https://arxiv.org/abs/1611.01578). The search used 800 GPUs for several weeks.
 
-31. <a id="ref-07-repvgg"></a>Xiaohan Ding et al., “RepVGG: Making VGG-style ConvNets Great Again,” *CVPR*, 2021, [arXiv:2101.03697](https://arxiv.org/abs/2101.03697). RepVGG reported over 80 percent top-1 ImageNet accuracy for a plain model and a favorable accuracy–speed trade-off against EfficientNet and RegNet on GPU.
+31. <a id="ref-07-nas-random"></a>Liam Li and Ameet Talwalkar, “Random Search and Reproducibility for Neural Architecture Search,” *UAI*, 2019, [arXiv:1902.07638](https://arxiv.org/abs/1902.07638); Kaicheng Yu et al., “Evaluating the Search Phase of Neural Architecture Search,” *ICLR*, 2020, [arXiv:1902.08142](https://arxiv.org/abs/1902.08142).
 
-32. <a id="ref-07-move78"></a>Cade Metz, “In Two Moves, AlphaGo and Lee Sedol Redefined the Future,” *Wired*, March 2016, quoting David Silver on the one-in-ten-thousand estimate for Move 78; NPR, “After 3 Losses, Master Go Player Scores A Win Against Computer,” 13 March 2016, quoting Demis Hassabis on moves 79 and 87. <https://www.npr.org/sections/thetwo-way/2016/03/13/470284113/after-three-losses-master-go-player-scores-a-win-against-computer>.
+32. <a id="ref-07-regnet"></a>Ilija Radosavovic et al., “Designing Network Design Spaces,” *CVPR*, 2020, [arXiv:2003.13678](https://arxiv.org/abs/2003.13678).
 
-33. <a id="ref-07-adversarial-go"></a>Tony T. Wang et al., “Adversarial Policies Beat Superhuman Go AIs,” *Proceedings of the 40th International Conference on Machine Learning*, PMLR 202 (2023). <https://proceedings.mlr.press/v202/wang23g.html>. The paper reports that KataGo misevaluates large cyclically connected groups and that human players can apply the attack without algorithmic assistance; Kellin Pelrine’s games against KataGo were reported in February 2023.
+33. <a id="ref-07-repvgg"></a>Xiaohan Ding et al., “RepVGG: Making VGG-style ConvNets Great Again,” *CVPR*, 2021, [arXiv:2101.03697](https://arxiv.org/abs/2101.03697). RepVGG reported over 80 percent top-1 ImageNet accuracy for a plain model and a favorable accuracy–speed trade-off against EfficientNet and RegNet on GPU.
 
-34. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
+34. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
 
-35. <a id="ref-07-anthropic-rsi"></a>Marina Favaro and Jack Clark, “When AI builds itself,” The Anthropic Institute, 2026, updated 18 September 2026, <https://www.anthropic.com/institute/recursive-self-improvement>. The training-speedup figures are Anthropic’s internal evaluation; Anthropic cautions that the multiple depends on the starting code and should not be read as a real-world training speedup. The section “What might the future of work at Anthropic look like?” describes human review as a potential bottleneck.
+35. <a id="ref-07-self-change"></a>Peyman Milanfar, [“Intelligence Has a Speed Limit”](https://www.linkedin.com/pulse/intelligence-has-speed-limit-peyman-milanfar-8fbic), 12 September 2026; also on [Substack](https://milanfar.substack.com/p/intelligence-has-a-speed-limit). Milanfar’s adaptive-control analogy motivates the discussion; “the complexity of self-change” is the framing used here.
 
 36. <a id="ref-07-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
 
@@ -448,31 +448,31 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 7. <a id="ref-09-linden"></a>Greg Linden, “Early Amazon: Shopping cart recommendations,” *Geeking with Greg* (2006), <https://glinden.blogspot.com/2006/04/early-amazon-shopping-cart.html>; the episode is retold in Ronny Kohavi’s experimentation tutorials, e.g. <https://ai.stanford.edu/~ronnyk/2009-06-28KDDTutorialT4part1.pdf>.
 
-8. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
+8. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
 
-9. <a id="ref-09-carroll-preference-shift"></a>Micah Carroll, Anca Dragan, Stuart Russell and Dylan Hadfield-Menell, “Estimating and Penalizing Induced Preference Shifts in Recommender Systems,” *Proceedings of the 39th International Conference on Machine Learning*, PMLR 162 (2022), 2686–2708. <https://proceedings.mlr.press/v162/carroll22a.html>; [arXiv:2204.11966](https://arxiv.org/abs/2204.11966).
+9. <a id="ref-09-elster"></a>Jon Elster, *Sour Grapes: Studies in the Subversion of Rationality*, Cambridge University Press, 1983, on adaptive preference formation.
 
-10. <a id="ref-09-elster"></a>Jon Elster, *Sour Grapes: Studies in the Subversion of Rationality*, Cambridge University Press, 1983, on adaptive preference formation.
+10. <a id="ref-09-callard"></a>Agnes Callard, *Aspiration: The Agency of Becoming*, Oxford University Press, 2018.
 
-11. <a id="ref-09-callard"></a>Agnes Callard, *Aspiration: The Agency of Becoming*, Oxford University Press, 2018.
+11. <a id="ref-09-l4-guidance"></a>Anthropic, “How people ask Claude for personal guidance” (2026). <https://www.anthropic.com/research/claude-personal-guidance>.
 
 12. <a id="ref-09-l4-disempowerment"></a>Anthropic, “Who’s in Charge? Disempowerment patterns in real-world AI usage” (2026). <https://www.anthropic.com/research/disempowerment-patterns>.
 
 13. <a id="ref-09-l4-mpag"></a>Arnaud Fickinger et al., “Multi-Principal Assistance Games” (2020). <https://arxiv.org/abs/2007.09540>.
 
-14. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
+14. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
 
-15. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
+15. <a id="ref-09-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
 
-16. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
+16. <a id="ref-09-spacing"></a>Nicholas J. Cepeda, Harold Pashler, Edward Vul, John T. Wixted and Doug Rohrer, “Distributed practice in verbal recall tasks: A review and quantitative synthesis,” *Psychological Bulletin* 132 (2006), 354–380. <https://doi.org/10.1037/0033-2909.132.3.354>.
 
-17. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
+17. <a id="ref-09-testing"></a>Henry L. Roediger III and Jeffrey D. Karpicke, “Test-enhanced learning: Taking memory tests improves long-term retention,” *Psychological Science* 17 (2006), 249–255. <https://doi.org/10.1111/j.1467-9280.2006.01693.x>.
 
-18. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
+18. <a id="ref-09-l4-bastani"></a>Hamsa Bastani et al., “Generative AI can harm learning,” *PNAS* 122 (2025). <https://doi.org/10.1073/pnas.2422633122>.
 
-19. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
+19. <a id="ref-09-l4-trespassing"></a>Nathan Ballantyne, “Epistemic Trespassing,” *Mind* 128 (2019), 367–395. <https://academic.oup.com/mind/article-abstract/128/510/367/4850765>.
 
-20. <a id="ref-09-l4-vaccaro"></a>Michelle Vaccaro, Abdullah Almaatouq and Thomas W. Malone, “When combinations of humans and AI are useful: A systematic review and meta-analysis,” *Nature Human Behaviour* 8 (2024), 2293–2303. <https://doi.org/10.1038/s41562-024-02024-1>. The synthesis covered 106 experiments and 370 effect sizes, with studies published between January 2020 and June 2023; it is not an evaluation of every current assistant.
+20. <a id="ref-09-l4-forcing"></a>Zana Buçinca, Maja B. Malaya and Krzysztof Z. Gajos, “To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making,” CSCW 2021. <https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml>.
 
 21. <a id="ref-09-girard"></a>René Girard, *Deceit, Desire, and the Novel: Self and Other in Literary Structure*, trans. Yvonne Freccero (Johns Hopkins University Press, 1965; French original 1961).
 
@@ -488,11 +488,23 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Chapter 10 — Fluent Autonomy
 
-1. <a id="ref-10-bitter"></a>Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.
+1. <a id="ref-10-repvgg"></a>Xiaohan Ding et al., “RepVGG: Making VGG-style ConvNets Great Again,” *CVPR*, 2021, [arXiv:2101.03697](https://arxiv.org/abs/2101.03697). RepVGG reported over 80 percent top-1 ImageNet accuracy for a plain model and a favorable accuracy–speed trade-off against EfficientNet and RegNet on GPU. The “structural re-parameterization” described in Chapter 10 converts the training-time multi-branch block (3×3, 1×1 and identity branches) into a single 3×3 convolution for inference.
 
-2. <a id="ref-10-morozov"></a>Evgeny Morozov, *To Save Everything, Click Here: The Folly of Technological Solutionism*, PublicAffairs, 2013.
+2. <a id="ref-10-alphagozero"></a>David Silver et al., “Mastering the game of Go without human knowledge,” *Nature* 550 (2017), 354–359. <https://doi.org/10.1038/nature24270>; DeepMind, “AlphaGo Zero: Starting from scratch,” 18 October 2017. <https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch/>. The network was trained to predict the move probabilities produced by its own Monte Carlo tree search and the game outcome.
 
-### Additional sources
+3. <a id="ref-10-distill"></a>Chris Olah and Shan Carter, “Research Debt,” *Distill*, 2017, [doi:10.23915/distill.00005](https://doi.org/10.23915/distill.00005).
+
+4. <a id="ref-10-bitter"></a>Richard S. Sutton, “The Bitter Lesson,” 13 March 2019, <http://www.incompleteideas.net/IncIdeas/BitterLesson.html>.
+
+5. <a id="ref-10-move78"></a>Cade Metz, “In Two Moves, AlphaGo and Lee Sedol Redefined the Future,” *Wired*, March 2016, quoting David Silver on the one-in-ten-thousand estimate for Move 78; NPR, “After 3 Losses, Master Go Player Scores A Win Against Computer,” 13 March 2016, quoting Demis Hassabis on moves 79 and 87. <https://www.npr.org/sections/thetwo-way/2016/03/13/470284113/after-three-losses-master-go-player-scores-a-win-against-computer>.
+
+6. <a id="ref-10-adversarial-go"></a>Tony T. Wang et al., “Adversarial Policies Beat Superhuman Go AIs,” *Proceedings of the 40th International Conference on Machine Learning*, PMLR 202 (2023). <https://proceedings.mlr.press/v202/wang23g.html>. The paper reports that KataGo misevaluates large cyclically connected groups and that human players can apply the attack without algorithmic assistance; Kellin Pelrine’s games against KataGo were reported in February 2023.
+
+7. <a id="ref-10-cirl"></a>Dylan Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning” (2016). <https://arxiv.org/abs/1606.03137>.
+
+8. <a id="ref-10-offswitch"></a>Dylan Hadfield-Menell et al., “The Off-Switch Game” (2016). <https://arxiv.org/abs/1611.08219>.
+
+9. <a id="ref-10-morozov"></a>Evgeny Morozov, *To Save Everything, Click Here: The Folly of Technological Solutionism*, PublicAffairs, 2013.
 
 ## Chapter 11 — The Store That Builds Itself
 
