@@ -1,0 +1,6 @@
+54aa64e31 rc=1 BUILD  subject: analytics-steward: EXP-007 Amendment 1, launch predictions for unknot-
+6cbce514e rc=1 BUILD  subject: Release r8: 711 published lessons, approved by the founder (F-47) [dep
+aefb10abc rc=1 BUILD  subject: Release r7 entry drafted as pending (awaiting founder approval, not de
+d8f5f8987 rc=0 skip  subject: Board: W-981 readiness withheld until integrated verify
+e6805f4a4 rc=0 skip  subject: Publish 40 lessons for r7 (patience-wins-the-split refused by the clai
+f86812702 rc=1 BUILD  subject: Vercel: build only commits marked [deploy] (stops WIP pushes using the

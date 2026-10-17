@@ -1,0 +1,4 @@
+Publish 40 lessons for r7 (patience-wins-the-split refused by the claims gate)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01WqifbxDhiWUBZLHjLh8HSF

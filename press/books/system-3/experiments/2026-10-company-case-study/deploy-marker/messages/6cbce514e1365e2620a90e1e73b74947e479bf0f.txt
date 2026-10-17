@@ -1,0 +1,6 @@
+Release r8: 711 published lessons, approved by the founder (F-47) [deploy]
+
+Source note: company/ops/deployments/2026-10-16-r8-source.md. Release log entry follows in the next commit.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01WqifbxDhiWUBZLHjLh8HSF

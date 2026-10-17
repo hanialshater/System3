@@ -1,0 +1,4 @@
+Vercel: build only commits marked [deploy] (stops WIP pushes using the daily deployment quota)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01WqifbxDhiWUBZLHjLh8HSF

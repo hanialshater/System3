@@ -1,0 +1,9 @@
+analytics-steward: EXP-007 Amendment 1, launch predictions for unknot-game v2 (W-1621)
+
+Rows C1-C6, F3/F4 committed before publish and before any deploy carrying
+math/unknot-game (draft; absent from 6cbce514; no [deploy] since). Not pooled
+into B1/B2. Objection 1 updated: W-1600 restored to privacy-reviewer.
+Objection 6: the recall stem states its own premise.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01FYVS98zjhHkoj8GZuFY15n

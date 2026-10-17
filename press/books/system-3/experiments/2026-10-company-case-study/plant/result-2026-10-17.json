@@ -1,0 +1,169 @@
+{
+  "harness": "plant.mjs",
+  "ranAt": "2026-10-17T15:05:03.091Z",
+  "dir": "/tmp/claude-0/-home-user/f0be7ef4-e990-5584-991b-e9d7e05d7372/scratchpad/plant-base",
+  "node": "v22.22.0",
+  "baseline": {
+    "pass": 42,
+    "fail": 0,
+    "tests": 42
+  },
+  "mutations": [
+    {
+      "id": "B1",
+      "row": "retrievalProblems: repeated-choice check removed",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "B2",
+      "row": "nextChoice: an empty box starts at the second choice",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "B3",
+      "row": "scoreRow: an empty box no longer makes the row incomplete",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 2,
+      "applied": true,
+      "failing": 2,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "B4",
+      "row": "markAttempt: ignores the attempt and reads the first choice",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 2,
+      "applied": true,
+      "failing": 2,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "B5",
+      "row": "scheduleLayout: chain adds the next row's duration, not the previous one's",
+      "file": "src/lib/lifehacks/studyModels.ts",
+      "expected": 3,
+      "applied": true,
+      "failing": 3,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "B6",
+      "row": "freeGaps: at = end instead of Math.max(at, end)",
+      "file": "src/lib/lifehacks/studyModels.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "B9",
+      "row": "queueObservation: goal sentence on equal waiting (>= for >)",
+      "file": "src/lib/lifehacks/studyStages.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O1",
+      "row": "retrievalProblems: compound 'no miss' check removed",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O2",
+      "row": "retrievalProblems: feedback check only asks that a choice list exists",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O3",
+      "row": "scoreRow: complete ignores the pick count",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O4",
+      "row": "nextChoice: clamps at the last choice instead of wrapping",
+      "file": "src/lib/lifehacks/studyRecall.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O5",
+      "row": "freeGaps: skip ignored",
+      "file": "src/lib/lifehacks/studyModels.ts",
+      "expected": 4,
+      "applied": true,
+      "failing": 4,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O6",
+      "row": "freeGaps: trailing gap before the window dropped",
+      "file": "src/lib/lifehacks/studyModels.ts",
+      "expected": 4,
+      "applied": true,
+      "failing": 4,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O7",
+      "row": "scheduleLayout: long overrun added to every row",
+      "file": "src/lib/lifehacks/studyModels.ts",
+      "expected": 2,
+      "applied": true,
+      "failing": 2,
+      "tests": 42,
+      "caught": true
+    },
+    {
+      "id": "O11",
+      "row": "queueObservation: atTarget uses some instead of every",
+      "file": "src/lib/lifehacks/studyStages.ts",
+      "expected": 1,
+      "applied": true,
+      "failing": 1,
+      "tests": 42,
+      "caught": true
+    }
+  ],
+  "after": {
+    "pass": 42,
+    "fail": 0,
+    "tests": 42
+  },
+  "summary": "15 of 15 applied mutations caught; baseline 42/42; after restore 42/42"
+}

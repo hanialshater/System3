@@ -1,0 +1,14 @@
+# Vercel commit statuses (GitHub API, context 'Vercel'), read 2026-10-17 by experiment-developer-system-3
+# command: gh api repos/hanialshater/system-3-company/commits/<sha>/statuses
+f86812702 | Vercel: build only commits marked [deploy] (stops WIP pushes using the daily deployment qu | 2026-10-14T12:58:42Z pending (Vercel is deploying your app) -> 2026-10-14T12:58:54Z success (Canceled by Ignored Build Step)
+6b45ea02c | Life Hacks: 200 lessons to review, shown on the feed tagged "In review" [deploy] | 2026-10-14T13:01:17Z failure (Deployment rate limited — retry in 24 hours.)
+91274b816 | Release: Life Hacks (200) and NCM (49) lessons on the live feed, tagged In review [deploy] | 2026-10-14T13:51:19Z pending (Vercel is deploying your app) -> 2026-10-14T13:51:28Z success (Canceled by Ignored Build Step)
+f4537d7dd | Release: 54 new and revised lessons to the feed, tagged In review [deploy] | 2026-10-14T14:27:28Z pending (Vercel is deploying your app) -> 2026-10-14T14:27:37Z success (Canceled by Ignored Build Step)
+5e8608df1 | Vercel: read the commit message from VERCEL_GIT_COMMIT_MESSAGE in the build filter; redepl | 2026-10-14T14:43:26Z pending (Vercel is deploying your app) -> 2026-10-14T14:47:31Z success (Deployment has completed)
+41ecec1ea | Release 2026.10.15.1: /spike S1 fix and 48 newly published lessons [deploy] | 2026-10-15T01:07:25Z pending (Vercel is deploying your app) -> 2026-10-15T01:12:04Z success (Deployment has completed)
+e6805f4a4 | Publish 40 lessons for r7 (patience-wins-the-split refused by the claims gate) | 2026-10-15T12:37:58Z pending (Vercel is deploying your app) -> 2026-10-15T12:38:08Z success (Canceled by Ignored Build Step)
+aefb10abc | Release r7 entry drafted as pending (awaiting founder approval, not deployed) | 2026-10-15T12:46:03Z pending (Vercel is deploying your app) -> 2026-10-15T12:50:23Z success (Deployment has completed)
+d8f5f8987 | Board: W-981 readiness withheld until integrated verify | 2026-10-15T12:46:39Z pending (Vercel is deploying your app) -> 2026-10-15T12:50:32Z success (Canceled by Ignored Build Step)
+6cbce514e | Release r8: 711 published lessons, approved by the founder (F-47) [deploy] | 2026-10-16T19:11:29Z failure (Deployment rate limited — retry in 24 hours.)
+54aa64e31 | analytics-steward: EXP-007 Amendment 1, launch predictions for unknot-game v2 (W-1621) | no Vercel status
+2821160c8 | board: W-1660 done (left-or-right published in repo); progress handoff updated | no Vercel status
