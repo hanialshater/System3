@@ -1,6 +1,8 @@
 # Consequential edits: Chapter 11 rewrite ("Guess First"), 2026-10-17
 
 owner: writer-system-3 (Callum) · for: head-of-book-system-3, then the founder · brief §6
+**Revision 1 (2026-10-17) additions and changes are in section 7 at the end; they supersede M2, M3, M6, M8 and M9 where they differ.**
+
 status: **proposals only. None of these edits has been made.** Each needs the founder's acceptance (quoted in `press/decisions/`), and production files go to their owners after that. The draft itself touches only `chapters/11-the-store-that-builds-itself.md`.
 draft: branch `ccr-fd4ebbbc-p06k8x`, uncommitted. Line numbers below are as of 2026-10-17 on that branch.
 
@@ -73,3 +75,64 @@ Commission objection 3 is open; this is the list the founder needs to see what i
 ## 6. Decisions the founder makes that change these rows
 
 D2 (title) → M14, P5, P7. D5 (naming) → M16. D6 (store passage) → M15, the 11:7 comment, P1 (a190). D7 (Mei, Sami, Lea) → §2. D10 (real learners) → M8, M12, the chapter's last section. D11 (the press in the chapter) → M11. D13 (citing company records) → M16, M8. D15 → M1-M13. D16/D17 → X2.
+
+---
+
+## 7. Revision 1 (2026-10-17)
+
+Added after the review round (DE = `resources/evaluations/2026-10-17-ch11-development-edit.md`; FC = `…/2026-10-17-fact-check-ch11-draft.md`; ARC, EGGS, MOM = the panel records of the same date). Still **proposals only; none made**. Line numbers as of 2026-10-17 on the proposal branch.
+
+### 7.1 Chapter 12 (DE 0.2, must: travels with the revision, not after it)
+
+| # | File:line | Exact current text | Why it changes | Proposed text or handling | Owner |
+|---|---|---|---|---|---|
+| M2 (rev.) | `chapters/12-after-capacity.md:79` | "The compiler has to compile. Chapter 11’s store that builds itself still needs its business experiment: an experience can convince the experts and the model and still fail the customer. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong." | **False** after the rewrite (DE 0.2). The chapter is no longer the store and is not titled so. | As before, with DE's narrowing: "The compiler has to compile. The lessons in Chapter 11 still need their real learners: a lesson can convince the reviewers and the model and still fail the learner. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong." **Seed warning (EGGS F2):** line 77 is the camel anchor "camels are native to Croatia"; the edit must not reword 77, and `bash resources/editorial/check-eggs.sh` runs after it. **DE: the chapter cannot be accepted unless this edit is accepted with it, or the founder records that he wants the tension.** | F, WR; HB brings it with the revision |
+| M3 (rev.) | `chapters/12-after-capacity.md:235` | "I have not run that weekend. A hundred agents is a picture, not a measured capability or a cost estimate." | **In direct tension** with Chapter 11, which now shows about a hundred agent roles running for under five days, with measured tokens (DE 0.2). Revision 1 deleted the recap that said "one founder and about a hundred roles of agents did in under five days", but §2 and §3 still give the scale ("about a hundred roles"; 26 → 99), so the tension stands. | DE's narrowing: keep the honesty, narrow the claim. E.g. "I have not run that weekend. A hundred agents on a week of lessons is no longer only a picture; a hundred on an irrigators' weekend is, and so is its cost." Founder's choice of wording. **Same condition as M2.** | F; HB brings it with the revision |
+| M4 | `chapters/12-after-capacity.md:89` | (unchanged; see row M4 above) | DE 0.2 also names it ("strained the same way"). | Founder's choice, as before. | F |
+| M6 (withdrawn) | `chapters/12-after-capacity.md:169` | "…if we build it to teach as well as to answer." | DE 8.1 and ARC 4: the old Chapter 11 recap spent this line. **Revision 1 removed the phrase from Chapter 11**; the bet is stated in Chapter 11's own terms in §2. | **No change needed.** Row M6's earlier note ("the phrase now has a referent") is withdrawn. | — |
+
+### 7.2 Note on Evidence
+
+| # | File:line | Exact current text | Why it changes | Proposed text or handling | Owner |
+|---|---|---|---|---|---|
+| M8 (rev.) | `chapters/appendix-note-on-evidence.md:20` | "\| 11. The Store That Builds Itself \| My prototype store, its customers and a proposed business experiment \| Prototyped; the business experiment has not run \|" | **False in all three columns** (FC "Evidence categories"). Also a **title mismatch** (7.3). | FC's proposal (FC-supplied, so it **needs an independent check** before use; the founder decides): "\| 11. Guess First \| System 3 Company's own records (lesson files, gates, incident reviews, decisions, release log, token ledger), two of its mechanisms rerun by the press from committed scripts, and my prototype store \| Reported from the company's records, much of it agents' testimony; two mechanisms run; the store prototyped; no learner outcome measured \|". Note for the founder: Revision 1 no longer says in the chapter that the press reran anything (DE 5.4), so "rerun by the press" would appear only here; "rerun from committed scripts" works without naming the press. | F (category: FC proposes, someone else checks) |
+| M9 (rev.) | `chapters/appendix-note-on-evidence.md:5` | "The stories of companies, teams and people come from my experience. Names, companies and details have been changed, and some are composites or embellished. I do not say which is which, because none of them is offered as proof." | **Direct conflict** with Chapter 11 (FC "Evidence categories", M9): the chapter names System 3 Company and reports its real records, with no composites (brief §4.6), and Revision 1 adds "The company is mine. I founded System 3 Company…" A reader told on page one of the Note that companies and details "have been changed" will discount the one chapter that is not changed, or think the Note is false. | Add after it (as before): "The exception is Chapter 11. Its company, its incidents and its numbers are reported from the company's own records, dated, and are not combined, changed or moved in time." If the founder prefers, a shorter form: "Chapter 11 is the exception: the company is mine, it is named, and nothing in it is changed." **Founder's call (FC: "That is the founder's call").** | F |
+
+### 7.3 Title and filename mismatches (ARC 2, FC "Chapter title", EGGS "Outside this lens")
+
+The chapter heading is "Chapter 11: Guess First" (D2, working). Every file below still says "The Store That Builds Itself" or describes a store chapter. None is edited; each changes only after the founder accepts the title (D2), and the filename stays (D3) unless he decides otherwise.
+
+| # | File:line | Exact current text | Proposed handling | Owner |
+|---|---|---|---|---|
+| T1 | `chapters/11-the-store-that-builds-itself.md` (the filename) | — | **Kept** (D3). If renamed: `book-design/curated/book-order.json:20`, `provenance.json:20`, the register's camel row and `check-eggs.sh` anchor file, `prompts/notebooklm/sources.json`, every `#ref-11-*` link stays (anchors are not file-based). One decision, one commit. | F, then RM/ENG |
+| T2 | `book-design/curated/provenance.json:20` | `"11-the-store-that-builds-itself.md": "Chapter 11: The Store That Builds Itself"` | `"Chapter 11: Guess First"` (P5). | RM, ENG |
+| T3 | `chapters/appendix-references.md:509` | "## Chapter 11 — The Store That Builds Itself" | "## Chapter 11 — Guess First" (M14). | F, ENG |
+| T4 | `chapters/appendix-note-on-evidence.md:20` | "\| 11. The Store That Builds Itself \| …" | With M8. | F |
+| T5 | `prompts/notebooklm/chapter-11.md:1, 10, 15` | "# Chapter 11: The Store That Builds Itself: video brief"; "Adapt … 'Chapter 11: The Store That Builds Itself'…"; "A store that builds itself would compose ways to help…" | Regenerate after acceptance (P7). | RM, ENG |
+| T6 | `prompts/build_notebooklm.py:85` and `:210` | `11: dict(idea='A store that builds itself would compose ways to help, not rank more products…'`; "The store that builds itself; capacity over power…" | The generator holds the source text for T5 and T7: change it here, then regenerate. Suggested idea line: "A company of agents built from this book makes a minute that asks for a guess first, and the one guess it has not tested is its own: that the minute teaches anyone." | ENG (text: F) |
+| T7 | `prompts/notebooklm/book.md:20` | "8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The store that builds itself; capacity over power, and finding out how much more a person can be." | Regenerated from T6. | ENG |
+| T8 | `resources/art-direction/chapter-openers.md:21` | "\| 11. The Store That Builds Itself \| cover-189.png \| Enhanced print derivative \|" | With P2 (new opener brief). | AD |
+| T9 | `resources/editorial/llm-tell-review-2026-10-10.md:303`; `resources/archive/…`; `resources/art-direction/evaluations/2026-08-26-…:276` | old titles in dated records | **No change**: dated records describe the text they reviewed. | — |
+
+### 7.4 If the founder cuts the store block (DE 3.1: one decision, not five)
+
+The store block is §3's first five paragraphs, from "After years working on ranking and recommendations…" through "…research, education or the organization doing the building.", plus the 11:7 AUTHOR comment and the Ask 2 comment. Cutting it requires, in the same commit:
+
+| # | Where in the chapter | Current text | Handling |
+|---|---|---|---|
+| C1 | §3, the hinge | "System 3 Company is education and the organization doing the building at once. It makes lessons, and agents do almost all of the work." | → "System 3 Company makes lessons, and agents do almost all of the work." |
+| C2 | §6 | "When I designed the store, the first test I wanted was deliberately boring, and it had to beat a simpler page. The company went to fourteen subjects in its first week." | Needs the founder's own sentence, or → "The company went to fourteen subjects in its first week." (the juxtaposition is lost; DE 6.1 rates it the sharpest in the chapter). |
+| C3 | §7, opening | "The store's idea about the objective is now a file. In the company it opens a protected document the founder owns: …" | → "In the company a protected document the founder owns opens with one sentence: …" |
+| C4 | §7 | "So the page I once complained was dumb between its modules is now a feed kept dumb between its cards, by a written decision." | Cut. |
+| C5 | §7 | "The company's mission even quotes one of my store sentences back at me, as its own: …" and "…is the live test of the store's best idea." | → "The company's mission says: …"; "…is the live test of the idea." |
+| C6 | references | `ref-11-slate` [1] | Remove from `appendix-references.md:511` in the same commit, or the build fails; `ref-11-store-pearl` becomes [1] and its in-text number changes (M15). |
+| C7 | the 11:7 AUTHOR comment | (verbatim) | Removal needs the founder's recorded acceptance in the same decision. |
+
+### 7.5 Seeds (EGGS)
+
+| # | Item | Handling |
+|---|---|---|
+| S3 | Heading "The Student Has Not Been Asked" pays `03-deep-mode.md` "The student has not yet been asked." (DE 8.5) | Proposed register row for whoever keeps the register, author to confirm. The writer does not edit the register. Do not explain it anywhere. |
+| S4 | The recall question (EGGS F8, MOM 3) | **Closed in the chapter**, not registered: §8 now gives the answer ("about 1 in 100") and says no person has answered it. If the author wanted it as a seed paying off elsewhere, he tells the head of book and the §8 sentences are cut. |
+| S5 | Tongue and ear near the narrator's "made by something that is not one" and the italic title *Can a knot match its mirror?* (EGGS F3) | Author question, unchanged in the text. |
+| S6 | 11:53 PM (EGGS F7) | The draft's remaining clock time is "12:45 UTC" (24-hour, UTC). Copy editor: do not convert. |

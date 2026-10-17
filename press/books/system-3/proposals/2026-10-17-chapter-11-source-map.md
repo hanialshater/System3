@@ -3,6 +3,8 @@
 owner: writer-system-3 (Callum) · for: **fact-checker-system-3 only** (brief §5.4). Not for the development editor or the panel: evaluators read the text first.
 chapter: `chapters/11-the-store-that-builds-itself.md` on branch `ccr-fd4ebbbc-p06k8x` (uncommitted draft)
 evidence: record = `press/books/system-3/experiments/2026-10-company-case-study/record.md` (IDs A1-A9, B, C1-C15, D, E, F, G); FC = `resources/evaluations/2026-10-17-fact-check-company-case-study.md` (row numbers); CR = `/home/user/system-3-company` at `e84b8784`, read-only.
+**Revision 1 (2026-10-17) is at the end of this file and supersedes the rows it names. Read it first.**
+
 status: **writer's map. Nothing here is checked by me; I may not mark my own work checked.** Where the FC corrected the record I used the FC value. Items marked **X** are not in the record or the FC and must be added from company sources before they stay. Items marked **W** are things I computed or read myself from company code: the fact-checker must recheck them, because the writer is not a checker.
 
 Quotes are abbreviated with "…" where the sentence is long; locate by the opening words.
@@ -157,3 +159,156 @@ Quotes are abbreviated with "…" where the sentence is long; locate by the open
 ## Not in the prose (deliberately)
 
 C2 "one in six" (withdrawn, FC row 58); C3 backend engineer (withdrawn, FC row 60); C4; C8 as a contradiction (D16); C10, C11, C12, C13, C15; persona names; vendor, repository, URL and model names; release numbers, board ids, amendment numbers, file paths.
+
+---
+
+## Revision 1 (2026-10-17): every changed or new sentence
+
+For **fact-checker-system-3 only**, as before. Text: `chapters/11-the-store-that-builds-itself.md` after Revision 1 (uncommitted). CR = `/home/user/system-3-company` at `e84b8784` (the company's head moved to `42738e6d`, 15:58Z, during this revision; counts are pinned to `e84b8784`, 14:21:02Z, as in the FC). FC = `resources/evaluations/2026-10-17-fact-check-ch11-draft.md` (row and item numbers). FC-CS = `resources/evaluations/2026-10-17-fact-check-company-case-study.md`. Old = old chapter at `6a4912c`. **Nothing here is checked by me.** Rows of the original map not named below are unchanged, except that every "As of 17 October" in them is now covered by the single dating sentence (R2.1).
+
+### §1 (FC corrections only)
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R1.1 | "Nothing in the lesson itself works until you pick one and lock it in." | `src/kit/Lesson.tsx` 102-110 ("Lock it in"); FC item 9 | 1.3 | described artefact |
+| R1.2 | "It also gives the other two towns, which opened once you had tested the full one: at 1 in 100, ten of twenty… at 1 in 10 it is 99 of 108." | `Demo.tsx` 146, 205-230 (`unlocked`, `inReveal`); meta c4, c9; FC item 5 | 1.9 | described artefact |
+| R1.3 | "…in a 1978 Harvard study the most common answer to a similar question was 95%." ("about 2%" removed) | `Demo.tsx` 138-141; meta c6; FC item 12 | 1.10 | described artefact |
+| R1.4 | "…and a scripted browser test pressed every button." | `tests/qa/contract.spec.ts`; FC item 10 | 1.13 | observed |
+| R1.5 | "Every factual sentence the card showed you is written down somewhere with an address." | meta c1-c9 against `Demo.tsx` strings and the recall card; FC item 11 | 1.14 | observed for this lesson |
+
+### §2
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R2.1 | "The company is mine. I founded System 3 Company on 12 October 2026, and its records call me the founder, so I will too. Every figure here is as it stood on the 17th, when the company was not yet five days old and had about a hundred roles, all of them agents except mine." | 99 roles in `tools/org/roles.mjs`, `founder` the only non-agent (FC rows 40, 45); founder = author: `press/README.md` ("The founder is the author"); founding decision `company/decisions/2026-10-12-company-structure.md` (dated 2026-10-12); first commit 22:51:34Z on 12 Oct (FC row 41); span 4 d 15:29 to `e84b8784` (FC row 42). **X (new)** | — (the single dating device) | observed |
+| R2.2 | "It was built to make minutes like that one: a guess, a town, a reason, and the same idea coming back days later as a question." | `company/mission.md` 5-8 ("Days later the idea comes back as a single question"); A1 | — | designed (mission) |
+| R2.3 | "The bet worth following… changes what she believes, and that it stays changed. Most of what follows is evidence about something easier." | argued; surface-value items 3-4 ("teaches", "remembered") | — | argued |
+| R2.4 | "0.99 × 0.001 over the sum of itself and 0.01 × 0.999, which comes to 0.0902" | meta c3 `source`; FC row 19 | 2.1 (wording) | observed |
+| R2.5 | "The other eight cover the rest of the card, from what '99% accurate' means here to the counts on the full town, the Harvard study, the reveal's general sentence and the question that comes back days later." | meta c1, c2, c4-c9; FC item 4 | 2.2 | observed |
+| R2.6 | "The lessons marked published carry 3,891 verified claims, and the builder role verified none of them." | FC row 28 (at `e84b8784`) | 2.8 | observed count |
+| R2.7 | "…was refused publication because a single claim was still unchecked." | `releases.json` 509, 511, 530; FC item 13 | 2.9 | observed |
+| R2.8 | "By the company's own log, the builder that wrote the 9% and the fact-checker that checked it ran on two models from the same vendor." | `events.jsonl` `tx-c048ddb23a` (builder, ledger `model: null`, session model; 10-13 COE "Opus builders"), `tx-ef796c2d40` "Dispatch fact-checker (sonnet)", ledger `L-tx-dd4fbd8241` `"model":"sonnet"`; FC item 1. Model names generalised (brief §5.1, D5). | 2.11 | the company's log (backfilled; its testimony) |
+| R2.9 | "What differs is the model, the role file… What they share is a maker. One model family checking itself is still one witness wearing different coats…" | argued; FC item 1's "one family" wording | 2.11 | argued. **Second check** (FC-supplied framing) |
+| R2.10 | "Even my own words to the company reach its files through an agent that wrote them down." | FC-CS row 94; throughput record line 5 ("recorded by: chief-of-staff"); Safari record line 8 | replaces the per-quote caveats (5.9, 7.18) | observed pattern. **Second check** (rests on FC's own ruling, FC N rows 74, 128) |
+| R2.11 | "Everything else here is the company's account of itself, written by the agents it describes. I say so once, here, rather than at the end of every paragraph." | argued (evidence rule; brief §4.5) | — | argued |
+| R2.12 | "And 'verified' deserves what the card did to '99% accurate'… nobody knows either rate." | argued; no record measures a checker's miss rate (EXP-001 not run, FC row 99) | — | argued; the negative rests on A9 |
+| R2.13 | "A day later a separate fact-checker session marked both verified, and its record calls itself independent. The first checker had asked for 'a checker other than the fact-checker'. That check is not on record, and the gate passed both claims anyway…" | `company/reviews/base-rates/2026-10-13-fact-check.md` line 3 ("Checker: fact-checker (independent of the 2026-10-12 checker who added c7 and c8)"); `2026-10-12-fact-check.md` line 65; events ·aea2, ·5dad; FC item 2 | 2.13 | observed. Wording is FC's, adapted: **second check** |
+
+### §3
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R3.1 | Store block, paragraph 1 (two sentences) | Old 11:5 verbatim | 3.1 | the author's own text |
+| R3.2 | "The models inside a store's recommendation modules may be very good. The strange part is one layer above them. The page is smart inside the modules and surprisingly dumb between them." + slate sentence [1] | Old 11:15 (trimmed: "even though the models inside those modules may be very good"; "The strange part is one layer above them." verbatim); old 11:67; `ref-11-slate` | 3.1 ("My complaint was simpler" removed) | the author's own text |
+| R3.3 | "The design's best idea was about the objective." | Writer's connective (was §7's "The best idea in the store was about the objective"); author to confirm | — | the writer's judgement in the author's voice |
+| R3.4 | "The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not, and a system that pretends only one of these matters is hiding politics inside a scalar." | Old 11:191 (merged two sentences) | — | the author's own text |
+| R3.5 | "I wanted those trade-offs written into the design, where someone can question them. If margin is part of the objective, admit it." | Old 11:193 (**tense changed** from "I want"; author to confirm), 11:195 verbatim | — | the author's own text |
+| R3.6 | "If your ecosystem rewards clicks, clickable organisms evolve." | Old 11:111 verbatim (plants the §7 callback; EGGS F9a) | — | the author's own text |
+| R3.7 | "The first test I would run was deliberately boring: one placement, a small number of validated customer problems, a simple composition mechanism and an authored objective before a learned one. It had to beat a strong static page, and it had to beat simplification, because perhaps the best response to an overloaded page is fewer things. The system should have to earn its complexity." | Old 11:201 (**tense changed** from "is"; list trimmed), 11:205 (condensed; last sentence trimmed) | 6.5 (moved here) | the author's own text |
+| R3.8 | "System 3 Company is education and the organization doing the building at once. It makes lessons, and agents do almost all of the work." | A2; FC row 40 | 3.2 | observed |
+| R3.9 | "The vision written on the first day planned eight subjects and about twenty lessons for the quarter. By the 17th the org data listed 99 roles, and the repository held 1,283 lessons in 14 subjects, from probability to history, 720 of them marked published." | FC rows 45, 46, 47 | 3.4, 3.5, 3.6 | observed |
+| R3.10 | "All of these roles run on one vendor's models, through an account with usage limits the company has already hit." | `company/rituals/records/2026-10-13-coe.md` ("The account hit its session usage limit (HTTP 429, resets 03:30 UTC)"); EXP-003 ("under the usage limit"); FC item 26 | 3.9 | observed. **Second check** (FC-supplied wording for an unverifiable row) |
+| R3.11 | "Its ledger, which has gaps, records 113.1 million tokens of agents' work by 16 October." | `ledger.jsonl` 992 rows, 948 with tokens, 113,129,260; FC rows 51, 52 | 3.10 | the company's ledger. **Second check** (FC N 52) |
+
+**Moved out of the prose (values kept here):** first commit 22:51:34Z on 12 October; 2,718 commits on the **default** branch (`ccr-4c6c7654-ew9ko1`) by 14:21:02Z on 17 October (FC item 14); 72 roles by the night of the 13th (`progress.md` 2278-2282, a handoff count); "so the real figure is higher" (cut: an inference from 44 null rows and the excluded main session).
+
+### §4
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R4.1 | "Its principles file takes most of the lines of the Zen of System 3… and gives each a practice and the file where the practice lives." | `company/principles.md`; FC item 6 (31 of 41 by FC's count) | 4.1 | observed |
+| R4.2 | "Its decision template has a heading, 'Rests on', and the founding decision rests on three chapters of this book." | `company/decisions/README.md` 15; structure decision 22-23; FC item 16 | 4.2 | observed |
+| R4.3 | "…the press is also a company of agents running on the same vendor's models… The witness and the subject come from one family of models all the way down. In that whole chain, the author is the one reader who is not a copy of any of them…" | `press/org/roles.mjs` (`inherit`); company `roles.mjs` (48 `sonnet`, 49 `inherit`); FC item 17 | 4.5 | observed / argued |
+
+### §5
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R5.1 | "Three warnings came true against the design built to heed them. Two are this book's. The company had written the third down itself, a day before it happened." | Warning 1: Ch5:28 ("The organization was the bug"), 5:174. Warning 2: Ch10:49 ("Its usual failure is that it never comes down"). Warning 3: `company/knowledge/patterns/a-rule-without-a-mechanism-is-a-wish.md` ("New 2026-10-14"; incident 2026-10-15). FC item 27 | 5.0 (intro) | argued; dated |
+| R5.2 | "…narrow roles under managers, and by 16 October a map of twenty areas of work, each with a manager." | structure decision (26 narrow roles); `2026-10-16-poc-map-and-dispatch-requests.md` line 16; FC item 7 | 5.1 | designed |
+| R5.3 | "That day its own retrospective counted the previous 48 hours… every one of the 223 assignments in the log for that window named it as the sender." | retro 4, 7, 12-13, 47; FC row 64 ("dispatches" translated to "assignments", "actor" to "sender": DE 5.2) | 5.2 | the company's own count |
+| R5.4 | "…the coordinator sends work only after asking the manager responsible what to run… had been started without asking…" | founder rule 2 (line 16), lines 35, 41; FC rows 68-69 | 5.5, 5.6 | designed / observed |
+| R5.5 | "The fix is written down; whether it works has not been measured." | FC row 70 | (wording) | designed, not measured |
+| R5.6 | "Of everything in the records, this result cuts hardest against the book… At the least, that narrows the emergence claim…" | argued; retro 52 ("Gates held while the delegation did not") as the basis for "the parts that held were written as code" | — | argued |
+| R5.7 | "The second is the failure the book calls bureaucracy's usual one, that it never comes down." | Ch10:49 | — | the book's text |
+| R5.8 | "On 16 October, by its own count, new builds took 8%…" | throughput record 11-17; FC rows 71-72 | 5.7 | the company's own count, not recomputed |
+| R5.9 | "Fluent autonomy, as I have described it, forms the institution a request needs and takes it down when the work is done. This one stayed up, and the standing part ate most of the day." | Ch10:39 (definition); throughput record ("the rest is the machine around it"; builds 8%) | — | argued from the company's numbers |
+| R5.10 | "…and his complaint is on file: 'What is going on you are working all the day but number of demos did not move'" ("as an agent transcribed it" removed; see R2.10) | throughput record line 8; G | 5.9 | founder's words via an agent. **Second check** (FC N 74) |
+| R5.11 | "The hosting service built the commit and put it live." | API statuses for `aefb10a` (12:50:23Z "Deployment has completed"); FC row 78 | 5.12 (wording) | observed (third party) |
+| R5.12 | Deploy paragraph 2 ends "That part was luck." | COE 8, 12-13 | 5.13-5.15 | observed |
+| R5.13 | "All four are still in the backlog." | `board.json` W-1051..W-1054 `backlog` at `e84b8784` | 5.16 | observed. **Pre-release refresh** |
+| R5.14 | "The last of its five whys lands on a person: the chief of staff took the agent's report as truth and did not check the hosting service's records." | COE line 21 ("…did not check Vercel commit statuses after the release manager's commits") | 5.17 | observed. **Second check** (FC N 85) |
+| R5.15 | "…and nothing happened, because a push like that no longer creates anything for the word to start." | `vercel.json` `git.deploymentEnabled: false`; `54aa64e3` 0 statuses; F-48 (old branches still deploy on push until they merge); FC item 20 | 5.19 | observed. **Second check** (my wording; the old-branches caveat) |
+| R5.16 | "…written from four cases, all found on one day. The catch itself came from checking the disk instead of believing the report. Let the LLM narrate. Do not let it declare reality." | pattern file 1-20; retro 51; old 11:171 (author's heading) | 5.20-5.22 | observed / the author's line |
+| R5.17 | "It shows that nothing unchecked was marked published. Lessons still in review are on the site as well, tagged 'In review', by the founder's choice. And it cannot show that 'checked' means more than one model agreeing with another from its own family." | `company/decisions/2026-10-15-founder-show-review.md`; surface-value line 23 (feed order "published first, then lessons in review, labelled as such"); `releases.json` 511, 595; FC item 3 | 5.23 (and FC row 93) | observed / argued. **Second check** (FC-supplied wording) |
+
+**Moved out of the prose (values kept here):** retro's "testimony-grade" label is on its lane-by-lane matrix (line 21; source of "about 99%"); the 223 is in its "measured here" table (line 7); the event log was backfilled afterwards, and today's version of the window holds 372 events, all `chief-of-staff`, 5 with `batch=` (FC-CS correction 7; FC N 67: **second check**); throughput numbers are the company's, not recomputed; the hosting service's commit statuses show the build of `aefb10a` and the other two commits cancelled (FC item 19); `press/books/system-3/experiments/2026-10-company-case-study/deploy-marker/replay.sh` (committed) reruns the old filter against the saved messages and matches the marker in `aefb10a` only: the **filter's** part is run, what the founder was told is recorded (FC N 82: **second check**).
+
+### §6
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R6.1 | "All of this costs something." | — | (signpost cut) | — |
+| R6.2 | "The founding decision says it should be revisited if the cost per published lesson is more than three times a single-agent baseline with no gain in quality." | structure decision 26-28 ("more than 3× a single-agent baseline with no quality gain") | 6.1 | designed |
+| R6.3 | "The founding review's first objection, that 26 roles was heavy for 17 lessons, was marked open and funded with the first experiment and a cost comparison. Nobody has run the comparison." | structure decision 33 ("Raised by: founding review"; "open, funded: EXP-001 plus a cost comparison in the first OP"); FC items 21, row 97 | 6.2 | designed, not run. **Pre-release refresh** |
+| R6.4 | "When I designed the store, the first test I wanted was deliberately boring, and it had to beat a simpler page." | Old 11:201, 11:205 (callback to R3.7) | 6.5 | the author's position (tense: author to confirm, FC row 100) |
+| R6.5 | "By that line, the company is so far branding. Its structure has not yet been put anywhere it could lose, and it stops being branding on the day the dull arrangement is run against it with permission to win." | argued from the A/B line, R6.3 and FC row 99 (no experiment has a result) | — | argued, in the author's voice; **Ask 9 asks him to confirm or replace** |
+| R6.6 | "…and the review record says every one was caught. The scripts were never committed and are gone. A new harness, written for this book, reproduced 15 of the 22 exactly and ran them against the company's committed tests. All 15 were caught, each with exactly the failing count the record printed." | readiness record 73-88, 112-128; `press/…/plant/` (`result-2026-10-17.json`); FC rows 103-105 | 6.8-6.10 | testimony in a record; **run** |
+| R6.7 | "So the tests can fail. The test this book proposes for its own central claim is a different one… The company adapted it, for a false claim planted in a lesson, as its first experiment, which is one of the eight without a result. The planters and the harness writer were all copies of one model, but the tests are code." | Note on Evidence "A Test Still to Run"; `EXP-001-planted-false-claim.md`; FC item 22, rows 107, 109 | 6.11 | designed, not run / argued |
+
+**Moved out of the prose:** the harness ran at company commit `e84b8784` (the default-branch head at 15:46Z), not at the commit the study feature was approved at (FC-CS correction 6; FC N 106: **second check**). 7 of the 22 bugs could not be reproduced exactly.
+
+### §7
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R7.1 | "The store's idea about the objective is now a file. In the company it opens a protected document the founder owns: 'If the objective is not written down where someone can argue with it, it enters through invisible overrides.'" | `company/product/surface-value.md` lines 1-5 (verbatim first sentence); `protected-paths.txt` 5 | 7.1 | quotation |
+| R7.2 | "…it teaches its point…" | surface-value line 15 ("It teaches the payoff. Borrowed-mind reviewers can name the idea after the reveal…"): the writer's gloss | 7.2 | designed |
+| R7.3 | "So the page I once complained was dumb between its modules is now a feed kept dumb between its cards, by a written decision." | `2026-10-12-feed-is-not-personalised.md`; surface-value "For the feed" ("Order is subject round-robin… It is not personalised and it says so"); R3.2 | 7.5 ("Both ideas began in the store" removed) | argued |
+| R7.4 | "…quotes one of my store sentences back at me, as its own: 'If our ecosystem rewards clicks, clickable organisms evolve.'" | `mission.md` 24-25; old 11:111; FC item 23 | 7.6 | quotation |
+| R7.5 | "the form this book keeps warning about" | Ch6:333; Ch12:55, 219; FC item 8 | — | argued |
+| R7.6 | "On 15 October the founder proposed an amendment that would make the feed smarter between its cards, with rule-based personalization, and add one labelled ad slot in the same draft. It is drafted and not ratified." | AMD-008 header (2026-10-15; `proposed_by: founder`; "proposed (draft, not applied)"); "smarter between its cards" is the writer's gloss of rule-based personalization | 7.8 | observed. **Pre-release refresh** |
+| R7.7 | "By the company's own pattern, a rule without a mechanism is a wish, and the fair question to put to 'never used to rank' is which of the two it is." | pattern file; surface-value line 19 | — | argued (no claim that a mechanism does or does not exist) |
+| R7.8 | "One override of a launch review's ruling is on record." | Safari record; r9 launch record; FC N 122 (the 2026-10-16 behavioural-pilot exemption is from a gate ruling, not a review's) | 7.12 | observed. **Second check** (FC-supplied narrowing) |
+| R7.9 | "He answered the release summary with 'Deploy', and on the Safari question he chose the option labelled 'Ship it anyway'." | `2026-10-17-founder-deploy-r9-left-or-right-safari.md` lines 11-12 | 7.16 | founder's words via an agent. **Second check** (FC N 126) |
+| R7.10 | "The record states the risk, what would prove the decision wrong and how to revert it, and says the waiver is not a verification and does not carry to any later deploy." | Safari record 17-30 | 7.17 (unchanged; moved after the quote) | observed |
+| R7.11 | "Whether that is the system working or the second way things go wrong, where the records keep coming out and the objection stops mattering, depends on what would happen if he was wrong." | interlude lines 17, 21 (argued) | (replaces "That is the system working as designed… I would not soften either half.") | argued |
+| R7.12 | "The record names what would show it: a Safari run, which the company's machines cannot do, a check on a real iPhone, or a report from a learner." | Safari record, "What would make this decision wrong" ("A WebKit/iOS Safari failure… found by `c1-check.mjs` with `ENGINE=webkit`, a real iPhone check, or a learner report"); "No WebKit run and no real iPhone check exists"; r9 ruling 2 (e). **X (new)** | — | observed |
+| R7.13 | "Nothing is ratified without the founder. A learner can open the sheet and see what any claim rests on." | constitution Art. 3.2; AMD-012 110-112; FC item 24 and row 131 note | 7.19 | designed |
+
+**Moved out of the prose:** "Those words reached the file second-hand: the release manager wrote them down from what the chief of staff relayed." (Safari record line 8; FC N 128: **second check**). The permission comment still says so.
+
+### §8
+
+| # | Sentence now | Source | Supersedes | Category |
+|---|---|---|---|---|
+| R8.1 | "Then it adds: 'Simulated learners find problems…'" ("to its credit" removed) | `DemoCard.tsx` 130-134 | 8.1 | quotation |
+| R8.2 | "It is empty in all 1,283 lessons." | FC row 133 | 8.2 | observed count |
+| R8.3 | "The question that was supposed to come back days later has an answer, about 1 in 100: out of 10,000 people, about one sick person tests positive and about a hundred healthy ones do too." | meta `recall.answer: 2` ("About 1 in 100"), `recall.why` ("Out of 10,000 people, about 1 sick person tests positive, but about 100 healthy people do too…"); claim c8. **X (new)** | — | described artefact (the lesson's own answer) |
+| R8.4 | "The company has no record of a single person answering it." | FC row 14 (WBRs 10-13 to 10-16: recall "no data"); `humanLearners: []` in all lessons; `progress.ts` keeps revisits on the learner's device. **X (new): check** that no recall data reached any company record by `e84b8784` | — | observed absence |
+| R8.5 | "Whether a lesson teaches is the question my first teaching demos left open, and a company of agents has not closed it." | Ch3:11, 3:79 ("putting the thing in front of somebody who does not already understand Merge Sort"); Ch3:321 "Whether the demos teach humans any better is a question only human learners can answer." | — | the book's own text / argued |
+| R8.6 | "On the afternoon of the 17th, most of what the company had made since 15 October was not yet on its public site." | `curl` GETs at 15:53:26Z (FC N 139): `/` cached ~2026-10-15 13:24:33Z; four lessons published later 404; deploy run `39042065255` still `in_progress` | 8.8 | observed (third party). **Second check, fresh timestamp**: my narrower wording; a CLI/dashboard deploy is still not ruled out |
+| R8.7 | Recap paragraph | **deleted** | 8.9 | — |
+| R8.8 | "…when the people it is for have not been given a say?" | argued (constitution: no learner standing, Art. 3, 6.3) | 8.10 area | argued |
+
+## Second-check list (Revision 1)
+
+Sentences that rest on a value or wording the fact-checker supplied, or on the fact-checker's own earlier rulings. Under the role rule, **fact-checker-system-3 may not verify these**: a second fact-checker instance or the experiment developer checks each one against company sources.
+
+| # | FC row | Sentence in the revision | What the second checker confirms |
+|---|---|---|---|
+| S1 | 52 (N) | "Its ledger, which has gaps, records 113.1 million tokens of agents' work by 16 October." (R3.11) | 948 of 992 rows carry tokens; the main session is excluded; the total and the last row's date. |
+| S2 | 67 (N) | (moved out) backfill and 372 events, all `chief-of-staff` | That the moved values in R5's "moved out" note are right, in case the founder wants them back inline. |
+| S3 | 74 (N) | "…his complaint is on file: '…'" and R2.10 "Even my own words to the company reach its files through an agent that wrote them down." | The quotation is verbatim at throughput line 8; line 5 "recorded by: chief-of-staff"; the general claim holds for every founder quotation in the chapter (two records). |
+| S4 | 82 (N) | (moved out) the replay | "The filter's part is run" is the right category; the replay matches only `aefb10a`. |
+| S5 | 85 (N) | "…did not check the hosting service's records." (R5.14) | COE line 21 supports the narrowed wording. |
+| S6 | 106 (N) | (moved out) "at `e84b8784`" | The harness ran at that commit, not at the approved state. |
+| S7 | 122 (N) | "One override of a launch review's ruling is on record." (R7.8) | No other founder waiver of a **review's** ruling exists by `e84b8784`; the behavioural-pilot exemption is a gate ruling. |
+| S8 | 126 (N) | "He answered the release summary with 'Deploy', and on the Safari question he chose the option labelled 'Ship it anyway'." (R7.9) | Sequence and wording against Safari record lines 11-12. |
+| S9 | 128 (N) | (moved out) "the release manager wrote them down from what the chief of staff relayed" | Record line 8; the permission comment's wording. |
+| S10 | 139 (N) | "On the afternoon of the 17th, most of what the company had made since 15 October was not yet on its public site." (R8.6) | Fresh GETs and deploy-run state; whether any non-GitHub deploy happened. |
+| S11 | items 1, 2, 3, 20, 26 (FC fixes) | R2.8-R2.9, R2.13, R5.17, R5.15, R3.10 | FC header: "Every fix in items 1-27 is also mine, so each needs an independent check before use." These five are the ones whose wording I took from the FC rather than from the source alone. |
+
+New X items for the fact-checker (not in any earlier check): R2.1 (founding date as stated), R7.12 (what the record names), R8.3-R8.4 (the recall answer and the absence of recall data).
+
+**Pre-release refresh** (DE 0.3; head of book schedules): R5.13 (four incident actions in the backlog), R6.3 (baseline not run), R6.7 (EXP-001 without a result), R7.6 (amendment not ratified), §8 five-learner test not run, R8.6 (public site). If any of these changes before print, the paragraph that rests on it changes meaning, not just number.
