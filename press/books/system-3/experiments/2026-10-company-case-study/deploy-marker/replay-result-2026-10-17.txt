@@ -4,3 +4,11 @@ aefb10abc rc=1 BUILD  subject: Release r7 entry drafted as pending (awaiting fou
 d8f5f8987 rc=0 skip  subject: Board: W-981 readiness withheld until integrated verify
 e6805f4a4 rc=0 skip  subject: Publish 40 lessons for r7 (patience-wins-the-split refused by the clai
 f86812702 rc=1 BUILD  subject: Vercel: build only commits marked [deploy] (stops WIP pushes using the
+
+# Notes (experiment-developer-system-3, 2026-10-17)
+# - The replay uses the filter as it stood at aefb10a (it reads VERCEL_GIT_COMMIT_MESSAGE, added in 5e8608d).
+# - f868127 and 6cbce514 were built under different filters (f868127: `git log -1 --pretty=%B | grep -q "\[deploy\]"`;
+#   6cbce514: same as aefb10a), so their replay rows describe today's logic, not what Vercel did. Vercel's statuses
+#   for them are in vercel-statuses-2026-10-17.txt (f868127 canceled; 6cbce514 rate-limited).
+# - 54aa64e3 (2026-10-17) would BUILD under this filter; nothing deployed because vercel.json now sets
+#   git.deploymentEnabled=false (F-48, cdee168c). Vercel shows no status for it.
