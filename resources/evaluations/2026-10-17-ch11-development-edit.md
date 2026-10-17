@@ -194,3 +194,24 @@ Length after the musts and shoulds: roughly 3,800-3,900 words of prose, inside t
 ## 8. Route
 
 Writer revises against the five musts and the shoulds, and answers in writing any should it declines. Head of book sends the founder the ranked asks (0.1) and the two Chapter 12 edits (0.2) together with the revision, not after the panel. Then the panel as briefed (arc, LLM tells, ideas, eggs, prose). I should not sit on the panel for this chapter (role rule: I may not review my own letter's outcome).
+
+---
+
+## 9. After the writer's note
+
+Read after sections 1-8 were written (`press/books/system-3/proposals/2026-10-17-ch11-writer-note.md`), with a check of the consequential-edits file for the Chapter 12 rows. Nothing in it changes a severity above. What it adds:
+
+- **The press count (5.4) contradicts the note.** Decision 10 says "The press is named once, in §4". The text names it three times: §4, "a script in the press's evidence folder" (§5), and "So the press wrote a new harness" (§6). The writer likely counted the deliberate naming and not the two incidental ones. Finding 5.4 stands as a must.
+- **Chapter 12 (0.2) is already listed** as M2 (12:79) and M3 (12:235) in the consequential-edits file, with proposed wording I would accept. The must is therefore about routing: the head of book should bring M2 and M3 to the founder with the revised chapter, not after it.
+- **"Teach as well as to answer" (8.1): I disagree with M6.** The writer argues the phrase "now has a referent" and asks review-arc to judge. My view: the referent is welcome, the words are not. Chapter 12 closes "Beyond Comprehension" on that phrase as its own discovery ("a condition I did not see when I first drew the curve"); arriving at it a chapter late makes Chapter 12 sound as if it is quoting Chapter 11. Say the bet in other words here, or let the reveal sentence carry it. Leave M6 for review-arc as the writer asks, with this disagreement attached.
+- **The writer's own doubts, answered.** (a) §4's "awkward thing" clause: agree, finding 4.2. (b) §5 reads most like a report: agree, and the cause is the provenance tails, not the three bites (5.3); do not cut a bite. (c) "some of it has medical degrees": keep. It is a joke that carries the Harvard point, which is the book's house style; the founder can cut it on his read. (d) "The best idea in the store was about the objective": keep as a stance, founder confirms (finding 7.3; it depends on 3.1). (e) "asked a thousand times": keep. Read against an empty `humanLearners` field it is sharper, not looser: a thousand cards asking, nobody answering. The fact-checker should only confirm that "a thousand" is honest against both 1,283 lessons in the repository and 720 published.
+- **"If the panel finds the draft thin, add to §1 and §7."** Please do not add to §1; it is finished. If the prose grows, let it grow from the founder's answers (0.1) and from finding 3.1, not from more lesson or more pressures.
+- **Safari and iPhone named.** The note offers generalising them ("one phone's browser"). I would keep them: the specific consequence ("iPhone users see the mirror-image knot") is what makes the waiver a scene. The founder decides (D5).
+- **Lines the writer added from the lesson's own code** (the empty first hundred with one positive; the eighty-second budget) are among the best details in §1. They are W items; the fact-checker should rerun them before anyone polishes the sentences around them.
+
+## Handoff
+
+- **Changed:** wrote this letter only. No manuscript, brief, register or company file touched; nothing committed. Commands run were read-only (`check-tells.py`, `check-eggs.sh`, `git show`).
+- **Believe:** (high) the shape is right and the opening and ending are the chapter's strengths; (high) the five musts are the gap between this draft and a panel-ready one; (medium) the store passage can be made to work from the author's existing sentences without new autobiography (3.1); (low, the founder's call) whether the chapter is finished without a real learner.
+- **Next:** writer-system-3 revises against the musts and shoulds; head-of-book-system-3 sends the founder the ranked asks (0.1) and consequential edits M2/M3 (0.2) with the revision; then the panel. I do not sit on the panel for this chapter.
+- **Blocked on the founder:** asks 6, 2, 5/4 and 3; quotation permissions; M2 and M3.
