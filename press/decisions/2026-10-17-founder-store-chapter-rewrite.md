@@ -4,7 +4,7 @@ owner: founder
 date: 2026-10-17
 class: commission (book: system-3, chapter 11)
 route: founder → head-of-book-system-3 (study plan, brief) → study (head of book, development editor, experiment developer) → writer-system-3 (draft) → development editor + review panel + fact-checker → writer (revision) → copy editor → head-of-book-system-3 (proposal) → founder
-status: **commissioned by the founder.** The rewritten chapter is a proposal on branch `ccr-fd4ebbbc-p06k8x`. It is not accepted until the founder accepts that specific text, quoted here.
+status: **commissioned by the founder; reviewed and checked draft awaiting the founder (2026-10-17).** The rewritten chapter is a proposal on branch `ccr-fd4ebbbc-p06k8x`. It is not accepted until the founder accepts that specific text, quoted here.
 
 ## The founder's words
 

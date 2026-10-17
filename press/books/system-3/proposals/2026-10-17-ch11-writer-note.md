@@ -291,3 +291,24 @@ All 14 kept. Added "(priority)" to Asks 6, 2, 5 and 3; Ask 4 notes it is the alt
 ### Next
 
 fact-checker-system-3 (a second instance, or the experiment developer) checks the second-check list in the source map's revision section, and the new X items; head-of-book-system-3 brings the founder the ranked asks, M2/M3 and the store-cut list together with this revision; the panel does not re-read unless the head of book commissions it.
+
+## Revision 2 (2026-10-17): answers to the second fact-check
+
+Source: `resources/evaluations/2026-10-17-fact-check-ch11-second.md` (Beckett). Applied on top of the copy edit, whose changes I kept. Every new wording below is either Beckett's or mine; none is checked. **All need an independent check** (a third fact-checker instance or the development editor), not Beckett and not me.
+
+| Item | Line | Old | New | Note |
+|---|---|---|---|---|
+| F1 | 69 | "There are 269 of them." | "There are 268 of them." | Beckett's count (dated notes only). |
+| F2 | 97 | "Across 13 and 14 October the company made 852 new lessons. Across the next two days it made 10." | "By the company's own count, across 13 and 14 October it made 852 new lessons. In the day and a half after, it made 10." | Attributed and window narrowed; kept as two sentences so the drop still lands. Moved "by its own count" out of the next sentence to avoid saying it twice. |
+| F2b | 97 | "On 16 October, by its own count, new builds took 8% of the day's 18.65 million tokens" | "On 16 October new builds took 8% of the 18.65 million tokens measured by mid-afternoon" | Beckett's wording. |
+| F3 | 71 | "All of these roles run on one vendor's models, …" | "The agents it dispatches run on one vendor's models, …" | Took the narrower alternative (true without hedging). New AUTHOR comment "Ask A1" after the paragraph: what made the `codex/` PRs; if another vendor's agent built part of the catalogue, the founder words this paragraph and the "one model family" lines. |
+| F4 | 91 | "A society of agents can turn into one coordinator with an org chart attached, and the organization becomes the bug." | "This book warns that an org chart of titled agents does not make them independent, and that the organization itself can become the bug." | Now says what the book says (Ch5:28 "The organization was the bug"; Ch5:174 titled agents and the org chart, under independence). Kept "two are this book's" framing, so §5's structure is unchanged; chose this over making the hub the company's own finding because the paragraph's force is the book being bitten. My wording, adapted from Beckett's. |
+| Opt. row 13 | 23 | "a scripted browser test pressed every button." | "a scripted browser test pressed every control on the stage." | Taken: exact (the test presses one prediction option, not every button). |
+| Opt. row 101 | 163 | "most of what the company had made since 15 October was not yet on its public site." | "none of the fifteen lessons the company had published or put in review since 15 October was on its public site." | Taken: sharper and true; the old line counted drafts the site never shows. Beckett's figure. |
+| F5 | source map §5 moved-out note and S4 row | "matches the marker in `aefb10a` only" | Beckett's fuller list (`aefb10a`; not `e6805f4`, `d8f5f89`; also `54aa64e3`, `f868127`, `6cbce514`) | Not in the prose. |
+
+Kept: every AUTHOR comment (15 now, A1 added), the camel line and the A/B line byte-identical. `check-tells.py 11`: maxim 23%, notXbutY 0.0, cite-chains 0, xref 0.0 (pass). `check-eggs.sh`: pass.
+
+Belief: (high) no prose sentence now states what the second fact-check found false. (medium) F4's wording is fair to Ch5, but "warns" is a reading of two passages, not a quotation; the development editor should judge it. (open) A1 may change L71, L39 and L83; only the founder can answer it.
+
+Next: an independent checker verifies F1-F5, F2b and the two optional rows; head-of-book-system-3 carries Ask A1 to the founder.
