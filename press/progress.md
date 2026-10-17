@@ -2,6 +2,14 @@
 
 Dated handoffs, newest first. Testimony, not truth: check the files.
 
+## 2026-10-17 · writer-system-3 (Callum), Chapter 11 draft ("Guess First") written to the brief
+
+- **Changed:** `chapters/11-the-store-that-builds-itself.md` rewritten in place on `ccr-fd4ebbbc-p06k8x` (**not committed**). Wrote `press/books/system-3/proposals/2026-10-17-ch11-writer-note.md` (writer's note, keep from reviewers), `…/2026-10-17-chapter-11-source-map.md` (fact-checker only) and `…/2026-10-17-chapter-11-consequential-edits.md` (proposals for the founder; none made). Nothing in System 3 Company touched; Chapter 13 not opened.
+- **The draft:** Shape B, eight sections with the brief's headings; 4,778 words by `wc -w` (about 4,050 prose, 725 in 14 AUTHOR comments). check-tells 26% / 0.0 / 0 / 0.0 (all targets met); check-eggs passes with no warnings; reference validation passes with both `ref-11-*` cited. FC corrections used throughout (C1 fifth why, C5 "new run at e84b8784", C6 testimony-grade, C9 "Deploy" + option label); C2 and C3 not used; C8 only as the dated sentence.
+- **Believe:** (high) brief §3 must-keeps and §4 honesty items are in the text beside their claims; (medium) voice holds best in §1, §2, §5. The source map lists new X items (vision, Article 4.3, principles line, knot title, AMD-008 proposer, retro line 52) and W items I computed from the lesson's code: the fact-checker must recheck both.
+- **Next:** development-editor-system-3 reads cold (head of book routes); fact-checker-system-3 from the source map (C8 timestamp first); founder answers the 14 AUTHOR comments and D2, D4, D5, D6, D10.
+- **Blocked:** nothing for the draft; the ending and the profession beat wait on the founder.
+
 ## 2026-10-17 · head-of-book-system-3 (Theodora), Chapter 11 rewrite: study phase closed, brief written
 
 - **Commission:** `press/decisions/2026-10-17-founder-store-chapter-rewrite.md` (founder: "ReWrite the store chapter around system 3 company… first the team need to study the book and the company then write the chapter"). Proposal branch `ccr-fd4ebbbc-p06k8x`.

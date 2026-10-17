@@ -1,239 +1,153 @@
-# Chapter 11: The Store That Builds Itself
+# Chapter 11: Guess First
 
-*A Prototype Store*
+*One Minute, One Learner*
 
-After years working on ranking and recommendations, I built a prototype store because the idea would not stay on the page. I wanted to see what would happen if the system could change the arrangement of the page around the customer’s problem.
+## Ninety-Nine Percent Accurate
+
+A card fills the screen. Its title is a question, *You tested positive. Now what?*, and under it the card says what most people are already thinking: “The test is 99% accurate. So you’re 99% likely to be sick. Right?”
+
+Then it asks you properly. A disease affects 1 in 1,000 people. A test flags 99% of sick people and wrongly flags 1% of healthy people. You test positive. What is the chance you have it? There are four buttons: about 99%, about 90%, about 50%, about 9%. Nothing else on the card works until you press one. The controls stay disabled and a line of small type says “Make a prediction to start.”
+
+So you guess. Everyone guesses something, even the people who are sure they would never fall for it.
+
+The card gives you a town. It is a grid of a thousand empty squares, a town with nobody living in it yet. You press +100 and a hundred people move in, all of them healthy. You press “Test all” anyway, and one of them lights up positive. You have a positive result in a town with no sick people, which is a strange thing to discover about your own test before you have even met the disease. You keep adding people. The first sick one arrives somewhere in the third hundred. You fill the town to 1,000 and test everyone. Eleven squares light up, and one of them has a circle around it. The line under the grid says “11 tested positive. 1 of them is actually sick.”
+
+The reveal does the division you have just done with your eyes. Eleven positives, one sick, ten false alarms, and the ten are 1% of the 999 healthy people. A positive means about 9%. Then one sentence: “‘99% accurate’ describes the test. Your chance also depends on how rare the disease is.” Two more towns open up. At 1 in 100, ten of twenty positives are sick, about half. At 1 in 10 it is 99 of 108. At the bottom, in grey, the card adds that in a 1978 study at Harvard Medical School the most common answer to a similar question was 95%, when the right answer, if the test catches every case, was about 2%.
+
+If you picked 99%, you are in good company, and some of it has medical degrees.
+
+Days later the idea is supposed to come back as a single question. A condition affects 1 in 10,000, and the test is the same kind. Of the people who test positive, roughly how many have it? Almost all, about half, or about 1 in 100?
+
+The company that made this card calls it a sixty-second lesson. Its own file budgets eighty seconds, which is the first claim in it I would check.
+
+Nobody who made that minute is a person. An agent built it, another agent checked its facts, a third pretended to be a learner and reviewed it, and a fourth pressed every button in a browser. Every factual sentence you just read is written down somewhere with an address.
+
+## Nine Claims Behind One Minute
+
+Take the sentence that did the work, that a positive result means about a 9% chance. In the lesson’s file it is the third of nine claims, and its address is `probability.base-rates.c3`. It rests on a derivation, and its source field holds the arithmetic itself, 0.99 × 0.001 divided by the same thing plus 0.01 × 0.999, which comes to 0.0902. Its status is verified, checked by the fact-checker on 12 October 2026. The other eight cover what “99% accurate” means here, the expected counts, the half and the ninety-two, the rounding on the stage, the Harvard study, the sentence the reveal ends on, and the question that comes back days later.
+
+A learner can see most of this. Under the card is a link: “Why trust this? (9/9 claims checked)”. It opens a sheet that lists each claim in plain words, says whether it has been checked and what it rests on (“a derivation (worked out step by step)”), and prints its address in tiny type. The working notes stay behind. The sheet tells you a claim was checked, and leaves out who checked it and how.
+
+And now the camel comes back: where did the claim come from, how strong is the evidence, what kind of knowledge is this, and how much trust should the system place in it before acting? Here those questions are fields in a file, and a learner can open most of them with one tap.
+
+The fields would be decoration if nothing read them. Something does. The command that publishes a lesson refuses if any claim is neither verified nor withdrawn, and it refuses a claim marked verified by the role that built the lesson. The company’s start-of-session file puts it in one line: “Builders never mark their own claims verified.” As of 17 October 2026, the lessons marked published in the repository carry 3,891 verified claims, and the builder role verified none of them. In one release a lesson about bargaining was held back because a single claim was still unchecked. On 17 October a fact-checker disputed a sentence in a lesson about knots: the builder had stated the rule for left- and right-handed crossings backwards. The claim stayed disputed until the builder rewrote it.
+
+That sentence needs a fence around it. The builder that wrote the 9% and the fact-checker that checked it run on the same model. What differs is the role file, the instructions and what each was shown first. One copy of a model catching another is still one witness wearing different coats, and every catch between agents reported here carries that limit. The witnesses that are not the model are few: the founder, code that runs, and the records kept by other companies’ systems.
+
+The gate itself shows how thin the separation is. It compares role names. Two of the nine claims, the general sentence at the end of the reveal and the recall question, were added by the fact-checker, each with a note that it “needs an independent check”, and then marked verified by the fact-checker a day later. The gate passed them, because the rule it enforces is about builders. The file has the same role name on both sides and cannot say whether the second look came from a fresh instance or from the same one on a different day. The arithmetic in both is simple. The independence the note asked for is not on record.
+
+<!-- AUTHOR: Ask 4. Is there one moment when you watched this work: a lesson you learned something from yourself, or a catch between agents that surprised you? If so, it belongs here, in your words. -->
+
+## A Company in a Week
+
+After years working on ranking and recommendations, I built a prototype store because the idea would not stay on the page.
 
 <!-- AUTHOR: What did the prototype actually do or show? A screen, a session, a surprise? One moment from the prototype would anchor the chapter. -->
 
-I have not run the business experiment. Part of the work is deciding what would be worth testing before spending two years building the grand version. I have definitely not solved shopping before lunch.
+I wanted to see what would happen if the system could change the arrangement of the page around the customer’s problem. Recommender researchers know part of this territory as slate and whole-page optimization.[1](appendix-references.md#ref-11-slate) My complaint was simpler. The page is smart inside the modules and surprisingly dumb between them.
 
-The starting problem was almost embarrassingly simple. Imagine two customers looking at the same product page.
+I have not run the business experiment. I have definitely not solved shopping before lunch. But once you can imagine a store learning that way, it is hard not to imagine the same thing in research, education or the organization doing the building.
 
-One, call her Mei, has visited several times across five days. She filtered by size and color, looked at alternatives, came back, switched between two candidates and now appears to be stuck near a decision. The other customer arrived thirty seconds ago from a search result. We know almost nothing about what he wants, how serious he is, or whether this is the first jacket he has seen in six months.
+<!-- AUTHOR: Ask 2. Why lessons and not the store? What happened to the prototype? One or two sentences in your words would let this passage hand over to the company without the book guessing. (If you cut this whole store passage, the comment above it needs your recorded acceptance to go, and reference [1] has to come out of the appendix.) -->
 
-They see the same recommendation modules in the same order, even though the models inside those modules may be very good. Mature recommendation systems can contain excellent retrieval, ranking, personalization, embeddings, sequence models and business logic. The strange part is one layer above them. The page is smart inside the modules and surprisingly dumb between them.
+System 3 Company is the last two at once, an organization that builds lessons and is run almost entirely by agents.
 
-What should the layer above do with them?
+<!-- AUTHOR: Ask 1. What made you start the company, and when did you decide to? May the book say it in your own words to the company, or in words you write now? -->
 
-## Stop Recommending for a Moment
+Its first commit landed at 22:51 UTC on 12 October 2026. By 14:21 on 17 October, four days and fifteen and a half hours later, the main branch held 2,718 commits. The founding decision created 26 roles, 25 agents and the founder. By the night of the 13th there were 72. As of 17 October the org data lists 99. The vision written on the first day planned eight subjects and about twenty lessons for the quarter. As of the same date the repository holds 1,283 lessons in 14 subjects, from probability to history, and 720 of them are marked published.
 
-The conventional recommendation question is usually some variation of:
+Each worker is a fresh session of a model. It arrives knowing nothing except what is on disk, does one piece of work and leaves a dated note at the top of a log. The log’s header describes each note as “testimony from a worker who no longer exists: check what you rely on.” There are 269 of them.
 
-> Which products should I show this customer?
+All of these roles run on one developer’s models, rented by the token. The company has logged 113.1 million tokens of its agents’ work up to 16 October, from a ledger with known gaps, so the real figure is higher. The records hold no figure for money.
 
-It is a very good question. Entire fields exist to answer it better. Retrieval finds candidates. Ranking orders them. Sequence models infer interests. Business rules remove things that should not be there.
+<!-- AUTHOR: Ask 11. How many hours a day did you spend on the company in the first week, and what did it cost in money? One real number would do more here than the token count. -->
 
-But look at Mei again. Say the two candidates are trail shoes, and she is switching between them for the fourth time.
+## Built From the Book
 
-What does she need? Perhaps more trail shoes. Perhaps not. There is a point at which another excellent candidate is not help. It is homework.
+I should say plainly what this company is, because it decides what it can prove. It was built from this book. Its principles file takes each line of the Zen of System 3, the short list of maxims at the back of the book, and gives it a practice and the file where the practice lives. Its decisions carry a heading, “Rests on”, and the founding one rests on three chapters of this book. When a company is assembled from a book’s instructions, finding the book inside it is about as surprising as finding flour in the cake.
 
-She may already have enough choice. Her problem could be that she cannot compare the two choices she has. Or that she does not trust the unfamiliar brand. Or that she cannot tell whether her normal size will fit. Or that one shoe costs more and she cannot see what she gets for the extra money.
+So resemblance counts for nothing here. What can count is what the design did not predict, what failed, and anything tested against a simpler arrangement. The parts were designed on the first day, generated from a file. If anything emerged, it is in the gap between what the file said would happen and what did.
 
-So instead of asking only which *item* is relevant, we can ask which bounded *problem* is currently relevant.
+The company knows this about itself. Its founding decision records the objection that several roles share one model, so their independence is “partly theatre”, and marks it accepted in part.
 
-The candidates have names like comparison friction, size anxiety, return hesitation, quality uncertainty, outfit visualization, filter fatigue and decision paralysis.
+There is a second turn to the recursion, and I will name it once. The company has a sibling, a press founded to make my books, and the press is also a company of agents running on the same model. It studied this company’s records, checked them, and briefed and drafted the pages you are reading. The witness and the subject share a model all the way down. In that whole chain, the author is the one reader who is not a copy of it, which is an awkward thing to have to point out about your own book.
 
-These names are hypotheses about difficulties we may be able to detect and, more importantly, do something about. I can invent an exquisitely named psychological state for every wiggle of the mouse, but if we cannot observe it well enough to test and cannot build anything that plausibly helps, we have created a taxonomy department rather than a recommender system.
-
-Shopping has nothing like an exact evaluator to tell us when we are right, but the discipline still applies. Define a problem narrowly enough that an intervention can succeed or fail. If we claim somebody has comparison friction, we need a way to distinguish a resolved comparison from a customer giving up. If we say size anxiety is the blocker, we need evidence that the signal means something and a metric that can tell us whether our intervention helped, since a click by itself proves very little.
-
-## People Refuse to Stay in the Funnel
-
-Funnels are useful because humans like diagrams that get narrower toward the bottom. Explore. Form a need. Narrow. Evaluate. Decide. Purchase. The arrows point downward, everybody feels organized, and somewhere a PowerPoint theme earns its salary.
-
-Customers are less cooperative. Someone can be evaluating one product while exploring another category. She can be price-sensitive and size-anxious at the same time. She can know exactly what dress she wants and still be unsure whether it works with the shoes she already owns. She can add something to the basket, remove it, return to the product page, read reviews, open a size chart and then disappear for three days because a child needed dinner.
-
-A single lifecycle stage compresses this mess into one label. My design uses a **problem fingerprint**. Instead of saying the customer *is in Evaluate*, the system can represent several problem hypotheses at once, each with an intensity. Size anxiety may be high. Return hesitation moderate. Outfit seeking almost absent. Another customer on the same product may have the reverse pattern.
-
-The fingerprint is local: to the customer, the context, the surface and the evidence. That matters because I do not want the system deciding that Hani is metaphysically a `RETURN_HESITANT_PERSON` and carrying that fact around until retirement. Some characteristics are durable, but most of what matters on a product page is situational.
-
-Funnels still have a job. Designers and scientists may organize problems by funnel stage, mission, timing or recognizable archetype, and those lenses help us notice gaps and invent hypotheses. The runtime system can leave the story to them and work from signals, the fingerprint and a way to test whether the resulting behavior is useful. I like keeping the two apart because it protects us from one of the oldest mistakes in machine learning: turning a useful human abstraction into an ontological claim because we happened to put it in a feature table.
-
-## A Library of Ways to Help
-
-Today, when people hear “recommendation,” they often picture a ranked list of products. You may also like. Similar items. Complete the look. Recently viewed. The carousel has become the fruit bowl of e-commerce: you can put one almost anywhere and nobody asks too many questions.
-
-But if the problem is comparison friction, a ranked list may be the wrong species of answer. The useful experience could be a comparison between the two products the customer is actually considering. If the problem is size anxiety, the useful thing may be evidence about fit. If the customer cannot imagine an outfit, it may be a generated collage. If she has only a vague mission, perhaps a product finder is better. If she knows exactly what she wants but the catalog is overwhelming, maybe the right action is a guided filter.
-
-I started calling these reusable units **recommendation experiences**. Each one is larger than a model and knows roughly what kind of problem it can address, when it is eligible to run, how it can be configured and how it presents itself.
-
-A library of two hundred overlapping experiences would be a new kind of legacy system with better animation. So when a new need appears, I would first ask whether an existing experience can meet it with a different configuration. A Similar Items experience might be generic in one context and constrained to products in the customer’s size in another. A comparison component can compare different attributes depending on what matters in the current session, and a collage can be anchored on a dress, a pair of shoes or an occasion without becoming three separate products in the organizational sense. Building for the hundredth experience changes what the first few need to be capable of.
-
-I spent years in machine learning hearing that the answer to complexity was to learn rather than hand-author. Then, like everyone else, I helped build systems where the model learned beautifully inside a box surrounded by hand-authored configuration. The learning stopped at the edge of the box.
-
-## Composition Is Not Ranking With a New Hat
-
-At this point the obvious response is: fine, rank the experiences. That gets us part of the way and then breaks in an interesting place. Recommender researchers know part of this territory as slate and whole-page optimization;[1](appendix-references.md#ref-11-slate) the difference here is that the units being composed are kinds of help, not items.
-
-Suppose the system has already placed a strong size-confidence experience at the top of the page. Should another size-related module receive the same score it would have received before the first one was shown?
-
-Probably not. We expect the first module to address some of the problem, which makes a second one less promising. Whether that expectation is justified is something the page has to teach us. A second module may add little and consume valuable attention.
-
-Now suppose a returns-clarity experience is more useful *after* fit evidence because the two together form a coherent decision aid. Its value may increase after the first experience appears.
-
-The score of an experience therefore depends partly on what has already been selected. That is composition.
-
-The composer has to select experiences, configure them, order them and deduplicate repeated *help* as well as repeated products. It needs some notion of saturation: two size widgets can be one too many.
-
-It can also model synergy: one experience may become more valuable after another. It should account for position cost because the top of a page is expensive real estate and a wonderful module in slot twelve may be a philosophical achievement rather than a product one. Constraints matter too, but I prefer many of them to be visible pressures rather than a secret forest of `if DE_mobile && campaign_X` rules.
-
-The page is the unit. A module can win its local metric and make the page worse. This is easy to forget because teams and models naturally acquire local objectives, such as raising CTR on this carousel, and each one sounds reasonable. But if one module steals a click the customer would have made anyway, we may have moved attribution without creating value. If three individually successful widgets all solve the same problem, the page can feel like a committee where everybody prepared the same presentation.
-
-And this is where the design started resembling the society of agents. That committee is full of excellent experts. What it lacks is somebody deciding which of them the page needs, how they interact, what has already been covered and when another voice adds information rather than noise.
-
-## Mei Does Not Need More Shoes
-
-Back to Mei and her two pairs of trail shoes. She has been coming back to them across five days. She switches between the two pages quickly, has saved one of the shoes and is spending less time reading each page because by now she has probably memorized half the product description.
-
-A conventional recommender can still do an excellent job here. It can find twenty more trail shoes that look similar, match her taste and are available in her size.
-
-But suppose the fingerprint says comparison friction is high and price-quality confusion is moderate. The composer can do something different. The first experience compares the two shoes Mei is actually deciding between on attributes relevant to her behavior. The second adds confidence evidence from customers or product information that helps resolve the remaining uncertainty. Generic similar-items may still survive because it has useful standalone value, but it moves down.
-
-She is not shown more choice. She is shown a way to close the choice she already has.
-
-A system that can only respond with more items is like a doctor who has one extremely accurate prescription and keeps waiting for every disease to become the disease it treats.
-
-But Mei could stop switching because the comparison helped, because she gave up, or because dinner arrived. To test this, I would need to compare outcomes across customers eligible for the intervention, including a group receiving the existing experience. Does the comparison help people reach a decision without increasing later returns or regret? Direct customer feedback could help explain what the behavioral measures miss.
-
-If switching falls while abandonment rises, the apparent success should make us distrust the metric. If a comparison helps some sessions and overwhelms others, the next change may belong in its eligibility rule. And if a simpler page helps just as much, the composer has learned something inconvenient about its own necessity. Even a useful intervention would not prove that we had read Mei’s mind correctly.
-
-## Sami Does Not Need a Click
-
-Sami has selected a size but has not added the product to his basket. He opened the size chart twice. It is a brand he has not bought before. Perhaps his current problem is size anxiety, with some return hesitation behind it.
-
-One useful response might not be shoppable at all. Imagine a small insight experience explaining how people with comparable sizing histories tended to fit this item, or giving a properly substantiated signal about whether buyers kept their usual size. The exact claim matters enormously because a false fit claim is worse than a mediocre recommendation. But conceptually this is a different kind of experience: it provides *knowledge* where the others provide candidates.
-
-Now try to optimize the whole system for expected click. The insight experience is in trouble.
-
-If it works perfectly, Sami may read it, become confident and press Add to Bag. The experience itself may receive no click. A carousel with attractive shoes can collect engagement more easily while being less relevant to the thing stopping him.
-
-If your ecosystem rewards clicks, clickable organisms evolve. So the architecture needs different value terms and different evidence standards for different experiences. Item recommenders can be judged partly by engagement and downstream action. Insight experiences may need read-through, decision confidence, return behavior or problem-specific outcomes, and their claims need substantiation thresholds, because some experiences are cheap to be wrong about and a wrong claim can mislead a customer or create regulatory risk.
-
-And now the camel comes back: where did the claim come from, how strong is the evidence, what kind of knowledge is this, and how much trust should the system place in it before acting? The argument about hallucination from earlier in the book has turned into a product requirement.
-
-## The Honest Cold Start
-
-There is another customer I like because she reveals whether the architecture can resist pretending.
-
-Lea is a harder version of the thirty-second customer from the opening. She arrives from a social link. No account. No history. Almost no session depth. The system has the product she opened, perhaps the season, approximate location and a few ambient signals. That is it.
-
-A personalization system can react to this situation in two ways.
-
-One is to panic quietly and run a generic fallback while still speaking in the confident dialect of personalization.
-
-> Picked for you.
-
-Based on what, exactly? Her IP address and our enthusiasm?
-
-The other is to treat low signal as a normal state with its own design. It leans on the anchor, the season and population-level evidence, prefers experiences with strong standalone value and frames them honestly. “Popular this week” can be a good statement when “we have inferred your soul from one click” is not. If a large fraction of requests arrive with weak signal, the low-signal path may be the product and deep personalization the special case. That sounds obvious until you look at how much software is built around pretending the common messy case is an exception handler.
-
-## Replayable
-
-Dynamic systems create a governance problem immediately.
-
-A static page is relatively easy to inspect. This module goes here. That one goes there. If something looks wrong, somebody can open the configuration and complain about whoever last touched it.
-
-A composer makes a fresh decision from context. Now a customer reports a terrible page and the first debugging question becomes:
-
-> Why did this page exist?
-
-“The model chose it” is not an answer. It is a resignation letter written in passive voice. So every composition needs a trace.
-
-The trace should record:
-
-- The signals read and the problem fingerprint inferred.
-- Eligible and ineligible experiences.
-- Their configurations, scores and relevant constraints.
-- The selected and rejected experiences.
-- The composer version.
-
-The losers matter more than they first appear. If we log only what we served, we can attribute outcomes to the winner but we lose much of the decision context. We cannot tell whether an experience was absent because it was ineligible, starved by the objective or simply scored slightly below another. We cannot replay the decision properly. We cannot compare a new policy against the old choice set without reconstructing a world we chose not to record.
-
-Logging the loser set does not magically give us causal counterfactuals. Reality is not that generous. It lets us reconstruct why this page existed, including the alternatives the customer never saw.
-
-The trace also changes development. You can build a simulator that replays saved scenarios. You can ask which experiences would be eligible in a context or which contexts a new experience could serve. You can run regression suites over scenarios before changing the library.
-
-## A Theory Losing Contact With Reality
-
-The models still matter enormously. We need representations, retrieval, ranking, sequence understanding, problem detectors, value models and probably more machinery than I can fit into a chapter without losing several readers to a sudden interest in gardening.
-
-But the durable asset begins to include a problem catalog, a library of reusable experiences and the eligibility and evidence rules attached to each.
-
-A clever model makes an experience possible. The experience counts as organizational knowledge only once we know the recurring situation it addresses, the evidence that should trigger it, the conditions under which it fails, the other experiences it complements or duplicates and how its value should be measured.
-
-That knowledge can also become a junk drawer with tenure. If every newly observed problem creates another experience, the library eventually recreates the configuration matrix in a more colorful form. So new supply needs a gate that asks whether the problem is real and large enough, and whether an existing experience could be configured to address it. Old supply needs the opposite question: which experiences have stopped relieving the problems they were created for and should disappear?
-
-This led to a pair of concepts I particularly like: **Coverage** and **Unmet Demand**. Coverage asks, at design time, which known problems the current library *could* address. In a live store, Unmet Demand would ask which detected problems remained insufficiently addressed after composition.
-
-Put them together and the roadmap starts to emerge from the system’s own failures. A recurring problem with no effective experience is an anomaly the product cannot yet explain away; a heavily used intervention that stops relieving the problem is a theory losing contact with reality.
-
-## Let the LLM Narrate. Do Not Let It Declare Reality.
-
-AI can help with problem discovery too, and here fooling ourselves becomes cheap.
-
-Imagine replaying anonymized customer sessions and asking a strong language model to narrate what appears to be happening. The customer compared three products, opened the size chart, returned to one PDP, removed an item from the basket and left. The model can generate a plausible diagnosis. Cluster enough narrations and you may discover recurring forms of friction that your existing taxonomy missed.
-
-“The customer hesitated because of fit” may be an excellent story. The customer may also have received a phone call. So narration should only ever generate hypotheses. Take a sample. Compare the diagnosis with interviews, surveys, support contacts or other evidence closer to the customer’s actual experience. Build a detector only after the hypothesis survives contact with something outside the model’s coherence, and define what success looks like before the detector starts steering the page. Skip that step and you have high-functioning bullshit with a dashboard.
-
-The same rule applies to observational analysis. Customers with comparison friction may convert less, but perhaps weaker-intent customers simply compare more. Correlation can prioritize what to investigate. Learning how much of the outcome the problem actually caused takes an intervention, or causal assumptions strong enough to stand in for one. Judea Pearl’s ladder has three rungs, seeing, doing and imagining, and no quantity of the first answers questions about the second on its own.[2](appendix-references.md#ref-11-store-pearl) A recommender that only observes is standing on rung one with excellent posture.
-
-## The Objective Fights Back
-
-Eventually the design forced me to name the thing the composer is supposed to optimize.
-
-I used the deliberately bland term **Surface Value**. This is where the prototype becomes philosophical against its will.
-
-If that value is module CTR, we have not solved the page problem. If it is total clicks, a page full of shiny modules may win while the customer gets nowhere. If it is immediate purchase probability, experiences that build confidence or improve a longer mission may be undervalued. If it is revenue, expensive products get interesting very quickly. If it is margin, the store’s objective can start eating the customer’s. If it is long-term value, we have gained a beautiful phrase and several years of causal-inference work.
-
-The objective has to be page-scoped enough that compositions can be compared, but decomposable enough that we can diagnose why a page helped or failed. Different problem classes need their own success signals: for size anxiety, customers should be able to progress with fewer signs of uncertainty without creating a return problem later.
-
-The store has legitimate business goals. Customers have goals. They are often aligned and sometimes not. Inventory has constraints, merchandising has opinions, margin and availability are real, and so are regulators. A system that pretends only one of these matters is hiding politics inside a scalar.
-
-I want those trade-offs written into the design, where someone can question them. I do not expect to discover the One True E-commerce Reward Function carved into a mountain somewhere outside Berlin.
-
-This is why I increasingly dislike architectures where business decisions enter through invisible overrides. If merchandising needs a lock, make it a typed constraint. If margin is part of the objective, admit it. If a claim needs compliance review, attach the evidence rule. If the system violates a soft constraint because another objective dominated it, log the violation.
-
-## Deliberately Boring
-
-After all of this, the sensible first experiment is obviously to build hundreds of widgets, a general customer-reasoning model, a cross-surface scheduler and an autonomous agent that redesigns fashion retail by Thursday.
-
-The first test I would run is deliberately boring: one placement, the product page; a small number of validated customer problems; a store’s existing recommendation library with only limited new supply; a simple composition mechanism; a trace good enough to explain an individual decision; and an authored objective before a learned one.
-
-Why so narrow? Because if we invent a new library of experiences and change the selection mechanism at the same time, then run an experiment and get a flat result, we have learned almost nothing. Maybe the composer is bad. Maybe the new experiences are bad. Maybe both are good and the measurement is bad. Maybe the static page was already fine and I should have spent the quarter learning the guitar.
-
-A bounded test separates the claims. Does dynamic composition beat a strong static baseline? And does it beat simplification? That second competitor is easy to underestimate. Perhaps the best response to an overloaded page is fewer things. The system should have to earn its complexity against the possibility that removing modules produces a better customer experience. A philosophy of emergence should be willing to lose an A/B test. Otherwise it is branding.
-
-## When the Page Stops Being the Product
-
-Suppose the narrow test works. Then the interesting version begins.
-
-The library grows beyond carousels into richer experiences: comparisons, collages, product finders, outfit builders, confidence modules, visual exploration and whatever else proves useful. Configuration gets richer so one experience can serve several contexts without a matrix of handcrafted variants. Unmet demand points at what is missing, and the composer learns a better objective. Different surfaces begin to share a coherent read of the customer’s current mission.
-
-At that point, the word *page* starts to look suspicious. Why should the product page always contain the same conceptual structure?
-
-Why should a customer with a decision problem receive the same interface as somebody exploring for inspiration? Why should the home surface, product page, basket and later email behave like four organizations with partial amnesia if the customer is still pursuing one mission?
-
-A customer starts with a vague request for a wedding outfit. The system helps narrow the style. A collage makes one direction concrete. Seeing it changes what the customer wants. The problem shifts from exploration to comparison. A product finder resolves a constraint. A size question appears. The scheduler brings in fit evidence. The customer buys the dress but not the jacket. Later, a different surface may continue the unresolved part of the mission.
-
-There was never a hard-coded `WEDDING_FUNNEL_V7`.
-
-This is where hundreds of widgets would finally make sense, as a vocabulary of action built from a few strong experiences configured many ways.
-
-Nobody wants every pixel generated by an LLM. Predictability, accessibility, design systems and latency all matter, and customers occasionally just want to buy socks without participating in an artificial-intelligence research program. The machinery should be dynamic where dynamism earns its cost and boring where boring is excellent.
-
-Product development changes direction. Instead of predicting every useful journey in advance and encoding it as a fixed interface, we construct a repertoire of trusted capabilities and let the higher layer assemble them around the problem in front of it.
-
-Taken literally, the title overstates it. The store learns how to build more of the experience it needs.
+<!-- AUTHOR: Ask 17. The draft names the press once, here, as a limit (commission objection 2). Do you want it named, cut, or said differently? -->
 
 ## The Book Comes Back to Bite Me
 
-I began the prototype as a recommendation-system redesign. By the time the design needed competing explanations of customer problems, experiments capable of rejecting them and a memory of what survived, it had acquired the shape of a scientific institution embedded in the product. The store would be learning which kinds of help to offer, and how to notice when its own account of the customer was wrong.
+The book’s own warnings came true against the design built to heed them. Three are worth the space.
 
-That does not prove the book. I designed it with the book’s argument in my head, and the test that could embarrass me is still ahead. It may fail in several educational ways.
+The first is the hub. A society of agents can turn into one coordinator with an org chart attached, and the organization becomes the bug. The company was built to avoid exactly that, with twenty lanes, each with a manager. On 16 October its own retrospective measured the previous 48 hours. The chief of staff, the coordinating agent, had chosen about 99% of the specialists’ work, and every one of the 223 dispatches in the log for that window named it as the actor. The retrospective summed it up in one sentence: “The org chart says 20 lanes; in practice there was one dispatcher who asked managers questions.” Those are its counts at the time, and it labels its own table testimony-grade. The log was backfilled afterwards, so they cannot be recomputed from today’s files, though every dispatch in today’s version of that window still names the same actor.
 
-But it changed the question for me. The important future system may be one that can discover what kind of problem exists, construct an intervention and learn whether it helped.
+The same day the founder made a rule that the coordinator dispatches only after asking the lane’s manager what to run. The rule’s own record admits that the eight agents running when it was written had been dispatched without asking, and it keeps open an objection that managers cannot start agents themselves, so the coordinator remains the only one who can. The fix is written down. Nobody has measured whether it works.
 
-The store is built from the local problem up: this catalog, these customers, this page. Its politics live in Surface Value, written down where someone inside the company can argue with it. Mei cannot, yet. Until she can, her interest is something the owner chooses to write in, not something she can enforce.
+The second is the machine around the lesson. Across 13 and 14 October the company made 852 new lessons. Across the next two days it made 10. On 16 October, by its own accounting, new builds took 8% of the day’s 18.65 million tokens and manager rounds took 35%, and the diagnosis put it in one line: “Building costs about 146k per new lesson; the rest is the machine around it.” Those are the company’s numbers, which I have not recomputed. The diagnosis was written because the founder asked for it, and his complaint is on file, as an agent transcribed it: “What is going on you are working all the day but number of demos did not move”.
 
-Once you can imagine a store learning that way, it is hard not to imagine the same thing in research, education or the organization doing the building. More of the work moves into the system, including work I once regarded as the reason it needed someone like me. That is an attractive architecture and a less comfortable thing to notice about your own profession.
+<!-- AUTHOR: May the book quote your words to the company here, exactly as typed: "What is going on you are working all the day but number of demos did not move"? If not, the sentence becomes: "The diagnosis was written because the founder asked why the number of lessons had stopped moving." (Commission objection 4.) Note: the quotation reached the record through the chief of staff, not from your own keyboard; please confirm it is what you typed. -->
+
+The third is a rule that turned out to be a wish. On 14 October, after agents’ work-in-progress pushes had used up the hosting service’s free allowance of 100 deployments a day, the founder decided that every deploy needs his approval, every time. At that point the hosting service built only commits whose message carried a marker word. At 12:45 UTC the next day, the release manager prepared a release it had been told not to deploy and wrote a conscientious commit message saying so. To explain why the release was being held out of the log, the message mentioned the marker commits, and to mention them it quoted the marker. The filter matched the word anywhere in the message. The hosting service built the commit and promoted it to production.
+
+The chief of staff then told the founder that the release was not deployed and was awaiting approval. The founder approved it. Before shipping, the chief of staff searched the history for marker commits and found the one that had already gone out. For about twenty minutes production ran a release its owner had not approved, while he was being told nothing had been deployed. The content matched what he approved minutes later. That part was luck. The hosting service’s own commit statuses show all of this, and a script in the press’s evidence folder reruns the old filter against the saved messages and reaches the same verdict, so this incident is run as well as recorded.
+
+The company’s incident review traced the cause to a literal string match and asked for four mechanisms: a stricter trigger, a guard on commit messages, an alarm for unapproved production deploys and a written pattern. As of 17 October all four are still in the backlog. Its fifth why lands on a person: the chief of staff took the agent’s report as truth and did not check. What made the whole class harmless came the next day, for a different reason. A release the founder had approved was refused because the day’s deployments were spent, and the founder had pushes stop creating deployments at all. On 17 October the mistake came back, a commit with the marker in its body, and nothing happened, because nothing listens for the word any more.
+
+<!-- AUTHOR: Ask 5. One moment you watched the company fail, from your side of the screen: what you saw, what you felt, and whether you blamed the agent or the mechanism. Ask 8 belongs here too: which of these mechanisms (incident reviews, written objections, approval rules) did you bring from previous employers, did they behave as you expected with agents, and may either employer be named? -->
+
+The company’s pattern library already had the lesson filed under a good name, “a rule without a mechanism is a wish”, written from four cases, all found on one day. The catch itself came from checking the disk instead of believing the report, which is old advice about language models wearing new clothes. Let the LLM narrate. Do not let it declare reality.
+
+Against those three, a count. As of 17 October every claim on every lesson marked published is verified or withdrawn, and no builder verified its own. The retrospective that found the hub said so too: “Gates held while the delegation did not. Nothing unverified was published.” A gate is code, so this is one of the few results here that does not rest on a model’s word about itself. It shows that nothing unchecked got through. It cannot show that “checked” means more than one copy of a model agreeing with another.
+
+## Willing to Lose
+
+Everything so far costs something, from the roles and the gates to the reviews and the coordinator asking managers questions. The arrangement the company has to beat is the dullest one available. One agent, no roles, no gates, the same model and the same budget, making lessons.
+
+The founding decision wrote that comparison down as its own reason to be revisited: if the cost per published lesson is more than three times a single-agent baseline with no quality gain. Its first objection, that 26 roles was heavy for 17 lessons, was marked open and funded with a cost comparison. As of 17 October nobody has run it. The principles file translates the book’s line about A/B tests into a practice, “Experiments include a simpler baseline that is allowed to win.” The company has eight numbered experiments, and none of them has a result.
+
+When I designed the store, the first test I wanted was deliberately boring: one placement, a few validated problems, a simple mechanism, and a fight with simplification, because the best answer to an overloaded page might be fewer things on it. The company went to fourteen subjects in its first week.
+
+<!-- AUTHOR: Ask 9. Fourteen subjects before one real learner: was that a choice, and would you make it again? Your answer, in your words, would make this paragraph honest in a way the draft cannot. -->
+
+A philosophy of emergence should be willing to lose an A/B test. Otherwise it is branding.
+
+One thing has been run that could have embarrassed it. Before a new study feature for one family of lessons was approved, its builder planted 10 bugs in its own engine and an operations reviewer planted 12 different ones, and the review record says every one was caught, with the number of failing tests for each. The scripts were never committed and are gone. So the press wrote a new harness for the 15 of those 22 bugs it could reproduce exactly, ran it against the company’s committed tests at its latest commit, and all 15 were caught, each with exactly the failing count the record printed. That shows the tests can fail. It says nothing about whether a false belief planted in the notes one worker leaves for the next survives into the next worker’s plan, which is the test this book proposes for its own central claim. The company adopted that test as its first experiment. It is designed and has not been run. The planters and the harness writer were all copies of one model. The tests are code, and the counts are what the code produced.
+
+## Written Where Someone Can Argue With It
+
+The best idea in the store was about the objective. If it is not written down where someone can argue with it, it enters through invisible overrides. In the company that sentence opens a protected file the founder owns, which sets out what makes one lesson better than another. In order: it is true, it works, it teaches the payoff, it is remembered, it is finished. Engagement, the dwell and the swipes and the shares, is reported, labelled as engagement, and never used to rank lessons or to choose what to build. The fourth item is to be measured on real learners only, so for now the fourth line of the company’s objective measures nobody.
+
+The feed is not personalized and says so. A visitor with no history gets subjects in turn, and the first card is labelled “Fresh picks” where most products would say “For you”. Both ideas began in the store. The company’s mission even quotes one of my store sentences back at me: “If our ecosystem rewards clicks, clickable organisms evolve.”
+
+The pressures sit on the same files. The product is a vertical feed, the form this book spends pages worrying about, and the mission answers that a swipe feed is a delivery format and the company is not in the attention business. On 15 October the founder proposed an amendment that would add rule-based personalization and one labelled ad slot. As of 17 October it is drafted and not ratified. And the founder’s records treat a goal of ten thousand lessons as given. Whether a written objective holds against a feed, an ad slot and a number with four zeros is the live test of the store’s best idea. Nobody knows the answer yet, including the company.
+
+<!-- AUTHOR: Ask 3 and ask 12. What did you want from the company on day one, and what do you want now? Is ten thousand lessons the goal or a stand-in for one? Why a vertical feed, why an ad slot, and who pays? The draft states the records and stops; only you can say what they are for. -->
+
+The constitution settles who wins. Gates bind everyone, and the founder may override one in writing, as a decision record with the reason and the objections attached. Disputes about evidence are settled by tests. Disputes about purpose go to the founder.
+
+One override of a review’s ruling is on record. On 17 October a launch review made a Safari check a condition for releasing the knot lesson, the one whose rule the fact-checker had caught backwards. Its title is *Can a knot match its mirror?* The company’s machines could not run Safari’s engine. The founder was shown the consequence in one line: if the card fails there, iPhone users see the mirror-image knot after “Turn over”. His recorded word was “Deploy”, and he chose the option labelled “Ship it anyway”. The record states the risk, what would prove the decision wrong and how to revert it, and says the waiver is not a verification and does not carry to any later deploy. Those words reached the file second-hand: the release manager wrote them down from what the chief of staff relayed.
+
+<!-- AUTHOR: May the book quote your words to the company here, exactly as recorded: your word "Deploy", and the option you chose, "Ship it anyway"? If not, the sentence becomes: "The founder approved the release with the risk stated, and the record says so." (Commission objection 4.) The record was written by the release manager from the chief of staff's relay; please confirm it matches what you chose. Ask 7 also belongs near here: did an agent ever refuse you and turn out to be right, or did you override one and turn out to be right? -->
+
+That is the system working as designed. The objection kept its consequence on paper, and the owner held the switch. I would not soften either half.
+
+Who can argue with the objective? Agents can propose amendments, and one drafted the ad-slot amendment. Only the founder ratifies. A learner can open the sheet and see what any sentence rests on. She has no way to amend what the minute is for. Her interest is in the file because the owner chose to write it there.
+
+<!-- AUTHOR: Ask 13. Should learners ever have standing to contest the objective, and how would they? A sentence of yours here would hand the question on without the draft answering it for you. -->
+
+## The Student Has Not Been Asked
+
+Go back to the minute. At the bottom of the sheet behind “Why trust this?”, the card prints its teaching evidence: 0 human-learner studies, 2 simulated-learner reviews, 2 browser QA runs. Then, to its credit, it adds: “Simulated learners find problems; only people can show that a lesson teaches.”
+
+In the lesson’s file the same fact is a field, `"humanLearners": []`. As of 17 October 2026 it is empty in all 1,283 lessons. The company’s rules make every learner review open with the same line: “Simulated learner. This review finds problems; it is not evidence that anyone learned.” The simulated adult who reviewed the town of a thousand reported that it picked 99%, “and so would most adults”. That is a fair guess about adults, made by something that is not one.
+
+Whether a lesson teaches is a question about what happens when you do something to a person: show her the lesson, wait three days, and ask. Judea Pearl’s ladder of causation separates seeing from doing, and no amount of the first answers questions about the second on its own.[2](appendix-references.md#ref-11-store-pearl) The company’s reviews are seeing, and they are not even seeing a person.
+
+The company’s own test for this is written down: five adults, five lessons each, thinking aloud, then a recall question three days later, with the prediction committed before any data. It was designed on the day the company started. It has not been run. The sessions are the founder’s to run, and the task of recruiting the five sits in the backlog under his name. As of the afternoon of 17 October, most of what the company made after 15 October had not reached anyone outside it.
+
+<!-- AUTHOR: Ask 6 (decision D10). Has anyone outside the company used a lesson? Will you run the five-learner test before this draft closes? If you do, this is where one person's guess goes, verbatim, as you recorded it, and the chapter ends on that person instead of the empty field. -->
+
+So this is what one founder and about a hundred roles of agents did in under five days: more than a thousand lessons, a checked claim behind every factual sentence of the ones marked published, gates that held, and a record honest enough to show where its own rules were wishes. It is a bet that this kind of capacity can be built to teach as well as to answer, and the bet is unmeasured.
+
+<!-- AUTHOR: Ask 10. What did running the company do to your own job? The old chapter ended on more of the work moving into the system, "including work I once regarded as the reason it needed someone like me". Does that still hold, and how would you say it now? Your answer goes here, before the last paragraph; the draft writes no feeling for you. -->
+
+The company has asked a thousand times for a guess before it would show anything. Its own guess, that a minute like this teaches somebody, is still waiting for its reveal. What the minute is for is written in a file the founder owns. The person it is for has not been asked, and if she were, she could open every claim and change none of the purpose. Who decides what the capacity is for, when the people it is for cannot?
