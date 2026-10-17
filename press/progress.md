@@ -8,6 +8,7 @@ Dated handoffs, newest first. Testimony, not truth: check the files.
 - **Believe (high):** check-tells and check-eggs pass; every disputed sentence from both fact-checks is fixed; all 14 earlier AUTHOR comments stay, plus Ask A1. **(medium)** Revision 2's new wordings (268; the 852/10 attribution; one vendor's models for dispatched agents; the hub reattributed to Ch5) are not yet checked by a third instance.
 - **Next:** founder reads and accepts, declines or rewrites (`press/decisions/2026-10-17-founder-store-chapter-rewrite.md`); founder answers the four priority asks and A1, the title, quotation rights, the store block, and the consequential edits (Ch 10 ending, Ch 12:79 and :235, Note on Evidence, afterword, art, production files). Third fact-check of revision 2 before release.
 - **Blocked:** nothing merges to main without the founder's recorded acceptance. Company production issue routed to the company board as W-1669.
+
 ## 2026-10-17 · writer-system-3 (Callum), Chapter 11 draft ("Guess First") written to the brief
 
 - **Changed:** `chapters/11-the-store-that-builds-itself.md` rewritten in place on `ccr-fd4ebbbc-p06k8x` (**not committed**). Wrote `press/books/system-3/proposals/2026-10-17-ch11-writer-note.md` (writer's note, keep from reviewers), `…/2026-10-17-chapter-11-source-map.md` (fact-checker only) and `…/2026-10-17-chapter-11-consequential-edits.md` (proposals for the founder; none made). Nothing in System 3 Company touched; Chapter 13 not opened.
