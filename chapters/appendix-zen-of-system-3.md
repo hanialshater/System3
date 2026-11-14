@@ -14,7 +14,9 @@ The farmer grows nothing. The plant does.
 Let the work change the architecture.
 Keep a strange branch alive long enough to test it.
 
-System 1 proposes. System 2 deliberates. System 3 checks.
+System 1 proposes. System 2 deliberates.
+System 3 checks, connects and builds.
+Systems 1 and 2 are solo. System 3 is civilization.
 Ground every claim. Trace every source.
 A record outlives the clerk.
 Five judges sharing one source are one witness.
