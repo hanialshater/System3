@@ -1,6 +1,6 @@
 # Final-pass plan: making *System 3* publish-ready
 
-14 November 2026. Based on a complete read of the 31 files in `book-design/curated/book-order.json`
+14 November 2026, revised the same day to build on the Chapter 11 rewrite. Based on a complete read of the 31 files in `book-design/curated/book-order.json`
 (about 67,000 words of main text, 12,000 of back matter and references), the editorial records in
 `resources/`, and the repository's own checks. Nothing in the manuscript was changed.
 
@@ -10,10 +10,12 @@ The argument holds from the preface to the scaffolds page, and each chapter's cl
 open the next. Chapters 3, 4, 5, 6, 7 and 10 and the interlude are at publication quality. The
 remaining work is of four kinds:
 
-1. **Unfinished business in the files.** Thirteen `AUTHOR:` requests are still open in eight chapters,
+1. **Unfinished business in the files.** Thirteen `AUTHOR:` requests are still open in eight chapters
+   on `main`, and fifteen more in the new Chapter 11,
    although `REVISIT.md` records the manuscript as proofread-ready. Several mark real holes on the page.
-2. **A second half that promises more first-hand material than it shows.** Chapter 11 announces a
-   prototype and never shows it; Chapters 8 and 9 are mostly other people's work.
+2. **Chapter 11 on `main` is the old one.** The rewrite around System 3 Company ("Guess First") sits
+   unmerged on `ccr-fd4ebbbc-p06k8x`, waiting since 17 October for the founder's acceptance. It is the
+   first-hand case the second half lacked, and its facts are now a month old (§4).
 3. **An overloaded closing chapter.** Chapter 12 makes twelve moves in 6,600 words and ends twice.
 4. **Front matter, clearance and a date freeze.** None of these has been started.
 
@@ -26,9 +28,9 @@ These block the passes below. My recommendation is given for each.
 
 | # | Decision | Recommendation |
 |---|---|---|
-| D1 | The 13 open `AUTHOR:` requests (list in §5) | Answer the five marked *needed*; delete the eight marked *optional* and close them. |
+| D1 | The open `AUTHOR:` requests (list in §5) | Answer those marked *needed*; delete the ones marked *optional* and close them. |
 | D2 | Is the Chapter 6 grocery company imagined, composite or disguised? `REVISIT.md` calls the Ines thread "explicitly imagined"; the Note on Evidence says the company stories "come from my experience". The chapter itself opens as reportage. | Say it once in the chapter ("Here is a company I have assembled from several") and make the Note on Evidence match. |
-| D3 | Chapter 11: show the prototype or call it a design | Show one screen or session in 150 words. If nothing can be shown, retitle the opening as a design and drop "I built a prototype". |
+| D3 | Chapter 11: accept, decline or rewrite "Guess First" (branch `ccr-fd4ebbbc-p06k8x`) | Accept it as the base. It needs the changes in §4 before it merges: your answers to its asks, a dated update, and the edits it forces elsewhere. |
 | D4 | Chapter 12: keep or compress "The Answer to Derrida" | Compress to about 250 words. It is the section least needed by the arc and the most exposed to specialist criticism. |
 | D5 | Chapter 13: Claudit's introduction ("the hottest agent", the hair flip) | Author's call; the chapter is protected. This is the one line an unsympathetic reader will quote. |
 | D6 | Freeze date for facts | Keep "September 2026" in the preface and verify every 2026 event once against that date (§7). |
@@ -47,11 +49,8 @@ paragraph out of order (§4). Chapter 5 is long but every vignette is doing a jo
 stories.
 
 **Part III (Chapters 6–8).** Chapter 6 is the best story in the book and needs its status stated
-(D2). Chapters 7 and 8 lean on reported work. Three different stores now appear in the second half:
-the grocery company (6), the online store with a research agent (7) and the prototype store (11),
-with trail shoes recurring in 7, 9 and 11. Make the Chapter 7 store and the Chapter 11 store visibly
-the same imagined store, in one sentence each. That gives the second half a running case and costs
-almost nothing.
+(D2). Chapters 7 and 8 lean on reported work. With the new Chapter 11, the Chapter 7 store becomes
+the book's only store and can stay as it is.
 
 **Interlude.** Leave it alone.
 
@@ -59,8 +58,12 @@ almost nothing.
 cross-references, seven times the repository's own target; half can go. Chapter 9 reads well; its
 applied-scientist paragraph is repeated nearly verbatim in Chapter 12.
 
-**Part V (Chapters 11–12).** This is where the book is least finished. Chapter 11 needs D3 and a 15%
-trim. Chapter 12 needs D4, a shorter "What Are Humans For?", and one ending.
+**Part V (Chapters 11–12).** This is where the book is least finished, and the new Chapter 11 changes
+what it can be. "Guess First" gives the book a designed institution that was run, with a result that
+cuts against the thesis (the org chart collapsed into one dispatcher within two days) and a failure
+the book predicted (a rule without a mechanism). That is stronger than anything the old chapter
+offered. Chapter 12 then needs D4, a shorter "What Are Humans For?", one ending, and four sentences
+corrected because the reader has now seen the author run a hundred agents.
 
 **Chapter 13, scaffolds, back matter.** The fable and the scaffolds page land. The back matter is in
 an order that makes the afterword refer forward twice, and "The Ideas Behind System 3" is in a
@@ -145,7 +148,7 @@ Line numbers are for the files as of commit `71ac730`.
 - The YAML blocks are right for this chapter. Check that they fit a 6×9 line without wrapping.
 
 ### Chapter 7: Recursive Self-Improvement
-- One optional request (line 43): close it, and tie the store to Chapter 11 instead (§3).
+- One optional request (line 43): close it.
 - "Chapter 12 returns to the same rule" (line 200) is a long forward reach; shorten to "the last
   chapter".
 - Low-confidence check: whether Lee Sedol left the room *after* Move 37 or was already out when it was
@@ -184,14 +187,49 @@ Line numbers are for the files as of commit `71ac730`.
   is about work where checking is expensive or ambiguous. It is currently spread over three
   paragraphs.
 
-### Chapter 11: The Store That Builds Itself
-- D3. *Needed:* line 7.
-- The subtitle "A Prototype Store" repeats the title. Replace or drop.
-- Trim about 600 words. "Replayable" and "A Theory Losing Contact With Reality" both explain logging
-  and library hygiene at design-document length.
-- Name the store as the one whose research agent appeared in Chapter 7.
-- "And now the camel comes back" needs four more words for a reader who put the book down between
-  Chapters 4 and 11.
+### Chapter 11: Guess First (replaces The Store That Builds Itself)
+The text is on `ccr-fd4ebbbc-p06k8x` (revision 2, 5,467 words including comments). That branch forked
+from `main` at the current head, so it merges cleanly apart from this plan.
+
+- **Accept it (D3).** The opening lesson, the nine claims, the three warnings and the empty
+  `humanLearners` field are the best first-hand material in the second half. Nothing merges without
+  your recorded acceptance of the text; that rule is the press's and it is right.
+- **Fifteen `AUTHOR:` asks.** The press marked four as priority: why lessons and not the store (Ask
+  2), what you wanted from the company (Ask 3), one moment you watched it fail (Ask 5), and whether a
+  real person has used a lesson (Ask 6). Ask A1 matters for the argument: if another vendor's agent
+  made part of the catalogue, the "one model family" limit changes. Answer those five; close the
+  rest.
+- **The facts stop on 17 October, when the company was five days old.** The chapter says nobody has
+  run the single-agent comparison and that none of the eight experiments has a result. The company's
+  own principles file (`system3-meta/PRINCIPLES.md`, 25 October) now records benchmark runs in which
+  one strong agent beat or tied every org design in six rounds before the orgs caught up. I have not
+  checked those runs. If they hold, they are the result "Willing to Lose" is waiting for, and the
+  book's line about losing an A/B test gets a real answer. Recommendation: keep the five-day
+  snapshot as written and add one short dated section, "A Month Later", with that result and with
+  whatever is true of the five-learner test. Do not rewrite the snapshot; its fact-checks would have
+  to be redone.
+- **Narrator.** The chapter says "its records call me the founder, so I will too" and then writes
+  "the founder… his complaint… he answered" beside "I". Use "I" throughout; keep "the founder" only
+  inside quoted records.
+- **The store passage** in "A Company in a Week" is five paragraphs of the old chapter. Cut it to two
+  sentences that hand over to the company (this needs Ask 2), and remove `ref-11-slate` in the same
+  commit or the build fails.
+- **Density.** "The Book Comes Back to Bite Me" carries about forty figures and dates. Keep the
+  numbers that carry the argument (99%, 223, 852 and 10, 35%, twenty minutes) and move the rest to the
+  reference note.
+- **Verification.** Revision 2's new wordings were never checked by a third reader, and the press
+  drafted this chapter with the same model family as the company it describes. One cold fact-check
+  after your edits, by a different reader.
+- **Edits it forces elsewhere.** The press listed them in
+  `press/books/system-3/proposals/2026-10-17-chapter-11-consequential-edits.md`; none has been made.
+  The ones that are now false or strained: Chapter 12 lines 79, 89, 235 and 239; the Chapter 11 row
+  and the "composites" paragraph in the Note on Evidence; the "my own experiments" row in the
+  afterword; the references heading; five art anchors and the chapter opener, which still shows a
+  fashion store. Chapter 10's last two lines still work.
+- **Chapter 10, "Where This Could Be Wrong".** It cites the epistemic agent as the one institution
+  the author designed on purpose. The company is now the larger case and its hub result belongs in
+  that paragraph.
+- **Title.** "Guess First" is a working title awaiting your decision. The file name stays.
 
 ### Chapter 12: After Capacity
 - D4.
@@ -243,7 +281,7 @@ Line numbers are for the files as of commit `71ac730`.
 | 05 | 91 | Apprenticeship detail | Optional |
 | 07 | 43 | A real story for the store's beats | Optional |
 | 09 | 53 | A real instance of desire forming | Optional |
-| 11 | 7 | What the prototype did | **Needed** |
+| 11 | — | Fifteen asks in the new chapter; five to answer (2, 3, 5, 6, A1) | **Needed** |
 | 12 | 125 | Which group, which room | Optional |
 | 12 | 233 | Detail for the workshop or irrigators | Optional |
 
@@ -300,9 +338,10 @@ experiment should be dropped or adopted before this step, not during it.
 
 ## 8. Order of work
 
-1. **Author material** (D1–D5): answer or close the 13 requests; decide D2–D5. Start D8 in parallel.
-2. **Structure:** reveal paragraph order; part pages; back-matter order; Chapter 11 and 12 cuts; the
-   Chapter 7 and 11 store link; duplicate passages (1/12 and 9/12).
+1. **Author material** (D1–D5): accept the new Chapter 11 and answer its five asks; answer or close
+   the other 12 requests; decide D2, D4, D5. Start D8 in parallel.
+2. **Structure:** merge Chapter 11 with its dated update and the edits it forces; reveal paragraph
+   order; part pages; back-matter order; Chapter 12 cuts; duplicate passages (1/12 and 9/12).
 3. **Line edit:** §4 chapter items, then §6 across the book. Run both check scripts.
 4. **Verification:** the §7 freeze list, references renumbered for the ideas appendix, then a cold
    read by someone who has not seen the manuscript.
