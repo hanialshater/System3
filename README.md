@@ -11,7 +11,7 @@ proposed designs and a fictional alternative ending.
 
 ## Read and edit
 
-- [Manuscript order](book-design/curated/book-order.json): the complete 31-file reading sequence.
+- [Manuscript order](book-design/curated/book-order.json): the complete 32-file reading sequence.
 - [Preface](chapters/00-preface.md): begin here.
 - [Note on evidence](chapters/appendix-note-on-evidence.md): what has been run, argued, designed or imagined.
 - [What System 3 Contributes](chapters/afterword-what-this-book-proposes.md): three explicit contributions, their relationship to contemporary philosophy of science and agent architecture, and how they could be tested.

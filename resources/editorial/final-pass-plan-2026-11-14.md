@@ -4,6 +4,25 @@
 (about 67,000 words of main text, 12,000 of back matter and references), the editorial records in
 `resources/`, and the repository's own checks. Nothing in the manuscript was changed.
 
+## Status after the chapter-by-chapter pass (14 November 2026)
+
+Done, with the author's approval at each step: the Preface, Chapters 1 to 12, both interludes, the
+reveal page and the back matter. Chapter 11 is now "The System 3 Company"; "Interlude: The City"
+follows Chapter 12 and carries the handoff to the fable. Chapter 13 is untouched. No `AUTHOR:`
+comments remain. The seed check and the reference validator pass on all 32 files.
+
+Still open, none of it prose:
+
+- Fourteen screenshots for Chapter 11 and the City interlude are not in the repository; five old
+  illustrations and the opener for Chapter 11 belong to the retired store chapter.
+- Front matter (title, copyright, dedication, acknowledgments) does not exist.
+- The 2026 sources and the lessons-company figures in Chapter 11 and the interlude have not been
+  independently checked. One visible inconsistency: "109 became 39" after parking seventy-two roles.
+- Employer clearance; a cold read by a person; a proofread on typeset pages.
+- The video briefs in `prompts/notebooklm/` are stale for every edited chapter.
+
+The sections below are the original plan and are kept as the record of what was proposed.
+
 ## 1. Where the book stands
 
 The argument holds from the preface to the scaffolds page, and each chapter's closing question does
