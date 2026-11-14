@@ -6,7 +6,7 @@ The circle-packing agent could spend an hour pursuing some bizarre geometric ide
 
 Then I asked for an educational demo.
 
-Most of the things I actually want AI to help me with are not like that. “Is this explanation pedagogically effective?” does not have a unit test. “Would a confused student understand this visualization?” cannot be settled with an `assert`. Two competent people can look at the same design, disagree completely, then switch sides five minutes later after using it. The feedback is subjective, noisy, sometimes contradictory, and often becomes clearer only after you have built the thing you were supposedly trying to specify beforehand.
+Most of the things I actually want AI to help me with are not like circle packing. “Is this explanation pedagogically effective?” does not have a unit test. “Would a confused student understand this visualization?” cannot be settled with an `assert`. Two competent people can look at the same design, disagree completely, then switch sides five minutes later after using it. The feedback is subjective, noisy, sometimes contradictory, and often becomes clearer only after you have built the thing you were supposedly trying to specify beforehand.
 
 I picked educational demos for Merge Sort and Count-Min Sketch because they were still bounded (you can actually finish one before civilization collapses), but they live on the messier side of the boundary. You have to decide what to explain, what to leave out, how the interaction should work, how much should be visible at once, and what another person is likely to understand from any of it.
 
@@ -36,7 +36,7 @@ Then the bug crossed three files and context itself became a job. Paste one clas
 
 We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
-SWE-bench tested this larger job using real GitHub issues:[1](appendix-references.md#ref-03-swebench) navigate an existing repository, make a change and survive the tests. It had to do my job, the copy-and-paste one. Eventually we gave the model the repository and a terminal, and a coding agent became, at its simplest, this loop made executable. Software is unusually friendly to the arrangement: programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea. SWE-agent showed that the interface itself, how the model searches, sees files and receives feedback, can matter almost as much as another clever prompt.[2](appendix-references.md#ref-03-sweagent)
+SWE-bench tested this larger job using real GitHub issues:[1](appendix-references.md#ref-03-swebench) navigate an existing repository, make a change and survive the tests. The model had to do my job, the copy-and-paste one. Eventually we gave the model the repository and a terminal, and a coding agent became, at its simplest, this loop made executable. Software is unusually friendly to the arrangement: programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea. SWE-agent showed that the interface itself, how the model searches, sees files and receives feedback, can matter almost as much as another clever prompt.[2](appendix-references.md#ref-03-sweagent)
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
@@ -48,7 +48,7 @@ Then history became a problem too. Suppose an agent decides early that our Merge
 
 Humans call our version of this sunk cost. The agent has a respectable excuse: its context window is literally full of evidence that this is what the project is.
 
-So we started giving different attempts different histories. One agent tries the tree. Another begins with the array. A third starts from the learner’s misconception. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
+So we started giving different attempts different histories. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
 Together, the interfaces, execution loop, context management and safeguards make up the agent’s harness, meaning here everything built around the model so it can work, of which the evaluator is only one part. The jar had acquired its own staff.
 
@@ -146,7 +146,7 @@ A move in this space can be a code change, a new metaphor, a retrieved analogy, 
 
 ### Draw It Before You Build It
 
-That is fine when I am working on an argument. It is less obviously sensible when I am designing an interface. I can spend ten minutes explaining where the recursion tree should sit, what remains visible while the array splits, how colors should connect two representations and what the learner should notice first. Then somebody draws it and I know within three seconds that the whole thing is terrible.
+Arriving as words is fine when I am working on an argument. It is less obviously sensible when I am designing an interface. I can spend ten minutes explaining where the recursion tree should sit, what remains visible while the array splits, how colors should connect two representations and what the learner should notice first. Then somebody draws it and I know within three seconds that the whole thing is terrible.
 
 So I started generating the picture first, in a thoroughly unsophisticated experiment. I asked an image model to design an interactive tutorial for Merge Sort, then Count-Min Sketch, then A*, then Poincaré embeddings in hyperbolic space, partly because if this still worked there I would have to take the idea seriously.
 

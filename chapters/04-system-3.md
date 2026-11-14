@@ -284,8 +284,6 @@ By that I mean understanding a trust chain well enough to know where you are bre
 
 Chapter 10 comes back to it, aimed at the most awkward trust stack in this book, which is mine.
 
-<!-- AUTHOR: Creative Distrust needs a real scene, e.g. a case of creative distrust from the eight years ranking reviews; it could replace or join the scientist and designer sentences below. -->
-
 A mature trust stack has two jobs pulling in opposite directions: let knowledge accumulate so we do not rediscover fire every morning, and leave enough room for reality to overthrow what accumulated.
 
 ## Back to the Camel
