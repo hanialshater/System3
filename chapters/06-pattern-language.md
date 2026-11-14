@@ -9,9 +9,9 @@ The handover document was eleven pages long, and every line in it was a decision
 
 Its author had run product at an online grocery company for three years. He wrote the document in his last fortnight and left after a farewell lunch and sincere good wishes. The document was confident and specific, and there was every reason to think he had known what he was doing.
 
-In March the recipe team arrived at the roadmap meeting with a new data source. Someone pulled up the document. Was this the kind of source he meant? The line didn't say. Neither did the one about December, which had passed; half the room now read it as permanent and the other half as expired. Asking its author worked once. He answered politely from his new job and remembered less than the document did.
+In March the recipe team arrived at the roadmap meeting with a new data source. Someone pulled up the document. Was this the kind of source he meant? The line didn’t say. Neither did the one about December, which had passed; half the room now read it as permanent and the other half as expired. Asking its author worked once. He answered politely from his new job and remembered less than the document did.
 
-The meeting ended without a decision, and so did the next one. The home screen stayed exactly as he had left it, because nobody wanted to be the one who broke a rule they didn't understand.
+The meeting ended without a decision, and so did the next one. The home screen stayed exactly as he had left it, because nobody wanted to be the one who broke a rule they didn’t understand.
 
 The team lacked a way to keep a decision attached to its reasons, so that someone who had not been in the room could tell when a line had stopped being true.
 
@@ -33,7 +33,7 @@ He had no paper for the home screen, only a memory of a launch two years earlier
 
 Sam started to answer, stopped, and looked back at the board.
 
-"I don't know. You see it after a while."
+“I don’t know. You see it after a while.”
 
 Michael Polanyi wrote the sentence for him: we can know more than we can tell.[3](appendix-references.md#ref-06-polanyi)
 
@@ -75,7 +75,7 @@ Ines also has the company’s agent, which has read the wiki, the runbooks, thre
 
 So there was a third knower in the building. The agent had every word the company had written and none of the reasons that had stayed in people’s heads, and it could produce the display of expertise almost for free. Zahavi’s condition had collapsed.
 
-What saved Ines was a dashboard. Within a minute it showed that the connection pool was healthy, and she moved on. The runbook walked her through the dependency graph and the traffic split. The rollback she used was rehearsed every month, and the previous week’s load test told her the other cities could absorb the shifted traffic. By four the city was taking orders again, although the rollback had restored service without explaining the failure.
+What saves Ines is a dashboard. Within a minute it shows that the connection pool is healthy, and she moves on. The runbook walks her through the dependency graph and the traffic split. The rollback she uses is rehearsed every month, and the previous week’s load test tells her the other cities can absorb the shifted traffic. By four the city is taking orders again, although the rollback has restored service without explaining the failure.
 
 Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.[5](appendix-references.md#ref-06-chaos-monkey) An impressive design that breaks under load still fails the load test on Thursday.
 
@@ -185,7 +185,7 @@ So before the later weeks came in, Jalal and Sam wrote down what the competing e
 
 Ines read the record before the review.
 
-"Where does it say what would make you stop believing this?"
+“Where does it say what would make you stop believing this?”
 
 They added the answer. Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it. But the claim had finally named the observation capable of making it lose.
 
@@ -203,9 +203,9 @@ It took four minutes.
 
 The draft was fluent, well formatted and plausible. It had a context, a problem, a Therefore and a tidy list of risks. It said gains on the home screen fade, and it listed the carousel among its supporting cases.
 
-Sam struck the carousel out. Its gain had come from a redirect that dropped users before logging, not from customers losing interest. A pattern that counted a logging bug as evidence of novelty would teach the next reader to stop looking for logging bugs. He narrowed "the home screen" to changes returning customers could see.
+Sam struck the carousel out. Its gain had come from a redirect that dropped users before logging, not from customers losing interest. A pattern that counted a logging bug as evidence of novelty would teach the next reader to stop looking for logging bugs. He narrowed “the home screen” to changes returning customers could see.
 
-The draft already carried the refutation condition from the experiment record. Ines added what it still lacked: a link to locate-the-failure. Her runbook had taught her what happens when an instruction has no route elsewhere. "Ask Sam" had been a dead end disguised as guidance.
+The draft already carried the refutation condition from the experiment record. Ines added what it still lacked: a link to locate-the-failure. Her runbook had taught her what happens when an instruction has no route elsewhere. “Ask Sam” had been a dead end disguised as guidance.
 
 Jalal added the confidence mark.
 
@@ -232,9 +232,9 @@ part_of: review-an-experiment
 may_call: locate-the-failure
 ```
 
-A pattern can mix content that needs different kinds of support. "Returning customers on this screen react to novelty" is a claim about the world. "Compare cohorts before spending more traffic" is a recommendation about effort. "Do not alter a live experiment to rescue its result" is an authority boundary. A successful test of the first does not justify the other two automatically.
+A pattern can mix content that needs different kinds of support. “Returning customers on this screen react to novelty” is a claim about the world. “Compare cohorts before spending more traffic” is a recommendation about effort. “Do not alter a live experiment to rescue its result” is an authority boundary. A successful test of the first does not justify the other two automatically.
 
-Examples carry what rules cannot. I wrote an editing brief for this book after explaining the same corrections to successive agents, and one instruction was "preserve the wandering," which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage teaches it where the rule never did. The examples also carry my taste into the next session, along with my blind spots. Preserving my judgment and preserving my mistakes use the same file format.
+Examples carry what rules cannot. I wrote an editing brief for this book after explaining the same corrections to successive agents, and one instruction was “preserve the wandering,” which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage teaches it where the rule never did. The examples also carry my taste into the next session, along with my blind spots. Preserving my judgment and preserving my mistakes use the same file format.
 
 \* Therefore: write the lesson as a pattern, with its context, its cases, what would make it wrong, and links to the patterns it serves and calls.
 
@@ -330,7 +330,7 @@ The reply arrived the next morning, one word long:
 
 *noted.*
 
-Facebook paid for a much larger version of the same lesson. In January 2018, after its own researchers had reviewed evidence that passive scrolling could leave people feeling worse,[27](appendix-references.md#ref-06-fbwellbeing) it moved its feed toward "meaningful social interactions."[28](appendix-references.md#ref-06-fbchange) According to internal documents later reported by the Wall Street Journal, researchers then found publishers and political parties shifting toward outrage because that was what travelled, and Zuckerberg reportedly resisted fixes that materially reduced the new metric.[29](appendix-references.md#ref-06-fbfiles) One former Instagram researcher put the institutional problem precisely: "We’re standing directly between people and their bonuses."[30](appendix-references.md#ref-06-instagram)
+Facebook paid for a much larger version of the same lesson. In January 2018, after its own researchers had reviewed evidence that passive scrolling could leave people feeling worse,[27](appendix-references.md#ref-06-fbwellbeing) it moved its feed toward “meaningful social interactions.”[28](appendix-references.md#ref-06-fbchange) According to internal documents later reported by the Wall Street Journal, researchers then found publishers and political parties shifting toward outrage because that was what travelled, and Zuckerberg reportedly resisted fixes that materially reduced the new metric.[29](appendix-references.md#ref-06-fbfiles) One former Instagram researcher put the institutional problem precisely: “We’re standing directly between people and their bonuses.”[30](appendix-references.md#ref-06-instagram)
 
 The organization had paid for knowledge it was resisting.
 
@@ -370,7 +370,7 @@ An open_questions field that no decision ever consults is a decorative conscienc
 
 ## Three Departures
 
-Max Planck’s observation about scientific change is usually compressed into "science advances one funeral at a time." His actual sentence says a new truth wins not by convincing its opponents but because they "eventually die, and a new generation grows up that is familiar with it."[33](appendix-references.md#ref-06-planck) Studying the premature deaths of eminent life scientists, Pierre Azoulay and colleagues found that outsiders then entered the affected fields, drawing on a different literature, and that their work was disproportionately likely to be highly cited.[34](appendix-references.md#ref-06-funerals) None of that shows the departed scientists were wrong. It shows that who gets to participate changes which work enters a field.
+Max Planck’s observation about scientific change is usually compressed into “science advances one funeral at a time.” His actual sentence says a new truth wins not by convincing its opponents but because they “eventually die, and a new generation grows up that is familiar with it.”[33](appendix-references.md#ref-06-planck) Studying the premature deaths of eminent life scientists, Pierre Azoulay and colleagues found that outsiders then entered the affected fields, drawing on a different literature, and that their work was disproportionately likely to be highly cited.[34](appendix-references.md#ref-06-funerals) None of that shows the departed scientists were wrong. It shows that who gets to participate changes which work enters a field.
 
 The grocery company had now seen three kinds of departure.
 
@@ -421,7 +421,7 @@ Some failures yield to comparison: a branch with a pattern withheld can expose e
 
 Alexander’s form now asks for a Therefore.
 
-We could write "revise the method when it fails."
+We could write “revise the method when it fails.”
 
 But the method decides which failures count.
 

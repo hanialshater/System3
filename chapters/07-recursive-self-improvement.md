@@ -40,8 +40,6 @@ In every one of these loops, the hard question is who gets to say that a change 
 
 ## Growing One
 
-<!-- AUTHOR: optional: could the circle-packing run, or a ranking or experiment story, carry some of the store's beats? -->
-
 Take an online store whose research agents already keep records the way a good lab does: their claims have addresses, every ranking test is committed before its results, and what a click is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
 
 Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[9](appendix-references.md#ref-07-yudkowsky)[10](appendix-references.md#ref-07-weng) The store has to decide. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
