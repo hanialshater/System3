@@ -126,7 +126,7 @@ Kahneman’s *Thinking, Fast and Slow* popularized the distinction between Syste
 
 For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
 
-But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks.
+But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks. Checking is where it starts. The same machinery connects what separate people know and lets them build on it. Systems 1 and 2 happen inside one head. System 3 is what a civilization does.
 
 Edwin Hutchins found this on the bridge of a navy ship. Navigation depended on sailors, charts, instruments and procedures; no single sailor held the whole calculation. He called this distributed cognition.[5](appendix-references.md#ref-04-hutchins) The ship could know where it was without any one person doing all the knowing. I want agents to inherit more of that arrangement.
 
