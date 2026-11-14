@@ -28,7 +28,7 @@ check proposed 13-the-prophecy.md "But so would simulated fingers touching a sim
 check proposed 01-why-im-betting-on-ai-agents.md "Do you bet on DNA, a biological fax machine"
 check proposed 13-the-prophecy.md "Your DNA is just a fax machine"
 check proposed 04-system-3.md "consider a camel"
-check proposed 11-the-store-that-builds-itself.md "And now the camel comes back"
+check proposed 11-the-system-3-company.md "The camel at Krka has become a data structure"
 check proposed 12-after-capacity.md "camels are native to Croatia"
 check proposed 07-recursive-self-improvement.md "The Learner Dreams, and the Dream Can Be Wrong"
 check proposed 13-the-prophecy.md "hadn’t he dreamed he was an octopus?"

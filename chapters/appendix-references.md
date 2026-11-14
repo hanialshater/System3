@@ -506,11 +506,9 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 9. <a id="ref-10-morozov"></a>Evgeny Morozov, *To Save Everything, Click Here: The Folly of Technological Solutionism*, PublicAffairs, 2013.
 
-## Chapter 11 — The Store That Builds Itself
+## Chapter 11 — The System 3 Company
 
-1. <a id="ref-11-slate"></a>Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi Chang and Qiaozhu Mei, “Beyond Ranking: Optimizing Whole-Page Presentation,” *Proceedings of WSDM*, 2016; Eugene Ie et al., “SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets,” *Proceedings of IJCAI*, 2019.
-
-2. <a id="ref-11-store-pearl"></a>Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
+1. <a id="ref-11-store-pearl"></a>Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
 
 ### Additional sources
 
