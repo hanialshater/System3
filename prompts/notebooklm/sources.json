@@ -1,11 +1,11 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "f7b6ce180b185fd6a6d7dab70b897640a1cc003f9e3e2595a43a5433c110bc9b",
+  "references_sha256": "8e2212ae4a147e133e5e62a2cc8579318435ea6e3a66ccbed7638eeeadad17ac",
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "6dd70f115f03d6708e2f02a9e7dfa170df3e49b347bde028b1b1f1a742302f60",
+      "source_sha256": "f707cd7f93f92c6551d84c485c7d68968b99fa6e384565f19c490a0335e7c524",
       "brief": "prompts/notebooklm/preface.md",
       "brief_sha256": "fd7c8010be8cfa05600d5012bb4bf7165ad43393e78ca6797ff49511ebcffc19",
       "sections": [
@@ -14,9 +14,9 @@
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "c04b85edf56a4025f773d6b1c7d8166e43c0002e9a1217e1a97c81ba9b153ebf",
+      "source_sha256": "6d72741d4153a093d9e9501db3cbc63c24de97f7e95ab9a5cfd78982ccd18d12",
       "brief": "prompts/notebooklm/chapter-01.md",
-      "brief_sha256": "4622b3513f6885ef000ac374c972d313b36adda1bcdf13f7c49479344df76e8f",
+      "brief_sha256": "e0c7425f0c9ee28435fbd7cf900a7ce8eb5e52531c2ba3c86dfc23dac05f58af",
       "sections": [
         "Opening passage",
         "The Rule-Based Exoskeleton",
@@ -30,9 +30,9 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "8dc63c49922b3e42b6a3dd54b52f3e7908c1e88a6a62b8a8aa6e5c3b1152f245",
+      "source_sha256": "9f245da9c074e2bf9906dade42a85d96a6b62ba7a29742c32e8715287365c2b4",
       "brief": "prompts/notebooklm/chapter-02.md",
-      "brief_sha256": "64d7c32876f1224ab3a092a8ae762e7367698300ec67bd83ea223ec14f93a9d1",
+      "brief_sha256": "3dda63eefd92ea3518f377f7d3f9fb6a4ee0242603d1a5fe0677400b3492102b",
       "sections": [
         "Opening passage",
         "Twenty-Six Circles",
@@ -52,7 +52,7 @@
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "3b82e0b1d3e362f32278a75739a2b00f7c7c430dd01e881475fe1431ceb3fd3d",
+      "source_sha256": "b40bac24be5ecb30cb8dba3e275393fbd594cd9d96640843215617e22a95fe4e",
       "brief": "prompts/notebooklm/chapter-03.md",
       "brief_sha256": "f8fe442fbbc8476dd76b8c57b38dc6781a314f76664bc20ee721433495032347",
       "sections": [
@@ -72,9 +72,9 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "00107952833a482001f82fcc63fea008968a50814b0f165b08f2b70203d5dd7e",
+      "source_sha256": "258512545575b22d4bbb2a988a0501455e52c322bb34f0b1a94378e38ab9e3be",
       "brief": "prompts/notebooklm/chapter-04.md",
-      "brief_sha256": "abc1aacab5dbf074a724ebcb5a31ac3d1c0a9cfd8e455bdd58837a8be55e0de1",
+      "brief_sha256": "ba6ec17315b5990644edacf90d4358a2724cd1376487dfee4d092644c6b9b352",
       "sections": [
         "Opening passage",
         "The Shortest Trust Chain",
@@ -85,13 +85,14 @@
         "Code Can Touch Back",
         "A Hallucination With Better Retention",
         "The Epistemic Agent",
+        "The 13579 Failure",
         "Creative Distrust",
         "Back to the Camel"
       ]
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "0a22e5df1e36f004305964583ad2469c6e24001e9038c8af9b464ab551baabfa",
+      "source_sha256": "9a2b3a42625eba3458a85824d2d578d26f9b6a7c1eeb5489ec96bf8b02360c58",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "65a13034781487e3b279c3f727d294d7b45fb55ce06da97ba853d95c59bf7d67",
       "sections": [
@@ -109,9 +110,9 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "3141ff5b64bb25991382f9781ff1b85072435ad3625249dea94b5284b71ff581",
+      "source_sha256": "b6745bac6d8a731c4eacd83a1a393668582c349b79833f632d8f8b4a122566ca",
       "brief": "prompts/notebooklm/chapter-06.md",
-      "brief_sha256": "7b0bff46d69749540297905d2ebb068160de678c5d2e6b4c2d2762f771d9f455",
+      "brief_sha256": "4d4363fa2e08c1de6cace84602146f7702958de6064536f73cd7fbe2f7761484",
       "sections": [
         "Opening passage",
         "The Handover",
@@ -134,9 +135,9 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "871197c6b15a8ad3027fd72d44eb26d1faa05de0b25e12e6d0be656f4557a79c",
+      "source_sha256": "de1060915f702b7e48a34e89d4f5fc400be9ed50d7f50ec62bea77f77db2d9bd",
       "brief": "prompts/notebooklm/chapter-07.md",
-      "brief_sha256": "f9beb504ea605891ef48a60735dc5e0635ae1200c3cadd3e106c40435517df4d",
+      "brief_sha256": "8f4ae8e67623a182e67ff8b50d04394deb250854f5fa9836f0d92acbd5bbb3b8",
       "sections": [
         "Opening passage",
         "Nobody Has to Be Conscious",
@@ -155,7 +156,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "cc9321afba5f07dd41843f9634fa8c7b954f676a87233904767c368c3a20ae18",
+      "source_sha256": "9e0db47c2ccfcafa40fd31e13ebeb716412de87b9d7c8c43f08fbe7544667fe6",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "b033f58937cd6a41d03ed4de880ac450f417c711c339cf7329c982c9b036d7c8",
       "sections": [
@@ -174,9 +175,9 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "dc73620878e5658bdcbfaed7a398f99fe644831dfaeb6361760cf2ab0f0f29c7",
+      "source_sha256": "8265078b39e0b33e06ac7ef41d7fdec03b108b2d12696edca7cafb7369ea9446",
       "brief": "prompts/notebooklm/chapter-09.md",
-      "brief_sha256": "deafc6cb296acde7880c045d0e84d7693701ab8d9e54e5fdb38e18ab02c587a7",
+      "brief_sha256": "c2aeec28c54747bf04a84a686ac658e0d1639220693f2d60a0b29ba22ca7d3bf",
       "sections": [
         "Opening passage",
         "What Remains in the Seat",
@@ -190,60 +191,54 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "e2afade39d5fda7331a6e412f29d48bb71f230707182bc2a70d4c9fd9cd45cbd",
+      "source_sha256": "29f7f35adb90bb8ac7b4c4cbd26e42d0ee8807c12252d744e4f988473c1a8361",
       "brief": "prompts/notebooklm/chapter-10.md",
-      "brief_sha256": "8e83c067e2206774760c4155bbd41ce73d76abe7a8c831f15c55689365d29084",
+      "brief_sha256": "72c4352dc1029dc51d3622b075623e729d756a6c1b4e38e1fd072d7081324c73",
       "sections": [
         "Opening passage",
-        "What the Corrections Had to Teach",
+        "Scaffolding",
+        "Distillation",
         "The Interface Moves Up",
-        "Bureaucracy on the Fly",
-        "Selective Friction",
-        "Invisible by Default, Legible on Demand",
         "The Second Coffee Test",
+        "The Weights Will Eat It",
+        "What the Fold Forgets",
+        "Creative Distrust",
+        "Coupled to a Person",
         "Where This Could Be Wrong"
       ]
     },
     {
-      "source": "chapters/11-the-store-that-builds-itself.md",
-      "source_sha256": "dd4f14f39844347cc79d2c48b39a1c3941e02d0047242166d1008780f57ca34e",
+      "source": "chapters/11-the-system-3-company.md",
+      "source_sha256": "8043dc435474d25a757744c7d165e902d17e471ea6b0d1f695ea0a728024485e",
       "brief": "prompts/notebooklm/chapter-11.md",
-      "brief_sha256": "b0e06296c7f927edc1f108b7474680f646c9a91c1ecc05cf84509a72f31fa423",
+      "brief_sha256": "c5d032e717c81ac9b876521d76aa96bbf8df41582d65f494a975d670a30b879a",
       "sections": [
         "Opening passage",
-        "Stop Recommending for a Moment",
-        "People Refuse to Stay in the Funnel",
-        "A Library of Ways to Help",
-        "Composition Is Not Ranking With a New Hat",
-        "Mei Does Not Need More Shoes",
-        "Sami Does Not Need a Click",
-        "The Honest Cold Start",
-        "Replayable",
-        "A Theory Losing Contact With Reality",
-        "Let the LLM Narrate. Do Not Let It Declare Reality.",
-        "The Objective Fights Back",
-        "Deliberately Boring",
-        "When the Page Stops Being the Product",
-        "The Book Comes Back to Bite Me"
+        "A Company Dressed as a Company",
+        "A Rule Without a Mechanism",
+        "The Border",
+        "I Smell a Problem",
+        "Losing to One Agent",
+        "The Envelope",
+        "The Institution Inside One Agent"
       ]
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "f4d373a26665bda676d91108f78b8b8b38170f5e0ce3e5aede6af00583c0a591",
+      "source_sha256": "2e2a78c6ab374b6251fd489f50bd206e3ebf8a960f2799a9f02db9b39a3e4643",
       "brief": "prompts/notebooklm/chapter-12.md",
-      "brief_sha256": "e7df4bb8466d5e44d1d3cd371701dbec65000e3b391ab013b030b374cc7410bc",
+      "brief_sha256": "1a5dc93ae05819ccdbdbb442e247645d260289a9b02192340aa622b772498c71",
       "sections": [
         "Opening passage",
         "The Curve",
-        "The River Moves",
-        "Bespoke Comes Back",
-        "Anyone Could Do That",
+        "The Ideology Vortex",
         "The Answer to Derrida",
-        "Capacity Over Power",
+        "Bespoke Comes Back",
+        "Ostrom in a Weekend",
+        "Capacity over Power",
+        "Beyond Comprehension",
         "Who Owns the Laboratory",
-        "The Second Descent",
         "What Are Humans For?",
-        "The Human Is Not the Reward Function",
         "The Door After System 3"
       ]
     },
@@ -263,6 +258,27 @@
       "brief_sha256": "0ac4c623c6db8d5ae6b2d577c65b33251dbd93b9d721767dde4d74340b0b735f",
       "sections": [
         "The complete two-sentence coda"
+      ]
+    },
+    {
+      "source": "chapters/interlude-when-it-goes-wrong.md",
+      "source_sha256": "5f878214b2de77e114a36283b3e35dc75bfe646721a0827d645c31035dd8b5ab",
+      "brief": "prompts/notebooklm/interlude-when-it-goes-wrong.md",
+      "brief_sha256": "a274a47d9ad4ced9f4910811f0b159168a15304c28453bda4912f8de2b28d283",
+      "sections": [
+        "Opening passage"
+      ]
+    },
+    {
+      "source": "chapters/interlude-the-city.md",
+      "source_sha256": "d4b3cb2336af60c233754e37b6a734fb9f14d3138cb1d5833d7fd80b339db4cc",
+      "brief": "prompts/notebooklm/interlude-the-city.md",
+      "brief_sha256": "56ed122ac897cb26feb404cf6249de46f0ab50421334504774f09b838fbba427",
+      "sections": [
+        "Opening passage",
+        "What the Feed Is For",
+        "Plots and Cranes",
+        "Who Owns the Plots"
       ]
     }
   ]

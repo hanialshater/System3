@@ -17,8 +17,9 @@ The author bets on agents because control moves upward, from choosing each move 
 ## Moments to show
 
 - the author's own reasons and doubts
+- agents arriving with civilization in their luggage
 - the jacket-returns failure
-- the socks joke
+- the goldfish and the limits that were not his
 - Reviewer 2
 
 ## Lines to keep word for word

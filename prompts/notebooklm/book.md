@@ -1,6 +1,6 @@
 # System 3: whole-book video brief
 
-Sources: every chapter in [book order](../../book-design/curated/book-order.json), the part pages, the science reveal and the interlude, with the [reference appendix](../../chapters/appendix-references.md). This is production guidance for one overview video, not a summary to narrate.
+Sources: every chapter in [book order](../../book-design/curated/book-order.json), the part pages, the science reveal and the two interludes, with the [reference appendix](../../chapters/appendix-references.md). This is production guidance for one overview video, not a summary to narrate.
 
 ## Video prompt
 
@@ -17,8 +17,9 @@ Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards 
 5. **Part III, Science Turns Inward** (Chapters 6 to 8). Pattern languages with their reasons attached; recursive self-improvement and its evaluator, told through AlphaGo; aligning agents that outthink us, opening on the ExploitGym incident.
 6. **Interlude.** When it goes wrong: Lysenko, and objections that stop mattering.
 7. **Part IV, Human Purposes** (Chapters 9 and 10). What remains in the seat is deciding what the trying is for; desire is learned, often together; fluent autonomy and the second coffee test.
-8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The store that builds itself; capacity over power, and finding out how much more a person can be.
-9. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
+8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The book's own design run as a company for a month and beaten by one strong agent; capacity over power, and finding out how much more a person can be.
+9. **Interlude.** The City: the lesson feed with its objective written down, and a city of agent companies with one owner so far.
+10. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
 
 ## Visual style
 
@@ -42,7 +43,8 @@ Follow the arc from machine to human across the parts: more machinery in Parts I
 - "System 3 checks."
 - "We call it science."
 - "Self-reference is not self-improvement."
-- "What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for."
+- "What remains is deciding what the trying is for."
+- "The student has still not been asked."
 - "We built scaffolds for ourselves for the same reason."
 
 ## Review

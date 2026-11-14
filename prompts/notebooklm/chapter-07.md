@@ -29,8 +29,8 @@ A system that improves itself can only climb as high as its evaluator lets it; s
 
 - "Static. Static. Static. Jackpot."
 - "Self-reference is not self-improvement."
-- "Nobody taught it Move 37."
-- "The check came from outside it."
+- "may look suspiciously like excellent DevOps"
+- "Someone has to approve the replacement, and it cannot be the student."
 
 ## Imagined, reported or proposed
 

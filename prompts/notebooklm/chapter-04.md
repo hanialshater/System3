@@ -12,7 +12,7 @@ Adapt Hani M.M. Al-Shater's "Chapter 4: System 3" into an English video. Select 
 
 ## The idea to land
 
-System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on external machinery of trust, instruments and records.
+System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on external machinery of trust, instruments and records, and that machinery is what lets people connect what they know and build on it.
 
 ## Moments to show
 
@@ -28,6 +28,7 @@ System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on e
 ## Lines to keep word for word
 
 - "System 3 checks."
+- "System 3 is what a civilization does."
 - "a formal proof never needs to touch a cow"
 
 ## Imagined, reported or proposed

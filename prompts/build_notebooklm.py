@@ -15,18 +15,20 @@ from manuscript import prepare
 RULES = {
     0: 'Keep the coffee test and rediscovery riddle. Do not restore the removed claim of a verified Navier-Stokes solution; use the current qualified report and notes.',
     1: 'Preserve conditional emergence and the move from choosing individual actions to shaping operating conditions. Keep confidence separate from trustworthiness.',
-    2: 'Keep the immutable evaluator, local scope of reported scores, and distinction between discovery in this run and historical novelty. Never invent valid packings, progress curves or absent figures.',
+    2: 'Keep the immutable evaluator, local scope of reported scores, and distinction between discovery in this run and historical novelty. The evaluator was protected by instruction and checked afterwards; say so. Never invent valid packings, progress curves or absent figures.',
     3: 'Preserve the early computing history and the five layers. The teaching demos were judged by simulated learners; do not imply a real student trial.',
     4: 'Preserve the trust chain from the opening photo through instruments and the small experiment. Keep the negative result and limited sample visible; do not turn it into proof of general effectiveness.',
     5: 'Tell institutional repairs in manuscript order. Seven functions are not seven historical stages. Keep the human work around the compiler explicit. The separate science reveal is not part of this source; do not append it without selecting that page separately.',
-    6: 'Follow Uncle Jalal, Sam and Ines as knowledge moves from prestige and tacit memory into tested, executable patterns. Do not cast Uncle Jalal as a fool or Sam as an oracle: Jalal knowingly brings outside ideas as hypotheses to test; Sam is a principal engineer whose tribal knowledge is central to how the company works but is also fallible. High-functioning bullshit names ideas, explanations and practices that have lost the conditions that made them answerable to reality, not a class of people. Do not compress away the Alexander-to-software lineage: it is the chapter\'s origin story for knowledge that travels. Preserve Alexander\'s quality without a name, representative concrete patterns, pattern anatomy, context and confidence marks, the political purpose, Beck/Cunningham and Design Patterns, WikiWikiWeb and Wikipedia, pattern names becoming feathers, and Alexander\'s 1996 doubt about what programmers had carried over. Preserve the peacock/feathers motif, high-functioning bullshit, the pattern facing cases it did not choose, the pattern going to work, the file overgeneralizing at checkout, the one-word "noted" response, inherited stale knowledge and the final handoff to recursive self-improvement. Uncle Jalal, Sam, Ines, the grocery company, their incidents and test outcomes are imagined; distinguish them from Bing, Facebook, Alexander, the software-pattern history and reported AI/mathematics research. Treat Bayesian epistemology historically: Bayes supplies a theorem, while the chapter's account of partial belief comes through Ramsey, with de Finetti and Savage in the later subjectivist/decision-theoretic tradition. Do not make Bayes the philosopher of science. Let the durable-transferable-executable-corrigible formulation arrive near the end, after the reader has discovered it. Do not present the story as evidence that an agent institution has implemented the design, and do not claim a certified Navier-Stokes solution.',
+    6: 'Follow Uncle Jalal, Sam and Ines as knowledge moves from prestige and tacit memory into tested, executable patterns. Do not cast Uncle Jalal as a fool or Sam as an oracle: Jalal knowingly brings outside ideas as hypotheses to test; Sam is a principal engineer whose tribal knowledge is central to how the company works but is also fallible. High-functioning bullshit names ideas, explanations and practices that have lost the conditions that made them answerable to reality, not a class of people. Do not compress away the Alexander-to-software lineage: it is the chapter\'s origin story for knowledge that travels. Preserve Alexander\'s unnameable quality, representative concrete patterns, pattern anatomy, context and confidence marks, the political purpose, Beck/Cunningham and Design Patterns, WikiWikiWeb, pattern names becoming feathers, and Alexander\'s 1996 doubt about what programmers had carried over. Preserve the peacock/feathers motif, high-functioning bullshit, the pattern facing cases it did not choose, the pattern going to work, the file overgeneralizing at checkout, the one-word "noted" response, inherited stale knowledge and the final handoff to recursive self-improvement. Uncle Jalal, Sam, Ines, the grocery company, their incidents and test outcomes are imagined; distinguish them from Bing, Facebook, Alexander, the software-pattern history and reported AI/mathematics research. Treat Bayesian epistemology historically: Bayes supplies a theorem, while the chapter\'s account of partial belief comes through Ramsey, with de Finetti and Savage in the later subjectivist/decision-theoretic tradition. Do not make Bayes the philosopher of science. Do not present the story as evidence that an agent institution has implemented the design, and do not claim a certified Navier-Stokes solution.',
     7: 'Keep the history of learning and the imagined store research agent distinct. The constitution is a design, not evidence that recursive self-improvement is solved.',
     8: 'Preserve limits of weak supervision, oversight and internal measurements. Distinguish reading from intervention; the overseer is not ground truth.',
     9: 'Keep performance distinct from learning and evidence distinct from authority over human purposes. Preserve plural principals and changes in what the person values.',
     10: 'Use the actual editing record, repeated corrections, the second coffee test and the objections in "Where This Could Be Wrong". Fluency remains an ambition; do not portray the desired experience as a working product.',
-    11: 'Distinguish the prototype from imagined customers and the proposed business experiment. Do not claim measured commercial success or restore the removed internal recommendation case.',
-    12: 'Present the hoped-for future conditionally. Retain ownership, pluralism and the possibility of failure; there is no new experiment in this chapter. Do not import the fable that follows.',
+    11: 'Tell the month in the chapter\'s order. The lessons company, System 3 Meta and the benchmarks are reported from the companies\' own records and the author\'s messages; quote his messages exactly as typed, typos included. One strong agent won or tied almost every benchmark: do not soften that or turn it into a success story for the organization. Every worker except the author is an AI agent with a given name. No real learner has been tested. Do not import the City interlude.',
+    12: 'Present the hoped-for future conditionally. Retain ownership, pluralism and the possibility of failure; there is no new experiment in this chapter. Do not import the City interlude or the fable that follow.',
     13: 'This is the alternative ending, told as fiction. Preserve the source sequence, dry comedy, identity twists and emotional ending. Do not explain a twist before the manuscript reveals it.',
+    'lysenko': 'Keep it short and cold. The history is reported; its application to agents is the author\'s argument. Do not promise that later chapters solve the problem, and do not caricature real people.',
+    'city': 'This follows Chapter 12 and hands over to the fable: end on its last paragraph and explain nothing about the fable. Keep every limit the text states: one owner, one month, twelve unchecked lessons, an experiment designed and not run. The companies and their numbers are reported from their own records.',
     14: 'This is the short Scaffolds coda, not Chapter 14. Preserve its two closing sentences and brevity; do not pad it into an explainer.',
 }
 
@@ -43,7 +45,7 @@ CORE = {
             keep=['Your coffee is still too hot.', 'Complexity over engineering. Emergence over design. Capacity over power.', 'Rediscover, because we have built it before.'],
             labels='The coffee scene is a thought experiment addressed to the reader.'),
     1: dict(idea='The author bets on agents because control moves upward, from choosing each move to shaping the conditions; emergence can give capability without giving trust.',
-            moments=['the author\'s own reasons and doubts', 'the jacket-returns failure', 'the socks joke', 'Reviewer 2'],
+            moments=['the author\'s own reasons and doubts', 'agents arriving with civilization in their luggage', 'the jacket-returns failure', 'the goldfish and the limits that were not his', 'Reviewer 2'],
             keep=['Nobody needed to lie.'],
             labels='The self-organising agent and the jacket example are imagined illustrations.'),
     2: dict(idea='Search keeps moving up a level, from tuning numbers to evolving whole programs, and for a long time the human was still the inventor.',
@@ -54,21 +56,21 @@ CORE = {
             moments=['the early computing history', 'the vibe coder\'s seat', 'the Merge Sort demos judged by simulated learners', 'the five layers, with the desire layer on top', 'the cathedral on a shopping cart'],
             keep=['What do we actually want?', 'Nothing crashes.'],
             labels='The teaching demos were judged by simulated learners, not students.'),
-    4: dict(idea='System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on external machinery of trust, instruments and records.',
+    4: dict(idea='System 1 proposes, System 2 deliberates, System 3 checks: knowledge depends on external machinery of trust, instruments and records, and that machinery is what lets people connect what they know and build on it.',
             moments=['the camel', 'Call Alberto', 'the school the author\'s mother chose and the history he believed', 'the fire and the brother', 'the Gut, the Head and the Hand', 'the MARC analyzer', 'creative distrust', 'back to the camel'],
-            keep=['System 3 checks.', 'a formal proof never needs to touch a cow'],
+            keep=['System 3 checks.', 'System 3 is what a civilization does.', 'a formal proof never needs to touch a cow'],
             labels='The small experiment had a negative result on a limited sample; keep that visible.'),
     5: dict(idea='Societies of agents rediscover institutions one repair at a time: records, standards, specialists and a second witness.',
             moments=['sixteen Claudes building a C compiler and needing progress files', 'the clerk\'s tablet', 'Ibn al-Haytham in a dark room', 'Boyle\'s pump', 'Elaine Bromiley\'s operating theatre', 'the loose cable'],
             keep=['Sometimes bureaucracy is epistemology with a clipboard.', 'Civilization, in this sense, is a trust chain with plumbing.', 'One of the culprits was a loose cable.'],
             labels='The potter is a composite figure; the compiler project and historical cases are reported.'),
-    6: dict(idea='Knowledge must survive its author, travel with enough context for another worker to use, become actionable by an agent, and still remain open to correction: durable, transferable, executable and corrigible.',
-            moments=['Uncle Jalal deliberately bringing outside ideas to test, principal engineer Sam carrying tribal knowledge that has no portable form, the smaller sticky note and the peacock signal', 'the full Alexander sequence: quality without a name; concrete patterns such as Light on Two Sides, Street Café, the too-shallow balcony and Pools of Light; the anatomy of a pattern; context; confidence marks; the political aim of letting inhabitants argue with architects', 'the full software lineage: Beck and Cunningham carry patterns into programming; Design Patterns turns them into a shared vocabulary; Cunningham builds WikiWikiWeb to collect patterns; Wikipedia later inherits the wiki; pattern names begin travelling faster than their reasons; Alexander\'s 1996 keynote asks whether programmers preserved what mattered', 'the wins that vanish and high-functioning bullshit at the quarterly review', 'Ines at two in the morning with the runbook that says ask Sam', 'Jalal, Sam and Ines turning the forty historical curves into the first agent skill; Sam removes a false supporting case, Ines adds the exit condition and route to another pattern, Jalal adds confidence', 'the wins-that-fade skill becoming executable knowledge', 'the file wrongly blocking a checkout speed-up and earning a narrower scope', 'Bing\'s correct numbers with the wrong meaning', 'the one-word noted response followed by Facebook and Longino', 'stale inherited knowledge becoming high-functioning bullshit with no author', 'Three Departures: the predecessor leaves and reasons vanish; Sam leaves and the company keeps working; agent sessions end while inherited beliefs remain', 'the pattern library composing across multiple agents, then the second workshop and final ask Ines line'],
-            keep=['why am I suddenly emotionally invested in the width of a balcony?', 'high-functioning bullshit', 'is a decorative conscience', 'Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing.'],
+    6: dict(idea='Knowledge has to survive its author, travel with its reasons, be usable by an agent and stay open to correction. A pattern says where it can be wrong; a feather only carries prestige.',
+            moments=['Uncle Jalal deliberately bringing outside ideas to test, principal engineer Sam carrying tribal knowledge that has no portable form, the smaller sticky note and the peacock signal', 'the full Alexander sequence: the quality that has no adequate name; concrete patterns such as Light on Two Sides, the window seat, the six-foot balcony, Child Caves and Things from Your Life; the anatomy of a pattern; context; confidence marks; the political aim of letting inhabitants argue with architects', 'the full software lineage: Beck and Cunningham carry patterns into programming; Design Patterns turns them into a shared vocabulary; Cunningham builds WikiWikiWeb to collect patterns; pattern names begin travelling faster than their reasons; Alexander\'s 1996 keynote asks whether programmers preserved what mattered', 'the wins that vanish and high-functioning bullshit at the quarterly review', 'Ines at two in the morning with the runbook that says ask Sam', 'Jalal, Sam and Ines turning the forty historical curves into the first agent skill; Sam removes a false supporting case and narrows the scope, Ines adds the route to another pattern, Jalal adds the confidence mark', 'the wins-that-fade skill becoming executable knowledge', 'the file wrongly blocking a checkout speed-up and earning a narrower scope', 'Bing\'s correct numbers with the wrong meaning', 'the one-word noted response followed by Facebook and Longino', 'stale inherited knowledge becoming high-functioning bullshit with no author', 'Three Departures: the predecessor leaves and reasons vanish; Sam leaves and the company keeps working; agent sessions end while inherited beliefs remain', 'the pattern library composing across multiple agents, then the second workshop and final ask Ines line'],
+            keep=['why am I suddenly emotionally invested in the width of a balcony?', 'high-functioning bullshit', 'is a decorative conscience'],
             labels='Uncle Jalal, Sam, Ines, the grocery company and their incidents are imagined. Alexander and the software-pattern history, Bing, Facebook and the cited AI/mathematics cases are reported. The proposed agent institution and its pattern files are designs, not evidence of a deployed system.'),
     7: dict(idea='A system that improves itself can only climb as high as its evaluator lets it; self-reference is not self-improvement, and the check has to come from outside.',
             moments=['Omar and the dog at night', 'the click ranker with orange backgrounds', 'TD-Gammon, then Move 37 and AlphaGo Zero', 'the noisy-TV joke', 'neural architecture search and the space it was given', 'Lee Sedol\'s Move 78 and the 2023 amateur win against KataGo', 'return True', 'the constitutional surface'],
-            keep=['Static. Static. Static. Jackpot.', 'Self-reference is not self-improvement.', 'Nobody taught it Move 37.', 'The check came from outside it.'],
+            keep=['Static. Static. Static. Jackpot.', 'Self-reference is not self-improvement.', 'may look suspiciously like excellent DevOps', 'Someone has to approve the replacement, and it cannot be the student.'],
             labels='Omar, the store and its research agent are imagined; the AlphaGo, KataGo and research history is reported. The constitution is a proposed design.'),
     8: dict(idea='Aligning AI that may outthink us is a management problem the author knows from leading reports smarter than him, now with technical tools: retraining, reading notes, opening heads, steering, second opinions and making the system ask.',
             moments=['the ExploitGym incident and the agents\' bulletin board', 'reward hacking spreading into wider misalignment', 'the rabbit couplet', 'Golden Gate Claude', 'debate lifting judges from 60 to 88 percent', 'the employee who does the alignment research'],
@@ -76,24 +78,32 @@ CORE = {
             labels='The incident is reported; follow the chapter\'s chronology and qualifications exactly. Distinguish established causes from proposed safeguards.'),
     9: dict(idea='When the machine can decide what to try next, what remains is deciding what the trying is for, and wanting is learned, often with other people.',
             moments=['the vibe coder\'s seat', 'Lee Sedol\'s retirement', 'Amazon\'s changing value proposition', 'Greg Linden\'s shopping-cart test', 'an imagined Mallorca summer and the second machine', 'the clinic founder learning on Monday and Wednesday', 'desire as a group activity'],
-            keep=['What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for.', 'Very efficient. Slightly evil.'],
+            keep=['What remains is deciding what the trying is for.', 'Very efficient. Slightly evil.', 'You cannot want what you cannot imagine'],
             labels='The Mallorca traveller and the clinic founder are imagined; the Amazon history and research are reported.'),
     10: dict(idea='Fluent autonomy means a small request quietly assembles the right organisation, invisible by default and legible on demand, without losing what the human refused.',
-             moments=['the one-sentence editing request and the dead chapter that came back', 'the blind readers and what the author refused', 'bureaucracy on the fly', 'the second coffee test', 'where this could be wrong'],
-             keep=['I spent years building systems that decide what to show her.'],
+             moments=['the one-sentence editing request and the dead chapter that came back', 'the blind readers and what the author refused', 'the fold that turns three branches into one plain layer', 'the second coffee test', 'the weights eating the scaffolding while the check stays outside', 'creative distrust turned on the book itself', 'where this could be wrong'],
+             keep=['Here the unit is closer to the sigh.', 'That is opacity with good typography.', 'it would like a referee'],
              labels='The editing of this book is lived; the fluent system is an ambition, not a product.'),
-    11: dict(idea='A store that builds itself would compose ways to help, not rank more products, and would treat each page as an experiment it is willing to lose.',
-             moments=['the stuck customer', 'the problem fingerprint', 'recommendation experiences', 'Mei and the trail shoes', 'the honest cold start', 'Surface Value', 'the book biting back'],
-             keep=['A philosophy of emergence should be willing to lose an A/B test.', 'Cold start is a state, not an error.'],
-             labels='The prototype is the author\'s; Mei, Sami and Lea are imagined, and the business experiment is proposed.'),
+    11: dict(idea='The author builds a company of agents from this book, watches it grow the pieces of an institution one failure at a time, and then benchmarks it against one strong agent, which wins or ties almost every round. What survives is a check held outside the team that made the work.',
+             moments=['the founding message typed late one night in October', 'the Zen\'s lines becoming addresses in a company', 'the Greenland map caught lying on the first night', 'fifty-four of seventy-four roles that never ran: the org chart as a feather', 'the rooms, the time slider and the knot lesson that became a laboratory', 'the machine running out of memory under founder pressure', '"I smell a problem" and the manager rounds eating the budget', 'System 3 Meta, the benchmarks and predictions committed first', 'the single agent winning; the splits that made the bugs', 'the sealed envelope and two miscompiles', 'one agent hiring the company\'s own checkers in thirty-six minutes', 'Jeff, respawned at a desk that was not supposed to exist'],
+             keep=['I had asked for a postcard and received a residence permit.', 'A philosophy of emergence should be willing to lose an A/B test', 'The student has still not been asked.'],
+             labels='Reported from the two companies\' own records and the author\'s messages; not composites. The benchmark figures are as the chapter states them. No real learner has been tested.'),
     12: dict(idea='After capacity becomes cheap, people can attempt instead of argue, and the question becomes who owns the laboratory and what we want the capacity for.',
-             moments=['Dantzig solving the problems he took for homework', 'the double-descent curve', 'the river moving under the applied scientist', 'the young researcher and the imitation loop', 'Ostrom\'s commons', 'the octopus ending'],
+             moments=['Dantzig compressing a summer into a minute, and von Neumann\'s hour on duality', 'the double-descent curve', 'the ideology vortex and Monday morning', 'the young researcher and the imitation loop', 'Ostrom\'s irrigators', 'eleven people, one room and seven on Tuesday', 'who owns the laboratory', 'the river moving under the applied scientist', 'the irrigators\' weekend'],
              keep=['Gradient descent did not defeat ambiguity.', 'Capacity over power is an ethical direction, not a forecast about stronger models.', 'I would like us to find out how much more.'],
              labels='The workshop, community tool and irrigators are illustrative, not reported cases.'),
     13: dict(idea='A fable; let it be one.',
              moments=['follow the source scene by scene'],
              keep=['Decaf.'],
              labels='Fiction. Explain nothing; every twist lands where the text puts it.'),
+    'lysenko': dict(idea='Records can survive while objections lose their consequences. That is the difference between science and an efficient apparatus of authority.',
+             moments=['Lysenko\'s announcement in August 1948', 'Vavilov, already dead in prison', 'the 1952 criticism published with permission', 'the two routes for agents: a system that judges every check on itself, and an owner who prevents the challenge'],
+             keep=['In 1948 the journals kept coming out.'],
+             labels='Reported history; the application to agents is argued.'),
+    'city': dict(idea='What the capacity looks like once it is built: a lesson feed whose objective is written down, and a city of agent companies, each with a referee, owned so far by one person.',
+             moments=['the intellectual tourist and the postcard you must answer before reading', 'Antarctica against Australia, "on this map"', 'van Langren\'s twelve guesses at Rome', 'Surface Value and the trade-off table the learner cannot yet argue with', 'a belief of 0.6: correct and slightly hurtful', 'floating islands, lit windows, PLOT OPEN and a crane', 'the art judge and round nine', 'Quantaplan choosing one strong agent on its first day', 'the headquarters and the owner\'s inbox', 'the evaluation steward running in eight companies', 'one sentence whose every word is still an open claim', 'the handoff to the prophecy'],
+             keep=['I find this both correct and slightly hurtful.', 'I had asked for a lesson about knots and ended up wanting a city.', 'It requires an octopus, a romance, two pills and, unfortunately, taxes.'],
+             labels='Reported from the companies\' own records. One owner so far; no real learners yet; the planted-claim experiment is designed and not run.'),
     14: dict(idea='The closing coda.', moments=[], keep=[], labels=''),
 }
 
@@ -126,18 +136,24 @@ LOOK = {
     8: 'A small human correction steering a much larger research machine. The bulletin board as a back channel, notes being read, a head opened as a schematic, not gore or glowing brains.',
     9: 'The human returns to the centre. A mirror reflecting branching lives rather than words; a Mediterranean coast in soft washes for the imagined Mallorca summer; people talking together.',
     10: 'Mechanical herons in effortless formation: infrastructure that has become nearly invisible. A change of camera from the landscapes before it.',
-    11: 'The store itself is visibly compositional: shelves and framed modules quietly rearranging around one customer.',
+    11: 'The chapter\'s seven pictures are screenshots of the companies: show each as an unaltered evidence object on the cream page. Around them, in ink: a small office of brass agents at desks, an org chart drawn as a peacock feather, one agent alone at a desk, a sealed envelope.',
     12: 'Doors opening onto people, movement and room. The robots have almost gone. Dantzig\'s blackboard and a commons of shared water as human-scale details.',
     13: 'A controlled surreal finale, a little darker and more theatrical, in the same paper and ink. Never show a twist before the text reveals it.',
+    'lysenko': 'A shelf where journals keep arriving, in ink and gray wash; an empty chair where an objector sat. No portraits and no caricature.',
+    'city': 'The seven pictures are screenshots: show them unaltered. Around them, in ink and wash: floating islands with small buildings, lit windows, a crane, an empty plot with a sign. People, not robots, at the centre of the last image.',
     14: 'Plain typeset text on cream paper. No illustration.',
 }
+
+
+KEYS = {'interlude-when-it-goes-wrong.md': 'lysenko', 'interlude-the-city.md': 'city'}
 
 
 def render(source):
     raw = source.read_text()
     clean, _, _, _ = prepare(raw)
     norm = clean.replace('\u2019', "'")
-    missing = [k for k in CORE[int(source.name[:2])]['keep'] if k.replace('\u2019', "'") not in norm]
+    number = KEYS.get(source.name) or int(source.name[:2])
+    missing = [k for k in CORE[number]['keep'] if k.replace('\u2019', "'") not in norm]
     if missing:
         raise SystemExit(f'{source.name}: lines the brief keeps are no longer in the manuscript: {missing}')
     tokens = MarkdownIt().parse(clean)
@@ -150,10 +166,9 @@ def render(source):
                 title = text
             elif token.tag in ('h2', 'h3') and text != 'Notes':
                 scenes.append(text)
-    number = int(source.name[:2])
     if number == 14:
         scenes = ['The complete two-sentence coda']
-    name = 'preface' if number == 0 else 'scaffolds' if number == 14 else f'chapter-{number:02d}'
+    name = source.stem if isinstance(number, str) else 'preface' if number == 0 else 'scaffolds' if number == 14 else f'chapter-{number:02d}'
     prompt = (
         f'Adapt Hani M.M. Al-Shater\'s "{title}" into an English video. '
         'Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. '
@@ -190,7 +205,7 @@ def render(source):
 
 OVERVIEW = f"""# System 3: whole-book video brief
 
-Sources: every chapter in [book order](../../book-design/curated/book-order.json), the part pages, the science reveal and the interlude, with the [reference appendix](../../chapters/appendix-references.md). This is production guidance for one overview video, not a summary to narrate.
+Sources: every chapter in [book order](../../book-design/curated/book-order.json), the part pages, the science reveal and the two interludes, with the [reference appendix](../../chapters/appendix-references.md). This is production guidance for one overview video, not a summary to narrate.
 
 ## Video prompt
 
@@ -207,8 +222,9 @@ Make an English overview video of Hani M.M. Al-Shater's book "System 3: Towards 
 5. **Part III, Science Turns Inward** (Chapters 6 to 8). Pattern languages with their reasons attached; recursive self-improvement and its evaluator, told through AlphaGo; aligning agents that outthink us, opening on the ExploitGym incident.
 6. **Interlude.** When it goes wrong: Lysenko, and objections that stop mattering.
 7. **Part IV, Human Purposes** (Chapters 9 and 10). What remains in the seat is deciding what the trying is for; desire is learned, often together; fluent autonomy and the second coffee test.
-8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The store that builds itself; capacity over power, and finding out how much more a person can be.
-9. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
+8. **Part V, What the Capacity Is For** (Chapters 11 and 12). The book's own design run as a company for a month and beaten by one strong agent; capacity over power, and finding out how much more a person can be.
+9. **Interlude.** The City: the lesson feed with its objective written down, and a city of agent companies with one owner so far.
+10. **An alternative ending.** A fable, left unexplained; then the two-sentence coda about scaffolds.
 
 ## Visual style
 
@@ -222,7 +238,8 @@ Follow the arc from machine to human across the parts: more machinery in Parts I
 - "System 3 checks."
 - "We call it science."
 - "Self-reference is not self-improvement."
-- "What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for."
+- "What remains is deciding what the trying is for."
+- "The student has still not been asked."
 - "We built scaffolds for ourselves for the same reason."
 
 ## Review
@@ -234,7 +251,8 @@ Check that the reveal comes after Part II, that imagined examples are labelled, 
 def expected():
     outputs = {}
     records = []
-    for source in sorted((ROOT / 'chapters').glob('[0-9][0-9]-*.md')):
+    sources = sorted((ROOT / 'chapters').glob('[0-9][0-9]-*.md')) + [ROOT / 'chapters' / name for name in KEYS]
+    for source in sources:
         name, body, scenes = render(source)
         outputs[name] = body
         records.append(dict(source=str(source.relative_to(ROOT)),

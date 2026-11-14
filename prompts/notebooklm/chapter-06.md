@@ -7,21 +7,21 @@ This is a source-derived production outline, not a factual summary or a complete
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Follow Uncle Jalal, Sam and Ines as knowledge moves from prestige and tacit memory into tested, executable patterns. Do not cast Uncle Jalal as a fool or Sam as an oracle: Jalal knowingly brings outside ideas as hypotheses to test; Sam is a principal engineer whose tribal knowledge is central to how the company works but is also fallible. High-functioning bullshit names ideas, explanations and practices that have lost the conditions that made them answerable to reality, not a class of people. Do not compress away the Alexander-to-software lineage: it is the chapter's origin story for knowledge that travels. Preserve Alexander's quality without a name, representative concrete patterns, pattern anatomy, context and confidence marks, the political purpose, Beck/Cunningham and Design Patterns, WikiWikiWeb and Wikipedia, pattern names becoming feathers, and Alexander's 1996 doubt about what programmers had carried over. Preserve the peacock/feathers motif, high-functioning bullshit, the pattern facing cases it did not choose, the pattern going to work, the file overgeneralizing at checkout, the one-word "noted" response, inherited stale knowledge and the final handoff to recursive self-improvement. Uncle Jalal, Sam, Ines, the grocery company, their incidents and test outcomes are imagined; distinguish them from Bing, Facebook, Alexander, the software-pattern history and reported AI/mathematics research. Treat Bayesian epistemology historically: Bayes supplies a theorem, while the chapter's account of partial belief comes through Ramsey, with de Finetti and Savage in the later subjectivist/decision-theoretic tradition. Do not make Bayes the philosopher of science. Let the durable-transferable-executable-corrigible formulation arrive near the end, after the reader has discovered it. Do not present the story as evidence that an agent institution has implemented the design, and do not claim a certified Navier-Stokes solution. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
+Adapt Hani M.M. Al-Shater's "Chapter 6: Pattern Language" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Follow Uncle Jalal, Sam and Ines as knowledge moves from prestige and tacit memory into tested, executable patterns. Do not cast Uncle Jalal as a fool or Sam as an oracle: Jalal knowingly brings outside ideas as hypotheses to test; Sam is a principal engineer whose tribal knowledge is central to how the company works but is also fallible. High-functioning bullshit names ideas, explanations and practices that have lost the conditions that made them answerable to reality, not a class of people. Do not compress away the Alexander-to-software lineage: it is the chapter's origin story for knowledge that travels. Preserve Alexander's unnameable quality, representative concrete patterns, pattern anatomy, context and confidence marks, the political purpose, Beck/Cunningham and Design Patterns, WikiWikiWeb, pattern names becoming feathers, and Alexander's 1996 doubt about what programmers had carried over. Preserve the peacock/feathers motif, high-functioning bullshit, the pattern facing cases it did not choose, the pattern going to work, the file overgeneralizing at checkout, the one-word "noted" response, inherited stale knowledge and the final handoff to recursive self-improvement. Uncle Jalal, Sam, Ines, the grocery company, their incidents and test outcomes are imagined; distinguish them from Bing, Facebook, Alexander, the software-pattern history and reported AI/mathematics research. Treat Bayesian epistemology historically: Bayes supplies a theorem, while the chapter's account of partial belief comes through Ramsey, with de Finetti and Savage in the later subjectivist/decision-theoretic tradition. Do not make Bayes the philosopher of science. Do not present the story as evidence that an agent institution has implemented the design, and do not claim a certified Navier-Stokes solution. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
 ```
 
 ## The idea to land
 
-Knowledge must survive its author, travel with enough context for another worker to use, become actionable by an agent, and still remain open to correction: durable, transferable, executable and corrigible.
+Knowledge has to survive its author, travel with its reasons, be usable by an agent and stay open to correction. A pattern says where it can be wrong; a feather only carries prestige.
 
 ## Moments to show
 
 - Uncle Jalal deliberately bringing outside ideas to test, principal engineer Sam carrying tribal knowledge that has no portable form, the smaller sticky note and the peacock signal
-- the full Alexander sequence: quality without a name; concrete patterns such as Light on Two Sides, Street Café, the too-shallow balcony and Pools of Light; the anatomy of a pattern; context; confidence marks; the political aim of letting inhabitants argue with architects
-- the full software lineage: Beck and Cunningham carry patterns into programming; Design Patterns turns them into a shared vocabulary; Cunningham builds WikiWikiWeb to collect patterns; Wikipedia later inherits the wiki; pattern names begin travelling faster than their reasons; Alexander's 1996 keynote asks whether programmers preserved what mattered
+- the full Alexander sequence: the quality that has no adequate name; concrete patterns such as Light on Two Sides, the window seat, the six-foot balcony, Child Caves and Things from Your Life; the anatomy of a pattern; context; confidence marks; the political aim of letting inhabitants argue with architects
+- the full software lineage: Beck and Cunningham carry patterns into programming; Design Patterns turns them into a shared vocabulary; Cunningham builds WikiWikiWeb to collect patterns; pattern names begin travelling faster than their reasons; Alexander's 1996 keynote asks whether programmers preserved what mattered
 - the wins that vanish and high-functioning bullshit at the quarterly review
 - Ines at two in the morning with the runbook that says ask Sam
-- Jalal, Sam and Ines turning the forty historical curves into the first agent skill; Sam removes a false supporting case, Ines adds the exit condition and route to another pattern, Jalal adds confidence
+- Jalal, Sam and Ines turning the forty historical curves into the first agent skill; Sam removes a false supporting case and narrows the scope, Ines adds the route to another pattern, Jalal adds the confidence mark
 - the wins-that-fade skill becoming executable knowledge
 - the file wrongly blocking a checkout speed-up and earning a narrower scope
 - Bing's correct numbers with the wrong meaning
@@ -35,7 +35,6 @@ Knowledge must survive its author, travel with enough context for another worker
 - "why am I suddenly emotionally invested in the width of a balcony?"
 - "high-functioning bullshit"
 - "is a decorative conscience"
-- "Durable, transferable, executable, corrigible: each repair had added one of the properties the file was missing."
 
 ## Imagined, reported or proposed
 
@@ -59,22 +58,23 @@ Match the book's illustrations, not a generic AI look.
 
 ## Source order
 
-1. The Handover
-2. Feathers
-3. Wins That Vanish
-4. Two in the Morning
-5. Light on Two Sides
-6. Names Travel Faster Than Reasons
-7. A Reader That Can Act
-8. Locate the Failure
-9. Say What the Result Would Mean
-10. The First Skill
-11. Give the Claim an Address
-12. The File Says No
-13. Noted
-14. Three Departures
-15. A Language
-16. What the File Says Now
+1. Opening passage
+2. The Handover
+3. Feathers
+4. Wins That Vanish
+5. Two in the Morning
+6. Light on Two Sides
+7. Names Travel Faster Than Reasons
+8. A Reader That Can Act
+9. Locate the Failure
+10. Say What the Result Would Mean
+11. The First Skill
+12. Give the Claim an Address
+13. The File Says No
+14. Noted
+15. Three Departures
+16. A Language
+17. What the File Says Now
 
 ## Review
 

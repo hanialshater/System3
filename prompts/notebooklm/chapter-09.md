@@ -26,8 +26,9 @@ When the machine can decide what to try next, what remains is deciding what the 
 
 ## Lines to keep word for word
 
-- "What remains in the seat, once the machine can decide what to try next, is deciding what the trying is for."
+- "What remains is deciding what the trying is for."
 - "Very efficient. Slightly evil."
+- "You cannot want what you cannot imagine"
 
 ## Imagined, reported or proposed
 

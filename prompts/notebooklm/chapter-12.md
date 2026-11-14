@@ -7,7 +7,7 @@ This is a source-derived production outline, not a factual summary or a complete
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 12: After Capacity" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Present the hoped-for future conditionally. Retain ownership, pluralism and the possibility of failure; there is no new experiment in this chapter. Do not import the fable that follows. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
+Adapt Hani M.M. Al-Shater's "Chapter 12: After Capacity" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Present the hoped-for future conditionally. Retain ownership, pluralism and the possibility of failure; there is no new experiment in this chapter. Do not import the City interlude or the fable that follow. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
 ```
 
 ## The idea to land
@@ -16,12 +16,15 @@ After capacity becomes cheap, people can attempt instead of argue, and the quest
 
 ## Moments to show
 
-- Dantzig solving the problems he took for homework
+- Dantzig compressing a summer into a minute, and von Neumann's hour on duality
 - the double-descent curve
-- the river moving under the applied scientist
+- the ideology vortex and Monday morning
 - the young researcher and the imitation loop
-- Ostrom's commons
-- the octopus ending
+- Ostrom's irrigators
+- eleven people, one room and seven on Tuesday
+- who owns the laboratory
+- the river moving under the applied scientist
+- the irrigators' weekend
 
 ## Lines to keep word for word
 
@@ -53,16 +56,15 @@ Match the book's illustrations, not a generic AI look.
 
 1. Opening passage
 2. The Curve
-3. The River Moves
-4. Bespoke Comes Back
-5. Anyone Could Do That
-6. The Answer to Derrida
-7. Capacity Over Power
-8. Who Owns the Laboratory
-9. The Second Descent
+3. The Ideology Vortex
+4. The Answer to Derrida
+5. Bespoke Comes Back
+6. Ostrom in a Weekend
+7. Capacity over Power
+8. Beyond Comprehension
+9. Who Owns the Laboratory
 10. What Are Humans For?
-11. The Human Is Not the Reward Function
-12. The Door After System 3
+11. The Door After System 3
 
 ## Review
 

@@ -18,13 +18,17 @@ Fluent autonomy means a small request quietly assembles the right organisation, 
 
 - the one-sentence editing request and the dead chapter that came back
 - the blind readers and what the author refused
-- bureaucracy on the fly
+- the fold that turns three branches into one plain layer
 - the second coffee test
+- the weights eating the scaffolding while the check stays outside
+- creative distrust turned on the book itself
 - where this could be wrong
 
 ## Lines to keep word for word
 
-- "I spent years building systems that decide what to show her."
+- "Here the unit is closer to the sigh."
+- "That is opacity with good typography."
+- "it would like a referee"
 
 ## Imagined, reported or proposed
 
@@ -49,13 +53,15 @@ Match the book's illustrations, not a generic AI look.
 ## Source order
 
 1. Opening passage
-2. What the Corrections Had to Teach
-3. The Interface Moves Up
-4. Bureaucracy on the Fly
-5. Selective Friction
-6. Invisible by Default, Legible on Demand
-7. The Second Coffee Test
-8. Where This Could Be Wrong
+2. Scaffolding
+3. Distillation
+4. The Interface Moves Up
+5. The Second Coffee Test
+6. The Weights Will Eat It
+7. What the Fold Forgets
+8. Creative Distrust
+9. Coupled to a Person
+10. Where This Could Be Wrong
 
 ## Review
 

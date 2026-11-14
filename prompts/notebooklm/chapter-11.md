@@ -1,37 +1,43 @@
-# Chapter 11: The Store That Builds Itself: video brief
+# Chapter 11: The System 3 Company: video brief
 
-Source: [11-the-store-that-builds-itself.md](../../chapters/11-the-store-that-builds-itself.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
+Source: [11-the-system-3-company.md](../../chapters/11-the-system-3-company.md), with its sources and qualifications in the [reference appendix](../../chapters/appendix-references.md). Use only the appendix section for this source.
 
 This is a source-derived production outline, not a factual summary or a completed shot-by-shot storyboard. The source supplies the scenes and exact claims. Run `--check` before use.
 
 ## Video prompt
 
 ```text
-Adapt Hani M.M. Al-Shater's "Chapter 11: The Store That Builds Itself" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Distinguish the prototype from imagined customers and the proposed business experiment. Do not claim measured commercial success or restore the removed internal recommendation case. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
+Adapt Hani M.M. Al-Shater's "Chapter 11: The System 3 Company" into an English video. Select the linked manuscript and its section in the reference appendix as the factual sources, and this brief as production guidance. Follow the ordered sections below, including events, explanations, qualifications and ending within each section. Attribute the author's experiences to him. Preserve humor and narrative discoveries; compress repetition before cutting causes or qualifications. Do not invent dialogue, experiments, statistics or outcomes. Use only the source's claims and distinguish reports, arguments, proposed designs and fiction. Ignore editorial comments, missing-figure comments and visual-production requests as narration. Use concrete illustrations and sparse labels; technical diagrams must be valid or explicitly schematic. Do not import other chapters or add a generic recap. No fixed runtime is imposed. Tell the month in the chapter's order. The lessons company, System 3 Meta and the benchmarks are reported from the companies' own records and the author's messages; quote his messages exactly as typed, typos included. One strong agent won or tied almost every benchmark: do not soften that or turn it into a success story for the organization. Every worker except the author is an AI agent with a given name. No real learner has been tested. Do not import the City interlude. This chapter belongs to a book arguing that, as we build autonomous AI, we keep rediscovering science as its architecture, and that as machines take over the work, human value moves to the frontier and then to deciding what the work is for. Let this chapter carry its own part of that argument; do not summarise the rest of the book. Visual style: restrained watercolor with fine ink drawing on warm cream paper, in muted Prussian blue, ochre, olive, warm gray and parchment, with brass for machines; warm, humane, strange and intellectually serious, never cute, neon or cyberpunk.
 ```
 
 ## The idea to land
 
-A store that builds itself would compose ways to help, not rank more products, and would treat each page as an experiment it is willing to lose.
+The author builds a company of agents from this book, watches it grow the pieces of an institution one failure at a time, and then benchmarks it against one strong agent, which wins or ties almost every round. What survives is a check held outside the team that made the work.
 
 ## Moments to show
 
-- the stuck customer
-- the problem fingerprint
-- recommendation experiences
-- Mei and the trail shoes
-- the honest cold start
-- Surface Value
-- the book biting back
+- the founding message typed late one night in October
+- the Zen's lines becoming addresses in a company
+- the Greenland map caught lying on the first night
+- fifty-four of seventy-four roles that never ran: the org chart as a feather
+- the rooms, the time slider and the knot lesson that became a laboratory
+- the machine running out of memory under founder pressure
+- "I smell a problem" and the manager rounds eating the budget
+- System 3 Meta, the benchmarks and predictions committed first
+- the single agent winning; the splits that made the bugs
+- the sealed envelope and two miscompiles
+- one agent hiring the company's own checkers in thirty-six minutes
+- Jeff, respawned at a desk that was not supposed to exist
 
 ## Lines to keep word for word
 
-- "A philosophy of emergence should be willing to lose an A/B test."
-- "Cold start is a state, not an error."
+- "I had asked for a postcard and received a residence permit."
+- "A philosophy of emergence should be willing to lose an A/B test"
+- "The student has still not been asked."
 
 ## Imagined, reported or proposed
 
-The prototype is the author's; Mei, Sami and Lea are imagined, and the business experiment is proposed.
+Reported from the two companies' own records and the author's messages; not composites. The benchmark figures are as the chapter states them. No real learner has been tested.
 
 ## Visual style
 
@@ -47,25 +53,18 @@ Match the book's illustrations, not a generic AI look.
 - **Evidence:** when the chapter relies on a real photograph or document, show it as an unaltered object on the page; never redraw or beautify it.
 - **Arc across the book:** machine, system, institution, culture, human. Early chapters may hold more machinery; from the desire layer on, people move back to the centre, and by the last chapters the robots almost disappear.
 
-**This chapter:** The store itself is visibly compositional: shelves and framed modules quietly rearranging around one customer.
+**This chapter:** The chapter's seven pictures are screenshots of the companies: show each as an unaltered evidence object on the cream page. Around them, in ink: a small office of brass agents at desks, an org chart drawn as a peacock feather, one agent alone at a desk, a sealed envelope.
 
 ## Source order
 
 1. Opening passage
-2. Stop Recommending for a Moment
-3. People Refuse to Stay in the Funnel
-4. A Library of Ways to Help
-5. Composition Is Not Ranking With a New Hat
-6. Mei Does Not Need More Shoes
-7. Sami Does Not Need a Click
-8. The Honest Cold Start
-9. Replayable
-10. A Theory Losing Contact With Reality
-11. Let the LLM Narrate. Do Not Let It Declare Reality.
-12. The Objective Fights Back
-13. Deliberately Boring
-14. When the Page Stops Being the Product
-15. The Book Comes Back to Bite Me
+2. A Company Dressed as a Company
+3. A Rule Without a Mechanism
+4. The Border
+5. I Smell a Problem
+6. Losing to One Agent
+7. The Envelope
+8. The Institution Inside One Agent
 
 ## Review
 

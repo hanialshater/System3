@@ -44,14 +44,16 @@ factual verification or editorial approval.
 | Chapter 6 | [chapter-06](chapter-06.md) |
 | Chapter 7 | [chapter-07](chapter-07.md) |
 | Chapter 8 | [chapter-08](chapter-08.md) |
+| Interlude: When It Goes Wrong | [interlude-when-it-goes-wrong](interlude-when-it-goes-wrong.md) |
 | Chapter 9 | [chapter-09](chapter-09.md) |
 | Chapter 10 | [chapter-10](chapter-10.md) |
 | Chapter 11 | [chapter-11](chapter-11.md) |
 | Chapter 12 | [chapter-12](chapter-12.md) |
+| Interlude: The City | [interlude-the-city](interlude-the-city.md) |
 | Chapter 13 | [chapter-13](chapter-13.md) |
 | Closing coda | [Scaffolds](scaffolds.md) |
 
-Part pages, the science reveal, interlude and appendices are not silently appended
-to chapter adaptations. Select them separately if a later video request calls
+Part pages, the science reveal and the appendices are not silently appended
+to chapter adaptations. The two interludes have briefs of their own. Select them separately if a later video request calls
 for them. Earlier bespoke storyboards remain recoverable from commit `13d415c`;
 recheck their details before reusing any scene.

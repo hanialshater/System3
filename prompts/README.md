@@ -1,7 +1,7 @@
 # Editorial and video prompts
 
 - [Chapter evaluation](chapter-version-evaluation.md): compare revisions while protecting voice and evidence.
-- [NotebookLM video briefs](notebooklm/README.md): one current brief for each numbered chapter, the preface and the Scaffolds coda.
+- [NotebookLM video briefs](notebooklm/README.md): one current brief for each numbered chapter, the preface, the two interludes and the Scaffolds coda.
 
 The former main and local storyboard packs were retired because they competed
 and reflected older manuscripts. Their detailed wording remains in Git history
