@@ -114,7 +114,7 @@ I wanted to see something simpler: did the model have any useful geometric intui
 
 Surprisingly, yes. The picture looked plausible. The circles had structure and the spacing looked intentional, and at a glance you could believe the model understood the problem.
 
-Then you counted the circles. There were the wrong number of them, and some constraints were violated. It was a beautiful answer to a nearby problem.
+Then you counted the circles. There was the wrong number of them, and some constraints were violated. It was a beautiful answer to a nearby problem.
 
 Learned models can be remarkably good at generating plausible structure without guaranteeing that every formal requirement survives generation. A symbolic optimizer has almost the opposite personality: give it a precise representation and constraints and it will obey them, but it will not naturally look at your representation and decide that you have been unimaginative.
 
@@ -182,11 +182,9 @@ That became the autonomy test I actually cared about. I already knew AI could he
 
 There is a difference between collaborating with an agent and *hiring* one. If I still have to choose every strategy, approve every experiment, rescue every failed branch and keep the search alive myself, then I have a formidable collaborator.
 
-Circle packing gives us a rare luxury because the evaluator can stay behind when I leave. The agent can change its code, create scripts, abandon one approach, try another and waste compute on ideas that go nowhere. It was not allowed to redefine what counts as a valid packing because the current score hurts its feelings.
+Circle packing gives us a rare luxury because the evaluator can stay behind when I leave. The agent can change its code, create scripts, abandon one approach, try another and waste compute on ideas that go nowhere. It is not allowed to redefine what counts as a valid packing because the current score hurts its feelings.
 
-I call that requirement the **Immutable Harness**: everything inside the boundary can move, while the evaluator stays fixed. Telling the agent not to edit a file states the rule; it does not make the file immutable.
-
-<!-- AUTHOR: C02-12. State how the evaluator was protected or independently checked in this run; distinguish the instruction from any enforcement. -->
+I call that requirement the **Immutable Harness**: everything inside the boundary can move, while the evaluator stays fixed. Telling the agent not to edit a file states the rule; it does not make the file immutable. In these runs the instruction was all the protection there was, and I checked afterwards that the file had not changed.
 
 ## Diagonal Layering
 
@@ -195,8 +193,6 @@ The agent did not execute one elegant master plan. It bounced around, which was 
 It tried numerical optimization, changed initialization strategies and noticed that some optimizers repeatedly converged to poor local solutions. It experimented with the geometry of its starting configurations and mixed those constructions with numerical refinement. At different moments it was acting as orchestrator, researcher and engineer: deciding what to try, implementing the idea, running the experiment and using the result to choose what happened next.
 
 Eventually one family of solutions began arranging circles in diagonal bands. We called the idea diagonal layering.
-
-<!-- AUTHOR: this is the chapter's real scene and it is told from a distance. Needed from you: what you found when you came back from coffee, how long the run took, and what the diagonal bands actually looked like. -->
 
 I had not instructed the agent to pursue that construction, and, more importantly, I had not selected the branch after it appeared. The agent found a direction, saw that it improved the evaluator and invested more of its search there.
 
