@@ -2,7 +2,7 @@
 
 This is a book about trust chains, so the distance between a chapter and its evidence should be visible. Some of it I ran, some I report from other people’s work, some I argue, some I have only designed, and one chapter is a fable. Here is which is which.
 
-The stories of companies, teams and people come from my experience. Names, companies and details have been changed, and some are composites or embellished. I do not say which is which, because none of them is offered as proof. They are there to show how an argument plays out among people; where a claim needs evidence, the evidence is cited or comes from an experiment I describe.
+The stories of companies, teams and people come from my experience. Names, companies and details have been changed, and some are composites or embellished. I do not say which is which, because none of them is offered as proof. They are there to show how an argument plays out among people; where a claim needs evidence, the evidence is cited or comes from an experiment I describe. The exception is Chapter 11. Its companies, incidents and numbers are reported from the companies’ own records and are not composites.
 
 | Chapter | What it rests on | Status |
 |---|---|---|
@@ -17,7 +17,7 @@ The stories of companies, teams and people come from my experience. Names, compa
 | Interlude: When It Goes Wrong | Lysenko, and what happens when the people being challenged decide whether to hear the challenge | Reported history; the application to agents is argued |
 | 9. The Desire Layer | Amazon’s changing value proposition, the science of human learning and decision support, a Mallorca summer, and an argument about how desire develops | Argued from history and other people’s evidence; the traveller and the clinic founder are illustrative |
 | 10. Fluent Autonomy | The editing of this book, read as a cycle of scaffolding, distillation and creative distrust, and where the argument could be wrong | Lived, with reported work on distillation; the fluency is still an ambition |
-| 11. The Store That Builds Itself | My prototype store, its customers and a proposed business experiment | Prototyped; the business experiment has not run |
+| 11. The System 3 Company | A company of agents built from this book, and a second company that benchmarked it against one agent, told from their records and my own messages | Run; predictions committed before each benchmark and scored by a referee the builders could not see; no real learners yet |
 | 12. After Capacity | Ostrom’s cases, work on machine-checked proofs and epistemic opacity, a community and a weekend | Argued from cited work; the community is illustrative and the irrigators’ weekend is a proposal; no new experiment |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |
 

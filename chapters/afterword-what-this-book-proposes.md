@@ -53,7 +53,7 @@ The theses need machinery. These are the book’s design proposals and the probl
 | Belief, pursuit and allocation get confused | Laudan; Kitcher; Zollman | Budgets for alternatives; isolation and diversity built deliberately |
 | The improver edits what judges it | Laudan’s reticulated model; engineering practice | A constitutional surface: the nearer a change sits to the aims, the slower and more independent its approval |
 
-Resemblance to a scientific institution establishes nothing by itself. Each proposal should beat a simpler arrangement on the same model and budget, or be dropped.
+Resemblance to a scientific institution establishes nothing by itself. Each proposal should beat a simpler arrangement on the same model and budget, or be dropped. Chapter 11 is the first time I held my own design to that, and one strong agent won or tied almost every round.
 
 ## What Kind of Contribution This Is
 
@@ -61,10 +61,10 @@ Resemblance to a scientific institution establishes nothing by itself. Each prop
 | --- | --- |
 | Science as empirical strategy plus social organization | Inherited and summarized |
 | Claim addresses, executable patterns, consequential objections, constitutional surface | Design proposals, partly demonstrated in others’ systems: the Fermat formalization’s dependency graph of theorem statements (Chapter 6), Stellar Colosseum’s fatal-flaw rule (Chapter 6), Agentic Harness Engineering’s read-only verifier (Chapter 7) |
-| Thesis 1: correlated cheap inquirers | Argued; one experiment specified in advance and not yet run |
+| Thesis 1: correlated cheap inquirers | Argued; Chapter 11 reports a first set of benchmarks; the planted-belief experiment is specified in advance and not yet run |
 | Thesis 2: verification without comprehension | Argued from mathematics and philosophy of science; an empirical question left open |
 | Thesis 3: polycentric construction after critique | A philosophical and ethical argument with practical tests named |
-| My own experiments | Small: one bounded problem, teaching demos judged by simulated learners, one ten-task comparison, one prototype |
+| My own experiments | Small: one bounded problem, teaching demos judged by simulated learners, one ten-task comparison, and a company of agents run for a month and benchmarked against a single agent |
 
 The book does not demonstrate the whole architecture or claim priority over every related proposal. It names three claims precisely enough to be wrong, and arrangements to build while we find out.
 

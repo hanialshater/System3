@@ -219,10 +219,6 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 35. <a id="ref-06-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
 
-36. <a id="ref-06-kuhn"></a>Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>. (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.)
-
-37. <a id="ref-06-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>. (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.)
-
 ### Additional sources
 
 - Bruno de Finetti, “Foresight: Its Logical Laws, Its Subjective Sources” (1937), and Leonard J. Savage, *The Foundations of Statistics* (1954), for later development of the subjectivist and decision-theoretic tradition. See also Stanford Encyclopedia of Philosophy, “Bayesian Epistemology,” <https://plato.stanford.edu/entries/epistemology-bayesian/>.
@@ -590,8 +586,63 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Appendix — The Ideas Behind System 3
 
-The first part of the guide summarizes the debates surveyed in Godfrey-Smith's 2003 introduction. The second names sources from other traditions, using their existing chapter references. The connections to System 3 and its agent architecture are the author's proposals.
+The first part of the guide summarizes the debates surveyed in Godfrey-Smith’s 2003 introduction. The second names sources from other traditions. Sources already cited in a chapter are listed again here, so that the appendix can be read by itself. The connections to System 3 and its agent architecture are the author’s proposals.
 
-1. <a id="ref-guide-ramsey"></a>Frank P. Ramsey, “Truth and Probability,” written 1926, published in *The Foundations of Mathematics and Other Logical Essays* (1931), chapter VII, pp. 156–198, edited by R. B. Braithwaite. [Electronic edition of the author's text](https://fitelson.org/probability/ramsey.pdf). Ramsey develops partial belief, preference and consistency; the brief description of Bayesian updating includes later developments rather than attributing the whole tradition to him.
+1. <a id="ref-guide-godfrey-smith"></a>Peter Godfrey-Smith, *Theory and Reality: An Introduction to the Philosophy of Science*, University of Chicago Press, 2003. Chapters 2–15 provide the basis for the guide's selective summary of philosophy of science. The final section of that summary describes Godfrey-Smith's own synthesis of empiricism, naturalism and realism; it does not present that synthesis as a consensus among the thinkers surveyed.
 
-2. <a id="ref-guide-godfrey-smith"></a>Peter Godfrey-Smith, *Theory and Reality: An Introduction to the Philosophy of Science*, University of Chicago Press, 2003. Chapters 2–15 provide the basis for the guide's selective summary of philosophy of science. The final section of that summary describes Godfrey-Smith's own synthesis of empiricism, naturalism and realism; it does not present that synthesis as a consensus among the thinkers surveyed.
+2. <a id="ref-guide-popper"></a>Karl Popper, *Conjectures and Refutations*, 1963, chapter 1, especially the discussion of risky predictions and testability. <https://padron.entretemas.com.ve/documentos/Popper-Conjectures-Rwefutations-GrowthOfKnowledge.pdf>. Popper treats falsifiability as a criterion for demarcating science; I use only the narrower point that a test is informative in proportion to the risk it imposes on the claim.
+
+3. <a id="ref-guide-duhem"></a>Pierre Duhem, *La théorie physique: son objet et sa structure* (1906); W. V. O. Quine, “Two Dogmas of Empiricism,” *The Philosophical Review* 60 (1951), 20–43.
+
+4. <a id="ref-guide-kuhn"></a>Thomas S. Kuhn, *The Structure of Scientific Revolutions*, 1962; second edition, 1970, especially the accounts of normal science, paradigms, and their resolution through scientific change. <https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf>. (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.)
+
+5. <a id="ref-guide-lakatos"></a>Imre Lakatos, “Falsification and the Methodology of Scientific Research Programmes,” in *Criticism and the Growth of Knowledge*, 1970; collected in *The Methodology of Scientific Research Programmes*, 1978. <https://books.google.com/books?id=RRniFBI8Gi4C>.
+
+6. <a id="ref-guide-laudan"></a>Larry Laudan, *Progress and Its Problems*, 1977, “The Modalities of Appraisal: Acceptance and Pursuit,” pp. 108–114. <https://ia601400.us.archive.org/24/items/in.ernet.dli.2015.136278/2015.136278.Progress-And-Its-Problems.pdf>.
+
+7. <a id="ref-guide-feyerabend"></a>Paul Feyerabend, *Against Method*, 1975. [Excerpt from the author’s text](https://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm). Feyerabend’s historical claim is that major advances violated the methodological rules later proposed for science; the use here is the narrower one, that a procedure should be open to tests that set it aside.
+
+8. <a id="ref-guide-longino"></a>Helen Longino, *Science as Social Knowledge*, 1990, and *The Fate of Knowledge*, 2002. See her own exposition in [“The Social Dimensions of Scientific Knowledge”](https://plato.stanford.edu/entries/scientific-knowledge-social/), especially the conditions for effective critical interaction. Uptake does not require accepting every objection, and tempered equality does not imply equal expertise on every question.
+
+9. <a id="ref-guide-kitcher"></a>Philip Kitcher, “The Division of Cognitive Labor,” *The Journal of Philosophy* 87(1), 1990, pp. 5–22. <https://joelvelasco.net/teaching/120/kitcher90-divisioncognitive.pdf>. (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.) (Cited in the appendix.)
+
+10. <a id="ref-guide-zollman"></a>Kevin J. S. Zollman, “The Communication Structure of Epistemic Communities,” *Philosophy of Science* 74 (2007), 574–587, and “The Epistemic Benefit of Transient Diversity,” *Erkenntnis* 72 (2010), 17–35. The benefits depend on the learning situation and communication structure modeled.
+
+11. <a id="ref-guide-ramsey"></a>Frank P. Ramsey, “Truth and Probability,” written 1926, published in *The Foundations of Mathematics and Other Logical Essays* (1931), chapter VII, pp. 156–198, edited by R. B. Braithwaite. [Electronic edition of the author's text](https://fitelson.org/probability/ramsey.pdf). Ramsey develops partial belief, preference and consistency; the brief description of Bayesian updating includes later developments rather than attributing the whole tradition to him.
+
+12. <a id="ref-guide-saussure"></a>Ferdinand de Saussure, *Course in General Linguistics*, 1916, on the arbitrariness of the sign and linguistic value. See also the *Third Course of Lectures on General Linguistics*, 1910–1911, student notes published in English in 1993. <https://www.marxists.org/reference/subject/philosophy/works/fr/saussure.htm>.
+
+13. <a id="ref-guide-wittgenstein"></a>Ludwig Wittgenstein, *Philosophical Investigations*, 1953, especially §§23 and 43 on language-games and meaning as use.
+
+14. <a id="ref-guide-derrida"></a>Jacques Derrida, “Signature Event Context,” in *Limited Inc*, Northwestern University Press, 1988. The comparison with gradient descent is a philosophical provocation, not a claim that optimization refutes Derrida’s argument. The reading that language models enact rather than refute the iterability Derrida describes is also the author’s.
+
+15. <a id="ref-guide-popper-world3"></a>Karl Popper, “Epistemology Without a Knowing Subject,” lecture delivered in 1967, collected in *Objective Knowledge: An Evolutionary Approach* (1972). See the discussion of World 3, the machine-produced logarithm tables, and the two library thought experiments.
+
+16. <a id="ref-guide-hardwig"></a>John Hardwig, “Epistemic Dependence,” *The Journal of Philosophy* 82 (1985), 335–349.
+
+17. <a id="ref-guide-alexander"></a>Christopher Alexander, Sara Ishikawa, and Murray Silverstein, with Max Jacobson, Ingrid Fiksdahl-King, and Shlomo Angel, *A Pattern Language: Towns, Buildings, Construction*, Oxford University Press, 1977. Patterns 159 (Light on Two Sides of Every Room), 167 (Six-Foot Balcony), 180 (Window Place), 203 (Child Caves) and 253 (Things from Your Life); on the format, the asterisks and patterns as hypotheses, see the introduction, especially pp. x–xv. On the quality without a name, see Alexander, *The Timeless Way of Building*, 1979. <https://arl.human.cornell.edu/linked%20docs/Alexander_A_Pattern_Language.pdf>.
+
+18. <a id="ref-guide-doyle"></a>Jon Doyle, “Truth Maintenance Systems for Problem Solving,” *Proceedings of IJCAI*, 1977, p. 247. <https://www.ijcai.org/Proceedings/77-1/Papers/035.pdf>. See also Doyle, “A Truth Maintenance System,” *Artificial Intelligence* 12(3), 1979, pp. 231–272, <https://doi.org/10.1016/0004-3702(79)90008-0>. These systems maintain program justifications; identifying the real-world assumptions and evidential relationships remains a separate problem.
+
+19. <a id="ref-guide-feigenbaum"></a>Edward A. Feigenbaum, *The Art of Artificial Intelligence: I. Themes and Case Studies of Knowledge Engineering*, Stanford report STAN-CS-77-621, 1977, especially the introduction and PUFF example. <https://infolab.stanford.edu/pub/cstr/reports/cs/tr/77/621/CS-TR-77-621.pdf>.
+
+20. <a id="ref-guide-td"></a>Richard S. Sutton, “Learning to Predict by the Methods of Temporal Differences,” *Machine Learning* 3, 1988, pp. 9–44; Christopher J. C. H. Watkins, *Learning from Delayed Rewards*, PhD thesis, University of Cambridge, 1989.
+
+21. <a id="ref-guide-alphaevolve"></a>Alexander Novikov et al., “AlphaEvolve: A coding agent for scientific and algorithmic discovery,” 2025, [arXiv:2506.13131](https://arxiv.org/html/2506.13131v1), §B.12 on packing circles inside a unit square to maximize the sum of radii; §§2.2–2.5 on prompt sampling, code generation, evaluation and evolution.
+
+22. <a id="ref-guide-regulator"></a>W. Ross Ashby, *An Introduction to Cybernetics* (Chapman & Hall, 1956). <https://ashby.info/Ashby-Introduction-to-Cybernetics.pdf>; Roger C. Conant and W. Ross Ashby, “Every good regulator of a system must be a model of that system,” *International Journal of Systems Science* 1 (1970), 89–97. <https://doi.org/10.1080/00207727008920220>.
+
+23. <a id="ref-guide-ostrom"></a>Elinor Ostrom, *Governing the Commons: The Evolution of Institutions for Collective Action*, Cambridge University Press, 1990. See also Elinor Ostrom and Michael Cox, [“Moving beyond panaceas: a multi-tiered diagnostic approach for social-ecological analysis”](https://www.cambridge.org/core/journals/environmental-conservation/article/moving-beyond-panaceas-a-multitiered-diagnostic-approach-for-socialecological-analysis/F4870A21ED502BB7D9A1784CF2B9E100), *Environmental Conservation* 37(4), 2010, pp. 451–463. The connection to the ideology vortex is the author’s philosophical reading of this work.
+
+24. <a id="ref-guide-kahneman"></a>Daniel Kahneman, *Thinking, Fast and Slow*, 2011.
+
+25. <a id="ref-guide-ebbinghaus"></a>Hermann Ebbinghaus, *Über das Gedächtnis* (1885); English translation *Memory: A Contribution to Experimental Psychology* (1913). <https://psychclassics.yorku.ca/Ebbinghaus/index.htm>.
+
+26. <a id="ref-guide-sarasvathy"></a>Saras D. Sarasvathy, “Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency,” *Academy of Management Review* 26 (2001), 243–263. <https://doi.org/10.5465/amr.2001.4378020>.
+
+27. <a id="ref-guide-russell"></a>Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control* (Viking, 2019). <https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/>.
+
+28. <a id="ref-guide-kohavi"></a>Ron Kohavi, Alex Deng, Brian Frasca, Roger Longbotham, Toby Walker, and Ya Xu, “Trustworthy Online Controlled Experiments: Five Puzzling Outcomes Explained,” *Proceedings of KDD*, 2012, [original paper](https://exp-platform.com/Documents/puzzlingOutcomesInControlledExperiments.pdf): §3.1 on the Bing overall evaluation criterion (the account of why queries and revenue rose is the authors’ own), and the later puzzle on initial effects for novelty and primacy.
+
+29. <a id="ref-guide-goodhart"></a>Charles Goodhart, “Problems of Monetary Management: The U.K. Experience,” 1975. The familiar wording, that a measure which becomes a target ceases to be a good measure, is Marilyn Strathern’s, in “‘Improving Ratings’: Audit in the British University System,” *European Review* 5(3), 1997.
+

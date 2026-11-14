@@ -34,7 +34,7 @@ Capacity cuts both ways here. Capacity to generate accounts makes the spike wors
 
 Not all capacity gets cheaper, either. We still have one planet, finite land and energy, and twenty-four hours in a day. Bodies remain bodies. Politics does not evaporate because a model can write Python. Scarcity is not going to receive a polite email from OpenAI and retire.
 
-Science gave fallible people ways to know things together that none could find out alone. It also had to decide which questions would get a laboratory, which rival explanation would get another year, and which student could afford to remain a student. In Chapter 5, I asked where the next thousand agent-hours should go. Here I want to change the size of the budget. Suppose we can afford to investigate sixty plausible explanations where we could previously investigate three. Sixty agents repeating the same mistake have spent the budget without buying anything. But if more of those explanations can be tested against the world, some of the questions I admired, saved as a paper and abandoned can stay open.
+Science gave fallible people ways to know things together that none could find out alone. It also had to decide which questions would get a laboratory, which rival explanation would get another year, and which student could afford to remain a student. In Chapter 5, I asked who gets the next agent. Here I want to change the size of the budget. Suppose we can afford to investigate sixty plausible explanations where we could previously investigate three. Sixty agents repeating the same mistake have spent the budget without buying anything. But if more of those explanations can be tested against the world, some of the questions I admired, saved as a paper and abandoned can stay open.
 
 ## The Ideology Vortex
 
@@ -76,7 +76,7 @@ Gradient descent did not defeat ambiguity. It made ambiguity computationally use
 
 Then, immediately, we rediscover why modernity existed. A model that can move beautifully through fuzzy language can still hallucinate a citation, miscalculate a number or confidently tell you that camels are native to Croatia.
 
-The compiler has to compile. Chapter 11’s store that builds itself still needs its business experiment: an experience can convince the experts and the model and still fail the customer. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong.
+The compiler has to compile. Chapter 11’s lessons company still needs evidence from real learners: an experience can convince the experts and the model and still fail the person it is meant to teach. If it does, we have a reason to revise it, and more capacity could help us investigate what went wrong.
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is high-functioning bullshit at the scale of a civilization.
 
@@ -122,8 +122,6 @@ What stopped other groups from doing what the irrigators did varied. Sometimes i
 
 Take something smaller than a watershed.
 
-<!-- AUTHOR: one specific detail (which group, which room) would let this carry the section the way Dantzig carries the opening. -->
-
 A small community’s activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
 
 Changing the software requires persuading a vendor that eleven people with peculiar scheduling needs are worth its attention. They are unlikely to win that argument. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
@@ -138,7 +136,7 @@ The community might guarantee each group some access, then use attendance to all
 
 Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
 
-The obvious objection is the one I conceded in Chapter 10. Moving critique out of text and into optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. The yield-table forest and the grid city from this chapter’s opening are Scott’s: he showed what states did to forests and cities when they made them legible enough to manage, and Morozov’s solutionism is the software version.[8](appendix-references.md#ref-12-solutionism) Morozov would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics.
+The obvious objection is the one I conceded in Chapter 10. Moving critique out of text and into optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. The yield-table forest and the grid city from earlier in this chapter are Scott’s: he showed what states did to forests and cities when they made them legible enough to manage, and Morozov’s solutionism is the software version.[8](appendix-references.md#ref-12-solutionism) Morozov would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics.
 
 So let me be careful. The vendor’s veto was a capacity problem. Seven on Tuesday is not, and no amount of capacity turns it into one. The objection is right about where the danger goes. Optimization does not escape the politics. It hides them in the objective. What separates the irrigators from a high-modernist plan is who writes the objective, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people in the room.
 
@@ -155,6 +153,8 @@ The tool needs to survive the volunteer who built it. Its records should preserv
 Where consequences remain shared, so do the decisions. Climate, public health, land and infrastructure still need legitimate institutions whether we enjoy meetings or not. A community does not acquire a private planet because it can generate its own software. But where people retain the means to act, more differences can become opportunities to build differently. Some of the effort spent winning permission can go into the undertaking itself. Some can return to the rest of a life.
 
 ## Beyond Comprehension
+
+All of that assumes the people at the table understand what they are choosing between. That assumption is about to get harder to keep.
 
 Chapter 6 told how agents made Wiles’s proof of Fermat’s Last Theorem checkable by Lean: roughly thirty thousand intermediate theorems, which nobody is going to read.[10](appendix-references.md#ref-12-flt-tokens) Nobody needs to. The checker does not get bored, and its standards are written down. That was the easy case. Wiles understood the proof before any machine checked it.
 
@@ -185,6 +185,8 @@ So capacity over power can fail in two directions. Concentrate the capacity and 
 What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
 
 ## What Are Humans For?
+
+I have written as if my own seat at that table were safe. It is not obviously so.
 
 LLM-as-a-judge looked like a threat to my profession.
 
@@ -230,13 +232,11 @@ Someone remembers why the apparently wasteful exception was introduced. Someone 
 
 By Sunday evening they might have an arrangement worth trying, a working tool and a way to find out where they were wrong. The next dry season will teach them things the weekend could not, but they would meet it with something they had helped build, and understood well enough to change. They would still have to decide what they want from the valley, and live with what they decide.
 
-<!-- AUTHOR: a concrete detail for the mathematician's workshop or the irrigators would help. -->
-
-I have not run that weekend. A hundred agents is a picture, not a measured capability or a cost estimate.
+I have not run that weekend. After the last chapter a hundred agents is no longer only a picture, but the irrigators’ weekend is, and so is its cost.
 
 Nobody at the table needs a Nobel Prize. They should not each need a thirty-year research career before they can draw on what that research made possible. They need access to the knowledge, enough capacity to work with it and people willing to take responsibility for the attempt.
 
-That is the work I want to do: put the machinery this book has described within reach of people who have something they want to try. If someone else can build the same thing, I might have a collaborator.
+That is the work I want to do, and the reason for the second company in the last chapter: put the machinery this book has described within reach of people who have something they want to try. If someone else can build the same thing, I might have a collaborator.
 
 I would like some of that freedom myself. A year on a question that once seemed inaccessible. Enough astronomy to make an evening outside with my children different. An unfamiliar subject becoming a source of pleasure long after it has stopped being useful for anything I could put on a slide.
 
@@ -245,7 +245,5 @@ Dantzig brought a question and found that it had another side. I want more of us
 There is more to a person than the few abilities a career had room for. There may be more to our common life than the arrangements we could previously afford to build.
 
 I would like us to find out how much more.
-
-Who actually gets those afternoons is a much larger book, and I can’t tell you how it goes. Nobody in this field can. So this one has one argument left, and it is a prophecy. It cannot be made with another architecture diagram. It requires an octopus, a romance, two pills and, unfortunately, taxes.
 
 ---
