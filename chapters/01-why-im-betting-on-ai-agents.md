@@ -41,19 +41,13 @@ We do this too. No human starts from zero, although we occasionally behave as if
 
 Imagine an agent beginning with algorithms from a library. None works well enough, so it writes a tool to examine the failures. The tool reveals a pattern worth investigating. Another worker uses it on a different case, finds a limitation and changes it. Meanwhile, they need somewhere to record what they tried, a way to avoid undoing each other’s work and some agreement about which results deserve to survive. We began by asking for a solution. We now have methods and a small organization to examine as well.
 
-<!-- AUTHOR: C1-5. Optional: a concrete detail from a run that grew its own tools and notes would anchor this. -->
-
 The parts can be deliberately built while the work teaches us how they need to fit together. I want to leave room for that learning, for **emergence over design**.
 
 ## When Search Moved Up a Level
 
-AlphaGo made this concrete for me: learned intuition guided the search.[2](appendix-references.md#ref-01-alphago)
+AlphaGo made this concrete for me: learned intuition guided the search.[2](appendix-references.md#ref-01-alphago) Large language models brought a much broader version of that feeling. Nobody implemented “translate this joke without murdering it” or “write a breakup message that does not accidentally restart the relationship” as separate product features. They came out of training, and I could keep asking for things nobody had put on a feature list.
 
-<!-- AUTHOR: C1-8 / X-2. The full AlphaGo story (Move 37, AlphaGo Zero, Lee Sedol's Move 78) is now told in Ch 7, "The Teacher Moves Into the Walls" and "The Complexity Wall". What did you actually see or feel when AlphaGo played? One or two sentences of your own here. -->
-
-Large language models brought a much broader version of that feeling. Nobody implemented “translate this joke without murdering it” or “write a breakup message that does not accidentally restart the relationship” as separate product features. They came out of training, and I could keep asking for things nobody had put on a feature list.
-
-An agent can use those capabilities over successive attempts. It acts, inspects what happened and decides some of what to try next. The industry will eventually use the word *agent* for everything from a cron job with an LLM attached to a digital employee with an expense account and a performance review. I care about how much of the problem it actually owns.
+An agent can use those capabilities over successive attempts. It acts, inspects what happened and decides some of what to try next. The industry already uses the word *agent* for everything from a cron job with an LLM attached to a digital employee with an expense account and a performance review. I care about how much of the problem it actually owns.
 
 “Open this file, change this method and run this test” leaves most of the search with me. “Fix the bug” transfers more of it. “Find a better algorithm” transfers more again. Now the system may have to read, construct examples, choose an approach, abandon it, build a missing tool and notice that the original framing was unhelpful.
 
@@ -79,8 +73,6 @@ Too much prescription removes the room in which autonomy could help. Too little 
 
 The mistakes that worry me most are the confident ones. Imagine an agent deciding that customers who return a jacket dislike its style. In this case they liked the jacket; the sizing was wrong. But the return record does not say that. A second agent inherits the first agent’s conclusion and starts recommending different styles. A third writes a report explaining why those styles deserve more space in the catalog. Soon the mistake has documentation and several colleagues who can explain why it makes sense. Nobody needed to lie.
 
-<!-- AUTHOR: C1-6 / X-6. Optional: a sharper ranking or recommendation mistake could replace the jacket. If so, update the Ch 3 callback ("exactly what jacket they want") at the same time. -->
-
 Somewhere in that growing body of work, we need to be able to find the original assumption and ask what supported it. A disagreement has to be able to change what happens next. And when the system starts revising its own methods, we face a more awkward investigation: did it improve the work, or merely make the work easier for its evaluator to approve?
 
 I have been speaking as though we know what success looks like and merely need help reaching it. Often we do not. I can ask for a better chapter and discover, through several polished versions I dislike, what I meant by better. A system can help me learn that, or make its own preferences so easy to accept that mine stop developing. I might end up with a more polished book and less confidence in my own taste.
@@ -96,8 +88,6 @@ That is part of why I am interested in agents. I want to find out which limits w
 There is an asymmetry hiding here. Seeing that an arrangement is wrong is cheap: an afternoon, a good argument, a sharp friend. Building a different one takes specialists, money, years and, usually, the permission of whoever runs the current one. So we get very good at the first, and mostly stop there.
 
 We often obtain capacity by first obtaining power: a position, a budget, the authority to direct other people’s time. Sometimes the undertaking genuinely requires a collective decision. Sometimes it merely requires expertise and work we cannot currently afford. Cheaper intellectual capacity could let more of those attempts begin without first finding the team and the budget, or winning a contest for somebody else’s permission.
-
-<!-- AUTHOR: C1-13. Is there a real limit you dropped, a project you stopped considering for lack of a team or budget, that could make this paragraph concrete? -->
 
 I would choose **capacity over power**: what people become able to do matters more to me than how many people one person becomes able to command. Whoever supplies that capacity may acquire new leverage over those who depend on it, and plenty of things people want to do are things they should not do.
 

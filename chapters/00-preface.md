@@ -22,7 +22,7 @@ You could begin something that once required the power to assemble an institutio
 
 Complexity over engineering. Emergence over design. Capacity over power.
 
-It is September 2026 as I write this. Anthropic has already had a team of parallel Claudes build a C compiler, and OpenAI has set agents on the Navier–Stokes Millennium Prize Problem. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[1](appendix-references.md#ref-00-agents-preface)
+It is the autumn of 2026 as I write this. Anthropic has already had a team of parallel Claudes build a C compiler, and OpenAI has set agents on the Navier–Stokes Millennium Prize Problem. Read past the headline and the builders are still there, repairing tools and trying to work out which answers to trust.[1](appendix-references.md#ref-00-agents-preface)
 
 How do we come to know things? Whose judgment do we trust? What do we want to do with the capacity we are building?
 

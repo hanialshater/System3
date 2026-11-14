@@ -4,7 +4,7 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 ## Preface
 
-1. <a id="ref-00-agents-preface"></a>Nicholas Carlini, “Building a C compiler with a team of parallel Claudes,” 5 February 2026, <https://www.anthropic.com/engineering/building-c-compiler>; OpenAI, “On the Navier–Stokes Millennium Prize Problem,” 8 September 2026, <https://openai.com/index/navier-stokes-solution/>. Chapters 5 and 6 examine the reported work, its limits and the questions still open at the time of writing.
+1. <a id="ref-00-agents-preface"></a>Nicholas Carlini, “Building a C compiler with a team of parallel Claudes,” 5 February 2026, <https://www.anthropic.com/engineering/building-c-compiler>; OpenAI, “On the Navier–Stokes Millennium Prize Problem,” 8 September 2026, <https://openai.com/index/navier-stokes-solution/>. Chapter 5 examines the compiler project and its limits; Chapter 12 returns to the scale of the Navier–Stokes effort.
 
 ## Chapter 1 — Why I’m Betting on AI Agents
 
