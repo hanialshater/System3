@@ -14,7 +14,7 @@ I learned this while editing this book. “Make the chapter better” sounded li
 
 In the vibe coder’s seat I used to decide what to try next, and Deep Mode took much of that job from me. What remains is deciding what the trying is for.
 
-Lee Sedol, who won the only game AlphaGo lost in that 2016 match, retired from professional Go in 2019. Even if he became number one, he said, “there is an entity that cannot be defeated.”[1](appendix-references.md#ref-09-sedol) For most of us the question of what remains is arriving one task at a time.
+Lee Sedol, who won the only game AlphaGo lost in their 2016 match, retired from professional Go in 2019. Even if he became number one, he said, “there is an entity that cannot be defeated.”[1](appendix-references.md#ref-09-sedol) For most of us the question of what remains is arriving one task at a time.
 
 The five-layer map put this question at the top and called it the desire layer. Drawn as a box, it looked like the easy part: the human supplies the goal, the machine does the rest. Even cooperative inverse reinforcement learning, which lets the machine stay uncertain about the goal, imagines that goal sitting inside the human, waiting to be recovered.[2](appendix-references.md#ref-09-l4-cirl)
 
@@ -49,8 +49,6 @@ Before Thursday the assistant can play the clinic manager and raise her objectio
 ## Imagine Mallorca
 
 Desire grows the same way outside work, and there the placeholder is even emptier. A compiler has opinions about semicolons but rarely about whether I should move countries. A chat assistant gets asked both.
-
-<!-- AUTHOR: a specific instance of desire forming would anchor this section: a trip of your own, or a moment when a recommender you built changed what its users wanted. If there is one, it can replace or frame the imagined Mallorca pair. -->
 
 Imagine you open a chat window on a grey Friday in March and type: *I want to have fun this summer. I have no idea what that means.*
 
