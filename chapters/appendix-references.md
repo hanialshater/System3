@@ -544,6 +544,10 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 - Elinor Ostrom, “Beyond Markets and States: Polycentric Governance of Complex Economic Systems,” *American Economic Review* 100, no. 3 (2010), 641–672 — rules adapted to local conditions, monitoring, dispute resolution and institutions operating at multiple levels. The chapter’s community-room example and proposed AI applications are illustrative. <https://doi.org/10.1257/aer.100.3.641>
 - Jacques Derrida, “Signature Event Context” (1972), in *Limited Inc* (Northwestern University Press, 1988), 1–23 — repeatability and the impossibility of finally closing context; the gradient-descent connection is the author’s provocation. See also *Of Grammatology* (1967).
 
+## Interlude — The City
+
+1. <a id="ref-city-slate"></a>Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi Chang and Qiaozhu Mei, “Beyond Ranking: Optimizing Whole-Page Presentation,” *Proceedings of WSDM*, 2016; Eugene Ie et al., “SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets,” *Proceedings of IJCAI*, 2019.
+
 ## Chapter 13 — The Prophecy
 
 - The Wachowskis, *The Matrix* (1999). The taxes are original.

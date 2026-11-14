@@ -4,4 +4,4 @@ The illustrations were designed as a second, quieter narrative for the book. The
 
 The recurring robots, institutions, doors, landscapes and machines are intentionally left unexplained. Some ideas should arrive visually before they are named. As the book moves from agents and architectures toward human intention and capacity, the images move with it. If you noticed that before reading this note, good. If you did not, that is good too.
 
-The exception is Chapter 11, whose pictures are screenshots of the companies it describes.
+The exceptions are Chapter 11 and the interlude after Chapter 12, whose pictures are screenshots of the companies they describe.

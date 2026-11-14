@@ -19,6 +19,7 @@ The stories of companies, teams and people come from my experience. Names, compa
 | 10. Fluent Autonomy | The editing of this book, read as a cycle of scaffolding, distillation and creative distrust, and where the argument could be wrong | Lived, with reported work on distillation; the fluency is still an ambition |
 | 11. The System 3 Company | A company of agents built from this book, and a second company that benchmarked it against one agent, told from their records and my own messages | Run; predictions committed before each benchmark and scored by a referee the builders could not see; no real learners yet |
 | 12. After Capacity | Ostrom’s cases, work on machine-checked proofs and epistemic opacity, a community and a weekend | Argued from cited work; the community is illustrative and the irrigators’ weekend is a proposal; no new experiment |
+| Interlude: The City | The lessons app, its written objective, and the city of companies built around it | Reported from the companies’ own records; one owner so far; no real learners yet |
 | 13. The Prophecy | An alternative ending, told as a fable | Fiction |
 
 ## A Test Still to Run

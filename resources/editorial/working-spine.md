@@ -24,6 +24,7 @@ In one sentence: give AI autonomy and control moves up to the conditions; the ar
 | Interlude — When It Goes Wrong | — | The failure that separates science from an efficient apparatus of authority: the records survive while objections lose their consequences. Two routes: the system can overrule every check, or an owner can prevent a challenge. It raises the stakes; it does not promise that later parts solve them. |
 | Part IV — Human Purposes | 9–10 | What can inquiry discover about human purposes, and what authority can it not supply? How can assistance preserve human agency? |
 | Part V — What the Capacity Is For | 11–12 | What is the capacity for? The ending I want. |
+| Interlude — The City | — | What the capacity looks like when it is built: the lessons app, its written objective, and a city of companies with one owner so far. Follows Chapter 12 and carries the handoff to the fable. |
 | Chapter 13 | 13 | A visible “An Alternative Ending” divider marks a fictional counterweight to Chapter 12’s hoped-for future. The fable retains its comedy, questions of identity and emotional ending. |
 | Scaffolds page | — | The last word, after both endings. Pairs with the reveal page; follows the fable directly. |
 
