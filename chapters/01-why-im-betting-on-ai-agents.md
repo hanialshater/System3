@@ -99,7 +99,7 @@ First, though, the machinery has to do something worth the trouble. The first be
 
 **I’m betting on systems capable of surprising us because there are problems where we can recognize a better outcome far more easily than we can specify the path that leads to it.**
 
-The sensible place to start is somewhere small enough to be embarrassed by the result: a bounded problem that is genuinely difficult but unusually cooperative about judgment. We can write down the constraints, check whether a solution obeys them and tell whether an attempt improved without convening a discussion about aesthetics, pedagogy or whether the users are “delighted.”
+The sensible place to start is somewhere small enough that the result could embarrass me: a bounded problem that is genuinely difficult but unusually cooperative about judgment. We can write down the constraints, check whether a solution obeys them and tell whether an attempt improved without convening a discussion about aesthetics, pedagogy or whether the users are “delighted.”
 
 So I gave an agent some circles to pack.
 
