@@ -88,7 +88,6 @@ Senku remembers a world in which the medicine already exists. He can work backwa
 
 Real civilization had no Senku. Nobody firing the first clay knew that glass was possible, let alone that a glass vessel would one day hold a sulfa drug. People had to discover what could exist at the same time as how to make it, and for a long time what they learned lived only in the hands and memories of particular people.
 
-<!-- AUTHOR: C5-14 — optional: a more specific apprenticeship detail could sharpen the potter. -->
 A potter learned from clay, fire and vessels that cracked. She tried a change, repeated it when it worked, then taught it to an apprentice. When his pot cracked, she recognized something he had done that morning. He remembered doing it, remembered her warning, and now had an expensive reason to pay attention. It took several more firings before his hands could feel the difference she noticed immediately. When he became a teacher, he passed on what he had learned, including precautions he did not entirely understand, because the last person who omitted them had ruined a firing.
 
 Knowledge had a face. You knew whom to ask and remembered what happened when you listened. Senku had the chemistry; Kaseki had the hands. Whatever they failed to pass on could die with them.
@@ -261,7 +260,7 @@ A critic whose objections never change what gets investigated is doing quality-a
 
 Newton was extraordinary. In January 1697, busy with the great recoinage at the Royal Mint, he received Johann Bernoulli’s challenge: find the curve along which a bead slides fastest between two points. Bernoulli had given the mathematicians of Europe months. By John Conduitt’s account, Newton came home at four in the afternoon, exhausted, and had it solved by four in the morning. The answer went to the Royal Society without his name, and Bernoulli recognized the author anyway: *Tanquam ex ungue leonem*, as the lion by its claw.[22](appendix-references.md#ref-05-newton)
 
-The story is usually told about Newton. The puzzle is how the question found him. A challenge posed in Switzerland was printed in a Leipzig journal, carried by correspondence, read in London, answered overnight and returned to circulation. Everyone involved could follow the problem because they shared a mathematical language precise enough that a style could be recognized like handwriting. Reputation did the rest of the routing: it decided who was worth challenging, and whose anonymous answer would be read with care. Bernoulli could recognize the claw because he already knew the lion.
+The story is usually told about Newton. The puzzle is how the question found him. A challenge posed in Groningen was printed in a Leipzig journal, carried by correspondence, read in London, answered overnight and returned to circulation. Everyone involved could follow the problem because they shared a mathematical language precise enough that a style could be recognized like handwriting. Reputation did the rest of the routing: it decided who was worth challenging, and whose anonymous answer would be read with care. Bernoulli could recognize the claw because he already knew the lion.
 
 Reputation routed the attention. It did not make the answer right. Anyone with the mathematics could check the curve, and that is the part of the network that holds weight.
 
