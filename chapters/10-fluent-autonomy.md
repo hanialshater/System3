@@ -28,9 +28,9 @@ The refusal should remain mine. Remembering why I refused should not depend on m
 
 ## Distillation
 
-Chapter 7 mentioned a paper with a cheeky subtitle, *Making VGG-style ConvNets Great Again*, as evidence that a plain stack of three-by-three convolutions could hold its own against architectures found by expensive search. I left out how it got plain.
+In Chapter 7 I mentioned a network called RepVGG that was surprisingly plain given how well it worked. I left out how it got plain.
 
-During training, a typical RepVGG block has three branches side by side: a three-by-three convolution, a one-by-one convolution and a shortcut that passes its input straight through. The branches make the network easier to train. When training ends, a little linear algebra folds all three into a single three-by-three convolution that computes exactly the same function. The authors call this structural re-parameterization.[1](appendix-references.md#ref-10-repvgg) The network you deploy is plain and fast. The network that learned was not.
+Imagine looking at one small patch of a photograph. During training, one branch of the network weighs up the nine positions in a three-by-three square. Another looks only at the center, and a shortcut passes the input straight through. The branches meet and their contributions add up. Once training is over, the contributions from the two shorter routes can be included in the weights of a single three-by-three operation. The authors call this structural re-parameterization.[1](appendix-references.md#ref-10-repvgg) You can give the deployed block the same input and get the same answer. The extra routes did their work while the network was learning.
 
 AlphaGo Zero did a looser version of the same thing. Every move it played in training came out of a tree search that looked ahead through many positions, guided by its network. Then the network was trained to predict the search’s move probabilities and the game’s outcome. The search improved the network, the better network guided a better search, and round by round more of what the search knew moved into the network’s intuition.[2](appendix-references.md#ref-10-alphagozero)
 
@@ -76,7 +76,7 @@ Some of the checking may move inside anyway, and then we are back to building in
 
 ## What the Fold Forgets
 
-RepVGG’s fold is exact. The plain network computes the same function as the branched one, so the branches can be thrown away. Nothing about my editing institution folds that cleanly.
+For RepVGG I can take a photograph and check that the arithmetic comes out the same after the fold. What would be the equivalent test for a joke? I can give an editor yesterday’s chapter and see whether it keeps the line I fought for yesterday. It is tomorrow’s line I am worried about.
 
 The reasons go first. The history I put back by hand had a written reason for staying, and the reason was on disk. The pass that cut it had learned what I usually want and had not consulted why I wanted this. Sam’s last line in the serializer pattern failed the same way: true when he wrote it, its reason never linked, still giving instructions a year later. A distilled preference that has lost its reasons is high-functioning bullshit about me.
 

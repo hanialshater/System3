@@ -24,7 +24,7 @@ Two groups want the room at seven on Tuesday. What would I have to promise them 
 
 The title is stolen from machine learning, and the theft is deliberate.
 
-In the curve described by Belkin and colleagues, test error falls as a model gains capacity, rises near the point where it can fit its training data exactly, then falls again as capacity grows further.[2](appendix-references.md#ref-12-after-2) The familiar lesson was to limit capacity to avoid overfitting. The second descent complicated that lesson. Past the peak, many models fit the data perfectly. More capacity did not remove that ambiguity; it supplied more candidates, and how the training procedure selected among them decided whether the result was any good.
+Suppose I give a model a pile of examples to learn from and keep a second pile aside to see what it has learned. On a graph I put the size of the model along the bottom and its mistakes on the unseen examples up the side. In the curve described by Belkin and colleagues, the mistakes first fall, rise near the point where the model can fit the training examples exactly, then fall again as the model grows.[2](appendix-references.md#ref-12-after-2) That last fall is the second descent. By then many solutions fit everything in the first pile. It matters which one training finds, and you can see the difference in the pile I kept aside.
 
 I am borrowing the shape. Intellectual history does not obey a theorem about neural networks.
 
@@ -70,11 +70,11 @@ I have a sentence that gets me into trouble: gradient descent is the answer to D
 
 This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[5](appendix-references.md#ref-12-after-4)
 
-Large language models operate inside that difficulty, and oddly, they learned from the same accumulated language in which we argue about the impossibility of getting outside our descriptions. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pushes them toward behavior that works under the conditions in which they are trained and evaluated. Nobody had to settle the meaning of every word first.
+Think of all the places a model might encounter “keep the door open.” A carpenter and a negotiator could each say it and expect rather different things to happen next. During training, the model tries to predict what words follow in each setting. Gradient descent adjusts its internal numbers a little at a time in a direction that reduces the prediction error. The next time it meets a stalled negotiation it has a better chance of leaving the hinges out of it. Nobody had to settle the meaning of every word first.
 
 Derrida never claimed that communication fails. A sign can work and still be lifted out of its context and used somewhere its author never imagined. Chapter 4 called Saussure’s theory a specification for GPT; Derrida gives me a way to think about what happens when the output leaves the training context. Derrida was right, and it ships.
 
-It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. The model can produce a perfectly formed citation to nothing at all. We chose where training stopped and which tests counted. Deployment keeps finding places we did not think to look.
+It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. We chose where training stopped and which tests counted. Deployment keeps finding places we did not think to look.
 
 Gradient descent did not defeat ambiguity. It made ambiguity computationally useful.
 
@@ -84,7 +84,7 @@ The compiler has to compile. Chapter 11’s lessons company still needs evidence
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is high-functioning bullshit at the scale of a civilization.
 
-Criticism leaves a practical question: once you have seen through an arrangement, how do you build one you can commit to?
+Back in the meeting room, we could try each timetable for a month and see who makes it to the door. Suppose the same three people miss out every Tuesday. I can imagine the committee asking for another month of data. I can also imagine being one of the three.
 
 The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is another possibility, close to Rorty’s but with the building left in. We can construct them knowingly. Build institutions while remembering that institutions can be rebuilt, and that people will arrange their lives around the promises we make. We owe those people an account of what changed and a say in what happens next. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
 
@@ -158,7 +158,7 @@ All of that assumes the people at the table understand what they are choosing be
 
 Chapter 6 told how agents made Wiles’s proof of Fermat’s Last Theorem checkable by Lean: roughly thirty thousand intermediate theorems, which nobody is going to read.[10](appendix-references.md#ref-12-flt-tokens) Nobody needs to. The checker does not get bored, and its standards are written down. That was the easy case. Wiles understood the proof before any machine checked it.
 
-The four-color theorem was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand. Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[11](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[12](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
+Take a map and try to color its regions so that neighbors sharing a stretch of border have different colors. Four colors suffice for any ordinary flat map. The proof was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand. Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[11](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[12](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
 
 We already distribute the checking. Hardwig’s physicist relies on chemists she will never check; the Higgs discovery had thousands of authors and no single knower. A proof checker can establish that a formal statement follows from its axioms. A held-out test measures performance on cases the system did not train against; an independent replication asks whether a result survives another attempt. I can rely on that work without doing it all myself. I still need to know what was checked. Lean cannot tell me whether the theorem was the one I meant to ask for.
 
