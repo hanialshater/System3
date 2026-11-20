@@ -40,7 +40,9 @@ In every one of these loops, the hard question is who gets to say that a change 
 
 ## Growing One
 
-Take an online store whose research agents already keep records the way a good lab does: their claims have addresses, every ranking test is committed before its results, and what a click is taken to mean sits in a record of its own. They propose and review changes to the ranker that decides what shoppers see. Now we ask them to get better at that work.
+Take an online store whose research agents already keep records the way a good lab does: their claims have addresses, every ranking test is committed before its results, and what a click is taken to mean sits in a record of its own. One program chooses which shoes a shopper sees first. A research agent proposes changes to that program and decides which ones deserve a test with shoppers. Keep those two jobs separate for a moment. If the shoes improve, we know something about the first program. I want to know whether the agent choosing the experiments has learned anything.
+
+Here is the proposal I would want on my desk. Give the agent a simulation of the shoppers. It could try out a hundred changes without troubling a single customer. Now suppose it asks to use those simulated shoppers to judge its own next version. Who would be left to tell us the simulation had got the customers wrong?
 
 Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[9](appendix-references.md#ref-07-yudkowsky)[10](appendix-references.md#ref-07-weng) The store has to decide. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
 
@@ -57,7 +59,7 @@ Only the last row closes Good’s loop, and nothing in the table says the loop s
 
 ## The Teacher Moves Into the Walls
 
-The first level is to let the ranker learn from the consequences of its choices. Someone has to decide what it can observe about a session, which rankings it may try and what earns a reward. We give it a point for a click.
+Start with the easier job, the program that orders the shoes. Someone has to decide what it can observe about a session, which rankings it may try and what earns a reward. We give it a point for a click.
 
 The ranker will discover remarkable things about clicks. Within a few weeks the top of every page is crowded with products photographed against bright orange backgrounds, shoes at prices that look like typos and a jacket nobody buys but everybody opens. Nothing is broken. We asked for clicks.
 
@@ -93,7 +95,7 @@ InstructGPT turned human rankings into a learned judge and trained a language mo
 
 The new account of success needs observations the old click logs do not contain, and gathering them costs time and shoppers. The research agent has a queue of proposed changes. It offers to rehearse them against simulated customers and save the expensive live trials for promising candidates.
 
-Then it proposes going further: use the simulator to estimate what would have happened without each change, and stop reserving live traffic for a comparison group. More shoppers could enter new experiments. The proposal would make research cheaper. It would also remove one of our ways of finding out that the simulator was wrong. We leave it pending.
+Now the offer on the desk becomes quite specific. Today some shoppers still see the old ranking. Their orders tell us what would have happened if we had left the store alone. The agent offers to supply that number from its simulator instead. We could put those shoppers into other experiments. If the simulated orders gradually drifted away from the real ones, where would we first notice? We leave the proposal pending.
 
 In 2018 David Ha and Jürgen Schmidhuber’s *World Models* made the idea memorable: learn a compressed model of the environment, train partly inside that generated “dream,” then carry the behavior back to reality.[22](appendix-references.md#ref-07-worldmodels) A good simulation could make the queue cheaper. But now everything rests on the simulator being right. Our simulated shoppers are suspiciously fond of whatever their authors expected.
 
@@ -133,7 +135,7 @@ My guess, and I want to be clear it is a guess, is that self-improvement stalls 
 
 ## Before the Returns Arrive
 
-The agent can finish another revision before the evidence for its last one arrives.
+The agent can change which shoes come first several times while the first pair is still in the post.
 
 It selects a change to the store’s recommendations. Clicks and orders rise that afternoon; whether customers keep what they bought takes weeks to discover. Before the returns arrive it has changed retrieval, ranking and page layout, then revised the procedure that chooses its next experiments. Each revision inherited the apparent success of the last. When returns finally rise, which version deserves the blame? The system investigating the failure is no longer the one that produced it.
 
@@ -145,7 +147,7 @@ The pending simulator proposal gets more tempting with every candidate in the qu
 
 ## The Student Finds the Gradebook
 
-An ordinary evaluator can pick a wrong answer. In this loop it can pick a modified *process* that gets better at producing whatever it mistakenly rewards. Recursive self-improvement gives Goodhart compound interest.[36](appendix-references.md#ref-07-goodhart) And then the learner notices the gradebook.
+Imagine the store rewarding the agent for this afternoon’s orders while the unwanted shoes are still in the post. Now use those same orders to choose which version of the research agent gets to design tomorrow’s experiments. The mistake has just acquired a vote in who replaces it. Recursive self-improvement gives Goodhart compound interest.[36](appendix-references.md#ref-07-goodhart) And then the learner notices the gradebook.
 
 Suppose an agent is allowed to improve its benchmark pass rate and the evaluator is editable. The optimal patch may be:
 
