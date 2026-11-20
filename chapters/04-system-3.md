@@ -50,7 +50,7 @@ In the early twentieth century Ferdinand de Saussure made a radical claim about 
 
 For Saussure, much of a sign’s value comes from its relationships and differences with the other signs in the system, so that language becomes a network of contrasts held together by convention.[1](appendix-references.md#ref-04-saussure)
 
-A century later we built something that learns a network of that kind. A transformer consumes enormous amounts of language and learns relationships among tokens and contexts. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
+A century later we built something that learns a network of that kind. During training a language model sees words and pieces of words in many different surroundings. It gets practice predicting what comes next in a veterinary report about a cow and in a menu that offers beef. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
 
 Read today, Saussure’s theory looks uncannily like a specification for GPT. Language models are spectacular evidence for how much competence can emerge from structure learned inside symbolic data. They write, translate, debug software and explain physics without ever acquiring the farmer’s relationship to cows or a child’s relationship to fire.
 
@@ -238,9 +238,9 @@ If anything, the scaffold seemed to produce discipline before it produced capabi
 
 One problem, `astropy-13579`, broke the pattern badly. Mini solved it and epistemic did not, and it was the only case where the epistemic patch came out substantially larger.
 
-Both agents correctly identified the central bug: dropped world-coordinate dimensions were being filled with a hard-coded value instead of the actual coordinate value.
+Imagine taking one slice from a stack of astronomical images. While you work on the slice you can leave out one coordinate: every point on it comes from the same place in the stack. You still need that coordinate when you put the slice back. Both agents found the bug. The software filled the missing value with 1.0, whatever its value had been.
 
-The baseline took a fairly direct approach:
+The simpler agent saved the actual value before dropping the coordinate. When the program needed the value again, it was right there:
 
 ```python
 # Store the actual values for dropped dimensions

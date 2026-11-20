@@ -6,7 +6,7 @@ The circle-packing agent could spend an hour pursuing some bizarre geometric ide
 
 Then I asked for an educational demo.
 
-Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Once two little lists are sorted, you can build a bigger sorted list by taking whichever item comes first at the front of the two. My demo drew each number as a bar. The bars ended up in the right order. How would I tell whether somebody watching had understood why the trick worked?
+Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Suppose one piece holds 2 and 8, and the other holds 3 and 5. Look at the front of each. Take the 2. Now the choice is 8 or 3, so take the 3. You never even had to look behind the 3 to know that the 5 could wait. My demo drew each number as a bar. The bars ended up in the right order. How would I tell whether somebody watching had understood why the trick worked?
 
 The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” I also tried Count-Min Sketch, which estimates how often something has appeared when there is too much to keep an exact count of everything. The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
@@ -230,17 +230,13 @@ And that made the remaining human job painfully obvious. I still decided when to
 
 ## Deep Mode
 
-So I tried giving that job to an orchestrator. By now the system had a respectable vocabulary of moves, but there was no reason every problem should use them in the same order.
-
-Research first may be sensible for one task and destructive for another because it anchors every branch before anything original appears. Five builders may reveal useful diversity or reproduce one mistake five times. Evaluator disagreement may justify another experiment, or one evaluator may simply be confused. A visual mockup may deserve implementation, or it may already have revealed enough to kill the idea cheaply.
+Suppose one version makes the split easy to see and another makes the merge easy to follow. Do we build a third version, ask a beginner to try these two, or go back for something we threw out yesterday? I had been making that decision myself. I gave it to one more agent, the *orchestrator*. It could call the others and decide who should work next.
 
 A fixed Planner → Builder → Critic → Revise loop can be useful. It also answers all of those questions in advance. I wanted some of the workflow to remain inside the search.
 
 We gave the orchestrator the problem, the capabilities available to it, and enough of the search history to decide what kind of move made sense next. Everyone else kept their jobs: builders built, researchers researched, evaluators judged, and the browser agents, visual systems and retrieval did what they had been doing. The orchestrator didn’t need to be the best at any of it.
 
-At the top, the loop was almost too simple to write down:
-
-**state of inquiry → choose a move → act → observe → update the state of inquiry**
+What it needed from the last round was the unfinished business. Which part of the demo had the judges disagreed about? What had we already tried there?
 
 The move itself was not fixed. Suppose two Merge Sort branches both make recursive decomposition clear, but evaluators keep reporting that learners lose track of how the tree corresponds to the array. The next move does not have to be “revise again.” The orchestrator can send a researcher after coordinated representations. Retrieval can surface an old prototype with a useful identity-preserving color scheme. A visual model can produce two spatial arrangements before anyone writes code. Builders can implement both. The browser may then reveal that one design requires the learner to look in two places at once precisely when the merge begins.
 

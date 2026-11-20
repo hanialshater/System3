@@ -5,15 +5,13 @@
 
 *Simple building blocks, complex emergence*
 
-We humans are obsessed with problem-solving. And what problem is more fascinating than life itself, this messy, miraculous phenomenon responsible for everything from the creatures of the deepest ocean trenches to TikTok trends and mortgage-backed securities?
-
 Life produces coral reefs, immune systems, parasites, flowers, cancer and octopuses: eight-armed problem-solvers that extensively edit their own RNA, sense light through their skin and match the colors around them despite apparently color-blind eyes. It also produces creatures capable of spending twenty minutes arguing online about whether another creature is technically a fish. Human civilization adds philosophy, cathedrals, semiconductor fabs, global supply chains and airport lounges. Somehow, all of this became possible on a planet that began without a requirements document.
 
 What fascinates me is how little of the result was specified in advance. No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors.
 
 And we get to build on what they left. A programmer does not need to understand transistor physics. I can use a compiler without reproducing the intellectual history that made it possible, which is fortunate because I was hoping to finish before lunch. Enough of the complexity underneath has been made reliable that I can spend my attention elsewhere. When something breaks, I may have to descend a few layers and discover how much I was taking for granted.
 
-We have spent decades making more of our knowledge available to machines. Now we can give a system access to that knowledge, a problem, tools and time, and let it participate in deciding how the problem should be approached. Could I leave it with a hard problem and come back to progress I had not directed?
+Could I leave a machine with a hard problem and come back to progress I had not directed? I had one advantage as an experimenter. Give the machine twenty-six circles to pack into a square. It can move them around and change their sizes, so long as they stay inside and don’t overlap. When I get back, I can add up the radii and see whether the new packing beats the old one.
 
 ## The Rule-Based Exoskeleton
 
@@ -23,7 +21,7 @@ Then we went back to work. We trained a model, found an edge case, added a rule,
 
 I have spent a respectable amount of my career producing that surrounding process. Some of it tells the system what matters: the examples we label, the constraints we enforce, the failures we refuse to tolerate. Some encodes a solution we already understand. The distinction gets uncomfortable when we ask the machine to discover something better and it finds a route that makes our carefully designed process unnecessary. We wanted discovery. We had also grown rather attached to the diagram.
 
-Engineering often makes a problem manageable by removing possibilities. We choose a representation, settle interfaces and constrain the ways components can interact. But every simplification leaves something out. A customer becomes a funnel stage. A learning experience becomes a sequence of screens. A research problem gets narrowed to the part our existing method can address. These decisions let us proceed; we may spend years improving the resulting system before asking whether something important was lost at the beginning.
+A shopper types “shoes for standing all day.” I can make that question easier for a computer by turning it into a search for shoes. Now I know how to solve it, and I have thrown away the part she needed help with. A team could spend years getting better at that second question. The shopper is still on her feet.
 
 **Complexity over engineering** is a deliberately uncomfortable way to name my bet. I want us to be able to work with more of the problem before deciding which parts reality will have to do without. That may require considerable engineering: tools for exploring alternatives, environments in which mistakes are recoverable, ways to compare results. The difference is how much of the answer we insist on putting into the machinery before the search begins.
 

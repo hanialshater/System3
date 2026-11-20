@@ -38,19 +38,13 @@ For most of the history of algorithm design, the answer was us.
 
 <!-- ART RESOLVED — ch2-search-roles. Original brief: DIAGRAM — missing figure: History of algorithm design. Original asset: ../resources/image0136.png; see resources/art-direction/missing-figures.md. -->
 
-Humans invented explicit algorithms. When direct algorithms were not enough, we invented optimization procedures that searched over candidate solutions. Then we invented meta-heuristics that searched more broadly. Machine learning let systems learn useful structure from data. Now language models can write and modify the search procedure itself.
+I can tell the computer which circle to move. I can give it a rule for choosing the next circle itself. A model that writes code gives me a third possibility: let it try the rule, see where it gets stuck, and write another rule. To see what I would be handing over, I tried the first two jobs myself.
 
 ## Hill Climbing
 
-I started where anyone would. Given a rough packing, the obvious way to improve it by hand is to make small changes: move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn’t.
+Give me a pencil and a rough packing and I’d start with the circle that has daylight around it. Make it a little bigger. When it touches its neighbor, see whether the neighbor has room to move. I can give those instructions to a machine.
 
-That is hill climbing:
-
-1. Start with a valid solution.
-2. Perturb a position or radius.
-3. Check whether the result is valid.
-4. Keep it if the score improves.
-5. Repeat.
+In *hill climbing*, the machine tries one small change at a time. If it has a valid packing with a better score, it keeps the change. Otherwise it puts the circle back. It can keep this up long after I would have lost the pencil.
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
