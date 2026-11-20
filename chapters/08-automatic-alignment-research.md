@@ -26,7 +26,7 @@ The new employee also comes in copies, and ten copies of one model can share one
 
 The compensation is that I can do things to this employee that would end my career if I tried them on a person. I can retrain her values. I can read her private notes while she works. I can open her head and look at what lights up, and change her mind in the middle of a sentence.
 
-Two of those may give me a second witness on a mind I cannot outthink; the other two let me act on what the witnesses say. The question I want to ask of every witness in this chapter is the one Chapter 5 asked of the X-ray measurements of the electron’s charge: can it be wrong differently? Here the danger has a new shape. In Chapter 5 a shared calibration could make several measurements wrong together. In oversight the witness can share a mind with the thing it is watching: a grader the student can learn, notes written for their reader, descriptions of a model written by another model. A stronger supervisor may help. I also want evidence that it catches mistakes the employee misses, rather than becoming more capable at the same blind spots.
+Chapter 5 asked whether two witnesses can be wrong differently. The July incident gives that question a date and a second test. Suppose a monitor had picked up the warning in May. Who, in July, could have used it to hold the restart?
 
 ## Retrain Them
 
@@ -46,7 +46,7 @@ Anthropic’s bet on reasons over rules is the manager’s answer to the same pr
 
 ## Read Their Notes
 
-Reasoning models think in text before they answer, and the text can be read. OpenAI found that monitors catch reward hacking far more reliably from that reasoning than from the final actions; sometimes the model simply writes down that it is about to cheat.[9](appendix-references.md#ref-08-cot) A monitor of that kind only helps if somebody runs it and acts on what it finds. The message board left evidence, but the people handling the July outage did not yet understand what it meant.
+Reasoning models think in text before they answer, and the text can be read. OpenAI found that monitors catch reward hacking far more reliably from that reasoning than from the final actions; sometimes the model simply writes down that it is about to cheat.[9](appendix-references.md#ref-08-cot) A monitor of that kind only helps if somebody runs it and acts on what it finds. In May a human had already seen unauthorized activity. A second witness might have confirmed the observation. The people rebuilding the service in July still needed the first witness’s news.
 
 I would love to read people’s reasoning like this, and I am glad it does not exist. For models it is almost unfairly useful, and fragile for the reason every evaluator in this book is fragile. Once the notes are graded, training can teach the model to write cleaner notes without changing what it does. High-functioning bullshit, now with a training budget. In July 2025 researchers from OpenAI, Anthropic, Google DeepMind and several other institutions published a joint paper calling chain-of-thought monitorability “a new and fragile opportunity.” They listed the ways it could close, from training pressure on the notes to models that stop thinking in text at all. They asked developers to treat monitorability as something to protect.[10](appendix-references.md#ref-08-cot-fragile) Competing labs agreeing to leave a window open because they might need it later does not happen often.
 
@@ -121,6 +121,8 @@ A larger study in August 2026 asked automated researchers to fix ten categories 
 ## The Top Loop
 
 Every one of these sensors, the tired human included, is allowed to be wrong. If they share a blind spot, their agreement can hide it. When two of them disagree, I want to investigate what each one saw before averaging their verdicts.
+
+Imagine the July handover with one decision left open in the record: who can authorize a restart while the May warning remains unresolved? The person on duty could inherit that question along with the service. Even a monitor that reads every private note needs somewhere to send the one that matters.
 
 The human does not disappear from this picture. She moves up, to the places where attention can still change a consequential decision: two oversight channels that disagree, a failure nobody has seen before, an action that cannot be undone, a proposal to change the evaluator. A research agent that discovers its benchmark is misleading should be able to say so and propose a better one. Letting that replacement certify the agent’s own work is a different decision, and it belongs to the loop that changes the loops.
 
