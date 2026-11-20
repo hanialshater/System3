@@ -12,6 +12,10 @@ I wanted the kind of explanation I loved in Distill or Jay Alammar: a picture th
 
 ## Stubbornly Human
 
+Models trained to continue text turned out to continue code.
+
+Then GitHub Copilot put the trick inside the editor. Describe what should happen next and watch it appear underneath your cursor, which was delightful for about a week and then became the way things were.
+
 By the time GPT-4 arrived, I had a routine for getting help with a bug. Find the file I suspect. Copy a class into ChatGPT. Copy the suggested patch back into the editor. Run the program, paste the traceback into ChatGPT. Repeat until it works or until dinner.
 
 My first agent-computer interface was copy and paste.
@@ -20,13 +24,25 @@ I thought I was using a very good autocomplete. The model might have been doing 
 
 SWE-bench turned that whole job into a test using real GitHub issues.[1](appendix-references.md#ref-03-swebench) Give the model the repository and a terminal and it can go looking for the missing interface itself. SWE-agent showed how much depends on the tools it gets for searching, editing and seeing what happened.[2](appendix-references.md#ref-03-sweagent) The jar had acquired its own staff.
 
+Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
+
 Even with the right tools, a long session could get peculiar. Suppose an agent decides early that our Merge Sort demo should use React and a recursion tree. It spends forty minutes building that version. Every later question now arrives in a context containing forty minutes of reasons, code and decisions supporting React and a recursion tree.
 
 Humans call our version of this sunk cost. The agent has a respectable excuse: its context window is literally full of evidence that this is what the project is.
 
 So we started giving different attempts different histories. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-The terminal, the checks, the way we kept one attempt’s history out of another’s: that was the agent’s harness. With the plumbing in place I could finally sit down in front of a working demo.
+The terminal, the checks, the way we kept one attempt’s history out of another’s: that was the agent’s harness.
+
+But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for, which was simply *build the application.*
+
+Ask for a booking application for a football academy and an unconstrained coding agent first chooses a framework, installs packages, creates a database, decides how authentication should work, manages environment variables and configures deployment. Several minutes later, we have made enormous progress toward having somewhere to put the booking form.
+
+If the same plumbing is reconstructed on every project, it becomes reasonable to prepare more of the world in advance. That is what made systems such as Replit and Lovable interesting to me. Runtime, deployment and common application machinery are already nearby, so the conversation can begin much closer to the application.
+
+Maybe we decide customers should create an account before seeing availability. It sounds reasonable: we need their details eventually. Then we build it and the experience immediately feels annoying. Parents arriving from a Google search do not want to establish a lifelong digital relationship with a football academy before discovering whether Saturday at ten is available. So login moves later, and the artifact becomes something we think with.
+
+The Merge Sort demo made this even clearer because there was almost no business machinery to hide behind. I could ask an agent for an interactive explanation and receive something perfectly functional: an array of bars, controls, animation, perhaps some text explaining that the algorithm divides the input and merges the pieces again.
 
 Technically, it was fine. Pedagogically, it could still be terrible. Watching bars move does not tell a beginner why dividing the problem helps. So perhaps we try a recursion tree. The tree makes the structure visible, but now the supposedly simple sorting algorithm resembles the organizational chart of a German corporation. Maybe we show the tree and array together. Perhaps that creates too much cognitive load. Maybe the problem is not the representation at all; the learner understands splitting perfectly well but has no idea why merging makes the whole trick useful.
 
@@ -108,7 +124,7 @@ Meanwhile I can simply say:
 
 That contains comparison, diagnosis, trade-offs, priorities and a proposed next move in a few sentences. Natural language is ridiculously rich compared with a scalar.
 
-A builder can act on that sentence. Two judges may mean quite different things by “intuitive,” but I can ask which part of the tree each of them was watching.
+In that sense language can act as an implicit metric. The builder can try the next move before I know how to score it. Two judges may mean quite different things by “intuitive,” but I can ask which part of the tree each of them was watching.
 
 OPRO, Optimization by PROmpting, makes a related move:[3](appendix-references.md#ref-03-opro) an LLM sees previous candidates and their scores and proposes the next one. It still needs an explicit score, so it is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written rule.
 
