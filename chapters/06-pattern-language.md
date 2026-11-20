@@ -405,7 +405,7 @@ Alexander’s form now asks for a Therefore.
 
 We could write “revise the method when it fails.”
 
-But the method decides which failures count.
+But the method decides which failures count. What happens when the next agent proposes to rewrite it?
 
 ## What the File Says Now
 
@@ -428,9 +428,3 @@ Now the next worker can argue with Sam, even while Sam is on holiday.
 Further down the runbook, a newer engineer has written *ask Ines*.
 
 This time there is a file behind the name.
-
-So far, a procedure has decided which changes to the library deserve to survive.
-
-But that procedure is also software.
-
-What happens when the next agent proposes to rewrite it?

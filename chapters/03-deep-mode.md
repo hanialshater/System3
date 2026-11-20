@@ -30,13 +30,13 @@ SWE-bench tested this larger job using real GitHub issues:[1](appendix-reference
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
-Even with the right tools, a long session could get peculiar. Suppose an agent decides early that our Merge Sort demo should use React and a recursion tree. It spends forty minutes building that version. Every later question now arrives in a context containing forty minutes of reasons, code and decisions supporting React and a recursion tree.
+Even with the right tools, a long session could get peculiar. Suppose an agent decides early that our Merge Sort demo should use React, a library for building interfaces, and show the learner a recursion tree. It spends forty minutes building that version. Every later question now arrives in a context containing forty minutes of reasons, code and decisions supporting React and a recursion tree.
 
 Humans call our version of this sunk cost. The agent has a respectable excuse: its context window is literally full of evidence that this is what the project is.
 
 So we started giving different attempts different histories. A fresh branch does not have to spend half its intelligence escaping assumptions accumulated by the previous one.
 
-The terminal, the checks, the way we kept one attempt’s history out of another’s: that was the agent’s harness.
+The terminal, the checks, the way we kept one attempt’s history out of another’s: that was the agent’s harness. The jar had acquired its own staff.
 
 But there was still a large difference between an agent that could work competently inside a repository and the thing I increasingly wanted to ask for, which was simply *build the application.*
 
@@ -44,7 +44,9 @@ Ask for a booking application for a football academy and an unconstrained coding
 
 If the same plumbing is reconstructed on every project, it becomes reasonable to prepare more of the world in advance. That is what made systems such as Replit and Lovable interesting to me. Runtime, deployment and common application machinery are already nearby, so the conversation can begin much closer to the application.
 
-Maybe we decide customers should create an account before seeing availability. It sounds reasonable: we need their details eventually. Then we build it and the experience immediately feels annoying. Parents arriving from a Google search do not want to establish a lifelong digital relationship with a football academy before discovering whether Saturday at ten is available. So login moves later, and the artifact becomes something we think with.
+I open the application and think: this is not very good. The software works. Now I have to worry about the football academy.
+
+Parents arriving from a Google search do not want to establish a lifelong digital relationship with a football academy before discovering whether Saturday at ten is available. So login moves later. What happens when a parent wants to book for three children? And if Wednesday is empty while Saturday has a waiting list, the booking interface might be part of that problem. None of those questions is really about React.
 
 The Merge Sort demo made this even clearer because there was almost no business machinery to hide behind. I could ask an agent for an interactive explanation and receive something perfectly functional: an array of bars, controls, animation, perhaps some text explaining that the algorithm divides the input and merges the pieces again.
 
@@ -128,7 +130,7 @@ Meanwhile I can simply say:
 
 That contains comparison, diagnosis, trade-offs, priorities and a proposed next move in a few sentences. Natural language is ridiculously rich compared with a scalar.
 
-I could hand that sentence to the builder and see what it did with the next version. If I had handed it 7.4, what exactly was it supposed to change?
+Hand a builder 7.4 and see what comes back. Hand it that sentence and it can go straight to the point where the learner has to look in two places at once. There is still a judgment buried in *beginner-friendly*. Two teachers can mean different things by it, and so can two models. I can work with that disagreement.
 
 OPRO, Optimization by PROmpting, makes a related move:[3](appendix-references.md#ref-03-opro) an LLM sees previous candidates and their scores and proposes the next one. It still needs an explicit score, so it is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written rule.
 
@@ -256,9 +258,9 @@ Count-Min Sketch followed a different path. The first versions looked like the d
 
 As the work continued, the designs increasingly organized themselves around the conceptual difficulties instead of the structure of the implementation. Collisions became visible. The learner could watch approximation happen instead of only reading about it. The relationship between memory and accuracy became part of the experience.
 
-Whether the demos teach humans any better is a question only human learners can answer. What they showed me was that more of the work I normally performed in the vibe coder’s seat could move into the system without first reducing creative problem solving to one fixed workflow.
+I know the question I’d put to a beginner now. Pause a fresh merge with a 4 and a 9 at the front of the two lists. Could there be a 2 hiding behind the 9? Someone who can tell me why the answer is no has understood something that watching all the bars settle into place can conceal. Every beginner in my experiment was played by a model. I still owe that question to a person.
 
-And that success exposed the harder problem. At higher levels of abstraction, failure can become coherent.
+Meanwhile, work I normally did from the vibe coder’s seat had gone on without me. The system could throw out a design and keep its one good idea. How would I notice if the idea it kept was wrong?
 
 ## A Cathedral on a Shopping Cart
 
