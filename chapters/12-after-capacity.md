@@ -16,9 +16,9 @@ Access to extraordinary intellectual capacity could change that. An interest mig
 
 Some of this is already ordinary. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. People become more dangerous, in the nicest sense.
 
-Try a smaller question. Eleven people share a meeting room. Some work shifts, some depend on accessible transport, and their booking software wants to know which evening they want every week for the rest of their lives. Two groups can already tell you which evening they want. Seven on Tuesday. One room.
+Imagine eleven people who share a meeting room and a piece of scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
 
-I can imagine writing them better software in a weekend. I’m less sure what I’d tell the people waiting outside on Tuesday.
+Two groups want the room at seven on Tuesday. What would I have to promise them to get through that meeting?
 
 ## The Curve
 
@@ -62,7 +62,7 @@ There is an economic reason to stop at critique. Reading an institution against 
 
 In 2004 Bruno Latour asked why critique had run out of steam, and called for composing things instead of debunking them.[3](appendix-references.md#ref-12-latour) Decades earlier he had written “Give me a laboratory and I will raise the world.” I keep thinking about the first half of that title. Richard Rorty wanted philosophy to keep the conversation going, and asked us to hold our commitments while knowing they are contingent.[4](appendix-references.md#ref-12-rorty) Later he turned on a Left that preferred spectating to reform. Neither needed agents to see the problem. I want to know whether agents make some of the building affordable.
 
-Our eleven members could each give a perfectly good account of why the booking rule is unfair. On Monday morning someone still has to ring the vendor. What changes if one of them can bring a working alternative to the meeting?
+An alternative has to be possible somewhere. Someone needs the knowledge, time and means to make an attempt whose outcome is not already contained in the discussion. Otherwise the critique is correct and Monday morning is unchanged.
 
 ## The Answer to Derrida
 
@@ -124,11 +124,11 @@ Calling something a community does not make it work. The arrangements that laste
 
 What stopped other groups from doing what the irrigators did varied. Sometimes it was trust, sometimes boundaries nobody could agree on, sometimes a state that refused to recognize rules it had not written. Sometimes, and this is the part I can do something about, it was the cost of the expertise. Those irrigators did not lack knowledge of their own valley. What might they have done with ready access to the experience of a hundred other valleys, and tools for exploring a proposed rule before the next dry season? A missing specialty would no longer have to end the attempt. Ostrom’s cases took generations. The question this book has been circling is what happens when some of that work fits into a weekend.
 
-Go back to the eleven people and their room. Until now the shift workers have been exchanging messages and asking for exceptions, which is how they came to be known as the difficult members. The vendor has little reason to change a product for eleven people. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
+Back at the meeting room, changing the software requires persuading a vendor that eleven people with peculiar scheduling needs are worth its attention. They are unlikely to win that argument. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
 
 Suppose instead that they can afford to build and maintain a small tool of their own. Members could enter changing availability and explore possible schedules. They could try a rotation that gives the same group different evenings across a month, or reserve times that work with the accessible transport. The weird community with eleven members could have software built around all eleven of them and no plan whatsoever for customer acquisition. Some of their disagreement may turn out to have been about the old software’s default. A member who seemed unreasonable may have a perfectly manageable constraint.
 
-Run both timetables. There it is again: seven on Tuesday.
+Two groups still want seven on Tuesday.
 
 One proposes allocating the room to whichever group brings the most people. The other is small partly because its members have fewer times at which they can attend. A system that maximizes attendance can produce a very well-evidenced reason to keep excluding them. The figures may be correct. What is in dispute is the rule giving those figures authority.
 

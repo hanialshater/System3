@@ -133,7 +133,13 @@ Alexander’s patterns and the programmers’ patterns both had a human reader. 
 
 In 1977 Edward Feigenbaum called the job knowledge engineering. The hard part was getting the knowledge out of the expert, then keeping up with the exceptions he eventually admitted to.[14](appendix-references.md#ref-06-feigenbaum) Expert systems spent years interviewing people like Sam.
 
-In Karpathy’s Software 3.0, the machine doing the work can read Sam’s own words.[15](appendix-references.md#ref-06-karpathy) An agent skill gives those words an address, a description that says when to use them, and instructions that can call a smaller skill.[16](appendix-references.md#ref-06-skills) Voyager built a library of executable skills in Minecraft.[17](appendix-references.md#ref-06-voyager) Minecraft tells you quickly whether the pickaxe exists. Jalal might have to wait three weeks to find out whether his agent had read Sam correctly.
+What changed is that natural language itself can now instruct the machine, Karpathy’s Software 3.0.[15](appendix-references.md#ref-06-karpathy) The machine doing the work can read a pattern, follow its Therefore and consult the reasons behind it without every qualification first being translated into logic.
+
+Agent skills give the arrangement a container with much of Alexander’s anatomy.[16](appendix-references.md#ref-06-skills) A short description says when the skill applies: the context. When selected, it supplies instructions, scripts and examples: the Therefore. Calls to other skills serve as links to smaller patterns. Retrieval does what Alexander’s reader did when following links from the neighborhood to the window seat.
+
+Voyager, a Minecraft agent, built a narrow version of such a library in 2023: executable skills, indexed by description, without the reasons.[17](appendix-references.md#ref-06-voyager) Its world also supplied something the grocery company lacked: Minecraft tells you quickly whether the pickaxe exists.
+
+Calling a natural-language pattern executable hides the reader: the same words can produce different actions in different models. A pattern written for an agent is still a hypothesis, now with a reader that can act on it at two in the morning. Nothing in the skill format forces the writer to include the reasons or the reader to respect them.
 
 ## Locate the Failure
 
@@ -155,7 +161,7 @@ The customers had been reacting to novelty. Experimenters have names for this, n
 
 Sam said he had known for years that the screen did something like this. Then he added that he had not known why, how long it lasted, or that it barely touched new customers. His local pattern had been right for years and had never been tested, which is a dangerous way to be right.
 
-Ramsey tied degrees of belief to the choices someone was prepared to make.[21](appendix-references.md#ref-06-ramsey) Sam now had a reason to wait before backing a launch. For Popper, the interesting part was that the curves could have gone the other way.
+The archive needed to represent something older than experimentation platforms. In 1926 Frank Ramsey treated belief as graded rather than binary and tied those degrees to the choices a person was prepared to make.[21](appendix-references.md#ref-06-ramsey) Popper would have objected to calling a well-tested theory more probable; here the two divide the work. Ramsey gives partial belief rather than verdicts. Popper asks whether the claim has met evidence capable of making it lose. The probes did both. They moved confidence, and they could have come back the other way.
 
 \*\* Therefore: when a result fails, trace the assumptions it used and design probes that distinguish the possible failures.
 
@@ -163,7 +169,7 @@ Ramsey tied degrees of belief to the choices someone was prepared to make.[21](a
 
 At Bing, a treatment had a bug, and the bug made search results worse. People could not find what they wanted, so they searched again and again. Queries per user went up by over ten percent. With poorer results on the page, advertisements looked comparatively relevant, and people clicked them. Revenue per user went up by over thirty percent. Two headline numbers were celebrating an experience that had been degraded.[20](appendix-references.md#ref-06-kohavi)
 
-A query can measure how hard someone had to work to recover from a bad result. A grocery basket in the first week of a redesign can measure curiosity. What did Jalal think it measured?
+More queries meant more engagement only if a query was a unit of interest. Set beside sessions and completed tasks, it becomes a unit of effort: seven queries can be worse than two if five were spent recovering from a bad result. Time changes meaning the same way. An item added to a basket in the first week of a new home screen sits beside curiosity. An item added in the third month sits beside habit.
 
 The next home-screen change was Jalal’s own: a new layout for weekly staples. It came back in the familiar shape, with a strong early gain.
 
@@ -197,7 +203,7 @@ The draft already carried the refutation condition from the experiment record. I
 
 Jalal added the confidence mark.
 
-Four minutes to extract the lesson. It took Sam, Ines and Jalal to decide which case to throw out, where to send the next reader and how much confidence the file had earned.
+That exchange is the new shape of Feigenbaum’s bottleneck. An agent can read hundreds of experiment records, launch notes, postmortems and chat threads and propose patterns nobody wrote down. Getting knowledge out has become cheap. Deciding which extracted lessons are true, where they apply and when to retire them has not.
 
 The version that went into the team’s skill library read:
 
@@ -218,7 +224,9 @@ part_of: review-an-experiment
 may_call: locate-the-failure
 ```
 
-The record makes three different commitments. The team believes customers react to novelty, recommends spending time comparing cohorts, and requires predictions in advance. Evidence for the first leaves the other two open to argument.
+A pattern can mix content that needs different kinds of support. “Returning customers on this screen react to novelty” is a claim about the world. “Compare cohorts before spending more traffic” is a recommendation about effort. “Do not alter a live experiment to rescue its result” is an authority boundary. A successful test of the first does not justify the other two automatically.
+
+Examples carry what rules cannot. I wrote an editing brief for this book after explaining the same corrections to successive agents, and one instruction was “preserve the wandering,” which is nearly useless to a reader who has never seen the movement I mean. A before-and-after passage teaches it where the rule never did. The examples also carry my taste into the next session, along with my blind spots. Preserving my judgment and preserving my mistakes use the same file format.
 
 \* Therefore: write the lesson as a pattern, with its context, its cases, what would make it wrong, and links to the patterns it serves and calls.
 
@@ -260,7 +268,9 @@ The deals tile faded.
 
 The slot reminder did not. Customers who used it once kept responding to it week after week, which is not the kind of result anyone puts on a conference slide. It also met the file’s own refutation condition: a visible change whose gain returning customers held.
 
-The file had said one lasting gain would count against it. Sam had even expected his own reminder to fade. They kept that case in the record and changed the question: across fresh tests of visible changes, how often did the gain last?
+The pattern had done exactly what it was supposed to do. It had made a prediction sharp enough to lose, and the slot reminder made it lose. The team did not delete the evidence that had supported it or call the reminder an exception. They rewrote the claim. Visible home-screen changes often produce novelty effects in returning customers; one lasting case no longer refuted the whole pattern, but it changed its scope and confidence.
+
+Sam had expected the reminder to fade with the rest; everything on that screen fades, he had said more than once. His pattern was right about two launches and wrong about the one that had been his own idea. The team started to trust it.
 
 Then the checkout team shipped a speed-up. Pages loaded faster and completed orders rose. The agent retrieved `wins-that-fade`, treated the result as another novelty case and recommended delaying the broader rollout until the pattern’s predictions had been checked.
 
@@ -270,7 +280,7 @@ The file answered with its confidence and its documented cases. Jalal’s review
 
 He signed it.
 
-The speed gain held. Forty home-screen launches said nothing about checkout speed, but the file had acquired a signature and Ines had lost her rollout.
+The later evidence showed that the speed gain was durable. A pattern scoped to visible changes had acquired authority over an invisible performance improvement, and forty home-screen launches, however carefully read, say nothing about checkout speed. The pattern written to make the room distrust confident stories had become the most confident story in the room, and the file had started producing feathers of its own.
 
 In Ramsey’s terms, confidence is a degree of belief, and the pattern could only earn its degree by facing cases that had not produced it. So Jalal set up a comparison. Two reviewers, with the same model and the same tools, read the same historical reports: faded gains, lasting gains and ambiguous cases. One had `wins-that-fade`; the other had only a generic instruction to be careful. The question was whether the pattern caught novelty that the control missed, or whether it simply warned about novelty in every report, in which case it had learned to sound concerned without learning to tell the cases apart.
 
@@ -316,7 +326,7 @@ Helen Longino would locate the failure in the community. On her account, objecti
 
 Stellar Colosseum, a harness for mathematical research, gives uptake a concrete form. Agents develop proposed arguments while reviewers look for defects. At final review, a specific fatal flaw is enough to reject the proof; favorable verdicts from other reviewers cannot cancel it. The defect remains tied to the claim that failed, so the next round can repair it or try another route.[32](appendix-references.md#ref-06-colosseum)
 
-Jalal and the head of product could agree on every curve and still disagree about whether a slower decision cycle was worth it. The next reviewer needed to know who had settled that question and why.
+Who gets to object matters too. Telling the same model to play skeptic produces another argument, not another observation. And some disputes were never about evidence. A product owner can reasonably care about decision speed while a researcher cares about what customers do months later. A system that cannot tell disputes about evidence from disputes about purpose will keep requesting evidence to avoid naming a conflict over what matters.
 
 A year after Jalal, Sam and Ines wrote the first skill, the file had grown fields nobody would have put in version one:
 

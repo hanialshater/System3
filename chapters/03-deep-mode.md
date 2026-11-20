@@ -6,9 +6,9 @@ The circle-packing agent could spend an hour pursuing some bizarre geometric ide
 
 Then I asked for an educational demo.
 
-The bars sorted themselves perfectly. I could have written a test for that. What would I have to test to find out whether somebody watching them had understood Merge Sort?
+Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Once two little lists are sorted, you can build a bigger sorted list by taking whichever item comes first at the front of the two. My demo drew each number as a bar. The bars ended up in the right order. How would I tell whether somebody watching had understood why the trick worked?
 
-I wanted the kind of explanation I loved in Distill or Jay Alammar: a picture that lets you see something you had been trying to hold in your head. I also tried Count-Min Sketch, where the problem is to see how a count can be useful even when it is wrong. Both demos were small enough to finish before civilization collapsed. Merge Sort gave me quite enough trouble on its own.
+The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” I also tried Count-Min Sketch, which estimates how often something has appeared when there is too much to keep an exact count of everything. The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
 ## Stubbornly Human
 
@@ -22,7 +22,11 @@ My first agent-computer interface was copy and paste.
 
 I thought I was using a very good autocomplete. The model might have been doing sophisticated reasoning, but I was searching the repository, assembling the context, applying the edit, running the tests and carrying back whatever reality had said about it. I was the hands, the eyes and the memory. The model was a brain in a jar, and I was the jar’s entire staff.
 
-SWE-bench turned that whole job into a test using real GitHub issues.[1](appendix-references.md#ref-03-swebench) Give the model the repository and a terminal and it can go looking for the missing interface itself. SWE-agent showed how much depends on the tools it gets for searching, editing and seeing what happened.[2](appendix-references.md#ref-03-sweagent) The jar had acquired its own staff.
+Then the bug crossed three files and context itself became a job. Paste one class but forget its interface, and the model invents a nonexistent method. Add the interface and it needs the schema, then another helper. Eventually half the repository is sitting in the conversation and somehow the model understands less. Alongside the code came instructions: ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
+
+We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
+
+SWE-bench tested this larger job using real GitHub issues:[1](appendix-references.md#ref-03-swebench) navigate an existing repository, make a change and survive the tests. The model had to do my job, the copy-and-paste one. Eventually we gave the model the repository and a terminal, and a coding agent became, at its simplest, this loop made executable. Software is unusually friendly to the arrangement: programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea. SWE-agent showed that the interface itself, how the model searches, sees files and receives feedback, can matter almost as much as another clever prompt.[2](appendix-references.md#ref-03-sweagent)
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
@@ -124,9 +128,17 @@ Meanwhile I can simply say:
 
 That contains comparison, diagnosis, trade-offs, priorities and a proposed next move in a few sentences. Natural language is ridiculously rich compared with a scalar.
 
-In that sense language can act as an implicit metric. The builder can try the next move before I know how to score it. Two judges may mean quite different things by “intuitive,” but I can ask which part of the tree each of them was watching.
+I could hand that sentence to the builder and see what it did with the next version. If I had handed it 7.4, what exactly was it supposed to change?
 
 OPRO, Optimization by PROmpting, makes a related move:[3](appendix-references.md#ref-03-opro) an LLM sees previous candidates and their scores and proposes the next one. It still needs an explicit score, so it is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written rule.
+
+This begins to feel a little like reinforcement learning turned upside down. I mean that as an analogy about specification; I am not claiming these are the same algorithm. To teach a simulated robot to walk, for example, you can give it a reward for moving forward and let it try things. You have to choose what earns the reward before it takes its first step. Here I can begin with something much less respectable:
+
+> Make this explanation less intimidating.
+> Help the learner understand why the merge matters.
+> I want somebody to *feel* why divide-and-conquer helps rather than merely watch the algorithm execute.
+
+Those are descriptions of a direction. None of them is a reward function, yet the model can produce an attempt from them, and the attempt can teach me whether the direction was what I really wanted.
 
 I began the project insisting on an *interactive* Merge Sort demo. Interactivity sounded obviously desirable. Then I saw versions with buttons, sliders and enough learner participation to qualify as a small democracy, while one quieter version explained the central idea much better. Apparently clicking things was never the objective. Later the demos became good at showing recursive splitting and I realized they were treating merging almost as cleanup, so the objective moved again.
 
