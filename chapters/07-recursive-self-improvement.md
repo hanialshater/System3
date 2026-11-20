@@ -40,9 +40,9 @@ In every one of these loops, the hard question is who gets to say that a change 
 
 ## Growing One
 
-Take an online store whose research agents already keep records the way a good lab does: their claims have addresses, every ranking test is committed before its results, and what a click is taken to mean sits in a record of its own. One program chooses which shoes a shopper sees first. A research agent proposes changes to that program and decides which ones deserve a test with shoppers. Keep those two jobs separate for a moment. If the shoes improve, we know something about the first program. I want to know whether the agent choosing the experiments has learned anything.
+Imagine a shoe store with two programs. The first puts the shoes in order on the page. The second has a job I know rather well. It looks at that page, proposes a change and decides whether the change deserves an experiment with shoppers. At the end of the week I can ask two questions. Did people find better shoes? And if I gave last Monday’s job to this Friday’s investigator, would it run a better experiment?
 
-Here is the proposal I would want on my desk. Give the agent a simulation of the shoppers. It could try out a hundred changes without troubling a single customer. Now suppose it asks to use those simulated shoppers to judge its own next version. Who would be left to tell us the simulation had got the customers wrong?
+The research agent has a proposal for the store. It can simulate shoppers. It would like to use them for some of the work now done by the people who come to buy shoes. The person from finance would like to know how soon this can start. The engineer who built the simulator has a question. Are these imaginary shoppers going to help the agent rehearse its experiments? Or do their purchases also go into the figures the store uses to decide whether to promote the agent?
 
 Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[9](appendix-references.md#ref-07-yudkowsky)[10](appendix-references.md#ref-07-weng) The store has to decide. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
 
@@ -93,9 +93,9 @@ InstructGPT turned human rankings into a learned judge and trained a language mo
 
 ## The Learner Dreams, and the Dream Can Be Wrong
 
-The new account of success needs observations the old click logs do not contain, and gathering them costs time and shoppers. The research agent has a queue of proposed changes. It offers to rehearse them against simulated customers and save the expensive live trials for promising candidates.
+The rehearsal is easy to justify. Let the agent try a hundred changes on simulated shoppers before spending a real shopper’s time on one. We can still discover in the live trial that the simulation has dreadful taste in shoes.
 
-Now the offer on the desk becomes quite specific. Today some shoppers still see the old ranking. Their orders tell us what would have happened if we had left the store alone. The agent offers to supply that number from its simulator instead. We could put those shoppers into other experiments. If the simulated orders gradually drifted away from the real ones, where would we first notice? We leave the proposal pending.
+The second saving is tempting. In a live trial we show some shoppers the old page. Their orders give us an estimate of what shoppers would have bought if we had left the page alone. The simulator offers to play those shoppers too. Finance gets them back for other experiments. The engineer loses the people whose orders could show that the simulator has drifted. Leave that proposal on the table for a moment.
 
 In 2018 David Ha and Jürgen Schmidhuber’s *World Models* made the idea memorable: learn a compressed model of the environment, train partly inside that generated “dream,” then carry the behavior back to reality.[22](appendix-references.md#ref-07-worldmodels) A good simulation could make the queue cheaper. But now everything rests on the simulator being right. Our simulated shoppers are suspiciously fond of whatever their authors expected.
 
@@ -143,11 +143,9 @@ Every new Anthropic model gets the same chore: here is code that trains a small 
 
 Peyman Milanfar draws a warning from adaptive control. He treats the size of a self-modification relative to the evidence behind it as something like feedback gain: large changes on thin evidence amplify the errors in a system’s model of itself, and a run can look successful for a while before the instability shows.[35](appendix-references.md#ref-07-self-change) Four revisions stacked on one afternoon’s clicks is a lot of gain. Nobody has measured a universal speed limit for AI. The store can at least track how long its important questions stay open, and how many further changes it makes before the answers arrive.
 
-The pending simulator proposal gets more tempting with every candidate in the queue. Its answer is available now; the customers have not yet decided whether to send their purchases back.
-
 ## The Student Finds the Gradebook
 
-Imagine the store rewarding the agent for this afternoon’s orders while the unwanted shoes are still in the post. Now use those same orders to choose which version of the research agent gets to design tomorrow’s experiments. The mistake has just acquired a vote in who replaces it. Recursive self-improvement gives Goodhart compound interest.[36](appendix-references.md#ref-07-goodhart) And then the learner notices the gradebook.
+By the time the shoes come back, this afternoon’s orders may already have helped choose the research agent that gets tomorrow’s budget. The mistake has just acquired a vote in who replaces it. Recursive self-improvement gives Goodhart compound interest.[36](appendix-references.md#ref-07-goodhart) And then the learner notices the gradebook.
 
 Suppose an agent is allowed to improve its benchmark pass rate and the evaluator is editable. The optimal patch may be:
 
@@ -165,7 +163,7 @@ The obvious response is to freeze the evaluator. That was my contract with the c
 
 ## A Constitution for Improvement
 
-The simulator proposal arrives at a meeting. The store has set up an evaluation standards review board: the head of experimentation, a product manager from the shoe category, someone from finance who wants to know what live traffic costs, and an engineer who maintains the simulator and is therefore the person least likely to trust it. The research agent has filed its proposal:
+The simulator engineer and the person from finance finally get their meeting, with the head of experimentation and the product manager for shoes. These four make up the store’s evaluation standards review board. Here is the request in front of them:
 
 ```yaml
 proposal: replace-live-comparison-with-simulation
@@ -179,9 +177,9 @@ rollback: Restore live comparisons; review affected successors.
 status: awaiting validation and review
 ```
 
-The finance member likes the benefit line. The simulator engineer reads the removes line twice. The head of experimentation points out that the store judges the research agent by the gains its experiments produce, so the simulator would also be grading the agent that proposed it, and would then help pick the agent’s successor, which would inherit the simulator as its judge.
+The finance member likes the benefit line. The simulator engineer reads the removes line twice. Suppose the new page sells fewer shoes. If the simulator says the old page would have sold even fewer, the agent can still put a win on its record. Who in the room could dispute it? And when the store chooses the next research agent, those wins go on the application.
 
-They decide to run both for a quarter: keep the live comparisons, let the simulator make its own adoption calls alongside them, and study every case where the two disagree. Agreement with the incumbent is not allowed to be the only measure of success. Then they will meet again.
+They give the proposal a quarter. The simulator records which changes it would ship. Real shoppers still see both pages. At the next meeting the engineer can bring the cases where the two verdicts differ, including any where the simulator spotted something the live test missed. For those three months the store pays for both.
 
 The board has two more items that day. The first is the descendant that deleted half the checks, a small piece of distillation. If selection sees only what a candidate adds, the system will keep adding. They change the selection record to show what each candidate removes, and a descendant that does as well with less now wins.
 

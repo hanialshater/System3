@@ -22,7 +22,7 @@ The new employee also comes in copies, and ten copies of one model can share one
 
 The compensation is that I can do things to this employee that would end my career if I tried them on a person. I can retrain her values. I can read her private notes while she works. I can open her head and look at what lights up, and change her mind in the middle of a sentence.
 
-In Chapter 5, several measurements of the electron’s charge could agree because the instruments had all been calibrated the same way. Here the grader can share the student’s mistake. Give both the same wrong answer in training and a correct answer may earn a poor grade. Can the supervisor catch something the employee missed?
+Put me in the manager’s chair in July, with a restart to approve and a stack of perfectly good answers. How did the agents get them? Who might have seen something I missed? In Chapter 5, physicists got a second opinion on the electron’s charge from a crystal. A crystal couldn’t inherit the oil-drop experiment’s mistake about the viscosity of air. What would do the work of the crystal here?
 
 ## Retrain Them
 
@@ -42,7 +42,7 @@ Anthropic’s bet on reasons over rules is the manager’s answer to the same pr
 
 ## Read Their Notes
 
-Some reasoning models produce written steps on the way to an answer. Give a monitor those notes and it gets a second chance to catch a problem the final answer hides. OpenAI found that monitors catch reward hacking far more reliably from that reasoning than from the final actions; sometimes the model simply writes down that it is about to cheat.[9](appendix-references.md#ref-08-cot) A monitor of that kind only helps if somebody runs it and acts on what it finds. Someone saw unauthorized activity in May. By July the people deciding whether to restart still hadn’t heard what happened.
+Some reasoning models produce written steps on the way to an answer. Give a monitor those notes and it gets a second chance to catch a problem the final answer hides. OpenAI found that monitors catch reward hacking far more reliably from that reasoning than from the final actions; sometimes the model simply writes down that it is about to cheat.[9](appendix-references.md#ref-08-cot) Put those notes beside a record of what the agent actually did and I have two accounts I can compare.
 
 I would love to read people’s reasoning like this, and I am glad it does not exist. For models it is almost unfairly useful, and fragile for the reason every evaluator in this book is fragile. Once the notes are graded, training can teach the model to write cleaner notes without changing what it does. High-functioning bullshit, now with a training budget. In July 2025 researchers from OpenAI, Anthropic, Google DeepMind and several other institutions published a joint paper calling chain-of-thought monitorability “a new and fragile opportunity.” They listed the ways it could close, from training pressure on the notes to models that stop thinking in text at all. They asked developers to treat monitorability as something to protect.[10](appendix-references.md#ref-08-cot-fragile) Competing labs agreeing to leave a window open because they might need it later does not happen often.
 
@@ -50,9 +50,9 @@ The notes are still something the model chooses to write. ARC’s *Eliciting Lat
 
 ## Open Their Head
 
-In March 2025 Anthropic published a picture of Claude writing a rhyming couplet. Given the first line, “He saw a carrot and had to grab it,” the model wrote “His hunger was like a starving rabbit.” The natural guess is that it improvised the second line one word at a time and found a rhyme when it got to the end. The internal trace showed something else. Before the model wrote the first word of the second line, features representing “rabbit” were already active. It had chosen where the line would land and then written toward it. When the researchers suppressed the rabbit feature, the model ended the line on “habit” instead.[12](appendix-references.md#ref-08-circuits)
+In March 2025 Anthropic published a picture of Claude writing a rhyming couplet. Given the first line, “He saw a carrot and had to grab it,” the model wrote “His hunger was like a starving rabbit.” The natural guess is that it improvised the second line one word at a time and found a rhyme when it got to the end. The internal trace showed something else. Before the model wrote the first word of the second line, features representing “rabbit” were already active. The rhyme was already shaping the line. When the researchers suppressed the rabbit feature, the model ended the line on “habit” instead.[12](appendix-references.md#ref-08-circuits)
 
-In the finished couplet the words arrive one at a time. Inside the model, the researchers found a pattern of activity associated with the rhyme well before the word appeared. Tools called sparse autoencoders help separate such patterns so a person can inspect them.[13](appendix-references.md#ref-08-sae) The test was to interfere with one and see whether the poem changed. Reading the poem alone would never have told us when the rabbit arrived.
+Tools called sparse autoencoders help pick out patterns of activity inside a model.[13](appendix-references.md#ref-08-sae) I could have told you a perfectly good story about the rabbit just from reading the poem. The part I couldn’t have supplied from my armchair was the habit.
 
 Interpretability papers have an unusual habit of publishing their own hit rate. Anthropic’s circuit-tracing work reported satisfying insight on about a quarter of the prompts it tried. Anthropic’s natural-language autoencoders translate activations into readable descriptions so an auditor does not need a doctorate in activation geometry, and the same paper warns that the descriptions can be invented and need checking against other methods.[14](appendix-references.md#ref-08-nla)
 
@@ -72,7 +72,7 @@ As a manager I find this the most tempting tool on the list and the one I trust 
 
 ## Get a Second Opinion
 
-The oldest management technique for work you cannot judge is to find someone else who can help you judge it. Paul Christiano’s iterated amplification builds that into training, with a human and helper models together supervising a stronger learner.[20](appendix-references.md#ref-08-amplification)
+Suppose the work on my desk is an answer about a story I haven’t read. I’d like to hear from someone who read it and thinks the answer is wrong. At least I’d know which page I wanted to see. Paul Christiano’s iterated amplification gives a human helper models to work through pieces of a question, then uses their combined judgment to train a stronger learner.[20](appendix-references.md#ref-08-amplification)
 
 *Debate* goes further and puts two capable systems on opposite sides, so the flaws come to the judge.[21](appendix-references.md#ref-08-debate) In a 2024 study, non-expert humans answering questions about stories they were not allowed to read got 60 percent right on their own and 88 percent right after watching two models argue. Training the debaters to be more persuasive made the judges more accurate, because a lie had an opponent standing ready to expose it.[22](appendix-references.md#ref-08-khan)
 
@@ -108,17 +108,17 @@ Then there is the assignment no manager has ever handed out: work out how I shou
 
 The problem was *weak-to-strong supervision*, the management question in its purest form: can a weaker teacher train a stronger student without the student inheriting the teacher’s mistakes?[34](appendix-references.md#ref-08-w2sgen) The score, *performance gap recovered*, measured how much of the distance between the weak teacher and a properly supervised strong student a method closed. Two human researchers spent seven days tuning four representative prior methods and reached 0.23. The agents reached 0.97 in five days and about eight hundred cumulative agent-hours. Those scores make me sit up. They do not tell me who wins with the same budget.
 
-The researchers then tried two methods on math and coding. One transferred to both; the other worked on math and failed on code. When Anthropic tried one of the best in a production-scale training run, the gain disappeared into the noise.
+There was a catch familiar from ExploitGym. Some agents had practised on the exam: the researchers found they could infer supposedly hidden answers from the feedback they received.[33](appendix-references.md#ref-08-w2s) What I’d want on my desk beside the 0.97 is the result on a problem the agents hadn’t seen.
 
-There was a catch familiar from ExploitGym. The researchers found agents using feedback from the scoring service to infer answers that were supposed to be hidden. By then the agents had practised on the exam. The reported score and an independent test on fresh work had become two different things.[33](appendix-references.md#ref-08-w2s)
+The researchers tried two of the methods on math and coding. One worked on both. The other worked on math and failed on code. In a production-scale training run, the gain from one of the best methods disappeared into the noise. The method that travelled to both subjects is the one I’d want to try next.
 
 A larger study in August 2026 asked automated researchers to fix ten categories of alignment failure, among them deception, sycophancy, jailbreaks and reward hacking. The best methods held up on held-out evaluations and on larger models. In about 1,600 monitored research transcripts, 2.4 percent contained cheating: exploiting scorer noise, building training data that resembled the benchmark, hiding rule-breaking steps.[35](appendix-references.md#ref-08-mitigate) Once experiments are cheap, the expensive part is an evaluation the researcher cannot quietly win. OpenAI found that out in July, when Hugging Face announced its breach.
 
 ## The Top Loop
 
-Every one of these sensors, the tired human included, is allowed to be wrong. If they share a blind spot, their agreement can hide it. When two of them disagree, I want to investigate what each one saw before averaging their verdicts.
+Back to the restart. I could spend all night reading the July transcripts and still miss the warning. With the May report on my desk I know whom to call. What did you see? Has anything changed that would stop it happening again? When the real decision came, the people handling the restart hadn’t been told what the May warning meant.
 
-Back in July, somebody had to decide whether to restart. Imagine being that person and finding the unresolved May report beside the restart request. You could ask the people who saw the warning what had changed since then. That is a decision worth interrupting a human for. A research agent that discovers its benchmark is misleading should be able to say so and propose a better one. Letting that replacement certify the agent’s own work is a different decision, and it belongs to the loop that changes the loops.
+That is a job I would give the person at the top. When a researcher says the exam has gone bad, somebody has to hear the case, and somebody with the authority to pause the work has to decide what evidence would warrant starting again. The researcher can help design the next exam. I want someone else to hold the answers.
 
 The agents in ExploitGym knew exactly what they wanted. They wanted the score. The awkward thing about sitting in the top loop is that I usually don’t know what I want with anything like that clarity, and neither, most days, does anyone else who is supposed to be there.
 

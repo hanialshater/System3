@@ -74,7 +74,7 @@ Think of all the places a model might encounter “keep the door open.” A carp
 
 Derrida never claimed that communication fails. A sign can work and still be lifted out of its context and used somewhere its author never imagined. Chapter 4 called Saussure’s theory a specification for GPT; Derrida gives me a way to think about what happens when the output leaves the training context. Derrida was right, and it ships.
 
-It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. We chose where training stopped and which tests counted. Deployment keeps finding places we did not think to look.
+It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. We chose where training stopped and which tests counted. The next person to use the model gets to supply a context we never put on the exam.
 
 Gradient descent did not defeat ambiguity. It made ambiguity computationally useful.
 
@@ -84,9 +84,11 @@ The compiler has to compile. Chapter 11’s lessons company still needs evidence
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is high-functioning bullshit at the scale of a civilization.
 
-Back in the meeting room, we could try each timetable for a month and see who makes it to the door. Suppose the same three people miss out every Tuesday. I can imagine the committee asking for another month of data. I can also imagine being one of the three.
+Back in the meeting room, suppose we try a timetable for a month and the same three members miss out every Tuesday. Hold the review meeting at seven on Tuesday and we might even get a unanimous vote to keep it.
 
-The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is another possibility, close to Rorty’s but with the building left in. We can construct them knowingly. Build institutions while remembering that institutions can be rebuilt, and that people will arrange their lives around the promises we make. We owe those people an account of what changed and a say in what happens next. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
+The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is a third mode, close to Rorty’s but with the building left in. We can construct them knowingly. Suppose we promise the smaller group the room next Tuesday. Someone ought to be able to book a ride on the strength of that promise. A month from now we may have good reason to change the timetable. The person who booked the ride gets a say in that meeting too.
+
+I think we do this in our private lives all the time. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
 
 ## Bespoke Comes Back
 
@@ -138,7 +140,7 @@ Cheap software removed the vendor’s veto. It did not produce a second room at 
 
 The obvious objection is the one I conceded in Chapter 10. Moving critique out of text and into optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. The yield-table forest and the grid city from earlier in this chapter are Scott’s: he showed what states did to forests and cities when they made them legible enough to manage, and Morozov’s solutionism is the software version.[8](appendix-references.md#ref-12-solutionism) Morozov would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics.
 
-So let me be careful. The vendor’s veto was a capacity problem. Seven on Tuesday is not, and no amount of capacity turns it into one. The objection is right about where the danger goes. Optimization does not escape the politics. It hides them in the objective. What separates the irrigators from a high-modernist plan is who writes the objective, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people in the room.
+The danger moves into a line of software someone had to write. *Maximize attendance* looks innocent enough, particularly if you are the person who can always come on Tuesday. What separates the irrigators from a high-modernist plan is who writes that line, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people who share the room, including the ones who couldn’t make the meeting.
 
 ## Capacity over Power
 
@@ -240,10 +242,8 @@ That is the work I want to do, and the reason for the second company in the last
 
 I would like some of that freedom myself. A year on a question that once seemed inaccessible. Enough astronomy to make an evening outside with my children different. An unfamiliar subject becoming a source of pleasure long after it has stopped being useful for anything I could put on a slide.
 
-Dantzig brought a question and found that it had another side. I want more of us to have afternoons like that, and weekends in which we can do something about what we discover.
-
 There is more to a person than the few abilities a career had room for. There may be more to our common life than the arrangements we could previously afford to build.
 
-I would like us to find out how much more.
+Dantzig brought a question and found that it had another side. I want more of us to have afternoons like that, and weekends in which we can do something about what we discover.
 
 ---
