@@ -30,7 +30,7 @@ After capacity becomes cheap, people can attempt instead of argue, and the quest
 
 - "Gradient descent did not defeat ambiguity."
 - "Capacity over power is an ethical direction, not a forecast about stronger models."
-- "I would like us to find out how much more."
+- "Dantzig brought a question and found that it had another side."
 
 ## Imagined, reported or proposed
 

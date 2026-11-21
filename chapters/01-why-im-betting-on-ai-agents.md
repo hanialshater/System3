@@ -5,15 +5,15 @@
 
 *Simple building blocks, complex emergence*
 
-We humans are obsessed with problem-solving. And what problem is more fascinating than life itself, this messy, miraculous phenomenon responsible for everything from the creatures of the deepest ocean trenches to TikTok trends and mortgage-backed securities?
-
 Life produces coral reefs, immune systems, parasites, flowers, cancer and octopuses: eight-armed problem-solvers that extensively edit their own RNA, sense light through their skin and match the colors around them despite apparently color-blind eyes. It also produces creatures capable of spending twenty minutes arguing online about whether another creature is technically a fish. Human civilization adds philosophy, cathedrals, semiconductor fabs, global supply chains and airport lounges. Somehow, all of this became possible on a planet that began without a requirements document.
 
-What fascinates me is how little of the result was specified in advance. No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors.
+No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors.
 
 And we get to build on what they left. A programmer does not need to understand transistor physics. I can use a compiler without reproducing the intellectual history that made it possible, which is fortunate because I was hoping to finish before lunch. Enough of the complexity underneath has been made reliable that I can spend my attention elsewhere. When something breaks, I may have to descend a few layers and discover how much I was taking for granted.
 
-We have spent decades making more of our knowledge available to machines. Now we can give a system access to that knowledge, a problem, tools and time, and let it participate in deciding how the problem should be approached. Could I leave it with a hard problem and come back to progress I had not directed?
+There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in.
+
+Could I leave a machine with a hard problem and come back to progress I had not directed? Give the machine twenty-six circles to pack into a square. It can move them around and change their sizes, so long as they stay inside and don’t overlap. When I get back, I can add up the radii and see whether the new packing beats the old one.
 
 ## The Rule-Based Exoskeleton
 
@@ -23,11 +23,11 @@ Then we went back to work. We trained a model, found an edge case, added a rule,
 
 I have spent a respectable amount of my career producing that surrounding process. Some of it tells the system what matters: the examples we label, the constraints we enforce, the failures we refuse to tolerate. Some encodes a solution we already understand. The distinction gets uncomfortable when we ask the machine to discover something better and it finds a route that makes our carefully designed process unnecessary. We wanted discovery. We had also grown rather attached to the diagram.
 
-Engineering often makes a problem manageable by removing possibilities. We choose a representation, settle interfaces and constrain the ways components can interact. But every simplification leaves something out. A customer becomes a funnel stage. A learning experience becomes a sequence of screens. A research problem gets narrowed to the part our existing method can address. These decisions let us proceed; we may spend years improving the resulting system before asking whether something important was lost at the beginning.
+A shopper types “shoes for standing all day.” I can make that question easier for a computer by turning it into a search for shoes. Now I know how to solve it, and I have thrown away the part she needed help with. A team could spend years getting better at that second question. The shopper is still on her feet.
 
 **Complexity over engineering** is a deliberately uncomfortable way to name my bet. I want us to be able to work with more of the problem before deciding which parts reality will have to do without. That may require considerable engineering: tools for exploring alternatives, environments in which mistakes are recoverable, ways to compare results. The difference is how much of the answer we insist on putting into the machinery before the search begins.
 
-Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
+Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a small instruction to contain all of that.
 
 Cultivation may be a better metaphor than scripting: pulling harder on the stem remains a surprisingly poor gardening strategy.
 
@@ -49,9 +49,9 @@ AlphaGo made this concrete for me: learned intuition guided the search.[2](appen
 
 An agent can use those capabilities over successive attempts. It acts, inspects what happened and decides some of what to try next. The industry already uses the word *agent* for everything from a cron job with an LLM attached to a digital employee with an expense account and a performance review. I care about how much of the problem it actually owns.
 
-“Open this file, change this method and run this test” leaves most of the search with me. “Fix the bug” transfers more of it. “Find a better algorithm” transfers more again. Now the system may have to read, construct examples, choose an approach, abandon it, build a missing tool and notice that the original framing was unhelpful.
+Give the shoe-search agent a list of synonyms for “standing all day” and it can add every one. I still did most of the thinking. Give it the shopper’s words and the results from her search and a question opens up. Did the search fail because it missed a pair, or because none of the descriptions tells her whether she can wear the shoes through a shift? For the second problem I’d rather see the agent reading reviews than inventing a fifteenth synonym for *standing*.
 
-Search has always had a problem with attractive hills. Improve the solution nearest to you and you can become exceptionally good at staying in the wrong neighborhood. Keeping a population of candidates helps preserve routes elsewhere. So can changing the representation or returning to a discarded attempt after another discovery makes it useful. Agents can try these moves in a space that includes algorithms, interfaces, research directions and ways of asking the question. Ten agents sharing one assumption are not a search party; they are a conga line, walking very confidently into the same lake.
+Search has always had a problem with attractive hills. Improve the solution nearest to you and you can become exceptionally good at staying in the wrong neighborhood. A better synonym list and a way of finding the nurse who reviewed her shoes after a twelve-hour shift might both be worth trying. Keeping both ideas alive gives us a chance to find out. So can changing the representation or returning to a discarded attempt after another discovery makes it useful. Agents can try these moves in a space that includes algorithms, interfaces, research directions and ways of asking the question. Ten agents sharing one assumption are not a search party; they are a conga line, walking very confidently into the same lake.
 
 The primordial soup is code now: algorithms, libraries, compilers, simulators, databases and other agents. I would like to give the system enough freedom to find combinations I would not have thought to request. This is usually where the manager in me starts to get nervous.
 
@@ -81,9 +81,9 @@ We have learned, imperfectly, to build on other people’s knowledge while retai
 
 ## Which Limits Were Mine
 
-There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in. After a while, those limits begin to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
+The questions that need a team are the ones I can set aside without feeling I have given anything up. After a while, the cost of pursuing them begins to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
 
-That is part of why I am interested in agents. I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
+I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
 
 There is an asymmetry hiding here. Seeing that an arrangement is wrong is cheap: an afternoon, a good argument, a sharp friend. Building a different one takes specialists, money, years and, usually, the permission of whoever runs the current one. So we get very good at the first, and mostly stop there.
 

@@ -25,7 +25,7 @@ Cheap mental capacity lets one person begin what once needed an institution, and
 
 - "Your coffee is still too hot."
 - "Complexity over engineering. Emergence over design. Capacity over power."
-- "Rediscover, because we have built it before."
+- "The arrangement I’d trust with that decision took about four centuries, a great many arguments and at least one loose cable, and we never thought to call it an architecture."
 
 ## Imagined, reported or proposed
 

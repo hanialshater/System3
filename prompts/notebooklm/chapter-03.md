@@ -18,7 +18,7 @@ Deep Mode: once an agent can decide what to try next, the human seat moves up, a
 
 - the early computing history
 - the vibe coder's seat
-- the Merge Sort demos judged by simulated learners
+- the Merge Sort bars and saved first-generation tree, then the eleventh-generation Count-Min Sketch collision lesson; the learners were simulated
 - the five layers, with the desire layer on top
 - the cathedral on a shopping cart
 
@@ -52,15 +52,14 @@ Match the book's illustrations, not a generic AI look.
 1. Opening passage
 2. Stubbornly Human
 3. The Five Layers of AI Coding
-4. What I Was Still Doing
-5. Keeping More Than One Idea Alive
-6. Draw It Before You Build It
-7. Optimizing Something You Cannot Score
-8. Borrow a Mind
-9. Independent Evaluators
-10. Deep Mode
-11. Bars Moved Around
-12. A Cathedral on a Shopping Cart
+4. Keeping More Than One Idea Alive
+5. Draw It Before You Build It
+6. Optimizing Something You Cannot Score
+7. Borrow a Mind
+8. Independent Evaluators
+9. Deep Mode
+10. Bars Moved Around
+11. A Cathedral on a Shopping Cart
 
 ## Review
 
