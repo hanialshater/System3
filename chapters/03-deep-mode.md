@@ -6,7 +6,9 @@ The circle-packing agent could spend an hour pursuing some bizarre geometric ide
 
 Then I asked for an educational demo.
 
-Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Suppose one piece holds 2 and 8, and the other holds 3 and 5. Look at the front of each. Take the 2. Now the choice is 8 or 3, so take the 3. You never even had to look behind the 3 to know that the 5 could wait. My demo drew each number as a bar. The bars ended up in the right order. How would I tell whether somebody watching had understood why the trick worked?
+Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Suppose one piece holds 2 and 8, and the other holds 3 and 5. Look at the front of each. Take the 2. Now the choice is 8 or 3, so take the 3. You never even had to look behind the 3 to know that the 5 could wait. My demo drew each number as a bar. The bars ended up in the right order.
+
+Try a fresh merge before the bars move. There’s a 4 at the front of one list and a 9 at the front of the other. Could there be a 2 hiding behind the 9?
 
 I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” I also tried Count-Min Sketch, which estimates how often something has appeared when there is too much to keep an exact count of everything. The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
@@ -258,7 +260,7 @@ Count-Min Sketch followed a different path. The first versions looked like the d
 
 As the work continued, the designs increasingly organized themselves around the conceptual difficulties instead of the structure of the implementation. Collisions became visible. The learner could watch approximation happen instead of only reading about it. The relationship between memory and accuracy became part of the experience.
 
-I know the question I’d put to a beginner now. Pause a fresh merge with a 4 and a 9 at the front of the two lists. Could there be a 2 hiding behind the 9? Someone who can tell me why the answer is no has understood something that watching all the bars settle into place can conceal. Every beginner in my experiment was played by a model. I still owe that question to a person.
+Could there have been a 2 behind the 9? By the time we merge two lists, each is already sorted. Any 2 in that list would be in front of the 9. I’d like to hear a beginner explain that with the animation paused. Every beginner in my experiment was played by a model. I still owe that question to a person.
 
 Meanwhile, work I normally did from the vibe coder’s seat had gone on without me. The system could throw out a design and keep its one good idea. How would I notice if the idea it kept was wrong?
 

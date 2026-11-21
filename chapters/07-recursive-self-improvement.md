@@ -95,9 +95,9 @@ InstructGPT turned human rankings into a learned judge and trained a language mo
 
 ## The Learner Dreams, and the Dream Can Be Wrong
 
-The rehearsal is easy to justify. Let the agent try a hundred changes on simulated shoppers before spending a real shopper’s time on one. We can still discover in the live trial that the simulation has dreadful taste in shoes.
+The rehearsal is easy to justify. Fourteen can try a hundred changes to the ranking on simulated shoppers before spending a real shopper’s time on one. We can still discover in the live trial that the simulation has dreadful taste in shoes.
 
-For the second saving, look at the people who saw the old page. Their purchases give us a comparison for the people who saw Fourteen’s page. The simulator offers to tell us what those people would have bought. Finance gets a whole group of real shoppers back for other experiments. The engineer would like to keep them long enough to find out what they send back.
+Finance has a second saving in mind. So far the simulator has been rehearsing the new page. Now it would stand in for the shoppers who saw the old one. Their real purchases gave the store a comparison. Their imaginary purchases would go straight onto Fourteen’s report card. Finance gets a whole group of real shoppers back for other experiments. The engineer would like to keep them long enough to find out what they send back.
 
 In 2018 David Ha and Jürgen Schmidhuber’s *World Models* made the idea memorable: learn a compressed model of the environment, train partly inside that generated “dream,” then carry the behavior back to reality.[22](appendix-references.md#ref-07-worldmodels) A good simulation could make the queue cheaper. But now everything rests on the simulator being right. Our simulated shoppers are suspiciously fond of whatever their authors expected.
 
@@ -139,7 +139,7 @@ My guess, and I want to be clear it is a guess, is that self-improvement stalls 
 
 Friday afternoon. By now the two pages have had the same number of shoppers. The old page has sold a hundred pairs. Fourteen’s has sold a hundred and twenty. Would you give it next week’s experiments? I would. The store does. Our shopper has yet to try on either pair.
 
-The original trial keeps its two groups. Elsewhere in the shop, Fourteen gives the next slot to another change in the rankings. A proposal to show sizing advice goes back in the queue.
+The original trial keeps its two groups. Our shopper’s box is on its way. Elsewhere in the shop, Fourteen gives the next slot to another change in the rankings. A proposal to show sizing advice goes back in the queue.
 
 Anthropic gives successive models a piece of code that trains a small network and asks them to make it faster. Claude Opus 4 averaged roughly a threefold speedup in May 2025. By April 2026 Claude Mythos Preview reached about 52-fold. A skilled human gets about fourfold in four to eight hours. There was a lot of slack in the starting code, Anthropic cautions. The result tells us how fast the models could make that example run. Whether one could produce a better successor is still open, and engineers still have to review the changes.[34](appendix-references.md#ref-07-anthropic-rsi) In the shop we could double the rate of proposals this afternoon. Our customer will try the shoes on when she gets home.
 

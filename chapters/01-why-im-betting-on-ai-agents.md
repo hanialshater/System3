@@ -11,6 +11,8 @@ No blueprint contains the exact location of every future branch of an oak tree. 
 
 And we get to build on what they left. A programmer does not need to understand transistor physics. I can use a compiler without reproducing the intellectual history that made it possible, which is fortunate because I was hoping to finish before lunch. Enough of the complexity underneath has been made reliable that I can spend my attention elsewhere. When something breaks, I may have to descend a few layers and discover how much I was taking for granted.
 
+There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in.
+
 Could I leave a machine with a hard problem and come back to progress I had not directed? Give the machine twenty-six circles to pack into a square. It can move them around and change their sizes, so long as they stay inside and don’t overlap. When I get back, I can add up the radii and see whether the new packing beats the old one.
 
 ## The Rule-Based Exoskeleton
@@ -79,7 +81,7 @@ We have learned, imperfectly, to build on other people’s knowledge while retai
 
 ## Which Limits Were Mine
 
-There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in. After a while, those limits begin to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
+The questions that need a team are the ones I can set aside without feeling I have given anything up. After a while, the cost of pursuing them begins to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
 
 I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
 

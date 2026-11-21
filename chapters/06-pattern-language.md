@@ -141,6 +141,8 @@ Voyager, a Minecraft agent, built a narrow version of such a library in 2023: ex
 
 Calling a natural-language pattern executable hides the reader: the same words can produce different actions in different models. A pattern written for an agent is still a hypothesis, now with a reader that can act on it at two in the morning. Nothing in the skill format forces the writer to include the reasons or the reader to respect them.
 
+The review I’d like you to sit in on took place in the grocery team’s second year, when the library was up and running. A price change showed an early gain. A second measurement agreed with the first. Would you let it go live?
+
 ## Locate the Failure
 
 Jalal did not wait for the next quarterly review. He asked Sam to work on the fades with him, which surprised several people, including Sam.
@@ -184,6 +186,8 @@ Ines read the record before the review.
 They added the answer. Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it. But the claim had finally named the observation capable of making it lose.
 
 Jalal changed the review rule. No visible home-screen launch would be approved until its committed predictions had been checked, and he kept the authority to override the gate himself.
+
+Try Ines’s question on the price change. The review had arrived with two figures and no record of what the team had expected to see. Even if both figures were right, what result would have made the team decide to leave the prices alone?
 
 \*\* Therefore: before the result arrives, write down what the number is taken to mean, over what period, and what would count against the claim. Keep the revision history.
 
@@ -254,7 +258,9 @@ Most of us have no Lean. For the four percent, the records look like this:
 
 Language models give Popper’s World 3 a new front door: the whole library can answer in one voice.[24](appendix-references.md#ref-06-world3) But the voice strips away the catalog card unless we rebuild it. The agent at two in the morning answered without a single one.
 
-Two measurements can share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. Provenance has to reach the common source. Capturing every possible dependency would cost more than the inquiry, so start with the support used in the recommendation and let a disputed result send you farther back.
+The pricing review had just such a claim to trace. The lift looked large enough to make the reviewer count shoppers. Their numbers didn’t match the split the experimenters had assigned. There was still the second measurement. A data agent followed it back and found that both tables read from the same event stream. If that stream lost a shopper, she would disappear from both tables. The figures could agree down to the last decimal.
+
+Tracing every dependency in the company would cost more than the inquiry. Start with the two figures someone is about to stake a launch on. In this case the search could stop as soon as the two trails met.
 
 \*\* Therefore: store the claim with what it rests on, so that a correction has somewhere to go.
 
@@ -374,7 +380,9 @@ Therefore: change what the next worker inherits, and give it standing to challen
 
 By its second year the library held more than `wins-that-fade`. The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Each pattern named the larger one it served and the smaller ones it could call.
 
-One review made the composition visible. A pricing experiment arrived with an early lift. The review agent found a committed prediction missing and routed that gap through `say-what-the-result-would-mean`. The size of the lift triggered `locate-the-failure`, where Twyman’s check exposed a sample-ratio mismatch. A data agent traced it to a logging path shared by both the headline metric and its supposed independent check, and `give-the-claim-an-address` marked both measurements as depending on the same event stream. The review returned the launch for repair. No agent had to know the whole procedure in advance. The links carried the work from one difficulty to the next.
+The price change went back for repair. The team could fix the count, write down what it expected to happen on a fresh test and bring the launch back. It was a little late to commit a prediction about the original lift. Everybody had seen it.
+
+I wouldn’t put a data agent on every pricing review. In this one the reviewer got as far as a suspicious head count before it had any reason to ask where the two measurements came from. Only then did it need someone who could follow a purchase back through the logging tables. The links carried the work from one difficulty to the next.
 
 That is the point at which a pile of skills becomes a pattern language.
 

@@ -160,21 +160,25 @@ All of that assumes the people at the table understand what they are choosing be
 
 Chapter 6 told how agents made Wiles’s proof of Fermat’s Last Theorem checkable by Lean: roughly thirty thousand intermediate theorems, which nobody is going to read.[10](appendix-references.md#ref-12-flt-tokens) Nobody needs to. The checker does not get bored, and its standards are written down. That was the easy case. Wiles understood the proof before any machine checked it.
 
-Take a map and try to color its regions so that neighbors sharing a stretch of border have different colors. Four colors suffice for any ordinary flat map. The proof was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand. Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[11](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[12](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
+Take a map and try to color its regions so that neighbors sharing a stretch of border have different colors. Four colors suffice for any ordinary flat map. The proof was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand.
+
+Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[11](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[12](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
 
 We already distribute the checking. Hardwig’s physicist relies on chemists she will never check; the Higgs discovery had thousands of authors and no single knower. A proof checker can establish that a formal statement follows from its axioms. A held-out test measures performance on cases the system did not train against; an independent replication asks whether a result survives another attempt. I can rely on that work without doing it all myself. I still need to know what was checked. Lean cannot tell me whether the theorem was the one I meant to ask for.
 
 And the checked result may leave me with no idea what to ask next. I can ask someone to check a proof on my behalf. Asking her to understand it on my behalf will not let me notice a connection I could not see before. In Chapter 9 I said you cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Discovery could run ahead of our ability to decide what the next ten thousand agent-hours should be for.
 
-That gap does not stay empty. Somebody chooses the next problem. If it is not the people who understand enough to care, it will be whoever owns the machinery.
-
 So the second descent has a condition I did not see when I first drew the curve. Someone at the table has to understand enough to take part in the selection. Not every proof. Enough of the map to want something from it. That is what Dantzig got from von Neumann in an hour, and it is what cheap capacity could give back to many more people, if we build it to teach as well as to answer.
 
 ## Who Owns the Laboratory
 
+I could come out of a conversation like Dantzig’s with a question I finally understand and no means whatsoever to investigate it. To whom do I take my request for a weekend with those agents?
+
 Putting ten thousand agents on one problem, or spending some six billion output tokens formalizing Fermat, is open to a handful of organizations.[10](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and within a year astronomers elsewhere were checking Galileo’s moons through telescopes of their own. A frontier model is harder to grind.
 
-Philip Kitcher asked who should set the agenda of science, and answered with an ideal he called well-ordered science: the questions pursued should be the ones citizens would choose after deliberating together, tutored by experts until they understood what was at stake.[13](appendix-references.md#ref-12-kitcher) That tutoring is the understanding condition from the last section, written into a theory of science. Kitcher was writing about public science staffed by people. A laboratory that runs on a private model, rented by the hour, changes the question. The agenda is set wherever the compute is allocated, and the people affected are rarely in that meeting.
+Philip Kitcher asked who should set the agenda of science, and answered with an ideal he called well-ordered science: the questions pursued should be the ones citizens would choose after deliberating together, tutored by experts until they understood what was at stake.[13](appendix-references.md#ref-12-kitcher) That tutoring is the understanding condition from the last section, written into a theory of science. Kitcher was writing about public science staffed by people.
+
+A laboratory that runs on a private model, rented by the hour, changes the question. The agenda is set wherever the compute is allocated, and the people affected are rarely in that meeting.
 
 Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models to comply with United States export controls. One returned for everyone after almost three weeks, when the controls were lifted; the other came back only for a set of US organizations.[14](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 
@@ -184,17 +188,17 @@ A research agent that makes experiments cheaper can accelerate medicine and weap
 
 So capacity over power can fail in two directions. Concentrate the capacity and everybody’s weekend runs on somebody else’s permission. Distribute it without the parts of System 3 that make it answerable and anyone can do anything while nobody can check. The first gives us a very efficient landlord. The second gives chaos an API key.
 
-What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
+What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory. I have been picturing myself in that discussion as the applied scientist who helps decide what is worth investigating.
 
 ## What Are Humans For?
 
-I have written as if my own seat at that table were safe. It is not obviously so.
+It is a comfortable seat to imagine for myself. Then somebody puts a language model in the judge’s seat. Running evaluations people would believe was a large part of what I got paid for. LLM-as-a-judge looked like a threat to my profession.
 
-LLM-as-a-judge looked like a threat to my profession.
+The other scarce skill in my line of work was training the models in the first place. A job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
+I could tell myself that the role moves upward, to owning the frontier, as I argued in Chapter 9. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary.
 
-I could tell myself that the role moves upward, to owning the frontier, as I argued in Chapter 9. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
+“The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
 The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
 

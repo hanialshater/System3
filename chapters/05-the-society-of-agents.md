@@ -228,9 +228,9 @@ Knowledge now came with a route by which someone else might make a claim fail ag
 
 ## Who Gets the Next Agent?
 
-Imagine research program A is ahead and has twelve agents. Program B looks weaker and has one. Where does the next available agent go?
+Imagine twelve of the compiler agents pursuing one explanation for a failed build. Their progress file is several pages long. One other agent thinks the test itself might be wrong and would like some help finding out. You have one worker free. Who gets the afternoon?
 
-The natural answer is A, and the answer reinforces itself: more agents, more experiments, more evidence, more confidence, more agents. Program B rarely loses an argument. It just never gets the instrument that would let it win one.
+Call the leading program A and the rival B. I can see what I’d get for giving A another afternoon. It has experiments waiting. B has very little to show me, and if I give the worker to A again it will have very little to show me tomorrow. A program can go years without getting the instrument that would let it win an argument.
 
 The coastlines of Africa and South America fit together suspiciously well, and in 1912 a German meteorologist named Alfred Wegener took the fit seriously. He proposed that the continents had once been one landmass and had drifted apart. Besides the coastlines, he had matching fossils on opposite sides of the Atlantic, matching rock formations and glacial traces in places that were now tropical. What he did not have was a force capable of moving a continent.[20](appendix-references.md#ref-05-wegener)
 
