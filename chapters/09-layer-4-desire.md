@@ -18,7 +18,7 @@ Lee Sedol, who won the only game AlphaGo lost in their 2016 match, retired from 
 
 The five-layer map put this question at the top and called it the desire layer. Drawn as a box, it looked like the easy part: the human supplies the goal, the machine does the rest. Even cooperative inverse reinforcement learning, which lets the machine stay uncertain about the goal, imagines that goal sitting inside the human, waiting to be recovered.[2](appendix-references.md#ref-09-l4-cirl)
 
-Ask people what they want and you mostly get placeholders. Founders want success. Everybody wants to be happy. On a Friday evening, I want to have fun. All three are true, and none of them is something you could hand to an agent.
+Ask people what they want and you mostly get placeholders. Founders want success. Everybody wants to be happy. I want to have fun tonight. All three are true, and none of them is something you could hand to an agent.
 
 ## Nobody Wanted AWS in 1995
 
@@ -42,15 +42,15 @@ I think of this as owning the frontier: the vibe coder’s seat, at the scale of
 
 Now give everyone that colleague.
 
-Take a founder with a vague idea for a tool that helps small clinics with scheduling. An assistant that only executes would build the scheduling tool. Suppose the assistant gives her two rough screens to take to a clinic on Thursday. One lets a patient book a visit. The other helps the receptionist fill a slot somebody has just cancelled. Both answer the brief. They give her quite different people to talk to when she walks through the door. A prototype she dislikes in an interesting way is information about what she wants.
+Take a founder with a vague idea for a tool that helps small clinics with scheduling. Her assistant could have the scheduling tool built before she’s spoken to a receptionist. Give her two rough screens to take to the clinic. One lets a patient book a visit. The other helps the receptionist fill a slot somebody has just cancelled. Both answer the brief. They give her quite different people to talk to when she walks through the door. A prototype she dislikes in an interesting way is information about what she wants.
 
-Before Thursday the assistant can play the clinic manager and raise her objections. On Thursday the real one still has to be asked.
+The assistant can play the clinic manager while the founder rehearses the visit. The real manager may have an objection neither of them thought of.
 
 ## Imagine Mallorca
 
 Desire grows the same way outside work, and there the placeholder is even emptier. A compiler has opinions about semicolons but rarely about whether I should move countries. A chat assistant gets asked both.
 
-Imagine you open a chat window on a grey Friday in March and type: *I want to have fun this summer. I have no idea what that means.*
+Imagine you open a chat window on a grey afternoon in March and type: *I want to have fun this summer. I have no idea what that means.*
 
 It asks a few questions. It suggests Mallorca, and not the beach strip: a small town on the north coast, a cove you reach on foot, a day walking in the Tramuntana mountains. You have never thought of yourself as someone who travels. You go.
 
@@ -82,21 +82,21 @@ Very efficient. Slightly evil.
 
 There is a quieter way to fail, and current assistants manage it daily. You ask what is possible, and you receive everything.
 
-On Monday the clinic founder asks how small clinics schedule appointments. A model can return four thousand fluent words: market sizes, regulations, seven software categories, a SWOT table nobody requested. All of it may be accurate. Very little of it will survive until Friday. The model has a context window; she has a memory that forgets, attention that tires and a mind that changes slowly.
+The clinic founder wants to know how small clinics schedule appointments. A model can return four thousand fluent words: market sizes, regulations, seven software categories, a SWOT table nobody requested. All of it may be accurate. By the time she meets a receptionist she’ll have forgotten most of it. The model has a context window; she has a memory that forgets, attention that tires and a mind that changes slowly.
 
 If she only needed a list of competitors, the assistant should hand it over. Here she is deciding what business to build, and she needs enough understanding to judge the next possibility herself.
 
 Putting a human beside the model does not guarantee better judgment. A 2024 meta-analysis of 106 experiments found that human–AI combinations performed worse, on average, than the better of humans or AI alone. Decision tasks were particularly difficult; creation tasks looked more promising.[14](appendix-references.md#ref-09-l4-vaccaro) So much for attaching a human to the API and declaring synergy.
 
-On Monday the assistant could let her follow one cancelled appointment all the way through the receptionist’s day. On Wednesday, with her notes closed, could she explain who has to do what before another patient can use the slot? Where she gets stuck is a good question to take to the clinic on Thursday. A week later, when she has half forgotten it, the assistant could ask again.
+The assistant could let her follow one cancelled appointment all the way through the receptionist’s day. Two days later, with her notes closed, can she explain who has to do what before another patient can use the slot? Wherever she gets stuck, she has something to ask at the clinic. A week after the visit the assistant could ask again.
 
 In the 1880s Hermann Ebbinghaus sat alone with lists of nonsense syllables, *dax*, *bok*, *yat*, learned them until he could recite them, and then timed how fast they left him.[15](appendix-references.md#ref-09-ebbinghaus) Much of a list was gone within a day. What slowed the loss was coming back to it, spaced over days instead of crammed,[16](appendix-references.md#ref-09-spacing) and trying to recall it before looking.[17](appendix-references.md#ref-09-testing)
 
 In a field experiment with nearly a thousand high-school mathematics students, an unconstrained ChatGPT-like tool dramatically improved performance while students could use it; when access was removed, they did worse than students who had never had it. A tutor version with safeguards against giving away the work largely removed that harm.[18](appendix-references.md#ref-09-l4-bastani) The tutor that worked was, by design, the more annoying one.
 
-Teaching also needs the move from the Merge Sort demos, borrowing a mind: there the machine imagined a beginner in order to judge a demo. Here the assistant has to model a real person: what the founder already knows, which misconception she arrived with, what she understood on Monday and lost by Friday, which example will connect to something she cares about. Theory of mind, which looked like an evaluation trick, turns out to be the core of helping someone learn.
+Teaching also needs the move from the Merge Sort demos, borrowing a mind: there the machine imagined a beginner in order to judge a demo. Here the assistant has to model a real person: what the founder already knows, which misconception she arrived with, where she gets stuck once she closes her notes, which example will connect to something she cares about. Theory of mind, which looked like an evaluation trick, turns out to be the core of helping someone learn.
 
-The cheap map has its own hazard. A few weeks with a patient model gives the founder the vocabulary of healthcare long before she knows where its stories break, what Nathan Ballantyne calls *epistemic trespassing*.[19](appendix-references.md#ref-09-l4-trespassing) So sometimes the helpful assistant makes her commit to an answer before it shows its own, as it did on Wednesday. Interfaces built that way reduce overreliance, Zana Buçinca and colleagues found, even though users like them less.[20](appendix-references.md#ref-09-l4-forcing) It is the annoying tutor again: of two assistants that help her reach the same good decision, the better one leaves her able to make the next one herself.
+The cheap map has its own hazard. A few weeks with a patient model gives the founder the vocabulary of healthcare long before she knows where its stories break, what Nathan Ballantyne calls *epistemic trespassing*.[19](appendix-references.md#ref-09-l4-trespassing) So sometimes the helpful assistant makes her commit to an answer before it shows its own. Interfaces built that way reduce overreliance, Zana Buçinca and colleagues found, even though users like them less.[20](appendix-references.md#ref-09-l4-forcing) It is the annoying tutor again: of two assistants that help her reach the same good decision, the better one leaves her able to make the next one herself.
 
 You cannot want what you cannot imagine, and you cannot imagine much of what you do not understand.
 

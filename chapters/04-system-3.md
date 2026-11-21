@@ -120,7 +120,7 @@ The danger is coherence outrunning correspondence, with the machine getting very
 
 Kahneman’s *Thinking, Fast and Slow* popularized the distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[4](appendix-references.md#ref-04-kahneman)
 
-For AI, the analogy is tempting. The ease with which a base model completes a familiar phrase feels like System 1. Give the model longer and it can plan an answer, find a hole in the plan and start again. This slower work has become a product category, System 2 reasoning.
+The ease with which a base model completes a familiar phrase feels like System 1. Give the model longer and it can plan an answer, find a hole in the plan and start again. This slower work has become a product category, System 2 reasoning.
 
 Give a research agent six hours and a false paper and I may get an elegant argument whose first sentence should never have survived. I would rather it spent five of those minutes finding out where the paper came from.
 
@@ -191,7 +191,7 @@ Such a heuristic is a meta-belief: a reason to prefer one approach, with evidenc
 
 If you enjoy old epistemology labels, you can call the model a largely coherentist core, uncannily good at producing structures that hang together, and System 3 a thin foundationalist shell tied to observation, provenance and consequence. I only need the architectural analogy.
 
-This is personal for me. I spent eight years building systems that rank human testimony: reviews, ratings and Q&A. The hardest problem was never only relevance. It was trust stratification. What happens when ten accounts repeat the same lie? How far should credibility transfer outside the domain in which it was earned?
+I spent eight years building systems that rank human testimony in reviews, ratings and Q&A. Finding relevant testimony was hard enough. Then came the problem of trust stratification. What happens when ten accounts repeat the same lie? How far should credibility transfer outside the domain in which it was earned?
 
 System 3 isn’t philosophy to me. It’s Tuesday.
 
@@ -238,7 +238,7 @@ One problem, `astropy-13579`, broke the pattern badly. Mini solved it and episte
 
 Imagine taking one slice from a stack of astronomical images. While you work on the slice you can leave out one coordinate: every point on it comes from the same place in the stack. You still need that coordinate when you put the slice back. Both agents found the bug. The software filled the missing value with 1.0, whatever its value had been.
 
-The simpler agent saved the actual value before dropping the coordinate. When the program needed the value again, it was right there:
+The simpler agent kept the original value and put it back when the program needed it:
 
 ```python
 # Store the actual values for dropped dimensions

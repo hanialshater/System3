@@ -65,11 +65,11 @@ Everyone in that room was in favor of evidence. That made the problem harder to 
 
 The same company had another side, and it worked.
 
-At ten past two one morning, checkout in one city stops accepting orders. The engineer on call, Ines, has been on the checkout team for five weeks. The runbook on her second screen is admirably clear until the line where it stops being clear:
+At ten past two one morning, checkout in one city stops accepting orders. The engineer on call, Ines, has been on the checkout team for five weeks. On her second screen the runbook tells her where to start:
 
 > Start with the dependency graph, unless the spike began exactly at deployment. If only one city is affected, check the traffic split before touching the database. And if it started after Tuesday’s migration, ask Sam. There is a thing with the old serializer.
 
-It started after Tuesday’s migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
+The errors began just after the migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
 
 Ines also has the company’s agent, which has read the wiki, the runbooks, three years of postmortems and the predecessor’s handover. She asks it what is wrong. Within seconds it produces a diagnosis with headings, three citations and a confident recommendation to check the database connection pool. It reads like the work of a senior engineer who has seen this before. It is wrong, and nothing in its tone says so.
 
@@ -77,7 +77,7 @@ So there was a third knower in the building. The agent had every word the compan
 
 What saves Ines is a dashboard. Within a minute it shows that the connection pool is healthy, and she moves on. The runbook walks her through the dependency graph and the traffic split. The rollback she uses is rehearsed every month, and the previous week’s load test tells her the other cities can absorb the shifted traffic. By four the city is taking orders again, although the rollback has restored service without explaining the failure.
 
-Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.[5](appendix-references.md#ref-06-chaos-monkey) An impressive design that breaks under load still fails the load test on Thursday.
+Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.[5](appendix-references.md#ref-06-chaos-monkey)
 
 The checks have a blind spot. The serializer fails rarely, and a failure that comes once a year produces one piece of feedback a year; knowledge fed that slowly stays in the head of whoever happened to be there. *Ask Sam* preserved the dependency and did nothing for Ines at two in the morning. What she needed was what Sam looks for, why he looks there, and when that suspicion is a waste of time. The product side lived in the same blind spot. The agent’s database diagnosis lasted about a minute against the dashboard; the holiday story, with nothing to check it against, could last indefinitely.
 
@@ -149,7 +149,7 @@ They put the three fades in one room. Jalal put the holidays back on the board a
 
 Chapter 5 gave this failure a name through Duhem and Boyle’s pump: a failed prediction indicts the whole bundle and does not tell you which part to blame.[18](appendix-references.md#ref-06-quine)
 
-People who run experiments for a living have a reflex about results like these. They call it Twyman’s law: any figure that looks interesting or different is usually wrong.[19](appendix-references.md#ref-06-twyman) If the counts stray too far from the assigned split to put it down to chance, experimenters call it a *sample-ratio mismatch*. If the new carousel lost track of some shoppers, whose baskets were left to measure? That was reason enough to put the scorecard away until they could account for the shoppers.
+Experimenters know this as Twyman’s law. Any figure that looks interesting or different is usually wrong.[19](appendix-references.md#ref-06-twyman) If the counts stray too far from the assigned split to put it down to chance, experimenters call it a *sample-ratio mismatch*. If the new carousel lost track of some shoppers, whose baskets were left to measure? That was reason enough to put the scorecard away until they could account for the shoppers.
 
 So they started there, then gave every remaining suspicion a probe. Each story predicted a different shape. Holidays predicted a drop when schools closed. A promotion predicted a drop when it ended. A logging change predicted a step in raw event counts. And one story nobody had told predicted something else: returning customers react strongly to anything new on the screen they open every week and then drift back, while first-time visitors, who have nothing to compare it with, move less.
 

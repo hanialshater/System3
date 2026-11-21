@@ -8,7 +8,7 @@ Then I asked for an educational demo.
 
 Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Suppose one piece holds 2 and 8, and the other holds 3 and 5. Look at the front of each. Take the 2. Now the choice is 8 or 3, so take the 3. You never even had to look behind the 3 to know that the 5 could wait. My demo drew each number as a bar. The bars ended up in the right order. How would I tell whether somebody watching had understood why the trick worked?
 
-The ambition was intentionally high. I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” I also tried Count-Min Sketch, which estimates how often something has appeared when there is too much to keep an exact count of everything. The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
+I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” I also tried Count-Min Sketch, which estimates how often something has appeared when there is too much to keep an exact count of everything. The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
 ## Stubbornly Human
 
@@ -24,13 +24,13 @@ I thought I was using a very good autocomplete. The model might have been doing 
 
 Then the bug crossed three files and context itself became a job. Paste one class but forget its interface, and the model invents a nonexistent method. Add the interface and it needs the schema, then another helper. Eventually half the repository is sitting in the conversation and somehow the model understands less. Alongside the code came instructions: ignore these twelve methods; this innocent-looking helper controls payments, so please do not touch it unless you enjoy incident calls.
 
-We learned an obvious lesson surprisingly slowly: more context and better context are different things. If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
+If somebody asks for a spoon, emptying the entire kitchen onto the table does not help.
 
 SWE-bench tested this larger job using real GitHub issues:[1](appendix-references.md#ref-03-swebench) navigate an existing repository, make a change and survive the tests. The model had to do my job, the copy-and-paste one. Eventually we gave the model the repository and a terminal, and a coding agent became, at its simplest, this loop made executable. Software is unusually friendly to the arrangement: programs can be run, tests can say no, and Git can tell you exactly what changed and, if an experiment becomes sufficiently exciting, return you to the time before you had the idea. SWE-agent showed that the interface itself, how the model searches, sees files and receives feedback, can matter almost as much as another clever prompt.[2](appendix-references.md#ref-03-sweagent)
 
 Of course, giving the model a computer created new ways to be annoying. Early coding agents could behave like interns with root access and too much coffee. Ask one to change a line and it might rewrite half the file. Ask it to fix a button and twenty minutes later it has developed strong opinions about the database architecture. It would find one plausible theory of a bug, follow it for too long, then use every new piece of evidence to improve the theory instead of admitting the theory was wrong. I recognized the behavior. I had done all of it myself, at two in the morning, with worse excuses.
 
-Even with the right tools, a long session could get peculiar. Suppose an agent decides early that our Merge Sort demo should use React, a library for building interfaces, and show the learner a recursion tree. It spends forty minutes building that version. Every later question now arrives in a context containing forty minutes of reasons, code and decisions supporting React and a recursion tree.
+Suppose an agent decides early that our Merge Sort demo should use React, a library for building interfaces, and show the learner a recursion tree. It spends forty minutes building that version. Every later question now arrives in a context containing forty minutes of reasons, code and decisions supporting React and a recursion tree.
 
 Humans call our version of this sunk cost. The agent has a respectable excuse: its context window is literally full of evidence that this is what the project is.
 
@@ -130,7 +130,7 @@ Meanwhile I can simply say:
 
 That contains comparison, diagnosis, trade-offs, priorities and a proposed next move in a few sentences. Natural language is ridiculously rich compared with a scalar.
 
-Hand a builder 7.4 and see what comes back. Hand it that sentence and it can go straight to the point where the learner has to look in two places at once. There is still a judgment buried in *beginner-friendly*. Two teachers can mean different things by it, and so can two models. I can work with that disagreement.
+Ask two teachers to make the demo *beginner-friendly* and they can mean different things by it. So can two models. I can work with that disagreement.
 
 OPRO, Optimization by PROmpting, makes a related move:[3](appendix-references.md#ref-03-opro) an LLM sees previous candidates and their scores and proposes the next one. It still needs an explicit score, so it is a long way from creative design. What interests me is the direction of control: much of the search heuristic can live in the model instead of a hand-written rule.
 
@@ -242,7 +242,7 @@ What it needed from the last round was the unfinished business. Which part of th
 
 The move itself was not fixed. Suppose two Merge Sort branches both make recursive decomposition clear, but evaluators keep reporting that learners lose track of how the tree corresponds to the array. The next move does not have to be “revise again.” The orchestrator can send a researcher after coordinated representations. Retrieval can surface an old prototype with a useful identity-preserving color scheme. A visual model can produce two spatial arrangements before anyone writes code. Builders can implement both. The browser may then reveal that one design requires the learner to look in two places at once precisely when the merge begins.
 
-Nothing in that sequence is especially magical. We simply did not have to decide the sequence before the inquiry began. Otherwise Deep Mode would be a larger workflow diagram containing more rectangles.
+I could draw that sequence afterward. If I’d prescribed it at the start, Deep Mode would be a larger workflow diagram containing more rectangles.
 
 Deep Mode gives the system a vocabulary of moves and lets the history of the inquiry influence which one comes next. In circle packing, the agent could change its search strategy. Here it could also change which kinds of work were brought together to judge and improve the result.
 

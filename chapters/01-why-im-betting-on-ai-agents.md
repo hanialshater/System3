@@ -7,11 +7,11 @@
 
 Life produces coral reefs, immune systems, parasites, flowers, cancer and octopuses: eight-armed problem-solvers that extensively edit their own RNA, sense light through their skin and match the colors around them despite apparently color-blind eyes. It also produces creatures capable of spending twenty minutes arguing online about whether another creature is technically a fish. Human civilization adds philosophy, cathedrals, semiconductor fabs, global supply chains and airport lounges. Somehow, all of this became possible on a planet that began without a requirements document.
 
-What fascinates me is how little of the result was specified in advance. No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors.
+No blueprint contains the exact location of every future branch of an oak tree. London contains an extraordinary amount of deliberate design, but nobody designed the whole thing. Nobody designed English and then accidentally forgot to make the spelling system sane. People built houses, opened shops, argued about roads and borrowed words from their neighbors.
 
 And we get to build on what they left. A programmer does not need to understand transistor physics. I can use a compiler without reproducing the intellectual history that made it possible, which is fortunate because I was hoping to finish before lunch. Enough of the complexity underneath has been made reliable that I can spend my attention elsewhere. When something breaks, I may have to descend a few layers and discover how much I was taking for granted.
 
-Could I leave a machine with a hard problem and come back to progress I had not directed? I had one advantage as an experimenter. Give the machine twenty-six circles to pack into a square. It can move them around and change their sizes, so long as they stay inside and don’t overlap. When I get back, I can add up the radii and see whether the new packing beats the old one.
+Could I leave a machine with a hard problem and come back to progress I had not directed? Give the machine twenty-six circles to pack into a square. It can move them around and change their sizes, so long as they stay inside and don’t overlap. When I get back, I can add up the radii and see whether the new packing beats the old one.
 
 ## The Rule-Based Exoskeleton
 
@@ -25,7 +25,7 @@ A shopper types “shoes for standing all day.” I can make that question easie
 
 **Complexity over engineering** is a deliberately uncomfortable way to name my bet. I want us to be able to work with more of the problem before deciding which parts reality will have to do without. That may require considerable engineering: tools for exploring alternatives, environments in which mistakes are recoverable, ways to compare results. The difference is how much of the answer we insist on putting into the machinery before the search begins.
 
-Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a surprisingly small instruction to contain all of that.
+Control moves upward: instead of choosing every move, we shape more of the conditions under which moves are made. Then, if the system can improve those conditions too, we have another decision on our hands. Which changes can it make? What would convince us they helped? “Be autonomous” is a small instruction to contain all of that.
 
 Cultivation may be a better metaphor than scripting: pulling harder on the stem remains a surprisingly poor gardening strategy.
 
@@ -81,7 +81,7 @@ We have learned, imperfectly, to build on other people’s knowledge while retai
 
 There are things I have stopped considering because I know what they would take. Another specialty. A team. A budget. Someone willing to believe in the idea before there is enough of it to believe in. After a while, those limits begin to feel like a sensible account of what I should want. I become the sort of person who does the things I already have the means to do. A goldfish, I imagine, has very reasonable views on the size of the ocean.
 
-That is part of why I am interested in agents. I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
+I want to find out which limits were really mine and which belonged to the cost of assembling the help. A question might deserve an investigation even if it will never deserve a company.
 
 There is an asymmetry hiding here. Seeing that an arrangement is wrong is cheap: an afternoon, a good argument, a sharp friend. Building a different one takes specialists, money, years and, usually, the permission of whoever runs the current one. So we get very good at the first, and mostly stop there.
 

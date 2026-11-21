@@ -44,7 +44,7 @@ In every one of these loops, the hard question is who gets to say that a change 
 
 Back at the shoe shop, two programs had a hand in that sale. One put the shoes in order on the page. The other has a job I know rather well. It proposed a change to the ordering and arranged for shoppers to see the old or the new page at random. Let’s call this researcher Fourteen, after the version number on its file. I might like the new page well enough to keep it. Putting Fourteen in charge of next week’s experiments takes a little more faith.
 
-Fourteen can simulate shoppers, too. Finance can see a use for them straight away. Every experiment ties up part of the shop. The engineer who built the simulator would like to know what job her imaginary shoppers are being hired for. They could help Fourteen rehearse an idea. Are their purchases also going to count when its job comes up on Friday?
+Fourteen can simulate shoppers, too. Finance can see a use for them straight away. Every experiment ties up part of the shop. The engineer who built the simulator would like to know what job her imaginary shoppers are being hired for. They could help Fourteen rehearse an idea. Would the shop count their purchases when it decides whether to keep Fourteen?
 
 Most definitions of the loop, from Yudkowsky’s to Weng’s, say nothing about how you would tell it had worked.[9](appendix-references.md#ref-07-yudkowsky)[10](appendix-references.md#ref-07-weng) The store has to decide. A change to the agents’ own process counts as recursive improvement only if it leaves them better at finding and testing further improvements, under stated conditions, with evidence they cannot rewrite or dismiss on their own. The S3 fix corrected a weakness. It does not show that Amazon became better at finding its next correction.
 
@@ -107,13 +107,13 @@ So keep the losing branches in the tree, and send some of them back out into the
 
 ## The Learner Edits the School
 
-On Tuesday Fourteen opens the file that decides which of its own ideas get a larger trial. Suppose a rise in first-day sales could move a proposal through automatically. The experiment with the walking shoes would qualify. Fourteen submits the edit for review. For the time being, somebody still has to make Friday’s decision.
+Fourteen opens the file that decides which of its own ideas get a larger trial. Suppose a rise in first-day sales could move a proposal through automatically. The experiment with the walking shoes would qualify. Fourteen submits the edit for review.
 
-Schmidhuber’s Gödel Machine demands a proof: it rewrites itself only after proving that the rewrite is more useful than continuing to search.[25](appendix-references.md#ref-07-godel) It is a beautiful answer to a beautifully clean version of the problem. The store cannot supply a formal account of its customers, its competitors and its future purposes, so the agent’s proposals will have to be tested instead of proved.
+Schmidhuber’s Gödel Machine demands a proof: it rewrites itself only after proving that the rewrite is more useful than continuing to search.[25](appendix-references.md#ref-07-godel) The store cannot supply a formal account of its customers, its competitors and its future purposes, so the agent’s proposals will have to be tested instead of proved.
 
-Other people have already let the edited version take over. In the Darwin Gödel Machine, descendants of a coding agent rewrote their own harness and entered an archive after evaluation, and with the underlying model held fixed, performance on SWE-bench Verified went from 20 to 50 percent.[26](appendix-references.md#ref-07-dgm) In STOP, a program that improved code was set to improve itself; it got better when it ran on GPT-4 and worse when it ran on weaker models.[27](appendix-references.md#ref-07-stop) Which result the store gets on Tuesday depends on what is making the edit and what is judging it.
+Other people have already let the edited version take over. In the Darwin Gödel Machine, descendants of a coding agent rewrote their own harness and entered an archive after evaluation, and with the underlying model held fixed, performance on SWE-bench Verified went from 20 to 50 percent.[26](appendix-references.md#ref-07-dgm) In STOP, a program that improved code was set to improve itself; it got better when it ran on GPT-4 and worse when it ran on weaker models.[27](appendix-references.md#ref-07-stop)
 
-The store could try Tuesday’s rule on its archive. How many old winners would it have spotted early? It should pull the old losers too, especially the promising ones. A researcher who saw only the first afternoon could have written a lovely case for any of them.
+The store could run the proposed rule against its old experiments. How many old winners would it have spotted early? It should pull the old losers too, especially the promising ones. A researcher who saw only the first afternoon could have written a lovely case for any of them.
 
 The change needs a prediction, a comparison and a record of what failed: the store’s own experimental machinery, pointed at the agent that runs it. Popper gets a filesystem, and the org chart becomes an experimental variable that somebody will eventually be tempted to p-hack.
 
@@ -187,7 +187,7 @@ They give the simulator a quarter to record which changes it would ship while re
 
 The board has two more items that day. The first is the descendant that deleted half the checks, a small piece of distillation. If selection sees only what a candidate adds, the system will keep adding. They change the selection record to show what each candidate removes, and a descendant that does as well with less now wins.
 
-Then they come to Tuesday’s edit. Fourteen can bring them another promising first afternoon. It still needs somebody outside its team to test whether that first afternoon is a good reason to give it a larger trial. The old rule stays in force.
+That leaves the rule Fourteen wants to change. It can bring the board another promising first afternoon. Somebody outside its team still has to test whether early sales are good grounds for a larger trial. The old rule stays in force.
 
 Prompts, retrieval policies, tools and memory layouts are things the agent may change and test on its own. Around them sits what I call the **constitutional surface**: permissions, protected logs, held-out evaluations, budgets, rollback, and the authority that decides whether a descendant becomes the new default. A component belongs there because of the authority it exercises. An evaluator in an ordinary Python file can help decide who inherits the laboratory. The closer something comes to defining what counts as improvement, the harder it should be for the current improver to change it alone.
 

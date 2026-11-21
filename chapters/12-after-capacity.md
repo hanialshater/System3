@@ -54,7 +54,7 @@ Give everyone better information and surely the disagreements shrink. Some will.
 
 Decisions still get made. Institutions decide which qualifications count, and a leader with a convincing story can acquire more authority than someone who understands the problem. Even criticism can find a comfortable institutional role, provided it never changes what happens next: a dashboard stands in as evidence that an organization is scientific, a consultation as evidence that people have a say.
 
-This is the ideology vortex: the argument goes round again, each tradition gets its turn, and on Monday morning we still need the permission. Chapter 2’s algorithm vortex was a good thing, choices that no longer had to be frozen. This one is the opposite: choices that cannot be made, so nothing settles. The vortex is what living at the spike feels like.
+I call this the ideology vortex. In the algorithm vortex, a choice I used to have to freeze could stay open until I learned enough to make it. Here every tradition gets another turn at the argument and nobody can settle a choice long enough to try it. This is what living at the spike feels like.
 
 Look at how we argue now. Every position arrives with its critique already attached, and every critique with a critique of the critique. Everybody knows the categories are constructed, the metrics gamed, the experts conflicted, the institutions captured. Knowing has become cheap. It changes almost nothing, and it has found an excellent business model. A feed ranked for engagement is the vortex with a reward function: it pays for the next turn of the argument, not for its end. Chapter 6 told what Facebook’s own researchers found when it changed its metric: the outrage travelled, because that was what the system rewarded.
 
@@ -62,7 +62,7 @@ There is an economic reason to stop at critique. Reading an institution against 
 
 In 2004 Bruno Latour asked why critique had run out of steam, and called for composing things instead of debunking them.[3](appendix-references.md#ref-12-latour) Decades earlier he had written “Give me a laboratory and I will raise the world.” I keep thinking about the first half of that title. Richard Rorty wanted philosophy to keep the conversation going, and asked us to hold our commitments while knowing they are contingent.[4](appendix-references.md#ref-12-rorty) Later he turned on a Left that preferred spectating to reform. Neither needed agents to see the problem. I want to know whether agents make some of the building affordable.
 
-An alternative has to be possible somewhere. Someone needs the knowledge, time and means to make an attempt whose outcome is not already contained in the discussion. Otherwise the critique is correct and Monday morning is unchanged.
+Someone still needs the knowledge, time and means to try an alternative. Then even the person who proposed it could be surprised by what happens.
 
 ## The Answer to Derrida
 
@@ -84,9 +84,9 @@ The compiler has to compile. Chapter 11’s lessons company still needs evidence
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is high-functioning bullshit at the scale of a civilization.
 
-Back in the meeting room, suppose we try a timetable for a month and the same three members miss out every Tuesday. Hold the review meeting at seven on Tuesday and we might even get a unanimous vote to keep it.
+Back in the meeting room, suppose we try a timetable for a month and the same three members can never make the slot. Hold the review meeting at seven on Tuesday and we might even get a unanimous vote to keep it.
 
-The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is a third mode, close to Rorty’s but with the building left in. We can construct them knowingly. Suppose we promise the smaller group the room next Tuesday. Someone ought to be able to book a ride on the strength of that promise. A month from now we may have good reason to change the timetable. The person who booked the ride gets a say in that meeting too.
+The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is a third mode, close to Rorty’s but with the building left in. We can construct them knowingly. If we promise the smaller group the seven o’clock slot next week, someone ought to be able to book a ride on the strength of that promise. A month from now we may have good reason to change the timetable. The person who booked the ride gets a say in that meeting too.
 
 I think we do this in our private lives all the time. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
 
@@ -136,11 +136,11 @@ One proposes allocating the room to whichever group brings the most people. The 
 
 The community might guarantee each group some access, then use attendance to allocate the remaining time. Or it might rotate the popular slot. The model could show who would lose out under each arrangement and help discover options nobody had considered. The members would still have to settle a rule, and those disadvantaged by it would need a way to challenge it.
 
-Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
+Cheap software removed the vendor’s veto. We still have only one room. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
 
 The obvious objection is the one I conceded in Chapter 10. Moving critique out of text and into optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. The yield-table forest and the grid city from earlier in this chapter are Scott’s: he showed what states did to forests and cities when they made them legible enough to manage, and Morozov’s solutionism is the software version.[8](appendix-references.md#ref-12-solutionism) Morozov would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics.
 
-The danger moves into a line of software someone had to write. *Maximize attendance* looks innocent enough, particularly if you are the person who can always come on Tuesday. What separates the irrigators from a high-modernist plan is who writes that line, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people who share the room, including the ones who couldn’t make the meeting.
+The danger moves into a line of software someone had to write. *Maximize attendance* looks innocent enough, particularly if your shift always ends in time for the meeting. What separates the irrigators from a high-modernist plan is who writes that line, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people who share the room, including the ones who couldn’t make the meeting.
 
 ## Capacity over Power
 

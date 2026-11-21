@@ -8,7 +8,7 @@ He aspired to discover truths and inventions through a universal calculus of tho
 
 Try drawing a tree on a sheet of paper. Split each branch in two and by the sixth fork you have sixty-four tips all competing for the edge of the page. In 2017, a paper on Poincaré embeddings showed how neatly a hierarchy like that fits in hyperbolic space, a geometry where the room around a point grows as you move out, fast enough to keep up with the branches. A year later, researchers were building neural networks there.
 
-Someone opens a possibility. Other people arrive, build on it, discover problems and make things the original authors never specified. Eventually there is a cathedral where somebody once had a peculiar question.
+Other people arrive, build on it, discover problems and make things the original authors never specified. Eventually there is a cathedral where somebody once had a peculiar question.
 
 Usually, you get to help with a brick.
 
@@ -28,6 +28,6 @@ Leibniz wanted talented people to help him. Give him a thousand artificial minds
 
 The arrangement I’d trust with that decision took about four centuries, a great many arguments and at least one loose cable, and we never thought to call it an architecture.
 
-Then comes the part I care about most. Once that architecture is cheap, a small group with a question could run some of it themselves, over a weekend, around a problem nobody else would fund.
+Once that architecture is cheap enough, a few of us could spend a weekend on a question nobody else would fund.
 
 Back to the future, then. Bring your coffee.

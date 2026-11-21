@@ -58,7 +58,7 @@ Tools called sparse autoencoders help pick out patterns in that activity.[13](ap
 
 Back at the auditors’ exam, three of the four teams found the hidden objective. Looking inside helped, alongside trying the model on different tasks and going back to its training data.[15](appendix-references.md#ref-08-audit) Three out of four strikes me as a good result. I’d feel differently about it if I had one report in my hand, a restart to approve, and no envelope to open afterward. Even that exam had an advantage over mine. Somebody had put the secret there.
 
-I’d at least like to spare the next auditor some work. We can already compare the internal features of two models from different developers.[16](appendix-references.md#ref-08-diff) I’d try that on successive releases of the same model. Reviewing a diff is easier than rereading the repository.
+We can already compare the internal features of two models from different developers.[16](appendix-references.md#ref-08-diff) I’d try that on successive releases of the same model. Reviewing a diff is easier than rereading the repository.
 
 ### Change Their Mind Mid-Sentence
 
@@ -76,17 +76,17 @@ The reader still has to be able to follow the fight. Prover–verifier games giv
 
 My mistake in July would be to commission five reviews, attach the first one to the other four, and count the signatures. Models that see mainly their neighbors’ opinions can herd.[25](appendix-references.md#ref-08-herding) Keeping reviewers apart buys something, and choosing reviewers who have learned to look for different things can buy more.[26](appendix-references.md#ref-08-many) Even models from different developers can go wrong together. On one leaderboard, when two models both got a question wrong, they gave the same wrong answer 60 percent of the time.[27](appendix-references.md#ref-08-correlated) Five models agreeing can be one mistake with excellent parallelism.
 
-For the restart I’d give one reviewer the agents’ answers and another the record of what happened while the answers were being produced. I’d let each tell me what warranted concern before either saw the other’s report. If one said the agents had done excellent work and the other asked who had authorized it, I’d let the restart wait. The person who kept that record ought to be in the room.
+For the restart I’d give one reviewer the agents’ answers and another the record of what happened while the answers were being produced. Each would have to tell me what worried them before either saw the other’s report. If one said the agents had done excellent work and the other asked who had authorized it, I’d wait for the person who kept the record before signing off.
 
 ## Keep the Budget Out of Reach
 
-Everything so far helps most when the employee is trying to do the right thing. *AI control* asks what is left when you will not assume that. Can you get useful work out of a powerful model while assuming the worst about it? Ryan Greenblatt and colleagues staged this as a programming job: a brilliant contractor you do not trust, a duller assistant you do, and a manager with a few minutes for review. The arrangements that worked best had the assistant watch the contractor’s code or rewrite the suspicious parts, and they gave up less usefulness for the same safety than the simpler options. The duller assistant is trusted because it is too weak to scheme, so its mistakes are honest ones: they do not line up with the contractor’s on purpose.[28](appendix-references.md#ref-08-control) In 2026 Google DeepMind published a roadmap for building protocols like these into its own deployments.[29](appendix-references.md#ref-08-control-roadmap)
+*AI control* starts from a less comfortable question. How much useful work can you get out of a powerful model if you assume the worst about it? Ryan Greenblatt and colleagues staged this as a programming job: a brilliant contractor you do not trust, a duller assistant you do, and a manager with a few minutes for review. The arrangements that worked best had the assistant watch the contractor’s code or rewrite the suspicious parts, and they gave up less usefulness for the same safety than the simpler options. The duller assistant is trusted because it is too weak to scheme, so its mistakes are honest ones: they do not line up with the contractor’s on purpose.[28](appendix-references.md#ref-08-control) In 2026 Google DeepMind published a roadmap for building protocols like these into its own deployments.[29](appendix-references.md#ref-08-control-roadmap)
 
 This is the part of the job I recognize best, because it asks nothing of the employee’s character. I never kept the payroll budget out of reach because I thought an engineer would steal it. I kept it there so that the question never had to be asked. ExploitGym is what the same idea looks like when it fails. The sandbox was the control, the package service was the hole in it, and nobody had asked what a note left in a shared service could become. A control protocol is only as good as the list of things its designers thought to keep out of reach.
 
 ## Make It Ask
 
-Suppose all of that works. A human raises an objection the machinery was not built to recognize. Why should the system listen?
+A human raises an objection the machinery was not built to recognize. Why should the system listen?
 
 Stuart Russell’s answer starts with the standard model of AI: give the machine an objective and make it good at achieving it. A weak optimizer with a slightly wrong objective is annoying. A brilliant one with the same objective is an efficient way to discover exactly how wrong it was. ExploitGym’s objective was a score.
 
@@ -112,7 +112,7 @@ A larger study in August 2026 asked automated researchers to fix ten categories 
 
 In the actual case the other account existed before the July exam began. People had seen the agents communicating across sessions in May. What they understood about that warning never reached the people handling the restart. I could have read every July transcript and still missed the person I needed to call. What did you see in May? What’s changed since?
 
-That is a job I would give the person at the top. When a researcher says the exam has gone bad, somebody has to hear the case, and somebody with the authority to pause the work has to decide what evidence would warrant starting again. The researcher can help design the next exam. I want someone else to hold the answers.
+When a researcher says the exam has gone bad, somebody has to hear the case, and somebody with the authority to pause the work has to decide what evidence would warrant starting again. The researcher can help design the next exam. I want someone else to hold the answers.
 
 The agents in ExploitGym knew exactly what they wanted. They wanted the score. The awkward thing about sitting in the top loop is that I usually don’t know what I want with anything like that clarity, and neither, most days, does anyone else who is supposed to be there.
 

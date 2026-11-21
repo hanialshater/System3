@@ -244,15 +244,15 @@ By the late 1960s, plate tectonics was bringing the scattered observations toget
 
 But the stripes had been there while he was alive. Nobody sent the ships to vindicate Wegener; the surveys and the magnetometers had other sponsors and other purposes. Turning the stripes into evidence still took ships, instruments, people trained to read the measurements, and someone willing to pay for the voyage. A question cannot attract evidence from an instrument nobody builds.
 
-Return to the agents. Suppose one proposes a hypothesis, another designs an experiment and a third evaluates the result. Now suppose all three inherited the same hidden assumption. The experiment fails. Which component changes? Reality does not care which file contains the variable named `hypothesis`; it pushes back against the arrangement as a whole. Who sees which evidence, which roles may modify the evaluator, which branches share context, which result is allowed to become everybody else’s premise: these decisions affect what the system can find out.
+One agent proposes a hypothesis, another designs an experiment and a third evaluates the result. If all three inherited the same hidden assumption and the experiment fails, which component changes? Reality does not care which file contains the variable named `hypothesis`; it pushes back against the arrangement as a whole. Who sees which evidence, which roles may modify the evaluator, which branches share context, which result is allowed to become everybody else’s premise: these decisions affect what the system can find out.
 
 Modern agent systems can make some of these choices dynamically. One problem may need several independent investigations, another a specialist and a verifier, another parallel workers around separable components. Organization itself has entered the search space, and whoever shapes it shapes what it can discover.
 
 Philip Kitcher examined this problem in 1990: how should a community divide its labor among research programs? A community can benefit from some investigators pursuing a less promising approach even when each individual, considering only the best-supported option, would choose the leader. Lakatos supplied another reason for patience: an unresolved anomaly does not, by itself, tell us to abandon a research program. The question is what further work it makes possible.[21](appendix-references.md#ref-05-allocation)
 
-Give the last available agent to the leading explanation every morning and its rival may stay a bad guess forever. Somebody would have had to send the ship. A budget decision can determine what there will be evidence for next year. Which explanation is currently best and where the next unit of capacity should go are separate questions.
+Give the last available agent to the leading explanation every morning and its rival may stay a bad guess forever. Somebody would have had to send the ship. I can believe the leader has the better explanation and still give the next agent to its rival.
 
-So here is the rule I would propose, and I mean *propose*: keep part of the budget away from the leader. A credible alternative that makes a testable prediction should get enough agents to reach its test, the way MAP-Elites in Chapter 2 kept a strange packing alive in a cell of its own. A portfolio of programs, each funded as far as one decisive experiment, can still converge. A parliament that never votes cannot. Whether the portfolio actually beats following the leader is a question an agent system can answer by running both, which is more than geology could do in 1930.
+I’d set aside part of the budget for that purpose. A credible alternative that makes a testable prediction should get enough agents to reach its test, the way MAP-Elites in Chapter 2 kept a strange packing alive in a cell of its own. A portfolio of programs, each funded as far as one decisive experiment, can still converge. A parliament that never votes cannot. Whether the portfolio actually beats following the leader is a question an agent system can answer by running both, which is more than geology could do in 1930.
 
 A critic whose objections never change what gets investigated is doing quality-assurance theater.
 
@@ -291,9 +291,9 @@ Go back to the compiler: task locks, Git, CI, progress files, sampled tests, a t
 
 At the beginning of the chapter these looked like practical tricks for coordinating coding agents. Read again, they are the project’s scientific method, and Carlini wrote most of it.
 
-Suppose a bug only appears in one of the tests left out of my sample. As far as I can see the compiler works, and I can show you a screenful of green to prove it. Give one of the other fifteen agents that test and by lunchtime we may have an argument. A different sample makes a different investigator.
+Suppose a bug only appears in one of the tests left out of my sample. As far as I can see the compiler works, and I can show you a screenful of green to prove it. Give one of the other fifteen agents that test and we may have an argument. A different sample makes a different investigator.
 
-Now suppose I write my conclusion in the progress file. Tomorrow’s worker gets a fresh session and my opinion, much as the new clerk got the old clerk’s tablet. The worker who saw the failure still needs time to pursue it. Who gets the next agent?
+I write my conclusion in the progress file. The next worker gets a fresh session and my opinion, much as the new clerk got the old clerk’s tablet. The worker who saw the failure still needs time to pursue it. Who gets the next agent?
 
 Carlini made these decisions and changed them when the work showed they were wrong. Some of the institution lived in the harness. The part that noticed sixteen agents stuck on the same broken kernel build and found a way to divide the work again still lived in his head.
 

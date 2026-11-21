@@ -100,9 +100,7 @@ So Meta built small companies on purpose and ran them against something simpler,
 
 ## Losing to One Agent
 
-One strong agent won or tied on the agreed measure in four of the five benchmarks, usually for less money. There was a spreadsheet, a batch of lessons and a C compiler that went through several rounds. The organization did win once. To see why that result gave me as much trouble as the losses, it helps to look at what we were paying all those specialists to do.
-
-The losses were cheap to diagnose because every run left its records, and the records were unkind to me in a specific way.
+One strong agent won or tied on the agreed measure in four of the five benchmarks, usually for less money. There was a spreadsheet, a batch of lessons and a C compiler that went through several rounds. The organization did win once. For the losses I had an itemized record of what I’d paid the specialists to do.
 
 In the spreadsheet benchmark the org had thirty-three working sessions, and every one of them began the way a new hire’s first morning begins: reading the brief, the spec, the architecture and the tools, thirty-five to sixty thousand tokens of it, before doing anything. The single agent read them once. An organization of agents is a company in which every employee arrives each morning having forgotten yesterday, and the onboarding never ends. In the lessons company, the same disease was the manager rounds eating a third of the budget.
 
@@ -132,9 +130,9 @@ The SQLite race was closer and duller. Each side had $150, and the single agent 
 
 *A later SQLite run, spend by member. Teo, on the cheapest model, is at the bottom.*
 
-A later SQLite run, with no single agent to race, had two members worth a sentence each. Teo ran on the cheapest model and was there on purpose, as the fallible member. His one bad landing was refused, and he spent $6.26 without moving the score. The biggest single gain came from a planner who went back to a route that four members of an earlier crew had written into the knowledge base as a dead end, and tried it anyway, which is what reading a knowledge base as testimony looks like when it works. The knowledge base now says the dead end was wrong.
+In a later SQLite run there was no single agent to race. Teo got the cheapest model on purpose. The crew was supposed to have a fallible member. His one bad landing was refused, and he spent $6.26 without moving the score. The biggest single gain came from a planner who went back to a route that four members of an earlier crew had written into the knowledge base as a dead end, and tried it anyway, which is what reading a knowledge base as testimony looks like when it works. The knowledge base now says the dead end was wrong.
 
-The compiler race was the one worth watching. Both sides started from the same working compiler, the one an earlier single agent had built, and had to make the code it produced faster, with gcc’s optimizer as the finish line, measured by how many instructions the compiled programs actually execute. Each side had $150: a single agent on one, four workers and an architect on the other.
+In the compiler race both sides started from the same working compiler, the one an earlier single agent had built, and had to make the code it produced faster, with gcc’s optimizer as the finish line, measured by how many instructions the compiled programs actually execute. Each side had $150: a single agent on one, four workers and an architect on the other.
 
 The single agent went at it like someone who has cleared the weekend. For three and a half hours it kept the whole compiler, its speed measurements and its own plans in view. It rewrote the part that emits instructions for the processor, including the choice of which values to keep close at hand in registers. That choice matters when you have to fetch the same value a million times. By the end its programs ran within about five percent of gcc’s instruction count. Then it stopped, with more than two hours still on the clock, because the meter reporting its spending had overcounted. It believed it had about $20 left. By the transcripts it had spent $110.
 
