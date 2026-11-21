@@ -25,8 +25,9 @@ The author builds a company of agents from this book, watches it grow the pieces
 - "I smell a problem" and the manager rounds eating the budget
 - System 3 Meta, the benchmarks and predictions committed first
 - the single agent winning; the splits that made the bugs
-- the sealed envelope and two miscompiles
 - one agent hiring the company's own checkers in thirty-six minutes
+- the sealed envelope and two miscompiles
+- the reorganization that parked seventy-two roles and created two pooled jobs
 - Jeff, respawned at a desk that was not supposed to exist
 
 ## Lines to keep word for word
@@ -63,8 +64,9 @@ Match the book's illustrations, not a generic AI look.
 4. The Border
 5. I Smell a Problem
 6. Losing to One Agent
-7. The Envelope
-8. The Institution Inside One Agent
+7. The Institution Inside One Agent
+8. The Envelope
+9. Who Kept Their Desk
 
 ## Review
 

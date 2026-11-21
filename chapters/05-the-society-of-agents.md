@@ -230,7 +230,7 @@ Knowledge now came with a route by which someone else might make a claim fail ag
 
 Imagine twelve of the compiler agents pursuing one explanation for a failed build. Their progress file is several pages long. One other agent thinks the test itself might be wrong and would like some help finding out. You have one worker free. Who gets the afternoon?
 
-Call the leading program A and the rival B. I can see what I’d get for giving A another afternoon. It has experiments waiting. B has very little to show me, and if I give the worker to A again it will have very little to show me tomorrow. A program can go years without getting the instrument that would let it win an argument.
+Call the leading program A and the rival B. I can see what I’d get for giving A another afternoon. It has experiments waiting. B has very little to show me, and if I give the worker to A again it will have very little to show me tomorrow. Program B rarely loses an argument. It just never gets the instrument that would let it win one.
 
 The coastlines of Africa and South America fit together suspiciously well, and in 1912 a German meteorologist named Alfred Wegener took the fit seriously. He proposed that the continents had once been one landmass and had drifted apart. Besides the coastlines, he had matching fossils on opposite sides of the Atlantic, matching rock formations and glacial traces in places that were now tropical. What he did not have was a force capable of moving a continent.[20](appendix-references.md#ref-05-wegener)
 
@@ -252,7 +252,7 @@ Philip Kitcher examined this problem in 1990: how should a community divide its 
 
 Give the last available agent to the leading explanation every morning and its rival may stay a bad guess forever. Somebody would have had to send the ship. I can believe the leader has the better explanation and still give the next agent to its rival.
 
-I’d set aside part of the budget for that purpose. A credible alternative that makes a testable prediction should get enough agents to reach its test, the way MAP-Elites in Chapter 2 kept a strange packing alive in a cell of its own. A portfolio of programs, each funded as far as one decisive experiment, can still converge. A parliament that never votes cannot. Whether the portfolio actually beats following the leader is a question an agent system can answer by running both, which is more than geology could do in 1930.
+So here is the rule I would propose, and I mean *propose*: keep part of the budget away from the leader. A credible alternative that makes a testable prediction should get enough agents to reach its test, the way MAP-Elites in Chapter 2 kept a strange packing alive in a cell of its own. A portfolio of programs, each funded as far as one decisive experiment, can still converge. A parliament that never votes cannot. Whether the portfolio actually beats following the leader is a question an agent system can answer by running both, which is more than geology could do in 1930.
 
 A critic whose objections never change what gets investigated is doing quality-assurance theater.
 

@@ -51,6 +51,8 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 
 8. <a id="ref-03-bcs"></a>Brian Cantwell Smith, *The Promise of Artificial Intelligence: Reckoning and Judgment* (MIT Press, 2019) — the reckoning/judgment distinction the chapter answers.
 
+9. <a id="ref-03-demos"></a>Hani Al-Shater, “Agent Autonomy - Part 2: Going Beyond Algorithms.” Includes the baseline demonstrations and saved candidates for Merge Sort and Count-Min Sketch. <https://www.hani-alshater.com/en/free-writing/agent-autonomy-part-2>
+
 ### Additional sources
 
 - Mark Chen et al., “Evaluating Large Language Models Trained on Code” (HumanEval, 2021). <https://arxiv.org/abs/2107.03374>
@@ -507,6 +509,8 @@ Sources and notes are organized by chapter. Numbered citations in the text link 
 1. <a id="ref-11-store-pearl"></a>Judea Pearl and Dana Mackenzie, *The Book of Why: The New Science of Cause and Effect* (Basic Books, 2018) — the ladder of causation.
 
 ### Additional sources
+
+- System 3 Company, [founder decision on the 25 October restructuring](https://github.com/hanialshater/system-3-company/blob/ab9e56cbfff4777c0e0ac466375883f731fc713a/company/decisions/2026-10-25-founder-restructuring.md). The implementation record lists the parked roles and the two new shared roles.
 
 ## Chapter 12 — After Capacity
 

@@ -8,7 +8,7 @@ Then I asked for an educational demo.
 
 Merge Sort breaks a list in half until each piece contains just one item. The clever part comes on the way back up. Suppose one piece holds 2 and 8, and the other holds 3 and 5. Look at the front of each. Take the 2. Now the choice is 8 or 3, so take the 3. You never even had to look behind the 3 to know that the 5 could wait. My demo drew each number as a bar. The bars ended up in the right order.
 
-Try a fresh merge before the bars move. There’s a 4 at the front of one list and a 9 at the front of the other. Could there be a 2 hiding behind the 9?
+Try it with two piles of cards, each already in order from smallest to largest. The top cards are 4 and 9. You can take the 4 without lifting the 9 to check underneath. How do you know there isn’t a 2 hiding there?
 
 I wanted something closer to the best Distill articles or Jay Alammar’s visual explanations than to the usual “here are some bars moving around; congratulations, you have learned sorting.” I also tried Count-Min Sketch, which estimates how often something has appeared when there is too much to keep an exact count of everything. The algorithm itself is usually the easy part; the difficult part is deciding what to show, when to show it, and what representation might make an idea suddenly click.
 
@@ -252,13 +252,13 @@ Deep Mode gives the system a vocabulary of moves and lets the history of the inq
 
 The first Merge Sort demos were exactly what you would expect. Bars moved around. Numbers changed places. Everything sorted correctly. If you already understood Merge Sort, you could follow them. If you did not, they mostly provided animated evidence that a computer was performing an algorithm.
 
-There was no single diagonal-layering moment here, and I do not want to manufacture one for the sake of the story. The progress was distributed.
+Step through the baseline until two bars light up for a comparison. The text beneath the array tells you which numbers the algorithm is comparing. In the saved first-generation candidate, Step takes you down a tree. You can follow a list into its two children, then watch the two sorted pieces come back to the same parent. In the bars, a number ends up where it belongs. In the tree you can point to the two lists it came from.
 
 Some versions explained every step so carefully that the explanation became harder to follow than Merge Sort. Others became beautifully minimal and stopped teaching anything. The useful pieces did not always live in the strongest overall artifact: a visual relationship could survive after the application that introduced it was discarded. We were learning what to keep, sometimes from attempts we had every other reason to kill.
 
-Count-Min Sketch followed a different path. The first versions looked like the data structure itself, grids with changing counters, technically correct and pedagogically opaque.
+The Count-Min Sketch baseline gave you a grid of counters. Add an item and several numbers go up. That much I could follow without having any idea how counting things could go wrong. In the saved eleventh-generation demo, the third lesson has a button labeled “Try It: See a Collision.” Press it and *alpha*, *beta*, *gamma* and *delta* go through the sketch, then *alpha* and *beta* come through again. When different items share a cell, the display marks the collision. Now there’s a question worth asking of that counter. How many of those visits belonged to the item you meant to count?
 
-As the work continued, the designs increasingly organized themselves around the conceptual difficulties instead of the structure of the implementation. Collisions became visible. The learner could watch approximation happen instead of only reading about it. The relationship between memory and accuracy became part of the experience.
+Both versions of each demo are in the original write-up, so you can try the comparison yourself.[9](appendix-references.md#ref-03-demos) These are saved candidates. A generation number tells me where to find an artifact. It can’t tell me whether a beginner learned more from it.
 
 Could there have been a 2 behind the 9? By the time we merge two lists, each is already sorted. Any 2 in that list would be in front of the 9. I’d like to hear a beginner explain that with the animation paused. Every beginner in my experiment was played by a model. I still owe that question to a person.
 

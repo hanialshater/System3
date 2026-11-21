@@ -1,20 +1,20 @@
 {
   "purpose": "Exact source snapshot for generated production outlines; not factual or editorial approval.",
   "references": "chapters/appendix-references.md",
-  "references_sha256": "8e2212ae4a147e133e5e62a2cc8579318435ea6e3a66ccbed7638eeeadad17ac",
+  "references_sha256": "8688db9646cfb8cd721cc21b006f92f7d197976b8cadd9014a14ef75f86586a8",
   "sources": [
     {
       "source": "chapters/00-preface.md",
-      "source_sha256": "f707cd7f93f92c6551d84c485c7d68968b99fa6e384565f19c490a0335e7c524",
+      "source_sha256": "cefeb52130fdef17ed411cf9d09673292db9c0a83150373fa86d29bf5d7b04a2",
       "brief": "prompts/notebooklm/preface.md",
-      "brief_sha256": "fd7c8010be8cfa05600d5012bb4bf7165ad43393e78ca6797ff49511ebcffc19",
+      "brief_sha256": "9e8124deee516cc9f799898e944d37fff22c58ab7df4813c1aa2c24f0a2480b0",
       "sections": [
         "Opening passage"
       ]
     },
     {
       "source": "chapters/01-why-im-betting-on-ai-agents.md",
-      "source_sha256": "6d72741d4153a093d9e9501db3cbc63c24de97f7e95ab9a5cfd78982ccd18d12",
+      "source_sha256": "216d46ed16859dc619dbb284602336019c4ad5971a0fd86d73d886e42dc5a68d",
       "brief": "prompts/notebooklm/chapter-01.md",
       "brief_sha256": "e0c7425f0c9ee28435fbd7cf900a7ce8eb5e52531c2ba3c86dfc23dac05f58af",
       "sections": [
@@ -30,7 +30,7 @@
     },
     {
       "source": "chapters/02-the-algorithm-vortex.md",
-      "source_sha256": "9f245da9c074e2bf9906dade42a85d96a6b62ba7a29742c32e8715287365c2b4",
+      "source_sha256": "891cc6acae2b49c543f899eae05e4e35a8ae026d7ad601db647e367f91f09ae0",
       "brief": "prompts/notebooklm/chapter-02.md",
       "brief_sha256": "3dda63eefd92ea3518f377f7d3f9fb6a4ee0242603d1a5fe0677400b3492102b",
       "sections": [
@@ -52,14 +52,13 @@
     },
     {
       "source": "chapters/03-deep-mode.md",
-      "source_sha256": "b40bac24be5ecb30cb8dba3e275393fbd594cd9d96640843215617e22a95fe4e",
+      "source_sha256": "bee4b0545591291521025dfe92804184be191b803f3939826b5e10d2304563e5",
       "brief": "prompts/notebooklm/chapter-03.md",
-      "brief_sha256": "f8fe442fbbc8476dd76b8c57b38dc6781a314f76664bc20ee721433495032347",
+      "brief_sha256": "3ca5437b6f15928d1bb35882bdc4e66164dc39a434f76e6d593df2b8b9479880",
       "sections": [
         "Opening passage",
         "Stubbornly Human",
         "The Five Layers of AI Coding",
-        "What I Was Still Doing",
         "Keeping More Than One Idea Alive",
         "Draw It Before You Build It",
         "Optimizing Something You Cannot Score",
@@ -72,7 +71,7 @@
     },
     {
       "source": "chapters/04-system-3.md",
-      "source_sha256": "258512545575b22d4bbb2a988a0501455e52c322bb34f0b1a94378e38ab9e3be",
+      "source_sha256": "6d5d0e1fd2ecced469e40af9a0636deb16671b6a13a08897145bcb668c816edc",
       "brief": "prompts/notebooklm/chapter-04.md",
       "brief_sha256": "ba6ec17315b5990644edacf90d4358a2724cd1376487dfee4d092644c6b9b352",
       "sections": [
@@ -92,7 +91,7 @@
     },
     {
       "source": "chapters/05-the-society-of-agents.md",
-      "source_sha256": "9a2b3a42625eba3458a85824d2d578d26f9b6a7c1eeb5489ec96bf8b02360c58",
+      "source_sha256": "38b35221646525c5518b6e20a9695ef24e4d69dc6309a3827d08c774d3a8a718",
       "brief": "prompts/notebooklm/chapter-05.md",
       "brief_sha256": "65a13034781487e3b279c3f727d294d7b45fb55ce06da97ba853d95c59bf7d67",
       "sections": [
@@ -110,7 +109,7 @@
     },
     {
       "source": "chapters/06-pattern-language.md",
-      "source_sha256": "b6745bac6d8a731c4eacd83a1a393668582c349b79833f632d8f8b4a122566ca",
+      "source_sha256": "894badc64f66c575ceed0a75c48ac61aa143ab0994b782cdefe038f99d42b33b",
       "brief": "prompts/notebooklm/chapter-06.md",
       "brief_sha256": "4d4363fa2e08c1de6cace84602146f7702958de6064536f73cd7fbe2f7761484",
       "sections": [
@@ -135,7 +134,7 @@
     },
     {
       "source": "chapters/07-recursive-self-improvement.md",
-      "source_sha256": "de1060915f702b7e48a34e89d4f5fc400be9ed50d7f50ec62bea77f77db2d9bd",
+      "source_sha256": "4ac3cfdb7f60d0d8d39c729b5df4b55df732653e3cfb001dc2f08dd6637ae19d",
       "brief": "prompts/notebooklm/chapter-07.md",
       "brief_sha256": "8f4ae8e67623a182e67ff8b50d04394deb250854f5fa9836f0d92acbd5bbb3b8",
       "sections": [
@@ -156,7 +155,7 @@
     },
     {
       "source": "chapters/08-automatic-alignment-research.md",
-      "source_sha256": "9e0db47c2ccfcafa40fd31e13ebeb716412de87b9d7c8c43f08fbe7544667fe6",
+      "source_sha256": "b8877407ae3d2ed4a60311b88613103182df1769ae6ef590eebef6a253ee5d69",
       "brief": "prompts/notebooklm/chapter-08.md",
       "brief_sha256": "b033f58937cd6a41d03ed4de880ac450f417c711c339cf7329c982c9b036d7c8",
       "sections": [
@@ -175,7 +174,7 @@
     },
     {
       "source": "chapters/09-layer-4-desire.md",
-      "source_sha256": "8265078b39e0b33e06ac7ef41d7fdec03b108b2d12696edca7cafb7369ea9446",
+      "source_sha256": "7b6330fa7978f8fffaefb36484d7f12660aa4c9bb3376b9d3c75c59db300b91c",
       "brief": "prompts/notebooklm/chapter-09.md",
       "brief_sha256": "c2aeec28c54747bf04a84a686ac658e0d1639220693f2d60a0b29ba22ca7d3bf",
       "sections": [
@@ -191,7 +190,7 @@
     },
     {
       "source": "chapters/10-fluent-autonomy.md",
-      "source_sha256": "29f7f35adb90bb8ac7b4c4cbd26e42d0ee8807c12252d744e4f988473c1a8361",
+      "source_sha256": "622f325aeaddbd3208e3bb94dc7632a7563047ac1d6fd849541416e48c279aa0",
       "brief": "prompts/notebooklm/chapter-10.md",
       "brief_sha256": "72c4352dc1029dc51d3622b075623e729d756a6c1b4e38e1fd072d7081324c73",
       "sections": [
@@ -209,9 +208,9 @@
     },
     {
       "source": "chapters/11-the-system-3-company.md",
-      "source_sha256": "8043dc435474d25a757744c7d165e902d17e471ea6b0d1f695ea0a728024485e",
+      "source_sha256": "3ec1ee7757abfcbba1df81afa397af036e9cd94c3af54374ce850893143c0c8e",
       "brief": "prompts/notebooklm/chapter-11.md",
-      "brief_sha256": "c5d032e717c81ac9b876521d76aa96bbf8df41582d65f494a975d670a30b879a",
+      "brief_sha256": "264f301cf041ecc8c1f815986e979025bab9b76f3702536ab3258abc2b0fa2cb",
       "sections": [
         "Opening passage",
         "A Company Dressed as a Company",
@@ -219,15 +218,16 @@
         "The Border",
         "I Smell a Problem",
         "Losing to One Agent",
+        "The Institution Inside One Agent",
         "The Envelope",
-        "The Institution Inside One Agent"
+        "Who Kept Their Desk"
       ]
     },
     {
       "source": "chapters/12-after-capacity.md",
-      "source_sha256": "2e2a78c6ab374b6251fd489f50bd206e3ebf8a960f2799a9f02db9b39a3e4643",
+      "source_sha256": "57b0aefef90152ff01b2472d507ef8a7fb4e12f2fb0ae4981e2269720199aead",
       "brief": "prompts/notebooklm/chapter-12.md",
-      "brief_sha256": "1a5dc93ae05819ccdbdbb442e247645d260289a9b02192340aa622b772498c71",
+      "brief_sha256": "2b234fc60e257b5d24dab8db7cf30416b64486f2e7cc3573e0d9c48e43fcf21e",
       "sections": [
         "Opening passage",
         "The Curve",

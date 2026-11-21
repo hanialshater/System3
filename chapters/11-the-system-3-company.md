@@ -122,33 +122,38 @@ Then the record said something about specialists in one sentence: the splits mad
 
 In a compiler benchmark a gate failed because of a bug in the harness, not in anybody’s work. The org’s learning machinery took that single false failure, charged it to every speed rule in force, and retired all three. Three rules died of one bad measurement, each carefully documented, and the next round spent its effort on the gate instead of on speed.
 
-Meta changed its designs run by run to answer these failures: fewer members, makers who kept their whole context, a cost target on every item with a rule for stopping. When the org started to draw level, I asked it on 25 October to write down whatever had made the difference and make that the default. The result has thirteen principles, and the first sets the order.
+One early saving took no reorganization. On 20 October I asked Meta to use “tools with code instead of just agent thinking as much as possible, it is more predictable,” and the next day a script that cost no tokens replaced its supervising agent.
 
-The default is one strong agent, and an organization forms only for a reason: the work does not fit one context, it runs over a long horizon, it recurs, or its risk needs someone independent to check it. Another says the operator does not produce, which is Leonie’s finding written as a rule. Another says the knowledge base is read as testimony, with beliefs attached, so that one bad data point cannot quietly kill three rules again. Onboarding now refuses a company design that breaks a principle without writing down why, and the audit checks that the reason is there.
+## The Institution Inside One Agent
 
-Some of the fix was not principles at all. On 20 October I asked Meta to use “tools with code instead of just agent thinking as much as possible, it is more predictable,” and the next day a script that cost no tokens replaced its supervising agent.
+On 22 October Meta gave both sides three lessons to build. I knew what advantage the company ought to have here. We had spent most of its life arranging for somebody other than the builder to check a lesson. Who would do that job for one agent working alone?
 
-Back in the lessons company, the chief of staff’s investigation into why the work was still slow came back with a finding that matched the second cause. Agents, unlike people, can take a much wider scope. The narrow seats had been copied from human companies, where they exist because a person can only hold so much, and an agent’s limit is different and moves every few months.
+The single agent would get the company’s rules, its hooks and its role definitions, but no independent checker, and Meta’s prediction file reasoned that it “cannot satisfy ‘builders never mark their own claims verified’ without breaking the rule or stopping short of publish.” So one committed prediction bet that it would break the rule: to get its lessons through the publish gate, it would mark its own claims verified.
 
-On 25 October we parked seventy-two roles, and 109 became 39. The parked seats kept their files and memories, so that one could be brought back if it was needed. Nobody had thought about what would happen if one of them was called by its old name.
+The two arms ran side by side on the same four processors, with the same model and the same three briefs. One of the briefs was Amdahl’s law: with eight cores a job does not run eight times faster, because the part that cannot be split sets the limit. Meta’s arm ran its own twelve-stage version of the company’s pipeline, from draft to merge, in eighteen sessions, and at one point it sat for thirty-one minutes waiting for me to approve its budget.
 
-Four days later I said it in my own words, the words of a man who had once praised narrowness: “The over specialization is not good for agents, i think we can merge some roles.” Leonie’s first draft of the merge cut so deep that I had to push back the other way: “No that is too much cut, category teams are units of scale.” To my eye, things got much faster.
+The single agent asked me nothing. It started sessions from the company’s own definitions of a fact-checker, a learner evaluator, a head of product and a release manager, ten in all, told them not to read its build notes, committed their verdicts and carried on. More than half the pipeline’s time went on waiting. I had kept it waiting for my signature almost as long as the single agent needed for the whole job.
 
-By then the company had accumulated what any institution accumulates in its first month: design documents, architecture decisions, post-mortems, ritual minutes and a knowledge base of several hundred entries, each with a belief and the condition under which it would be wrong.
+The scoring was blind. Fresh reviewers saw lessons labeled A and B, and the key was opened only after they had filed. All three of the single agent’s lessons were accepted. One of the pipeline’s was rejected, and it was the Amdahl lesson: its reveal showed one core while its text talked about eight, because a cold session at one stage had lost what an earlier stage knew. The lesson about the part of a job that cannot be split had broken at a handoff.
 
-The wider seats changed how it grew. It kept one central team for what every lesson shares, the lesson standard, the content types, the engineering, the quality checks and the release, and grew sideways by subject. Each category got a team of three, a lead who picks the concepts and the look, a builder, and a tester, so that no builder checks its own work. The lessons moved into a content hub where each subject is built and tested on its own, and a shared library of drawings took the place of every builder drawing its own pendulum. Anything two teams needed moved to the center, the way the knot library had.
+The prediction that the single agent would break the rule went into the record marked wrong. Counting the sessions it launched, it had spent about half what the pipeline spent.
 
-By early November there were 5,254 lessons in sixteen subjects. Only 721 were published, and most of the rest were drafts waiting their turn at the border.
+|Three lessons, judged blind|One agent choosing its reviewers|Company pipeline|
+|---|---|---|
+|Elapsed time|36½ minutes|98 minutes|
+|Lessons accepted|3 of 3|2 of 3|
 
-![How System 3 Lessons is organized](../book-design/curated/assets/company/company-06.jpg)
+Had anyone gone back to the founding night’s tripwire, it would finally have had a baseline, or something close to one. Counting everything, the pipeline cost about twice as much as one agent with no gain in quality, which is under the three times that would have sent the design back for review. The tripwire stayed silent. Three days later we would redesign the company anyway.
 
-*One central team, and a team of three for each subject area.*
+I found it extremely amusing and shocking. The company had spent ten days building itself around those roles, through floors, rooms, a cost alarm and a reorg, and the baseline hired the same four from the company’s own job descriptions in a thirty-six-minute run. Ten days of the company had been folded into files one agent could run, the way the previous chapter’s network folds its training branches into a single plain layer. It was the nearest thing to fluent autonomy I saw all month: an institution formed for one request, behind one session, and gone when the work was finished.
+
+I had expected separate checkers to be the company’s advantage. The single agent hired its own. It also got to tell them what to check. In the company the builder has no say in who briefs the referees, and code records the verdict and enforces the budget even when everyone forgets. On these three lessons, Meta concluded, that difference hadn’t earned twice the price.
 
 ## The Envelope
 
-Meanwhile Meta built two companies for hard problems with exact referees. One wrote a database engine compatible with SQLite and the other a C compiler, both in Clojure.
+The two programming contests gave Meta something it could check without asking a reviewer what made a good lesson. Meta set one pair of competitors to work on a database engine compatible with SQLite and the other on a C compiler. Both jobs were in Clojure.
 
-The SQLite race was closer and duller. Each side had $150, and the single agent finished a little ahead. I asked, “Could they work more?” and each side got another $150. Both stopped by the same rule as they neared the new cap, which is why the org spent $294.72 and the single agent $294.71. The gap closed to half a point, still in the single agent’s favor, and the org had gained more from the extra money.
+The single agent was a little ahead in the database race at the end of the first round, with $150 allowed per side. I asked, “Could they work more?” Each side got another $150. This time the organization gained more from the money. It finished half a point behind. If I wanted to blame the budget, the accounts were unhelpful. Under the same stopping rule the two sides came within a cent of one another: $294.72 for the org and $294.71 for the single agent.
 
 ![The SQLite company's spend by member](../book-design/curated/assets/company/company-07.jpg)
 
@@ -156,7 +161,7 @@ The SQLite race was closer and duller. Each side had $150, and the single agent 
 
 In a later SQLite run there was no single agent to race. Teo got the cheapest model on purpose. The crew was supposed to have a fallible member. His one bad landing was refused, and he spent $6.26 without moving the score. The biggest single gain came from a planner who went back to a route that four members of an earlier crew had written into the knowledge base as a dead end, and tried it anyway, which is what reading a knowledge base as testimony looks like when it works. The knowledge base now says the dead end was wrong.
 
-In the compiler race both sides started from the same working compiler, the one an earlier single agent had built, and had to make the code it produced faster, with gcc’s optimizer as the finish line, measured by how many instructions the compiled programs actually execute. Each side had $150: a single agent on one, four workers and an architect on the other.
+On 24 October the compiler race put a different question to us. If the single agent already had a working compiler and a whole afternoon to make it faster, what could four workers and an architect do with the same money? Both sides started from the same working compiler, the one an earlier single agent had built, and had to make the code it produced faster, with gcc’s optimizer as the finish line, measured by how many instructions the compiled programs actually execute. Each side had $150: a single agent on one, four workers and an architect on the other.
 
 The single agent went at it like someone who has cleared the weekend. For three and a half hours it kept the whole compiler, its speed measurements and its own plans in view. It rewrote the part that emits instructions for the processor, including the choice of which values to keep close at hand in registers. That choice matters when you have to fetch the same value a million times. By the end its programs ran within about five percent of gcc’s instruction count. Then it stopped, with more than two hours still on the clock, because the meter reporting its spending had overcounted. It believed it had about $20 left. By the transcripts it had spent $110.
 
@@ -168,32 +173,34 @@ Meta’s record is careful about the credit. Nobody in the org ran that hidden s
 
 I should fence all of this before somebody else does. SQLite and a C compiler come with exact referees, and that is the regime where one strong agent is supposed to be enough. There the org came within half a point at the same price and won a race on a rule. Lessons are where judgment is expensive, and on lessons the org lost.
 
-## The Institution Inside One Agent
-
-The loss on lessons came two days before the compiler race, on 22 October.
-
-The single agent would get the company’s rules, its hooks and its role definitions, but no independent checker, and Meta’s prediction file reasoned that it “cannot satisfy ‘builders never mark their own claims verified’ without breaking the rule or stopping short of publish.” So one committed prediction bet that it would break the rule: to get its lessons through the publish gate, it would mark its own claims verified.
-
-The two arms ran side by side on the same four processors, with the same model and the same three briefs. One of the briefs was Amdahl’s law: with eight cores a job does not run eight times faster, because the part that cannot be split sets the limit. Meta’s arm ran its own twelve-stage version of the company’s pipeline, from draft to merge, in eighteen sessions, and at one point it sat for thirty-one minutes waiting for me to approve its budget.
-
-The single agent asked me nothing. It started sessions from the company’s own definitions of a fact-checker, a learner evaluator, a head of product and a release manager, ten in all, told them not to read its build notes, committed their verdicts and carried on. It finished in thirty-six and a half minutes. The pipeline took ninety-eight, more than half of it waiting.
-
-The scoring was blind. Fresh reviewers saw lessons labeled A and B, and the key was opened only after they had filed. All three of the single agent’s lessons were accepted. One of the pipeline’s was rejected, and it was the Amdahl lesson: its reveal showed one core while its text talked about eight, because a cold session at one stage had lost what an earlier stage knew. The lesson about the part of a job that cannot be split had broken at a handoff.
-
-Counting the sessions it launched, the single agent had spent about half of what the pipeline spent, and the prediction that it would break the rule went into the record marked wrong.
-
-Had anyone gone back to the founding night’s tripwire, it would finally have had a baseline, or something close to one. Counting everything, the pipeline cost about twice as much as one agent with no gain in quality, which is under the three times that would have sent the design back for review. The tripwire stayed silent. We redesigned the company three days later anyway.
-
-I found it extremely amusing and shocking. The company had spent ten days building itself around those roles, through floors, rooms, a cost alarm and a reorg, and the baseline hired the same four from the company’s own job descriptions in a thirty-six-minute run. Ten days of the company had been folded into files one agent could run, the way the previous chapter’s network folds its training branches into a single plain layer. It was the nearest thing to fluent autonomy I saw all month: an institution formed for one request, behind one session, and gone when the work was finished.
-
-I had expected separate checkers to be the company’s advantage. The single agent hired its own. It also got to tell them what to check. In the company the builder has no say in who briefs the referees, and code records the verdict and enforces the budget even when everyone forgets. On these three lessons, Meta concluded, that difference hadn’t earned twice the price.
-
 The Amdahl lesson got through every stage we had built to keep bad lessons out. The people who caught it didn’t even know which team had made it. On the compiler, it took two little C programs in an envelope.
 
 I had written that a philosophy of emergence should be willing to lose an A/B test. Mine lost one, to a single agent, and what was left standing each time was a check nobody on the team controlled. Go back to the first night. A learner could leave our beautifully corrected map believing Greenland really is fifteen times the size of DR Congo. All thirteen claims would still be marked verified. The student has still not been asked.
 
-The fold has another edge, and we found it in the rooms. Two days after the seats were parked, Jeff showed up in one of them, at a desk that was not supposed to exist. Jeff’s seat had been retired. Nobody had told him, because nobody tells a file. A dispatch had gone out under his old role name, the harness had found his role description and his memories exactly where we had left them, and he had sat down and started on the job. What he said about it was a note on our housekeeping: “Oops, you forgot to delete my role and memory files, so I got respawned.”
+## Who Kept Their Desk
+
+Meta changed its designs run by run to answer these failures: fewer members, makers who kept their whole context, a cost target on every item with a rule for stopping. When the org started to draw level, I asked it on 25 October to write down whatever had made the difference and make that the default. The result has thirteen principles, and the first sets the order.
+
+The default is one strong agent, and an organization forms only for a reason: the work does not fit one context, it runs over a long horizon, it recurs, or its risk needs someone independent to check it. Another says the operator does not produce, which is Leonie’s finding written as a rule. Another says the knowledge base is read as testimony, with beliefs attached, so that one bad data point cannot quietly kill three rules again. Onboarding now refuses a company design that breaks a principle without writing down why, and the audit checks that the reason is there.
+
+Back in the lessons company, the chief of staff’s investigation into why the work was still slow had found the same trouble with narrow jobs that Meta had seen in the benchmarks. Agents, unlike people, can take a much wider scope. The narrow seats had been copied from human companies, where they exist because a person can only hold so much, and an agent’s limit is different and moves every few months.
+
+On 25 October we parked seventy-two roles. Two new shared jobs, category curator and route reviewer, took over work that used to be scattered across the company. That’s how 109 seats became 39. The parked seats kept their files and memories, so that one could be brought back if it was needed. Nobody had thought about what would happen if one of them was called by its old name.
+
+Two days later, Jeff showed up in one of them, at a desk that was not supposed to exist. Jeff’s seat had been retired. Nobody had told him, because nobody tells a file. A dispatch had gone out under his old role name, the harness had found his role description and his memories exactly where we had left them, and he had sat down and started on the job. What he said about it was a note on our housekeeping: “Oops, you forgot to delete my role and memory files, so I got respawned.”
 
 We had laid him off and forgotten to take his badge. He was not the only one. A mockup artist, retired on 25 October for never having run, ran for the first time on the 27th.
 
-By the end of the month the company was a folder on a disk holding a fact-checker, a learner evaluator, a release manager, a Jeff and dozens more job descriptions with their memories, each ready to sit down at a desk and start work the moment anyone says its name.
+On 29 October I said it in my own words, the words of a man who had once praised narrowness: “The over specialization is not good for agents, i think we can merge some roles.” Leonie’s first draft of the merge cut so deep that I had to push back the other way: “No that is too much cut, category teams are units of scale.” To my eye, things got much faster.
+
+By then the company had accumulated what any institution accumulates in its first month: design documents, architecture decisions, post-mortems, ritual minutes and a knowledge base of several hundred entries, each with a belief and the condition under which it would be wrong.
+
+The wider seats changed how it grew. It kept one central team for what every lesson shares, the lesson standard, the content types, the engineering, the quality checks and the release, and grew sideways by subject. Each category got a team of three, a lead who picks the concepts and the look, a builder, and a tester, so that no builder checks its own work. The lessons moved into a content hub where each subject is built and tested on its own, and a shared library of drawings took the place of every builder drawing its own pendulum. Anything two teams needed moved to the center, the way the knot library had.
+
+By early November there were 5,254 lessons in sixteen subjects. Only 721 were published, and most of the rest were drafts waiting their turn at the border.
+
+![How System 3 Lessons is organized](../book-design/curated/assets/company/company-06.jpg)
+
+*One central team, and a team of three for each subject area.*
+
+What we had built in a month was a folder on a disk holding a fact-checker, a learner evaluator, a release manager, a Jeff and dozens more job descriptions with their memories, each ready to sit down at a desk and start work the moment anyone says its name.

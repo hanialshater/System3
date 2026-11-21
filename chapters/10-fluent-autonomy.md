@@ -110,7 +110,7 @@ In the end I typed the one-sentence version again: decide for me, keep the usefu
 
 My taste is harder to distrust than my sources, because it is part of the evaluator. The rule from Chapter 7 holds here too: the system may propose overturning a refusal, with its reason and its evidence, and may not overturn one quietly.
 
-An editing procedure decides what gets checked. It can miss the same mistake on every pass. A system that has learned one good way of organizing itself will reach for it every time, the way the Linux build pointed all sixteen Claudes at the same failure. Occasionally it should try an arrangement it would not usually choose, keep a reader it would normally skip, or ask whether a check it always runs has caught anything in a year. Changes to how it judges its own work stay on the constitutional surface, where it can propose and somebody else decides.
+Say I persuade the editor to put my sentence back. At the next pass the same reader, following the same brief, will flag it again. How many times am I going to repair that sentence before one of us thinks to look at the brief? A system that has learned one good way of organizing itself will reach for it every time, the way the Linux build pointed all sixteen Claudes at the same failure. Occasionally it should try an arrangement it would not usually choose, keep a reader it would normally skip, or ask whether a check it always runs has caught anything in a year. Changes to how it judges its own work stay on the constitutional surface, where it can propose and somebody else decides.
 
 ## Coupled to a Person
 
@@ -120,7 +120,7 @@ A system that has distilled months of my corrections is tempted to stop being un
 
 Being unsure what I want takes a model of who I am: what I already know, what I meant by better last month, where my taste has settled and where it is still moving. The clinic founder needed an assistant with that kind of theory of mind. Mine can use it two ways. A recommender uses it to learn which suggestions I will accept and to make me easier to satisfy. A mentor uses it to decide what I should do myself.
 
-A mentor would have handled the flagged passages differently. It would have decided twenty, shown me its reasons, and then asked me to decide the next twenty before showing its own call. A week later it would have brought back the three I got wrong. It would be the annoying tutor, pointed at my own book. It also knows that people learn what to want from other people, so now and then it hands me to one.
+A mentor would have handled the flagged passages differently. It would have decided twenty, shown me its reasons, and then asked me to decide the next twenty before showing its own call. A week later it would have brought back the three I got wrong. It would be the annoying tutor, pointed at my own book. A good mentor accepts being liked less on Wednesday. It also knows that people learn what to want from other people, so now and then it hands me to one.
 
 A system coupled to me judges itself partly by what I can do without it afterward. So the second coffee test needs a companion question, and it is the hardest to score: after working with the system, do I understand what I want better than I did before? Whether that review left me understanding my own voice better is a question only I can answer.
 
