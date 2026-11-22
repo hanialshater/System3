@@ -18,6 +18,10 @@ The new employee works faster than any review. If it makes ten decisions and I i
 
 Ashby would have called me a regulator with too little variety: one tired human with a checklist against ten thousand decisions.[2](appendix-references.md#ref-08-regulator)
 
+I had better odds against the circle packer. If it told me it had beaten yesterday’s score, I could ask for the centers and radii. A little arithmetic would tell me whether the circles fit inside the square, whether any two overlapped and what their radii added up to. Now suppose it handed me exactly the same circles and said this was the best packing possible. I could measure them again if I wanted to lose an afternoon.
+
+Scalable oversight needs an asymmetry, and part of my job is to build it. The agent can spend all weekend finding a move I would never think of. I get to ask for the evidence in a form I can check, and to send the work back if it fails. Change one word in the claim from *better* to *best* and we have to work out that bargain again.
+
 The new employee also comes in copies, and ten copies of one model can share one blind spot where ten human reports would have ten. It has no career to lose. It may know when it is being tested. And a new version arrives every few months, so whatever I learned about the last one may not transfer.
 
 The compensation is that I can do things to this employee that would end my career if I tried them on a person. I can retrain her values. I can read her private notes while she works. I can open her head and look at what lights up, and change her mind in the middle of a sentence.

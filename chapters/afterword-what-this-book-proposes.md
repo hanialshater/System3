@@ -20,6 +20,8 @@ Popper, Duhem and Quine, Kuhn, Lakatos, Laudan, Longino and Kitcher argue about 
 
 *What needs testing.* The note on evidence proposes planting a false belief and measuring how far it travels. If different developers catch it no more often than isolated copies, developer diversity has not helped in that setup. If provenance adds nothing over isolation, that proposed repair has not earned its cost. These comparisons test parts of the architecture; identifying the bottleneck also requires measuring what happens as we add investigators.
 
+Chapter 8 suggests a test for scalable oversight. Give reviewers an hour and the same mix of sound and faulty results. At random, give some the builders’ explanations and the rest those explanations plus evidence they can check for themselves. As the batch grows, who still catches the faults? Count the sound work they send back, too, and what it cost the builders to supply the evidence.
+
 ## Thesis 2: Checking Without Understanding
 
 **Checking can outrun anyone’s understanding of a result. People can rely on the checks and still lack the understanding needed to choose the next question, leaving its choice to whoever controls the laboratory.**
