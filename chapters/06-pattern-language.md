@@ -65,11 +65,11 @@ Everyone in that room was in favor of evidence. That made the problem harder to 
 
 The same company had another side, and it worked.
 
-At ten past two one morning, checkout in one city stops accepting orders. The engineer on call, Ines, has been on the checkout team for five weeks. The runbook on her second screen is admirably clear until the line where it stops being clear:
+At ten past two one morning, checkout in one city stops accepting orders. The engineer on call, Ines, has been on the checkout team for five weeks. On her second screen the runbook tells her where to start:
 
 > Start with the dependency graph, unless the spike began exactly at deployment. If only one city is affected, check the traffic split before touching the database. And if it started after Tuesday’s migration, ask Sam. There is a thing with the old serializer.
 
-It started after Tuesday’s migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
+The errors began just after the migration. Sam is on a beach in Portugal with his phone in a drawer, which is exactly where he deserves to be.
 
 Ines also has the company’s agent, which has read the wiki, the runbooks, three years of postmortems and the predecessor’s handover. She asks it what is wrong. Within seconds it produces a diagnosis with headings, three citations and a confident recommendation to check the database connection pool. It reads like the work of a senior engineer who has seen this before. It is wrong, and nothing in its tone says so.
 
@@ -77,7 +77,7 @@ So there was a third knower in the building. The agent had every word the compan
 
 What saves Ines is a dashboard. Within a minute it shows that the connection pool is healthy, and she moves on. The runbook walks her through the dependency graph and the traffic split. The rollback she uses is rehearsed every month, and the previous week’s load test tells her the other cities can absorb the shifted traffic. By four the city is taking orders again, although the rollback has restored service without explaining the failure.
 
-Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.[5](appendix-references.md#ref-06-chaos-monkey) An impressive design that breaks under load still fails the load test on Thursday.
+Engineering knowledge is reliable for a dull reason: it is checked constantly, and the checks answer fast. Netflix built Chaos Monkey to switch off production servers during working hours so engineers would discover hidden assumptions while they were awake to fix them.[5](appendix-references.md#ref-06-chaos-monkey)
 
 The checks have a blind spot. The serializer fails rarely, and a failure that comes once a year produces one piece of feedback a year; knowledge fed that slowly stays in the head of whoever happened to be there. *Ask Sam* preserved the dependency and did nothing for Ines at two in the morning. What she needed was what Sam looks for, why he looks there, and when that suspicion is a waste of time. The product side lived in the same blind spot. The agent’s database diagnosis lasted about a minute against the dashboard; the holiday story, with nothing to check it against, could last indefinitely.
 
@@ -131,7 +131,7 @@ That is the difference between a pattern and a feather.
 
 Alexander’s patterns and the programmers’ patterns both had a human reader. The company’s next pattern would be read by a machine with tools.
 
-People had tried to give written knowledge to machines before. In 1977, the year of Alexander’s book, Edward Feigenbaum named the attempt knowledge engineering and found its hardest part in the expert: getting the knowledge out, then maintaining the exceptions the expert eventually admitted to.[14](appendix-references.md#ref-06-feigenbaum) Expert systems spent years interviewing people like Sam.
+In 1977 Edward Feigenbaum called the job knowledge engineering. The hard part was getting the knowledge out of the expert, then keeping up with the exceptions he eventually admitted to.[14](appendix-references.md#ref-06-feigenbaum) Expert systems spent years interviewing people like Sam.
 
 What changed is that natural language itself can now instruct the machine, Karpathy’s Software 3.0.[15](appendix-references.md#ref-06-karpathy) The machine doing the work can read a pattern, follow its Therefore and consult the reasons behind it without every qualification first being translated into logic.
 
@@ -141,23 +141,23 @@ Voyager, a Minecraft agent, built a narrow version of such a library in 2023: ex
 
 Calling a natural-language pattern executable hides the reader: the same words can produce different actions in different models. A pattern written for an agent is still a hypothesis, now with a reader that can act on it at two in the morning. Nothing in the skill format forces the writer to include the reasons or the reader to respect them.
 
-What must a pattern carry when its reader can act on it, and what keeps that pattern connected to reality when reality answers slowly?
+The review I’d like you to sit in on took place in the grocery team’s second year, when the library was up and running. A price change showed an early gain. A second measurement agreed with the first. Would you let it go live?
 
 ## Locate the Failure
 
 Jalal did not wait for the next quarterly review. He asked Sam to work on the fades with him, which surprised several people, including Sam.
 
-They put the three fades in one room. Jalal put the holidays back on the board as one hypothesis. Marketing added the promotion calendar. An analyst pointed out that the carousel release had also changed the event logging. Someone else noticed that in the carousel test the two arms did not contain the numbers of users the design said they should.
+They put the three fades in one room. Jalal put the holidays back on the board as one hypothesis. Marketing added the promotion calendar. An analyst pointed out that the carousel release had also changed the event logging. Then someone counted the shoppers in the carousel test. The old and new versions had been assigned shares of the traffic in advance. The counts on the dashboard didn’t match the split.
 
 Chapter 5 gave this failure a name through Duhem and Boyle’s pump: a failed prediction indicts the whole bundle and does not tell you which part to blame.[18](appendix-references.md#ref-06-quine)
 
-People who run experiments for a living have a reflex about results like these. They call it Twyman’s law: any figure that looks interesting or different is usually wrong.[19](appendix-references.md#ref-06-twyman) A sample-ratio mismatch means something upstream is broken, and the platform should refuse to show the scorecard until somebody finds it.
+Experimenters know this as Twyman’s law. Any figure that looks interesting or different is usually wrong.[19](appendix-references.md#ref-06-twyman) If the counts stray too far from the assigned split to put it down to chance, experimenters call it a *sample-ratio mismatch*. If the new carousel lost track of some shoppers, whose baskets were left to measure? That was reason enough to put the scorecard away until they could account for the shoppers.
 
 So they started there, then gave every remaining suspicion a probe. Each story predicted a different shape. Holidays predicted a drop when schools closed. A promotion predicted a drop when it ended. A logging change predicted a step in raw event counts. And one story nobody had told predicted something else: returning customers react strongly to anything new on the screen they open every week and then drift back, while first-time visitors, who have nothing to compare it with, move less.
 
-The archive had kept verdicts, but the warehouse had kept the events. Jalal asked the agent to pull the weeks after launch for every visible home-screen change shipped in three years. There were forty, and nobody had put them side by side because each experiment had been closed when its scorecard turned green. The agent did it in an afternoon. This time it was asked for curves rather than opinions, and curves can be checked.
+The experiment archive said which version won. The underlying purchase records still said what people did in the weeks afterward. Jalal asked the agent to pull the weeks after launch for every visible home-screen change shipped in three years. There were forty, and nobody had put them side by side because each experiment had been closed when its scorecard turned green. The agent did it in an afternoon. This time it was asked for curves rather than opinions, and curves can be checked.
 
-The probes took a week. In the carousel test, one app version sent part of the treatment arm through a redirect that dropped users before logging began; once the arms were repaired, most of that gain disappeared. The other two fades had the same shape, and so did most of the forty. Returning customers spiked in the first days and decayed over about three weeks, whatever the calendar said. First-time visitors barely moved. Both curves bent before the holidays began.
+The probes took a week. One version of the app sent some shoppers taking part in the carousel test to another screen before the count began. Once the team repaired the comparison, most of the carousel’s gain disappeared. The other two fades had the same shape, and so did most of the forty. Returning customers spiked in the first days and decayed over about three weeks, whatever the calendar said. First-time visitors barely moved. Both curves bent before the holidays began.
 
 The customers had been reacting to novelty. Experimenters have names for this, novelty and primacy effects, and long-standing advice about them.[20](appendix-references.md#ref-06-kohavi) Jalal had read the advice. Knowing the name had not told him where it would bite. His first hypothesis had been reasonable and wrong.
 
@@ -169,13 +169,9 @@ The archive needed to represent something older than experimentation platforms. 
 
 ## Say What the Result Would Mean
 
-In every one of those tests the count had been correct. What failed was the meaning attached to it, and other teams have met that failure in a sharper form.
-
 At Bing, a treatment had a bug, and the bug made search results worse. People could not find what they wanted, so they searched again and again. Queries per user went up by over ten percent. With poorer results on the page, advertisements looked comparatively relevant, and people clicked them. Revenue per user went up by over thirty percent. Two headline numbers were celebrating an experience that had been degraded.[20](appendix-references.md#ref-06-kohavi)
 
 More queries meant more engagement only if a query was a unit of interest. Set beside sessions and completed tasks, it becomes a unit of effort: seven queries can be worse than two if five were spent recovering from a bad result. Time changes meaning the same way. An item added to a basket in the first week of a new home screen sits beside curiosity. An item added in the third month sits beside habit.
-
-A rising number on a well-built dashboard is about the most scientific-looking object a business can produce, and nothing about its appearance tells you what it means.
 
 The next home-screen change was Jalal’s own: a new layout for weekly staples. It came back in the familiar shape, with a strong early gain.
 
@@ -190,6 +186,8 @@ Ines read the record before the review.
 They added the answer. Reality still refuses clean verdicts: a noisy curve can weaken an explanation without killing it. But the claim had finally named the observation capable of making it lose.
 
 Jalal changed the review rule. No visible home-screen launch would be approved until its committed predictions had been checked, and he kept the authority to override the gate himself.
+
+Try Ines’s question on the price change. The review had arrived with two figures and no record of what the team had expected to see. Even if both figures were right, what result would have made the team decide to leave the prices alone?
 
 \*\* Therefore: before the result arrives, write down what the number is taken to mean, over what period, and what would count against the claim. Keep the revision history.
 
@@ -210,8 +208,6 @@ The draft already carried the refutation condition from the experiment record. I
 Jalal added the confidence mark.
 
 That exchange is the new shape of Feigenbaum’s bottleneck. An agent can read hundreds of experiment records, launch notes, postmortems and chat threads and propose patterns nobody wrote down. Getting knowledge out has become cheap. Deciding which extracted lessons are true, where they apply and when to retire them has not.
-
-A detached explanation once needed a person to keep repeating it. The machine version can persist, travel and act with nobody behind it at all.
 
 The version that went into the team’s skill library read:
 
@@ -260,11 +256,11 @@ Most of us have no Lean. For the four percent, the records look like this:
 |Success criterion|Bigger baskets count as improvement.|Repairing the duration does not settle whether this is the right criterion.|
 |Recommendation|Ship it, and build the next redesign on it.|Must be reconsidered if it relied on that assumption.|
 
-With the probes in, the duration assumption changes from accepted to withdrawn, with the reason attached, and the pending decisions that relied on it move back to review. A later worker, human or agent, can follow them to the assumption that caused the change.
-
 Language models give Popper’s World 3 a new front door: the whole library can answer in one voice.[24](appendix-references.md#ref-06-world3) But the voice strips away the catalog card unless we rebuild it. The agent at two in the morning answered without a single one.
 
-Two measurements can share the same failed dependency. If the supposedly independent check reads a table derived from the original event stream, agreement between the tables supplies less reassurance than their different names suggest. Provenance has to reach the common source. Capturing every possible dependency would cost more than the inquiry, so start with the support used in the recommendation and let a disputed result send you farther back.
+The pricing review had just such a claim to trace. The lift looked large enough to make the reviewer count shoppers. Their numbers didn’t match the split the experimenters had assigned. There was still the second measurement. A data agent followed it back and found that both tables read from the same event stream. If that stream lost a shopper, she would disappear from both tables. The figures could agree down to the last decimal.
+
+Tracing every dependency in the company would cost more than the inquiry. Start with the two figures someone is about to stake a launch on. In this case the search could stop as soon as the two trails met.
 
 \*\* Therefore: store the claim with what it rests on, so that a correction has somewhere to go.
 
@@ -298,23 +294,17 @@ Repository context files have already faced this kind of comparison, and did not
 
 Testing the pattern costs traffic, analysis and calendar time. Larry Laudan separated acceptance from pursuit:[26](appendix-references.md#ref-06-laudan) what to believe today and what to investigate tomorrow are different questions, and a policy that funds only today’s accepted method can keep alternatives from ever collecting the evidence that would make them credible. So pattern evaluation got a small budget of its own, and the question of whether the success criterion itself should change went to the head of product, who owned the goal. An agent with a sound epistemic objection still has no authority to spend somebody else’s money.
 
-After a quarter of comparisons, the top of the file read:
+A quarter later, a reviewer deciding whether to hold a rollout could see what had changed in the file:
 
 ```yaml
-id: wins-that-fade
 confidence: supported for visible layout and home-screen changes; untested elsewhere
-context: A visible home-screen or layout change reports an early gain.
 scope: changes returning customers can notice and react to as new
 would_be_wrong_if: in a fresh evaluation set, returning customers hold the gain on most visible changes
-documented_cases: [home_redesign, deals_tile, staples_layout, deals_tile_v2, historical_visible_changes_40]
 lasting_cases: [slot_reminder]
-excluded_cases: {carousel: logging defect, see locate-the-failure}
 known_failure: misapplied to an invisible checkout speed-up whose gain persisted
 revision: treat changes customers cannot see, such as speed, as outside scope; restate would_be_wrong_if as a rate after slot_reminder
 evidence_record: fade-evaluations
 ```
-
-The next agent can see where the pattern has been tested, where it held, and how its predecessor misused it, and none of that required retraining a model.
 
 \* Therefore: record how sure we are of each pattern, make it earn that confidence on cases that did not produce it, and fund the evidence it still needs.
 
@@ -334,9 +324,7 @@ Facebook paid for a much larger version of the same lesson. In January 2018, aft
 
 The organization had paid for knowledge it was resisting.
 
-A response to an objection should identify the claim it challenges and say what happened to it: new evidence, a revised claim, another experiment, a reason the criticism does not apply, or a budget decision that left it open. Closed says only that somebody stopped typing; *noted* is none of these.
-
-With agents it gets cheaper still: a reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out.
+A reviewer objects, the builder replies that the concern has been noted, both complete their tasks, and the report goes out.
 
 We have successfully parallelized the experience of being ignored.
 
@@ -392,7 +380,9 @@ Therefore: change what the next worker inherits, and give it standing to challen
 
 By its second year the library held more than `wins-that-fade`. The larger `review-an-experiment` pattern called `say-what-the-result-would-mean` before a test could start, `locate-the-failure` when a result looked suspicious, and `wins-that-fade` when a visible change reported an early gain. Each pattern named the larger one it served and the smaller ones it could call.
 
-One review made the composition visible. A pricing experiment arrived with an early lift. The review agent found a committed prediction missing and routed that gap through `say-what-the-result-would-mean`. The size of the lift triggered `locate-the-failure`, where Twyman’s check exposed a sample-ratio mismatch. A data agent traced it to a logging path shared by both the headline metric and its supposed independent check, and `give-the-claim-an-address` marked both measurements as depending on the same event stream. The review returned the launch for repair. No agent had to know the whole procedure in advance. The links carried the work from one difficulty to the next.
+The price change went back for repair. The team could fix the count, write down what it expected to happen on a fresh test and bring the launch back. It was a little late to commit a prediction about the original lift. Everybody had seen it.
+
+I wouldn’t put a data agent on every pricing review. In this one the reviewer got as far as a suspicious head count before it had any reason to ask where the two measurements came from. Only then did it need someone who could follow a purchase back through the logging tables. The links carried the work from one difficulty to the next.
 
 That is the point at which a pile of skills becomes a pattern language.
 
@@ -423,7 +413,7 @@ Alexander’s form now asks for a Therefore.
 
 We could write “revise the method when it fails.”
 
-But the method decides which failures count.
+But the method decides which failures count. What happens when the next agent proposes to rewrite it?
 
 ## What the File Says Now
 
@@ -446,9 +436,3 @@ Now the next worker can argue with Sam, even while Sam is on holiday.
 Further down the runbook, a newer engineer has written *ask Ines*.
 
 This time there is a file behind the name.
-
-So far, a procedure has decided which changes to the library deserve to survive.
-
-But that procedure is also software.
-
-What happens when the next agent proposes to rewrite it?

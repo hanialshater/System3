@@ -50,7 +50,7 @@ In the early twentieth century Ferdinand de Saussure made a radical claim about 
 
 For Saussure, much of a sign’s value comes from its relationships and differences with the other signs in the system, so that language becomes a network of contrasts held together by convention.[1](appendix-references.md#ref-04-saussure)
 
-A century later we built something that learns a network of that kind. A transformer consumes enormous amounts of language and learns relationships among tokens and contexts. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
+A century later we built something that learns a network of that kind. During training a language model sees words and pieces of words in many different surroundings. It gets practice predicting what comes next in a veterinary report about a cow and in a menu that offers beef. It has never milked a cow or been kicked by one, and it has never stood in a field at dawn and discovered how much manure the romantic image of farming leaves out. It still talks about cows very well.
 
 Read today, Saussure’s theory looks uncannily like a specification for GPT. Language models are spectacular evidence for how much competence can emerge from structure learned inside symbolic data. They write, translate, debug software and explain physics without ever acquiring the farmer’s relationship to cows or a child’s relationship to fire.
 
@@ -118,15 +118,13 @@ The danger is coherence outrunning correspondence, with the machine getting very
 
 ## System 3
 
-At the moment we are obsessed with making models think harder. System 2 reasoning has become a product category: give the model more inference time and let it plan, search, reconsider and work through difficult problems before it answers.
-
-Reasoning perfectly from a bad premise still gets you a beautifully reasoned mistake. A research agent can spend six hours developing an elegant argument from a false paper. A coding agent can reason carefully about an API that never existed.
-
 Kahneman’s *Thinking, Fast and Slow* popularized the distinction between System 1, fast and intuitive cognition, and System 2, slower and more deliberate cognition.[4](appendix-references.md#ref-04-kahneman)
 
-For AI, the analogy is tempting. The base model looks something like System 1: fast pattern recognition, linguistic intuition, enormous associative capacity. Agentic reasoning adds something like System 2: decomposition, planning, reflection and extended search.
+The ease with which a base model completes a familiar phrase feels like System 1. Give the model longer and it can plan an answer, find a hole in the plan and start again. This slower work has become a product category, System 2 reasoning.
 
-But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that external epistemic machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks. Checking is where it starts. The same machinery connects what separate people know and lets them build on it. Systems 1 and 2 happen inside one head. System 3 is what a civilization does.
+Give a research agent six hours and a false paper and I may get an elegant argument whose first sentence should never have survived. I would rather it spent five of those minutes finding out where the paper came from.
+
+But human thought has always run inside another structure that the two-system picture mostly takes for granted. We test things, build instruments, ask other people and keep a record of our failures. I call that machinery System 3. If System 1 proposes and System 2 deliberates, System 3 checks. Checking is where it starts. The same machinery connects what separate people know and lets them build on it. Systems 1 and 2 happen inside one head. System 3 is what a civilization does.
 
 Edwin Hutchins found this on the bridge of a navy ship. Navigation depended on sailors, charts, instruments and procedures; no single sailor held the whole calculation. He called this distributed cognition.[5](appendix-references.md#ref-04-hutchins) The ship could know where it was without any one person doing all the knowing. I want agents to inherit more of that arrangement.
 
@@ -193,7 +191,7 @@ Such a heuristic is a meta-belief: a reason to prefer one approach, with evidenc
 
 If you enjoy old epistemology labels, you can call the model a largely coherentist core, uncannily good at producing structures that hang together, and System 3 a thin foundationalist shell tied to observation, provenance and consequence. I only need the architectural analogy.
 
-This is personal for me. I spent eight years building systems that rank human testimony: reviews, ratings and Q&A. The hardest problem was never only relevance. It was trust stratification. What happens when ten accounts repeat the same lie? How far should credibility transfer outside the domain in which it was earned?
+I spent eight years building systems that rank human testimony in reviews, ratings and Q&A. Finding relevant testimony was hard enough. Then came the problem of trust stratification. What happens when ten accounts repeat the same lie? How far should credibility transfer outside the domain in which it was earned?
 
 System 3 isn’t philosophy to me. It’s Tuesday.
 
@@ -238,9 +236,9 @@ If anything, the scaffold seemed to produce discipline before it produced capabi
 
 One problem, `astropy-13579`, broke the pattern badly. Mini solved it and epistemic did not, and it was the only case where the epistemic patch came out substantially larger.
 
-Both agents correctly identified the central bug: dropped world-coordinate dimensions were being filled with a hard-coded value instead of the actual coordinate value.
+Imagine taking one slice from a stack of astronomical images. While you work on the slice you can leave out one coordinate: every point on it comes from the same place in the stack. You still need that coordinate when you put the slice back. Both agents found the bug. The software filled the missing value with 1.0, whatever its value had been.
 
-The baseline took a fairly direct approach:
+The simpler agent kept the original value and put it back when the program needed it:
 
 ```python
 # Store the actual values for dropped dimensions

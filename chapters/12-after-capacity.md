@@ -2,7 +2,9 @@
 
 *A Glimpse of Double Descent Life*
 
-In October 1947, George Dantzig went to John von Neumann with his emerging ideas about linear programming. He had spent the summer inventing a way to solve such problems, the method later called simplex, and had come to Princeton to ask for a better one. He began explaining in detail. Von Neumann told him to get to the point. Dantzig compressed a summer’s work into under a minute, and von Neumann stood up and lectured for over an hour on a theory Dantzig had never heard of. As Dantzig remembered it, von Neumann seemed to be constructing the theory while he spoke. He called it duality: one formulation searches for the best solution; another can establish how good any solution could possibly be. He connected it to his work with Oskar Morgenstern on games. Dantzig sat there stunned. His summer had not been wasted. It had a side he had not known was there.[1](appendix-references.md#ref-12-after-1)
+In October 1947, George Dantzig went to John von Neumann with his emerging ideas about linear programming. He had spent the summer inventing a way to solve such problems, the method later called simplex, and had come to Princeton to ask for a better one. He began explaining in detail. Von Neumann told him to get to the point.
+
+Dantzig compressed a summer’s work into under a minute, and von Neumann stood up and lectured for over an hour on a theory Dantzig had never heard of. As Dantzig remembered it, von Neumann seemed to be constructing the theory while he spoke. He called it duality: one formulation searches for the best solution; another can establish how good any solution could possibly be. He connected it to his work with Oskar Morgenstern on games. Dantzig sat there stunned. His summer had not been wasted. It had a side he had not known was there.[1](appendix-references.md#ref-12-after-1)
 
 I usually read stories like these from a safe distance. Extraordinary people did extraordinary things. Then I return to an afternoon in which locating the correct spreadsheet is a substantial intellectual achievement.
 
@@ -14,13 +16,23 @@ Some questions stall because I know too little to see where I could begin. Other
 
 Access to extraordinary intellectual capacity could change that. An interest might survive long enough to grow into an ability; a connection between fields might be mine to investigate. I might discover that the life I assembled around what I could already do had left quite a lot out.
 
-Some of this is already ordinary. I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. People become more dangerous, in the nicest sense.
+As a student, Levent Alpöge had a private reason for ranging so widely through mathematics. In a few decades he meant to have a go at the Riemann hypothesis, a conjecture about how far the count of prime numbers can stray from a smooth estimate. He wanted to recognize the tools when he needed them.
+
+In the autumn of 2026 he spent about six weeks on the problem with Claude. Alpöge saw how two ideas might fit together in a toy problem and where to try them in the harder one. They were estimating a weighted sum over primes and their powers. Part of the argument involved repeating an operation called a theta lift. How many times? Claude suggested taking the square root of the number the sum ran up to. If the sum went up to ten thousand, for instance, the chain would be about a hundred lifts long. Alpöge thought the answer would make his fellow mathematicians fall out of their chairs. Once he saw it himself, he wondered what else it could have been.[2](appendix-references.md#ref-12-alpoge)
+
+On November 20 he published the proof. A few lines into the announcement he speaks of losing “a principal guiding light.” What do you do with the decades you thought it would take? Alpöge wanted to go back through the argument. He thought there must be a simpler proof in there, one he could explain to the people who loved this mathematics as much as he did.[2](appendix-references.md#ref-12-alpoge)
+
+Back at my spreadsheet, I can ask a stupid question immediately, then a more sophisticated stupid question. Ask for the intuition, then the mathematics, then the objection, then why the proof needs that assumption. I can have one field explain another and move through mechanism design, philosophy of science and compiler construction in an afternoon that would previously have required several abandoned PhDs. The map has become cheap. People become more dangerous, in the nicest sense.
+
+Imagine eleven people who share a meeting room and a piece of scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
+
+Two groups want the room at seven on Tuesday. What would I have to promise them to get through that meeting?
 
 ## The Curve
 
 The title is stolen from machine learning, and the theft is deliberate.
 
-In the curve described by Belkin and colleagues, test error falls as a model gains capacity, rises near the point where it can fit its training data exactly, then falls again as capacity grows further.[2](appendix-references.md#ref-12-after-2) The familiar lesson was to limit capacity to avoid overfitting. The second descent complicated that lesson. Past the peak, many models fit the data perfectly. More capacity did not remove that ambiguity; it supplied more candidates, and how the training procedure selected among them decided whether the result was any good.
+Suppose I give a model a pile of examples to learn from and keep a second pile aside to see what it has learned. On a graph I put the size of the model along the bottom and its mistakes on the unseen examples up the side. In the curve described by Belkin and colleagues, the mistakes first fall, rise near the point where the model can fit the training examples exactly, then fall again as the model grows.[3](appendix-references.md#ref-12-after-2) That last fall is the second descent. By then many solutions fit everything in the first pile. It matters which one training finds, and you can see the difference in the pile I kept aside.
 
 I am borrowing the shape. Intellectual history does not obey a theorem about neural networks.
 
@@ -50,27 +62,27 @@ Give everyone better information and surely the disagreements shrink. Some will.
 
 Decisions still get made. Institutions decide which qualifications count, and a leader with a convincing story can acquire more authority than someone who understands the problem. Even criticism can find a comfortable institutional role, provided it never changes what happens next: a dashboard stands in as evidence that an organization is scientific, a consultation as evidence that people have a say.
 
-This is the ideology vortex: the argument goes round again, each tradition gets its turn, and on Monday morning we still need the permission. Chapter 2’s algorithm vortex was a good thing, choices that no longer had to be frozen. This one is the opposite: choices that cannot be made, so nothing settles. The vortex is what living at the spike feels like.
+I call this the ideology vortex. In the algorithm vortex, a choice I used to have to freeze could stay open until I learned enough to make it. Here every tradition gets another turn at the argument and nobody can settle a choice long enough to try it. This is what living at the spike feels like.
 
 Look at how we argue now. Every position arrives with its critique already attached, and every critique with a critique of the critique. Everybody knows the categories are constructed, the metrics gamed, the experts conflicted, the institutions captured. Knowing has become cheap. It changes almost nothing, and it has found an excellent business model. A feed ranked for engagement is the vortex with a reward function: it pays for the next turn of the argument, not for its end. Chapter 6 told what Facebook’s own researchers found when it changed its metric: the outrage travelled, because that was what the system rewarded.
 
 There is an economic reason to stop at critique. Reading an institution against itself can take a library card and a good afternoon. Building a different institution takes money, specialists, years and, usually, someone’s permission. I suspect that difference accounts for some of the distance between our arguments and what we manage to change.
 
-In 2004 Bruno Latour asked why critique had run out of steam, and called for composing things instead of debunking them.[3](appendix-references.md#ref-12-latour) Decades earlier he had written “Give me a laboratory and I will raise the world.” I keep thinking about the first half of that title. Richard Rorty wanted philosophy to keep the conversation going, and asked us to hold our commitments while knowing they are contingent.[4](appendix-references.md#ref-12-rorty) Later he turned on a Left that preferred spectating to reform. Neither needed agents to see the problem. I want to know whether agents make some of the building affordable.
+In 2004 Bruno Latour asked why critique had run out of steam, and called for composing things instead of debunking them.[4](appendix-references.md#ref-12-latour) Decades earlier he had written “Give me a laboratory and I will raise the world.” I keep thinking about the first half of that title. Richard Rorty wanted philosophy to keep the conversation going, and asked us to hold our commitments while knowing they are contingent.[5](appendix-references.md#ref-12-rorty) Later he turned on a Left that preferred spectating to reform. Neither needed agents to see the problem. I want to know whether agents make some of the building affordable.
 
-An alternative has to be possible somewhere. Someone needs the knowledge, time and means to make an attempt whose outcome is not already contained in the discussion. Otherwise the critique is correct and Monday morning is unchanged.
+Someone still needs the knowledge, time and means to try an alternative. Then even the person who proposed it could be surprised by what happens.
 
 ## The Answer to Derrida
 
 I have a sentence that gets me into trouble: gradient descent is the answer to Derrida.
 
-This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[5](appendix-references.md#ref-12-after-4)
+This is deliberately unfair to Derrida and possibly to gradient descent. In *Signature Event Context*, Derrida challenges the idea that context could be specified completely enough to close interpretation. A sentence can be repeated elsewhere, by someone else, under circumstances its author did not control. An engineer hears a practical difficulty: how do we build reliable machinery from language if the specification can always acquire another reading?[6](appendix-references.md#ref-12-after-4)
 
-Large language models operate inside that difficulty, and oddly, they learned from the same accumulated language in which we argue about the impossibility of getting outside our descriptions. They learn from use, relation, context and enormous numbers of imperfect examples. Optimization pushes them toward behavior that works under the conditions in which they are trained and evaluated. Nobody had to settle the meaning of every word first.
+Think of all the places a model might encounter “keep the door open.” A carpenter and a negotiator could each say it and expect rather different things to happen next. During training, the model tries to predict what words follow in each setting. Gradient descent adjusts its internal numbers a little at a time in a direction that reduces the prediction error. The next time it meets a stalled negotiation it has a better chance of leaving the hinges out of it. Nobody had to settle the meaning of every word first.
 
 Derrida never claimed that communication fails. A sign can work and still be lifted out of its context and used somewhere its author never imagined. Chapter 4 called Saussure’s theory a specification for GPT; Derrida gives me a way to think about what happens when the output leaves the training context. Derrida was right, and it ships.
 
-It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. The model can produce a perfectly formed citation to nothing at all. We chose where training stopped and which tests counted. Deployment keeps finding places we did not think to look.
+It also ships into circumstances the evaluation set never covered. Prompt injection is iterability with a security advisory. We chose where training stopped and which tests counted. The next person to use the model gets to supply a context we never put on the exam.
 
 Gradient descent did not defeat ambiguity. It made ambiguity computationally useful.
 
@@ -80,9 +92,11 @@ The compiler has to compile. Chapter 11’s lessons company still needs evidence
 
 An eloquent machine left talking to itself could keep us in the vortex indefinitely, with better illustrations. That is high-functioning bullshit at the scale of a civilization.
 
-Criticism leaves a practical question: once you have seen through an arrangement, how do you build one you can commit to?
+Back in the meeting room, suppose we try a timetable for a month and the same three members can never make the slot. Hold the review meeting at seven on Tuesday and we might even get a unanimous vote to keep it.
 
-The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is another possibility, close to Rorty’s but with the building left in. We can construct them knowingly. Build institutions while remembering that institutions can be rebuilt, and that people will arrange their lives around the promises we make. We owe those people an account of what changed and a say in what happens next. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
+The childish response to contingency is to pretend our constructions are eternal. The adolescent response is to discover they are constructed and conclude that nothing deserves commitment. There is a third mode, close to Rorty’s but with the building left in. We can construct them knowingly. If we promise the smaller group the seven o’clock slot next week, someone ought to be able to book a ride on the strength of that promise. A month from now we may have good reason to change the timetable. The person who booked the ride gets a say in that meeting too.
+
+I think we do this in our private lives all the time. Love people without needing a theorem that proves love is the globally optimal allocation of Tuesday evening.
 
 ## Bespoke Comes Back
 
@@ -90,7 +104,7 @@ There is a point in an ambitious project when I begin mentally hiring the people
 
 Agents begin to change that calculation when they can take on some of the building and testing. Software has often required a bargain. One team builds a product for many customers; each customer rearranges some of its work to fit. This was an enormous improvement over everyone commissioning their own system. It also gave us organizations whose procedures preserve the decisions of a dropdown menu designed ten years ago.
 
-Imagine a mathematician assembling a workshop around one conjecture.[6](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day’s investigation instead of a separate project waiting for a collaborator.
+Imagine a mathematician assembling a workshop around one conjecture.[7](appendix-references.md#ref-12-after-3) It generates examples, searches for counterexamples, draws the structures she is trying to understand and keeps track of why promising approaches failed. When an observation suggests a lemma, she can attempt a formal proof. A missing piece of software is part of the day’s investigation instead of a separate project waiting for a collaborator.
 
 The workshop changes as she learns. A picture suggests a different representation. The new representation makes a search possible. The search returns an awkward case, and the awkward case is more interesting than the conjecture she began with. She builds the next instrument around it. That environment might be useful to one person for eighteen months. Maintenance, security and access to data remain part of the work, and a cheap first version is not yet a system people can depend on. It could still be worth building.
 
@@ -106,39 +120,35 @@ Elinor Ostrom studied people who had already begun.
 
 ## Ostrom in a Weekend
 
-An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[7](appendix-references.md#ref-12-after-5)
+An influential answer to the tragedy of the commons offered two routes: state control or private ownership. Meanwhile, people were managing shared forests, pastures and irrigation systems through arrangements that did not fit that prescription. Some had been doing it for centuries. Ostrom’s *Governing the Commons* examined cases from Switzerland, Japan, Spain and the Philippines. Resource users had made rules suited to their circumstances, monitored use, imposed graduated sanctions and developed ways to settle disputes and revise agreements.[8](appendix-references.md#ref-12-after-5)
 
 If those were the only two answers, what were these people doing?
 
 She drew general principles from the cases and held the principles answerable to further cases. But she began with the arrangements people actually used, rather than assuming that one institutional prescription should fit them all. Nobody had to win the argument about the right social order before the irrigators could agree on a schedule.
 
-This is what I mean by building from first principles, and I mean it the irrigators’ way. Their first principles were not axioms. They were the valley: whose field goes dry first, which channel silts up, who cheats in August and what it costs to catch them. They started from the problem in front of them and the people living it, then borrowed what other valleys had learned. James Scott, whom I will need again in a moment, called that kind of knowledge *mētis*: practical, local, earned.[8](appendix-references.md#ref-12-solutionism) My first principles are his, not Silicon Valley’s.
+This is what I mean by building from first principles, and I mean it the irrigators’ way. Their first principles were not axioms. They were the valley: whose field goes dry first, which channel silts up, who cheats in August and what it costs to catch them. They started from the problem in front of them and the people living it, then borrowed what other valleys had learned. James Scott, whom I will need again in a moment, called that kind of knowledge *mētis*: practical, local, earned.[9](appendix-references.md#ref-12-solutionism) My first principles are his, not Silicon Valley’s.
 
-Elinor and Vincent Ostrom made a word central for the shape that results: *polycentric*, many centers of decision, overlapping, each able to make and revise its own rules.[9](appendix-references.md#ref-12-polycentric) No grand narrative is required. No relativism follows either, because the water reaches the field or it doesn’t. Whose field it reaches first is still a question for the people at the table, which is exactly why they have to be at it.
+Elinor and Vincent Ostrom made a word central for the shape that results: *polycentric*, many centers of decision, overlapping, each able to make and revise its own rules.[10](appendix-references.md#ref-12-polycentric) No grand narrative is required. No relativism follows either, because the water reaches the field or it doesn’t. Whose field it reaches first is still a question for the people at the table, which is exactly why they have to be at it.
 
 Calling something a community does not make it work. The arrangements that lasted had conditions, including ways for participants to help shape the rules under which they lived.
 
 What stopped other groups from doing what the irrigators did varied. Sometimes it was trust, sometimes boundaries nobody could agree on, sometimes a state that refused to recognize rules it had not written. Sometimes, and this is the part I can do something about, it was the cost of the expertise. Those irrigators did not lack knowledge of their own valley. What might they have done with ready access to the experience of a hundred other valleys, and tools for exploring a proposed rule before the next dry season? A missing specialty would no longer have to end the attempt. Ostrom’s cases took generations. The question this book has been circling is what happens when some of that work fits into a weekend.
 
-Take something smaller than a watershed.
-
-A small community’s activities do not fit its scheduling software. Some members work shifts, some depend on accessible transport, and several groups share one room. The software offers recurring bookings at fixed times, which works beautifully for members whose lives recur at fixed times. The others exchange messages and ask for exceptions until somebody decides they are the difficult members.
-
-Changing the software requires persuading a vendor that eleven people with peculiar scheduling needs are worth its attention. They are unlikely to win that argument. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
+Back at the meeting room, changing the software requires persuading a vendor that eleven people with peculiar scheduling needs are worth its attention. They are unlikely to win that argument. Some problems that looked like power problems may turn out to have been capacity problems wearing a suit.
 
 Suppose instead that they can afford to build and maintain a small tool of their own. Members could enter changing availability and explore possible schedules. They could try a rotation that gives the same group different evenings across a month, or reserve times that work with the accessible transport. The weird community with eleven members could have software built around all eleven of them and no plan whatsoever for customer acquisition. Some of their disagreement may turn out to have been about the old software’s default. A member who seemed unreasonable may have a perfectly manageable constraint.
 
-Then two groups both want seven on Tuesday.
+Two groups still want seven on Tuesday.
 
 One proposes allocating the room to whichever group brings the most people. The other is small partly because its members have fewer times at which they can attend. A system that maximizes attendance can produce a very well-evidenced reason to keep excluding them. The figures may be correct. What is in dispute is the rule giving those figures authority.
 
 The community might guarantee each group some access, then use attendance to allocate the remaining time. Or it might rotate the popular slot. The model could show who would lose out under each arrangement and help discover options nobody had considered. The members would still have to settle a rule, and those disadvantaged by it would need a way to challenge it.
 
-Cheap software removed the vendor’s veto. It did not produce a second room at seven on Tuesday. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
+Cheap software removed the vendor’s veto. We still have only one room. Calling both a shortage of intelligence would leave the smaller group waiting forever for a better model.
 
-The obvious objection is the one I conceded in Chapter 10. Moving critique out of text and into optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. The yield-table forest and the grid city from earlier in this chapter are Scott’s: he showed what states did to forests and cities when they made them legible enough to manage, and Morozov’s solutionism is the software version.[8](appendix-references.md#ref-12-solutionism) Morozov would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics.
+The obvious objection is the one I conceded in Chapter 10. Moving critique out of text and into optimization sounds like the oldest bad idea in my industry: a system that turns every human question into a metric and calls the result progress. The yield-table forest and the grid city from earlier in this chapter are Scott’s: he showed what states did to forests and cities when they made them legible enough to manage, and Morozov’s solutionism is the software version.[9](appendix-references.md#ref-12-solutionism) Morozov would happily quote me against myself: “capacity problems wearing a suit” is precisely how a solutionist describes politics.
 
-So let me be careful. The vendor’s veto was a capacity problem. Seven on Tuesday is not, and no amount of capacity turns it into one. The objection is right about where the danger goes. Optimization does not escape the politics. It hides them in the objective. What separates the irrigators from a high-modernist plan is who writes the objective, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people in the room.
+The danger moves into a line of software someone had to write. *Maximize attendance* looks innocent enough, particularly if your shift always ends in time for the meeting. What separates the irrigators from a high-modernist plan is who writes that line, who can see it, and who can change it when it hurts them. Chapter 7 called that the constitutional surface. Here it belongs to the people who share the room, including the ones who couldn’t make the meeting.
 
 ## Capacity over Power
 
@@ -156,25 +166,33 @@ Where consequences remain shared, so do the decisions. Climate, public health, l
 
 All of that assumes the people at the table understand what they are choosing between. That assumption is about to get harder to keep.
 
-Chapter 6 told how agents made Wiles’s proof of Fermat’s Last Theorem checkable by Lean: roughly thirty thousand intermediate theorems, which nobody is going to read.[10](appendix-references.md#ref-12-flt-tokens) Nobody needs to. The checker does not get bored, and its standards are written down. That was the easy case. Wiles understood the proof before any machine checked it.
+Chapter 6 told how agents made Wiles’s proof of Fermat’s Last Theorem checkable by Lean: roughly thirty thousand intermediate theorems, which nobody is going to read.[11](appendix-references.md#ref-12-flt-tokens) Nobody needs to. The checker does not get bored, and its standards are written down. That was the easy case. Wiles understood the proof before any machine checked it.
 
-The four-color theorem was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand. Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[11](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[12](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
+Take a map and try to color its regions so that neighbors sharing a stretch of border have different colors. Four colors suffice for any ordinary flat map. The proof was the warning. In 1976 Kenneth Appel and Wolfgang Haken proved it with a computer checking more cases than any human could survey by hand.
+
+Thomas Tymoczko argued that this changed what a proof was: part of the warrant now rested on trusting a machine, which made mathematics a little more like an experimental science.[12](appendix-references.md#ref-12-tymoczko) Paul Humphreys later named the general condition *epistemic opacity*: computational science producing results whose justification no human can follow step by step.[13](appendix-references.md#ref-12-humphreys) Ten thousand agents working on one problem make the four-color theorem look like the normal case.
 
 We already distribute the checking. Hardwig’s physicist relies on chemists she will never check; the Higgs discovery had thousands of authors and no single knower. A proof checker can establish that a formal statement follows from its axioms. A held-out test measures performance on cases the system did not train against; an independent replication asks whether a result survives another attempt. I can rely on that work without doing it all myself. I still need to know what was checked. Lean cannot tell me whether the theorem was the one I meant to ask for.
 
-And the checked result may leave me with no idea what to ask next. I can ask someone to check a proof on my behalf. Asking her to understand it on my behalf will not let me notice a connection I could not see before. In Chapter 9 I said you cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Discovery could run ahead of our ability to decide what the next ten thousand agent-hours should be for.
+Alpöge released seventeen million lines of Lean. The people who maintain Mathlib, a shared library of formal mathematics, already had the Riemann hypothesis written down. They could put their statement beside his and check that he had proved exactly the theorem they meant. Several independently written programs checked the proof itself. On November 21, a day after the release, the Lean and Mathlib communities certified it.[14](appendix-references.md#ref-12-lean-riemann)
 
-That gap does not stay empty. Somebody chooses the next problem. If it is not the people who understand enough to care, it will be whoever owns the machinery.
+The reviewers could start with Claude’s choice of how many lifts to use. Even a mathematician who would never have guessed that length could run a checker on the argument that used it. In the last line of their statement the reviewers looked forward to someone explaining the new mathematics.[14](appendix-references.md#ref-12-lean-riemann)
+
+I can ask someone to check a proof on my behalf. Asking her to understand it on my behalf will not let me notice a connection I could not see before. In Chapter 9 I said you cannot want what you cannot imagine, and you cannot imagine much of what you do not understand. Discovery could run ahead of our ability to decide what the next ten thousand agent-hours should be for.
 
 So the second descent has a condition I did not see when I first drew the curve. Someone at the table has to understand enough to take part in the selection. Not every proof. Enough of the map to want something from it. That is what Dantzig got from von Neumann in an hour, and it is what cheap capacity could give back to many more people, if we build it to teach as well as to answer.
 
 ## Who Owns the Laboratory
 
-Putting ten thousand agents on one problem, or spending some six billion output tokens formalizing Fermat, is open to a handful of organizations.[10](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and within a year astronomers elsewhere were checking Galileo’s moons through telescopes of their own. A frontier model is harder to grind.
+I could come out of a conversation like Dantzig’s with a question I finally understand and no means whatsoever to investigate it. To whom do I take my request for a weekend with those agents?
 
-Philip Kitcher asked who should set the agenda of science, and answered with an ideal he called well-ordered science: the questions pursued should be the ones citizens would choose after deliberating together, tutored by experts until they understood what was at stake.[13](appendix-references.md#ref-12-kitcher) That tutoring is the understanding condition from the last section, written into a theory of science. Kitcher was writing about public science staffed by people. A laboratory that runs on a private model, rented by the hour, changes the question. The agenda is set wherever the compute is allocated, and the people affected are rarely in that meeting.
+Putting ten thousand agents on one problem, or spending some six billion output tokens formalizing Fermat, is open to a handful of organizations.[11](appendix-references.md#ref-12-flt-tokens) That is not a complaint. Somebody has to build the telescope before anyone else can look through it. But a lens grinder in another city could build a telescope, and within a year astronomers elsewhere were checking Galileo’s moons through telescopes of their own. A frontier model is harder to grind.
 
-Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models to comply with United States export controls. One returned for everyone after almost three weeks, when the controls were lifted; the other came back only for a set of US organizations.[14](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
+Philip Kitcher asked who should set the agenda of science, and answered with an ideal he called well-ordered science: the questions pursued should be the ones citizens would choose after deliberating together, tutored by experts until they understood what was at stake.[15](appendix-references.md#ref-12-kitcher) That tutoring is the understanding condition from the last section, written into a theory of science. Kitcher was writing about public science staffed by people.
+
+A laboratory that runs on a private model, rented by the hour, changes the question. The agenda is set wherever the compute is allocated, and the people affected are rarely in that meeting.
+
+Capacity that is rented can be recalled. In June 2026 Anthropic suspended access to two of its newest models to comply with United States export controls. One returned for everyone after almost three weeks, when the controls were lifted; the other came back only for a set of US organizations.[16](appendix-references.md#ref-12-access) I am not arguing about that decision here. I am pointing at what it showed: a weekend of borrowed agents belongs, in the end, to whoever holds the switch, and the switch can sit several institutions away from the table.
 
 There is an ugly shortcut to alignment: edit the human. In a conversation, I want the ability to question the advice, inspect its evidence and bring in another perspective. Over a life, I also need somewhere else to go. Imagine a family tool useful enough to hold the calendar, the children’s learning history and the reasons behind years of small decisions. A button labeled Export may give me all the files, and leave me months of work making them useful anywhere else. The tool gave the family more capacity and gave its owner more leverage over the family at the same time. A right to disagree inside one product is a thin kind of freedom if everything I need to act remains locked inside it.
 
@@ -182,17 +200,17 @@ A research agent that makes experiments cheaper can accelerate medicine and weap
 
 So capacity over power can fail in two directions. Concentrate the capacity and everybody’s weekend runs on somebody else’s permission. Distribute it without the parts of System 3 that make it answerable and anyone can do anything while nobody can check. The first gives us a very efficient landlord. The second gives chaos an API key.
 
-What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory.
+What the architecture in this book can do is make the switches visible: a funding decision recorded beside the study it declined, a permission change that needs authority outside the agent asking for it, a trace showing which capacity produced which claim. What it cannot do is decide who should hold them. That will have to be argued in public, including by people who do not own a laboratory. I have been picturing myself in that discussion as the applied scientist who helps decide what is worth investigating.
 
 ## What Are Humans For?
 
-I have written as if my own seat at that table were safe. It is not obviously so.
+It is a comfortable seat to imagine for myself. Then somebody puts a language model in the judge’s seat. Running evaluations people would believe was a large part of what I got paid for. LLM-as-a-judge looked like a threat to my profession.
 
-LLM-as-a-judge looked like a threat to my profession.
+The other scarce skill in my line of work was training the models in the first place. A job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
 
-For years, a large part of what made an applied scientist valuable was that she could train a model and run an evaluation somebody would believe. Those were scarce skills, and a job accumulates around scarce skills the way a city accumulates around a river. Then anyone could download a model, and other models could evaluate its outputs at a scale no human team could match. It is hard to watch the river move without wondering what the city was for.
+I could tell myself that the role moves upward, to owning the frontier, as I argued in Chapter 9. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary.
 
-I could tell myself that the role moves upward, to owning the frontier, as I argued in Chapter 9. But I would say that. I cannot spend eleven chapters proposing more capable agents and then reserve the interesting questions for myself whenever the argument reaches my salary. “The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
+“The role moves upward” describes where I might contribute next. It does not establish a permanent boundary around human employment.
 
 The same capacity that makes my profession less secure puts more of the frontier within reach. I can worry about what it will replace and still be impatient to find out what I can do with it.
 
@@ -240,10 +258,8 @@ That is the work I want to do, and the reason for the second company in the last
 
 I would like some of that freedom myself. A year on a question that once seemed inaccessible. Enough astronomy to make an evening outside with my children different. An unfamiliar subject becoming a source of pleasure long after it has stopped being useful for anything I could put on a slide.
 
-Dantzig brought a question and found that it had another side. I want more of us to have afternoons like that, and weekends in which we can do something about what we discover.
-
 There is more to a person than the few abilities a career had room for. There may be more to our common life than the arrangements we could previously afford to build.
 
-I would like us to find out how much more.
+Dantzig brought a question and found that it had another side. I want more of us to have afternoons like that, and weekends in which we can do something about what we discover.
 
 ---

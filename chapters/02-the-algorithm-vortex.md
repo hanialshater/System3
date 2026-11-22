@@ -6,7 +6,7 @@
 
 An AI coding agent is faster than you at a ridiculous number of things. It knows libraries you forgot existed, and it can stare at a stack trace and notice something you have been ignoring for an hour. Then, five minutes later, it does something unbelievably stupid, believes the stupid thing completely and builds three more decisions on top of it.
 
-That is the strange reality behind the vibe-coding excitement: the machine is extremely capable, and you are still there. You check the architecture and notice the missing case. You tell it that no, we are not redesigning the database because one button is the wrong color. You keep enough of the project in your own head to notice when the agent quietly wanders into another universe.
+When you’re vibe coding, you’re still there to catch it. You check the architecture and notice the missing case. You tell it that no, we are not redesigning the database because one button is the wrong color. You keep enough of the project in your own head to notice when the agent quietly wanders into another universe.
 
 Production software is almost the worst place to find out how much an agent can do without me in the room. A supposedly simple task may involve deployment, legacy systems, users, security, another team’s API and a requirement nobody wrote down because everyone assumed everybody else knew it. If the agent fails, you often don’t know whether the problem was intelligence, infrastructure, missing context or the fact that someone named a database column `new_status_final_2`.
 
@@ -38,19 +38,13 @@ For most of the history of algorithm design, the answer was us.
 
 <!-- ART RESOLVED — ch2-search-roles. Original brief: DIAGRAM — missing figure: History of algorithm design. Original asset: ../resources/image0136.png; see resources/art-direction/missing-figures.md. -->
 
-Humans invented explicit algorithms. When direct algorithms were not enough, we invented optimization procedures that searched over candidate solutions. Then we invented meta-heuristics that searched more broadly. Machine learning let systems learn useful structure from data. Now language models can write and modify the search procedure itself.
+I can tell the computer which circle to move. I can give it a rule for choosing the next circle itself. A model that writes code gives me a third possibility: let it try the rule, see where it gets stuck, and write another rule. To see what I would be handing over, I tried the first two jobs myself.
 
 ## Hill Climbing
 
-I started where anyone would. Given a rough packing, the obvious way to improve it by hand is to make small changes: move a circle slightly, increase a radius, see whether the result is still valid, keep it if the score improves and undo it if it doesn’t.
+Give me a pencil and a rough packing and I’d start with the circle that has daylight around it. Make it a little bigger. When it touches its neighbor, see whether the neighbor has room to move. I can give those instructions to a machine.
 
-That is hill climbing:
-
-1. Start with a valid solution.
-2. Perturb a position or radius.
-3. Check whether the result is valid.
-4. Keep it if the score improves.
-5. Repeat.
+In *hill climbing*, the machine tries one small change at a time. If it has a valid packing with a better score, it keeps the change. Otherwise it puts the circle back. It can keep this up long after I would have lost the pencil.
 
 Early in the search, this works nicely. There is empty space and plenty of room to improve. Later, as the circles become tightly packed, almost every interesting move creates an overlap.
 
@@ -116,11 +110,11 @@ Surprisingly, yes. The picture looked plausible. The circles had structure and t
 
 Then you counted the circles. There was the wrong number of them, and some constraints were violated. It was a beautiful answer to a nearby problem.
 
-Learned models can be remarkably good at generating plausible structure without guaranteeing that every formal requirement survives generation. A symbolic optimizer has almost the opposite personality: give it a precise representation and constraints and it will obey them, but it will not naturally look at your representation and decide that you have been unimaginative.
+A symbolic optimizer will work with the representation and constraints I give it. I have never had one stop and tell me my representation lacks imagination.
 
 Put neural intuition and symbolic rigor in the same loop, or, in the slightly ridiculous version, let the brain invent things and make the body prove they work.
 
-The important move is to stop asking the model for the packing and ask it for the program that produces the packing.
+So I asked the model to write the program that packs the circles.
 
 ## Let the Model Write the Solver
 
@@ -194,9 +188,9 @@ It tried numerical optimization, changed initialization strategies and noticed t
 
 Eventually one family of solutions began arranging circles in diagonal bands. We called the idea diagonal layering.
 
-I had not instructed the agent to pursue that construction, and, more importantly, I had not selected the branch after it appeared. The agent found a direction, saw that it improved the evaluator and invested more of its search there.
+I hadn’t asked for diagonal bands. When the score went up, the agent chose to give that branch more time.
 
-I want to be careful with the word *discovered*. I had not seen that particular strategy before, but that does not establish historical novelty in computational geometry. For this experiment, the important discovery was local: the agent found a useful direction that I had not put into the plan.
+I’d never seen that particular strategy. Whether somebody in computational geometry had seen it before is another question.
 
 Once that structural idea became strong enough, the nature of the work changed. The agent spent less time inventing new geometries and more time adjusting solver settings, tolerances, initialization details and all the boring machinery that suddenly matters when the last fraction of a percent becomes expensive.
 
